@@ -340,71 +340,68 @@
     :purpose (보 / 보호-01
         :ARG1 (사 / 사생활)))
 
-===
-
-# ::id snt16.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt16.E2017.NEWS.001 ::date 2019-09-03T12:30 ::annotator gabrielle ::preferred True
 # ::snt 근로자가 따로 난임 시술비 부분만 분류해 제출해야 700만 원 한도가 적용되지 않고 모두 공제받을 수 있다.
 # ::note
-do_timestamp_and_preferred
-** edef: classify
-(분 / 분류-01
-    :ARG0 (classifier)
-    :ARG1 (thing_being_classified)
-    :ARG2 (classified_among)
-)
-** edef: submit
-(제 / 제출-01
-    :ARG0 (agent)
-    :ARG1 (thing_given)
-    :ARG2 (given_to)
-)
-** edef: apply
-(적 / 적용-01
-    :ARG0 (applier)
-    :ARG1 (thing_applied)
-    :ARG2 (applied_to)
-)
-** (공 / 공제.01-00)
+(가 / 가능-01
+    :ARG1 (공 / 공제-00
+        :mod (모 / 모두))
+    :ARG1 (적 / 적용-01
+        :polarity -
+        :ARG1 (한 / 한도
+            :mod (m / monetary-quantity :quant 7000000 :unit (원 / 원)))
+        :condition (제 / 제출-01
+            :ARG0 (근 / 근로자)
+            :ARG1 (h / have-part-91
+                :ARG1 (시 / 시술비
+                    :mod (난 / 난임)))
+            :manner (분 / 분류-01
+                :ARG0 근
+                :ARG1 h)
+            :mod (따 / 따로))))
 
-
-
-# ::id snt17.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt17.E2017.NEWS.001 ::date 2019-09-03T12:40 ::annotator gabrielle ::preferred True
 # ::snt 신생아 등 환자의 주민등록번호를 의료기관에 알려주지 않을 때에도 의료비 자료가 조회되지 않는다.
 # ::note
-do_timestamp_and_preferred
-** (알 / 알리.01-00)
-** (조 / 조회.01-00)
+(조 / 조회-00
+    :polarity -
+    :ARG1 (자 / 자료
+        :topic (의 / 의료비))
+    :condition (알 / 알려주-01
+        :polarity -
+        :ARG1 (주 / 주민등록번호
+            :poss (환 / 환자
+                :example (신 / 신생아)))
+        :ARG2 (기 / 기관
+            :mod (의2 / 의료))))
 
-
-
-# ::id snt18.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt18.E2017.NEWS.001 ::date 2019-09-03T12:43 ::annotator gabrielle ::preferred True
 # ::snt 이 경우 근로자가 해당 병원에서 직접 영수증을 발급받아 공제해야 한다.
 # ::note
-do_timestamp_and_preferred
-** edef: issue
-(발 / 발급-01
-    :ARG0 (agent)
-    :ARG1 (thing_issued)
-    :ARG2 (issued_to)
-)
-** (공 / 공제.01-00)
+(o / obligate-01
+    :ARG1 (근 / 근로자)
+    :ARG2 (공 / 공제-00
+        :manner (발 / 발급-01
+            :ARG1 (영 / 영수증)
+            :location (병 / 병원
+                :ARG1-of (해 / 해당-01))
+            :manner (직 / 직접)))
+    :condition (경 / 경우
+        :mod (이 / 이)))
 
-
-
-# ::id snt19.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt19.E2017.NEWS.001 ::date 2019-09-03T12:45 ::annotator gabrielle ::preferred True
 # ::snt 지난해 중 입사하거나 퇴사한 경우에는 근무한 기간의 자료만 선택해 공제받을 수 있다.
 # ::note
-do_timestamp_and_preferred
-** edef: select
-(선 / 선택-01
-    :ARG0 (selector)
-    :ARG1 (thing_selected)
-    :ARG2 (selected_from)
-    :ARG3 (selected_for)
-)
-** (공 / 공제.01-00)
-
-
+(가 / 가능-01
+    :ARG1 (공 / 공제-00
+        :manner (선 / 선택-01
+            :ARG1 (자 / 자료
+                :topic (t / temporal-quantity
+                    :duration-of (근 / 근무-01)))))
+    :condition (o / or
+        :op1 (입 / 입사-00)
+        :op2 (퇴 / 퇴사-00)
+        :time (지 / 지난해)))
 
 # ::id snt20.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt 연말정산 간소화 서비스에 나온 내용은 귀찮더라도 꼼꼼히 살펴봐야 한다.
