@@ -218,7 +218,7 @@
     :ARG1 (받 / 받-01
         :ARG0 (근 / 근로자)
         :ARG1 (혜 / 혜택
-            :mod (공 / 공제)))
+            :mod (공 / 공제-00)))
     :condition (발 / 발급-01
         :ARG0 (o / or
             :op1 (장 / 장소
@@ -403,289 +403,179 @@
         :op2 (퇴 / 퇴사-00)
         :time (지 / 지난해)))
 
-# ::id snt20.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt20.E2017.NEWS.001 ::date 2019-09-03T16:21 ::annotator gabrielle ::preferred True
 # ::snt 연말정산 간소화 서비스에 나온 내용은 귀찮더라도 꼼꼼히 살펴봐야 한다.
 # ::note
-do_timestamp_and_preferred
-** edef: come out
-(나 / 나오-01
-    :ARG0 (thing_coming_out)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: do-light verb
-(나 / 나오-02
-    :ARG0 (agent)
-    :ARG1 (deverbal_noun)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: spill out-CV
-(나 / 나오-03
-    :ARG1 (thing_coming_out)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** (귀 / 귀찮.01-00)
-** edef: search
-(살 / 살펴보-01
-    :ARG0 (searcher)
-    :ARG1 (searched_for)
-)
+(o / obligate-01
+    :ARG2 (살 / 살펴보-01
+        :ARG1 (내 / 내용
+            :ARG0-of (나 / 나오-01
+                :ARG2 (서 / 서비스 :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))))
+        :manner (꼼 / 꼼꼼히))
+    :concession (귀 / 귀찮-01))
 
-
-
-# ::id snt21.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.001 ::date 2019-09-03T16:25 ::annotator gabrielle ::preferred True
 # ::snt 자료가 잘못돼 공제 혜택을 과도하게 받으면 가산세를 물어야 할 수도 있기 때문이다.
 # ::note
-do_timestamp_and_preferred
-** edef: do wrong
-(잘 / 잘못-01
-    :ARG0 (thing_doing_wrong)
-)
-** edef: wrong
-(잘 / 잘못-02
-    :ARG1 (thing_wrong)
-)
-** edef: receive
-(받 / 받-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (source)
-)
-** edef: bite
-(물 / 물-01
-    :ARG0 (agent)
-    :ARG1 (entity_bitten)
-)
-** edef: pay
-(물 / 물-02
-    :ARGA (causer)
-    :ARG0 (payer)
-    :ARG1 (thing_paid)
-    :ARG2 (person_being_paid)
-)
+(가 / 가능-01
+    :ARG1 (o / obligate-01
+        :ARG2 (물 / 물-02
+            :ARG1 (가2 / 가산세)))
+    :condition (받 / 받-01
+        :ARG1 (혜 / 혜택
+            :mod (공 / 공제-00))
+        :degree (과 / 과도-01)
+        :cause (잘 / 잘못-02
+            :ARG1 (자 / 자료))))
 
-
-
-# ::id snt22.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt22.E2017.NEWS.001 ::date 2019-09-03T16:30 ::annotator gabrielle ::preferred True
 # ::snt 공제 자료를 기반으로 공제 신고서를 전산으로 작성할 수 있는 '편리한 연말정산' 서비스는 18일부터 이용할 수 있다.
 # ::note
-do_timestamp_and_preferred
-** edef: make out
-(작 / 작성-01
-    :ARG0 (writer,_planner)
-    :ARG1 (document,_plan)
-)
-** (편 / 편리.01-00)
-** edef: use
-(이 / 이용-01
-    :ARG0 (user)
-    :ARG1 (thing_used)
-    :ARG2 (purpose)
-)
+(가 / 가능-01
+    :ARG1 (이 / 이용-01
+        :ARG1 (서 / 서비스 
+            :name (이2 / 이름 :op1 "편리한" :op2 "연말정산")
+            :medium-of (가2 / 가능-01
+                :ARG1 (작 / 작성-01
+                    :ARG1 (신 / 신고서
+                        :mod (공 / 공제-00))
+                    :instrument (전 / 전산)
+                    :manner (근 / 근거-01
+                        :ARG2 (자 / 자료
+                            :mod (공2 / 공제-00)))))))
+    :time (이3 / 이후
+        :op1 (d / date-entity :day 18)))
 
-
-
-# ::id snt23.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt23.E2017.NEWS.001 ::date 2019-09-03T16:40 ::annotator gabrielle ::preferred True
 # ::snt 국세청 홈택스에 접속한 뒤 연말정산 간소화 서비스에서 공제받을 항목을 선택하면 공제 신고서에 내용이 자동으로 반영된다.
 # ::note
-do_timestamp_and_preferred
-** edef: connect
-(접 / 접속-01
-    :ARG0 (agent)
-    :ARG1 (thing_connected)
-    :ARG2 (connect_with)
-)
-** (공 / 공제.01-00)
-** edef: select
-(선 / 선택-01
-    :ARG0 (selector)
-    :ARG1 (thing_selected)
-    :ARG2 (selected_from)
-    :ARG3 (selected_for)
-)
-** edef: reflect
 (반 / 반영-01
-    :ARG0 (causer)
-    :ARG1 (thing_casting_a_reflection)
-    :ARG2 (surface_casting_the_reflection)
-)
+    :ARG1 (내 / 내용)
+    :ARG2 (신 / 신고서
+        :mod (공 / 공제-00))
+    :condition (선 / 선택-01
+        :ARG1 (항 / 항목
+            :ARG1-of (공2 / 공제-00))
+        :medium (서 / 서비스 :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))
+        :condition (접 / 접속-01
+            :ARG1 (서2 / 서비스 :name (이2 / 이름 :op1 "홈택스")
+                :mod (g / government-organization :name (이3 / 이름 :op1 "국세청"))))))
 
-
-
-# ::id snt24.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt24.E2017.NEWS.001 ::date 2019-09-04T00:27 ::annotator gabrielle ::preferred True
 # ::snt 연말정산 간소화 서비스에서 조회되지 않은 자료만 근로자가 별도로 수집해 공제 신고서에 입력하면 된다.
 # ::note
-do_timestamp_and_preferred
-** (조 / 조회.01-00)
-** edef: gather
-(수 / 수집-01
-    :ARG0 (agent)
-    :ARG1 (entity_gathered)
-)
-** (입 / 입력.01-00)
-** edef: become
-(되 / 되-01
-    :ARG1 (thing_in_focus)
-    :ARG2 (end_state)
-)
-** edef: consist of
-(되 / 되-02
-    :ARG1 (thing_in_focus)
-    :ARG2 (attribute)
-)
-** edef: amount to
-(되 / 되-03
-    :ARG1 (thing_in_focus)
-    :ARG2 (amount)
-)
-** edef: do-light verb
-(되 / 되-04
-    :ARG1 (thing_in_focus)
-    :ARG2 (deverbal_noun)
-)
+(가 / 가능-01
+    :ARG1 (입 / 입력-00
+        :ARG0 (근 / 근로자)
+        :ARG1 (신 / 신고서
+            :mod (공 / 공제-00))
+        :manner (수 / 수집-01
+            :ARG0 근
+            :manner (별 / 별도)
+            :ARG1 (자 / 자료
+                :ARG1-of (조 / 조회-00
+                    :polarity -
+                    :medium (서 / 서비스 :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스")))))))
 
-
-
-# ::id snt25.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt25.E2017.NEWS.001 ::date 2019-09-04T00:32 ::annotator gabrielle ::preferred True
 # ::snt 편리한 연말정산 서비스에서는 예상세액을 간편하게 계산할 수 있는 서비스도 제공한다.
 # ::note
-do_timestamp_and_preferred
-** (편 / 편리.01-00)
-** edef: calculate
-(계 / 계산-01
-    :ARG0 (calculator)
-    :ARG1 (thing_calculated)
-)
-** edef: provide
 (제 / 제공-01
-    :ARG0 (provider)
-    :ARG1 (thing_provided)
-    :ARG2 (provided_for)
-)
+    :ARG0 (서 / 서비스 :name (이 / 이름 :op1 "편리한" :op2 "연말정산"))
+    :ARG1 (e / either
+        :op2 (서2 / 서비스
+            :mod (가 / 가능-01
+                :ARG1 (계 / 계산-01
+                    :ARG1 (세 / 세액
+                        :ARG1-of (예 / 예상-01))
+                    :manner (간 / 간편하-01))))))
 
-
-
-# ::id snt26.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt26.E2017.NEWS.001 ::date 2019-09-04T00:40 ::annotator gabrielle ::preferred True
 # ::snt 맞벌이 부부 중 어느 쪽이 공제 혜택을 더 많이 받을 수 있을지 파악해 세 부담을 줄일 수 있는 맞벌이 근로자 절세 안내도 받을 수 있다.
 # ::note
-do_timestamp_and_preferred
-** edef: receive
-(받 / 받-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (source)
-)
-** edef: grasp
-(파 / 파악-01
-    :ARG0 (grasper)
-    :ARG1 (thing_grasped)
-)
-** (줄 / 줄이.01-00)
-** edef: receive
-(받 / 받-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (source)
-)
+(가 / 가능-01
+    :ARG1 (받 / 받-01
+        :ARG1 (e / either
+            :op2 (안 / 안내
+                :mod (절 / 절세
+                    :poss (근 / 근로자
+                        :mod (맞 / 맞벌이)))
+                :mod (가2 / 가능-01
+                    :ARG1 (줄 / 줄-01
+                        :ARG1 (부 / 부담-01
+                            :ARG1 (세 / 세)))
+                    :manner (파 / 파악-01
+                        :ARG1 (가3 / 가능-01
+                            :ARG1 (받2 / 받-01
+                                :ARG0 (a / amr-unknown
+                                    :superset (부2 / 부부
+                                        :mod (맞2 / 맞벌이)))
+                                :ARG1 (혜 / 혜택
+                                    :mod (공 / 공제-00)
+                                    :ARG1-of (h / have-degree-91
+                                        :ARG2 (많 / 많-01)
+                                        :ARG3 (더 / 더)))))))))))
 
-
-
-# ::id snt27.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.NEWS.001 ::date 2019-09-04T00:45 ::annotator gabrielle ::preferred True
 # ::snt 홈택스 스마트폰 애플리케이션을 이용하면 연말정산 공제 요건, 절세 방법 등 '꿀팁'도 얻을 수 있다.
 # ::note
-do_timestamp_and_preferred
-** edef: use
-(이 / 이용-01
-    :ARG0 (user)
-    :ARG1 (thing_used)
-    :ARG2 (purpose)
-)
-** edef: get
-(얻 / 얻-01
-    :ARG0 (receiver)
-    :ARG1 (thing_gotten)
-    :ARG2 (source)
-)
+(가 / 가능-01
+    :ARG1 (얻 / 얻-01
+        :ARG1 (e / either
+            :op2 (꿀 / 꿀팁
+                :example (a / and
+                    :op1 (요 / 요건
+                        :mod (공 / 공제-00
+                            :mod (정 / 정산-00
+                                :mod (연 / 연말))))
+                    :op2 (방 / 방법
+                        :topic (절 / 절세))))))
+    :condition (이 / 이용-01
+        :ARG1 (애 / 애플리케이션
+            :mod (스 / 스마트폰)
+            :mod (서 / 서비스 :name (이 / 이름 :op1 "홈택스")))))
 
-
-
-# ::id snt28.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt28.E2017.NEWS.001 ::date 2019-09-04T00:54 ::annotator gabrielle ::preferred True
 # ::snt 연말정산 서비스를 이용하다 궁금한 점은 국세 상담센터(☎126)으로 문의하면 된다.
 # ::note
-do_timestamp_and_preferred
-** edef: use
-(이 / 이용-01
-    :ARG0 (user)
-    :ARG1 (thing_used)
-    :ARG2 (purpose)
-)
-** (궁 / 궁금하.01-00)
-** edef: ask
-(문 / 문의-01
-    :ARG0 (agent)
-    :ARG1 (question)
-    :ARG2 (hearer)
-)
-** edef: become
-(되 / 되-01
-    :ARG1 (thing_in_focus)
-    :ARG2 (end_state)
-)
-** edef: consist of
-(되 / 되-02
-    :ARG1 (thing_in_focus)
-    :ARG2 (attribute)
-)
-** edef: amount to
-(되 / 되-03
-    :ARG1 (thing_in_focus)
-    :ARG2 (amount)
-)
-** edef: do-light verb
-(되 / 되-04
-    :ARG1 (thing_in_focus)
-    :ARG2 (deverbal_noun)
-)
-
-
+(가 / 가능-01
+    :ARG1 (문 / 문의-01
+        :ARG1 (궁 / 궁금하-01
+            :time (이 / 이용-01
+                :ARG1 (서 / 서비스
+                    :purpose (정 / 정산-00
+                        :mod (연 / 연말)))))
+        :ARG2 (상 / 상담센터
+            :name (이 / 이름 :op1 "국세" :op2 "상담센터")
+            :mod (p / phone-number-entity :value 126))))
 
 # ::id snt29.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt 국세청은 "16일, 18일과 부가가치세 신고 마감일인 25일에는 홈택스 이용이 집중될 것으로 예상해 대기 시간이 길어질 수 있다"며 "여유를 갖고 접속해달라"라고 당부했다.
-# ::note
-do_timestamp_and_preferred
-** edef: concentrate
-(집 / 집중-01
-    :ARG0 (agent)
-    :ARG1 (thing_concentrated)
-    :ARG2 (concentrated_on)
-)
-** edef: expect
-(예 / 예상-01
-    :ARG0 (expecter)
-    :ARG1 (thing_expected)
-)
-** (길 / 길어지.01-00)
-** edef: have
-(갖 / 갖-01
-    :ARG0 (agent)
-    :ARG1 (possession)
-)
-** edef: connect
-(접 / 접속-01
-    :ARG0 (agent)
-    :ARG1 (thing_connected)
-    :ARG2 (connect_with)
-)
-** edef: ask
 (당 / 당부-01
-    :ARG0 (asker)
-    :ARG1 (favor)
-    :ARG2 (hearer)
-)
-
-
+    :ARG0 (g / government-organization :name (이 / 이름 :op1 "국세청"))
+    :ARG1 (접 / 접속-01
+        :mode imperative
+        :polite +
+        :ARG1 (서 / 서비스 :name (이2 / 이름 :op1 "홈택스"))
+        :manner (갖 / 갖-01
+            :ARG1 (여 / 여유)))
+    :manner (말 / 말하-01
+        :ARG0 g
+        :ARG1 (가 / 가능-01
+            :ARG1 (길 / 길-01
+                :ARG1 (t / temporal-quantity
+                    :duration-of (대 / 대기-01)))
+            :cause (예 / 예상-01
+                :ARG1 (집 / 집중-01
+                    :ARG1 (이3 / 이용-01
+                        :ARG1 서)))
+            :time (a / and
+                :op1 (d / date-entity :day 16)
+                :op2 (d2 / date-entity :day 18)
+                :op3 (d3 / date-entity :day 25)
+                :time-of (마 / 마감-01
+                    :ARG1 (신 / 신고-01
+                        :ARG1 (부 / 부가가치세)))))))
 
 # ::id snt0.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt “같은 반 아이돌 연습생, 정유라만 조퇴 봐준다며 울었다.”
