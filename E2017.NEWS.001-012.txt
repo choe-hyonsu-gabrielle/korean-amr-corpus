@@ -594,286 +594,212 @@
                 :ARG2 (조 / 조퇴-00
                     :ARG0 p)))))
 
-# ::id snt1.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt1.E2017.NEWS.002 ::date 2019-09-04T19:15 ::annotator gabrielle ::preferred True
 # ::snt “돈 자랑 많이 하고 불손하고 오만했다.”
 # ::note
-do_timestamp_and_preferred
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** (불 / 불손.01-00)
-** (오 / 오만.01-00)
+(말 / 말하-01
+    :ARG1 (a / and
+        :op1 (자 / 자랑-01
+            :ARG1 (돈 / 돈)
+            :degree (많 / 많-01))
+        :op2 (불 / 불손-00)
+        :op3 (오 / 오만-00)))
 
-
-
-# ::id snt2.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.002 ::date 2019-09-04T19:18 ::annotator gabrielle ::preferred True
 # ::snt 최순실(61) 씨의 딸 정유라(21) 씨가 다녔던 서울 청담고의 교사·학생들은 대부분 최 씨 모녀를 이런 식으로 기억했다.
 # ::note
-do_timestamp_and_preferred
-** edef: go to and from
-(다 / 다니-01
-    :ARG0 (entity_moving)
-    :ARG1 (place,_path)
-)
-** edef: remember
 (기 / 기억-01
-    :ARG0 (agent)
-    :ARG1 (memory)
-)
+    :ARG0 (a / and
+        :op1 (p / person
+            :ARG0-of (h / have-org-role-91
+                :ARG1 (s / school :name (이 / 이름 :op1 "청담고")
+                    :location (c / city :name (이2 / 이름 :op1 "서울"))
+                    :ARG1-of (다 / 다니-01
+                        :ARG0 (p2 / person 
+                            :name (이3 / 이름 :op1 "정유라") 
+                            :age (t / temporal-quantity :quant 21)
+                            :ARG0-of (h2 / have-rel-role-91
+                                :ARG1 (p3 / person 
+                                    :name (이4 / 이름 :op1 "최순실") 
+                                    :age (t2 / temporal-quantity :quant 61))
+                                :ARG2 (딸 / 딸)))))
+                :ARG3 (가 / 가르치-01)))
+        :op2 (p4 / person
+            :ARG0-of (h3 / have-org-role-91
+                :ARG1 s
+                :ARG3 (공 / 공부-01)))
+        :mod (대 / 대부분))
+    :ARG1 (a2 / and
+        :op1 p2
+        :op2 p3)
+    :manner (이5 / 이렇-01))
 
-
-
-# ::id snt3.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.002 ::date 2019-09-04T19:43 ::annotator gabrielle ::preferred True
 # ::snt 특히 최 씨는 체육특기자 담당 교사에게 “잘라버리겠다” “애 아빠(정윤회)가 가만 안 둘 것”이라며 엄포도 놓았다.
 # ::note
-do_timestamp_and_preferred
-** edef: cut
-(자 / 자르-01
-    :ARG0 (agent)
-    :ARG1 (thing_cut)
-)
-** edef: put
-(두 / 두-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (location)
-)
+(협 / 협박-01
+    :ARG0 (p / person :name (이 / 이름 :op1 "최"))
+    :ARG1 (p2 / person
+        :ARG0-of (h / have-org-role-91
+            :ARG3 (가 / 가르치-01
+                :ARG2 (체 / 체육특기자))))
+    :manner (말 / 말하-01
+        :ARG0 p
+        :ARG1 (해 / 해고-01
+            :ARG1 p2)
+        :ARG1 (가1 / 가만두-01
+            :polarity -
+            :ARG0 (p3 / person :name (이2 / 이름 :op1 "정윤회")
+                :ARG0-of (h2 / have-rel-role-91
+                    :ARG1 (애 / 애)
+                    :ARG2 (아 / 아빠)))
+            :ARG1 p2)
+        :ARG2 p2)
+    :mod (특 / 특히))
 
-
-
-# ::id snt4.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.002 ::date 2019-09-04T20:06 ::annotator gabrielle ::preferred True
 # ::snt 이 같은 사실은 19일 서울시교육청이 국회 김병욱 더불어민주당 의원에게 제출한 청담고 감사자료(지난해 11월 실시)에서 고스란히 드러났다.
 # ::note
-do_timestamp_and_preferred
-** edef: equal
-(같 / 같-01
-    :ARG1 (focus_of_equation)
-    :ARG2 (other_side_of_equation)
-)
-** edef: submit
-(제 / 제출-01
-    :ARG0 (agent)
-    :ARG1 (thing_given)
-    :ARG2 (given_to)
-)
-** edef: expose
 (드 / 드러나-01
-    :ARG0 (exposer)
-    :ARG1 (thing_seen)
-    :ARG2 (seer)
-)
+    :ARG1 (사 / 사실
+        :ARG1-of (같 / 같-01
+            :ARG2 (이 / 이)))
+    :location (자 / 자료
+        :topic (감 / 감사-00
+            :ARG1 (s / school :name (이2 / 이름 :op1 "청담고"))
+            :ARG1-of (실 / 실시-01
+                :time (d / date-entity :month 11 :year (지 / 지난해))))
+        :ARG1-of (제 / 제출-01
+            :ARG0 (g / government-organization :name (이3 / 이름 :op1 "서울시교육청"))
+            :ARG2 (p / person :name (이4 / 이름 :op1 "김병욱")
+                :ARG0-of (h / have-org-role-91
+                    :ARG1 (g2 / government-organization :name (이5 / 이름 :op1 "국회"))
+                    :ARG2 (의 / 의원))
+                :ARG0-of (h2 / have-org-role-91
+                    :ARG1 (p2 / political-party :name (이6 / 이름 :op1 "더불어민주당"))
+                    :ARG2 의))
+            :time (d2 / date-entity :day 19)))
+    :manner (고 / 고스란히))
 
-
-
-# ::id snt5.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.002 ::date 2019-09-04T21:05 ::annotator gabrielle ::preferred True
 # ::snt 감사자료에 따르면 담임들은 자신들이 작성하는 학교생활기록부에 정 씨에 대해 온통 칭찬만 적었다.
 # ::note
-do_timestamp_and_preferred
-** edef: follow
-(따 / 따르-01
-    :ARG0 (agent)
-    :ARG1 (thing_followed)
-)
-** edef: according to
-(따 / 따르-02
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-** edef: make out
-(작 / 작성-01
-    :ARG0 (writer,_planner)
-    :ARG1 (document,_plan)
-)
-** edef: provide
-(대 / 대-01
-    :ARG0 (provider)
-    :ARG1 (thing_provided)
-    :ARG2 (entity_provided_for)
-)
-** edef: put on
-(대 / 대-02
-    :ARG0 (putter)
-    :ARG1 (thing_put_on)
-    :ARG2 (where_put_on)
-)
-** edef: write down
 (적 / 적-01
-    :ARG0 (agent)
-    :ARG1 (thing_written)
-    :ARG2 (where_written)
-)
-** edef: little
-(적 / 적-02
-    :ARG1 (thing_being_little)
-)
+    :ARG0 (p / person
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (담 / 담임)
+            :ARG3 (가 / 가르치-01
+                :ARG2 (p2 / person :name (이 / 이름 :op1 "정")))))
+    :topic p2
+    :mod (온 / 온통)
+    :ARG1 (칭 / 칭찬-00)
+    :ARG2 (학 / 학교생활기록부
+        :ARG1-of (작 / 작성-01
+            :ARG0 p))
+    :mod (따 / 따르-02
+        :ARG2 (자 / 자료
+            :topic (감 / 감사-00))))
 
-
-
-# ::id snt6.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt6.E2017.NEWS.002 ::date 2019-09-04T21:09 ::annotator gabrielle ::preferred True
 # ::snt 1학년 담임교사는 “천성이 밝고 활달해 친구들의 고민을 잘 들어준다. 심성이 따뜻해 교우 관계가 원만하다”라고 기록했다.
 # ::note
-do_timestamp_and_preferred
-** edef: bright
-(밝 / 밝-01
-    :ARG1 (thing_being_bright)
-)
-** edef: generous
-(활 / 활달하-01
-    :ARG1 (thing_being_generous)
-)
-** edef: hear
-(듣 / 듣-01
-    :ARG0 (agent)
-    :ARG1 (thing_heard)
-    :ARG2 (heard_from)
-)
-** edef: warm
-(따 / 따뜻하-01
-    :ARG1 (thing_being_warm)
-)
-** (원 / 원만.01-00)
-** edef: record
 (기 / 기록-01
-    :ARG0 (agent)
-    :ARG1 (thing_recorded)
-)
+    :ARG0 (p / person
+        :ARG0-of (h / have-org-role-91
+            :ARG1 (s / school)
+            :ARG2 (담 / 담임
+                :mod (학 / 학년 :ord (o / ordinal-entity :value 1)))
+            :ARG3 (가 / 가르치-01)))
+    :ARG1 (multi-sentence
+        :snt1 (들 / 들어주-00
+            :ARG1 (고 / 고민
+                :poss (p / person
+                    :ARG0-of (h2 / have-rel-role-91
+                        :ARG2 (친 / 친구))))
+            :manner (잘 / 잘)
+            :cause (천 / 천성
+                :ARG1-of (밝 / 밝-01)
+                :ARG1-of (활 / 활달하-01)))
+        :snt2 (원 / 원만하-01
+            :ARG1 (관 / 관계
+                :mod (교 / 교우))
+            :cause (따 / 따뜻하-01
+                :ARG1 (심 / 심성)))))
 
-
-
-# ::id snt7.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt7.E2017.NEWS.002 ::date 2019-09-04T21:19 ::annotator gabrielle ::preferred True
 # ::snt 2학년 학생부에도 “훈련 등으로 친구들과 교류 시간은 부족하지만 급우들 사이에서 선망의 대상”이라고 쓰여있다.
 # ::note
-do_timestamp_and_preferred
-** edef: lack
-(부 / 부족-01
-    :ARG1 (thing_being_short)
-    :ARG2 (lack_in)
-)
-** (쓰 / 쓰이.01-00)
+(쓰 / 쓰-01
+    :ARG1 (선 / 선망-00
+        :ARG0 (p / person
+            :ARG0-of (h / have-rel-role-91
+                :ARG2 (급 / 급우)))
+        :concession (부 / 부족-01
+            :ARG1 (t / temporal-quantity
+                :duration-of (교 / 교류-01
+                    :ARG1 (p2 / person
+                        :ARG0-of (h2 / have-rel-role-91
+                            :ARG2 (친 / 친구)))))
+            :cause (훈 / 훈련-01)))
+    :location (학 / 학생부
+        :mod (학2 / 학년 :ord (o / ordinal-entity :value 2))))
 
-
-
-# ::id snt8.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.002 ::date 2019-09-04T21:29 ::annotator gabrielle ::preferred True
 # ::snt 2학년 담임인 황 모 교사는 문학 시간에 출석도 하지 않은 정 씨에게 태도점수 만점을 줘 학생들의 항의를 받기도 했다.
 # ::note
-do_timestamp_and_preferred
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** edef: give
-(주 / 주-01
-    :ARG0 (agent)
-    :ARG1 (thing_given)
-    :ARG2 (given_to)
-)
-** edef: receive
-(받 / 받-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (source)
-)
+(항 / 항의-01
+    :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                :ARG3 (공 / 공부-01)))
+    :ARG1 (p2 / person :name (이 / 이름 :op1 "황")
+        :ARG0-of (h2 / have-org-role-91
+            :ARG2 (담 / 담임
+                :mod (학 / 학년 :ord (o / ordinal-entity :value 2)))
+            :ARG3 (가 / 가르치-01)))
+    :cause (주 / 주-01
+        :ARG0 p2
+        :ARG1 (s / score-on-scale-91 :ARG1 "만점"
+            :topic (태 / 태도))
+        :ARG2 (p3 / person :name (이2 / 이름 :op1 "정")
+            :ARG0-of (출 / 출석-01
+                :polarity -
+                :ARG1 (수 / 수업
+                    :topic (문 / 문학))))))
 
-
-
-# ::id snt9.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt9.E2017.NEWS.002 ::date 2019-09-04T21:51 ::annotator gabrielle ::preferred True
 # ::snt 하지만 황 교사는 오히려 학생들에게 “못난 자식 감싸는 엄마 같은 마음이다. 국가대표 되려고 저렇게 고생하지 않느냐”며 정 씨를 두둔했다.
 # ::note
-do_timestamp_and_preferred
-** (못 / 못나.01-00)
-** (감 / 감싸.01-00)
-** edef: equal
-(같 / 같-01
-    :ARG1 (focus_of_equation)
-    :ARG2 (other_side_of_equation)
-)
-** edef: become
-(되 / 되-01
-    :ARG1 (thing_in_focus)
-    :ARG2 (end_state)
-)
-** edef: consist of
-(되 / 되-02
-    :ARG1 (thing_in_focus)
-    :ARG2 (attribute)
-)
-** edef: amount to
-(되 / 되-03
-    :ARG1 (thing_in_focus)
-    :ARG2 (amount)
-)
-** edef: do-light verb
-(되 / 되-04
-    :ARG1 (thing_in_focus)
-    :ARG2 (deverbal_noun)
-)
-** edef: have a hard time
-(고 / 고생-01
-    :ARG1 (patient)
-    :ARG2 (reason)
-)
-** edef: back
 (두 / 두둔-01
-    :ARG0 (agent)
-    :ARG1 (entity_backed)
-)
+    :ARG0 (p / person :name (이 / 이름 :op1 "황")
+        :ARG0-of (h / have-org-role-91
+            :ARG3 (가 / 가르치-01)))
+    :ARG1 (p2 / person :name (이2 / 이름 :op1 "정"))
+    :manner (말 / 말하-01
+            :ARG1 (m / multi-sentence
+                :snt1 (마 / 마음
+                    :ARG2-of (같 / 같-01
+                        :ARG1 (p3 / person 
+                            :ARG0-of (h2 / have-rel-role-91 
+                                :ARG1 (자 / 자식
+                                    :ARG1-of (못 / 못나-00))
+                                :ARG2 (엄 / 엄마))
+                            :ARG0-of (감 / 감싸-00
+                                :ARG1 자))))
+                :snt2 (고 / 고생-01
+                    :manner (저 / 저렇게)
+                    :ARG1 p2
+                    :ARG2 (원 / 원하-01
+                        :ARG0 p2
+                        :ARG1 (되 / 되-01
+                            :ARG1 p2
+                            :ARG2 (국 / 국가대표)))))
+            :ARG2 (p4 / person
+                :ARG0-of (h3 / have-org-role-91
+                    :ARG3 (공 / 공부-01))))
+    :mod (하 / 하지만)
+    :mod (오 / 오히려))
 
-
+===
 
 # ::id snt10.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 반면 일반 교과 교사들은 정 씨를 ‘불성실한 학생’으로 기억했다.
