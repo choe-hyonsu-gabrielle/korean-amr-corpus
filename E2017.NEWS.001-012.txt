@@ -549,7 +549,7 @@
             :name (이 / 이름 :op1 "국세" :op2 "상담센터")
             :mod (p / phone-number-entity :value 126))))
 
-# ::id snt29.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt29.E2017.NEWS.001 ::date 2019-09-04T01:14 ::annotator gabrielle ::preferred True
 # ::snt 국세청은 "16일, 18일과 부가가치세 신고 마감일인 25일에는 홈택스 이용이 집중될 것으로 예상해 대기 시간이 길어질 수 있다"며 "여유를 갖고 접속해달라"라고 당부했다.
 (당 / 당부-01
     :ARG0 (g / government-organization :name (이 / 이름 :op1 "국세청"))
@@ -577,19 +577,22 @@
                     :ARG1 (신 / 신고-01
                         :ARG1 (부 / 부가가치세)))))))
 
-# ::id snt0.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt0.E2017.NEWS.002 ::date 2019-09-04T10:07 ::annotator gabrielle ::preferred True
 # ::snt “같은 반 아이돌 연습생, 정유라만 조퇴 봐준다며 울었다.”
-# ::note
-do_timestamp_and_preferred
-** edef: equal
-(같 / 같-01
-    :ARG1 (focus_of_equation)
-    :ARG2 (other_side_of_equation)
-)
-** (봐 / 봐준.01-00)
-** (울 / 울.01-00)
-
-
+# ::note 보조사 '만'을 주석
+(말 / 말하-01
+    :ARG1 (울 / 울.01
+        :ARG0 (연 / 연습생
+            :mod (아 / 아이돌)
+            :ARG1-of (소 / 소속-01
+                :ARG2 (반 / 반
+                    :ARG1-of (같 / 같-01))))
+        :manner (말2 / 말하-01
+            :ARG1 (봐 / 봐주-00
+                :ARG1 (p / person :name (이 / 이름 :op1 "정유라")
+                    :mod (만 / 만))
+                :ARG2 (조 / 조퇴-00
+                    :ARG0 p)))))
 
 # ::id snt1.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt “돈 자랑 많이 하고 불손하고 오만했다.”
