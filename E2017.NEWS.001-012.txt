@@ -342,7 +342,7 @@
 
 # ::id snt16.E2017.NEWS.001 ::date 2019-09-03T12:30 ::annotator gabrielle ::preferred True
 # ::snt 근로자가 따로 난임 시술비 부분만 분류해 제출해야 700만 원 한도가 적용되지 않고 모두 공제받을 수 있다.
-# ::note
+# ::note 보조사
 (가 / 가능-01
     :ARG1 (공 / 공제-00
         :mod (모 / 모두))
@@ -357,23 +357,25 @@
                     :mod (난 / 난임)))
             :manner (분 / 분류-01
                 :ARG0 근
-                :ARG1 h)
+                :ARG1 h
+                    :mod (만 / 만))
             :mod (따 / 따로))))
 
 # ::id snt17.E2017.NEWS.001 ::date 2019-09-03T12:40 ::annotator gabrielle ::preferred True
 # ::snt 신생아 등 환자의 주민등록번호를 의료기관에 알려주지 않을 때에도 의료비 자료가 조회되지 않는다.
-# ::note
+# ::note 보조사
 (조 / 조회-00
     :polarity -
     :ARG1 (자 / 자료
         :topic (의 / 의료비))
-    :condition (알 / 알려주-01
-        :polarity -
-        :ARG1 (주 / 주민등록번호
-            :poss (환 / 환자
-                :example (신 / 신생아)))
-        :ARG2 (기 / 기관
-            :mod (의2 / 의료))))
+    :condition (e / either
+        :op1 (알 / 알려주-01
+            :polarity -
+            :ARG1 (주 / 주민등록번호
+                :poss (환 / 환자
+                    :example (신 / 신생아)))
+            :ARG2 (기 / 기관
+                :mod (의2 / 의료)))))
 
 # ::id snt18.E2017.NEWS.001 ::date 2019-09-03T12:43 ::annotator gabrielle ::preferred True
 # ::snt 이 경우 근로자가 해당 병원에서 직접 영수증을 발급받아 공제해야 한다.
@@ -391,11 +393,12 @@
 
 # ::id snt19.E2017.NEWS.001 ::date 2019-09-03T12:45 ::annotator gabrielle ::preferred True
 # ::snt 지난해 중 입사하거나 퇴사한 경우에는 근무한 기간의 자료만 선택해 공제받을 수 있다.
-# ::note
+# ::note 보조사
 (가 / 가능-01
     :ARG1 (공 / 공제-00
         :manner (선 / 선택-01
             :ARG1 (자 / 자료
+                :mod (만 / 만)
                 :topic (t / temporal-quantity
                     :duration-of (근 / 근무-01)))))
     :condition (o / or
@@ -463,7 +466,7 @@
 
 # ::id snt24.E2017.NEWS.001 ::date 2019-09-04T00:27 ::annotator gabrielle ::preferred True
 # ::snt 연말정산 간소화 서비스에서 조회되지 않은 자료만 근로자가 별도로 수집해 공제 신고서에 입력하면 된다.
-# ::note
+# ::note 보조사
 (가 / 가능-01
     :ARG1 (입 / 입력-00
         :ARG0 (근 / 근로자)
@@ -473,13 +476,14 @@
             :ARG0 근
             :manner (별 / 별도)
             :ARG1 (자 / 자료
+                :mod (만 / 만)
                 :ARG1-of (조 / 조회-00
                     :polarity -
                     :medium (서 / 서비스 :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스")))))))
 
 # ::id snt25.E2017.NEWS.001 ::date 2019-09-04T00:32 ::annotator gabrielle ::preferred True
 # ::snt 편리한 연말정산 서비스에서는 예상세액을 간편하게 계산할 수 있는 서비스도 제공한다.
-# ::note
+# ::note 보조사
 (제 / 제공-01
     :ARG0 (서 / 서비스 :name (이 / 이름 :op1 "편리한" :op2 "연말정산"))
     :ARG1 (e / either
@@ -492,7 +496,7 @@
 
 # ::id snt26.E2017.NEWS.001 ::date 2019-09-04T00:40 ::annotator gabrielle ::preferred True
 # ::snt 맞벌이 부부 중 어느 쪽이 공제 혜택을 더 많이 받을 수 있을지 파악해 세 부담을 줄일 수 있는 맞벌이 근로자 절세 안내도 받을 수 있다.
-# ::note
+# ::note 보조사
 (가 / 가능-01
     :ARG1 (받 / 받-01
         :ARG1 (e / either
@@ -518,7 +522,7 @@
 
 # ::id snt27.E2017.NEWS.001 ::date 2019-09-04T00:45 ::annotator gabrielle ::preferred True
 # ::snt 홈택스 스마트폰 애플리케이션을 이용하면 연말정산 공제 요건, 절세 방법 등 '꿀팁'도 얻을 수 있다.
-# ::note
+# ::note 보조사
 (가 / 가능-01
     :ARG1 (얻 / 얻-01
         :ARG1 (e / either
@@ -636,7 +640,7 @@
 
 # ::id snt3.E2017.NEWS.002 ::date 2019-09-04T19:43 ::annotator gabrielle ::preferred True
 # ::snt 특히 최 씨는 체육특기자 담당 교사에게 “잘라버리겠다” “애 아빠(정윤회)가 가만 안 둘 것”이라며 엄포도 놓았다.
-# ::note
+# ::note 보조사
 (협 / 협박-01
     :ARG0 (p / person :name (이 / 이름 :op1 "최"))
     :ARG1 (p2 / person
@@ -683,7 +687,7 @@
 
 # ::id snt5.E2017.NEWS.002 ::date 2019-09-04T21:05 ::annotator gabrielle ::preferred True
 # ::snt 감사자료에 따르면 담임들은 자신들이 작성하는 학교생활기록부에 정 씨에 대해 온통 칭찬만 적었다.
-# ::note
+# ::note 보조사
 (적 / 적-01
     :ARG0 (p / person
         :ARG0-of (h / have-org-role-91
@@ -692,7 +696,8 @@
                 :ARG2 (p2 / person :name (이 / 이름 :op1 "정")))))
     :topic p2
     :mod (온 / 온통)
-    :ARG1 (칭 / 칭찬-00)
+    :ARG1 (칭 / 칭찬-00
+        :mod (만 / 만))
     :ARG2 (학 / 학교생활기록부
         :ARG1-of (작 / 작성-01
             :ARG0 p))
@@ -728,7 +733,7 @@
 
 # ::id snt7.E2017.NEWS.002 ::date 2019-09-04T21:19 ::annotator gabrielle ::preferred True
 # ::snt 2학년 학생부에도 “훈련 등으로 친구들과 교류 시간은 부족하지만 급우들 사이에서 선망의 대상”이라고 쓰여있다.
-# ::note
+# ::note 보조사
 (쓰 / 쓰-01
     :ARG1 (선 / 선망-00
         :ARG0 (p / person
@@ -799,635 +804,237 @@
     :mod (하 / 하지만)
     :mod (오 / 오히려))
 
-===
-
-# ::id snt10.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.002 ::date 2019-09-06T12:52 ::annotator gabrielle ::preferred True
 # ::snt 반면 일반 교과 교사들은 정 씨를 ‘불성실한 학생’으로 기억했다.
-# ::note
-do_timestamp_and_preferred
-** edef: remember
-(기 / 기억-01
-    :ARG0 (agent)
-    :ARG1 (memory)
-)
+# ::note '기억하다'를 '여기다'로 처리
+(여 / 여기-01
+    :ARG0 (p / person
+        :ARG0-of (h / have-org-role-91
+            :ARG3 (가 / 가르치-01
+                :ARG1 (교 / 교과
+                    :mod (일 / 일반)))))
+    :ARG1 (p2 / person :name (이 / 이름 :op1 "정"))
+    :ARG1 (p3 / person
+        :ARG0-of (h2 / have-org-role-91
+            :ARG3 (공 / 공부-01))
+        :ARG1-of (성 / 성실-01
+            :polarity -))
+    :mod (반 / 반면))
 
-
-
-# ::id snt11.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt11.E2017.NEWS.002 ::date 2019-09-06T01:04 ::annotator gabrielle ::preferred True
 # ::snt 2학년 체육 교사는 ＂교실서 잔다 하기에 다른 학생을 보내 ‘운동장에 나오라’고 하면 ‘깨우지 말라’며 따르지 않았다”고 말했다.
-# ::note
-do_timestamp_and_preferred
-** (자 / 자.01-00)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** edef: send
-(보 / 보내-01
-    :ARG0 (sender)
-    :ARG1 (sent)
-    :ARG2 (sent_to)
-)
-** edef: spend
-(보 / 보내-02
-    :ARG0 (agent)
-    :ARG1 (time)
-)
-** edef: come out
-(나 / 나오-01
-    :ARG0 (thing_coming_out)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: do-light verb
-(나 / 나오-02
-    :ARG0 (agent)
-    :ARG1 (deverbal_noun)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: spill out-CV
-(나 / 나오-03
-    :ARG1 (thing_coming_out)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** (깨 / 깨우.01-00)
-** edef: follow
-(따 / 따르-01
-    :ARG0 (agent)
-    :ARG1 (thing_followed)
-)
-** edef: according to
-(따 / 따르-02
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-** edef: stop
-(말 / 말-01
-    :ARG0 (agent)
-    :ARG1 (action_or_thing_stopped)
-)
+# ::note 2학년 체육 교사의 해석 (((1학년) 체육) 교사) 또는 '1학년을 가르치는 체육 교사'
+(말 / 말하-01
+    :ARG0 (p / person
+        :ARG0-of (h / have-org-role-91
+            :ARG3 (가 / 가르치-01
+                :ARG1 (체 / 체육
+                    :mod (학 / 학년 :ord (o / ordinal-entity :value 2))))))
+    :ARG1 (따 / 따르-01
+        :polarity -
+        :condition (말3 / 말하-01
+            :ARG0 p
+            :ARG1 (나 / 나오-01
+                :mode imperative
+                :ARG3 (운 / 운동장)
+                :manner (보 / 보내-01
+                    :ARG0 p
+                    :ARG1 (p2 / person
+                        :ARG0-of (h2 / have-org-role-91
+                            :ARG3 (공 / 공부-01))
+                        :ARG1-of (다 / 다르-01)))))
+        :ARG1 말3
+        :manner (말2 / 말하-01
+            :ARG1 (깨 / 깨-01
+                :ARG0 p2
+                :polarity -
+                :mode imperative))
+        :cause (하 / 하-02
+            :ARG0 p2
+            :ARG1 (자 / 자-00
+                :location (교 / 교실)))))
 
-
-
-# ::id snt12.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.002 ::date 2019-09-06T01:16 ::annotator gabrielle ::preferred True
 # ::snt 1학년 과학 담당 오 모 교사는 “한 학기 1~2번 정도 본 것 같다”고 했다.
-# ::note
-do_timestamp_and_preferred
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
+# ::note 1학년 과학 담당의 해석
 (하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** edef: see
-(보 / 보-01
-    :ARGA (causer)
-    :ARG0 (seer)
-    :ARG1 (thing_seen)
-)
-** edef: regard
-(보 / 보-02
-    :ARG0 (seer)
-    :ARG1 (thing_regarded)
-)
-** edef: according to
-(보 / 보-03
-    :ARG1 (theme)
-)
-** edef: get to
-(보 / 보-04
-    :ARG0 (agent)
-    :ARG1 (end_state)
-)
-** edef: You will pay for this-CV
-(보 / 보-05
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: infer-CV
-(보 / 보-06
-    :ARG0 (agent)
-    :ARG1 (belief)
-    :ARG2 (source_of_belief)
-)
-** edef: look back-CV
-(보 / 보-07
-    :ARG0 (agent)
-    :ARG1 (thing_looked_back)
-)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
+    :ARG0 (p / person :name (이 / 이름 :op1 "오")
+        :ARG0-of (h / have-org-role-91
+            :ARG3 (가 / 가르치-01
+                :ARG1 (과 / 과학
+                    :mod (학 / 학년 :ord (o / ordinal-entity :value 1))))))
+    :ARG1 (추 / 추측-01
+        :ARG0 P
+        :ARG1 (보 / 보-01
+            :frequency (o2 / or
+                :op1 (r / rate-entity-91
+                    :ARG1 1
+                    :ARG2 (t / temporal-quantity :quant 1 :unit (학2 / 학기)))
+                :op2 (r2 / rate-entity-91
+                    :ARG1 2
+                    :ARG2 (t2 / temporal-quantity :quant 1 :unit (학3 / 학기)))))))
 
-
-
-# ::id snt13.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.002 ::date 2019-09-06T01:26 ::annotator gabrielle ::preferred True
 # ::snt 영어(2학년)를 담당했던 최 모 교사는 “수학여행 때 1박도 하지 않고 숙소 앞에서 엄마 차를 타고 돌아갔다”고 기억했다.
 # ::note
-do_timestamp_and_preferred
-** edef: be in charge of
-(담 / 담당-01
-    :ARG0 (agent)
-    :ARG1 (thing_charged)
-)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** edef: ride
-(타 / 타-01
-    :ARGA (causer)
-    :ARG0 (agent)
-    :ARG1 (vehicle)
-)
-** edef: take
-(타 / 타-02
-    :ARG1 (taker)
-    :ARG2 (thing_taken)
-)
-** edef: burn
-(타 / 타-03
-    :ARG1 (thing_burning)
-    :ARG2 (fire)
-)
-** edef: go back
-(돌 / 돌아가-01
-    :ARG0 (agent)
-    :ARG1 (path)
-    :ARG2 (source)
-    :ARG3 (goal)
-)
-** edef: remember
 (기 / 기억-01
-    :ARG0 (agent)
-    :ARG1 (memory)
-)
+    :ARG0 (p / person :name (이 / 이름 :op1 "최")
+        :ARG0-of (h / have-org-role-91
+            :ARG3 (가 / 가르치-01
+                :ARG1 (영 / 영어
+                    :mod (학 / 학년 :ord (o / ordinal-entity :value 2))))))
+    :ARG1 (a / and
+        :op1 (투 / 투숙-00
+            :polarity -
+            :duration (1 / 1박))
+        :op2 (돌 / 돌아가-01
+            :manner (차 / 차
+                :poss (p2 / person
+                    :ARG0-of (h2 / have-rel-role-91
+                        :ARG2 (엄 / 엄마))))
+            :ARG2 (앞 / 앞
+                :op1 (숙 / 숙소)))
+        :time (수 / 수학여행)))
 
-
-
-# ::id snt14.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt14.E2017.NEWS.002 ::date 2019-09-06T01:36 ::annotator gabrielle ::preferred True
 # ::snt 정 씨의 한 동창생은 “자기는 대학이 이미 정해져 있어 공부할 필요도 없다, 잠자러 학교에 나온다고 말하곤 해 짜증 나고 기분 나빴다”고 말했다.
 # ::note
-do_timestamp_and_preferred
-** (정 / 정.01-00)
-** edef: study
-(공 / 공부-01
-    :ARG0 (agent)
-    :ARG1 (subject)
-)
-** edef: not exist
-(없 / 없-01
-    :ARG0 (causer)
-    :ARG1 (thing_not_existing)
-    :ARG2 (location)
-)
-** edef: come out
-(나 / 나오-01
-    :ARG0 (thing_coming_out)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: do-light verb
-(나 / 나오-02
-    :ARG0 (agent)
-    :ARG1 (deverbal_noun)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: spill out-CV
-(나 / 나오-03
-    :ARG1 (thing_coming_out)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: stop
-(말 / 말-01
-    :ARG0 (agent)
-    :ARG1 (action_or_thing_stopped)
-)
-** edef: happen
-(나 / 나-01
-    :ARG1 (thing_happening)
-    :ARG2 (location)
-)
-** (나 / 나빴.01-00)
-** edef: stop
-(말 / 말-01
-    :ARG0 (agent)
-    :ARG1 (action_or_thing_stopped)
-)
+(말 / 말하-01
+    :ARG0 (p / person
+        :quant 1
+        :ARG0-of (h / have-rel-role-91
+            :ARG1 (p2 / person :name (이 / 이름 :op1 "정"))
+            :ARG2 (동 / 동창생)))
+    :ARG1 (a / and
+        :op1 (나 / 나-01
+            :ARG1 (짜 / 짜증))
+        :op2 (나2 / 나쁘-01
+            :ARG1 (기 / 기분))
+        :cause (말2 / 말하-01
+            :ARG0 p2
+            :ARG1 (a2 / and
+                :op1 (필 / 필요-01
+                    :polarity -
+                    :ARG1 (공 / 공부-01)
+                    :ARG2 p2
+                    :cause (정 / 정하-01
+                        :ARG1 (대 / 대학)
+                        :mod (이2 / 이미))
+                    :domain p2)
+                :op2 (나3 / 나오-01
+                    :ARG0 p2
+                    :ARG3 (학 / 학교)
+                    :purpose (잠 / 잠자-00))))))
 
-
-
-# ::id snt15.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt15.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle ::preferred True
 # ::snt 또 다른 동창생도 “아침에 왔다가 점심도 안 먹고 집에 갔다. 옆 친구와도 어울리지 않았다”고 전했다.
-# ::note
-do_timestamp_and_preferred
-** edef: come
-(오 / 오-01
-    :ARG0 (entity_coming)
-    :ARG1 (path)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: come
-(오 / 오-02
-    :ARG1 (entity_coming)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: bring about-CV
-(오 / 오-03
-    :ARG0 (causer)
-    :ARG1 (thing_brought_about)
-)
-** edef: send back-CV
-(오 / 오-04
-    :ARG0 (sender)
-    :ARG1 (thing_sent)
-    :ARG2 (sent_to)
-)
-** edef: remit-CV
-(오 / 오-05
-    :ARG0 (sender)
-    :ARG1 (money)
-    :ARG2 (sent_to)
-)
-** edef: hear-CV
-(오 / 오-06
-    :ARG0 (agent)
-    :ARG1 (thing_heard)
-    :ARG2 (heard_from)
-)
-** edef: eat, have
-(먹 / 먹-01
-    :ARGA (causer)
-    :ARG0 (agent)
-    :ARG1 (thing_eaten)
-)
-** edef: go
-(가 / 가-01
-    :ARG0 (entity_going)
-    :ARG1 (path)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: amount to
-(가 / 가-02
-    :ARG1 (theme)
-    :ARG2 (quantity)
-)
-** edef: make-light verb
-(가 / 가-03
-    :ARG1 (deverbal_noun)
-)
-** edef: take-CV
-(가 / 가-04
-    :ARG0 (agent)
-    :ARG1 (thing_taken)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: draw-CV
-(가 / 가-05
-    :ARG0 (agent)
-    :ARG1 (thing_drawn)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: transport-CV
-(가 / 가-06
-    :ARG0 (agent,_causer)
-    :ARG1 (thing_in_motion)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: loot-CV
-(가 / 가-07
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (source)
-)
-** (어 / 어울리.01-00)
-** edef: report
+# ::note 점심도 안 먹고 가다 처리
 (전 / 전하-01
-    :ARG0 (agent)
-    :ARG1 (thing_reported)
-    :ARG2 (report_to)
-)
+    :ARG0 (p / person
+            :ARG0-of (h / have-rel-role-91
+                :ARG2 (동 / 동창생))
+            :ARG1-of (다 / 다르-01
+                :mod (또 / 또))
+        :mod (또 / 또한))
+    :ARG1 (m / multi-sentence
+        :snt1 (a / and
+            :op1 (오 / 오-01
+                :time (아 / 아침))
+            :op2 (가 / 가-01
+                :ARG3 (집 / 집)
+                :manner (먹 / 먹-01
+                    :polarity -
+                    :ARG1 (점 / 점심))))
+        :snt2 (어 / 어울리-00
+            :polarity -
+            :ARG1 (e / either
+                :op1 (p2 / person
+                    :ARG0-of (h2 / have-rel-role-91 
+                        :ARG2 (친 / 친구
+                            :location (옆 / 옆))))))))
 
-
-
-# ::id snt16.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt16.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle ::preferred True
 # ::snt 청담고는 다른 학생들의 출석 인정엔 깐깐했지만 유독 정 씨에겐 관대했다.
 # ::note
-do_timestamp_and_preferred
-** (깐 / 깐깐하.01-00)
-** (관 / 관대.01-00)
+(관 / 관대하-01
+    :ARG1 (s / school :name (이 / 이름 :op1 "청담고"))
+    :ARG2 (p / person :name (이2 / 이름 :op1 "정"))
+    :mod (유 / 유독)
+    :concession (깐 / 깐깐하-00
+        :ARG1 s
+        :ARG2 (인 / 인정-01
+            :ARG1 (출 / 출석-01
+                :ARG0 (p2 / person
+                    :ARG0-of (h / have-org-role-91
+                        :ARG3 (공 / 공부-01))
+                    :ARG1-of (다 / 다르-01))))))
 
-
-
-# ::id snt17.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt17.E2017.NEWS.002 ::date 2019-09-06T02:06 ::annotator gabrielle ::preferred True
 # ::snt 1학년 때 사회를 가르친 김 모 교사는 “예체능계 학생이 많아 출결이 깐깐한데 (정 씨는) 입학 때부터 출석 인정이 당연시돼 의아했다”고 말했다.
-# ::note
-do_timestamp_and_preferred
-** edef: teach
-(가 / 가르치-01
-    :ARG0 (teacher)
-    :ARG1 (subject)
-    :ARG2 (student(s))
-)
-** edef: many, much
-(많 / 많-01
-    :ARG1 (thing_being_abundant)
-    :ARG2 (location)
-)
-** (깐 / 깐깐하.01-00)
-** (당 / 당연.01-00)
-** (의 / 의아.01-00)
-** edef: stop
-(말 / 말-01
-    :ARG0 (agent)
-    :ARG1 (action_or_thing_stopped)
-)
+# ::note 깐깐하다 주격 조사
+(말 / 말하-01
+    :ARG0 (p / person :name (이 / 이름 :op1 "김")
+        :ARG0-of (h / have-org-role-91
+            :ARG3 (가 / 가르치-01
+                :ARG1 (사 / 사회)
+                :time (학 / 학년 :ord (o / ordinal-entity :value 1)))))
+    :ARG1 (의 / 의아하-00
+        :cause (당 / 당연-01
+            :ARG1 (인 / 인정-01
+                :ARG1 (출 / 출석-01)
+            :time (이2 / 이후
+                :op1 (입 / 입학-01))
+            :domain (p2 / person :name (이3 / 이름 :op1 "정")))
+        :concession (깐 / 깐깐하-00
+            :ARG2 (출2 / 출결)
+            :cause (많 / 많-01
+                :ARG1 (p3 / person
+                    :ARG0-of (h2 / have-org-role-91
+                        :ARG3 (공 / 공부-01))
+                    :mod (예 / 예체능계)))))))
 
-
-
-# ::id snt18.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt18.E2017.NEWS.002 ::date 2019-09-06T02:16 ::annotator gabrielle ::preferred True
 # ::snt 2학년 경제를 담당했던 송 모 교사도 “같은 반에 아이돌 연습생이 있었는데 정유라만 조퇴를 봐준다고 울면서 하소연을 하곤 했다”고 증언했다.
-# ::note
-do_timestamp_and_preferred
-** edef: be in charge of
-(담 / 담당-01
-    :ARG0 (agent)
-    :ARG1 (thing_charged)
-)
-** edef: equal
-(같 / 같-01
-    :ARG1 (focus_of_equation)
-    :ARG2 (other_side_of_equation)
-)
-** edef: exist
-(있 / 있-01
-    :ARG1 (thing_existing)
-    :ARG2 (location)
-)
-** edef: regarding
-(있 / 있-02
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-** (봐 / 봐주.01-00)
-** (울 / 울.01-00)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** edef: testify
+# ::note 보조사
 (증 / 증언-01
-    :ARG0 (agent)
-    :ARG1 (thing_testified)
-)
+    :ARG0 (p / person :name (이 / 이름 :op1 "송")
+        :ARG0-of (h / have-org-role-91
+            :ARG3 (가 / 가르치-01
+                :ARG1 (경 / 경제
+                    :mod (학 / 학년 :ord (o / ordinal-entity :value 2)))))
+        :mod (또 / 또한))
+    :ARG1 (하 / 하소연-01
+        :ARG0 (p2 / person
+            :ARG0-of (h2 / have-org-role-91
+                :ARG3 (연 / 연습-01
+                    :ARG1 (아 / 아이돌)))
+            :location (반 / 반
+                :ARG1-of (같 / 같-01)))
+        :cause (봐 / 봐주-00
+            :ARG1 (조 / 조퇴-00
+                :ARG0 (p3 / person :name (이2 / 이름 :op1 "정유라"))))
+        :manner (울 / 울-00
+            :ARG0 p2)))
 
-
-
-# ::id snt19.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt19.E2017.NEWS.002 ::date 2019-09-06T02:26 ::annotator gabrielle ::preferred True
 # ::snt 당시 담임인 황 교사는 이 연습생에겐 “학교에 빠지면 안 된다”며 단호했다고 한다.
 # ::note
-do_timestamp_and_preferred
-** edef: get into
-(빠 / 빠지-01
-    :ARG0 (causer)
-    :ARG1 (thing_getting_into)
-    :ARG2 (location)
-)
-** edef: exclude
-(빠 / 빠지-02
-    :ARG0 (excluder)
-    :ARG1 (thing_excluded)
-    :ARG2 (excluded_from)
-)
-** edef: become
-(되 / 되-01
-    :ARG1 (thing_in_focus)
-    :ARG2 (end_state)
-)
-** edef: consist of
-(되 / 되-02
-    :ARG1 (thing_in_focus)
-    :ARG2 (attribute)
-)
-** edef: amount to
-(되 / 되-03
-    :ARG1 (thing_in_focus)
-    :ARG2 (amount)
-)
-** edef: do-light verb
-(되 / 되-04
-    :ARG1 (thing_in_focus)
-    :ARG2 (deverbal_noun)
-)
-** (단 / 단호.01-00)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
 (하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-
-
+    :ARG1 (단 / 단호하-01
+        :ARG1 (p / person :name (이 / 이름 :op1 "황")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (담 / 담임
+                    :time (당 / 당시))
+                :ARG3 (가 / 가르치-01)))
+        :manner (말 / 말하-01
+            :ARG1 (o / obligate-01
+                :ARG2 (빠 / 빠지-02
+                    :polarity -
+                    :ARG2 (학 / 학교)))
+            :ARG2 (p2 / person
+                :ARG0-of (h2 / have-org-role-91
+                    :ARG3 (연 / 연습-01))
+                :mod (이2 / 이)))))
 
 # ::id snt20.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 결국 해당 학생은 같은 해 다른 학교로 전학을 갔다.
