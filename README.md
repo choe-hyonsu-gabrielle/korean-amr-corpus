@@ -1,2 +1,2 @@
 # korean-amr-corpus
-dataset of korean-amr-corpus is under construction looking forward to be released 2020Q2.
+dataset of korean-amr-corpus is under construction and we're looking forward to release it 2020Q2.
