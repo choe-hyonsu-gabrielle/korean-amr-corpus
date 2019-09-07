@@ -61,17 +61,22 @@
                 :ARG1 (자 / 자료
                     :mod (보2 / 보험료
                         :mod 4))
-                :medium (서 / 서비스 :name (이 / 이름 :op1 "홈택스")))
+                :medium (서 / 서비스
+                    :wiki "홈택스"
+                    :name (이 / 이름 :op1 "홈택스")))
             :time (올 / 올해))))
 
 # ::id snt3.E2017.NEWS.001 ::date 2019-09-02T01:45 ::annotator gabrielle ::preferred True
 # ::snt 국세청은 홈택스(www.hometax.go.kr)에서 소득·세액공제 자료를 조회할 수 있는 '연말정산 간소화 서비스'를 15일 오전 9시부터 개통한다고 12일 밝혔다.
 # ::note
 (밝 / 밝히-01
-    :ARG0 (g / government-organization :name (이 / 이름 :op1 "국세청"))
+    :ARG0 (g / government-organization
+        :wiki "대한민국_국세청"
+        :name (이 / 이름 :op1 "국세청"))
     :ARG1 (개 / 개통-01
         :ARG0 g
         :ARG2 (서 / 서비스
+            :wiki -
             :name (이2 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스")
             :mod (가 / 가능-01
                 :ARG1 (조 / 조회-00
@@ -80,6 +85,7 @@
                         :topic (공 / 공제-00
                             :ARG1 (세 / 세액)))
                     :medium (서2 / 서비스
+                        :wiki "홈택스"
                         :name (이3 / 이름 :op1 "홈택스")
                         :ARG1-of (h / hyperlink-91
                             :ARG3 (u / url-entity :value "www.hometax.go.kr"))))))
@@ -114,20 +120,20 @@
 # ::id snt5.E2017.NEWS.001 ::date 2019-09-02T02:03 ::annotator gabrielle ::preferred True
 # ::snt 반면 120%를 선택하면 월급에서 세금을 미리 많이 떼 연말정산 때 많이 돌려받을 수 있다.
 # ::note
-(가 / 가능-01
-    :ARG1 (돌 / 돌려받-01
-        :ARG1 (세 / 세금)
-        :degree (많 / 많-01)
-        :time (정 / 정산-00
-            :mod (연 / 연말))
-        :cause (떼 / 떼-01
-            :ARG1 세
-            :ARG2 (월 / 월급)
-            :degree (많2 / 많-01)
-            :manner (미 / 미리))
-        :condition (선 / 선택-01
-            :ARG1 (p / percentage-entity :value 120)))
-    :mod (반 / 반면))
+(c / contrast-01
+    :ARG2 (가 / 가능-01
+        :ARG1 (돌 / 돌려받-01
+            :ARG1 (세 / 세금)
+            :degree (많 / 많-01)
+            :time (정 / 정산-00
+                :mod (연 / 연말))
+            :cause (떼 / 떼-01
+                :ARG1 세
+                :ARG2 (월 / 월급)
+                :degree (많2 / 많-01)
+                :manner (미 / 미리))
+            :condition (선 / 선택-01
+                :ARG1 (p / percentage-entity :value 120)))))
 
 # ::id snt6.E2017.NEWS.001 ::date 2019-09-02T02:09 ::annotator gabrielle ::preferred True
 # ::snt 근로자들은 공인인증서로 홈택스에 접속해 연말정산 간소화 서비스를 통해 보장성 보험료, 의료비, 교육비, 주택자금, 기부금 등 소득·세액공제 증명 자료 14개 항목을 확인할 수 있다.
@@ -149,10 +155,14 @@
                 :op4 (자 / 자금
                     :purpose (주 / 주택))
                 :op5 (기 / 기부금)))
-        :medium (서 / 서비스 :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스")))
+        :medium (서 / 서비스
+            :wiki -
+            :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스")))
     :condition (접 / 접속-01
         :ARG0 근
-        :ARG1 (서2 / 서비스 :name (이2 / 이름 :op1 "홈택스"))
+        :ARG1 (서2 / 서비스
+            :wiki "홈택스"
+            :name (이2 / 이름 :op1 "홈택스"))
         :instrument (공 / 공인인증서)))
 
 # ::id snt7.E2017.NEWS.001 ::date 2019-09-02T02:22 ::annotator gabrielle ::preferred True
@@ -183,33 +193,33 @@
 # ::id snt8.E2017.NEWS.001 ::date 2019-09-02T02:51 ::annotator gabrielle ::preferred False
 # ::snt 다만 보청기나 휠체어 같은 장애인 보장구 구입비, 시력 보정용 안경·콘택트렌즈 구입비, 교복·체육복 구입비, 취학 전 아동 학원비, 일부 기부금은 조회되지 않을 수 있다.
 # ::note
-(가 / 가능-01
-    :mod (다 / 다만)
-    :ARG1 (조 / 조회-00
-        :polarity -
-        :ARG1 (a / and
-            :op1 (구 / 구입비
-                :purpose (보 / 보장구
-                    :poss (장 / 장애인)
-                    :example (a / and
-                        :op1 (보2 / 보청기)
-                        :op2 (휠 / 휠체어))))
-            :op2 (구2 / 구입비
-                :purpose (a / and
-                    :op1 (콘 / 콘택트렌즈)
-                    :op2 (안 / 안경)
-                    :purpose (보 / 보정-00
-                        :ARG1 (시 / 시력))))
-            :op3 (구3 / 구입비
-                :purpose (a / and
-                    :op1 (교 / 교복)
-                    :op2 (체 / 체육복)))
-            :op4 (학 / 학원비
-                :purpose (아 / 아동
-                    :mod (전 / 전
-                        :op1 (취 / 취학))))
-            :op5 (기 / 기부금
-                :mod (일 / 일부)))))
+(c / contrast-01
+    :ARG2 (가 / 가능-01
+        :ARG1 (조 / 조회-00
+            :polarity -
+            :ARG1 (a / and
+                :op1 (구 / 구입비
+                    :purpose (보 / 보장구
+                        :poss (장 / 장애인)
+                        :example (a / and
+                            :op1 (보2 / 보청기)
+                            :op2 (휠 / 휠체어))))
+                :op2 (구2 / 구입비
+                    :purpose (a / and
+                        :op1 (콘 / 콘택트렌즈)
+                        :op2 (안 / 안경)
+                        :purpose (보 / 보정-00
+                            :ARG1 (시 / 시력))))
+                :op3 (구3 / 구입비
+                    :purpose (a / and
+                        :op1 (교 / 교복)
+                        :op2 (체 / 체육복)))
+                :op4 (학 / 학원비
+                    :purpose (아 / 아동
+                        :mod (전 / 전
+                            :op1 (취 / 취학))))
+                :op5 (기 / 기부금
+                    :mod (일 / 일부))))))
 
 # ::id snt9.E2017.NEWS.001 ::date 2019-09-02T02:51 ::annotator gabrielle ::preferred True
 # ::snt 이 경우 근로자가 구입 장소나 기부단체에 직접 영수증을 따로 발급받아야 공제 혜택을 받을 수 있다.
@@ -244,19 +254,26 @@
         :op2 (조2 / 조회-00
             :ARG1 (의2 / 의료비)
             :polarity -
-            :medium (서 / 서비스 :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))))
+            :medium (서 / 서비스
+                :wiki -
+                :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))))
     :ARG1 (신 / 신고-01
         :ARG1 o
         :ARG2 (서2 / 서비스
+            :wiki -
             :name (이2 / 이름 :op1 "의료비" :op2 "신고센터")
-            :part-of (서3 / 서비스 :name (이3 / 이름 :op1 "홈택스")))
+            :part-of (서3 / 서비스
+                :wiki "홈택스"
+                :name (이3 / 이름 :op1 "홈택스")))
         :time (이4 / 이전 :op1 (d / date-entity :day 17))))
 
 # ::id snt11.E2017.NEWS.001 ::date 2019-09-02T17:58 ::annotator gabrielle ::preferred True
 # ::snt 국세청은 신고가 접수된 의료기관에 수정 자료를 제출해달라고 요구하고 이를 반영해 20일에 수정된 의료비 자료를 제공한다.
 # ::note
 (제 / 제공-01
-    :ARG0 (g / government-organization :name (이 / 이름 :op1 "국세청"))
+    :ARG0 (g / government-organization
+        :wiki "대한민국_국세청"
+        :name (이 / 이름 :op1 "국세청"))
     :ARG1 (자 / 자료
         :topic (의 / 의료비)
         :ARG1-of (수 / 수정-01))
@@ -413,7 +430,9 @@
     :ARG2 (살 / 살펴보-01
         :ARG1 (내 / 내용
             :ARG0-of (나 / 나오-01
-                :ARG2 (서 / 서비스 :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))))
+                :ARG2 (서 / 서비스
+                    :wiki -
+                    :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))))
         :manner (꼼 / 꼼꼼히))
     :concession (귀 / 귀찮-01))
 
@@ -436,7 +455,8 @@
 # ::note
 (가 / 가능-01
     :ARG1 (이 / 이용-01
-        :ARG1 (서 / 서비스 
+        :ARG1 (서 / 서비스
+            :wiki -
             :name (이2 / 이름 :op1 "편리한" :op2 "연말정산")
             :medium-of (가2 / 가능-01
                 :ARG1 (작 / 작성-01
@@ -459,10 +479,16 @@
     :condition (선 / 선택-01
         :ARG1 (항 / 항목
             :ARG1-of (공2 / 공제-00))
-        :medium (서 / 서비스 :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))
+        :medium (서 / 서비스
+            :wiki -
+            :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))
         :condition (접 / 접속-01
-            :ARG1 (서2 / 서비스 :name (이2 / 이름 :op1 "홈택스")
-                :mod (g / government-organization :name (이3 / 이름 :op1 "국세청"))))))
+            :ARG1 (서2 / 서비스
+                :wiki "홈택스"
+                :name (이2 / 이름 :op1 "홈택스")
+                :mod (g / government-organization
+                    :wiki "대한민국_국세청"
+                    :name (이3 / 이름 :op1 "국세청"))))))
 
 # ::id snt24.E2017.NEWS.001 ::date 2019-09-04T00:27 ::annotator gabrielle ::preferred True
 # ::snt 연말정산 간소화 서비스에서 조회되지 않은 자료만 근로자가 별도로 수집해 공제 신고서에 입력하면 된다.
@@ -479,13 +505,17 @@
                 :mod (만 / 만)
                 :ARG1-of (조 / 조회-00
                     :polarity -
-                    :medium (서 / 서비스 :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스")))))))
+                    :medium (서 / 서비스
+                        :wiki -
+                        :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스")))))))
 
 # ::id snt25.E2017.NEWS.001 ::date 2019-09-04T00:32 ::annotator gabrielle ::preferred True
 # ::snt 편리한 연말정산 서비스에서는 예상세액을 간편하게 계산할 수 있는 서비스도 제공한다.
 # ::note 보조사
 (제 / 제공-01
-    :ARG0 (서 / 서비스 :name (이 / 이름 :op1 "편리한" :op2 "연말정산"))
+    :ARG0 (서 / 서비스
+        :wiki -
+        :name (이 / 이름 :op1 "편리한" :op2 "연말정산"))
     :ARG1 (e / either
         :op2 (서2 / 서비스
             :mod (가 / 가능-01
@@ -537,7 +567,9 @@
     :condition (이 / 이용-01
         :ARG1 (애 / 애플리케이션
             :mod (스 / 스마트폰)
-            :mod (서 / 서비스 :name (이 / 이름 :op1 "홈택스")))))
+            :mod (서 / 서비스
+                :wiki "홈택스"
+                :name (이 / 이름 :op1 "홈택스")))))
 
 # ::id snt28.E2017.NEWS.001 ::date 2019-09-04T00:54 ::annotator gabrielle ::preferred True
 # ::snt 연말정산 서비스를 이용하다 궁금한 점은 국세 상담센터(☎126)으로 문의하면 된다.
@@ -549,18 +581,23 @@
                 :ARG1 (서 / 서비스
                     :purpose (정 / 정산-00
                         :mod (연 / 연말)))))
-        :ARG2 (상 / 상담센터
+        :ARG2 (g / government-organization
+            :wiki "국세상담센터"
             :name (이 / 이름 :op1 "국세" :op2 "상담센터")
             :mod (p / phone-number-entity :value 126))))
 
 # ::id snt29.E2017.NEWS.001 ::date 2019-09-04T01:14 ::annotator gabrielle ::preferred True
 # ::snt 국세청은 "16일, 18일과 부가가치세 신고 마감일인 25일에는 홈택스 이용이 집중될 것으로 예상해 대기 시간이 길어질 수 있다"며 "여유를 갖고 접속해달라"라고 당부했다.
 (당 / 당부-01
-    :ARG0 (g / government-organization :name (이 / 이름 :op1 "국세청"))
+    :ARG0 (g / government-organization
+        :wiki "대한민국_국세청"
+        :name (이 / 이름 :op1 "국세청"))
     :ARG1 (접 / 접속-01
         :mode imperative
         :polite +
-        :ARG1 (서 / 서비스 :name (이2 / 이름 :op1 "홈택스"))
+        :ARG1 (서 / 서비스
+            :wiki "홈택스"
+            :name (이2 / 이름 :op1 "홈택스"))
         :manner (갖 / 갖-01
             :ARG1 (여 / 여유)))
     :manner (말 / 말하-01
@@ -593,7 +630,9 @@
                     :ARG1-of (같 / 같-01))))
         :manner (말2 / 말하-01
             :ARG1 (봐 / 봐주-00
-                :ARG1 (p / person :name (이 / 이름 :op1 "정유라")
+                :ARG1 (p / person
+                    :wiki "정유라_(승마_선수)"
+                    :name (이 / 이름 :op1 "정유라")
                     :mod (만 / 만))
                 :ARG2 (조 / 조퇴-00
                     :ARG0 p)))))
@@ -616,14 +655,18 @@
     :ARG0 (a / and
         :op1 (p / person
             :ARG0-of (h / have-org-role-91
-                :ARG1 (s / school :name (이 / 이름 :op1 "청담고")
-                    :location (c / city :name (이2 / 이름 :op1 "서울"))
+                :ARG1 (s / school
+                    :wiki "청담고등학교_(서울)"
+                    :name (이 / 이름 :op1 "청담고")
+                    :location (c / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울"))
                     :ARG1-of (다 / 다니-01
-                        :ARG0 (p2 / person 
+                        :ARG0 (p2 / person
+                            :wiki "정유라_(승마_선수)"
                             :name (이3 / 이름 :op1 "정유라") 
                             :age (t / temporal-quantity :quant 21)
                             :ARG0-of (h2 / have-rel-role-91
-                                :ARG1 (p3 / person 
+                                :ARG1 (p3 / person
+                                    :wiki "최순실"
                                     :name (이4 / 이름 :op1 "최순실") 
                                     :age (t2 / temporal-quantity :quant 61))
                                 :ARG2 (딸 / 딸)))))
@@ -642,7 +685,9 @@
 # ::snt 특히 최 씨는 체육특기자 담당 교사에게 “잘라버리겠다” “애 아빠(정윤회)가 가만 안 둘 것”이라며 엄포도 놓았다.
 # ::note 보조사
 (협 / 협박-01
-    :ARG0 (p / person :name (이 / 이름 :op1 "최"))
+    :ARG0 (p / person
+        :wiki "최순실"
+        :name (이 / 이름 :op1 "최"))
     :ARG1 (p2 / person
         :ARG0-of (h / have-org-role-91
             :ARG3 (가 / 가르치-01
@@ -653,7 +698,9 @@
             :ARG1 p2)
         :ARG1 (가1 / 가만두-01
             :polarity -
-            :ARG0 (p3 / person :name (이2 / 이름 :op1 "정윤회")
+            :ARG0 (p3 / person
+                :wiki "정윤회"
+                :name (이2 / 이름 :op1 "정윤회")
                 :ARG0-of (h2 / have-rel-role-91
                     :ARG1 (애 / 애)
                     :ARG2 (아 / 아빠)))
@@ -670,17 +717,27 @@
             :ARG2 (이 / 이)))
     :location (자 / 자료
         :topic (감 / 감사-00
-            :ARG1 (s / school :name (이2 / 이름 :op1 "청담고"))
+            :ARG1 (s / school
+                :wiki "청담고등학교_(서울)"
+                :name (이2 / 이름 :op1 "청담고"))
             :ARG1-of (실 / 실시-01
                 :time (d / date-entity :month 11 :year (지 / 지난해))))
         :ARG1-of (제 / 제출-01
-            :ARG0 (g / government-organization :name (이3 / 이름 :op1 "서울시교육청"))
-            :ARG2 (p / person :name (이4 / 이름 :op1 "김병욱")
+            :ARG0 (g / government-organization
+                :wiki "서울특별시교육청"
+                :name (이3 / 이름 :op1 "서울시교육청"))
+            :ARG2 (p / person
+                :wiki "김병욱_(정치인)"
+                :name (이4 / 이름:op1 "김병욱")
                 :ARG0-of (h / have-org-role-91
-                    :ARG1 (g2 / government-organization :name (이5 / 이름 :op1 "국회"))
+                    :ARG1 (g2 / government-organization
+                        :wiki "대한민국_국회"
+                        :name (이5 / 이름 :op1 "국회"))
                     :ARG2 (의 / 의원))
                 :ARG0-of (h2 / have-org-role-91
-                    :ARG1 (p2 / political-party :name (이6 / 이름 :op1 "더불어민주당"))
+                    :ARG1 (p2 / political-party
+                        :wiki "더불어민주당"
+                        :name (이6 / 이름 :op1 "더불어민주당"))
                     :ARG2 의))
             :time (d2 / date-entity :day 19)))
     :manner (고 / 고스란히))
@@ -693,7 +750,9 @@
         :ARG0-of (h / have-org-role-91
             :ARG2 (담 / 담임)
             :ARG3 (가 / 가르치-01
-                :ARG2 (p2 / person :name (이 / 이름 :op1 "정")))))
+                :ARG2 (p2 / person
+                    :wiki "정유라_(승마_선수)"
+                    :name (이 / 이름 :op1 "정")))))
     :topic p2
     :mod (온 / 온통)
     :ARG1 (칭 / 칭찬-00
@@ -765,7 +824,9 @@
         :ARG0 p2
         :ARG1 (s / score-on-scale-91 :ARG1 "만점"
             :topic (태 / 태도))
-        :ARG2 (p3 / person :name (이2 / 이름 :op1 "정")
+        :ARG2 (p3 / person
+            :wiki "정유라_(승마_선수)"
+            :name (이2 / 이름 :op1 "정")
             :ARG0-of (출 / 출석-01
                 :polarity -
                 :ARG1 (수 / 수업
@@ -774,52 +835,56 @@
 # ::id snt9.E2017.NEWS.002 ::date 2019-09-04T21:51 ::annotator gabrielle ::preferred True
 # ::snt 하지만 황 교사는 오히려 학생들에게 “못난 자식 감싸는 엄마 같은 마음이다. 국가대표 되려고 저렇게 고생하지 않느냐”며 정 씨를 두둔했다.
 # ::note
-(두 / 두둔-01
-    :ARG0 (p / person :name (이 / 이름 :op1 "황")
-        :ARG0-of (h / have-org-role-91
-            :ARG3 (가 / 가르치-01)))
-    :ARG1 (p2 / person :name (이2 / 이름 :op1 "정"))
-    :manner (말 / 말하-01
-            :ARG1 (m / multi-sentence
-                :snt1 (마 / 마음
-                    :ARG2-of (같 / 같-01
-                        :ARG1 (p3 / person 
-                            :ARG0-of (h2 / have-rel-role-91 
-                                :ARG1 (자 / 자식
-                                    :ARG1-of (못 / 못나-00))
-                                :ARG2 (엄 / 엄마))
-                            :ARG0-of (감 / 감싸-00
-                                :ARG1 자))))
-                :snt2 (고 / 고생-01
-                    :manner (저 / 저렇게)
-                    :ARG1 p2
-                    :ARG2 (원 / 원하-01
-                        :ARG0 p2
-                        :ARG1 (되 / 되-01
-                            :ARG1 p2
-                            :ARG2 (국 / 국가대표)))))
-            :ARG2 (p4 / person
-                :ARG0-of (h3 / have-org-role-91
-                    :ARG3 (공 / 공부-01))))
-    :mod (하 / 하지만)
-    :mod (오 / 오히려))
+(c / contrast-01
+    :ARG2 (두 / 두둔-01
+        :ARG0 (p / person :name (이 / 이름 :op1 "황")
+            :ARG0-of (h / have-org-role-91
+                :ARG3 (가 / 가르치-01)))
+        :ARG1 (p2 / person
+            :wiki "정유라_(승마_선수)"
+            :name (이2 / 이름 :op1 "정"))
+        :manner (말 / 말하-01
+                :ARG1 (m / multi-sentence
+                    :snt1 (마 / 마음
+                        :ARG2-of (같 / 같-01
+                            :ARG1 (p3 / person 
+                                :ARG0-of (h2 / have-rel-role-91 
+                                    :ARG1 (자 / 자식
+                                        :ARG1-of (못 / 못나-00))
+                                    :ARG2 (엄 / 엄마))
+                                :ARG0-of (감 / 감싸-00
+                                    :ARG1 자))))
+                    :snt2 (고 / 고생-01
+                        :manner (저 / 저렇게)
+                        :ARG1 p2
+                        :ARG2 (원 / 원하-01
+                            :ARG0 p2
+                            :ARG1 (되 / 되-01
+                                :ARG1 p2
+                                :ARG2 (국 / 국가대표)))))
+                :ARG2 (p4 / person
+                    :ARG0-of (h3 / have-org-role-91
+                        :ARG3 (공 / 공부-01))))
+        :mod (오 / 오히려)))
 
 # ::id snt10.E2017.NEWS.002 ::date 2019-09-06T12:52 ::annotator gabrielle ::preferred True
 # ::snt 반면 일반 교과 교사들은 정 씨를 ‘불성실한 학생’으로 기억했다.
 # ::note '기억하다'를 '여기다'로 처리
-(여 / 여기-01
-    :ARG0 (p / person
-        :ARG0-of (h / have-org-role-91
-            :ARG3 (가 / 가르치-01
-                :ARG1 (교 / 교과
-                    :mod (일 / 일반)))))
-    :ARG1 (p2 / person :name (이 / 이름 :op1 "정"))
-    :ARG1 (p3 / person
-        :ARG0-of (h2 / have-org-role-91
-            :ARG3 (공 / 공부-01))
-        :ARG1-of (성 / 성실-01
-            :polarity -))
-    :mod (반 / 반면))
+(c / contrast-01
+    :ARG2 (여 / 여기-01
+        :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                :ARG3 (가 / 가르치-01
+                    :ARG1 (교 / 교과
+                        :mod (일 / 일반)))))
+        :ARG1 (p2 / person
+            :wiki "정유라_(승마_선수)"
+            :name (이 / 이름 :op1 "정"))
+        :ARG1 (p3 / person
+            :ARG0-of (h2 / have-org-role-91
+                :ARG3 (공 / 공부-01))
+            :ARG1-of (성 / 성실-01
+                :polarity -))))
 
 # ::id snt11.E2017.NEWS.002 ::date 2019-09-06T01:04 ::annotator gabrielle ::preferred True
 # ::snt 2학년 체육 교사는 ＂교실서 잔다 하기에 다른 학생을 보내 ‘운동장에 나오라’고 하면 ‘깨우지 말라’며 따르지 않았다”고 말했다.
@@ -903,7 +968,9 @@
     :ARG0 (p / person
         :quant 1
         :ARG0-of (h / have-rel-role-91
-            :ARG1 (p2 / person :name (이 / 이름 :op1 "정"))
+            :ARG1 (p2 / person
+                :wiki "정유라_(승마_선수)"
+                :name (이 / 이름 :op1 "정"))
             :ARG2 (동 / 동창생)))
     :ARG1 (a / and
         :op1 (나 / 나-01
@@ -957,8 +1024,12 @@
 # ::snt 청담고는 다른 학생들의 출석 인정엔 깐깐했지만 유독 정 씨에겐 관대했다.
 # ::note
 (관 / 관대하-01
-    :ARG1 (s / school :name (이 / 이름 :op1 "청담고"))
-    :ARG2 (p / person :name (이2 / 이름 :op1 "정"))
+    :ARG1 (s / school
+        :wiki "청담고등학교_(서울)"
+        :name (이 / 이름 :op1 "청담고"))
+    :ARG2 (p / person
+        :wiki "정유라_(승마_선수)"
+        :name (이2 / 이름 :op1 "정"))
     :mod (유 / 유독)
     :concession (깐 / 깐깐하-00
         :ARG1 s
@@ -984,7 +1055,9 @@
                 :ARG1 (출 / 출석-01)
             :time (이2 / 이후
                 :op1 (입 / 입학-01))
-            :domain (p2 / person :name (이3 / 이름 :op1 "정")))
+            :domain (p2 / person
+                :wiki "정유라_(승마_선수)"
+                :name (이3 / 이름 :op1 "정")))
         :concession (깐 / 깐깐하-00
             :ARG2 (출2 / 출결)
             :cause (많 / 많-01
@@ -1012,7 +1085,9 @@
                 :ARG1-of (같 / 같-01)))
         :cause (봐 / 봐주-00
             :ARG1 (조 / 조퇴-00
-                :ARG0 (p3 / person :name (이2 / 이름 :op1 "정유라"))))
+                :ARG0 (p3 / person
+                    :wiki "정유라_(승마_선수)"
+                    :name (이2 / 이름 :op1 "정유라"))))
         :manner (울 / 울-00
             :ARG0 p2)))
 
@@ -1072,22 +1147,24 @@
         :degree (많 / 많-01)
         :cause (조 / 조퇴-00
             :mod (늘 / 늘)
-            :ARG1 (p3 / person :name (이 / 이름 :op1 "정유라")))))
+            :ARG1 (p3 / person
+                :wiki "정유라_(승마_선수)"
+                :name (이 / 이름 :op1 "정유라")))))
 
 # ::id snt22.E2017.NEWS.002 ::date 2019-09-07T02:07 ::annotator gabrielle ::preferred True
 # ::snt 하지만 감사에서 황 교사는 “정확하게 기억나지 않는다”라는 입장을 고수했다.
 # ::note
-(고 / 고수-01
-    :ARG0 (p / person :name (이 / 이름 :op1 "황")
-        :ARG0-of (h / have-org-role-91
-            :ARG3 (가 / 가르치-01)))
-    :ARG1 (입 / 입장
-        :mod (말 / 말하-01
-            :ARG1 (기 / 기억-01
-                :polarity -
-                :manner (정 / 정확-01))))
-    :mod (하 / 하지만)
-    :location (감 / 감사-00))
+(c / contrast-01
+    :ARG2 (고 / 고수-01
+        :ARG0 (p / person :name (이 / 이름 :op1 "황")
+            :ARG0-of (h / have-org-role-91
+                :ARG3 (가 / 가르치-01)))
+        :ARG1 (입 / 입장
+            :mod (말 / 말하-01
+                :ARG1 (기 / 기억-01
+                    :polarity -
+                    :manner (정 / 정확-01))))
+        :location (감 / 감사-00)))
 
 # ::id snt23.E2017.NEWS.002 ::date 2019-09-07T02:09 ::annotator gabrielle ::preferred True
 # ::snt 실제로 고 3년 당시 정 씨의 출석일수는 17일에 불과했다.
@@ -1095,7 +1172,9 @@
 (불 / 불과-01
     :ARG0 (t / temporal-quantity
         :duration-of (출 / 출석-01
-            :ARG0 (p / person :name (이 / 이름 :op1 "정"))
+            :ARG0 (p / person 
+                :wiki "정유라_(승마_선수)"
+                :name (이 / 이름 :op1 "정"))
             :time (학 / 학년 :ord (o / ordinal-entity :value 3)
                 :mod (고 / 고등학교))))
     :ARG1 (t2 / temporal-quantity :quant 17 :unit (일 / 일))
@@ -1129,7 +1208,9 @@
 (말 / 말하-01
     :ARG0 (p / person
         :ARG0-of (h / have-org-role-91
-            :ARG1 (g / government-organization :name (이 / 이름 :op1 "시" :op2 "교육청"))))
+            :ARG1 (g / government-organization 
+                :wiki "서울특별시교육청"
+                :name (이 / 이름 :op1 "시" :op2 "교육청"))))
     :ARG1 (어 / 어렵-01
         :ARG1 (파 / 파악-01
             :ARG1 (d / date-entity
@@ -1165,7 +1246,9 @@
 # ::note
 (a / and
     :op1 (하 / 하-02
-        :ARG0 (p / person :name (이 / 이름 :op1 "최"))
+        :ARG0 (p / person
+            :wiki "최순실"
+            :name (이 / 이름 :op1 "최"))
         :ARG1 (막 / 막말)
         :ARG2 (p2 / person
             :ARG0-of (h / have-org-role-91
@@ -1182,14 +1265,18 @@
 # ::snt 정 씨의 고 2 때 체육특기자 담당 교사였던 송 모 교사가 정 씨에게 “1년에 4회 이상 대회 출전은 규정을 어기는 것”이라고 알려주자 최 씨가 학교를 찾아와 “너 같은 것은 교육부 장관에게 말해 당장 잘라 버릴 수 있다”라며 폭언을 퍼부었다.
 # ::note
 (협 / 협박-01
-    :ARG0 (p / person :name (이 / 이름 :op1 "최"))
+    :ARG0 (p / person
+        :wiki "최순실"
+        :name (이 / 이름 :op1 "최"))
     :ARG1 (p2 / person :name (이2 / 이름 :op1 "송")
         :ARG0-of (h / have-org-role-91
             :ARG3 (가 / 가르치-01
                 :ARG2 (체 / 체육특기자)
                 :time (학 / 학년 :ord (o / ordinal-entity :value 2)
                     :mod (고 / 고등학교)
-                    :mod (p3 / person :name (이3 / 이름 :op1 "정"))))))
+                    :mod (p3 / person
+                        :wiki "정유라_(승마_선수)"
+                        :name (이3 / 이름 :op1 "정"))))))
     :manner (찾 / 찾아오-01
         :ARG1 p
         :ARG2 (학2 / 학교))
@@ -1202,7 +1289,9 @@
                     :ARG0 p2
                     :ARG2 (p4 / person
                         :ARG0-of (h2 / have-org-role-91
-                            :ARG1 (g / government-organization :name (이4 / 이름 :op1 "교육부"))
+                            :ARG1 (g / government-organization
+                                :wiki "대한민국_교육부"
+                                :name (이4 / 이름 :op1 "교육부"))
                             :ARG2 (장 / 장관)))))
             :mod (당 / 당장)))
     :cause (알 / 알려주-01
@@ -1218,11 +1307,13 @@
                         :ARG2 (t / temporal-quantity :quant 1 :unit (년 / 년))))))
         :ARG2 p3))
 
-# ::id snt29.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt29.E2017.NEWS.002 ::date 2019-09-07T02:50 ::annotator gabrielle ::preferred False
 # ::snt 2주 뒤 최 씨는 다시 담임을 만나 “건방져서 한마디 했다. 애 아빠(정윤회)도 ‘가만히 안 둔다’고 했다”고 전했다.
 # ::note 보조사
 (전 / 전하-01
-    :ARG0 (p / person :name (이 / 이름 :op1 "최"))
+    :ARG0 (p / person
+        :wiki "최순실"
+        :name (이 / 이름 :op1 "최"))
     :ARG1 (말 / 말하-01
         :ARG1 (m / multi-sentence
             :snt1 (하 / 하-02
@@ -1235,7 +1326,9 @@
                             :ARG3 (가 / 가르치-01)))))
             :snt2 (하2 / 하-02
                 :ARG0 (e / either
-                    :op2 (p2 / person :name (이2 / 이름 :op1 "정윤회")
+                    :op2 (p2 / person
+                        :wiki "정윤회"
+                        :name (이2 / 이름 :op1 "정윤회")
                         :ARG0-of (h2 / have-rel-role-91
                             :ARG1 (애 / 애)
                             :ARG2 (아 / 아빠))))
@@ -1251,489 +1344,274 @@
     :time (뒤 / 뒤
         :op1 (temporal-quantity :quant 2 :unit (주 / 주))))
 
-# ::id snt30.E2017.NEWS.002 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt30.E2017.NEWS.002 ::date 2019-09-08T00:17 ::annotator gabrielle ::preferred True
 # ::snt 이 말에 담임은 항의하기는커녕 “애 아빠가 딸바보군요”라며 맞장구를 쳤다고 한다.
-# ::note
-do_timestamp_and_preferred
-** edef: protest
-(항 / 항의-01
-    :ARG0 (protester)
-    :ARG1 (thing_being_objectionable)
-)
-** edef: protest
-(항 / 항의-02
-    :ARG0 (speaker)
-    :ARG1 (utterance)
-    :ARG2 (hearer)
-)
-** edef: strike, attack
-(치 / 치-01
-    :ARG0 (hitter,_attacker)
-    :ARG1 (thing_hit,_attacked)
-)
-** edef: set
-(치 / 치-02
-    :ARG0 (setter)
-    :ARG1 (thing_set)
-)
-** edef: run over
-(치 / 치-03
-    :ARG0 (car)
-    :ARG1 (victim)
-)
-** edef: run away
-(치 / 치-04
-    :ARG0 (agent)
-    :ARG1 (flight)
-)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
+# ::note 보조사
 (하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
+    :ARG1 (동 / 동의-01
+        :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (담 / 담임)
+                :ARG3 (가 / 가르치-01)))
+        :ARG1 (말 / 말
+            :mod (이 / 이))
+        :manner (말2 / 말하-01
+            :ARG0 p
+            :ARG1 (딸 / 딸바보
+                :domain (p2 / person
+                    :ARG0-of (h2 / have-rel-role-91
+                        :ARG1 (애 / 애)
+                        :ARG2 (아 / 아빠)))))
+        :postp-는커녕 (항 / 항의-01
+            :ARG0 p
+            :ARG1 말)))
 
-
-
-# ::id snt0.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.003 ::date 2019-09-08T00:24 ::annotator gabrielle ::preferred True
 # ::snt 경찰 '소래포구 어시장 화재' 목격자 3명 진술 확보.
 # ::note
-do_timestamp_and_preferred
+(확 / 확보-01
+    :ARG0 (경 / 경찰)
+    :ARG1 (진 / 진술-01
+        :ARG0 (p / person
+            :ARG0-of (목 / 목격-01
+                :ARG1 (화 / 화재
+                    :location (m / market
+                        :wiki "소래포구_종합어시장"
+                        :name (이 / 이름 :op1 "소래포구" :op2 "어시장")))
+            :quant 3)))
 
-
-
-# ::id snt1.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.003 ::date 2019-09-08T00:49 ::annotator gabrielle ::preferred True
 # ::snt 6억여 원의 재산피해(소방서 추산)를 낸 인천 소래포구 어시장 화재사고와 관련, 경찰이 최초 목격자 진술을 확보하는 등 화재 원인을 밝히기 위한 본격적인 조사에 착수했다.
 # ::note
-do_timestamp_and_preferred
-** edef: send
-(내 / 내-01
-    :ARG0 (agent)
-    :ARG1 (thing_sent)
-    :ARG2 (sent_to)
-)
-** edef: make
-(내 / 내-02
-    :ARG0 (causer)
-    :ARG1 (thing_made)
-)
-** edef: secure
-(확 / 확보-01
-    :ARG0 (agent)
-    :ARG1 (thing_secured)
-)
-** edef: reveal
-(밝 / 밝히-01
-    :ARG0 (revealer)
-    :ARG1 (utterance,_truth_condition)
-    :ARG2 (hearer)
-)
-** edef: light
-(밝 / 밝히-02
-    :ARG0 (agent)
-    :ARG1 (thing_lit)
-)
-** edef: in order to
-(위 / 위하-01
-    :ARG0 (thing)
-    :ARG1 (thing_pursued)
-)
-** edef: start
 (착 / 착수-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
+    :ARG0 (경 / 경찰)
+    :ARG1 (조 / 조사-01
+        :mod (본 / 본격)
+        :purpose (밝 / 밝히-01
+            :ARG0 경
+            :ARG1 (원 / 원인
+                :mod (화 / 화재))))
+    :mod (등 / 등
+        :op1 (확 / 확보-01
+            :ARG0 경
+            :ARG1 (진 / 진술-01
+                :ARG0 (p / person
+                    :ARG0-of (목 / 목격-01
+                        :mod (최 / 최초))))))
+    :topic (사 / 사고
+        :mod 화
+        :location (m / market
+            :wiki "소래포구_종합어시장"
+            :name (이 / 이름 :op1 "소래포구" :op2 "어시장")
+            :location (c / city
+                :wiki "인천광역시"
+                :name (이2 / 이름 :op1 "인천")))
+        :ARG0-of (내 / 내-01
+            :ARG1 (피 / 피해
+                :ARG1-of (추 / 추산-01
+                    :ARG0 (소2 / 소방서))
+                :mod (재 / 재산
+                    :mod (m2 / monetary-quantity
+                        :quant (여 / 여 :op1 600000000)
+                        :unit (원2 / 원)))))))
 
-
-
-# ::id snt2.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.003 ::date 2019-09-08T01:05 ::annotator gabrielle ::preferred True
 # ::snt 인천 남동 경찰서는 18일 발생한 인천시 남동구 논현동 소래포구 어시장 화재사고와 관련한 목격자 3명의 진술을 확보해 조사하고 있다고 19일 밝혔다.
-# ::note
-do_timestamp_and_preferred
-** edef: arise
-(발 / 발생-01
-    :ARG0 (causer)
-    :ARG1 (thing_arising)
-    :ARG2 (source)
-)
-** edef: relate
-(관 / 관련-01
-    :ARG0 (agent)
-    :ARG1 (thing_under_consideration)
-    :ARG2 (related_to)
-)
-** edef: secure
-(확 / 확보-01
-    :ARG0 (agent)
-    :ARG1 (thing_secured)
-)
-** edef: investigate
-(조 / 조사-01
-    :ARG0 (agent)
-    :ARG1 (thing_investigated)
-)
-** edef: reveal
+# ::note 주소 객체
 (밝 / 밝히-01
-    :ARG0 (revealer)
-    :ARG1 (utterance,_truth_condition)
-    :ARG2 (hearer)
-)
-** edef: light
-(밝 / 밝히-02
-    :ARG0 (agent)
-    :ARG1 (thing_lit)
-)
+    :ARG0 (g / government-organization
+        :wiki "인천남동경찰서"
+        :name (이 / 이름 :op1 "인천" :op2 "남동" :op3 "경찰서"))
+    :ARG1 (조 / 조사-01
+        :ARG0 g
+        :manner (확 / 확보-01
+            :ARG0 g
+            :ARG1 (진 / 진술-01
+                :ARG0 (p / person
+                    :ARG0-of (목 / 목격-01)
+                    :quant 3)
+                :topic (사 / 사고
+                    :mod (화 / 화재)
+                    :location (m / market
+                        :wiki "소래포구_종합어시장"
+                        :name (이2 / 이름 :op1 "소래포구" :op2 "어시장")
+                        :location (c / city-district
+                            :wiki "논현동_(인천)"
+                            :name (이3 / 이름 :op1 "인천시" :op2 "남동구" :op3 "논현동")))
+                    :ARG1-of (발 / 발생-01
+                        :time (d / date-entity :day 18)))))
+    :time (d2 / date-entity :day 19))
 
-
-
-# ::id snt3.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.003 ::date 2019-09-08T01:15 ::annotator gabrielle ::preferred True
 # ::snt 이 가운데 한 명은 18일 오전 1시 36분께 불이 번진 것을 보고 처음 119에 신고한 어시장 상인이다.
 # ::note
-do_timestamp_and_preferred
-** edef: spread
-(번 / 번지-01
-    :ARG1 (thing_spreading)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: see
-(보 / 보-01
-    :ARGA (causer)
-    :ARG0 (seer)
-    :ARG1 (thing_seen)
-)
-** edef: regard
-(보 / 보-02
-    :ARG0 (seer)
-    :ARG1 (thing_regarded)
-)
-** edef: according to
-(보 / 보-03
-    :ARG1 (theme)
-)
-** edef: get to
-(보 / 보-04
-    :ARG0 (agent)
-    :ARG1 (end_state)
-)
-** edef: You will pay for this-CV
-(보 / 보-05
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: infer-CV
-(보 / 보-06
-    :ARG0 (agent)
-    :ARG1 (belief)
-    :ARG2 (source_of_belief)
-)
-** edef: look back-CV
-(보 / 보-07
-    :ARG0 (agent)
-    :ARG1 (thing_looked_back)
-)
-** edef: report
-(신 / 신고-01
-    :ARG0 (reporter)
-    :ARG1 (thing_reported)
-    :ARG2 (reported_to)
-)
+(상 / 상인
+    :mod (어 / 어시장)
+    :domain (p / person :quant 1
+        :mod (가 / 가운데
+            :op1 (이 / 이)))
+    :ARG0-of (신 / 신고-01
+        :ARG1 (보 / 보-01
+            :ARG0 상
+            :ARG1 (번 / 번지-01
+                :ARG1 (불 / 불)
+                :time (께 / 께
+                    :op1 (d / date-entity :day 18 :time 01:36))))
+        :ARG2 (p / phone-number-entity :value 119)
+        :mod (처 / 처음)))
 
-
-
-# ::id snt4.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.003 ::date 2019-09-08T01:25 ::annotator gabrielle ::preferred True
 # ::snt 최초 목격자인 이 상인은 가건물 형태인 좌판 구역 뒤편의 건물 4층 횟집에서 영업을 마치고 가게 내부를 정리하다가 화재를 목격했다.
 # ::note
-do_timestamp_and_preferred
-** edef: finish
-(마 / 마치-01
-    :ARG0 (agent)
-    :ARG1 (thing_finishing)
-)
-** edef: go
-(가 / 가-01
-    :ARG0 (entity_going)
-    :ARG1 (path)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: amount to
-(가 / 가-02
-    :ARG1 (theme)
-    :ARG2 (quantity)
-)
-** edef: make-light verb
-(가 / 가-03
-    :ARG1 (deverbal_noun)
-)
-** edef: take-CV
-(가 / 가-04
-    :ARG0 (agent)
-    :ARG1 (thing_taken)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: draw-CV
-(가 / 가-05
-    :ARG0 (agent)
-    :ARG1 (thing_drawn)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: transport-CV
-(가 / 가-06
-    :ARG0 (agent,_causer)
-    :ARG1 (thing_in_motion)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: loot-CV
-(가 / 가-07
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (source)
-)
-** edef: arrange
-(정 / 정리-01
-    :ARG0 (agent)
-    :ARG1 (thing_arranged)
-)
-** edef: liquidate
-(정 / 정리-02
-    :ARG0 (agent)
-    :ARG1 (thing_liquidated)
-)
-** edef: witness
 (목 / 목격-01
-    :ARG0 (agent)
-    :ARG1 (thing_witnessed)
-)
+    :ARG0 (상 / 상인
+        :mod (이 / 이)
+        :mod (p / person
+            :ARG0-of (목2 / 목격-01
+                :mod (최 / 최초))))
+    :ARG1 (화 / 화재)
+    :time (정 / 정리-01
+        :ARG0 상
+        :ARG1 (내 / 내부
+            :op1 (횟 / 횟집
+                :mod (층 / 층 :ord (o / ordinal-entity :value 3)
+                    :mod (건 / 건물
+                        :location (뒤 / 뒤편
+                            :op1 (구 / 구역
+                                :mod (좌 / 좌판)
+                                :mod (형 / 형태
+                                    :mod (가 / 가건물))))))))
+        :time (이2 / 이후
+            :op1 (마 / 마치-01
+                :ARG0 상
+                :ARG1 (영 / 영업-01)
+                :location 횟))))
 
-
-
-# ::id snt5.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt5.E2017.NEWS.003 ::date 2019-09-08T02:25 ::annotator gabrielle ::preferred True
 # ::snt 이 횟집 상인은 경찰에서 "'펑' 하는 소리가 들려 바닷가 쪽으로 내려다보니 '가'구역 쪽 비닐 천막 안에서 불이 나 있었다"며 "처음에는 불이 작았는데 나중에 걷잡을 수 없이 커졌다"고 진술했다.
 # ::note
-do_timestamp_and_preferred
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** (들 / 들리.01-00)
-** (내 / 내려다보.02-00)
-** edef: happen
-(나 / 나-01
-    :ARG1 (thing_happening)
-    :ARG2 (location)
-)
-** edef: exist
-(있 / 있-01
-    :ARG1 (thing_existing)
-    :ARG2 (location)
-)
-** edef: regarding
-(있 / 있-02
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-** edef: small
-(작 / 작-01
-    :ARG1 (thing_being_small)
-)
-** (커 / 커지.01-00)
-** edef: state
 (진 / 진술-01
-    :ARG0 (agent)
-    :ARG1 (thing_stated)
-)
+    :ARG0 (상 / 상인
+        :mod (횟 / 횟집)
+        :mod (이 / 이))
+    :ARG1 (a / and
+        :op1 (내 / 내려다보-00
+            :ARG0 상
+            :ARG1 (쪽 / 쪽
+                :op1 (바 / 바닷가))
+            :cause (듣 / 듣-01
+                :ARG0 상
+                :ARG1 (소 / 소리
+                    :mod "펑")
+                :ARG2 쪽))
+        :op2 (나 / 나-01
+            :ARG1 (불 / 불)
+            :ARG2 (안 / 안
+                :op1 (천 / 천막
+                    :mod (비 / 비닐)
+                    :direction (구 / 구역
+                        :mod "가")))))
+    :ARG1 (크 / 크-01
+        :ARG1 불
+        :manner (가 / 가능-01
+            :polarity -
+            :ARG1 (걷 / 걷잡-00))
+        :time (나2 / 나중)
+        :concession (작 / 작-01
+            :ARG1 불
+            :time (처 / 처음)))
+    :location (경 / 경찰))
 
-
-
-# ::id snt6.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.003 ::date 2019-09-08T03:01 ::annotator gabrielle ::preferred True
 # ::snt 경찰이 확보한 나머지 목격자 2명은 어시장 내 양념 가게 운영자와 어시장 상인회 측이 고용한 야간 경비원이다.
 # ::note
-do_timestamp_and_preferred
-** edef: secure
-(확 / 확보-01
-    :ARG0 (agent)
-    :ARG1 (thing_secured)
-)
-** edef: hire
-(고 / 고용-01
-    :ARG0 (employer)
-    :ARG1 (employee)
-    :ARG2 (job)
-)
+(경 / 경비원
+    :domain (p / person :quant 2
+        :ARG0-of (목 / 목격-01)
+        :mod (나 / 나머지)
+        :ARG1-of (확 / 확보-01
+            :ARG0 (경2 / 경찰)))
+    :ARG0 (일 / 일하-01
+        :time (야 / 야간))
+    :ARG1-of (고 / 고용-01
+        :ARG0 (측 / 측
+            :op1 (p2 / person
+                :ARG0-of (운 / 운영-01
+                    :ARG1 (가 / 가게
+                        :mod (양 / 양념))))
+            :op2 (상 / 상인회
+                :mod (어 / 어시장)))))
 
-
-
-# ::id snt7.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.003 ::date 2019-09-08T03:11 ::annotator gabrielle ::preferred True
 # ::snt 경비원은 경찰에서 "화재 발생 시각 직전에 순찰했는데 특별한 이상 징후는 없었다"고 말했다.
 # ::note
-do_timestamp_and_preferred
-** edef: patrol
-(순 / 순찰-01
-    :ARG0 (agent)
-    :ARG1 (area)
-)
-** edef: special
-(특 / 특별-01
-    :ARG1 (thing_being_special)
-)
-** edef: not exist
-(없 / 없-01
-    :ARG0 (causer)
-    :ARG1 (thing_not_existing)
-    :ARG2 (location)
-)
-** edef: stop
-(말 / 말-01
-    :ARG0 (agent)
-    :ARG1 (action_or_thing_stopped)
-)
+(말 / 말하-01
+    :ARG0 (경 / 경비원)
+    :ARG1 (a / and
+        :op1 (순 / 순찰-01
+            :ARG0 경
+            :time (직 / 직전
+                :op1 (d / date-entity
+                    :time-of (발 / 발생-01
+                        :ARG1 (화 / 화재)))))
+        :op2 (징 / 징후
+            :mod (이 / 이상-01)
+            :polarity -
+            :ARG1-of (특 / 특별-01)))
+    :ARG2 (경2 / 경찰))
 
-
-
-# ::id snt8.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt8.E2017.NEWS.003 ::date 2019-09-08T03:28 ::annotator gabrielle ::preferred True
 # ::snt 경찰과 국립과학수사연구원 요원들은 전날 경찰이 폐쇄회로(CC)TV 영상으로 확인한 최초 발화점인 가건물 내 '가' 구역 한 좌판 인근 바닥에서 불에 녹아 끊어진 전선 여러 개를 수거해 분석하고 있다.
-# ::note
-do_timestamp_and_preferred
-** edef: confirm
-(확 / 확인-01
-    :ARG0 (confirmer)
-    :ARG1 (thing_confirmed)
-    :ARG2 (hearer)
-)
-** edef: melt
-(녹 / 녹-01
-    :ARG0 (causer)
-    :ARG1 (thing_melted)
-)
-** edef: attract
-(녹 / 녹-01
-    :ARG0 (agent,_causer)
-    :ARG1 (thing_attracted)
-)
-** (끊 / 끊어지.01-00)
-** edef: take away
-(수 / 수거-01
-    :ARG0 (taker)
-    :ARG1 (thing_taken)
-)
-** edef: analyze
-(분 / 분석-01
-    :ARG0 (agent)
-    :ARG1 (thing_analyzed)
-)
+(a / and
+    :op1 (수 / 수거-01
+        :ARG0 (a2 / and
+            :op1 (경 / 경찰)
+            :op2 (요 / 요원
+                :ARG0-of (h / have-org-role-91
+                    :ARG1 (g / government-organization
+                        :wiki "국립과학수사연구원"
+                        :name (이 / 이름 :op1 "국립과학수사연구원")))))
+        :ARG1 (전 / 전선
+            :quant (여 / 여러 :unit (개 / 개))
+            :ARG1-of (끊 / 끊-01
+                :cause (녹 / 녹-01
+                    :ARG0 (불 / 불)
+                    :ARG1 전)))
+        :location (바 / 바닥
+            :mod (인 / 인근
+                :op1 (좌 / 좌판
+                    :location (구 / 구역
+                        :mod "가"
+                        :location (내 / 내
+                            :op1 (가 / 가건물
+                                :location-of (발 / 발화-00
+                                    :mod (최 / 최초)
+                                    :ARG1-of (확 / 확인-01
+                                        :ARG0 경
+                                        :manner (영 /영상
+                                            :mod (폐 / 폐쇄회로TV))
+                                        :time (전2 / 전날))))))))))
+    :op2 (분 / 분석-01
+        :ARG0 a2
+        :ARG1 전))
 
-
-
-# ::id snt9.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt9.E2017.NEWS.003 ::date 2019-09-08T03:28 ::annotator gabrielle ::preferred True
 # ::snt 해당 전선은 좌판 영업에 필요한 수족관과 겨울철 전기장판 등 각종 전기용품을 사용하는 데 쓰인 것으로 경찰은 보고 있다.
 # ::note
-do_timestamp_and_preferred
-** edef: necessary
-(필 / 필요-01
-    :ARG1 (thing_being_necessary)
-    :ARG2 (necessary_to)
-)
-** edef: use
-(사 / 사용-01
-    :ARG0 (agent)
-    :ARG1 (thing_used)
-    :ARG2 (purpose)
-)
-** (쓰 / 쓰이.01-00)
-** edef: see
-(보 / 보-01
-    :ARGA (causer)
-    :ARG0 (seer)
-    :ARG1 (thing_seen)
-)
-** edef: regard
-(보 / 보-02
-    :ARG0 (seer)
-    :ARG1 (thing_regarded)
-)
-** edef: according to
-(보 / 보-03
-    :ARG1 (theme)
-)
-** edef: get to
-(보 / 보-04
-    :ARG0 (agent)
-    :ARG1 (end_state)
-)
-** edef: You will pay for this-CV
-(보 / 보-05
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: infer-CV
-(보 / 보-06
-    :ARG0 (agent)
-    :ARG1 (belief)
-    :ARG2 (source_of_belief)
-)
-** edef: look back-CV
-(보 / 보-07
-    :ARG0 (agent)
-    :ARG1 (thing_looked_back)
-)
-
-
+(추 / 추측-01
+    :ARG0 (경 / 경찰
+    :ARG1 (쓰 / 쓰-01
+        :ARG1 (전 / 전선
+            :ARG1 (해 / 해당-01))
+        :ARG2 (사 / 사용-01
+            :ARG1 (전2 / 전기용품
+                :mod (각 / 각종)
+                :example (a / and
+                    :op1 (수 / 수족관
+                        :purpose (영 / 영업-01
+                            :mod (좌 / 좌판)))
+                    :op2 (전3 / 전기장판
+                        :time (겨 / 겨울철))))))))
 
 # ::id snt10.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 앞서 경찰은 전날 화재 현장 인근에 있는 관리사무소에서 어시장에 설치된 60여 대의 폐쇄회로(CC)TV 영상을 확보해 최초 발화점을 찾았다.
