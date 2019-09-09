@@ -185,7 +185,7 @@
             :op2 (자2 / 자료
                 :topic (보 / 보험료
                     :mod 4)
-                :example (a2 / and
+                :example (등 / 등
                     :op1 (건 / 건강보험료)
                     :op2 (국 / 국민연금)))))
     :time (올 / 올해))
@@ -557,7 +557,7 @@
     :ARG1 (얻 / 얻-01
         :ARG1 (e / either
             :op2 (꿀 / 꿀팁
-                :example (a / and
+                :example (등 / 등
                     :op1 (요 / 요건
                         :mod (공 / 공제-00
                             :mod (정 / 정산-00
@@ -1314,28 +1314,27 @@
     :ARG0 (p / person
         :wiki "최순실"
         :name (이 / 이름 :op1 "최"))
-    :ARG1 (말 / 말하-01
-        :ARG1 (m / multi-sentence
-            :snt1 (하 / 하-02
-                :ARG0 p
-                :ARG1 (한 / 한마디)
-                :cause (건 / 건방지-00
-                    :ARG1 (p3 / person
-                        :ARG0-of (h / have-org-role-91
-                            :ARG2 (담 / 담임)
-                            :ARG3 (가 / 가르치-01)))))
-            :snt2 (하2 / 하-02
-                :ARG0 (e / either
-                    :op2 (p2 / person
-                        :wiki "정윤회"
-                        :name (이2 / 이름 :op1 "정윤회")
-                        :ARG0-of (h2 / have-rel-role-91
-                            :ARG1 (애 / 애)
-                            :ARG2 (아 / 아빠))))
-                :ARG1 (가2 / 가만두-01
-                    :polarity -
-                    :ARG0 p2
-                    :ARG1 p3))))
+    :ARG1 (m / multi-sentence
+        :snt1 (하 / 하-02
+            :ARG0 p
+            :ARG1 (한 / 한마디)
+            :cause (건 / 건방지-00
+                :ARG1 (p3 / person
+                    :ARG0-of (h / have-org-role-91
+                        :ARG2 (담 / 담임)
+                        :ARG3 (가 / 가르치-01)))))
+        :snt2 (하2 / 하-02
+            :ARG0 (e / either
+                :op2 (p2 / person
+                    :wiki "정윤회"
+                    :name (이2 / 이름 :op1 "정윤회")
+                    :ARG0-of (h2 / have-rel-role-91
+                        :ARG1 (애 / 애)
+                        :ARG2 (아 / 아빠))))
+            :ARG1 (가2 / 가만두-01
+                :polarity -
+                :ARG0 p2
+                :ARG1 p3)))
     :ARG2 p3
     :manner (만 / 만나-01
         :ARG0 p
@@ -1551,9 +1550,8 @@
         :op1 (순 / 순찰-01
             :ARG0 경
             :time (직 / 직전
-                :op1 (d / date-entity
-                    :time-of (발 / 발생-01
-                        :ARG1 (화 / 화재)))))
+                :op1 (발 / 발생-01
+                    :ARG1 (화 / 화재))))
         :op2 (징 / 징후
             :mod (이 / 이상-01)
             :polarity -
@@ -1582,15 +1580,14 @@
                 :op1 (좌 / 좌판
                     :location (구 / 구역
                         :mod "가"
-                        :location (내 / 내
-                            :op1 (가 / 가건물
-                                :location-of (발 / 발화-00
-                                    :mod (최 / 최초)
-                                    :ARG1-of (확 / 확인-01
-                                        :ARG0 경
-                                        :manner (영 /영상
-                                            :mod (폐 / 폐쇄회로TV))
-                                        :time (전2 / 전날))))))))))
+                        :location (가 / 가건물
+                            :location-of (발 / 발화-00
+                                :mod (최 / 최초)
+                                :ARG1-of (확 / 확인-01
+                                    :ARG0 경
+                                    :manner (영 /영상
+                                        :mod (폐 / 폐쇄회로TV))
+                                    :time (전2 / 전날)))))))))
     :op2 (분 / 분석-01
         :ARG0 a2
         :ARG1 전))
@@ -1606,274 +1603,229 @@
         :ARG2 (사 / 사용-01
             :ARG1 (전2 / 전기용품
                 :mod (각 / 각종)
-                :example (a / and
+                :example (등 / 등
                     :op1 (수 / 수족관
                         :purpose (영 / 영업-01
                             :mod (좌 / 좌판)))
                     :op2 (전3 / 전기장판
                         :time (겨 / 겨울철))))))))
 
-# ::id snt10.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.003 ::date 2019-09-09T01:25 ::annotator gabrielle ::preferred True
 # ::snt 앞서 경찰은 전날 화재 현장 인근에 있는 관리사무소에서 어시장에 설치된 60여 대의 폐쇄회로(CC)TV 영상을 확보해 최초 발화점을 찾았다.
 # ::note
-do_timestamp_and_preferred
-** edef: exist
-(있 / 있-01
-    :ARG1 (thing_existing)
-    :ARG2 (location)
-)
-** edef: regarding
-(있 / 있-02
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-** edef: build
-(설 / 설치-01
-    :ARG0 (agent)
-    :ARG1 (thing_built)
-    :ARG2 (location)
-)
-** edef: secure
-(확 / 확보-01
-    :ARG0 (agent)
-    :ARG1 (thing_secured)
-)
-** edef: find
 (찾 / 찾-01
-    :ARG0 (finder)
-    :ARG1 (thing_found)
-)
-** edef: draw
-(찾 / 찾-02
-    :ARG0 (drawer)
-    :ARG1 (thing_drawn)
-    :ARG2 (source)
-)
+    :ARG0 (경 / 경찰)
+    :ARG1 (b / be-located-at-01
+        :ARG1 (발 / 발화-00
+            :mod (최 / 최초)))
+    :mod (앞 / 앞서)
+    :manner (확 / 확보-01
+        :ARG0 경
+        :ARG1 (영 / 영상
+            :mod (폐 / 폐쇄회로TV :quant 60 :unit (대 / 대)
+                :ARG1-of (설 / 설치-01
+                    :ARG2 (어 / 어시장))))
+        :location (사 / 사무소
+            :purpose (관 / 관리-01)
+            :location (인 / 인근
+                :op1 (현 / 현장
+                    :mod (화 / 화재))))
+        :time (전 / 전날)))
 
-
-
-# ::id snt11.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt11.E2017.NEWS.003 ::date 2019-09-09T01:37 ::annotator gabrielle ::preferred True
 # ::snt 경찰이 확보한 CCTV 영상에는 전체 4개 구역(가∼라) 332개 좌판 중 30% 이상이 몰려있는 '가' 구역 좌판 한 곳에서 가장 먼저 연기가 피어오른 장면이 담겼다.
-# ::note
-do_timestamp_and_preferred
-** edef: secure
-(확 / 확보-01
-    :ARG0 (agent)
-    :ARG1 (thing_secured)
-)
-** (몰 / 몰리.02-00)
-** (피 / 피어오르.01-00)
-** (담 / 담기.01-00)
+(담 / 담-01
+    :ARG1 (장 / 장면
+        :mod (피 / 피어오르-00
+            :ARG1 (연 / 연기)
+            :ARG1-of (h / have-degree-91
+                :ARG2 (먼 / 먼저)
+                :ARG3 (가 / 가장))
+            :location (좌 / 좌판
+                :location (구 / 구역
+                    :mod "가"
+                    :ARG2 (몰 / 몰리-00
+                        :ARG1 (좌2 / 좌판
+                            :quant (이 / 이상
+                                :op1 (p / percentage-entity :value 30))
+                            :ARG1-of (i / include-91
+                                :ARG2 (좌3 / 좌판 :quant 332 :unit (개 / 개)
+                                    :location (구2 / 구역 :quant 4 :unit (개2 / 개)
+                                        :mod (v / value-interval :op1 "가" :op2 "라")
+                                        :mod (전 / 전체))))))))))
+    :ARG2 (영 / 영상
+        :mod (C / CCTV)
+        :ARG1-of (확 / 확보-01
+            :ARG0 (경 / 경찰))))
 
-
-
-# ::id snt12.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.003 ::date 2019-09-09T02:13 ::annotator gabrielle ::preferred True
 # ::snt 경찰과 국과수 등은 이날 오전부터 화재 현장에서 2차 합동 감식을 벌인다.
 # ::note
-do_timestamp_and_preferred
-** edef: perform
 (벌 / 벌이-01
-    :ARG0 (performer)
-    :ARG1 (thing_performed)
-)
+    :ARG0 (등 / 등
+        :op1 (경 / 경찰)
+        :op2 (g / government-organization
+            :wiki "국립과학수사연구원"
+            :name (이 / 이름 :op1 "국과수")))
+    :ARG1 (감 / 감식-00
+        :mod (합 / 합동)
+        :ord (o / ordinal-entity :value 2 :unit (차 / 차)))
+    :location (현 / 현장
+        :mod (화 / 화재))
+    :time (이2 / 이후
+        :op1 (d / date-entity
+            :day (이 / 이날)
+            :dayperiod (오 / 오전))))
 
-
-
-# ::id snt13.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.003 ::date 2019-09-09T02:25 ::annotator gabrielle ::preferred True
 # ::snt 경찰은 어시장 상인들이 사고 원인으로 지목한 '가' 구역 내 변압기에 대해서도 정밀 감식을 벌일 계획이다.
 # ::note
-do_timestamp_and_preferred
-** edef: select
-(지 / 지목-01
-    :ARG0 (agent)
-    :ARG1 (thing_selected)
-    :ARG2 (select_as)
-)
-** edef: provide
-(대 / 대-01
-    :ARG0 (provider)
-    :ARG1 (thing_provided)
-    :ARG2 (entity_provided_for)
-)
-** edef: put on
-(대 / 대-02
-    :ARG0 (putter)
-    :ARG1 (thing_put_on)
-    :ARG2 (where_put_on)
-)
-** edef: perform
-(벌 / 벌이-01
-    :ARG0 (performer)
-    :ARG1 (thing_performed)
-)
+(계 / 계획-01
+    :ARG0 (경 / 경찰)
+    :ARG1 (벌 / 벌이-01
+        :ARG1 (감 / 감식-00
+            :manner (정 / 정밀-00))
+        :topic (변 / 변압기
+            :location (구 / 구역
+                    :mod "가"
+                    :ARG1-of (지 / 지목-01
+                        :ARG0 (상 / 상인
+                            :mod (어 / 어시장))
+                        :ARG2 (원 / 원인
+                            :mod (사 / 사고)))))))
 
-
-
-# ::id snt14.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.003 ::date 2019-09-09T02:34 ::annotator gabrielle ::preferred True
 # ::snt 또 조만간 한국전력공사 관계자들을 불러 어시장 내 변압기 용량 등을 확인할 방침이다.
 # ::note
-do_timestamp_and_preferred
-** edef: call
-(부 / 부르-01
-    :ARG0 (caller)
-    :ARG1 (item_being_called)
-)
-** edef: call
-(부 / 부르-02
-    :ARG0 (caller)
-    :ARG1 (item_being_labelled)
-    :ARG2 (attribute)
-)
-** edef: confirm
-(확 / 확인-01
-    :ARG0 (confirmer)
-    :ARG1 (thing_confirmed)
-    :ARG2 (hearer)
-)
+(계 / 계획-01
+    :ARG1 (확 / 확인-01
+        :ARG1 (등 / 등
+            :op1 (용 / 용량
+                :poss (변 / 변압기
+                    :location (어 / 어시장))))
+        :manner (부 / 부르-01
+            :ARG1 (p / person
+                ARG0-of (h / have-org-role-91
+                    :ARG1 (c / company
+                        :wiki "한국전력공사"
+                        :name (이 / 이름 :op1 "한국전력공사"))))))
+    :mod (또 / 또)
+    :time (조 / 조만간))
 
-
-
-# ::id snt15.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt15.E2017.NEWS.003 ::date 2019-09-09T02:52 ::annotator gabrielle ::preferred True
 # ::snt 경찰 관계자는 "목격자 3명의 진술과 최초 발화점인 '가' 구역 좌판 바닥에서 피복이 벗겨진 전선 여러 가닥을 확보했다"며 "CCTV 영상에서 화재 발생 시각에 사람이 드나든 흔적을 전혀 찾을 수 없어 전기적인 요인에 의한 자연 발화 가능성이 크다"고 했다.
 # ::note
-do_timestamp_and_preferred
-** (벗 / 벗겨지.01-00)
-** edef: secure
-(확 / 확보-01
-    :ARG0 (agent)
-    :ARG1 (thing_secured)
-)
-** (드 / 드나들.01-00)
-** edef: find
-(찾 / 찾-01
-    :ARG0 (finder)
-    :ARG1 (thing_found)
-)
-** edef: draw
-(찾 / 찾-02
-    :ARG0 (drawer)
-    :ARG1 (thing_drawn)
-    :ARG2 (source)
-)
-** edef: by means of
-(의 / 의하-01
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-** edef: great
-(크 / 크-01
-    :ARG0 (agent)
-    :ARG1 (thing_being_great)
-)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
 (하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
+    :ARG0 (p / person
+        :ARG0-of (h / have-org-role-91
+            :ARG1 (경 / 경찰)))
+    :ARG1 (a / and
+        :op1 (확 / 확보-01
+            :ARG1 (전 / 전선 :quant (여 / 여러) :unit (가 / 가닥)
+                :mod (벗 / 벗겨지-00
+                    :ARG1 (피 / 피복))
+                :location (바 / 바닥
+                    :mod (좌 / 좌판
+                        :mod (구 / 구역
+                            :mod "가")
+                        :location-of (발 / 발화-00
+                            :mod (최 / 최초)))))
+            :ARG1 (진 / 진술-01
+                :ARG0 (p2 / person :quant 3 :unit (명 / 명)
+                    :ARG0-of (목2 / 목격-01))))
+        :op2 (가2 / 가능-01
+            :ARG1 (발2 / 발화-00
+                :manner (자 / 자연-01)
+                :cause (요 / 요인
+                    :mod (전 / 전기)))
+            :cause (찾 / 찾-01
+                :polarity -
+                :ARG1 (흔 / 흔적
+                    :mod (드 / 드나들-00
+                        :ARG0 (사 / 사람)
+                        :time (발2 / 발생-01
+                            :ARG1 (화 / 화재))))
+                :location (영 / 영상
+                    :mod (C / CCTV))))))
 
-
-
-# ::id snt16.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt16.E2017.NEWS.003 ::date 2019-09-09T03:23 ::annotator gabrielle ::preferred True
 # ::snt 앞서 전날 오전 1시 36분께 소래포구 어시장에서 불이 나 2시간 30분 만에 진화됐다.
 # ::note
-do_timestamp_and_preferred
-** edef: happen
-(나 / 나-01
-    :ARG1 (thing_happening)
-    :ARG2 (location)
-)
-** (진 / 진화.01-00)
+(진 / 진화-00
+    :ARG1 (불 / 불)
+    :duration (s / sum-of
+        :op1 (t / temporal-quantity :quant 2 :unit (시 / 시간))
+        :op2 (t2 / temporal-quantity :quant 30 :unit (분 / 분)))
+    :cause (나 / 나-01
+        :ARG1 불
+        :ARG2 (m / market
+            :wiki "소래포구_종합어시장"
+            :name (이 / 이름 :op1 "소래포구" :op2 "어시장"))
+        :time (께 / 께
+            :op1 (d / date-entity
+                :day (전 / 전날)
+                :time "13:36")
+            :mod (앞 / 앞서))))
 
-
-
-# ::id snt17.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.003 ::date 2019-09-09T03:37 ::annotator gabrielle ::preferred True
 # ::snt 새벽 시간대에 불이 나 상인 등의 인명피해는 없었지만, 소래포구 어시장 내 좌판 220여 개와 좌판 인근 횟집 등 점포 20여 곳이 불에 탔다.
 # ::note
-do_timestamp_and_preferred
-** edef: happen
-(나 / 나-01
-    :ARG1 (thing_happening)
-    :ARG2 (location)
-)
-** edef: not exist
-(없 / 없-01
-    :ARG0 (causer)
-    :ARG1 (thing_not_existing)
-    :ARG2 (location)
-)
-** edef: ride
-(타 / 타-01
-    :ARGA (causer)
-    :ARG0 (agent)
-    :ARG1 (vehicle)
-)
-** edef: take
-(타 / 타-02
-    :ARG1 (taker)
-    :ARG2 (thing_taken)
-)
-** edef: burn
 (타 / 타-03
-    :ARG1 (thing_burning)
-    :ARG2 (fire)
-)
+    :ARG1 (a / and
+        :op1 (좌 / 좌판 :quant (여 / 여 :op1 220) :unit (개 / 개))
+        :op2 (점 / 점포 :quant (여2 / 여 :op1 20) :unit (곳 / 곳)
+            :example (등 / 등
+                :op1 (횟 / 횟집
+                    :mod (인 / 인근
+                        :op1 (좌2 / 좌판)))))
+        :location (m / market
+            :wiki "소래포구_종합어시장"
+            :name (이 / 이름 :op1 "소래포구" :op2 "어시장")))
+    :ARG2 (불 / 불)
+    :concession (피 / 피해
+        :polarity -
+        :mod (인2 / 인명
+            :example (등2 / 등
+                :op1 (상 / 상인)))
+        :cause (나 / 나-01
+            :ARG1 불
+            :ARG2 m
+            :time (시 / 시간대
+                :mod (새 / 새벽)))))
 
-
-
-# ::id snt18.E2017.NEWS.003 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.003 ::date 2019-09-09T03:37 ::annotator gabrielle ::preferred True
 # ::snt 소방당국은 현재까지 파악된 재산피해 추정액이 6억5천만원이라고 밝혔다.
 # ::note
-do_timestamp_and_preferred
-** edef: grasp
-(파 / 파악-01
-    :ARG0 (grasper)
-    :ARG1 (thing_grasped)
-)
-** edef: reveal
 (밝 / 밝히-01
-    :ARG0 (revealer)
-    :ARG1 (utterance,_truth_condition)
-    :ARG2 (hearer)
-)
-** edef: light
-(밝 / 밝히-02
-    :ARG0 (agent)
-    :ARG1 (thing_lit)
-)
+    :ARG0 (당 / 당국
+        :mod (소 / 소방))
+    :ARG1 (m / monetary-quantity :quant 650000000
+        :domain (금 / 금액
+            :ARG1-of (추 / 추정-01
+                :ARG0 당
+                :topic (피 / 피해
+                    :mod (재 / 재산)))
+            :ARG1-of (파 / 파악-01
+                :ARG0 당
+                :time (현 / 현재)))))
 
-
-
-# ::id snt0.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.004 ::date 2019-09-09T03:57 ::annotator gabrielle ::preferred True
 # ::snt “이직 자유” “뼈 묻어야”… 신구세대 직장인 문화 충돌.
 # ::note
-do_timestamp_and_preferred
-
+(m / multi-sentence
+    :snt1 (말 / 말하-01
+        :ARG1 (자 / 자유롭-01
+            :domain (이 / 이직-00)))
+    :snt2 (말2 / 말하-01
+        :ARG1 (묻 / 묻-02
+            :ARG1 (뼈 / 뼈)))
+    :snt3 (충 / 충돌-01
+        :ARG0 (문 / 문화
+            :mod (직 / 직장인)
+            :poss (신 / 신세대))
+        :ARG1 (문 / 문화
+            :mod (직2 / 직장인)
+            :poss (구 / 구세대))))
 
 
 # ::id snt1.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
