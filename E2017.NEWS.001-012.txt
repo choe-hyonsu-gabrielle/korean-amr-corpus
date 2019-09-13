@@ -33,29 +33,30 @@
 # ::id snt2.E2017.NEWS.001 ::date 2019-09-02T01:12 ::annotator gabrielle ::preferred True
 # ::snt 올해부터 4대 보험료 자료도 홈택스에서 조회할 수 있어 편리해졌지만 시력 보정용 안경이나 교복 구입비, 일부 종교단체 기부금 등은 근로자가 따로 꼼꼼히 챙겨야 13월의 세금 폭탄 대신 보너스를 받을 수 있다.
 # ::note 홈택스와 같은 온라인 서비스는 :medium으로 처리, 대신-01을 사용하지 않고 instead-of-91 사용
-(가 / 가능-01
-    :ARG1 (받 / 받-01
-        :ARG0 (근 / 근로자)
-        :ARG1 (보 / 보너스
-            :ARG1-of (i / instead-of-91
-                :ARG2 (폭 / 폭탄
-                    :mod (세 / 세금)
-                    :mod (d / date-entity :month 13))))
-        :condition (챙 / 챙기-01
-            :ARG0 근
-            :ARG1 (a / and
-                :op1 (구 / 구입비
-                    :purpose (안 / 안경
-                        :purpose (보2 / 보정-00
-                            :ARG1 (시 / 시력)))
-                    :purpose (교 / 교복))
-                :op2 (기 / 기부금
-                    :purpose (단 / 단체
-                        :mod (종 / 종교)
-                        :mod (일 / 일부))))
-            :manner (따 / 따로)
-            :manner (꼼 / 꼼꼼히)))
-    :concession (편 / 편리-00
+(c / contrast-01
+    :ARG1 (가 / 가능-01
+        :ARG1 (받 / 받-01
+            :ARG0 (근 / 근로자)
+            :ARG1 (보 / 보너스
+                :ARG1-of (i / instead-of-91
+                    :ARG2 (폭 / 폭탄
+                        :mod (세 / 세금)
+                        :mod (d / date-entity :month 13))))
+            :condition (챙 / 챙기-01
+                :ARG0 근
+                :ARG1 (a / and
+                    :op1 (구 / 구입비
+                        :purpose (안 / 안경
+                            :purpose (보2 / 보정-00
+                                :ARG1 (시 / 시력)))
+                        :purpose (교 / 교복))
+                    :op2 (기 / 기부금
+                        :purpose (단 / 단체
+                            :mod (종 / 종교)
+                            :mod (일 / 일부))))
+                :manner (따 / 따로)
+                :manner (꼼 / 꼼꼼히))))
+    :ARG2 (편 / 편리-00
         :cause (가2 / 가능-01
             :ARG1 (조 / 조회-00
                 :ARG1 (자 / 자료
@@ -64,7 +65,8 @@
                 :medium (서 / 서비스
                     :wiki "홈택스"
                     :name (이 / 이름 :op1 "홈택스")))
-            :time (올 / 올해))))
+            :time (이2 / 이후
+                :op1 (올 / 올해)))))
 
 # ::id snt3.E2017.NEWS.001 ::date 2019-09-02T01:45 ::annotator gabrielle ::preferred True
 # ::snt 국세청은 홈택스(www.hometax.go.kr)에서 소득·세액공제 자료를 조회할 수 있는 '연말정산 간소화 서비스'를 15일 오전 9시부터 개통한다고 12일 밝혔다.
@@ -1963,11 +1965,11 @@
                 :location (전 / 전국))
             :time (d / date-entity :month 6 :year (지 / 지난해))))
     :ARG1 (i / include-91
-        :ARG1 (사 / 사원
+        :ARG1 (사 / 사람
             :ARG0-of (퇴 / 퇴사-00
                 :time (a / at-most
                     :op1 (t / temporal-quantity :quant 1 :unit (년 / 년)))))
-        :ARG2 (사2 / 사원
+        :ARG2 (사2 / 사람
             :ARG0-of (입 / 입사-00
                 :manner (새 / 새롭-01))
             :ARG0-of (졸 / 졸업-01
@@ -1977,36 +1979,34 @@
 # ::id snt9.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 2012년(23.6%)과 2014년(25.2%)을 지나며 꾸준히 늘고 있는 셈이다.
 # ::note
-do_timestamp_and_preferred
-** edef: pass
-(지 / 지나-01
-    :ARG0 (entity_passing)
-    :ARG1 (thing_passed)
-)
-** edef: be only
-(지 / 지나-02
-    :ARG1 (thing_under_consideration)
-    :ARG2 (criterion)
-)
-** edef: increase
 (늘 / 늘-01
-    :ARG0 (causal_agent)
-    :ARG1 (thing_increasing)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-
-
+    :ARG2 (p / percentage-entity :value 23.6
+        :time (d / date-entity :year 2012))
+    :ARG2 (p2 (percentage-entity :value 25.2
+        :time (d2 / date-entity :year 2014)))
+    :manner (꾸 / 꾸준하-01))
 
 # ::id snt10.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt 신입사원 4명 중 한 명 꼴로 퇴사할 정도지만 아직까지 회사와 직원 간의 ‘아름다운 이별’ 문화는 자리잡지 못했다.
-# ::note
-do_timestamp_and_preferred
-** (퇴 / 퇴사.01-00)
-** (아 / 아름.01-00)
-** (자 / 자리.01-00)
-
-
+# ::note 
+(a / and
+    :op1 (i / include-91
+        :ARG1 (사 / 사람
+            :ARG0-of (퇴 / 퇴사-00))
+        :ARG2 (사2 / 사람
+            :ARG0-of (입 / 입사-00
+                :manner (새 / 새롭-01)))
+        :ARG3 (r / ratio-of
+            :op1 1
+            :op2 4))
+    :op2 (자 / 자리잡-01
+        :polarity -
+        :ARG0 (문 / 문화
+            :mod (이 / 이별-00
+                :ARG0 (직 / 직원)
+                :ARG1 (회 / 회사)
+                :manner (아 / 아름답-01)))
+        :time (지 / 지금)))
 
 # ::id snt11.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt 인수인계 기간 동안 회사에서 유령 취급을 받거나 악담을 듣는 등 따돌림 당하는 일도 벌어진다.
