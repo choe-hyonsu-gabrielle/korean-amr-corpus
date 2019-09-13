@@ -59,7 +59,7 @@
         :cause (가2 / 가능-01
             :ARG1 (조 / 조회-00
                 :ARG1 (자 / 자료
-                    :mod (보2 / 보험료
+                    :mod (보3 / 보험료
                         :mod 4))
                 :medium (서 / 서비스
                     :wiki "홈택스"
@@ -745,24 +745,24 @@
 # ::id snt5.E2017.NEWS.002 ::date 2019-09-04T21:05 ::annotator gabrielle ::preferred True
 # ::snt 감사자료에 따르면 담임들은 자신들이 작성하는 학교생활기록부에 정 씨에 대해 온통 칭찬만 적었다.
 # ::note 보조사
-(적 / 적-01
-    :ARG0 (p / person
-        :ARG0-of (h / have-org-role-91
-            :ARG2 (담 / 담임)
-            :ARG3 (가 / 가르치-01
-                :ARG2 (p2 / person
-                    :wiki "정유라_(승마_선수)"
-                    :name (이 / 이름 :op1 "정")))))
-    :topic p2
-    :mod (온 / 온통)
-    :ARG1 (칭 / 칭찬-00
-        :mod (만 / 만))
-    :ARG2 (학 / 학교생활기록부
-        :ARG1-of (작 / 작성-01
-            :ARG0 p))
-    :mod (따 / 따르-02
-        :ARG2 (자 / 자료
-            :topic (감 / 감사-00))))
+(전 / 전하-01
+    :ARG0 (자 / 자료
+            :topic (감 / 감사-00))
+    :ARG1 (적 / 적-01
+        :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (담 / 담임)
+                :ARG3 (가 / 가르치-01
+                    :ARG2 (p2 / person
+                        :wiki "정유라_(승마_선수)"
+                        :name (이 / 이름 :op1 "정")))))
+        :topic p2
+        :mod (온 / 온통)
+        :ARG1 (칭 / 칭찬-00
+            :mod (만 / 만))
+        :ARG2 (학 / 학교생활기록부
+            :ARG1-of (작 / 작성-01
+                :ARG0 p))))
 
 # ::id snt6.E2017.NEWS.002 ::date 2019-09-04T21:09 ::annotator gabrielle ::preferred True
 # ::snt 1학년 담임교사는 “천성이 밝고 활달해 친구들의 고민을 잘 들어준다. 심성이 따뜻해 교우 관계가 원만하다”라고 기록했다.
@@ -1510,13 +1510,14 @@
                     :mod (비 / 비닐)
                     :direction (구 / 구역
                         :mod "가")))))
-    :ARG1 (크 / 크-01
-        :ARG1 불
-        :manner (가 / 가능-01
-            :polarity -
-            :ARG1 (걷 / 걷잡-00))
-        :time (나2 / 나중)
-        :concession (작 / 작-01
+    :ARG1 (a / and
+        :op1 (크 / 크-01
+            :ARG1 불
+            :manner (가 / 가능-01
+                :polarity -
+                :ARG1 (걷 / 걷잡-00))
+            :time (나2 / 나중))
+        :op2 (작 / 작-01
             :ARG1 불
             :time (처 / 처음)))
     :location (경 / 경찰))
@@ -1828,545 +1829,150 @@
             :poss (구 / 구세대))))
 
 
-# ::id snt1.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.004 ::date 2019-09-11T00:43 ::annotator gabrielle ::preferred True
 # ::snt 윤모(28) 씨는 1년여 동안 다니던 대기업에 지난달 사표를 냈다.
 # ::note
-do_timestamp_and_preferred
-** edef: go to and from
-(다 / 다니-01
-    :ARG0 (entity_moving)
-    :ARG1 (place,_path)
-)
-** edef: send
-(내 / 내-01
-    :ARG0 (agent)
-    :ARG1 (thing_sent)
-    :ARG2 (sent_to)
-)
-** edef: make
-(내 / 내-02
-    :ARG0 (causer)
-    :ARG1 (thing_made)
-)
+(사 / 사임-01
+    :ARG0 (p / person :name (이 / 이름 :op1 "윤"))
+    :ARG1 (h / have-org-role-91
+        :ARG0 p
+        :ARG1 (대 / 대기업
+            :ARG2-of (근 / 근무-01
+                :ARG0 p
+                :duration (여 / 여
+                    :op1 (t / temporal-quantity :quant 1 :unit (년 / 년))))))
+    :time (지 / 지난달))
 
-
-
-# ::id snt2.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt2.E2017.NEWS.004 ::date 2019-09-11T00:54 ::annotator gabrielle ::preferred True
 # ::snt 위계질서가 강해 의견도 자유롭게 내기 힘든 회사 분위기가 답답하게 느껴졌다.
-# ::note
-do_timestamp_and_preferred
-** (강 / 강.01-00)
-** (자 / 자유.01-00)
-** edef: difficult
-(힘 / 힘들-01
-    :ARG1 (thing_being_difficult)
-)
-** edef: feel
+# ::note 보조사
 (느 / 느끼-01
-    :ARG0 (feeler)
-    :ARG1 (thing_felt)
-)
+    :ARG1 (답 / 답답하-00)
+    :topic (분 / 분위기
+        :poss (회 / 회사
+            :mod (힘 / 힘들-01
+                :ARG1 (내 / 내-01
+                    :ARG1 (의 / 의견)
+                    :manner (자 / 자유롭-01))
+                :cause (강 / 강하-01
+                    :ARG1 (질 / 질서
+                        :mod (위 / 위계)))))))
 
-
-
-# ::id snt3.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.004 ::date 2019-09-11T01:17 ::annotator gabrielle ::preferred True
 # ::snt 팀장에게 “대학원에서 공부를 더 하고 싶다”며 회사를 그만두겠다고 했다.
 # ::note
-do_timestamp_and_preferred
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
 (하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** edef: cease
-(그 / 그만두-01
-    :ARG0 (agent)
-    :ARG1 (thing_ceased)
-)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
+    :ARG1 (사 / 사임-01
+        :ARG1 (h / have-org-role-91
+            :ARG1 (회 / 회사)))
+    :ARG2 (p / person
+        :ARG0-of (h2 / have-org-role-91
+            :ARG2 (팀 / 팀장)))
+    :manner (말 / 말하-01
+        :ARG1 (원 / 원하-01
+            :ARG1 (공 / 공부-01
+                :mod (더 / 더)
+                :location (대 / 대학원)))))
 
-
-
-# ::id snt4.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt4.E2017.NEWS.004 ::date 2019-09-11T01:29 ::annotator gabrielle ::preferred True
 # ::snt 그러나 팀장은 “나중에 다른 곳에 취업해 ‘뒤통수 쳤다’는 얘기가 들리지 않게 하라”고 했다.
 # ::note
-do_timestamp_and_preferred
-** edef: work
-(취 / 취업-01
-    :ARG0 (thing_working)
-    :ARG1 (work_at)
-)
-** edef: strike, attack
-(치 / 치-01
-    :ARG0 (hitter,_attacker)
-    :ARG1 (thing_hit,_attacked)
-)
-** edef: set
-(치 / 치-02
-    :ARG0 (setter)
-    :ARG1 (thing_set)
-)
-** edef: run over
-(치 / 치-03
-    :ARG0 (car)
-    :ARG1 (victim)
-)
-** edef: run away
-(치 / 치-04
-    :ARG0 (agent)
-    :ARG1 (flight)
-)
-** (들 / 들리.01-00)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
+(c / contrast-01
+    :ARG2 (하 / 하-02
+        :ARG0 (p / person
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (팀 / 팀장)))
+        :ARG1 (하2 / 하-04
+            :mode imperative
+            :ARG1 (이 / 이야기-01
+                :polarity -
+                :ARG1 (배 / 배신-00)
+                :cause (취 / 취업-01
+                    :ARG1 (회 / 회사
+                        :ARG1-of (다 / 다르-01)))))))
 
-
-
-# ::id snt5.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.004 ::date 2019-09-11T01:53 ::annotator gabrielle ::preferred True
 # ::snt 다른 상사도 “정말 대학원에 가는지 모르겠지만 혹시 다른 회사에 가는 거라면 어딜 가도 똑같다”고 달랬다.
-# ::note
-do_timestamp_and_preferred
-** edef: go
-(가 / 가-01
-    :ARG0 (entity_going)
-    :ARG1 (path)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: amount to
-(가 / 가-02
-    :ARG1 (theme)
-    :ARG2 (quantity)
-)
-** edef: make-light verb
-(가 / 가-03
-    :ARG1 (deverbal_noun)
-)
-** edef: take-CV
-(가 / 가-04
-    :ARG0 (agent)
-    :ARG1 (thing_taken)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: draw-CV
-(가 / 가-05
-    :ARG0 (agent)
-    :ARG1 (thing_drawn)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: transport-CV
-(가 / 가-06
-    :ARG0 (agent,_causer)
-    :ARG1 (thing_in_motion)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: loot-CV
-(가 / 가-07
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (source)
-)
-** edef: not know
-(모 / 모르-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: go
-(가 / 가-01
-    :ARG0 (entity_going)
-    :ARG1 (path)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: amount to
-(가 / 가-02
-    :ARG1 (theme)
-    :ARG2 (quantity)
-)
-** edef: make-light verb
-(가 / 가-03
-    :ARG1 (deverbal_noun)
-)
-** edef: take-CV
-(가 / 가-04
-    :ARG0 (agent)
-    :ARG1 (thing_taken)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: draw-CV
-(가 / 가-05
-    :ARG0 (agent)
-    :ARG1 (thing_drawn)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: transport-CV
-(가 / 가-06
-    :ARG0 (agent,_causer)
-    :ARG1 (thing_in_motion)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: loot-CV
-(가 / 가-07
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (source)
-)
-** edef: go
-(가 / 가-01
-    :ARG0 (entity_going)
-    :ARG1 (path)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: amount to
-(가 / 가-02
-    :ARG1 (theme)
-    :ARG2 (quantity)
-)
-** edef: make-light verb
-(가 / 가-03
-    :ARG1 (deverbal_noun)
-)
-** edef: take-CV
-(가 / 가-04
-    :ARG0 (agent)
-    :ARG1 (thing_taken)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: draw-CV
-(가 / 가-05
-    :ARG0 (agent)
-    :ARG1 (thing_drawn)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: transport-CV
-(가 / 가-06
-    :ARG0 (agent,_causer)
-    :ARG1 (thing_in_motion)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: loot-CV
-(가 / 가-07
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (source)
-)
-** edef: same
-(똑 / 똑같-01
-    :ARG1 (thing_being_the_same)
-    :ARG2 (same_as)
-)
-** edef: soothe
+# ::note 보조사
 (달 / 달래-01
-    :ARG0 (agent)
-    :ARG1 (entity_soothed)
-)
+    :mod (또 / 또한)
+    :ARG0 (p / person
+        :ARG0-of (h / have-rel-role-91
+            :ARG2 (상 / 상사)))
+    :manner (말 / 말하-01
+        :ARG0 p
+        :ARG1 (a / and
+            :op1 (의 / 의심-01
+                :ARG0 (예 / 예정-01
+                    :ARG1 (입 / 입학-01
+                        :ARG1 (대 / 대학원))))
+            :op2 (똑 / 똑같-01
+                :ARG1 (회 / 회사
+                    :ARG1-of (다 / 다르-01))
+                :condition (원 / 원하-01
+                    :ARG1 (가 / 가-01
+                        :ARG3 회))))))
 
-
-
-# ::id snt6.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt6.E2017.NEWS.004 ::date 2019-09-11T02:18 ::annotator gabrielle ::preferred True
 # ::snt 윤 씨는 1일 “인수인계를 하러 회사에 머문 일주일 동안 매일 눈총에 시달렸다”며 “사표를 쓰고 나면 후련할 줄 알았는데 되레 더 억눌리는 기분이 들었다”고 했다.
 # ::note
-do_timestamp_and_preferred
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
 (하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** (머 / 머물.01-00)
-** edef: trouble
-(시 / 시달리-01
-    :ARG0 (cause_of_trouble)
-    :ARG1 (experiencer)
-)
-** edef: use
-(쓰 / 쓰-01
-    :ARG0 (agent)
-    :ARG1 (thing_used)
-    :ARG2 (purpose)
-)
-** edef: write
-(쓰 / 쓰-02
-    :ARG0 (agent)
-    :ARG1 (thing_written)
-)
-** edef: put on
-(쓰 / 쓰-03
-    :ARG0 (agent)
-    :ARG1 (thing_put_on)
-)
-** edef: know
-(알 / 알-01
-    :ARGA (causer)
-    :ARG0 (knower)
-    :ARG1 (theme)
-)
-** (억 / 억눌리.01-00)
-** edef: pick up
-(들 / 들-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: let in
-(들 / 들-02
-    :ARG0 (agent)
-    :ARG1 (thing_let_in)
-    :ARG2 (goal)
-)
-** edef: require
-(들 / 들-03
-    :ARG1 (requirer)
-    :ARG2 (thing_required)
-)
-** edef: grow older
-(들 / 들-04
-    :ARG1 (person)
-    :ARG2 (age)
-)
-** edef: let in-CV
-(들 / 들-05
-    :ARG0 (agent)
-    :ARG1 (thing_let_in)
-    :ARG2 (source)
-)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
+    :ARG0 (p / person :name (이 / 이름 :op1 "윤"))
+    :time (d / date-entity :day 1)
+    :ARG1 (a / and
+        :op1 (시 / 시달리-01
+            :ARG1 (눈 / 눈총)
+            :duration (t / temporal-quantity :quant 1 :unit (주 / 주일)
+                :duration-of (머 / 머무르-01
+                    :ARG2 (회 / 회사)
+                    :purpose (a2 / and
+                        :op1 (인 / 인수-01)
+                        :op2 (인2 / 인계-00)))))
+        :op2 (c / contrast-01
+            :ARG1 (기 / 기대-01
+                :ARG1 (후 / 후련하-00)
+                :cause (사 / 사임-01))
+            :ARG2 (느 / 느끼-01
+                :ARG1 (억 / 억누르-00
+                    :degree (더 / 더))))))
 
-
-
-# ::id snt7.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.004 ::date 2019-09-11T09:11 ::annotator gabrielle ::preferred True
 # ::snt 이직과 퇴직을 하기 위해 사표를 내는 1∼2년 차 직장인들이 늘고 있다.
 # ::note
-do_timestamp_and_preferred
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** edef: in order to
-(위 / 위하-01
-    :ARG0 (thing)
-    :ARG1 (thing_pursued)
-)
-** edef: send
-(내 / 내-01
-    :ARG0 (agent)
-    :ARG1 (thing_sent)
-    :ARG2 (sent_to)
-)
-** edef: make
-(내 / 내-02
-    :ARG0 (causer)
-    :ARG1 (thing_made)
-)
-** edef: increase
 (늘 / 늘-01
-    :ARG0 (causal_agent)
-    :ARG1 (thing_increasing)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
+    :ARG1 (사 / 사임-01 
+        :ARG0 (사2 / 사람
+            :ARG0-of (일 / 일하-01
+                :duration (차 / 차
+                    :op1 (t / temporal-quantity :quant 1 :unit (년 / 년))
+                    :op2 (t2 / temporal-quantity :quant 2 :unit (년2 / 년)))))
+    :purpose (o / or
+        :op1 (이 / 이직-00)
+        :op2 (퇴 / 퇴직-00))))
 
-
-
-# ::id snt8.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt8.E2017.NEWS.004 ::date 2019-09-11T10:18 ::annotator gabrielle ::preferred True
 # ::snt 한국경영자총협회(경총)가 지난해 6월 전국 306개 기업을 대상으로 실시한 ‘신입사원 채용실태 조사’에 따르면 1년 안에 퇴사한 대졸 신입사원 비율은 27.7%다.
 # ::note
-do_timestamp_and_preferred
-** edef: perform
-(실 / 실시-01
-    :ARG0 (agent)
-    :ARG1 (event_performed)
-)
-** edef: follow
-(따 / 따르-01
-    :ARG0 (agent)
-    :ARG1 (thing_followed)
-)
-** edef: according to
-(따 / 따르-02
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-** (퇴 / 퇴사.01-00)
-
-
+(전 / 전하-01
+    :ARG0 (설 / 설문조사-01 :name (이 / 이름 :op1 "신입사원" :op2 "채용실태" :op3 "조사")
+        :ARG1-of (실 / 실시-01
+            :ARG0 (o / organization
+                :wiki "한국경영자총협회"
+                :name (이2 / 이름 :op1 "한국경영자총협회(경총)"))
+            :beneficiary (기 / 기업 :quant 306 :unit (개 / 개)
+                :location (전 / 전국))
+            :time (d / date-entity :month 6 :year (지 / 지난해))))
+    :ARG1 (i / include-91
+        :ARG1 (사 / 사원
+            :ARG0-of (퇴 / 퇴사-00
+                :time (a / at-most
+                    :op1 (t / temporal-quantity :quant 1 :unit (년 / 년)))))
+        :ARG2 (사2 / 사원
+            :ARG0-of (입 / 입사-00
+                :manner (새 / 새롭-01))
+            :ARG0-of (졸 / 졸업-01
+                :ARG1 (대 / 대학)))
+        :ARG3 (p / percentage-entity :value 27.7)))
 
 # ::id snt9.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 2012년(23.6%)과 2014년(25.2%)을 지나며 꾸준히 늘고 있는 셈이다.
