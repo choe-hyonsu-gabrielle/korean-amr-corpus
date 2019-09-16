@@ -27,8 +27,9 @@
             :mod (연 / 연말))
         :topic (소 / 소득분
             :time (지 / 지난해)))
-    :time (d / date-entity
-        :day 15))
+    :time (d / date-interval 
+        :op1 (d2 / date-entity
+            :day 15)))
 
 # ::id snt2.E2017.NEWS.001 ::date 2019-09-02T01:12 ::annotator gabrielle ::preferred True
 # ::snt 올해부터 4대 보험료 자료도 홈택스에서 조회할 수 있어 편리해졌지만 시력 보정용 안경이나 교복 구입비, 일부 종교단체 기부금 등은 근로자가 따로 꼼꼼히 챙겨야 13월의 세금 폭탄 대신 보너스를 받을 수 있다.
@@ -91,8 +92,9 @@
                         :name (이3 / 이름 :op1 "홈택스")
                         :ARG1-of (h / hyperlink-91
                             :ARG3 (u / url-entity :value "www.hometax.go.kr"))))))
-        :time (d / date-entity :day 15 :time "09:00"))
-    :time (d2 / date-entity :day 12))
+        :time (d / date-interval
+            :op1 (d2 / date-entity :day 15 :time "09:00")))
+    :time (d3 / date-entity :day 12))
 
 # ::id snt4.E2017.NEWS.001 ::date 2019-09-02T01:52 ::annotator gabrielle ::preferred True
 # ::snt 맞춤형 원천징수제도에 따라 원천징수세액을 80%로 선택한 근로자는 그간 낸 세금이 적어 연말정산 때 세금을 더 낼 가능성이 크다.
@@ -190,7 +192,9 @@
                 :example (등 / 등
                     :op1 (건 / 건강보험료)
                     :op2 (국 / 국민연금)))))
-    :time (올 / 올해))
+    :time (d / date-interval
+        :op1 (d2 / date-entity
+            :year (올 / 올해))))
 
 # ::id snt8.E2017.NEWS.001 ::date 2019-09-02T02:51 ::annotator gabrielle ::preferred False
 # ::snt 다만 보청기나 휠체어 같은 장애인 보장구 구입비, 시력 보정용 안경·콘택트렌즈 구입비, 교복·체육복 구입비, 취학 전 아동 학원비, 일부 기부금은 조회되지 않을 수 있다.
@@ -468,8 +472,8 @@
                     :manner (근 / 근거-01
                         :ARG2 (자 / 자료
                             :mod (공2 / 공제-00)))))))
-    :time (이3 / 이후
-        :op1 (d / date-entity :day 18)))
+    :time (d / date-interval
+        :op1 (d2 / date-entity :day 18)))
 
 # ::id snt23.E2017.NEWS.001 ::date 2019-09-03T16:40 ::annotator gabrielle ::preferred True
 # ::snt 국세청 홈택스에 접속한 뒤 연말정산 간소화 서비스에서 공제받을 항목을 선택하면 공제 신고서에 내용이 자동으로 반영된다.
@@ -1055,7 +1059,7 @@
         :cause (당 / 당연-01
             :ARG1 (인 / 인정-01
                 :ARG1 (출 / 출석-01)
-            :time (이2 / 이후
+            :time (d / date-interval
                 :op1 (입 / 입학-01))
             :domain (p2 / person
                 :wiki "정유라_(승마_선수)"
@@ -1675,8 +1679,8 @@
         :ord (o / ordinal-entity :value 2 :unit (차 / 차)))
     :location (현 / 현장
         :mod (화 / 화재))
-    :time (이2 / 이후
-        :op1 (d / date-entity
+    :time (d / 이후
+        :op1 (d2 / date-interval
             :day (이 / 이날)
             :dayperiod (오 / 오전))))
 
@@ -1824,16 +1828,20 @@
             :ARG1 (뼈 / 뼈)))
     :snt3 (충 / 충돌-01
         :ARG0 (문 / 문화
-            :mod (직 / 직장인)
+            :mod (사 / 사람
+                :ARG0-of (일 / 일하-01
+                    :location (직 / 직장)))
             :poss (신 / 신세대))
         :ARG1 (문 / 문화
-            :mod (직2 / 직장인)
+            :mod (사2 / 사람
+                :ARG0-of (일2 / 일하-01
+                    :location (직 / 직장)))
             :poss (구 / 구세대))))
 
 
 # ::id snt1.E2017.NEWS.004 ::date 2019-09-11T00:43 ::annotator gabrielle ::preferred True
 # ::snt 윤모(28) 씨는 1년여 동안 다니던 대기업에 지난달 사표를 냈다.
-# ::note
+# ::note 퇴사-00
 (사 / 사임-01
     :ARG0 (p / person :name (이 / 이름 :op1 "윤"))
     :ARG1 (h / have-org-role-91
@@ -1862,7 +1870,7 @@
 
 # ::id snt3.E2017.NEWS.004 ::date 2019-09-11T01:17 ::annotator gabrielle ::preferred True
 # ::snt 팀장에게 “대학원에서 공부를 더 하고 싶다”며 회사를 그만두겠다고 했다.
-# ::note
+# ::note 퇴사-00
 (하 / 하-02
     :ARG1 (사 / 사임-01
         :ARG1 (h / have-org-role-91
@@ -1895,7 +1903,7 @@
 
 # ::id snt5.E2017.NEWS.004 ::date 2019-09-11T01:53 ::annotator gabrielle ::preferred True
 # ::snt 다른 상사도 “정말 대학원에 가는지 모르겠지만 혹시 다른 회사에 가는 거라면 어딜 가도 똑같다”고 달랬다.
-# ::note 보조사
+# ::note 보조사 퇴사-00
 (달 / 달래-01
     :mod (또 / 또한)
     :ARG0 (p / person
@@ -1917,7 +1925,7 @@
 
 # ::id snt6.E2017.NEWS.004 ::date 2019-09-11T02:18 ::annotator gabrielle ::preferred True
 # ::snt 윤 씨는 1일 “인수인계를 하러 회사에 머문 일주일 동안 매일 눈총에 시달렸다”며 “사표를 쓰고 나면 후련할 줄 알았는데 되레 더 억눌리는 기분이 들었다”고 했다.
-# ::note
+# ::note 퇴사-00
 (하 / 하-02
     :ARG0 (p / person :name (이 / 이름 :op1 "윤"))
     :time (d / date-entity :day 1)
@@ -1945,6 +1953,7 @@
     :ARG1 (사 / 사임-01 
         :ARG0 (사2 / 사람
             :ARG0-of (일 / 일하-01
+                :location (직 / 직장)
                 :duration (차 / 차
                     :op1 (t / temporal-quantity :quant 1 :unit (년 / 년))
                     :op2 (t2 / temporal-quantity :quant 2 :unit (년2 / 년)))))
@@ -1986,7 +1995,7 @@
         :time (d2 / date-entity :year 2014)))
     :manner (꾸 / 꾸준하-01))
 
-# ::id snt10.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt10.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 신입사원 4명 중 한 명 꼴로 퇴사할 정도지만 아직까지 회사와 직원 간의 ‘아름다운 이별’ 문화는 자리잡지 못했다.
 # ::note 
 (a / and
@@ -2008,419 +2017,228 @@
                 :manner (아 / 아름답-01)))
         :time (지 / 지금)))
 
-# ::id snt11.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt11.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 인수인계 기간 동안 회사에서 유령 취급을 받거나 악담을 듣는 등 따돌림 당하는 일도 벌어진다.
 # ::note
-do_timestamp_and_preferred
-** edef: receive
-(받 / 받-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (source)
-)
-** edef: hear
-(듣 / 듣-01
-    :ARG0 (agent)
-    :ARG1 (thing_heard)
-    :ARG2 (heard_from)
-)
-** (벌 / 벌어지.01-00)
-
-
+(당 / 당하-01
+    :ARG2 (따 / 따돌리-00)
+    :example (a / and
+        :op1 (취 / 취급-02
+            :ARG2 (유 / 유령))
+        :op2 (듣 / 듣-01
+            :ARG1 (악 / 악담)))
+    :duration (a2 / and
+        :op1 (인 / 인수-01)
+        :op2 (인2 / 인계-00)))
 
 # ::id snt12.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 대기업 유통업체에 다녔던 강 모(31·여) 씨도 퇴사를 입 밖에 낸 뒤로 왕따가 됐다.
 # ::note
-do_timestamp_and_preferred
-** edef: go to and from
-(다 / 다니-01
-    :ARG0 (entity_moving)
-    :ARG1 (place,_path)
-)
-** edef: send
-(내 / 내-01
-    :ARG0 (agent)
-    :ARG1 (thing_sent)
-    :ARG2 (sent_to)
-)
-** edef: make
-(내 / 내-02
-    :ARG0 (causer)
-    :ARG1 (thing_made)
-)
-** edef: become
 (되 / 되-01
-    :ARG1 (thing_in_focus)
-    :ARG2 (end_state)
-)
-** edef: consist of
-(되 / 되-02
-    :ARG1 (thing_in_focus)
-    :ARG2 (attribute)
-)
-** edef: amount to
-(되 / 되-03
-    :ARG1 (thing_in_focus)
-    :ARG2 (amount)
-)
-** edef: do-light verb
-(되 / 되-04
-    :ARG1 (thing_in_focus)
-    :ARG2 (deverbal_noun)
-)
-
-
+    :ARG1 (p / person :name (이 / 이름 :op1 "강") :age 31 :mod "여"
+        :ARG0-of (다 / 다니-01
+            :ARG1 (업 / 업체
+                :mod (유 / 유통-01)
+                :poss (대 / 대기업))))
+    :ARG2 (왕 / 왕따)
+    :time (이2 / 이후
+        :op1 (언 / 언급-01
+            :ARG0 p
+            :ARG1 (퇴 / 퇴사-00))))
 
 # ::id snt13.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt “왜 미리 말을 안 해서 회사를 당황시키느냐”는 핀잔도 들었다.
 # ::note
-do_timestamp_and_preferred
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** edef: be perplexed
-(당 / 당황-01
-    :ARG0 (causer)
-    :ARG1 (entity_perplexed)
-)
-** edef: pick up
-(들 / 들-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: let in
-(들 / 들-02
-    :ARG0 (agent)
-    :ARG1 (thing_let_in)
-    :ARG2 (goal)
-)
-** edef: require
-(들 / 들-03
-    :ARG1 (requirer)
-    :ARG2 (thing_required)
-)
-** edef: grow older
-(들 / 들-04
-    :ARG1 (person)
-    :ARG2 (age)
-)
-** edef: let in-CV
-(들 / 들-05
-    :ARG0 (agent)
-    :ARG1 (thing_let_in)
-    :ARG2 (source)
-)
+(핀 / 핀잔-00
+    :manner (말 / 말하-01
+        :ARG1 (a / and
+            :op1 (말2 / 말하-01
+                :polarity -
+                :time (이 / 이전
+                    :op1 (지 / 지금)))
+            :op2 (당 / 당황-01
+                :ARG1 (회 / 회사)))))
 
-
-
-# ::id snt14.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt14.E2017.NEWS.004 ::date 2019-09-16T18:45 ::annotator gabrielle ::preferred True
 # ::snt 강 씨는 “회사생활 마지막 2주 동안은 ‘인수인계를 대충 한다’는 트집까지 잡혔다”며 “평소 사이좋던 팀원들이 얼굴색을 바꾸고 차갑게 대해 마음이 무거웠다”고 말했다.
-# ::note
-do_timestamp_and_preferred
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** (잡 / 잡히.01-00)
-** (사 / 사이좋.01-00)
-** edef: change, replace
-(바 / 바꾸-01
-    :ARG0 (causer_of_transformation)
-    :ARG1 (thing_changing)
-    :ARG2 (start_state)
-    :ARG3 (end_state)
-)
-** edef: exchange, switch
-(바 / 바꾸-02
-    :ARG0 (agent)
-    :ARG1 (thing_being_traded)
-    :ARG2 (other_exchanger)
-    :ARG3 (other_item_in_exchange)
-)
-** edef: provide
-(대 / 대-01
-    :ARG0 (provider)
-    :ARG1 (thing_provided)
-    :ARG2 (entity_provided_for)
-)
-** edef: put on
-(대 / 대-02
-    :ARG0 (putter)
-    :ARG1 (thing_put_on)
-    :ARG2 (where_put_on)
-)
-** edef: heavy
-(무 / 무겁-01
-    :ARG1 (entity_being_heavy)
-)
-** edef: stop
-(말 / 말-01
-    :ARG0 (agent)
-    :ARG1 (action_or_thing_stopped)
-)
-
-
+(말 / 말하-01
+    :ARG0 (p / person :name (이 / 이름 :op1 "강")
+    :ARG1 (트 / 트집잡-00
+        :ARG1 p
+        :manner (말2 / 말하-01
+            :ARG1 (하 / 하-01
+                :ARG0 p
+                :ARG1 (a / and
+                    :op1 (인 / 인수-01
+                    :op2 (인 / 인계-00)))
+                :manner (대 / 대충))
+            :ARG2 p)
+        duration (t / temporal-quantity :quant 2 :unit (주 / 주)
+            :mod (마 / 마지막)
+            :duration-of (생 / 생활-01
+                :ARG0 p
+                :ARG2 (회 / 회사))))))
 
 # ::id snt15.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 경총 조사에 따르면 새내기 직장인들이 회사를 1년 만에 그만두는 이유는 ‘조직·직무적응 실패’(49.1%)였다.
 # ::note
-do_timestamp_and_preferred
-** edef: follow
-(따 / 따르-01
-    :ARG0 (agent)
-    :ARG1 (thing_followed)
-)
-** edef: according to
-(따 / 따르-02
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-** edef: cease
-(그 / 그만두-01
-    :ARG0 (agent)
-    :ARG1 (thing_ceased)
-)
-
-
+(전 / 전하-01
+    :ARG0 (조 / 조사-01
+        :ARG0 (o / organization
+            :wiki "한국경영자총협회"
+            :name (이 / 이름 :op1 "경총")))
+    :ARG1 (그 / 그만두-01
+        :ARG0 (사 / 사람
+            :ARG0-of (일 / 일하-01
+                :location (직 / 직장))
+            :mod (새 / 새내기))
+        :ARG1 (회 / 회사)
+        :time (이 / 이전
+            :op1 (t / temporal-quantity :quant 1 :unit (년 / 년)))
+        :ARG1-of (c / cause-01
+            :ARG0 (실 / 실패-01
+                :ARG2 (o2 / or
+                    :op1 (적 / 적응-01
+                        :ARG2 (조2 / 조직))
+                    :op2 (적2 / 적응-01
+                        :ARG2 (직2 / 직무)))
+                :ARG1-of (i / include-91
+                    :ARG2 c
+                    :ARG3 (p / percentage-entity :value 49.1))))))
 
 # ::id snt16.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 이어 ‘급여·복리후생 불만’(20.0%), ‘근무지역·근무환경에 대한 불만’(15.9%)이었다.
 # ::note
-do_timestamp_and_preferred
-** edef: provide
-(대 / 대-01
-    :ARG0 (provider)
-    :ARG1 (thing_provided)
-    :ARG2 (entity_provided_for)
-)
-** edef: put on
-(대 / 대-02
-    :ARG0 (putter)
-    :ARG1 (thing_put_on)
-    :ARG2 (where_put_on)
-)
+(a / and
+    :op1 (o / or
+        :op1 (불 / 불만-01
+            :ARG0 (급 / 급여))
+        :op2 (불2 / 불만-01
+            :ARG0 (복 / 복리후생))
+        :ARG1-of (i / include-91
+            :ARG3 (p / percentage-entity :value 20.0)))
+    :op2 (o / or
+        :op1 (불3 / 불만-01
+            :ARG0 (지 / 지역
+                :ARG2 (근 / 근무-01)))
+        :op2 (불4 / 불만-01
+            :ARG0 (환 / 환경
+                :ARG2 (근2 / 근무-01)))
+        :ARG1-of (i2 / include-91
+            :ARG3 (p2 / percentage-entity :value 15.9))))
 
-
-
-# ::id snt17.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt17.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 취업난이 심각해지다 보니 일단 합격한 회사에 다니면서 다른 회사 신입사원 공채에 재도전하는 것도 흔한 풍경이다.
 # ::note
-do_timestamp_and_preferred
-** (심 / 심각.01-00)
-** (합 / 합격.01-00)
-** edef: go to and from
-(다 / 다니-01
-    :ARG0 (entity_moving)
-    :ARG1 (place,_path)
-)
-** (흔 / 흔하.01-00)
+(흔 / 흔하-00
+    :ARG1 (재 / 재도전-00
+        :ARG1 (채 / 채용-01
+            :mod (공 / 공개-01)
+            :ARG0 (회 / 회사
+                :ARG1-of (다 / 다르-01))
+            :ARG1 (사 / 사람
+                :ARG0-of (일 / 일하-01)
+                :ARG0-of (입 / 입사-00
+                    :manner (새 / 새롭-01))))
+        :manner (다2 / 다니-01
+            :ARG1 (회2 / 회사
+                :ARG1-of (합 / 합격-00))
+            :mod (일2 / 일단)))
+    :cause (심 / 심각하-01
+        :ARG1 (어 / 어렵-01
+            :ARG1 (취 / 취업-01))))
 
-
-
-# ::id snt18.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt18.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 이명진 고려대 사회학과 교수는 “저 연차 직장인들은 ‘한 번 몸담으면 뼈를 묻는다’는 인식은 옅어지고 일과 삶의 질 사이에 균형을 맞추려는 ‘워크 앤드 라이프 밸런스(Work & Life balance)’를 중시한다”며 “하지만 기업은 평생고용·연공서열제 때의 사고방식을 이어가고 있다”고 분석했다.
 # ::note
-do_timestamp_and_preferred
-** edef: work in
-(몸 / 몸담-01
-    :ARG0 (agent)
-    :ARG1 (job)
-)
-** edef: ask
-(묻 / 묻-01
-    :ARG0 (asker)
-    :ARG1 (question)
-    :ARG2 (hearer)
-)
-** edef: bury
-(묻 / 묻-02
-    :ARG0 (agent)
-    :ARG1 (thing_buried)
-    :ARG2 (location)
-)
-** edef: stick
-(묻 / 묻-03
-    :ARG0 (causal_agent)
-    :ARG1 (thing_sticking)
-    :ARG2 (stuck_to)
-)
-** (옅 / 옅.01-00)
-** edef: tune
-(맞 / 맞추-01
-    :ARG0 (agent)
-    :ARG1 (thing_tuned)
-    :ARG2 (thing_tuned_for)
-)
-** edef: attach importance to
-(중 / 중시-01
-    :ARG0 (agent)
-    :ARG1 (attach_importance_to)
-)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** edef: connect
-(잇 / 잇-01
-    :ARG1 (thing_connecting)
-    :ARG2 (thing_connected)
-    :ARG3 (connect_to)
-)
-** edef: follow
-(잇 / 잇-02
-    :ARG1 (thing_following)
-    :ARG2 (thing_followed)
-    :ARG3 (follow_to)
-)
-** edef: analyze
 (분 / 분석-01
-    :ARG0 (agent)
-    :ARG1 (thing_analyzed)
-)
-
-
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "이명진")
+        :ARG0-of (h / have-org-role-91
+            :ARG1 (u / university :wiki "고려대학교" :name (이2 / 이름 :op1 "고려대"))
+            :ARG2 (교 / 교수
+                :topic (사 / 사회학))))
+    :manner (말 / 말하-01
+        :ARG0 p
+        :ARG1 (a / and
+            :op1 (옅 / 옅-00
+                :ARG1 (인 / 인식-01
+                    :mod (묻 / 묻-02
+                        :ARG1 (뼈 / 뼈)
+                        :condition (몸 / 몸담-01
+                            :mod (한 / 한번))))
+                :domain (사2 / 사람
+                    :ARG0-of (일 / 일하-01
+                        :location (직 / 직장))
+                    :mod (낮 / 낮-01
+                        :ARG1 (연 / 연차))))
+            :op2 (중 / 중시-01
+                :ARG0 사2
+                :ARG1 (p2 / political-movement
+                    :wiki "일과_생활의_균형"
+                    :name (이3 / 이름 :op1 "워크" :op2 "앤드" :op3 "라이프" :op4 "밸런스(Work" :op5 "&" :op6 "Life" :op7 "balance)")
+                    :ARG1-of (의 / 의미-01
+                        :ARG2 (맞 / 맞추-01
+                            :ARG1 (균 / 균형)
+                            :ARG2 (사3 / 사이
+                                :op1 (질 / 질
+                                    :mod (일2 / 일하-01))
+                                :op2 (질2 / 질)
+                                    :mod (살 / 살아가-01)))))))
+        :ARG1 (c / contrast-01
+            :ARG2 (이4 / 이어가-01
+                :ARG0 (기 / 기업)
+                :ARG1 (방 / 방식
+                    :mod (사4 / 사고-00)
+                    :time (때 / 때
+                        :op1 (고 / 고용-01
+                            :duration (평 / 평생))
+                        :op2 (연2 / 연공서열제)))))))
 
 # ::id snt19.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 직장 안에 ‘군대식(式) 위계’가 여전히 자리 잡고 있다는 지적도 있다.
-# ::note
-do_timestamp_and_preferred
-** edef: catch
-(잡 / 잡-01
-    :ARG0 (getter)
-    :ARG1 (thing_gotten)
-)
-** edef: determine
-(잡 / 잡-02
-    :ARG0 (decider)
-    :ARG1 (thing_determined)
-    :ARG2 (attribute_of_arg1)
-)
-** edef: exist
-(있 / 있-01
-    :ARG1 (thing_existing)
-    :ARG2 (location)
-)
-** edef: regarding
-(있 / 있-02
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-
-
+# ::note 보조사
+(지 / 지적-01
+    :ARG1 (자 / 자리잡-01
+        :ARG0 (위 / 위계
+            :mod (군 / 군대))
+        :ARG1 (직 / 직장)
+        :manner (여 / 여전하-01))
+    :mod (또 / 또한))
 
 # ::id snt20.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt 이택광 경희대 글로벌커뮤니케이션학과 교수는 “저 연차 직장인이 직장을 관두면 ‘끈기나 노력이 부족해서 그렇다’고 바라보면서 생기는 갈등”이라며 “퇴직하는 직장인을 ‘회사에 녹아들지 못한 고문관’으로 바라보고 있는 것”이라고 말했다.
-# ::note
-do_timestamp_and_preferred
-** (관 / 관두.01-00)
-** edef: lack
-(부 / 부족-01
-    :ARG1 (thing_being_short)
-    :ARG2 (lack_in)
-)
-** edef: be so
-(그 / 그렇-01
-    :ARG1 (entity_being_so)
-)
-** (바 / 바라보.01-00)
-** edef: happen
-(생 / 생기-01
-    :ARG1 (thing_happening)
-    :ARG2 (location)
-)
-** (퇴 / 퇴직.01-00)
-** (녹 / 녹아들.01-00)
-** (바 / 바라보.01-00)
-** edef: stop
-(말 / 말-01
-    :ARG0 (agent)
-    :ARG1 (action_or_thing_stopped)
-)
-
-
+# ::note 퇴직 수정 필요
+(말 / 말하-01
+    :ARG0 (p / person :wiki "이택광" :name (이 / 이름 :op1 "이택광")
+        :ARG0-of (h / have-org-role-91
+            :ARG1 (u / university :wiki "경희대학교" :name (이2 / 이름 :op1 "경희대"))
+            :ARG2 (교 / 교수
+                :topic (글 / 글로벌커뮤니케이션학))))
+    :ARG1 (생 / 생기-01
+        :ARG1 (갈 / 갈등-00)
+        :manner (바 / 바라보-00
+            :ARG1 (그 / 그렇-01
+                :cause (o / or
+                    :op1 (부 / 부족-01
+                        :ARG1 (끈 / 끈기))
+                    :op1 (부2 / 부족-01
+                        :ARG1 (노 / 노력-01)))))
+        :condition (관 / 관두-00
+            :ARG0 (사 / 사람
+                :ARG0-of (일 / 일하-01
+                    :location (직 / 직장))
+                :mod (낮 / 낮-01
+                    :ARG1 (연 / 연차)))
+            :ARG1 (직2 / 직장)))
+    :ARG1 (바2 / 바라보-00
+        :ARG1 (사2 / 사람
+            :ARG0-of (일2 / 일하-01
+                :location (직3 / 직장))
+            :ARG0-of (퇴 / 퇴직-00))
+        :ARG1 (고 / 고문관
+            :mod (녹 / 녹아들-00
+                :polarity -
+                :ARG2 (회 / 회사)))))
 
 # ::id snt21.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt 기업은 막 교육을 마친 신입사원이 퇴직하면 회사에 손해라는 걸 감안해야 한다는 입장이다.
