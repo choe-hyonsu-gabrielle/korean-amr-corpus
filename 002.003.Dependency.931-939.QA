@@ -1,28 +1,45 @@
 # ::id snt0.931.001_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 마음이 언짢거나 수심에 싸여 얼굴을 잔뜩 찌푸리다.
 # ::note
-
-
-
+(찌 / 찌푸리-00
+    :mod (잔 / 잔뜩)
+    :ARG1 (얼 / 얼굴)
+    :cause (o / or
+        :op1 (언 / 언짢-00
+            :ARG1 (마 / 마음))
+        :op2 (수 / 수심-00)))
 
 # ::id snt0.931.001_Q.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 화가 나거나 근심이 있어 눈썹 사이를 찡그를 때, 흔히 미간에 '이 한자'를 그린다고 말한다.
 # ::note
-
-
-
+(말 / 말하-01
+    :manner (흔 / 흔하-00)
+    :ARG1 (그 / 그리-01
+        :ARG1 (한 / 한자
+            :mod (이 / 이))
+        :location (미 / 미간))
+    :topic (찡 / 찡그리-00
+        :ARG1 (사 / 사이
+            :op1 (눈 / 눈썹))
+        :cause (o / or
+            :op1 (화 / 화나-00)
+            :op2 (근 / 근심-00))))
 
 # ::id snt1.931.001_Q.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  이 한자는 무엇일까?
 # ::note
-
-
-
+(a / amr-unknown
+    :domain (한 / 한자
+        :mod (이 / 이)))
 
 # ::id snt0.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 기계적 풍화는 대체로 다음에 의해 일어난다.
 # ::note
-
+(c / cause-01
+    :mod (대 / 대체로)
+    :ARG0 (풍 / 풍화
+        :mod (기 / 기계))
+    :ARG1 (다 / 다음))
 
 
 
