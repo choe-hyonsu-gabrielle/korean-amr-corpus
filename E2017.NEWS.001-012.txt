@@ -2785,50 +2785,6 @@
                             :time (이6 / 이후
                                 :op1 (d / date-entity :year 2006)))))))))
 
-do_timestamp_and_preferred
-** edef: provide
-(대 / 대-01
-    :ARG0 (provider)
-    :ARG1 (thing_provided)
-    :ARG2 (entity_provided_for)
-)
-** edef: put on
-(대 / 대-02
-    :ARG0 (putter)
-    :ARG1 (thing_put_on)
-    :ARG2 (where_put_on)
-)
-** (따 / 따라다니.01-00)
-** edef: act
-(활 / 활동-01
-    :ARG0 (agent)
-    :ARG1 (role)
-)
-** edef: heap
-(쌓 / 쌓-01
-    :ARG0 (agent)
-    :ARG1 (thing_heaped)
-    :ARG2 (heaped_on)
-)
-** edef: sensitive
-(민 / 민감하-01
-    :ARG1 (thing_being_sensitive)
-    :ARG2 (sensitive_to)
-)
-** (헤 / 헤치.01-00)
-** edef: judge
-(판 / 판단-01
-    :ARG0 (agent)
-    :ARG1 (judgement)
-)
-** edef: stop
-(말 / 말-01
-    :ARG0 (agent)
-    :ARG1 (action_or_thing_stopped)
-)
-
-
-
 # ::id snt12.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt 특히 "내각 구성에서 성 평등 관점에서도 큰 의미가 있다. 여러 어려움, 외교 난제가 산적한 현실에 후보자가 국제외교무대에서의 경험과 추진력으로 대한민국의 당면 외교위기를 해결하고 외교 위상을 높여주길 기대한다"고 밝혔다.
 # ::note
