@@ -41,55 +41,59 @@
         :mod (기 / 기계))
     :ARG1 (다 / 다음))
 
-
-
 # ::id snt1.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  온도 차이에 의한 암석의 수축과 팽창에 의한 작용.
 # ::note
-
-
-
+(작 / 작용
+    :cause (a / and
+        :op1 (수 / 수축-00
+            :ARG1 (암 / 암석))
+        :op2 (팽 / 팽창-00
+            :ARG1 (암 / 암석))
+        :cause (다 / 다르-01
+            :ARG1 (t / temperature-quantity))))
 
 # ::id snt2.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  외부 압력의 차이에 의한 작용.
 # ::note
-
-
-
+(작 / 작용
+    :cause (다 / 다르-01
+        :ARG1 (p / pressure-quantity
+            :mod (외 / 외부))))
 
 # ::id snt3.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  물의 결빙과 해빙에 의한 작용.
 # ::note
-
-
-
+(작 / 작용
+    :cause (a / and
+        :op1 (결 / 결빙-00
+            :ARG1 (물 / 물))
+        :op2 (해 / 해빙-00
+            :ARG1 (물 / 물))))
 
 # ::id snt4.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  바람에 의한 작용.
 # ::note
-
-
-
+(작 / 작용
+    :cause (바 / 바람))
 
 # ::id snt5.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  하천이나 빙하의 침식작용.
 # ::note
-
-
-
+(침 / 침식-00
+    :ARG1 (o / or
+        :op1 (하 / 하천)
+        :op2 (빙 / 빙하)))
 
 # ::id snt6.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  생물체의 작용.
 # ::note
-
-
-
+(작 / 작용
+    :mod (생 / 생물체))
 
 # ::id snt0.931.002_A.02_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt <지리> 기온이 크게 변화하거나 암석 틈에 물이 들어가 얼거나 식물의 뿌리가 낄 때, 화학적 성분의 변화 없이 암석이 부서지는 풍화 작용.
 # ::note
-
-
 
 
 # ::id snt0.931.002_A.03_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
