@@ -37,14 +37,14 @@
 # ::note
 (c / cause-01
     :mod (대 / 대체로)
-    :ARG0 (풍 / 풍화
-        :mod (기 / 기계))
+    :ARG0 (풍 / 풍화-00
+        :manner (기 / 기계적))
     :ARG1 (다 / 다음))
 
 # ::id snt1.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  온도 차이에 의한 암석의 수축과 팽창에 의한 작용.
 # ::note
-(작 / 작용
+(작 / 작용-01
     :cause (a / and
         :op1 (수 / 수축-00
             :ARG1 (암 / 암석))
@@ -56,7 +56,7 @@
 # ::id snt2.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  외부 압력의 차이에 의한 작용.
 # ::note
-(작 / 작용
+(작 / 작용-01
     :cause (다 / 다르-01
         :ARG1 (p / pressure-quantity
             :mod (외 / 외부))))
@@ -64,100 +64,195 @@
 # ::id snt3.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  물의 결빙과 해빙에 의한 작용.
 # ::note
-(작 / 작용
+(작 / 작용-01
     :cause (a / and
         :op1 (결 / 결빙-00
             :ARG1 (물 / 물))
         :op2 (해 / 해빙-00
-            :ARG1 (물 / 물))))
+            :ARG1 물))
 
 # ::id snt4.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  바람에 의한 작용.
 # ::note
-(작 / 작용
+(작 / 작용-01
     :cause (바 / 바람))
 
 # ::id snt5.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  하천이나 빙하의 침식작용.
 # ::note
-(침 / 침식-00
-    :ARG1 (o / or
-        :op1 (하 / 하천)
-        :op2 (빙 / 빙하)))
+(작 / 작용-01
+    :mod (침 / 침식-00
+        :ARG0 (o / or
+            :op1 (하 / 하천)
+            :op2 (빙 / 빙하))))
 
 # ::id snt6.931.002_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  생물체의 작용.
 # ::note
-(작 / 작용
-    :mod (생 / 생물체))
+(작 / 작용-01
+    :ARG1 (생 / 생물체))
 
 # ::id snt0.931.002_A.02_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt <지리> 기온이 크게 변화하거나 암석 틈에 물이 들어가 얼거나 식물의 뿌리가 낄 때, 화학적 성분의 변화 없이 암석이 부서지는 풍화 작용.
 # ::note
-
+(작 / 작용-01
+    :topic (지 / 지리)
+    :mod (풍 / 풍화-00)
+    :mod (부 / 부수-01
+        :ARG1 (암 / 암석)
+        :manner (변 / 변화-01
+            :polarity -
+            :ARG1 (성 / 성분
+                :mod (화 / 화학)))
+        :condition (o / or
+            :op1 (변2 / 변화-01
+                :ARG1 (t / temperature-quantity)
+                :manner (크 / 크-01))
+            :op2 (얼 / 얼-01
+                :ARG1 (물 / 물
+                    :ARG0-of (들 / 들어가-01
+                        :ARG3 (틈 / 틈
+                            :op1 (암2 / 암석)))))
+            :op3 (끼 / 끼-00
+                :ARG1 (뿌 / 뿌리
+                    :part-of (식 / 식물))))))
 
 # ::id snt0.931.002_A.03_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 보통 온도에 의한 암석조직의 수축 ·팽창, 바람 ·하천 ·빙하의 침식작용, 생물체의 작용 등에 의해 일어난다.
 # ::note
-
-
-
+(c / cause-01
+    :mod (보 / 보통)
+    :ARG1 (등 / 등
+        :op1 (o / or
+            :op1 (수 / 수축-00
+                :ARG1 (조 / 조직
+                    :mod (암 / 암석)))
+            :op2 (팽 / 팽창-00
+                :ARG1 조))
+        :op2 (작 / 작용-01
+            :mod (침 / 침식-00
+                :ARG0 (o2 / or
+                    :op1 (바 / 바람)
+                    :op2 (하 / 하천)
+                    :op3 (빙 / 빙하))))
+        :op3 (작2 / 작용-01
+            :ARG1 (생 / 생물체))))
 
 # ::id snt0.931.002_A.04_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 기계적 풍화작용은 압력의 제거나 물의 동결, 결정들의 상호작용, 온도 변화, 식물의 작용 등에 의해서 기계적으로 암석이 파괴되는 풍화를 말한다.
 # ::note
-
-
-
+(풍 / 풍화-00
+    :domain (작 / 작용-01
+        :mod (풍2 / 풍화-00
+            :manner (기 / 기계적)))
+    :mod (파 / 파괴-01
+        :ARG1 (암 / 암석)
+        :manner (기2 / 기계적)
+        :cause (등 / 등
+            :op1 (제 / 제거-01
+                :ARG1 (압 / 압력))
+            :op2 (동 / 동결-00
+                :ARG1 (물 / 물))
+            :op3 (작2 / 작용-01
+                :mod (상 / 상호)
+                :ARG1 (결 / 결정))
+            :op4 (변 / 변화-01
+                :ARG1 (t / temperature-quantity))
+            :op5 (작3 / 작용-01
+                :ARG1 (식 / 식물)))))
 
 # ::id snt0.931.002_A.05_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 기계적 풍화의 원인으로는 온도에 의한 암석조직의 수축‧팽창, 암석 틈 사이에서의 얼음의 쐐기작용, 또는 바람과 비에 의한 풍화, 생물체의 작용, 즉 식물체의 뿌리 등에 의한 풍화 등을 들 수가 있다.
 # ::note
-
-
-
+(풍 / 풍화-00
+    :manner (기 / 기계적)
+    :cause (등 / 등
+        :op1 (o / or
+            :op1 (수 / 수축-00
+                :ARG1 (조 / 조직
+                    :mod (암 / 암석)))
+            :op2 (팽 / 팽창-00
+                :ARG1 조)
+            :cause (온 / 온도))
+        :op2 (작 / 작용-01
+            :ARG2 (쐐 / 쐐기)
+            :ARG1 (얼 / 얼음)
+            :location (틈 / 틈
+                :op1 (암2 / 암석)))
+        :op3 (a / and
+            :op1 (바 / 바람)
+            :op2 (비 / 비))
+        :op4 (작2 / 작용-01
+            :ARG1 (생 / 생물체)
+            :example (뿌 / 뿌리
+                :part-of (식 / 식물체)))))
 
 # ::id snt0.931.002_Q.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 한랭 건조한 기후에서는 화학적 풍화작용보다 기계적 풍화작용이 우세하게 일어난다.
 # ::note
-
-
-
+(우 / 우세-01
+    :ARG1 (작 / 작용-01
+        :mod (풍 / 풍화-00
+            :manner (기 / 기계적)))
+    :ARG2 (작2 / 작용
+        :mod (풍2 / 풍화-00
+            :manner (화 / 화학적)))
+    :condition (기 / 기후
+        :ARG1-of (한 / 한랭-00)
+        :ARG1-of (건 / 건조-00)))
 
 # ::id snt1.931.002_Q.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  기계적 풍화작용에 해당하는 것은 무엇일까?
 # ::note
-
-
-
+(해 / 해당-01
+    :ARG1 (a / amr-unknown)
+    :ARG2 (작 / 작용-01
+        :mod (풍 / 풍화-00
+            :manner (기 / 기계적))))
 
 # ::id snt0.931.003_Q.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 최인훈의 <소설가 구보씨의 일일>에서 구보씨는 '산다는 일은 어질머리를 보태는 일이었다'라고 말한다.
 # ::note
-
-
-
+(말 / 말하-01
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "구보")
+        :ARG1-of (등 / 등장-01
+            :ARG2 (b / book :wiki "소설가_구보씨의_일일" :name (이2 / 이름 :op1 "소설가" :op2 "구보씨의" :op3 "일일")
+                :ARG1-of (쓰 / 쓰-02
+                    :ARG0 (p2 / person :wiki "최인훈" :name (이3 / 이름 :op1 "최인훈"))))))
+    :ARG1 (보 / 보태-00
+        :ARG1 (어 / 어질머리)
+        :domain (살 / 살-02)))
 
 # ::id snt1.931.003_Q.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  여기서 '어질머리'는 무엇을 뜻하는 말일까?
 # ::note
-
-
-
+(뜻 / 뜻하-01
+    :ARG1 (어 / 어질머리)
+    :ARG2 (a / amr-unknown)
+    :condition (여 / 여기))
 
 # ::id snt0.931.004_Q.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt BTB용액은 대표적인 산, 염기 지시약이다.
 # ::note
-
-
-
+(약 / 약물
+    :ARG0-of (지 / 지시-02
+        :ARG1 (산 / 산)
+        :ARG1 (염 / 염기))
+    :mod (대 / 대표-01)
+    :domain (용 / 용액
+        :mod (b / BTB)))
 
 # ::id snt1.931.004_Q.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  화학 물질에 BTB용액을 떨어뜨렸을 때의 색깔이 옳은 것은 무엇일까?
 # ::note
-
-
-
+(a / amr-unknown
+    :mod (옳 / 옳-01
+        :ARG1 (색 / 색깔
+            :condition (떨 / 떨어뜨리-00
+                :ARG1 (용 / 용액
+                    :mod (b / BTB))
+                :ARG2 (물 / 물질
+                    :mod (화 / 화학))))))
 
 # ::id snt0.931.005_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 동몽선습(童蒙先習)은 조선 시대 중종 때의 학자 박세무(朴世茂)가 서당에 처음 입학한 학동을 위하여 지은 책이다.
