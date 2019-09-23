@@ -18,7 +18,7 @@
         :ARG1 (한 / 한자
             :mod (이 / 이))
         :location (미 / 미간))
-    :topic (찡 / 찡그리-00
+    :condition (찡 / 찡그리-00
         :ARG1 (사 / 사이
             :op1 (눈 / 눈썹))
         :cause (o / or
@@ -246,7 +246,7 @@
 # ::snt  화학 물질에 BTB용액을 떨어뜨렸을 때의 색깔이 옳은 것은 무엇일까?
 # ::note
 (a / amr-unknown
-    :mod (옳 / 옳-01
+    :domain (옳 / 옳-01
         :ARG1 (색 / 색깔
             :condition (떨 / 떨어뜨리-00
                 :ARG1 (용 / 용액
