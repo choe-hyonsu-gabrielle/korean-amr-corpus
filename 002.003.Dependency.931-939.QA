@@ -257,53 +257,116 @@
 # ::id snt0.931.005_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 동몽선습(童蒙先習)은 조선 시대 중종 때의 학자 박세무(朴世茂)가 서당에 처음 입학한 학동을 위하여 지은 책이다.
 # ::note
-
-
-
+(책 / 책
+    :domain (b / book :wiki "동몽선습" :name (이 / 이름 :op1 "동몽선습"))
+    :ARG1-of (짓 / 짓-01
+        :ARG0 (p / person :wiki - :name (이2 / 이름 :op1 "박세무")
+            :mod (학 / 학자)
+            :ARG0-of (살 / 살-02
+                :time (d / date-entity
+                    :era "중종"
+                    :calendar (c / country :wiki "조선" :name (이3 / 이름 :op1 "조선")))))
+        :purpose (학2 / 학동
+            :ARG0-of (입 / 입학-01
+                :ARG1 (서 / 서당)))))
 
 # ::id snt1.931.005_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  동몽선습은 천자문을 익히고 난 후의 학동들이 배우는 초급 교재로, 부자유친(父子有親)·군신유의(君臣有義)·부부유별(夫婦有別)·장유유서(長幼有序)·붕우유신(朋友有信)의 오륜(五倫)과 중국의 삼황오제(三皇五帝)에서부터 명나라까지의 역사와 한국의 단군에서부터 조선왕조까지의 역사를 약술하였다.
 # ::note
-
-
-
+(a / and
+    :op1 (교 / 교재
+        :domain (b / book :wiki "동몽선습" :name (이 / 이름 :op1 "동몽선습"))
+        :mod (초 / 초급)
+        :instrument-of (배 / 배우-01
+            :ARG0 (학 / 학동)
+            :time (이2 / 이후
+                :op1 (익-00
+                    :ARG0 학
+                    :ARG1 (b2 / book :wiki "천자문" :name (이3 / 이름 :op1 "천자문"))))))
+    :op2 (약 / 약술-00
+        :ARG0 b
+        :ARG1 (a / and
+            :op1 (오 / 오륜
+                :ARG2-of (i / include-91
+                    :ARG1 (부 / 부자유친)
+                    :ARG1 (군 / 군신유의)
+                    :ARG1 (부2 / 부부유별)
+                    :ARG1 (장 / 장유유서)
+                    :ARG1 (붕 / 붕우유신)))
+            :op2 (역 / 역사
+                :mod (c / country :wiki "중국" :name (이4 / 이름 :op1 "중국"))
+                :mod (d / date-interval
+                    :op1 (d2 / date-entity
+                        :era "삼황오제")
+                    :op2 (d3 / date-entity
+                        :era (c2 / country :wiki "명나라" :name (이5 / 이름 :op1 "명나라")))))
+            :op3 (역2 / 역사
+                :mod (c3 / country :wiki "한국" :name (이6 / 이름 :op1 "한국"))
+                :mod (d4 / date-interval
+                    :op1 (d5 / date-entity
+                        :era "단군")
+                    :op2 (d6 / date-entity
+                        :era "조선왕조"))))))
 
 # ::id snt0.931.005_A.02_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt <책명> 조선 중종 때에, 박세무(朴世茂)가 쓴 어린이 학습서.
 # ::note
-
-
-
+(책 / 책
+    :topic (이 / 이름
+        :poss (책2 / 책))
+    :instrument-of (학 / 학습-00
+        :ARG0 (어 / 어린이))
+    :ARG1-of (쓰 / 쓰-01
+        :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "박세무"))
+        :time (d / date-entity
+            :era "중종"
+            :calendar (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선")))))
 
 # ::id snt1.931.005_A.02_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  오륜(五倫)의 요의(要義)를 간결하게 서술하고, 중국과 조선의 역대 세계(世系)와 개략적인 역사를 덧붙였다.
 # ::note
+(a / and
+    :op1 (서 / 서술-01
+        :ARG1 (요 / 요의
+            :mod (오 / 오륜))
+        :manner (간 / 간결하-01))
+    :op2 (덧 / 덧붙-01
+        :ARG1 (a / and
+            :op1 (세 / 세계
+                :mod (역 / 역대))
+            :op2 (역2 / 역사
+                :mod (개 / 개략))
+            :mod (a2 / and
+                :op1 (c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+                :op2 (c2 / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))))
 
-
-
-
-# ::id snt2.931.005_A.02_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt2.931.005_A.02_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt  ≪천자문≫을 익힌 어린이들이 ≪소학≫을 배우기 전에 공부하는 교과서로 널리 사용하였으며, 덕행의 함양에 많은 도움이 되었다.
 # ::note
-
 
 
 
 # ::id snt0.931.005_A.03_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 조선 중종 때 학자 박세무(朴世茂)가 저술하였다.
 # ::note
+(저 / 저술-01
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "박세무")
+        :mod (학 / 학자)
+        :ARG0-of (살 / 살-02
+            :time (d / date-entity
+                :era "중종"
+                :calendar (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))))
 
 
 
-
-# ::id snt1.931.005_A.03_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.005_A.03_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt  《천자문》을 익히고 난 후의 학동들이 배우는 초급교재로, 먼저 부자유친(父子有親) ·군신유의(君臣有義) ·부부유별(夫婦有別) ·장유유서(長幼有序) ·붕우유신(朋友有信)의 오륜(五倫)을 설명하였다.
 # ::note
 
 
 
 
-# ::id snt2.931.005_A.03_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt2.931.005_A.03_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt  이어 중국의 삼황오제(三皇五帝)에서부터 명나라까지의 역대사실(歷代史實)과 한국의 단군에서부터 조선시대까지의 역사를 약술하였다.
 # ::note
 
@@ -313,11 +376,19 @@
 # ::id snt0.931.005_A.04_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 조선 중기 유학자인 박세무(朴世茂)가 초학 아동들을 위하여 지은 책.
 # ::note
+(책 / 책
+    :ARG1-of (짓 / 짓-01
+        :purpose (아 / 아동
+            :ARG0-of (초 / 초학하-00))
+        :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "박세무")
+            :mod (유 / 유학자)
+            :ARG0-of (살 / 살-02
+                :time (중 / 중기
+                    :mod (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선")))))))
 
 
 
-
-# ::id snt0.931.005_A.05_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.005_A.05_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
 # ::snt 조선 중종 때 학자 박세무(朴世茂)가 저술하여 1670년(현종 11)에 간행하였다.
 # ::note
 
@@ -383,7 +454,11 @@
 # ::id snt1.931.006_Q.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  APEC의 회원국이 아닌 나라는 어디일까?
 # ::note
-
+(h / have-org-role-91
+    :polarity -
+    :ARG0 (a / amr-unknown)
+    :ARG1 (o / organization :wiki "아시아_태평양_경제협력체" :name (이 / 이름 :op1 "APEC"))
+    :ARG2 (회 / 회원국)
 
 
 
@@ -397,28 +472,40 @@
 # ::id snt0.931.007_Q.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 여러 번을 강조해 이르는 말로 '골백번'이라는 표현이 있다.
 # ::note
-
-
-
+(표 / 표현
+    :mod "골백번"
+    :domain (이 / 이르-02
+        :manner (강 / 강조-01)
+        :frequency (여 / 여러)))
 
 # ::id snt1.931.007_Q.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  여기서 '골'이 의미하는 숫자는 무엇일까?
 # ::note
-
-
-
+(의 / 의미-01
+    :ARG1 "골"
+    :ARG2 (a / amr-unknown
+        :mod (숫 / 숫자))
+    :condition (여 / 여기))
 
 # ::id snt0.931.008_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt 폐동맥(肺動脈)은 심장의 우심실에서 시작되어 폐로 가는 동맥이다.
 # ::note
-
+(동 / 동맥
+    :domain (폐 / 폐동맥)
+    :ARG1-of (가 / 가-01
+        :ARG2 (우 / 우심실
+            :part-of (심 / 심장))
+        :ARG3 (폐 / 폐)))
 
 
 
 # ::id snt1.931.008_A.01_ver ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
 # ::snt  산소가 결핍된 유일한 동맥이다.
 # ::note
-
+(동 / 동맥
+    :ARG1-of (유 / 유일-01)
+    :ARG1-of (결 / 결핍-00
+        :ARG2 (산 / 산소)))
 
 
 
