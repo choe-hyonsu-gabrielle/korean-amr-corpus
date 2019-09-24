@@ -349,7 +349,7 @@
             :medium (온 / 온라인))
         :time (올 / 올해)))
 
-# ::id snt15.E2017.NEWS.001 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 의료비 중 배우자 난임 시술비는 사생활 보호를 위해 의료비와 별도로 구분되지 않는다.
 # ::note
 (구 / 구분-01
@@ -1985,7 +1985,7 @@
                 :ARG1 (대 / 대학)))
         :ARG3 (p / percentage-entity :value 27.7)))
 
-# ::id snt9.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 2012년(23.6%)과 2014년(25.2%)을 지나며 꾸준히 늘고 있는 셈이다.
 # ::note
 (늘 / 늘-01
@@ -1995,7 +1995,7 @@
         :time (d2 / date-entity :year 2014)))
     :manner (꾸 / 꾸준하-01))
 
-# ::id snt10.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 신입사원 4명 중 한 명 꼴로 퇴사할 정도지만 아직까지 회사와 직원 간의 ‘아름다운 이별’ 문화는 자리잡지 못했다.
 # ::note 
 (a / and
@@ -2017,7 +2017,7 @@
                 :manner (아 / 아름답-01)))
         :time (지 / 지금)))
 
-# ::id snt11.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 인수인계 기간 동안 회사에서 유령 취급을 받거나 악담을 듣는 등 따돌림 당하는 일도 벌어진다.
 # ::note
 (당 / 당하-01
@@ -2031,7 +2031,7 @@
         :op1 (인 / 인수-01)
         :op2 (인2 / 인계-00)))
 
-# ::id snt12.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 대기업 유통업체에 다녔던 강 모(31·여) 씨도 퇴사를 입 밖에 낸 뒤로 왕따가 됐다.
 # ::note
 (되 / 되-01
@@ -2046,7 +2046,7 @@
             :ARG0 p
             :ARG1 (퇴 / 퇴사-00))))
 
-# ::id snt13.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt “왜 미리 말을 안 해서 회사를 당황시키느냐”는 핀잔도 들었다.
 # ::note
 (핀 / 핀잔-00
@@ -2079,7 +2079,7 @@
                 :ARG0 p
                 :ARG2 (회 / 회사))))))
 
-# ::id snt15.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 경총 조사에 따르면 새내기 직장인들이 회사를 1년 만에 그만두는 이유는 ‘조직·직무적응 실패’(49.1%)였다.
 # ::note
 (전 / 전하-01
@@ -2106,7 +2106,7 @@
                     :ARG2 c
                     :ARG3 (p / percentage-entity :value 49.1))))))
 
-# ::id snt16.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이어 ‘급여·복리후생 불만’(20.0%), ‘근무지역·근무환경에 대한 불만’(15.9%)이었다.
 # ::note
 (a / and
@@ -2127,7 +2127,7 @@
         :ARG1-of (i2 / include-91
             :ARG3 (p2 / percentage-entity :value 15.9))))
 
-# ::id snt17.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 취업난이 심각해지다 보니 일단 합격한 회사에 다니면서 다른 회사 신입사원 공채에 재도전하는 것도 흔한 풍경이다.
 # ::note
 (흔 / 흔하-00
@@ -2148,7 +2148,7 @@
         :ARG1 (어 / 어렵-01
             :ARG1 (취 / 취업-01))))
 
-# ::id snt18.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이명진 고려대 사회학과 교수는 “저 연차 직장인들은 ‘한 번 몸담으면 뼈를 묻는다’는 인식은 옅어지고 일과 삶의 질 사이에 균형을 맞추려는 ‘워크 앤드 라이프 밸런스(Work & Life balance)’를 중시한다”며 “하지만 기업은 평생고용·연공서열제 때의 사고방식을 이어가고 있다”고 분석했다.
 # ::note
 (분 / 분석-01
@@ -2194,7 +2194,7 @@
                             :duration (평 / 평생))
                         :op2 (연2 / 연공서열제)))))))
 
-# ::id snt19.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 직장 안에 ‘군대식(式) 위계’가 여전히 자리 잡고 있다는 지적도 있다.
 # ::note 보조사
 (지 / 지적-01
@@ -2205,7 +2205,7 @@
         :manner (여 / 여전하-01))
     :mod (또 / 또한))
 
-# ::id snt20.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이택광 경희대 글로벌커뮤니케이션학과 교수는 “저 연차 직장인이 직장을 관두면 ‘끈기나 노력이 부족해서 그렇다’고 바라보면서 생기는 갈등”이라며 “퇴직하는 직장인을 ‘회사에 녹아들지 못한 고문관’으로 바라보고 있는 것”이라고 말했다.
 # ::note 퇴직 수정 필요
 (말 / 말하-01
@@ -2240,7 +2240,7 @@
                 :polarity -
                 :ARG2 (회 / 회사)))))
 
-# ::id snt21.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 기업은 막 교육을 마친 신입사원이 퇴직하면 회사에 손해라는 걸 감안해야 한다는 입장이다.
 # ::note
 (입 / 입장
@@ -2258,7 +2258,7 @@
                     :ARG1 (교 / 교육-01)
                     :mod (막 / 막))))))
 
-# ::id snt22.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한 기업 인사 담당자는 “사원 한 명을 교육하는 데 돈이 많이 드는데, 사원이 회사를 나간다면 회사는 아깝고 아쉬운 마음이 든다”며 “악담까진 아니라도 ‘여기서 못 버티면 다른 곳에서도 또 그만둔다’는 만류를 할 때가 잦다”고 했다.
 # ::note
 (하 / 하-02
@@ -2297,7 +2297,7 @@
                         :polarity -
                         :location (여 / 여기)))))))
 
-# ::id snt23.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 새롭게 신입사원을 뽑아도 업무에 적응하기까지 걸리는 시간도 길다.
 # ::note
 (길 / 길-01
@@ -2312,7 +2312,7 @@
                 :manner (새 / 새롭-01)))
         :manner (새2 / 새롭-01)))
 
-# ::id snt24.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 실제 경총 조사 결과 기업들의 대졸 신입사원에 대한 업무 수행 만족도는 2010년 조사 이후 계속해서 내려가는 추세다.
 # ::note
 (전 / 전하-01
@@ -2340,7 +2340,7 @@
                 :op1 (조2 / 조사-01
                     :time (d / date-entity :year 2010))))))
 
-# ::id snt25.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 전문가들은 기업과 신입사원이 서로를 이해하는 게 먼저라고 조언했다.
 # ::note
 (조 / 조언-01
@@ -2355,7 +2355,7 @@
                         :manner (새 / 새롭-01))))
             :ARG1 (서 / 서로))))
 
-# ::id snt26.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 서이종 서울대 사회학과 교수는 “기업은 새 인력을 받아들이면서 성장하고, 신입사원은 조직에서 여러 세대와 어울려서 일한다는 점을 알아야 한다”며 “서로의 문화를 이해하려고 노력하는 자세가 중요하다”고 말했다.
 # ::note
 (말 / 말하-01
@@ -2389,7 +2389,7 @@
                     :ARG1 (문 / 문화
                         :poss (서 / 서로)))))))
 
-# ::id snt27.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이직이 거부할 수 없는 흐름이라면 기업과 신입사원이 서로의 적합성을 시험해 볼 기간이 필요하다는 의견도 있다.
 # ::note
 (의 / 의견
@@ -2410,7 +2410,7 @@
                 :ARG1 (거 / 거부-01
                     :ARG1 (이 / 이직-00))))))
 
-# ::id snt28.E2017.NEWS.004 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 윤인진 고려대 사회학과 교수는 “고용 초반 6개월∼1년 정도는 회사와 사원이 서로 맞는 정도를 시험해 보고 판단하는 것도 한 방법”이라며 “다만 불안정한 고용 제도로 악용될 가능성이 있어 여기에 대한 고민은 필요하다”고 말했다.
 # ::note
 (말 / 말하-01
@@ -2448,7 +2448,7 @@
                         :ARG1-of (안 / 안정-01
                             :polarity -)))))))
 
-# ::id snt0.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 文 대통령, 경제부총리 김동연·외교부 장관 여성 강경화 내정.
 # ::note
 (a / and
@@ -2466,7 +2466,7 @@
             :ARG2-of (h2 / have-org-role-91
                 :ARG1 (g / government-organization :wiki "대한민국_외교부" :name (이4 / 이름 :op1 "외교부"))))))
 
-# ::id snt1.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 문재인 대통령은 21일 '경제 사령탑'인 경제부총리 겸 기획재정부 장관 후보자에 김동연(60) 아주대 총장, 외교부 장관 후보자에 여성인 강경화(62) 유엔 사무총장 정책특보를 각각 내정했다.
 # ::note
 (a / and
@@ -2502,7 +2502,7 @@
         :time (d2 / date-entity :day 21))
     :mod (각 / 각각))
 
-# ::id snt2.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 인사가 다소 지연되던 청와대 국가안보실장엔 정의용(71) 아시아정당 국제회의 공동 상임위원장이, 정책실장엔 장하성(64) 고려대 경영학과 교수가 임명됐다.
 # ::note
 (a / and
@@ -2529,7 +2529,7 @@
             :ARG2-of (h4 / have-org-role-91
                 :ARG1 g))))
 
-# ::id snt3.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 문 대통령은 이날 청와대 춘추관 브리핑룸에서 "새 정부의 경제-외교안보 분야 인사를 직접 국민에게 말씀드리겠다"며 직접 이 같은 인사를 발표했다.
 # ::note
 (발 / 발표-01
@@ -2556,7 +2556,7 @@
         :part-of (b / building :wiki - :name (이4 / 이름 :op1 "춘추관")
             :part-of (g / government-organization :wiki "청와대" :name (이5 / 이름 :op1 "청와대")))))
 
-# ::id snt4.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 외교안보실장 하마평에 올랐던 문정인(66) 연세대 명예특임 교수와, 대미 특사인 홍석현(68) 전 중앙일보·JTBC 사장은 대통령의 통일외교안보특보를 맡게 됐다.
 # ::note
 (h / have-org-role-91
@@ -2583,7 +2583,7 @@
     :ARG2 (통 / 통일외교안보특보
         :poss (대2 / 대통령)))
 
-# ::id snt5.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt5.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 국민경제자문회의 부의장엔 김광두(70) 서강대 경제학과 석좌교수가 인선됐다.
 # ::note
 (h / have-org-role-91
@@ -2597,7 +2597,7 @@
     :ARG1 (g / government-organization :wiki "대한민국_국민경제자문회의" :name (이3 / 이름 :op1 "국민경제자문회의"))
     :ARG2 (부 / 부의장))
 
-# ::id snt6.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 김동연 부총리 후보자는 충북 음성 출신으로 '고졸신화의 인간승리 드라마'로 불린다.
 # ::note
 (부 / 부르-02
@@ -2614,7 +2614,7 @@
             :mod (졸 / 졸업-01
                 :ARG1 (고 / 고등학교)))))
 
-# ::id snt7.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt7.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 덕수상고 졸업 뒤 은행에 취직해 직장생활을 하며 행정고시와 입법고시에 동시 합격한 입지전적의 인물로 평가받는다.
 # ::note
 (평 / 평가-01
@@ -2632,7 +2632,7 @@
                     :op2 (취 / 취직-00
                         :ARG1 (은 / 은행)))))))
 
-# ::id snt8.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 문 대통령은 "새 정부는 일찍이 경험하지 못한 저성장 위기 속 출범해 빠른 시일 내 위기를 극복하고 일자리를 통한 경제 활성화를 만드는 게 가장 중요한 국정과제"라며 "종합적 위기관리능력과 과감한 추진력을 가장 중요하게 고려했다"고 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -2671,7 +2671,7 @@
                         :ARG1 (위3 / 위기
                             :mod (종 / 종합))))))))
 
-# ::id snt9.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt9.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 이어 "김 후보자는 저와 개인적 인연이 없지만 누구보다 국민 어려움에 공감하는 분"이라며 "특히 기획예산처, 재정부 요직을 두루 거치며 경제에 대한 거시적 통찰력과 조정능력이 검증된 유능한 관료란 점에서 적임자로 판단했다"고 말했다.
 # ::note 거치다 거치하다 lemma issue
 (a / and
@@ -2711,7 +2711,7 @@
                                 :ARG0 p
                                 :ARG1 (g2 / government-organization :wiki "대한민국_기획재정부" :name (이3 / 이름 "재정부"))))))))))
 
-# ::id snt10.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 강경화 장관 후보자는 서울 출생으로 이화여고를 졸업, 매사추세츠대학 커뮤니케이션 박사 학위를 받았다.
 # ::note
 (받 / 받-01
@@ -2728,7 +2728,7 @@
         :topic (커 / 커뮤니케이션))
     :ARG2 (u / university :wiki "매사추세츠_대학교_애머스트" :name (이4 / 이름 :op1 "매사추세츠대학")))
 
-# ::id snt11.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt11.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 문 대통령은 강 후보자에 대해 "비(非) 외무고시 출신 외교부 첫 여성 국장과 유엔 최고위직 등 외교 분야에서 한국 최초, 최고 여성 수식어가 따라다닌다"며 "2006년부터 유엔에서 활동하며 국제외교무대에서 쌓은 인적 네트워크, 전문성을 바탕으로 민감한 외교 현안을 슬기롭게 헤쳐 나갈 적임자로 판단했다"고 말했다.
 # ::note 판단-01 동격 처리?, 인적
 (말 / 말하-01
@@ -2784,7 +2784,7 @@
                             :time (이6 / 이후
                                 :op1 (d / date-entity :year 2006)))))))))
 
-# ::id snt12.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt12.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 특히 "내각 구성에서 성 평등 관점에서도 큰 의미가 있다. 여러 어려움, 외교 난제가 산적한 현실에 후보자가 국제외교무대에서의 경험과 추진력으로 대한민국의 당면 외교위기를 해결하고 외교 위상을 높여주길 기대한다"고 밝혔다.
 # ::note
 do_timestamp_and_preferred
@@ -2833,7 +2833,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt13.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 정의용 신임 실장은 서울 출신으로 서울고, 서울대 외교학과를 졸업했다.
 # ::note
 do_timestamp_and_preferred
@@ -2845,14 +2845,14 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt14.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 현재 아시아정당 국제회의 공동 상임위원장이다.
 # ::note
 do_timestamp_and_preferred
 
 
 
-# ::id snt15.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 문 대통령이 각국 정상들과 '전화 외교'를 할 때 배석해 역할을 해왔다.
 # ::note
 do_timestamp_and_preferred
@@ -2926,7 +2926,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt16.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt16.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 이어 "지금처럼 북핵, 사드(THAAD), 경제가 하나로 얽힌 숙제를 풀려면 확고한 안보의식과 함께 외교적 능력이 있어야 해 정 실장이 적임자라 판단했다"며 "안보가 곧 경제, 민생이라는 통합적 정책 운용을 통해 하루빨리 국민이 안심하고 생활하는 국가안보 상황을 만들어주길 기대한다"고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -3019,7 +3019,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt17.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 장하성 신임 실장은 광주 출생으로, 경기고를 졸업해 펜실베니아대 경영학 박사학위를 받았다.
 # ::note
 do_timestamp_and_preferred
@@ -3037,7 +3037,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt18.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 문 대통령은 "장 실장은 한국 사회의 경제적 불평등을 지속적으로 연구한 경제학 분야의 석학, 실천 운동가"라며 "과거 재벌 대기업 중심 경제 패러다임에서 벗어나 사람 중심, 중소기업 중심으로 경제사회정책을 변화시키고, 경제민주화와 소득주도성장, 국민성장을 함께 추진할 최고 적임자로 판단했다"고 밝혔다.
 # ::note
 do_timestamp_and_preferred
@@ -3082,7 +3082,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt19.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt19.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 그는 "특히 한국경제에 대한 해박한 이론을 바탕으로 기업지배구조 개선운동을 한 경험이 한국 사회 구조적 난제 해결에 큰 도움이 되리라 판단했다"며 "이번에 처음으로 공직을 맡게 됐는데 그동안 역대 정부와 정치권 요청을 고사하다 큰 결단을 해줘서 감사하다"고 했다.
 # ::note
 do_timestamp_and_preferred
@@ -3242,7 +3242,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt20.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 문정인 신임 특보는 제주가 고향으로, 오현고를 졸업하고 메릴랜드대에서 정치학 박사 학위를 받았다.
 # ::note
 do_timestamp_and_preferred
@@ -3260,7 +3260,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt21.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 홍석현 신임 특보는 서울 출신으로 경기고, 스탠포드대를 졸업했다.
 # ::note
 do_timestamp_and_preferred
@@ -3272,7 +3272,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt22.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한국신문협회 고문을 맡고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -3285,7 +3285,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt23.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt23.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 문 대통령은 "비록 비상임이지만 국제사회에서 능력과 권위를 인정받은 두 분의 참여로 산적한 외교안보 (문제) 실마리가 풀릴 것으로 기대한다"며 "앞으로 두 분은 새 정부의 기조와 방향을 저와 함께 논의하고 챙겨갈 것"이라고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -3319,7 +3319,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt24.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 김광두 신임 부의장은 전남 나주 출생으로 광주제일고를 졸업, 하와이대 경제학 박사 학위를 받았다.
 # ::note
 do_timestamp_and_preferred
@@ -3332,7 +3332,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt25.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt25.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 문 대통령은 "우리 경제를 살리는데 국가 역량을 모으기 위해 헌법기구인 자문회의를 활성화하려 한다"며 "김 부의장은 대한민국 개혁적 보수를 대표하는 경제학자로 저와는 다소 다른 시각에서 정치 경제를 바라본 분이나, 이제 경제문제도 합리적 진보와 개혁적 보수가 손을 맞잡아야 한다"고 설명했다.
 # ::note
 do_timestamp_and_preferred
@@ -3364,14 +3364,14 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt26.E2017.NEWS.005 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 그러면서 "경제가 갈 길이 성장 분배 이분법이 아니라 선순환이 있다. 이론과 실무를 두루 경험한 김 부의장이 중책을 맡은 만큼 헌법 취지대로 활성화해 고단한 국민 삶을 개선하는데 실질적 역할을 해줄 것을 기대한다"고 부연했다.
 # ::note
 do_timestamp_and_preferred
 
 
 
-# ::id snt0.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt "4대강 담합 처벌 다 받았는데" vs "털어내고 신뢰회복 계기".
 # ::note
 do_timestamp_and_preferred
@@ -3384,7 +3384,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt1.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt1.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt "지난 정권에서도 4대강 건설공사 후폭풍으로 대대적인 담합 비리 조사, 과징금 추징, 입찰 참가 제한 등 2중·3중의 필벌(必罰)을 받았는데…. 이번에 확실히 털어내고 업계 발전 방향의 계기가 됐으면 합니다."
 # ::note
 do_timestamp_and_preferred
@@ -3428,7 +3428,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt2.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한 대형건설사 임원은 대선 과정에서 '4대강 무용론'이 제기된 만큼 22일 문재인 대통령의 4대강 보 상시개방 착수 지시와 관련해 건설업계도 영향이 있을 것으로 내다봤다.
 # ::note
 do_timestamp_and_preferred
@@ -3462,7 +3462,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt3.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 문 대통령은 후보 시절부터 "민관 전문가가 참여해 사업 전후 환경 변화와 향후 대책까지 담은 과학적 조사를 진행하고 필요하다면 보 전면 철거를 포함한 개선안을 마련하겠다"고 약속했다.
 # ::note
 do_timestamp_and_preferred
@@ -3508,7 +3508,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt4.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 특히 "4대강 사업이 정책 판단의 잘못이었는지, 부정부패가 있었는지 명확하게 규명하고 불법이 드러나면 법적 책임을 묻고 손해배상도 시키겠다"고 강조했다.
 # ::note
 do_timestamp_and_preferred
@@ -3566,7 +3566,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt5.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 4대강 사업 담합비리 조사는 검찰이 2013년 9월 11개 건설사 법인과 전현직 임원 22명을 기소하면서다.
 # ::note
 do_timestamp_and_preferred
@@ -3579,7 +3579,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt6.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt6.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 기소된 건설사들은 지난 2008년 정부가 4대강 공사 계획을 발표하자 건설사 모임을 만들어 입찰을 담합한 혐의를 받았다.
 # ::note
 do_timestamp_and_preferred
@@ -3631,7 +3631,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt7.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이들은 14개 공구를 나눠 입찰을 받았는데 배분된 공구를 낙찰받기 위해 경쟁 회사를 '들러리'로 내세웠던 것이다.
 # ::note
 do_timestamp_and_preferred
@@ -3673,7 +3673,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt8.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 들러리 업체들은 의도적으로 완성도가 떨어지는 설계 계획을 내 탈락하고 낙찰 업체는 높은 가격에 입찰을 받도록 했다.
 # ::note
 do_timestamp_and_preferred
@@ -3710,7 +3710,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt9.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이들 업체들은 대법원에서 5000만~7500만 원씩의 벌금형을 확정 선고받았다.
 # ::note
 do_timestamp_and_preferred
@@ -3723,7 +3723,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt10.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 벌금 7500만 원은 건설산업기본법에 따라 담합 행위를 한 기업에 내릴 수 있는 최고 형량이다.
 # ::note
 do_timestamp_and_preferred
@@ -3770,7 +3770,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt11.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 건설사 협의체 운영위원을 맡은 건설사 임원에게는 징역 2년의 실형이 선고됐으며 나머지 전현직 임원 가운데 18명은 징역 8월에서 2년에 집행유예 1∼3년이 선고됐다.
 # ::note
 do_timestamp_and_preferred
@@ -3795,7 +3795,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt12.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 2015년 특별 사면 때 입찰 담합으로 부정당업체 제재를 받은 70여 개 업체를 비롯해 2000여 개 건설 업체가 각종 제재에서 사면 혜택을 받았다.
 # ::note
 do_timestamp_and_preferred
@@ -3825,7 +3825,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt13.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt13.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 업계에선 단기적 성과에 집착한 정부의 무리한 4대강 살리기 사업 추진이 건설업계의 담합 등 비리 사건을 일으키는 빌미를 제공했다는 점도 정상참작된 것으로 보고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -3882,7 +3882,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt14.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt14.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt A사 건설사 임원은 "4대강 사업은 개별 건설사가 이윤을 목적으로 선택해 입찰한 것이 아니라 동원된 사업이었다"면서 "줄줄이 과태료와 손해배상, 형사처벌 등이 이어졌고 나아가 무엇보다 건설산업에 대한 국민적 불신을 키우게 된 계기가 됐다"고 토로했다.
 # ::note
 do_timestamp_and_preferred
@@ -3957,7 +3957,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt15.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 전문가들 사이에선 현행 입찰 제도를 문제점으로 꼽고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -3970,7 +3970,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt16.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 발주단계부터 건설사들이 나눠 맡게끔 정부가 구조를 만들어 놓고 있다는 것이다.
 # ::note
 do_timestamp_and_preferred
@@ -4005,7 +4005,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt17.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 실제로 역대 최고 수준의 과징금이 부과된 호남고속철만 하더라도 17개 공구 중 13개 공구는 1사 1공구만 가능하고 해당 분야 시공능력을 갖춘 건설사 숫자도 제한적이다.
 # ::note
 do_timestamp_and_preferred
@@ -4058,7 +4058,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt18.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt B사 건설사 관계자는 "발주시점부터 건설사들의 담합에 대해 예상 가능한데 사업이 끝날 때까지 묵인하다가 완공 후 처벌하는 형태가 반복되고 있다"면서 "정부가 4대강 정책감사를 비롯해 김상조 공정위원장의 내정으로 불공정 관행뿐만 아니라 담합 행위에 대해 근절에 나선 만큼 업계도 이번 기회를 신뢰회복의 계기로 삼아야 할 것"이라고 전했다.
 # ::note
 do_timestamp_and_preferred
@@ -4158,7 +4158,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt19.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt19.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 김민형 한국건설산업연구원 연구위원은 "그동안 관행적으로 이뤄졌던 입찰 담합이 시장경제의 본질인 공정 경쟁에 반한다는 근본적인 문제 인식이 이번 기회에 정리돼야 한다"면서 "현행 입찰 담합 제재의 제도 개선을 통한 실효성 있고 강력한 담합 근절 방안과 함께 내부 통제 시스템 마련이 필요하다"고 조언했다.
 # ::note
 do_timestamp_and_preferred
@@ -4216,14 +4216,14 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt20.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한편 4대강 관련 법정 싸움은 여전히 진행 중이다.
 # ::note
 do_timestamp_and_preferred
 
 
 
-# ::id snt21.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 지난 3월 한국수자원공사는 4대강 담합 건설사에 대한 설계보상비 환수 1차 소송에서 승소했다.
 # ::note
 do_timestamp_and_preferred
@@ -4246,7 +4246,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt22.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt22.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 법원은 "4대강 사업 참여 건설사에 설계보상비 244억 원을 돌려주라"며 수자원공사의 손을 들어준 것.
 # ::note
 do_timestamp_and_preferred
@@ -4266,7 +4266,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt23.E2017.NEWS.006 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt23.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 이에 건설사들은 설계보상비를 환수하고 항소를 제기해 2심이 진행될 예정이다.
 # ::note
 do_timestamp_and_preferred
@@ -4285,14 +4285,14 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt0.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 日, 10초 만에 "모시모시"… 한국 10단계 '미로'.
 # ::note
 do_timestamp_and_preferred
 
 
 
-# ::id snt1.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 30대 직장인 A 씨는 이달 초 연휴 때 신용카드 콜센터에 전화했다가 분통이 터졌다.
 # ::note
 do_timestamp_and_preferred
@@ -4308,7 +4308,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt2.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 부가 서비스로 가능한 무료 주차 횟수가 몇 번 남았는지 기억이 나지 않아 전화 문의를 하려 했지만 통화 연결에 실패했다.
 # ::note
 do_timestamp_and_preferred
@@ -4366,7 +4366,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt3.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt '휴일엔 사고 관련이 아니면 상담원 연결이 되지 않는다'고 녹음된 목소리만 들었을 뿐이다.
 # ::note
 do_timestamp_and_preferred
@@ -4413,7 +4413,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt4.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt4.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 미국에서 주재원으로 일하다 지난해 돌아온 B 씨는 미국에서 쓰던 카드를 해지하지 않았다는 사실을 알고 카드 뒷면에 있는 콜센터에 전화를 걸었다.
 # ::note
 do_timestamp_and_preferred
@@ -4470,7 +4470,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt5.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 미국 시각으론 토요일 오전 2시쯤 되는 때였지만 혹시나 하고 걸어 보았는데 상담원이 받았다.
 # ::note
 do_timestamp_and_preferred
@@ -4540,7 +4540,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt6.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 그는 "전화 연결이 바로 되어서 오히려 내가 당황했다"고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -4577,7 +4577,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt7.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한국 금융회사들이 소비자 편의를 위해 콜센터를 업그레이드했다고 저마다 홍보하고 있지만 선진국 및 글로벌 금융회사와 비교하면 여전히 상담 가능한 시간이 짧고 사용하기도 복잡한 것으로 나타났다.
 # ::note
 do_timestamp_and_preferred
@@ -4625,7 +4625,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt8.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt8.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt IT(정보기술) 강국임을 강조하며 '말로 하는 ARS', '보이는 ARS' 등을 개발해 상담 서비스에 적용하고 있는데, 고령층이나 바쁜 직장인들에겐 이런 복잡한 선택 과정이 오히려 장애물로 작용한다는 지적도 나온다.
 # ::note
 do_timestamp_and_preferred
@@ -4713,7 +4713,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt9.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 본지가 한국의 4대 시중 은행(국민·신한·우리·KEB하나은행), 9개 카드사, 3대 생명보험사, 5대 손해보험사 등의 콜센터를 조사한 결과 24시간·365일 일반 상담(분실 신고 등 금융 사고와 관련된 상담 제외)이 가능한 금융사는 없었다.
 # ::note
 do_timestamp_and_preferred
@@ -4741,7 +4741,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt10.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 지난달 영업을 개시한 한국의 첫 인터넷 전문 은행인 케이뱅크(Kbank) 한 곳만 상담원을 통한 24시간 상담을 할 수 있었다.
 # ::note
 do_timestamp_and_preferred
@@ -4799,7 +4799,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt11.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 글로벌 은행들과 비교했더니 한국 은행들의 상담 시간은 매우 짧았다.
 # ::note
 do_timestamp_and_preferred
@@ -4816,7 +4816,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt12.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt12.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 대형 글로벌 금융사 중 대부분은 한국인에겐 낯선 365일·24시간 상담 서비스를 제공 중이다.
 # ::note
 do_timestamp_and_preferred
@@ -4824,7 +4824,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt13.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 세계 10대 은행(자산 기준) 중 중국 건설은행, 미국 뱅크오브아메리카 두 곳을 뺀 8개 은행은 모두 언제든지 상담원과 통화를 할 수 있었다.
 # ::note
 do_timestamp_and_preferred
@@ -4868,7 +4868,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt14.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한국 은행은 평일엔 13시간(신한·우리은행) 혹은 14시간(국민·KEB하나은행)만 통화를 할 수 있는 것으로 확인됐다.
 # ::note
 do_timestamp_and_preferred
@@ -4912,7 +4912,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt15.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 주말엔 통화 가능 시간이 6시간인 은행(신한은행)도 있었다.
 # ::note
 do_timestamp_and_preferred
@@ -4929,7 +4929,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt16.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 25일 오전 6~7시에 걸쳐 한국과 해외 금융회사의 콜센터에 실제로 전화를 걸어 보았더니 한국의 4대 은행은 모두 연결이 안 됐다.
 # ::note
 do_timestamp_and_preferred
@@ -4972,7 +4972,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt17.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 반면 세계 최대 은행인 중국 공상은행은 전화를 걸자마자 "니하오", 일본 최대 은행 미쓰비시UFJ은행은 오전 6시 30분임에도 신호음이 간 지 10초 만에 "모시모시"라고 응답했다.
 # ::note
 do_timestamp_and_preferred
@@ -5033,7 +5033,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt18.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 밤 시간대인 미국 은행을 포함해 10대 은행 중 8개 은행은 상담원이 전화를 받았다.
 # ::note
 do_timestamp_and_preferred
@@ -5052,7 +5052,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt19.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 금융계 관계자는 "인도 등에 외주 콜센터를 운영하는 미국, 인건비가 싼 중국 등과 비교할 때 한국은 야간이나 휴일 근무 수당을 많이 지급해야 하기 때문에 상담 시간 연장에 따른 비용 부담이 매우 크게 작용하는 측면이 있다"고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -5116,7 +5116,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt20.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 상담원 연결 과정도 한국 금융회사가 훨씬 복잡했다.
 # ::note
 do_timestamp_and_preferred
@@ -5127,7 +5127,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt21.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt21.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 미국 등 선진국의 주요 콜센터는 대부분이 전화하는 즉시 사람이 응답을 하고, 소비자가 무엇을 원하는지를 그다음에 듣는다.
 # ::note
 do_timestamp_and_preferred
@@ -5177,7 +5177,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt22.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt22.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 대부분의 한국 금융회사는 반대로 소비자가 무엇이 필요한지를 일일이 ARS 번호 입력을 한 다음에야 상담원이 응대한다.
 # ::note
 do_timestamp_and_preferred
@@ -5221,7 +5221,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt23.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt23.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 미국 '디스커버 카드' 콜센터에 카드를 해지하는 상황을 가정해 전화를 했더니 50초 만에 상담원이 바로 전화를 받았다.
 # ::note
 do_timestamp_and_preferred
@@ -5271,7 +5271,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt24.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 똑같이 카드 해지를 하려고 한국 A 신용카드사에 전화를 건 결과 열 단계를 거친 끝에야 상담원과 통화를 할 수 있었다.
 # ::note
 do_timestamp_and_preferred
@@ -5357,7 +5357,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt25.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt25.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 길어지는 통화에 대한 전화 요금은 대부분 소비자가 부담(1분당 약 30원)해야 한다.
 # ::note
 do_timestamp_and_preferred
@@ -5378,7 +5378,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt26.E2017.NEWS.007 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 금융소비자연맹 강형구 금융 국장은 "금융회사 콜센터의 통화 대기 시간뿐 아니라 민원 상담에 대한 전화 요금을 모두 소비자에게 부담하는 것은 적절치 않다"고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -5421,14 +5421,14 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt0.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한 달 새 1억 껑충… 집값, 과열인가 회복인가.
 # ::note
 do_timestamp_and_preferred
 
 
 
-# ::id snt1.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 새 정부 출범 후 부동산 시장이 달아오르고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -5439,7 +5439,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt2.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 서울에서는 재건축 아파트 단지를 중심으로 폭등세가 재현되고 아파트 분양권 거래량도 사상 최고로 치솟았다.
 # ::note
 do_timestamp_and_preferred
@@ -5456,7 +5456,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt3.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt '과열'을 우려하는 시각도 있지만, 2008년 글로벌 금융 위기 후 장기 침체에 허덕이던 부동산 시장이 이제 완전히 회복세로 돌아섰다는 전망이 퍼지고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -5499,7 +5499,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt4.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 26일 부동산 정보 업체 부동산114는 "이번 주 서울 아파트 평균 매매 가격이 1주일 전보다 0.3% 올라 작년 10월 이후 가장 높은 상승률을 기록했다"고 밝혔다.
 # ::note
 do_timestamp_and_preferred
@@ -5553,7 +5553,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt5.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 대선 직전인 4월 28일 주간 상승률(0.03%)과 비교하면 10배다.
 # ::note
 do_timestamp_and_preferred
@@ -5566,7 +5566,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt6.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt6.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 인터넷 부동산 관련 카페에는 "중개업소에 매물을 내놓으니 집도 안 보고 계약금이 입금됐다.", "4월에 (집) 팔았는데 그 뒤로 1억 원 넘게 올랐다. 속상해서 잠이 안 온다"는 등 부동산 열기를 입증하는 글들이 자주 눈에 띈다.
 # ::note
 do_timestamp_and_preferred
@@ -5708,14 +5708,14 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt7.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이런 집값 급등세의 '진앙(震央)'은 서울 재건축 아파트 단지였다.
 # ::note
 do_timestamp_and_preferred
 
 
 
-# ::id snt8.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt8.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 강동구 둔촌동 주공 1단지 전용면적 50㎡는 최근 1층 매물이 8억 5000만 원에 팔렸다.
 # ::note
 do_timestamp_and_preferred
@@ -5723,7 +5723,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt9.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 4월 초엔 같은 조건 아파트가 7억 8700만 원에 거래됐는데 한 달여 만에 7000만 원 가까이 오른 셈이다.
 # ::note
 do_timestamp_and_preferred
@@ -5764,7 +5764,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt10.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 서울 강남구 삼성동 홍실아파트 전용 108㎡는 며칠 전 16억 9000만 원(8층)에 계약됐다.
 # ::note
 do_timestamp_and_preferred
@@ -5777,7 +5777,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt11.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 지난달 같은 면적 3층 매물 거래가는 14억 원.
 # ::note
 do_timestamp_and_preferred
@@ -5789,7 +5789,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt12.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한 달 사이 2억 9000만 원(20.7%) 오른 것이다.
 # ::note
 do_timestamp_and_preferred
@@ -5820,7 +5820,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt13.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt13.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 고종완 한국자산관리연구원장은 "내년부터 부활할 것으로 보이는 '초과이익환수제'를 피할 수 있는 재건축 단지가 먼저 오르고, 주변 일반 아파트까지 상대적으로 저평가됐다는 인식 때문에 덩달아 가격이 뛰는 '쌍끌이' 장세"라고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -5876,7 +5876,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt14.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 부동산 전문가들은 집값 상승세가 지속되는 이유에 대해 "대선 이후 정치적 불확실성이 사라지고, 경기 부양 기대감이 반영된 덕분"이라고 설명한다.
 # ::note
 do_timestamp_and_preferred
@@ -5916,7 +5916,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt15.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt15.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 임병철 부동산114 책임연구원은 "문재인 정부가 부동산 시장에 그렇게 강한 규제를 내리진 않을 것이란 기대감과 함께 도시 재생 정책 등이 개발 호재로 작용할 수 있다는 전망이 매수 심리를 끌어올리고 있다"고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -5965,7 +5965,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt16.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt16.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 대형 건설사 관계자는 "서울과 수도권 인기 주거지는 주택 공급은 적은데 집을 사려는 수요가 넘치기 때문에 집값이 오를 수밖에 없다"고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -6018,7 +6018,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt17.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 최근 집값 오름세가 걱정할 만한 수준이 아니며, 다른 경제지표와 비교하면 집값 상승률이 오히려 낮다는 분석도 있다.
 # ::note
 do_timestamp_and_preferred
@@ -6062,7 +6062,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt18.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt18.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 이준용 한국감정원 시장분석연구부장은 "서울·부산·세종 등 일부 지역을 제외하면 전국적으로는 안정세를 보이고, 서울과 수도권도 부동산 활황이던 글로벌 금융 위기 직전과 비교하면 상승 폭이 크지 않다"고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -6092,7 +6092,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt19.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 2008년부터 2016년까지 서울 아파트 3.3㎡당 평균 매매가는 1748만 원에서 1916만 원으로 9.6% 오른 반면, 같은 기간 우리나라 GDP(국내총생산)는 1조 17억 달러에서 1조 4110억 달러로 41% 성장했다.
 # ::note
 do_timestamp_and_preferred
@@ -6135,7 +6135,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt20.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 종합주가지수(코스피)도 글로벌 금융 위기 전 최고치(2085포인트 · 2007년 11월 1일)보다 13% 가까이 올랐다.
 # ::note
 do_timestamp_and_preferred
@@ -6166,7 +6166,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt21.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt21.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 그렇다고 지나친 낙관론은 금물이라는 게 전문가들 지적이다.
 # ::note
 do_timestamp_and_preferred
@@ -6174,7 +6174,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt22.E2017.NEWS.008 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt22.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 이남수 신한금융투자 부동산팀장은 "하반기엔 금리 인상 가능성이 있는 데다가 주택 시장에 투기 수요가 몰리면 정부가 보유세 인상이나 가계 대출 관리 등 규제를 강화할 수 있다"며 "분위기에 휩쓸려 섣불리 투자했다가 '낭패'를 볼 수 있다는 걸 명심해야 한다"고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -6246,7 +6246,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt0.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 北, IRBM 이어 지대공·지대함 미사일 성공… ICBM만 남아.
 # ::note
 do_timestamp_and_preferred
@@ -6259,7 +6259,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt1.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt1.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 북한은 8일 강원도 원산에서 지대함 순항미사일 수발을 동해상으로 발사하는 데 성공해 미사일 다종화 능력을 과시했다.
 # ::note
 do_timestamp_and_preferred
@@ -6284,7 +6284,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt2.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt2.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 지난달 14일 중거리탄도미사일(IRBM) 화성-12와 같은 달 21일 준중거리탄도미사일(MRBM) 북극성-2형, 27일 KN-06 지대공미사일, 29일 스커드계열 지대함·지대지 겸용 탄도미사일에 이어 이번 지대함 순항미사일까지 성공적으로 발사했다.
 # ::note
 do_timestamp_and_preferred
@@ -6315,7 +6315,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt3.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt3.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 화성-12 발사 이후 한 달도 되지 않은 기간에 5종의 신형 미사일 능력을 보여준 셈이다.
 # ::note
 do_timestamp_and_preferred
@@ -6343,7 +6343,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt4.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt4.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 이번에 발사한 지대함 순항미사일은 4월 15일 평양에서 열린 김일성 생일 105주년 기념 열병식에서 차량에 실린 원통형 발사관 4개짜리 미사일로 추정된다.
 # ::note
 do_timestamp_and_preferred
@@ -6364,7 +6364,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt5.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt5.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 북한이 그간 쐈던 미사일도 모두 열병식에서 공개됐다.
 # ::note
 do_timestamp_and_preferred
@@ -6378,7 +6378,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt6.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 북한이 열병식에서 공개한 미사일 중 아직까지 쏘지 않은 것은 대륙간탄도미사일(ICBM)뿐이다.
 # ::note
 do_timestamp_and_preferred
@@ -6397,7 +6397,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt7.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt7.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 군 당국은 북한이 발사에 성공한 IRBM 화성-12의 액체연료 엔진 3∼4개를 클러스터링(결합)한 ICBM을 조만간 쏘아 올릴 가능성이 큰 것으로 판단하고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -6427,7 +6427,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt8.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이와 관련, 북한 노동신문은 지난달 31일 "우리는 최고 수뇌부의 명령에 따라 임의의 시간에 임의의 장소에서 대륙간탄도로켓 시험발사를 진행할 준비가 되어있다"고 주장했다.
 # ::note
 do_timestamp_and_preferred
@@ -6474,7 +6474,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt9.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 북한이 지난달 14일 이후 발사에 성공한 5종의 미사일은 유사시 한반도로 전개되는 미군 증원전력의 길목을 겨냥하고, 우리 군이 구축 중인 한국형 미사일방어체계(KAMD) 무력화를 노린 전략무기로 평가되고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -6514,7 +6514,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt10.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 화성-12는 최정점 고도 2천110여㎞로 780여㎞를 비행했으나, 군 당국은 정상발사 각도(30∼45도)로 쏠 경우 4천500∼5천㎞를 비행할 수 있을 것으로 판단하고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -6546,7 +6546,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt11.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 태평양 괌 기지뿐 아니라 하와이 미군 태평양사령부까지 사정권에 두고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -6568,7 +6568,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt12.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 북극성-2도 최정점 고도 560여㎞로 500㎞를 비행했다.
 # ::note
 do_timestamp_and_preferred
@@ -6582,7 +6582,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt13.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 정상발사 각도로 쐈다면 1천㎞ 이상을 비행할 수 있어 주일미군기지를 타격할 수도 있다.
 # ::note
 do_timestamp_and_preferred
@@ -6607,7 +6607,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt14.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 지난달 27일 발사 성공한 '북한판 패트리엇'으로 불리는 '번개 5호'(KN-06) 지대공 유도미사일은 사거리가 150여㎞로 추정된다.
 # ::note
 do_timestamp_and_preferred
@@ -6629,7 +6629,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt15.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 유사시 평양 등 북한 상공으로 전개되는 한미 연합군 항공기를 노리고 개발한 미사일이다.
 # ::note
 do_timestamp_and_preferred
@@ -6659,7 +6659,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt16.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt16.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 이번에 지대함 순항미사일까지 발사에 성공함으로써 공중과 해상의 타격체계를 갖추게 된 것으로 평가된다.
 # ::note
 do_timestamp_and_preferred
@@ -6682,7 +6682,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt17.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt17.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 특히 지난달 29일 발사한 스커드 계열의 지대함·지대지 겸용 미사일은 해상과 지상의 표적에 대한 명중률이 향상된 것으로 분석됐다.
 # ::note
 do_timestamp_and_preferred
@@ -6718,7 +6718,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt18.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt18.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 애초 지대지 미사일로 개발된 스커드 미사일을 지대지 또는 유사시 지대함 미사일로 겸용해 사용하도록 개조했으며 액체연료와 산화제를 빠른 시간에 주입할 수 있는 자동화 시스템과 이동식 발사차량(TEL)에서 미사일을 세우는 기립 장치를 자동화했다.
 # ::note
 do_timestamp_and_preferred
@@ -6751,7 +6751,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt19.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 우리 군이 구축 중인 KAMD 무력화를 노리고 개발한 미사일로 평가되고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -6773,7 +6773,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt20.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 북한의 최근 미사일 개발 동향은 중국의 반접근 지역거부(A2/AD) 전략을 모방한 '북한판 접근거부' 전략으로 전문가들은 평가하고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -6790,7 +6790,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt21.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt A2는 오키나와 등 미국의 전진기지나 항모강습단을 공격할 수 있는 능력을 확보해 미군 전력이 서태평양 해역으로 접근하는 것을 지연시키는 전략이다.
 # ::note
 do_timestamp_and_preferred
@@ -6818,7 +6818,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt22.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt AD는 대만해협이나 동·남중국해 등 중국의 연안 지역에서 분쟁이 발생할 때 미군이나 동맹군의 '행동의 자유(Freedom of Action)'를 차단해 일정한 지역에 개입을 못 하도록 거부하는 것이다.
 # ::note
 do_timestamp_and_preferred
@@ -6877,7 +6877,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt23.E2017.NEWS.009 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt23.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 김동엽 경남대 극동문제연구소 교수는 "지금 북한의 미사일 전략의 핵심은 거부적 억제전략으로 보인다"면서 "중국의 A2/AD(반접근 지역거부)를 모방한 북한판 접근거부로 분석된다"고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -6900,7 +6900,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt0.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt0.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 30분 지나면 포기하는데… 77분 집념, 멈춘 심장 깨우다.
 # ::note
 do_timestamp_and_preferred
@@ -6919,7 +6919,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt1.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt1.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 심장 발작으로 쓰러진 30대 심근경색 환자가 77분에 걸친 심폐소생술 끝에 살아나는 기적 같은 일이 벌어졌다.
 # ::note
 do_timestamp_and_preferred
@@ -6951,7 +6951,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt2.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 의료진은 심폐소생 시술 20분이 지나도 맥박이 뛰지 않으면 회생 가능성이 희박하다고 보고, 30분이 지나면 시술을 중단하는 게 보통이다.
 # ::note
 do_timestamp_and_preferred
@@ -7034,7 +7034,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt3.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt3.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 하지만 119구급대와 병원 의료진은 77분간 한 차례도 쉬지 않고 8000번 가까이 가슴을 압박하는 심폐소생술을 시도한 끝에 이 환자를 살려냈다.
 # ::note
 do_timestamp_and_preferred
@@ -7052,7 +7052,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt4.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 심근경색 환자 임중수(36) 씨는 지난달 23일 오후 2시 20분쯤 서울 신촌 세브란스병원에 진료를 받으러 가는 길에 의식을 잃고 쓰러졌다.
 # ::note
 do_timestamp_and_preferred
@@ -7118,7 +7118,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt5.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 10여 분 뒤 현장에 도착한 119구급대에 따르면 "당시 임 씨의 맥박은 거의 멈춘 상태였다"고 한다.
 # ::note
 do_timestamp_and_preferred
@@ -7177,7 +7177,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt6.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이때부터 구급대원들은 심폐소생술(CPR)에 들어갔다.
 # ::note
 do_timestamp_and_preferred
@@ -7206,7 +7206,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt7.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt7.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 1분에 보통 100~120회(성인 기준) 흉부를 5~6cm 깊이까지 강하게 압박하는 방식이다.
 # ::note
 do_timestamp_and_preferred
@@ -7214,7 +7214,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt8.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 구급차가 세브란스병원 응급실에 도착하자 이번엔 의료진이 심폐소생술을 이어갔다.
 # ::note
 do_timestamp_and_preferred
@@ -7239,7 +7239,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt9.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 심폐소생술 시술 30분은 보통 의사들의 '심리적 장벽'으로 불린다.
 # ::note
 do_timestamp_and_preferred
@@ -7251,7 +7251,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt10.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 임 씨 맥박이 쉽사리 돌아오지 않자 의료진은 전기 충격 요법도 병행했다.
 # ::note
 do_timestamp_and_preferred
@@ -7271,7 +7271,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt11.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt11.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 출력을 최대로 높여 9번 충격을 주고, 항부정맥제도 투여했지만 별다른 효과가 없었다.
 # ::note
 do_timestamp_and_preferred
@@ -7295,7 +7295,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt12.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 임 씨 갈비뼈가 6~7개쯤 부러지고, 전기 충격 여파로 1~2도 화상까지 입었다.
 # ::note
 do_timestamp_and_preferred
@@ -7318,7 +7318,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt13.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt13.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 의료진도 체력 소모가 극심해지면서 모두가 땀에 전 상태가 됐다.
 # ::note
 do_timestamp_and_preferred
@@ -7346,7 +7346,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt14.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt14.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 이윤정 심장내과 의사는 "내일 엄청난 근육통에 시달리겠구나 생각하면서도 온 힘을 쥐어짜 임 씨 가슴팍을 눌렀다"고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -7383,7 +7383,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt15.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 심폐소생술 시술 40분이 지났을 무렵, 심장내과 위진 교수가 "체외 심폐 순환기(ECMO)를 써보자"고 했다.
 # ::note
 do_timestamp_and_preferred
@@ -7447,7 +7447,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt16.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt16.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt ECMO는 환자 정맥에서 혈액을 체외로 빼내 동맥혈로 정화해 다시 환자 몸에 넣어주는 장비다.
 # ::note
 do_timestamp_and_preferred
@@ -7485,7 +7485,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt17.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt17.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 2014년 심근경색으로 쓰러진 이건희 삼성전자 회장 진료에 이용되면서 대중적으로 알려졌다.
 # ::note
 do_timestamp_and_preferred
@@ -7504,7 +7504,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt18.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt18.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt ECMO 시술을 하려면 심장혈관 진료에 특화된 심도자실로 임 씨를 옮겨야 했다.
 # ::note
 do_timestamp_and_preferred
@@ -7544,7 +7544,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt19.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 응급실에서 뛰어가도 5분은 걸리는 거리였다.
 # ::note
 do_timestamp_and_preferred
@@ -7572,7 +7572,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt20.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt20.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 의사 한 명이 임 씨가 누운 침대로 훌쩍 올라타 심폐소생술을 계속하는 동안, 나머지 의료진이 침대를 붙들고 달리기 시작했다.
 # ::note
 do_timestamp_and_preferred
@@ -7619,7 +7619,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt21.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt21.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 오후 3시 30분 심도자실로 임 씨를 옮겨 ECMO 부착 시술에 들어갔다.
 # ::note
 do_timestamp_and_preferred
@@ -7649,7 +7649,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt22.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 그 사이에도 심폐소생술은 계속됐다.
 # ::note
 do_timestamp_and_preferred
@@ -7661,21 +7661,21 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt23.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 오후 4시.
 # ::note
 do_timestamp_and_preferred
 
 
 
-# ::id snt24.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 결과는 대성공이었다.
 # ::note
 do_timestamp_and_preferred
 
 
 
-# ::id snt25.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt ECMO가 성공적으로 작동하면서 환자 맥박이 조금씩 돌아왔다.
 # ::note
 do_timestamp_and_preferred
@@ -7694,7 +7694,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt26.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt26.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 77분간 임 씨 가슴을 8000여 번 힘줘 누르느라 의료진이 탈진하다시피 한 심폐소생술도 비로소 종료됐다.
 # ::note
 do_timestamp_and_preferred
@@ -7718,7 +7718,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt27.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt27.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 의료진은 오후 4시 37분 임 씨를 심장혈관 중환자실로 옮겨 인공 심박동기, 인공호흡기, 혈액 투석 장치 등을 달아주고 나서야 한숨을 돌릴 수 있었다.
 # ::note
 do_timestamp_and_preferred
@@ -7750,7 +7750,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt28.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt28.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 위진 교수는 "내심 되살리기 어렵다고 생각했지만 환자 나이가 젊어서 우리가 포기하지 않으면 기적이 일어날 수 있다는 믿음으로 시술했다"고 했다.
 # ::note
 do_timestamp_and_preferred
@@ -7814,7 +7814,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt29.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt29.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 임 씨는 "깨어나고도 1주일이 지나서야 '내가 죽었다가 살아났구나' 실감이 났다. 어떻게 살아 돌아왔는지 신기할 따름"이라고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -7869,7 +7869,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt30.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt30.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 임 씨의 어머니 정순자(62) 씨는 "너무나 훌륭한 의사 선생님을 만나 아들이 살아오니 잔치라도 열고 싶은 마음"이라고 했다.
 # ::note
 do_timestamp_and_preferred
@@ -7927,7 +7927,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt31.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt31.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 위 교수는 "의료진 모두 하나가 돼서 환자 한 사람이 아닌 가족 전부를 감동시킨 '예술 작품'을 만들어낸 기분"이라고 했다.
 # ::note
 do_timestamp_and_preferred
@@ -8015,7 +8015,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt32.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt32.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 우리나라 심폐소생술 시행률은 2008년 1.8%에서 2015년 13.1%로 해마다 늘고 있지만 선진국과 비교하면 여전히 낮은 편이다.
 # ::note
 do_timestamp_and_preferred
@@ -8042,7 +8042,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt33.E2017.NEWS.010 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt33.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 보건복지부 진영주 응급의료과장은 "올해 응급처치 교육사업을 강화해 한 가정 안에 적어도 한 사람은 심폐소생술을 할 수 있도록 할 방침"이라고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -8090,14 +8090,14 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt0.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 대당 2천여만 원 상당 北 무인기에 전략시설 속속 '노출'.
 # ::note
 do_timestamp_and_preferred
 
 
 
-# ::id snt1.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt1.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 북한 무인기로 추정되는 소형비행체가 사드(고고도 미사일방어체계)가 배치된 경북 성주골프장 전경을 촬영한 것을 보면 북측이 마음만 먹으면 우리 측 어느 지역에 있는 전략시설이라도 정찰할 수 있는 능력을 보여준다.
 # ::note
 do_timestamp_and_preferred
@@ -8178,7 +8178,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt2.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 군은 최종 분석 결과가 아직 안 나왔기 때문에 이번 소형비행체를 '북한 무인기'라고 단정적으로 표현하고 있지 않지만, 사실상 북한이 자행한 도발로 판단하고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -8220,14 +8220,14 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt3.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 군의 한 관계자는 13일 "무인기에 탑재된 카메라에 찍힌 사진으로 비행경로를 추산하면 북한지역에서 발진해 군사분계선(MDL)을 넘어와 경북 성주지역까지 정찰하고 사진을 촬영하면서 북한지역으로 복귀하려다가 연료 부족으로 추락한 것으로 잠정 결론을 내렸다"고 전했다.
 # ::note
 do_timestamp_and_preferred
 
 
 
-# ::id snt4.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt4.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 비록 북한 무인기가 미국의 고고도 무인정찰기 '글로벌호크'와 같은 첨단 비행체가 아니고, 촬영한 사진의 해상도도 정밀하지 않지만, 우리 군과 주한미군의 전략시설 배치 장소와 그 좌표를 지속해서 업그레이드하는 차원에서 도발을 계속하는 것으로 군 당국은 판단하고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -8269,7 +8269,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt5.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt5.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 군 당국이 지난 8일 강원도 인제에서 주민에 의해 발견된 무인기의 내장 카메라(일본 소니사 DSLT·메모리 3.2GB)를 분석한 결과, 사드가 배치된 경북 성주골프장 전경이 찍혀 있었다.
 # ::note
 do_timestamp_and_preferred
@@ -8308,7 +8308,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt6.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 사진을 확대하면 현재 배치된 발사대 2기와 레이더 등 사드체계 핵심장비가 있는 위치가 드러난다.
 # ::note
 do_timestamp_and_preferred
@@ -8344,7 +8344,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt7.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt7.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 북한이 지난 4월 26일 사드체계가 배치된 이후 무인기를 날려 보내 성주골프장을 촬영했을 가능성이 큰 상황이다.
 # ::note
 do_timestamp_and_preferred
@@ -8389,7 +8389,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt8.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt8.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 인제에서 발견된 무인기가 고도 2∼3㎞로 추정되는 상공에서 찍은 성주골프장 전경 사진을 보면 공교롭게도 북한이 지난달 8일 조선중앙TV의 시사 대담 프로그램을 통해 보여준 사진과 너무 닮았다.
 # ::note
 do_timestamp_and_preferred
@@ -8473,7 +8473,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt9.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 당시 북한 중앙TV는 출처가 '위성사진'이라고 밝히면서 "위성사진들에서 보는 바와 같이 현재 사드 발사기는 성주골프장의 북쪽 능선 부근에, 그리고 X 대역탐지기(레이더)와 지원 장비들은 골프장의 중간 부근 서쪽 능선 부근에 배치돼 있다"고 주장했다.
 # ::note
 do_timestamp_and_preferred
@@ -8538,7 +8538,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt10.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt10.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 그러면서 사드 발사대로 주장하는 물체와 사격통제레이더(X-밴드 레이더)로 주장하는 물체를 각각 검은색 원으로 표시한 사진 2장을 화면에 띄웠다.
 # ::note
 do_timestamp_and_preferred
@@ -8567,7 +8567,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt11.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이들 사진과 합참이 공개한 사진이 닮은꼴이어서 다른 무인기가 촬영해 성공한 뒤 북한으로 복귀했을 가능성도 제기되고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -8602,7 +8602,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt12.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이번에 주한미군 사드 배치 지역 촬영 사실이 드러남으로써 미군의 다른 시설들도 이미 북한 무인기의 목표가 됐을 것으로 군 관계자들은 추정하고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -8640,7 +8640,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt13.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 북한의 무인기는 우리 정부의 전략시설이나 군부대 배치 상황 등에 대한 정보도 집중적으로 수집하고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -8664,7 +8664,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt14.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt14.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 북한이 우리 측 지역으로 날려 보내는 무인기는 제작비용이 대당 최소 2천만 원에서 최대 4천만 원 수준인 것으로 분석되고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -8688,7 +8688,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt15.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt15.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 2014년 3월 24일 경기도 파주에서 발견된 북한 무인기는 서울 상공을 비행하면서 7∼9초 간격으로 서울 중심지역을 촬영했는데 청와대 전경도 선명하게 찍혔다.
 # ::note
 do_timestamp_and_preferred
@@ -8713,7 +8713,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt16.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 파주 추락 무인기는 시속 100∼120㎞로 비행했으며, 고도 2.5㎞ 상공에서 사진을 촬영했다.
 # ::note
 do_timestamp_and_preferred
@@ -8732,7 +8732,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt17.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 193장 중 초반 15장은 검은색으로 물체의 형체를 알아볼 수 없었고, 178장은 판독이 가능했다.
 # ::note
 do_timestamp_and_preferred
@@ -8748,7 +8748,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt18.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 일제 캐논 카메라의 24㎜ 렌즈를 사용했다.
 # ::note
 do_timestamp_and_preferred
@@ -8761,7 +8761,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt19.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 같은 해 3월 31일 백령도에서 발견된 무인기도 시속 100∼120㎞로 비행했으며, 고도 1.8㎞ 상공에서 촬영했다.
 # ::note
 do_timestamp_and_preferred
@@ -8790,7 +8790,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt20.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt20.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 119장의 사진 중 19장은 물체가 흐릿했고 나머지 100장에는 소청도와 대청도의 군부대 시설 모습이 담겨 있었다.
 # ::note
 do_timestamp_and_preferred
@@ -8799,7 +8799,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt21.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 일제 니콘 D800 카메라와 니콘 35㎜ 렌즈를 이용해 사진이 촬영됐다.
 # ::note
 do_timestamp_and_preferred
@@ -8817,7 +8817,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt22.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이번에 인제에 추락한 무인기와 형태가 비슷한 백령도 추락 무인기는 체코제 4행정 휘발유 엔진을 사용하는 등 조종계통이 복잡하게 설계된 최신형이었다.
 # ::note
 do_timestamp_and_preferred
@@ -8846,7 +8846,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt23.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이들 추락 무인기는 미국, 중국, 일본, 스위스, 체코, 한국 등 6개국의 상용부품으로 제작됐다.
 # ::note
 do_timestamp_and_preferred
@@ -8858,14 +8858,14 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt24.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 북한 무인기는 GPS(인공위성 위치 정보) 수신기를 장착해 임무 명령 데이터에 의해 이륙한 후 입력된 좌표를 따라 비행하면서 사전에 명령받은 좌표 상공에서 사진을 촬영하고, 복귀 좌표를 따라 이륙 지점으로 되돌아오는 방식으로 제작됐다.
 # ::note
 do_timestamp_and_preferred
 
 
 
-# ::id snt25.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 무인기의 항법장치에 내장된 중앙처리장치(CPU)에 연결된 카메라에 소형컴퓨터가 신호를 주면 촬영 시간 간격과 촬영 위치를 조정할 수 있다.
 # ::note
 do_timestamp_and_preferred
@@ -8895,7 +8895,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt26.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 파주와 삼척, 백령도에서 발견된 북한 무인기 중량은 10∼14㎏이지만, 카메라와 낙하산을 제거하면 실제 무인기에다 3∼4㎏의 물체를 탑재할 수 있는 것으로 분석됐다.
 # ::note
 do_timestamp_and_preferred
@@ -8924,7 +8924,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt27.E2017.NEWS.011 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt27.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 군이 무인기에 4㎏의 폭약을 달아 건물에 충돌하는 시뮬레이션 실험을 한 결과, 건물은 거의 피해가 없었고 폭발로 인한 인명 살상 범위는 1∼2m로 나타났다.
 # ::note
 do_timestamp_and_preferred
@@ -8992,7 +8992,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt0.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt '조국 책임론'에 靑 선 긋기.
 # ::note
 do_timestamp_and_preferred
@@ -9016,7 +9016,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt1.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 거듭된 인사 검증 실패 논란에 조국 청와대 민정수석의 책임론이 불거지고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -9032,7 +9032,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt2.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 야당은 조 수석의 책임을 묻기 위해 국회 운영위원회 출석까지 요구하고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -9068,7 +9068,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt3.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 하지만 청와대는 조 수석의 책임론을 불식시키기 위해 안간힘을 쓰고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -9101,7 +9101,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt4.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt4.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 이낙연 총리를 시작으로 장관 후보자들의 상당수가 문재인 대통령이 후보 시절부터 밝혀온 '5대 비리 고위공직 원천 배제 원칙'에 해당하고 안경환 전 법무부 장관 후보자가 낙마하면서 야당은 '인사 파행'의 책임을 조 수석에 묻고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -9143,7 +9143,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt5.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 정우택 자유한국당 대표 권한대행 겸 원내대표는 "(조 수석이) 정상적으로 운영위 회의에 참석하고 청와대 인사 관련자를 출석시켜 정부 인사 시스템을 점검해야 한다"고 밝혔다.
 # ::note
 do_timestamp_and_preferred
@@ -9176,7 +9176,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt6.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt6.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 김동철 국민의당 원내대표도 "안경환 낙마, 김상곤 논문표절 등 인사 참사가 끊이지 않고 있기 때문에 청와대 인사검증 시스템을 점검할 필요가 있다"며 "조 수석의 (운영위) 출석은 너무나 당연하다"고 조 수석의 운영위 출석을 요구했다.
 # ::note
 do_timestamp_and_preferred
@@ -9209,7 +9209,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt7.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 하지만 청와대는 민정수석의 운영위 출석은 전례가 없는 일이라고 선을 긋고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -9228,7 +9228,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt8.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 청와대 관계자는 20일 "민정수석이 운영위에 참석하지 않는 게 관례"라고 잘라 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -9250,7 +9250,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt9.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt9.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 결국 이날 열린 운영위 회의는 조 수석의 출석을 둘러싸고 여야 간 대치가 벌어지다 파행됐다.
 # ::note
 do_timestamp_and_preferred
@@ -9265,7 +9265,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt10.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 청와대는 아예 대통령 비서실장을 위원장으로 하는 인사추천위원회를 가동해 조 수석의 인사 책임론을 불식시키고 부담을 덜어주려는 모양새다.
 # ::note
 do_timestamp_and_preferred
@@ -9318,7 +9318,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt11.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 인사추천위는 연일 불거지는 인사실패에 안경환 전 법무부 장관 후보자가 결국 자진 사퇴를 택하자 체계적인 인사검증을 위해 도입된 인사시스템이다.
 # ::note
 do_timestamp_and_preferred
@@ -9348,7 +9348,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt12.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 인사추천위는 비서실장을 위원장으로 하고 인사수석이 간사를 맡는다.
 # ::note
 do_timestamp_and_preferred
@@ -9392,7 +9392,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt13.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 민정수석은 인사추천위원으로 참여하게 된다.
 # ::note
 do_timestamp_and_preferred
@@ -9405,7 +9405,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt14.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt14.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 청와대 인선에 관해 조 수석 책임이 일정 부분 덜어지는 셈이다.
 # ::note
 do_timestamp_and_preferred
@@ -9414,7 +9414,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt15.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 청와대는 아예 지금까지 문제가 불거진 인사 검증 실패에 대해서도 '조국 책임론'과 선을 긋고 있다.
 # ::note
 do_timestamp_and_preferred
@@ -9443,7 +9443,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt16.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt16.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 임종석 대통령 비서실장은 이날 인사추천위 1차 회의 결과 브리핑에서 "(인사추천위 가동) 이전에도 이미 이전 정부의 인사위원회를 준용해 저희가 (인사를) 의논해왔고, 수석비서관들 회의는 비서실장이 주도해왔다"며 "그렇기 때문에 이전 검증에도 문제가 있다면 그 책임은 비서실장에 있다"고 밝혔다.
 # ::note
 do_timestamp_and_preferred
@@ -9492,7 +9492,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt17.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 인사 실패의 책임이 조 수석이 아닌 비서실장인 자신에게 있다는 것이다.
 # ::note
 do_timestamp_and_preferred
@@ -9518,7 +9518,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt18.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt18.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 임 실장의 이러한 발언은 야권에서 제기하는 조 수석에 책임을 묻는 것을 의식한 것으로 해석된다.
 # ::note
 do_timestamp_and_preferred
@@ -9560,7 +9560,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt19.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt19.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 이와 관련, 자유한국당의 한 의원은 뉴시스와 통화에서 "(인사 실패에 따르는) 책임을 분산시키려고 하는 것"이라며 "하지만 (인사는) 민정수석의 직무란 게 누가 봐도 명확하다"고 지적했다.
 # ::note
 do_timestamp_and_preferred
@@ -9662,7 +9662,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt20.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt20.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 정양석 바른정당 원내수석부대표도 뉴시스와 통화에서 "(인사와 관련해선) 당연히 민정수석 담당"이라며 "비서실장이 전부 다 할 거면 민정수석을 무엇하러 두느냐"고 비판했다.
 # ::note
 do_timestamp_and_preferred
@@ -9708,7 +9708,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt21.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 정 원내수석은 그러면서 "국민이 불안해하고 국회가 반발하는데 청와대가 (조 수석의) 방패막이가 돼 줄 거냐. 누구를 위해서 그러는 거냐"고 지적한 뒤 "부적절하다"고 꼬집었다.
 # ::note
 do_timestamp_and_preferred
@@ -9787,7 +9787,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt22.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred False
+# ::id snt22.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 야당은 계속해서 '조국 책임론'에 불을 지필 예정이다.
 # ::note
 do_timestamp_and_preferred
@@ -9800,7 +9800,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt23.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 김선동 자유한국당 원내수석부대표는 뉴시스와 통화에서 "(조 수석의) 운영위 출석을 계속 요구할 것"이라며 "인사시스템이 왜 이렇게 작동됐는지 궁금해하는 상황에서 그런 부분을 규명하겠다는 것이 아주 정상적이고 당연한 상황"이라며 "앞으로의 인사 참사를 막기 위해서도 필요한 일"이라고 말했다.
 # ::note
 do_timestamp_and_preferred
@@ -9847,7 +9847,7 @@ do_timestamp_and_preferred
 
 
 
-# ::id snt24.E2017.NEWS.012 ::date 2019-00-00T00:00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 정 원내수석 역시 조 수석의 운영위 출석 요구와 관련, "인사가 엉망인 상황인데 당연히 나와야 한다"고 주장했다.
 # ::note
 do_timestamp_and_preferred
