@@ -735,10 +735,22 @@
 
 
 
-# ::id snt0.931.012_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.012_Q.01_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt 발해는 넓은 영토를 관리하고 외국과의 교류를 원활히 하기 위해 다섯 개의 교통로인 '발해 5도'를 만들었다.
 # ::note
-
+(만 / 만들-01
+    :ARG0 (c / country :wiki "발해" :name (이 / 이름 :op1 "발해"))
+    :ARG1 (교 / 교통로 :name (이2 / 이름 :op1 "발해" :op2 "5도" :quant 5 :unit (개 / 개)))
+    :purpose (a / and
+        :op1 (관 / 관리-01
+            :ARG0 c
+            :ARG1 (영 / 영토
+                :poss c
+                :ARG1-of (넓 / 넓-01)))
+        :op2 (교 / 교류-01
+            :ARG0 c
+            :ARG2 (외 / 외국)
+            :manner (원 / 원활-01))))
 
 
 
@@ -789,10 +801,13 @@
 
 
 
-# ::id snt0.931.013_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.013_Q.01_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt 우리나라 국회의 기능이 아닌 것은 무엇일까?
 # ::note
-
+(기 / 기능-00
+    :polarity -
+    :ARG0 (g / goverment-organization :wiki "대한민국_국회" :name (이 / 이름 :op1 "국회"))
+    :ARG1 (a / amr-unknown))
 
 
 
@@ -915,38 +930,49 @@
 
 
 
-# ::id snt2.931.016_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.931.016_A.04_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt  이렇게 말이죠.
 # ::note
+(h / have-manner-91
+    :ARG2 (이 / 이렇-01))
 
-
-
-
-# ::id snt3.931.016_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.931.016_A.04_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt 드디어 우리 팀은 올림픽 경기에 출사표를 던졌다.
 # ::note
-
-
-
+(알 / 알-01
+    :mod (드 / 드디어)
+    :ARGA (팀 / 팀
+        :mod (우 / 우리))
+    :ARG1 (출 / 출전-01
+        :ARG0 팀
+        :ARG1 (경 / 경기
+            :subevent-of (g / game :wiki "올림픽" :name (이 / 이름 :op1 "올림픽")))))
 
 # ::id snt4.931.016_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 제갈량과 관계된 고사성어 가운데 가장 유명한 것은 뭐니 뭐니 해도 바로 이것이죠.
 # ::note
 
-
-
-
 # ::id snt0.931.016_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 蜀漢(촉한)의 諸葛亮(제갈량)이 魏(위)나라를 치려고 出兵(출병)할 때 後主(후주) 劉禪(유선)에게 올린 글.
 # ::note
 
-
-
-
-# ::id snt0.931.016_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.016_Q.01_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt 이것은 제갈공명이 위나라를 공격하러 떠나는 날 황제에게 충성하는 마음을 담은 글에서 유래했다.
 # ::note
-
+(유 / 유래-00
+    :ARG1 (이 / 이것)
+    :ARG2 (글 / 글
+        :ARG2-of (담 / 담-01
+            :ARG0 (p / person :wiki "제갈량" :name (이2 / 이름 :op1 "제갈공명"))
+            :ARG1 (마 / 마음
+                :mod (충 / 충성-01
+                    :ARG1 p
+                    :ARG2 (황 / 황제)))
+            :time (떠 / 떠나-01
+                :ARG0 p
+                :purpose (공 / 공격-01
+                    :ARG0 p
+                    :ARG1 (c / country :wiki "위_(삼국)" :name (이3 / 이름 :op1 "위나라")))))))
 
 
 
@@ -1321,10 +1347,12 @@
 
 
 
-# ::id snt2.931.022_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.931.022_Q.01_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt  이 나라는 어디일까?
 # ::note
-
+(a / amr-unknown
+    :domain (나 / 나라
+        :mod (이 / 이)))
 
 
 
@@ -1454,10 +1482,16 @@
 
 
 
-# ::id snt1.931.025_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.025_A.01_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt  1907년 1월 1일 쓰시마 섬 감옥에서 순국하였다.
 # ::note
-
+(순 / 순국-00
+    :location (감 / 감옥
+        :location (i / island :wiki "쓰시마섬" :name (이 / 이름 :op1 "쓰시마" :op2 "섬")))
+    :time (d / date-entity
+        :year 1907
+        :month 1
+        :day 1))
 
 
 
@@ -1720,10 +1754,12 @@
 
 
 
-# ::id snt2.931.027_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.931.027_Q.01_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt  이 작품은 무엇일까?
 # ::note
-
+(a / amr-unknown
+    :domain (작 / 작품
+        :mod (이 / 이)))
 
 
 
@@ -1986,10 +2022,12 @@
 
 
 
-# ::id snt0.931.032_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.032_A.02_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt 케냐 공화국의 수도이다.
 # ::note
-
+(h / have-org-role-91
+    :ARG1 (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐" :op2 "공화국"))
+    :ARG2 (수 / 수도))
 
 
 
@@ -2021,10 +2059,12 @@
 
 
 
-# ::id snt1.931.032_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.032_A.05_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt  인구 150만 명.
 # ::note
-
+(인 / 인구
+    :quant 1500000
+    :unit (명 / 명))
 
 
 
