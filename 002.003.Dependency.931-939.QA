@@ -2008,10 +2008,13 @@
 
 
 
-# ::id snt0.931.032_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.032_A.01_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
 # ::snt 나이로비(Nairobi)는 케냐의 수도이다.
 # ::note
-
+(h / have-org-role-91
+    :ARG0 (c / city :wiki "나이로비" :name (이 / 이름 :op1 "나이로비(Nairobi)"))
+    :ARG1 (c2 / country :wiki "케냐" :name (이2 / 이름 :op1 "케냐"))
+    :ARG2 (수 / 수도))
 
 
 
@@ -2029,35 +2032,43 @@
     :ARG1 (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐" :op2 "공화국"))
     :ARG2 (수 / 수도))
 
-
-
-# ::id snt0.931.032_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.032_A.03_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
 # ::snt 케냐의 수도.
 # ::note
+(h / have-org-role-91
+    :ARG1 (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+    :ARG2 (수 / 수도))
 
-
-
-
-# ::id snt0.931.032_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.032_A.04_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
 # ::snt 케냐의 수도.
 # ::note
+(h / have-org-role-91
+    :ARG1 (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+    :ARG2 (수 / 수도))
 
-
-
-
-# ::id snt1.931.032_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.032_A.04_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
 # ::snt  케냐 중남부 해발 고도 1,860m의 고원에 위치하고 있어 기후가 쾌적하다.
 # ::note
+(쾌 / 쾌적-00
+    :ARG1 (기 / 기후)
+    :cause (b / be-located-at-91
+        :ARG2 (고 / 고원
+            :mod (d / distance-quantity :quant 1680 :unit (미 / 미터)
+                :mod (고2 / 고도
+                    :mod (해 / 해발)))
+            :location (c / country-region :wiki - :name (이 / 이름 :op1 "케냐" :op2 "중남부")))))
 
-
-
-
-# ::id snt0.931.032_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.032_A.05_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
 # ::snt 아프리카 동부, 케냐의 수도, 상공업도시.
 # ::note
-
-
-
+(a / and
+    :op1 (w / world-region :wiki "동아프리카" :name (이 / 이름 :op1 "아프리카" :op2 "동부"))
+    :op2 (h / have-org-role-91
+        :ARG1 (c / country :wiki "케냐" :name (이2 / 이름 :op1 "케냐"))
+        :ARG2 (수 / 수도))
+    :op3 (도 / 도시
+        :mod (상 / 상업)
+        :mod (공 / 공업)))
 
 # ::id snt1.931.032_A.05_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt  인구 150만 명.
@@ -2066,12 +2077,18 @@
     :quant 1500000
     :unit (명 / 명))
 
-
-
-# ::id snt0.931.032_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.032_Q.01_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
 # ::snt 이 도시의 이름은 '맛있는 물, 차가운 물'이라는 뜻을 가지고 있다.
 # ::note
-
+(의 / 의미-01
+    :ARG1 (이 / 이름
+        :name-of (도 / 도시
+            :mod (이 / 이)))
+    :ARG2 (o / or
+        :op1 (물 / 물
+            :ARG1-of (맛 / 맛있-00))
+        :op2 (물2 / 물
+            :ARG1-of (차 / 차갑-01))))
 
 
 
@@ -2124,10 +2141,20 @@
 
 
 
-# ::id snt0.931.033_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.033_Q.01_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
 # ::snt 유럽 연합의 로고에는 유럽 연합 결성을 확정한 조약에 서명한 12개국을 상징하는 열두 개의 별이 그려져 있다.
 # ::note
-
+(그 / 그리-01
+    :location (로 / 로고
+        :poss (c / country :wiki "유럽_연합" :name (이 / 이름 :op1 "유럽" :op2 "연합")))
+    :ARG1 (별 / 별 :quant 12 :unit (개 / 개)
+        :ARG1-of (상 / 상징-01
+            :ARG2 (국 / 국가 :quant 12 :unit (개2 / 개)
+                :ARG0-of (서 / 서명-01
+                    :ARG1 (조 / 조약
+                        :mod (확 / 확정-01
+                            :ARG1 (결 / 결성-01
+                                ARG1 c))))))))
 
 
 
@@ -2169,7 +2196,9 @@
 # ::id snt0.932.001_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 차돌박이는 쇠고기의 일종이다.
 # ::note
-
+(i / include-91
+    :ARG1 (차 / 차돌박이)
+    :ARG2 (쇠 / 쇠고기))
 
 
 
@@ -2187,10 +2216,13 @@
 
 
 
-# ::id snt1.932.001_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.932.001_A.02_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
 # ::snt  빛이 희고 단단하다.
 # ::note
-
+(a / and
+    :op1 (희 / 희-01
+        :ARG1 (빛 / 빛))
+    :op2 (단 / 단단하-00))
 
 
 
@@ -3986,10 +4018,12 @@
 
 
 
-# ::id snt1.932.034_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.932.034_A.04_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
 # ::snt  이듬해 관군에게 진압되었다.
 # ::note
-
+(진 / 진압-01
+    :ARG0 (관 / 관군)
+    :time (이 / 이듬해))
 
 
 
@@ -4007,11 +4041,16 @@
 
 
 
-# ::id snt1.932.034_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.932.034_Q.01_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
 # ::snt 조선 후기 1811년 평안도 지방에서 난을 일으킨 이 사람은 누구일까?
 # ::note
-
-
+(일 / 일으키-01
+    :ARG0 (a / amr-unknown)
+    :ARG1 (난)
+    :location (p / province :wiki "평안도" :name (이 / 이름 :op1 "평안도"))
+    :time (후 / 후기
+        :op1 (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선")))
+    :time (d / date-entity :year 1811))
 
 
 # ::id snt0.932.035_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
@@ -4392,18 +4431,19 @@
 
 
 
-# ::id snt0.933.006_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.933.006_A.01_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
 # ::snt 떡국은 한국의 전통 음식이다.
 # ::note
-
+(음 / 음식
+    :mod (전 / 전통)
+    :mod (c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+    :domain (떡 / 떡국))
 
 
 
 # ::id snt1.933.006_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 장국에 일정한 두께로 얇게 썰은 흰떡을 넣고 끓여 만든 음식이며, 고기, 달걀 등을 고명으로 얹거나 만두 등의 재료를 곁들여 먹는다.
 # ::note
-
-
 
 
 # ::id snt2.933.006_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
