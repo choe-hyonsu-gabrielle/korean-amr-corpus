@@ -1,0 +1,39 @@
+# ::id 051090.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그가 손으로 내리치는 바람에 테이블이 들썩이며 꽃병이 흔들렸다.
+# ::note
+
+# ::id 056797.02.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 공습경보가 발령되자 사이렌이 울리고 시민들이 우왕좌왕해 도시가 혼란스러웠다.
+# ::note
+
+# ::id 061013.11.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 어머니는 학교를 자퇴하고 음악을 하겠다는 막내를 내놓은 자식처럼 대했다.
+# ::note
+
+# ::id 038024.05.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 대학생들의 취업 시즌이 되면 여러 회사에서 인재를 끌어가기 위해 다양한 홍보 활동을 한다.
+# ::note
+
+# ::id 072522.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 집주인이 방을 보러 온 사람에게 방의 여기저기를 안내하며 보여 주었다.
+# ::note
+
+# ::id 067421.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 하루에 한 번 해와 달이 엇바뀌어 뜨고 진다.
+# ::note
+
+# ::id 076758.02.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 김 교수는 강폭이 좁고 수심이 얕은 곳을 준설하면 홍수 예방에 도움이 된다고 주장했다.
+# ::note
+
+# ::id 074745.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 급변하는 시장과 소비자에 따라 사업의 방향을 재정립할 필요가 있다. 
+# ::note
+
+# ::id 074352.03.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 시간이 늦어서 거리에 문이 열린 식당이 거의 없다.
+# ::note
+
+# ::id 032599.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 오늘 천재 음악가의 삶을 극화한 영화를 봤는데 아주 감동적이었다.
+# ::note
