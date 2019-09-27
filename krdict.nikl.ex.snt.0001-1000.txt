@@ -1,39 +1,152 @@
-# ::id 051090.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id 051090.01.krdict.nikl.ex.snt.001 ::date 2019-09-28 ::annotator gabrielle ::preferred True
 # ::snt 그가 손으로 내리치는 바람에 테이블이 들썩이며 꽃병이 흔들렸다.
 # ::note
+(흔 / 흔들-01
+    :ARG1 (꽃 / 꽃병)
+    ::manner (들 / 들썩-00
+        :ARG1 (테 / 테이블))
+    :cause (내 / 내리치-00
+        :ARG0 (그 / 그)
+        :ARG1 테
+        :instrument (손 / 손)))
 
-# ::id 056797.02.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id 056797.02.krdict.nikl.ex.snt.003 ::date 2019-09-28 ::annotator gabrielle ::preferred True
 # ::snt 공습경보가 발령되자 사이렌이 울리고 시민들이 우왕좌왕해 도시가 혼란스러웠다.
 # ::note
+(혼 / 혼란-01
+    :ARG1 (도 / 도시)
+    :cause (a / and
+        :op1 (울 / 울리-01
+            :ARG1 (사 / 사이렌))
+        :op2 (우 / 우왕좌왕하-00
+            :ARG0 (시 / 시민)))
+    :cause (발 / 발령-00
+        :ARG1 (경 / 경보
+            :mod (공 / 공습-00))))
 
-# ::id 061013.11.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id 061013.11.krdict.nikl.ex.snt.001 ::date 2019-09-28 ::annotator gabrielle ::preferred True
 # ::snt 어머니는 학교를 자퇴하고 음악을 하겠다는 막내를 내놓은 자식처럼 대했다.
 # ::note
+(홀 / 홀대-00
+    :postp-처럼 (자 / 자식
+        :ARG1-of (내 / 내놓-01))
+    :ARG0 (어 / 어머니)
+    :ARG1 (막 / 막내
+        :ARG0-of (원 / 원하-01
+            :ARG1 (a / and
+                :op1 (자2 / 자퇴-00
+                    :ARG0 막
+                    :ARG1 (학 / 학교))
+                :op2 (하 / 하-01
+                    :ARG0 막
+                    :ARG1 (음 / 음악))))))
 
-# ::id 038024.05.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id 038024.05.krdict.nikl.ex.snt.002 ::date 2019-09-28 ::annotator gabrielle ::preferred True
 # ::snt 대학생들의 취업 시즌이 되면 여러 회사에서 인재를 끌어가기 위해 다양한 홍보 활동을 한다.
 # ::note
+(하 / 하-01
+    :ARG0 (회 / 회사
+        :quant (여 / 여러))
+    :ARG1 (활 / 활동-01
+        :mod (홍 / 홍보-01)
+        :ARG1-of (다 / 다양-01))
+    :purpose (끌 / 끌어가-01
+        :ARG0 회
+        :ARG1 (인 / 인재))
+    :condition (시 / 시즌
+        :mod (취 / 취업-01
+            :ARG0 (사 / 사람
+                :ARG0-of (공 / 공부-01
+                    :location (대 / 대학))))))
 
-# ::id 072522.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id 072522.01.krdict.nikl.ex.snt.003 ::date 2019-09-28 ::annotator gabrielle ::preferred True
 # ::snt 집주인이 방을 보러 온 사람에게 방의 여기저기를 안내하며 보여 주었다.
 # ::note
+(보 / 보-01
+    :ARGA (주 / 주인
+        :poss-of (집 / 집))
+    :ARG0 (사 / 사람
+        :ARG0-of (오 / 오-01
+            :purpose (보2 / 보-01
+                :ARG1 (방 / 방
+                    :part-of 집))))
+    :ARG1 (여 / 여기저기
+        :part-of 방)
+    :manner (안 / 안내-01
+        :ARG0 주
+        :ARG1 사
+        :ARG2 여))
 
-# ::id 067421.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id 067421.02.krdict.nikl.ex.snt.001 ::date 2019-09-28 ::annotator gabrielle ::preferred True
 # ::snt 하루에 한 번 해와 달이 엇바뀌어 뜨고 진다.
 # ::note
+(a / and
+    :op1 (뜨 / 뜨-01
+        :ARG1 (해 / 해))
+    :op2 (지 / 지-03
+        :ARG1 (달 / 달))
+    :frequency (r / rate-entity-91
+        :ARG1 1
+        :ARG2 (하 / 하루))
+    :manner (엇 / 엇바뀌-00
+        :ARG1 해
+        :ARG2 달))
 
-# ::id 076758.02.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id 076758.02.krdict.nikl.ex.snt.002 ::date 2019-09-28 ::annotator gabrielle ::preferred True
 # ::snt 김 교수는 강폭이 좁고 수심이 얕은 곳을 준설하면 홍수 예방에 도움이 된다고 주장했다.
 # ::note
+(주 / 주장-01
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "김")
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (교 / 교수)))
+    :ARG1 (가 / 가능-01
+        :ARG1 (돕 / 돕-01
+            :ARG1 (예 / 예방-01
+                :ARG1 (홍 / 홍수)))
+        :condition (준 / 준설-00
+            :ARG1 (곳 / 곳
+                :op1 (좁 / 좁-01
+                    :ARG1 (폭 / 폭
+                        :poss-of (강 / 강)))
+                :op2 (얕 / 얕-00
+                    :ARG1 (수 / 수심))))))
 
-# ::id 074745.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id 074745.01.krdict.nikl.ex.snt.001 ::date 2019-09-28 ::annotator gabrielle ::preferred True
 # ::snt 급변하는 시장과 소비자에 따라 사업의 방향을 재정립할 필요가 있다. 
 # ::note
+(필 / 필요-01
+    :ARG1 (정 / 정립-01
+        :manner (다 / 다시)
+        :ARG1 (방 / 방향
+            :poss (사 / 사업))
+        :manner (따 / 따르-02
+            :ARG2 (a / and
+                :op1 (시 / 시장
+                    :ARG1-of (급 / 급변-00))
+                :op2 (사2 / 사람
+                    :ARG0-of (소 / 소비-00))))))
 
-# ::id 074352.03.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+
+# ::id 074352.03.krdict.nikl.ex.snt.001 ::date 2019-09-28 ::annotator gabrielle ::preferred True
 # ::snt 시간이 늦어서 거리에 문이 열린 식당이 거의 없다.
 # ::note
+(드 / 드물-01
+    :ARG1 (식 / 식당
+        :ARG0-of (영 / 영업-01))
+    :location (거 / 거리)
+    :cause (늦 / 늦-01
+        :ARG1 (시 / 시간)))
 
-# ::id 032599.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id 032599.01.krdict.nikl.ex.snt.001 ::date 2019-09-28 ::annotator gabrielle ::preferred True
 # ::snt 오늘 천재 음악가의 삶을 극화한 영화를 봤는데 아주 감동적이었다.
 # ::note
+(a / and
+    :op1 (관 / 관람-01
+        :ARG1 (영 / 영화
+            :mod (극 / 극화하-00
+                :ARG1 (살 / 살아가-01
+                    :ARG0 (음 / 음악가
+                        :mod (천 / 천재)))))
+        :time (오 / 오늘))
+    :op2 (감 / 감동-01
+        :ARG0 영))

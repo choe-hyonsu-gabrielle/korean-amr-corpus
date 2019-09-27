@@ -221,7 +221,7 @@
                     :ARG0 (p2 / person :wiki "최인훈" :name (이3 / 이름 :op1 "최인훈"))))))
     :ARG1 (보 / 보태-00
         :ARG1 (어 / 어질머리)
-        :domain (살 / 살-02)))
+        :domain (살 / 살아가-01)))
 
 # ::id snt1.931.003_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt  여기서 '어질머리'는 무엇을 뜻하는 말일까?
@@ -262,10 +262,9 @@
     :ARG1-of (짓 / 짓-01
         :ARG0 (p / person :wiki - :name (이2 / 이름 :op1 "박세무")
             :mod (학 / 학자)
-            :ARG0-of (살 / 살-02
-                :time (d / date-entity
-                    :era "중종"
-                    :calendar (c / country :wiki "조선" :name (이3 / 이름 :op1 "조선")))))
+            :time (d / date-entity
+                :era "중종"
+                :calendar (c / country :wiki "조선" :name (이3 / 이름 :op1 "조선"))))
         :purpose (학2 / 학동
             :ARG0-of (입 / 입학-01
                 :ARG1 (서 / 서당)))))
