@@ -126,7 +126,6 @@
                 :op2 (사2 / 사람
                     :ARG0-of (소 / 소비-00))))))
 
-
 # ::id 074352.03.krdict.nikl.ex.snt.001 ::date 2019-09-28 ::annotator gabrielle ::preferred True
 # ::snt 시간이 늦어서 거리에 문이 열린 식당이 거의 없다.
 # ::note
