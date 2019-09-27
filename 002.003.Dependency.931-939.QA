@@ -2099,6 +2099,7 @@
 
 
 
+
 # ::id snt0.931.033_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 마스트리흐트 조약(네덜란드어: Verdrag van Maastricht, 영어: Maastricht Treaty, 공식적으로는 유럽 연합에 관한 조약)은 1992년 2월 7일, 네덜란드 마스트리흐트에서 유럽 공동체 가입국이 서명하고 1993년 11월 1일부터 발효한 조약으로 유럽 연합의 기초가 되는 조약이다.
 # ::note
@@ -2106,11 +2107,10 @@
 
 
 
+
 # ::id snt0.931.033_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt <정치> 마스트리흐트 조약을 배경으로 유럽 공동체 27개국이 결성한 기구.
 # ::note
-
-
 
 
 # ::id snt1.931.033_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
@@ -2123,7 +2123,6 @@
 # ::id snt0.931.033_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 1993년 11월에 마스트리흐트 조약이 발효됨에 따라 1994년부터 유럽 연합(EU)으로 명칭을 변경하였다.
 # ::note
-
 
 
 
