@@ -149,3 +149,133 @@
         :time (오 / 오늘))
     :op2 (감 / 감동-01
         :ARG0 영))
+
+# ::id 081227.01.krdict.nikl.ex.snt.002 ::date 2019-09-30 ::annotator gabrielle ::preferred True
+# ::snt 지수는 바나나를 초콜릿으로 얇게 코팅한 디저트를 좋아한다.
+# ::note
+(좋 / 좋-01
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "지수"))
+    :ARG1 (디 / 디저트
+        :mod (코 / 코팅-00
+            :ARG1 (바 / 바나나)
+            :ARG2 (초 / 초콜릿)
+            :manner (얇 / 얇-01))))
+
+# ::id 017198.01.krdict.nikl.ex.snt.002 ::date 2019-09-30 ::annotator gabrielle ::preferred True
+# ::snt 승규는 군대 시절이 제일 행복하다고 했는데 이는 바꿔 말하면 그의 인생에 행복한 시절이 없었다는 뜻이다.
+# ::note
+(a / and
+    :op1 (하 / 하-02
+        :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "승규"))
+        :ARG1 (행 / 행복-01
+            :ARG1 (시 / 시절
+                :mod (군 / 군대))
+            :degree (제 / 제일)))
+    :op2 (뜻 / 뜻하-01
+        :condition (말 / 말하-01
+            :manner (바 / 바꾸-01))
+        :ARG1 하
+        :ARG2 (시2 / 시절
+            :polarity -
+            :mod (인 / 인생
+                :poss p)
+            :ARG1-of (행2 / 행복-01))))
+
+# ::id 020546.01.krdict.nikl.ex.snt.002 ::date 2019-09-30 ::annotator gabrielle ::preferred True
+# ::snt 나는 방학을 맞아 거창한 계획을 세웠지만, 결국 하나도 지키지 못했다.
+# ::note
+(c / contrast-01
+    :ARG1 (서 / 서-02
+        :ARG0 (나 / 나)
+        :ARG1 (계 / 계획-01
+            :ARG1-of (거 / 거창-00))
+        :cause (맞 / 맞-04
+            :ARG1 나
+            :ARG2 (방 / 방학)))
+    :ARG2 (지 / 지키-01
+        :polarity -
+        :mod (결 / 결국)
+        :mod (전 / 전혀)
+        :ARG0 나
+        :ARG1 계))
+
+# ::id 058167.03.krdict.nikl.ex.snt.001 ::date 2019-09-30 ::annotator gabrielle ::preferred True
+# ::snt 도둑이 잡힌 후 마을은 얼마 동안 큰 문제 없이 조용했다.
+# ::note
+(조 / 조용하-01
+    :ARG1 (마 / 마을)
+    :duration (얼 / 얼마)
+    :manner (문 / 문제
+        :polarity -
+        :ARG1-of (크 / 크-01))
+    :time (후 / 후
+        :op1 (잡 / 잡-01
+            :ARG1 (도 / 도둑))))
+
+# ::id 084993.01.krdict.nikl.ex.snt.003 ::date 2019-09-30 ::annotator gabrielle ::preferred True
+# ::snt 사소한 말다툼에서 발단한 우리의 싸움은 한 달이 넘도록 계속됐다.
+# ::note
+(계 / 계속-01
+    :ARG1 (싸 / 싸우-01
+        :ARG0 (우 / 우리)
+        :cause (말 / 말다툼하-00
+            :ARG1-of (사 / 사소하-01)))
+    :duration (이 / 이상
+        :op1 (t / temporal-quantity :quant 1 :unit (달 / 달))))
+
+# ::id 088545.01.krdict.nikl.ex.snt.001 ::date 2019-09-30 ::annotator gabrielle ::preferred True
+# ::snt 해바라기의 꽃대가 바람에 휘청휘청한다.
+# ::note
+(휘 / 휘청휘청하-00
+    :ARG1 (꽃 / 꽃대
+        :part-of (해 / 해바라기))
+    :cause (바 / 바람))
+
+# ::id 043034.01.krdict.nikl.ex.snt.003 ::date 2019-09-30 ::annotator gabrielle ::preferred True
+# ::snt 널름거리는 불길을 잡기 위하여 소방관들이 사투를 벌이고 있다.
+# ::note
+(사 / 사투-00
+    :ARG0 (소 / 소방관)
+    :purpose (잡 / 잡-01
+        :ARG0 소
+        :ARG1 (불 / 불길
+            :ARG1-of (널 / 널름-00))))
+
+# ::id 078070.01.krdict.nikl.ex.snt.001 ::date 2019-09-30 ::annotator gabrielle ::preferred True
+# ::snt 화장품 회사에서 쭈글쭈글한 주름을 펴 주는 기능성 화장품을 새로 출시하였다.
+# ::note
+(출 / 출시-01
+    :manner (새 / 새롭-01)
+    :ARG0 (회 / 회사
+        :ARG0-of (제 / 제조-01
+            :ARG1 (화 / 화장품)))
+    :ARG1 (화2 / 화장품
+        :mod (기 / 기능-00)
+        :ARG0-of (펴 / 펴-01
+            :ARG1 (주 / 주름
+                :ARG1-of (쭈글쭈글하-00)))))
+
+# ::id 082297.01.krdict.nikl.ex.snt.001 ::date 2019-09-30 ::annotator gabrielle ::preferred True
+# ::snt 그는 주식 투자를 통해 일하지 않고도 막대한 부를 집적하였다.
+# ::note
+(집 / 집적-01
+    :ARG0 (그 / 그)
+    :ARG1 (부 / 부
+        :ARG1-of (막 / 막대하-01))
+    :manner (투 / 투자-01
+        :ARG2-of (주 / 주식))
+    :manner (일 / 일하-01
+        :polarity -))
+
+# ::id 015640.04.krdict.nikl.ex.snt.002 ::date 2019-09-30 ::annotator gabrielle ::preferred True
+# ::snt 여름에는 짙은 색의 속옷을 입으면 속옷이 비치기 쉽다.
+# ::note
+(가 / 가능-01
+    :condition (입 / 입-01
+        :time (여 / 여름)
+        :ARG1 (속 / 속옷
+            :mod (색 / 색
+                :ARG1-of (짙 / 짙-01))))
+    :ARG1 (비 / 비치-01
+        :ARG1 속))
+
