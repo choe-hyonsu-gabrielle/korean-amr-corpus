@@ -279,3 +279,133 @@
     :ARG1 (비 / 비치-01
         :ARG1 속))
 
+# ::id 069321.01.krdict.nikl.ex.snt.002 ::date 2019-10-01 ::annotator gabrielle ::preferred True
+# ::snt 우리 학교에서는 학생들을 위해 학교와 지하철역을 오가는 셔틀버스를 운행하고 있다.
+# ::note
+(운 / 운행-00
+    :ARG0 (학 / 학교
+        :poss (우 / 우리))
+    :ARG1 (셔 / 셔틀버스
+        :ARG1-of (오 / 오가-01
+            :ARG2 (사 / 사이
+                :op1 학
+                :op2 (역 / 역
+                    :mod (지 / 지하철)))))
+    :purpose (사 / 사람
+        :ARG0-of (공 / 공부-01)))
+
+# ::id 063350.01.krdict.nikl.ex.snt.002 ::date 2019-10-01 ::annotator gabrielle ::preferred True
+# ::snt 그는 오늘따라 여자 친구를 보고 새삼스럽게 가슴이 두근거렸다.
+# ::note
+(설 / 설레-00
+    :ARG1 (그 / 그)
+    :cause (보 / 보-01
+        :ARG0 그
+        :ARG1 (여 / 여자친구))
+    :postp-따라 (오 / 오늘))
+
+# ::id 036187.02.krdict.nikl.ex.snt.003 ::date 2019-10-01 ::annotator gabrielle ::preferred True
+# ::snt 그는 사장님에게 늘 굽실대며 억지 미소를 지어 보였다.
+# ::note
+(짓 / 짓-01
+    :ARG0 (그 / 그)
+    :ARG1 (미 / 미소
+        :mod (억 / 억지))
+    :beneficiary (사 / 사장)
+    :manner (굽 / 굽실-00
+        :time (늘 / 늘)
+        :ARG0 그
+        :ARG1 사))
+
+# ::id 078322.01.krdict.nikl.ex.snt.001 ::date 2019-01-01 ::annotator gabrielle ::preferred True
+# ::snt 스님은 참선하는 데 열중하여 손님이 온 줄도 모르셨다.
+# ::note
+(알 / 알-01
+    :polarity -
+    :ARG0 (스 / 스님)
+    :ARG1 (오 / 오-01
+        :ARG0-of (손 / 손님))
+    :cause (열 / 열중-00
+        :ARG0 (스2 / 스님)
+        :ARG2 (참 / 참선-00)))
+
+# ::id 081639.01.krdict.nikl.ex.snt.001 ::date 2019-10-01 ::annotator gabrielle ::preferred True
+# ::snt 민준은 자신이 투표한 후보자가 대통령이 되기를 바랐다.
+# ::note
+(바 / 바라-01
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "민준"))
+    :ARG1 (선 / 선출-0
+        :ARG1 (사 / 사람
+            :mod (후 / 후보)
+            :ARG1-of (투 / 투표-01
+                :ARG0 p))
+        :ARG2 (대 / 대통령)))
+
+# ::id 063483.01.krdict.nikl.ex.snt.002 ::date 2019-10-01 ::annotator gabrielle ::preferred True
+# ::snt 인구 증가와 경제 성장에 따라 천연자원이 급속도로 소모되고 있다.
+# ::note
+(소 / 소모-01
+    :ARG1 (자 / 자원
+        :mod (천 / 천연))
+    :manner (급 / 급속-01)
+    :cause (a / and
+        :op1 (증 / 증가-01
+            :ARG1 (인 / 인구))
+        :op2 (성 / 성장-01
+            :ARG1 (경 / 경제))))
+
+# ::id 073270.03.krdict.nikl.ex.snt.001 ::date 2019-10-01 ::annotator gabrielle ::preferred True
+# ::snt 연애를 하더니 지수의 얼굴이 피었다.
+# ::note
+(좋 / 좋-01
+    :ARG1 (얼 / 얼굴
+        :part-of (p / person :wiki - :name (이 / 이름 :op1 "지수")))
+    :cause (연 / 연애하-00
+        :ARG0 p))
+
+# ::id 037823.01.krdict.nikl.ex.snt.001 ::date 2019-10-01 ::annotator gabrielle ::preferred True
+# ::snt 창립 당시부터 회사에서 일했던 나로서는 회사의 창립일이 매우 기념되는 날이다.
+# ::note
+(기 / 기념-01
+    :degree (매 / 매우)
+    :ARG0 (나 / 나
+        :ARG0-of (일 / 일하-01
+            :location (회 / 회사)
+            :time (이 / 이후
+                :op1 (창 / 창립-00
+                    :ARG1 회))))
+    :ARG1 (d / date-entity
+        :mod 창))
+
+# ::id 071697.07.krdict.nikl.ex.snt.003 ::date 2019-10-01 ::annotator gabrielle ::preferred True
+# ::snt 기차가 고장을 일으켜서 승객들이 제 시간에 목적지에 도착하지 못하는 불편을 겪었다.
+# ::note
+(겪 / 겪-01
+    :ARG1 (승 / 승객
+        :ARG0-of (탑 / 탑승-01
+            :ARG1 (기 / 기차)))
+    :ARG2 (불 / 불편-01
+        :mod (도 / 도착-01
+            :polarity -
+            :ARG1 승
+            :ARG3 (목 / 목적지)
+            :time (제 / 제시간)))
+    :cause (고 / 고장나-01
+        :ARG1 기))
+
+# ::id 044076.01.krdict.nikl.ex.snt.002 ::date 2019-10-01 ::annotator gabrielle ::preferred True
+# ::snt 잘 모르는 사람이 찾아와 도와 달라고 했으니 승규가 달가워했을 리가 없었다.
+# ::note
+(달 / 달갑-00
+    :polarity -
+    :ARG1 (p / person :wiki - :name (이 / 이름 :op1 "승규"))
+    :cause (요 / 요청-01
+        :ARG0 (사 / 사람
+            :ARG1-of (알 / 알-01
+                :polarity -
+                :degree (잘 / 잘)
+                :ARG0 p))
+        :ARG1 (돕 / 돕-01
+            :ARG0 p
+            :ARG1 사)
+        :ARG2 p))
