@@ -1,6 +1,6 @@
 # Korean AMR (Abstract Meaning Representation) corpus, parallelly annotated to 1562 English sentences.
 # Based on Korean edition of Le Petit Prince ("The Little Prince"), a 1943 novel by Antoine de Saint-Exupery, translated by Ahn, Eung-Ryeol.
-# generated on Sun Oct 6, 2019
+# generated on Sun Oct 6, 2019. Source: http://www.gospelian.com/le_petit_prince/prince_00.htm
 
 # ::id lpp_1943.1 ::date 2019-10-06 ::annotator ISI-AMR-05 ::preferred
 # ::snt Chapter 1 .
