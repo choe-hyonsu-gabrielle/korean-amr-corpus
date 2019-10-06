@@ -413,40 +413,138 @@
 # ::id 084853.02.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이 기술은 여러 방면에서 폭넓게 활용되고 있다.
 # ::note
+(활 / 활용-01
+    :ARG1 (기 / 기술
+        :mod (이 / 이))
+    :location (방 / 방면
+        :quant (여 / 여러))
+    :manner (폭 / 폭넓-01))
 
 # ::id 071812.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 나는 세탁소에 맡긴 옷을 찾아가기 위해 세탁소로 갔으나 문이 닫혀 있었다.
 # ::note
+(a / and
+    :op1 (가 / 가-01
+        :ARG0 (나 / 나)
+        :ARG3 (세 / 세탁소)
+        :purpose (찾 / 찾-02
+            :ARG0 나
+            :ARG1 (옷 / 옷
+                :poss 나
+                :ARG1-of (맡 / 맡-01
+                    :ARG0 세))
+            :ARG2 세))
+    :op2 (닫 / 닫-01
+        :ARG1 세))
 
 # ::id 086420.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 신입 사원들은 환영회 자리에서 호기로운 태도로 당찬 포부를 밝혔다.
 # ::note
+(밝 / 밝히-01
+    :ARG0 (사 / 사람
+        :ARG0-of (일 / 일하-01)
+        :ARG0-of (입2 / 입사-00
+            :manner (새 / 새롭-01)))
+    :ARG1 (포 / 포부
+        :ARG1-of (당 / 당차-01))
+    :manner (호 / 호기롭-00)
+    :location (환 / 환영회))
 
 # ::id 089123.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 내가 만약 환생할 수 있다면 자유롭게 날아다니는 새가 되고 싶다.
 # ::note
+(원 / 원하-01
+    :ARG0 (나 / 나)
+    :ARG1 (되 / 되-01
+        :ARG1 나
+        :ARG2 (새 / 새
+            :ARG0-of (날 / 날-01
+                :manner (자 / 자유롭-01))))
+    :condition (가 / 가능-01
+        :ARG1 (환 / 환생-00
+            :ARG1 나)))
 
 # ::id 048194.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 승규는 밥을 한 숟가락 입안에 넣더니 계속 되새기기만 했다.
 # ::note
+(a / and
+    :op1 (넣 / 넣-01
+        :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "승규"))
+        :ARG1 (밥 / 밥 :quant 1 :unit (숟 / 숟가락))
+        :ARG2 (안 / 안 :op1 (입 / 입 :part-of p)))
+    :op2 (되 / 되새기-00
+        :ARG0 p
+        :manner (계 / 계속-01)))
 
 # ::id 027661.02.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 어미 고양이는 누가 새끼를 해칠까 봐 촉각을 바짝 곤두세우고 있었다.
 # ::note
+(곤 / 곤두서-01
+    :ARG0 (고 / 고양이
+        :ARG0-of (h / have-rel-role-91
+            :ARG2 (어 / 어미)))
+    :ARG1 (촉 / 촉각)
+    :manner (바 / 바짝)
+    :cause (걱 / 걱정-01
+        :ARG0 (해 / 해치-01
+            :ARG0 (누 / 누구)
+            :ARG1 (새 / 새끼
+                :ARG1-of h))
+        :ARG1 고))
 
 # ::id 024098.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한 치킨 외식 업체가 수입 닭에 의존해 온 것으로 알려져 소비자들의 비난이 일고 있다.
 # ::note
+(일 / 일-01
+    :ARG1 (비 / 비난-01
+        :ARG0 (사 / 사람
+            :ARG0-of (소 / 소비-01))
+        :ARG1 (업 / 업체
+            :topic (외 / 외식-00
+                :mod (치 / 치킨)))
+        :ARG2 (알 / 알-01
+            :ARG0 사
+            :ARG1 (의 / 의존-01
+                :ARG0 업
+                :ARG1 (닭 / 닭
+                    :ARG1-of (수 / 수입-01))))))
 
 # ::id 032797.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 영양가가 있는 음식을 먹고 운동을 해야 운동의 효과가 극대화된다.
 # ::note
+(극 / 극대화-01
+    :ARG1 (효 / 효과
+        :mod (운 / 운동-00))
+    :condition (a / and
+        :op1 (먹 / 먹-01
+            :ARG1 (음 / 음식
+                :mod (많 / 많-01
+                    :ARG1 (영 / 영양가))))
+        :op2 (운2 / 운동-00)))
 
 # ::id 062210.13.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 학교 연구실에 자리가 나서 새 연구원이 뽑혀 들어왔다. 
 # ::note
+(채 / 채용-01
+    :ARG1 (사 / 사람
+        :ARG0-of (연 / 연구-01)
+        :ARG1-of (새 / 새롭-01))
+    :cause (나 / 나-01
+        :ARG1 (자 / 자리)
+        :ARG2 (연 / 연구실
+            :location (학 / 학교))))
 
 # ::id 071374.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이 장난감은 아이들이 가지고 놀아도 아무 위험이 없도록 안전하게 만들어졌다.
 # ::note
-
+(만 / 만들-01
+    :ARG1 (장 / 장난감
+        :mod (이 / 이)
+        :ARG1-of (안 / 안전-01))
+    :purpose (위 / 위험-01
+        :polarity -
+        :ARG1 장
+        :ARG2 (아 / 아이)
+        :concession (놀 / 놀-00
+            :ARG0 아
+            :instrument 장)))
