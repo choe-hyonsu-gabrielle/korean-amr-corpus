@@ -154,7 +154,6 @@
             :domain (그 / 그림
                   :poss (나 / 나))))
 
-
 # ::id lpp_1943.14 ::date 2019-10-06 ::annotator ISI-AMR-05 ::preferred
 # ::snt It was a picture of a boa constrictor digesting an elephant .
 # ::zh 是一条巨蟒在消化着一头大象。
@@ -284,7 +283,7 @@
                   :ARG1 (조 / 조종-01
                         :ARG1 (비 / 비행기))))
 
-# ::id lpp_1943.22 ::annotator ISI-AMR-05 ::preferred
+# ::id lpp_1943.22 ::date 2019-10-06 ::annotator ISI-AMR-05 ::preferred
 # ::snt I have flown a little over all parts of the world ; and it is true that geography has been very useful to me .
 # ::zh 世界各地差不多都飞到过。 的确，地理学帮了我很大的忙。
 # ::ko 나는 전 세계를 닥치는 대로 날아다녔다. 지리가 나에게 많은 도움이 된 것은 사실이다.
@@ -299,7 +298,7 @@
             :ARG1 나
             :degree (많 / 많-01)))
 
-# ::id lpp_1943.23 ::annotator ISI-AMR-05 ::preferred
+# ::id lpp_1943.23 ::date 2019-10-06 ::annotator ISI-AMR-05 ::preferred
 # ::snt At a glance I can distinguish China from Arizona .
 # ::zh 我一眼就能分辨出中国和亚里桑那。
 # ::ko 한 번 척 보아도 중국과 애리조나를 구별할 수 있었으니까.
