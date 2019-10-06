@@ -409,3 +409,44 @@
             :ARG0 p
             :ARG1 사)
         :ARG2 p))
+
+# ::id 084853.02.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 기술은 여러 방면에서 폭넓게 활용되고 있다.
+# ::note
+
+# ::id 071812.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 나는 세탁소에 맡긴 옷을 찾아가기 위해 세탁소로 갔으나 문이 닫혀 있었다.
+# ::note
+
+# ::id 086420.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 신입 사원들은 환영회 자리에서 호기로운 태도로 당찬 포부를 밝혔다.
+# ::note
+
+# ::id 089123.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 내가 만약 환생할 수 있다면 자유롭게 날아다니는 새가 되고 싶다.
+# ::note
+
+# ::id 048194.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 승규는 밥을 한 숟가락 입안에 넣더니 계속 되새기기만 했다.
+# ::note
+
+# ::id 027661.02.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 어미 고양이는 누가 새끼를 해칠까 봐 촉각을 바짝 곤두세우고 있었다.
+# ::note
+
+# ::id 024098.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 한 치킨 외식 업체가 수입 닭에 의존해 온 것으로 알려져 소비자들의 비난이 일고 있다.
+# ::note
+
+# ::id 032797.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 영양가가 있는 음식을 먹고 운동을 해야 운동의 효과가 극대화된다.
+# ::note
+
+# ::id 062210.13.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 학교 연구실에 자리가 나서 새 연구원이 뽑혀 들어왔다. 
+# ::note
+
+# ::id 071374.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 장난감은 아이들이 가지고 놀아도 아무 위험이 없도록 안전하게 만들어졌다.
+# ::note
+

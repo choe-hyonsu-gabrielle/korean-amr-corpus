@@ -1,5 +1,5 @@
 # Yonsei Korean AMR (Abstract Meaning Representation) Corpus (choehyonsu@yonsei.ac.kr)
-# Sentences from Exobrain corpus (ETRI), Newswire and Wikis
+# Sentences from Exobrain corpus (ETRI), Newswire
 # generated on Sun September 1, 2019
 
 # ::id snt0.E2017.NEWS.001 ::date 2019-09-01T21:35 ::annotator gabrielle ::preferred True
