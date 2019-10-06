@@ -227,7 +227,7 @@
 # ::snt  여기서 '어질머리'는 무엇을 뜻하는 말일까?
 # ::note
 (뜻 / 뜻하-01
-    :ARG1 (어 / 어질머리)
+    :ARG1 (s / string-entity :value "어질머리")
     :ARG2 (a / amr-unknown)
     :condition (여 / 여기))
 
@@ -279,7 +279,7 @@
         :instrument-of (배 / 배우-01
             :ARG0 (학 / 학동)
             :time (이2 / 이후
-                :op1 (익-00
+                :op1 (익 / 익-00
                     :ARG0 학
                     :ARG1 (b2 / book :wiki "천자문" :name (이3 / 이름 :op1 "천자문"))))))
     :op2 (약 / 약술-00
@@ -339,9 +339,24 @@
                 :op1 (c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
                 :op2 (c2 / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))))
 
-# ::id snt2.931.005_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
+# ::id snt2.931.005_A.02_ver ::date 2019-10-06 ::annotator gabrielle ::preferred False
 # ::snt  ≪천자문≫을 익힌 어린이들이 ≪소학≫을 배우기 전에 공부하는 교과서로 널리 사용하였으며, 덕행의 함양에 많은 도움이 되었다.
 # ::note
+(a / and
+    :op1 (사 / 사용-01
+        :ARG0 (어 / 어린이
+            :ARG0-of (익 / 익-00
+                :ARG1 (b / book :wiki "천자문" :name (이 / 이름 :op1 "천자문"))))
+        :ARG2 (교 / 교과서
+            :instrument-of (공 / 공부-01
+                :time (이2 / 이전
+                    :op1 (배 / 배우-01
+                        :ARG0 어
+                        :ARG1 (b2 / book :wiki "소학" :name (이3 / 이름 :op1 "소학"))))))
+        :manner (널 / 널리))
+    :op2 (돕 / 돕-01
+        :ARG1 (함 / 함양-00
+            :ARG2 (덕 / 덕행))))
 
 # ::id snt0.931.005_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 조선 중종 때 학자 박세무(朴世茂)가 저술하였다.
@@ -393,9 +408,17 @@
 # ::snt 이 책은 조선 시기 학자 박세무가 중국의 역사와 우리나라의 역사를 기록한 것으로, 유교의 오륜에 대해서도 설명하고 있다.
 # ::note
 
-# ::id snt1.931.005_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.005_Q.01_ver ::date 2019-10-06 ::annotator gabrielle ::preferred True
 # ::snt  조선 시기 서당에서 아이들의 교재로 주로 사용했던 이 책은 무엇일까?
 # ::note
+(사 / 사용-01
+    :mod (주 / 주로)
+    :ARG0 (아 / 아이)
+    :ARG1 (a / amr-unknown)
+    :ARG2 (교 / 교재)
+    :location (서 / 서당)
+    :time (시 / 시기
+        :mod (c / country :wiki "조선" :name (이 / 이름 :op1 "조선"))))
 
 # ::id snt0.931.006_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한국을 비롯해 주변 4강(미국ㆍ중국ㆍ일본ㆍ러시아), 미주(캐나다ㆍ멕시코ㆍ칠레ㆍ페루), 오세아니아(호주ㆍ뉴질랜드ㆍ파푸아뉴기니), 동아시아 지역 등 21개국을 회원국으로 한다.
@@ -405,9 +428,18 @@
 # ::snt 회원국은 출범 당시에는 한국·일본·미국·캐나다·호주·뉴질랜드·아세안 6개국(태국·말레이시아·인도네시아·싱가포르·필리핀·브루나이) 등 총 12개국이었으나 그 뒤 중국·차이니스타이페이·홍콩·멕시코·파푸아뉴기니·칠레·베트남·러시아·페루 등이 차례로 가입하여 현재는 총 21개국이다.
 # ::note
 
-# ::id snt0.931.006_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.006_Q.01_ver ::date 2019-10-06 ::annotator gabrielle ::preferred True
 # ::snt 아시아태평양 경제협력체인 APEC은 아시아-태평양 지역의 지속적인 경제 성장과 공동 번영을 위해 출범했다.
 # ::note
+(출 / 출범-01
+    :ARG1 (o / organization :wiki "아시아_태평양_경제협력체" :name (이 / 이름 :op1 "APEC"))
+    :purpose (a / and
+        :op1 (성 / 성장-01
+            :ARG1 (경 / 경제
+                :poss (w / world-region :wiki "아시아_태평양" :name (이2 / 이름 :op1 "아시아-태평양" :op2 "지역")))
+            :ARG1-of (지 / 지속-01))
+        :op2 (번 / 번영-00
+            :mod (공 / 공동))))
 
 # ::id snt1.931.006_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt  APEC의 회원국이 아닌 나라는 어디일까?
@@ -435,7 +467,7 @@
 # ::snt  여기서 '골'이 의미하는 숫자는 무엇일까?
 # ::note
 (의 / 의미-01
-    :ARG1 "골"
+    :ARG1 (s / string-entity :value "골")
     :ARG2 (a / amr-unknown
         :mod (숫 / 숫자))
     :condition (여 / 여기))
@@ -450,8 +482,6 @@
             :part-of (심 / 심장))
         :ARG3 (폐 / 폐)))
 
-
-
 # ::id snt1.931.008_A.01_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
 # ::snt  산소가 결핍된 유일한 동맥이다.
 # ::note
@@ -459,8 +489,6 @@
     :ARG1-of (유 / 유일-01)
     :ARG1-of (결 / 결핍-00
         :ARG2 (산 / 산소)))
-
-
 
 # ::id snt0.931.008_A.02_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
 # ::snt <의학> 심장에서 허파로 산소가 적은 혈액을 보내는 혈관.
@@ -474,8 +502,6 @@
         :ARG2 (허 / 허파)
         :source (심 / 심장)))
 
-
-
 # ::id snt0.931.008_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 우심실의 전상우에 있는 동맥구로부터 시작, 대동맥의 기부 앞을 상좌후방으로 꼬이어 올라가서 대동맥궁의 아래 좌우의 갈래로 나뉘어 폐문에서 기관지와 함께 폐의 내부에 들어가 나뭇가지 모양으로 나뉘는 혈관으로, 신체 각 부분에서 모이는 정맥혈이 통하고 있다.
 # ::note
@@ -483,12 +509,14 @@
 
 
 
-# ::id snt0.931.008_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.008_A.04_ver ::date 2019-10-06 ::annotator gabrielle ::preferred True
 # ::snt 심장에서 폐로 정맥혈을 보내는 혈관.
 # ::note
-
-
-
+(혈 / 혈관
+    :ARG0-of (보 / 보내-01
+        :ARG1 (정 / 정맥혈)
+        :ARG2 (폐 / 폐)
+        :source (심 / 심장)))
 
 # ::id snt1.931.008_A.04_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
 # ::snt  허파동맥.
@@ -496,12 +524,16 @@
 (동 / 동맥
     :poss (허 / 허파))
 
-
-
-# ::id snt0.931.008_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.008_A.05_ver ::date 2019-10-06 ::annotator gabrielle ::preferred True
 # ::snt 온몸에서 심장으로 돌아온 정맥혈을 폐로 보내는 혈관.
 # ::note
-
+(혈 / 혈관
+    :ARG0-of (보 / 보내-01
+        :ARG1 (정 / 정맥혈
+            :ARG0-of (돌 / 돌아오-01
+                :ARG2 (온 / 온몸)
+                :ARG3 (심 / 심장)))
+        :ARG2 (폐 / 폐)))
 
 
 
