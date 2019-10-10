@@ -548,3 +548,116 @@
         :concession (놀 / 놀-00
             :ARG0 아
             :instrument 장)))
+
+# ::id 068444.04.krdict.nikl.ex.snt.002 ::date 2019-10-11 ::annotator gabrielle ::preferred True
+# ::snt 선생님이 실수로 손톱으로 칠판을 긁자 예리한 소리가 났다. 
+# ::note
+(나 / 나-01
+    :ARG1 (소 / 소리
+        :ARG1-of (예 / 예리하-01))
+    :cause (긁 / 긁-00
+        :ARG0 (선 / 선생님)
+        :ARG1 (칠 / 칠판)
+        :instrument (손 / 손톱
+            :part-of 선)
+        :manner (실 / 실수-00)))
+
+# ::id 055064.01.krdict.nikl.ex.snt.001 ::date 2019-10-11 ::annotator gabrielle ::preferred True
+# ::snt 우리는 무정형한 상태의 진흙으로 도자기를 곱게 빚었다.
+# ::note
+(빚 / 빚-00
+    :ARG0 (우 / 우리)
+    :ARG1 (도 / 도자기)
+    :instrument (진 / 진흙
+        :ARG1-of (정 / 정형-00
+            :polarity -)))
+
+# ::id 024534.01.krdict.nikl.ex.snt.001 ::date 2019-10-11 ::annotator gabrielle ::preferred True
+# ::snt 퇴근 시간이라서 도로에 많은 차들이 붐볐다.
+# ::note
+(붐 / 붐비-00
+    :ARG1 (차 / 차
+        :ARG1-of (많 / 많-01))
+    :location (도 / 도로)
+    :cause (d / date-entity
+        :time-of (퇴 / 퇴근-00)))
+
+# ::id 029738.03.krdict.nikl.ex.snt.003 ::date 2019-10-11 ::annotator gabrielle ::preferred True
+# ::snt 그는 회사에서 각종 홍보 업무를 담당하는 직업을 갖게 되었다.
+# ::note
+(h / have-org-role-91
+    :ARG0 (그 / 그)
+    :ARG1 (회 / 회사)
+    :ARG3 (담 / 담당-01
+        :ARG1 (홍 / 홍보-01
+            :mod (각 / 각종))))
+
+# ::id 091198.01.krdict.nikl.ex.snt.001 ::date 2019-10-11 ::annotator gabrielle ::preferred True
+# ::snt 나이가 드니 살이 탄력이 없어져서 물렁거렸다.
+# ::note
+(물 / 물렁거리-00
+    :ARG1 (살 / 살
+        :mod (탄 / 탄력 :polarity -))
+    :cause (들 / 들-04
+        :ARG2 (나 / 나이)))
+
+# ::id 080984.01.krdict.nikl.ex.snt.001 ::date 2019-10-11 ::annotator gabrielle ::preferred True
+# ::snt 약소국은 어쩔 수 없이 부유한 강대국에게 경제적으로 종속되었다.
+# ::note
+(종 / 종속-00
+    :ARG1 (약 / 약소국)
+    :ARG2 (강 / 강대국
+        :ARG1-of (부 / 부유하-01))
+    :mod (가 / 가능-01
+        :polarity -
+        :ARG1 (어 / 어찌하-01
+            :ARG0 약)))
+
+# ::id 076640.01.krdict.nikl.ex.snt.002 ::date 2019-10-11 ::annotator gabrielle ::preferred True
+# ::snt 외모가 중시되는 시대이다 보니 너도나도 성형을 하려고 병원으로 몰려든다.
+# ::note
+(몰 / 몰려들-00
+    :ARG3 (병 / 병원)
+    :mod (너 / 너도나도)
+    :purpose (성 / 성형-00)
+    :cause (시 / 시대
+        :mod (중 / 중시-01
+            :ARG1 (외 / 외모))))
+
+# ::id 017179.01.krdict.nikl.ex.snt.003 ::date 2019-10-11 ::annotator gabrielle ::preferred True
+# ::snt 사실 나는 그가 나에게 무엇을 이야기했는지 잘 기억이 나지 않는다.
+# ::note
+(기 / 기억-01
+    :polarity -
+    :ARG0 (나 / 나)
+    :ARG1 (이 / 이야기-01
+        :ARG0 (그 / 그)
+        :ARG1 (무 / 무엇)
+        :ARG2 나)
+    :degree (잘 / 잘))
+
+# ::id 066950.02.krdict.nikl.ex.snt.001 ::date 2019-10-11 ::annotator gabrielle ::preferred True
+# ::snt 신입 사원은 벌써부터 부장의 눈에 들려고 얼쩡거렸다.
+# ::note
+(얼 / 얼쩡-00
+    :ARG0 (사 / 사원
+        :ARG0-of (신 / 신입-00))
+    :purpose (눈 / 눈에-들-00
+        :ARG1 사
+        :ARG2 (사2 / 사람
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (부 / 부장))))
+    :time (이 / 이전
+        :op1 (지 / 지금)))
+
+# ::id 088143.01.krdict.nikl.ex.snt.001 ::date 2019-10-11 ::annotator gabrielle ::preferred True
+# ::snt 선생님은 지난 시간에 나눠 준 설문지를 회수해 가셨다.
+# ::note
+(회 / 회수-01
+    :ARG0 (선 / 선생님)
+    :ARG1 (종 / 종이
+        :instrument-of (설 / 설문-00)
+        :ARG1-of (나 / 나눠주-00
+            :ARG0 선
+            :time (시 / 시간
+                :ARG0-of (지 / 지나-01)))))
