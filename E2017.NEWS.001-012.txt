@@ -2680,7 +2680,7 @@
             :ARG0 (p / person :name (이 / 이름 :op1 "김")
                 :mod (후 / 후보))
             :ARG1 (어 / 어렵-01
-                :poss (국 / 국므므ㅓㅏ민))
+                :poss (국 / 국민))
             :concession (만 / 만나-01
                 :polarity -
                 :ARG0 p
