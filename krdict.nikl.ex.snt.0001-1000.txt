@@ -792,3 +792,137 @@
     :mod (불 / 불편-01
         :ARG1 (어 / 어디
             :part-of 몸)))
+
+# ::id 057165.02.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 영화를 촬영할 때 배우들의 호흡이 잘 맞아떨어져 멋진 장면이 나왔다.
+# ::note
+(나 / 나오-01
+    :ARG0 (장 / 장면
+        :ARG1 (멋 / 멋지-00))
+    :cause (맞 / 맞아떨어지-01
+        :ARG1 (호 / 호흡
+            :poss (배 / 배우))
+        :degree (잘 / 잘)
+        :time (촬 / 촬영-01
+            :ARG1 (영 / 영화))))
+
+# ::id 074286.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 김 사장은 그간의 업적으로 보아 재임용하는 것이 회사를 위해 좋다.
+# ::note
+(좋 / 좋-03
+    :ARG1 (재 / 재임용-00
+        :ARG1 (p / person :wiki - :name (이 / 이름 :op1 "김")
+            :ARG0-of (h / have-org-role-91
+                :ARG1 (회 / 회사)
+                :ARG2 (사 / 사장))))
+    :ARG2 회
+    :condition (보 / 보-03
+        :ARG1 (업 / 업적
+            :duration (그 / 그간))))
+
+# ::id 021341.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이렇게 비싸고 좋은 악기는 나 같은 초보자에게는 매우 과하다.
+# ::note
+(과 / 과하-00
+    :ARG2-of (h / have-degree-91
+        :ARG1 (악 / 악기
+            :ARG1-of (비 / 비싸-01)
+            :ARG1-of (좋 / 좋-01)
+            :ARG1-of (이 / 이렇-01))
+        :ARG3 (매 / 매우)
+        :ARG6 (사 / 사람
+            :mod (초 / 초보)
+            :example (나 / 나))))
+
+# ::id 077646.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 은행은 고객의 재직이나 소득만 증빙될 수 있으면 언제든지 소액 대출을 할 수 있다.
+# ::note
+(가 / 가능-01
+    :domain (은 / 은행
+        :mod (이 / 이))
+    :ARG1 (대 / 대출-01
+        :ARG1 (소 / 소액)
+        :time (언 / 언제든지))
+    :condition (가2 / 가능-01
+        :ARG1 (증 / 증빙-00
+            :ARG1 (o / or
+                :op1 (재 / 재직-01
+                    :ARG0 (고 / 고객))
+                :op2 (소2 / 소득
+                    :poss 고)))))
+
+# ::id 074006.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 나는 원본과 전사한 책의 차이점을 발견하여 그것을 가지고 논문을 썼다.
+# ::note
+(쓰 / 쓰-02
+    :ARG0 (나 / 나)
+    :ARG1 (논 / 논문
+        :topic (발 / 발견-01
+            :ARG0 나
+            :ARG1 (차 / 차이점
+                :op1 (원 / 원본)
+                :op2 (책 / 책
+                    :ARG1 (전 / 전사-00))))))
+
+# ::id 068564.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 의사가 보호자를 찾는 순간 나는 내 운명을 예감할 수 있었다.
+# ::note
+(가 / 가능-01
+    :ARG0 (나 / 나)
+    :ARG1 (예 / 예감-00
+        :ARG1 (운 / 운명 :poss 나))
+    :time (찾 / 찾-01
+        :ARG0 (의 / 의사)
+        :ARG1 (사 / 사람
+            :ARG0-of (보 / 보호-01))))
+
+# ::id 077215.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 당시 우리는 나라 안팎으로 여러 문제들이 중첩하고 있는 어려운 상황에 있었다.
+# ::note
+(상 / 상황
+    :ARG1-of (어 / 어렵-01)
+    :mod (중 / 중첩-00
+        :ARG1 (문 / 문제 
+            :quant (여 / 여러))
+        :location (안 / 안팎
+            :op1 (나 / 나라)))
+    :domain (우 / 우리
+        :time (당 / 당시)))
+
+# ::id 080762.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 몽고는 대규모의 군사를 이끌고 고려를 침략했다.
+# ::note
+(침 / 침략-01
+    :ARG0 (c / country :wiki "몽고" :name (이 / 이름 :op1 "몽고"))
+    :ARG1 (c2 / country :wiki "고려" :name (이2 / 이름 :op1 "고려"))
+    :manner (이3 / 이끌-01
+        :ARG0 c
+        :ARG1 (군 / 군사
+            :quant (규 / 규모
+                :ARG1-of (크 / 크-01)))
+        :ARG2 c2))
+
+# ::id 070492.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 남편은 딸애를 얼러 보겠다고 온갖 웃긴 표정을 지어 보였다.
+# ::note
+(짓 / 짓-01
+    :ARG0 (사 / 사람
+        :ARG0-of (h / have-rel-role-91
+            :ARG2 (남 / 남편)))
+    :ARG1 (표 / 표정
+        :ARG1-of (웃 / 웃-00)
+        :mod (온 / 온갖))
+    :purpose (어 / 어르-00
+        :ARG0 사
+        :ARG1 (아 / 아이
+            :ARG0-of (h2 / have-rel-role-91
+                :ARG2 (딸 / 딸)))))
+
+# ::id 040628.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 철로가 내뻗은 곳은 수풀이 우거진 강가였다.
+# ::note
+(내 / 내뻗-00
+    :ARG1 (철 / 철로)
+    :location (강 / 강가
+        :mod (우 / 우거지-00
+            :ARG1 (수 / 수풀))))
