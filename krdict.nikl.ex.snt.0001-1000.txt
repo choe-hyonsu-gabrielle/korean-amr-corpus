@@ -661,3 +661,134 @@
             :ARG0 선
             :time (시 / 시간
                 :ARG0-of (지 / 지나-01)))))
+
+# ::id 067618.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그는 사람들에 의해 자연 환경이 파괴되는 것을 보면 인류의 미래가 염려스럽다고 말했다.
+# ::note
+(염 / 염려-01
+    :ARG0 (그 / 그)
+    :ARG1 (미 / 미래
+        :poss (인 / 인류))
+    :cause (파 / 파괴-01
+        :ARG0 (사 / 사람)
+        :ARG1 (환 / 환경
+            :mod (자 / 자연))))
+
+# ::id 065202.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 나는 밥이 쉰 것을 모르고 먹었다가 배탈이 났다.
+# ::note
+(앓 / 앓-01
+    :ARG0 (나 / 나
+        :ARG0-of (먹 / 먹-01
+            :ARG1 (밥 / 밥
+                :ARG1-of (쉬 / 쉬-00
+                    :ARG1-of (알 / 알-01
+                        :polarity -
+                        :ARG0 나)))))
+    :ARG1 (배 / 배탈))
+
+# ::id 065200.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 지수와 나는 서로의 비밀을 모두 알 정도로 가까운 사이이다.
+# ::note
+(사 / 사이
+    :ARG1-of (가 / 가깝-00)
+    :domain (a / and
+        :op1 (p / person :wiki - :name (이 / 이름 :op1 "지수"))
+        :op2 (나 / 나))
+    :ARG2-of (h / have-degree-91
+        :ARG1 a
+        :ARG6 (알 / 알-01
+            :ARG0 a
+            :ARG1 (비 / 비밀
+                :poss a
+                :quant (모 / 모두)))))
+
+# ::id 089513.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 나는 시간에 쫓겨 신호등이 없는 곳에서 무단 횡단했다.
+# ::note
+(횡 / 횡단-01
+    :ARG0 (나 / 나)
+    :ARG1 (곳 / 곳
+        :mod (신 / 신호등 :polarity -))
+    :manner (무 / 무단)
+    :cause (쫒 / 쫒-00
+        :ARG0 (시 / 시간)
+        :ARG1 나))
+
+# ::id 067761.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그 작곡가가 남긴 명곡들은 세계 각지에서 수없이 연주되었다.
+# ::note
+(연 / 연주-00
+    :ARG1 (명 / 명곡
+        :ARG1-of (남 / 남-01
+            :ARG0 (사 / 사람
+                :ARG0-of (작 / 작곡-00)
+                :mod (그 / 그))))
+    :frequency (수 / 수없이)
+    :location (각 / 각지
+        :mod (세 / 세계)))
+
+# ::id 088471.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그 제품이 곧 품절될 것 같다는 직원의 말에 나는 얼른 매장으로 뛰어갔다.
+# ::note
+(뛰 / 뛰어가-01
+    :ARG0 (나 / 나)
+    :ARG2 (매 / 매장)
+    :mod (얼 / 얼른)
+    :cause (말 / 말하-01
+        :ARG0 (직 / 직원)
+        :ARG1 (예 / 예상-01
+            :ARG1 (품 / 품절-00
+                :ARG1 (제 / 제품
+                    :mod (그 / 그))
+                :time (곧 / 곧)))))
+
+# ::id 088578.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 나무로 된 마룻바닥이 낡아서 밟을 때마다 삐거덕대는 소리를 냈다.
+# ::note
+(나 / 나-01
+    :ARG1 (소 / 소리
+        :mod (삐 / 삐거덕-00))
+    :ARG2 (바 / 바닥
+        :mod (마 / 마루)
+        :consist-of (나 / 나무))
+    :cause (낡 / 낡-01
+        :ARG1 바)
+    :time (밟 / 밟-00
+        :ARG1 바))
+
+# ::id 031440.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 지수는 항상 꿈을 현실과 결부시키는 버릇이 있었다.
+# ::note
+(버 / 버릇
+    :poss (p / person :wiki - :name (이 / 이름 :op1 "지수"))
+    :mod (결 / 결부-00
+        :ARG0 p
+        :ARG1 (꿈 / 꿈)
+        :ARG2 (현 / 현실)
+        :frequency (항 / 항상)))
+
+# ::id 073249.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 나는 자네같이 훌륭한 청년이 내 사위가 되면 정말 좋겠네.
+# ::note
+(바 / 바라-01
+    :ARG0 (나 / 나)
+    :ARG1 (h / have-rel-role-91
+        :ARG0 나
+        :ARG1 (너 / 너
+            :mod (청 / 청년
+                :ARG1-of (훌 / 훌륭하-01)))
+        :ARG3 (사 / 사위))
+    :degree (정 / 정말))
+
+# ::id 091435.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 승규는 어디가 불편한지 몸을 갸우뚱갸우뚱하며 걸어 다녔다.
+# ::note 어디가 불편한지
+(걸 / 걸어다니-00
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "승규"))
+    :manner (갸 / 갸우뚱갸우뚱-00
+        :ARG1 (몸 / 몸
+            :poss p))
+    :mod (불 / 불편-01
+        :ARG1 (어 / 어디
+            :part-of 몸)))
