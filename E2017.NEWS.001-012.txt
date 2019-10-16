@@ -2784,240 +2784,130 @@
                             :time (이6 / 이후
                                 :op1 (d / date-entity :year 2006)))))))))
 
-# ::id snt12.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
+# ::id snt12.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred False
 # ::snt 특히 "내각 구성에서 성 평등 관점에서도 큰 의미가 있다. 여러 어려움, 외교 난제가 산적한 현실에 후보자가 국제외교무대에서의 경험과 추진력으로 대한민국의 당면 외교위기를 해결하고 외교 위상을 높여주길 기대한다"고 밝혔다.
 # ::note
-do_timestamp_and_preferred
-** edef: great
-(크 / 크-01
-    :ARG0 (agent)
-    :ARG1 (thing_being_great)
-)
-** edef: exist
-(있 / 있-01
-    :ARG1 (thing_existing)
-    :ARG2 (location)
-)
-** edef: regarding
-(있 / 있-02
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-** edef: form a pile
-(산 / 산적-01
-    :ARG1 (thing_forming_a_pile)
-    :ARG2 (location)
-)
-** edef: solve
-(해 / 해결-01
-    :ARG0 (solver)
-    :ARG1 (the_problem)
-)
-** (높 / 높이.01-00)
-** edef: expect
-(기 / 기대-01
-    :ARG0 (agent)
-    :ARG1 (thing_expected)
-)
-** edef: reveal
 (밝 / 밝히-01
-    :ARG0 (revealer)
-    :ARG1 (utterance,_truth_condition)
-    :ARG2 (hearer)
-)
-** edef: light
-(밝 / 밝히-02
-    :ARG0 (agent)
-    :ARG1 (thing_lit)
-)
+    :mod (특 / 특히)
+    :ARG1 (a / and
+        :op1 (의 / 의미-01
+            :mod (크 / 크-01)
+            :topic (구 / 구성-01
+                :ARG1 (내 / 내각))
+            :topic (평 / 평등-00
+                :mod (성 / 성)))
+        :op2 (기 / 기대-01
+            :ARG1 (a2 / and
+                :op1 (해 / 해결-01
+                    :ARG0 (사 / 사람
+                        :mod (후 / 후보))
+                    :ARG1 (위 / 위기
+                        :mod (외 / 외교)
+                        :ARG2-of (당 / 당면-01
+                            :ARG1 (c / country :wiki "대한민국" :name (이 / 이름 :op1 "대한민국"))))
+                    :instrument (a3 / and
+                        :op1 (경 / 경험-01
+                            :location (무 / 무대
+                                :mod (외2 / 외교
+                                    :mod (국 / 국제))))
+                        :op2 (능 / 능력
+                            :mod (추 / 추진-01))
+                        :poss 사))
+                :op2 (높 / 높-01
+                    :ARG0 사
+                    :ARG1 (위2 / 위상
+                        :mod (외3 / 외교))))
+            :topic (현 / 현실
+                :mod (산 / 산적-01
+                    :ARG1 (a4 / and
+                        :op1 (어 / 어렵-01)
+                        :op2 (난 / 난제
+                            :mod (외4 / 외교))
+                        :quant (여 / 여러)))))))
 
-
-
-# ::id snt13.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
 # ::snt 정의용 신임 실장은 서울 출신으로 서울고, 서울대 외교학과를 졸업했다.
 # ::note
-do_timestamp_and_preferred
-** edef: graduate
-(졸 / 졸업-01
-    :ARG0 (agent)
-    :ARG1 (school)
-)
+(a / and
+    :op1 (태 / 태어나-01
+        :ARG1 (p / person :wiki "정의용" :name (이 / 이름 :op1 "정의용")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (실 / 실장))
+            :ARG1-of (신 / 신임-00))
+        :location (c / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울")))
+    :op2 (졸 / 졸업-01
+        :ARG0 p
+        :ARG1 (s / school :wiki "서울고등학교" :name (이3 / 이름 :op1 "서울고"))
+        :ARG1 (학 / 학과
+            :topic (외 / 외교학)
+            :part-of (u / university :wiki "서울대학교" :name (이4 / 이름 :op1 "서울대")))))
 
-
-
-# ::id snt14.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
 # ::snt 현재 아시아정당 국제회의 공동 상임위원장이다.
 # ::note
-do_timestamp_and_preferred
+(h / have-org-role-91
+    :ARG1 (o / organization :wiki - :name (이 / 이름 :op1 "아시아정당" :op2 "국제회의"))
+    :ARG2 (상 / 상임위원장
+        :mod (공 / 공동))
+    :time (현 / 현재))
 
-
-
-# ::id snt15.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
 # ::snt 문 대통령이 각국 정상들과 '전화 외교'를 할 때 배석해 역할을 해왔다.
 # ::note
-do_timestamp_and_preferred
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
-** edef: sit with
-(배 / 배석-01
-    :ARG0 (sitter)
-    :ARG1 (meeting)
-)
-** edef: do
-(하 / 하-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-)
-** edef: say
-(하 / 하-02
-    :ARG0 (agent)
-    :ARG1 (thing_said)
-    :ARG2 (hearer)
-)
-** edef: regard
-(하 / 하-03
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (attribute)
-)
-** edef: make
-(하 / 하-04
-    :ARG0 (impeller_to_action)
-    :ARG1 (impelled_action)
-)
-** edef: decide
-(하 / 하-05
-    :ARG0 (decider)
-    :ARG1 (decision)
-)
-** edef: at
-(하 / 하-06
-    :ARG1 (time)
-)
+(역 / 역할-00
+    :manner (배 / 배석-01)
+    :time (하 / 하-01
+        :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (대 / 대통령)))
+        :ARG1 (외 / 외교
+            :medium (전 / 전화))
+        :accompanier (정 / 정상
+            :poss (각 / 각국))))
 
-
-
-# ::id snt16.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
+# ::id snt16.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred False
 # ::snt 이어 "지금처럼 북핵, 사드(THAAD), 경제가 하나로 얽힌 숙제를 풀려면 확고한 안보의식과 함께 외교적 능력이 있어야 해 정 실장이 적임자라 판단했다"며 "안보가 곧 경제, 민생이라는 통합적 정책 운용을 통해 하루빨리 국민이 안심하고 생활하는 국가안보 상황을 만들어주길 기대한다"고 말했다.
 # ::note
-do_timestamp_and_preferred
-** (얽 / 얽히.01-00)
-** edef: solve
-(풀 / 풀-01
-    :ARG0 (solver)
-    :ARG1 (the_problem)
-)
-** edef: release
-(풀 / 풀-02
-    :ARG0 (releaser)
-    :ARG1 (thing_released)
-)
-** edef: warm up
-(풀 / 풀-03
-    :ARG0 (agent)
-    :ARG1 (body)
-)
-** edef: firm
-(확 / 확고하-01
-    :ARG1 (thing_being_firm)
-)
-** edef: exist
-(있 / 있-01
-    :ARG1 (thing_existing)
-    :ARG2 (location)
-)
-** edef: regarding
-(있 / 있-02
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-** edef: judge
-(판 / 판단-01
-    :ARG0 (agent)
-    :ARG1 (judgement)
-)
-** edef: through
-(통 / 통하-01
-    :ARG1 (thing)
-    :ARG2 (theme)
-)
-** edef: lead to
-(통 / 통하-02
-    :ARG1 (thing)
-    :ARG2 (start_point)
-    :ARG3 (end_point)
-)
-** edef: make sence
-(통 / 통하-03
-    :ARG1 (thing_making_sence)
-)
-** edef: relieve
-(안 / 안심-01
-    :ARG0 (thing_relieving)
-    :ARG1 (thing_relieved)
-)
-** edef: live
-(생 / 생활-01
-    :ARG0 (entity_being_alive)
-    :ARG2 (location)
-)
-** edef: make
-(만 / 만들-01
-    :ARG0 (agent)
-    :ARG1 (thing_made)
-)
-** edef: change
-(만 / 만들-02
-    :ARG0 (causer)
-    :ARG1 (thing_changing)
-    :ARG2 (changed_into)
-)
-** edef: cause
-(만 / 만들-03
-    :ARG0 (causer)
-    :ARG1 (action,_state)
-)
-** edef: expect
-(기 / 기대-01
-    :ARG0 (agent)
-    :ARG1 (thing_expected)
-)
-** edef: stop
-(말 / 말-01
-    :ARG0 (agent)
-    :ARG1 (action_or_thing_stopped)
-)
-
-
+(말 / 말하-01
+    :ARG1 (a / and
+        :op1 (판 / 판단-01
+            :ARG1 (사 / 사람
+                :mod (적 / 적임)
+                :domain (p / person :wiki "정의용" :name (이 / 이름 :op1 "정")
+                    :ARG0-of (h / have-org-role-91
+                        :ARG2 (실 / 실장))))
+            :cause (필 / 필요-01
+                :ARG1 (a2 / and
+                    :op1 (의 / 의식-01
+                        :ARG1 (안 / 안보)
+                        :ARG1-of (확 / 확고하-01))
+                    :op2 (능 / 능력
+                        :mod (외 / 외교))))
+            :purpose (풀 / 풀-01
+                :ARG1 (숙 / 숙제
+                    :mod (얽 / 얽-01
+                        :mod (하 / 하나)
+                        :ARG1 (a3 / and
+                            :op1 (북 / 북핵)
+                            :op2 (사2 / 사드)
+                            :op3 (경 / 경제))))))
+        :op2 (기 / 기대-01
+            :ARG1 (만 / 만들-03
+                :ARG1 (상 / 상황
+                    :mod (안2 / 안보
+                        :mod (국 / 국가))
+                    :mod (안3 / 안심-01
+                        :ARG1 (국2 / 국민
+                            :ARG1-of (생 / 생활-01))))
+                :mod (하2 / 하루빨리)
+                :manner (운 / 운용-01
+                    :ARG1 (정 / 정책
+                        :mod (통 / 통합-01)
+                        :mod (a4 / and
+                            :domain (안4 / 안보)
+                            :mod (곧 / 곧)
+                            :op1 (경2 / 경제)
+                            :op2 (민 / 민생))))))))
 
 # ::id snt17.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 장하성 신임 실장은 광주 출생으로, 경기고를 졸업해 펜실베니아대 경영학 박사학위를 받았다.
