@@ -3060,99 +3060,128 @@
         :ARG1 (s / school :wiki "경기고등학교" :name (이3 / 이름 :op1 "경기고"))
         :ARG1 (u / university :wiki "스탠퍼드_대학교" :name (이4 / 이름 :op1 "스탠포드대"))))
 
-
-
-# ::id snt22.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
 # ::snt 한국신문협회 고문을 맡고 있다.
 # ::note
-do_timestamp_and_preferred
-** edef: have charge of
-(맡 / 맡-01
-    :ARGA (causer)
-    :ARG0 (agent)
-    :ARG1 (thing_had_charge_of)
-)
+(h / have-org-role-91
+    :ARG1 (o / organization :wiki "한국신문협회" :name (이 / 이름 :op1 "한국신문협회"))
+    :ARG2 (고 / 고문))
 
-
-
-# ::id snt23.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
+# ::id snt23.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred False
 # ::snt 문 대통령은 "비록 비상임이지만 국제사회에서 능력과 권위를 인정받은 두 분의 참여로 산적한 외교안보 (문제) 실마리가 풀릴 것으로 기대한다"며 "앞으로 두 분은 새 정부의 기조와 방향을 저와 함께 논의하고 챙겨갈 것"이라고 말했다.
 # ::note
-do_timestamp_and_preferred
-** edef: admit
-(인 / 인정-01
-    :ARG0 (thing_admitting)
-    :ARG1 (thing_admitted)
-)
-** (풀 / 풀리.02-00)
-** edef: expect
-(기 / 기대-01
-    :ARG0 (agent)
-    :ARG1 (thing_expected)
-)
-** edef: discuss
-(논 / 논의-01
-    :ARG0 (discussant)
-    :ARG1 (topic)
-    :ARG2 (conversation_partner)
-)
-** edef: pack
-(챙 / 챙기-01
-    :ARG0 (agent)
-    :ARG1 (thing_packed)
-)
-** edef: stop
-(말 / 말-01
-    :ARG0 (agent)
-    :ARG1 (action_or_thing_stopped)
-)
+(말 / 말하-01
+    :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (대 / 대통령)))
+    :ARG1 (a / and
+        :op1 (기 / 기대-01
+            :ARG1 (풀 / 풀-01
+                :ARG1 (문 / 문제
+                    :topic (안 / 안보
+                        :mod (외 / 외교))
+                    :ARG1-of (산 / 산적-01))
+                :cause (참 / 참여-01
+                    :ARG0 (사 / 사람 :quant 2
+                        :mod (인 / 인정-01
+                            :ARG0 (사2 / 사회
+                                :mod (국 / 국제))
+                            :ARG1 (a2 / and
+                                :op1 (능 / 능력)
+                                :op2 (권 / 권위)
+                                :poss 사)))))
+            :concession (상 / 상임-00
+                :polarity -
+                :mod (비 / 비록)))
+        :op2 (예 / 예정-01
+            :time (이2 / 이후
+                :op1 (지 / 지금))
+            :ARG1 (a3 / and
+                :op1 (논 / 논의-01
+                    :ARG0 사
+                    :ARG1 (a4 / and
+                        :op1 (기2 / 기조)
+                        :op2 (방 / 방향)
+                        :poss (정 / 정부
+                            :ARG1-of (새 / 새롭-01)))
+                    :ARG2 p
+                    :manner (함 / 함께)))
+                :op2 (챙 / 챙기-01
+                    :ARG0 사
+                    :ARG1 a4
+                    :accompanier p))))))
 
-
-
-# ::id snt24.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
 # ::snt 김광두 신임 부의장은 전남 나주 출생으로 광주제일고를 졸업, 하와이대 경제학 박사 학위를 받았다.
 # ::note
-do_timestamp_and_preferred
-** edef: receive
-(받 / 받-01
-    :ARG0 (agent)
-    :ARG1 (theme)
-    :ARG2 (source)
-)
+(a / and
+    :op1 (출 / 출생-01
+        :ARG1 (p / person :wiki - :name (이 / 이름 :op1 "김광두")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (부 / 부의장))
+            :ARG1-of (신 / 신임-00))
+        :location (c / city :wiki "나주시" :name (이2 / 이름 :op1 "전남" :op2 "나주")))
+    :op2 (졸 / 졸업-01
+        :ARG0 p
+        :ARG1 (s / school :wiki "광주제일고등학교" :name (이3 / 이름 :op1 "광주제일고")))
+    :op3 (받 / 받-01
+        :ARG0 p
+        :ARG1 (학 / 학위
+            :mod (박 / 박사)
+            :topic (경 / 경제학))
+        :ARG2 (u / university :wiki "하와이_대학교" :name (이4 / 이름 :op1 "하와이대"))))
 
-
-
-# ::id snt25.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
+# ::id snt25.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred False
 # ::snt 문 대통령은 "우리 경제를 살리는데 국가 역량을 모으기 위해 헌법기구인 자문회의를 활성화하려 한다"며 "김 부의장은 대한민국 개혁적 보수를 대표하는 경제학자로 저와는 다소 다른 시각에서 정치 경제를 바라본 분이나, 이제 경제문제도 합리적 진보와 개혁적 보수가 손을 맞잡아야 한다"고 설명했다.
 # ::note
-do_timestamp_and_preferred
-** edef: gather
-(모 / 모으-01
-    :ARG0 (causal_agent)
-    :ARG1 (entity_gathered)
-    :ARG2 (gathered_into)
-)
-** edef: in order to
-(위 / 위하-01
-    :ARG0 (thing)
-    :ARG1 (thing_pursued)
-)
-** (활 / 활성.01-00)
-** edef: represent
-(대 / 대표-01
-    :ARG0 (entity_taking_place_of_other)
-    :ARG1 (entity_being_substituted_by_the_other)
-)
-** (바 / 바라보.01-00)
-** (맞 / 맞잡.01-00)
-** edef: explain
 (설 / 설명-01
-    :ARG0 (explainer)
-    :ARG1 (thing_explained)
-    :ARG2 (explained_to)
-)
-
-
+    :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (대 / 대통령)))
+    :ARG1 (a / and
+        :op1 (계 / 계획-01
+            :ARG0 p
+            :ARG1 (활 / 활성화-01
+                :ARG0 p
+                :ARG1 (회 / 회의
+                    :purpose (자 / 자문-01)
+                    :mod (기 / 기구
+                        :mod (헌 / 헌법))))
+            :purpose (모 / 모으-01
+                :ARG1 (역 / 역량
+                    :poss (국 / 국가))
+                :purpose (살 / 살-02
+                    :ARG1 (경 / 경제
+                        :poss (우 / 우리)))))
+        :op2 (c / contrast-01
+            :ARG1 (사 / 사람
+                :domain (p2 / person :wiki - :name (이2 / 이름 :op1 "김")
+                    :ARG0-of (h2 / have-org-role-91
+                        :ARG2 (부 / 부의장)))
+                :mod (학 / 학자
+                    :topic (경2 / 경제학)
+                    :ARG0-of (대2 / 대표-01
+                        :ARG1 (보 / 보수
+                            :mod (개 / 개혁-01)
+                            :mod (c2 / country :wiki "대한민국" :name (이3 / 이름 :op1 "대한민국")))))
+                :ARG0-of (바 / 바라보-00
+                    :ARG1 (a2 / and
+                        :op1 (정 / 정치)
+                        :op2 (경3 / 경제))
+                    :manner (시 / 시각
+                        :poss p2
+                        :ARG1-of (다 / 다르-01
+                            :ARG2 p
+                            :degree (다 / 다소)))))
+            :ARG2 (o / obligate-01
+                :ARG2 (손 / 손을-맞잡-00
+                    :ARG0 (진 / 진보
+                        :mod (합 / 합리))
+                    :ARG1 (보2 / 보수
+                        :mod (개2 / 개혁-01))
+                    :ARG2 (문 / 문제
+                        :topic (경4 / 경제)))
+                :time (이4 / 이제)))))
 
 # ::id snt26.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 그러면서 "경제가 갈 길이 성장 분배 이분법이 아니라 선순환이 있다. 이론과 실무를 두루 경험한 김 부의장이 중책을 맡은 만큼 헌법 취지대로 활성화해 고단한 국민 삶을 개선하는데 실질적 역할을 해줄 것을 기대한다"고 부연했다.
