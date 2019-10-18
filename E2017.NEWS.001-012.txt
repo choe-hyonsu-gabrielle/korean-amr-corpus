@@ -3183,12 +3183,42 @@
                         :topic (경4 / 경제)))
                 :time (이4 / 이제)))))
 
-# ::id snt26.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
 # ::snt 그러면서 "경제가 갈 길이 성장 분배 이분법이 아니라 선순환이 있다. 이론과 실무를 두루 경험한 김 부의장이 중책을 맡은 만큼 헌법 취지대로 활성화해 고단한 국민 삶을 개선하는데 실질적 역할을 해줄 것을 기대한다"고 부연했다.
 # ::note
-do_timestamp_and_preferred
-
-
+(a / and
+    :op2 (부 / 부연-00
+        :ARG1 (a2 / and
+            :op1 (선 / 선순환-00
+                :domain (길 / 길
+                    :ARG1-of (가 / 가-01
+                        :ARG0 (경 / 경제)))
+                :mod (이 / 이분법
+                    :polarity -
+                    :op1 (성 / 성장-01)
+                    :op2 (분 / 분배-01)))
+            :op2 (기 / 기대-01
+                :ARG1 (하 / 하-01
+                    :ARG0 (p / person :wiki - :name (이2 / 이름 :op1 "김")
+                        :ARG0-of (h / have-org-role-91
+                            :ARG2 (부2 / 부의장))
+                        :ARG1-of (경 / 경험-01
+                            :mod (두 / 두루)
+                            :ARG2 (a3 / and
+                                :op1 (이3 / 이론)
+                                :op2 (실 / 실무))))
+                    :ARG1 (역 / 역할
+                        :mod (실2 / 실질))
+                    :purpose (개 / 개선-01
+                        :ARG1 (살 / 살아가-01
+                            :ARG0 (국 / 국민)
+                            :ARG1-of (고 / 고단하-00))
+                        :manner (활 / 활성화-01
+                            :manner (취 / 취지
+                                :mod (헌 / 헌법)))))
+                :cause (맡 / 맡-01
+                    :ARG0 p
+                    :ARG1 (중 / 중책))))))
 
 # ::id snt0.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt "4대강 담합 처벌 다 받았는데" vs "털어내고 신뢰회복 계기".
