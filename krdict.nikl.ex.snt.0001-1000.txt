@@ -1008,15 +1008,50 @@
 # ::id 024959.04.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 유민이는 아기처럼 피부가 깨끗하고 곱다.
 # ::note
+(a / and
+    :op1 (깨 / 깨끗하-01
+        :ARG1 (피 / 피부
+            :poss (p / person :wiki - :name (이 / 이름 :op1 "유민"))))
+    :op2 (곱 / 곱-00
+        :ARG1 피)
+    :ARG2-of (h / have-degree-91
+        :ARG6 (아 / 아기)))
 
 # ::id 033492.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 수첩에 간단하게 긁적인 내용도 그날의 일기가 될 수 있다.
 # ::note
+(가 / 가능-01
+    :ARG1 (되 / 되-02
+        :ARG1 (일 / 일기
+            :time (그 / 그날))
+        :ARG2 (내 / 내용
+            :ARG1-of (간 / 간단하-01)
+            :ARG1-of (긁 / 긁적-00
+                :location (수 / 수첩)))))
 
 # ::id 078967.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 어머니는 출가한 딸이 그리워서 조용히 눈물을 훔쳤다.
 # ::note
+(눈 / 눈물을-훔치-00
+    :ARG0 (어 / 어머니)
+    :manner (조 / 조용하-01)
+    :cause (그 / 그립-00
+        :ARG0 어
+        :ARG1 (딸 / 딸
+            :ARG1-of (출 / 출가-00)
+            :ARG2-of (h / have-rel-role-91
+                :ARG1 어))))
 
 # ::id 060031.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 보통 선거란 선거권이 성인 국민 모두에게 부여되는 방식을 뜻한다.
 # ::note
+(뜻 / 뜻하-01
+    :ARG1 (선 / 선거-00
+        :mod (보 / 보통))
+    :ARG2 (방 / 방식
+        :mod (부 / 부여-01
+            :ARG1 (권 / 권리
+                :mod (선2 / 선거-00))
+            :ARG2 (국 / 국민
+                :quant (모 / 모두)
+                :mod (성 / 성인)))))
