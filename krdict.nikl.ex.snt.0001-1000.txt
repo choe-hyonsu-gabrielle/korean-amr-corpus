@@ -926,3 +926,97 @@
     :location (강 / 강가
         :mod (우 / 우거지-00
             :ARG1 (수 / 수풀))))
+
+# ::id 072688.02.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 유목민들은 끊임없이 이주하며 한곳에 오래 정착하지는 않았다.
+# ::note
+(정 / 정착-01
+    :polarity -
+    :duration (오 / 오래)
+    :ARG1 (유 / 유목민)
+    :ARG2 (한 / 한곳)
+    :manner (이 / 이주-01
+        :ARG0 유
+        :manner (끊 / 끊임없-00)))
+
+# ::id 085402.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 독재자에게 지배당하는 국민들은 그의 뜻에 따라 생각하고 움직여야 했다.
+# ::note
+((o / obligate-01
+    :ARG1 (국 / 국민
+        :ARG1-of (지 / 지배-01
+            :ARG0 (독 / 독재자)))
+    :ARG2 (a / and
+        :manner (따 / 따르-01
+            :ARG1 (뜻 / 뜻
+                :poss 독))
+        :op1 (생 / 생각-01)
+        :op2 (움 / 움직이-01)))))
+
+# ::id 037051.02.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 유민이는 부잣집 막내딸로 귀하게 자랐다.
+# ::note
+(자 / 자라-01
+    :manner (귀 / 귀하-00)
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "유민")
+        :ARG0-of (h / have-rel-role-91
+            :ARG2 (딸 / 딸
+                :ord (막 / 막내)
+                :poss (부 / 부잣집)))))
+
+# ::id 058275.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 김 장관은 대통령의 지지와 신뢰를 받고 있어서 날아가는 새도 떨어뜨릴 정도의 영향력을 갖고 있었다.
+# ::note
+(갖 / 갖-01
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "김")
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (장 / 장관)))
+    :ARG1 (힘 / 힘
+        :mod (영 / 영향-01)
+        :degree (날 / 날아가는-새도-떨어뜨릴-정도))
+    :cause (a / and
+        :op1 (지 / 지지-01
+            :ARG0 (대 / 대통령)
+            :ARG1 p)
+        :op2 (신 / 신뢰-01
+            :ARG0 대
+            :ARG1 p)))
+
+# ::id 077269.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt A 방송국에서 방영되었던 특집물이 내일 우리 방송국에서도 중계방송될 것이다.
+# ::note
+(방 / 방송-00
+    :manner (중 / 중계-01)
+    :ARG0 (방 / 방송국
+        :poss (우 / 우리))
+    :ARG1 (특 / 특집물
+        :ARG1-of (방 / 방영-01
+            :ARG0 (방2 / 방송국
+                :mod "A")))
+    :time (내 / 내일))
+
+# ::id 074181.08.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 잡지에는 유독 사은품이 많이 붙어 있다.
+# ::note
+(붙 / 붙-01
+    :ARG1 (사 / 사은품
+        :ARG1-of (많 / 많-01
+            :degree (유 / 유독)))
+    :ARG2 (잡 / 잡지
+        :mod (이 / 이)))
+
+# ::id 024959.04.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 유민이는 아기처럼 피부가 깨끗하고 곱다.
+# ::note
+
+# ::id 033492.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 수첩에 간단하게 긁적인 내용도 그날의 일기가 될 수 있다.
+# ::note
+
+# ::id 078967.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 어머니는 출가한 딸이 그리워서 조용히 눈물을 훔쳤다.
+# ::note
+
+# ::id 060031.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 보통 선거란 선거권이 성인 국민 모두에게 부여되는 방식을 뜻한다.
+# ::note
