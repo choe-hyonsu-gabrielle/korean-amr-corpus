@@ -284,7 +284,7 @@
                     :ARG1 (b2 / book :wiki "천자문" :name (이3 / 이름 :op1 "천자문"))))))
     :op2 (약 / 약술-00
         :ARG0 b
-        :ARG1 (a / and
+        :ARG1 (a2 / and
             :op1 (오 / 오륜
                 :ARG2-of (i / include-91
                     :ARG1 (부 / 부자유친)
@@ -371,10 +371,46 @@
 # ::id snt1.931.005_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt  《천자문》을 익히고 난 후의 학동들이 배우는 초급교재로, 먼저 부자유친(父子有親) ·군신유의(君臣有義) ·부부유별(夫婦有別) ·장유유서(長幼有序) ·붕우유신(朋友有信)의 오륜(五倫)을 설명하였다.
 # ::note
+(a / and
+    :op1 (교 / 교재
+        :mod (초 / 초급)
+        :instrument-of (배 / 배우-01
+            :ARG0 (학 / 학동)
+            :time (이 / 이후
+                :op1 (익 / 익-00
+                    :ARG0 학
+                    :ARG1 (b / book :wiki "천자문" :name (이2 / 이름 :op1 "천자문"))))))
+    :op2 (설 / 설명-01
+        :mod (먼 / 먼저)
+        :ARG1 (오 / 오륜
+            :ARG2-of (i / include-91
+                :ARG1 (부 / 부자유친)
+                :ARG1 (군 / 군신유의)
+                :ARG1 (부2 / 부부유별)
+                :ARG1 (장 / 장유유서)
+                :ARG1 (붕 / 붕우유신)))))
 
 # ::id snt2.931.005_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt  이어 중국의 삼황오제(三皇五帝)에서부터 명나라까지의 역대사실(歷代史實)과 한국의 단군에서부터 조선시대까지의 역사를 약술하였다.
 # ::note
+(a / and
+    :op2 (약 / 약술-00
+        :ARG1 (a2 / and
+            :op1 (사 / 사실
+                :mod (역 / 역대)
+                :mod (d / date-interval
+                    :op1 (d2 / date-entity
+                        :era "삼황오제"
+                        :calendar (c / country :wiki "중국" :name (이 / 이름 :op1 "중국")))
+                    :op2 (d3 / date-entity
+                        :era (c2 / country :wiki "명나라" :name (이2 / 이름 :op1 "명나라")))))
+            :op2 (역2 / 역사
+                :mod (c3 / country :wiki "한국" :name (이3 / 이름 :op1 "한국"))
+                :mod (d4 / date-interval
+                    :op1 (d5 / date-entity
+                        :era "단군")
+                    :op2 (d6 / date-entity
+                        :era "조선"))))))
 
 # ::id snt0.931.005_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 조선 중기 유학자인 박세무(朴世茂)가 초학 아동들을 위하여 지은 책.
@@ -399,10 +435,36 @@
 # ::id snt2.931.005_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt  우선 부자유친(父子有親)·군신유의(君臣有義)·부부유별(夫婦有別)·장유유서(長幼有序)·붕우유신(朋友有信)의 오륜(五倫)을 설명하였다.
 # ::note
+(설 / 설명-01
+    :mod (우 / 우선)
+    :ARG1 (오 / 오륜
+        :ARG2-of (i / include-91
+            :ARG1 (부 / 부자유친)
+            :ARG1 (군 / 군신유의)
+            :ARG1 (부2 / 부부유별)
+            :ARG1 (장 / 장유유서)
+            :ARG1 (붕 / 붕우유신))))
 
 # ::id snt3.931.005_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt  이어 중국의 삼황오제(三皇五帝)에서부터 명나라까지의 역대사실(歷代史實)과 한국의 단군에서부터 조선시대까지의 역사를 약술하였다.
 # ::note
+(약 / 약술-00
+    :ARG1 (a / and
+        :op1 (사 / 사실
+            :mod (역 / 역대)
+            :mod (d / date-interval
+                :op1 (d2 / date-entity
+                    :era "삼황오제"
+                    :calendar (c / country :wiki "중국" :name (이 / 이름 :op1 "중국")))
+                :op2 (d3 / date-entity
+                    :era (c2 / country :wiki "명나라" :name (이2 / 이름 :op1 "명나라")))))
+        :op2 (역2 / 역사
+            :mod (c3 / country :wiki "한국" :name (이3 / 이름 :op1 "한국"))
+            :mod (d4 / date-interval
+                :op1 (d5 / date-entity
+                    :era "단군")
+                :op2 (d6 / date-entity
+                    :era "조선")))))
 
 # ::id snt0.931.005_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이 책은 조선 시기 학자 박세무가 중국의 역사와 우리나라의 역사를 기록한 것으로, 유교의 오륜에 대해서도 설명하고 있다.
@@ -667,7 +729,6 @@
 # ::note
 (i / include-91
     :topic (화 / 화학)
-    :ARG1 (하 / 하나)
     :ARG2 (원 / 원소
         :mod (할 / 할로겐)))
 
@@ -718,9 +779,9 @@
 # ::id snt0.931.011_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 할로겐 원소의 하나.
 # ::note
-
-
-
+(i / include-91
+    :ARG2 (원 / 원소
+        :mod (할 / 할로겐)))
 
 # ::id snt1.931.011_A.03_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
 # ::snt  불소, 플루오린이라고도 한다.
