@@ -1055,3 +1055,132 @@
             :ARG2 (국 / 국민
                 :quant (모 / 모두)
                 :mod (성 / 성인)))))
+
+# ::id 091429.03.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 마취제를 맞자마자 의식이 가물대기 시작했다.
+# ::note
+(시 / 시작-01
+    :ARG1 (가 / 가물-00
+        :ARG1 (의 / 의식))
+    :time (이 / 이후
+        :op1 (맞 / 맞-00
+            :ARG2 (마 / 마취제))))
+
+# ::id 041271.03.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 오랜만에 모인 민준이네 가족들의 얼굴에는 즐거움이 넘실거렸다.
+# ::note
+(즐 / 즐겁-01
+    :ARG1 (가 / 가족
+        :poss (p / person :wiki - :name (이 / 이름 :op1 "민준"))
+        :ARG1-of (모 / 모으-01
+            :time (오 / 오랜만))))
+
+# ::id 089442.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 나는 가스 불에 오징어를 겉만 살짝 그슬어 먹었다.
+# ::note
+(먹 / 먹-01
+    :ARG0 (나 / 나)
+    :ARG1 (오 / 오징어
+        :ARG1-of (그 / 그슬-00
+            :ARG0 나
+            :ARG2 (불 / 불
+                :mod (가 / 가스)))))
+
+# ::id 082169.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 강대국은 약소국들의 풍부한 자원과 영토를 무자비하게 집어삼키는 만행을 저질렀다.
+# ::note
+(저 / 저지르-01
+    :ARG0 (강 / 강대국)
+    :ARG1 (만 / 만행
+        :mod (집 / 집어삼키-00
+            :ARG0 강
+            :ARG1 (a / and
+                :op1 (자 / 자원)
+                :op2 (영 / 영토)
+                :ARG1-of (풍 / 풍부하-01)
+                :poss (약 / 약소국))
+            :manner (무 / 무자비하-01))))
+
+# ::id 015063.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 공직자들은 본인과 가족들의 재산을 공공 기관에 등록해야 한다.
+# ::note
+(o / obligate-01
+    :ARG2 (등 / 등록-01
+        :ARG0 (공 / 공직자)
+        :ARG1 (재 / 재산
+            :poss (a / and
+                :op1 공
+                :op2 (가 / 가족 :poss 공)))
+        :ARG2 (기 / 기관
+            :mod (공2 / 공공))))
+
+# ::id 082471.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 할머니는 아들인 오빠와 딸인 나를 차별했다.
+# ::note
+(차 / 차별-01
+    :ARG0 (사 / 사람
+        :ARG0-of (h / have-rel-role-91
+            :ARG1 (나 / 나
+                :mod (딸 / 딸))
+            :ARG2 (할 / 할머니)))
+    :ARG1 (a / and
+        :op1 (사2 / 사람
+            :ARG0-of (h2 / have-rel-role-91
+                :ARG1 나
+                :ARG2 (오 / 오빠))
+            :mod (아 / 아들))
+        :op2 나))
+
+# ::id 028127.04.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 태풍의 영향을 받아 바다에서는 높은 파도가 거세게 쳤다.
+# ::note
+(치 / 치-01
+    :ARG0 (파 / 파도
+        :ARG1-of (높 / 높-01))
+    :location (바 / 바다)
+    :cause (영 / 영향-01
+        :ARG0 (태 / 태풍)))
+
+# ::id 070940.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 강도는 길 가던 시민을 을러 지갑을 빼앗아 달아났다.
+# ::note
+(a / and
+    :op1 (빼 / 빼앗-01
+        :ARG0 (강 / 강도)
+        :ARG1 (지 / 지갑
+            :poss (시 / 시민
+                :ARG0-of (가 / 가-01
+                    :ARG1 (길 / 길))))
+        :ARG2 시
+        :manner (으 / 으르-00
+            :ARG0 강
+            :ARG1 시))
+    :op2 (달 / 달아나-01
+        :ARG0 강))
+
+# ::id 064068.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 투표 종료 시간이 되면 선거 관리 위원회에서 투표함을 개표 장소로 수거해 간다.
+# ::note
+(수 / 수거-01
+    :ARG0 (위 / 위원회
+        :ARG0-of (관 / 관리-01
+            :ARG1 (선 / 선거-00)))
+    :ARG1 (투 / 투표함)
+    :destination (장 / 장소
+        :location-of (개 / 개표-01))
+    :time (종 / 종료-01
+        :ARG1 (투 / 투표-01)))
+
+# ::id 063019.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 김 감독은 이번 영화의 주인공을 섭외하려고 직접 배우를 찾아 나섰다.
+# ::note
+(찾 / 찾-01
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "김")
+        :ARG0-of (감 / 감독-01))
+    :ARG1 (배 / 배우)
+    :manner (직 / 직접)
+    :purpose (섭 / 섭외-00
+        :ARG0 p
+        :ARG1 (주 / 주인공
+            :poss (영 / 영화
+                :ord (이2 / 이번)))))
