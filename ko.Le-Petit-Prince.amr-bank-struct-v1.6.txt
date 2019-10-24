@@ -7,7 +7,7 @@
 # ::zh I
 # ::ko 1
 (장 / 장
-  :mod 1)
+      :mod 1)
 
 # ::id lpp_1943.2 ::date 2019-10-06 ::annotator ISI-AMR-05 ::preferred
 # ::snt Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
@@ -460,10 +460,9 @@
 # ::id lpp_1943.36 ::date 2019-00-00 ::annotator ISI-AMR-05 ::preferred
 # ::snt Chapter 2 .
 # ::zh II。
-# ::ko 
-
-(c / chapter
-  :mod 2)
+# ::ko 2
+(장 / 장
+      :mod 2)
 
 # ::id lpp_1943.37 ::date 2019-00-00 ::annotator ISI-AMR-05 ::preferred
 # ::snt So I lived my life alone , without anyone that I could really talk to , until I had an accident with my plane in the Desert of Sahara , six years ago .
