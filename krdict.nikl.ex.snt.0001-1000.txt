@@ -1184,3 +1184,51 @@
         :ARG1 (주 / 주인공
             :poss (영 / 영화
                 :ord (이2 / 이번)))))
+
+# ::id 077198.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 몇 년 동안 운행이 중지되었던 버스가 주민들의 요구로 다시 다니게 되었다.
+# ::note
+(다 / 다니-01
+    :ARG0 (버 / 버스
+        :ARG1-of (운 / 운행-00
+            :ARG1-of (중 / 중지-01
+                :duration (이 / 이상
+                    :op1 (t / temporal-quantity
+                        :quant 1
+                        :unit (년 / 년))))))
+    :cause (요 / 요구-01
+        :ARG0 (주 / 주민))
+    :mod (다 / 다시))
+
+# ::id 068602.04.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 카메라는 우리가 움직이는 동선을 그대로 따라오며 우리를 찍었다.
+# ::note
+
+
+# ::id 055165.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 자연은 언뜻 보면 무질서해 보이지만 매우 복잡한 질서에 의해 유지되고 있다.
+# ::note
+
+# ::id 059483.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 웅덩이에 타이어가 박혔는지 차 시동이 꺼져 버렸다.
+# ::note
+
+# ::id 077021.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 사내는 의자에 몸을 주저앉히며 깊은 한숨을 내쉬었다.
+# ::note
+
+# ::id 073264.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 나는 지나가던 택시를 막아서다시피 해서 택시를 겨우 잡아탔다.
+# ::note
+
+# ::id 045302.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 김 과장은 과중한 업무로부터 놓여나 오래간만에 휴가를 얻었다.
+# ::note
+
+# ::id 028017.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 부인은 성품이 고고하고 품위가 높아서 사람들이 그녀를 우러러보았다.
+# ::note
+
+# ::id 021852.04.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 종일 책장에 책을 오르내렸더니 팔이 너무 아프다.
+# ::note
