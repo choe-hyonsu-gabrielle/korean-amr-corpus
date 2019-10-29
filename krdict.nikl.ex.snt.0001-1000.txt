@@ -1203,32 +1203,112 @@
 # ::id 068602.04.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 카메라는 우리가 움직이는 동선을 그대로 따라오며 우리를 찍었다.
 # ::note
-
+(찍 / 찍-01
+    :ARG0 (카 / 카메라)
+    :ARG1 (우 / 우리)
+    :manner (따 / 따라오-01
+        :ARG0 카
+        :ARG1 (동 / 동선
+            :path-of (움 / 움직이-02
+                :ARG0 우))
+        :mod (그 / 그대로)))
 
 # ::id 055165.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 자연은 언뜻 보면 무질서해 보이지만 매우 복잡한 질서에 의해 유지되고 있다.
 # ::note
+(a / and
+    :op1 (보 / 보-02
+        :ARG1 (무 / 무질서하-00
+            :ARG1 (자 / 자연))
+        :condition (보2 / 보-01
+            :mod (언 / 언뜻)))
+    :op2 (유 / 유지-01
+        :ARG1 자
+        :manner (질 / 질서
+            :ARG1-of (복 / 복잡하-01
+                :degree (매 / 매우)))))
 
 # ::id 059483.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 웅덩이에 타이어가 박혔는지 차 시동이 꺼져 버렸다.
-# ::note
+# ::note scheme issue. 막연한 추측을 나타내는 '-는지' 구성을 ':conj-는지'로 처리하거나 새로운 프레임을 부여할 것을 결정해야 함. (예: ambiguous-reason-91) 이때 판단(judgement)에 대해서는 다른 방법이 적용될 수 있음.
+(끄 / 끄-01
+    :ARG1 (시 / 시동-00
+        :ARG1 (차 / 차))
+    :conj-는지 (박 / 박-01
+        :ARG1 (타 / 타이어
+            :part-of 차)
+        :ARG2 (웅 / 웅덩이)))
 
 # ::id 077021.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 사내는 의자에 몸을 주저앉히며 깊은 한숨을 내쉬었다.
-# ::note
+# ::note scheme issue. '-며/으며'를 그동안 manner로 처리했는데 이게 맞는건지 고민 필요.
+(a / and
+    :op1 (주 / 주저앉-00
+        :ARGA (사 / 사내)
+        :ARG0 (몸 / 몸 :poss 사)
+        :ARG1 (의 / 의자))
+    :op2 (내 / 내쉬-00
+        :ARG0 사
+        :ARG1 (한 / 한숨
+            :ARG1-of (깊 / 깊-01))))
 
 # ::id 073264.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 나는 지나가던 택시를 막아서다시피 해서 택시를 겨우 잡아탔다.
-# ::note
+# ::note scheme issue. '-다시피' 처리 방법
+(타 / 타-01
+    :ARG0 (나 / 나)
+    :ARG1 (택 / 택시
+        :ARG0-of (지 / 지나가-01))
+    :manner (하 / 하-01
+        :conj-다시피 (막 / 막아서-00
+            :ARG0 나
+            :ARG1 택)))
 
 # ::id 045302.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 김 과장은 과중한 업무로부터 놓여나 오래간만에 휴가를 얻었다.
 # ::note
+(a / and
+    :op1 (놓 / 놓여나-00
+        :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "김")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (과 / 과장)))
+        :ARG1 (업 / 업무
+            :ARG1-of (과 / 과중하-00)))
+    :op2 (얻 / 얻-01
+        :ARG0 p
+        :ARG1 (휴 / 휴가)
+        :time (오 / 오래간만)))
 
 # ::id 028017.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 부인은 성품이 고고하고 품위가 높아서 사람들이 그녀를 우러러보았다.
 # ::note
+(우 / 우러러보-00
+    :ARG0 (사 / 사람)
+    :ARG1 (부 / 부인)
+    :cause (a / and
+        :op1 (고 / 고고하-00
+            :ARG1 (성 / 성품 :poss 부))
+        :op2 (높 / 높-01
+            :ARG1 (품 / 품위 :poss 부))))
 
 # ::id 021852.04.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 종일 책장에 책을 오르내렸더니 팔이 너무 아프다.
 # ::note
+(아 / 아프-01
+    :ARG1 (팔 / 팔)
+    :cause (오 / 오르내리-00
+        :ARG1 (책 / 책)
+        :location ((책2 / 책장))
+        :time (종 / 종일)))
+
+# ::id 028757.02.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 당신의 몸을 아름다운 몸매로 가꾸고 싶으십니까?
+# ::note scheme issue. 당신, 너, 니 등에 대한 설명 지침에 명시할 것.
+(원 / 원하-01
+    :polarity (a / amr-unknown)
+    :ARG0 (당 / 당신)
+    :ARG1 (가 / 가꾸-00
+        :ARG0 당
+        :ARG1 (몸 / 몸 :poss 당)
+        :ARG2 (몸2 / 몸매
+            :ARG1-of (아 / 아름답-01))))
