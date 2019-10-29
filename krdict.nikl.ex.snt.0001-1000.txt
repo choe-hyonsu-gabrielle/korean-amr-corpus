@@ -1312,3 +1312,144 @@
         :ARG1 (몸 / 몸 :poss 당)
         :ARG2 (몸2 / 몸매
             :ARG1-of (아 / 아름답-01))))
+
+# ::id 037892.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 나는 소심하고 꿍한 성격이라 속에서 생각하는 것을 쉽게 내보이지 않는다.
+# ::note
+(내 / 내보이-00
+    :polarity -
+    :ARG0 (나 / 나)
+    :ARG1 (생 / 생각-01
+        :ARG0 나
+        :postp-에서 (속 / 속))
+    :manner (쉽 / 쉽-01)
+    :cause (성 / 성격
+        :ARG1-of (소 / 소심하-00)
+        :ARG1-of (꿍 / 꿍하-00)
+        :poss 나))
+
+# ::id 016384.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 겨울철은 육지보다 바다의 온도가 높으므로 찬 공기가 서해를 통과하면 대기가 아래층부터 가열되어 불안정해진다.
+# ::note
+(안 / 안정-01
+    :polarity -
+    :ARG1 (대 / 대기)
+    :cause (가 / 가열-01
+        :ARG1 (아 / 아래층
+            :poss 대)
+        :condition (통 / 통과-01
+            :ARG0 (공 / 공기
+                :ARG1-of (차 / 차-00))
+            :ARG1 (s / sea :wiki "황해" :name (이 / 이름 :op1 "서해"))))
+    :cause (h / have-degree-91
+        :ARG1 (바 / 바다)
+        :ARG2 (높 / 높-01
+            :ARG1 (t / temperature-quantity))
+        :ARG4 (육 / 육지)
+        :time (d / date-entity :season (겨 / 겨울))))
+
+# ::id 077741.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 단체에 의해 물품이 부당하게 징집된 사실이 알려져서 한동안 문제가 되었다.
+# ::note
+(문 / 문제-01
+    :ARG1 (징 / 징집-00
+        :ARG0 (단 / 단체)
+        :ARG1 (물 / 물품)
+        :manner (정 / 정당하-01 :polarity -))
+    :duration (한 / 한동안))
+
+# ::id 085407.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 일정한 자격을 갖추지 않고 일하던 외국인 근로자들이 그들 나라로 추방당했다.
+# ::note
+(추 / 추방-01
+    :ARG1 (사 / 사람
+        :ARG0-of (일 / 일하-01)
+        :ARG0-of (갖 / 갖추-01
+            :polarity -
+            :ARG1 (자 / 자격
+                :ARG1-of (일2 / 일정-01)))
+        :mod (외 / 외국))
+    :ARG3 (나 / 나라 :poss 사))
+
+# ::id 041988.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 박 과장은 부장에게 꾸중을 듣고는 김 대리를 닦달하며 화풀이를 했다.
+# ::note
+(화 / 화-00
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "박")
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (과 / 과장)))
+    :manner (닦 / 닦달하-00
+        :ARG0 p
+        :ARG1 (p2 / person :wiki - :name (이2 / 이름 :op1 "김")
+            :ARG0-of (h2 / have-org-role-91
+                :ARG2 (대 / 대리))))
+    :time (이 / 이후
+        :op1 (꾸 / 꾸중-00
+            :ARG0 (사 / 사람
+                :ARG0-of (h3 / have-org-role-91
+                    :ARG2 (부 / 부장)))
+            :ARG1 p)))
+
+# ::id 025351.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 우리 팀은 실력 차이에도 불구하고 마지막까지 건투하여 승리를 차지했다.
+# ::note
+(승 / 승리-01
+    :ARG0 (팀 / 팀 :poss (우 / 우리))
+    :manner (건 / 건투-00
+        :ARG0 팀
+        :destination (마 / 마지막))
+    :concession (차 / 차이
+        :mod (실 / 실력)))
+
+# ::id 026565.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이번 학기에는 학생들의 의견이 반영된 새로운 강의가 개설되었다.
+# ::note
+(개 / 개설-01
+    :ARG1 (강 / 강의
+        :ARG1-of (새 / 새롭-01)
+        :ARG2-of (반 / 반영-01
+            :ARG1 (의 / 의견
+                :poss (학 / 학생))))
+    :time (학 / 학기
+        :ord (이 / 이번)))
+
+# ::id 053779.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 남편은 육아와 가사 노동을 나에게만 떠맡기고 모른 척했다.
+# ::note 보조동사
+(a / and
+    :op1 (떠 / 떠맡-01
+        :ARGA (남 / 남편)
+        :ARG0 (나 / 나)
+        :ARG1 (a2 / and
+            :op1 (육 / 육아-00)
+            :op2 (노 / 노동-01
+                :mod (가 / 가사))))
+    :op2 (모 / 모른-척하-00
+        :ARG0 남))
+
+# ::id 057528.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 노조는 그들의 요청을 계속 묵살하는 회사 측에 파업으로 맞섰다.
+# ::note
+(맞 / 맞서-01
+    :ARG0 (조 / 조합
+        :mod (노 / 노동-00))
+    :ARG1 (회 / 회사
+        :ARG0-of (묵 / 묵살-01
+            :ARG1 (요 / 요청-01
+                :ARG0 조)))
+    :manner (파 / 파업-00))
+
+# ::id 056547.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 아이는 작은 입을 벌려 엄마가 떠 주는 수프를 받아먹고 있다.
+# ::note
+(받 / 받아먹-00
+    :ARG0 (아 / 아이)
+    :ARG1 (수 / 수프
+        :ARG1-of (떠 / 떠주-00
+            :ARG0 (사 / 사람
+                :ARG0-of (h / have-rel-role-91
+                    :ARG1 아
+                    :ARG2 (엄 / 엄마)))))
+    :manner (벌 / 벌리-01
+        :ARG0 아
+        :ARG1 (입 / 입 :part-of 아)))
