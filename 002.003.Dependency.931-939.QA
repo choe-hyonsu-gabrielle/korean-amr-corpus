@@ -22,7 +22,7 @@
         :ARG1 (사 / 사이
             :op1 (눈 / 눈썹))
         :cause (o / or
-            :op1 (화 / 화나-00)
+            :op1 (화 / 화-00)
             :op2 (근 / 근심-00))))
 
 # ::id snt1.931.001_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
