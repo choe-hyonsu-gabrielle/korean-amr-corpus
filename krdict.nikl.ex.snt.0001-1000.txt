@@ -1424,7 +1424,7 @@
             :op1 (육 / 육아-00)
             :op2 (노 / 노동-01
                 :mod (가 / 가사))))
-    :op2 (모 / 모른-척하-00
+    :op2 (모 / 모른척하-00
         :ARG0 남))
 
 # ::id 057528.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
