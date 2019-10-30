@@ -1453,3 +1453,127 @@
     :manner (벌 / 벌리-01
         :ARG0 아
         :ARG1 (입 / 입 :part-of 아)))
+
+# ::id 078043.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 사람들은 무대 위에서 열정적으로 피아노를 치는 그녀를 찬탄하는 눈빛으로 바라보았다.
+# ::note
+(바 / 바라보-00
+    :ARG0 (사 / 사람)
+    :ARG1 (그 / 그녀
+        :ARG0-of (치 / 치-00
+            :ARG1 (피 / 피아노)
+            :manner (열 / 열정)))
+    :manner (눈 / 눈빛
+        :mod (찬 / 찬탄-00)))
+
+# ::id 073290.03.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 별장들은 강가에 임하여 들어서 있었다.
+# ::note
+(임 / 임하-01
+    :ARG0 (별 / 별장)
+    :ARG1 (강 / 강가))
+
+# ::id 050930.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 경찰은 그 상점을 드나드는 사람들을 대상으로 조사를 시작했다.
+# ::note
+(시 / 시작-01
+    :ARG0 (경 / 경찰)
+    :ARG1 (조 / 조사-01
+        :ARG1 (사 / 사람
+            :ARG0-of (드 / 드나들-00
+                :ARG1 (상 / 상점
+                    :mod (그 / 그))))))
+
+# ::id 069522.04.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 우주의 수많은 별들이 정해진 궤도에서 꾸준히 운동한다.
+# ::note
+(운 / 운동-00
+    :ARG0 (별 / 별
+        :ARG1-of (수 / 수많-01)
+        :location (우 / 우주))
+    :path (궤 / 궤도
+        :ARG1-of (정 / 정하-01))
+    :manner (꾸 / 꾸준하-01))
+
+# ::id 062435.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 승규의 지저분한 방 안은 그의 게으른 성격을 극명하게 보여 준다.
+# ::note
+(보 / 보여주-00
+    :ARG0 (안 / 안
+        :op1 (방 / 방
+            :ARG1-of (지 / 지저분하-00)
+            :poss (p / person :wiki - :name (이 / 이름 :op1 "승규"))))
+    :ARG1 (성 / 성격
+        :ARG1-of (게 / 게으르-00)
+        :poss p)
+    :manner (극 / 극명하-00))
+
+# ::id 067800.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 결승전에서 승리한 축구팀의 팬들은 선수들의 이름을 연호하며 우승을 축하했다.
+# ::note
+(축 / 축하-01
+    :ARG0 (팬 / 팬
+        :poss (팀 / 팀
+            :topic (축 / 축구)
+            :ARG0-of (승 / 승리-01
+                :location (결 / 결승전))))
+    :ARG1 승
+    :manner (연 / 연호-01
+        :ARG0 팬
+        :ARG1 (이 / 이름
+            :poss (선 / 선수
+                :consist-of-of 팀))))
+
+# ::id 069827.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 겁에 질린 아이는 덜덜 떨면서 이불을 덮어쓰고 몸을 웅크리고 있었다.
+# ::note
+(a / and
+    :op1 (떨 / 떨-01
+        :ARG1 (아 / 아이
+            :ARG1-of (질 / 질리-01
+                :ARG2 (겁 / 겁)))
+        :mod (덜 / 덜덜))
+    :op2 (덮 / 덮어쓰-00
+        :ARG1 아
+        :ARG2 (이 / 이불))
+    :op3 (웅 / 웅크리-00
+        :ARG1 (몸 / 몸
+            :poss 아)))
+
+# ::id 041330.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 마을에 내린 갑작스러운 폭우로 빗물이 둑을 넘쳐흘렀다.
+# ::note
+(넘 / 넘쳐흐르-00
+    :ARG1 (빗 / 빗물)
+    :ARG2 (둑 / 둑)
+    :cause (폭 / 폭우
+        :ARG1-of (갑 / 갑작스럽-00)
+        :ARG1-of (내 / 내리-04
+            :location (마 / 마을))))
+
+# ::id 021161.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 어머니는 미역국을 끓이기 위해서는 말린 미역을 물에 불려야 한다고 말씀하셨다.
+# ::note
+(말 / 말씀-01
+    :ARG0 (어 / 어머니)
+    :ARG1 (o / obligate-01
+        :ARG2 (불 / 불-00
+            :ARG1 (미 / 미역
+                :ARG1-of (마 / 마르-01))
+            :instrument (물 / 물))
+        :purpose (끓 / 끓-00
+            :ARG1 (미2 / 미역국))))
+
+# ::id 019227.01.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 민준이는 경제적으로 어려워서 대학 등록금을 어떻게 마련해야 할지가 고민되었다.
+# ::note
+(고 / 고민-00
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "민준"))
+    :ARG1 (방 / 방법
+        :manner-of (마 / 마련-01
+             :ARG1 (돈 / 돈
+                :purpose (등 / 등록-01
+                    :ARG2 (대 / 대학)))))
+    :cause (어 / 어렵-01
+        :ARG1 p
+        :mod (경 / 경제)))
