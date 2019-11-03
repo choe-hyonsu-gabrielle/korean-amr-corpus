@@ -448,7 +448,8 @@
     :ARG1 (포 / 포부
         :ARG1-of (당 / 당차-01))
     :manner (호 / 호기롭-00)
-    :location (환 / 환영회))
+    :location (모 / 모임
+        :mod (환 / 환영-01)))
 
 # ::id 089123.02.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 내가 만약 환생할 수 있다면 자유롭게 날아다니는 새가 되고 싶다.
@@ -642,7 +643,7 @@
 (얼 / 얼쩡-00
     :ARG0 (사 / 사원
         :ARG0-of (신 / 신입-00))
-    :purpose (눈 / 눈에-들-00
+    :purpose (눈 / 눈에들-00
         :ARG1 사
         :ARG2 (사2 / 사람
             :ARG0-of (h / have-org-role-91

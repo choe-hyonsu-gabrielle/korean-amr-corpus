@@ -353,7 +353,7 @@
                     :op1 (배 / 배우-01
                         :ARG0 어
                         :ARG1 (b2 / book :wiki "소학" :name (이3 / 이름 :op1 "소학"))))))
-        :manner (널 / 널리))
+        :extent (널 / 널리))
     :op2 (돕 / 돕-01
         :ARG1 (함 / 함양-00
             :ARG2 (덕 / 덕행))))
@@ -482,11 +482,11 @@
     :time (시 / 시기
         :mod (c / country :wiki "조선" :name (이 / 이름 :op1 "조선"))))
 
-# ::id snt0.931.006_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.006_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 한국을 비롯해 주변 4강(미국ㆍ중국ㆍ일본ㆍ러시아), 미주(캐나다ㆍ멕시코ㆍ칠레ㆍ페루), 오세아니아(호주ㆍ뉴질랜드ㆍ파푸아뉴기니), 동아시아 지역 등 21개국을 회원국으로 한다.
 # ::note
 
-# ::id snt0.931.006_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.006_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 회원국은 출범 당시에는 한국·일본·미국·캐나다·호주·뉴질랜드·아세안 6개국(태국·말레이시아·인도네시아·싱가포르·필리핀·브루나이) 등 총 12개국이었으나 그 뒤 중국·차이니스타이페이·홍콩·멕시코·파푸아뉴기니·칠레·베트남·러시아·페루 등이 차례로 가입하여 현재는 총 21개국이다.
 # ::note
 
@@ -510,7 +510,8 @@
     :polarity -
     :ARG0 (a / amr-unknown)
     :ARG1 (o / organization :wiki "아시아_태평양_경제협력체" :name (이 / 이름 :op1 "APEC"))
-    :ARG2 (회 / 회원국)
+    :ARG2 (국 / 국가
+        :mod (회 / 회원))
 
 # ::id snt0.931.007_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 여기서 '골백번'의 뜻은 '골(萬)의 백제곱'이라는 뜻이므로 만에다가 100을 곱하여 100만 번이라는 뜻이다.
@@ -532,7 +533,7 @@
     :ARG1 (s / string-entity :value "골")
     :ARG2 (a / amr-unknown
         :mod (숫 / 숫자))
-    :condition (여 / 여기))
+    :location (여 / 여기))
 
 # ::id snt0.931.008_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 폐동맥(肺動脈)은 심장의 우심실에서 시작되어 폐로 가는 동맥이다.
@@ -564,19 +565,17 @@
         :ARG2 (허 / 허파)
         :source (심 / 심장)))
 
-# ::id snt0.931.008_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.008_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 우심실의 전상우에 있는 동맥구로부터 시작, 대동맥의 기부 앞을 상좌후방으로 꼬이어 올라가서 대동맥궁의 아래 좌우의 갈래로 나뉘어 폐문에서 기관지와 함께 폐의 내부에 들어가 나뭇가지 모양으로 나뉘는 혈관으로, 신체 각 부분에서 모이는 정맥혈이 통하고 있다.
 # ::note
-
-
-
 
 # ::id snt0.931.008_A.04_ver ::date 2019-10-06 ::annotator gabrielle ::preferred True
 # ::snt 심장에서 폐로 정맥혈을 보내는 혈관.
 # ::note
 (혈 / 혈관
     :ARG0-of (보 / 보내-01
-        :ARG1 (정 / 정맥혈)
+        :ARG1 (혈 / 혈액
+            :mod (정 / 정맥))
         :ARG2 (폐 / 폐)
         :source (심 / 심장)))
 
@@ -591,83 +590,135 @@
 # ::note
 (혈 / 혈관
     :ARG0-of (보 / 보내-01
-        :ARG1 (정 / 정맥혈
+        :ARG1 (혈 / 혈액
+            :mod (정 / 정맥)
             :ARG0-of (돌 / 돌아오-01
                 :ARG2 (온 / 온몸)
                 :ARG3 (심 / 심장)))
         :ARG2 (폐 / 폐)))
 
-
-
-# ::id snt0.931.008_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.008_Q.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt 산소가 적고, 이산화탄소가 많은 혈액을 정맥혈이라고 한다.
 # ::note
+(하 / 하-00
+    :ARG1 (혈 / 혈액
+        :mod (많 / 많-01
+            :ARG1 (이 / 이산화탄소))
+        :mod (적 / 적-02
+            :ARG1 (산 / 산소)))
+    :ARG2 (혈2 / 혈액
+        :mod (정 / 정맥)))
 
-
-
-
-# ::id snt1.931.008_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.008_Q.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  혈액이 순환하는 과정에서 정맥혈이 흐르는 곳은 어디일까?
 # ::note
+(흐 / 흐르-01
+    :ARG0 (혈 / 혈액
+        :mod (정 / 정맥))
+    :ARG2 (a / amr-unknown)
+    :mod (과 / 과정
+        :mod (순 / 순환-01
+            :ARG1 (혈2 / 혈액))))
 
-
-
-
-# ::id snt0.931.009_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.009_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt <인명> 조선 후기의 화가(1843~1897).
 # ::note
+(화 / 화가
+    :topic (이 / 이름
+        :poss (사 / 사람))
+    :ARG0-of (살 / 살-02
+        :time (d / date-interval
+            :op1 (d2 / date-entity :year 1843)
+            :op2 (d3 / date-entity :year 1897)))
+    :time (후 / 후기
+        :mod (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))
 
-
-
-
-# ::id snt1.931.009_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.009_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  자는 경유(景猷).
 # ::note
+(자 / 자
+    :op1 "경유")
 
-
-
-
-# ::id snt2.931.009_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.931.009_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  호는 오원(吾園)ㆍ취명거사(醉暝居士)ㆍ문수산인(文岫山人).
 # ::note
+(호 / 호
+    :op1 "오원"
+    :op2 "취명거사"
+    :op3 "문수산인")
 
-
-
-
-# ::id snt3.931.009_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.931.009_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  조선 후기 남화를 대표하는 화가로, 안견ㆍ김홍도와 더불어 조선 화단(畫壇)의 3대 거장으로 불린다.
 # ::note
+(a / and
+    :op1 (화 / 화가
+        :ARG0-of (대 / 대표-01
+            :ARG1 (남 / 남화
+                :time (후 / 후기
+                    :mod (c / country :wiki "조선" :name (이 / 이름 :op1 "조선"))))))
+    :op2 (부 / 부르-02
+        :ARG2 (거 / 거장
+            :mod 3
+            :topic (화2 / 화단
+                :mod c
+            :ARG2-of (i / include-91
+                :ARG1 (a2 / and
+                    :op1 (p / person :wiki "안견" :name (이2 / 이름 :op1 "안견"))
+                    :op2 (p2 / person :wiki "김홍도" :name (이3 / 이름 :op1 "김홍도"))))))))
 
-
-
-
-# ::id snt4.931.009_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.931.009_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  작품에 <홍백매십정병(紅白梅十幀屛)>, <군마도(群馬圖)>, <어옹도(魚翁圖)> 따위가 있다.
 # ::note
+(작 / 작품
+    :ARG2-of (i / include-91
+        :ARG1 (따 / 따위
+            :op1 (p / picture :wiki - :name (이 / 이름 :op1 "홍백매십정병"))
+            :op2 (p2 / picture :wiki - :name (이2 / 이름 :op1 "군마도"))
+            :op3 (p3 / picture :wiki - :name (이3 / 이름 :op1 "어옹도")))))
 
-
-
-
-# ::id snt0.931.009_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.009_A.02_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt 주요 작품에는 《홍백매십정병(紅白梅十幀屛)》, 《군마도(群馬圖)》, 《청록산수도(靑綠山水圖)》, 《수상서금도(樹上棲禽圖)》, 《영모절지병풍(翎毛折枝屛風)》, 《풍림산수도(楓林山水圖)》, 《화조곡병(花鳥曲屛)》, 《담채산수(淡彩山水)》, 《화조수도(花鳥獸圖)》, 《포대도(包袋圖)》, 《심양송객도(潯陽送客圖)》, 《어옹도(漁翁圖)》 등이 있다.
 # ::note
+(작 / 작품
+    :mod (주 / 주요)
+    :ARG2-of (i / include-91
+        :ARG1 (등 / 등
+            :op1 (p / picture :wiki - :name (이 / 이름 :op1 "홍백매십정병"))
+            :op2 (p2 / picture :wiki - :name (이2 / 이름 :op1 "군마도"))
+            :op3 (p3 / picture :wiki - :name (이3 / 이름 :op1 "청록산수도"))
+            :op4 (p4 / picture :wiki - :name (이4 / 이름 :op1 "수상서금도"))
+            :op5 (p5 / picture :wiki - :name (이5 / 이름 :op1 "영모절지병풍"))
+            :op6 (p6 / picture :wiki - :name (이6 / 이름 :op1 "풍림산수도"))
+            :op7 (p7 / picture :wiki - :name (이7 / 이름 :op1 "화조곡병"))
+            :op8 (p8 / picture :wiki - :name (이8 / 이름 :op1 "담채산수"))
+            :op9 (p9 / picture :wiki - :name (이9 / 이름 :op1 "화조수도"))
+            :op10 (p10 / picture :wiki - :name (이7 / 이름 :op1 "포대도"))
+            :op11 (p11 / picture :wiki - :name (이8 / 이름 :op1 "심양송객도"))
+            :op12 (p12 / picture :wiki - :name (이9 / 이름 :op1 "어옹도")))))
 
-
-
-
-# ::id snt0.931.009_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.009_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred Delayed
 # ::snt 대표작으로 30대 기념작인 서울대학교박물관 소장 『근역화휘(槿域畫彙)』에 포함되어 있는 「방황학산초추강도(仿黃鶴山樵秋江圖)」(1879년), 간송미술관 소장의 「삼인문년도(三人問年圖)」, 「산수도」, 「귀거래도 歸去來圖」, 「기명절지도」, 삼성미술관 리움 소장의 『홍백매십곡병(紅白梅十曲屛)』, 「호취도(豪鷲圖)」, 「고사세동도(高士洗桐圖)」등이 있다.
 # ::note
 
-
-
-
-# ::id snt0.931.009_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.009_A.04_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt 주요 작품에 <홍백매십정병(紅白梅十幀屛)> <군마도(群馬圖)> <청록산수도(靑綠山水圖)> <수상서금도(樹上棲禽圖)> <영모절지병풍(翎毛折枝屛風)> <풍림산수도(楓林山水圖)> <화조곡병(花鳥曲屛)> <담채산수(淡彩山水)> <화조수도(花鳥獸圖)> <포대도(包袋圖)> <심양송객도(陽送客圖)> <어옹도(漁翁圖)> 등이 있다.
 # ::note
-
-
-
+(작 / 작품
+    :mod (주 / 주요)
+    :ARG2-of (i / include-91
+        :ARG1 (등 / 등
+            :op1 (p / picture :wiki - :name (이 / 이름 :op1 "홍백매십정병"))
+            :op2 (p2 / picture :wiki - :name (이2 / 이름 :op1 "군마도"))
+            :op3 (p3 / picture :wiki - :name (이3 / 이름 :op1 "청록산수도"))
+            :op4 (p4 / picture :wiki - :name (이4 / 이름 :op1 "수상서금도"))
+            :op5 (p5 / picture :wiki - :name (이5 / 이름 :op1 "영모절지병풍"))
+            :op6 (p6 / picture :wiki - :name (이6 / 이름 :op1 "풍림산수도"))
+            :op7 (p7 / picture :wiki - :name (이7 / 이름 :op1 "화조곡병"))
+            :op8 (p8 / picture :wiki - :name (이8 / 이름 :op1 "담채산수"))
+            :op9 (p9 / picture :wiki - :name (이9 / 이름 :op1 "화조수도"))
+            :op10 (p10 / picture :wiki - :name (이7 / 이름 :op1 "포대도"))
+            :op11 (p11 / picture :wiki - :name (이8 / 이름 :op1 "심양송객도"))
+            :op12 (p12 / picture :wiki - :name (이9 / 이름 :op1 "어옹도")))))
 
 # ::id snt0.931.009_Q.01_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
 # ::snt 조선 시기 화가인 이 사람은 <홍백매십정병>, <군마도> 등을 그렸다.
@@ -680,49 +731,79 @@
     :ARG1 (등 / 등
         :op1 (p / picture :wiki - :name (이2 / 이름 :op1 "홍백매십정병"))
         :op2 (p2 / picture :wiki - :name (이3 / 이름 :op1 "군마도"))))
-        
 
-# ::id snt1.931.009_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.009_Q.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  조선 시기 3대 화가로 불리는 이 사람은 누구일까?
 # ::note
+(부 / 부르-02
+    :ARG1 (a / amr-unknown
+        :mod (사 / 사람
+            :mod (이 / 이)))
+    :ARG2 (화 / 화가
+        :mod 3
+        :time (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))
 
-
-
-
-# ::id snt0.931.010_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.010_Q.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt 이것은 안정복의 고전수필 <아기설>에서 말의 중요성을 깨닫게 해주는 소재이다.
 # ::note
+(소 / 소재
+    :domain (이 / 이것)
+    :cause-of (깨 / 깨닫-01
+        :ARG2 (중 / 중요-01
+            :ARG1 (말 / 말씀-01)))
+    :location (p / publication :wiki - :name (이2 / 이름 :op1 "아기설")
+        :mod (수 / 수필
+            :mod (고 / 고전))
+        :ARG1-of (쓰 / 쓰-02
+            :ARG0 (p2 / person :wiki "안정복" :name (이3 / 이름 :op1 "안정복")))))
 
-
-
-
-# ::id snt1.931.010_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.010_Q.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  입은 있되 말은 못하는 '벙어리'라고 표현한 이것은 무엇일까?
 # ::note
+(표 / 표현-01
+    :topic (a / amr-unknown)
+    :ARG1 (s / string-entity :value "벙어리"
+        :mod (c / contrast-01
+            :ARG1 (입 / 입)
+            :ARG2 (가 / 가능-01
+                :polarity -
+                :ARG1 (말 / 말하-01)))))
 
-
-
-
-# ::id snt0.931.011_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.011_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 플루오린(←영어: fluorine 플루어린) 또는 플루오르(←독일어: Fluor 플루오어)는 할로젠에 속하는 화학 원소로 기호는 F(←라틴어: fluorum 플루오룸), 원자 번호는 9이다.
 # ::note
 
-
-
-
-# ::id snt1.931.011_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.011_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  불소(弗素←일본어: 弗素 훗소)라고도 한다.
 # ::note
+(a / and
+    :op1 (하 / 하-00
+        :ARG2 (불 / 불소))
+    :op2 (부 / 부르-02
+        :ARG2 "훗소"
+        :medium (일 / 일본어)))
 
-
-
-
-# ::id snt2.931.011_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.931.011_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  플루오린은 특히 치아에 얇은 막을 입혀주어 충치를 예방하고 치아의 재석회화(再石灰化)를 촉진하여 충치를 예방하는 효과가 커 치약에 널리 사용된다.
 # ::note
-
-
-
+(사 / 사용-01
+    :extent (널 / 널리)
+    :ARG1 (플 / 플루오린)
+    :ARG2 (치 / 치약)
+    :cause (크 / 크-01
+        :ARG1 (효 / 효과
+            :mod (예 / 예방-01
+                :ARG1 (충 / 충치)
+                :manner (a / and
+                    :op1 (촉 / 촉진-01
+                        :ARG0 플
+                        :ARG1 (재 / 재석회화-00
+                            :ARG1 (치2 / 치아)))
+                    :op2 (입 / 입-01
+                        :ARGA 플
+                        :ARG0 (치3 / 치아)
+                        :ARG1 (막 / 막
+                            :ARG1-of (얇 / 얇-01))))))))
 
 # ::id snt0.931.011_A.02_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
 # ::snt <화학> 할로겐 원소의 하나.
@@ -767,14 +848,14 @@
                 :ARG0-of (예 / 예방-01
                     :ARG1 (충 / 충치))))))
 
-
-
-# ::id snt3.931.011_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.931.011_A.02_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  원자 기호는 F, 원자 번호는 9, 원자량은 18.9984.
 # ::note
-
-
-
+(a / and
+    :domain (원 / 원자)
+    :op1 (기 / 기호 :value "F")
+    :op2 (번 / 번호 :value 9)
+    :op3 (원2 / 원자량 :value 18.9984))
 
 # ::id snt0.931.011_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 할로겐 원소의 하나.
@@ -790,14 +871,14 @@
     :ARG2 (불 / 불소)
     :ARG2 (플 / 플루오린))
 
-
-
-# ::id snt2.931.011_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.931.011_A.03_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  원자 번호 9, 원자량 19, 원소 기호 F.
 # ::note
-
-
-
+(a / and
+    :domain (원 / 원자)
+    :op1 (번 / 번호 :value 9)
+    :op2 (원2 / 원자량 :value 19)
+    :op3 (기 / 기호 :value "F"))
 
 # ::id snt0.931.011_Q.01_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
 # ::snt 이 원소는 할로겐 원소로 테플론 수지와 프레온 가스의 구성 원소이다.
@@ -811,21 +892,27 @@
     :consist-of-of (가 / 가스
         :mod (프 / 프레온)))
 
-
-
-# ::id snt1.931.011_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.011_Q.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  치약과 수돗물에 첨가해 충치 예방에도 사용하며, 원자번호 9번인 이 원소는 무엇일까?
 # ::note
+(사 / 사용-01
+    :ARG1 (a / amr-unknown
+        :mod (원 / 원소
+            :mod (이 / 이)
+            :mod (번 / 번호 :value 9
+                :mod (원 / 원자))))
+    :ARG2 (예 / 예방-01
+        :ARG1 (충 / 충치))
+    :manner (첨 / 첨가-01
+        :ARG1 a
+        :ARG2 (a2 / and
+            :op1 (치 / 치약)
+            :op2 (물 / 물
+                :mod (수 / 수도)))))
 
-
-
-
-# ::id snt0.931.012_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.012_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 해동성국(海東盛國) 발해가 주변세계와 통하는 주요 국제 간선로는 영주도(營州道) · 조공도(朝貢道) · 거란도(契丹道) · 신라도(新羅道) · 일본도(日本道) 등 5도가 있었다.
 # ::note
-
-
-
 
 # ::id snt0.931.012_Q.01_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt 발해는 넓은 영토를 관리하고 외국과의 교류를 원활히 하기 위해 다섯 개의 교통로인 '발해 5도'를 만들었다.
@@ -844,8 +931,6 @@
             :ARG2 (외 / 외국)
             :manner (원 / 원활-01))))
 
-
-
 # ::id snt1.931.012_Q.01_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
 # ::snt  '발해 5도'에 속하지 않는 것은 무엇일까?
 # ::note
@@ -855,8 +940,6 @@
     :ARG2 (r / road :name (이 / 이름 :op1 "발해" :op2 "5도"
         :quant 5
         :poss (c / country :wiki "발해" :name (이2 / 이름 :op1 "발해")))))
-
-
 
 # ::id snt0.931.013_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 법률안거부권(法律案拒否權)은 국회에서 의결되어 정부에 이송되어 온 법률안에 대하여 대통령이 이의가 있을 때에 이의서를 붙여 국회의 재의를 요구할 수 있는 권한을 말한다.
@@ -901,14 +984,17 @@
     :ARG0 (g / goverment-organization :wiki "대한민국_국회" :name (이 / 이름 :op1 "국회"))
     :ARG1 (a / amr-unknown))
 
-
-
-# ::id snt0.931.014_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.014_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt 특히 1막에서 애니가 개에게 부르는 'tomorrow' 는 엄청난 인기를 자랑했다.
 # ::note
-
-
-
+(자 / 자랑-01
+    :domain (m / music :wiki - :name (이 / 이름 :op1 "tomorrow")
+        :ARG1-of (부 / 부르-01
+            :ARG0 (p / person :wiki - :name (이2 / 이름 :op1 "애니"))
+            :beneficiary (개 / 개)
+            :location (막 / 막 :mod 1)))
+    :ARG1 (인 / 인기
+        :ARG1-of (엄 / 엄청나-01)))
 
 # ::id snt0.931.014_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 힘들었던 오늘을 견뎌내면 해가 뜨는 내일, 모든 근심이 사라질 것이라는 내용을 담은 ‘Tomorrow’는 오늘날에도 여전히 사랑받는 뮤지컬 넘버이다.
@@ -924,24 +1010,35 @@
 
 
 
-# ::id snt1.931.014_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.014_A.03_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt  대한민국에 가장 널리 알려진 것은 “투마로우”(Tomorrow)이며, 그 외에도 다음과 같은 것들이 있다.
 # ::note
+(a / and
+    :op1 (알 / 알-01
+        :extent (널 / 널리
+            :degree (가 / 가장))
+        :ARG1 (m / music :wiki - :name (이 / 이름 :op1 "투마로우"))
+        :location (c / country :wiki "대한민국" :name (이2 / 이름 :op1 "대한민국")))
+    :op2 (것 / 것
+        :example (다 / 다음)
+        :mod (외 / 외
+            :mod (그 / 그))))
 
-
-
-
-# ::id snt0.931.014_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.014_Q.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
 # ::snt 뮤지컬 <애니>는 2006년 국내에서 초연한 이후 꾸준한 사랑을 받고 있다.
 # ::note
-
-
-
+(사 / 사랑-01
+    :ARG1-of (꾸 / 꾸준하-01)
+    :ARG1 (s / show :wiki "애니" :name (이 / 이름 :op1 "애니")
+        :mod (뮤 / 뮤지컬))
+    :time (이2 / 이후
+        :op1 (초 / 초연-00
+            :ARG1 s
+            :location (국 / 국내))))
 
 # ::id snt1.931.014_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt  극 중 애니라는 소녀가 절망 속에서도 희망을 주제로 부른 이 노래는 무엇일까?
 # ::note
-
 
 
 
