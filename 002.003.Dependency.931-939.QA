@@ -339,7 +339,7 @@
                 :op1 (c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
                 :op2 (c2 / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))))
 
-# ::id snt2.931.005_A.02_ver ::date 2019-10-06 ::annotator gabrielle ::preferred False
+# ::id snt2.931.005_A.02_ver ::date 2019-10-06 ::annotator gabrielle ::preferred True
 # ::snt  ≪천자문≫을 익힌 어린이들이 ≪소학≫을 배우기 전에 공부하는 교과서로 널리 사용하였으며, 덕행의 함양에 많은 도움이 되었다.
 # ::note
 (a / and
@@ -368,7 +368,7 @@
                 :era "중종"
                 :calendar (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))))
 
-# ::id snt1.931.005_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
+# ::id snt1.931.005_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt  《천자문》을 익히고 난 후의 학동들이 배우는 초급교재로, 먼저 부자유친(父子有親) ·군신유의(君臣有義) ·부부유별(夫婦有別) ·장유유서(長幼有序) ·붕우유신(朋友有信)의 오륜(五倫)을 설명하였다.
 # ::note
 (a / and
@@ -390,8 +390,8 @@
                 :ARG1 (장 / 장유유서)
                 :ARG1 (붕 / 붕우유신)))))
 
-# ::id snt2.931.005_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
-# ::snt  이어 중국의 삼황오제(三皇五帝)에서부터 명나라까지의 역대사실(歷代史實)과 한국의 단군에서부터 조선시대까지의 역사를 약술하였다.
+# ::id snt2.931.005_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이어 중국의 삼황오제(三皇五帝)에서부터 명나라까지의 역대사실(歷代史實)과 한국의 단군에서부터 조선시대까지의 역사를 약술하였다.
 # ::note
 (a / and
     :op2 (약 / 약술-00
@@ -424,13 +424,34 @@
                 :time (중 / 중기
                     :mod (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선")))))))
 
-# ::id snt0.931.005_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
+# ::id snt0.931.005_A.05_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
 # ::snt 조선 중종 때 학자 박세무(朴世茂)가 저술하여 1670년(현종 11)에 간행하였다.
 # ::note
+(a / and
+    :op1 (저 / 저술-01
+        :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "박세무")
+            :mod (학 / 학자
+                :time (d / date-entity
+                    :era "중종"
+                    :calendar (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))))
+    :op2 (간 / 간행-00
+        :ARG0 p
+        :time (d2 / date-entity :year 1670)))
 
-# ::id snt1.931.005_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.005_A.05_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
 # ::snt  『천자문』을 익히고 난 후의 학동들이 배우는 초급교재로서의 역할을 담당한 교재였다.
 # ::note
+(담 / 담당-01
+    :ARG0 (교 / 교재)
+    :ARG1 (역 / 역할-00
+        :ARG1 (교2 / 교재
+            :mod (초 / 초급)
+            :instrument-of (배 / 배우-01
+                :ARG0 (학 / 학동)
+                :time (후 / 후
+                    :op1 (익 / 익-00
+                        :ARG0 학
+                        :ARG1 (b / book :wiki "천자문" :name (이2 / 이름 :op1 "천자문"))))))))
 
 # ::id snt2.931.005_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt  우선 부자유친(父子有親)·군신유의(君臣有義)·부부유별(夫婦有別)·장유유서(長幼有序)·붕우유신(朋友有信)의 오륜(五倫)을 설명하였다.
@@ -466,9 +487,27 @@
                 :op2 (d6 / date-entity
                     :era "조선")))))
 
-# ::id snt0.931.005_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.005_Q.01_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
 # ::snt 이 책은 조선 시기 학자 박세무가 중국의 역사와 우리나라의 역사를 기록한 것으로, 유교의 오륜에 대해서도 설명하고 있다.
 # ::note
+(a / and
+    :op1 (기 / 기록-01
+        :domain (책 / 책
+            :mod (이 / 이))
+        :ARG0 (p / person :wiki - :name (이3 / 이름 :op1 "박세무")
+            :mod (학 / 학자
+                :time (d / date-entity
+                    :calendar (c / country :wiki "조선" :name (이3 / 이름 :op1 "조선")))))
+        :ARG1 (a2 / and
+            :op1 (역 / 역사
+                :poss (c2 / country :wiki "중국" :name (이4 / 이름 :op1 "중국")))
+            :op2 (역2 / 역사
+                :poss (나 / 나라
+                    :poss (우 / 우리)))))
+    :op2 (설 / 설명-01
+        :ARG0 책
+        :ARG1 (오 / 오륜
+            :mod (유 / 유교))))
 
 # ::id snt1.931.005_Q.01_ver ::date 2019-10-06 ::annotator gabrielle ::preferred True
 # ::snt  조선 시기 서당에서 아이들의 교재로 주로 사용했던 이 책은 무엇일까?
@@ -482,9 +521,34 @@
     :time (시 / 시기
         :mod (c / country :wiki "조선" :name (이 / 이름 :op1 "조선"))))
 
-# ::id snt0.931.006_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
+# ::id snt0.931.006_A.01_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
 # ::snt 한국을 비롯해 주변 4강(미국ㆍ중국ㆍ일본ㆍ러시아), 미주(캐나다ㆍ멕시코ㆍ칠레ㆍ페루), 오세아니아(호주ㆍ뉴질랜드ㆍ파푸아뉴기니), 동아시아 지역 등 21개국을 회원국으로 한다.
 # ::note
+(h / have-org-role-91
+    :ARG0 (국 / 국가 :quant 21 :unit (개 / 개)
+        :ARG1-of (비 / 비롯하-01
+            :ARG2 (c / country :wiki "대한민국" :name (이 / 이름 :op1 "한국")))
+        :ARG2-of (i / include-91
+            :ARG1 (등 / 등
+                :op1 (강 / 강
+                    :mod 4
+                    :mod (주 / 주변)
+                    :example (c2 / country :wiki "미국" :name (이2 / 이름 :op1 "미국"))
+                    :example (c3 / country :wiki "중화인민공화국" :name (이3 / 이름 :op1 "중국"))
+                    :example (c4 / country :wiki "일본" :name (이4 / 이름 :op1 "일본"))
+                    :example (c5 / country :wiki "러시아" :name (이5 / 이름 :op1 "러시아")))
+                :op2 (c6 / continent :wiki "아메리카" :name (이6 / 이름 :op1 "미주")
+                    :example (c7 / country :wiki "캐나다" :name (이7 / 이름 :op1 "캐나다"))
+                    :example (c8 / country :wiki "멕시코" :name (이8 / 이름 :op1 "멕시코"))
+                    :example (c9 / country :wiki "칠레" :name (이9 / 이름 :op1 "칠레"))
+                    :example (c10 / country :wiki "페루" :name (이10 / 이름 :op1 "페루")))
+                :op3 (c11 / continent :wiki "오세아니아" :name (이11 / 이름 :op1 "오세아니아")
+                    :example (c12 / country :wiki "오스트레일리아" :name (이12 / 이름 :op1 "호주"))
+                    :example (c13 / country :wiki "뉴질랜드" :name (이13 / 이름 :op1 "뉴질랜드"))
+                    :example (c14 / country :wiki "파푸아뉴기니" :name (이14 / 이름 :op1 "파푸아뉴기니")))
+                :op4 (w / world-region :wiki "동아시아" :name (이15 / 이름 :op1 "동아시아" :op2 "지역")))))
+    :ARG2 (국2 / 국가
+        :mod (회 / 회원)))
 
 # ::id snt0.931.006_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 회원국은 출범 당시에는 한국·일본·미국·캐나다·호주·뉴질랜드·아세안 6개국(태국·말레이시아·인도네시아·싱가포르·필리핀·브루나이) 등 총 12개국이었으나 그 뒤 중국·차이니스타이페이·홍콩·멕시코·파푸아뉴기니·칠레·베트남·러시아·페루 등이 차례로 가입하여 현재는 총 21개국이다.
@@ -511,7 +575,7 @@
     :ARG0 (a / amr-unknown)
     :ARG1 (o / organization :wiki "아시아_태평양_경제협력체" :name (이 / 이름 :op1 "APEC"))
     :ARG2 (국 / 국가
-        :mod (회 / 회원))
+        :mod (회 / 회원)))
 
 # ::id snt0.931.007_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 여기서 '골백번'의 뜻은 '골(萬)의 백제곱'이라는 뜻이므로 만에다가 100을 곱하여 100만 번이라는 뜻이다.
@@ -919,7 +983,11 @@
 # ::note
 (만 / 만들-01
     :ARG0 (c / country :wiki "발해" :name (이 / 이름 :op1 "발해"))
-    :ARG1 (교 / 교통로 :name (이2 / 이름 :op1 "발해" :op2 "5도" :quant 5 :unit (개 / 개)))
+    :ARG1 (r / road :name (이2 / 이름 :op1 "발해" :op2 "5도")
+        :quant 5
+        :unit (개 / 개)
+        :mod (도 / 도로
+            :purpose (교 / 교통)))
     :purpose (a / and
         :op1 (관 / 관리-01
             :ARG0 c
@@ -937,9 +1005,8 @@
 (i / include-91
     :polarity -
     :ARG1 (a / amr-unknown)
-    :ARG2 (r / road :name (이 / 이름 :op1 "발해" :op2 "5도"
-        :quant 5
-        :poss (c / country :wiki "발해" :name (이2 / 이름 :op1 "발해")))))
+    :ARG2 (r / road :name (이 / 이름 :op1 "발해" :op2 "5도")
+        :poss (c / country :wiki "발해" :name (이2 / 이름 :op1 "발해"))))
 
 # ::id snt0.931.013_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 법률안거부권(法律案拒否權)은 국회에서 의결되어 정부에 이송되어 온 법률안에 대하여 대통령이 이의가 있을 때에 이의서를 붙여 국회의 재의를 요구할 수 있는 권한을 말한다.
@@ -962,12 +1029,25 @@
 
 
 
-# ::id snt0.931.013_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.013_A.04_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
 # ::snt 한국 헌법은 정부에서 법률안을 제출할 수 있으며, 또 대통령의 법률안거부권도 인정하고 있다.
 # ::note
-
-
-
+(a / and
+    :op1 (가 / 가능-01
+        :domain (헌 / 헌법
+            :poss (c / country :wiki "대한민국" :name (이 / 이름 :op1 "한국")))
+        :ARG1 (제 / 제출-01
+            :ARG0 (정 / 정부)
+            :ARG1 (안 / 안건
+                :mod (법 / 법률))))
+    :op2 (인 / 인정-01
+        :ARG0 헌
+        :ARG1 (권 / 권리
+            :poss (대 / 대통령)
+            :purpose (거 / 거부-01
+                :ARG0 대
+                :ARG1 (안2 / 안건
+                    :mod (법2 / 법률))))))
 
 # ::id snt0.931.013_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 법률안거부권이란 국회(의회)가 의결한 법률안을 행정부의 기관(군주나 대통령)이 그에 대한 재가 또는 승인을 거부함으로써 법률로서의 성립을 결정적 또는 잠정적으로 저지하는 권한을 말한다.
@@ -1056,12 +1136,18 @@
 
 
 
-# ::id snt1.931.015_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.015_Q.01_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
 # ::snt  그리스 신화 속 가이아의 아들 이름을 딴 이것은 무엇일까?
 # ::note
-
-
-
+(따 / 따오-01
+    :ARG1 (a / amr-unknown)
+    :ARG2 (이 / 이름
+        :name-of (사 / 사람
+            :ARG0-of (h / have-rel-role-91
+                :ARG1 (p / person :wiki "가이아" :name (이2 / 이름 :op1 "가이아"))
+                :ARG2 (아 / 아들)))
+        :ARG1-of (등 / 등장-01
+            :ARG2 (그 / 그리스-신화))))
 
 # ::id snt0.931.016_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 《출사표》(出師表)는 원래 신하가 적을 정벌하러 떠나기 전에 황제나 왕에게 올리던 표문(表文)이다.
@@ -1091,12 +1177,14 @@
 
 
 
-# ::id snt1.931.016_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.016_A.02_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
 # ::snt  우국(憂國)의 내용이 담긴 명문장으로 유명하다.
 # ::note
-
-
-
+(유 / 유명-01
+    :ARG1 (명 / 명문장
+        :ARG2-of (담 / 담-01
+            :ARG1 (내 / 내용
+                :mod (우 / 우국-00)))))
 
 # ::id snt0.931.016_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 중국 삼국시대 촉(蜀)나라의 재상 제갈공명(諸葛孔明)이 위나라를 토벌하러 떠날 때 임금에게 올린 글을 말한다.
@@ -1179,12 +1267,12 @@
 
 
 
-# ::id snt0.931.017_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.017_A.02_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
 # ::snt ‘원숭이’를 이르는 말.
 # ::note
-
-
-
+(이 / 이르-00
+    :ARG1 (말 / 말)
+    :ARG2 (원 / 원숭이))
 
 # ::id snt0.931.017_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 개역개정판에서는 ‘원숭이’로 번역했다(왕상 10:22; 대하 9:21).
@@ -1200,19 +1288,22 @@
 
 
 
-# ::id snt1.931.017_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.017_Q.01_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
 # ::snt  여기서 '잔나비'는 어떤 동물일까?
 # ::note
+(a / amr-unknown
+    :mod (동 / 동물)
+    :domain (s / string-entity :value "잔나비")
+    :location (여 / 여기))
 
-
-
-
-# ::id snt0.931.018_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.018_A.01_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
 # ::snt 정동진(正東津)은 강원도 강릉시 강동면 정동진리에 있는 동해 바닷가로, 해돋이의 명소이다.
 # ::note
-
-
-
+(l / local-region :wiki "정동진" :name (이 / 이름 :op1 "정동진")
+    :location (s / sea :wiki "동해" :name (이2 / 이름 :op1 "동해"))
+    :location (c / city-district :wiki - :name (이 / 이름 :op1 "강원도" :op2 "강릉시" :op3 "강동면" :op4 "정동진리"))
+    :mod (명 / 명소
+        :topic (해 / 해돋이)))
 
 # ::id snt0.931.018_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt  신라때부터 임금이 사해용왕에게 친히 제사를 지내던 곳으로 2000년 국가지정행사로 밀레니엄 해돋이축전을 성대하게 치른 전국 제일의 해돋이 명소이기도 하다.
