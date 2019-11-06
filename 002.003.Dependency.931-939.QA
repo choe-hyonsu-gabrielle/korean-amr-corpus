@@ -1091,11 +1091,11 @@
 
 
 # ::id snt1.931.014_A.03_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  대한민국에 가장 널리 알려진 것은 “투마로우”(Tomorrow)이며, 그 외에도 다음과 같은 것들이 있다.
+# ::snt 대한민국에 가장 널리 알려진 것은 “투마로우”(Tomorrow)이며, 그 외에도 다음과 같은 것들이 있다.
 # ::note
 (a / and
     :op1 (알 / 알-01
-        :extent (널 / 널리
+        :manner (널 / 널리
             :degree (가 / 가장))
         :ARG1 (m / music :wiki - :name (이 / 이름 :op1 "투마로우"))
         :location (c / country :wiki "대한민국" :name (이2 / 이름 :op1 "대한민국")))
@@ -1193,12 +1193,15 @@
 
 
 
-# ::id snt0.931.016_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.016_A.04_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
 # ::snt 출병하면서 자신의 뜻을 적어 임금에게 올리는 글.
 # ::note
-
-
-
+(글 / 글
+    :ARG1-of (올 / 올리-00
+        :ARG2 (임 / 임금)
+        :time (출 / 출병-00))
+    :medium-of (적 / 적-01
+        :ARG1 (뜻 / 뜻 :poss (자 / 자신))))
 
 # ::id snt1.931.016_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt  이 의미가 시간이 흐르면서 확대되어, 주요한 일에 임하면서 심경을 발표하는 것 또는 중요한 일에 임하는 것 자체를 출사표라고 하게 되었습니다.
@@ -1225,9 +1228,17 @@
         :ARG1 (경 / 경기
             :subevent-of (g / game :wiki "올림픽" :name (이 / 이름 :op1 "올림픽")))))
 
-# ::id snt4.931.016_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.931.016_A.04_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
 # ::snt 제갈량과 관계된 고사성어 가운데 가장 유명한 것은 뭐니 뭐니 해도 바로 이것이죠.
 # ::note
+(유 / 유명-01
+    :degree (가 / 가장)
+    :ARG1 (이 / 이것
+        :mod (바 / 바로)
+        :mod (뭐 / 뭐니-뭐니-해도)
+        :ARG1-of (i / include-91
+            :ARG2 (고 / 고사성어
+                :topic (p / person :wiki "제갈량" :name (이 / 이름 :op1 "제갈량"))))))
 
 # ::id snt0.931.016_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 蜀漢(촉한)의 諸葛亮(제갈량)이 魏(위)나라를 치려고 出兵(출병)할 때 後主(후주) 劉禪(유선)에게 올린 글.
@@ -1251,14 +1262,19 @@
                     :ARG0 p
                     :ARG1 (c / country :wiki "위_(삼국)" :name (이3 / 이름 :op1 "위나라")))))))
 
-
-
-# ::id snt1.931.016_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.016_Q.01_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
 # ::snt  요즘에는 흔히 어떤 대회나 선거에 나갈 때 '이것을 던진다'라고 표현하는데, 이것은 무엇일까?
 # ::note
-
-
-
+(표 / 표현-01
+    :ARG1 (던 / 던지-01
+        :ARG1 (a / amr-unknown))
+    :time (요 / 요즘)
+    :ARG1-of (흔 / 흔하-00)
+    :condition (나 / 나가-00
+        :ARG1 (o / or
+            :op1 (대 / 대회)
+            :op2 (선 / 선거-00)
+            :mod (어 / 어떤))))
 
 # ::id snt0.931.017_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 옛말로는 납 또는 잔나비라고도 불렀으며, 오늘날에도 잔나비띠와 같이 일부 쓰인다.
@@ -1274,12 +1290,26 @@
     :ARG1 (말 / 말)
     :ARG2 (원 / 원숭이))
 
-# ::id snt0.931.017_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.017_A.03_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
 # ::snt 개역개정판에서는 ‘원숭이’로 번역했다(왕상 10:22; 대하 9:21).
 # ::note
-
-
-
+(번 / 번역-00
+    :ARG2 (원 / 원숭이)
+    :location (책 / 책
+        :ARG1-of (개 / 개역-00)
+        :ARG1-of (개2 / 개정-01))
+    :mod (절 / 절
+        :mod 22
+        :part (장 / 장
+            :mod 10
+            :part (b / book :wiki "열왕기" :name (이 / 이름 :op1 "왕상")
+                :mod "상")))
+    :mod (절2 / 절
+        :mod 21
+        :part (장2 / 장
+            :mod 9
+            :part (b2 / book :wiki "역대기" :name (이2 / 이름 :op1 "대하")
+                :mod "하"))))
 
 # ::id snt0.931.017_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 오장환의 시 <고향 앞에서>는 잔나비 우는 산기슭의 쓸쓸한 정경을 통해 고향에 대한 그리움을 노래했다.
@@ -1340,12 +1370,16 @@
 
 
 
-# ::id snt1.931.018_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.018_A.04_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
 # ::snt  2004년 4월 9일에 천연기념물 제437호로 지정되었다.
 # ::note
-
-
-
+(지 / 지정-01
+    :ARG2 (천 / 천연기념물
+        :mod 437)
+    :time (d / date-entity
+        :year 2004
+        :month 4
+        :day 9))
 
 # ::id snt0.931.018_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 단구의 지정구역은 45,426㎡, 너비는 약 1㎞이며, 높이는 해발고도 75~85m이다.
@@ -1354,12 +1388,16 @@
 
 
 
-# ::id snt1.931.018_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.018_A.05_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
 # ::snt  2004년 4월 9일 천연기념물 제437호로 지정되었다.
 # ::note
-
-
-
+(지 / 지정-01
+    :ARG2 (천 / 천연기념물
+        :mod 437)
+    :time (d / date-entity
+        :year 2004
+        :month 4
+        :day 9))
 
 # ::id snt0.931.018_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이곳은 바다와 가까운 기차역이 있으며 2000년 밀레니엄 해돋이 축전을 치르면서 해돋이 명소로 유명해졌다.
@@ -1515,12 +1553,14 @@
 
 
 
-# ::id snt1.931.021_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.021_A.01_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
 # ::snt  호염구, 비만세포 등에서 분비한다.
 # ::note
-
-
-
+(분 / 분비-00
+    :ARG0 (등 / 등
+        :op1 (호 / 호염구)
+        :op2 (세 / 세포
+            :mod (비 / 비만))))
 
 # ::id snt0.931.021_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 면역기능에 중요한 기능을 하는 물질로, 평소에는 비만세포에 저장되어 있음.
@@ -1571,12 +1611,13 @@
 
 
 
-# ::id snt1.931.021_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.021_Q.01_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
 # ::snt  비만세포에서 분비되는 이것은 무엇일까?
 # ::note
-
-
-
+(분 / 분비-00
+    :ARG0 (세 / 세포
+        :mod (비 / 비만)
+    :ARG1 (a / amr-unknown))
 
 # ::id snt0.931.022_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 부탄(종카어: འབྲུག་ཡུལ 드루크 율 → 용의 나라)은 인도와 중화인민공화국 사이의 히말라야 산맥에 있는 남아시아의 나라이다.
@@ -1634,8 +1675,6 @@
     :domain (나 / 나라
         :mod (이 / 이)))
 
-
-
 # ::id snt0.931.023_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 말러는 그의 생애 동안에는 위대한 오케스트라 지휘자의 한 명으로서 가장 잘 알려졌으나, 그는 사후에 중요한 후기 낭만파 작곡가로 인식되었으며, 특히 그의 아홉 개의 완성된 교향곡과 가곡 (특히 〈방황하는 젊은이의 노래〉와 〈죽은 아이를 위한 노래〉), 그리고 교향곡과 가곡의 두 성격을 띠는 《대지의 노래》가 유명하다.
 # ::note
@@ -1643,19 +1682,25 @@
 
 
 
-# ::id snt0.931.023_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.023_A.02_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
 # ::snt <인명> 오스트리아의 작곡가ㆍ지휘자(1860~1911).
 # ::note
+(사 / 사람
+    :topic (이 / 이름)
+    :ARG0-of (작 / 작곡-00)
+    :ARG0-of (지 / 지휘-00)
+    :location (c / country :wiki "오스트리아" :name (이2 / 이름 :op1 "오스트리아"))
+    :ARG1-of (태 / 태어나-01
+        :time (d / date-entity :year 1860))
+    :ARG1-of (죽 / 죽-01
+        :time (d2 / date-entity :year 1911)))
 
-
-
-
-# ::id snt1.931.023_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.023_A.02_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
 # ::snt  바그너의 음악에 영향을 받았다.
 # ::note
-
-
-
+(영 / 영향-01
+    :ARG0 (음 / 음악
+        :poss (p / person :wiki "리하르트_바그너" :name (이 / 이름 :op1 "바그너"))))
 
 # ::id snt2.931.023_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt  작품에 교향곡 <부활>, 가곡 <대지의 노래> 따위가 있다.
