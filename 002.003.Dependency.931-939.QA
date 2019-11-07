@@ -1203,12 +1203,26 @@
     :medium-of (적 / 적-01
         :ARG1 (뜻 / 뜻 :poss (자 / 자신))))
 
-# ::id snt1.931.016_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.016_A.04_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
 # ::snt  이 의미가 시간이 흐르면서 확대되어, 주요한 일에 임하면서 심경을 발표하는 것 또는 중요한 일에 임하는 것 자체를 출사표라고 하게 되었습니다.
 # ::note
-
-
-
+(하 / 하-00
+    :ARG1 (o / or
+        :op1 (발 / 발표-01
+            :ARG1 (심 / 심경)
+            :time (임 / 임하-01
+                :ARG1 (일 / 일
+                    :ARG1-of (주 / 주요-01))))
+        :op2 (자 / 자체
+            :mod (임2 / 임하-01
+                :ARG1 (일2 / 일
+                    :ARG1-of (중 / 중요-01)))))
+    :ARG2 (출 / 출사표)
+    :cause (확 / 확대-01
+        :ARG1 (의 / 의미-01
+            :mod (이 / 이))
+        :manner (흐 / 흐르-01
+            :ARG0 (시 / 시간))))
 
 # ::id snt2.931.016_A.04_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
 # ::snt  이렇게 말이죠.
