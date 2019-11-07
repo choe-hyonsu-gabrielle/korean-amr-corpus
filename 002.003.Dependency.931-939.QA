@@ -26,7 +26,7 @@
             :op2 (근 / 근심-00))))
 
 # ::id snt1.931.001_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 한자는 무엇일까?
+# ::snt 이 한자는 무엇일까?
 # ::note
 (a / amr-unknown
     :domain (한 / 한자
@@ -42,7 +42,7 @@
     :ARG1 (다 / 다음))
 
 # ::id snt1.931.002_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  온도 차이에 의한 암석의 수축과 팽창에 의한 작용.
+# ::snt 온도 차이에 의한 암석의 수축과 팽창에 의한 작용.
 # ::note
 (작 / 작용-01
     :cause (a / and
@@ -54,7 +54,7 @@
             :ARG1 (t / temperature-quantity))))
 
 # ::id snt2.931.002_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  외부 압력의 차이에 의한 작용.
+# ::snt 외부 압력의 차이에 의한 작용.
 # ::note
 (작 / 작용-01
     :cause (다 / 다르-01
@@ -62,7 +62,7 @@
             :mod (외 / 외부))))
 
 # ::id snt3.931.002_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  물의 결빙과 해빙에 의한 작용.
+# ::snt 물의 결빙과 해빙에 의한 작용.
 # ::note
 (작 / 작용-01
     :cause (a / and
@@ -72,13 +72,13 @@
             :ARG1 물))
 
 # ::id snt4.931.002_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  바람에 의한 작용.
+# ::snt 바람에 의한 작용.
 # ::note
 (작 / 작용-01
     :cause (바 / 바람))
 
 # ::id snt5.931.002_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  하천이나 빙하의 침식작용.
+# ::snt 하천이나 빙하의 침식작용.
 # ::note
 (작 / 작용-01
     :mod (침 / 침식-00
@@ -87,7 +87,7 @@
             :op2 (빙 / 빙하))))
 
 # ::id snt6.931.002_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  생물체의 작용.
+# ::snt 생물체의 작용.
 # ::note
 (작 / 작용-01
     :ARG1 (생 / 생물체))
@@ -202,7 +202,7 @@
         :ARG1-of (건 / 건조-00)))
 
 # ::id snt1.931.002_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  기계적 풍화작용에 해당하는 것은 무엇일까?
+# ::snt 기계적 풍화작용에 해당하는 것은 무엇일까?
 # ::note
 (해 / 해당-01
     :ARG1 (a / amr-unknown)
@@ -224,7 +224,7 @@
         :domain (살 / 살아가-01)))
 
 # ::id snt1.931.003_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  여기서 '어질머리'는 무엇을 뜻하는 말일까?
+# ::snt 여기서 '어질머리'는 무엇을 뜻하는 말일까?
 # ::note
 (뜻 / 뜻하-01
     :ARG1 (s / string-entity :value "어질머리")
@@ -243,7 +243,7 @@
         :mod (b / BTB)))
 
 # ::id snt1.931.004_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  화학 물질에 BTB용액을 떨어뜨렸을 때의 색깔이 옳은 것은 무엇일까?
+# ::snt 화학 물질에 BTB용액을 떨어뜨렸을 때의 색깔이 옳은 것은 무엇일까?
 # ::note
 (a / amr-unknown
     :domain (옳 / 옳-01
@@ -270,7 +270,7 @@
                 :ARG1 (서 / 서당)))))
 
 # ::id snt1.931.005_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  동몽선습은 천자문을 익히고 난 후의 학동들이 배우는 초급 교재로, 부자유친(父子有親)·군신유의(君臣有義)·부부유별(夫婦有別)·장유유서(長幼有序)·붕우유신(朋友有信)의 오륜(五倫)과 중국의 삼황오제(三皇五帝)에서부터 명나라까지의 역사와 한국의 단군에서부터 조선왕조까지의 역사를 약술하였다.
+# ::snt 동몽선습은 천자문을 익히고 난 후의 학동들이 배우는 초급 교재로, 부자유친(父子有親)·군신유의(君臣有義)·부부유별(夫婦有別)·장유유서(長幼有序)·붕우유신(朋友有信)의 오륜(五倫)과 중국의 삼황오제(三皇五帝)에서부터 명나라까지의 역사와 한국의 단군에서부터 조선왕조까지의 역사를 약술하였다.
 # ::note
 (a / and
     :op1 (교 / 교재
@@ -322,7 +322,7 @@
             :calendar (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선")))))
 
 # ::id snt1.931.005_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  오륜(五倫)의 요의(要義)를 간결하게 서술하고, 중국과 조선의 역대 세계(世系)와 개략적인 역사를 덧붙였다.
+# ::snt 오륜(五倫)의 요의(要義)를 간결하게 서술하고, 중국과 조선의 역대 세계(世系)와 개략적인 역사를 덧붙였다.
 # ::note
 (a / and
     :op1 (서 / 서술-01
@@ -340,7 +340,7 @@
                 :op2 (c2 / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))))
 
 # ::id snt2.931.005_A.02_ver ::date 2019-10-06 ::annotator gabrielle ::preferred True
-# ::snt  ≪천자문≫을 익힌 어린이들이 ≪소학≫을 배우기 전에 공부하는 교과서로 널리 사용하였으며, 덕행의 함양에 많은 도움이 되었다.
+# ::snt ≪천자문≫을 익힌 어린이들이 ≪소학≫을 배우기 전에 공부하는 교과서로 널리 사용하였으며, 덕행의 함양에 많은 도움이 되었다.
 # ::note
 (a / and
     :op1 (사 / 사용-01
@@ -369,7 +369,7 @@
                 :calendar (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))))
 
 # ::id snt1.931.005_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  《천자문》을 익히고 난 후의 학동들이 배우는 초급교재로, 먼저 부자유친(父子有親) ·군신유의(君臣有義) ·부부유별(夫婦有別) ·장유유서(長幼有序) ·붕우유신(朋友有信)의 오륜(五倫)을 설명하였다.
+# ::snt 《천자문》을 익히고 난 후의 학동들이 배우는 초급교재로, 먼저 부자유친(父子有親) ·군신유의(君臣有義) ·부부유별(夫婦有別) ·장유유서(長幼有序) ·붕우유신(朋友有信)의 오륜(五倫)을 설명하였다.
 # ::note
 (a / and
     :op1 (교 / 교재
@@ -439,7 +439,7 @@
         :time (d2 / date-entity :year 1670)))
 
 # ::id snt1.931.005_A.05_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
-# ::snt  『천자문』을 익히고 난 후의 학동들이 배우는 초급교재로서의 역할을 담당한 교재였다.
+# ::snt 『천자문』을 익히고 난 후의 학동들이 배우는 초급교재로서의 역할을 담당한 교재였다.
 # ::note
 (담 / 담당-01
     :ARG0 (교 / 교재)
@@ -454,7 +454,7 @@
                         :ARG1 (b / book :wiki "천자문" :name (이2 / 이름 :op1 "천자문"))))))))
 
 # ::id snt2.931.005_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  우선 부자유친(父子有親)·군신유의(君臣有義)·부부유별(夫婦有別)·장유유서(長幼有序)·붕우유신(朋友有信)의 오륜(五倫)을 설명하였다.
+# ::snt 우선 부자유친(父子有親)·군신유의(君臣有義)·부부유별(夫婦有別)·장유유서(長幼有序)·붕우유신(朋友有信)의 오륜(五倫)을 설명하였다.
 # ::note
 (설 / 설명-01
     :mod (우 / 우선)
@@ -467,7 +467,7 @@
             :ARG1 (붕 / 붕우유신))))
 
 # ::id snt3.931.005_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이어 중국의 삼황오제(三皇五帝)에서부터 명나라까지의 역대사실(歷代史實)과 한국의 단군에서부터 조선시대까지의 역사를 약술하였다.
+# ::snt 이어 중국의 삼황오제(三皇五帝)에서부터 명나라까지의 역대사실(歷代史實)과 한국의 단군에서부터 조선시대까지의 역사를 약술하였다.
 # ::note
 (약 / 약술-00
     :ARG1 (a / and
@@ -510,7 +510,7 @@
             :mod (유 / 유교))))
 
 # ::id snt1.931.005_Q.01_ver ::date 2019-10-06 ::annotator gabrielle ::preferred True
-# ::snt  조선 시기 서당에서 아이들의 교재로 주로 사용했던 이 책은 무엇일까?
+# ::snt 조선 시기 서당에서 아이들의 교재로 주로 사용했던 이 책은 무엇일까?
 # ::note
 (사 / 사용-01
     :mod (주 / 주로)
@@ -568,7 +568,7 @@
             :mod (공 / 공동))))
 
 # ::id snt1.931.006_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  APEC의 회원국이 아닌 나라는 어디일까?
+# ::snt APEC의 회원국이 아닌 나라는 어디일까?
 # ::note
 (h / have-org-role-91
     :polarity -
@@ -591,7 +591,7 @@
         :frequency (여 / 여러)))
 
 # ::id snt1.931.007_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  여기서 '골'이 의미하는 숫자는 무엇일까?
+# ::snt 여기서 '골'이 의미하는 숫자는 무엇일까?
 # ::note
 (의 / 의미-01
     :ARG1 (s / string-entity :value "골")
@@ -610,7 +610,7 @@
         :ARG3 (폐 / 폐)))
 
 # ::id snt1.931.008_A.01_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
-# ::snt  산소가 결핍된 유일한 동맥이다.
+# ::snt 산소가 결핍된 유일한 동맥이다.
 # ::note
 (동 / 동맥
     :ARG1-of (유 / 유일-01)
@@ -644,7 +644,7 @@
         :source (심 / 심장)))
 
 # ::id snt1.931.008_A.04_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
-# ::snt  허파동맥.
+# ::snt 허파동맥.
 # ::note
 (동 / 동맥
     :poss (허 / 허파))
@@ -674,7 +674,7 @@
         :mod (정 / 정맥)))
 
 # ::id snt1.931.008_Q.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  혈액이 순환하는 과정에서 정맥혈이 흐르는 곳은 어디일까?
+# ::snt 혈액이 순환하는 과정에서 정맥혈이 흐르는 곳은 어디일까?
 # ::note
 (흐 / 흐르-01
     :ARG0 (혈 / 혈액
@@ -698,13 +698,13 @@
         :mod (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))
 
 # ::id snt1.931.009_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  자는 경유(景猷).
+# ::snt 자는 경유(景猷).
 # ::note
 (자 / 자
     :op1 "경유")
 
 # ::id snt2.931.009_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  호는 오원(吾園)ㆍ취명거사(醉暝居士)ㆍ문수산인(文岫山人).
+# ::snt 호는 오원(吾園)ㆍ취명거사(醉暝居士)ㆍ문수산인(文岫山人).
 # ::note
 (호 / 호
     :op1 "오원"
@@ -712,7 +712,7 @@
     :op3 "문수산인")
 
 # ::id snt3.931.009_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  조선 후기 남화를 대표하는 화가로, 안견ㆍ김홍도와 더불어 조선 화단(畫壇)의 3대 거장으로 불린다.
+# ::snt 조선 후기 남화를 대표하는 화가로, 안견ㆍ김홍도와 더불어 조선 화단(畫壇)의 3대 거장으로 불린다.
 # ::note
 (a / and
     :op1 (화 / 화가
@@ -731,7 +731,7 @@
                     :op2 (p2 / person :wiki "김홍도" :name (이3 / 이름 :op1 "김홍도"))))))))
 
 # ::id snt4.931.009_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  작품에 <홍백매십정병(紅白梅十幀屛)>, <군마도(群馬圖)>, <어옹도(魚翁圖)> 따위가 있다.
+# ::snt 작품에 <홍백매십정병(紅白梅十幀屛)>, <군마도(群馬圖)>, <어옹도(魚翁圖)> 따위가 있다.
 # ::note
 (작 / 작품
     :ARG2-of (i / include-91
@@ -797,7 +797,7 @@
         :op2 (p2 / picture :wiki - :name (이3 / 이름 :op1 "군마도"))))
 
 # ::id snt1.931.009_Q.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  조선 시기 3대 화가로 불리는 이 사람은 누구일까?
+# ::snt 조선 시기 3대 화가로 불리는 이 사람은 누구일까?
 # ::note
 (부 / 부르-02
     :ARG1 (a / amr-unknown
@@ -822,7 +822,7 @@
             :ARG0 (p2 / person :wiki "안정복" :name (이3 / 이름 :op1 "안정복")))))
 
 # ::id snt1.931.010_Q.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  입은 있되 말은 못하는 '벙어리'라고 표현한 이것은 무엇일까?
+# ::snt 입은 있되 말은 못하는 '벙어리'라고 표현한 이것은 무엇일까?
 # ::note
 (표 / 표현-01
     :topic (a / amr-unknown)
@@ -838,7 +838,7 @@
 # ::note
 
 # ::id snt1.931.011_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  불소(弗素←일본어: 弗素 훗소)라고도 한다.
+# ::snt 불소(弗素←일본어: 弗素 훗소)라고도 한다.
 # ::note
 (a / and
     :op1 (하 / 하-00
@@ -848,7 +848,7 @@
         :medium (일 / 일본어)))
 
 # ::id snt2.931.011_A.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  플루오린은 특히 치아에 얇은 막을 입혀주어 충치를 예방하고 치아의 재석회화(再石灰化)를 촉진하여 충치를 예방하는 효과가 커 치약에 널리 사용된다.
+# ::snt 플루오린은 특히 치아에 얇은 막을 입혀주어 충치를 예방하고 치아의 재석회화(再石灰化)를 촉진하여 충치를 예방하는 효과가 커 치약에 널리 사용된다.
 # ::note
 (사 / 사용-01
     :extent (널 / 널리)
@@ -878,7 +878,7 @@
         :mod (할 / 할로겐)))
 
 # ::id snt1.931.011_A.02_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
-# ::snt  자극적인 냄새가 나는 연한 누런빛을 띤 녹색 기체로, 화학적작용이 강하여 질소 이외의 모든 원소와 화합한다.
+# ::snt 자극적인 냄새가 나는 연한 누런빛을 띤 녹색 기체로, 화학적작용이 강하여 질소 이외의 모든 원소와 화합한다.
 # ::note
 (기 / 기체
     :mod (녹 / 녹색)
@@ -897,7 +897,7 @@
                 :mod (화 / 화학)))))
 
 # ::id snt2.931.011_A.02_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
-# ::snt  냉매, 수지, 방부제, 불연성 가스, 충치예방제 따위를 만드는 데 쓴다.
+# ::snt 냉매, 수지, 방부제, 불연성 가스, 충치예방제 따위를 만드는 데 쓴다.
 # ::note -성 파생
 (쓰 / 쓰-01
     :ARG2 (만 / 만들-01
@@ -913,7 +913,7 @@
                     :ARG1 (충 / 충치))))))
 
 # ::id snt3.931.011_A.02_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  원자 기호는 F, 원자 번호는 9, 원자량은 18.9984.
+# ::snt 원자 기호는 F, 원자 번호는 9, 원자량은 18.9984.
 # ::note
 (a / and
     :domain (원 / 원자)
@@ -929,14 +929,14 @@
         :mod (할 / 할로겐)))
 
 # ::id snt1.931.011_A.03_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
-# ::snt  불소, 플루오린이라고도 한다.
+# ::snt 불소, 플루오린이라고도 한다.
 # ::note
 (부 / 부르-02
     :ARG2 (불 / 불소)
     :ARG2 (플 / 플루오린))
 
 # ::id snt2.931.011_A.03_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  원자 번호 9, 원자량 19, 원소 기호 F.
+# ::snt 원자 번호 9, 원자량 19, 원소 기호 F.
 # ::note
 (a / and
     :domain (원 / 원자)
@@ -957,7 +957,7 @@
         :mod (프 / 프레온)))
 
 # ::id snt1.931.011_Q.01_ver ::date 2019-11-03 ::annotator gabrielle ::preferred True
-# ::snt  치약과 수돗물에 첨가해 충치 예방에도 사용하며, 원자번호 9번인 이 원소는 무엇일까?
+# ::snt 치약과 수돗물에 첨가해 충치 예방에도 사용하며, 원자번호 9번인 이 원소는 무엇일까?
 # ::note
 (사 / 사용-01
     :ARG1 (a / amr-unknown
@@ -1000,7 +1000,7 @@
             :manner (원 / 원활-01))))
 
 # ::id snt1.931.012_Q.01_ver ::date 2019-09-25 ::annotator gabrielle ::preferred True
-# ::snt  '발해 5도'에 속하지 않는 것은 무엇일까?
+# ::snt '발해 5도'에 속하지 않는 것은 무엇일까?
 # ::note
 (i / include-91
     :polarity -
@@ -1117,27 +1117,53 @@
             :location (국 / 국내))))
 
 # ::id snt1.931.014_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  극 중 애니라는 소녀가 절망 속에서도 희망을 주제로 부른 이 노래는 무엇일까?
+# ::snt 극 중 애니라는 소녀가 절망 속에서도 희망을 주제로 부른 이 노래는 무엇일까?
 # ::note
 
 
 
-# ::id snt0.931.015_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.015_A.01_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
 # ::snt 미마스(Mimas)는 토성의 위성으로, 이름은 그리스 신화에 나오는 가이아의 아들 미마스에서 따왔다.
 # ::note
+(따 / 따오-01
+    :ARG1 (이 / 이름 :op1 "미마스"
+        :name-of (m / moon :wiki "미마스_(위성)"
+            :mod (위 / 위성
+                :poss (p / planet :wiki "토성" :name (이2 / 이름 :op1 "토성")))))
+    :ARG2 (이3 / 이름 :op1 "미마스"
+        :name-of (p2 / person :wiki "미마스_(거인)"
+            :ARG0-of (h / have-rel-role-91
+                :ARG1 (p3 / person :wiki "가이아" :name (이4 / 이름 :op1 "가이아"))
+                :ARG2 (아 / 아들))
+            :ARG1-of (나 / 나오-00
+                :ARG2 (그 / 그리스-신화)))))
 
-
-
-
-# ::id snt0.931.015_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.015_Q.01_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
 # ::snt 얼마 전 미국 연구진은 토성의 위성인 이것의 지하 수십 킬로미터에는 거대한 바다가 존재할 가능성이 있다는 연구를 발표했다.
 # ::note
-
-
-
+(발 / 발표-01
+    :ARG0 (사 / 사람
+        :ARG0-of (연 / 연구-01)
+        :location (c / country :wiki "미국" :name (이 / 이름 :op1 "미국")))
+    :ARG1 (결 / 결과
+        :mod (연2 / 연구-01
+            :ARG1 (가 / 가능-01
+                :ARG1 (존 / 존재-01
+                    :ARG1 (바 / 바다
+                        :ARG1-of (거 / 거대하-01))
+                    :ARG2 (r / relative-position
+                        :op1 (지 / 지면
+                            :part-of (이2 / 이것
+                                :mod (위 / 위성
+                                    :poss (p / planet :wiki "토성" :name (이3 / 이름 :op1 "토성")))))
+                        :direction (아 / 아래)
+                        :quant (수 / 수십 :op1 10)
+                        :unit (킬 / 킬로미터))))))
+    :time (전 / 전
+        :mod (얼 / 얼마)))
 
 # ::id snt1.931.015_Q.01_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
-# ::snt  그리스 신화 속 가이아의 아들 이름을 딴 이것은 무엇일까?
+# ::snt 그리스 신화 속 가이아의 아들 이름을 딴 이것은 무엇일까?
 # ::note
 (따 / 따오-01
     :ARG1 (a / amr-unknown)
@@ -1157,14 +1183,14 @@
 
 
 # ::id snt1.931.016_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그러나 이 중에서도 중국 삼국 시대의 촉한 승상 제갈량(諸葛亮)의 것이 가장 유명하다.
+# ::snt 그러나 이 중에서도 중국 삼국 시대의 촉한 승상 제갈량(諸葛亮)의 것이 가장 유명하다.
 # ::note
 
 
 
 
 # ::id snt2.931.016_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  제갈량의 출사표로는 〈전출사표〉와 〈후출사표〉, 이 두 가지로 나뉘어 있는데 이 글을 읽고 울지 않았다는 이가 없다 할 정도로 빼어난 문장과 나라에 대한 애국심, 그리고 그 당시의 죽은 선제 소열제 유비에 대한 충성심이 담겨 있는 글로 오늘날까지 크게 칭송받고 있다.
+# ::snt 제갈량의 출사표로는 〈전출사표〉와 〈후출사표〉, 이 두 가지로 나뉘어 있는데 이 글을 읽고 울지 않았다는 이가 없다 할 정도로 빼어난 문장과 나라에 대한 애국심, 그리고 그 당시의 죽은 선제 소열제 유비에 대한 충성심이 담겨 있는 글로 오늘날까지 크게 칭송받고 있다.
 # ::note
 
 
@@ -1178,7 +1204,7 @@
 
 
 # ::id snt1.931.016_A.02_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
-# ::snt  우국(憂國)의 내용이 담긴 명문장으로 유명하다.
+# ::snt 우국(憂國)의 내용이 담긴 명문장으로 유명하다.
 # ::note
 (유 / 유명-01
     :ARG1 (명 / 명문장
@@ -1204,7 +1230,7 @@
         :ARG1 (뜻 / 뜻 :poss (자 / 자신))))
 
 # ::id snt1.931.016_A.04_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
-# ::snt  이 의미가 시간이 흐르면서 확대되어, 주요한 일에 임하면서 심경을 발표하는 것 또는 중요한 일에 임하는 것 자체를 출사표라고 하게 되었습니다.
+# ::snt 이 의미가 시간이 흐르면서 확대되어, 주요한 일에 임하면서 심경을 발표하는 것 또는 중요한 일에 임하는 것 자체를 출사표라고 하게 되었습니다.
 # ::note
 (하 / 하-00
     :ARG1 (o / or
@@ -1225,7 +1251,7 @@
             :ARG0 (시 / 시간))))
 
 # ::id snt2.931.016_A.04_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
-# ::snt  이렇게 말이죠.
+# ::snt 이렇게 말이죠.
 # ::note
 (h / have-manner-91
     :ARG2 (이 / 이렇-01))
@@ -1277,7 +1303,7 @@
                     :ARG1 (c / country :wiki "위_(삼국)" :name (이3 / 이름 :op1 "위나라")))))))
 
 # ::id snt1.931.016_Q.01_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
-# ::snt  요즘에는 흔히 어떤 대회나 선거에 나갈 때 '이것을 던진다'라고 표현하는데, 이것은 무엇일까?
+# ::snt 요즘에는 흔히 어떤 대회나 선거에 나갈 때 '이것을 던진다'라고 표현하는데, 이것은 무엇일까?
 # ::note
 (표 / 표현-01
     :ARG1 (던 / 던지-01
@@ -1333,7 +1359,7 @@
 
 
 # ::id snt1.931.017_Q.01_ver ::date 2019-11-06 ::annotator gabrielle ::preferred True
-# ::snt  여기서 '잔나비'는 어떤 동물일까?
+# ::snt 여기서 '잔나비'는 어떤 동물일까?
 # ::note
 (a / amr-unknown
     :mod (동 / 동물)
@@ -1350,21 +1376,21 @@
         :topic (해 / 해돋이)))
 
 # ::id snt0.931.018_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  신라때부터 임금이 사해용왕에게 친히 제사를 지내던 곳으로 2000년 국가지정행사로 밀레니엄 해돋이축전을 성대하게 치른 전국 제일의 해돋이 명소이기도 하다.
+# ::snt 신라때부터 임금이 사해용왕에게 친히 제사를 지내던 곳으로 2000년 국가지정행사로 밀레니엄 해돋이축전을 성대하게 치른 전국 제일의 해돋이 명소이기도 하다.
 # ::note
 
 
 
 
 # ::id snt1.931.018_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  바위 사이의 작은 틈새를 돌아 배가 드나들게 되어 있는 작은 항구에서는 꽁치·가자미·전복 등을 잡는 어선이 출항하며, 1년에 두 번 정월 대보름과 오월 단오에 동제(洞祭)를 겸한 풍어제를 지낸다.
+# ::snt 바위 사이의 작은 틈새를 돌아 배가 드나들게 되어 있는 작은 항구에서는 꽁치·가자미·전복 등을 잡는 어선이 출항하며, 1년에 두 번 정월 대보름과 오월 단오에 동제(洞祭)를 겸한 풍어제를 지낸다.
 # ::note
 
 
 
 
 # ::id snt2.931.018_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  항구에서 가까운 거리에 세계에서 바다와 가장 가까운 역으로 기네스북에 올라 있는 정동진역이 있다.
+# ::snt 항구에서 가까운 거리에 세계에서 바다와 가장 가까운 역으로 기네스북에 올라 있는 정동진역이 있다.
 # ::note
 
 
@@ -1385,7 +1411,7 @@
 
 
 # ::id snt1.931.018_A.04_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
-# ::snt  2004년 4월 9일에 천연기념물 제437호로 지정되었다.
+# ::snt 2004년 4월 9일에 천연기념물 제437호로 지정되었다.
 # ::note
 (지 / 지정-01
     :ARG2 (천 / 천연기념물
@@ -1403,7 +1429,7 @@
 
 
 # ::id snt1.931.018_A.05_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
-# ::snt  2004년 4월 9일 천연기념물 제437호로 지정되었다.
+# ::snt 2004년 4월 9일 천연기념물 제437호로 지정되었다.
 # ::note
 (지 / 지정-01
     :ARG2 (천 / 천연기념물
@@ -1421,7 +1447,7 @@
 
 
 # ::id snt1.931.018_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  한반도의 지반 융기에 대한 살아 있는 증거로 인정받은 이곳의 해안단구는 천연기념물 제437호로 지정됐는데, 행정구역상 강원도 강릉시에 속한 이곳은 어디일까?
+# ::snt 한반도의 지반 융기에 대한 살아 있는 증거로 인정받은 이곳의 해안단구는 천연기념물 제437호로 지정됐는데, 행정구역상 강원도 강릉시에 속한 이곳은 어디일까?
 # ::note
 
 
@@ -1442,14 +1468,14 @@
 
 
 # ::id snt1.931.019_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  주변의 열운동을 하는 기체나 액체의 분자가 미립자에 불규칙하게 부딪혀서 일어난다.
+# ::snt 주변의 열운동을 하는 기체나 액체의 분자가 미립자에 불규칙하게 부딪혀서 일어난다.
 # ::note
 
 
 
 
 # ::id snt2.931.019_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1827년에 영국의 식물학자 브라운(Brown, R.)이 물속에 떠 있는 꽃가루 입자를 현미경으로 관찰하다 발견하였다.
+# ::snt 1827년에 영국의 식물학자 브라운(Brown, R.)이 물속에 떠 있는 꽃가루 입자를 현미경으로 관찰하다 발견하였다.
 # ::note
 
 
@@ -1463,7 +1489,7 @@
 
 
 # ::id snt1.931.019_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  물에 떠 있는 꽃가루의 운동, 냄새의 확산현상 등에서 살펴볼 수 있다.
+# ::snt 물에 떠 있는 꽃가루의 운동, 냄새의 확산현상 등에서 살펴볼 수 있다.
 # ::note
 
 
@@ -1477,7 +1503,7 @@
 
 
 # ::id snt1.931.019_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1827년에 영국의 식물학자 R Brown이 수중에 분산된 꽃가루 입자를 현미경으로 관찰하던 중, 입자가 불규칙한 운동을 하고 있는 것을 발견했다.
+# ::snt 1827년에 영국의 식물학자 R Brown이 수중에 분산된 꽃가루 입자를 현미경으로 관찰하던 중, 입자가 불규칙한 운동을 하고 있는 것을 발견했다.
 # ::note
 
 
@@ -1491,21 +1517,28 @@
 
 
 # ::id snt1.931.019_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이것은 1827년에 영국의 식물학자 브라운(Brown, R.)이 물 위에 뜬 꽃가루들이 무질서하게 움직이는 것을 현미경으로 관찰한 결과, 꽃가루들을 무질서하게 움직이도록 만든 것은 매우 작은 물분자의 무질서한 움직임이라는 사실을 알아냈다.
+# ::snt 이것은 1827년에 영국의 식물학자 브라운(Brown, R.)이 물 위에 뜬 꽃가루들이 무질서하게 움직이는 것을 현미경으로 관찰한 결과, 꽃가루들을 무질서하게 움직이도록 만든 것은 매우 작은 물분자의 무질서한 움직임이라는 사실을 알아냈다.
 # ::note
 
 
 
 
-# ::id snt0.931.019_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.019_Q.01_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
 # ::snt 이것은 물 분자, 공기 분자 등이 자유롭게 움직이는 운동을 뜻한다.
 # ::note
-
-
-
+(뜻 / 뜻하-01
+    :ARG0 (이 / 이것)
+    :ARG1 (운 / 운동-00
+        :mod (움 / 움직이-01
+            :ARG1 (등 / 등
+                :op1 (분 / 분자
+                    :poss (물 / 물))
+                :op2 (분2 / 분자
+                    :poss (공 / 공기)))
+            :manner (자 / 자유롭-01))))
 
 # ::id snt1.931.019_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  영국의 식물학자가 물 위에서 불규칙하게 움직이는 꽃가루를 보고 이 운동에 자신의 이름을 붙였는데, 이 운동은 무엇일까?
+# ::snt 영국의 식물학자가 물 위에서 불규칙하게 움직이는 꽃가루를 보고 이 운동에 자신의 이름을 붙였는데, 이 운동은 무엇일까?
 # ::note
 
 
@@ -1540,7 +1573,7 @@
 
 
 # ::id snt1.931.020_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1989년 6월 한글 창제에 담긴 숭고한 세종대왕의 정신을 기리고, 전세계에서 문맹을 퇴치하기 위하여 헌신하는 개인, 단체, 기관들의 노력을 격려하고 그 정신을 드높이기 위해 제정되었다.
+# ::snt 1989년 6월 한글 창제에 담긴 숭고한 세종대왕의 정신을 기리고, 전세계에서 문맹을 퇴치하기 위하여 헌신하는 개인, 단체, 기관들의 노력을 격려하고 그 정신을 드높이기 위해 제정되었다.
 # ::note
 
 
@@ -1554,7 +1587,7 @@
 
 
 # ::id snt1.931.020_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  세계 각국에서 문맹퇴치사업에 가장 많은 공을 세운 개인이나 단체에 수여하는 이 상은 무엇일까?
+# ::snt 세계 각국에서 문맹퇴치사업에 가장 많은 공을 세운 개인이나 단체에 수여하는 이 상은 무엇일까?
 # ::note
 
 
@@ -1568,7 +1601,7 @@
 
 
 # ::id snt1.931.021_A.01_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
-# ::snt  호염구, 비만세포 등에서 분비한다.
+# ::snt 호염구, 비만세포 등에서 분비한다.
 # ::note
 (분 / 분비-00
     :ARG0 (등 / 등
@@ -1576,29 +1609,47 @@
         :op2 (세 / 세포
             :mod (비 / 비만))))
 
-# ::id snt0.931.021_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.021_A.02_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
 # ::snt 면역기능에 중요한 기능을 하는 물질로, 평소에는 비만세포에 저장되어 있음.
 # ::note
-
-
-
+(a / and
+    :op1 (물 / 물질
+        :ARG1-of (기 / 기능-00
+            :ARG1-of (중 / 중요-01
+                :ARG2 (기2 / 기능-00
+                    :mod (면 / 면역)))))
+    :op2 (저 / 저장-01
+        :ARG1 물
+        :ARG2 (세 / 세포
+            :mod (비 / 비만))
+        :time (평 / 평소)))
 
 # ::id snt1.931.021_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  아미노산의 일종인 히스티딘이 히스티딘 탈탄산효소의 작용으로 인해 생성되는 물질이다.
+# ::snt 아미노산의 일종인 히스티딘이 히스티딘 탈탄산효소의 작용으로 인해 생성되는 물질이다.
 # ::note
 
 
 
 
-# ::id snt2.931.021_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  주로 비만세포(mast cell)에 저장되어 있다가 상처, 세균감염 등으로 인해 세포가 손상을 입으며 방출된다.
+# ::id snt2.931.021_A.02_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
+# ::snt 주로 비만세포(mast cell)에 저장되어 있다가 상처, 세균감염 등으로 인해 세포가 손상을 입으며 방출된다.
 # ::note
-
-
-
+(a / and
+    :op1 (저 / 저장-01
+        :ARG2 (세 / 세포
+            :mod (비 / 비만))
+        :mod (주 / 주로))
+    :op2 (방 / 방출-01
+        :ARG0 세
+        :condition (손 / 손상-01
+            :ARG1 세
+            :cause (등 / 등
+                :op1 (상 / 상처)
+                :op2 (감 / 감염-01
+                    :ARG2 (세2 / 세균))))))
 
 # ::id snt3.931.021_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이렇게 방출된 히스타민은 혈관을 확장시키고 혈관의 투과성을 증가시켜 백혈구와 여러 혈장단백질들이 세균이 침입한 부위로 빨리 이동할 수 있도록 하여 면역기능에 아주 중요한 역할을 담당한다.
+# ::snt 이렇게 방출된 히스타민은 혈관을 확장시키고 혈관의 투과성을 증가시켜 백혈구와 여러 혈장단백질들이 세균이 침입한 부위로 빨리 이동할 수 있도록 하여 면역기능에 아주 중요한 역할을 담당한다.
 # ::note
 
 
@@ -1612,7 +1663,7 @@
 
 
 # ::id snt1.931.021_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  자궁근(子宮筋) 등의 불수의근(不隨意筋)을 수축시키고, 모세관에 작용하여 이를 확장, 혈압 하강 작용이 현저하다.
+# ::snt 자궁근(子宮筋) 등의 불수의근(不隨意筋)을 수축시키고, 모세관에 작용하여 이를 확장, 혈압 하강 작용이 현저하다.
 # ::note
 
 
@@ -1626,7 +1677,7 @@
 
 
 # ::id snt1.931.021_Q.01_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
-# ::snt  비만세포에서 분비되는 이것은 무엇일까?
+# ::snt 비만세포에서 분비되는 이것은 무엇일까?
 # ::note
 (분 / 분비-00
     :ARG0 (세 / 세포
@@ -1640,33 +1691,48 @@
 
 
 
-# ::id snt0.931.022_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.022_A.02_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
 # ::snt <지명> 인도와 티베트 사이, 히말라야 산기슭에 있는 나라.
 # ::note
-
-
-
+(나 / 나라
+    :topic (이 / 이름
+        :poss (나2 / 나라))
+    :location (기 / 기슭
+        :mod (산 / 산)
+        :part-of (m / mountain-range :wiki "히말라야산맥" :name (이2 / 이름 :op1 "히말라야")))
+    :location (사 / 사이
+        :op1 (c / country :wiki "인도" :name (이3 / 이름 :op1 "인도"))
+        :op2 (c2 / country :wiki "티베트" :name (이4 / 이름 :op1 "티베트"))))
 
 # ::id snt1.931.022_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  기본적으로 티베트 문화권이며, 1947년 영국 보호령에서 독립하였으나 1949년 외교권을 인도에 이양하였다.
+# ::snt 기본적으로 티베트 문화권이며, 1947년 영국 보호령에서 독립하였으나 1949년 외교권을 인도에 이양하였다.
 # ::note
 
 
 
 
 # ::id snt2.931.022_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  쌀ㆍ밀ㆍ옥수수 따위를 생산하고, 소ㆍ돼지 따위를 축산하며, 주민은 대부분이 티베트계로 라마교와 불교를 신봉하고 주요 언어는 티베트 어이다.
+# ::snt 쌀ㆍ밀ㆍ옥수수 따위를 생산하고, 소ㆍ돼지 따위를 축산하며, 주민은 대부분이 티베트계로 라마교와 불교를 신봉하고 주요 언어는 티베트 어이다.
 # ::note
 
 
 
 
-# ::id snt0.931.022_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.931.022_A.03_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
 # ::snt 단적인 예로 2004년 부탄은 전세계에서 유일하게 담배 판매와 흡연을 금지했다.
 # ::note
-
-
-
+(e / exemplify-01
+    :mod (단 / 단적)
+    :ARG1 (금 / 금지-01
+        :ARG0 (c / country :wiki "부탄" :name (이 / 이름 :op1 "부탄"))
+        :ARG1 (a / and
+            :op1 (판 / 판매-01
+                :ARG1 (담 / 담배))
+            :op2 (흡 / 흡연-00))
+        :ARG1-of (유 / 유일-01
+            :mod (중 / 중
+                :op1 (나 / 나라
+                    :mod (모 / 모든))))))
 
 # ::id snt0.931.022_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이 나라는 히말라야 산맥에 있으며 한반도 1/5 크기의 작은 나라이다.
@@ -1676,14 +1742,14 @@
 
 
 # ::id snt1.931.022_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  국민의 대부분이 불교를 믿으며, 환경보호와 국민의 건강을 위해 담배 제조와 판매를 금지시킨 것으로 유명하다.
+# ::snt 국민의 대부분이 불교를 믿으며, 환경보호와 국민의 건강을 위해 담배 제조와 판매를 금지시킨 것으로 유명하다.
 # ::note
 
 
 
 
 # ::id snt2.931.022_Q.01_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
-# ::snt  이 나라는 어디일까?
+# ::snt 이 나라는 어디일까?
 # ::note
 (a / amr-unknown
     :domain (나 / 나라
@@ -1700,7 +1766,8 @@
 # ::snt <인명> 오스트리아의 작곡가ㆍ지휘자(1860~1911).
 # ::note
 (사 / 사람
-    :topic (이 / 이름)
+    :topic (이 / 이름
+        :poss (사2 / 사람))
     :ARG0-of (작 / 작곡-00)
     :ARG0-of (지 / 지휘-00)
     :location (c / country :wiki "오스트리아" :name (이2 / 이름 :op1 "오스트리아"))
@@ -1710,14 +1777,14 @@
         :time (d2 / date-entity :year 1911)))
 
 # ::id snt1.931.023_A.02_ver ::date 2019-11-07 ::annotator gabrielle ::preferred True
-# ::snt  바그너의 음악에 영향을 받았다.
+# ::snt 바그너의 음악에 영향을 받았다.
 # ::note
 (영 / 영향-01
     :ARG0 (음 / 음악
         :poss (p / person :wiki "리하르트_바그너" :name (이 / 이름 :op1 "바그너"))))
 
 # ::id snt2.931.023_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  작품에 교향곡 <부활>, 가곡 <대지의 노래> 따위가 있다.
+# ::snt 작품에 교향곡 <부활>, 가곡 <대지의 노래> 따위가 있다.
 # ::note
 
 
@@ -1752,7 +1819,7 @@
 
 
 # ::id snt1.931.023_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  20세기 작곡 기법에 있어 중요한 선구자로 인식됐으며, 대표곡으로 <대지의 노래>, <한탄의 노래> 등을 만든 이 사람은 누구일까?
+# ::snt 20세기 작곡 기법에 있어 중요한 선구자로 인식됐으며, 대표곡으로 <대지의 노래>, <한탄의 노래> 등을 만든 이 사람은 누구일까?
 # ::note
 
 
@@ -1766,14 +1833,14 @@
 
 
 # ::id snt1.931.024_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 지역은 요르단 강 서안 지구과 함께 팔레스타인 독립 국가의 잠재적 영토로 상정된 곳이다.
+# ::snt 이 지역은 요르단 강 서안 지구과 함께 팔레스타인 독립 국가의 잠재적 영토로 상정된 곳이다.
 # ::note
 
 
 
 
 # ::id snt2.931.024_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  현재 하마스가 장악하고 있지만, 어느 독립국가의 영토도 아니어서 가자 지구의 주민은 무국적자 상태이다.
+# ::snt 현재 하마스가 장악하고 있지만, 어느 독립국가의 영토도 아니어서 가자 지구의 주민은 무국적자 상태이다.
 # ::note
 
 
@@ -1787,14 +1854,14 @@
 
 
 # ::id snt1.931.024_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  인구의 절반 이상이 아랍 난민촌에 살고 있으며, 이스라엘에 대항하는 팔레스타인 무장조직의 주요 기지이기도 하다.
+# ::snt 인구의 절반 이상이 아랍 난민촌에 살고 있으며, 이스라엘에 대항하는 팔레스타인 무장조직의 주요 기지이기도 하다.
 # ::note
 
 
 
 
 # ::id snt2.931.024_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  현재 어느 국가에도 속해 있지 않으며, 팔레스타인과 이스라엘의 무력충돌이 빈번하여 '세계의 화약고'라 불리기도 한다.
+# ::snt 현재 어느 국가에도 속해 있지 않으며, 팔레스타인과 이스라엘의 무력충돌이 빈번하여 '세계의 화약고'라 불리기도 한다.
 # ::note
 
 
@@ -1808,7 +1875,7 @@
 
 
 # ::id snt1.931.024_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  오랜 기간 이스라엘과 팔레스타인 간의 분쟁이 있었으며 올해 7월, 이스라엘의 공습에 의해 많은 사상자가 발생하기도 했는데, 이 지역은 어디일까?
+# ::snt 오랜 기간 이스라엘과 팔레스타인 간의 분쟁이 있었으며 올해 7월, 이스라엘의 공습에 의해 많은 사상자가 발생하기도 했는데, 이 지역은 어디일까?
 # ::note
 
 
@@ -1822,7 +1889,7 @@
 
 
 # ::id snt1.931.025_A.01_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
-# ::snt  1907년 1월 1일 쓰시마 섬 감옥에서 순국하였다.
+# ::snt 1907년 1월 1일 쓰시마 섬 감옥에서 순국하였다.
 # ::note
 (순 / 순국-00
     :location (감 / 감옥
@@ -1841,29 +1908,29 @@
 
 
 
-# ::id snt1.931.025_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  자는 찬겸(贊謙).
+# ::id snt1.931.025_A.02_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
+# ::snt 자는 찬겸(贊謙).
 # ::note
+(자 / 자
+    :op1 "찬겸")
 
-
-
-
-# ::id snt2.931.025_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  호는 면암(勉菴).
+# ::id snt2.931.025_A.02_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
+# ::snt 호는 면암(勉菴).
 # ::note
-
+(호 / 호
+    :op1 "면암")
 
 
 
 # ::id snt3.931.025_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  대유학자(大儒學者)로 대원군을 탄핵하였으며 갑오개혁 때 단발령에 반대하였다.
+# ::snt 대유학자(大儒學者)로 대원군을 탄핵하였으며 갑오개혁 때 단발령에 반대하였다.
 # ::note
 
 
 
 
 # ::id snt4.931.025_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  을사조약을 반대하여 의병을 일으켰으며 유배지 쓰시마(對馬) 섬에서 단식사(斷食死)하였다.
+# ::snt 을사조약을 반대하여 의병을 일으켰으며 유배지 쓰시마(對馬) 섬에서 단식사(斷食死)하였다.
 # ::note
 
 
@@ -1877,7 +1944,7 @@
 
 
 # ::id snt1.931.025_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그러나 순창에서 패하여 쓰시마섬에 유배되었다.
+# ::snt 그러나 순창에서 패하여 쓰시마섬에 유배되었다.
 # ::note
 
 
@@ -1891,28 +1958,28 @@
 
 
 # ::id snt1.931.025_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 사건을 계기로 위정척사운동은 집단적·무력적인 항일의병운동으로 전환하였다.
+# ::snt 이 사건을 계기로 위정척사운동은 집단적·무력적인 항일의병운동으로 전환하였다.
 # ::note
 
 
 
 
 # ::id snt2.931.025_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1906년 윤4월 전라북도 태인에서 궐기하였다.
+# ::snt 1906년 윤4월 전라북도 태인에서 궐기하였다.
 # ::note
 
 
 
 
 # ::id snt3.931.025_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  ＜창의토적소 倡義討賊疏＞를 올려 의거의 심정을 피력하고 궐기를 촉구하는 ＜포고팔도사민＞을 돌리고 일본 정부에 대한 문죄서 ＜기일본정부 寄日本政府＞를 발표하였다.
+# ::snt ＜창의토적소 倡義討賊疏＞를 올려 의거의 심정을 피력하고 궐기를 촉구하는 ＜포고팔도사민＞을 돌리고 일본 정부에 대한 문죄서 ＜기일본정부 寄日本政府＞를 발표하였다.
 # ::note
 
 
 
 
 # ::id snt4.931.025_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  74세의 고령으로 의병을 일으켜 최후의 진충보국하고자 했으나 뜻을 이루지 못하고 적지 대마도 옥사에서 순국하였다.
+# ::snt 74세의 고령으로 의병을 일으켜 최후의 진충보국하고자 했으나 뜻을 이루지 못하고 적지 대마도 옥사에서 순국하였다.
 # ::note
 
 
@@ -1933,7 +2000,7 @@
 
 
 # ::id snt1.931.025_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  을사늑약이 체결되자 70세가 넘은 나이에도 의병을 지휘하다 체포당해 쓰시마 섬 옥사에서 순국했는데, 이 사람은 누구일까?
+# ::snt 을사늑약이 체결되자 70세가 넘은 나이에도 의병을 지휘하다 체포당해 쓰시마 섬 옥사에서 순국했는데, 이 사람은 누구일까?
 # ::note
 
 
@@ -1954,7 +2021,7 @@
 
 
 # ::id snt1.931.026_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  기구에 장치한 기압계, 온도계, 습도계 등으로 측정한 상층의 기상상태를 소형의 무선발신기를 통해 발신한다.
+# ::snt 기구에 장치한 기압계, 온도계, 습도계 등으로 측정한 상층의 기상상태를 소형의 무선발신기를 통해 발신한다.
 # ::note
 
 
@@ -1968,21 +2035,21 @@
 
 
 # ::id snt1.931.026_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  라디오존데라는 명칭은 송수신기를 의미하는 “radio”와 메신저의 의미를 갖는 “sonde”의 합성어로 허지셀(H. Hergesell)에 의해 명명되었다.
+# ::snt 라디오존데라는 명칭은 송수신기를 의미하는 “radio”와 메신저의 의미를 갖는 “sonde”의 합성어로 허지셀(H. Hergesell)에 의해 명명되었다.
 # ::note
 
 
 
 
 # ::id snt2.931.026_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  기압계 · 온도계 · 습도계 등의 측정기를 기구(氣球)나 낙하산에 장착하여 상층의 기상상태를 소형의 무선발신기가 지상으로 발신하는 구조로 되어 있다.
+# ::snt 기압계 · 온도계 · 습도계 등의 측정기를 기구(氣球)나 낙하산에 장착하여 상층의 기상상태를 소형의 무선발신기가 지상으로 발신하는 구조로 되어 있다.
 # ::note
 
 
 
 
 # ::id snt3.931.026_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  라디오존데에 장착하는 측정기로는 아네로이드 기압계, 바이메탈 온도계, 모발습도계를 사용한다. 
+# ::snt 라디오존데에 장착하는 측정기로는 아네로이드 기압계, 바이메탈 온도계, 모발습도계를 사용한다. 
 # ::note
 
 
@@ -2010,14 +2077,14 @@
 
 
 # ::id snt1.931.026_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  각 관측기계는 5m/s의 속도로 상승하는 기구에 실려 20∼30km의 상공에 이르기까지 관측과 송신을 계속하면서 고도별 기압·기온·습도·풍향·풍속을 관측한다.
+# ::snt 각 관측기계는 5m/s의 속도로 상승하는 기구에 실려 20∼30km의 상공에 이르기까지 관측과 송신을 계속하면서 고도별 기압·기온·습도·풍향·풍속을 관측한다.
 # ::note
 
 
 
 
 # ::id snt2.931.026_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이는 세계기상감시계획(WWW)의 일환으로 실시하는 관측으로, 대기의 입체적인 분석을 위하여 매우 유용하다.
+# ::snt 이는 세계기상감시계획(WWW)의 일환으로 실시하는 관측으로, 대기의 입체적인 분석을 위하여 매우 유용하다.
 # ::note
 
 
@@ -2031,7 +2098,7 @@
 
 
 # ::id snt1.931.026_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  우리나라 기상청에서는 대형 고무풍선에 이 관측기구를 매달아 고도 약 35km까지 띄워 올려 상층 대기의 상태를 측정하고 있는데, 이 관측기구는 무엇일까?
+# ::snt 우리나라 기상청에서는 대형 고무풍선에 이 관측기구를 매달아 고도 약 35km까지 띄워 올려 상층 대기의 상태를 측정하고 있는데, 이 관측기구는 무엇일까?
 # ::note
 
 
@@ -2045,7 +2112,7 @@
 
 
 # ::id snt1.931.027_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  지옥문의 가운데 팀파늄에 있는 《생각하는 사람》은 그중 가장 유명한 독립상으로 알려져 있는데, 이 작품은 창조적인 인간의 정신 세계를 의미하는 것이다.
+# ::snt 지옥문의 가운데 팀파늄에 있는 《생각하는 사람》은 그중 가장 유명한 독립상으로 알려져 있는데, 이 작품은 창조적인 인간의 정신 세계를 의미하는 것이다.
 # ::note
 
 
@@ -2073,7 +2140,7 @@
 
 
 # ::id snt1.931.027_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  『지옥의 문』(1880~1917) 문짝 상부의 난간부분 중앙, 바위 대좌 위에 앉아 있는 인물상으로서 문 전체의 핵심적 표현으로 구성되었음.
+# ::snt 『지옥의 문』(1880~1917) 문짝 상부의 난간부분 중앙, 바위 대좌 위에 앉아 있는 인물상으로서 문 전체의 핵심적 표현으로 구성되었음.
 # ::note
 
 
@@ -2087,14 +2154,14 @@
 
 
 # ::id snt1.931.027_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 작품 가운데 일부는 독립 상으로 제작하기도 했는데, <생각하는 사람>은 그 중 가장 유명한 독립 상으로 알려져 있다.
+# ::snt 이 작품 가운데 일부는 독립 상으로 제작하기도 했는데, <생각하는 사람>은 그 중 가장 유명한 독립 상으로 알려져 있다.
 # ::note
 
 
 
 
 # ::id snt2.931.027_Q.01_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
-# ::snt  이 작품은 무엇일까?
+# ::snt 이 작품은 무엇일까?
 # ::note
 (a / amr-unknown
     :domain (작 / 작품
@@ -2110,7 +2177,7 @@
 
 
 # ::id snt1.931.028_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  통공정책 가운데 하나이다.
+# ::snt 통공정책 가운데 하나이다.
 # ::note
 
 
@@ -2124,14 +2191,14 @@
 
 
 # ::id snt1.931.028_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  결국 신해통공은 도성내 사상들의 자유로운 상업활동을 허용하는 정책방향으로 나아갔다.
+# ::snt 결국 신해통공은 도성내 사상들의 자유로운 상업활동을 허용하는 정책방향으로 나아갔다.
 # ::note
 
 
 
 
 # ::id snt2.931.028_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  즉 상인들의 자유로운 상업활동을 허용하는 방향으로 정책이 시행되고 소상인소상품 생산자에 대한 규제 완화 정책쪽으로 발전해 나간 것이다.
+# ::snt 즉 상인들의 자유로운 상업활동을 허용하는 방향으로 정책이 시행되고 소상인소상품 생산자에 대한 규제 완화 정책쪽으로 발전해 나간 것이다.
 # ::note
 
 
@@ -2145,14 +2212,14 @@
 
 
 # ::id snt1.931.028_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  첫째 육의전과 같은 대전에만 금난전권을 허용하고 둘째 소상인이나 소상품생산자의 상업활동을 보호하며 셋째 시전도고나 사도고 등에 의한 도고 활동을 금지하고 넷째 금난전권의 주용 내용인 속공권과 착납권을 폐지하는 방향으로 전개되었다.
+# ::snt 첫째 육의전과 같은 대전에만 금난전권을 허용하고 둘째 소상인이나 소상품생산자의 상업활동을 보호하며 셋째 시전도고나 사도고 등에 의한 도고 활동을 금지하고 넷째 금난전권의 주용 내용인 속공권과 착납권을 폐지하는 방향으로 전개되었다.
 # ::note
 
 
 
 
 # ::id snt2.931.028_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  요컨대 정부의 상품유통에 대한 통제력을 약화시키고 도성내 소민들의 생활을 어렵게 하는 시전의 도고 활동을 억제하는 동시에 사상들의 자유로운 상업활동을 확대하는 방향으로 나아가고 있는 것이다.
+# ::snt 요컨대 정부의 상품유통에 대한 통제력을 약화시키고 도성내 소민들의 생활을 어렵게 하는 시전의 도고 활동을 억제하는 동시에 사상들의 자유로운 상업활동을 확대하는 방향으로 나아가고 있는 것이다.
 # ::note
 
 
@@ -2180,7 +2247,7 @@
 
 
 # ::id snt1.931.028_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  육의전을 제외한 시전 상인의 금난전권을 폐지해 중소 상인의 자유로운 상업 활동을 보장했는데, 물가의 폭등을 막고 상품 화폐 경제의 발달을 가져온 이 정책은 무엇일까?
+# ::snt 육의전을 제외한 시전 상인의 금난전권을 폐지해 중소 상인의 자유로운 상업 활동을 보장했는데, 물가의 폭등을 막고 상품 화폐 경제의 발달을 가져온 이 정책은 무엇일까?
 # ::note
 
 
@@ -2229,7 +2296,7 @@
 
 
 # ::id snt1.931.029_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 중 명반응이 일어나는 곳은 엽록체의 어디일까?
+# ::snt 이 중 명반응이 일어나는 곳은 엽록체의 어디일까?
 # ::note
 
 
@@ -2243,21 +2310,21 @@
 
 
 # ::id snt1.931.030_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  둘째 부분은 소남자의 이야기로 3장에 걸쳐 월남이 968년 중국에서 독립한 뒤 프랑스의 보호국이 되기까지의 월남망국기, 1885년 이후 활약한 애국지사들의 간략한 일대기, 보호국 이후의 프랑스의 정책과 월남인의 고통이 실려 있다.
+# ::snt 둘째 부분은 소남자의 이야기로 3장에 걸쳐 월남이 968년 중국에서 독립한 뒤 프랑스의 보호국이 되기까지의 월남망국기, 1885년 이후 활약한 애국지사들의 간략한 일대기, 보호국 이후의 프랑스의 정책과 월남인의 고통이 실려 있다.
 # ::note
 
 
 
 
 # ::id snt2.931.030_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  셋째 부분은 월남의 장래 등에 관한 소남자와 양계초의 대화 내용이다.
+# ::snt 셋째 부분은 월남의 장래 등에 관한 소남자와 양계초의 대화 내용이다.
 # ::note
 
 
 
 
 # ::id snt3.931.030_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  애국주의에 주목하여 간행된 것으로, 1905년 을사조약 후 일제의 보호국이 된 조선의 상황을 비판하고 이를 통해 민족적 자각을 일깨우려고 하였다.
+# ::snt 애국주의에 주목하여 간행된 것으로, 1905년 을사조약 후 일제의 보호국이 된 조선의 상황을 비판하고 이를 통해 민족적 자각을 일깨우려고 하였다.
 # ::note
 
 
@@ -2271,7 +2338,7 @@
 
 
 # ::id snt1.931.030_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  또한, 제국주의 확대의 위협 앞에 놓여 있는 당시 조선의 상태를 비판하고 계몽하려는 의도에서 간행된 것이다.
+# ::snt 또한, 제국주의 확대의 위협 앞에 놓여 있는 당시 조선의 상태를 비판하고 계몽하려는 의도에서 간행된 것이다.
 # ::note
 
 
@@ -2292,7 +2359,7 @@
 
 
 # ::id snt1.931.030_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  식민지 통치에 의한 베트남인들의 고통과 베트남 독립에 대한 희망을 다루고 있으며, 우리나라에도 번역돼 국민의 민족의식을 고취한 이 책은 무엇일까?
+# ::snt 식민지 통치에 의한 베트남인들의 고통과 베트남 독립에 대한 희망을 다루고 있으며, 우리나라에도 번역돼 국민의 민족의식을 고취한 이 책은 무엇일까?
 # ::note
 
 
@@ -2341,7 +2408,7 @@
 
 
 # ::id snt1.931.031_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  전반적인 지적 능력과 사회성은 떨어지지만 기억, 암산, 퍼즐이나 음악적인 부분 등 특정한 좁은 영역에서 우수한 능력을 보여주는데, 이 증후군은 무엇일까?
+# ::snt 전반적인 지적 능력과 사회성은 떨어지지만 기억, 암산, 퍼즐이나 음악적인 부분 등 특정한 좁은 영역에서 우수한 능력을 보여주는데, 이 증후군은 무엇일까?
 # ::note
 
 
@@ -2358,7 +2425,7 @@
 
 
 # ::id snt1.931.032_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  '시원한 물'을 뜻하는 마사이어 '에와소 니이로비(Ewaso Nyirobi)' 또는 '엥카레나이로비(Enkarenairobi)'에서 현 지명이 유래했다는 설이 있다.
+# ::snt '시원한 물'을 뜻하는 마사이어 '에와소 니이로비(Ewaso Nyirobi)' 또는 '엥카레나이로비(Enkarenairobi)'에서 현 지명이 유래했다는 설이 있다.
 # ::note
 
 
@@ -2386,7 +2453,7 @@
     :ARG2 (수 / 수도))
 
 # ::id snt1.931.032_A.04_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
-# ::snt  케냐 중남부 해발 고도 1,860m의 고원에 위치하고 있어 기후가 쾌적하다.
+# ::snt 케냐 중남부 해발 고도 1,860m의 고원에 위치하고 있어 기후가 쾌적하다.
 # ::note
 (쾌 / 쾌적-00
     :ARG1 (기 / 기후)
@@ -2410,7 +2477,7 @@
         :mod (공 / 공업)))
 
 # ::id snt1.931.032_A.05_ver ::date 2019-09-26 ::annotator gabrielle ::preferred True
-# ::snt  인구 150만 명.
+# ::snt 인구 150만 명.
 # ::note
 (인 / 인구
     :quant 1500000
@@ -2432,7 +2499,7 @@
 
 
 # ::id snt1.931.032_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  해발 약 1,700m에 위치해 연교차가 작고 일 년 내내 봄과 같은 따뜻한 기후가 나타나는데, 케냐의 수도인 이 도시는 어디일까?
+# ::snt 해발 약 1,700m에 위치해 연교차가 작고 일 년 내내 봄과 같은 따뜻한 기후가 나타나는데, 케냐의 수도인 이 도시는 어디일까?
 # ::note
 
 
@@ -2453,7 +2520,7 @@
 
 
 # ::id snt1.931.033_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  회원국의 정치적 통합과 집단 방위를 목표로 한다.
+# ::snt 회원국의 정치적 통합과 집단 방위를 목표로 한다.
 # ::note
 
 
@@ -2497,7 +2564,7 @@
 
 
 # ::id snt1.931.033_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 조약을 통해 점진적으로 이루어지던 유럽 각국의 통합 노력이 유럽 연합 결성으로 이어졌는데, 1992년에 체결한 이 조약은 무엇일까?
+# ::snt 이 조약을 통해 점진적으로 이루어지던 유럽 각국의 통합 노력이 유럽 연합 결성으로 이어졌는데, 1992년에 체결한 이 조약은 무엇일까?
 # ::note
 
 
@@ -2511,7 +2578,7 @@
 
 
 # ::id snt1.931.034_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  흰 하늘과 쭈그린 아낙네 둘이 벽 위에 납작하게 뻗어 있다.
+# ::snt 흰 하늘과 쭈그린 아낙네 둘이 벽 위에 납작하게 뻗어 있다.
 # ::note
 
 
@@ -2541,7 +2608,7 @@
 
 
 # ::id snt1.932.001_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  주로 된장찌개에 쓰이거나 얇게 썰어서 구워먹는데, 매우 얇아 익는 속도가 빠른 것이 특징이다.
+# ::snt 주로 된장찌개에 쓰이거나 얇게 썰어서 구워먹는데, 매우 얇아 익는 속도가 빠른 것이 특징이다.
 # ::note
 
 
@@ -2555,7 +2622,7 @@
 
 
 # ::id snt1.932.001_A.02_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
-# ::snt  빛이 희고 단단하다.
+# ::snt 빛이 희고 단단하다.
 # ::note
 (a / and
     :op1 (희 / 희-01
@@ -2593,14 +2660,14 @@
 
 
 # ::id snt1.932.002_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  은백색의 강한 광택이 있는 금속이다.
+# ::snt 은백색의 강한 광택이 있는 금속이다.
 # ::note
 
 
 
 
 # ::id snt2.932.002_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  공기 중에서 변하지 않고 산화 반응을 일으키지 않아 도금이나 합금 등을 통해 동전의 재료로 사용된다.
+# ::snt 공기 중에서 변하지 않고 산화 반응을 일으키지 않아 도금이나 합금 등을 통해 동전의 재료로 사용된다.
 # ::note
 
 
@@ -2712,7 +2779,7 @@
 
 
 # ::id snt1.932.004_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  두 해류 사이에는 서쪽에서 동쪽으로 흐르는 적도 반류가 있는데, 적도 반류의 생성 원인은 무엇일까?
+# ::snt 두 해류 사이에는 서쪽에서 동쪽으로 흐르는 적도 반류가 있는데, 적도 반류의 생성 원인은 무엇일까?
 # ::note
 
 
@@ -2733,7 +2800,7 @@
 
 
 # ::id snt1.932.005_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  여기서 '백수'의 의미는 무엇일까?
+# ::snt 여기서 '백수'의 의미는 무엇일까?
 # ::note
 
 
@@ -2754,7 +2821,7 @@
 
 
 # ::id snt1.932.006_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  고종 20년(1883)에 덕원 주민들의 요청으로 덕원 부사 정현석(鄭顯奭)이 설립한 것이다.
+# ::snt 고종 20년(1883)에 덕원 주민들의 요청으로 덕원 부사 정현석(鄭顯奭)이 설립한 것이다.
 # ::note
 
 
@@ -2796,14 +2863,14 @@
 
 
 # ::id snt1.932.007_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  19세기 현대적인 삶의 모습에 접근하려 했던 화가들중의 하나로 시대적 화풍이 사실주의에서 인상파로 전환되는 데 중추적 역할을 하였다.
+# ::snt 19세기 현대적인 삶의 모습에 접근하려 했던 화가들중의 하나로 시대적 화풍이 사실주의에서 인상파로 전환되는 데 중추적 역할을 하였다.
 # ::note
 
 
 
 
 # ::id snt2.932.007_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그의 초기작인 <풀밭위의 점심식사>와 <올랭피아>는 엄청난 비난을 불러 일으켰으나 반면에 수많은 젊은 화가들을 주변에 불러모으는 힘이 되었는데, 이들이 후에 인상주의를 창조하였다.
+# ::snt 그의 초기작인 <풀밭위의 점심식사>와 <올랭피아>는 엄청난 비난을 불러 일으켰으나 반면에 수많은 젊은 화가들을 주변에 불러모으는 힘이 되었는데, 이들이 후에 인상주의를 창조하였다.
 # ::note
 
 
@@ -2817,14 +2884,14 @@
 
 
 # ::id snt1.932.007_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  인상파의 개척자로서 근대 회화의 아버지라 일컬어지며, 풍부하고 화려한 색채와 대담한 소묘로 참신한 유화를 그렸다.
+# ::snt 인상파의 개척자로서 근대 회화의 아버지라 일컬어지며, 풍부하고 화려한 색채와 대담한 소묘로 참신한 유화를 그렸다.
 # ::note
 
 
 
 
 # ::id snt2.932.007_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  작품에 <풀밭 위의 식사>, <피리 부는 아이>, <휴식>, <올랭피아> 따위가 있다.
+# ::snt 작품에 <풀밭 위의 식사>, <피리 부는 아이>, <휴식>, <올랭피아> 따위가 있다.
 # ::note
 
 
@@ -2838,7 +2905,7 @@
 
 
 # ::id snt1.932.007_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  인상주의의 아버지로 불린다.
+# ::snt 인상주의의 아버지로 불린다.
 # ::note
 
 
@@ -2852,7 +2919,7 @@
 
 
 # ::id snt1.932.007_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  당대에 평론가들의 호평을 받지는 못하였으나, ＜풀밭 위의 점심식사＞ 등 낙선전의 작품들은 젊은 인상파 화가들을 이끌었다.
+# ::snt 당대에 평론가들의 호평을 받지는 못하였으나, ＜풀밭 위의 점심식사＞ 등 낙선전의 작품들은 젊은 인상파 화가들을 이끌었다.
 # ::note
 
 
@@ -2873,7 +2940,7 @@
 
 
 # ::id snt1.932.007_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  대표작으로 <풀밭 위의 점심 식사>, <올랭피아> 등이 있는데, 프랑스의 이 화가는 누구일까?
+# ::snt 대표작으로 <풀밭 위의 점심 식사>, <올랭피아> 등이 있는데, 프랑스의 이 화가는 누구일까?
 # ::note
 
 
@@ -2915,7 +2982,7 @@
 
 
 # ::id snt1.932.008_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  조직에 해당하는 것은 무엇일까?
+# ::snt 조직에 해당하는 것은 무엇일까?
 # ::note
 
 
@@ -2929,7 +2996,7 @@
 
 
 # ::id snt1.932.009_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  입에서 아직 젖내가 난다는 뜻
+# ::snt 입에서 아직 젖내가 난다는 뜻
 # ::note
 
 
@@ -2943,7 +3010,7 @@
 
 
 # ::id snt1.932.009_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  '입으로는 달콤한 말을 하면서 속으로는 칼을 품고 있다'는 뜻
+# ::snt '입으로는 달콤한 말을 하면서 속으로는 칼을 품고 있다'는 뜻
 # ::note
 
 
@@ -2992,7 +3059,7 @@
 
 
 # ::id snt1.932.010_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  화성의 표면에 존재하는 지형이 아닌 것은 무엇일까?
+# ::snt 화성의 표면에 존재하는 지형이 아닌 것은 무엇일까?
 # ::note
 
 
@@ -3034,7 +3101,7 @@
 
 
 # ::id snt1.932.011_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  초대 국회의장은 누구일까?
+# ::snt 초대 국회의장은 누구일까?
 # ::note
 
 
@@ -3055,7 +3122,7 @@
 
 
 # ::id snt1.932.012_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  팽팽하게 당겨진 막을 치거나 문지름으로써 진동시켜 소리를 내는 악기로, 북ㆍ드럼ㆍ장구ㆍ탬버린ㆍ팀파니 따위가 있다.
+# ::snt 팽팽하게 당겨진 막을 치거나 문지름으로써 진동시켜 소리를 내는 악기로, 북ㆍ드럼ㆍ장구ㆍ탬버린ㆍ팀파니 따위가 있다.
 # ::note
 
 
@@ -3104,7 +3171,7 @@
 
 
 # ::id snt1.932.013_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  공룡은 이 부위의 뼈가 2.4m에 이를 정도로 몸집에 비해 매우 거대한데, 이 부위는 어디일까?
+# ::snt 공룡은 이 부위의 뼈가 2.4m에 이를 정도로 몸집에 비해 매우 거대한데, 이 부위는 어디일까?
 # ::note
 
 
@@ -3132,7 +3199,7 @@
 
 
 # ::id snt0.932.014_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  미국·영국·러시아연방·중국·프랑스의 5개 상임이사국과 10개의 비상임이사국으로 구성된다.
+# ::snt 미국·영국·러시아연방·중국·프랑스의 5개 상임이사국과 10개의 비상임이사국으로 구성된다.
 # ::note
 
 
@@ -3181,7 +3248,7 @@
 
 
 # ::id snt1.932.016_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  기업, 민간단체, 외국 정부 등의 대리인으로서 의안의 저지 및 통과, 원조의 증액이나 획득 등을 위해 의원이나 의원 보좌관을 상대로 활동한다.
+# ::snt 기업, 민간단체, 외국 정부 등의 대리인으로서 의안의 저지 및 통과, 원조의 증액이나 획득 등을 위해 의원이나 의원 보좌관을 상대로 활동한다.
 # ::note
 
 
@@ -3209,14 +3276,14 @@
 
 
 # ::id snt1.932.016_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  미국에는 이익단체와 계약을 맺은 이익 대리인으로서 그 단체를 위해 정치 공작을 전문으로 하는 로비스트가 있다.
+# ::snt 미국에는 이익단체와 계약을 맺은 이익 대리인으로서 그 단체를 위해 정치 공작을 전문으로 하는 로비스트가 있다.
 # ::note
 
 
 
 
 # ::id snt2.932.016_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  로비스트가 실행하는 제반 활동을 로비활동이라고 하지만 이 말은 원래 그것이 의회의 로비에서 이루어진 것에서 유래한다.
+# ::snt 로비스트가 실행하는 제반 활동을 로비활동이라고 하지만 이 말은 원래 그것이 의회의 로비에서 이루어진 것에서 유래한다.
 # ::note
 
 
@@ -3230,7 +3297,7 @@
 
 
 # ::id snt1.932.016_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  로비(lobby)의 당초 의미는 의회 의원들이 원외 인사와 만나는 의사당의 대기실을 뜻한다.
+# ::snt 로비(lobby)의 당초 의미는 의회 의원들이 원외 인사와 만나는 의사당의 대기실을 뜻한다.
 # ::note
 
 
@@ -3244,7 +3311,7 @@
 
 
 # ::id snt1.932.016_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이익집단이 자신들의 목적을 달성하기 위해 관계자들과 접촉하는 활동을 가리키는 이 외래어는 무엇일까?
+# ::snt 이익집단이 자신들의 목적을 달성하기 위해 관계자들과 접촉하는 활동을 가리키는 이 외래어는 무엇일까?
 # ::note
 
 
@@ -3272,7 +3339,7 @@
 
 
 # ::id snt1.932.017_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  보통 많은 고객을 대상으로 상품이나 용역을 제공하는 보험·은행·운송·통신 등의 사업자가 대량거래의 수요에 대응하여 같은 계약을 반복하거나 복잡한 계약절차 때문에 거래가 지연되는 것을 피하고자 미리 정형적인 계약의 내용을 정해 놓은 것을 말한다.
+# ::snt 보통 많은 고객을 대상으로 상품이나 용역을 제공하는 보험·은행·운송·통신 등의 사업자가 대량거래의 수요에 대응하여 같은 계약을 반복하거나 복잡한 계약절차 때문에 거래가 지연되는 것을 피하고자 미리 정형적인 계약의 내용을 정해 놓은 것을 말한다.
 # ::note
 
 
@@ -3293,21 +3360,21 @@
 
 
 # ::id snt1.932.017_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  즉 한 사업자가 수많은 소비자와 거래하기 위하여 사전에 마련한 계약서의 일종이라 할 수 있다.
+# ::snt 즉 한 사업자가 수많은 소비자와 거래하기 위하여 사전에 마련한 계약서의 일종이라 할 수 있다.
 # ::note
 
 
 
 
 # ::id snt2.932.017_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  은행, 보험, 운송, 신용카드, 전기, 가스, 주택의 공급, 할부거래 등의 거래는 사업자와 소비자가 흥정해서 계약내용을 결정하고 계약을 맺는다면 상당한 불편과 시간낭비를 초래할 뿐 아니라 사회적으로도 비효율을 초래할 것이다.
+# ::snt 은행, 보험, 운송, 신용카드, 전기, 가스, 주택의 공급, 할부거래 등의 거래는 사업자와 소비자가 흥정해서 계약내용을 결정하고 계약을 맺는다면 상당한 불편과 시간낭비를 초래할 뿐 아니라 사회적으로도 비효율을 초래할 것이다.
 # ::note
 
 
 
 
 # ::id snt3.932.017_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  따라서 이러한 불편과 비효율을 해소하기 위한 방안으로 약관을 이용하여 계약을 체결한다.
+# ::snt 따라서 이러한 불편과 비효율을 해소하기 위한 방안으로 약관을 이용하여 계약을 체결한다.
 # ::note
 
 
@@ -3321,7 +3388,7 @@
 
 
 # ::id snt1.932.017_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  다수의 고객을 대상으로 상품이나 용역을 제공하는 보험, 은행, 통신 등에서 주로 쓰는데, 이것은 무엇일까?
+# ::snt 다수의 고객을 대상으로 상품이나 용역을 제공하는 보험, 은행, 통신 등에서 주로 쓰는데, 이것은 무엇일까?
 # ::note
 
 
@@ -3335,7 +3402,7 @@
 
 
 # ::id snt1.932.018_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  단단하고 강자성을 띤 은백색 금속 원소이다.
+# ::snt 단단하고 강자성을 띤 은백색 금속 원소이다.
 # ::note
 
 
@@ -3349,21 +3416,21 @@
 
 
 # ::id snt1.932.018_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  철족(鐵族)에 속하는 전이 원소의 하나.
+# ::snt 철족(鐵族)에 속하는 전이 원소의 하나.
 # ::note
 
 
 
 
 # ::id snt2.932.018_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  쇠보다 무겁고 단단한 회백색의 금속으로, 연성(延性)과 전성(展性) ㆍ 강한 자성(磁性)이 있으며, 석유 합성의 촉매 ㆍ 유리 착색의 도료 ㆍ 도금 원료 ㆍ 강철 합금 따위에 쓴다.
+# ::snt 쇠보다 무겁고 단단한 회백색의 금속으로, 연성(延性)과 전성(展性) ㆍ 강한 자성(磁性)이 있으며, 석유 합성의 촉매 ㆍ 유리 착색의 도료 ㆍ 도금 원료 ㆍ 강철 합금 따위에 쓴다.
 # ::note
 
 
 
 
 # ::id snt3.932.018_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  원자 기호는 Co, 원자번호는 27, 원자량은 58.933.
+# ::snt 원자 기호는 Co, 원자번호는 27, 원자량은 58.933.
 # ::note
 
 
@@ -3398,7 +3465,7 @@
 
 
 # ::id snt1.932.018_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  주로 슈퍼합금, 자석합금, 리튬-이온전지 등에 쓰이며 원자번호 27번인 이것은 무엇일까?
+# ::snt 주로 슈퍼합금, 자석합금, 리튬-이온전지 등에 쓰이며 원자번호 27번인 이것은 무엇일까?
 # ::note
 
 
@@ -3419,7 +3486,7 @@
 
 
 # ::id snt1.932.019_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  명예혁명의 결과로 이루어진 권리 선언으로, 의회의입법권과 과세 승인권 따위를 규정함으로써 왕권을 제약하고 의회의 우위를 다졌다.
+# ::snt 명예혁명의 결과로 이루어진 권리 선언으로, 의회의입법권과 과세 승인권 따위를 규정함으로써 왕권을 제약하고 의회의 우위를 다졌다.
 # ::note
 
 
@@ -3454,7 +3521,7 @@
 
 
 # ::id snt1.932.019_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  독립혁명 때는 독립선언서, 프랑스 혁명 때는 인권선언을 발표했는데, 영국의 명예혁명 때 발표한 문서는 무엇일까?
+# ::snt 독립혁명 때는 독립선언서, 프랑스 혁명 때는 인권선언을 발표했는데, 영국의 명예혁명 때 발표한 문서는 무엇일까?
 # ::note
 
 
@@ -3489,7 +3556,7 @@
 
 
 # ::id snt1.932.020_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 작품에서 '교두각시'로 의인화한 것은 무엇일까?
+# ::snt 이 작품에서 '교두각시'로 의인화한 것은 무엇일까?
 # ::note
 
 
@@ -3503,14 +3570,14 @@
 
 
 # ::id snt1.932.021_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  성염색체 상에 있으므로 성에 따라 발현 비율이 달라지는 것이 특징이다.
+# ::snt 성염색체 상에 있으므로 성에 따라 발현 비율이 달라지는 것이 특징이다.
 # ::note
 
 
 
 
 # ::id snt2.932.021_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  X 염색체 연관과 Y 염색체 연관으로 나뉜다.
+# ::snt X 염색체 연관과 Y 염색체 연관으로 나뉜다.
 # ::note
 
 
@@ -3524,7 +3591,7 @@
 
 
 # ::id snt1.932.021_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  유전 현상이 특정한 성과 연관되어 나타나는데 색맹이나 혈우병 따위에서 볼 수 있다.
+# ::snt 유전 현상이 특정한 성과 연관되어 나타나는데 색맹이나 혈우병 따위에서 볼 수 있다.
 # ::note
 
 
@@ -3538,7 +3605,7 @@
 
 
 # ::id snt1.932.021_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  사람의 경우에는 X염색체에 있는 유전자 때문에 일어난다.
+# ::snt 사람의 경우에는 X염색체에 있는 유전자 때문에 일어난다.
 # ::note
 
 
@@ -3566,7 +3633,7 @@
 
 
 # ::id snt1.932.021_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  적록색맹과 혈우병이 이것의 대표적인 예라고 볼 수 있는데 유전자가 X염색체에 있어 나타나는 유전현상인 이것은 무엇일까?
+# ::snt 적록색맹과 혈우병이 이것의 대표적인 예라고 볼 수 있는데 유전자가 X염색체에 있어 나타나는 유전현상인 이것은 무엇일까?
 # ::note
 
 
@@ -3580,14 +3647,14 @@
 
 
 # ::id snt1.932.022_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  흔히 라파엘로 불린다.
+# ::snt 흔히 라파엘로 불린다.
 # ::note
 
 
 
 
 # ::id snt2.932.022_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  《아테네 학당》을 그린 것으로 유명하다.
+# ::snt 《아테네 학당》을 그린 것으로 유명하다.
 # ::note
 
 
@@ -3601,14 +3668,14 @@
 
 
 # ::id snt1.932.022_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  아름답고 온화한 성모를 그리는 데에 재능이 특출나 미술사에 독자적인 자리를 차지하고 있으며, 조화로운 공간 표현 ㆍ 인체 표현 따위로 르네상스 고전 양식을 확립하였다.
+# ::snt 아름답고 온화한 성모를 그리는 데에 재능이 특출나 미술사에 독자적인 자리를 차지하고 있으며, 조화로운 공간 표현 ㆍ 인체 표현 따위로 르네상스 고전 양식을 확립하였다.
 # ::note
 
 
 
 
 # ::id snt2.932.022_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  작품에 <시스티나의 성모>, <아테네 학당> 따위가 있다.
+# ::snt 작품에 <시스티나의 성모>, <아테네 학당> 따위가 있다.
 # ::note
 
 
@@ -3636,7 +3703,7 @@
 
 
 # ::id snt1.932.022_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  <아테네 학당> <성체논의> 등의 벽화가 유명하다.
+# ::snt <아테네 학당> <성체논의> 등의 벽화가 유명하다.
 # ::note
 
 
@@ -3650,7 +3717,7 @@
 
 
 # ::id snt1.932.022_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  교황 율리우스 2세의 초청으로 바티칸 궁전의 서명의 방에 그린 각종 벽화와 <시스티나의 성모>, <아테네 학당> 등의 걸작을 완성했는데, 이 사람은 누구일까?
+# ::snt 교황 율리우스 2세의 초청으로 바티칸 궁전의 서명의 방에 그린 각종 벽화와 <시스티나의 성모>, <아테네 학당> 등의 걸작을 완성했는데, 이 사람은 누구일까?
 # ::note
 
 
@@ -3671,7 +3738,7 @@
 
 
 # ::id snt1.932.023_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 작품은 『열하일기』 중 「산장잡기」에 수록되어 있다.
+# ::snt 이 작품은 『열하일기』 중 「산장잡기」에 수록되어 있다.
 # ::note
 
 
@@ -3685,7 +3752,7 @@
 
 
 # ::id snt1.932.023_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  박지원은 열하일기를 통해 중국에서 난생 처음 본 동물에 대한 충격을 <상기>에 기록했는데, 이 동물은 무엇일까?
+# ::snt 박지원은 열하일기를 통해 중국에서 난생 처음 본 동물에 대한 충격을 <상기>에 기록했는데, 이 동물은 무엇일까?
 # ::note
 
 
@@ -3706,21 +3773,21 @@
 
 
 # ::id snt1.932.024_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  세균의 세포벽에 들어 있는 무코 다당류 따위를 가수 분해 함으로써 세균의 감염을 막는 역할을 한다.
+# ::snt 세균의 세포벽에 들어 있는 무코 다당류 따위를 가수 분해 함으로써 세균의 감염을 막는 역할을 한다.
 # ::note
 
 
 
 
 # ::id snt2.932.024_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  식염수에는 녹으나 아세톤, 알코올 따위에서는 침전한다.
+# ::snt 식염수에는 녹으나 아세톤, 알코올 따위에서는 침전한다.
 # ::note
 
 
 
 
 # ::id snt3.932.024_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1922년에 영국의 세균학자 플레밍(Fleming, A.)이 발견하였다.
+# ::snt 1922년에 영국의 세균학자 플레밍(Fleming, A.)이 발견하였다.
 # ::note
 
 
@@ -3748,21 +3815,21 @@
 
 
 # ::id snt1.932.024_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  페니실린을 발견한 알렉산더 플레밍이 1922년에 발견하였다.
+# ::snt 페니실린을 발견한 알렉산더 플레밍이 1922년에 발견하였다.
 # ::note
 
 
 
 
 # ::id snt2.932.024_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그는 연골·눈물·난백 등에 어떤 종의 세균을 완전히 또한 급속히 용해하는 물질이 들어 있다는 것을 확인하고, 자신이 단리한 미크로코쿠스 리소데이크티쿠스(Micrococcus lysodeikticus)라는 세균이 특히 급속히 용해되는 데서 이 물질을 리소짐이라고 이름을 붙였다.
+# ::snt 그는 연골·눈물·난백 등에 어떤 종의 세균을 완전히 또한 급속히 용해하는 물질이 들어 있다는 것을 확인하고, 자신이 단리한 미크로코쿠스 리소데이크티쿠스(Micrococcus lysodeikticus)라는 세균이 특히 급속히 용해되는 데서 이 물질을 리소짐이라고 이름을 붙였다.
 # ::note
 
 
 
 
 # ::id snt3.932.024_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  난백·동물조직·침·위액·눈물·유즙 등에 함유되며, 침입 세균으로부터 생체를 보호한다.
+# ::snt 난백·동물조직·침·위액·눈물·유즙 등에 함유되며, 침입 세균으로부터 생체를 보호한다.
 # ::note
 
 
@@ -3776,7 +3843,7 @@
 
 
 # ::id snt1.932.024_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1922년 알렉산더 플레밍이 발견한 이 효소의 이름은 무엇일까?
+# ::snt 1922년 알렉산더 플레밍이 발견한 이 효소의 이름은 무엇일까?
 # ::note
 
 
@@ -3790,21 +3857,21 @@
 
 
 # ::id snt1.932.025_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  경복궁의 동쪽에 있어서 조선 시대에는 창경궁과 더불어 동궐(東闕)이라 불렀다.
+# ::snt 경복궁의 동쪽에 있어서 조선 시대에는 창경궁과 더불어 동궐(東闕)이라 불렀다.
 # ::note
 
 
 
 
 # ::id snt2.932.025_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  창덕궁은 비교적 원형이 잘 보존되어 있는 중요한 고궁이며, 특히 창덕궁 후원은 한국의 유일한 궁궐후원이라는 점과 한국의 정원을 대표한다는 점에서 그 가치가 높다.
+# ::snt 창덕궁은 비교적 원형이 잘 보존되어 있는 중요한 고궁이며, 특히 창덕궁 후원은 한국의 유일한 궁궐후원이라는 점과 한국의 정원을 대표한다는 점에서 그 가치가 높다.
 # ::note
 
 
 
 
 # ::id snt3.932.025_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1997년에 유네스코가 지정한 세계문화유산으로 등록되었다.
+# ::snt 1997년에 유네스코가 지정한 세계문화유산으로 등록되었다.
 # ::note
 
 
@@ -3818,14 +3885,14 @@
 
 
 # ::id snt1.932.025_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  조선 태종 때에 건립된 것으로 역대 왕이 정치를 하고 상주하던 곳이며, 보물 383호인 돈화문 따위가 있다.
+# ::snt 조선 태종 때에 건립된 것으로 역대 왕이 정치를 하고 상주하던 곳이며, 보물 383호인 돈화문 따위가 있다.
 # ::note
 
 
 
 
 # ::id snt2.932.025_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1997년에 유네스코 세계 문화유산으로 지정되었다.
+# ::snt 1997년에 유네스코 세계 문화유산으로 지정되었다.
 # ::note
 
 
@@ -3860,7 +3927,7 @@
 
 
 # ::id snt1.932.025_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  얼마 전, 이 궁궐의 정문인 돈화문 앞에서 시작되는 어도의 복원 계획이 발표되었는데, 1997년 세계문화유산으로 등록된 이 궁궐은 무엇일까?
+# ::snt 얼마 전, 이 궁궐의 정문인 돈화문 앞에서 시작되는 어도의 복원 계획이 발표되었는데, 1997년 세계문화유산으로 등록된 이 궁궐은 무엇일까?
 # ::note
 
 
@@ -3874,7 +3941,7 @@
 
 
 # ::id snt1.932.026_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  태아의 신경과 혈관 발달에 중요하기 때문에, 임신전과 임신 초기인 임신부에게 권장되기도 한다.
+# ::snt 태아의 신경과 혈관 발달에 중요하기 때문에, 임신전과 임신 초기인 임신부에게 권장되기도 한다.
 # ::note
 
 
@@ -3895,7 +3962,7 @@
 
 
 # ::id snt1.932.026_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  비타민 B군에 속하는 수용성 비타민인 이것은 무엇일까?
+# ::snt 비타민 B군에 속하는 수용성 비타민인 이것은 무엇일까?
 # ::note
 
 
@@ -3930,7 +3997,7 @@
 
 
 # ::id snt1.932.027_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  젊은 시절에 김현은 흥륜사(興輪寺)에서 탑돌이를 하다가 호랑이가 현신(現身)한 처녀를 만나 정을 통하였음.
+# ::snt 젊은 시절에 김현은 흥륜사(興輪寺)에서 탑돌이를 하다가 호랑이가 현신(現身)한 처녀를 만나 정을 통하였음.
 # ::note
 
 
@@ -3944,7 +4011,7 @@
 
 
 # ::id snt1.932.027_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  원성왕 때 흥륜사(興輪寺)의 복회(福會)에 참가, 복을 빌기 위해 전탑(殿塔)을 돌다가 뒤따르는 처녀와 만나 정을 통하고 그녀의 거처로 갔으나, 뜻밖에 처녀가 호랑이 일족(一族)으로서 사람으로 화신(化身)한 것을 알게 되었다.
+# ::snt 원성왕 때 흥륜사(興輪寺)의 복회(福會)에 참가, 복을 빌기 위해 전탑(殿塔)을 돌다가 뒤따르는 처녀와 만나 정을 통하고 그녀의 거처로 갔으나, 뜻밖에 처녀가 호랑이 일족(一族)으로서 사람으로 화신(化身)한 것을 알게 되었다.
 # ::note
 
 
@@ -3958,7 +4025,7 @@
 
 
 # ::id snt1.932.027_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 동물은 무엇일까?
+# ::snt 이 동물은 무엇일까?
 # ::note
 
 
@@ -3972,14 +4039,14 @@
 
 
 # ::id snt1.932.028_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  단군조선부터 고려까지를 기전체로 기술했다.
+# ::snt 단군조선부터 고려까지를 기전체로 기술했다.
 # ::note
 
 
 
 
 # ::id snt2.932.028_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  단군조선에서 고려시대까지의 한반도 역사를 한치윤이 원편 70편을, 그의 조카 한진서(韓鎭書)가 속편 15권을 편술한 것으로, 한반도 서적 이외에 중국·일본 등 외국의 서목 550여 종에서 자료를 뽑은 것이 특징이다.
+# ::snt 단군조선에서 고려시대까지의 한반도 역사를 한치윤이 원편 70편을, 그의 조카 한진서(韓鎭書)가 속편 15권을 편술한 것으로, 한반도 서적 이외에 중국·일본 등 외국의 서목 550여 종에서 자료를 뽑은 것이 특징이다.
 # ::note
 
 
@@ -3993,7 +4060,7 @@
 
 
 # ::id snt1.932.028_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  우리나라의 것은 물론 중국과 일본의 역사책에서 단군에서 고려 시대까지의 우리나라에 관한 기록을 뽑아서 엮었다.
+# ::snt 우리나라의 것은 물론 중국과 일본의 역사책에서 단군에서 고려 시대까지의 우리나라에 관한 기록을 뽑아서 엮었다.
 # ::note
 
 
@@ -4028,7 +4095,7 @@
 
 
 # ::id snt1.932.028_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  객관성을 유지하기 위해 외국 사료를 인용하고 편찬자의 해석과 여러 글에 대한 고증을 포함해 집필한 이 책은 무엇일까?
+# ::snt 객관성을 유지하기 위해 외국 사료를 인용하고 편찬자의 해석과 여러 글에 대한 고증을 포함해 집필한 이 책은 무엇일까?
 # ::note
 
 
@@ -4042,7 +4109,7 @@
 
 
 # ::id snt1.932.029_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그 지역에서 나지 않는 어란상 석회암으로 만들어졌으며 석간주로 칠해졌다.
+# ::snt 그 지역에서 나지 않는 어란상 석회암으로 만들어졌으며 석간주로 칠해졌다.
 # ::note
 
 
@@ -4063,35 +4130,35 @@
 
 
 # ::id snt1.932.029_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  젖가슴과 배, 엉덩이가 풍만하게 강조된 이 여인상은 아마도 다산을 상징하는 숭배물이었던 것으로 보인다.
+# ::snt 젖가슴과 배, 엉덩이가 풍만하게 강조된 이 여인상은 아마도 다산을 상징하는 숭배물이었던 것으로 보인다.
 # ::note
 
 
 
 
 # ::id snt0.932.029_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1909년 철도 공사 때, 구석기시대 후기의 석회석제 환조(九彫) 여성나체상(비너스 상)이 출토되었다.
+# ::snt 1909년 철도 공사 때, 구석기시대 후기의 석회석제 환조(九彫) 여성나체상(비너스 상)이 출토되었다.
 # ::note
 
 
 
 
 # ::id snt1.932.029_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  『빌렌도르프의 비너스』라고 부르는 이 조각은 젖가슴, 배, 엉덩이가 유난히 튀어 나왔고 높이 11cm의 전신에 붉은 색을 칠한 상이었다.
+# ::snt 『빌렌도르프의 비너스』라고 부르는 이 조각은 젖가슴, 배, 엉덩이가 유난히 튀어 나왔고 높이 11cm의 전신에 붉은 색을 칠한 상이었다.
 # ::note
 
 
 
 
 # ::id snt2.932.029_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  머리털은 등근 테를 겹쳐 놓은 것 같이 잘 손질되어 있었으나 얼굴에는 전혀 관심이 없었는지 눈 ∙ 코조차 그리지 않았다.
+# ::snt 머리털은 등근 테를 겹쳐 놓은 것 같이 잘 손질되어 있었으나 얼굴에는 전혀 관심이 없었는지 눈 ∙ 코조차 그리지 않았다.
 # ::note
 
 
 
 
 # ::id snt3.932.029_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  출산 주술에 관계되는 것 같이 생각된다.
+# ::snt 출산 주술에 관계되는 것 같이 생각된다.
 # ::note
 
 
@@ -4105,14 +4172,14 @@
 
 
 # ::id snt1.932.029_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  높이 11㎝로 유방·배·엉덩이 등을 과장되게 조각하였다.
+# ::snt 높이 11㎝로 유방·배·엉덩이 등을 과장되게 조각하였다.
 # ::note
 
 
 
 
 # ::id snt2.932.029_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  출산과 풍요를 기원하는 주술적 의미를 지니고 있다.
+# ::snt 출산과 풍요를 기원하는 주술적 의미를 지니고 있다.
 # ::note
 
 
@@ -4126,7 +4193,7 @@
 
 
 # ::id snt1.932.029_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  출토된 지역의 이름을 따 '이곳의 비너스'라고 불리는데, 이곳은 어디일까?
+# ::snt 출토된 지역의 이름을 따 '이곳의 비너스'라고 불리는데, 이곳은 어디일까?
 # ::note
 
 
@@ -4140,7 +4207,7 @@
 
 
 # ::id snt1.932.030_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  인드라와 같은 신에 대적하는 악한 무리로 나타난다.
+# ::snt 인드라와 같은 신에 대적하는 악한 무리로 나타난다.
 # ::note
 
 
@@ -4154,7 +4221,7 @@
 
 
 # ::id snt1.932.030_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  싸우기를 좋아하는 귀신으로, 항상 제석천과 싸움을 벌인다.
+# ::snt 싸우기를 좋아하는 귀신으로, 항상 제석천과 싸움을 벌인다.
 # ::note
 
 
@@ -4168,21 +4235,21 @@
 
 
 # ::id snt1.932.030_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  귀신들의 왕으로 얼굴이 셋이고 팔이 여섯리며 아귀의 세계에서 싸우기를 좋아한다고 한다.
+# ::snt 귀신들의 왕으로 얼굴이 셋이고 팔이 여섯리며 아귀의 세계에서 싸우기를 좋아한다고 한다.
 # ::note
 
 
 
 
 # ::id snt0.932.030_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  아수라는 지혜는 있으나 싸우기를 좋아하는 존재로서 얼굴이 셋이고 팔이 여섯 개이다.
+# ::snt 아수라는 지혜는 있으나 싸우기를 좋아하는 존재로서 얼굴이 셋이고 팔이 여섯 개이다.
 # ::note
 
 
 
 
 # ::id snt1.932.030_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 세계는 십선과 오계(五戒)를 닦은 이들이 태어나는 곳이지만, 그들에게 분노의 마음이 많았으므로 이곳에 태어나서도 싸우기를 즐기게 된다고 한다.
+# ::snt 이 세계는 십선과 오계(五戒)를 닦은 이들이 태어나는 곳이지만, 그들에게 분노의 마음이 많았으므로 이곳에 태어나서도 싸우기를 즐기게 된다고 한다.
 # ::note
 
 
@@ -4196,7 +4263,7 @@
 
 
 # ::id snt1.932.030_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  귀신들의 왕으로 얼굴이 셋이고 팔이 여섯이며 아귀의 세계에서 싸우기를 좋아한다고 알려진 이 신의 이름은 무엇일까?
+# ::snt 귀신들의 왕으로 얼굴이 셋이고 팔이 여섯이며 아귀의 세계에서 싸우기를 좋아한다고 알려진 이 신의 이름은 무엇일까?
 # ::note
 
 
@@ -4217,14 +4284,14 @@
 
 
 # ::id snt1.932.031_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  호는 춘사(春史).
+# ::snt 호는 춘사(春史).
 # ::note
 
 
 
 
 # ::id snt2.932.031_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  한국 영화의 선구자로 23세 때부터 영화계에서 활약하였으며, 작품에 <금붕어>, <아리랑>, <벙어리 삼룡이> 따위가 있다.
+# ::snt 한국 영화의 선구자로 23세 때부터 영화계에서 활약하였으며, 작품에 <금붕어>, <아리랑>, <벙어리 삼룡이> 따위가 있다.
 # ::note
 
 
@@ -4238,7 +4305,7 @@
 
 
 # ::id snt1.932.031_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  《아리랑》, 《벙어리 삼룡》, 《오몽녀》등의 영화를 제작하였다.
+# ::snt 《아리랑》, 《벙어리 삼룡》, 《오몽녀》등의 영화를 제작하였다.
 # ::note
 
 
@@ -4266,7 +4333,7 @@
 
 
 # ::id snt1.932.031_Q_01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  '아리랑'의 시나리오를 썼으며 감독과 주연을 맡았던 이 사람은 누구일까?
+# ::snt '아리랑'의 시나리오를 썼으며 감독과 주연을 맡았던 이 사람은 누구일까?
 # ::note
 
 
@@ -4280,7 +4347,7 @@
 
 
 # ::id snt1.932.032_Q_01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  지름은 약 14cm이며 흔히 '이 나라'의 미소로 불리는데, '이 나라'는 어디일까?
+# ::snt 지름은 약 14cm이며 흔히 '이 나라'의 미소로 불리는데, '이 나라'는 어디일까?
 # ::note
 
 
@@ -4301,7 +4368,7 @@
 
 
 # ::id snt1.932.033_Q_01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 사람은 누구일까?
+# ::snt 이 사람은 누구일까?
 # ::note
 
 
@@ -4315,14 +4382,14 @@
 
 
 # ::id snt1.932.034_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이를 홍경래의 난이라고 한다.
+# ::snt 이를 홍경래의 난이라고 한다.
 # ::note
 
 
 
 
 # ::id snt2.932.034_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  세력이 최고조에 이르렀을 때는 청천강 이북을 거의 지배했다.
+# ::snt 세력이 최고조에 이르렀을 때는 청천강 이북을 거의 지배했다.
 # ::note
 
 
@@ -4343,7 +4410,7 @@
 
 
 # ::id snt1.932.034_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1798년에 평양의 향시에 합격하고 소과(小科)에 응하였으나 지방을 차별하는 폐습 때문에 낙방하자 이에 불만을 품고 1811년에 평안북도 가산에서 군사를 일으켜 혁명을 꾀하다가 이듬해 정주에서 패하여 죽었다.
+# ::snt 1798년에 평양의 향시에 합격하고 소과(小科)에 응하였으나 지방을 차별하는 폐습 때문에 낙방하자 이에 불만을 품고 1811년에 평안북도 가산에서 군사를 일으켜 혁명을 꾀하다가 이듬해 정주에서 패하여 죽었다.
 # ::note
 
 
@@ -4357,7 +4424,7 @@
 
 
 # ::id snt1.932.034_A.04_ver ::date 2019-09-27 ::annotator gabrielle ::preferred True
-# ::snt  이듬해 관군에게 진압되었다.
+# ::snt 이듬해 관군에게 진압되었다.
 # ::note
 (진 / 진압-01
     :ARG0 (관 / 관군)
@@ -4455,7 +4522,7 @@
 
 
 # ::id snt1.933.001_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  놀부가 이 소식을 듣고 제비 새끼의 다리를 일부러 부러뜨려 날려 보냈다.
+# ::snt 놀부가 이 소식을 듣고 제비 새끼의 다리를 일부러 부러뜨려 날려 보냈다.
 # ::note
 
 
@@ -4679,21 +4746,21 @@
 
 
 # ::id snt1.933.005_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  신라의 건국 초기(기원전 57년)부터 신라 멸망(935년)까지 서라벌(徐羅伐), 금성(金城) 등으로 다양하게 불렸으며 992년 동안 신라의 수도였다.
+# ::snt 신라의 건국 초기(기원전 57년)부터 신라 멸망(935년)까지 서라벌(徐羅伐), 금성(金城) 등으로 다양하게 불렸으며 992년 동안 신라의 수도였다.
 # ::note
 
 
 
 
 # ::id snt2.933.005_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  현재의 이름인 '경주'로 불린 것은 935년(고려 태조 18년)이다.
+# ::snt 현재의 이름인 '경주'로 불린 것은 935년(고려 태조 18년)이다.
 # ::note
 
 
 
 
 # ::id snt3.933.005_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이후 동경, 계림부 등으로 바뀌었다가 조선 시대에 다시 경주로 바뀌었다.
+# ::snt 이후 동경, 계림부 등으로 바뀌었다가 조선 시대에 다시 경주로 바뀌었다.
 # ::note
 
 
@@ -4855,14 +4922,14 @@
 
 
 # ::id snt1.933.007_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  광화문은 경복궁과 함께 조선 건국 직후인 1395년(태조 4년) 건립됐다.
+# ::snt 광화문은 경복궁과 함께 조선 건국 직후인 1395년(태조 4년) 건립됐다.
 # ::note
 
 
 
 
 # ::id snt2.933.007_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  건립 당시 이름은 사정문(四正門)이었으나 이후 1425년(세종 7년)에 '왕의 큰 덕(德)이 온 나라를 비춘다'는 의미의 광화문(光化門)으로 이름을 바꿨다.
+# ::snt 건립 당시 이름은 사정문(四正門)이었으나 이후 1425년(세종 7년)에 '왕의 큰 덕(德)이 온 나라를 비춘다'는 의미의 광화문(光化門)으로 이름을 바꿨다.
 # ::note
 
 
@@ -4939,7 +5006,7 @@
 
 
 # ::id snt1.933.008_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  간장, 된장, 고추장 따위를 담그는 원료로 쓴다.
+# ::snt 간장, 된장, 고추장 따위를 담그는 원료로 쓴다.
 # ::note
 
 
@@ -4953,7 +5020,7 @@
 
 
 # ::id snt1.933.008_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  된장, 고추장을 만들 때 쓰는 이것은 무엇일까?
+# ::snt 된장, 고추장을 만들 때 쓰는 이것은 무엇일까?
 # ::note
 
 
@@ -5009,7 +5076,7 @@
 
 
 # ::id snt1.933.009_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  '이것'은 무엇일까?
+# ::snt '이것'은 무엇일까?
 # ::note
 
 
@@ -5023,21 +5090,21 @@
 
 
 # ::id snt1.933.010_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  동지팥죽에는 찹쌀을 동그랗게 빚은 새알심을 나이수만큼 넣어 먹었는데, 이 때문에 동지를 지나야 한 살 더 먹는다는 말도 있었다.
+# ::snt 동지팥죽에는 찹쌀을 동그랗게 빚은 새알심을 나이수만큼 넣어 먹었는데, 이 때문에 동지를 지나야 한 살 더 먹는다는 말도 있었다.
 # ::note
 
 
 
 
 # ::id snt2.933.010_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  전통적으로 한국의 민간신앙에서, 빨간색은 귀신들이 두려워하는 색깔이므로 붉은팥으로 끓인 팥죽에는 액운을 물리치는 신비한 능력이 있다고 여겨졌다.
+# ::snt 전통적으로 한국의 민간신앙에서, 빨간색은 귀신들이 두려워하는 색깔이므로 붉은팥으로 끓인 팥죽에는 액운을 물리치는 신비한 능력이 있다고 여겨졌다.
 # ::note
 
 
 
 
 # ::id snt3.933.010_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  따라서 팥죽을 끓이고 먹는 풍습은 잡귀가 가져오는 불운이나 전염병을 막기 위한 주술적인 의미가 있었는데, 팥죽을 먹기 전에 집안의 사당에 팥죽을 먼저 올리고, 부엌, 창고, 대문, 마당 등 집안 곳곳에 뿌렸다.
+# ::snt 따라서 팥죽을 끓이고 먹는 풍습은 잡귀가 가져오는 불운이나 전염병을 막기 위한 주술적인 의미가 있었는데, 팥죽을 먹기 전에 집안의 사당에 팥죽을 먼저 올리고, 부엌, 창고, 대문, 마당 등 집안 곳곳에 뿌렸다.
 # ::note
 
 
@@ -5058,14 +5125,14 @@
 
 
 # ::id snt1.933.010_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  동짓날 팥죽을 쑤어 먹기에 앞서 대문이나 장독대에 뿌리면 귀신을 쫓고 재앙을 면할 수 있다고 여겼다.
+# ::snt 동짓날 팥죽을 쑤어 먹기에 앞서 대문이나 장독대에 뿌리면 귀신을 쫓고 재앙을 면할 수 있다고 여겼다.
 # ::note
 
 
 
 
 # ::id snt2.933.010_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이사하거나 새 집을 지었을 때에도 팥죽을 쑤어 집 안팎에 뿌리고, 이웃과 나누어 먹는 풍습이 있다.
+# ::snt 이사하거나 새 집을 지었을 때에도 팥죽을 쑤어 집 안팎에 뿌리고, 이웃과 나누어 먹는 풍습이 있다.
 # ::note
 
 
@@ -5086,7 +5153,7 @@
 
 
 # ::id snt1.933.010_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  구성원 각각의 나이대로 새알심을 넣어 먹기도 했으며 동짓날에 먹는 이 음식은 무엇일까?
+# ::snt 구성원 각각의 나이대로 새알심을 넣어 먹기도 했으며 동짓날에 먹는 이 음식은 무엇일까?
 # ::note
 
 
@@ -5219,14 +5286,14 @@
 
 
 # ::id snt1.933.012_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  여러 사람이 함께 손을 잡고 원을 그리며 빙빙 돌면서 춤을 추고 노래를 부른다.
+# ::snt 여러 사람이 함께 손을 잡고 원을 그리며 빙빙 돌면서 춤을 추고 노래를 부른다.
 # ::note
 
 
 
 
 # ::id snt2.933.012_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  2009년에 유네스코 세계 무형 유산으로 지정되었다.
+# ::snt 2009년에 유네스코 세계 무형 유산으로 지정되었다.
 # ::note
 
 
@@ -5240,7 +5307,7 @@
 
 
 # ::id snt1.933.012_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt   해마다 음력 8월 한가윗날 밤에, 곱게 단장한 부녀자들이 수십 명씩 일정한 장소에 모여 손에 손을 잡고 원형으로 늘어서서, ‘강강술래’라는 후렴이 붙은 노래를 부르며 빙글빙글 돌면서 뛰노는 놀이이다.
+# ::snt  해마다 음력 8월 한가윗날 밤에, 곱게 단장한 부녀자들이 수십 명씩 일정한 장소에 모여 손에 손을 잡고 원형으로 늘어서서, ‘강강술래’라는 후렴이 붙은 노래를 부르며 빙글빙글 돌면서 뛰노는 놀이이다.
 # ::note
 
 
@@ -5261,14 +5328,14 @@
 
 
 # ::id snt1.933.012_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  밝은 보름달이 뜬 밤에 수십 명의 마을 처녀들이 모여서 손을 맞잡아 둥그렇게 원을 만들어 돌며, 한 사람이 ‘강강술래’의 앞부분을 선창(先唱)하면 뒷소리를 하는 여러 사람이 이어받아 노래를 부른다.
+# ::snt 밝은 보름달이 뜬 밤에 수십 명의 마을 처녀들이 모여서 손을 맞잡아 둥그렇게 원을 만들어 돌며, 한 사람이 ‘강강술래’의 앞부분을 선창(先唱)하면 뒷소리를 하는 여러 사람이 이어받아 노래를 부른다.
 # ::note
 
 
 
 
 # ::id snt2.933.012_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이러한 놀이는 밤새도록 춤을 추며 계속되며 원무를 도는 도중에 민속놀이를 곁들인다.
+# ::snt 이러한 놀이는 밤새도록 춤을 추며 계속되며 원무를 도는 도중에 민속놀이를 곁들인다.
 # ::note
 
 
@@ -5282,7 +5349,7 @@
 
 
 # ::id snt1.933.012_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  여러 사람이 함께 손을 잡고 원을 그리며 빙빙 돌면서 춤을 추고 노래를 부르는 이 놀이는 무엇일까?
+# ::snt 여러 사람이 함께 손을 잡고 원을 그리며 빙빙 돌면서 춤을 추고 노래를 부르는 이 놀이는 무엇일까?
 # ::note
 
 
@@ -5296,7 +5363,7 @@
 
 
 # ::id snt1.933.013_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  섬은 제주도의 모슬포항으로부터 남쪽으로 11 km 떨어진 동중국해 북부에 위치하고 있다.
+# ::snt 섬은 제주도의 모슬포항으로부터 남쪽으로 11 km 떨어진 동중국해 북부에 위치하고 있다.
 # ::note
 
 
@@ -5310,7 +5377,7 @@
 
 
 # ::id snt1.933.013_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  우리나라에서 가장 남쪽에 있는 섬이며, 네덜란드의 하멜 일행이 표류하여 도착한 곳으로 유명하다.
+# ::snt 우리나라에서 가장 남쪽에 있는 섬이며, 네덜란드의 하멜 일행이 표류하여 도착한 곳으로 유명하다.
 # ::note
 
 
@@ -5345,7 +5412,7 @@
 
 
 # ::id snt1.933.013_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  최고점의 해발고도가 약 39m인 평평한 섬으로 우리나라 최남단에 있는 이 섬은 어디일까?
+# ::snt 최고점의 해발고도가 약 39m인 평평한 섬으로 우리나라 최남단에 있는 이 섬은 어디일까?
 # ::note
 
 
@@ -5373,7 +5440,7 @@
 
 
 # ::id snt1.933.014_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  우리나라에는 전 세계 고인돌의 60%인 약 3만 개가 존재한다.
+# ::snt 우리나라에는 전 세계 고인돌의 60%인 약 3만 개가 존재한다.
 # ::note
 
 
@@ -5387,7 +5454,7 @@
 
 
 # ::id snt1.933.014_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  전국에 걸쳐 분포하며 한강을 경계로 북방식(테이블형)과 남방식(바둑판식)의 두 형태가 있다.
+# ::snt 전국에 걸쳐 분포하며 한강을 경계로 북방식(테이블형)과 남방식(바둑판식)의 두 형태가 있다.
 # ::note
 
 
@@ -5401,14 +5468,14 @@
 
 
 # ::id snt1.933.014_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  고인돌은 지역에 따라 호칭이 다른데, 한국과 일본에서는 지석묘(支石墓), 중국에서는 석붕(石棚), 구라파 등지에서는 돌멘(Dolmen) 등의 명칭을 사용하고 있다.
+# ::snt 고인돌은 지역에 따라 호칭이 다른데, 한국과 일본에서는 지석묘(支石墓), 중국에서는 석붕(石棚), 구라파 등지에서는 돌멘(Dolmen) 등의 명칭을 사용하고 있다.
 # ::note
 
 
 
 
 # ::id snt2.933.014_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그리고 2000년도에는 강화의 부근리·삼거리·오상리의 약 120여 기(基)의 고인돌군, 고창 상갑리·죽림리 등 고창군 전역 205군집(群集) 총 1,665기의 고인돌, 화순 효산리·대신리의 고인돌 500여 기 등이 세계문화유산(世界文化遺産)으로 등재되어 전 세계적인 관심 속에 보존·관리되고 있다.
+# ::snt 그리고 2000년도에는 강화의 부근리·삼거리·오상리의 약 120여 기(基)의 고인돌군, 고창 상갑리·죽림리 등 고창군 전역 205군집(群集) 총 1,665기의 고인돌, 화순 효산리·대신리의 고인돌 500여 기 등이 세계문화유산(世界文化遺産)으로 등재되어 전 세계적인 관심 속에 보존·관리되고 있다.
 # ::note
 
 
@@ -5422,7 +5489,7 @@
 
 
 # ::id snt1.933.014_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  2000년에는 이 문화유산이 다수 분포되어 있는 고창, 화순, 강화의 유적이 유네스코 세계 유산으로 지정됐는데, 청동기 시대 지배층의 권력을 보여주는 이 문화유산은 무엇일까?
+# ::snt 2000년에는 이 문화유산이 다수 분포되어 있는 고창, 화순, 강화의 유적이 유네스코 세계 유산으로 지정됐는데, 청동기 시대 지배층의 권력을 보여주는 이 문화유산은 무엇일까?
 # ::note
 
 
@@ -5457,14 +5524,14 @@
 
 
 # ::id snt1.933.015_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  껍데기에는 부챗살마루가 있다.
+# ::snt 껍데기에는 부챗살마루가 있다.
 # ::note
 
 
 
 
 # ::id snt2.933.015_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  9~10월에 산란하며 모래 진흙 속에 산다.
+# ::snt 9~10월에 산란하며 모래 진흙 속에 산다.
 # ::note
 
 
@@ -5478,7 +5545,7 @@
 
 
 # ::id snt1.933.015_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  바깥 면에는 갈색의 융모가 없고 기와골 모양으로 두드러진 골이 방사상으로 17~18 줄이 나있으며 연한 회갈색이다.
+# ::snt 바깥 면에는 갈색의 융모가 없고 기와골 모양으로 두드러진 골이 방사상으로 17~18 줄이 나있으며 연한 회갈색이다.
 # ::note
 
 
@@ -5492,7 +5559,7 @@
 
 
 # ::id snt1.933.015_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  남서해안의 갯벌에 주로 서식하며 전라남도 벌교읍의 특산물이기도 한 이것은 무엇일까?
+# ::snt 남서해안의 갯벌에 주로 서식하며 전라남도 벌교읍의 특산물이기도 한 이것은 무엇일까?
 # ::note
 
 
@@ -5506,7 +5573,7 @@
 
 
 # ::id snt1.933.016_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1962년 12월 20일 대한민국의 국보 제32호로 지정되었다.
+# ::snt 1962년 12월 20일 대한민국의 국보 제32호로 지정되었다.
 # ::note
 
 
@@ -5520,7 +5587,7 @@
 
 
 # ::id snt1.933.016_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  부처의 힘으로 외적을 물리치기 위하여 만들었는데, 경판(經板)의 수가 8만 1258판에 이르며 현재 합천 해인사에 보관하고 있다.
+# ::snt 부처의 힘으로 외적을 물리치기 위하여 만들었는데, 경판(經板)의 수가 8만 1258판에 이르며 현재 합천 해인사에 보관하고 있다.
 # ::note
 
 
@@ -5562,7 +5629,7 @@
 
 
 # ::id snt1.933.017_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  둘레의 여덟 칸에 각각 여덟 가지 음식을 담고, 가운데 둥근 칸에는 밀전병을 담아 둘레의 음식을 골고루 조금씩 집어 밀전병에 싸서 먹는다.
+# ::snt 둘레의 여덟 칸에 각각 여덟 가지 음식을 담고, 가운데 둥근 칸에는 밀전병을 담아 둘레의 음식을 골고루 조금씩 집어 밀전병에 싸서 먹는다.
 # ::note
 
 
@@ -5576,7 +5643,7 @@
 
 
 # ::id snt1.933.017_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  둘레의 여덟 칸에 각각 여덟 가지 음식을 담고, 가운데 둥근 칸에는 밀전병을 담아 두어, 둘레의 음식을 골고루 조금씩 전병에 싸서 먹는다.
+# ::snt 둘레의 여덟 칸에 각각 여덟 가지 음식을 담고, 가운데 둥근 칸에는 밀전병을 담아 두어, 둘레의 음식을 골고루 조금씩 전병에 싸서 먹는다.
 # ::note
 
 
@@ -5611,7 +5678,7 @@
 
 
 # ::id snt1.933.017_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  원래는 아홉 칸으로 나뉜 나무그릇을 뜻했으나, 세월이 흐르면서 그 자체가 음식 이름으로 변해버렸는데 이 음식은 무엇일까?
+# ::snt 원래는 아홉 칸으로 나뉜 나무그릇을 뜻했으나, 세월이 흐르면서 그 자체가 음식 이름으로 변해버렸는데 이 음식은 무엇일까?
 # ::note
 
 
@@ -5625,7 +5692,7 @@
 
 
 # ::id snt1.933.018_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  정약용에 의해 고안되었다고 하며 화성성역의궤에 설계도가 실려 있다.
+# ::snt 정약용에 의해 고안되었다고 하며 화성성역의궤에 설계도가 실려 있다.
 # ::note
 
 
@@ -5667,7 +5734,7 @@
 
 
 # ::id snt1.933.018_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  거중기를 고안한 사람으로 조선 후기 대표적인 실학자는 누구일까?
+# ::snt 거중기를 고안한 사람으로 조선 후기 대표적인 실학자는 누구일까?
 # ::note
 
 
@@ -5716,7 +5783,7 @@
 
 
 # ::id snt1.933.019_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  조선 시기에는 이것이 매우 귀했기 때문에 타락죽은 왕의 보양식으로 진상됐는데, 이것의 옛말인 '타락'은 무엇일까?
+# ::snt 조선 시기에는 이것이 매우 귀했기 때문에 타락죽은 왕의 보양식으로 진상됐는데, 이것의 옛말인 '타락'은 무엇일까?
 # ::note
 
 
@@ -5737,7 +5804,7 @@
 
 
 # ::id snt1.933.020_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  2014 인천 아시안게임 홍보대사였으며 한국을 대표하는 성악가인 이 사람은 누구일까?
+# ::snt 2014 인천 아시안게임 홍보대사였으며 한국을 대표하는 성악가인 이 사람은 누구일까?
 # ::note
 
 
@@ -5772,14 +5839,14 @@
 
 
 # ::id snt1.933.021_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  품(일하다)과 앗이(교환하다)가 결합된 말이다.
+# ::snt 품(일하다)과 앗이(교환하다)가 결합된 말이다.
 # ::note
 
 
 
 
 # ::id snt2.933.021_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  남의 집에 가서 농사나 사사로운 일을 거들어 주면, 다른 사람도 일을 도와주는 상부상조 방식으로 대가성 없는 노동 교환 방식이다.
+# ::snt 남의 집에 가서 농사나 사사로운 일을 거들어 주면, 다른 사람도 일을 도와주는 상부상조 방식으로 대가성 없는 노동 교환 방식이다.
 # ::note
 
 
@@ -5793,7 +5860,7 @@
 
 
 # ::id snt1.933.021_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이렇게 노동력을 공유하는 전통을 나타내는 순우리말은 무엇일까?
+# ::snt 이렇게 노동력을 공유하는 전통을 나타내는 순우리말은 무엇일까?
 # ::note
 
 
@@ -5877,7 +5944,7 @@
 
 
 # ::id snt1.933.023_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  거란의 침입을 귀주에서 격파해 대승을 거둔 고려의 명장인 이 사람은 누구일까?
+# ::snt 거란의 침입을 귀주에서 격파해 대승을 거둔 고려의 명장인 이 사람은 누구일까?
 # ::note
 
 
@@ -5891,7 +5958,7 @@
 
 
 # ::id snt1.933.024_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  지금 흐르는 타령의 이름은 무엇일까?
+# ::snt 지금 흐르는 타령의 이름은 무엇일까?
 # ::note
 
 
@@ -5912,7 +5979,7 @@
 
 
 # ::id snt1.933.025_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  2018년 동계올림픽 개최 예정지이기도 한 이 지역은 어디일까?
+# ::snt 2018년 동계올림픽 개최 예정지이기도 한 이 지역은 어디일까?
 # ::note
 
 
@@ -5926,7 +5993,7 @@
 
 
 # ::id snt1.933.026_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  새끼 따위로 엮어 말려서 보관하다가 볶거나 국을 끓이는 데 쓴다.
+# ::snt 새끼 따위로 엮어 말려서 보관하다가 볶거나 국을 끓이는 데 쓴다.
 # ::note
 
 
@@ -5954,7 +6021,7 @@
 
 
 # ::id snt1.933.026_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  구수한 맛과 부드러운 식감이 특징이며 무청을 말린 것을 뜻하는데 이것은 무엇일까?
+# ::snt 구수한 맛과 부드러운 식감이 특징이며 무청을 말린 것을 뜻하는데 이것은 무엇일까?
 # ::note
 
 
@@ -5996,7 +6063,7 @@
 
 
 # ::id snt1.934.001_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  여기서 '차반'은 무엇일까?
+# ::snt 여기서 '차반'은 무엇일까?
 # ::note
 
 
@@ -6010,7 +6077,7 @@
 
 
 # ::id snt1.934.002_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  기원전 2000년 경에 수메르에서 쓰였으며, 이는 바빌로니아 문명으로 전파되었다.
+# ::snt 기원전 2000년 경에 수메르에서 쓰였으며, 이는 바빌로니아 문명으로 전파되었다.
 # ::note
 
 
@@ -6024,7 +6091,7 @@
 
 
 # ::id snt1.934.002_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  천문학에 뛰어났던 고대 바빌로니아인들은 1년이 360일로 이루어져 있음을 알았고, 이를 표기하기 위해서는 60진법이 편리하다는 사실 또한 누구보다 먼저 깨달았다.
+# ::snt 천문학에 뛰어났던 고대 바빌로니아인들은 1년이 360일로 이루어져 있음을 알았고, 이를 표기하기 위해서는 60진법이 편리하다는 사실 또한 누구보다 먼저 깨달았다.
 # ::note
 
 
@@ -6045,7 +6112,7 @@
 
 
 # ::id snt1.934.002_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이를 토대로 바빌로니아인들은 수를 계산할 때 이 수를 한 단위로 계산하는 진법을 사용한 것을 알 수 있었는데, 이 수는 얼마일까?
+# ::snt 이를 토대로 바빌로니아인들은 수를 계산할 때 이 수를 한 단위로 계산하는 진법을 사용한 것을 알 수 있었는데, 이 수는 얼마일까?
 # ::note
 
 
@@ -6115,14 +6182,14 @@
 
 
 # ::id snt1.934.005_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  무르고 흰색의 빛나는 전이 금속으로 다른 금속에 비해 전기와 열의 전도도가 뛰어나다.
+# ::snt 무르고 흰색의 빛나는 전이 금속으로 다른 금속에 비해 전기와 열의 전도도가 뛰어나다.
 # ::note
 
 
 
 
 # ::id snt2.934.005_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  은 광석 또는 순은 형태로 산출되며, 주화, 장신구, 식기, 사진, 은메달 등에 사용된다.
+# ::snt 은 광석 또는 순은 형태로 산출되며, 주화, 장신구, 식기, 사진, 은메달 등에 사용된다.
 # ::note
 
 
@@ -6136,28 +6203,28 @@
 
 
 # ::id snt1.934.005_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  흰 광택이 있고 무르며 늘어나고 펴지는 성질이 금 다음으로 강하고, 전기 전도율과 열전도율은 금속 가운데 가장 높다.
+# ::snt 흰 광택이 있고 무르며 늘어나고 펴지는 성질이 금 다음으로 강하고, 전기 전도율과 열전도율은 금속 가운데 가장 높다.
 # ::note
 
 
 
 
 # ::id snt2.934.005_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  공기 중에서는 산화하지 않으나 유황 화합물에 닿으면 검은색으로 변한다.
+# ::snt 공기 중에서는 산화하지 않으나 유황 화합물에 닿으면 검은색으로 변한다.
 # ::note
 
 
 
 
 # ::id snt3.934.005_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  멕시코ㆍ미국ㆍ캐나다ㆍ페루 등지에서 나며, 화학용 기구나 화폐ㆍ장식품 따위로 쓴다.
+# ::snt 멕시코ㆍ미국ㆍ캐나다ㆍ페루 등지에서 나며, 화학용 기구나 화폐ㆍ장식품 따위로 쓴다.
 # ::note
 
 
 
 
 # ::id snt4.934.005_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  원자 기호는 Ag, 원자 번호는 47, 원자량은 107.868.
+# ::snt 원자 기호는 Ag, 원자 번호는 47, 원자량은 107.868.
 # ::note
 
 
@@ -6185,7 +6252,7 @@
 
 
 # ::id snt1.934.005_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  예로부터 많은 나라에서 귀금속으로 취급돼 화폐로 사용되기도 했고, 금속 공예품과 고급식기 등에 이용되기도 한 금속이다.
+# ::snt 예로부터 많은 나라에서 귀금속으로 취급돼 화폐로 사용되기도 했고, 금속 공예품과 고급식기 등에 이용되기도 한 금속이다.
 # ::note
 
 
@@ -6199,7 +6266,7 @@
 
 
 # ::id snt1.934.005_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  전통적으로는 화폐, 장신구, 고급 식기, 사진 등에 쓰였으며, 원자번호 47번 원소인 이것은 무엇일까?
+# ::snt 전통적으로는 화폐, 장신구, 고급 식기, 사진 등에 쓰였으며, 원자번호 47번 원소인 이것은 무엇일까?
 # ::note
 
 
@@ -10168,7 +10235,7 @@
 
 
 # ::id snt1.936.004_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이상설, 이준 등이 갔으나 일본과 영국의 방해로 뜻을 이루지 못하고 이준은 거기서 죽었다.
+# ::snt 이상설, 이준 등이 갔으나 일본과 영국의 방해로 뜻을 이루지 못하고 이준은 거기서 죽었다.
 # ::note
 
 
@@ -10336,21 +10403,21 @@
 
 
 # ::id snt1.936.008_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1991년 11월에 발매됐으며, 91년 슈퍼볼 하프타임에서 이 곡을 선보였다.
+# ::snt 1991년 11월에 발매됐으며, 91년 슈퍼볼 하프타임에서 이 곡을 선보였다.
 # ::note
 
 
 
 
 # ::id snt2.936.008_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그는 이 곡을 직접 작곡, 불렀으며, 2001년 어느 팬에게 'Heal The World'를 제작하면서 가장 자랑스럽게 느꼈다'고 했다.
+# ::snt 그는 이 곡을 직접 작곡, 불렀으며, 2001년 어느 팬에게 'Heal The World'를 제작하면서 가장 자랑스럽게 느꼈다'고 했다.
 # ::note
 
 
 
 
 # ::id snt3.936.008_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 곡은 기아나 병으로 죽어가는 아이들을 우리가 함께 도와주자는 주제로 만든 곡이며, 2009년 그가 사망한 후 7월에 로스앤젤레스에서 그의 장례식에서 불리기도했다.
+# ::snt 이 곡은 기아나 병으로 죽어가는 아이들을 우리가 함께 도와주자는 주제로 만든 곡이며, 2009년 그가 사망한 후 7월에 로스앤젤레스에서 그의 장례식에서 불리기도했다.
 # ::note
 
 
@@ -11589,7 +11656,7 @@
 
 
 # ::id snt1.936.029_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  본래 이것의 의미는 옷깃과 소매로, 옷깃과 소매는 남의 눈에 잘 띈다는 이유에서 수많은 사람 중 특출난 사람 즉 우두머리를 일컫는 말인데, 이것은 무엇일까?
+# ::snt 본래 이것의 의미는 옷깃과 소매로, 옷깃과 소매는 남의 눈에 잘 띈다는 이유에서 수많은 사람 중 특출난 사람 즉 우두머리를 일컫는 말인데, 이것은 무엇일까?
 # ::note
 
 
@@ -12030,7 +12097,7 @@
 
 
 # ::id snt1.936.036_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  뮤지컬 <오페라의 유령>, <캣츠>의 작곡가로 잘 알려진 이 사람은 누구일까?
+# ::snt 뮤지컬 <오페라의 유령>, <캣츠>의 작곡가로 잘 알려진 이 사람은 누구일까?
 # ::note
 
 
@@ -12205,7 +12272,7 @@
 
 
 # ::id snt1.938.001_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  장생포는 고래잡이로 유명하였으며(현재는 고래잡이가 금지되어 있어 침체기에 빠져 있다), 방어가 많이 잡힌다고 하여 붙여진 방어진이라는 이름은 현재까지 이어져 오고 있다.
+# ::snt 장생포는 고래잡이로 유명하였으며(현재는 고래잡이가 금지되어 있어 침체기에 빠져 있다), 방어가 많이 잡힌다고 하여 붙여진 방어진이라는 이름은 현재까지 이어져 오고 있다.
 # ::note
 
 
@@ -12226,7 +12293,7 @@
 
 
 # ::id snt1.938.001_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  6대 광역시 중 가장 마지막에 광역시로 승격된 이 지역은 어디일까?
+# ::snt 6대 광역시 중 가장 마지막에 광역시로 승격된 이 지역은 어디일까?
 # ::note
 
 
@@ -12240,14 +12307,14 @@
 
 
 # ::id snt1.938.002_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  왕방연은 단종이 영월로 귀양갈 때 호송했다.
+# ::snt 왕방연은 단종이 영월로 귀양갈 때 호송했다.
 # ::note
 
 
 
 
 # ::id snt2.938.002_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  영월서 돌아오면서 단종을 그려 읊은 시조 1수가 <청구영언> 등에 실려 전한다.
+# ::snt 영월서 돌아오면서 단종을 그려 읊은 시조 1수가 <청구영언> 등에 실려 전한다.
 # ::note
 
 
@@ -12261,7 +12328,7 @@
 
 
 # ::id snt1.938.002_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  단종이 강원도 영월로 유배될 때에 호송하였는데 그때의 심정을 읊은 시조 한 수가 전한다.
+# ::snt 단종이 강원도 영월로 유배될 때에 호송하였는데 그때의 심정을 읊은 시조 한 수가 전한다.
 # ::note
 
 
@@ -12275,14 +12342,14 @@
 
 
 # ::id snt1.938.002_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  세조 때 금부도사(禁府都事)로 있었는데 사육신(死六臣) 사건이 있은 뒤 1457년(세조 3) 왕명에 따라 상왕(上王) 단종이 노산군(魯山君)으로 격하되어 영월(寧越)로 귀양갈 때 호송하였다.
+# ::snt 세조 때 금부도사(禁府都事)로 있었는데 사육신(死六臣) 사건이 있은 뒤 1457년(세조 3) 왕명에 따라 상왕(上王) 단종이 노산군(魯山君)으로 격하되어 영월(寧越)로 귀양갈 때 호송하였다.
 # ::note
 
 
 
 
 # ::id snt2.938.002_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  당시의 심경을 읊은 시조 한 수를 남겼다.
+# ::snt 당시의 심경을 읊은 시조 한 수를 남겼다.
 # ::note
 
 
@@ -12296,7 +12363,7 @@
 
 
 # ::id snt1.938.002_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이때의 괴로운 심정을 읊은 시가 전한다.
+# ::snt 이때의 괴로운 심정을 읊은 시가 전한다.
 # ::note
 
 
@@ -12317,7 +12384,7 @@
 
 
 # ::id snt1.938.002_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  여기서 '고운님'은 어느 임금을 가리킬까?
+# ::snt 여기서 '고운님'은 어느 임금을 가리킬까?
 # ::note
 
 
@@ -12331,14 +12398,14 @@
 
 
 # ::id snt1.938.003_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  개인별로 가시광선 범위의 차이가 존재하지만 보통의 인간의 눈은 400에서 700 nm까지의 범위를 감지한다.
+# ::snt 개인별로 가시광선 범위의 차이가 존재하지만 보통의 인간의 눈은 400에서 700 nm까지의 범위를 감지한다.
 # ::note
 
 
 
 
 # ::id snt2.938.003_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  최대 380에서 800 nm까지를 감지하는 사람이 있다고 한다.
+# ::snt 최대 380에서 800 nm까지를 감지하는 사람이 있다고 한다.
 # ::note
 
 
@@ -12352,7 +12419,7 @@
 
 
 # ::id snt1.938.003_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  보통 가시광선의 파장 범위는 380~800나노미터(nm)이다.
+# ::snt 보통 가시광선의 파장 범위는 380~800나노미터(nm)이다.
 # ::note
 
 
@@ -12380,7 +12447,7 @@
 
 
 # ::id snt1.938.003_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  물리적인 빛은 눈에 색채로서 지각되는 범위의 파장 한계 내에 있는 스펙트럼이며, 대략 380~780nm(nanometer) 범위의 파장을 가진 전자파이다.
+# ::snt 물리적인 빛은 눈에 색채로서 지각되는 범위의 파장 한계 내에 있는 스펙트럼이며, 대략 380~780nm(nanometer) 범위의 파장을 가진 전자파이다.
 # ::note
 
 
@@ -12408,21 +12475,21 @@
 
 
 # ::id snt1.938.004_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  다른 말로 '술의 날' 또는 '수릿날'이라고도 한다.
+# ::snt 다른 말로 '술의 날' 또는 '수릿날'이라고도 한다.
 # ::note
 
 
 
 
 # ::id snt2.938.004_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  시기적으로 더운 여름을 맞기 전의 초하(初夏)의 계절이며, 모내기를 끝내고 풍년을 기원하는 기풍제이기도 하다.
+# ::snt 시기적으로 더운 여름을 맞기 전의 초하(初夏)의 계절이며, 모내기를 끝내고 풍년을 기원하는 기풍제이기도 하다.
 # ::note
 
 
 
 
 # ::id snt3.938.004_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  수릿떡을 해먹거나, 여자는 그네뛰기, 남자는 씨름을 한다.
+# ::snt 수릿떡을 해먹거나, 여자는 그네뛰기, 남자는 씨름을 한다.
 # ::note
 
 
@@ -12436,7 +12503,7 @@
 
 
 # ::id snt1.938.004_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  '정월령'에 제시되는 세시풍속이 아닌 것은 무엇일까?
+# ::snt '정월령'에 제시되는 세시풍속이 아닌 것은 무엇일까?
 # ::note
 
 
@@ -12457,14 +12524,14 @@
 
 
 # ::id snt1.938.005_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  고려 시대 지방 행정 조직은 5도와 양계로 구성된 2원적 행정 조직이다.
+# ::snt 고려 시대 지방 행정 조직은 5도와 양계로 구성된 2원적 행정 조직이다.
 # ::note
 
 
 
 
 # ::id snt2.938.005_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  5도는 행정적 조직으로 안찰사를 파견하였고, 양계는 군사적 조직으로 병마사를 파견하였다.
+# ::snt 5도는 행정적 조직으로 안찰사를 파견하였고, 양계는 군사적 조직으로 병마사를 파견하였다.
 # ::note
 
 
@@ -12485,7 +12552,7 @@
 
 
 # ::id snt1.938.005_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  도의 장인 안찰사는 경찰업무를 포함한 행정, 군사, 사법 등의 사무를 총괄처리 하였다.
+# ::snt 도의 장인 안찰사는 경찰업무를 포함한 행정, 군사, 사법 등의 사무를 총괄처리 하였다.
 # ::note
 
 
@@ -12499,7 +12566,7 @@
 
 
 # ::id snt1.938.005_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  5도에 파견된 장관으로, 도내의 지방을 순찰하게 한 지방관은 무엇일까?
+# ::snt 5도에 파견된 장관으로, 도내의 지방을 순찰하게 한 지방관은 무엇일까?
 # ::note
 
 
@@ -12513,14 +12580,14 @@
 
 
 # ::id snt1.938.006_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  수소 이온 농도에 따라 빨간색, 보라색, 파란색 등을 띤다.
+# ::snt 수소 이온 농도에 따라 빨간색, 보라색, 파란색 등을 띤다.
 # ::note
 
 
 
 
 # ::id snt2.938.006_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  안토시아닌은 항산화효과로 주목받는 물질인데 항산화효과는 말 그대로 산화되는 것을 막는다는 것인데 여기서 산화는 세포의 산화를 뜻한다.
+# ::snt 안토시아닌은 항산화효과로 주목받는 물질인데 항산화효과는 말 그대로 산화되는 것을 막는다는 것인데 여기서 산화는 세포의 산화를 뜻한다.
 # ::note
 
 
@@ -12534,7 +12601,7 @@
 
 
 # ::id snt1.938.006_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  안토시아닌은 블루베리, 아로니아, 체리, 흑미(黑米), 포도, 적양배추 등에 풍부하다.
+# ::snt 안토시아닌은 블루베리, 아로니아, 체리, 흑미(黑米), 포도, 적양배추 등에 풍부하다.
 # ::note
 
 
@@ -12548,7 +12615,7 @@
 
 
 # ::id snt1.938.006_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  항산화제로서 붉은 양배추 물로 지시약을 만들 수 있는 이 성분은 무엇일까?
+# ::snt 항산화제로서 붉은 양배추 물로 지시약을 만들 수 있는 이 성분은 무엇일까?
 # ::note
 
 
@@ -12583,7 +12650,7 @@
 
 
 # ::id snt1.938.007_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  유엔 사무총장의 임기는 몇 년일까?
+# ::snt 유엔 사무총장의 임기는 몇 년일까?
 # ::note
 
 
@@ -12597,14 +12664,14 @@
 
 
 # ::id snt1.938.008_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  관객이 연극적 상황에 개입하도록 설정한 작가의 의도를 알 수 있다.
+# ::snt 관객이 연극적 상황에 개입하도록 설정한 작가의 의도를 알 수 있다.
 # ::note
 
 
 
 
 # ::id snt2.938.008_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  ‘남자’는 공연 중에 객석으로 내려오고, 관객에게 질문을 던지며 관객의 적극적인 참여를 유도한다.
+# ::snt ‘남자’는 공연 중에 객석으로 내려오고, 관객에게 질문을 던지며 관객의 적극적인 참여를 유도한다.
 # ::note
 
 
@@ -12618,7 +12685,7 @@
 
 
 # ::id snt1.938.008_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 작품은 무엇일까?
+# ::snt 이 작품은 무엇일까?
 # ::note
 
 
@@ -12639,7 +12706,7 @@
 
 
 # ::id snt1.938.009_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  카자흐스탄의 수도이다.
+# ::snt 카자흐스탄의 수도이다.
 # ::note
 
 
@@ -12674,7 +12741,7 @@
 
 
 # ::id snt1.938.009_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  수도가 알마티에서 1997년 아스타나로 바뀐 이 나라의 이름은 무엇일까?
+# ::snt 수도가 알마티에서 1997년 아스타나로 바뀐 이 나라의 이름은 무엇일까?
 # ::note
 
 
@@ -12688,7 +12755,7 @@
 
 
 # ::id snt1.938.010_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그는 세종(世宗) 25년(1443년) 통신사(通信使)의 서장관으로서 일본을 방문했으며, 성종 2년(1471년)에 간행되었다.
+# ::snt 그는 세종(世宗) 25년(1443년) 통신사(通信使)의 서장관으로서 일본을 방문했으며, 성종 2년(1471년)에 간행되었다.
 # ::note
 
 
@@ -12751,7 +12818,7 @@
 
 
 # ::id snt1.938.011_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  즉시 뒤이어 날아온 것은 그러나 그레고르의 등에 호되게 들어가 박혔다.
+# ::snt 즉시 뒤이어 날아온 것은 그러나 그레고르의 등에 호되게 들어가 박혔다.
 # ::note
 
 
@@ -12765,7 +12832,7 @@
 
 
 # ::id snt1.938.011_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이것은 무엇일까?
+# ::snt 이것은 무엇일까?
 # ::note
 
 
@@ -12807,7 +12874,7 @@
 
 
 # ::id snt1.938.012_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이러한 자포동물문으로 분류되는 동물은 무엇일까?
+# ::snt 이러한 자포동물문으로 분류되는 동물은 무엇일까?
 # ::note
 
 
@@ -12856,7 +12923,7 @@
 
 
 # ::id snt1.938.013_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  왕권을 강화해 절대왕정의 토대를 마련한 이 왕은 누구일까?
+# ::snt 왕권을 강화해 절대왕정의 토대를 마련한 이 왕은 누구일까?
 # ::note
 
 
@@ -12933,7 +13000,7 @@
 
 
 # ::id snt1.938.015_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  봄을 맞이해 좋은 기운들이 집 안으로 들어오라는 뜻으로 붙이던 사자성어는 무엇일까?
+# ::snt 봄을 맞이해 좋은 기운들이 집 안으로 들어오라는 뜻으로 붙이던 사자성어는 무엇일까?
 # ::note
 
 
@@ -12947,7 +13014,7 @@
 
 
 # ::id snt1.938.016_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  무굴 제국의 황제 샤 자한이 자신의 총애하였던 부인 뭄타즈 마할로 알려진 아르주망 바누 베굼을 기리기 위하여 무덤 건축을 명하여 2만 명이 넘는 노동자를 동원하여 건설하였다.
+# ::snt 무굴 제국의 황제 샤 자한이 자신의 총애하였던 부인 뭄타즈 마할로 알려진 아르주망 바누 베굼을 기리기 위하여 무덤 건축을 명하여 2만 명이 넘는 노동자를 동원하여 건설하였다.
 # ::note
 
 
@@ -12961,7 +13028,7 @@
 
 
 # ::id snt1.938.016_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  무굴 제국의 제5대 황제 샤자한이 사랑하는 왕비를 위하여 세운 것으로, 후에 황제 자신도 여기에 묻혔다.
+# ::snt 무굴 제국의 제5대 황제 샤자한이 사랑하는 왕비를 위하여 세운 것으로, 후에 황제 자신도 여기에 묻혔다.
 # ::note
 
 
@@ -12975,7 +13042,7 @@
 
 
 # ::id snt1.938.016_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  인도 아그라(Agra)의 남쪽, 자무나(Jamuna) 강가에 자리 잡은 궁전 형식의 묘지로 무굴제국의 황제였던 샤 자한이 왕비 뭄타즈 마할을 추모하여 건축한 것이다.
+# ::snt 인도 아그라(Agra)의 남쪽, 자무나(Jamuna) 강가에 자리 잡은 궁전 형식의 묘지로 무굴제국의 황제였던 샤 자한이 왕비 뭄타즈 마할을 추모하여 건축한 것이다.
 # ::note
 
 
@@ -13010,21 +13077,21 @@
 
 
 # ::id snt1.938.017_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  어떤 원소의 동위원소는 그 원소와 같은 수의 양성자와 전자를 가지지만, 다른 수의 중성자를 가진다.
+# ::snt 어떤 원소의 동위원소는 그 원소와 같은 수의 양성자와 전자를 가지지만, 다른 수의 중성자를 가진다.
 # ::note
 
 
 
 
 # ::id snt2.938.017_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  원소의 화학적 성질은 양성자와 전자의 수에 의해 결정되므로 동위 원소의 화학적 성질은 원래 원소와 같다.
+# ::snt 원소의 화학적 성질은 양성자와 전자의 수에 의해 결정되므로 동위 원소의 화학적 성질은 원래 원소와 같다.
 # ::note
 
 
 
 
 # ::id snt3.938.017_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  하지만 중성자의 수가 달라서 질량이 다르므로 물리적 방법으로 분리할 수 있다.
+# ::snt 하지만 중성자의 수가 달라서 질량이 다르므로 물리적 방법으로 분리할 수 있다.
 # ::note
 
 
@@ -13038,7 +13105,7 @@
 
 
 # ::id snt1.938.017_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  양성자의 수는 같으나 중성자의 수가 다르다.
+# ::snt 양성자의 수는 같으나 중성자의 수가 다르다.
 # ::note
 
 
@@ -13073,7 +13140,7 @@
 
 
 # ::id snt1.938.017_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  전자 수가 같아 화학적 성질은 같지만 질량수가 다른 이것은 무엇일까?
+# ::snt 전자 수가 같아 화학적 성질은 같지만 질량수가 다른 이것은 무엇일까?
 # ::note
 
 
@@ -13094,7 +13161,7 @@
 
 
 # ::id snt1.938.018_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  흔히 '이것의 승부'라는 표현을 쓰는데, 살얼음처럼 얇아서 그 차이가 매우 적다는 뜻인 이 한자어는 무엇일까?
+# ::snt 흔히 '이것의 승부'라는 표현을 쓰는데, 살얼음처럼 얇아서 그 차이가 매우 적다는 뜻인 이 한자어는 무엇일까?
 # ::note
 
 
@@ -13108,7 +13175,7 @@
 
 
 # ::id snt1.938.019_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  높이 2.25m의 검은 현무암의 돌기둥으로 윗부분은 부조가 새겨져 있고, 아랫부분은 아카드어 쐐기문자가 새겨져 있다.
+# ::snt 높이 2.25m의 검은 현무암의 돌기둥으로 윗부분은 부조가 새겨져 있고, 아랫부분은 아카드어 쐐기문자가 새겨져 있다.
 # ::note
 
 
@@ -13122,7 +13189,7 @@
 
 
 # ::id snt1.938.019_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  282조의 법조문이 약 2.25미터의 원기둥꼴 현무암에 설형 문자로 새겨져 있다.
+# ::snt 282조의 법조문이 약 2.25미터의 원기둥꼴 현무암에 설형 문자로 새겨져 있다.
 # ::note
 
 
@@ -13136,7 +13203,7 @@
 
 
 # ::id snt1.938.019_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  높이 2.25m 되는 돌기둥의 게시법(揭示法)으로, 쐐기문자[楔形文字]에 의하여 전문(前文) ·후문 이외에 282조의 규정이 새겨져 있다.
+# ::snt 높이 2.25m 되는 돌기둥의 게시법(揭示法)으로, 쐐기문자[楔形文字]에 의하여 전문(前文) ·후문 이외에 282조의 규정이 새겨져 있다.
 # ::note
 
 
@@ -13150,7 +13217,7 @@
 
 
 # ::id snt1.938.019_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  세계에서 가장 오래된 성문법이며 ‘눈에는 눈, 이에는 이’라는 동태복수법(同態復讐法), 동해보복법(同害報復法)으로 유명하다.
+# ::snt 세계에서 가장 오래된 성문법이며 ‘눈에는 눈, 이에는 이’라는 동태복수법(同態復讐法), 동해보복법(同害報復法)으로 유명하다.
 # ::note
 
 
@@ -13164,21 +13231,21 @@
 
 
 # ::id snt1.938.019_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 법전에는 농업과 상업, 혼인, 상속 등 각 분야에 걸친 282개조의 규정이 있다.
+# ::snt 이 법전에는 농업과 상업, 혼인, 상속 등 각 분야에 걸친 282개조의 규정이 있다.
 # ::note
 
 
 
 
 # ::id snt2.938.019_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  전문(前文)과 후문(後文)에는 정의법, 약자의 보호 등의 함무라비의 입법 정신이 새겨져 있고, 282개의 판례법은 형법,가족법, 민법 등으로 구성되어 있다.
+# ::snt 전문(前文)과 후문(後文)에는 정의법, 약자의 보호 등의 함무라비의 입법 정신이 새겨져 있고, 282개의 판례법은 형법,가족법, 민법 등으로 구성되어 있다.
 # ::note
 
 
 
 
 # ::id snt3.938.019_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  형법에는 ‘눈에는 눈’이라는 동해보복법(同害報復法)의 원칙도 있었으나 사적인 복수나 약탈혼 등은 인정하지 않았다.
+# ::snt 형법에는 ‘눈에는 눈’이라는 동해보복법(同害報復法)의 원칙도 있었으나 사적인 복수나 약탈혼 등은 인정하지 않았다.
 # ::note
 
 
@@ -13192,7 +13259,7 @@
 
 
 # ::id snt1.938.019_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  '눈에는 눈, 이에는 이'라는 말로 유명한 이 법전은 무엇일까?
+# ::snt '눈에는 눈, 이에는 이'라는 말로 유명한 이 법전은 무엇일까?
 # ::note
 
 
@@ -13206,14 +13273,14 @@
 
 
 # ::id snt1.938.020_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  몸이 넙적하고 눈이 왼쪽으로 몰려 있다.
+# ::snt 몸이 넙적하고 눈이 왼쪽으로 몰려 있다.
 # ::note
 
 
 
 
 # ::id snt2.938.020_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  《자산어보》에서는 접어(鰈魚. 잎사귀 물고기)라고 하고 있으며, 속명을 “넓적한 물고기”라는 뜻에서 광어(廣魚)라고 소개하고 있다.
+# ::snt 《자산어보》에서는 접어(鰈魚. 잎사귀 물고기)라고 하고 있으며, 속명을 “넓적한 물고기”라는 뜻에서 광어(廣魚)라고 소개하고 있다.
 # ::note
 
 
@@ -13255,7 +13322,7 @@
 
 
 # ::id snt1.938.020_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  흔히 횟집에서 광어로도 불리는 이 물고기는 무엇일까?
+# ::snt 흔히 횟집에서 광어로도 불리는 이 물고기는 무엇일까?
 # ::note
 
 
@@ -13304,7 +13371,7 @@
 
 
 # ::id snt1.938.021_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  겨울철 바위들이 뼈처럼 앙상하다 해 붙여진 금강산의 다른 이름은 무엇일까?
+# ::snt 겨울철 바위들이 뼈처럼 앙상하다 해 붙여진 금강산의 다른 이름은 무엇일까?
 # ::note
 
 
@@ -13318,28 +13385,28 @@
 
 
 # ::id snt1.938.022_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  사슴이나 염소, 양과 기타 소과 우제류 가축들, 그리고 코끼리, 쥐, 고슴도치등 발굽이 두개로 갈라진 가축들에게 감염된다.
+# ::snt 사슴이나 염소, 양과 기타 소과 우제류 가축들, 그리고 코끼리, 쥐, 고슴도치등 발굽이 두개로 갈라진 가축들에게 감염된다.
 # ::note
 
 
 
 
 # ::id snt2.938.022_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  감염된 가축은 고열이 발생하지만 이틀에서 사흘이 지나면 열이 가라앉는다.
+# ::snt 감염된 가축은 고열이 발생하지만 이틀에서 사흘이 지나면 열이 가라앉는다.
 # ::note
 
 
 
 
 # ::id snt3.938.022_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  또 입 속에 생기는 수포로 인해 거품이 많고 끈적끈적한 침을 심하게 흘린다.
+# ::snt 또 입 속에 생기는 수포로 인해 거품이 많고 끈적끈적한 침을 심하게 흘린다.
 # ::note
 
 
 
 
 # ::id snt4.938.022_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  발굽에도 수포가 생겨 터지기도 하며 걸음을 절뚝거린다.
+# ::snt 발굽에도 수포가 생겨 터지기도 하며 걸음을 절뚝거린다.
 # ::note
 
 
@@ -13353,7 +13420,7 @@
 
 
 # ::id snt1.938.022_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  입의 점막이나 발톱 사이의 피부에 물집이 생기며 체온이 급격하게 상승하고 식욕이 떨어지는 증상을 보인다.
+# ::snt 입의 점막이나 발톱 사이의 피부에 물집이 생기며 체온이 급격하게 상승하고 식욕이 떨어지는 증상을 보인다.
 # ::note
 
 
@@ -13381,7 +13448,7 @@
 
 
 # ::id snt1.938.022_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  발병 후 1~2일이면 입술, 혀, 잇몸, 콧구멍, 발, 젖꼭지 등에 물집이 생기며 다리를 절고 침을 흘린다.
+# ::snt 발병 후 1~2일이면 입술, 혀, 잇몸, 콧구멍, 발, 젖꼭지 등에 물집이 생기며 다리를 절고 침을 흘린다.
 # ::note
 
 
@@ -13395,7 +13462,7 @@
 
 
 # ::id snt1.938.022_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  피부에 물집이 생기며 고열을 동반하는 이 질병은 무엇일까?
+# ::snt 피부에 물집이 생기며 고열을 동반하는 이 질병은 무엇일까?
 # ::note
 
 
@@ -13416,7 +13483,7 @@
 
 
 # ::id snt1.938.023_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  중국 진(秦)나라의 조고(趙高)가 자신의 권세를 시험하여 보고자 황제 호해(胡亥)에게 사슴을 가리키며 말이라고 한 데서 유래한다.
+# ::snt 중국 진(秦)나라의 조고(趙高)가 자신의 권세를 시험하여 보고자 황제 호해(胡亥)에게 사슴을 가리키며 말이라고 한 데서 유래한다.
 # ::note
 
 
@@ -13430,7 +13497,7 @@
 
 
 # ::id snt1.938.023_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  즉 거짓된 행동으로 윗사람을 농락하는 모습.
+# ::snt 즉 거짓된 행동으로 윗사람을 농락하는 모습.
 # ::note
 
 
@@ -13458,7 +13525,7 @@
 
 
 # ::id snt1.938.023_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  진나라 때의 환관 조고가 황제에게 사슴을 바치며 말이라고 억지 주장했다는 고사에서 유래한 이 사자성어는 무엇일까?
+# ::snt 진나라 때의 환관 조고가 황제에게 사슴을 바치며 말이라고 억지 주장했다는 고사에서 유래한 이 사자성어는 무엇일까?
 # ::note
 
 
@@ -13472,7 +13539,7 @@
 
 
 # ::id snt1.938.024_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  영조는 정사(政事)의 시비를 논하는 상소를 금하고 노론·소론을 고루 등용하여 불편부당의 탕평책을 수립하고 1742년(명조 18) 성균관 입구에 이 비를 건립하였다.
+# ::snt 영조는 정사(政事)의 시비를 논하는 상소를 금하고 노론·소론을 고루 등용하여 불편부당의 탕평책을 수립하고 1742년(명조 18) 성균관 입구에 이 비를 건립하였다.
 # ::note
 
 
@@ -13486,7 +13553,7 @@
 
 
 # ::id snt1.938.024_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  영조 자신이 친서하여 이를 비에 새겨 성균관의 반수교(泮水橋) 위에 세운 것이다.
+# ::snt 영조 자신이 친서하여 이를 비에 새겨 성균관의 반수교(泮水橋) 위에 세운 것이다.
 # ::note
 
 
@@ -13500,7 +13567,7 @@
 
 
 # ::id snt1.938.024_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  또한 탕평의 의지를 과시하기 위해 성균관 입구에 탕평비를 세우기도 했다.
+# ::snt 또한 탕평의 의지를 과시하기 위해 성균관 입구에 탕평비를 세우기도 했다.
 # ::note
 
 
@@ -13514,7 +13581,7 @@
 
 
 # ::id snt1.938.024_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그리고 1742년 성균관 입구에 ‘탕평비’를 세우는 등 당쟁의 해소에 심혈을 기울였다.
+# ::snt 그리고 1742년 성균관 입구에 ‘탕평비’를 세우는 등 당쟁의 해소에 심혈을 기울였다.
 # ::note
 
 
@@ -13535,21 +13602,21 @@
 
 
 # ::id snt1.938.025_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  제논이나 프로타고라스는 기원전 400년 이전 그리스의아테네 등에서 활약해, 소피스트로 불렸다.
+# ::snt 제논이나 프로타고라스는 기원전 400년 이전 그리스의아테네 등에서 활약해, 소피스트로 불렸다.
 # ::note
 
 
 
 
 # ::id snt2.938.025_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  철학의 분류로는 명가나 소피스트 등을 포함해 궤변 학파라고 부르는 일이 있다.
+# ::snt 철학의 분류로는 명가나 소피스트 등을 포함해 궤변 학파라고 부르는 일이 있다.
 # ::note
 
 
 
 
 # ::id snt3.938.025_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  고대 중국의 궤변은 학문적인 발전에 연결되지 않았지만, 소피스트의 궤변방법은 후세의 논리학의 발전으로 연결되어 갔다.
+# ::snt 고대 중국의 궤변은 학문적인 발전에 연결되지 않았지만, 소피스트의 궤변방법은 후세의 논리학의 발전으로 연결되어 갔다.
 # ::note
 
 
@@ -13570,7 +13637,7 @@
 
 
 # ::id snt1.938.025_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 가운데 명가(名家)로 불리는 사람들이 있었는데, 이들은 교묘한 궤변으로 이름을 날렸다.
+# ::snt 이 가운데 명가(名家)로 불리는 사람들이 있었는데, 이들은 교묘한 궤변으로 이름을 날렸다.
 # ::note
 
 
@@ -13584,7 +13651,7 @@
 
 
 # ::id snt1.938.025_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  논리학에서 이치에 닿지 않는 변론을 의미하는 이것은 무엇일까?
+# ::snt 논리학에서 이치에 닿지 않는 변론을 의미하는 이것은 무엇일까?
 # ::note
 
 
@@ -13598,14 +13665,14 @@
 
 
 # ::id snt1.938.026_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1804년 1월 1일 그가 주도한 흑인 노예들의 혁명으로 프랑스로부터 결국 독립을 쟁취하게 된다.
+# ::snt 1804년 1월 1일 그가 주도한 흑인 노예들의 혁명으로 프랑스로부터 결국 독립을 쟁취하게 된다.
 # ::note
 
 
 
 
 # ::id snt2.938.026_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 나라는 아메리카에서는 미국 다음으로 두 번째로 독립하였으며, 노예제 폐지를 법령화한 최초의 북아메리카 국가이다.
+# ::snt 이 나라는 아메리카에서는 미국 다음으로 두 번째로 독립하였으며, 노예제 폐지를 법령화한 최초의 북아메리카 국가이다.
 # ::note
 
 
@@ -13633,14 +13700,14 @@
 
 
 # ::id snt1.938.026_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  지진의 진원지는 아이티 공화국의 수도인 포르토프랭스(Port-au-Prince) 인근에서 발생한 것으로 인구 200만 명이 거주하는 도시를 강타하여 막대한 피해가 발생하였다.
+# ::snt 지진의 진원지는 아이티 공화국의 수도인 포르토프랭스(Port-au-Prince) 인근에서 발생한 것으로 인구 200만 명이 거주하는 도시를 강타하여 막대한 피해가 발생하였다.
 # ::note
 
 
 
 
 # ::id snt2.938.026_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  아이티 공화국 정부에서 발표한 자료에 의하면 약 30만 명이 지진피해로 사망하였다.
+# ::snt 아이티 공화국 정부에서 발표한 자료에 의하면 약 30만 명이 지진피해로 사망하였다.
 # ::note
 
 
@@ -13654,7 +13721,7 @@
 
 
 # ::id snt1.938.026_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  카리브 해에 있는 섬나라이며 2010년 지진으로 많은 사람이 사망했던 이 나라는 어디일까?
+# ::snt 카리브 해에 있는 섬나라이며 2010년 지진으로 많은 사람이 사망했던 이 나라는 어디일까?
 # ::note
 
 
@@ -13668,7 +13735,7 @@
 
 
 # ::id snt1.938.027_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  원제는 ‘묘지(墓地)’로, 1922년 7월부터 9월까지 ≪신생활 新生活≫에 연재되다가 잡지의 폐간과 함께 3회 연재로 중단되었다.
+# ::snt 원제는 ‘묘지(墓地)’로, 1922년 7월부터 9월까지 ≪신생활 新生活≫에 연재되다가 잡지의 폐간과 함께 3회 연재로 중단되었다.
 # ::note
 
 
@@ -13682,7 +13749,7 @@
 
 
 # ::id snt1.938.027_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  원제명은 <묘지(墓地)>로 1922년 7월부터 9월까지 ≪신생활(新生活)≫에 연재되다가 잡지의 폐간과 함께 3회 연재로 중단되었다.
+# ::snt 원제명은 <묘지(墓地)>로 1922년 7월부터 9월까지 ≪신생활(新生活)≫에 연재되다가 잡지의 폐간과 함께 3회 연재로 중단되었다.
 # ::note
 
 
@@ -13717,7 +13784,7 @@
 
 
 # ::id snt1.938.027_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  암울한 민족 현실은 빗댄 말이자 <만세전>의 발표 당시 원제목인 이것은 무엇일까?
+# ::snt 암울한 민족 현실은 빗댄 말이자 <만세전>의 발표 당시 원제목인 이것은 무엇일까?
 # ::note
 
 
@@ -13731,7 +13798,7 @@
 
 
 # ::id snt1.938.028_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  책, 벼루, 먹, 붓, 붓꽂이, 두루마리꽂이 따위의 문방구류를 기본으로 하면서 꽃병, 주전자, 시계 따위의 방 안에서 쓰는 물건들을 배합하여 그렸다.
+# ::snt 책, 벼루, 먹, 붓, 붓꽂이, 두루마리꽂이 따위의 문방구류를 기본으로 하면서 꽃병, 주전자, 시계 따위의 방 안에서 쓰는 물건들을 배합하여 그렸다.
 # ::note
 
 
@@ -13752,7 +13819,7 @@
 
 
 # ::id snt1.938.028_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  책가도(冊架圖), 문방도(文房圖)라고도 한다.
+# ::snt 책가도(冊架圖), 문방도(文房圖)라고도 한다.
 # ::note
 
 
@@ -13766,7 +13833,7 @@
 
 
 # ::id snt1.938.028_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  책뿐만 아니라 책과 관계없는 술잔·바둑판·담뱃대·부채·항아리는 물론이고 여자치마·꽃신·족두리까지 그려 어떻게 조화가 이루어지는가를 표현한 그림이다.
+# ::snt 책뿐만 아니라 책과 관계없는 술잔·바둑판·담뱃대·부채·항아리는 물론이고 여자치마·꽃신·족두리까지 그려 어떻게 조화가 이루어지는가를 표현한 그림이다.
 # ::note
 
 
@@ -13780,7 +13847,7 @@
 
 
 # ::id snt1.938.028_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  높게 쌓아놓은 책더미와 서재의 여러 가지 일상용품을 적절히 배치한 정물화 풍의 민화인 이것은 무엇일까?
+# ::snt 높게 쌓아놓은 책더미와 서재의 여러 가지 일상용품을 적절히 배치한 정물화 풍의 민화인 이것은 무엇일까?
 # ::note
 
 
@@ -13794,14 +13861,14 @@
 
 
 # ::id snt1.938.029_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  조소앙이 제창한 정치사회사상으로 손문(孫文)의 삼민주의(三民主義)와 사회주의의 영향을 받아 제창되었다.
+# ::snt 조소앙이 제창한 정치사회사상으로 손문(孫文)의 삼민주의(三民主義)와 사회주의의 영향을 받아 제창되었다.
 # ::note
 
 
 
 
 # ::id snt2.938.029_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  삼균이란, 개인간·민족간·국가간 균등을 말하고, 정치적 균등·경제적 균등을 의미하고 있다.
+# ::snt 삼균이란, 개인간·민족간·국가간 균등을 말하고, 정치적 균등·경제적 균등을 의미하고 있다.
 # ::note
 
 
@@ -13822,14 +13889,14 @@
 
 
 # ::id snt1.938.029_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  손문(孫文)의 삼민주의(三民主義)와 사회주의의 영향을 받아 1930년대에 제창되었다.
+# ::snt 손문(孫文)의 삼민주의(三民主義)와 사회주의의 영향을 받아 1930년대에 제창되었다.
 # ::note
 
 
 
 
 # ::id snt2.938.029_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  삼균이란, 개인간·민족간·국가간 균등을 말하고, 정치적 균등·경제적 균등·교육적 균등의 실현으로 삼균을 이루어 세계일가(世界一家)의 이상사회를 건설한다는 평등주의 사상이다.
+# ::snt 삼균이란, 개인간·민족간·국가간 균등을 말하고, 정치적 균등·경제적 균등·교육적 균등의 실현으로 삼균을 이루어 세계일가(世界一家)의 이상사회를 건설한다는 평등주의 사상이다.
 # ::note
 
 
@@ -13857,7 +13924,7 @@
 
 
 # ::id snt1.938.029_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 사람은 누구일까?
+# ::snt 이 사람은 누구일까?
 # ::note
 
 
@@ -13885,7 +13952,7 @@
 
 
 # ::id snt1.938.030_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  멸종 위기 야생 동·식물Ⅱ급, 먹는 자 처벌 대상 야생 동물로 분류되어 환경부 지정 보호종으로 보호받고 있으며, 국제적 멸종 위기종Ⅲ[CITES]로도 보호받고 있다.
+# ::snt 멸종 위기 야생 동·식물Ⅱ급, 먹는 자 처벌 대상 야생 동물로 분류되어 환경부 지정 보호종으로 보호받고 있으며, 국제적 멸종 위기종Ⅲ[CITES]로도 보호받고 있다.
 # ::note
 
 
@@ -13899,7 +13966,7 @@
 
 
 # ::id snt1.938.030_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  담비.
+# ::snt 담비.
 # ::note
 
 
@@ -13913,7 +13980,7 @@
 
 
 # ::id snt1.938.030_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  족제비과에 속하지만 노루와 고라니 등도 사냥감으로 삼으며 현재 멸종위기 야생생물 2급인데, '산달'이라고도 부르는 이 동물은 무엇일까?
+# ::snt 족제비과에 속하지만 노루와 고라니 등도 사냥감으로 삼으며 현재 멸종위기 야생생물 2급인데, '산달'이라고도 부르는 이 동물은 무엇일까?
 # ::note
 
 
@@ -13927,14 +13994,14 @@
 
 
 # ::id snt1.938.031_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  레몬 향기를 가진 무색의 비수용성 액체로, 아이소프렌을 가열ㆍ중합하여 합성한다.
+# ::snt 레몬 향기를 가진 무색의 비수용성 액체로, 아이소프렌을 가열ㆍ중합하여 합성한다.
 # ::note
 
 
 
 
 # ::id snt2.938.031_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  향료로 쓴다.
+# ::snt 향료로 쓴다.
 # ::note
 
 
@@ -13948,14 +14015,14 @@
 
 
 # ::id snt1.938.031_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  D-형 및 L-형의 광학이성질체가 존재한다.
+# ::snt D-형 및 L-형의 광학이성질체가 존재한다.
 # ::note
 
 
 
 
 # ::id snt2.938.031_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  오렌지와 비슷한 향기가 나서 향료의 원료로 사용된다.
+# ::snt 오렌지와 비슷한 향기가 나서 향료의 원료로 사용된다.
 # ::note
 
 
@@ -13969,7 +14036,7 @@
 
 
 # ::id snt1.938.031_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  식품 첨가물이나 방향제로도 사용하며 무색으로 공기와 빛에 잘 산화되는 이것은 무엇일까?
+# ::snt 식품 첨가물이나 방향제로도 사용하며 무색으로 공기와 빛에 잘 산화되는 이것은 무엇일까?
 # ::note
 
 
@@ -13983,21 +14050,21 @@
 
 
 # ::id snt1.938.032_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  [2] 병자호란이 일어나자 세 사람은 모두 출전하여 박연을 제외한 두 사람은 전사하였다.
+# ::snt [2] 병자호란이 일어나자 세 사람은 모두 출전하여 박연을 제외한 두 사람은 전사하였다.
 # ::note
 
 
 
 
 # ::id snt2.938.032_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  조선 여성과 결혼하여 1남 1녀를 낳았다.
+# ::snt 조선 여성과 결혼하여 1남 1녀를 낳았다.
 # ::note
 
 
 
 
 # ::id snt3.938.032_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  《하멜 표류기》에 따르면 1653년(효종 4년) 헨드릭 하멜 일행이 제주도에 이르렀을 때 파견되어 하멜 등을 서울에 호송하고 하멜이 도감군오(都監軍伍)에 소송되자 이를 감독하는 한편 한국의 풍속을 가르쳐 주고 통역했다고 한다.
+# ::snt 《하멜 표류기》에 따르면 1653년(효종 4년) 헨드릭 하멜 일행이 제주도에 이르렀을 때 파견되어 하멜 등을 서울에 호송하고 하멜이 도감군오(都監軍伍)에 소송되자 이를 감독하는 한편 한국의 풍속을 가르쳐 주고 통역했다고 한다.
 # ::note
 
 
@@ -14011,21 +14078,21 @@
 
 
 # ::id snt1.938.032_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  우리나라 이름은 박연(朴淵).
+# ::snt 우리나라 이름은 박연(朴淵).
 # ::note
 
 
 
 
 # ::id snt2.938.032_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  인조 6년(1628)에 표류하다 제주도에 상륙하여 귀화하였다.
+# ::snt 인조 6년(1628)에 표류하다 제주도에 상륙하여 귀화하였다.
 # ::note
 
 
 
 
 # ::id snt3.938.032_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  훈련도감에서 전술을 가르치고 대포를 제작하였다.
+# ::snt 훈련도감에서 전술을 가르치고 대포를 제작하였다.
 # ::note
 
 
@@ -14039,7 +14106,7 @@
 
 
 # ::id snt1.938.032_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1653년 H.하멜 일행이 제주도에 표착하였을 때 제주도로 내려가 통역을 맡았고 그들을 서울로 호송하는 임무를 담당했다.
+# ::snt 1653년 H.하멜 일행이 제주도에 표착하였을 때 제주도로 내려가 통역을 맡았고 그들을 서울로 호송하는 임무를 담당했다.
 # ::note
 
 
@@ -14053,7 +14120,7 @@
 
 
 # ::id snt1.938.032_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1653년(효종4)에 하멜(Hamel) 일행이 제주도에 이르렀을 때 파견되어 하멜 등을 서울에 호송하고 하멜이 도감군오(都監軍伍)에 소속되자 이를 감독하는 한편 우리나라의 풍속을 가르쳐 주었다.
+# ::snt 1653년(효종4)에 하멜(Hamel) 일행이 제주도에 이르렀을 때 파견되어 하멜 등을 서울에 호송하고 하멜이 도감군오(都監軍伍)에 소속되자 이를 감독하는 한편 우리나라의 풍속을 가르쳐 주었다.
 # ::note
 
 
@@ -14067,7 +14134,7 @@
 
 
 # ::id snt1.938.032_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  하멜 일행이 뭍에 닿았을 때 통역과 감독 역할도 수행했으며 네덜란드에서 조선으로 귀화한 이 사람은 누구일까?
+# ::snt 하멜 일행이 뭍에 닿았을 때 통역과 감독 역할도 수행했으며 네덜란드에서 조선으로 귀화한 이 사람은 누구일까?
 # ::note
 
 
@@ -14081,21 +14148,21 @@
 
 
 # ::id snt1.938.033_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  조림수종으로 심으며, 목재는 건축재나 기구재로 쓴다.
+# ::snt 조림수종으로 심으며, 목재는 건축재나 기구재로 쓴다.
 # ::note
 
 
 
 
 # ::id snt2.938.033_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  나무가 자라면서 수분을 많이 흡수하므로 집 근처에 심어서 주변을 건조시키는 데 이용한다.
+# ::snt 나무가 자라면서 수분을 많이 흡수하므로 집 근처에 심어서 주변을 건조시키는 데 이용한다.
 # ::note
 
 
 
 
 # ::id snt3.938.033_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  오스트레일리아, 태즈메이니아 남부 원산으로서 오스트레일리아·열대지방에 분포한다.
+# ::snt 오스트레일리아, 태즈메이니아 남부 원산으로서 오스트레일리아·열대지방에 분포한다.
 # ::note
 
 
@@ -14123,7 +14190,7 @@
 
 
 # ::id snt1.938.033_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  호주가 원산지인 이 나무는 강력한 살균작용과 기관지 질환 개선, 심신안정 등에 효과가 있다고 알려졌는데, 코알라가 이파리를 먹어서 유명해진 이 나무는 무엇일까?
+# ::snt 호주가 원산지인 이 나무는 강력한 살균작용과 기관지 질환 개선, 심신안정 등에 효과가 있다고 알려졌는데, 코알라가 이파리를 먹어서 유명해진 이 나무는 무엇일까?
 # ::note
 
 
@@ -14144,7 +14211,7 @@
 
 
 # ::id snt1.938.034_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1994년 4월 르완다에서 후투족 출신 쥐베날 하비야리마나 대통령이 전용기 격추 사고로 숨지자, 인구의 85%를 차지하는 후투족 강경파가 100여 일 동안 인구의 14%인 투치족과 후투족 온건파 등 전체 인구의 10%에 달하는 80만 명 이상을 학살한 사건이다.
+# ::snt 1994년 4월 르완다에서 후투족 출신 쥐베날 하비야리마나 대통령이 전용기 격추 사고로 숨지자, 인구의 85%를 차지하는 후투족 강경파가 100여 일 동안 인구의 14%인 투치족과 후투족 온건파 등 전체 인구의 10%에 달하는 80만 명 이상을 학살한 사건이다.
 # ::note
 
 
@@ -14172,7 +14239,7 @@
 
 
 # ::id snt1.938.034_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1994년 한 해 동안 최소 50만 명에서 100만 명 이상이 학살됐으며 우리나라에는 2004년, 이 나라의 사건을 소재로 한 영화가 개봉했는데 이 나라는 어디일까?
+# ::snt 1994년 한 해 동안 최소 50만 명에서 100만 명 이상이 학살됐으며 우리나라에는 2004년, 이 나라의 사건을 소재로 한 영화가 개봉했는데 이 나라는 어디일까?
 # ::note
 
 
@@ -14207,7 +14274,7 @@
 
 
 # ::id snt1.938.036_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1919년 2월 8일 도쿄의 조선 기독교 청년 회관에서 독립 선언식을 하고 결의문을 발표했으며 최팔용, 서춘 등의 10여 명의 학생들로 구성된 이 단체는 무엇일까?
+# ::snt 1919년 2월 8일 도쿄의 조선 기독교 청년 회관에서 독립 선언식을 하고 결의문을 발표했으며 최팔용, 서춘 등의 10여 명의 학생들로 구성된 이 단체는 무엇일까?
 # ::note
 
 
@@ -14221,7 +14288,7 @@
 
 
 # ::id snt1.938.037_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  감미롭고 로맨틱한 작풍의 작품을 만들었으며, 1935년 퓰리처상을 받았다.
+# ::snt 감미롭고 로맨틱한 작풍의 작품을 만들었으며, 1935년 퓰리처상을 받았다.
 # ::note
 
 
@@ -14263,7 +14330,7 @@
 
 
 # ::id snt1.938.037_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1935년 퓰리처상을 받기도 한 이 사람은 누구일까?
+# ::snt 1935년 퓰리처상을 받기도 한 이 사람은 누구일까?
 # ::note
 
 
@@ -14291,14 +14358,14 @@
 
 
 # ::id snt1.938.038_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  매는 인간보다 최대 8배나 멀리 볼 수 있는데 이것은 인간의 5배가 넘는 시세포가 이 부분에 집중적으로 분포돼 있기 때문이다.
+# ::snt 매는 인간보다 최대 8배나 멀리 볼 수 있는데 이것은 인간의 5배가 넘는 시세포가 이 부분에 집중적으로 분포돼 있기 때문이다.
 # ::note
 
 
 
 
 # ::id snt2.938.038_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  망막에서 시세포가 밀집된 이 부분은 무엇일까?
+# ::snt 망막에서 시세포가 밀집된 이 부분은 무엇일까?
 # ::note
 
 
@@ -14347,7 +14414,7 @@
 
 
 # ::id snt1.939.002_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  7월 24일경이다.
+# ::snt 7월 24일경이다.
 # ::note
 
 
@@ -14361,14 +14428,14 @@
 
 
 # ::id snt1.939.002_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  음력 6월 중이며 양력 7월 23일경 시작한다.
+# ::snt 음력 6월 중이며 양력 7월 23일경 시작한다.
 # ::note
 
 
 
 
 # ::id snt2.939.002_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  한국에서는 중복(中伏)으로 장마가 끝나고 더위가 가장 심해지는 때이다.
+# ::snt 한국에서는 중복(中伏)으로 장마가 끝나고 더위가 가장 심해지는 때이다.
 # ::note
 
 
@@ -14382,14 +14449,14 @@
 
 
 # ::id snt1.939.002_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  소서(小暑)와 입추(立秋) 사이에 든다.
+# ::snt 소서(小暑)와 입추(立秋) 사이에 든다.
 # ::note
 
 
 
 
 # ::id snt2.939.002_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  대서(大暑)는 음력으로 6월에 있으며, 양력으로는 7월 23일 무렵에 든다.
+# ::snt 대서(大暑)는 음력으로 6월에 있으며, 양력으로는 7월 23일 무렵에 든다.
 # ::note
 
 
@@ -14417,7 +14484,7 @@
 
 
 # ::id snt1.939.003_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  농상(農桑)을 진흥하고, 호구(戶口)를 늘리고, 학교를 일으키고, 군정(軍政)을 잘하고, 부역(賦役)을 고르게 하고, 사송(詞訟)을 잘 처리하고, 간사하고 교활하지 않게 하는 것을 이른다.
+# ::snt 농상(農桑)을 진흥하고, 호구(戶口)를 늘리고, 학교를 일으키고, 군정(軍政)을 잘하고, 부역(賦役)을 고르게 하고, 사송(詞訟)을 잘 처리하고, 간사하고 교활하지 않게 하는 것을 이른다.
 # ::note
 
 
@@ -14438,7 +14505,7 @@
 
 
 # ::id snt1.939.003_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그 내용은 농사와 양잠의 번성, 호구의 증가, 학교의 흥성, 군정의 엄수, 부역의 균등, 소송의 간결, 도둑의 종식임.
+# ::snt 그 내용은 농사와 양잠의 번성, 호구의 증가, 학교의 흥성, 군정의 엄수, 부역의 균등, 소송의 간결, 도둑의 종식임.
 # ::note
 
 
@@ -14459,7 +14526,7 @@
 
 
 # ::id snt1.939.003_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  '수령칠사'에 해당하지 않는 것은 무엇일까?
+# ::snt '수령칠사'에 해당하지 않는 것은 무엇일까?
 # ::note
 
 
@@ -14480,7 +14547,7 @@
 
 
 # ::id snt1.939.004_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  사회보장제도가 아닌 것은 무엇일까?
+# ::snt 사회보장제도가 아닌 것은 무엇일까?
 # ::note
 
 
@@ -14494,7 +14561,7 @@
 
 
 # ::id snt1.939.005_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  물, 돌, 소나무, 대나무, 달을 벗에 비유하여 노래한 것으로, 서장(序章)을 포함하여 모두 6수로 되어 있다.
+# ::snt 물, 돌, 소나무, 대나무, 달을 벗에 비유하여 노래한 것으로, 서장(序章)을 포함하여 모두 6수로 되어 있다.
 # ::note
 
 
@@ -14522,7 +14589,7 @@
 
 
 # ::id snt1.939.005_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  좌절을 안겨준 현실에 무상을 느끼면서 변하지 않는 자연의 다섯 벗을 찬양하였다.
+# ::snt 좌절을 안겨준 현실에 무상을 느끼면서 변하지 않는 자연의 다섯 벗을 찬양하였다.
 # ::note
 
 
@@ -14585,7 +14652,7 @@
 
 
 # ::id snt1.939.006_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 나라는 어디일까?
+# ::snt 이 나라는 어디일까?
 # ::note
 
 
@@ -14606,14 +14673,14 @@
 
 
 # ::id snt1.939.007_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이름은 거련(巨連)ㆍ연(璉).
+# ::snt 이름은 거련(巨連)ㆍ연(璉).
 # ::note
 
 
 
 
 # ::id snt2.939.007_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  광개토 대왕의 맏아들로, 427년에 도읍을 국내성(國內城)에서 평양으로 옮기고 남하 정책을 펼쳐, 고구려의 판도를 넓혔다.
+# ::snt 광개토 대왕의 맏아들로, 427년에 도읍을 국내성(國內城)에서 평양으로 옮기고 남하 정책을 펼쳐, 고구려의 판도를 넓혔다.
 # ::note
 
 
@@ -14627,7 +14694,7 @@
 
 
 # ::id snt1.939.007_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  도읍을 국내성에서 평양으로 옮기고 적극적으로 남하정책을 추진하여 광활한 영토를 차지하였다.
+# ::snt 도읍을 국내성에서 평양으로 옮기고 적극적으로 남하정책을 추진하여 광활한 영토를 차지하였다.
 # ::note
 
 
@@ -14655,7 +14722,7 @@
 
 
 # ::id snt1.939.007_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  천도를 단행한 왕은 누구일까?
+# ::snt 천도를 단행한 왕은 누구일까?
 # ::note
 
 
@@ -14669,14 +14736,14 @@
 
 
 # ::id snt1.939.008_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이끼나 벼 따위의 식물이 습한 땅에 쌓이어 분해된 것으로, 광택이 없고 검은 갈색을 띠며 해면 모양이나 실 모양 또는 흙덩이 모양을 하고 있다.
+# ::snt 이끼나 벼 따위의 식물이 습한 땅에 쌓이어 분해된 것으로, 광택이 없고 검은 갈색을 띠며 해면 모양이나 실 모양 또는 흙덩이 모양을 하고 있다.
 # ::note
 
 
 
 
 # ::id snt2.939.008_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  발열량이 적으며, 비료나 연탄의 원료로 쓰인다.
+# ::snt 발열량이 적으며, 비료나 연탄의 원료로 쓰인다.
 # ::note
 
 
@@ -14690,21 +14757,21 @@
 
 
 # ::id snt1.939.008_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이탄이라고도 한다.
+# ::snt 이탄이라고도 한다.
 # ::note
 
 
 
 
 # ::id snt2.939.008_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  주로 저습지나 소택지 등에서 퇴적된 퇴적물로서 생물의 유체가 불완전 분해된 물질이 퇴적된 것이다.
+# ::snt 주로 저습지나 소택지 등에서 퇴적된 퇴적물로서 생물의 유체가 불완전 분해된 물질이 퇴적된 것이다.
 # ::note
 
 
 
 
 # ::id snt3.939.008_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  저습지에는 수분의 공급이 과잉상태이므로 지중 동물이나 미생물의 활동이 억제되기 때문에 유체의 완전분해가 안되어서 황갈색 또는 암갈색의 퇴적물로 남게 된다.
+# ::snt 저습지에는 수분의 공급이 과잉상태이므로 지중 동물이나 미생물의 활동이 억제되기 때문에 유체의 완전분해가 안되어서 황갈색 또는 암갈색의 퇴적물로 남게 된다.
 # ::note
 
 
@@ -14718,21 +14785,21 @@
 
 
 # ::id snt1.939.008_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  석탄의 한 종류이지만, 지표에서 분해작용을 받아서 일반적으로 석탄과 구별된다.
+# ::snt 석탄의 한 종류이지만, 지표에서 분해작용을 받아서 일반적으로 석탄과 구별된다.
 # ::note
 
 
 
 
 # ::id snt2.939.008_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  영국 스코틀랜드 아우터헤브리디스 제도 최북단에 있는 섬으로 한대기후의 이탄지이다.
+# ::snt 영국 스코틀랜드 아우터헤브리디스 제도 최북단에 있는 섬으로 한대기후의 이탄지이다.
 # ::note
 
 
 
 
 # ::id snt3.939.008_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  토탄(土炭)이라고도 한다.
+# ::snt 토탄(土炭)이라고도 한다.
 # ::note
 
 
@@ -14746,7 +14813,7 @@
 
 
 # ::id snt1.939.008_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  주로 저습지에서 생물의 유체가 불완전 분해된 물질이 퇴적된 것을 뜻하며 퇴적물은 황갈색 또는 암갈색을 띠는데 이것은 무엇일까?
+# ::snt 주로 저습지에서 생물의 유체가 불완전 분해된 물질이 퇴적된 것을 뜻하며 퇴적물은 황갈색 또는 암갈색을 띠는데 이것은 무엇일까?
 # ::note
 
 
@@ -14767,7 +14834,7 @@
 
 
 # ::id snt1.939.009_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  스위스의 알프스 산에서 시작하여 리히텐슈타인, 오스트리아, 독일, 프랑스의 국경을 지나서 독일의 서부로 들어갔다가 네덜란드를 가로질러 북해로 흘러 들어간다.
+# ::snt 스위스의 알프스 산에서 시작하여 리히텐슈타인, 오스트리아, 독일, 프랑스의 국경을 지나서 독일의 서부로 들어갔다가 네덜란드를 가로질러 북해로 흘러 들어간다.
 # ::note
 
 
@@ -14781,7 +14848,7 @@
 
 
 # ::id snt1.939.009_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  본류는 스위스 ·리히텐슈타인 ·오스트리아 ·독일 ·프랑스 ·네덜란드 등의 여러 나라를 거치며, 운하에 의해서 지중해 ·흑해 ·발트해 등과 연결된다.
+# ::snt 본류는 스위스 ·리히텐슈타인 ·오스트리아 ·독일 ·프랑스 ·네덜란드 등의 여러 나라를 거치며, 운하에 의해서 지중해 ·흑해 ·발트해 등과 연결된다.
 # ::note
 
 
@@ -14809,7 +14876,7 @@
 
 
 # ::id snt1.939.009_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 강은 무엇일까?
+# ::snt 이 강은 무엇일까?
 # ::note
 
 
@@ -14823,7 +14890,7 @@
 
 
 # ::id snt1.939.010_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그 와중에도 8월 매카트니가 레논의 아들 줄리안 레논을 위해 쓴 노래인 〈Hey Jude〉를 발표해 9주간 빌보드 차트 1위에 올랐다.
+# ::snt 그 와중에도 8월 매카트니가 레논의 아들 줄리안 레논을 위해 쓴 노래인 〈Hey Jude〉를 발표해 9주간 빌보드 차트 1위에 올랐다.
 # ::note
 
 
@@ -14837,14 +14904,14 @@
 
 
 # ::id snt1.939.010_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  뛰어난 음악성과 대중성으로 전 세계 젊은이들의 압도적인 인기를 얻었으나, 1971년에 해산되었다.
+# ::snt 뛰어난 음악성과 대중성으로 전 세계 젊은이들의 압도적인 인기를 얻었으나, 1971년에 해산되었다.
 # ::note
 
 
 
 
 # ::id snt2.939.010_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  대표곡으로 <예스터데이>, <헤이 주드> 따위가 있다.
+# ::snt 대표곡으로 <예스터데이>, <헤이 주드> 따위가 있다.
 # ::note
 
 
@@ -14886,14 +14953,14 @@
 
 
 # ::id snt1.939.011_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이들은 주로 키틴(폴리아세틸글루코사민이라고도 알려져 있음)과 스클레로틴(sclerotin：quinone에 의해 경화되어 있는 단백질)으로 구성되어 있다.
+# ::snt 이들은 주로 키틴(폴리아세틸글루코사민이라고도 알려져 있음)과 스클레로틴(sclerotin：quinone에 의해 경화되어 있는 단백질)으로 구성되어 있다.
 # ::note
 
 
 
 
 # ::id snt2.939.011_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  큐티클의 바깥쪽은 물의 소실을 막아주는 왁스 층으로 덮여 있으며, 큐티클은 근육이 부착할 수 있는 골격으로 작용한다.
+# ::snt 큐티클의 바깥쪽은 물의 소실을 막아주는 왁스 층으로 덮여 있으며, 큐티클은 근육이 부착할 수 있는 골격으로 작용한다.
 # ::note
 
 
@@ -14907,7 +14974,7 @@
 
 
 # ::id snt1.939.011_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이에 영향을 미친 요인은 무엇일까?
+# ::snt 이에 영향을 미친 요인은 무엇일까?
 # ::note
 
 
@@ -14935,7 +15002,7 @@
 
 
 # ::id snt1.939.012_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  초대 국회의원의 임기는 몇 년이었을까?
+# ::snt 초대 국회의원의 임기는 몇 년이었을까?
 # ::note
 
 
@@ -14956,21 +15023,21 @@
 
 
 # ::id snt1.939.014_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  제2차 세계 대전 이후에 세 나라는 무너진 경제를 살리기 위해 와덴 해 연안에 공업 단지를 건설하고 간척 등으로 농지를 확보하려 했지만, 사업 도중 이로 인해 갯벌이 파괴된다는 것을 깨달았다.
+# ::snt 제2차 세계 대전 이후에 세 나라는 무너진 경제를 살리기 위해 와덴 해 연안에 공업 단지를 건설하고 간척 등으로 농지를 확보하려 했지만, 사업 도중 이로 인해 갯벌이 파괴된다는 것을 깨달았다.
 # ::note
 
 
 
 
 # ::id snt2.939.014_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그러자 먼저 독일이 1976년 자연 보존법을 제정해 갯벌을 국립 공원으로 지정하여 보호하기 시작했고, 1982년에는 네덜란드와 덴마크가 동참해 3개국이 와덴 해의 갯벌 보전을 담당하는 공동 사무국을 설치하였다.
+# ::snt 그러자 먼저 독일이 1976년 자연 보존법을 제정해 갯벌을 국립 공원으로 지정하여 보호하기 시작했고, 1982년에는 네덜란드와 덴마크가 동참해 3개국이 와덴 해의 갯벌 보전을 담당하는 공동 사무국을 설치하였다.
 # ::note
 
 
 
 
 # ::id snt3.939.014_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이후 공동 사무국이 방조제 건설을 금지하고 갯벌의 소중함을 알리는 활동을 전개하여, 현재 와덴 해의 갯벌은 다양한 생물이 살아가는 건강한 갯벌이 되었다.
+# ::snt 이후 공동 사무국이 방조제 건설을 금지하고 갯벌의 소중함을 알리는 활동을 전개하여, 현재 와덴 해의 갯벌은 다양한 생물이 살아가는 건강한 갯벌이 되었다.
 # ::note
 
 
@@ -14984,14 +15051,14 @@
 
 
 # ::id snt1.939.014_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  바덴 해는 물리적이고 생물학적인 요인의 복잡한 상호작용으로 형성된, 온난하고 비교적 평평한 해안 습지 환경을 갖춘 지역으로, 이 요인이 조수성(潮水性) 수로, 모래톱, 해초 풀밭, 홍합 밭(mussel beds), 사주(砂洲), 평평한 갯벌, 염습지(해수 소택지, salt marshes), 강어귀, 해변과 모래언덕 같은 전이(transitional) 서식지를 많이 만들어냈다.
+# ::snt 바덴 해는 물리적이고 생물학적인 요인의 복잡한 상호작용으로 형성된, 온난하고 비교적 평평한 해안 습지 환경을 갖춘 지역으로, 이 요인이 조수성(潮水性) 수로, 모래톱, 해초 풀밭, 홍합 밭(mussel beds), 사주(砂洲), 평평한 갯벌, 염습지(해수 소택지, salt marshes), 강어귀, 해변과 모래언덕 같은 전이(transitional) 서식지를 많이 만들어냈다.
 # ::note
 
 
 
 
 # ::id snt2.939.014_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 등재된 유산은 전체 바덴 해의 66% 이상을 차지하며, 점박이바다표범(harbour seal), 회색바다표범(grey seal)과 쥐돌고래(harbour porpoise)와 같은 해양 포유류를 포함하여 수많은 동식물종의 서식지이다.
+# ::snt 이 등재된 유산은 전체 바덴 해의 66% 이상을 차지하며, 점박이바다표범(harbour seal), 회색바다표범(grey seal)과 쥐돌고래(harbour porpoise)와 같은 해양 포유류를 포함하여 수많은 동식물종의 서식지이다.
 # ::note
 
 
@@ -15005,7 +15072,7 @@
 
 
 # ::id snt1.939.014_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  2009년 갯벌로서는 처음으로 세계자연유산으로 등재된 이곳은 어디일까?
+# ::snt 2009년 갯벌로서는 처음으로 세계자연유산으로 등재된 이곳은 어디일까?
 # ::note
 
 
@@ -15026,7 +15093,7 @@
 
 
 # ::id snt1.939.015_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  어버이 눈에는 제 자식이 모두 잘나 보이고 귀여워 보인다는 뜻이다.
+# ::snt 어버이 눈에는 제 자식이 모두 잘나 보이고 귀여워 보인다는 뜻이다.
 # ::note
 
 
@@ -15040,7 +15107,7 @@
 
 
 # ::id snt1.939.015_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  누구나 제 자식은 귀여워한다는 의미의 '이 동물도 제 새끼는 함함하다고 한다'라는 속담에도 등장하는 이 동물은 무엇일까?
+# ::snt 누구나 제 자식은 귀여워한다는 의미의 '이 동물도 제 새끼는 함함하다고 한다'라는 속담에도 등장하는 이 동물은 무엇일까?
 # ::note
 
 
@@ -15054,14 +15121,14 @@
 
 
 # ::id snt1.939.016_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1633년(인조 11년) 김신국(金藎國), 김육(金堉) 등의 주청으로 상평청(常平廳)을 설치하고 주조하여 처음 유통하였으나, 중지되었다.
+# ::snt 1633년(인조 11년) 김신국(金藎國), 김육(金堉) 등의 주청으로 상평청(常平廳)을 설치하고 주조하여 처음 유통하였으나, 중지되었다.
 # ::note
 
 
 
 
 # ::id snt2.939.016_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1678년(숙종 4년) 영의정 허적(許積), 좌의정 권대운(權大運) 등이 상평통보의 주조를 다시 주장하여 서울 일대와 서북 일부 지역에 유통케 하였으며, 법화(法貨)로 채택하였다.
+# ::snt 1678년(숙종 4년) 영의정 허적(許積), 좌의정 권대운(權大運) 등이 상평통보의 주조를 다시 주장하여 서울 일대와 서북 일부 지역에 유통케 하였으며, 법화(法貨)로 채택하였다.
 # ::note
 
 
@@ -15075,7 +15142,7 @@
 
 
 # ::id snt1.939.016_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  인조 11년(1633)부터 조선 후기까지 주조하여 사용하였다.
+# ::snt 인조 11년(1633)부터 조선 후기까지 주조하여 사용하였다.
 # ::note
 
 
@@ -15089,7 +15156,7 @@
 
 
 # ::id snt1.939.016_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그후 1678년(숙종 4) 정월에 다시 영의정 허적(許積), 좌의정 권대운(權大運) 등의 주장에 따라 상평통보를 다시 주조하여 서울과 서북 일부에 유통하게 하였다.
+# ::snt 그후 1678년(숙종 4) 정월에 다시 영의정 허적(許積), 좌의정 권대운(權大運) 등의 주장에 따라 상평통보를 다시 주조하여 서울과 서북 일부에 유통하게 하였다.
 # ::note
 
 
@@ -15117,7 +15184,7 @@
 
 
 # ::id snt1.939.016_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  조선 후기 현대식 화폐가 나올 때까지 통용된 이것은 무엇일까?
+# ::snt 조선 후기 현대식 화폐가 나올 때까지 통용된 이것은 무엇일까?
 # ::note
 
 
@@ -15131,28 +15198,28 @@
 
 
 # ::id snt1.939.017_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  시내를 유프라테스 강과 티그리스 강이 흐른다.
+# ::snt 시내를 유프라테스 강과 티그리스 강이 흐른다.
 # ::note
 
 
 
 
 # ::id snt2.939.017_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  카이로,테헤란, 이스탄불에 이어 중동(中東)에서 네 번째로 큰 대도시이다.
+# ::snt 카이로,테헤란, 이스탄불에 이어 중동(中東)에서 네 번째로 큰 대도시이다.
 # ::note
 
 
 
 
 # ::id snt3.939.017_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  인구는 2006년 현재 약 700만으로 추정된다.
+# ::snt 인구는 2006년 현재 약 700만으로 추정된다.
 # ::note
 
 
 
 
 # ::id snt4.939.017_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  티그리스 강 서족 기슭에 위치한 고대 메소포타미아에서 손꼽히는 바그다드는 서기 8세기경 장안, 콘스탄티노폴리스 등과 더불어 세계적인 대도시 중의 하나로 번성하였다.
+# ::snt 티그리스 강 서족 기슭에 위치한 고대 메소포타미아에서 손꼽히는 바그다드는 서기 8세기경 장안, 콘스탄티노폴리스 등과 더불어 세계적인 대도시 중의 하나로 번성하였다.
 # ::note
 
 
@@ -15166,21 +15233,21 @@
 
 
 # ::id snt1.939.017_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  고대 메소포타미아 이래 서아시아에서 손꼽히는 정치, 경제, 문화의 중심지이다.
+# ::snt 고대 메소포타미아 이래 서아시아에서 손꼽히는 정치, 경제, 문화의 중심지이다.
 # ::note
 
 
 
 
 # ::id snt2.939.017_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  밀ㆍ양모ㆍ피혁의 집산지이며, 모직물 공업이 발달하였다.
+# ::snt 밀ㆍ양모ㆍ피혁의 집산지이며, 모직물 공업이 발달하였다.
 # ::note
 
 
 
 
 # ::id snt3.939.017_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이라크의 수도이다.
+# ::snt 이라크의 수도이다.
 # ::note
 
 
@@ -15194,7 +15261,7 @@
 
 
 # ::id snt1.939.017_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  메소포타미아의 중앙에 있는 티그리스 강변에 있다.
+# ::snt 메소포타미아의 중앙에 있는 티그리스 강변에 있다.
 # ::note
 
 
@@ -15215,14 +15282,14 @@
 
 
 # ::id snt1.939.017_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  고대 메소포타미아에서 가장 오래된 도시로서, 여러 시대에 걸쳐 무역로의 교차점으로 중요한 역할을 했다.
+# ::snt 고대 메소포타미아에서 가장 오래된 도시로서, 여러 시대에 걸쳐 무역로의 교차점으로 중요한 역할을 했다.
 # ::note
 
 
 
 
 # ::id snt2.939.017_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  티그리스강 연안에 위치하며 기후는 사막이 가까워서 건조하다.
+# ::snt 티그리스강 연안에 위치하며 기후는 사막이 가까워서 건조하다.
 # ::note
 
 
@@ -15236,14 +15303,14 @@
 
 
 # ::id snt1.939.017_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  도시 주변으로 티그리스 강이 흐르며 번영할 당시 인구가 100만을 넘어 당의 장안, 비잔티움 제국의 콘스탄티노폴리스와 함께 세계에서 가장 번성했다.
+# ::snt 도시 주변으로 티그리스 강이 흐르며 번영할 당시 인구가 100만을 넘어 당의 장안, 비잔티움 제국의 콘스탄티노폴리스와 함께 세계에서 가장 번성했다.
 # ::note
 
 
 
 
 # ::id snt2.939.017_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  8세기 아바스 왕조의 수도였으며 현재 이라크의 수도인 이 도시는 어디일까?
+# ::snt 8세기 아바스 왕조의 수도였으며 현재 이라크의 수도인 이 도시는 어디일까?
 # ::note
 
 
@@ -15285,7 +15352,7 @@
 
 
 # ::id snt1.939.018_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  <슬견설>에서 견은 '개'를 뜻하며 슬은 '이 생물'을 뜻하는데 이 생물은 무엇일까?
+# ::snt <슬견설>에서 견은 '개'를 뜻하며 슬은 '이 생물'을 뜻하는데 이 생물은 무엇일까?
 # ::note
 
 
@@ -15306,7 +15373,7 @@
 
 
 # ::id snt1.939.019_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  백제의 성왕 때부터 의자왕 때까지 도읍지였다.
+# ::snt 백제의 성왕 때부터 의자왕 때까지 도읍지였다.
 # ::note
 
 
@@ -15327,7 +15394,7 @@
 
 
 # ::id snt1.939.019_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그렇다면 당시 백제의 수도는 지금의 어디일까?
+# ::snt 그렇다면 당시 백제의 수도는 지금의 어디일까?
 # ::note
 
 
@@ -15376,7 +15443,7 @@
 
 
 # ::id snt1.939.020_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그렇다면 얼굴이 찢어지도록 크게 웃는다는 뜻으로, '한바탕 크게 웃음'을 뜻하는 이 사자성어는 무엇일까?
+# ::snt 그렇다면 얼굴이 찢어지도록 크게 웃는다는 뜻으로, '한바탕 크게 웃음'을 뜻하는 이 사자성어는 무엇일까?
 # ::note
 
 
@@ -15397,21 +15464,21 @@
 
 
 # ::id snt1.939.021_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  파장에 따라 굴절률이 다르므로 분산을 일으키는데, 이것들은 파장의 순서로 배열된다.
+# ::snt 파장에 따라 굴절률이 다르므로 분산을 일으키는데, 이것들은 파장의 순서로 배열된다.
 # ::note
 
 
 
 
 # ::id snt2.939.021_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  스펙트럼 띠의 상태에 따라 연속ㆍ휘선(輝線)ㆍ대상(帶狀) 스펙트럼으로, 또는 방출ㆍ흡수스펙트럼으로 분류한다.
+# ::snt 스펙트럼 띠의 상태에 따라 연속ㆍ휘선(輝線)ㆍ대상(帶狀) 스펙트럼으로, 또는 방출ㆍ흡수스펙트럼으로 분류한다.
 # ::note
 
 
 
 
 # ::id snt3.939.021_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  여러 가지 원자나 분자에서 나오는 빛이나 엑스선은 각기 고유한 스펙트럼을 가지고 있어서 이것을 토대로 한 연구는 원자나 분자의 구조를 밝히는 데 이용한다.
+# ::snt 여러 가지 원자나 분자에서 나오는 빛이나 엑스선은 각기 고유한 스펙트럼을 가지고 있어서 이것을 토대로 한 연구는 원자나 분자의 구조를 밝히는 데 이용한다.
 # ::note
 
 
@@ -15439,14 +15506,14 @@
 
 
 # ::id snt1.939.021_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  각각의 단색광이 파장의 순으로 연속되어 나타난다.
+# ::snt 각각의 단색광이 파장의 순으로 연속되어 나타난다.
 # ::note
 
 
 
 
 # ::id snt2.939.021_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  뉴턴이 1666년에 처음으로 햇빛을 프리즘으로 분해하여, 7가지 색의 띠를 관측하였다.
+# ::snt 뉴턴이 1666년에 처음으로 햇빛을 프리즘으로 분해하여, 7가지 색의 띠를 관측하였다.
 # ::note
 
 
@@ -15460,7 +15527,7 @@
 
 
 # ::id snt1.939.021_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  파장에 따른 굴절률 차이를 이용해 빛을 파장 또는 진동수에 따라 분해한 것인데 이 단어는 무엇일까?
+# ::snt 파장에 따른 굴절률 차이를 이용해 빛을 파장 또는 진동수에 따라 분해한 것인데 이 단어는 무엇일까?
 # ::note
 
 
@@ -15481,7 +15548,7 @@
 
 
 # ::id snt1.939.022_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  입춘(立春)과 경칩(驚蟄) 사이에 들며, 양력 2월 18일경이 된다.
+# ::snt 입춘(立春)과 경칩(驚蟄) 사이에 들며, 양력 2월 18일경이 된다.
 # ::note
 
 
@@ -15509,7 +15576,7 @@
 
 
 # ::id snt1.939.022_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  입춘과 경칩 사이의 이 절기는 무엇일까?
+# ::snt 입춘과 경칩 사이의 이 절기는 무엇일까?
 # ::note
 
 
@@ -15523,21 +15590,21 @@
 
 
 # ::id snt1.939.023_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  19세기 프랑스의 고전주의를 대표하는 화가이다.
+# ::snt 19세기 프랑스의 고전주의를 대표하는 화가이다.
 # ::note
 
 
 
 
 # ::id snt2.939.023_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  초상화가로서도 천재적인 소묘력과 고전풍의 세련미를 발휘했다.
+# ::snt 초상화가로서도 천재적인 소묘력과 고전풍의 세련미를 발휘했다.
 # ::note
 
 
 
 
 # ::id snt3.939.023_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  《루이 13세의 성모에의 서약》으로 이름을 떨치면서부터 들라크루아가 이끄는 신흥낭만주의운동에 대항하는 고전파의 중심적 존재가 되었다.
+# ::snt 《루이 13세의 성모에의 서약》으로 이름을 떨치면서부터 들라크루아가 이끄는 신흥낭만주의운동에 대항하는 고전파의 중심적 존재가 되었다.
 # ::note
 
 
@@ -15565,7 +15632,7 @@
 
 
 # ::id snt1.939.023_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  대표작으로 <오달리스크>가 있는데 이 화가는 누구일까?
+# ::snt 대표작으로 <오달리스크>가 있는데 이 화가는 누구일까?
 # ::note
 
 
@@ -15586,7 +15653,7 @@
 
 
 # ::id snt1.939.024_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  고종 31년(1894)에 설치하여 융희 4년(1910)까지 두었다.
+# ::snt 고종 31년(1894)에 설치하여 융희 4년(1910)까지 두었다.
 # ::note
 
 
@@ -15607,7 +15674,7 @@
 
 
 # ::id snt1.939.024_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  앞쪽을 궁내부 관제로, 뒤쪽을 의정부 관제로 정립시켰다.
+# ::snt 앞쪽을 궁내부 관제로, 뒤쪽을 의정부 관제로 정립시켰다.
 # ::note
 
 
@@ -15628,7 +15695,7 @@
 
 
 # ::id snt1.939.024_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 기구는 무엇일까?
+# ::snt 이 기구는 무엇일까?
 # ::note
 
 
@@ -15642,7 +15709,7 @@
 
 
 # ::id snt1.939.025_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  옥스퍼드 영어 사전에서는 "1950년 54년 사이에 일어난, 공산주의 혐의자들에 반대하는 떠들석한 반대 캠페인으로, 대부분의 경우 공산주의자와 관련이 없었지만, 많은 사람들이 블랙리스트에 오르거나 직업을 잃었다"고 정의하고 있다.
+# ::snt 옥스퍼드 영어 사전에서는 "1950년 54년 사이에 일어난, 공산주의 혐의자들에 반대하는 떠들석한 반대 캠페인으로, 대부분의 경우 공산주의자와 관련이 없었지만, 많은 사람들이 블랙리스트에 오르거나 직업을 잃었다"고 정의하고 있다.
 # ::note
 
 
@@ -15656,14 +15723,14 @@
 
 
 # ::id snt1.939.025_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  또는 정적이나 체제에 반대하는 사람을 공산주의자로 몰아 처벌하려는 경향이나 태도.
+# ::snt 또는 정적이나 체제에 반대하는 사람을 공산주의자로 몰아 처벌하려는 경향이나 태도.
 # ::note
 
 
 
 
 # ::id snt2.939.025_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1950년대 초에 공산주의가 팽창하는 움직임에 위협을 느끼던 미국의 사회적 분위기를 이용하여 매카시가 행한 선동 정치에서 유래한다.
+# ::snt 1950년대 초에 공산주의가 팽창하는 움직임에 위협을 느끼던 미국의 사회적 분위기를 이용하여 매카시가 행한 선동 정치에서 유래한다.
 # ::note
 
 
@@ -15698,7 +15765,7 @@
 
 
 # ::id snt1.939.025_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  객관적 사실에 바탕을 둔 민주적 토론이 아닌 군중 심리를 파고드는 선동 행위를 통해 정치적 반대파들을 대중적으로 고립시키는 행위를 뜻하는데, 이 단어는 무엇일까?
+# ::snt 객관적 사실에 바탕을 둔 민주적 토론이 아닌 군중 심리를 파고드는 선동 행위를 통해 정치적 반대파들을 대중적으로 고립시키는 행위를 뜻하는데, 이 단어는 무엇일까?
 # ::note
 
 
@@ -15712,7 +15779,7 @@
 
 
 # ::id snt1.939.026_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이 원리는 프랑스 수학자 블레즈 파스칼이 정립했다.
+# ::snt 이 원리는 프랑스 수학자 블레즈 파스칼이 정립했다.
 # ::note
 
 
@@ -15726,14 +15793,14 @@
 
 
 # ::id snt1.939.026_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  유압기, 공기 제동기 등은 이 원리를 응용한 것이다.
+# ::snt 유압기, 공기 제동기 등은 이 원리를 응용한 것이다.
 # ::note
 
 
 
 
 # ::id snt2.939.026_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1653년에 프랑스의 학자 파스칼이 발견하였다.
+# ::snt 1653년에 프랑스의 학자 파스칼이 발견하였다.
 # ::note
 
 
@@ -15754,7 +15821,7 @@
 
 
 # ::id snt1.939.026_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이것은 B Pascal이 1653년에 발견한 것으로, 파스칼의 원리라고 불린다.
+# ::snt 이것은 B Pascal이 1653년에 발견한 것으로, 파스칼의 원리라고 불린다.
 # ::note
 
 
@@ -15768,14 +15835,14 @@
 
 
 # ::id snt1.939.026_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  즉 유체 안의 어느 부분의 압력도 가해진 힘만큼 증가한다는 원리.
+# ::snt 즉 유체 안의 어느 부분의 압력도 가해진 힘만큼 증가한다는 원리.
 # ::note
 
 
 
 
 # ::id snt2.939.026_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  파스칼이 발견한 것으로 수압기 등에 응용된다.
+# ::snt 파스칼이 발견한 것으로 수압기 등에 응용된다.
 # ::note
 
 
@@ -15789,7 +15856,7 @@
 
 
 # ::id snt1.939.026_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  자신의 이름을 딴 원리로 유명하며 프랑스의 과학자이자 수학자인 이 사람은 누구일까?
+# ::snt 자신의 이름을 딴 원리로 유명하며 프랑스의 과학자이자 수학자인 이 사람은 누구일까?
 # ::note
 
 
@@ -15803,14 +15870,14 @@
 
 
 # ::id snt1.939.027_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  프랑스의 경우는 '불'이라 한자를, 네덜란드는 '란'이라는 한자를 사용한다.
+# ::snt 프랑스의 경우는 '불'이라 한자를, 네덜란드는 '란'이라는 한자를 사용한다.
 # ::note
 
 
 
 
 # ::id snt2.939.027_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그렇다면 한자 '더할 가'로 표현하는 나라는 어디일까?
+# ::snt 그렇다면 한자 '더할 가'로 표현하는 나라는 어디일까?
 # ::note
 
 
@@ -15831,21 +15898,21 @@
 
 
 # ::id snt1.939.028_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  허리가 길고 다리가 짧다.
+# ::snt 허리가 길고 다리가 짧다.
 # ::note
 
 
 
 
 # ::id snt2.939.028_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  애완용으로 기르거나 오소리, 너구리, 토끼 사냥에 쓴다.
+# ::snt 애완용으로 기르거나 오소리, 너구리, 토끼 사냥에 쓴다.
 # ::note
 
 
 
 
 # ::id snt3.939.028_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  독일이 원산지이다.
+# ::snt 독일이 원산지이다.
 # ::note
 
 
@@ -15873,7 +15940,7 @@
 
 
 # ::id snt1.939.028_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1972년 뮌헨 올림픽의 마스코트로 몸통이 길고 사지가 짧은 이 품종은 무엇일까?
+# ::snt 1972년 뮌헨 올림픽의 마스코트로 몸통이 길고 사지가 짧은 이 품종은 무엇일까?
 # ::note
 
 
@@ -15887,7 +15954,7 @@
 
 
 # ::id snt1.939.029_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  아호는 왕산(旺山).
+# ::snt 아호는 왕산(旺山).
 # ::note
 
 
@@ -15901,28 +15968,28 @@
 
 
 # ::id snt1.939.029_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  조선 말기의 의병장.
+# ::snt 조선 말기의 의병장.
 # ::note
 
 
 
 
 # ::id snt2.939.029_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  본관은 김해(金海).
+# ::snt 본관은 김해(金海).
 # ::note
 
 
 
 
 # ::id snt3.939.029_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  호는 왕산(旺山).
+# ::snt 호는 왕산(旺山).
 # ::note
 
 
 
 
 # ::id snt4.939.029_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  경상북도 구미 출생이다.
+# ::snt 경상북도 구미 출생이다.
 # ::note
 
 
@@ -15936,7 +16003,7 @@
 
 
 # ::id snt1.939.029_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  호는 왕산(旺山).
+# ::snt 호는 왕산(旺山).
 # ::note
 
 
@@ -15950,7 +16017,7 @@
 
 
 # ::id snt1.939.029_A.04_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  호 왕산(旺山).
+# ::snt 호 왕산(旺山).
 # ::note
 
 
@@ -15964,7 +16031,7 @@
 
 
 # ::id snt1.939.029_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  호는 왕산(旺山), 본관은 김해.
+# ::snt 호는 왕산(旺山), 본관은 김해.
 # ::note
 
 
@@ -15978,7 +16045,7 @@
 
 
 # ::id snt1.939.029_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  그의 고향인 구미에서는 그를 기리는 오페라 공연이 열리기도 했는데, 호가 왕산인 이 사람은 누구일까?
+# ::snt 그의 고향인 구미에서는 그를 기리는 오페라 공연이 열리기도 했는데, 호가 왕산인 이 사람은 누구일까?
 # ::note
 
 
@@ -16034,7 +16101,7 @@
 
 
 # ::id snt1.939.031_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  조선 말기에 원각사라는 국립극장이 생겨 판소리 가객들이 배역을 분담하여 판소리를 공연했던 데서부터 창극이란 용어가 비롯되며 그 후 각본도 새로 쓰고 곡조도 새로 붙인 창작 창극이 나왔다.
+# ::snt 조선 말기에 원각사라는 국립극장이 생겨 판소리 가객들이 배역을 분담하여 판소리를 공연했던 데서부터 창극이란 용어가 비롯되며 그 후 각본도 새로 쓰고 곡조도 새로 붙인 창작 창극이 나왔다.
 # ::note
 
 
@@ -16048,7 +16115,7 @@
 
 
 # ::id snt1.939.031_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  여러 사람들이 배역을 맡아 창(唱)을 중심으로 극을 전개하는 것으로, 20세기 초 협률사에서 판소리를 무대화하고 판소리에 등장하는 각 인물에 전담 배역을 붙여 노래와 연기를 하게 한 것을 계기로 발달하였다.
+# ::snt 여러 사람들이 배역을 맡아 창(唱)을 중심으로 극을 전개하는 것으로, 20세기 초 협률사에서 판소리를 무대화하고 판소리에 등장하는 각 인물에 전담 배역을 붙여 노래와 연기를 하게 한 것을 계기로 발달하였다.
 # ::note
 
 
@@ -16076,7 +16143,7 @@
 
 
 # ::id snt1.939.031_A.05_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  처음의 창극은 1903년 <춘향전>이었고, 다음 해에는 <심청가>를 창극화했다.
+# ::snt 처음의 창극은 1903년 <춘향전>이었고, 다음 해에는 <심청가>를 창극화했다.
 # ::note
 
 
@@ -16090,7 +16157,7 @@
 
 
 # ::id snt1.939.031_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  1903년 협률사에서 춘향전을 공연한 것이 최초인 이것은 무엇일까?
+# ::snt 1903년 협률사에서 춘향전을 공연한 것이 최초인 이것은 무엇일까?
 # ::note
 
 
@@ -16104,14 +16171,14 @@
 
 
 # ::id snt1.939.032_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  짧은 장면의 연속에 의해 움직이는 물체의 모습이 나타날 때 그리고 움직이는 물체가 샘플링 레이트에 가깝게 회전하거나 어떠한 주기적인 움직임을 띌 때 스트로보 효과가 발생한다.
+# ::snt 짧은 장면의 연속에 의해 움직이는 물체의 모습이 나타날 때 그리고 움직이는 물체가 샘플링 레이트에 가깝게 회전하거나 어떠한 주기적인 움직임을 띌 때 스트로보 효과가 발생한다.
 # ::note
 
 
 
 
 # ::id snt2.939.032_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  이것으로 영상에서 마차에 달린 바퀴가 뒤로 돌아가는 것처럼 보인다는 이른바 “마차 바퀴 현상”을 설명할 수도 있다.
+# ::snt 이것으로 영상에서 마차에 달린 바퀴가 뒤로 돌아가는 것처럼 보인다는 이른바 “마차 바퀴 현상”을 설명할 수도 있다.
 # ::note
 
 
@@ -16125,7 +16192,7 @@
 
 
 # ::id snt1.939.032_A.02_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt   효과의 이런 형태는 스트로보효과로 알려져 있다.
+# ::snt  효과의 이런 형태는 스트로보효과로 알려져 있다.
 # ::note
 
 
@@ -16139,7 +16206,7 @@
 
 
 # ::id snt1.939.032_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  예컨대 전진하는 차량의 바퀴가 돌지 않거나 뒤로 돌고 있는 것같이 보인다.
+# ::snt 예컨대 전진하는 차량의 바퀴가 돌지 않거나 뒤로 돌고 있는 것같이 보인다.
 # ::note
 
 
@@ -16153,7 +16220,7 @@
 
 
 # ::id snt1.939.032_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  마차에 달린 바퀴가 뒤로 돌아가는 것처럼 보이는 이 효과는 무엇일까?
+# ::snt 마차에 달린 바퀴가 뒤로 돌아가는 것처럼 보이는 이 효과는 무엇일까?
 # ::note
 
 
@@ -16174,7 +16241,7 @@
 
 
 # ::id snt1.939.033_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  피에타, 모세상 등과 더물어 미켈란젤로의 3대 조각상으로 불리는 이 조각상은 무엇일까?
+# ::snt 피에타, 모세상 등과 더물어 미켈란젤로의 3대 조각상으로 불리는 이 조각상은 무엇일까?
 # ::note
 
 
@@ -16195,5 +16262,5 @@
 
 
 # ::id snt1.939.034_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt  단종의 보필에 힘썼으나 계유정난 때 수양 대군에 의해 제거된 이 사람은 누구일까?
+# ::snt 단종의 보필에 힘썼으나 계유정난 때 수양 대군에 의해 제거된 이 사람은 누구일까?
 # ::note
