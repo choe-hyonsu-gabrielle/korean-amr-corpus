@@ -1,6 +1,10 @@
 # ::id snt0.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt "4대강 담합 처벌 다 받았는데" vs "털어내고 신뢰회복 계기".
-# ::note
+# ::note vs --> 맞서-01 + 주장-01로 처리
+(맞 / 맞서-01
+    :ARG0 
+    )
+
 -- FRAMES ----------------------------------------
 처벌 : VERBAL_NOUN
 	- punish		(처 / 처벌-01 :ARG0 agent :ARG1 thing_punished)
