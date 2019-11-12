@@ -122,8 +122,7 @@
 	:ARG1 (a / and
 		:op1 (규 / 규명-01
 			:manner (명 / 명확하-01)
-			:topic (사 / 사업-01
-				:topic (강 / 강 :mod 4))
+			:topic (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업"))
 			:ARG1 (a2 / and
 				:op1 (잘 / 잘못-01
 					:mod (판 / 판단-01
@@ -145,8 +144,7 @@
 	:ARG1 (조 / 조사-01
 		:ARG1 (비 / 비리
 			:mod (담 / 담합-00)
-			:topic (사 / 사업-01
-				:topic (강 / 강 :mod 4)))
+			:topic (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업")))
 	:time (기 / 기소-01
 		:ARG0 (g / government-organization :wiki "대한민국_검찰청" :name (이 / 이름 :op1 "검찰"))
 		:ARG1 (a / and
@@ -231,191 +229,97 @@
 		:ARG2 (업 / 업체
 			:mod (이3 / 이들))))
 
--- FRAMES ----------------------------------------
-업체들 : DERIVED_NON-ENTRY -> (업 / 업체들-00) ?
-대법원 : DERIVED_NON-ENTRY -> (대 / 대법원-00) ?
-확정 : VERBAL_NOUN
-	- decide		(확 / 확정-01 :ARG0 decider :ARG1 thing_decided :ARG2 attribute)
-선고 : VERBAL_NOUN
-	- sentence		(선 / 선고-01 :ARG0 judge,_court :ARG1 punishment :ARG2 criminal)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"5000만~7500만 원" [QT_PRICE]	->  :quant (5 / 5000만~7500만원)	OR	(m / monetary-quantity :quant 5000만~7500만 :unit|scale 원)
-"대법원" [OGG_LAW]	->  (대 / 대법원)	OR	(g / government-organization :wiki "대한민국_대법원" :name (이 / 이름 :op1 "대법원"))
-"벌금형" [CV_LAW]	->  (벌 / 벌금형)	OR	(l / law :wiki "벌금" :name (이 / 이름 :op1 "벌금형"))
--- VERBALIZED ------------------------------------
-(들 / 들 :mod (업 / 업체-00))
-(선 / 선고-01 :ARG1 (확 / 확정-01))
-(형 / 형 :mod (벌 / 벌금-00))
-
-
-# ::id snt10.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle ::preferred True
 # ::snt 벌금 7500만 원은 건설산업기본법에 따라 담합 행위를 한 기업에 내릴 수 있는 최고 형량이다.
 # ::note
--- FRAMES ----------------------------------------
-건설 : VERBAL_NOUN
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-기본법 : DERIVED_NON-ENTRY -> (기 / 기본법-00) ?
-따르 : VERB
-	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
-	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-기업 : VERBAL_NOUN
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-내리 : VERB
-	- put_down		(내 / 내리-01 :ARG0 agent :ARG1 thing_put_down :ARG2 start_point :ARG3 end_point)
-	- get_off		(내 / 내리-02 :ARG0 agent :ARG1 vehicle)
-	- give-light_verb		(내 / 내리-03 :ARG0 agent :ARG1 deverbal_noun :ARG2 given_to)
-	- fall		(내 / 내리-04 :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
-	- collapse-CV		(내 / 내리-05 :ARG1 stock :ARG2 start_point :ARG3 end_point)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"7500만 원" [QT_PRICE]	->  :quant (7 / 7500만원)	OR	(m / monetary-quantity :quant 7500만 :unit|scale 원)
-"건설산업기본법" [CV_LAW]	->  (건 / 건설산업기본법)	OR	(l / law :wiki - :name (이 / 이름 :op1 "건설산업기본법"))
-"벌금" [CV_LAW]	->  (벌 / 벌금)	OR	(l / law :wiki "벌금" :name (이 / 이름 :op1 "벌금"))
--- VERBALIZED ------------------------------------
-(기 / 기본 :mod (산 / 산업-00))
-(법 / 법 :mod (기 / 기본-00))
-(산 / 산업-00 :mod (건 / 건설-01))
-(행 / 행위 :mod (담 / 담합-00))
-(형 / 형량 :mod (최 / 최고-00))
+(형 / 형량
+	:domain (m / monetary-quantity :quant 75000000 :unit (원 / 원)
+		:mod (벌 / 벌금))
+	:mod (최 / 최고)
+	:mod (가 / 가능-01
+		:ARG1 (내 / 내리-03
+			:ARG2 (기 / 기업-01
+				:ARG0-of (하 / 하-01
+					:ARG1 (행 / 행위-00
+						:mod (담 / 담합-00))))
+			:manner (따 / 따르-02
+				:ARG2 (l / law :wiki - :name (이 / 이름 :op1 "건설산업기본법"))))))
 
-
-# ::id snt11.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle ::preferred True
 # ::snt 건설사 협의체 운영위원을 맡은 건설사 임원에게는 징역 2년의 실형이 선고됐으며 나머지 전현직 임원 가운데 18명은 징역 8월에서 2년에 집행유예 1∼3년이 선고됐다.
 # ::note
--- FRAMES ----------------------------------------
-건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설사-00) ?
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-협의 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (협 / 협의체-00) ?
-	- discuss		(협 / 협의-01 :ARG0 discussant :ARG1 topic :ARG2 conversation_partner)
-운영 : VERBAL_NOUN
-	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
-맡 : VERB
-	- have_charge_of		(맡 / 맡-01 :ARGA causer :ARG0 agent :ARG1 thing_had_charge_of)
-건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설사-00) ?
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-선고 : VERBAL_NOUN
-	- sentence		(선 / 선고-01 :ARG0 judge,_court :ARG1 punishment :ARG2 criminal)
-집행 : VERBAL_NOUN
-	- put_into_effect		(집 / 집행-01 :ARG0 agent :ARG1 thing_put_into_effect)
-유예 : VERBAL_NOUN
-	- suspend		(유 / 유예-01 :ARG0 agent :ARG1 thing_suspended)
-선고 : VERBAL_NOUN
-	- sentence		(선 / 선고-01 :ARG0 judge,_court :ARG1 punishment :ARG2 criminal)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"18명" [QT_MAN_COUNT]	->  :quant (1 / 18명)	OR	(c / concept* :quant 18 :unit|scale (명 / 명))
-"1∼3년" [DT_DURATION]	->  :time|duration (1 / 1∼3년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration (t / temporal-quantity :quant :unit ( / ))
-"2년" [DT_DURATION]	->  :time|duration (2 / 2년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration (t / temporal-quantity :quant :unit ( / ))
-"운영위원" [CV_POSITION]	->  :mod (운 / 운영위원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (운 / 운영위원))
-"임원" [CV_POSITION]	->  :mod (임 / 임원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (임 / 임원))
-"임원" [CV_POSITION]	->  :mod (임 / 임원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (임 / 임원))
-"집행유예" [CV_LAW]	->  (집 / 집행유예)	OR	(l / law :wiki "집행유예" :name (이 / 이름 :op1 "집행유예"))
-"징역 2년" [CV_LAW]	->  (징 / 징역2년)	OR	(l / law :wiki - :name (이 / 이름 :op1 "징역" :op2 "2년"))
-"징역 8월" [CV_LAW]	->  (징 / 징역8월)	OR	(l / law :wiki - :name (이 / 이름 :op1 "징역" :op2 "8월"))
-"협의체" [OGG_ECONOMY]	->  (협 / 협의체)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "협의체"))
--- VERBALIZED ------------------------------------
-(가 / 가운데 :mod (임 / 임원-00))
-(사 / 사 :mod (건 / 건설-00))
-(사 / 사 :mod (건 / 건설-00))
-(위 / 위원-00 :mod (운 / 운영-01))
-(유 / 유예-01 :ARG1 (집 / 집행-01))
-(임 / 임원 :mod (현 / 현직-00))
-(전 / 전 :mod (나 / 나머지-00))
-(체 / 체 :ARG0-of (협 / 협의-01))
-(현 / 현직 :mod (전 / 전-00))
+(a / and
+	:op1 (선 / 선고-01 
+		:ARG1 (실 / 실형
+			:mod (징 / 징역
+				:mod (t / temporal-quantity :quant 2 :unit (년 / 년))))
+		:ARG2 (사 / 사람 
+			:ARG0-of (h / have-org-role-91
+				:ARG1 (회 / 회사
+					:ARG0-of (건 / 건설-01))
+				:ARG2 (임 / 임원)
+				:ARG3 (위 / 위원
+					:ARG0-of (운 / 운영-01
+						:ARG1 (조 / 조직체 
+							:purpose (협 / 협의-01)
+							:poss 회))))))
+	:op2 (선2 / 선고-01 
+		:ARG1 (o / or
+			:op1 (징2 / 징역
+				:mod (사 / 사이
+					:op1 (t2 / temporal-quantity :quant 8 :unit (월 / 월))
+					:op2 (t3 / temporal-quantity :quant 2 :unit (년2 / 년))))
+			:op2 (집 / 집행유예
+				:mod (사2 / 사이
+					:op1 (t4 / temporal-quantity :quant 1 :unit (년3 / 년))
+					:op2 (t5 / temporal-quantity :quant 3 :unit (년4 / 년)))))
+		:ARG2 (사2 / 사람 :quant 18 :unit (명 / 명)
+			:ARG1-of (i / include-91
+				:ARG2 (사3 / 사람 :quant (나 / 나머지)
+					:ARG0-of (h2 / have-org-role-91
+						:ARG2 (임2 / 임원
+							:mod (o2 / or
+								:op1 (전 / 전직)
+								:op2 (현 / 현직)))))))))
 
-
-# ::id snt12.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle ::preferred True
 # ::snt 2015년 특별 사면 때 입찰 담합으로 부정당업체 제재를 받은 70여 개 업체를 비롯해 2000여 개 건설 업체가 각종 제재에서 사면 혜택을 받았다.
-# ::note
--- FRAMES ----------------------------------------
-특별 : VERBAL_NOUN
-	- special		(특 / 특별-01 :ARG1 thing_being_special)
-입찰 : VERBAL_NOUN
-	- bid		(입 / 입찰-01 :ARG0 agent :ARG1 thing_bidded)
-부정당 : DERIVED_NON-ENTRY -> (부 / 부정당-00) ?
-제재 : VERBAL_NOUN
-	- punish		(제 / 제재-01 :ARG0 agent :ARG1 thing_punished)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
-비롯하 : VERB
-	- include		(비 / 비롯하-01 :ARG1 group :ARG2 member)
-건설 : VERBAL_NOUN
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-제재 : VERBAL_NOUN
-	- punish		(제 / 제재-01 :ARG0 agent :ARG1 thing_punished)
-사면 : REDUCED_VERB_DETECTED
-	- buy		(사 / 사-01 :ARG0 buyer :ARG1 thing_bought :ARG2 seller)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2000여 개" [QT_COUNT]	->  :quant (2 / 2000여개)	OR	(c / concept* :quant 2000여 :unit|scale 개)
-"2015년" [DT_YEAR]	->  :time|duration (2 / 2015년)	OR	:time (d / date-entity :year 2015)	OR	:duration (t / temporal-quantity :quant 2015 :unit (년 / 년))  
-"70여 개" [QT_COUNT]	->  :quant (7 / 70여개)	OR	(c / concept* :quant 70여 :unit|scale 개)
--- VERBALIZED ------------------------------------
-(담 / 담합-00 :mod (입 / 입찰-01))
-(때 / 때 :mod (사 / 사면-00))
-(사 / 사면-00 :mod (특 / 특별-01))
-(업 / 업체 :mod (정 / 정당-00))
-(업 / 업체-00 :mod (건 / 건설-01))
-(입 / 입찰-01 :mod (때 / 때-00))
-(제 / 제재-01 :mod (각 / 각종-00))
-(제 / 제재-01 :mod (업 / 업체-00))
+# ::note 자격격은 동격으로 처리
+(사 / 사면-00
+	:ARG1 (업 / 업체 :quant (여 / 여 :op1 2000) :unit (개 / 개)
+		:ARG0-of (건 / 건설-01)
+		:ARG1-of (비 / 비롯하-01
+			:ARG2 (업2 / 업체 :quant (여2 / 여 :op1 70) :unit (개2 / 개)
+				:ARG1-of (제 / 제재-01
+					:ARG1 (업3 / 업체
+						:ARG1-of (정 / 정당-01 :polarity -))
+					:cause (담 / 담합-00
+						:purpose (입 / 입찰-01))))))
+	:time (사2 / 사면-00
+		:ARG1-of (특 / 특별-01)
+		:time (d / date-entity :year 2015)))
 
-
-# ::id snt13.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle ::preferred True
 # ::snt 업계에선 단기적 성과에 집착한 정부의 무리한 4대강 살리기 사업 추진이 건설업계의 담합 등 비리 사건을 일으키는 빌미를 제공했다는 점도 정상참작된 것으로 보고 있다.
-# ::note
--- FRAMES ----------------------------------------
-단기적 : DERIVED_NON-ENTRY -> (단 / 단기적-00) ?
-집착하 : DERIVED_NON-ENTRY
-무리하 : DERIVED_NON-ENTRY
-살리 : REDUCED_VERB_DETECTED
-	- reside		(살 / 살-01 :ARG0 entity_residing :ARG2 location)
-	- be_alive		(살 / 살-02 :ARG0 agent :ARG1 entity_being_alive)
-사업 : VERBAL_NOUN
-	- do_business		(사 / 사업-01 :ARG0 agent)
-추진 : VERBAL_NOUN
-	- drive_forward		(추 / 추진-01 :ARG0 agent :ARG1 thing_driven_forward)
-건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설업-00) ?
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-일으키 : VERB
-	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
-제공 : VERBAL_NOUN
-	- provide		(제 / 제공-01 :ARG0 provider :ARG1 thing_provided :ARG2 provided_for)
-참작되 : DERIVED_NON-ENTRY
-보 : VERB
-	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
-	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
-	- according_to		(보 / 보-03 :ARG1 theme)
-	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
-	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
-	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
-	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"4대강 살리기 사업" [TMI_PROJECT]	->  (4 / 4대강살리기사업)	OR	(p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "살리기" :op3 "사업"))
-"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
--- VERBALIZED ------------------------------------
-(강 / 강-00 :mod (대 / 대-01))
-(사 / 사건 :mod (비 / 비리-00))
-(업 / 업 :mod (건 / 건설-00))
-(적 / 적 :mod (단 / 단기-00))
-(참 / 참작 :mod (정 / 정상-00))
-(추 / 추진-01 :ARG1 (사 / 사업-01))
-
+(보 / 보-02
+	:ARG0 (업 / 업계)
+	:ARG1 (정 / 정상참작-00
+		:ARG1 (제 / 제공-01
+			:ARG0 (추 / 추진-01
+				:ARG0 (g / government-organization :wiki "대한민국_정부" :name (이 / 이름 :op1 "정부")
+					:ARG0-of (집 / 집착-00
+						:ARG1 (성 / 성과
+							:mod (단 / 단기))))
+				:ARG1 (p / project* :wiki "4대강_정비_사업" :name (이2 / 이름 :op1 "4대강" :op2 "살리기" :op3 "사업"))
+				:manner (무 / 무리하-00))
+			:ARG1 (빌 / 빌미)
+			:ARG2 (일 / 일으키-01
+				:ARG1 (사 / 사건
+					:mod (비 / 비리)
+					:example (등 / 등
+						:op1 (담 / 담합-00
+							:ARG0 (업2 / 업계
+								ARG0-of (건 / 건설-01)))))))))
 
 # ::id snt14.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt A사 건설사 임원은 "4대강 사업은 개별 건설사가 이윤을 목적으로 선택해 입찰한 것이 아니라 동원된 사업이었다"면서 "줄줄이 과태료와 손해배상, 형사처벌 등이 이어졌고 나아가 무엇보다 건설산업에 대한 국민적 불신을 키우게 된 계기가 됐다"고 토로했다.
@@ -473,8 +377,8 @@
 (건 / 건설-01 :mod (개 / 개별-00))
 (료 / 료 :mod (과 / 과태-00))
 (배 / 배상 :mod (손 / 손해-00))
-(사 / 사 :mod (건 / 건설-00))
-(사 / 사 :mod (건 / 건설-00))
+(사 / 사 :ARG0-of (건 / 건설-01))
+(사 / 사 :ARG0-of (건 / 건설-01))
 (사 / 사업-01 :mod (강 / 강-00))
 (산 / 산업-00 :mod (건 / 건설-01))
 (적 / 적 :mod (국 / 국민-00))
@@ -526,7 +430,7 @@
 "정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
 -- VERBALIZED ------------------------------------
 (단 / 단계-00 :mod (발 / 발주-01))
-(사 / 사 :mod (건 / 건설-00))
+(사 / 사 :ARG0-of (건 / 건설-01))
 
 
 # ::id snt17.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
@@ -565,10 +469,10 @@
 (금 / 금 :mod (과 / 과징-00))
 (능 / 능력 :mod (시 / 시공-00))
 (분 / 분야-00 :mod (해 / 해당-01))
-(사 / 사 :mod (건 / 건설-00))
+(사 / 사 :ARG0-of (건 / 건설-01))
 (수 / 수준 :mod (최 / 최고-00))
 (시 / 시공 :mod (분 / 분야-00))
-(적 / 적 :mod (제 / 제한-00))
+(적 / 적 :ARG0-of (제 / 제한-01))
 (최 / 최고 :mod (역 / 역대-00))
 
 
@@ -643,8 +547,8 @@
 (건 / 건설-01 :ARG1 (사 / 사-01))
 (관 / 관행-00 :mod (공 / 공정-01))
 (기 / 기회 :mod (이 / 이번-00))
-(사 / 사 :mod (건 / 건설-00))
-(사 / 사 :mod (건 / 건설-00))
+(사 / 사 :ARG0-of (건 / 건설-01))
+(사 / 사 :ARG0-of (건 / 건설-01))
 (시 / 시점-00 :mod (발 / 발주-01))
 (위 / 위원-00 :mod (공 / 공정-01))
 (자 / 자 :ARG0-of (관 / 관계-01))
@@ -783,8 +687,8 @@
 (건 / 건설-01 :mod (담 / 담합-00))
 (담 / 담합 :mod (강 / 강-00))
 (보 / 보상-01 :ARG1 (설 / 설계-01))
-(비 / 비 :mod (보 / 보상-00))
-(사 / 사 :mod (건 / 건설-00))
+(비 / 비 :ARG0-of (보 / 보상-01))
+(사 / 사 :ARG0-of (건 / 건설-01))
 
 
 # ::id snt22.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
@@ -807,7 +711,7 @@
 들어주 : ** UNUSED_OR_NON-ENTRY **
 -- FORCE CONVERT ---------------------------------
 -- NE TYPES --------------------------------------
-"244억 원" [QT_PRICE]	->  :quant (2 / 244억원)	OR	(m / monetary-quantity :quant 244억 :unit|scale 원)
+"244억 원" [QT_PRICE]	->  :quant (2 / 244억원)	OR	(m / monetary-quantity :quant 244억 :unit|scale (원 / 원))
 "4대강 사업" [TMI_PROJECT]	->  (4 / 4대강사업)	OR	(p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업"))
 "법원" [OGG_LAW]	->  (법 / 법원)	OR	(g / government-organization :wiki "법원" :name (이 / 이름 :op1 "법원"))
 "손" [AM_PART]	->  (손 / 손)	OR	(손 / 손 :part-of|poss)
@@ -817,8 +721,8 @@
 (건 / 건설-01 :ARG1 (참 / 참여-01))
 (공 / 공사 :mod (자 / 자원-00))
 (보 / 보상-01 :ARG1 (설 / 설계-01))
-(비 / 비 :mod (보 / 보상-00))
-(사 / 사 :mod (건 / 건설-00))
+(비 / 비 :ARG0-of (보 / 보상-01))
+(사 / 사 :ARG0-of (건 / 건설-01))
 (사 / 사업-01 :mod (강 / 강-00))
 (자 / 자원 :mod (수 / 수-00))
 (참 / 참여-01 :ARG1 (사 / 사업-01))
@@ -848,5 +752,5 @@
 "2심" [QT_ORDER]	->  :ord (2 / 2심)	OR	:ord (o / ordinal-entity :value 2심)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
 -- VERBALIZED ------------------------------------
 (보 / 보상-01 :ARG1 (설 / 설계-01))
-(비 / 비 :mod (보 / 보상-00))
-(사 / 사 :mod (건 / 건설-00))
+(비 / 비 :ARG0-of (보 / 보상-01))
+(사 / 사 :ARG0-of (건 / 건설-01))
