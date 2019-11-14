@@ -321,375 +321,190 @@
 							:ARG0 (업2 / 업계
 								ARG0-of (건 / 건설-01)))))))))
 
-# ::id snt14.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle ::preferred True
 # ::snt A사 건설사 임원은 "4대강 사업은 개별 건설사가 이윤을 목적으로 선택해 입찰한 것이 아니라 동원된 사업이었다"면서 "줄줄이 과태료와 손해배상, 형사처벌 등이 이어졌고 나아가 무엇보다 건설산업에 대한 국민적 불신을 키우게 된 계기가 됐다"고 토로했다.
 # ::note
--- FRAMES ----------------------------------------
-건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설사-00) ?
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-사업 : VERBAL_NOUN
-	- do_business		(사 / 사업-01 :ARG0 agent)
-건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설사-00) ?
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-선택 : VERBAL_NOUN
-	- select		(선 / 선택-01 :ARG0 selector :ARG1 thing_selected :ARG2 selected_from :ARG3 selected_for)
-입찰 : VERBAL_NOUN
-	- bid		(입 / 입찰-01 :ARG0 agent :ARG1 thing_bidded)
-동원 : VERBAL_NOUN
-	- mobilize		(동 / 동원-01 :ARG0 mobilizer :ARG1 thing_mobilized :ARG2 purpose)
-사업 : VERBAL_NOUN
-	- do_business		(사 / 사업-01 :ARG0 agent)
-과태료 : DERIVED_NON-ENTRY -> (과 / 과태료-00) ?
-형사처벌 : DERIVED_VERB_DETECTED
-	- punish		(형 / 형사처벌-01 :ARG0 agent :ARG1 criminal)
-처벌 : VERBAL_NOUN
-	- punish		(처 / 처벌-01 :ARG0 agent :ARG1 thing_punished)
-이어지 : ** UNUSED_OR_NON-ENTRY **
-나아가 : VERB
-	- move_forwards		(나 / 나아가-01 :ARG0 thing_moving :ARG2 start_point :ARG3 end_point)
-건설 : VERBAL_NOUN
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-국민적 : DERIVED_NON-ENTRY -> (국 / 국민적-00) ?
-불신 : VERBAL_NOUN
-	- distrust		(불 / 불신-01 :ARG0 distruster :ARG1 entity_distrusted)
-키우 : ** UNUSED_OR_NON-ENTRY **
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-토로하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"4대강 사업" [TMI_PROJECT]	->  (4 / 4대강사업)	OR	(p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업"))
-"과태료" [CV_LAW]	->  (과 / 과태료)	OR	(l / law :wiki "과태료" :name (이 / 이름 :op1 "과태료"))
-"임원" [CV_POSITION]	->  :mod (임 / 임원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (임 / 임원))
--- VERBALIZED ------------------------------------
-(강 / 강-00 :mod (대 / 대-01))
-(건 / 건설-01 :ARG1 (사 / 사-01))
-(건 / 건설-01 :mod (개 / 개별-00))
-(료 / 료 :mod (과 / 과태-00))
-(배 / 배상 :mod (손 / 손해-00))
-(사 / 사 :ARG0-of (건 / 건설-01))
-(사 / 사 :ARG0-of (건 / 건설-01))
-(사 / 사업-01 :mod (강 / 강-00))
-(산 / 산업-00 :mod (건 / 건설-01))
-(적 / 적 :mod (국 / 국민-00))
-(처 / 처벌-01 :mod (형 / 형사-00))
+(토 / 토로-00
+	:ARG0 (사 / 사람
+		:ARG0-of (h / have-org-role-91
+			:ARG1 (회 / 회사 :mod "A"
+				:ARG0-of (건 / 건설-01))
+			:ARG2 (임 / 임원)))
+	:ARG1 (a / and
+		:op1 (사2 / 사업-01
+			:domain (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업")):ARG2-of (동 / 동원-01
+				:ARG1 (회2 / 회사
+					:ARG0-of (건2 / 건설-01)
+					:mod (개 / 개별)))
+			:mod (입 / 입찰-01
+				:ARG0 회2
+				:manner (선 / 선택-01
+					:ARG0 회2)
+				:purpose (이2 / 이윤)))
+		:op2 (a2 / and
+			:op1 (잇-02
+				:manner (줄 / 줄줄이)
+				:ARG1 (등 / 등
+					:op1 (과 / 과태료)
+					:op2 (배 / 배상-00
+						:ARG1 (손 / 손해))
+					:op3 (형 / 형사처벌-01)))
+			:op2 (되 / 되-01
+				:ARG2 (계 / 계기
+					:mod (크 / 크-01
+						:ARG1 (신 / 신뢰-01
+							:polarity -
+							:ARG0 (국 / 국민)
+							:ARG1 (산 / 산업
+								:topic (건3 / 건설-01)))))
+				:mod (무 / 무엇보다)
+				:mod (나 / 나아가-01)))))
 
-
-# ::id snt15.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle ::preferred True
 # ::snt 전문가들 사이에선 현행 입찰 제도를 문제점으로 꼽고 있다.
 # ::note
--- FRAMES ----------------------------------------
-전문가 : DERIVED_NON-ENTRY -> (전 / 전문가-00) ?
-입찰 : VERBAL_NOUN
-	- bid		(입 / 입찰-01 :ARG0 agent :ARG1 thing_bidded)
-문제 : VERBAL_NOUN
-	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
-꼽 : VERB
-	- consider		(꼽 / 꼽-01 :ARG0 thinker :ARG1 thing_under_consideration :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"입찰 제도" [CV_POLICY]	->  (입 / 입찰제도)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "입찰" :op2 "제도"))
-"전문가" [CV_OCCUPATION]	->  :mod (전 / 전문가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (전 / 전문가))
--- VERBALIZED ------------------------------------
-(가 / 가 :mod (전 / 전문-00))
-(입 / 입찰-01 :mod (현 / 현행-00))
-(점 / 점-00 :mod (문 / 문제-01))
-(제 / 제도-00 :mod (입 / 입찰-01))
+(꼽 / 꼽-01
+	:ARG0 (사 / 사람
+		:mod (전 / 전문))
+	:ARG1 (제 / 제도
+		:topic (입 / 입찰-01)
+		:mod (현 / 현행))
+	:ARG2 (문 / 문제-01))
 
-
-# ::id snt16.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle ::preferred True
 # ::snt 발주단계부터 건설사들이 나눠 맡게끔 정부가 구조를 만들어 놓고 있다는 것이다.
 # ::note
--- FRAMES ----------------------------------------
-발주 : VERBAL_NOUN
-	- order		(발 / 발주-01 :ARG0 agent :ARG1 thing_ordered)
-건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설사-00) ?
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-나누 : VERB
-	- divide		(나 / 나누-01 :ARG0 entity_causing_separation :ARG1 thing_being_divided :ARG2 divided_into)
-맡 : VERB
-	- have_charge_of		(맡 / 맡-01 :ARGA causer :ARG0 agent :ARG1 thing_had_charge_of)
-구조 : VERBAL_NOUN
-	- rescue		(구 / 구조-01 :ARG0 agent :ARG1 entity_rescued)
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
--- VERBALIZED ------------------------------------
-(단 / 단계-00 :mod (발 / 발주-01))
-(사 / 사 :ARG0-of (건 / 건설-01))
+(주 / 주장-01
+	:ARG1 (만 / 만들-03
+		:ARG0 (g / government-organization :wiki "대한민국_정부" :name (이 / 이름 :op1 "정부")) 
+		:ARG1 (구 / 구조
+			:mod (나 / 나눠맡-00
+				:ARG0 (회 / 회사
+					:ARG0-of (건 / 건설-01))))
+		:time (단 / 단계
+			:mod (발 / 발주-01))))
 
-
-# ::id snt17.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle ::preferred True
 # ::snt 실제로 역대 최고 수준의 과징금이 부과된 호남고속철만 하더라도 17개 공구 중 13개 공구는 1사 1공구만 가능하고 해당 분야 시공능력을 갖춘 건설사 숫자도 제한적이다.
 # ::note
--- FRAMES ----------------------------------------
-과징금 : DERIVED_NON-ENTRY -> (과 / 과징금-00) ?
-부과 : VERBAL_NOUN
-	- impose		(부 / 부과-01 :ARG0 agent :ARG1 thing_imposed :ARG2 imposed_on)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-가능 : VERBAL_NOUN
-	- possible		(가 / 가능-01 :ARG1 event_being_possible)
-해당 : VERBAL_NOUN
-	- correspond_to		(해 / 해당-01 :ARG1 topic,_theme :ARG2 compared_with)
-갖추 : VERB
-	- equip		(갖 / 갖추-01 :ARG0 agent :ARG1 equipment)
-건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설사-00) ?
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-제한 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (제 / 제한적-00) ?
-	- limit		(제 / 제한-01 :ARG0 agent :ARG1 thing_limited :ARG2 limit)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"13개" [QT_COUNT]	->  :quant (1 / 13개)	OR	(c / concept* :quant 13 :unit|scale (개 / 개))
-"17개" [QT_COUNT]	->  :quant (1 / 17개)	OR	(c / concept* :quant 17 :unit|scale (개 / 개))
-"1공구" [QT_COUNT]	->  :quant (1 / 1공구)	OR	(c / concept* :quant 1 :unit|scale (공 / 공구))
-"1사" [QT_MAN_COUNT]	->  :quant (1 / 1사)	OR	(c / concept* :quant 1 :unit|scale (사 / 사))
-"과징금" [CV_LAW]	->  (과 / 과징금)	OR	(l / law :wiki "과징금" :name (이 / 이름 :op1 "과징금"))
-"호남고속철" [AF_TRANSPORT]	->  (호 / 호남고속철)	OR	(v / vehicle|ship|aircraft|... :wiki - :name (이 / 이름 :op1 "호남고속철"))
--- VERBALIZED ------------------------------------
-(금 / 금 :mod (과 / 과징-00))
-(능 / 능력 :mod (시 / 시공-00))
-(분 / 분야-00 :mod (해 / 해당-01))
-(사 / 사 :ARG0-of (건 / 건설-01))
-(수 / 수준 :mod (최 / 최고-00))
-(시 / 시공 :mod (분 / 분야-00))
-(적 / 적 :ARG0-of (제 / 제한-01))
-(최 / 최고 :mod (역 / 역대-00))
+(a / and
+	:mod (실 / 실제)
+	:domain (p / project* :wiki - :name (이 / 이름 :op1 "호남고속철")
+		:mod (부 / 부과-01
+			:ARG1 (과 / 과징금
+				:mod (수 / 수준
+					:mod (최 / 최고
+						:mod (역 / 역대))))))
+	:op1 (가 / 가능-01
+		:domain (공 / 공구 :quant 13 :unit (개 / 개)
+			:ARG1-of (i / include-91
+				:ARG2 (공2 / 공구 :quant 17 :unit (개2 / 개))))
+		:ARG1 (입 / 입찰-01
+			:ARG0 (회 / 회사 :quant 1 :unit (개3 / 개))
+			:ARG1 (공3 / 공구 :quant 1 :unit (개4 / 개))))
+	:op2 (제 / 제한적-00
+		:ARG1 (숫 / 숫자
+			:quant-of (회2 / 회사
+				:ARG0-of (건 / 건설-01)
+				:ARG0-of (갖 / 갖추-01
+					:ARG1 (능 / 능력
+						:mod (시 / 시공-00)
+						:topic (분 / 분야
+							:ARG1-of (해 / 해당-01))))))))
 
-
-# ::id snt18.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle ::preferred True
 # ::snt B사 건설사 관계자는 "발주시점부터 건설사들의 담합에 대해 예상 가능한데 사업이 끝날 때까지 묵인하다가 완공 후 처벌하는 형태가 반복되고 있다"면서 "정부가 4대강 정책감사를 비롯해 김상조 공정위원장의 내정으로 불공정 관행뿐만 아니라 담합 행위에 대해 근절에 나선 만큼 업계도 이번 기회를 신뢰회복의 계기로 삼아야 할 것"이라고 전했다.
 # ::note
--- FRAMES ----------------------------------------
-건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설사-00) ?
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-관계 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관계자-00) ?
-	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
-	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-발주 : VERBAL_NOUN
-	- order		(발 / 발주-01 :ARG0 agent :ARG1 thing_ordered)
-건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설사-00) ?
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-예상 : VERBAL_NOUN
-	- expect		(예 / 예상-01 :ARG0 expecter :ARG1 thing_expected)
-가능 : VERBAL_NOUN
-	- possible		(가 / 가능-01 :ARG1 event_being_possible)
-사업 : VERBAL_NOUN
-	- do_business		(사 / 사업-01 :ARG0 agent)
-끝나 : VERB
-	- finish		(끝 / 끝나-01 :ARG0 agent :ARG1 thing_finishing)
-	- terminate		(끝 / 끝나-02 :ARG1 thing_closing)
-묵인 : VERBAL_NOUN
-	- connive		(묵 / 묵인-01 :ARG0 agent :ARG1 sin)
-완공 : VERBAL_NOUN
-	- complete		(완 / 완공-01 :ARG0 agent :ARG1 thing_completed)
-처벌 : VERBAL_NOUN
-	- punish		(처 / 처벌-01 :ARG0 agent :ARG1 thing_punished)
-반복 : VERBAL_NOUN
-	- repeat		(반 / 반복-01 :ARG0 agent :ARG1 thing_repeated)
-감사 : VERBAL_NOUN
-	- thank		(감 / 감사-01 :ARG0 thanker :ARG1 thanked)
-비롯하 : VERB
-	- include		(비 / 비롯하-01 :ARG1 group :ARG2 member)
-공정 : VERBAL_NOUN
-	- fair		(공 / 공정-01 :ARG1 thing_being_fair)
-위원장 : DERIVED_NON-ENTRY -> (위 / 위원장-00) ?
-내정 : VERBAL_NOUN
-	- appoint_informally		(내 / 내정-01 :ARG0 agent :ARG1 appointee,_employee :ARG2 job,_position)
-공정 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (불 / 불공정-00) ?
-	- fair		(공 / 공정-01 :ARG1 thing_being_fair)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-나서 : VERB
-	- enter_into		(나 / 나서-01 :ARG0 entity_entering :ARG1 thing_entered)
-	- run_for		(나 / 나서-02 :ARG0 entity_running :ARG1 role,_position)
-	- volunteer-CV		(나 / 나서-03 :ARG0 agent :ARG1 service_volunteered)
-신뢰 : VERBAL_NOUN
-	- trust		(신 / 신뢰-01 :ARG0 truster :ARG1 thing_trusted)
-회복 : VERBAL_NOUN
-	- get_back		(회 / 회복-01 :ARG0 agent,_causer :ARG1 thing_gotten)
-삼 : VERB
-	- consider		(삼 / 삼-01 :ARG0 thinker :ARG1 thing_under_consideration :ARG2 attribute)
-전하 : VERB
-	- report		(전 / 전하-01 :ARG0 agent :ARG1 thing_reported :ARG2 report_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"4대강" [QT_COUNT]	->  :quant (4 / 4대강)	OR	(c / concept* :quant 4 :unit|scale (대 / 대강))
-"공정위원장" [CV_POSITION]	->  :mod (공 / 공정위원장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (공 / 공정위원장))
-"관계자" [CV_POSITION]	->  :mod (관 / 관계자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (관 / 관계자))
-"김상조" [PS_NAME]	->  (김 / 김상조)	OR	(p / person :wiki "김상조?" :name (이 / 이름 :op1 "김상조"))
-"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
--- VERBALIZED ------------------------------------
-(가 / 가능-01 :ARG1 (예 / 예상-01))
-(감 / 감사-01 :mod (정 / 정책-00))
-(강 / 강-00 :mod (대 / 대-01))
-(건 / 건설-01 :ARG1 (사 / 사-01))
-(관 / 관행-00 :mod (공 / 공정-01))
-(기 / 기회 :mod (이 / 이번-00))
-(사 / 사 :ARG0-of (건 / 건설-01))
-(사 / 사 :ARG0-of (건 / 건설-01))
-(시 / 시점-00 :mod (발 / 발주-01))
-(위 / 위원-00 :mod (공 / 공정-01))
-(자 / 자 :ARG0-of (관 / 관계-01))
-(장 / 장 :mod (위 / 위원-00))
-(정 / 정책 :mod (강 / 강-00))
-(처 / 처벌-01 :mod (후 / 후-00))
-(행 / 행위 :mod (담 / 담합-00))
-(회 / 회복-01 :ARG1 (신 / 신뢰-01))
-(후 / 후-00 :mod (완 / 완공-01))
+(전 / 전하-01
+	:ARG0 (사 / 사람
+		:ARG0-of (h / have-org-role-91
+			:ARG1 (회 / 회사 :mod "A"
+				:ARG0-of (건 / 건설-01))))
+	:ARG1 (a / and
+		:op1 (a2 / and
+			:op1 (묵 / 묵인-01
+				:duration (사2 / 사업-01)
+				:concession (가 / 가능-01
+					:ARG1 (예 / 예상-01
+						:ARG1 (담 / 담합-00
+							:ARG0 (회2 / 회사
+								ARG0-of (건2 / 건설-01))))
+					:time (발 / 발주-01)))
+			:op2 (반 / 반복-01
+				:ARG1 (처 / 처벌-01
+					:ARG1 회2
+					:time (후 / 후
+						:op1 (완 / 완공-01)))))
+		:op2 (o / obligate-01
+			:ARG2 (삼 / 삼-01
+				:ARG0 (업 / 업계)
+				:ARG1 (기 / 기회
+					:mod (이 / 이번))
+				:ARG2 (계 / 계기
+					:mod (회3 / 회복-01
+						:ARG0 업
+						:ARG1 (신 / 신뢰-01 :ARG1 업))))
+			:cause (나 / 나서-02
+				:ARG0 (g / government-organization :wiki "대한민국_정부" :name (이2 / 이름 :op1 "정부"))
+				:ARG1 (a3 / and
+					:op1 (관 / 관행
+						:ARG1-of (공 / 공정-01
+							:polarity -))
+					:op2 (행 / 행위
+						:mod (담2 / 담합-00)))
+				:manner (a4 / and
+					:op1 (감 / 감사-00
+						:ARG1 (정2 / 정책
+							:topic (강 / 강 :mod 4)))
+					:op2 (내 / 내정-01
+						:ARG0 정
+						:ARG1 (p / person :wiki "김상조_(1962년)" :name (이3 / 이름 :op1 "김상조"))
+						:ARG2 (공 / 공정위원장)))))))
 
 
-# ::id snt19.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle ::preferred True
 # ::snt 김민형 한국건설산업연구원 연구위원은 "그동안 관행적으로 이뤄졌던 입찰 담합이 시장경제의 본질인 공정 경쟁에 반한다는 근본적인 문제 인식이 이번 기회에 정리돼야 한다"면서 "현행 입찰 담합 제재의 제도 개선을 통한 실효성 있고 강력한 담합 근절 방안과 함께 내부 통제 시스템 마련이 필요하다"고 조언했다.
 # ::note
--- FRAMES ----------------------------------------
-건설 : VERBAL_NOUN
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-연구 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (연 / 연구원-00) ?
-	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
-연구 : VERBAL_NOUN
-	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
-관행적 : DERIVED_NON-ENTRY -> (관 / 관행적-00) ?
-이루어지 : ** UNUSED_OR_NON-ENTRY **
-입찰 : VERBAL_NOUN
-	- bid		(입 / 입찰-01 :ARG0 agent :ARG1 thing_bidded)
-공정 : VERBAL_NOUN
-	- fair		(공 / 공정-01 :ARG1 thing_being_fair)
-경쟁 : VERBAL_NOUN
-	- compete		(경 / 경쟁-01 :ARGA causer :ARG0 competitor :ARG1 opponent)
-반하 : VERB
-	- go_against		(반 / 반하-01 :ARG1 thing_going_against :ARG2 against_what)
-근본적 : DERIVED_NON-ENTRY -> (근 / 근본적-00) ?
-문제 : VERBAL_NOUN
-	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
-인식 : VERBAL_NOUN
-	- recognize		(인 / 인식-01 :ARGA thing_making_recognize :ARG0 thing_recognizing :ARG1 thing_recognized)
-정리 : VERBAL_NOUN
-	- arrange		(정 / 정리-01 :ARG0 agent :ARG1 thing_arranged)
-	- liquidate		(정 / 정리-02 :ARG0 agent :ARG1 thing_liquidated)
-입찰 : VERBAL_NOUN
-	- bid		(입 / 입찰-01 :ARG0 agent :ARG1 thing_bidded)
-제재 : VERBAL_NOUN
-	- punish		(제 / 제재-01 :ARG0 agent :ARG1 thing_punished)
-개선 : VERBAL_NOUN
-	- improve		(개 / 개선-01 :ARG0 improver :ARG1 thing_improving :ARG2 start_point :ARG3 end_point)
-통하 : VERB
-	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
-	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
-	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
-실효성 : DERIVED_NON-ENTRY -> (실 / 실효성-00) ?
-있 : ** UNUSED_OR_NON-ENTRY **
-강력하 : VERB
-	- strong		(강 / 강력하-01 :ARG1 thing_being_strong)
-통제 : VERBAL_NOUN
-	- control		(통 / 통제-01 :ARG0 agent :ARG1 thing_controlled)
-마련 : VERBAL_NOUN
-	- prepare		(마 / 마련-01 :ARG0 preparer :ARG1 thing_prepared)
-필요 : VERBAL_NOUN
-	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
-조언 : VERBAL_NOUN
-	- advise		(조 / 조언-01 :ARG0 agent :ARG1 thing_advised)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"김민형" [PS_NAME]	->  (김 / 김민형)	OR	(p / person :wiki "김민형?" :name (이 / 이름 :op1 "김민형"))
-"연구위원" [CV_POSITION]	->  :mod (연 / 연구위원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (연 / 연구위원))
-"입찰 담합 제제" [CV_POLICY]	->  (입 / 입찰담합제제)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "입찰" :op2 "담합" :op3 "제제"))
-"한국건설산업연구원" [OGG_ECONOMY]	->  (한 / 한국건설산업연구원)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "한국건설산업연구원"))
--- VERBALIZED ------------------------------------
-(개 / 개선-01 :mod (제 / 제도-00))
-(경 / 경쟁-01 :ARG1 (공 / 공정-01))
-(경 / 경제 :mod (시 / 시장-00))
-(관 / 관행 :mod (그 / 그동안-00))
-(근 / 근절 :mod (담 / 담합-00))
-(기 / 기회 :mod (이 / 이번-00))
-(담 / 담합-00 :mod (입 / 입찰-01))
-(담 / 담합-00 :mod (입 / 입찰-01))
-(마 / 마련-01 :mod (시 / 시스템-00))
-(방 / 방안 :mod (근 / 근절-00))
-(산 / 산업-00 :mod (건 / 건설-01))
-(성 / 성 :mod (실 / 실효-00))
-(시 / 시스템-00 :mod (통 / 통제-01))
-(연 / 연구-01 :mod (산 / 산업-00))
-(원 / 원 :ARG0-of (연 / 연구-01))
-(위 / 위원-00 :mod (연 / 연구-01))
-(인 / 인식-01 :ARG1 (문 / 문제-01))
-(입 / 입찰-01 :mod (현 / 현행-00))
-(적 / 적 :mod (관 / 관행-00))
-(적 / 적 :mod (근 / 근본-00))
-(제 / 제재-01 :mod (담 / 담합-00))
-(통 / 통제-01 :mod (내 / 내부-00))
-
-
-# ::id snt20.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt 한편 4대강 관련 법정 싸움은 여전히 진행 중이다.
-# ::note
--- FRAMES ----------------------------------------
-관련 : VERBAL_NOUN
-	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-진행 : VERBAL_NOUN
-	- proceed		(진 / 진행-01 :ARG0 agent :ARG1 thing_proceeding)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"4대강" [QT_COUNT]	->  :quant (4 / 4대강)	OR	(c / concept* :quant 4 :unit|scale (대 / 대강))
--- VERBALIZED ------------------------------------
-(강 / 강-00 :mod (대 / 대-01))
-(관 / 관련-01 :mod (강 / 강-00))
-(법 / 법정-00 :mod (관 / 관련-01))
-(싸 / 싸움 :mod (법 / 법정-00))
-
-
-# ::id snt21.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt 지난 3월 한국수자원공사는 4대강 담합 건설사에 대한 설계보상비 환수 1차 소송에서 승소했다.
-# ::note
--- FRAMES ----------------------------------------
-지나 : VERB
-	- pass		(지 / 지나-01 :ARG0 entity_passing :ARG1 thing_passed)
-	- be_only		(지 / 지나-02 :ARG1 thing_under_consideration :ARG2 criterion)
-건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설사-00) ?
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-설계 : VERBAL_NOUN
-	- design		(설 / 설계-01 :ARG0 designer :ARG1 thing_designed)
-보상 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (보 / 보상비-00) ?
-	- compensate		(보 / 보상-01 :ARG0 agent :ARG1 thing_paid_for :ARG2 person_being_paid)
-승소 : VERBAL_NOUN
-	- win_a_suit		(승 / 승소-01 :ARG0 agent)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1차" [QT_ORDER]	->  :ord (1 / 1차)	OR	:ord (o / ordinal-entity :value 1차)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"4대강" [QT_COUNT]	->  :quant (4 / 4대강)	OR	(c / concept* :quant 4 :unit|scale (대 / 대강))
-"지난 3월" [DT_MONTH]	->  :time|duration (지 / 지난3월)	OR	:time (d / date-entity :month 3)	OR	:duration (t / temporal-quantity :quant 3 :unit (월 / 월))  
-"한국수자원공사" [OGG_ECONOMY]	->  (한 / 한국수자원공사)	OR	(c / company|organization :wiki "한국수자원공사" :name (이 / 이름 :op1 "한국수자원공사"))
--- VERBALIZED ------------------------------------
-(강 / 강-00 :mod (대 / 대-01))
-(건 / 건설-01 :mod (담 / 담합-00))
-(담 / 담합 :mod (강 / 강-00))
-(보 / 보상-01 :ARG1 (설 / 설계-01))
-(비 / 비 :ARG0-of (보 / 보상-01))
-(사 / 사 :ARG0-of (건 / 건설-01))
-
+(조 / 조언-01
+	:ARG0 (p / person :wiki - :name (이 / 이름 :op1 "김민형")
+		:ARG0-of (h / have-org-role-91
+			:ARG1 (r / research-institute :wiki - :name (이2 / 이름 :op1 "한국건설산업연구원"))
+			:ARG2 (연 / 연구위원)))
+	:ARG1 (a / and
+		:op1 (o / obligate-01
+			:ARG2 (정 / 정리-01
+				:ARG1 (인 / 인식-01
+					:ARG1 (문 / 문제-01
+						:ARG1 (담 / 담합-00
+							:purpose (입 / 입찰-01)
+							:ARG2-of (반 / 반하-01
+								:ARG1 (경 / 경쟁-01
+									:ARG1-of (공 / 공정-01)
+									:mod (본 / 본질
+										:mod (경2 / 경제
+											:mod (시 / 시장)))))
+							:ARG1-of (이3 / 이뤄지-00
+								:manner (관 / 관행)
+								:duration (그 / 그동안)))))
+				:time (기 / 기회
+					:mod (이4 / 이번))))
+		:op2 (필 / 필요-01
+			:ARG1 (마 / 마련-01
+				:manner (개 / 개선-01
+					:ARG1 (제 / 제도
+						:purpose (제2 / 제재-01
+							:ARG1 (담2 / 담합-00
+								:purpose (입2 / 입찰-01)))
+						:mod (현 / 현행))
+				:ARG1 (a2 / and
+					:op1 (방 / 방안
+						:mod (근 / 근절-00
+							:ARG1 (담3 / 담합-00))
+						:mod (실 / 실효성)
+						:ARG1-of (강 / 강력하-01))
+					:op2 (시2 / 시스템
+						:purpose (통 / 통제-01
+							:ARG1 (내 / 내부))))))))
 
 # ::id snt22.E2017.NEWS.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 법원은 "4대강 사업 참여 건설사에 설계보상비 244억 원을 돌려주라"며 수자원공사의 손을 들어준 것.
