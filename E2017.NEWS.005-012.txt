@@ -602,7 +602,7 @@
 				:polarity -
 				:ARG1 (연 / 연결-01
 					:ARG1 (사 / 사람
-						:ARG0-of (상 / 상담-00)))
+						:ARG1-of (상 / 상담-00)))
 				:condition (관 / 관련-01
 					:polarity -
 					:ARG2 (사2 / 사고))
@@ -637,7 +637,7 @@
 # ::note
 (전 / 전화-01
 	:ARG1 (사 / 사람
-		:ARG0-of (상 / 상담-00))
+		:ARG1-of (상 / 상담-00))
 	:mod (혹 / 혹시나-하고)
 	:concession (b / be-temporally-at-91
 		:ARG2 (d / date-entity
@@ -808,40 +808,27 @@
 	:duration (t / temporal-quantity :quant 24 :unit (시 / 시간))
 	:duration (t2 / temporal-quantity :quant 365 :unit (일 / 일)))
 
-# ::id snt13.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle ::preferred True
 # ::snt 세계 10대 은행(자산 기준) 중 중국 건설은행, 미국 뱅크오브아메리카 두 곳을 뺀 8개 은행은 모두 언제든지 상담원과 통화를 할 수 있었다.
 # ::note
--- FRAMES ----------------------------------------
-건설 : VERBAL_NOUN
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-빼 : VERB
-	- take_away		(빼 / 빼-01 :ARG0 taker :ARG1 thing_removed :ARG2 removed_from)
-상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
-통화 : VERBAL_NOUN
-	- talk_over_the_telephone		(통 / 통화-01 :ARG0 agent :ARG1 talked_with)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"10대" [QT_COUNT]	->  :quant (1 / 10대)	OR	(c / concept* :quant 10 :unit|scale (대 / 대))
-"8개" [QT_COUNT]	->  :quant (8 / 8개)	OR	(c / concept* :quant 8 :unit|scale (개 / 개))
-"건설은행" [OGG_ECONOMY]	->  (건 / 건설은행)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "건설은행"))
-"두 곳" [QT_COUNT]	->  :quant (두 / 두곳)	OR	(c / concept* :quant 두 :unit|scale (곳 / 곳))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"뱅크오브아메리카" [OGG_ECONOMY]	->  (뱅 / 뱅크오브아메리카)	OR	(c / company|organization :wiki "뱅크_오브_아메리카" :name (이 / 이름 :op1 "뱅크오브아메리카"))
-"상담원" [CV_OCCUPATION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
--- VERBALIZED ------------------------------------
-(기 / 기준 :mod (자 / 자산-00))
-(원 / 원 :mod (상 / 상담-00))
-(은 / 은행-00 :mod (건 / 건설-01))
-
+(가 / 가능-01
+	:domain (은 / 은행 :quant 8 :unit (개 / 개)
+		:mod (모 / 모두)
+		:ARG1-of (i / include-91
+			:ARG2 (은2 / 은행 :mod 10
+				:location (세 / 세계)
+				:mod (기 / 기준
+					:mod (자 / 자산))))
+		:ARG2-of (빼 / 빼-01
+			:ARG1 (a / and
+				:op1 (c / company :wiki - :name (이 / 이름 :op1 "건설은행")
+					:location (c2 / country :wiki "중화인민공화국" :name (이2 / 이름 :op1 "중국")))
+				:op2 (c3 / company :wiki "뱅크_오브_아메리카" :name (이3 / 이름 :op1 "뱅크오브아메리카")
+					:location (c4 / country :wiki "미국" :name (이4 / 이름 :op1 "미국"))))))
+	:ARG1 (통 / 통화-01
+		:ARG1 (사 / 사람
+			:ARG1-of (상 / 상담-00)))
+	:time (언 / 언제든지))
 
 # ::id snt14.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
 # ::snt 한국 은행은 평일엔 13시간(신한·우리은행) 혹은 14시간(국민·KEB하나은행)만 통화를 할 수 있는 것으로 확인됐다.
@@ -872,37 +859,25 @@
 		:duration (t / temporal-quantity :quant 6 :unit (시 / 시간)))
 	:time (주 / 주말))
 
-# ::id snt16.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle ::preferred True
 # ::snt 25일 오전 6~7시에 걸쳐 한국과 해외 금융회사의 콜센터에 실제로 전화를 걸어 보았더니 한국의 4대 은행은 모두 연결이 안 됐다.
 # ::note
--- FRAMES ----------------------------------------
-걸치 : VERB
-	- extend		(걸 / 걸치-01 :ARG1 theme :ARG2 EXT_or_TMP)
-	- wear		(걸 / 걸치-02 :ARG0 wearer :ARG1 clothing)
-전화 : VERBAL_NOUN
-	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
-걸 : VERB
-	- apply		(걸 / 걸-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
-연결 : VERBAL_NOUN
-	- connect		(연 / 연결-01 :ARG0 entity_connecting :ARG1 thing_connected :ARG2 connected_with)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"25일" [DT_DAY]	->  :time|duration (2 / 25일)	OR	:time (d / date-entity :day 25)	OR	:duration (t / temporal-quantity :quant 25 :unit (일 / 일))  
-"4대" [QT_COUNT]	->  :quant (4 / 4대)	OR	(c / concept* :quant 4 :unit|scale (대 / 대))
-"오전 6~7시" [TI_DURATION]	->  :time|duration (오 / 오전6~7시)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration (t / temporal-quantity :quant :unit ( / ))
-"전화" [TMI_HW]	->  (전 / 전화)	OR	(p / product? :wiki "전화" :name (이 / 이름 :op1 "전화"))
-"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
-"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
--- VERBALIZED ------------------------------------
-(금 / 금융 :mod (해 / 해외-00))
-(센 / 센터 :mod (콜 / 콜-00))
-(회 / 회사 :mod (금 / 금융-00))
-
+(a / and
+	:op1 (전 / 전화-01
+		:ARG1 (콜 / 콜센터
+			:poss (회 / 회사
+				:topic (금 / 금융)
+				:location (o / or
+					:op1 (c / country :wiki "대한민국" :name (이 / 이름 :op1 "한국"))
+					:op2 (해 / 해외))))
+		:time (d / date-inverval
+			:op1 (d2 / date-entity :day 25 :time 06:00)
+			:op1 (d3 / date-entity :day 25 :time 07:00)))
+	:op2 (연 / 연결-01
+		:polarity -
+		:mod (모 / 모두)
+		:ARG1 (은 / 은행 :mod 4
+			:location c)))
 
 # ::id snt17.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 반면 세계 최대 은행인 중국 공상은행은 전화를 걸자마자 "니하오", 일본 최대 은행 미쓰비시UFJ은행은 오전 6시 30분임에도 신호음이 간 지 10초 만에 "모시모시"라고 응답했다.
@@ -946,7 +921,7 @@
 (가 / 가능-01
 	:ARG1 (전 / 전화-01
 		:ARG1 (사 / 사람
-			:ARG0-of (상 / 상담-00)
+			:ARG1-of (상 / 상담-00)
 			:poss (은 / 은행 :quant 8
 				:ARG1-of (i / include-91
 					:ARG2 (은2 / 은행 :mod 10))
@@ -956,58 +931,44 @@
 						:time (d / date-entity
 							:dayperiod (밤 / 밤))))))))
 
-# ::id snt19.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle ::preferred True
 # ::snt 금융계 관계자는 "인도 등에 외주 콜센터를 운영하는 미국, 인건비가 싼 중국 등과 비교할 때 한국은 야간이나 휴일 근무 수당을 많이 지급해야 하기 때문에 상담 시간 연장에 따른 비용 부담이 매우 크게 작용하는 측면이 있다"고 말했다.
 # ::note
--- FRAMES ----------------------------------------
-금융계 : DERIVED_NON-ENTRY -> (금 / 금융계-00) ?
-관계 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관계자-00) ?
-	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
-	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-운영 : VERBAL_NOUN
-	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
-싸 : VERB
-	- wrap		(싸 / 싸-01 :ARG0 agent :ARG1 thing_wrapped :ARG2 wrapped_with)
-	- cheap		(싸 / 싸-02 :ARG1 thing_being_cheap)
-비교 : VERBAL_NOUN
-	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
-근무 : VERBAL_NOUN
-	- work		(근 / 근무-01 :ARG0 agent :ARG2 location)
-지급 : VERBAL_NOUN
-	- supply		(지 / 지급-01 :ARG0 agent :ARG1 thing_provided :ARG2 entity_provided_for)
-연장 : VERBAL_NOUN
-	- extend		(연 / 연장-01 :ARG0 agent :ARG1 thing_getting_longer :ARG2 start_point :ARG3 end_point)
-따르 : VERB
-	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
-	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
-부담 : VERBAL_NOUN
-	- bear		(부 / 부담-01 :ARG0 agent :ARG1 expense)
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-작용 : VERBAL_NOUN
-	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
-있 : ** UNUSED_OR_NON-ENTRY **
-말하 : VERB
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"야간" [TI_DURATION]	->  :time|duration (야 / 야간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration (t / temporal-quantity :quant :unit ( / ))
-"인건비" [QT_PRICE]	->  :quant (인 / 인건비)	OR	(m / monetary-quantity :quant - :unit|scale (인 / 인건비))
-"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
-"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
-"휴일" [DT_DAY]	->  :time|duration (휴 / 휴일)	OR	:time (d / date-entity)	OR	:duration 
--- VERBALIZED ------------------------------------
-(계 / 계 :mod (금 / 금융-00))
-(근 / 근무-01 :mod (휴 / 휴일-00))
-(부 / 부담-01 :mod (비 / 비용-00))
-(수 / 수당-00 :mod (근 / 근무-01))
-(시 / 시간 :mod (상 / 상담-00))
-(연 / 연장-01 :mod (시 / 시간-00))
-(자 / 자 :ARG0-of (관 / 관계-01))
-
+(말 / 말하-01
+	:ARG0 (사 / 사람
+		:ARG1-of (관 / 관계-02
+			:ARG2 (업 / 업계
+				:topic (금 / 금융))))
+	:ARG1 (측 / 측면
+		:mod (작 / 작용-01
+			:ARG1 (연 / 연장-01
+				:ARG1 (시 / 시간
+					:purpose (상 / 상담-00)))
+			:ARG2 (부 / 부담-01
+				:ARG1 (비 / 비용)
+				:ARG1-of (크 / 크-01
+					:degree (매 / 매우))))
+		:cause (o / obligate-01
+			:domain (c / country :wiki "대한민국" :name (이 / 이름 :op1 "한국"))
+			:ARG2 (지 / 지급-01
+				:ARG1 (수 / 수당
+					:topic (근 / 근무-01
+						:time (o2 / or
+							:op1 (야 / 야간)
+							:op2 (휴 / 휴일)))
+					:ARG1-of (많 / 많-01)))
+			:condition (비2 / 비교-01
+				:ARG1 c
+				:ARG2 (등 / 등
+					:op1 (c2 / country :wiki "미국" :name (이2 / 이름 :op1 "미국")
+						:ARG0-of (운 / 운영-01
+							:ARG1 (콜 / 콜센터
+								:mod (외 / 외주))
+							:location (등2 / 등
+								:op1 (c3 / country :wiki "인도" :name (이3 / 이름 :op1 "인도")))))
+					:op2 (c4 / country :wiki "중화인민공화국" :name (이4 / 이름 :op1 "중국")
+						:mod (싸 / 싸-02
+							:ARG1 (인 / 인건비))))))))
 
 # ::id snt20.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle ::preferred True
 # ::snt 상담원 연결 과정도 한국 금융회사가 훨씬 복잡했다.
@@ -1020,7 +981,7 @@
 		:ARG1 (과 / 과정
 			:mod (연 / 연결-01
 				:ARG1 (사 / 사람
-					:ARG0-of (상 / 상담-00))))))
+					:ARG1-of (상 / 상담-00))))))
 
 # ::id snt21.E2017.NEWS.007 ::date 2019-11-19 ::annotator gabrielle ::preferred True
 # ::snt 미국 등 선진국의 주요 콜센터는 대부분이 전화하는 즉시 사람이 응답을 하고, 소비자가 무엇을 원하는지를 그다음에 듣는다.
@@ -1043,71 +1004,45 @@
 		:ARG2 (사2 / 사람
 			:ARG0-of (소 / 소비-01))))
 
-# ::id snt22.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle ::preferred True
 # ::snt 대부분의 한국 금융회사는 반대로 소비자가 무엇이 필요한지를 일일이 ARS 번호 입력을 한 다음에야 상담원이 응대한다.
 # ::note
--- FRAMES ----------------------------------------
-대부분 : DERIVED_NON-ENTRY -> (대 / 대부분-00) ?
-반대 : VERBAL_NOUN
-	- oppose		(반 / 반대-01 :ARG0 opposer :ARG1 opposed_to)
-소비 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (소 / 소비자-00) ?
-	- spend		(소 / 소비-01 :ARG0 agent :ARG1 unit_of_time :ARG2 activity)
-필요 : VERBAL_NOUN
-	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
-응대하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"ARS" [TR_SCIENCE]	->  (A / ARS)	OR	(t / theory* :wiki "ARS?" :name (이 / 이름 :op1 "ARS"))
-"상담원" [CV_POSITION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
-"소비자" [CV_POSITION]	->  :mod (소 / 소비자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (소 / 소비자))
-"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
--- VERBALIZED ------------------------------------
-(원 / 원 :mod (상 / 상담-00))
-(입 / 입력 :mod (번 / 번호-00))
-(자 / 자 :ARG0-of (소 / 소비-01))
-(회 / 회사 :mod (금 / 금융-00))
+(c / contrast-01
+	:ARG2 (응 / 응대-00
+		:domain (회 / 회사
+			:topic (금 / 금융)
+			:location (c2 / country :wiki "대한민국" :name (이 / 이름 :op1 "한국"))
+			:quant (대 / 대부분))
+		:ARG0 (사 / 사람
+			:ARG1-of (상 / 상담-00))
+		:time (다 / 다음
+			:op1 (입 / 입력-00
+				:ARG0 (사2 / 사람
+					:ARG0-of (소 / 소비-01))
+				:ARG1 (번 / 번호
+					:mod (A / ARS)
+					:mod (필 / 필요-01
+						:ARG2 소))
+				:manner (일 / 일일이)))))
 
-
-# ::id snt23.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle ::preferred True
 # ::snt 미국 '디스커버 카드' 콜센터에 카드를 해지하는 상황을 가정해 전화를 했더니 50초 만에 상담원이 바로 전화를 받았다.
 # ::note
--- FRAMES ----------------------------------------
-해지하 : DERIVED_NON-ENTRY
-가정 : VERBAL_NOUN
-	- assume		(가 / 가정-01 :ARG0 thinker :ARG1 thought)
-전화 : VERBAL_NOUN
-	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
-전화 : VERBAL_NOUN
-	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"50초" [TI_DURATION]	->  :time|duration (5 / 50초)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration (t / temporal-quantity :quant :unit ( / ))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"상담원" [CV_OCCUPATION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
-"전화" [TMI_HW]	->  (전 / 전화)	OR	(p / product? :wiki "전화" :name (이 / 이름 :op1 "전화"))
--- VERBALIZED ------------------------------------
-(센 / 센터 :mod (콜 / 콜-00))
-(원 / 원 :mod (상 / 상담-00))
-(카 / 카드 :mod (디 / 디스커버-00))
-
+(a / and
+	:op1 (전 / 전화-01
+		:ARG1 (콜 / 콜센터
+			:topic (p / product :wiki "디스커버_카드" :name (이 / 이름 :op1 "디스커버" :op2 "카드"))
+			:location (c / country :wiki "미국" :name (이2 / 이름 :op1 "미국")))
+		:manner (가 / 가정-01
+			:ARG1 (상 / 상황
+				:mod (해 / 해지-00
+					:ARG1 (카 / 카드)))))
+	:op2 (전2 / 전화-01
+		:mod (바 / 바로)
+		:ARG1 (사 / 사람
+			:ARG1-of (상2 / 상담-00))
+		:time (후 / 후
+			:op1 (t / temporal-quantity :quant 50 :unit (초 / 초)))))
 
 # ::id snt24.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 똑같이 카드 해지를 하려고 한국 A 신용카드사에 전화를 건 결과 열 단계를 거친 끝에야 상담원과 통화를 할 수 있었다.
@@ -1292,26 +1227,18 @@
 								:month 10))))))
 	:time (d2 / date-entity :day 26))
 
-# ::id snt5.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.008 ::date 2019-11-24 ::annotator gabrielle ::preferred True
 # ::snt 대선 직전인 4월 28일 주간 상승률(0.03%)과 비교하면 10배다.
 # ::note
--- FRAMES ----------------------------------------
-상승 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (상 / 상승률-00) ?
-	- ascend		(상 / 상승-01 :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
-비교 : VERBAL_NOUN
-	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"0.03%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 0.03%)
-"10배" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 10배)
-"4월 28일" [DT_OTHERS]	->  :time|duration (4 / 4월28일)	OR	:time (d / date-entity :month 4 :day 28)	OR	:duration (t / temporal-quantity :quant 4 :unit (월 / 월))  (t / temporal-quantity :quant 28 :unit (일 / 일))  
-"대선" [EV_OTHERS]	->  (대 / 대선)	OR	(e / event? :wiki "대통령_선거" :name (이 / 이름 :op1 "대선"))
-"주간" [DT_DURATION]	->  :time|duration (주 / 주간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
--- VERBALIZED ------------------------------------
-(률 / 률 :ARG0-of (상 / 상승-01))
-(상 / 상승-01 :mod (주 / 주간-00))
-(직 / 직전 :mod (대 / 대선-00))
-
+(h / have-quant-91 
+	:ARG3 (배 / 배 :quant 3)
+	:ARG4 (비 / 비율 :quant (p / percentage-entity :value 0.03%)
+		:ARG1-of (상 / 상승-01
+			:duration (주 / 주간))
+		:time (d / date-entity :month 4 :day 28
+			:mod (직 / 직전
+				:op1 (선 / 선거-00
+					:topic (대 / 대통령))))))
 
 # ::id snt6.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 인터넷 부동산 관련 카페에는 "중개업소에 매물을 내놓으니 집도 안 보고 계약금이 입금됐다.", "4월에 (집) 팔았는데 그 뒤로 1억 원 넘게 올랐다. 속상해서 잠이 안 온다"는 등 부동산 열기를 입증하는 글들이 자주 눈에 띈다.
@@ -1377,20 +1304,16 @@
 # ::id snt7.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이런 집값 급등세의 '진앙(震央)'은 서울 재건축 아파트 단지였다.
 # ::note
--- FRAMES ----------------------------------------
-급등 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (급 / 급등세-00) ?
-	- rise_suddenly		(급 / 급등-01 :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
-재건축 : DERIVED_NON-ENTRY -> (재 / 재건축-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
--- VERBALIZED ------------------------------------
-(값 / 값 :mod (집 / 집-00))
-(급 / 급등-01 :mod (값 / 값-00))
-(단 / 단지 :mod (아 / 아파트-00))
-(세 / 세 :ARG0-of (급 / 급등-01))
-(아 / 아파트 :mod (건 / 건축-00))
-
+(비 / 비롯되-01
+	:ARG1 (추 / 추세
+		:mod (급 / 급등-01
+			:ARG1 (값 / 값
+				:poss (집 / 집)))
+		:ARG1-of (이 / 이렇-01))
+	:ARG2 (단 / 단지
+		:mod (아 / 아파트)
+		:ARG1-of (재 / 재건축-00)
+		:location (c / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울"))))
 
 # ::id snt8.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 강동구 둔촌동 주공 1단지 전용면적 50㎡는 최근 1층 매물이 8억 5000만 원에 팔렸다.
@@ -1456,25 +1379,17 @@
 (전 / 전용 :mod (아 / 아파트-00))
 
 
-# ::id snt11.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.008 ::date 2019-11-24 ::annotator gabrielle ::preferred True
 # ::snt 지난달 같은 면적 3층 매물 거래가는 14억 원.
 # ::note
--- FRAMES ----------------------------------------
-같 : VERB
-	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
-거래 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (거 / 거래가-00) ?
-	- transact		(거 / 거래-01 :ARG0 agent :ARG1 thing_transacted)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"14억 원" [QT_PRICE]	->  :quant (1 / 14억원)	OR	(m / monetary-quantity :quant 14억 :unit|scale (원 / 원))
-"3층" [QT_ORDER]	->  :ord (3 / 3층)	OR	:ord (o / ordinal-entity :value 3층)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"지난달" [DT_MONTH]	->  :time|duration (지 / 지난달)	OR	:time (d / date-entity)	OR	:duration 
--- VERBALIZED ------------------------------------
-(가 / 가 :ARG0-of (거 / 거래-01))
-(거 / 거래-01 :mod (매 / 매물-00))
-(달 / 달-01 :mod (지 / 지난-00))
-(매 / 매물 :mod (층 / 층-00))
-
+(m / monetary-quantity :quant 1400000000 :unit (원 / 원)
+	:domain (가 / 가격
+		:purpose (거 / 거래-01
+			ARG1 (매 / 매물
+				:mod (층 / 층 :op1 3)
+				:mod (면 / 면적
+					:ARG1-of (같 / 같-01))))
+		:time (지 / 지난달)))
 
 # ::id snt12.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한 달 사이 2억 9000만 원(20.7%) 오른 것이다.
