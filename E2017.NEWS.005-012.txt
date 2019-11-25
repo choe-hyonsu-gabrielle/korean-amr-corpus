@@ -879,41 +879,36 @@
 		:ARG1 (은 / 은행 :mod 4
 			:location c)))
 
-# ::id snt17.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.007 ::date 2019-11-25 ::annotator gabrielle ::preferred True
 # ::snt 반면 세계 최대 은행인 중국 공상은행은 전화를 걸자마자 "니하오", 일본 최대 은행 미쓰비시UFJ은행은 오전 6시 30분임에도 신호음이 간 지 10초 만에 "모시모시"라고 응답했다.
-# ::note
--- FRAMES ----------------------------------------
-전화 : VERBAL_NOUN
-	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
-걸 : VERB
-	- apply		(걸 / 걸-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
-가 : VERB
-	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
-	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
-	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
-	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
-	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
-	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
-응답 : VERBAL_NOUN
-	- answer		(응 / 응답-01 :ARG0 agent :ARG1 thing_answered)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"10초" [TI_DURATION]	->  :time|duration (1 / 10초)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration (t / temporal-quantity :quant :unit ( / ))
-"공상은행" [OGG_ECONOMY]	->  (공 / 공상은행)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "공상은행"))
-"모시모시" [PS_NAME]	->  (모 / 모시모시)	OR	(p / person :wiki - :name (이 / 이름 :op1 "모시모시"))
-"미쓰비시UFJ은" [OGG_ECONOMY]	->  (미 / 미쓰비시UFJ은)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "미쓰비시UFJ은"))
-"오전 6시 30분" [TI_OTHERS]	->  :time|duration (오 / 오전6시30분)	OR	:time (d / date-entity :time 6:30)	OR	:duration (t / temporal-quantity :quant 30 :unit (분 / 분))  
-"일본" [LCP_COUNTRY]	->  (일 / 일본)	OR	(c / country :wiki "일본" :name (이 / 이름 :op1 "일본"))
-"전화" [TMI_HW]	->  (전 / 전화)	OR	(p / product? :wiki "전화" :name (이 / 이름 :op1 "전화"))
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
--- VERBALIZED ------------------------------------
-(세 / 세계 :mod (반 / 반면-00))
-(은 / 은행 :mod (최 / 최대-00))
-(은 / 은행 :mod (최 / 최대-00))
-(음 / 음 :mod (신 / 신호-00))
-(최 / 최대 :mod (세 / 세계-00))
-
+# ::note ~자마자
+(c / contrast-01
+	:ARG2 (a / and
+		:op1 (응 / 응답-01
+			:ARG0 (c2 / company :wiki "중국공상은행" :name (이 / 이름 :op1 "공상은행")
+				:location (c3 / country :wiki "중화인민공화국" :name (이2 / 이름 :op1 "중국"))
+				:mod (은 / 은행
+					:mod (최 / 최대
+						:mod (세 / 세계))))
+			:manner (말 / 말하-01
+				:ARG1 "니하오")
+			:time (즉 / 즉시
+				:op1 (전 / 전화-01)))
+		:op2 (응2 / 응답-01
+			:ARG0 (c4 / company :wiki "미쓰비시UFJ은행" :name (이3 / 이름 :op1 "미쓰비시UFJ은행")
+				:location (c5 / country :wiki "일본" :name (이4 / 이름 :op1 "일본"))
+				:mod (은2 / 은행
+					:mod (최2 / 최대
+						:mod c5)))
+			:manner (말2 / 말하-01
+				:ARG1 "모시모시")
+			:time (만 / 만
+				:op1 (가 / 가-02
+					:ARG1 (소 / 소리
+						:ARG0-of (신 / 신호-00))
+					:ARG2 (t / temporal-quantity :quant 10 :unit (초 / 초))))
+			:concession (b / be-temporally-at-91
+				:ARG2 (d / date-entity :time 6:30)))))
 
 # ::id snt18.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
 # ::snt 밤 시간대인 미국 은행을 포함해 10대 은행 중 8개 은행은 상담원이 전화를 받았다.
@@ -1044,47 +1039,24 @@
 		:time (후 / 후
 			:op1 (t / temporal-quantity :quant 50 :unit (초 / 초)))))
 
-# ::id snt24.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.007 ::date 2019-11-25 ::annotator gabrielle ::preferred True
 # ::snt 똑같이 카드 해지를 하려고 한국 A 신용카드사에 전화를 건 결과 열 단계를 거친 끝에야 상담원과 통화를 할 수 있었다.
-# ::note
--- FRAMES ----------------------------------------
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-카드사 : DERIVED_NON-ENTRY -> (카 / 카드사-00) ?
-전화 : VERBAL_NOUN
-	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
-걸 : VERB
-	- apply		(걸 / 걸-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
-거치 : VERB
-	- pass_through		(거 / 거치-01 :ARG1 thing :ARG2 theme)
-	- mount		(거 / 거치-02 :ARG0 agent :ARG1 thing_mounted :ARG2 where_mount)
-상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
-통화 : VERBAL_NOUN
-	- talk_over_the_telephone		(통 / 통화-01 :ARG0 agent :ARG1 talked_with)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"상담원" [CV_OCCUPATION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
-"신용카드" [CV_CURRENCY]	->  (신 / 신용카드)	OR	(c / currency* :wiki "신용카드" :name (이 / 이름 :op1 "신용카드"))
-"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
--- VERBALIZED ------------------------------------
-(사 / 사 :mod (카 / 카드-00))
-(원 / 원 :mod (상 / 상담-00))
-(카 / 카드 :mod (신 / 신용-00))
-(해 / 해지 :mod (카 / 카드-00))
-
+# ::note '결과'가 cause가 아닌 경우, A사, A씨 등에 대한 처리 방법 고민할 것, 단계 처리 방안
+(a / and
+	:op1 (전 / 전화-01
+		:ARG1 (회 / 회사 :mod "A"
+			:topic (신 / 신용카드)
+			:location (c / country :wiki "대한민국" :name (이 / 이름 :op1 "한국")))
+		:purpose (해 / 해지-00
+			:ARG1 (카 / 카드)
+			:manner (똑 / 똑같-01)))
+	:op2 (가 / 가능-01
+		:ARG1 (통 / 통화-01
+			:ARG1 (사 / 사람
+				:ARG1 (상 / 상담-00)))
+		:time (끝 / 끝
+			:op1 (거 / 거치-01
+				:ARG2 (단 / 단계 :op1 10)))))
 
 # ::id snt25.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle ::preferred True
 # ::snt 길어지는 통화에 대한 전화 요금은 대부분 소비자가 부담(1분당 약 30원)해야 한다.
@@ -1240,66 +1212,46 @@
 				:op1 (선 / 선거-00
 					:topic (대 / 대통령))))))
 
-# ::id snt6.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.008 ::date 2019-11-25 ::annotator gabrielle ::preferred True
 # ::snt 인터넷 부동산 관련 카페에는 "중개업소에 매물을 내놓으니 집도 안 보고 계약금이 입금됐다.", "4월에 (집) 팔았는데 그 뒤로 1억 원 넘게 올랐다. 속상해서 잠이 안 온다"는 등 부동산 열기를 입증하는 글들이 자주 눈에 띈다.
-# ::note
--- FRAMES ----------------------------------------
-관련 : VERBAL_NOUN
-	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-내놓 : VERB
-	- place		(내 / 내놓-01 :ARG0 putter :ARG1 thing_put :ARG2 location)
-보 : VERB
-	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
-	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
-	- according_to		(보 / 보-03 :ARG1 theme)
-	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
-	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
-	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
-	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
-계약 : VERBAL_NOUN
-	- contract		(계 / 계약-01 :ARG0 agent :ARG1 reason,_purpose :ARG2 contracted_with)
-입금 : VERBAL_NOUN
-	- deposit		(입 / 입금-01 :ARG0 agent :ARG1 thing_deposited :ARG2 deposit_at)
-팔 : VERB
-	- sell		(팔 / 팔-01 :ARG0 seller :ARG1 thing_sold :ARG2 buyer)
-넘 : VERB
-	- pass		(넘 / 넘-01 :ARG0 entity_passing :ARG1 thing_passed)
-	- exceed		(넘 / 넘-02 :ARG1 thing_that's_more :ARG2 thing_that's_less)
-오르 : VERB
-	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
-	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
-	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
-	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
-속상하 : ** UNUSED_OR_NON-ENTRY **
-오 : VERB
-	- come		(오 / 오-01 :ARG0 entity_coming :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- come		(오 / 오-02 :ARG1 entity_coming :ARG2 start_point :ARG3 end_point)
-	- bring_about-CV		(오 / 오-03 :ARG0 causer :ARG1 thing_brought_about)
-	- send_back-CV		(오 / 오-04 :ARG0 sender :ARG1 thing_sent :ARG2 sent_to)
-	- remit-CV		(오 / 오-05 :ARG0 sender :ARG1 money :ARG2 sent_to)
-	- hear-CV		(오 / 오-06 :ARG0 agent :ARG1 thing_heard :ARG2 heard_from)
-입증 : VERBAL_NOUN
-	- prove		(입 / 입증-01 :ARG1 thing_proving :ARG2 thing_proved)
-띄 : VERB
-	- be_in_sight		(띄 / 띄-01 :ARG1 entity_noticed :ARG2 entity_noticing)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1억 원" [QT_PRICE]	->  :quant (1 / 1억원)	OR	(m / monetary-quantity :quant 1억 :unit|scale (원 / 원))
-"4월" [DT_MONTH]	->  :time|duration (4 / 4월)	OR	:time (d / date-entity :month 4)	OR	:duration (t / temporal-quantity :quant 4 :unit (월 / 월))  
-"눈" [AM_PART]	->  (눈 / 눈)	OR	(눈 / 눈 :part-of|poss)
-"부동산 관련 카페" [TMI_SERVICE]	->  (부 / 부동산관련카페)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "부동산" :op2 "관련" :op3 "카페"))
-"인터넷" [TMI_SERVICE]	->  (인 / 인터넷)	OR	(s / service* :wiki "인터넷" :name (이 / 이름 :op1 "인터넷"))
--- VERBALIZED ------------------------------------
-(관 / 관련-01 :mod (산 / 산-00))
-(금 / 금-00 :mod (계 / 계약-01))
-(들 / 들 :mod (글 / 글-00))
-(부 / 부동 :mod (인 / 인터넷-00))
-(산 / 산 :mod (부 / 부동-00))
-(산 / 산 :mod (부 / 부동-00))
-(업 / 업소 :mod (중 / 중개-00))
-(열 / 열기 :mod (산 / 산-00))
-(카 / 카페-00 :mod (관 / 관련-01))
-
+# ::note 띄-01이 있으나, 눈에-띄, 귀에-띄 등으로 처리, 1억원 넘게 extent?
+(눈 / 눈에-띄-00
+	:ARG2 (글 / 글
+		:ARG1-of (입 / 입증-01
+			:ARG2 (열 / 열기
+				:topic (부 / 부동산)))
+		:example (등 / 등
+			:op1 (말 / 말하-01
+				:ARG1 (a / and
+					:op1 (내 / 내놓-01
+						:ARG1 (매 / 매물)
+						:ARG2 (업 / 업소
+							:ARG0 (중 / 중개-00)))
+					:op2 (입2 / 입금-01
+						:ARG1 (돈 / 돈
+							:purpose (계 / 계약-01
+								:ARG1 매))
+						:manner (보 / 보-01
+							:polarity -
+							:ARG1 매))))
+			:op2 (말2 / 말하-01
+				:ARG1 (가 / 가능-01
+					:polarity -
+					:ARG1 (자 / 자-00
+						:ARG1 (잠 / 잠))
+					:cause (속 / 속상하-00
+						:cause (오 / 오르-01
+							:ARG1 (값 / 값
+								:poss (집 / 집))
+							:extent (이 / 이상
+								:op1 (m / monetary-quantity :quant 100000000 :unit (원 / 원)))
+							:time (뒤 / 뒤
+								:op1 (팔 / 팔-01
+									:ARG1 집
+									:time (d / date-entity :month 4))))))))
+	:location (카 / 카페
+		:topic (부2 / 부동산)
+		:medium (인 / 인터넷)))
 
 # ::id snt7.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이런 집값 급등세의 '진앙(震央)'은 서울 재건축 아파트 단지였다.
@@ -2442,27 +2394,17 @@
 (화 / 화 :mod (자 / 자동-00))
 
 
-# ::id snt19.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.009 ::date 2019-11-25 ::annotator gabrielle ::preferred True
 # ::snt 우리 군이 구축 중인 KAMD 무력화를 노리고 개발한 미사일로 평가되고 있다.
-# ::note
--- FRAMES ----------------------------------------
-구축 : VERBAL_NOUN
-	- construct		(구 / 구축-01 :ARG0 builder :ARG1 construction)
-무력화 : DERIVED_VERB_DETECTED
-	- neutralize		(무 / 무력화-01 :ARG0 causer :ARG1 entity_neutralized)
-노리 : VERB
-	- aim		(노 / 노리-01 :ARG0 aimer :ARG1 action)
-개발 : VERBAL_NOUN
-	- develop		(개 / 개발-01 :ARG0 developer :ARG1 thing_developed)
-평가 : VERBAL_NOUN
-	- estimate		(평 / 평가-01 :ARG0 agent :ARG1 thing_estimated)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"KAMD" [AF_WEAPON]	->  (K / KAMD)	OR	(w / weapon* :wiki "한국형_미사일_방어체제" :name (이 / 이름 :op1 "KAMD"))
-"미사일" [AF_WEAPON]	->  (미 / 미사일)	OR	(w / weapon* :wiki "유도탄" :name (이 / 이름 :op1 "미사일"))
--- VERBALIZED ------------------------------------
-(화 / 화 :mod (무 / 무력-00))
-
+# ::note KAMD를 named-entity로 보지 않고 풀어 쓰지도 않음. ICBM 등 수정 필요. 무엇을 무엇으로 평가하다의 동격 처리 방법
+(평 / 평가-01
+	:ARG1 (미 / 미사일
+		:ARG1-of (개 / 개발-01
+			:purpose (무 / 무력화-01
+				:ARG1 (K / KAMD
+					:ARG1-of (구 / 구축-01
+						:ARG0 (군 / 군
+							:poss (우 / 우리))))))))
 
 # ::id snt20.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 북한의 최근 미사일 개발 동향은 중국의 반접근 지역거부(A2/AD) 전략을 모방한 '북한판 접근거부' 전략으로 전문가들은 평가하고 있다.
@@ -2501,37 +2443,26 @@
 (지 / 지역-00 :mod (접 / 접근-01))
 
 
-# ::id snt21.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.009 ::date 2019-11-25 ::annotator gabrielle ::preferred True
 # ::snt A2는 오키나와 등 미국의 전진기지나 항모강습단을 공격할 수 있는 능력을 확보해 미군 전력이 서태평양 해역으로 접근하는 것을 지연시키는 전략이다.
 # ::note
--- FRAMES ----------------------------------------
-전진 : VERBAL_NOUN
-	- advance		(전 / 전진-01 :ARG0 agent :ARG2 start_point :ARG3 end_point)
-강습단 : DERIVED_NON-ENTRY -> (강 / 강습단-00) ?
-공격 : VERBAL_NOUN
-	- attack		(공 / 공격-01 :ARG0 attacker :ARG1 entity_attacked :ARG2 attacked_for)
-있 : ** UNUSED_OR_NON-ENTRY **
-확보 : VERBAL_NOUN
-	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
-접근 : VERBAL_NOUN
-	- approach		(접 / 접근-01 :ARG0 entity_in_motion :ARG2 destination)
-지연 : VERBAL_NOUN
-	- delay		(지 / 지연-01 :ARG0 agent :ARG1 thing_delayed)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"A2" [QT_OTHERS]	->  :quant (A / A2)	OR	(c / concept* :quant 2 :unit|scale (A / A))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"미군" [OGG_MILITARY]	->  (미 / 미군)	OR	(m / military :wiki "미군" :name (이 / 이름 :op1 "미군"))
-"서태평양" [LCG_OCEAN]	->  (서 / 서태평양)	OR	(o / ocean :wiki - :name (이 / 이름 :op1 "서태평양"))
-"오키나와" [LCP_CITY]	->  (오 / 오키나와)	OR	(c / city :wiki "오키나와?" :name (이 / 이름 :op1 "오키나와"))
-"전진기지" [OGG_MILITARY]	->  (전 / 전진기지)	OR	(m / military :wiki - :name (이 / 이름 :op1 "전진기지"))
-"항모강습단" [OGG_MILITARY]	->  (항 / 항모강습단)	OR	(m / military :wiki - :name (이 / 이름 :op1 "항모강습단"))
--- VERBALIZED ------------------------------------
-(강 / 강습 :mod (항 / 항모-00))
-(기 / 기지-00 :mod (전 / 전진-01))
-(단 / 단 :mod (강 / 강습-00))
-(전 / 전력 :mod (미 / 미군-00))
-
+(전 / 전략
+	:domain (A / A2)
+	:mod (지 / 지연-01
+		:ARG1 (접 / 접근-01
+			:ARG0 (전2 / 전력
+				:poss (m / military :wiki "미군" :name (이 / 이름 :op1 "미군")))
+			:ARG2 (해 / 해역
+				:location (o / ocean :wiki - :name (이2 / 이름 :op1 "서태평양"))))
+		:manner (확 / 확보-01
+			:ARG1 (능 / 능력
+				:mod (공 / 공격-01
+					:ARG1 (o2 / or
+						:op1 (전3 / 전진기지
+							:location (등 / 등
+								:op1 (c / city :wiki "오키나와섬" :name (이3 / 이름 :op1 "오키나와")))
+							:poss (c2 / country :wiki "미국" :name (이4 / 이름 :op1 "미국")))
+						:op2 (항 / 항모강습단 :poss c2)))))))
 
 # ::id snt22.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt AD는 대만해협이나 동·남중국해 등 중국의 연안 지역에서 분쟁이 발생할 때 미군이나 동맹군의 '행동의 자유(Freedom of Action)'를 차단해 일정한 지역에 개입을 못 하도록 거부하는 것이다.
@@ -2622,28 +2553,18 @@
 (지 / 지역-00 :mod (접 / 접근-01))
 
 
-# ::id snt0.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.010 ::date 2019-11-25 ::annotator gabrielle ::preferred True
 # ::snt 30분 지나면 포기하는데… 77분 집념, 멈춘 심장 깨우다.
 # ::note
--- FRAMES ----------------------------------------
-지나 : VERB
-	- pass		(지 / 지나-01 :ARG0 entity_passing :ARG1 thing_passed)
-	- be_only		(지 / 지나-02 :ARG1 thing_under_consideration :ARG2 criterion)
-포기 : VERBAL_NOUN
-	- give_up		(포 / 포기-01 :ARGA causer :ARG0 agent :ARG1 thing_given_up)
-멈추 : VERB
-	- stop		(멈 / 멈추-01 :ARG0 agent :ARG1 action_or_thing_stopped)
-심장깨우 : DERIVED_NON-ENTRY
-깨우 : REDUCED_VERB_DETECTED
-	- wake		(깨 / 깨-01 :ARG0 causer :ARG1 sleeper :ARG2 sleep)
-	- break		(깨 / 깨-02 :ARG0 causer :ARG1 thing_broken)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"30분" [TI_MINUTE]	->  :time|duration (3 / 30분)	OR	:time (d / date-entity)	OR	:duration (t / temporal-quantity :quant 30 :unit (분 / 분))  
-"77분" [TI_MINUTE]	->  :time|duration (7 / 77분)	OR	:time (d / date-entity)	OR	:duration (t / temporal-quantity :quant 77 :unit (분 / 분))  
-"심장" [TM_CELL_TISSUE]	->  (심 / 심장)	OR	(심 / 심장 :part-of|poss)
--- VERBALIZED ------------------------------------
-
+(c / contrast-01
+	:ARG1 (포 / 포기-01
+		:time (이 / 이후
+			:op1 (t / temporal-quantity :quant 30 :unit (분 / 분))))
+	:ARG2 (깨 / 깨-01
+		:ARG0 (집 / 집념
+			:duration (t2 / temporal-quantity :quant 77 :unit (분2 / 분)))
+		:ARG1 (심 / 심장
+			:ARG1-of (멈 / 멈추-01))))
 
 # ::id snt1.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 심장 발작으로 쓰러진 30대 심근경색 환자가 77분에 걸친 심폐소생술 끝에 살아나는 기적 같은 일이 벌어졌다.
