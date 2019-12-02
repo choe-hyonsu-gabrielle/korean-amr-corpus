@@ -68,45 +68,34 @@
                 :poss (물 / 물))
         :ARG3 (p / percentage-entity :value 13.34)))
 
-# ::id snt7.E2017.Wiki.018 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.018 ::date 2019-12-03 ::annotator gabrielle ::preferred True
 # ::snt 잭슨빌은 온난 습윤 기후에 속하며, 겨울에는 포근하면서 여름에는 더운 편이다.
 # ::note
--- FRAMES ----------------------------------------
-속하 : VERB
-	- belong_to		(속 / 속하-01 :ARG1 thing_belonging :ARG2 belong_to)
-포근하 : ** UNUSED_OR_NON-ENTRY **
-덥 : VERB
-	- hot		(덥 / 덥-01 :ARG1 entity_being_hot)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"겨울" [DT_SEASON]	->  :time|duration (겨 / 겨울)	OR	:time (d / date-entity :season (겨 / 겨울))	OR	:duration 
-"여름" [DT_SEASON]	->  :time|duration (여 / 여름)	OR	:time (d / date-entity :season (여 / 여름))	OR	:duration 
-"온난 습윤 기후" [TM_CLIMATE]	->  (온 / 온난습윤기후)	OR	(c / climate* :wiki "온난_습윤_기후" :name (이 / 이름 :op1 "온난" :op2 "습윤" :op3 "기후"))
-"잭슨빌" [LCP_CITY]	->  (잭 / 잭슨빌)	OR	(c / city :wiki "잭슨빌" :name (이 / 이름 :op1 "잭슨빌"))
--- VERBALIZED ------------------------------------
-(기 / 기후 :mod (습 / 습윤-00))
-(습 / 습윤 :mod (온 / 온난-00))
+(a / and
+    :op1 (속 / 속하-01
+        :ARG1 (c / city :wiki "잭슨빌" :name (이 / 이름 :op1 "잭슨빌"))
+        :ARG2 (기 / 기후
+            :mod (온 / 온난)
+            :mod (습 / 습윤)))
+    :op2 (a2 / and
+        :op1 (포 / 포근하-00
+            :ARG1 c
+            :time (d / date-entity :season (겨 / 겨울)))
+        :op2 (덥 / 덥-01
+            :ARG1 c
+            :time (d2 / date-entity :season (여 / 여름)))))
 
-
-# ::id snt8.E2017.Wiki.018 ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt 최고 기온 기록은 1942년 7월 21일의 43&nbsp;°C이며, 최저 기온 기록은 1985년 1월 21일에 기록된 -14&nbsp;°C이다.
+# ::id snt8.E2017.Wiki.018 ::date 2019-12-03 ::annotator gabrielle ::preferred True
+# ::snt 최고 기온 기록은 1942년 7월 21일의 43°C이며, 최저 기온 기록은 1985년 1월 21일에 기록된 -14°C이다.
 # ::note
--- FRAMES ----------------------------------------
-기록 : VERBAL_NOUN
-	- record		(기 / 기록-01 :ARG0 agent :ARG1 thing_recorded)
-기록 : VERBAL_NOUN
-	- record		(기 / 기록-01 :ARG0 agent :ARG1 thing_recorded)
-기록 : VERBAL_NOUN
-	- record		(기 / 기록-01 :ARG0 agent :ARG1 thing_recorded)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"14&" [QT_TEMPERATURE]	->  :quant (1 / 14&)	OR	(t / temparature-quantity :quant 14 :unit|scale (& / &))
-"1942년 7월 21일" [DT_OTHERS]	->  :time|duration (1 / 1942년7월21일)	OR	:time (d / date-entity :year 1942 :month 7 :day 21)	OR	:duration (t / temporal-quantity :quant 1942 :unit (년 / 년))  (t / temporal-quantity :quant 7 :unit (월 / 월))  (t / temporal-quantity :quant 21 :unit (일 / 일))  
-"1985년 1월 21일" [DT_OTHERS]	->  :time|duration (1 / 1985년1월21일)	OR	:time (d / date-entity :year 1985 :month 1 :day 21)	OR	:duration (t / temporal-quantity :quant 1985 :unit (년 / 년))  (t / temporal-quantity :quant 1 :unit (월 / 월))  (t / temporal-quantity :quant 21 :unit (일 / 일))  
-"43&" [QT_TEMPERATURE]	->  :quant (4 / 43&)	OR	(t / temparature-quantity :quant 43 :unit|scale (& / &))
--- VERBALIZED ------------------------------------
-(기 / 기록-01 :mod (기 / 기온-00))
-(기 / 기록-01 :mod (기 / 기온-00))
-(기 / 기온 :mod (최 / 최고-00))
-(기 / 기온 :mod (최 / 최저-00))
-
+(a / and
+    :op1 (t / temparature-quantity :quant 43 :scale (c / celcius)
+        :time (d / date-entity :year 1942 :month 7 :day 21)
+        :domain (기 / 기록-01
+            :ARG1 (기2 / 기온
+                :degree (최 / 최고))))
+    :op2 (t2 / temparature-quantity :quant -14 :scale (c2 / celcius)
+        :time (d2 / date-entity :year 1985 :month 1 :day 21)
+        :domain (기3 / 기록-01
+            :ARG1 (기4 / 기온
+                :degree (최2 / 최저)))))
