@@ -175,152 +175,103 @@
 (체 / 체 :mod (병 / 병원-00))
 
 
-# ::id snt9.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 14세기의 페스트 유행은 유럽사에 있어 종교사, 사회사, 경제사적으로 지대한 영향을 미쳤다.
-# ::note
--- FRAMES ----------------------------------------
-유행 : VERBAL_NOUN
-	- popular		(유 / 유행-01 :ARG0 thing_makking_popular :ARG thing_popular)
-있 : ** UNUSED_OR_NON-ENTRY **
-종교사 : DERIVED_NON-ENTRY -> (종 / 종교사-00) ?
-사회사 : DERIVED_NON-ENTRY -> (사 / 사회사-00) ?
-경제사 : DERIVED_NON-ENTRY -> (경 / 경제사-00) ?
-지대하 : DERIVED_NON-ENTRY
-영향 : VERBAL_NOUN
-	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
-미치 : VERB
-	- give		(미 / 미치-01 :ARG0 causer :ARG1 influence :ARG2 entity_given_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"14세기" [DT_OTHERS]	->  :time|duration (1 / 14세기)	OR	:time (d / date-entity)	OR	:duration 
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
-"페스트" [TMM_DISEASE]	->  (페 / 페스트)	OR	(d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
--- VERBALIZED ------------------------------------
-(사 / 사 :mod (경 / 경제-00))
-(사 / 사 :mod (사 / 사회-00))
-(사 / 사 :mod (종 / 종교-00))
-(유 / 유행-01 :mod (페 / 페스트-00))
+# ::notes 영향을 미치다
+(영 / 영향-01
+    :ARG0 (유 / 유행-01
+        :ARG (d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
+        :time (d2 / date-interval
+            :op1 (d3 / date-entity :year 1501)
+            :op2 (d4 / date-entity :year 1600)))
+    :ARG1 (역 / 역사
+        :poss (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")))
+    :topic (a / and
+        :op1 (역2 / 역사
+            :topic (종 / 종교))
+        :op2 (역3 / 역사
+            :topic (사 / 사회))
+        :op3 (역4 / 역사
+            :topic (경 / 경제)))
+    :ARG1-of (지 / 지대하-00))
 
-
-# ::id snt10.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 유럽에서는 1347년 처음 창궐한 이래 많은 희생자가 발생하여 공포의 대상이었다.
-# ::note
--- FRAMES ----------------------------------------
-창궐 : VERBAL_NOUN
-	- thrive		(창 / 창궐-01 :ARG1 thing_thriving)
-많 : VERB
-	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
-희생 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (희 / 희생자-00) ?
-	- sacrifice		(희 / 희생-01 :ARG0 agent,_causer :ARG1 entity_sacrificed)
-발생 : VERBAL_NOUN
-	- arise		(발 / 발생-01 :ARG0 causer :ARG1 thing_arising :ARG2 source)
-공포 : VERBAL_NOUN
-	- promulgate		(공 / 공포-01 :ARG0 agent :ARG1 thing_promulgated)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1347년" [DT_YEAR]	->  :time|duration (1 / 1347년)	OR	:time (d / date-entity :year 1347)	OR	:duration (t / temporal-quantity :quant 1347 :unit (년 / 년))  
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
-"희생자" [CV_POSITION]	->  :mod (희 / 희생자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (희 / 희생자))
--- VERBALIZED ------------------------------------
-(자 / 자 :ARG0-of (희 / 희생-01))
-(창 / 창궐-01 :mod (처 / 처음-00))
+# ::note 많은 희생자가 발생하여 --> 많은 사람들이 희생되어
+(대 / 대상
+    :mod (공 / 공포)
+    :location (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+    :cause (희 / 희생-01
+        :ARG1 (사 / 사람
+            :ARG1-of (많 / 많-01))
+        :time (이2 / 이래
+            :op1 (창 / 창궐-01
+                :mod (처 / 처음)
+                :time (d / date-entity :year 1347)))))
 
-
-# ::id snt11.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 1340년대 흑사병으로 약 2천5백만 명이 희생되었다.
 # ::note
--- FRAMES ----------------------------------------
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-희생 : VERBAL_NOUN
-	- sacrifice		(희 / 희생-01 :ARG0 agent,_causer :ARG1 entity_sacrificed)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1340년대" [DT_YEAR]	->  :time|duration (1 / 1340년대)	OR	:time (d / date-entity :year 1340)	OR	:duration (t / temporal-quantity :quant 1340 :unit (년 / 년))  
-"약 2천5백만 명" [QT_MAN_COUNT]	->  :quant (약 / 약2천5백만명)	OR	(c / concept* :quant 약 2천5백만 :unit|scale (명 / 명))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(병 / 병 :mod (흑 / 흑사-00))
+(희 / 희생-01
+    :ARG0 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+    :ARG1 (사 / 사람 :quant (약 / 약 :op1 25000000) :unit (명 / 명))
+    :time (d2 / date-interval
+        :op1 (d3 / date-entity :year 1340)
+        :op2 (d4 / date-entity :year 1350)))
 
-
-# ::id snt12.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 이 때의 흑사병은 중앙아시아나 인도에서 발원하여 전파된 것으로 추정되고 있다.
-# ::note
--- FRAMES ----------------------------------------
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-발원하 : DERIVED_NON-ENTRY
-전파 : VERBAL_NOUN
-	- propagate		(전 / 전파-01 :ARG0 agent :ARG1 thing_propagated)
-추정 : VERBAL_NOUN
-	- estimate		(추 / 추정-01 :ARG0 agent :ARG thing_estimated)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
-"중앙아시아" [LCG_CONTINENT]	->  (중 / 중앙아시아)	OR	(c / continent :wiki "중앙아시아" :name (이 / 이름 :op1 "중앙아시아"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(병 / 병 :mod (흑 / 흑사-00))
+# ::note 발원하다 없어짐
+(추 / 추정-01
+    :ARG (전 / 전파-01 
+        :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+        :source (o / or
+            :op1 (c / continent :wiki "중앙아시아" :name (이2 / 이름 :op1 "중앙아시아"))
+            :op2 (c2 / country :wiki "인도" :name (이3 / 이름 :op1 "인도")))
+        :time (이4 / 이때)))
 
-
-# ::id snt13.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 이는 당시 유럽의 인구의 약 30%에 달하는 숫자이다.
-# ::note
--- FRAMES ----------------------------------------
-달하 : VERB
-	- amount_to		(달 / 달하-01 :ARG1 thing_counted :ARG2 count,_total)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"약 30%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 약 30%)
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
--- VERBALIZED ------------------------------------
+# ::note 약 op1
+(i / include-91
+    :ARG1 (이 / 이)
+    :ARG2 (인 / 인구
+        :location (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+        :time (당 / 당시))
+    :ARG3 (약 / 약 :op1 (p / percentage-entity :value 30)))
 
-
-# ::id snt14.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 14세기 중세 유럽에 퍼져나간 흑사병은 "대흑사병"이라 불린다.
 # ::note
--- FRAMES ----------------------------------------
-퍼지 : VERB
-	- spread		(퍼 / 퍼지-01 :ARG1 thing_spreading :ARG2 thing_spread_through)
-	- resonate-CV		(퍼 / 퍼지-02 :ARG1 sound :ARG2 direction)
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-대흑사병 : DERIVED_NON-ENTRY -> (대 / 대흑사병-00) ?
-불리 : VERB
-	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"14세기" [DT_OTHERS]	->  :time|duration (1 / 14세기)	OR	:time (d / date-entity)	OR	:duration 
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
-"중세" [DT_DYNASTY]	->  :time|duration (중 / 중세)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(병 / 병 :mod (흑 / 흑사-00))
-(중 / 중세 :mod (세 / 세기-00))
+(부 / 부르-02
+    :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")
+        :ARG1-of (퍼 / 퍼지-01
+            :ARG2 (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")
+                :mod (중 / 중세))
+            :time (d2 / date-interval
+                :op1 (d3 / date-entity :year 1501)
+                :op2 (d4 / date-entity :year 1600))))
+    :ARG2 (이3 / 이름 :op1 "대흑사병"))
 
-
-# ::id snt15.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 14세기 유럽의 흑사병은 사회 구조를 붕괴시킬 정도로 유럽 사회에 큰 영향을 주었다.
-# ::note
--- FRAMES ----------------------------------------
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-구조 : VERBAL_NOUN
-	- rescue		(구 / 구조-01 :ARG0 agent :ARG1 entity_rescued)
-붕괴 : VERBAL_NOUN
-	- collapse		(붕 / 붕괴-01 :ARG0 causer_of_collapse :ARG1 thing_collapsing)
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-영향 : VERBAL_NOUN
-	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
-주 : VERB
-	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"14세기" [DT_OTHERS]	->  :time|duration (1 / 14세기)	OR	:time (d / date-entity)	OR	:duration 
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(구 / 구조-01 :mod (사 / 사회-00))
-(병 / 병 :mod (흑 / 흑사-00))
-
+# ::note 영향을 주다 / 정도결과구문
+(h / have-degree-91
+    :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")
+        :location (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))
+        :time (d2 / date-interval
+            :op1 (d3 / date-entity :year 1501)
+            :op2 (d4 / date-entity :year 1600)))
+    :ARG2 (영 / 영향-01
+        :ARG0 d
+        :ARG1 (사 / 사회
+            :location c))
+    :ARG3 (크 / 크-01
+        :ARG1 영)
+    :ARG6 (붕 / 붕괴-01
+        :ARG0 d
+        :ARG1 (구 / 구조
+            :poss 사)))
 
 # ::id snt16.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 당시 유럽에서는 흑사병이 왜 생기는지는 몰랐기 때문에, 거지, 유대인, 한센병 환자, 외국인 등이 흑사병을 몰고 다니는 자들로 몰려서 집단폭력을 당하거나, 심지어는 학살을 당하기도 하였다.
