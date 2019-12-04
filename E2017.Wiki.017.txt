@@ -460,54 +460,32 @@
 (병 / 병 :mod (흑 / 흑사-00))
 
 
-# ::id snt21.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 증상이 더욱 진행되면 검게 변색된 부위에 괴저가 발생하고, 죽음에 이르게 된다.
-# ::note
--- FRAMES ----------------------------------------
-진행 : VERBAL_NOUN
-	- proceed		(진 / 진행-01 :ARG0 agent :ARG1 thing_proceeding)
-검 : VERB
-	- black		(검 / 검-01 :ARG1 thing_being_black)
-변색되 : DERIVED_NON-ENTRY
-발생 : VERBAL_NOUN
-	- arise		(발 / 발생-01 :ARG0 causer :ARG1 thing_arising :ARG2 source)
-이르 : VERB
-	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
-	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- early		(이 / 이르-03 :ARG1 time)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"괴저" [TMM_DISEASE]	->  (괴 / 괴저)	OR	(d / desease :wiki "괴저" :name (이 / 이름 :op1 "괴저"))
--- VERBALIZED ------------------------------------
+# ::note 죽음에 이르게 된다 --> 죽게 된다
+(a / and
+	:op1 (발 / 발생-01
+		:ARG1 (d / desease :wiki "괴저" :name (이 / 이름 :op1 "괴저"))
+		:ARG2 (부 / 부위
+			:ARG1-of (변 / 변색-00))
+		:condition (진 / 진행-01
+			:ARG1 (증 / 증상)
+			:extent (더 / 더욱)))
+	:op2 (되 / 되-01
+		:ARG2 (죽 / 죽-01)))
 
-
-# ::id snt22.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 흑사병은 임상병리학에서 서혜 임파선종 중 가장 위험한 종류로 다루어진다.
 # ::note
--- FRAMES ----------------------------------------
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-병리학 : DERIVED_NON-ENTRY -> (병 / 병리학-00) ?
-위험 : VERBAL_NOUN
-	- dangerous		(위 / 위험 :ARG1 thing_dangerous :ARG2 dangerous_for)
-다루 : VERB
-	- cover		(다 / 다루-01 :ARG0 agent :ARG1 thing_covered)
-	- treat		(다 / 다루-02 :ARG0 agent :ARG1 entity_treated :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"서혜 임파선종" [FD_MEDICINE]	->  (서 / 서혜임파선종)	OR	(s / study-field|group* :wiki - :name (이 / 이름 :op1 "서혜" :op2 "임파선종"))
-"임상병리학" [FD_MEDICINE]	->  (임 / 임상병리학)	OR	(s / study-field|group* :wiki "임상_병리학" :name (이 / 이름 :op1 "임상병리학"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(병 / 병 :mod (흑 / 흑사-00))
-(병 / 병리 :mod (임 / 임상-00))
-(임 / 임파선종 :mod (서 / 서혜-00))
-(학 / 학 :mod (병 / 병리-00))
-
+(다 / 다루-02
+	:ARG0 (임 / 임상병리학)
+	:ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+	:ARG2 (종 / 종류
+		:ARG1-of (위 / 위험-01
+			:degree (가 / 가장))
+		:ARG1-of (i / include-91
+			:ARG2 (임2 / 임파선종
+				:mod (서 / 서혜)))))
 
 # ::id snt23.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 흑사병은 박테리아의 일종인 예르시니아 페스티스가 원인균으로 이에 감염된 쥐의 혈액을 먹은 벼룩이 사람의 피를 빨면서 병을 옮기게 된다.
@@ -658,32 +636,19 @@
 (학 / 학 :mod (역 / 역사-00))
 
 
-# ::id snt28.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 이러저러한 가설에도 불구하고 흑사병이 유럽에 들어온 데에는 비단길과 몽골 제국이 관련되어 있는 것만은 분명하다.
 # ::note
--- FRAMES ----------------------------------------
-이러저러하 : ** UNUSED_OR_NON-ENTRY **
-가설 : VERBAL_NOUN
-	- set_up		(가 / 가설-01 :ARG0 agent,_setter :ARG1 thing_set)
-불구하 : DERIVED_VERB_DETECTED
-	- in_spite_of		(불 / 불구하-01 :ARG1 in_spite_of_what)
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-들어오 : VERB
-	- come_in		(들 / 들어오-01 :ARG0 entity_coming_in :ARG2 start_point :ARG3 end_point)
-	- flood_in-CV		(들 / 들어오-02 :ARG1 thing_flooding_in :ARG2 start_point :ARG3 end_point)
-관련 : VERBAL_NOUN
-	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-분명하 : REDUCED_VERB_DETECTED
-	- clear		(분 / 분명-01 :ARG1 thing_being_clear)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"몽골 제국" [DT_DYNASTY]	->  :time|duration (몽 / 몽골제국)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"비단길" [AF_ROAD]	->  (비 / 비단길)	OR	(r / road :wiki "비단길" :name (이 / 이름 :op1 "비단길"))
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(병 / 병 :mod (흑 / 흑사-00))
-
+(분 / 분명-01
+	:ARG1 (관 / 관련-01
+		:ARG1 (들 / 들어오-01
+			:ARG0 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+			:ARG3 (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")))
+		:ARG2 (a / and
+			:op1 (r / road :wiki "비단길" :name (이3 / 이름 :op1 "비단길"))
+			:op2 (c2 / country :wiki "몽골_제국" :name (이4 / 이름 :op1 "몽골" :op2 "제국"))))
+	:concession (가 / 가설
+		:ARG1-of (이5 / 이러저러하-00)))
 
 # ::id snt29.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 몽골 제국은 비단길을 통해 중앙아시아와 유럽을 점령하였으며, 1347년 몽골의 포위 공격이 있었던 크림 반도의 페오도시야에서 흑사병이 처음으로 창궐하였기 때문이다.
