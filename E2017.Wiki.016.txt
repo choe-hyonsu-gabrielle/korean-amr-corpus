@@ -192,30 +192,19 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt12.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 개신교 신자들에 대한 차별을 금지하는 낭트 칙령을 세워 위그노들에게도 신앙의 자유를 주었다.
 # ::note
--- FRAMES ----------------------------------------
-신자들 : DERIVED_NON-ENTRY -> (신 / 신자들-00) ?
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-차별 : VERBAL_NOUN
-	- discriminate		(차 / 차별-01 :ARG0 agent :ARG1 thing_discriminated)
-금지 : VERBAL_NOUN
-	- prohibit		(금 / 금지-01 :ARG0 agent :ARG1 action_prohibited)
-세우 : ** UNUSED_OR_NON-ENTRY **
-주 : VERB
-	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"개신교 신자" [CV_POSITION]	->  :mod (개 / 개신교신자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (개 / 개신교 신자))
-"낭트 칙령" [CV_LAW]	->  (낭 / 낭트칙령)	OR	(l / law :wiki "낭트_칙령" :name (이 / 이름 :op1 "낭트" :op2 "칙령"))
-"위그노" [PS_NAME]	->  (위 / 위그노)	OR	(r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노"))
--- VERBALIZED ------------------------------------
-(교 / 교 :mod (개 / 개신-00))
-(들 / 들 :mod (신 / 신자-00))
-(신 / 신자 :mod (교 / 교-00))
-
+(주 / 주-01
+    :ARG1 (자 / 자유롭-01
+        :topic (신 / 신앙))
+    :ARG2 (r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노"))
+    :manner (서 / 서-02
+        :ARG1 (l / law :wiki "낭트_칙령" :name (이2 / 이름 :op1 "낭트" :op2 "칙령")
+            :ARG0-of (금 / 금지-01
+                :ARG1 (차 / 차별-01
+                    :ARG1 (신2 / 신자
+                        :mod (개 / 개신교)))))))
 
 # ::id snt13.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 루이 14세가 가톨릭을 프랑스의 국교로 삼기 위하여 낭트 칙령을 폐기하자, 수많은 위그노들이 네덜란드, 영국, 프로이센 등지로 망명하였다.
@@ -242,18 +231,16 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt14.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 일부는 북아메리카 (현재의 뉴욕과 캐롤라이나지역)으로 건너가기도 했다.
 # ::note
--- FRAMES ----------------------------------------
-건너가 : VERB
-	- go_over		(건 / 건너가-01 :ARG0 entity_in_motion :ARG1 barrier :ARG2 start_point :ARG3 end_point)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"뉴욕" [LCP_CITY]	->  (뉴 / 뉴욕)	OR	(c / city :wiki "뉴욕" :name (이 / 이름 :op1 "뉴욕"))
-"북아메리카" [LCG_CONTINENT]	->  (북 / 북아메리카)	OR	(c / continent :wiki "북아메리카" :name (이 / 이름 :op1 "북아메리카"))
-"캐롤라이나지역" [LCP_PROVINCE]	->  (캐 / 캐롤라이나지역)	OR	(p / province :wiki - :name (이 / 이름 :op1 "캐롤라이나지역"))
--- VERBALIZED ------------------------------------
+(건 / 건너가-01
+    :ARG0 (일 / 일부)
+    :ARG3 (c / continent :wiki "북아메리카" :name (이 / 이름 :op1 "북아메리카")
+        :mod (지 / 지역
+            :mod (a / and
+                :op1 (c / city :wiki "뉴욕" :name (이2 / 이름 :op1 "뉴욕"))
+                :op2 (s / state :wiki - :name (이3 / 이름 :op1 "캐롤라이나"))))))
 
 
 # ::id snt15.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
@@ -274,34 +261,22 @@
 (업 / 업 :mod (상 / 상공-00))
 
 
-# ::id snt16.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 이것이 후에 프랑스 대혁명이 일어나는 원인을 가져왔다.
-# ::note
--- FRAMES ----------------------------------------
-대혁명 : DERIVED_NON-ENTRY -> (대 / 대혁명-00) ?
-일어나 : VERB
-	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
-가져오 : VERB
-	- bring		(가 / 가져오-01 :ARG0 bringer :ARG1 thing_brought :ARG2 brought_to :ARG3 brought_from)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"프랑스 대혁명" [EV_WAR_REVOLUTION]	->  (프 / 프랑스대혁명)	OR	(w / war|event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스" :op2 "대혁명"))
--- VERBALIZED ------------------------------------
+# ::note 일어나 센스 번호 없음
+(일 / 일어나-01
+    :cause (이2 / 이것)
+    :ARG1 (e / event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스" :op2 "대혁명"))
+    :time (후 / 후))
 
-
-# ::id snt17.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 1802년 이후 위그노 곧 개신교 신자에 대한 종교의 자유가 인정되었다.
 # ::note
--- FRAMES ----------------------------------------
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-인정 : VERBAL_NOUN
-	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1802년 이후" [DT_OTHERS]	->  :time|duration (1 / 1802년이후)	OR	:time (d / date-entity :year 1802)	OR	:duration (t / temporal-quantity :quant 1802 :unit (년 / 년))  
-"개신교 신자" [CV_POSITION]	->  :mod (개 / 개신교신자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (개 / 개신교 신자))
-"위그노" [PS_NAME]	->  (위 / 위그노)	OR	(r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노"))
--- VERBALIZED ------------------------------------
-(교 / 교 :mod (개 / 개신-00))
-(신 / 신자 :mod (교 / 교-00))
+(인 / 인정-01
+    :ARG1 (자 / 자유롭-01
+        :topic (종 / 종교)
+        :ARG1 (r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노")
+            :mod (신 / 신자
+                :mod (개 / 개신교))))
+    :time (이2 / 이후
+        :op1 (d / date-entity :year 1802)))
