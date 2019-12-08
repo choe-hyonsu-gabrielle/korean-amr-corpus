@@ -103,50 +103,36 @@
 (학 / 학살-01 :mod (축 / 축일-00))
 
 
-# ::id snt6.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 부의 정당한 축적을 인정한 칼뱅주의의 특징상 주로 상공업자 중에서 신도가 많았다.
 # ::note
--- FRAMES ----------------------------------------
-정당하 : VERB
-	- just		(정 / 정당하-01 :ARG1 thing_just)
-축적 : VERBAL_NOUN
-	- accumulate		(축 / 축적-01 :ARG0 agent :ARG1 thing_accumulated)
-인정 : VERBAL_NOUN
-	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
-주의 : VERBAL_NOUN
-	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
-특징상 : DERIVED_NON-ENTRY -> (특 / 특징상-00) ?
-상공업 : DERIVED_NON-ENTRY -> (상 / 상공업-00) ?
-많 : VERB
-	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"상공업자" [CV_OCCUPATION]	->  :mod (상 / 상공업자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상공업자))
-"신도" [CV_POSITION]	->  :mod (신 / 신도)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신도))
-"칼뱅주의" [TR_PHILOSOPHY]	->  (칼 / 칼뱅주의)	OR	(t / theory* :wiki "칼뱅주의" :name (이 / 이름 :op1 "칼뱅주의"))
--- VERBALIZED ------------------------------------
-(상 / 상 :mod (특 / 특징-00))
-(업 / 업 :mod (상 / 상공-00))
+(많 / 많-01
+    :ARG1 (신 / 신도
+        :ARG1-of (i / include-91
+            :ARG2 (사 / 사람
+                :ARG0 (종 / 종사-01
+                    :ARG1 (상 / 상공업)))))
+    :mod (주 / 주로)
+    :cause (특 / 특징
+        :mod (칼 / 칼뱅주의
+            :ARG0-of (인 / 인정-01
+                :ARG1 (축 / 축적-01
+                    :ARG1 (부 / 부)
+                    :manner (정 / 정당하-01))))))
 
-
-# ::id snt7.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 프랑수아 2세가 1560년 사망하자, 샤를 9세와 황태후 카트린 드 메디시스가 정부를 지배하였다.
 # ::note
--- FRAMES ----------------------------------------
-사망 : VERBAL_NOUN
-	- die		(사 / 사망-01 :ARG0 causer :ARG1 entity_dying)
-지배 : VERBAL_NOUN
-	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1560년" [DT_YEAR]	->  :time|duration (1 / 1560년)	OR	:time (d / date-entity :year 1560)	OR	:duration (t / temporal-quantity :quant 1560 :unit (년 / 년))  
-"샤를 9세" [PS_NAME]	->  (샤 / 샤를9세)	OR	(p / person :wiki "샤를_9세" :name (이 / 이름 :op1 "샤를" :op2 "9세"))
-"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
-"카트린 드 메디시스" [PS_NAME]	->  (카 / 카트린드메디시스)	OR	(p / person :wiki "카트린_드_메디시스" :name (이 / 이름 :op1 "카트린" :op2 "드" :op3 "메디시스"))
-"프랑수아 2세" [PS_NAME]	->  (프 / 프랑수아2세)	OR	(p / person :wiki "프랑수아_2세" :name (이 / 이름 :op1 "프랑수아" :op2 "2세"))
-"황태후" [CV_POSITION]	->  :mod (황 / 황태후)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황태후))
--- VERBALIZED ------------------------------------
-
+(지 / 지배-01
+    :ARG0 (a / and
+        :op1 (p / person :wiki "샤를_9세" :name (이 / 이름 :op1 "샤를" :op2 "9세"))
+        :op2 (p2 / person :wiki "카트린_드_메디시스" :name (이2 / 이름 :op1 "카트린" :op2 "드" :op3 "메디시스")
+            :ARG0-of (h / have-rel-role-91
+                :ARG2 (황 / 황태후))))
+    :ARG1 (정 / 정부)
+    :time (사 / 사망-01
+        :ARG1 (p3 / person :wiki "프랑수아_2세" :name (이3 / 이름 :op1 "프랑수아" :op2 "2세"))
+        :time (d / date-entity :year 1560)))
 
 # ::id snt8.E2017.Wiki.016 ::date 2019-12-06 ::annotator gabrielle ::preferred True
 # ::snt 카트린은 기즈 공에 대항하는 위그노들의 균형을 촉진시켰다.
@@ -158,39 +144,28 @@
             :ARG0-of (대 / 대항-01
                 :ARG1 (p2 / person :wiki "프랑수아_드_기즈_공작" :name (이3 / 이름 :op1 "기즈" :op2 "공"))))))
 
-# ::id snt9.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 그러나 두 교파 간의 기분은 내란이 일어나는 고통스러운 원인을 가져왔다.
-# ::note
--- FRAMES ----------------------------------------
-일어나 : VERB
-	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
-고통스럽 : DERIVED_NON-ENTRY
-가져오 : VERB
-	- bring		(가 / 가져오-01 :ARG0 bringer :ARG1 thing_brought :ARG2 brought_to :ARG3 brought_from)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"두 교파" [QT_COUNT]	->  :quant (두 / 두교파)	OR	(c / concept* :quant 두 :unit|scale (교 / 교파))
--- VERBALIZED ------------------------------------
+# ::note 비문
+(c / contrast-01
+    :ARG2 (일 / 일어나-01
+        :ARG1 (내 / 내란
+            :mod (고 / 고통-00))
+        :cause (기 / 기분
+            :poss (교 / 교파 :quant 2))))
 
-
-# ::id snt10.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 성 바르톨로메오 축일에 프랑스 전국에서 가톨릭 교도들이 수천명의 위그노들을 학살하였다.
 # ::note
--- FRAMES ----------------------------------------
-교도들 : DERIVED_NON-ENTRY -> (교 / 교도들-00) ?
-학살 : VERBAL_NOUN
-	- slaughter		(학 / 학살-01 :ARG0 killer :ARG1 corpse)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"가톨릭 교도" [CV_POSITION]	->  :mod (가 / 가톨릭교도)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (가 / 가톨릭 교도))
-"성 바르톨로메오 축일" [DT_DAY]	->  :time|duration (성 / 성바르톨로메오축일)	OR	:time (d / date-entity)	OR	:duration 
-"수천명" [QT_MAN_COUNT]	->  :quant (수 / 수천명)	OR	(c / concept* :quant - :unit|scale (수 / 수천명))
-"위그노" [PS_NAME]	->  (위 / 위그노)	OR	(r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노"))
-"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
--- VERBALIZED ------------------------------------
-(교 / 교도 :mod (가 / 가톨릭-00))
-(들 / 들 :mod (교 / 교도-00))
-
+(학 / 학살-01
+    :ARG0 (교 / 교도
+        :mod (가 / 가톨릭))
+    :ARG1 (r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노")
+        :quant (수 / 수천 :op1 1000) :unit (명 / 명))
+    :location (전 / 전국
+        :mod (프 / 프랑스))
+    :time (축 / 축일
+        :mod (p / person :wiki "바르톨로메오" :name (이2 / 이름 :op1 "성" :op2 "바르톨로메오"))))
 
 # ::id snt11.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 앙리 3세가 암살되고, 나바라의 군주 앙리(엔리케)가 부르봉 왕조를 열고, 앙리 4세로서 왕위에 올랐다.
