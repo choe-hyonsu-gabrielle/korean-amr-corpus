@@ -12,55 +12,44 @@
         :mod (개 / 개신교)
         :location (c / country :wiki "프랑스" :name (이2 / 이름 :op1 "프랑스"))))
 
-# ::id snt2.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 칼뱅주의를 추종한 프랑스 개신교 신자들은 스위스 주네브에서 세력을 규합하는데, 후에 이들을 프라이부르크, 베른, 제네바의 동맹이라는 뜻으로 위그노라고 불렀다.
 # ::note
--- FRAMES ----------------------------------------
-추종하 : DERIVED_NON-ENTRY
-신자들 : DERIVED_NON-ENTRY -> (신 / 신자들-00) ?
-규합 : VERBAL_NOUN
-	- rally		(규 / 규합-01 :ARG0 agent :ARG1 thing_rallied)
-부르 : VERB
-	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
-	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"개신교" [OGG_RELIGION]	->  (개 / 개신교)	OR	(r / religious-group :wiki "개신교" :name (이 / 이름 :op1 "개신교"))
-"베른" [LCP_CAPITALCITY]	->  (베 / 베른)	OR	(c / city :wiki "베른" :name (이 / 이름 :op1 "베른"))
-"스위스" [LCP_COUNTRY]	->  (스 / 스위스)	OR	(c / country :wiki "스위스" :name (이 / 이름 :op1 "스위스"))
-"신자" [CV_POSITION]	->  :mod (신 / 신자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신자))
-"위그노" [PS_NAME]	->  (위 / 위그노)	OR	(r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노"))
-"제네바" [LCP_CITY]	->  (제 / 제네바)	OR	(c / city :wiki "제네바" :name (이 / 이름 :op1 "제네바"))
-"주네브" [LCP_CITY]	->  (주 / 주네브)	OR	(c / city :wiki "제네바" :name (이 / 이름 :op1 "주네브"))
-"칼뱅주의" [TR_PHILOSOPHY]	->  (칼 / 칼뱅주의)	OR	(t / theory* :wiki "칼뱅주의" :name (이 / 이름 :op1 "칼뱅주의"))
-"프라이부르크" [LCP_CITY]	->  (프 / 프라이부르크)	OR	(c / city :wiki "프라이부르크?" :name (이 / 이름 :op1 "프라이부르크"))
-"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
--- VERBALIZED ------------------------------------
-(교 / 교 :mod (개 / 개신-00))
-(들 / 들 :mod (신 / 신자-00))
-(신 / 신자 :mod (교 / 교-00))
+(a / and
+    :op1 (규 / 규합-01
+        :ARG0 (신 / 신자
+            :mod (개 / 개신교)
+            :location (c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+            :ARG0-of (추 / 추종-00
+                :ARG1 (칼 / 칼뱅주의)))
+        :ARG1 (세 / 세력)
+        :location (c2 / city :wiki "제네바" :name (이2 / 이름 :op1 "주네브")
+            :location (c3 / country :wiki "스위스" :name (이3 / 이름 :op1 "스위스"))))
+    :op2 (부 / 부르-02
+        :ARG1 신
+        :ARG2 (r / religious-group :wiki "위그노" :name (이4 / 이름 :op1 "위그노")
+            :ARG1-of (뜻 / 뜻하-01
+                :ARG2 (동 / 동맹
+                    :mod (a2 / and
+                        :op1 (c2 / city :wiki "프라이부르크임브라이스가우" :name (이5 / 이름 :op1 "프라이부르크"))
+                        :op2 (c3 / city :wiki "베른" :name (이6 / 이름 :op1 "베른"))
+                        :op3 (c4 / city :wiki "제네바" :name (이7 / 이름 :op1 "제네바"))))))
+        :time (후 / 후)))
 
-
-# ::id snt3.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 프랑수아 1세는 그의 통치 기간에 위그노의 수가 늘어나도록, 그들을 관대하게 다루었다.
 # ::note
--- FRAMES ----------------------------------------
-통치 : VERBAL_NOUN
-	- govern		(통 / 통치-01 :ARG0 agent :ARG1 thing_governed)
-늘어나 : VERB
-	- grow		(늘 / 늘어나-01 :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
-관대하 : DERIVED_VERB_DETECTED
-	- magnanimous		(관 / 관대하-01 :ARG1 magnanimous_entity :ARG2 magnanimous_to)
-다루 : VERB
-	- cover		(다 / 다루-01 :ARG0 agent :ARG1 thing_covered)
-	- treat		(다 / 다루-02 :ARG0 agent :ARG1 entity_treated :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"위그노" [PS_NAME]	->  (위 / 위그노)	OR	(r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노"))
-"프랑수아 1세" [PS_NAME]	->  (프 / 프랑수아1세)	OR	(p / person :wiki "프랑수아 1세?" :name (이 / 이름 :op1 "프랑수아" :op2 "1세"))
--- VERBALIZED ------------------------------------
-(기 / 기간-00 :mod (통 / 통치-01))
-
+(다 / 다루-02
+    :ARG0 (p / person :wiki "프랑수아_1세_(프랑스)" :name (이 / 이름 :op1 "프랑수아" :op2 "1세"))
+    :ARG1 (r / religious-group :wiki "위그노" :name (이2 / 이름 :op1 "위그노"))
+    :manner (관 / 관대하-01
+        :ARG1 p
+        :ARG2 r)
+    :purpose (늘 / 늘어나-01
+        :ARG1 (수 / 수
+            :quant-of r))
+    :time (통 / 통치-01
+        :ARG0 p))
 
 # ::id snt4.E2017.Wiki.016 ::date 2019-12-06 ::annotator gabrielle ::preferred True
 # ::snt 프랑스의 로마 가톨릭 교도들이 이끄는 기즈 가족과 프랑수아 2세는 위그노들에게 대항하였다.
@@ -75,33 +64,19 @@
         :op2 (p / person :wiki "프랑수아_2세" :name (이4 / 이름 :op1 "프랑수아" :op2 "2세")))
     :ARG1 (r / religious-group :wiki "위그노" :name (이5 / 이름 :op1 "위그노")))
 
-# ::id snt5.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 1562년 위그노 전쟁, 1572년 성 바르톨로메오 축일 학살 등으로 로마 가톨릭 교도들과 갈등을 겪었으며, 교리적으로도 혼란을 겪었다.
-# ::note
--- FRAMES ----------------------------------------
-학살 : VERBAL_NOUN
-	- slaughter		(학 / 학살-01 :ARG0 killer :ARG1 corpse)
-교도들 : DERIVED_NON-ENTRY -> (교 / 교도들-00) ?
-겪 : VERB
-	- experience		(겪 / 겪-01 :ARG1 experiencer :ARG2 experienced)
-교리적 : DERIVED_NON-ENTRY -> (교 / 교리적-00) ?
-혼란 : VERBAL_NOUN
-	- confuse		(혼 / 혼란-01 :ARG0 agent :ARG1 entity_confused)
-겪 : VERB
-	- experience		(겪 / 겪-01 :ARG1 experiencer :ARG2 experienced)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1562년" [DT_YEAR]	->  :time|duration (1 / 1562년)	OR	:time (d / date-entity :year 1562)	OR	:duration (t / temporal-quantity :quant 1562 :unit (년 / 년))  
-"1572년" [DT_YEAR]	->  :time|duration (1 / 1572년)	OR	:time (d / date-entity :year 1572)	OR	:duration (t / temporal-quantity :quant 1572 :unit (년 / 년))  
-"로마 가톨릭 교도" [CV_POSITION]	->  :mod (로 / 로마가톨릭교도)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (로 / 로마 가톨릭 교도))
-"성 바르톨로메오 축일 학살" [EV_WAR_REVOLUTION]	->  (성 / 성바르톨로메오축일학살)	OR	(w / war|event :wiki "성_바르톨로메오_축일의_학살" :name (이 / 이름 :op1 "성" :op2 "바르톨로메오" :op3 "축일" :op4 "학살"))
-"위그노 전쟁" [EV_WAR_REVOLUTION]	->  (위 / 위그노전쟁)	OR	(w / war|event :wiki "위그노_전쟁" :name (이 / 이름 :op1 "위그노" :op2 "전쟁"))
--- VERBALIZED ------------------------------------
-(교 / 교도 :mod (가 / 가톨릭-00))
-(들 / 들 :mod (교 / 교도-00))
-(적 / 적 :mod (교 / 교리-00))
-(학 / 학살-01 :mod (축 / 축일-00))
-
+(o / or
+    :op1 (갈 / 갈등-00
+            :ARG1 (교 / 교도
+                :mod (로 / 로마-가톨릭)))
+    :op2 (혼 / 혼란-01
+        :mod (교2 / 교리))
+    :cause (등 / 등
+        :op1 (w / war :wiki "위그노_전쟁" :name (이 / 이름 :op1 "위그노" :op2 "전쟁")
+            :time (d / date-entity :year 1562))
+        :op2 (e / event :wiki "성_바르톨로메오_축일의_학살" :name (이2 / 이름 :op1 "성" :op2 "바르톨로메오" :op3 "축일" :op4 "학살")
+            :time (d2 / date-entity :year 1572))))
 
 # ::id snt6.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 부의 정당한 축적을 인정한 칼뱅주의의 특징상 주로 상공업자 중에서 신도가 많았다.
@@ -167,30 +142,22 @@
     :time (축 / 축일
         :mod (p / person :wiki "바르톨로메오" :name (이2 / 이름 :op1 "성" :op2 "바르톨로메오"))))
 
-# ::id snt11.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 앙리 3세가 암살되고, 나바라의 군주 앙리(엔리케)가 부르봉 왕조를 열고, 앙리 4세로서 왕위에 올랐다.
 # ::note
--- FRAMES ----------------------------------------
-암살되 : DERIVED_NON-ENTRY
-열 : VERB
-	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
-	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
-오르 : VERB
-	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
-	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
-	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
-	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"군주" [CV_POSITION]	->  :mod (군 / 군주)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (군 / 군주))
-"나바라" [LC_OTHERS]	->  (나 / 나바라)	OR	(l / location? :wiki "나바라_지방" :name (이 / 이름 :op1 "나바라"))
-"부르봉 왕조" [DT_DYNASTY]	->  :time|duration (부 / 부르봉왕조)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"앙리 3세" [PS_NAME]	->  (앙 / 앙리3세)	OR	(p / person :wiki "앙리_3세" :name (이 / 이름 :op1 "앙리" :op2 "3세"))
-"앙리 4세" [PS_NAME]	->  (앙 / 앙리4세)	OR	(p / person :wiki "앙리_4세" :name (이 / 이름 :op1 "앙리" :op2 "4세"))
-"앙리" [PS_NAME]	->  (앙 / 앙리)	OR	(p / person :wiki "앙리?" :name (이 / 이름 :op1 "앙리"))
-"엔리케" [PS_NAME]	->  (엔 / 엔리케)	OR	(p / person :wiki "엔리케?" :name (이 / 이름 :op1 "엔리케"))
--- VERBALIZED ------------------------------------
-
+(a / and
+    :op1 (암 / 암살-00
+        :ARG1 (p / person :wiki "앙리_3세" :name (이 / 이름 :op1 "앙리" :op2 "3세")))
+    :op2 (열 / 열-02
+        :ARG0 (p2 / person :wiki "앙리_4세" :name (이2 / 이름 :op1 "앙리")
+            :ARG0-of (h / have-org-role-91
+                :ARG1 (c / country-region :wiki "나바라_지방" :name (이3 / 이름 :op1 "나바라"))
+                :ARG2 (군 / 군주))))
+        :ARG1 (왕 / 왕조
+            :mod (f / family :wiki "부르봉가" :name (이4 / 이름 :op1 "부르봉"))))
+    :op3 (오 / 오르-02
+        :ARG1 p2
+        :ARG2 (왕2 / 왕위)))
 
 # ::id snt12.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 개신교 신자들에 대한 차별을 금지하는 낭트 칙령을 세워 위그노들에게도 신앙의 자유를 주었다.
@@ -206,30 +173,23 @@
                     :ARG1 (신2 / 신자
                         :mod (개 / 개신교)))))))
 
-# ::id snt13.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 루이 14세가 가톨릭을 프랑스의 국교로 삼기 위하여 낭트 칙령을 폐기하자, 수많은 위그노들이 네덜란드, 영국, 프로이센 등지로 망명하였다.
 # ::note
--- FRAMES ----------------------------------------
-삼 : VERB
-	- consider		(삼 / 삼-01 :ARG0 thinker :ARG1 thing_under_consideration :ARG2 attribute)
-위하 : VERB
-	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
-폐기하 : DERIVED_NON-ENTRY
-수많 : VERB
-	- numerous		(수 / 수많-01 :ARG1 thing_being_numerous)
-망명하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"가톨릭" [OGG_RELIGION]	->  (가 / 가톨릭)	OR	(r / religious-group :wiki "가톨릭" :name (이 / 이름 :op1 "가톨릭"))
-"낭트 칙령" [CV_LAW]	->  (낭 / 낭트칙령)	OR	(l / law :wiki "낭트_칙령" :name (이 / 이름 :op1 "낭트" :op2 "칙령"))
-"네덜란드" [LCP_COUNTRY]	->  (네 / 네덜란드)	OR	(c / country :wiki "네덜란드" :name (이 / 이름 :op1 "네덜란드"))
-"루이 14세" [PS_NAME]	->  (루 / 루이14세)	OR	(p / person :wiki "루이_14세" :name (이 / 이름 :op1 "루이" :op2 "14세"))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"위그노" [PS_NAME]	->  (위 / 위그노)	OR	(r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노"))
-"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
-"프로이센" [LCP_COUNTRY]	->  (프 / 프로이센)	OR	(c / country :wiki "프로이센" :name (이 / 이름 :op1 "프로이센"))
--- VERBALIZED ------------------------------------
-
+(망 / 망명-00
+    :ARG0 (r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노")
+        :ARG1-of (수 / 수많-01))
+    :goal (등 / 등지
+        :op1 (c / country :wiki "네덜란드" :name (이2 / 이름 :op1 "네덜란드"))
+        :op2 (c2 / country :wiki "영국" :name (이3 / 이름 :op1 "영국"))
+        :op3 (c3 / country :wiki "프로이센" :name (이4 / 이름 :op1 "프로이센")))
+    :cause (폐 / 폐기-00
+        :ARG0 (p / person :wiki "루이_14세" :name (이5 / 이름 :op1 "루이" :op2 "14세"))
+        :ARG1 (l / law :wiki "낭트_칙령" :name (이6 / 이름 :op1 "낭트" :op2 "칙령"))
+        :purpose (삼 / 삼-01
+            :ARG1 (가 / 가톨릭)
+            :ARG2 (국 / 국교
+                :poss (c4 / country :wiki "프랑스" :name (이7 / 이름 :op1 "프랑스"))))))
 
 # ::id snt14.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 일부는 북아메리카 (현재의 뉴욕과 캐롤라이나지역)으로 건너가기도 했다.
@@ -243,23 +203,18 @@
                 :op2 (s / state :wiki - :name (이3 / 이름 :op1 "캐롤라이나"))))))
 
 
-# ::id snt15.E2017.Wiki.016 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 상공업은 물론, 여러가지 기술을 지니었던 그들이 망명하자, 프랑스의 경제는 몰락하고 말았다.
 # ::note
--- FRAMES ----------------------------------------
-상공업 : DERIVED_NON-ENTRY -> (상 / 상공업-00) ?
-기술 : VERBAL_NOUN
-	- describe		(기 / 기술-01 :ARG0 describer :ARG1 thing_described)
-지니 : VERB
-	- have		(지 / 지니-01 :ARG0 thing_having :ARG1 thing_had)
-망명하 : DERIVED_NON-ENTRY
-몰락하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
--- VERBALIZED ------------------------------------
-(업 / 업 :mod (상 / 상공-00))
-
+(몰 / 몰락-00
+    :ARG1 (경 / 경제
+        :poss (c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스")))
+    :cause (망 / 망명-00
+        :ARG0 (그 / 그들
+            :ARG0-of (지 / 지니-01
+                :ARG1 (기 / 기술
+                    :quant (여 / 여러가지)
+                    :example (상 / 상공업))))))
 
 # ::id snt16.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
 # ::snt 이것이 후에 프랑스 대혁명이 일어나는 원인을 가져왔다.
