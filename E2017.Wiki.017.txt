@@ -120,60 +120,40 @@
             :mod (이2 / 이전
                 :op1 d3))))
 
-# ::id snt8.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.017 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 그 뒤로도 19세기까지 유럽에서는 페스트가 산발적으로 유행했는데(런던 대역병 등), 흑사병의 병원체를 페스트균으로 확정한다면 흑사병이란 1345년에서 1840년까지 유라시아 대륙에서 계속된 제2차 페스트 범유행의 일부로서 14세기 유럽의 범유행 상황을 가리키는 말이라고 할 수 있다.
-# ::note
--- FRAMES ----------------------------------------
-산발적 : DERIVED_NON-ENTRY -> (산 / 산발적-00) ?
-유행 : VERBAL_NOUN
-	- popular		(유 / 유행-01 :ARG0 thing_makking_popular :ARG thing_popular)
-대역병 : DERIVED_NON-ENTRY -> (대 / 대역병-00) ?
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-병원체 : DERIVED_NON-ENTRY -> (병 / 병원체-00) ?
-확정 : VERBAL_NOUN
-	- decide		(확 / 확정-01 :ARG0 decider :ARG1 thing_decided :ARG2 attribute)
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-계속 : VERBAL_NOUN
-	- continue		(계 / 계속-01 :ARG0 agent :ARG1 thing_continuing)
-유행 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (범 / 범유행-00) ?
-	- popular		(유 / 유행-01 :ARG0 thing_makking_popular :ARG thing_popular)
-유행 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (범 / 범유행-00) ?
-	- popular		(유 / 유행-01 :ARG0 thing_makking_popular :ARG thing_popular)
-가리키 : VERB
-	- indicate		(가 / 가리키-01 :ARG0 indicator :ARG1 thing_indicated)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1345년에서 1840년까지" [DT_DURATION]	->  :time|duration (1 / 1345년에서1840년까지)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1345))	OR :duration (t / temporal-quantity :quant 1345 :unit (년 / 년))  
-"14세기" [DT_OTHERS]	->  :time|duration (1 / 14세기)	OR	:time (d / date-entity)	OR	:duration 
-"19세기까지" [DT_OTHERS]	->  :time|duration (1 / 19세기까지)	OR	:time (d / date-entity)	OR	:duration 
-"런던" [LCP_CAPITALCITY]	->  (런 / 런던)	OR	(c / city :wiki "런던" :name (이 / 이름 :op1 "런던"))
-"유라시아" [LCG_CONTINENT]	->  (유 / 유라시아)	OR	(c / continent :wiki "유라시아" :name (이 / 이름 :op1 "유라시아"))
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
-"제2차" [QT_ORDER]	->  :ord (제 / 제2차)	OR	:ord (o / ordinal-entity :value 제2차)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"페스트" [TMM_DISEASE]	->  (페 / 페스트)	OR	(d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
-"페스트" [TMM_DISEASE]	->  (페 / 페스트)	OR	(d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
-"페스트균" [TMM_DISEASE]	->  (페 / 페스트균)	OR	(d / desease :wiki "페스트균" :name (이 / 이름 :op1 "페스트균"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(균 / 균 :mod (페 / 페스트-00))
-(대 / 대역 :mod (런 / 런던-00))
-(병 / 병 :mod (대 / 대역-00))
-(병 / 병 :mod (흑 / 흑사-00))
-(병 / 병 :mod (흑 / 흑사-00))
-(상 / 상황-00 :mod (유 / 유행-01))
-(적 / 적 :mod (산 / 산발-00))
-(체 / 체 :mod (병 / 병원-00))
-
+# ::note 페스트균...?
+(a / and
+	:op1 (유 / 유행-01
+		:ARG (d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
+		:location (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))
+		:time (d2 / date-interval
+			:op1 (뒤 / 뒤
+				:op1 (그 / 그))
+            :op2 (d3 / date-entity :year 1800))
+		:manner (산 / 산발-00
+			:ARG1 d)
+		:example (등 / 등
+			:op1 (e / event :wiki "런던_대역병" :name (이3 / 이름 :op1 "런던" :op2 "대역병"))))
+	:op2 (가 / 가능-01
+		:ARG1 (하 / 하-03
+			:ARG1 (d2 / desease :wiki "페스트" :name (이4 / 이름 :op1 "흑사병"))
+			:ARG2 (상 / 상황
+				:mod (유 / 유행-01
+					:mod (범 / 범))
+				:time (d4 / date-inverval
+					:op1 (d5 / date-entity :year 1301)
+					:op2 (d6 / date-entity :year 1400))
+				:location c
+				:subevent-of (e2 / event :wiki "제2차_페스트_범유행" :name (이5 / 이름 :op1 "제2차" :op2 "페스트" :op3 "범유행")
+					:ARG1-of (계 / 계속-01
+						:location (c2 / continent :wiki "유라시아" :name (이6 / 이름 :op1 "유라시아" :op2 "대륙"))
+						:duration (d7 / date-inverval
+							:op1 (d8 / date-entity :year 1345)
+							:op2 (d9 / date-entity :year 1840))))))
+			:condition (확 / 확정-01
+				:ARG1 (페 / 페스트균)
+				:ARG2 (병 / 병원체 :poss d2))))
 
 # ::id snt9.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 14세기의 페스트 유행은 유럽사에 있어 종교사, 사회사, 경제사적으로 지대한 영향을 미쳤다.

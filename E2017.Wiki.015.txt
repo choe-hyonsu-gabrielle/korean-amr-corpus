@@ -18,23 +18,20 @@
         :domain 산
         :mod (원3 / 원소)))
 
-# ::id snt2.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.015 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 일반적으로 산소원자 두 개가 결합하여 무색, 무미, 무취인 기체 상태로 존재한다.
 # ::note
--- FRAMES ----------------------------------------
-일반적 : DERIVED_NON-ENTRY -> (일 / 일반적-00) ?
-결합하 : DERIVED_NON-ENTRY
-존재 : VERBAL_NOUN
-	- exist		(존 / 존재-01 :ARG1 thing_existing :ARG2 location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"두 개" [QT_COUNT]	->  :quant (두 / 두개)	OR	(c / concept* :quant 두 :unit|scale (개 / 개))
-"산소" [MT_ELEMENT]	->  (산 / 산소)	OR	(m / material* :wiki "산소" :name (이 / 이름 :op1 "산소"))
--- VERBALIZED ------------------------------------
-(상 / 상태 :mod (기 / 기체-00))
-(원 / 원자 :mod (산 / 산소-00))
-(적 / 적 :mod (일 / 일반-00))
-
+(a / and
+    :op1 (결 / 결합-00
+        :ARG1 (원 / 원자 :quant 2 :unit (개 / 개)
+            :mod (산 / 산소))
+        :mod (일 / 일반))
+    :op2 (존 / 존재-01
+        :manner (상 / 상태
+            :mod (기 / 기체
+                :mod (색 / 색 :polarity -)
+                :mod (맛 / 맛 :polarity -)
+                :mod (냄 / 냄새 :polarity -)))))
 
 # ::id snt3.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 공기의 주성분 중 하나로, 지구뿐 아니라 우주 전체에 걸쳐 다른 원소와 공유 결합된 상태로 널리 퍼져 있다.
@@ -220,20 +217,14 @@
 (혈 / 혈구-00 :mod (적 / 적-01))
 
 
-# ::id snt9.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.015 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 산소는 1774년 영국의 조지프 프리스틀리가 발견한 원소이다.
 # ::note
--- FRAMES ----------------------------------------
-발견 : VERBAL_NOUN
-	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1774년" [DT_YEAR]	->  :time|duration (1 / 1774년)	OR	:time (d / date-entity :year 1774)	OR	:duration (t / temporal-quantity :quant 1774 :unit (년 / 년))  
-"산소" [MT_ELEMENT]	->  (산 / 산소)	OR	(m / material* :wiki "산소" :name (이 / 이름 :op1 "산소"))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"조지프 프리스틀리" [PS_NAME]	->  (조 / 조지프프리스틀리)	OR	(p / person :wiki "조지프_프리스틀리" :name (이 / 이름 :op1 "조지프" :op2 "프리스틀리"))
--- VERBALIZED ------------------------------------
-
+(발 / 발견-01
+    :ARG0 (p / person :wiki "조지프_프리스틀리" :name (이 / 이름 :op1 "조지프" :op2 "프리스틀리")
+        :location (c / country :wiki "영국" :name (이2 / 이름 :op1 "영국")))
+    :ARG1 (산 / 산소)
+    :time (d / date-entity :year 1774))
 
 # ::id snt10.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 프리스틀리는 산화 수은(II)를 가열하는 도중 발생하는 기체가 촛불이 훨씬 더 잘 타도록 하는 성질이 있음을 발견하였다.
@@ -260,9 +251,18 @@
 (수 / 수은 :mod (산 / 산화-00))
 
 
-# ::id snt11.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.015 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 또한 프리스틀리는 이 기체가 호흡과 관련되어 있다는 것을 발견하였다.
-# ::note
+# ::note 또한?
+(a / and
+    :op2 (발 / 발견-01
+        :mod (또 / 또한)
+        :ARG0 (p / person :wiki "조지프_프리스틀리" :name (이 / 이름 :op1 "프리스틀리"))
+        :ARG1 (관 / 관련-01
+            :ARG1 (기 / 기체
+                :mod (이 / 이))
+            :ARG2 (호 / 호흡-00))))
+
 -- FRAMES ----------------------------------------
 호흡 : VERBAL_NOUN
 	- get_along_with		(호 / 호흡-01 :ARG0 agent :ARG1 theme :ARG2 other_party)
