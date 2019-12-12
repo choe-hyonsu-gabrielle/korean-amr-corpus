@@ -610,7 +610,7 @@
 
 # ::id snt4.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
 # ::snt 미국에서 주재원으로 일하다 지난해 돌아온 B 씨는 미국에서 쓰던 카드를 해지하지 않았다는 사실을 알고 카드 뒷면에 있는 콜센터에 전화를 걸었다.
-# ::note
+# ::note 카드 뒷면에 있는 / 주재원으로 일하다
 (a / and
 	:op1 (알 / 알-01
 		:ARG0 (사 / 사람 :mod "B"
