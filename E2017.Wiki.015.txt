@@ -33,29 +33,25 @@
                 :mod (맛 / 맛 :polarity -)
                 :mod (냄 / 냄새 :polarity -)))))
 
-# ::id snt3.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
 # ::snt 공기의 주성분 중 하나로, 지구뿐 아니라 우주 전체에 걸쳐 다른 원소와 공유 결합된 상태로 널리 퍼져 있다.
 # ::note
--- FRAMES ----------------------------------------
-주 : VERBAL_NOUN
-	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
-걸치 : VERB
-	- extend		(걸 / 걸치-01 :ARG1 theme :ARG2 EXT_or_TMP)
-	- wear		(걸 / 걸치-02 :ARG0 wearer :ARG1 clothing)
-결합되 : DERIVED_NON-ENTRY
-퍼지 : VERB
-	- spread		(퍼 / 퍼지-01 :ARG1 thing_spreading :ARG2 thing_spread_through)
-	- resonate-CV		(퍼 / 퍼지-02 :ARG1 sound :ARG2 direction)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"우주" [LC_SPACE]	->  (우 / 우주)	OR	(? / ?planet|star|moon|constellation :wiki "우주" :name (이 / 이름 :op1 "우주"))
-"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
-"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
--- VERBALIZED ------------------------------------
-(결 / 결합 :mod (공 / 공유-00))
-(성 / 성분-00 :mod (주 / 주-01))
-(전 / 전체 :mod (우 / 우주-00))
-
+(a / and
+	:op1 (성 / 성분
+		:mod (주 / 주)
+		:consist-of-of (공 / 공기))
+	:op2 (퍼 / 퍼지-01
+		:extent (널 / 널리)
+		:ARG1 성
+		:ARG2 (전 / 전체
+			:mod (우 / 우주)
+			:mod (아 / 아니-02
+				:ARG1 (지 / 지구)))
+		:manner (상 / 상태
+			:mod (결 / 결합-00
+				:mod (공2 / 공유)
+				:ARG2 (원 / 원소
+					:ARG2-of (다 / 다르-01))))))
 
 # ::id snt4.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 유리 산소(산소 분자, O2)가 처음으로 지구 대기에 나타난 것은 고원생대로, 혐기성 생물(세균 및 고세균)의 물질 대사 과정의 부산물로 만들어졌다.
@@ -166,56 +162,38 @@
 (합 / 합성 :mod (광 / 광-00))
 
 
-# ::id snt7.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
 # ::snt 사람에게도 생명활동에 꼭 필요한 물질로써, 산소가 결핍되면 5분이 지나 뇌사 상태에 빠지고 8분 뒤면 사망한다.
 # ::note
--- FRAMES ----------------------------------------
-활동 : VERBAL_NOUN
-	- act		(활 / 활동-01 :ARG0 agent :ARG1 role)
-필요 : VERBAL_NOUN
-	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
-결핍되 : DERIVED_NON-ENTRY
-지나 : VERB
-	- pass		(지 / 지나-01 :ARG0 entity_passing :ARG1 thing_passed)
-	- be_only		(지 / 지나-02 :ARG1 thing_under_consideration :ARG2 criterion)
-빠지 : VERB
-	- get_into		(빠 / 빠지-01 :ARG0 causer :ARG1 thing_getting_into :ARG2 location)
-	- exclude		(빠 / 빠지-02 :ARG0 excluder :ARG1 thing_excluded :ARG2 excluded_from)
-사망 : VERBAL_NOUN
-	- die		(사 / 사망-01 :ARG0 causer :ARG1 entity_dying)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"5분" [TI_DURATION]	->  :time|duration (5 / 5분)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration (t / temporal-quantity :quant 5 :unit (분 / 분))  
-"8분 뒤" [TI_OTHERS]	->  :time|duration (8 / 8분뒤)	OR	:time (d / date-entity)	OR	:duration (t / temporal-quantity :quant 8 :unit (분 / 분))  
-"뇌사" [TMM_DISEASE]	->  (뇌 / 뇌사)	OR	(d / desease :wiki "뇌사" :name (이 / 이름 :op1 "뇌사"))
-"산소" [MT_ELEMENT]	->  (산 / 산소)	OR	(m / material* :wiki "산소" :name (이 / 이름 :op1 "산소"))
--- VERBALIZED ------------------------------------
-(상 / 상태 :mod (뇌 / 뇌사-00))
-(활 / 활동-01 :mod (생 / 생명-00))
+(a / and
+	:op1 (물 / 물질
+		:ARG1-of (필 / 필요-01
+			:ARG2 (생 / 생명활동
+				:mod (사 / 사람))
+			:mod (꼭 / 꼭)))
+	:op2 (a2 / and
+		:condition (결 / 결핍-00
+			:ARG1 (산 / 산소))
+		:op1 (뇌 / 뇌사-00
+			:time (이 / 이후
+				:op1 (t / temporal-quantity :quant 5 :unit (분 / 분))))
+		:op2 (사2 / 사망-01
+			:time (뒤 / 뒤
+				:op1 (t2 / temporal-quantity :quant 8 :unit (분2 / 분))))))
 
-
-# ::id snt8.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
 # ::snt 사람을 비롯한 동물군의 체내에서 산소를 운반하는 것은 적혈구의 주요 역할이다.
 # ::note
--- FRAMES ----------------------------------------
-비롯하 : VERB
-	- include		(비 / 비롯하-01 :ARG1 group :ARG2 member)
-운반 : VERBAL_NOUN
-	- carry		(운 / 운반-01 :ARG0 carrier :ARG1 thing_carried :ARG2 start_point :ARG3 end_point)
-적 : VERBAL_NOUN
-	- write_down		(적 / 적-01 :ARG0 agent :ARG1 thing_written :ARG2 where_written)
-	- little		(적 / 적-02 :ARG1 thing_being_little)
-주요 : VERBAL_NOUN
-	- principal		(주 / 주요-01 :ARG1 thing_being_principal)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"산소" [MT_ELEMENT]	->  (산 / 산소)	OR	(m / material* :wiki "산소" :name (이 / 이름 :op1 "산소"))
-"적혈구" [TM_CELL_TISSUE]	->  (적 / 적혈구)	OR	(적 / 적혈구 :part-of|poss)
--- VERBALIZED ------------------------------------
-(군 / 군 :mod (동 / 동물-00))
-(역 / 역할-00 :mod (주 / 주요-01))
-(혈 / 혈구-00 :mod (적 / 적-01))
-
+(역 / 역할
+	:ARG1-of (주 / 주요-01)
+	:poss (적 / 적혈구)
+	:domain (운 / 운반-01
+		:ARG0 적
+		:ARG1 (산 / 산소)
+		:location (체 / 체내
+			:part-of (동 / 동물군
+				:ARG1-of (비 / 비롯하-01
+					:ARG2 (사 / 사람))))))
 
 # ::id snt9.E2017.Wiki.015 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 산소는 1774년 영국의 조지프 프리스틀리가 발견한 원소이다.
@@ -226,30 +204,22 @@
     :ARG1 (산 / 산소)
     :time (d / date-entity :year 1774))
 
-# ::id snt10.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
 # ::snt 프리스틀리는 산화 수은(II)를 가열하는 도중 발생하는 기체가 촛불이 훨씬 더 잘 타도록 하는 성질이 있음을 발견하였다.
 # ::note
--- FRAMES ----------------------------------------
-가열 : VERBAL_NOUN
-	- heat		(가 / 가열-01 :ARG0 agent,_causer :ARG1 thing_heated)
-발생 : VERBAL_NOUN
-	- arise		(발 / 발생-01 :ARG0 causer :ARG1 thing_arising :ARG2 source)
-타 : VERB
-	- ride		(타 / 타-01 :ARGA causer :ARG0 agent :ARG1 vehicle)
-	- take		(타 / 타-02 :ARG1 taker :ARG2 thing_taken)
-	- burn		(타 / 타-03 :ARG1 thing_burning :ARG2 fire)
-있 : ** UNUSED_OR_NON-ENTRY **
-발견 : VERBAL_NOUN
-	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"II" [QT_ORDER]	->  :ord (I / II)	OR	:ord (o / ordinal-entity :value II)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"수은" [MT_ELEMENT]	->  (수 / 수은)	OR	(m / material* :wiki "수은" :name (이 / 이름 :op1 "수은"))
-"프리스틀리" [PS_NAME]	->  (프 / 프리스틀리)	OR	(p / person :wiki "프리스틀리?" :name (이 / 이름 :op1 "프리스틀리"))
--- VERBALIZED ------------------------------------
-(발 / 발생-01 :mod (도 / 도중-00))
-(수 / 수은 :mod (산 / 산화-00))
-
+(발 / 발견-01
+	:ARG0 (p / person :wiki "조지프_프리스틀리" :name (이 / 이름 :op1 "프리스틀리"))
+	:ARG1 (성 / 성질
+		:mod (타 / 타-03
+			:ARG1 (촛 / 촛불)
+			:manner (잘 / 잘
+				:degree (더 / 더))
+			:cause (기 / 기체
+				:ARG1-of (발2 / 발생-01
+					:time (도 / 도중
+						:op1 (가 / 가열-01
+							:ARG1 (수 / 수은
+								:mod (산 / 산화)))))))))
 
 # ::id snt11.E2017.Wiki.015 ::date 2019-12-10 ::annotator gabrielle ::preferred True
 # ::snt 또한 프리스틀리는 이 기체가 호흡과 관련되어 있다는 것을 발견하였다.
@@ -260,107 +230,58 @@
         :ARG0 (p / person :wiki "조지프_프리스틀리" :name (이 / 이름 :op1 "프리스틀리"))
         :ARG1 (관 / 관련-01
             :ARG1 (기 / 기체
-                :mod (이 / 이))
+                :mod (이2 / 이))
             :ARG2 (호 / 호흡-00))))
 
--- FRAMES ----------------------------------------
-호흡 : VERBAL_NOUN
-	- get_along_with		(호 / 호흡-01 :ARG0 agent :ARG1 theme :ARG2 other_party)
-관련 : VERBAL_NOUN
-	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-발견 : VERBAL_NOUN
-	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"프리스틀리" [PS_NAME]	->  (프 / 프리스틀리)	OR	(p / person :wiki "프리스틀리?" :name (이 / 이름 :op1 "프리스틀리"))
--- VERBALIZED ------------------------------------
-
-
-# ::id snt12.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
 # ::snt 그는 이 기체의 이름을 ‘탈 플로지스톤 공기’라 불렀다.
 # ::note
--- FRAMES ----------------------------------------
-부르 : VERB
-	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
-	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(공 / 공기 :mod (플 / 플로지스톤-00))
-(플 / 플로지스톤 :mod (탈 / 탈-00))
+(부 / 부르-02
+	:ARG0 (그 / 그)
+	:ARG1 (기 / 기체
+		:mod (이 / 이))
+	:ARG2 (공 / 공기
+		:mod (플 / 플로지스톤
+			:mod (탈 / 탈))))
 
-
-# ::id snt13.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
 # ::snt 한편 스웨덴의 칼 빌헬름 셸레는 산소를 독자적으로 발견하였으나, 산소의 발견을 먼저 발표한 것은 프리스틀리였다.
 # ::note
--- FRAMES ----------------------------------------
-독자적 : DERIVED_NON-ENTRY -> (독 / 독자적-00) ?
-발견 : VERBAL_NOUN
-	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
-발견 : VERBAL_NOUN
-	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
-발표 : VERBAL_NOUN
-	- announce		(발 / 발표-01 :ARG0 announcer :ARG1 announcement :ARG2 announced_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"산소" [MT_ELEMENT]	->  (산 / 산소)	OR	(m / material* :wiki "산소" :name (이 / 이름 :op1 "산소"))
-"산소" [MT_ELEMENT]	->  (산 / 산소)	OR	(m / material* :wiki "산소" :name (이 / 이름 :op1 "산소"))
-"스웨덴" [LCP_COUNTRY]	->  (스 / 스웨덴)	OR	(c / country :wiki "스웨덴" :name (이 / 이름 :op1 "스웨덴"))
-"칼 빌헬름 셸레" [PS_NAME]	->  (칼 / 칼빌헬름셸레)	OR	(p / person :wiki "칼_빌헬름_셸레" :name (이 / 이름 :op1 "칼" :op2 "빌헬름" :op3 "셸레"))
--- VERBALIZED ------------------------------------
-(적 / 적 :mod (독 / 독자-00))
+(c / contrast-01
+	:ARG1 (발 / 발견-01
+		:ARG0 (p / person :wiki "칼_빌헬름_셸레" :name (이 / 이름 :op1 "칼" :op2 "빌헬름" :op3 "셸레")
+			:location (c2 / country :wiki "스웨덴" :name (이2 / 이름 :op1 "스웨덴")))
+		:ARG1 (산 / 산소)
+		:manner (독 / 독자적)
+		:mod (한 / 한편))
+	:ARG2 (발2 / 발표-01
+		:ARG0 (p2 / person :wiki "조지프_프리스틀리" :name (이3 / 이름 :op1 "프리스틀리"))
+		:ARG1 (발3 / 발견-01
+			:ARG1 (산2 / 산소))
+		:time (먼 / 먼저)))
 
-
-# ::id snt14.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
 # ::snt 그 뒤 앙투안 라부아지에는 이 기체의 이름을 ‘산소’로 정하였다.
 # ::note
--- FRAMES ----------------------------------------
-정하 : VERB
-	- set,_choose		(정 / 정하-01 :ARG0 setter :ARG1 thing_set)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"산소" [MT_ELEMENT]	->  (산 / 산소)	OR	(m / material* :wiki "산소" :name (이 / 이름 :op1 "산소"))
-"앙투안 라부아지에" [PS_NAME]	->  (앙 / 앙투안라부아지에)	OR	(p / person :wiki "앙투안_라부아지에" :name (이 / 이름 :op1 "앙투안" :op2 "라부아지에"))
--- VERBALIZED ------------------------------------
+(정 / 정하-01
+	:ARG0 (p / person :wiki "앙투안_라부아지에" :name (이 / 이름 :op1 "앙투안" :op2 "라부아지에"))
+	:ARG1 (이2 / 이름 :op1 "산소"
+		:name-of (기 / 기체
+			:mod (이3 / 이)))
+	:time (뒤 / 뒤
+		:mod (그 / 그)))
 
-
-# ::id snt15.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
-# ::snt 한자어 산소(酸素)는 독일어 낱말 Sauerstoff에서 유래하였다.
-# ::note
--- FRAMES ----------------------------------------
-한자어 : DERIVED_NON-ENTRY -> (한 / 한자어-00) ?
-유래하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"酸素" [MT_ELEMENT]	->  (酸 / 酸素)	OR	(m / material* :wiki - :name (이 / 이름 :op1 "酸素"))
-"독일어" [CV_LANGUAGE]	->  (독 / 독일어)	OR	(l / language :wiki "독일어" :name (이 / 이름 :op1 "독일어"))
-"산소" [MT_ELEMENT]	->  (산 / 산소)	OR	(m / material* :wiki "산소" :name (이 / 이름 :op1 "산소"))
-"한자어" [CV_LANGUAGE]	->  (한 / 한자어)	OR	(l / language :wiki "한국어의_한자어" :name (이 / 이름 :op1 "한자어"))
--- VERBALIZED ------------------------------------
-(어 / 어 :mod (한 / 한자-00))
-
-
-# ::id snt16.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
 # ::snt 플로지스톤설은 1667년 독일의 화학자 J. J. 베허가 처음 말했다.
 # ::note
--- FRAMES ----------------------------------------
-플로지스톤설 : DERIVED_NON-ENTRY -> (플 / 플로지스톤설-00) ?
-화학자 : DERIVED_NON-ENTRY -> (화 / 화학자-00) ?
-말하 : DERIVED_VERB_DETECTED
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1667년" [DT_YEAR]	->  :time|duration (1 / 1667년)	OR	:time (d / date-entity :year 1667)	OR	:duration (t / temporal-quantity :quant 1667 :unit (년 / 년))  
-"J. J. 베허" [PS_NAME]	->  (J / J.J.베허)	OR	(p / person :wiki - :name (이 / 이름 :op1 "J." :op2 "J." :op3 "베허"))
-"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
-"플로지스톤설" [TR_SCIENCE]	->  (플 / 플로지스톤설)	OR	(t / theory* :wiki "플로지스톤설" :name (이 / 이름 :op1 "플로지스톤설"))
-"화학자" [CV_OCCUPATION]	->  :mod (화 / 화학자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (화 / 화학자))
--- VERBALIZED ------------------------------------
-(말 / 말-01 :mod (처 / 처음-00))
-(설 / 설 :mod (플 / 플로지스톤-00))
-(자 / 자 :mod (화 / 화학-00))
-
+(말 / 말하-01
+	:mod (처 / 처음)
+	:ARG0 (p / person :wiki - :name (이 / 이름 :op1 "J." :op2 "J." :op3 "베허")
+		:location (c / country :wiki "독일" :name (이2 / 이름 :op1 "독일"))
+		:mod (화 / 화학자))
+	:ARG1 (학 / 학설
+		:topic (플 / 플로지스톤))
+	:time (d / date-entity :year 1667))
 
 # ::id snt17.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 주요 내용은 모든 가연성 물질에는 플로지스톤이라는 입자가 있어 연소 과정에서 플로지스톤이 소모되고, 플로지스톤이 모두 소모되면 연소과정이 끝난다는 옛 학설이다.
@@ -390,19 +311,15 @@
 (성 / 성 :mod (가 / 가연-00))
 
 
-# ::id snt18.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
 # ::snt 1783년 라부아지에가 플로지스톤이 존재하지 않음을 확인하였다.
 # ::note
--- FRAMES ----------------------------------------
-존재 : VERBAL_NOUN
-	- exist		(존 / 존재-01 :ARG1 thing_existing :ARG2 location)
-확인 : VERBAL_NOUN
-	- confirm		(확 / 확인-01 :ARG0 confirmer :ARG1 thing_confirmed :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1783년" [DT_YEAR]	->  :time|duration (1 / 1783년)	OR	:time (d / date-entity :year 1783)	OR	:duration (t / temporal-quantity :quant 1783 :unit (년 / 년))  
-"라부아지에" [PS_NAME]	->  (라 / 라부아지에)	OR	(p / person :wiki "앙투안_라부아지에" :name (이 / 이름 :op1 "라부아지에"))
--- VERBALIZED ------------------------------------
+(확 / 확인-01
+	:ARG0 (p / person :wiki "앙투안_라부아지에" :name (이 / 이름 :op1 "라부아지에"))
+	:ARG1 (존 / 존재-01
+		:polarity -
+		:ARG1 (플 / 플로지스톤))
+	:time (d / date-entity :year 1783))
 
 
 # ::id snt19.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
@@ -539,22 +456,17 @@ exception raised
 (원 / 원소 :mod (동 / 동위-00))
 
 
-# ::id snt25.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
 # ::snt 대기 중의 산소는 대부분 이원자 분자 상태로 존재한다.
 # ::note
--- FRAMES ----------------------------------------
-대기 : VERBAL_NOUN
-	- stand_by		(대 / 대기-01 :ARG0 causer :ARG1 entity_standing_by)
-대부분 : DERIVED_NON-ENTRY -> (대 / 대부분-00) ?
-존재 : VERBAL_NOUN
-	- exist		(존 / 존재-01 :ARG1 thing_existing :ARG2 location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"산소" [MT_ELEMENT]	->  (산 / 산소)	OR	(m / material* :wiki "산소" :name (이 / 이름 :op1 "산소"))
--- VERBALIZED ------------------------------------
-(분 / 분자 :mod (원 / 원자-00))
-(상 / 상태 :mod (분 / 분자-00))
-
+(존 / 존재-01
+	:ARG1 (산 / 산소
+		:mod (상 / 상태
+			:mod (분 / 분자
+				:mod (이 / 이원자))
+			:mod (대 / 대부분)))
+	:ARG2 (중 / 중
+		:op1 (대2 / 대기)))
 
 # ::id snt26.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 물에 존재하는 산소의 경우 지역에 따라 동위 원소의 비율이 다르게 나타난다.
