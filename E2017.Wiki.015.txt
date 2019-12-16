@@ -492,25 +492,18 @@ exception raised
 (지 / 지역 :mod (경 / 경우-00))
 
 
-# ::id snt27.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle ::preferred True
 # ::snt 14O, 15O, 19O는 인공적으로 합성되는 방사성 동위 원소이다.
 # ::note
--- FRAMES ----------------------------------------
-적 : VERBAL_NOUN
-	- write_down		(적 / 적-01 :ARG0 agent :ARG1 thing_written :ARG2 where_written)
-	- little		(적 / 적-02 :ARG1 thing_being_little)
-합성되 : DERIVED_NON-ENTRY
-방사성 : DERIVED_NON-ENTRY -> (방 / 방사성-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"14O" [QT_COUNT]	->  :quant (1 / 14O)	OR	(c / concept* :quant 14 :unit|scale (O / O))
-"15O" [QT_COUNT]	->  :quant (1 / 15O)	OR	(c / concept* :quant 15 :unit|scale (O / O))
-"19O" [QT_COUNT]	->  :quant (1 / 19O)	OR	(c / concept* :quant 19 :unit|scale (O / O))
--- VERBALIZED ------------------------------------
-(성 / 성 :mod (방 / 방사-00))
-(원 / 원소 :mod (동 / 동위-00))
-(적 / 적-01 :mod (인 / 인공-00))
-
+(원 / 원소
+	:domain (a / and
+		:op1 "140"
+		:op2 "150"
+		:op3 "190")
+	:mod (동 / 동위)
+	:ARG1-of (방 / 방사-00)
+	:ARG1-of (합 / 합성-00
+		:manner (인 / 인공)))
 
 # ::id snt28.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 산소의 동소체는 이원자 분자 형태의 O2, 오존으로 알려진 삼원자 분자 형태의 O3, 희귀하고 불안정한 O4 등이 있다.
@@ -536,39 +529,27 @@ exception raised
 (형 / 형태 :mod (분 / 분자-00))
 
 
-# ::id snt29.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt29.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle ::preferred True
 # ::snt O4는 자성을 띠지 않고 옅은 푸른 빛깔을 띤다.
 # ::note
--- FRAMES ----------------------------------------
-띠 : VERB
-	- be_charged_with		(띠 / 띠-01 :ARG0 thing_in_charge :ARG1 charged_with)
-옅 : ** UNUSED_OR_NON-ENTRY **
-푸르 : VERB
-	- blue		(푸 / 푸르-01 :ARG1 thing_being_blue)
-띠 : VERB
-	- be_charged_with		(띠 / 띠-01 :ARG0 thing_in_charge :ARG1 charged_with)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"O4" [MT_CHEMICAL]	->  (O / O4)	OR	(m / material* :wiki "O4?" :name (이 / 이름 :op1 "O4"))
--- VERBALIZED ------------------------------------
+(a / and
+	:op1 (띠 / 띠-01
+		:ARG0 (O / O4)
+		:ARG1 (자 / 자성))
+	:op2 (띠2 / 띠-01
+		:ARG0 O
+		:ARG1 (빛 / 빛깔
+			:ARG1-of (푸 / 푸르-01))))
 
-
-# ::id snt30.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt30.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle ::preferred True
 # ::snt O4 분자는 쉽게 해리되어 O2 두 분자를 생성한다.
 # ::note
--- FRAMES ----------------------------------------
-쉽 : VERB
-	- easy		(쉽 / 쉽-01 :ARG1 event)
-해리되 : DERIVED_NON-ENTRY
-생성 : VERBAL_NOUN
-	- form		(생 / 생성-01 :ARG0 creator :ARG1 thing_created)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"O2" [MT_CHEMICAL]	->  (O / O2)	OR	(m / material* :wiki "O2?" :name (이 / 이름 :op1 "O2"))
-"O4" [MT_CHEMICAL]	->  (O / O4)	OR	(m / material* :wiki "O4?" :name (이 / 이름 :op1 "O4"))
-"두 분자" [QT_COUNT]	->  :quant (두 / 두분자)	OR	(c / concept* :quant 두 :unit|scale (분 / 분자))
--- VERBALIZED ------------------------------------
-
+(생 / 생성-01
+	:ARG0 (분 / 분자 :mod "O4")
+	:ARG1 (분2 / 분자 :mod "O2" :quant 2)
+	:manner (해 / 해리-00
+		:ARG1 분
+		:manner (쉽 / 쉽-01)))
 
 # ::id snt31.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 지구 대기에 존재하는 오존의 90% 이상이 지표로부터 15~40㎞ 고도의 오존층에 위치하고 있으며, 생명체에게 해로운, 우주로부터 오는 단파 자외선을 거의 흡수한다.
@@ -611,34 +592,21 @@ exception raised
 (층 / 층 :mod (오 / 오존-00))
 
 
-# ::id snt32.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt32.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle ::preferred True
 # ::snt 그러나 지표 가까이에 존재하는 오존은 강한 산화력을 가지며 건강에 해로워 대기 오염물질로 취급한다.
 # ::note
--- FRAMES ----------------------------------------
-존재 : VERBAL_NOUN
-	- exist		(존 / 존재-01 :ARG1 thing_existing :ARG2 location)
-강하 : DERIVED_VERB_DETECTED
-	- strong		(강 / 강하-01 :ARG1 entity_being_strong)
-산화력 : DERIVED_NON-ENTRY -> (산 / 산화력-00) ?
-가지 : VERB
-	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
-건강 : VERBAL_NOUN
-	- healthy		(건 / 건강-01 :ARG1 entity_being_healthy)
-해롭 : DERIVED_NON-ENTRY
-대기 : VERBAL_NOUN
-	- stand_by		(대 / 대기-01 :ARG0 causer :ARG1 entity_standing_by)
-오염 : VERBAL_NOUN
-	- contaminate		(오 / 오염-01 :ARG0 thing_contaminating :ARG1 thing_contaminated)
-취급 : VERBAL_NOUN
-	- handle		(취 / 취급-01 :ARG0 handler :ARG1 thing_handled)
-	- treat		(취 / 취급-02 :ARG0 agent :ARG1 entity_treated :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"오존" [MT_CHEMICAL]	->  (오 / 오존)	OR	(m / material* :wiki "오존" :name (이 / 이름 :op1 "오존"))
--- VERBALIZED ------------------------------------
-(가 / 가까이 :mod (지 / 지표-00))
-(력 / 력 :mod (산 / 산화-00))
-(물 / 물질-00 :mod (오 / 오염-01))
-(오 / 오염-01 :ARG1 (대 / 대기-01))
-
-
+(a / and
+	:op1 (가 / 가지-01
+		:ARG0 (오 / 오존
+			:location (가2 / 가까이
+				:op1 (지 / 지표)))
+		:ARG1 (산 / 산화력
+			:ARG1-of (강 / 강하-01)))
+	:op2 (취 / 취급-02
+		:ARG1 오
+		:ARG2 (물 / 물질
+			:ARG0-of (오2 / 오염-01
+				:ARG1 (대 / 대기)))
+		:cause (해 / 해롭-00
+			:ARG1 오
+			:ARG2 (건 / 건강))))
