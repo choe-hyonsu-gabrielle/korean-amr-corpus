@@ -1,0 +1,142 @@
+# ::id snt0.E2017.Wiki.014 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 계산 복잡도 이론
+# ::note
+-- FRAMES ----------------------------------------
+list index out of range
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"계산 복잡도 이론" [TR_SCIENCE]	->  (계 / 계산복잡도이론)	OR	(t / theory* :wiki "계산_복잡도_이론" :name (이 / 이름 :op1 "계산" :op2 "복잡도" :op3 "이론"))
+-- VERBALIZED ------------------------------------
+(도 / 도 :mod (복 / 복잡-00))
+(복 / 복잡-00 :mod (계 / 계산-01))
+(이 / 이론 :mod (도 / 도-00))
+
+
+# ::id snt1.E2017.Wiki.014 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 계산 복잡도 이론은 컴퓨터 과학에서 계산 이론의 분야로, 계산 문제를 푸는 알고리듬을 복잡도에 따라 분류하여 문제의 모임을 구성하는 방법을 연구한다.
+# ::note
+-- FRAMES ----------------------------------------
+계산 : VERBAL_NOUN
+	- calculate		(계 / 계산-01 :ARG0 calculator :ARG1 thing_calculated)
+계산 : VERBAL_NOUN
+	- calculate		(계 / 계산-01 :ARG0 calculator :ARG1 thing_calculated)
+계산 : VERBAL_NOUN
+	- calculate		(계 / 계산-01 :ARG0 calculator :ARG1 thing_calculated)
+문제 : VERBAL_NOUN
+	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
+풀 : VERB
+	- solve		(풀 / 풀-01 :ARG0 solver :ARG1 the_problem)
+	- release		(풀 / 풀-02 :ARG0 releaser :ARG1 thing_released)
+	- warm_up		(풀 / 풀-03 :ARG0 agent :ARG1 body)
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+분류 : VERBAL_NOUN
+	- classify		(분 / 분류-01 :ARG0 classifier :ARG1 thing_being_classified :ARG2 classified_among)
+문제 : VERBAL_NOUN
+	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
+구성 : VERBAL_NOUN
+	- compose		(구 / 구성-01 :ARG0 agent :ARG1 thing_composed :ARG2 composed_of)
+연구 : VERBAL_NOUN
+	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"계산 복잡도 이론" [TR_SCIENCE]	->  (계 / 계산복잡도이론)	OR	(t / theory* :wiki "계산_복잡도_이론" :name (이 / 이름 :op1 "계산" :op2 "복잡도" :op3 "이론"))
+"컴퓨터 과학" [FD_SCIENCE]	->  (컴 / 컴퓨터과학)	OR	(s / study-field|group* :wiki "컴퓨터_과학" :name (이 / 이름 :op1 "컴퓨터" :op2 "과학"))
+-- VERBALIZED ------------------------------------
+(과 / 과학 :mod (컴 / 컴퓨터-00))
+(도 / 도 :mod (복 / 복잡-00))
+(도 / 도 :mod (복 / 복잡-00))
+(문 / 문제-01 :ARG1 (계 / 계산-01))
+(복 / 복잡-00 :mod (계 / 계산-01))
+(이 / 이론 :mod (도 / 도-00))
+(이 / 이론-00 :mod (계 / 계산-01))
+
+
+# ::id snt2.E2017.Wiki.014 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 때 알고리듬의 수행은 실제 컴퓨터가 할 수 있지만, 평가하는 데에는 튜링 기계와 관련이 있는 정량화된 방법을 사용한다.
+# ::note
+-- FRAMES ----------------------------------------
+수행 : VERBAL_NOUN
+	- carry_out		(수 / 수행-01 :ARG0 agent :ARG1 thing_carried_out)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+있 : ** UNUSED_OR_NON-ENTRY **
+평가 : VERBAL_NOUN
+	- estimate		(평 / 평가-01 :ARG0 agent :ARG1 thing_estimated)
+관련 : VERBAL_NOUN
+	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+있 : ** UNUSED_OR_NON-ENTRY **
+정량화 : DERIVED_NON-ENTRY -> (정 / 정량화-00) ?
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"컴퓨터" [TMI_HW]	->  (컴 / 컴퓨터)	OR	(p / product? :wiki "컴퓨터" :name (이 / 이름 :op1 "컴퓨터"))
+-- VERBALIZED ------------------------------------
+(알 / 알고리듬 :mod (때 / 때-00))
+(화 / 화 :mod (정 / 정량-00))
+
+
+# ::id snt3.E2017.Wiki.014 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 복잡도의 기준은 알고리듬이 소모하는 소요 시간과 메모리 사용량 등의 자원이다.
+# ::note
+-- FRAMES ----------------------------------------
+소모 : VERBAL_NOUN
+	- expend		(소 / 소모-01 :ARG0 agent :ARG1 entity_expended :ARG2 entity_expended_on)
+소요 : VERBAL_NOUN
+	- spend		(소 / 소요-01 :ARG0 spender :ARG1 time,_money :ARG2 purpose)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"메모리" [TMI_HW]	->  (메 / 메모리)	OR	(p / product? :wiki "기억" :name (이 / 이름 :op1 "메모리"))
+-- VERBALIZED ------------------------------------
+(도 / 도 :mod (복 / 복잡-00))
+(량 / 량-00 :mod (사 / 사용-01))
+(사 / 사용-01 :mod (메 / 메모리-00))
+(시 / 시간-00 :mod (소 / 소요-01))
+
+
+# ::id snt4.E2017.Wiki.014 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 전자를 시간 복잡도, 후자를 공간 복잡도라 한다.
+# ::note
+-- FRAMES ----------------------------------------
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(도 / 도 :mod (복 / 복잡-00))
+(도 / 도 :mod (복 / 복잡-00))
+(복 / 복잡 :mod (공 / 공간-00))
+(복 / 복잡 :mod (시 / 시간-00))
+
+
+# ::id snt5.E2017.Wiki.014 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 일반적으로 이와 같은 시공간 등의 자원은 입력의 크기에 의존하는 것으로 취급한다.
+# ::note
+-- FRAMES ----------------------------------------
+일반적 : DERIVED_NON-ENTRY -> (일 / 일반적-00) ?
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+의존 : VERBAL_NOUN
+	- rely		(의 / 의존-01 :ARG0 relier :ARG1 relied_on :ARG2 purpose)
+취급 : VERBAL_NOUN
+	- handle		(취 / 취급-01 :ARG0 handler :ARG1 thing_handled)
+	- treat		(취 / 취급-02 :ARG0 agent :ARG1 entity_treated :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(공 / 공간 :mod (시 / 시-00))
+(적 / 적 :mod (일 / 일반-00))
