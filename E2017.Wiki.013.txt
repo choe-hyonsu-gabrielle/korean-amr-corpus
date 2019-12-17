@@ -1,74 +1,50 @@
-# ::id snt0.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 니콜라 테슬라
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"니콜라 테슬라" [PS_NAME]	->  (니 / 니콜라테슬라)	OR	(p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "니콜라" :op2 "테슬라"))
--- VERBALIZED ------------------------------------
+(p / person
+    :wiki "니콜라_테슬라"
+    :name (이 / 이름 :op1 "니콜라" :op2 "테슬라"))
 
-
-# ::id snt1.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 니콜라 테슬라(세르비아인, 1856년 7월 10일 ~ 1943년 1월 7일 경)는 오스트리아 헝가리 제국 출신 미국의 발명가, 물리학자, 기계공학자이자 전기공학자이다.
 # ::note
--- FRAMES ----------------------------------------
-발명가 : DERIVED_NON-ENTRY -> (발 / 발명가-00) ?
-공학자 : DERIVED_NON-ENTRY -> (공 / 공학자-00) ?
-공학자 : DERIVED_NON-ENTRY -> (공 / 공학자-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1856년 7월 10일 ~ 1943년 1월 7일 경" [DT_DURATION]	->  :time|duration (1 / 1856년7월10일~1943년1월7일경)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1856 :month 7 :day 10))	OR :duration (t / temporal-quantity :quant 1856 :unit (년 / 년))  (t / temporal-quantity :quant 7 :unit (월 / 월))  (t / temporal-quantity :quant 10 :unit (일 / 일))  
-"기계공학자" [CV_OCCUPATION]	->  :mod (기 / 기계공학자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (기 / 기계공학자))
-"니콜라 테슬라" [PS_NAME]	->  (니 / 니콜라테슬라)	OR	(p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "니콜라" :op2 "테슬라"))
-"물리학자" [CV_OCCUPATION]	->  :mod (물 / 물리학자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (물 / 물리학자))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"발명가" [CV_OCCUPATION]	->  :mod (발 / 발명가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (발 / 발명가))
-"세르비아인" [CV_TRIBE]	->  (세 / 세르비아인)	OR	(e / ethnic-group|nationality :wiki "세르브인" :name (이 / 이름 :op1 "세르비아인"))
-"오스트리아" [LCP_COUNTRY]	->  (오 / 오스트리아)	OR	(c / country :wiki "오스트리아" :name (이 / 이름 :op1 "오스트리아"))
-"전기공학자" [CV_OCCUPATION]	->  :mod (전 / 전기공학자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (전 / 전기공학자))
-"헝가리 제국" [LCP_COUNTRY]	->  (헝 / 헝가리제국)	OR	(c / country :wiki - :name (이 / 이름 :op1 "헝가리" :op2 "제국"))
--- VERBALIZED ------------------------------------
-(가 / 가 :mod (발 / 발명-00))
-(공 / 공학 :mod (기 / 기계-00))
-(공 / 공학 :mod (전 / 전기-00))
-(자 / 자 :mod (공 / 공학-00))
-(자 / 자 :mod (공 / 공학-00))
-(출 / 출신 :mod (제 / 제국-00))
-(학 / 학자 :mod (물 / 물리-00))
+(a / and
+    :domain (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "니콜라" :op2 "테슬라")
+        :ARG1-of (태 / 태어나-01
+            :time (d / date-entity :year 1856 :month 7 :day 10)
+            :location (c / country :wiki "오스트리아-헝가리_제국" :name (이2 / 이름 :op1 "오스트리아" :op2 "헝가리" :op3 "제국")))
+        :ARG1-of (죽 / 죽-01
+            :time (경 / 경
+                :mod (d2 / date-entity :year 1943 :month 1 :day 7))))
+    :op1 (사 / 사람
+        :ARG0-of (발 / 발명-00))
+    :op2 (학 / 학자
+        :topic (물 / 물리학))
+    :op3 (학2 / 학자
+        :topic (전 / 전기공학))
+    :location (c2 / country :wiki "미국" :name (이3 / 이름 :op1 "미국")))
 
-
-# ::id snt2.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 그는 상업 전기에 중요한 기여를 했으며, 19세기 말과 20세기 초 전자기학의 혁명적인 발전을 가능케 한 인물로 잘 알려져 있다.
-# ::note
--- FRAMES ----------------------------------------
-중요 : VERBAL_NOUN
-	- important		(중 / 중요-01 :ARG1 thing_being_important :ARG2 important_to)
-기여 : VERBAL_NOUN
-	- contribute		(기 / 기여-01 :ARG0 agent :ARG1 contributed_to)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-전자기학 : DERIVED_NON-ENTRY -> (전 / 전자기학-00) ?
-혁명적 : DERIVED_NON-ENTRY -> (혁 / 혁명적-00) ?
-발전 : VERBAL_NOUN
-	- develop		(발 / 발전-01 :ARG0 developer :ARG1 thing_developed :ARG2 secondary_predication)
-가능 : VERBAL_NOUN
-	- possible		(가 / 가능-01 :ARG1 event_being_possible)
-알려지 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"19세기 말" [DT_OTHERS]	->  :time|duration (1 / 19세기말)	OR	:time (d / date-entity)	OR	:duration 
-"20세기 초" [DT_OTHERS]	->  :time|duration (2 / 20세기초)	OR	:time (d / date-entity)	OR	:duration 
-"전자기학" [FD_SCIENCE]	->  (전 / 전자기학)	OR	(s / study-field|group* :wiki "전자기학" :name (이 / 이름 :op1 "전자기학"))
--- VERBALIZED ------------------------------------
-(적 / 적 :mod (혁 / 혁명-00))
-(전 / 전기 :mod (상 / 상업-00))
-(학 / 학 :mod (전 / 전자기-00))
-
+# ::note KPB는 자격격(~으로)를 동격(ARG1)으로 처리. 알-01 참고. '상업 전기에 중요한 기여를 했으며'에 대해 '기여가 상업전기에 중요하다' vs '중요한 기여를 상업 전기에 하다' 중 전자 채택. 혁명적. 세기 처리 기준 재확인.
+(알 / 알-01
+    :degree (잘 / 잘)
+    :ARG1 (그 / 그)
+    :attribute (인 / 인물
+        :ARG0-of (기 / 기여-01
+            :ARG1-of (중 / 중요-01
+                :ARG2 (전 / 전기
+                    :purpose (상 / 상업))))
+        :ARG0-of (하 / 하-04
+            :ARG1 (가 / 가능-01
+                :ARG1 (발 / 발전-01
+                    :mod (혁 / 혁명적)
+                    :ARG1 (전 / 전자기학
+                        :time (a / and
+                            :op1 (말 / 말
+                                :op1 (d / date-entity :century 19))
+                            :op2 (초 / 초
+                                :op1 (d2 / date-entity :century 20)))))))))
 
 # ::id snt3.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 테슬라의 특허와 이론적 연구는 전기 배전의 다상시스템과 교류 모터를 포함한 현대적 교류 시스템의 기초를 형성하였다.
@@ -101,29 +77,15 @@
 (적 / 적 :mod (현 / 현대-00))
 
 
-# ::id snt4.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 그의 이러한 연구는 2차 산업 혁명을 선도하는 역할을 하였다.
-# ::note
--- FRAMES ----------------------------------------
-이러하 : ** UNUSED_OR_NON-ENTRY **
-연구 : VERBAL_NOUN
-	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
-선도 : VERBAL_NOUN
-	- lead		(선 / 선도-01 :ARG0 leader :ARG1 thing_led)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2차" [QT_ORDER]	->  :ord (2 / 2차)	OR	:ord (o / ordinal-entity :value 2차)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"산업 혁명" [EV_WAR_REVOLUTION]	->  (산 / 산업혁명)	OR	(w / war|event :wiki "산업혁명" :name (이 / 이름 :op1 "산업" :op2 "혁명"))
--- VERBALIZED ------------------------------------
-(혁 / 혁명 :mod (산 / 산업-00))
-
+# ::note 역할을 하다 --> 선도하다
+(선 / 선도-01
+    :ARG0 (연 / 연구-01
+        :ARG0 (그 / 그)
+        :ARG1-of (이 / 이렇-01))
+    :ARG1 (산 / 산업혁명
+        :ord (o / ordinal-entity :value 2)))
 
 # ::id snt5.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 오스트리아 제국(현재의 크로아티아)의 크로아티아 군대 프런티어(Croatian Military Frontier)안의 쉬말리안이라는 마을에서 태어난 세르비아계 오스트리아인 테슬라는 태어날 때부터 오스트리아 제국의 지배를 받았으며 후에 미국의 시민이 되었다.
@@ -376,66 +338,40 @@
 (특 / 특별-01 :mod (동 / 동안-00))
 
 
-# ::id snt14.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 테슬라는 아주 어렸을 때부터 발명을 하기 시작했다.
 # ::note
--- FRAMES ----------------------------------------
-어리 : VERB
-	- young		(어 / 어리-01 :ARG1 thing_being_young)
-	- be_fraught_with		(어 / 어리-02 :ARG1 substance :ARG2 container)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-시작 : VERBAL_NOUN
-	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"테슬라" [PS_NAME]	->  (테 / 테슬라)	OR	(p / person :wiki "테슬라?" :name (이 / 이름 :op1 "테슬라"))
--- VERBALIZED ------------------------------------
+(시 / 시작-01
+    :ARG0 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
+    :ARG1 (발 / 발명-00)
+    :time (어 / 어리-01
+        :ARG1 p
+        :degree (아 / 아주)))
 
-
-# ::id snt15.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 그가 가장 처음으로 발명한 것은 다섯 살 때 만든 작은 수차였다.
 # ::note
--- FRAMES ----------------------------------------
-발명하 : DERIVED_NON-ENTRY
-때만들 : DERIVED_NON-ENTRY
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-작 : VERB
-	- small		(작 / 작-01 :ARG1 thing_being_small)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"다섯 살" [QT_AGE]	->  :age (다 / 다섯살)	OR	:age 다섯 살
-"수차" [TMI_HW]	->  (수 / 수차)	OR	(p / product? :wiki "수차" :name (이 / 이름 :op1 "수차"))
--- VERBALIZED ------------------------------------
+(수 / 수차
+    :ARG1-of (작 / 작-01)
+    :ARG1-of (만 / 만들-01
+        :ARG0 (그 / 그
+            :age (t / temporal-quantity :quant 5 :unit (살 / 살))))
+    :ARG1-of (발 / 발명-00
+        :ARG0 그
+        :ord (o / ordinal-entity :value 1)))
 
-
-# ::id snt16.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 이는 오랜 시간이 흐른 후 독특한 터빈을 고안할 때 이용되었다고 알려져 있다.
-# ::note
--- FRAMES ----------------------------------------
-흐르 : VERB
-	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
-독특 : VERBAL_NOUN
-	- peculiar		(독 / 독특-01 :ARG1 thing_being_peculiar)
-고안 : VERBAL_NOUN
-	- devise		(고 / 고안-01 :ARG0 deviser :ARG1 thing_devised)
-이용 : VERBAL_NOUN
-	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
-알려지 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(독 / 독특-01 :mod (후 / 후-00))
-(이 / 이용-01 :mod (때 / 때-00))
-
+# ::note 흐르 표상 안함
+(알 / 알-01
+    :ARG1 (이 / 이용-01
+        :ARG1 (이2 / 이)
+        :ARG2 (고 / 고안-01
+            :ARG1 (터 / 터빈
+                :ARG1-of (독 / 독특-01))
+            :time (후 / 후
+                :op1 (시 / 시간
+                    :ARG1-of (오 / 오래-01))))))
 
 # ::id snt17.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 테슬라의 발명품 중에는 여러 실패작들도 많았는데, 대표적으로 ‘열여섯 마리 풍뎅이로 움직이는 장치’가 있다.
@@ -573,20 +509,17 @@
 (통 / 통 :mod (우 / 우유-00))
 
 
-# ::id snt21.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 이처럼 테슬라는 매우 위험한 상황에 자주 놓였었다.
-# ::note
--- FRAMES ----------------------------------------
-위험 : VERBAL_NOUN
-	- dangerous		(위 / 위험 :ARG1 thing_dangerous :ARG2 dangerous_for)
-놓이 : REDUCED_VERB_DETECTED
-	- put		(놓 / 놓-01 :ARG0 putter :ARG1 thing_put :ARG2 where_put)
-	- about		(놓 / 놓-02 :ARG0 impersonal :ARG1 about_what)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"테슬라" [PS_NAME]	->  (테 / 테슬라)	OR	(p / person :wiki "테슬라?" :name (이 / 이름 :op1 "테슬라"))
--- VERBALIZED ------------------------------------
-
+# ::note 이처럼
+(놓 / 놓-01
+    :ARG1 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
+    :ARG2 (상 / 상황
+        :ARG1-of (위 / 위험
+            :ARG2 p
+            :degree (매 / 매우)))
+    :frequency (자 / 자주)
+    :mod (이 / 이처럼))
 
 # ::id snt22.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 테슬라의 형 다니엘은 열두 살에 불의의 사고로 죽었다.
