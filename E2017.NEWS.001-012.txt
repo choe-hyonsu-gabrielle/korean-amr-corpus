@@ -8,16 +8,14 @@
         :op2 (폭 / 폭탄
             :mod (세 / 세금)))
     :snt2 (시 / 시작-01
-        :ARG1 (서 / 서비스
-            :purpose (연 / 연말정산))
+        :ARG1 (s / service* :wiki - :name (이 / 이름 :op1 "연말정산서비스"))
         :time (d / date-entity :day 15)))
 
 # ::id snt1.E2017.NEWS.001 ::date 2019-09-01 ::annotator gabrielle ::preferred True
 # ::snt 지난해 소득분에 대한 연말정산 서비스가 15일부터 시작된다.
 # ::note 12/18 검수
 (시 / 시작-01
-    :ARG1 (서 / 서비스
-        :purpose (연 / 연말정산)
+    :ARG1 (s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "서비스")
         :topic (소 / 소득분
             :time (지 / 지난해)))
     :time (d / date-entity :day 15))
@@ -247,7 +245,7 @@
             :polarity -
             :ARG1 (조2 / 조회-00
                 :ARG1 (의2 / 의료비)
-                :medium (s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스")))))
+                :medium (s / service* :wiki - :name (이 / 이름 :op1 "연말정산간소화" :op2 "서비스")))))
     :ARG1 (신 / 신고-01
         :ARG1 o
         :ARG2 (s2 / service* :wiki - :name (이2 / 이름 :op1 "의료비" :op2 "신고센터")
