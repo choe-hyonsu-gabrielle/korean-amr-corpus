@@ -1,0 +1,848 @@
+# ::id snt0.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::snt 제국주의
+# ::note
+(제 / 제국주의)
+
+# ::id snt1.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 제국주의(帝國主義)는 특정국가가 다른 나라, 지역 등을 군사적, 정치적, 경제적으로 지배하려는 정책, 또는 그러한 것을 목적으로 하는 사상을 가리킨다.
+# ::note
+-- FRAMES ----------------------------------------
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+특정 : VERBAL_NOUN
+	- specify		(특 / 특정-01 :ARG0 specifier :ARG1 thing_specified)
+군사적 : DERIVED_NON-ENTRY -> (군 / 군사적-00) ?
+정치적 : DERIVED_NON-ENTRY -> (정 / 정치적-00) ?
+경제적 : DERIVED_NON-ENTRY -> (경 / 경제적-00) ?
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+그러하 : REDUCED_VERB_DETECTED
+	- say		(그 / 그러-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- do_so		(그 / 그러-02 :ARG0 agent)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+가리키 : VERB
+	- indicate		(가 / 가리키-01 :ARG0 indicator :ARG1 thing_indicated)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"帝國主義" [TR_SOCIAL_SCIENCE]	->  (帝 / 帝國主義)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "帝國主義"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+-- VERBALIZED ------------------------------------
+(국 / 국가-00 :mod (특 / 특정-01))
+(적 / 적 :mod (경 / 경제-00))
+(적 / 적 :mod (군 / 군사-00))
+(적 / 적 :mod (정 / 정치-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+
+
+# ::id snt2.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 엄밀히 말해 영역의 지배보다는 영향력, 곧 패권을 확대하는 정책 또는 사상을 가리킨다.
+# ::note
+-- FRAMES ----------------------------------------
+말하 : DERIVED_VERB_DETECTED
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+영향 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (영 / 영향력-00) ?
+	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
+확대 : VERBAL_NOUN
+	- expand		(확 / 확대-01 :ARG0 agent :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
+가리키 : VERB
+	- indicate		(가 / 가리키-01 :ARG0 indicator :ARG1 thing_indicated)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(력 / 력 :ARG0-of (영 / 영향-01))
+
+
+# ::id snt3.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 제국주의라는 말의 어원은 라틴어의 imperium(제국), imperator(황제)인데, 프랑스의 나폴레옹 1세와 3세의 로마제국 재현(再現)의 시도를 제국주의라 하였다.
+# ::note
+-- FRAMES ----------------------------------------
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+재현 : VERBAL_NOUN
+	- represent		(재 / 재현-01 :ARG1 thing_representing :ARG2 thing_represented)
+시도 : VERBAL_NOUN
+	- try		(시 / 시도-01 :ARG0 agent :ARG1 thing_tried)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"3세" [QT_AGE]	->  :age (3 / 3세)	OR	:age 3세
+"imperator" [CV_POSITION]	->  :mod (i / imperator)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (i / imperator))
+"나폴레옹 1세" [PS_NAME]	->  (나 / 나폴레옹1세)	OR	(p / person :wiki "나폴레옹_보나파르트" :name (이 / 이름 :op1 "나폴레옹" :op2 "1세"))
+"라틴어" [CV_LANGUAGE]	->  (라 / 라틴어)	OR	(l / language :wiki "라틴어" :name (이 / 이름 :op1 "라틴어"))
+"로마제국" [LCP_COUNTRY]	->  (로 / 로마제국)	OR	(c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마제국"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
+-- VERBALIZED ------------------------------------
+(재 / 재현-01 :mod (제 / 제국-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+
+
+# ::id snt4.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러나 이 말이 일반화된 것은 나폴레옹 3세의 몰락을 보도하였던 영국의 신문 데일리 뉴스의 1870년 6월 8일자 보도에서 프랑스 제2제정을 제국주의라고 지칭한 후부터이며, 그것은 전제정치와 동일한 의미였다.
+# ::note
+-- FRAMES ----------------------------------------
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+일반화 : DERIVED_NON-ENTRY -> (일 / 일반화-00) ?
+보도 : VERBAL_NOUN
+	- report		(보 / 보도-01 :ARG0 mass_media :ARG1 thing_reported)
+신문 : VERBAL_NOUN
+	- question		(신 / 신문-01 :ARG0 asker :ARG1 entity_asked)
+보도 : VERBAL_NOUN
+	- report		(보 / 보도-01 :ARG0 mass_media :ARG1 thing_reported)
+제정 : VERBAL_NOUN
+	- establish		(제 / 제정-01 :ARG0 agent :ARG1 thing_established)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+지칭 : VERBAL_NOUN
+	- refer_to		(지 / 지칭-01 :ARG0 agent :ARG1 thing_referring :ARG2 refer_to)
+전제 : VERBAL_NOUN
+	- premise		(전 / 전제-01 :ARG0 agent :ARG1 thing_premised)
+동일 : VERBAL_NOUN
+	- equal		(동 / 동일-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1870년 6월 8일자" [DT_OTHERS]	->  :time|duration (1 / 1870년6월8일자)	OR	:time (d / date-entity :year 1870 :month 6 :day 8)	OR	:duration (t / temporal-quantity :quant 1870 :unit (년 / 년))  (t / temporal-quantity :quant 6 :unit (월 / 월))  (t / temporal-quantity :quant 8 :unit (일 / 일))  
+"나폴레옹 3세" [PS_NAME]	->  (나 / 나폴레옹3세)	OR	(p / person :wiki "나폴레옹_3세" :name (이 / 이름 :op1 "나폴레옹" :op2 "3세"))
+"데일리 뉴스" [OGG_MEDIA]	->  (데 / 데일리뉴스)	OR	(c / company|organization :wiki "데일리 뉴스?" :name (이 / 이름 :op1 "데일리" :op2 "뉴스"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"전제정치" [TR_SOCIAL_SCIENCE]	->  (전 / 전제정치)	OR	(t / theory* :wiki "전제_정치" :name (이 / 이름 :op1 "전제정치"))
+"제2제정" [QT_ORDER]	->  :ord (제 / 제2제정)	OR	:ord (o / ordinal-entity :value 제2제정)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+-- VERBALIZED ------------------------------------
+(보 / 보도-01 :mod (일 / 일자-00))
+(정 / 정치-00 :mod (전 / 전제-01))
+(주 / 주의-01 :mod (제 / 제국-00))
+(화 / 화 :mod (일 / 일반-00))
+
+
+# ::id snt5.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 제국주의란 말이 사회적 의미를 가지게 된 것은 1877년 러시아가 이스탄불을 점령하려고 하였을 때 영국의 총리 B.디즈레일리가 무력행사에 의한 강경정책을 취하여 이른바 징고이즘(jingoism)이 생겨난 이후부터이다.
+# ::note
+-- FRAMES ----------------------------------------
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+사회적 : DERIVED_NON-ENTRY -> (사 / 사회적-00) ?
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+점령 : VERBAL_NOUN
+	- occupy		(점 / 점령-01 :ARG0 agent :ARG1 entity_occupied)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+행사 : VERBAL_NOUN
+	- exercise		(행 / 행사-01 :ARG0 agent :ARG1 thing_exercised)
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+강경 : VERBAL_NOUN
+	- firm		(강 / 강경-01 :ARG1 thing_being_firm)
+취하 : VERB
+	- take		(취 / 취하-01 :ARG0 agent :ARG1 thing_taken)
+	- withdraw		(취 / 취하-02 :ARG0 agent :ARG1 thing_withdrawn)
+생겨나 : VERB
+	- come_into_being		(생 / 생겨나-01 :ARG1 thing_coming_into_being :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1877년" [DT_YEAR]	->  :time|duration (1 / 1877년)	OR	:time (d / date-entity :year 1877)	OR	:duration (t / temporal-quantity :quant 1877 :unit (년 / 년))  
+"B.디즈레일리" [PS_NAME]	->  (B / B.디즈레일리)	OR	(p / person :wiki - :name (이 / 이름 :op1 "B.디즈레일리"))
+"jingoism" [TR_SOCIAL_SCIENCE]	->  (j / jingoism)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "jingoism"))
+"러시아" [LCP_COUNTRY]	->  (러 / 러시아)	OR	(c / country :wiki "러시아" :name (이 / 이름 :op1 "러시아"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"이스탄불" [LCP_CITY]	->  (이 / 이스탄불)	OR	(c / city :wiki "이스탄불" :name (이 / 이름 :op1 "이스탄불"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"징고이즘" [TR_SOCIAL_SCIENCE]	->  (징 / 징고이즘)	OR	(t / theory* :wiki "징고이즘" :name (이 / 이름 :op1 "징고이즘"))
+"총리" [CV_POSITION]	->  :mod (총 / 총리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총리))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (사 / 사회-00))
+(정 / 정책-00 :mod (강 / 강경-01))
+(주 / 주의-01 :mod (제 / 제국-00))
+(행 / 행사-01 :mod (무 / 무력-00))
+
+
+# ::id snt6.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 때부터 제국주의는 종종 열광적인 주전론(主戰論)과 같은 뜻으로 쓰이게 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+적 : VERBAL_NOUN
+	- write_down		(적 / 적-01 :ARG0 agent :ARG1 thing_written :ARG2 where_written)
+	- little		(적 / 적-02 :ARG1 thing_being_little)
+주전론 : DERIVED_NON-ENTRY -> (주 / 주전론-00) ?
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+쓰이 : REDUCED_VERB_DETECTED
+	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
+	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"主戰論" [TR_SOCIAL_SCIENCE]	->  (主 / 主戰論)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "主戰論"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"주전론" [TR_SOCIAL_SCIENCE]	->  (주 / 주전론)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "주전론"))
+-- VERBALIZED ------------------------------------
+(론 / 론 :mod (주 / 주전-00))
+(적 / 적-01 :mod (열 / 열광-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+
+
+# ::id snt7.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1880∼1890년대 영국은 제국주의를 영국의 번영과 진보를 상징하는 표상으로 여기는 경향이 생겨 그것을 오히려 구가(謳歌)하였다.
+# ::note
+-- FRAMES ----------------------------------------
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+상징 : VERBAL_NOUN
+	- symbolize		(상 / 상징-01 :ARG1 symbol :ARG2 thing_symbolized)
+여기 : VERB
+	- consider		(여 / 여기-01 :ARG0 thing_considering :ARG thing_considered)
+생기 : VERB
+	- happen		(생 / 생기-01 :ARG1 thing_happening :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1880∼1890년대" [DT_DURATION]	->  :time|duration (1 / 1880∼1890년대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1890))	OR :duration (t / temporal-quantity :quant 1890 :unit (년 / 년))  
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+-- VERBALIZED ------------------------------------
+(주 / 주의-01 :mod (제 / 제국-00))
+
+
+# ::id snt8.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러나 1870년경부터 제국주의라는 말은 근대적인 의미와 내용을 가진 말로 사용되었는데, 그것은 사회적 불안이 증대하는 한편 자본주의국가간의 팽창주의적 경쟁이 격화되었기 때문이다.
+# ::note
+-- FRAMES ----------------------------------------
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+근대적 : DERIVED_NON-ENTRY -> (근 / 근대적-00) ?
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+사회적 : DERIVED_NON-ENTRY -> (사 / 사회적-00) ?
+불안 : VERBAL_NOUN
+	- anxious		(불 / 불안-01 :ARG0 causer :ARG1 person_feeling_anxious)
+증대 : VERBAL_NOUN
+	- enlarge		(증 / 증대-01 :ARG0 thing_enlarging :ARG1 thing_enlarged :ARG2 start_point :ARG3 end_point)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+주의 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (주 / 주의적-00) ?
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+경쟁 : VERBAL_NOUN
+	- compete		(경 / 경쟁-01 :ARGA causer :ARG0 competitor :ARG1 opponent)
+격화되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1870년경" [DT_YEAR]	->  :time|duration (1 / 1870년경)	OR	:time (d / date-entity :year 1870)	OR	:duration (t / temporal-quantity :quant 1870 :unit (년 / 년))  
+"근대" [DT_OTHERS]	->  :time|duration (근 / 근대)	OR	:time (d / date-entity)	OR	:duration 
+"자본주의" [TR_SOCIAL_SCIENCE]	->  (자 / 자본주의)	OR	(t / theory* :wiki "자본주의" :name (이 / 이름 :op1 "자본주의"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"팽창주의" [TR_SOCIAL_SCIENCE]	->  (팽 / 팽창주의)	OR	(t / theory* :wiki "팽창주의" :name (이 / 이름 :op1 "팽창주의"))
+-- VERBALIZED ------------------------------------
+(국 / 국가-00 :mod (주 / 주의-01))
+(자 / 자본 :mod (한 / 한편-00))
+(적 / 적 :ARG0-of (주 / 주의-01))
+(적 / 적 :mod (근 / 근대-00))
+(적 / 적 :mod (사 / 사회-00))
+(주 / 주의-01 :mod (자 / 자본-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+(주 / 주의-01 :mod (팽 / 팽창-00))
+
+
+# ::id snt9.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 영국은 자유무역정책을 보호정책으로 전환하고 광대한 식민지를 통일적으로 긴밀히 조직하려고 하였다.
+# ::note
+-- FRAMES ----------------------------------------
+보호 : VERBAL_NOUN
+	- protect		(보 / 보호-01 :ARG0 protector :ARG1 protected :ARG2 danger)
+전환 : VERBAL_NOUN
+	- shift		(전 / 전환-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_state :ARG3 end_state)
+광대 : VERBAL_NOUN
+	- immense		(광 / 광대-01 :ARG1 thing_being_immense)
+식민지 : DERIVED_NON-ENTRY -> (식 / 식민지-00) ?
+통일 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (통 / 통일적-00) ?
+	- unify		(통 / 통일-01 :ARG0 agent :ARG1 thing_unified :ARG2 result)
+조직 : VERBAL_NOUN
+	- organize		(조 / 조직-01 :ARG0 agent :ARG1 thing_organized :ARG2 organized_with)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"자유무역정책" [CV_POLICY]	->  (자 / 자유무역정책)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "자유무역정책"))
+-- VERBALIZED ------------------------------------
+(무 / 무역 :mod (자 / 자유-00))
+(적 / 적 :ARG0-of (통 / 통일-01))
+(정 / 정책 :mod (무 / 무역-00))
+(정 / 정책-00 :mod (보 / 보호-01))
+(지 / 지 :mod (식 / 식민-00))
+
+
+# ::id snt10.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 즉, 1870년대 수에즈운하주(株) 매수, 인도의 지배 강화, 1884년 제국연방동맹의 성립에 의거한 자치령과 본국과의 결합 시도, 1903년 식민지장관 A.N.체임벌린의 보호관세정책, 보어전쟁 등이 그것이었다.
+# ::note
+-- FRAMES ----------------------------------------
+주 : VERBAL_NOUN
+	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+매수 : VERBAL_NOUN
+	- buy		(매 / 매수-01 :ARG0 buyer :ARG1 thing_bought :ARG2 seller)
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+강화 : VERBAL_NOUN
+	- intensify		(강 / 강화-01 :ARG0 agent,_causer :ARG1 thing_becoming_intense)
+성립 : VERBAL_NOUN
+	- form		(성 / 성립-01 :ARG0 creator :ARG1 thing_cteated)
+의거하 : DERIVED_NON-ENTRY
+자치령 : DERIVED_NON-ENTRY -> (자 / 자치령-00) ?
+시도 : VERBAL_NOUN
+	- try		(시 / 시도-01 :ARG0 agent :ARG1 thing_tried)
+식민지 : DERIVED_NON-ENTRY -> (식 / 식민지-00) ?
+보호 : VERBAL_NOUN
+	- protect		(보 / 보호-01 :ARG0 protector :ARG1 protected :ARG2 danger)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1870년대" [DT_YEAR]	->  :time|duration (1 / 1870년대)	OR	:time (d / date-entity :year 1870)	OR	:duration (t / temporal-quantity :quant 1870 :unit (년 / 년))  
+"1884년" [DT_YEAR]	->  :time|duration (1 / 1884년)	OR	:time (d / date-entity :year 1884)	OR	:duration (t / temporal-quantity :quant 1884 :unit (년 / 년))  
+"1903년" [DT_YEAR]	->  :time|duration (1 / 1903년)	OR	:time (d / date-entity :year 1903)	OR	:duration (t / temporal-quantity :quant 1903 :unit (년 / 년))  
+"A.N.체임벌린" [PS_NAME]	->  (A / A.N.체임벌린)	OR	(p / person :wiki - :name (이 / 이름 :op1 "A.N.체임벌린"))
+"보어전쟁" [EV_WAR_REVOLUTION]	->  (보 / 보어전쟁)	OR	(w / war|event :wiki "보어_전쟁" :name (이 / 이름 :op1 "보어전쟁"))
+"보호관세정책" [CV_POLICY]	->  (보 / 보호관세정책)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "보호관세정책"))
+"수에즈운하" [AF_ROAD]	->  (수 / 수에즈운하)	OR	(r / road :wiki "수에즈_운하" :name (이 / 이름 :op1 "수에즈운하"))
+"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+"장관" [CV_POSITION]	->  :mod (장 / 장관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장관))
+"제국연방동맹" [EV_OTHERS]	->  (제 / 제국연방동맹)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "제국연방동맹"))
+-- VERBALIZED ------------------------------------
+(강 / 강화-01 :ARG1 (지 / 지배-01))
+(관 / 관세-00 :mod (보 / 보호-01))
+(동 / 동맹 :mod (연 / 연방-00))
+(령 / 령 :mod (자 / 자치-00))
+(시 / 시도-01 :mod (결 / 결합-00))
+(연 / 연방 :mod (제 / 제국-00))
+(전 / 전쟁 :mod (보 / 보어-00))
+(정 / 정책 :mod (관 / 관세-00))
+(주 / 주-01 :mod (운 / 운하-00))
+(지 / 지 :mod (식 / 식민-00))
+
+
+# ::id snt11.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이러한 경향은 비단 영국만의 일이 아니었고, 오히려 해외진출을 불가결의 요건으로 삼던 후진자본주의국가에서 더욱 현저하였으며, 이런 강대국들의 정책이 세계의 분할과 국제대립의 격화 및 군비확장을 초래하는 결과가 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+이러하 : ** UNUSED_OR_NON-ENTRY **
+일 : VERBAL_NOUN
+	- rise		(일 / 일-01 :ARG1 thing_rising)
+진출 : VERBAL_NOUN
+	- advance		(진 / 진출-01 :ARG0 thing_advancing :ARG1 path :ARG2 start_point :ARG3 end_point)
+가결 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (불 / 불가결-00) ?
+	- approve		(가 / 가결-01 :ARG0 approver :ARG1 thing_approved)
+삼 : VERB
+	- consider		(삼 / 삼-01 :ARG0 thinker :ARG1 thing_under_consideration :ARG2 attribute)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+현저하 : VERB
+	- distinctive		(현 / 현저하-01 :ARG1 thing_being_distinctive)
+강대국 : DERIVED_NON-ENTRY -> (강 / 강대국-00) ?
+분할 : VERBAL_NOUN
+	- divide		(분 / 분할-01 :ARG0 causer :ARG1 thing_divided :ARG2 divided_into)
+대립 : VERBAL_NOUN
+	- oppose		(대 / 대립-01 :ARG0 opposer :ARG1 opposed_to)
+확장 : VERBAL_NOUN
+	- expand		(확 / 확장-01 :ARG0 agent :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
+초래 : VERBAL_NOUN
+	- bring_about		(초 / 초래-01 :ARG0 thing_bringing :ARG1 bring_about)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"자본주의" [TR_SOCIAL_SCIENCE]	->  (자 / 자본주의)	OR	(t / theory* :wiki "자본주의" :name (이 / 이름 :op1 "자본주의"))
+-- VERBALIZED ------------------------------------
+(국 / 국가-00 :mod (주 / 주의-01))
+(대 / 대립-01 :mod (국 / 국제-00))
+(들 / 들 :mod (대 / 대국-00))
+(자 / 자본 :mod (후 / 후진-00))
+(주 / 주의-01 :mod (자 / 자본-00))
+(진 / 진출-01 :mod (해 / 해외-00))
+(확 / 확장-01 :mod (군 / 군비-00))
+
+
+# ::id snt12.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 제국주의는 제국을 가리키는 임페라토르(Imperator)에서 왔으며 이는 원래 로마의 황제를 뜻하는 말이었다.
+# ::note
+-- FRAMES ----------------------------------------
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+가리키 : VERB
+	- indicate		(가 / 가리키-01 :ARG0 indicator :ARG1 thing_indicated)
+오 : VERB
+	- come		(오 / 오-01 :ARG0 entity_coming :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- come		(오 / 오-02 :ARG1 entity_coming :ARG2 start_point :ARG3 end_point)
+	- bring_about-CV		(오 / 오-03 :ARG0 causer :ARG1 thing_brought_about)
+	- send_back-CV		(오 / 오-04 :ARG0 sender :ARG1 thing_sent :ARG2 sent_to)
+	- remit-CV		(오 / 오-05 :ARG0 sender :ARG1 money :ARG2 sent_to)
+	- hear-CV		(오 / 오-06 :ARG0 agent :ARG1 thing_heard :ARG2 heard_from)
+뜻하 : DERIVED_VERB_DETECTED
+	- mean		(뜻 / 뜻하-01 :ARG1 symbol :ARG2 thing_symbolized)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
+-- VERBALIZED ------------------------------------
+(로 / 로마 :mod (원 / 원래-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+
+
+# ::id snt13.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 유럽의 역사상 많은 국가나 왕이 로마 제국을 모델로 스스로 제국임을 선포한 것에서 그들이 취하였던 팽창주의 정책 및 사상을 제국주의라 부르게 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+역사상 : DERIVED_NON-ENTRY -> (역 / 역사상-00) ?
+많 : VERB
+	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
+선포 : VERBAL_NOUN
+	- proclaim		(선 / 선포-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
+취하 : VERB
+	- take		(취 / 취하-01 :ARG0 agent :ARG1 thing_taken)
+	- withdraw		(취 / 취하-02 :ARG0 agent :ARG1 thing_withdrawn)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+부르 : VERB
+	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
+	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"로마 제국" [LCP_COUNTRY]	->  (로 / 로마제국)	OR	(c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마" :op2 "제국"))
+"왕" [CV_POSITION]	->  :mod (왕 / 왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (왕 / 왕))
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"팽창주의" [TR_SOCIAL_SCIENCE]	->  (팽 / 팽창주의)	OR	(t / theory* :wiki "팽창주의" :name (이 / 이름 :op1 "팽창주의"))
+-- VERBALIZED ------------------------------------
+(상 / 상 :mod (역 / 역사-00))
+(정 / 정책-00 :mod (주 / 주의-01))
+(제 / 제국 :mod (로 / 로마-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+(주 / 주의-01 :mod (팽 / 팽창-00))
+
+
+# ::id snt14.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 제국주의는 사회주의나 공산주의 이후 등에서 비판적인 용어로 많이 사용되었으나 제국주의라는 낱말 자체는 그 이전부터 흔히 쓰였던 말이다.
+# ::note
+-- FRAMES ----------------------------------------
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+비판 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (비 / 비판적-00) ?
+	- criticize		(비 / 비판-01 :ARG0 critic :ARG1 entity_criticized :ARG2 grounds,_reason)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+이전 : VERBAL_NOUN
+	- move		(이 / 이전-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
+쓰이 : REDUCED_VERB_DETECTED
+	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
+	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"공산주의" [TR_SOCIAL_SCIENCE]	->  (공 / 공산주의)	OR	(t / theory* :wiki "공산주의" :name (이 / 이름 :op1 "공산주의"))
+"사회주의" [TR_SOCIAL_SCIENCE]	->  (사 / 사회주의)	OR	(t / theory* :wiki "사회주의" :name (이 / 이름 :op1 "사회주의"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+-- VERBALIZED ------------------------------------
+(이 / 이후-00 :mod (주 / 주의-01))
+(자 / 자체 :mod (낱 / 낱말-00))
+(적 / 적 :ARG0-of (비 / 비판-01))
+(주 / 주의-01 :mod (공 / 공산-00))
+(주 / 주의-01 :mod (사 / 사회-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+
+
+# ::id snt15.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 주로 유럽중심으로 이루어져왔다.
+# ::note
+-- FRAMES ----------------------------------------
+이루어지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt16.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::snt 유럽의 초기 식민지는 희귀한 자원과 노예의 확보를 위한 것이었다.
+# ::note
+(식 / 식민지
+    :time (초 / 초기)
+    :poss (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+    :purpose (확 / 확보-01
+        :ARG1 (a / and
+            :op1 (자 / 자원
+                :ARG1-of (희 / 희귀-00))
+            :op2 (노 / 노예))))
+
+# ::id snt17.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이후 산업혁명은 대량생산을 위해 보다 많은 자원과 노동력을 필요로 하였고 동시에 생산된 제품을 판매할 판매처가 필요했다.
+# ::note
+-- FRAMES ----------------------------------------
+생산 : VERBAL_NOUN
+	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+많 : VERB
+	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
+노동력 : DERIVED_NON-ENTRY -> (노 / 노동력-00) ?
+필요 : VERBAL_NOUN
+	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+생산 : VERBAL_NOUN
+	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
+판매 : VERBAL_NOUN
+	- sell		(판 / 판매-01 :ARG0 seller :ARG1 thing_sold :ARG2 buyer)
+판매 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (판 / 판매처-00) ?
+	- sell		(판 / 판매-01 :ARG0 seller :ARG1 thing_sold :ARG2 buyer)
+필요 : VERBAL_NOUN
+	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(력 / 력 :mod (노 / 노동-00))
+(산 / 산업 :mod (이 / 이후-00))
+(생 / 생산-01 :mod (대 / 대량-00))
+(처 / 처 :ARG0-of (판 / 판매-01))
+(혁 / 혁명 :mod (산 / 산업-00))
+
+
+# ::id snt18.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 당시의 대표적인 식민무역은 영국의 경우 인도의 값싼 노동력과 면화로 면직물을 만들고 이것을 다시 인도에서 아편과 바꾼 후 중국에서 은과 교환하는 것이었다.
+# ::note
+-- FRAMES ----------------------------------------
+대표 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대표적-00) ?
+	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
+값싸 : VERB
+	- inexpensive		(값 / 값싸-01 :ARG1 thing_being_inexpensive)
+노동력 : DERIVED_NON-ENTRY -> (노 / 노동력-00) ?
+면직물 : DERIVED_NON-ENTRY -> (면 / 면직물-00) ?
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+바꾸 : VERB
+	- change,_replace		(바 / 바꾸-01 :ARG0 causer_of_transformation :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
+	- exchange,_switch		(바 / 바꾸-02 :ARG0 agent :ARG1 thing_being_traded :ARG2 other_exchanger :ARG3 other_item_in_exchange)
+교환 : VERBAL_NOUN
+	- exchange		(교 / 교환-01 :ARG0 agent :ARG1 thing_being_traded :ARG2 other_exchanger)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"면직물" [CV_CLOTHING]	->  (면 / 면직물)	OR	(p / product|clothing* :wiki "면섬유" :name (이 / 이름 :op1 "면직물"))
+"아편" [TMM_DRUG]	->  (아 / 아편)	OR	(d / drug* :wiki "아편" :name (이 / 이름 :op1 "아편"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"은" [MT_METAL]	->  (은 / 은)	OR	(m / material* :wiki "은" :name (이 / 이름 :op1 "은"))
+"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+-- VERBALIZED ------------------------------------
+(력 / 력 :mod (노 / 노동-00))
+(무 / 무역 :mod (식 / 식민-00))
+(물 / 물 :mod (면 / 면직-00))
+(적 / 적 :ARG0-of (대 / 대표-01))
+
+
+# ::id snt19.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이는 나중에 아편 전쟁이 일어나는 원인이 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"아편 전쟁" [EV_WAR_REVOLUTION]	->  (아 / 아편전쟁)	OR	(w / war|event :wiki "아편_전쟁" :name (이 / 이름 :op1 "아편" :op2 "전쟁"))
+-- VERBALIZED ------------------------------------
+(전 / 전쟁 :mod (아 / 아편-00))
+
+
+# ::id snt20.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이를 위해 제국주의 국가는 식민지에 척식회사를 설립하였는데 영국의 동인도회사나 일본의 동양척식주식회사 등이 그것이다.
+# ::note
+-- FRAMES ----------------------------------------
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+식민지 : DERIVED_NON-ENTRY -> (식 / 식민지-00) ?
+설립 : VERBAL_NOUN
+	- establish		(설 / 설립-01 :ARG0 agent :ARG1 thing_set)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"동양척식주식회사" [OGG_ECONOMY]	->  (동 / 동양척식주식회사)	OR	(c / company|organization :wiki "동양척식주식회사" :name (이 / 이름 :op1 "동양척식주식회사"))
+"동인도회사" [OGG_ECONOMY]	->  (동 / 동인도회사)	OR	(c / company|organization :wiki "동인도회사?" :name (이 / 이름 :op1 "동인도회사"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"일본" [LCP_COUNTRY]	->  (일 / 일본)	OR	(c / country :wiki "일본" :name (이 / 이름 :op1 "일본"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+-- VERBALIZED ------------------------------------
+(국 / 국가-00 :mod (주 / 주의-01))
+(주 / 주식 :mod (척 / 척식-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+(지 / 지 :mod (식 / 식민-00))
+(회 / 회사 :mod (주 / 주식-00))
+(회 / 회사 :mod (척 / 척식-00))
+
+
+# ::id snt21.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 후발주자로 미국과 일본이 제국주의 열강대열에 등장했다.
+# ::note
+-- FRAMES ----------------------------------------
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+등장 : VERBAL_NOUN
+	- appear		(등 / 등장-01 :ARG1 entity_appearing :ARG2 location :ARG3 attribute_of_Arg1)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"일본" [LCP_COUNTRY]	->  (일 / 일본)	OR	(c / country :wiki "일본" :name (이 / 이름 :op1 "일본"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"후발주자" [CV_POSITION]	->  :mod (후 / 후발주자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후발주자))
+-- VERBALIZED ------------------------------------
+(대 / 대열 :mod (열 / 열강-00))
+(열 / 열강-00 :mod (주 / 주의-01))
+(주 / 주의-01 :mod (제 / 제국-00))
+(주 / 주자 :mod (후 / 후발-00))
+
+
+# ::id snt22.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 제국주의의 전성기였던 제1차 세계대전 직전의 시기에 이르러 세계는 이른바 열강이라 불리던 제국주의 국가와 식민지로 양분될 지경에 이르렀으며 에티오피아와 타이 등 몇몇 국가를 제외하고는 대부분 열강의 지배하에 들어갔다.
+# ::note
+-- FRAMES ----------------------------------------
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+전성기 : DERIVED_NON-ENTRY -> (전 / 전성기-00) ?
+이르 : VERB
+	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
+	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- early		(이 / 이르-03 :ARG1 time)
+불리 : VERB
+	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+식민지 : DERIVED_NON-ENTRY -> (식 / 식민지-00) ?
+양분되 : DERIVED_NON-ENTRY
+이르 : VERB
+	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
+	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- early		(이 / 이르-03 :ARG1 time)
+제외 : VERBAL_NOUN
+	- exclude		(제 / 제외-01 :ARG0 agent :ARG1 thing_excluded :ARG2 excluded_from)
+대부분 : DERIVED_NON-ENTRY -> (대 / 대부분-00) ?
+지배 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (지 / 지배하-00) ?
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+들어가 : VERB
+	- go_in		(들 / 들어가-01 :ARG0 thing_going_in :ARG2 start_point :ARG3 end_point)
+	- enter		(들 / 들어가-02 :ARG1 entity_entering :ARG2 place_or_thing_entered)
+	- begin		(들 / 들어가-03 :ARG0 beginner :ARG1 theme)
+	- flow_in-CV		(들 / 들어가-04 :ARG1 thing_flowing :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"에티오피아" [LCP_COUNTRY]	->  (에 / 에티오피아)	OR	(c / country :wiki "에티오피아" :name (이 / 이름 :op1 "에티오피아"))
+"제1차 세계대전" [EV_WAR_REVOLUTION]	->  (제 / 제1차세계대전)	OR	(w / war|event :wiki "제1차_세계_대전" :name (이 / 이름 :op1 "제1차" :op2 "세계대전"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"타이" [LCP_COUNTRY]	->  (타 / 타이)	OR	(c / country :wiki "태국" :name (이 / 이름 :op1 "타이"))
+-- VERBALIZED ------------------------------------
+(국 / 국가-00 :mod (주 / 주의-01))
+(기 / 기 :mod (전 / 전성-00))
+(대 / 대전 :mod (세 / 세계-00))
+(열 / 열강 :mod (부 / 부분-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+(지 / 지 :mod (식 / 식민-00))
+(직 / 직전 :mod (대 / 대전-00))
+(하 / 하 :ARG0-of (지 / 지배-01))
+
+
+# ::id snt23.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 여러 세계대전을 거치고 이후 식민지 해방의 합의사안으로 민족자결주의가 합의되었으며, 세계대전 당시 제국주의를 비판하면서 볼셰비키 혁명과 UN세계주의 (냉전)이념에도 영향을 주었다.
+# ::note
+-- FRAMES ----------------------------------------
+거치 : VERB
+	- pass_through		(거 / 거치-01 :ARG1 thing :ARG2 theme)
+	- mount		(거 / 거치-02 :ARG0 agent :ARG1 thing_mounted :ARG2 where_mount)
+식민지 : DERIVED_NON-ENTRY -> (식 / 식민지-00) ?
+합의 : VERBAL_NOUN
+	- agree		(합 / 합의-01 :ARG0 agreer :ARG1 topic :ARG2 other_entity_agreeing)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+합의 : VERBAL_NOUN
+	- agree		(합 / 합의-01 :ARG0 agreer :ARG1 topic :ARG2 other_entity_agreeing)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+비판 : VERBAL_NOUN
+	- criticize		(비 / 비판-01 :ARG0 critic :ARG1 entity_criticized :ARG2 grounds,_reason)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+영향 : VERBAL_NOUN
+	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
+주 : VERB
+	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"UN" [OGG_POLITICS]	->  (U / UN)	OR	(g / government-organization :wiki "유엔" :name (이 / 이름 :op1 "UN"))
+"민족자결주의" [TR_SOCIAL_SCIENCE]	->  (민 / 민족자결주의)	OR	(t / theory* :wiki "자결권" :name (이 / 이름 :op1 "민족자결주의"))
+"볼셰비키 혁명" [EV_WAR_REVOLUTION]	->  (볼 / 볼셰비키혁명)	OR	(w / war|event :wiki "10월_혁명" :name (이 / 이름 :op1 "볼셰비키" :op2 "혁명"))
+"세계대전" [EV_WAR_REVOLUTION]	->  (세 / 세계대전)	OR	(w / war|event :wiki "세계_대전" :name (이 / 이름 :op1 "세계대전"))
+"세계대전" [EV_WAR_REVOLUTION]	->  (세 / 세계대전)	OR	(w / war|event :wiki "세계_대전" :name (이 / 이름 :op1 "세계대전"))
+"세계주의" [TR_SOCIAL_SCIENCE]	->  (세 / 세계주의)	OR	(t / theory* :wiki "세계시민주의" :name (이 / 이름 :op1 "세계주의"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+-- VERBALIZED ------------------------------------
+(당 / 당시 :mod (대 / 대전-00))
+(대 / 대전 :mod (세 / 세계-00))
+(대 / 대전 :mod (세 / 세계-00))
+(사 / 사안-00 :mod (합 / 합의-01))
+(식 / 식민 :mod (이 / 이후-00))
+(자 / 자결 :mod (민 / 민족-00))
+(제 / 제국 :mod (당 / 당시-00))
+(주 / 주의-01 :mod (세 / 세계-00))
+(주 / 주의-01 :mod (자 / 자결-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+(지 / 지 :mod (식 / 식민-00))
+(혁 / 혁명 :mod (볼 / 볼셰비키-00))
+
+
+# ::id snt24.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 신자유주의 여파로 식민지에 대한 옛 제국주의 국가의 정치 경제적 영향은 지속되었으며, 또한 UN이 창설된 이후 미국, 중국, 러시아 등의 신강대국의 영향력이 확대되어 타민족들의 독립을 방해하거나 침략하였다.
+# ::note
+-- FRAMES ----------------------------------------
+신자유 : DERIVED_NON-ENTRY -> (신 / 신자유-00) ?
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+식민지 : DERIVED_NON-ENTRY -> (식 / 식민지-00) ?
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+경제적 : DERIVED_NON-ENTRY -> (경 / 경제적-00) ?
+영향 : VERBAL_NOUN
+	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
+지속 : VERBAL_NOUN
+	- continue		(지 / 지속-01 :ARG0 agent :ARG1 thing_continued)
+창설 : VERBAL_NOUN
+	- establish		(창 / 창설-01 :ARG0 agent :ARG1 thing_established)
+신강대국 : DERIVED_NON-ENTRY -> (신 / 신강대국-00) ?
+영향 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (영 / 영향력-00) ?
+	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
+확대 : VERBAL_NOUN
+	- expand		(확 / 확대-01 :ARG0 agent :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
+타 : VERBAL_NOUN
+	- ride		(타 / 타-01 :ARGA causer :ARG0 agent :ARG1 vehicle)
+	- take		(타 / 타-02 :ARG1 taker :ARG2 thing_taken)
+	- burn		(타 / 타-03 :ARG1 thing_burning :ARG2 fire)
+민족들 : DERIVED_NON-ENTRY -> (민 / 민족들-00) ?
+독립 : VERBAL_NOUN
+	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
+	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
+방해 : VERBAL_NOUN
+	- disturb		(방 / 방해-01 :ARG0 disturber :ARG1 thing_disturbed)
+침략 : VERBAL_NOUN
+	- invade		(침 / 침략-01 :ARG0 agent :ARG1 entity_invaded)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"UN" [OGG_POLITICS]	->  (U / UN)	OR	(g / government-organization :wiki "유엔" :name (이 / 이름 :op1 "UN"))
+"러시아" [LCP_COUNTRY]	->  (러 / 러시아)	OR	(c / country :wiki "러시아" :name (이 / 이름 :op1 "러시아"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"신자유주의" [TR_SOCIAL_SCIENCE]	->  (신 / 신자유주의)	OR	(t / theory* :wiki "신자유주의" :name (이 / 이름 :op1 "신자유주의"))
+"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+-- VERBALIZED ------------------------------------
+(경 / 경제 :mod (정 / 정치-00))
+(국 / 국가-00 :mod (주 / 주의-01))
+(들 / 들 :mod (민 / 민족-00))
+(력 / 력 :ARG0-of (영 / 영향-01))
+(민 / 민족-00 :mod (타 / 타-01))
+(여 / 여파-00 :mod (주 / 주의-01))
+(적 / 적 :mod (경 / 경제-00))
+(주 / 주의-01 :mod (자 / 자유-00))
+(주 / 주의-01 :mod (제 / 제국-00))
+(지 / 지 :mod (식 / 식민-00))
