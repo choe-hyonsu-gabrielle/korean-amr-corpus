@@ -57,7 +57,7 @@
                             :mod (종 / 종교)
                             :quant (일 / 일부)))))
             :manner (따 / 따로)
-            :manner (꼼 / 꼼꼼하-00))))
+            :manner (꼼 / 꼼꼼-00))))
 
 # ::id snt3.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
 # ::snt 국세청은 홈택스(www.hometax.go.kr)에서 소득·세액공제 자료를 조회할 수 있는 '연말정산 간소화 서비스'를 15일 오전 9시부터 개통한다고 12일 밝혔다.
@@ -419,7 +419,7 @@
         :ARG1 (내 / 내용
             :ARG0-of (나 / 나오-01
                 :ARG2 (s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))))
-        :manner (꼼 / 꼼꼼하-00))
+        :manner (꼼 / 꼼꼼-00))
     :concession (귀 / 귀찮-01))
 
 # ::id snt21.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
@@ -586,28 +586,26 @@
                         :ARG1 (신 / 신고-01
                             :ARG1 (부 / 부가가치세))))))))
 
-# ::id snt0.E2017.NEWS.002 ::date 2019-09-04T10:07 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.002 ::date 2019-09-04 ::annotator gabrielle ::preferred True
 # ::snt “같은 반 아이돌 연습생, 정유라만 조퇴 봐준다며 울었다.”
-# ::note 보조사 '만'을 주석
+# ::note 12/18 검수
 (말 / 말하-01
-    :ARG1 (울 / 울.01
-        :ARG0 (연 / 연습생
-            :mod (아 / 아이돌)
-            :ARG1-of (소 / 소속-01
+    :ARG1 (울 / 울-00
+        :ARG0 (사 / 사람
+            :ARG2-of (연 / 연습-01
+                :topic (아 / 아이돌))
+            :ARG1-of (i / include-91
                 :ARG2 (반 / 반
                     :ARG1-of (같 / 같-01))))
         :manner (말2 / 말하-01
             :ARG1 (봐 / 봐주-00
-                :ARG1 (p / person
-                    :wiki "정유라_(승마_선수)"
-                    :name (이 / 이름 :op1 "정유라")
-                    :mod (만 / 만))
+                :ARG1 (p / person :wiki "정유라_(승마_선수)" :name (이 / 이름 :op1 "정유라"))
                 :ARG2 (조 / 조퇴-00
                     :ARG0 p)))))
 
 # ::id snt1.E2017.NEWS.002 ::date 2019-09-04T19:15 ::annotator gabrielle ::preferred True
 # ::snt “돈 자랑 많이 하고 불손하고 오만했다.”
-# ::note
+# ::note 12/18 검수
 (말 / 말하-01
     :ARG1 (a / and
         :op1 (자 / 자랑-01

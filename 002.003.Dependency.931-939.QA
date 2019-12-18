@@ -1116,11 +1116,20 @@
             :ARG1 s
             :location (국 / 국내))))
 
-# ::id snt1.931.014_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.931.014_Q.01_ver ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 극 중 애니라는 소녀가 절망 속에서도 희망을 주제로 부른 이 노래는 무엇일까?
 # ::note
-
-
+(부 / 부르-01
+    :ARG0 (p / person :wiki - :name (이2 / 이름 :op1 "애니")
+        :mod (소 / 소녀)
+        :mod (중 / 중
+            :op1 (극 / 극)))
+    :ARG1 (a / amr-unknown
+        :mod (노 / 노래
+            :mod (이 / 이))
+        :topic (희 / 희망-01))
+    :concession (속 / 속
+        :op1 (절 / 절망-00)))
 
 # ::id snt0.931.015_A.01_ver ::date 2019-11-08 ::annotator gabrielle ::preferred True
 # ::snt 미마스(Mimas)는 토성의 위성으로, 이름은 그리스 신화에 나오는 가이아의 아들 미마스에서 따왔다.

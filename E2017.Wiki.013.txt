@@ -161,9 +161,22 @@
 (통 / 통신-01 :mod (무 / 무선-00))
 
 
-# ::id snt7.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 그는 현대 전기 공학을 개척했으며 수많은 그의 발명은 선도자로서 중요한 역할을 하였다.
 # ::note
+(a / and
+	:op1 (개 / 개척-01
+		:ARG0 (그 / 그)
+		:ARG1 (전 / 전기공학
+			:time (현 / 현대)))
+	:op2 (하 / 하-01
+		:ARG0 (발 / 발명-00
+			:ARG0 (그 / 그)
+			:ARG1-of (수 / 수많-01))
+		:ARG1 (역 / 역할-00
+			:ARG1-of (중 / 중요-01)
+			:mod (선 / 선도-01))))
+
 -- FRAMES ----------------------------------------
 개척 : VERBAL_NOUN
 	- exploit		(개 / 개척-01 :ARG0 agent :ARG1 field)
@@ -225,35 +238,26 @@
 (프 / 프로젝트 :mod (탑 / 탑-00))
 
 
-# ::id snt9.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 자기장의 국제 단위인 테슬라는 니콜라 테슬라의 이름을 딴 것이다.
 # ::note
--- FRAMES ----------------------------------------
-따 : VERB
-	- obtain		(따 / 따-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 received_from)
-	- quote		(따 / 따-01 :ARG0 quoter :ARG1 thing_quoted :ARG2 quoted_from)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"니콜라 테슬라" [PS_NAME]	->  (니 / 니콜라테슬라)	OR	(p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "니콜라" :op2 "테슬라"))
-"테슬라" [PS_NAME]	->  (테 / 테슬라)	OR	(p / person :wiki "테슬라?" :name (이 / 이름 :op1 "테슬라"))
--- VERBALIZED ------------------------------------
-(단 / 단위 :mod (국 / 국제-00))
-(장 / 장 :mod (자 / 자기-00))
+(따 / 따-01
+	:ARG1 (단 / 단위 :op1 "테슬라"
+		:mod (국 / 국제)
+		:poss (자 / 자기장))
+	:ARG2 (이 / 이름 :op1 "니콜라" :op2 "테슬라"
+		:name-of (p / person :wiki "니콜라_테슬라")))
 
-
-# ::id snt10.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 테슬라의 부친은 정교회 사제였다.
 # ::note
--- FRAMES ----------------------------------------
-정교회 : DERIVED_NON-ENTRY -> (정 / 정교회-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"부친" [CV_RELATION]	->  :mod (부 / 부친)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (부 / 부친))
-"정교회" [OGG_RELIGION]	->  (정 / 정교회)	OR	(r / religious-group :wiki "동방_정교회" :name (이 / 이름 :op1 "정교회"))
-"테슬라" [PS_NAME]	->  (테 / 테슬라)	OR	(p / person :wiki "테슬라?" :name (이 / 이름 :op1 "테슬라"))
--- VERBALIZED ------------------------------------
-(회 / 회 :mod (정 / 정교-00))
-
+(h / have-org-role-91
+	:ARG0 (사 / 사람
+		:ARG0-of (h2 / have-rel-role-91
+			:ARG1 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "니콜라" :op2 "테슬라"))
+			:ARG2 (부 / 부친)))
+	:ARG1 (r / religious-group :wiki "동방_정교회" :name (이2 / 이름 :op1 "정교회"))
+	:ARG2 (사2 / 사제))
 
 # ::id snt11.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 테슬라는 어릴 때부터 시를 즐겨 썼으며 나중에 미국으로 이민을 갈 때 시들 중 일부를 가져가기도 했다.

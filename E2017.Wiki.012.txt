@@ -531,16 +531,13 @@
 (주 / 주의-01 :mod (제 / 제국-00))
 
 
-# ::id snt15.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 주로 유럽중심으로 이루어져왔다.
 # ::note
--- FRAMES ----------------------------------------
-이루어지 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
--- VERBALIZED ------------------------------------
-
+(이 / 이루-01
+	:mod (주 / 주로)
+	:manner (중 / 중심
+		:op1 (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))))
 
 # ::id snt16.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 유럽의 초기 식민지는 희귀한 자원과 노예의 확보를 위한 것이었다.
@@ -554,144 +551,97 @@
                 :ARG1-of (희 / 희귀-00))
             :op2 (노 / 노예))))
 
-# ::id snt17.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 이후 산업혁명은 대량생산을 위해 보다 많은 자원과 노동력을 필요로 하였고 동시에 생산된 제품을 판매할 판매처가 필요했다.
 # ::note
--- FRAMES ----------------------------------------
-생산 : VERBAL_NOUN
-	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
-위하 : VERB
-	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
-많 : VERB
-	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
-노동력 : DERIVED_NON-ENTRY -> (노 / 노동력-00) ?
-필요 : VERBAL_NOUN
-	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-생산 : VERBAL_NOUN
-	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
-판매 : VERBAL_NOUN
-	- sell		(판 / 판매-01 :ARG0 seller :ARG1 thing_sold :ARG2 buyer)
-판매 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (판 / 판매처-00) ?
-	- sell		(판 / 판매-01 :ARG0 seller :ARG1 thing_sold :ARG2 buyer)
-필요 : VERBAL_NOUN
-	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(력 / 력 :mod (노 / 노동-00))
-(산 / 산업 :mod (이 / 이후-00))
-(생 / 생산-01 :mod (대 / 대량-00))
-(처 / 처 :ARG0-of (판 / 판매-01))
-(혁 / 혁명 :mod (산 / 산업-00))
+(a / and
+	:domain (산 / 산업혁명
+		:time (이 / 이후))
+	:op1 (필 / 필요-01
+		:ARG1 (a2 / and
+			:op1 (능 / 능력
+				:mod (노 / 노동-00))
+			:op2 (자 / 자원
+				:ARG1-of (h / have-degree-91
+					:ARG2 (많 / 많-01)
+					:ARG3 (보 / 보다)))
+			:purpose (대 / 대량생산))
+		:ARG2 산)
+	:op2 (필2 / 필요-01
+		:ARG1 (장 / 장소
+			:location-of (판 / 판매-01)
+			:purpose (판2 / 판매-01
+				:ARG1 (제 / 제품
+					:ARG1-of (생 / 생산-01))))
+		:ARG2 산
+		:mod (동 / 동시)))
 
-
-# ::id snt18.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 당시의 대표적인 식민무역은 영국의 경우 인도의 값싼 노동력과 면화로 면직물을 만들고 이것을 다시 인도에서 아편과 바꾼 후 중국에서 은과 교환하는 것이었다.
-# ::note
--- FRAMES ----------------------------------------
-대표 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대표적-00) ?
-	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
-값싸 : VERB
-	- inexpensive		(값 / 값싸-01 :ARG1 thing_being_inexpensive)
-노동력 : DERIVED_NON-ENTRY -> (노 / 노동력-00) ?
-면직물 : DERIVED_NON-ENTRY -> (면 / 면직물-00) ?
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-바꾸 : VERB
-	- change,_replace		(바 / 바꾸-01 :ARG0 causer_of_transformation :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
-	- exchange,_switch		(바 / 바꾸-02 :ARG0 agent :ARG1 thing_being_traded :ARG2 other_exchanger :ARG3 other_item_in_exchange)
-교환 : VERBAL_NOUN
-	- exchange		(교 / 교환-01 :ARG0 agent :ARG1 thing_being_traded :ARG2 other_exchanger)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"면직물" [CV_CLOTHING]	->  (면 / 면직물)	OR	(p / product|clothing* :wiki "면섬유" :name (이 / 이름 :op1 "면직물"))
-"아편" [TMM_DRUG]	->  (아 / 아편)	OR	(d / drug* :wiki "아편" :name (이 / 이름 :op1 "아편"))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"은" [MT_METAL]	->  (은 / 은)	OR	(m / material* :wiki "은" :name (이 / 이름 :op1 "은"))
-"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
-"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
--- VERBALIZED ------------------------------------
-(력 / 력 :mod (노 / 노동-00))
-(무 / 무역 :mod (식 / 식민-00))
-(물 / 물 :mod (면 / 면직-00))
-(적 / 적 :ARG0-of (대 / 대표-01))
+# ::note 교환-01에 :ARG3 없음
+(a / and
+	:domain (식 / 식민무역
+		:poss (c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+		:ARG0-of (대 / 대표-01
+			:ARG1 (당 / 당시)))
+	:op1 (만 / 만들-01
+		:ARG0 c
+		:ARG1 (직 / 직물
+			:consist-of (면 / 면))
+		:instrument (면2 / 면화)
+		:manner (능 / 능력
+			:mod (노 / 노동-00)
+			:ARG1-of (값 / 값싸-01)
+			:poss (c2 / country :wiki "인도" :name (이2 / 이름 :op1 "인도"))))
+	:op2 (바 / 바꾸-02
+		:ARG0 c
+		:ARG1 직
+		:ARG2 c2
+		:ARG3 (아 / 아편)
+		:location c2)
+	:op3 (교 / 교환-01
+		:ARG0 c
+		:ARG1 아
+		:ARG0 (c3 / country :wiki "중국" :name (이3 / 이름 :op1 "중국"))
+		:ARG3 (은 / 은)
+		:location c3))
 
-
-# ::id snt19.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 이는 나중에 아편 전쟁이 일어나는 원인이 되었다.
 # ::note
--- FRAMES ----------------------------------------
-일어나 : VERB
-	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"아편 전쟁" [EV_WAR_REVOLUTION]	->  (아 / 아편전쟁)	OR	(w / war|event :wiki "아편_전쟁" :name (이 / 이름 :op1 "아편" :op2 "전쟁"))
--- VERBALIZED ------------------------------------
-(전 / 전쟁 :mod (아 / 아편-00))
+(c / cause-01
+	:ARG0 (이 / 이)
+	:ARG1 (w / war :wiki "아편_전쟁" :name (이2 / 이름 :op1 "아편" :op2 "전쟁"))
+	:time (나 / 나중))
 
-
-# ::id snt20.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 이를 위해 제국주의 국가는 식민지에 척식회사를 설립하였는데 영국의 동인도회사나 일본의 동양척식주식회사 등이 그것이다.
-# ::note
--- FRAMES ----------------------------------------
-위하 : VERB
-	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
-주의 : VERBAL_NOUN
-	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
-식민지 : DERIVED_NON-ENTRY -> (식 / 식민지-00) ?
-설립 : VERBAL_NOUN
-	- establish		(설 / 설립-01 :ARG0 agent :ARG1 thing_set)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"동양척식주식회사" [OGG_ECONOMY]	->  (동 / 동양척식주식회사)	OR	(c / company|organization :wiki "동양척식주식회사" :name (이 / 이름 :op1 "동양척식주식회사"))
-"동인도회사" [OGG_ECONOMY]	->  (동 / 동인도회사)	OR	(c / company|organization :wiki "동인도회사?" :name (이 / 이름 :op1 "동인도회사"))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"일본" [LCP_COUNTRY]	->  (일 / 일본)	OR	(c / country :wiki "일본" :name (이 / 이름 :op1 "일본"))
-"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
--- VERBALIZED ------------------------------------
-(국 / 국가-00 :mod (주 / 주의-01))
-(주 / 주식 :mod (척 / 척식-00))
-(주 / 주의-01 :mod (제 / 제국-00))
-(지 / 지 :mod (식 / 식민-00))
-(회 / 회사 :mod (주 / 주식-00))
-(회 / 회사 :mod (척 / 척식-00))
+# ::note 척식 회사
+(설 / 설립-01
+	:ARG0 (국 / 국가
+		:mod (제 / 제국주의))
+	:ARG1 (회 / 회사
+		:purpose (척 / 척식-00)
+		:example (등 / 등
+			:op1 (c / company :wiki "영국_동인도_회사" :name (이 / 이름 :op1 "동인도회사")
+				:location (c2 / country :wiki "영국" :name (이2 / 이름 :op1 "영국")))
+			:op2 (c3 / company :wiki "동양척식주식회사" :name (이3 / 이름 :op1 "동양척식주식회사")
+				:location (c4 / country :wiki "일본" :name (이4 / 이름 :op1 "일본")))))
+	:location (식 / 식민지)
+	:purpose (이5 / 이))
 
-
-# ::id snt21.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 후발주자로 미국과 일본이 제국주의 열강대열에 등장했다.
 # ::note
--- FRAMES ----------------------------------------
-주의 : VERBAL_NOUN
-	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
-등장 : VERBAL_NOUN
-	- appear		(등 / 등장-01 :ARG1 entity_appearing :ARG2 location :ARG3 attribute_of_Arg1)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"일본" [LCP_COUNTRY]	->  (일 / 일본)	OR	(c / country :wiki "일본" :name (이 / 이름 :op1 "일본"))
-"제국주의" [TR_SOCIAL_SCIENCE]	->  (제 / 제국주의)	OR	(t / theory* :wiki "제국주의" :name (이 / 이름 :op1 "제국주의"))
-"후발주자" [CV_POSITION]	->  :mod (후 / 후발주자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후발주자))
--- VERBALIZED ------------------------------------
-(대 / 대열 :mod (열 / 열강-00))
-(열 / 열강-00 :mod (주 / 주의-01))
-(주 / 주의-01 :mod (제 / 제국-00))
-(주 / 주자 :mod (후 / 후발-00))
-
+(등 / 등장-01
+	:ARG1 (a / and
+		:op1 (c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+		:op2 (c / country :wiki "일본" :name (이 / 이름 :op1 "일본")))
+	:ARG2 (대 / 대열
+		:mod (열 / 열강)
+		:mod (제 / 제국주의))
+	:ARG3 (주 / 주자
+		:ARG1 (후 / 후발-00)))
 
 # ::id snt22.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 제국주의의 전성기였던 제1차 세계대전 직전의 시기에 이르러 세계는 이른바 열강이라 불리던 제국주의 국가와 식민지로 양분될 지경에 이르렀으며 에티오피아와 타이 등 몇몇 국가를 제외하고는 대부분 열강의 지배하에 들어갔다.
