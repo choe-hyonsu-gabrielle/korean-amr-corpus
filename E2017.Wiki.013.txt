@@ -254,43 +254,33 @@
 (h / have-org-role-91
 	:ARG0 (사 / 사람
 		:ARG0-of (h2 / have-rel-role-91
-			:ARG1 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "니콜라" :op2 "테슬라"))
+			:ARG1 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
 			:ARG2 (부 / 부친)))
 	:ARG1 (r / religious-group :wiki "동방_정교회" :name (이2 / 이름 :op1 "정교회"))
 	:ARG2 (사2 / 사제))
 
-# ::id snt11.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle ::preferred True
 # ::snt 테슬라는 어릴 때부터 시를 즐겨 썼으며 나중에 미국으로 이민을 갈 때 시들 중 일부를 가져가기도 했다.
-# ::note
--- FRAMES ----------------------------------------
-어리 : VERB
-	- young		(어 / 어리-01 :ARG1 thing_being_young)
-	- be_fraught_with		(어 / 어리-02 :ARG1 substance :ARG2 container)
-즐기 : ** UNUSED_OR_NON-ENTRY **
-쓰 : VERB
-	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
-	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
-	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
-이민 : VERBAL_NOUN
-	- move_abroad		(이 / 이민-01 :ARG0 agent :ARG1 goal)
-가 : VERB
-	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
-	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
-	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
-	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
-	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
-	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
-시들 : DERIVED_NON-ENTRY -> (시 / 시들-00) ?
-가져가 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"테슬라" [PS_NAME]	->  (테 / 테슬라)	OR	(p / person :wiki "테슬라?" :name (이 / 이름 :op1 "테슬라"))
--- VERBALIZED ------------------------------------
-(들 / 들 :mod (시 / 시-00))
-(시 / 시 :mod (때 / 때-00))
-
+# ::note -기도 하다 / 이민을 가다
+(a / and
+	:op1 (즐 / 즐기-00
+		:ARG0 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
+		:ARG1 (쓰 / 쓰-02
+			:ARG0 p
+			:ARG1 (시 / 시))
+		:time (이2 / 이후
+			:op1 (어 / 어리-01
+				:ARG1 p)))
+	:op2 (가 / 가져가-00
+		:ARG0 p
+		:ARG1 (일 / 일부
+			:ARG1-of (i / include-91
+				:ARG2 시))
+		:ARG2 (c / country :wiki "미국" :name (이3 / 이름 :op1 "미국"))
+		:time (이4 / 이민-01
+			:ARG0 p
+			:ARG1 c)
+		:time (나 / 나중)))
 
 # ::id snt12.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 다만 그는 자신의 시가 공개되는 것을 대단히 꺼려했으며 지극히 개인적인 이유로 시를 즐겼다.
@@ -318,29 +308,17 @@
 (적 / 적 :mod (개 / 개인-00))
 
 
-# ::id snt13.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle ::preferred True
 # ::snt 테슬라는 평생 동안 특별한 일이 있을 때마다 시 쓰기를 계속했다.
 # ::note
--- FRAMES ----------------------------------------
-특별 : VERBAL_NOUN
-	- special		(특 / 특별-01 :ARG1 thing_being_special)
-일 : VERBAL_NOUN
-	- rise		(일 / 일-01 :ARG1 thing_rising)
-있 : ** UNUSED_OR_NON-ENTRY **
-시쓰 : DERIVED_NON-ENTRY
-쓰 : VERB
-	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
-	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
-	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
-계속 : VERBAL_NOUN
-	- continue		(계 / 계속-01 :ARG0 agent :ARG1 thing_continuing)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"테슬라" [PS_NAME]	->  (테 / 테슬라)	OR	(p / person :wiki "테슬라?" :name (이 / 이름 :op1 "테슬라"))
--- VERBALIZED ------------------------------------
-(동 / 동안 :mod (평 / 평생-00))
-(특 / 특별-01 :mod (동 / 동안-00))
-
+(계 / 계속-01
+	:ARG0 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
+	:ARG1 (쓰 / 쓰-02
+		:ARG0 p
+		:ARG1 (시 / 시)
+		:time (일 / 일
+			:ARG1-of (특 / 특별-01)))
+	:duration (평 / 평생))
 
 # ::id snt14.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
 # ::snt 테슬라는 아주 어렸을 때부터 발명을 하기 시작했다.
@@ -525,52 +503,37 @@
     :frequency (자 / 자주)
     :mod (이 / 이처럼))
 
-# ::id snt22.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle ::preferred True
 # ::snt 테슬라의 형 다니엘은 열두 살에 불의의 사고로 죽었다.
 # ::note
--- FRAMES ----------------------------------------
-죽 : VERB
-	- die		(죽 / 죽-01 :ARG0 causer :ARG1 entity_dying)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"다니엘" [PS_NAME]	->  (다 / 다니엘)	OR	(p / person :wiki "다니엘" :name (이 / 이름 :op1 "다니엘"))
-"열두 살" [QT_AGE]	->  :age (열 / 열두살)	OR	:age 열두 살
-"테슬라" [PS_NAME]	->  (테 / 테슬라)	OR	(p / person :wiki "테슬라?" :name (이 / 이름 :op1 "테슬라"))
-"형" [CV_RELATION]	->  :mod (형 / 형)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (형 / 형))
--- VERBALIZED ------------------------------------
+(죽 / 죽-01
+	:ARG1 (p / person :wiki - :name (이 / 이름 :op1 "다니엘")
+		:ARG0-of (h / have-rel-role-91
+			:ARG1 (p2 / person :wiki "니콜라_테슬라" :name (이2 / 이름 :op1 "테슬라"))
+			:ARG2 (형 / 형)))
+	:cause (사 / 사고
+		:mod (불 / 불의))
+	:time (a / age-01
+		:ARG1 p
+		:ARG2 (t / temporal-quantity :quant 12 :unit (살 / 살))))
 
-
-# ::id snt23.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle ::preferred True
 # ::snt 테슬라의 자서전에 따르면, 아버지의 친구가 선물해 준 말 때문에 다쳐 죽었다고 한다.
-# ::note
--- FRAMES ----------------------------------------
-따르 : VERB
-	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
-	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
-선물 : VERBAL_NOUN
-	- present		(선 / 선물-01 :ARG0 giver :ARG1 thing_given :ARG2 given_to)
-말 : VERBAL_NOUN
-	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
-다치 : VERB
-	- hurt		(다 / 다치-01 :ARG1 patient)
-죽 : VERB
-	- die		(죽 / 죽-01 :ARG0 causer :ARG1 entity_dying)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"말" [AM_MAMMALIA]	->  (말 / 말)	OR	(a / animal* :wiki "말?" :name (이 / 이름 :op1 "말"))
-"아버지" [CV_RELATION]	->  :mod (아 / 아버지)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (아 / 아버지))
-"친구" [CV_RELATION]	->  :mod (친 / 친구)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (친 / 친구))
-"테슬라" [PS_NAME]	->  (테 / 테슬라)	OR	(p / person :wiki "테슬라?" :name (이 / 이름 :op1 "테슬라"))
--- VERBALIZED ------------------------------------
-(전 / 전 :mod (자 / 자서-00))
-
+# ::note 선물을 주다
+(말 / 말하-01
+	:ARG0 (자 / 자서전
+		:poss (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라")))
+	:ARG1 (죽 / 죽-01
+		:cause (다 / 다치-01
+			:cause (말2 / 말
+				:ARG1-of (선 / 선물-01
+					:ARG0 (사 / 사람
+						:ARG0-of (h / have-rel-role-91
+							:ARG1 (사2 / 사람
+								:ARG0-of (h2 / have-rel-role-91
+									:ARG1 p
+									:ARG2 (아 / 아버지)))
+							:ARG2 (친 / 친구))))))))
 
 # ::id snt24.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이러한 비극적인 사건으로 인해서 테슬라는 어렸을 때부터 마음속으로 무서운 생각을 자주 했는데, 이는 후에 테슬라가 병적인 공포증과 강박관념을 가지게 되는 데 큰 영향을 끼쳤다.
@@ -625,22 +588,17 @@
 (증 / 증 :ARG0-of (공 / 공포-01))
 
 
-# ::id snt25.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle ::preferred True
 # ::snt 테슬라는 어렸을 때부터 상당히 유별난 성격을 가지고 있었다.
 # ::note
--- FRAMES ----------------------------------------
-어리 : VERB
-	- young		(어 / 어리-01 :ARG1 thing_being_young)
-	- be_fraught_with		(어 / 어리-02 :ARG1 substance :ARG2 container)
-유별나 : VERB
-	- special		(유 / 유별나-01 :ARG1 thing_special)
-가지 : VERB
-	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"테슬라" [PS_NAME]	->  (테 / 테슬라)	OR	(p / person :wiki "테슬라?" :name (이 / 이름 :op1 "테슬라"))
--- VERBALIZED ------------------------------------
-
+(가 / 가지-01
+	:ARG0 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
+	:ARG1 (성 / 성격
+		:ARG1-of (유 / 유별나-01
+			:ARG1-of (상 / 상당-01)))
+	:time (이2 / 이후
+		:op1 (어 / 어리-01
+			:ARG1 p)))
 
 # ::id snt26.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 대표적인 예로 그는 식사를 할 때 항상 음식의 부피를 잰 후에야 먹기를 시작했는데, 그렇지 않으면 그는 식사에 아무런 흥미를 느낄 수 없었다고 한다.
