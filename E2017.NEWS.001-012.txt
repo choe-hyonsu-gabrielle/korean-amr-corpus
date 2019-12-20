@@ -87,12 +87,14 @@
             :ARG0 (사 / 사람
                 :ARG0 (근 / 근로-00)
                 :ARG0-of (선 / 선택-01
-                    :ARG1 (원 / 원천징수세액)
+                    :ARG1 (세 / 세액
+                        :mod (원 / 원천징수))
                     :ARG3 (p / percentage-entity :value 80)
                     :manner (따 / 따르-02
-                        :ARG2 (원2 / 원천징수제도
+                        :ARG2 (제 / 제도
+                            :topic (원2 / 원천징수)
                             :ARG1-of (맞 / 맞추-01)))))
-            :ARG1 (세 / 세금
+            :ARG1 (세2 / 세금
                 :ARG1-of (h / have-degree-91
                     :ARG2 (많 / 많-01)
                     :ARG3 (더 / 더)))

@@ -310,7 +310,7 @@
 
 # ::id snt13.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle ::preferred True
 # ::snt 테슬라는 평생 동안 특별한 일이 있을 때마다 시 쓰기를 계속했다.
-# ::note
+# ::note 시 쓰기를 계속했다 / 계속 시를 썼다
 (계 / 계속-01
 	:ARG0 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
 	:ARG1 (쓰 / 쓰-02

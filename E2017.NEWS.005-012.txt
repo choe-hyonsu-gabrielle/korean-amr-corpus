@@ -1343,22 +1343,14 @@
 					:ARG1-of (같 / 같-01))))
 		:time (지 / 지난달)))
 
-# ::id snt12.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.008 ::date 2019-12-20 ::annotator gabrielle ::preferred True
 # ::snt 한 달 사이 2억 9000만 원(20.7%) 오른 것이다.
 # ::note
--- FRAMES ----------------------------------------
-오르 : VERB
-	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
-	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
-	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
-	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"20.7%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 20.7%)
-"2억 9000만 원" [QT_PRICE]	->  :quant (2 / 2억9000만원)	OR	(m / monetary-quantity :quant 2억 9000만 :unit|scale (원 / 원))
-"한 달" [DT_DURATION]	->  :time|duration (한 / 한달)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
--- VERBALIZED ------------------------------------
-
+(h / have-quant-91
+	:ARG1 (오 / 오르-01
+		:duration (t / temporal-quantity :value 1 :unit (달 / 달)))
+	:ARG2 (m / monetary-quantity :quant 290000000 :unit (원 / 원)
+		:mod (p / percentage-entity :value 20.7)))
 
 # ::id snt13.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 고종완 한국자산관리연구원장은 "내년부터 부활할 것으로 보이는 '초과이익환수제'를 피할 수 있는 재건축 단지가 먼저 오르고, 주변 일반 아파트까지 상대적으로 저평가됐다는 인식 때문에 덩달아 가격이 뛰는 '쌍끌이' 장세"라고 말했다.
@@ -1708,7 +1700,7 @@
 
 # ::id snt21.E2017.NEWS.008 ::date 2019-11-19 ::annotator gabrielle ::preferred True
 # ::snt 그렇다고 지나친 낙관론은 금물이라는 게 전문가들 지적이다.
-# ::note 전문가
+# ::note 전문가 / 지나친 낙관론
 (c / contrast-01
 	:ARG2 (지 / 지적-01
 		:ARG0 (전 / 전문가)
@@ -2711,197 +2703,125 @@
 (환 / 환자-00 :mod (경 / 경색-01))
 
 
-# ::id snt5.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
 # ::snt 10여 분 뒤 현장에 도착한 119구급대에 따르면 "당시 임 씨의 맥박은 거의 멈춘 상태였다"고 한다.
 # ::note
--- FRAMES ----------------------------------------
-도착 : VERBAL_NOUN
-	- arrive		(도 / 도착-01 :ARG1 entity_in_motion :ARG2 start_point :ARG3 end_point)
-구급대 : DERIVED_NON-ENTRY -> (구 / 구급대-00) ?
-따르 : VERB
-	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
-	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
-멈추 : VERB
-	- stop		(멈 / 멈추-01 :ARG0 agent :ARG1 action_or_thing_stopped)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"10여 분 뒤" [TI_OTHERS]	->  :time|duration (1 / 10여분뒤)	OR	:time (d / date-entity)	OR	:duration 
-"119구급대" [OGG_POLITICS]	->  (1 / 119구급대)	OR	(g / government-organization :wiki "대한민국의_소방" :name (이 / 이름 :op1 "119구급대"))
-"임" [PS_NAME]	->  (임 / 임)	OR	(p / person :wiki "임?" :name (이 / 이름 :op1 "임"))
--- VERBALIZED ------------------------------------
-(대 / 대 :mod (구 / 구급-00))
-(현 / 현장 :mod (뒤 / 뒤-00))
+(하 / 하-02
+	:ARG0 (구 / 구급대
+		:mod (1 / 119)
+		:ARG1-of (도 / 도착-01
+			:ARG3 (현 / 현장)
+			:time (뒤 / 뒤
+				:op1 (약 / 약
+					:op1 (t / temporal-quantity :quant 10 :unit (분 / 분))))))
+	:ARG1 (h / have-degree-91
+		:ARG1 (맥 / 맥박
+			:poss (p / person :wiki - :name (이 / 이름 :op1 "임")))
+		:ARG2 (멈 / 멈추-01
+			:ARG1 맥)
+		:ARG3 (거 / 거의)))
 
-
-# ::id snt6.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
 # ::snt 이때부터 구급대원들은 심폐소생술(CPR)에 들어갔다.
 # ::note
--- FRAMES ----------------------------------------
-구급대 : DERIVED_NON-ENTRY -> (구 / 구급대-00) ?
-소생술 : DERIVED_NON-ENTRY -> (소 / 소생술-00) ?
-들어가 : VERB
-	- go_in		(들 / 들어가-01 :ARG0 thing_going_in :ARG2 start_point :ARG3 end_point)
-	- enter		(들 / 들어가-02 :ARG1 entity_entering :ARG2 place_or_thing_entered)
-	- begin		(들 / 들어가-03 :ARG0 beginner :ARG1 theme)
-	- flow_in-CV		(들 / 들어가-04 :ARG1 thing_flowing :ARG2 start_point :ARG3 end_point)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"CPR" [TR_MEDICINE]	->  (C / CPR)	OR	(t / theory* :wiki "심폐소생술" :name (이 / 이름 :op1 "CPR"))
-"구급대원" [CV_OCCUPATION]	->  :mod (구 / 구급대원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (구 / 구급대원))
-"심폐소생술" [TR_MEDICINE]	->  (심 / 심폐소생술)	OR	(t / theory* :wiki "심폐소생술" :name (이 / 이름 :op1 "심폐소생술"))
--- VERBALIZED ------------------------------------
-(대 / 대 :mod (구 / 구급-00))
-(들 / 들 :mod (원 / 원-00))
-(소 / 소생 :mod (심 / 심폐-00))
-(술 / 술 :mod (소 / 소생-00))
+(들 / 들어가-03
+	:ARG0 (대 / 대원
+		:mod (구 / 구급대))
+	:ARG1 (심 / 심폐소생술)
+	:time (이 / 이때))
 
-
-# ::id snt7.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
 # ::snt 1분에 보통 100~120회(성인 기준) 흉부를 5~6cm 깊이까지 강하게 압박하는 방식이다.
 # ::note
--- FRAMES ----------------------------------------
-강하 : VERB
-	- strong		(강 / 강하-01 :ARG1 entity_being_strong)
-압박하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"100~120회" [QT_COUNT]	->  :quant (1 / 100~120회)	OR	(c / concept* :quant 100 :unit|scale (~ / ~120회))
-"1분" [TI_MINUTE]	->  :time|duration (1 / 1분)	OR	:time (d / date-entity)	OR	:duration (t / temporal-quantity :quant 1 :unit (분 / 분))  
-"5~6cm" [QT_LENGTH]	->  :quant (5 / 5~6cm)	OR	(d / distance-quantity :quant 5 :unit|scale (~ / ~6cm))
-"흉부" [AM_PART]	->  (흉 / 흉부)	OR	(흉 / 흉부 :part-of|poss)
--- VERBALIZED ------------------------------------
-(기 / 기준 :mod (성 / 성인-00))
+(방 / 방식
+	:mod (압 / 압박-00
+		:ARG1 (흉 / 흉부)
+		:extent (사 / 사이
+			:op1 (d / distance-quantity :value 5 :unit (c / centimeter))
+			:op2 (d2 / distance-quantity :value 6 :unit (c2 / centimeter)))
+		:frequency (r / rate-entity-91
+			:mod (보 / 보통)
+			:mod (기 / 기준
+				:mod (성 / 성인))
+			:ARG1 (사2 / 사이
+				:op1 100
+				:op2 120)
+			:ARG2 (t / temporal-quantity :quant 1 :unit (분 / 분)))))
 
-
-# ::id snt8.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
 # ::snt 구급차가 세브란스병원 응급실에 도착하자 이번엔 의료진이 심폐소생술을 이어갔다.
 # ::note
--- FRAMES ----------------------------------------
-응급실 : DERIVED_NON-ENTRY -> (응 / 응급실-00) ?
-도착 : VERBAL_NOUN
-	- arrive		(도 / 도착-01 :ARG1 entity_in_motion :ARG2 start_point :ARG3 end_point)
-의료진 : DERIVED_NON-ENTRY -> (의 / 의료진-00) ?
-소생술 : DERIVED_NON-ENTRY -> (소 / 소생술-00) ?
-잇 : VERB
-	- connect		(잇 / 잇-01 :ARG1 thing_connecting :ARG2 thing_connected :ARG3 connect_to)
-	- follow		(잇 / 잇-02 :ARG1 thing_following :ARG2 thing_followed :ARG3 follow_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"구급차" [AF_TRANSPORT]	->  (구 / 구급차)	OR	(v / vehicle|ship|aircraft|... :wiki "구급차" :name (이 / 이름 :op1 "구급차"))
-"세브란스병원" [OGG_MEDICINE]	->  (세 / 세브란스병원)	OR	(o / organization|research-institute|hospital* :wiki "세브란스병원" :name (이 / 이름 :op1 "세브란스병원"))
-"심폐소생술" [TR_MEDICINE]	->  (심 / 심폐소생술)	OR	(t / theory* :wiki "심폐소생술" :name (이 / 이름 :op1 "심폐소생술"))
-"의료진" [CV_POSITION]	->  :mod (의 / 의료진)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (의 / 의료진))
--- VERBALIZED ------------------------------------
-(소 / 소생 :mod (심 / 심폐-00))
-(술 / 술 :mod (소 / 소생-00))
-(실 / 실 :mod (응 / 응급-00))
-(응 / 응급 :mod (병 / 병원-00))
-(진 / 진 :mod (의 / 의료-00))
-(차 / 차-01 :mod (구 / 구급-00))
+(이 / 이어가-01
+	:ARG0 (의 / 의료진)
+	:ARG1 (심 / 심폐소생술)
+	:mod (이2 / 이번)
+	:time (도 / 도착-01
+		:ARG1 (구 / 구급차)
+		:ARG3 (응 / 응급실
+			:part-of (f / facility :wiki "세브란스병원" :name (이3 / 이름 :op1 "세브란스병원")))))
 
-
-# ::id snt9.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
 # ::snt 심폐소생술 시술 30분은 보통 의사들의 '심리적 장벽'으로 불린다.
 # ::note
--- FRAMES ----------------------------------------
-소생술 : DERIVED_NON-ENTRY -> (소 / 소생술-00) ?
-의사들 : DERIVED_NON-ENTRY -> (의 / 의사들-00) ?
-심리적 : DERIVED_NON-ENTRY -> (심 / 심리적-00) ?
-불리 : VERB
-	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"30분" [TI_MINUTE]	->  :time|duration (3 / 30분)	OR	:time (d / date-entity)	OR	:duration (t / temporal-quantity :quant 30 :unit (분 / 분))  
-"심폐소생술" [TR_MEDICINE]	->  (심 / 심폐소생술)	OR	(t / theory* :wiki "심폐소생술" :name (이 / 이름 :op1 "심폐소생술"))
-"의사" [CV_OCCUPATION]	->  :mod (의 / 의사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (의 / 의사))
--- VERBALIZED ------------------------------------
-(들 / 들 :mod (의 / 의사-00))
-(소 / 소생 :mod (심 / 심폐-00))
-(술 / 술 :mod (소 / 소생-00))
-(의 / 의사 :mod (보 / 보통-00))
-(적 / 적 :mod (심 / 심리-00))
+(부 / 부르-01
+	:ARG1 (t / temporal-quantity :quant 30 :unit (분 / 분)
+		:duration (시 / 시술-00
+			:ARG1 (심 / 심폐소생술)))
+	:ARG2 (장 / 장벽
+		:mod (심2 / 심리))
+	:mod (보 / 보통))
 
-
-# ::id snt10.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
 # ::snt 임 씨 맥박이 쉽사리 돌아오지 않자 의료진은 전기 충격 요법도 병행했다.
 # ::note
--- FRAMES ----------------------------------------
-돌아오 : VERB
-	- come_back		(돌 / 돌아오-01 :ARG0 agent :ARG1 path :ARG2 source :ARG3 goal)
-의료진 : DERIVED_NON-ENTRY -> (의 / 의료진-00) ?
-병행 : VERBAL_NOUN
-	- perform_at_the_same_time		(병 / 병행-01 :ARG0 performer :ARG1 one_thing_performed :ARG2 other_thing_performed_simutaneously)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"의료진" [CV_POSITION]	->  :mod (의 / 의료진)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (의 / 의료진))
-"임" [PS_NAME]	->  (임 / 임)	OR	(p / person :wiki "임?" :name (이 / 이름 :op1 "임"))
-"전기 충격 요법" [TR_MEDICINE]	->  (전 / 전기충격요법)	OR	(t / theory* :wiki "전기_경련_요법" :name (이 / 이름 :op1 "전기" :op2 "충격" :op3 "요법"))
--- VERBALIZED ------------------------------------
-(요 / 요법 :mod (충 / 충격-00))
-(진 / 진 :mod (의 / 의료-00))
-(충 / 충격 :mod (전 / 전기-00))
+(병 / 병행-01
+	:ARG0 (의 / 의료진)
+	:ARG2 (전 / 전기충격요법)
+	:cause (돌 / 돌아오-01
+		:polarity -
+		:ARG0 (맥 / 맥박)
+		:manner (쉽 / 쉽사리)))
 
-
-# ::id snt11.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
 # ::snt 출력을 최대로 높여 9번 충격을 주고, 항부정맥제도 투여했지만 별다른 효과가 없었다.
 # ::note
--- FRAMES ----------------------------------------
-높이 : REDUCED_VERB_DETECTED
-	- high		(높 / 높-01 :ARG0 causer :ARG1 thing_being_high :ARG2 start_point :ARG3 end_point)
-주 : VERB
-	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
-항부정맥 : DERIVED_NON-ENTRY -> (항 / 항부정맥-00) ?
-투여하 : DERIVED_NON-ENTRY
-별다르 : VERB
-	- particular		(별 / 별다르-01 :ARG1 thing_being_particular)
-없 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"9번" [QT_COUNT]	->  :quant (9 / 9번)	OR	(c / concept* :quant 9 :unit|scale (번 / 번))
-"항부정맥제" [TMM_DRUG]	->  (항 / 항부정맥제)	OR	(d / drug* :wiki - :name (이 / 이름 :op1 "항부정맥제"))
--- VERBALIZED ------------------------------------
-(제 / 제 :mod (부 / 부정맥-00))
+(효 / 효과
+	:polarity -
+	:ARG1-of (별 / 별다르-01)
+	:concession (a / and
+		:op1 (주 / 주-01
+			:ARG2 (충 / 충격 :quant 9 :unit (번 / 번))
+			:manner (높 / 높-01
+				:ARG1 (출 / 출력-00)
+				:ARG3 (최 / 최대)))
+		:op2 (투 / 투여-00
+			:ARG2 (항 / 항부정맥제))))
 
-
-# ::id snt12.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
 # ::snt 임 씨 갈비뼈가 6~7개쯤 부러지고, 전기 충격 여파로 1~2도 화상까지 입었다.
 # ::note
--- FRAMES ----------------------------------------
-부러지 : VERB
-	- break		(부 / 부러지-01 :ARG0 causer :ARG1 thing_broken)
-입 : VERB
-	- wear		(입 / 입-01 :ARG0 wearer :ARG1 clothing)
-	- incur		(입 / 입-02 :ARG0 causer :ARG1 patient :ARG2 thing_incurred)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1~2도" [QT_ORDER]	->  :ord (1 / 1~2도)	OR	:ord (o / ordinal-entity :value 1~2도)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"6~7개" [QT_COUNT]	->  :quant (6 / 6~7개)	OR	(c / concept* :quant 6 :unit|scale (~ / ~7개))
-"갈비뼈" [TM_CELL_TISSUE]	->  (갈 / 갈비뼈)	OR	(갈 / 갈비뼈 :part-of|poss)
-"임" [PS_NAME]	->  (임 / 임)	OR	(p / person :wiki "임?" :name (이 / 이름 :op1 "임"))
-"화상" [TMM_DISEASE]	->  (화 / 화상)	OR	(d / desease :wiki "화상" :name (이 / 이름 :op1 "화상"))
--- VERBALIZED ------------------------------------
-(뼈 / 뼈 :mod (갈 / 갈비-00))
-(여 / 여파 :mod (충 / 충격-00))
-(충 / 충격 :mod (전 / 전기-00))
-
+(a / and
+	:op1 (부 / 부러지-01
+		:ARG1 (갈 / 갈비뼈
+			:part-of (p / person :wiki - :name (이 / 이름 :op1 "임"))
+			:quant (쯤 / 쯤 :unit (개 / 개)
+				:op1 6
+				:op2 7)))
+	:op2 (입 / 입-02
+		:ARG0 (여 / 여파
+			:mod (전 / 전기충격요법))
+		:ARG1 p
+		:ARG2 (화 / 화상
+			:mod (도 / 도
+				:op1 1
+				:op2 2))))
 
 # ::id snt13.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle ::preferred True
 # ::snt 의료진도 체력 소모가 극심해지면서 모두가 땀에 전 상태가 됐다.
-# ::note 땀에 절다 --> 지쳤다
-(되 / 되-01
+# ::note 땀에 절다 --> 지쳤다?
+(땀 / 땀에절-00
 	:ARG1 (의 / 의료진
 		:quant (모 / 모두))
-	:ARG2 (상 / 상태
-		:mod (절 / 절-00
-			:ARG1 의
-			:ARG2 (땀 / 땀)))
 	:cause (극 / 극심하-01
 		:ARG1 (소 / 소모-01
 			:ARG0 의
@@ -3115,7 +3035,7 @@
 	:op2 (들 / 들어가-03
 		:ARG1 (시 / 시술-00
 			:ARG1 (부 / 부착-00
-				:ARG1 (e / ECMO)))))
+				:ARG1 (체 / 체외심폐순환기)))))
 
 # ::id snt22.E2017.NEWS.010 ::date 2019-11-24 ::annotator gabrielle ::preferred True
 # ::snt 그 사이에도 심폐소생술은 계속됐다.
@@ -3143,7 +3063,7 @@
 (a / and
 	:op1 (성 / 성공-01
 		:ARG1 (작 / 작동-01
-			:ARG1 (e / ECMO)))
+			:ARG1 (체 / 체외심폐순환기)))
 	:op2 (돌 / 돌아오-01
 		:ARG0 (맥 / 맥박
 			:poss (환 / 환자))
