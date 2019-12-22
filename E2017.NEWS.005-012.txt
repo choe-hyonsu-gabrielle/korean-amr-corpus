@@ -2143,7 +2143,7 @@
 (발 / 발사-01 :mod (정 / 정상-00))
 
 
-# ::id snt11.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.009 ::date 2019- ::annotator gabrielle ::preferred True
 # ::snt 태평양 괌 기지뿐 아니라 하와이 미군 태평양사령부까지 사정권에 두고 있다.
 # ::note 사정권에 두다
 (가 / 가능-01
