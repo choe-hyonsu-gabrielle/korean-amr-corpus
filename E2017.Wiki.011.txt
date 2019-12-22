@@ -3,77 +3,44 @@
 # ::note
 (엽 / 엽록체)
 
-# ::id snt1.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 엽록체(葉綠體)는 진핵생물에서 광합성을 하는 세포 소기관이다.
-# ::note
--- FRAMES ----------------------------------------
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-소기관 : DERIVED_NON-ENTRY -> (소 / 소기관-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"葉綠體" [TM_CELL_TISSUE]	->  (葉 / 葉綠體)	OR	(葉 / 葉綠體 :part-of|poss)
-"세포" [TM_CELL_TISSUE]	->  (세 / 세포)	OR	(세 / 세포 :part-of|poss)
-"엽록체" [TM_CELL_TISSUE]	->  (엽 / 엽록체)	OR	(엽 / 엽록체 :part-of|poss)
-"진핵생물" [AM_TYPE]	->  (진 / 진핵생물)	OR	(a / animal* :wiki "진핵생물" :name (이 / 이름 :op1 "진핵생물"))
--- VERBALIZED ------------------------------------
-(합 / 합성 :mod (광 / 광-00))
+# ::note 광합성하다로 처리
+(소 / 소기관
+    :domain (엽 / 엽록체)
+    :part-of (세 / 세포
+        :part-of (진 / 진핵생물))
+    :ARG1-of (광 / 광합성-00))
 
-
-# ::id snt2.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 엽록체는 엽록소가 있어 세포를 관찰했을 때 뚜렷한 녹색이 나타나는 것을 쉽게 확인할 수 있다.
 # ::note
--- FRAMES ----------------------------------------
-있 : ** UNUSED_OR_NON-ENTRY **
-관찰 : VERBAL_NOUN
-	- observe		(관 / 관찰-01 :ARG0 agent :ARG1 thing_looked_at)
-뚜렷하 : VERB
-	- positive		(뚜 / 뚜렷하-01 :ARG1 thing_being_positive)
-나타나 : VERB
-	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
-쉽 : VERB
-	- easy		(쉽 / 쉽-01 :ARG1 event)
-확인 : VERBAL_NOUN
-	- confirm		(확 / 확인-01 :ARG0 confirmer :ARG1 thing_confirmed :ARG2 hearer)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"녹색" [TM_COLOR]	->  (녹 / 녹색)	OR	(c / color* :wiki "초록" :name (이 / 이름 :op1 "녹색"))
-"엽록소" [TM_CELL_TISSUE]	->  (엽 / 엽록소)	OR	(엽 / 엽록소 :part-of|poss)
-"엽록체" [TM_CELL_TISSUE]	->  (엽 / 엽록체)	OR	(엽 / 엽록체 :part-of|poss)
--- VERBALIZED ------------------------------------
+(가 / 가능-01
+    :ARG1 (확 / 확인-01
+        :ARG1 (나 / 나타나-01
+            :ARG1 (녹 / 녹색
+                :ARG1-of (뚜 / 뚜렷하-01))
+            :ARG2 (세 / 세포
+                :ARG1-of (관 / 관찰-01)))
+        :ARG1-of (쉽 / 쉽-01))
+    :cause (엽 / 엽록소
+        :location (엽2 / 엽록체)))
 
-
-# ::id snt3.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt (독자적인 DNA와 리보솜을 가지고 있으며, 현재의 남조균류와 공통 조상을 가졌을 것으로 추측된다.)
-# ::note
--- FRAMES ----------------------------------------
-독자적 : DERIVED_NON-ENTRY -> (독 / 독자적-00) ?
-가지 : VERB
-	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
-균류 : DERIVED_NON-ENTRY -> (균 / 균류-00) ?
-공통 : VERBAL_NOUN
-	- be_common		(공 / 공통-01 :ARG1 common_thing :ARG2 group)
-가지 : VERB
-	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
-추측 : VERBAL_NOUN
-	- guess		(추 / 추측-01 :ARG0 agent :ARG1 guess)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"DNA" [MT_CHEMICAL]	->  (D / DNA)	OR	(m / material* :wiki "DNA" :name (이 / 이름 :op1 "DNA"))
-"남조균류" [AM_TYPE]	->  (남 / 남조균류)	OR	(a / animal* :wiki "남세균" :name (이 / 이름 :op1 "남조균류"))
-"리보솜" [TM_CELL_TISSUE]	->  (리 / 리보솜)	OR	(리 / 리보솜 :part-of|poss)
--- VERBALIZED ------------------------------------
-(균 / 균 :mod (남 / 남조-00))
-(류 / 류 :mod (균 / 균-00))
-(적 / 적 :mod (독 / 독자-00))
-(조 / 조상-00 :mod (공 / 공통-01))
-
+# ::note 독자적
+(a / and
+    :op1 (가 / 가지-01
+        :ARG1 (a2 / and
+            :op1 (D / DNA)
+            :op2 (리 / 리보솜)
+            :mod (독 / 독자적)))
+    :op2 (추 / 추측-01
+        :ARG1 (가2 / 가지-01
+            :ARG1 (조 / 조상
+                :ARG1-of (공 / 공통-01
+                    :ARG2 (남 / 남조균류
+                        :time (현 / 현재)))))))
 
 # ::id snt4.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 독립적으로 분열하여 증식하며, 빛을 받기 전에는 엽록소를 합성하지 않아 백색(백색체)이지만 가시광선 하에서 엽록소를 합성하여 녹색을 띠게 된다.
@@ -112,27 +79,17 @@
 (하 / 하 :mod (광 / 광선-00))
 
 
-# ::id snt5.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 유관속 식물의 엽록체는 비광합성 세포에서 색소체로서 존재한다.
-# ::note
--- FRAMES ----------------------------------------
-속 : VERBAL_NOUN
-	- deceive		(속 / 속-01 :ARG0 liar :ARG1 lied_to)
-비광합성 : DERIVED_NON-ENTRY -> (비 / 비광합성-00) ?
-색소체 : DERIVED_NON-ENTRY -> (색 / 색소체-00) ?
-존재 : VERBAL_NOUN
-	- exist		(존 / 존재-01 :ARG1 thing_existing :ARG2 location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"색소체" [TM_CELL_TISSUE]	->  (색 / 색소체)	OR	(색 / 색소체 :part-of|poss)
-"엽록체" [TM_CELL_TISSUE]	->  (엽 / 엽록체)	OR	(엽 / 엽록체 :part-of|poss)
-"유관속 식물" [PT_TYPE]	->  (유 / 유관속식물)	OR	(p / plant* :wiki - :name (이 / 이름 :op1 "유관속" :op2 "식물"))
--- VERBALIZED ------------------------------------
-(세 / 세포 :mod (광 / 광합성-00))
-(속 / 속-01 :mod (유 / 유관-00))
-(식 / 식물-00 :mod (속 / 속-01))
-(체 / 체 :mod (색 / 색소-00))
-
+# ::note 유관속 식물의 엽록체는 비광합성 세포에 존재하는 색소체다. 로 표상할 경우 :attribute 도입 필요 없음.
+(엽 / 엽록체
+    :part-of (식 / 식물
+        :ARG1-of (i / include-91
+            :ARG2 (유 / 유관속)))
+    :location (세 / 세포
+        :ARG1-of (광 / 광합성-00
+            :polarity -))
+    :attribute (색 / 색소체))
 
 # ::id snt6.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 색소체에는, 녹말체, 잡색체, 백색체 등 다양한 종류가 있지만, 모든 색소체는, 이중막으로 둘러싸여 엽록체 DNA를 가지는 것이 특징이다.

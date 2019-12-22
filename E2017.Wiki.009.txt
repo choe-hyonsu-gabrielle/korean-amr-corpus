@@ -1,0 +1,884 @@
+# ::id snt0.E2017.Wiki.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::snt 원나라
+# ::note
+(c / country :wiki "원나라" :name (이 / 이름 :op1 "원나라"))
+
+# ::id snt1.E2017.Wiki.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::snt 대원 몽골제국은 13세기 몽골 제국이 세운 대제국이다.
+# ::note
+(대 / 대제국
+    :domain (c / country :wiki "원나라" :name (이 / 이름 :op1 "대원" :op2 "몽골제국"))
+    :ARG1-of (서 / 서-02
+        :ARG0 (c2 / country :wiki "몽골_제국" :name (이2 / 이름 :op1 "몽골" :op2 "제국"))
+        :time (d / date-entity :century 13)))
+
+# ::id snt2.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 일반적으로 13세기 중반부터 14세기 중반까지 몽골 제국이 중원을 지배하고 통치한 시기를 말한다.
+# ::note
+-- FRAMES ----------------------------------------
+일반적 : DERIVED_NON-ENTRY -> (일 / 일반적-00) ?
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+통치 : VERBAL_NOUN
+	- govern		(통 / 통치-01 :ARG0 agent :ARG1 thing_governed)
+말하 : DERIVED_VERB_DETECTED
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"13세기 중반" [DT_OTHERS]	->  :time|duration (1 / 13세기중반)	OR	:time (d / date-entity)	OR	:duration 
+"14세기 중반" [DT_OTHERS]	->  :time|duration (1 / 14세기중반)	OR	:time (d / date-entity)	OR	:duration 
+"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (일 / 일반-00))
+(중 / 중반 :mod (세 / 세기-00))
+(중 / 중반 :mod (세 / 세기-00))
+
+
+# ::id snt3.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 몽골족의 정복 황조 원나라는 중국 대륙과 몽골 고원을 중심으로 한 영역을 지배하다가 명나라를 건국하는 주원장(朱元璋)에게 쫓겨 북쪽으로 이전한 뒤("북원"), 유목민 국가로 1635년까지 존속한 국가다.
+# ::note
+-- FRAMES ----------------------------------------
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+건국하 : DERIVED_NON-ENTRY
+쫓기 : ** UNUSED_OR_NON-ENTRY **
+이전 : VERBAL_NOUN
+	- move		(이 / 이전-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
+유목민 : DERIVED_NON-ENTRY -> (유 / 유목민-00) ?
+존속하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1635년" [DT_YEAR]	->  :time|duration (1 / 1635년)	OR	:time (d / date-entity :year 1635)	OR	:duration (t / temporal-quantity :quant 1635 :unit (년 / 년))  
+"朱元璋" [PS_NAME]	->  (朱 / 朱元璋)	OR	(p / person :wiki - :name (이 / 이름 :op1 "朱元璋"))
+"명나라" [LCP_COUNTRY]	->  (명 / 명나라)	OR	(c / country :wiki "명나라" :name (이 / 이름 :op1 "명나라"))
+"몽골 고원" [LC_OTHERS]	->  (몽 / 몽골고원)	OR	(l / location? :wiki "몽골고원" :name (이 / 이름 :op1 "몽골" :op2 "고원"))
+"몽골족" [CV_TRIBE]	->  (몽 / 몽골족)	OR	(e / ethnic-group|nationality :wiki "몽골족" :name (이 / 이름 :op1 "몽골족"))
+"북원" [LC_OTHERS]	->  (북 / 북원)	OR	(l / location? :wiki "북원" :name (이 / 이름 :op1 "북원"))
+"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
+"원나라" [LCP_COUNTRY]	->  (원 / 원나라)	OR	(c / country :wiki "원나라" :name (이 / 이름 :op1 "원나라"))
+"유목민" [CV_TRIBE]	->  (유 / 유목민)	OR	(e / ethnic-group|nationality :wiki "유목민" :name (이 / 이름 :op1 "유목민"))
+"주원장" [PS_NAME]	->  (주 / 주원장)	OR	(p / person :wiki "홍무제" :name (이 / 이름 :op1 "주원장"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+-- VERBALIZED ------------------------------------
+(민 / 민 :mod (유 / 유목-00))
+(황 / 황조 :mod (정 / 정복-00))
+
+
+# ::id snt4.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 원은 송나라를 멸망시킨 이민족의 정복 국가이며, 중국 대륙을 자체 병탄·병합하였다.
+# ::note
+-- FRAMES ----------------------------------------
+멸망시키 : DERIVED_NON-ENTRY
+이민 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (이 / 이민족-00) ?
+	- move_abroad		(이 / 이민-01 :ARG0 agent :ARG1 goal)
+병합 : VERBAL_NOUN
+	- combine		(병 / 병합-01 :ARG0 agent :ARG1 one_thing_combined :ARG2 the_other_thing_combined)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"송나라" [LCP_COUNTRY]	->  (송 / 송나라)	OR	(c / country :wiki "송나라" :name (이 / 이름 :op1 "송나라"))
+"원" [LCP_COUNTRY]	->  (원 / 원)	OR	(c / country :wiki "원?" :name (이 / 이름 :op1 "원"))
+"이민족" [CV_TRIBE]	->  (이 / 이민족)	OR	(e / ethnic-group|nationality :wiki "야만" :name (이 / 이름 :op1 "이민족"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+-- VERBALIZED ------------------------------------
+(국 / 국가 :mod (정 / 정복-00))
+(병 / 병탄 :mod (자 / 자체-00))
+(족 / 족 :ARG0-of (이 / 이민-01))
+
+
+# ::id snt5.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이후 주원장의 명나라에 의해 북쪽으로 쫓겨나 쇠퇴하게 된다.
+# ::note
+-- FRAMES ----------------------------------------
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+쫓겨나 : ** UNUSED_OR_NON-ENTRY **
+쇠퇴하 : DERIVED_NON-ENTRY
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"명나라" [LCP_COUNTRY]	->  (명 / 명나라)	OR	(c / country :wiki "명나라" :name (이 / 이름 :op1 "명나라"))
+"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
+"주원장" [PS_NAME]	->  (주 / 주원장)	OR	(p / person :wiki "홍무제" :name (이 / 이름 :op1 "주원장"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt6.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 원은 당조의 제도를 계승하여 중국 대륙을 지배했지만, 몽골족이 한족에 동화되지는 않았다.
+# ::note
+-- FRAMES ----------------------------------------
+계승하 : DERIVED_NON-ENTRY
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+동화되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"당조" [LCP_COUNTRY]	->  (당 / 당조)	OR	(c / country :wiki "당나라" :name (이 / 이름 :op1 "당조"))
+"몽골족" [CV_TRIBE]	->  (몽 / 몽골족)	OR	(e / ethnic-group|nationality :wiki "몽골족" :name (이 / 이름 :op1 "몽골족"))
+"원" [LCP_COUNTRY]	->  (원 / 원)	OR	(c / country :wiki "원?" :name (이 / 이름 :op1 "원"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+"한족" [CV_TRIBE]	->  (한 / 한족)	OR	(e / ethnic-group|nationality :wiki "한족" :name (이 / 이름 :op1 "한족"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt7.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 한족에게 이 시기는 몽골족에게 지배를 당한 치욕의 시대라고도 할 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+당하 : VERB
+	- suffer		(당 / 당하-01 :ARG1 entity_suffering :ARG2 thing_suffered :ARG3 source)
+	- reasonable		(당 / 당하-02 :ARG1 thing_being_reasonable)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"몽골족" [CV_TRIBE]	->  (몽 / 몽골족)	OR	(e / ethnic-group|nationality :wiki "몽골족" :name (이 / 이름 :op1 "몽골족"))
+"한족" [CV_TRIBE]	->  (한 / 한족)	OR	(e / ethnic-group|nationality :wiki "한족" :name (이 / 이름 :op1 "한족"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt8.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 시기 한족의 인구가 급감하였으며, 관리 등용과 형법의 적용에 있어서 다수의 한족은 민족적 차별을 당했다.
+# ::note
+-- FRAMES ----------------------------------------
+급감하 : DERIVED_NON-ENTRY
+관리 : VERBAL_NOUN
+	- manage		(관 / 관리-01 :ARG0 manager :ARG1 thing_managed)
+적용 : VERBAL_NOUN
+	- apply		(적 / 적용-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
+있 : ** UNUSED_OR_NON-ENTRY **
+민족적 : DERIVED_NON-ENTRY -> (민 / 민족적-00) ?
+차별 : VERBAL_NOUN
+	- discriminate		(차 / 차별-01 :ARG0 agent :ARG1 thing_discriminated)
+당하 : VERB
+	- suffer		(당 / 당하-01 :ARG1 entity_suffering :ARG2 thing_suffered :ARG3 source)
+	- reasonable		(당 / 당하-02 :ARG1 thing_being_reasonable)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"한족" [CV_TRIBE]	->  (한 / 한족)	OR	(e / ethnic-group|nationality :wiki "한족" :name (이 / 이름 :op1 "한족"))
+"한족" [CV_TRIBE]	->  (한 / 한족)	OR	(e / ethnic-group|nationality :wiki "한족" :name (이 / 이름 :op1 "한족"))
+"형법" [CV_LAW]	->  (형 / 형법)	OR	(l / law :wiki "형법" :name (이 / 이름 :op1 "형법"))
+-- VERBALIZED ------------------------------------
+(등 / 등용-00 :mod (관 / 관리-01))
+(적 / 적 :mod (민 / 민족-00))
+
+
+# ::id snt9.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 한족이 반란을 일으키지 못하도록 여러 사람이 모이는 것도 금지시키고 야간 통금 제도를 시행하여 해가 지면 돌아다닐 수 없게 하였다.
+# ::note
+-- FRAMES ----------------------------------------
+일으키 : VERB
+	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
+모이 : ** UNUSED_OR_NON-ENTRY **
+금지 : VERBAL_NOUN
+	- prohibit		(금 / 금지-01 :ARG0 agent :ARG1 action_prohibited)
+시행 : VERBAL_NOUN
+	- carry_out		(시 / 시행-01 :ARG0 agent :ARG1 thing_carried_out)
+지 : VERB
+	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
+	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
+	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
+	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
+	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
+돌아다니 : VERB
+	- go_about		(돌 / 돌아다니-01 :ARG0 agent :ARG1 places)
+없 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"야간 통금 제도" [CV_POLICY]	->  (야 / 야간통금제도)	OR	(p / policy* :wiki "야간_통행금지" :name (이 / 이름 :op1 "야간" :op2 "통금" :op3 "제도"))
+"한족" [CV_TRIBE]	->  (한 / 한족)	OR	(e / ethnic-group|nationality :wiki "한족" :name (이 / 이름 :op1 "한족"))
+-- VERBALIZED ------------------------------------
+(제 / 제도 :mod (통 / 통금-00))
+(통 / 통금 :mod (야 / 야간-00))
+
+
+# ::id snt10.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 원나라는 1260년 칭기즈 칸의 손자이며 몽골 제국의 제5대 대칸으로 즉위한 쿠빌라이 칸이 1271년 몽골 제국의 국호를 '대원'으로 고침으로써 성립되었으며, 몽골어로는 다이 온 이케 몽골 울루스(Dai-ön Yeke Mongγol Ulus), 즉 '대원대몽골국'(大元大蒙古國)이다.
+# ::note
+-- FRAMES ----------------------------------------
+즉위하 : DERIVED_NON-ENTRY
+고치 : VERB
+	- fix		(고 / 고치-01 :ARG0 agent,_fixer :ARG1 thing_made :ARG2 end_state)
+성립 : VERBAL_NOUN
+	- form		(성 / 성립-01 :ARG0 creator :ARG1 thing_cteated)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1260년" [DT_YEAR]	->  :time|duration (1 / 1260년)	OR	:time (d / date-entity :year 1260)	OR	:duration (t / temporal-quantity :quant 1260 :unit (년 / 년))  
+"1271년" [DT_YEAR]	->  :time|duration (1 / 1271년)	OR	:time (d / date-entity :year 1271)	OR	:duration (t / temporal-quantity :quant 1271 :unit (년 / 년))  
+"Dai-ön Yeke Mongγol Ulus" [LCP_COUNTRY]	->  (D / Dai-önYekeMongγolUlus)	OR	(c / country :wiki - :name (이 / 이름 :op1 "Dai-ön" :op2 "Yeke" :op3 "Mongγol" :op4 "Ulus"))
+"大元大蒙古國" [LCP_COUNTRY]	->  (大 / 大元大蒙古國)	OR	(c / country :wiki - :name (이 / 이름 :op1 "大元大蒙古國"))
+"다이 온 이케 몽골 울루스" [LCP_COUNTRY]	->  (다 / 다이온이케몽골울루스)	OR	(c / country :wiki - :name (이 / 이름 :op1 "다이" :op2 "온" :op3 "이케" :op4 "몽골" :op5 "울루스"))
+"대원" [LCP_COUNTRY]	->  (대 / 대원)	OR	(c / country :wiki "대원" :name (이 / 이름 :op1 "대원"))
+"대원대몽골국" [LCP_COUNTRY]	->  (대 / 대원대몽골국)	OR	(c / country :wiki "원나라" :name (이 / 이름 :op1 "대원대몽골국"))
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+"몽골어" [CV_LANGUAGE]	->  (몽 / 몽골어)	OR	(l / language :wiki "몽골어" :name (이 / 이름 :op1 "몽골어"))
+"손자" [CV_RELATION]	->  :mod (손 / 손자)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (손 / 손자))
+"원나라" [LCP_COUNTRY]	->  (원 / 원나라)	OR	(c / country :wiki "원나라" :name (이 / 이름 :op1 "원나라"))
+"제5대" [QT_ORDER]	->  :ord (제 / 제5대)	OR	:ord (o / ordinal-entity :value 제5대)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"칭기즈 칸" [PS_NAME]	->  (칭 / 칭기즈칸)	OR	(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
+"쿠빌라이 칸" [PS_NAME]	->  (쿠 / 쿠빌라이칸)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이" :op2 "칸"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt11.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 원나라는 유목 국가인 몽골 제국의 직계 국가다.
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+"원나라" [LCP_COUNTRY]	->  (원 / 원나라)	OR	(c / country :wiki "원나라" :name (이 / 이름 :op1 "원나라"))
+-- VERBALIZED ------------------------------------
+(국 / 국가 :mod (유 / 유목-00))
+(국 / 국가 :mod (직 / 직계-00))
+
+
+# ::id snt12.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러면서도 중국화된 명칭과 제도를 사용하였다.
+# ::note
+-- FRAMES ----------------------------------------
+그러 : VERB
+	- say		(그 / 그러-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- do_so		(그 / 그러-02 :ARG0 agent)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt13.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러나 쿠빌라이가 대칸의 지위에 오르는 과정에서 쿠빌라이의 몽골 제국 전체에 대한 통솔력은 쇠퇴한다.
+# ::note
+-- FRAMES ----------------------------------------
+오르 : VERB
+	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
+	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
+	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+통솔 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (통 / 통솔력-00) ?
+	- control		(통 / 통솔-01 :ARG0 agent :ARG1 entity_controlled)
+쇠퇴하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+-- VERBALIZED ------------------------------------
+(력 / 력 :ARG0-of (통 / 통솔-01))
+(전 / 전체 :mod (제 / 제국-00))
+
+
+# ::id snt14.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 원나라가 성립된 전후에 중앙아시아에서는 오고타이의 후손인 하이두가 쿠빌라이에 대항하여 자립하는 등 칸의 권위가 크게 변화하면서 몽골 제국은 재편의 과정에 들어선다.
+# ::note
+-- FRAMES ----------------------------------------
+성립 : VERBAL_NOUN
+	- form		(성 / 성립-01 :ARG0 creator :ARG1 thing_cteated)
+대항 : VERBAL_NOUN
+	- oppose		(대 / 대항-01 :ARG0 agent :ARG1 thing_opposed_to)
+자립하 : DERIVED_NON-ENTRY
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+변화 : VERBAL_NOUN
+	- change		(변 / 변화-01 :ARG0 causer :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
+재편 : VERBAL_NOUN
+	- reorganize		(재 / 재편-01 :ARG0 thing_reorganizing :ARG1 thing_reorganized)
+들어서 : VERB
+	- get_into		(들 / 들어서-01 :ARG1 entity_in_motion :ARG2 destination)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+"오고타이" [PS_NAME]	->  (오 / 오고타이)	OR	(p / person :wiki "우구데이_칸" :name (이 / 이름 :op1 "오고타이"))
+"원나라" [LCP_COUNTRY]	->  (원 / 원나라)	OR	(c / country :wiki "원나라" :name (이 / 이름 :op1 "원나라"))
+"중앙아시아" [LCG_CONTINENT]	->  (중 / 중앙아시아)	OR	(c / continent :wiki "중앙아시아" :name (이 / 이름 :op1 "중앙아시아"))
+"칸" [PS_NAME]	->  (칸 / 칸)	OR	(p / person :wiki "칸?" :name (이 / 이름 :op1 "칸"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+"하이두" [PS_NAME]	->  (하 / 하이두)	OR	(p / person :wiki "카이두_칸" :name (이 / 이름 :op1 "하이두"))
+"후손" [CV_RELATION]	->  :mod (후 / 후손)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (후 / 후손))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt15.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이러한 과정 끝에 원나라는 몽골 제국 중 쿠빌라이의 후계자로 이어지는 대칸의 직접 지배가 미치는 영역으로 사실상 한정된 지배력을 행사하는 쿠빌라이 가문의 세습령(울루스)이 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+이러하 : ** UNUSED_OR_NON-ENTRY **
+후계자 : DERIVED_NON-ENTRY -> (후 / 후계자-00) ?
+이어지 : ** UNUSED_OR_NON-ENTRY **
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+미치 : VERB
+	- give		(미 / 미치-01 :ARG0 causer :ARG1 influence :ARG2 entity_given_to)
+사실상 : DERIVED_NON-ENTRY -> (사 / 사실상-00) ?
+한정 : VERBAL_NOUN
+	- confine		(한 / 한정-01 :ARG0 confiner :ARG1 thing_confined :ARG2 confined_to)
+지배 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (지 / 지배력-00) ?
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+행사 : VERBAL_NOUN
+	- exercise		(행 / 행사-01 :ARG0 agent :ARG1 thing_exercised)
+세습령 : DERIVED_NON-ENTRY -> (세 / 세습령-00) ?
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+"사실상" [CV_LAW]	->  (사 / 사실상)	OR	(l / law :wiki "데_팍토" :name (이 / 이름 :op1 "사실상"))
+"울루스" [OGG_SPORTS]	->  (울 / 울루스)	OR	(t / team|league|company :wiki "울루스" :name (이 / 이름 :op1 "울루스"))
+"원나라" [LCP_COUNTRY]	->  (원 / 원나라)	OR	(c / country :wiki "원나라" :name (이 / 이름 :op1 "원나라"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+"후계자" [CV_POSITION]	->  :mod (후 / 후계자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후계자))
+-- VERBALIZED ------------------------------------
+(끝 / 끝 :mod (과 / 과정-00))
+(력 / 력 :ARG0-of (지 / 지배-01))
+(령 / 령 :mod (세 / 세습-00))
+(상 / 상 :mod (사 / 사실-00))
+(자 / 자 :mod (후 / 후계-00))
+(지 / 지배-01 :mod (직 / 직접-00))
+
+
+# ::id snt16.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1259년 제4대 대칸인 몽케가 남송 원정 중에 병사하고, 몽골 고원에 있던 수도 카라코룸을 수비하던 막내 동생 아리크 부케는 몽케파의 왕족을 모아 쿠릴타이를 열어 서부의 차가타이 가문 등 여러 왕가의 지지를 얻어 대칸의 지위를 얻었다.
+# ::note
+-- FRAMES ----------------------------------------
+병사하 : DERIVED_NON-ENTRY
+있 : ** UNUSED_OR_NON-ENTRY **
+수비하 : DERIVED_NON-ENTRY
+파 : VERBAL_NOUN
+	- dig		(파 / 파-01 :ARG0 agent :ARG1 end_product :ARG2 thing_removed)
+모으 : VERB
+	- gather		(모 / 모으-01 :ARG0 causal_agent :ARG1 entity_gathered :ARG2 gathered_into)
+열 : VERB
+	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
+	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
+서 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (서 / 서부-00) ?
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+지지 : VERBAL_NOUN
+	- support		(지 / 지지-01 :ARG0 thing_supporting :ARG1 thing_supported)
+얻 : VERB
+	- get		(얻 / 얻-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 source)
+얻 : VERB
+	- get		(얻 / 얻-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1259년" [DT_YEAR]	->  :time|duration (1 / 1259년)	OR	:time (d / date-entity :year 1259)	OR	:duration (t / temporal-quantity :quant 1259 :unit (년 / 년))  
+"남송" [LCP_COUNTRY]	->  (남 / 남송)	OR	(c / country :wiki "남송" :name (이 / 이름 :op1 "남송"))
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"동생" [CV_RELATION]	->  :mod (동 / 동생)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (동 / 동생))
+"막내" [CV_RELATION]	->  :mod (막 / 막내)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (막 / 막내))
+"몽골 고원" [LC_OTHERS]	->  (몽 / 몽골고원)	OR	(l / location? :wiki "몽골고원" :name (이 / 이름 :op1 "몽골" :op2 "고원"))
+"몽케" [PS_NAME]	->  (몽 / 몽케)	OR	(p / person :wiki "몽케_칸" :name (이 / 이름 :op1 "몽케"))
+"몽케" [PS_NAME]	->  (몽 / 몽케)	OR	(p / person :wiki "몽케_칸" :name (이 / 이름 :op1 "몽케"))
+"서부" [TM_DIRECTION]	->  (서 / 서부)	OR	(: / :direction :wiki "서부?" :name (이 / 이름 :op1 "서부"))
+"아리크 부케" [PS_NAME]	->  (아 / 아리크부케)	OR	(p / person :wiki "아리크부카" :name (이 / 이름 :op1 "아리크" :op2 "부케"))
+"왕족" [CV_POSITION]	->  :mod (왕 / 왕족)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (왕 / 왕족))
+"제4대" [QT_ORDER]	->  :ord (제 / 제4대)	OR	:ord (o / ordinal-entity :value 제4대)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"차가타이" [PS_NAME]	->  (차 / 차가타이)	OR	(p / person :wiki "차가타이_칸" :name (이 / 이름 :op1 "차가타이"))
+"카라코룸" [LCP_CAPITALCITY]	->  (카 / 카라코룸)	OR	(c / city :wiki "카라코룸" :name (이 / 이름 :op1 "카라코룸"))
+-- VERBALIZED ------------------------------------
+(동 / 동생 :mod (막 / 막내-00))
+(부 / 부 :ARG0-of (서 / 서-01))
+
+
+# ::id snt17.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이에 몽케와 함께 남송 원정 중이던 둘째동생 쿠빌라이는 11월에 군대를 되돌려 내몽골에 들어서 동쪽 3왕가(칭기즈칸의 동생 가계)등의 지지를 얻은 다음, 이듬해 3월에 자신의 본거지였던 내몽골의 개평부(開平府; 훗날의 상도)에서 쿠릴타이를 열어 대칸의 지위에 앉았다.
+# ::note
+-- FRAMES ----------------------------------------
+되돌리 : VERB
+	- turn_back		(되 / 되돌리-01 :ARG0 causal_agent :ARG1 thing_turning_back)
+	- put_back		(되 / 되돌리-02 :ARG0 putter :ARG1 thing_put_back :ARG2 location)
+들 : VERB
+	- pick_up		(들 / 들-01 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- let_in		(들 / 들-02 :ARG0 agent :ARG1 thing_let_in :ARG2 goal)
+	- require		(들 / 들-03 :ARG1 requirer :ARG2 thing_required)
+	- grow_older		(들 / 들-04 :ARG1 person :ARG2 age)
+	- let_in-CV		(들 / 들-05 :ARG0 agent :ARG1 thing_let_in :ARG2 source)
+지지 : VERBAL_NOUN
+	- support		(지 / 지지-01 :ARG0 thing_supporting :ARG1 thing_supported)
+얻 : VERB
+	- get		(얻 / 얻-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 source)
+자신 : VERBAL_NOUN
+	- confident		(자 / 자신 :ARG0 thing_confident :ARG1 confident_in)
+본거지 : DERIVED_NON-ENTRY -> (본 / 본거지-00) ?
+개평부 : DERIVED_NON-ENTRY -> (개 / 개평부-00) ?
+열 : VERB
+	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
+	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
+앉 : VERB
+	- sit		(앉 / 앉-01 :ARG0 agent :ARG1 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"11월" [DT_MONTH]	->  :time|duration (1 / 11월)	OR	:time (d / date-entity :month 11)	OR	:duration (t / temporal-quantity :quant 11 :unit (월 / 월))  
+"3왕가" [QT_COUNT]	->  :quant (3 / 3왕가)	OR	(c / concept* :quant 3 :unit|scale (왕 / 왕가))
+"3월" [DT_MONTH]	->  :time|duration (3 / 3월)	OR	:time (d / date-entity :month 3)	OR	:duration (t / temporal-quantity :quant 3 :unit (월 / 월))  
+"개평부" [LCP_COUNTY]	->  (개 / 개평부)	OR	(c / county :wiki "상도_(지명)" :name (이 / 이름 :op1 "개평부"))
+"남송" [LCP_COUNTRY]	->  (남 / 남송)	OR	(c / country :wiki "남송" :name (이 / 이름 :op1 "남송"))
+"내몽골" [LCP_COUNTRY]	->  (내 / 내몽골)	OR	(c / country :wiki "내몽골_자치구" :name (이 / 이름 :op1 "내몽골"))
+"내몽골" [LCP_COUNTRY]	->  (내 / 내몽골)	OR	(c / country :wiki "내몽골_자치구" :name (이 / 이름 :op1 "내몽골"))
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"동생" [CV_RELATION]	->  :mod (동 / 동생)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (동 / 동생))
+"동쪽" [TM_DIRECTION]	->  (동 / 동쪽)	OR	(: / :direction :wiki "동쪽" :name (이 / 이름 :op1 "동쪽"))
+"둘째동생" [CV_RELATION]	->  :mod (둘 / 둘째동생)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (둘 / 둘째동생))
+"몽케" [PS_NAME]	->  (몽 / 몽케)	OR	(p / person :wiki "몽케_칸" :name (이 / 이름 :op1 "몽케"))
+"상도" [LCP_COUNTY]	->  (상 / 상도)	OR	(c / county :wiki "상도?" :name (이 / 이름 :op1 "상도"))
+"칭기즈칸" [PS_NAME]	->  (칭 / 칭기즈칸)	OR	(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈칸"))
+"쿠릴타이" [LCP_COUNTRY]	->  (쿠 / 쿠릴타이)	OR	(c / country :wiki "쿠릴타이" :name (이 / 이름 :op1 "쿠릴타이"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+-- VERBALIZED ------------------------------------
+(가 / 가계 :mod (동 / 동생-00))
+(부 / 부 :mod (개 / 개평-00))
+(원 / 원정 :mod (남 / 남송-00))
+(지 / 지 :mod (본 / 본거-00))
+(해 / 해 :mod (이 / 이듬-00))
+
+
+# ::id snt18.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이로써 몽골 제국은 사상 처음으로 몽골고원 남북에 두 명의 대칸이 들어서게 된다.
+# ::note
+-- FRAMES ----------------------------------------
+남 : VERBAL_NOUN
+	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
+들어서 : VERB
+	- get_into		(들 / 들어서-01 :ARG1 entity_in_motion :ARG2 destination)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"남북" [TM_DIRECTION]	->  (남 / 남북)	OR	(: / :direction :wiki - :name (이 / 이름 :op1 "남북"))
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"두 명" [QT_MAN_COUNT]	->  :quant (두 / 두명)	OR	(c / concept* :quant 두 :unit|scale (명 / 명))
+"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+"몽골고원" [LC_OTHERS]	->  (몽 / 몽골고원)	OR	(l / location? :wiki "몽골고원" :name (이 / 이름 :op1 "몽골고원"))
+-- VERBALIZED ------------------------------------
+(남 / 남-01 :mod (고 / 고원-00))
+(북 / 북-00 :mod (남 / 남-01))
+(처 / 처음 :mod (사 / 사상-00))
+
+
+# ::id snt19.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 몽케의 장례를 치르고, 제도(帝都) 카라코람에서 즉위한 아리크 부케가 대칸으로서의 정통성은 확보한 셈이었으나, 군사력을 장악한 쿠빌라이 역시 아리크 부케를 배신자로 여기고 자신이야말로 정당한 대칸이라고 주장했다.
+# ::note
+-- FRAMES ----------------------------------------
+치르 : VERB
+	- undergo		(치 / 치르-01 :ARG0 thing_undergoing :ARG1 thing_undergone)
+	- carry_out		(치 / 치르-02 :ARG0 agent :ARG1 thing_carried_out)
+즉위하 : DERIVED_NON-ENTRY
+정통 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (정 / 정통성-00) ?
+	- well_informed		(정 / 정통-01 :ARG1 thing_well_informed :ARG2 well_informed_about)
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+군사력 : DERIVED_NON-ENTRY -> (군 / 군사력-00) ?
+장악 : VERBAL_NOUN
+	- control		(장 / 장악-01 :ARG0 controller :ARG1 thing_controlled)
+배신자 : DERIVED_NON-ENTRY -> (배 / 배신자-00) ?
+여기 : VERB
+	- consider		(여 / 여기-01 :ARG0 thing_considering :ARG thing_considered)
+자신 : VERBAL_NOUN
+	- confident		(자 / 자신 :ARG0 thing_confident :ARG1 confident_in)
+정당하 : VERB
+	- just		(정 / 정당하-01 :ARG1 thing_just)
+주장 : VERBAL_NOUN
+	- claim		(주 / 주장-01 :ARG0 thing_claiming :ARG1 thing_claimed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"몽케" [PS_NAME]	->  (몽 / 몽케)	OR	(p / person :wiki "몽케_칸" :name (이 / 이름 :op1 "몽케"))
+"배신자" [CV_POSITION]	->  :mod (배 / 배신자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (배 / 배신자))
+"아리크 부케" [PS_NAME]	->  (아 / 아리크부케)	OR	(p / person :wiki "아리크부카" :name (이 / 이름 :op1 "아리크" :op2 "부케"))
+"아리크 부케" [PS_NAME]	->  (아 / 아리크부케)	OR	(p / person :wiki "아리크부카" :name (이 / 이름 :op1 "아리크" :op2 "부케"))
+"카라코람" [LCG_MOUNTAIN]	->  (카 / 카라코람)	OR	(m / mountain :wiki "카라코람산맥" :name (이 / 이름 :op1 "카라코람"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+-- VERBALIZED ------------------------------------
+(력 / 력 :mod (군 / 군사-00))
+(성 / 성 :ARG0-of (정 / 정통-01))
+(자 / 자 :mod (배 / 배신-00))
+
+
+# ::id snt20.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 쿠빌라이와 아리크 부케의 양군은 여러 차례 격돌하였으나 승패가 나지 않았다.
+# ::note
+-- FRAMES ----------------------------------------
+격돌하 : DERIVED_NON-ENTRY
+나 : VERB
+	- happen		(나 / 나-01 :ARG1 thing_happening :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"아리크 부케" [PS_NAME]	->  (아 / 아리크부케)	OR	(p / person :wiki "아리크부카" :name (이 / 이름 :op1 "아리크" :op2 "부케"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+-- VERBALIZED ------------------------------------
+(격 / 격돌 :mod (차 / 차례-00))
+(패 / 패 :mod (승 / 승-00))
+
+
+# ::id snt21.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러나 시간이 지날수록 군사력과 화북의 물자를 장악한 쿠빌라이에게 전세가 유리해지기 시작했다.
+# ::note
+-- FRAMES ----------------------------------------
+지나 : VERB
+	- pass		(지 / 지나-01 :ARG0 entity_passing :ARG1 thing_passed)
+	- be_only		(지 / 지나-02 :ARG1 thing_under_consideration :ARG2 criterion)
+군사력 : DERIVED_NON-ENTRY -> (군 / 군사력-00) ?
+장악 : VERBAL_NOUN
+	- control		(장 / 장악-01 :ARG0 controller :ARG1 thing_controlled)
+유리 : VERBAL_NOUN
+	- advantageous		(유 / 유리-01 :ARG1 advantageous_thing :ARG2 advantageous_to)
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+"화북" [LC_OTHERS]	->  (화 / 화북)	OR	(l / location? :wiki "화베이" :name (이 / 이름 :op1 "화북"))
+-- VERBALIZED ------------------------------------
+(력 / 력 :mod (군 / 군사-00))
+
+
+# ::id snt22.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 서전인 1261년 시무토노르 전투에서는 쿠빌라이가 승리했으나, 아리크 부케는 북서쪽 몽골의 오이라트의 지원을 얻어 저항을 계속했다.
+# ::note
+-- FRAMES ----------------------------------------
+전투 : VERBAL_NOUN
+	- combat		(전 / 전투-01 :ARG0 one_fighter :ARG1 other_fighter)
+승리 : VERBAL_NOUN
+	- win		(승 / 승리-01 :ARG0 winner :ARG1 loser)
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+지원 : VERBAL_NOUN
+	- support		(지 / 지원-01 :ARG0 agent :ARG1 person_or_project_supported)
+	- provide		(지 / 지원-02 :ARG0 agent :ARG1 thing_provided :ARG2 entity_provided_for)
+얻 : VERB
+	- get		(얻 / 얻-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 source)
+저항 : VERBAL_NOUN
+	- resist		(저 / 저항-01 :ARG0 thing_resisting :ARG1 thing_resisted)
+계속 : VERBAL_NOUN
+	- continue		(계 / 계속-01 :ARG0 agent :ARG1 thing_continuing)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1261년" [DT_YEAR]	->  :time|duration (1 / 1261년)	OR	:time (d / date-entity :year 1261)	OR	:duration (t / temporal-quantity :quant 1261 :unit (년 / 년))  
+"몽골" [LCP_COUNTRY]	->  (몽 / 몽골)	OR	(c / country :wiki "몽골" :name (이 / 이름 :op1 "몽골"))
+"북서쪽" [TM_DIRECTION]	->  (북 / 북서쪽)	OR	(: / :direction :wiki "북서쪽" :name (이 / 이름 :op1 "북서쪽"))
+"시무토노르 전투" [EV_WAR_REVOLUTION]	->  (시 / 시무토노르전투)	OR	(w / war|event :wiki - :name (이 / 이름 :op1 "시무토노르" :op2 "전투"))
+"아리크 부케" [PS_NAME]	->  (아 / 아리크부케)	OR	(p / person :wiki "아리크부카" :name (이 / 이름 :op1 "아리크" :op2 "부케"))
+"오이라트" [CV_TRIBE]	->  (오 / 오이라트)	OR	(e / ethnic-group|nationality :wiki "오이라트부" :name (이 / 이름 :op1 "오이라트"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+-- VERBALIZED ------------------------------------
+(서 / 서-01 :mod (북 / 북-00))
+
+
+# ::id snt23.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러나 아리크 부케 산하의 제후들이 하나 둘씩 떨어져 나가고, 차가타이 가문마저 아리크 부케에 대한 지원을 끊자, 1264년 아리크 부케는 결국 쿠빌라이에게 항복했다.
+# ::note
+-- FRAMES ----------------------------------------
+제후들 : DERIVED_NON-ENTRY -> (제 / 제후들-00) ?
+떨어지 : VERB
+	- fall		(떨 / 떨어지-01 :ARG0 causer :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+	- run_out		(떨 / 떨어지-02 :ARG1 thing_running_out :ARG2 possessor)
+	- be_off		(떨 / 떨어지-03 :ARG1 theme :ARG2 be_off_from)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+지원 : VERBAL_NOUN
+	- support		(지 / 지원-01 :ARG0 agent :ARG1 person_or_project_supported)
+	- provide		(지 / 지원-02 :ARG0 agent :ARG1 thing_provided :ARG2 entity_provided_for)
+끊 : VERB
+	- cut_off		(끊 / 끊-01 :ARG0 cutter :ARG1 thing_cut)
+항복하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1264년" [DT_YEAR]	->  :time|duration (1 / 1264년)	OR	:time (d / date-entity :year 1264)	OR	:duration (t / temporal-quantity :quant 1264 :unit (년 / 년))  
+"둘" [QT_COUNT]	->  :quant (둘 / 둘)	OR	(c / concept* :quant - :unit|scale (둘 / 둘))
+"아리크 부케" [PS_NAME]	->  (아 / 아리크부케)	OR	(p / person :wiki "아리크부카" :name (이 / 이름 :op1 "아리크" :op2 "부케"))
+"아리크 부케" [PS_NAME]	->  (아 / 아리크부케)	OR	(p / person :wiki "아리크부카" :name (이 / 이름 :op1 "아리크" :op2 "부케"))
+"아리크 부케" [PS_NAME]	->  (아 / 아리크부케)	OR	(p / person :wiki "아리크부카" :name (이 / 이름 :op1 "아리크" :op2 "부케"))
+"제후" [CV_POSITION]	->  :mod (제 / 제후)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (제 / 제후))
+"차가타이" [PS_NAME]	->  (차 / 차가타이)	OR	(p / person :wiki "차가타이_칸" :name (이 / 이름 :op1 "차가타이"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
+-- VERBALIZED ------------------------------------
+(들 / 들 :mod (제 / 제후-00))
+
+
+# ::id snt24.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 일련의 전란을 승리자 쿠빌라이를 정통으로 보는 입장에서는 아리크 부케의 난이라고 불렀다.
+# ::note
+-- FRAMES ----------------------------------------
+승리 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (승 / 승리자-00) ?
+	- win		(승 / 승리-01 :ARG0 winner :ARG1 loser)
+정통 : VERBAL_NOUN
+	- well_informed		(정 / 정통-01 :ARG1 thing_well_informed :ARG2 well_informed_about)
+보 : VERB
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+부르 : VERB
+	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
+	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"아리크 부케의 난" [EV_WAR_REVOLUTION]	->  (아 / 아리크부케의난)	OR	(w / war|event :wiki - :name (이 / 이름 :op1 "아리크" :op2 "부케의" :op3 "난"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+-- VERBALIZED ------------------------------------
+(자 / 자 :ARG0-of (승 / 승리-01))
+
+
+# ::id snt25.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 아리크 부케의 항복으로 인해 대칸의 지위는 다시 통합되었으나, 중국 서쪽의 중앙아시아의 여러 칸국에서의 대칸의 위신은 큰 타격을 입었다.
+# ::note
+-- FRAMES ----------------------------------------
+인하 : VERB
+	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
+	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
+통합 : VERBAL_NOUN
+	- combine		(통 / 통합-01 :ARG0 agent :ARG1 ingredient_one :ARG2 ingredient_two)
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+타격 : VERBAL_NOUN
+	- strike		(타 / 타격-01 :ARG0 hitter :ARG1 thing_hit)
+입 : VERB
+	- wear		(입 / 입-01 :ARG0 wearer :ARG1 clothing)
+	- incur		(입 / 입-02 :ARG0 causer :ARG1 patient :ARG2 thing_incurred)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"서쪽" [TM_DIRECTION]	->  (서 / 서쪽)	OR	(: / :direction :wiki "서쪽" :name (이 / 이름 :op1 "서쪽"))
+"아리크 부케" [OGG_ECONOMY]	->  (아 / 아리크부케)	OR	(c / company|organization :wiki "아리크부카" :name (이 / 이름 :op1 "아리크" :op2 "부케"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+"중앙아시아" [LCG_CONTINENT]	->  (중 / 중앙아시아)	OR	(c / continent :wiki "중앙아시아" :name (이 / 이름 :op1 "중앙아시아"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt26.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1269년 중앙아시아를 지배하던 차가타이 가문의 바라크와 오고타이 가문의 하이두, 그리고 주치 가문(킵차크 칸국 혹은 금장한국(Golden Horde))의 여러 왕이 탈라스 하반에서 모여 중앙아시아의 대칸령을 분할해 쿠빌라이에 대항해 자립의 태도를 명확히 했다.
+# ::note
+-- FRAMES ----------------------------------------
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+모이 : ** UNUSED_OR_NON-ENTRY **
+분할 : VERBAL_NOUN
+	- divide		(분 / 분할-01 :ARG0 causer :ARG1 thing_divided :ARG2 divided_into)
+대항 : VERBAL_NOUN
+	- oppose		(대 / 대항-01 :ARG0 agent :ARG1 thing_opposed_to)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1269년" [DT_YEAR]	->  :time|duration (1 / 1269년)	OR	:time (d / date-entity :year 1269)	OR	:duration (t / temporal-quantity :quant 1269 :unit (년 / 년))  
+"Golden Horde" [OGG_MEDICINE]	->  (G / GoldenHorde)	OR	(o / organization|research-institute|hospital* :wiki - :name (이 / 이름 :op1 "Golden" :op2 "Horde"))
+"금장한국" [LCP_COUNTRY]	->  (금 / 금장한국)	OR	(c / country :wiki "킵차크_칸국" :name (이 / 이름 :op1 "금장한국"))
+"대칸" [CV_POSITION]	->  :mod (대 / 대칸)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대칸))
+"바라크" [PS_NAME]	->  (바 / 바라크)	OR	(p / person :wiki "바라크_칸" :name (이 / 이름 :op1 "바라크"))
+"오고타이" [PS_NAME]	->  (오 / 오고타이)	OR	(p / person :wiki "우구데이_칸" :name (이 / 이름 :op1 "오고타이"))
+"왕" [CV_POSITION]	->  :mod (왕 / 왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (왕 / 왕))
+"주치" [PS_NAME]	->  (주 / 주치)	OR	(p / person :wiki "주치?" :name (이 / 이름 :op1 "주치"))
+"중앙아시아" [LCG_CONTINENT]	->  (중 / 중앙아시아)	OR	(c / continent :wiki "중앙아시아" :name (이 / 이름 :op1 "중앙아시아"))
+"중앙아시아" [LCG_CONTINENT]	->  (중 / 중앙아시아)	OR	(c / continent :wiki "중앙아시아" :name (이 / 이름 :op1 "중앙아시아"))
+"차가타이" [PS_NAME]	->  (차 / 차가타이)	OR	(p / person :wiki "차가타이_칸" :name (이 / 이름 :op1 "차가타이"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+"킵차크 칸국" [LCP_COUNTRY]	->  (킵 / 킵차크칸국)	OR	(c / country :wiki "킵차크_칸국" :name (이 / 이름 :op1 "킵차크" :op2 "칸국"))
+"탈라스" [LCP_CITY]	->  (탈 / 탈라스)	OR	(c / city :wiki "탈라스?" :name (이 / 이름 :op1 "탈라스"))
+"하이두" [PS_NAME]	->  (하 / 하이두)	OR	(p / person :wiki "카이두_칸" :name (이 / 이름 :op1 "하이두"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt27.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이윽고 오고타이 가문의 하이두가 중앙아시아 여러 왕 사이에서 맹주의 지위를 확립하고, 하이두의 반항은 몽골 제국을 동서로 나뉘게 된 항쟁으로 발전하게 된다.
+# ::note
+-- FRAMES ----------------------------------------
+확립 : VERBAL_NOUN
+	- establish		(확 / 확립-01 :ARG0 agent :ARG1 thing_set)
+반항 : VERBAL_NOUN
+	- oppose		(반 / 반항-01 :ARG0 opposer :ARG1 opposed_to)
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+나뉘 : REDUCED_VERB_DETECTED
+	- happen		(나 / 나-01 :ARG1 thing_happening :ARG2 location)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+발전 : VERBAL_NOUN
+	- develop		(발 / 발전-01 :ARG0 developer :ARG1 thing_developed :ARG2 secondary_predication)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"동서" [TM_DIRECTION]	->  (동 / 동서)	OR	(: / :direction :wiki "동서" :name (이 / 이름 :op1 "동서"))
+"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+"오고타이" [PS_NAME]	->  (오 / 오고타이)	OR	(p / person :wiki "우구데이_칸" :name (이 / 이름 :op1 "오고타이"))
+"왕" [CV_POSITION]	->  :mod (왕 / 왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (왕 / 왕))
+"중앙아시아" [LCG_CONTINENT]	->  (중 / 중앙아시아)	OR	(c / continent :wiki "중앙아시아" :name (이 / 이름 :op1 "중앙아시아"))
+"하이두" [PS_NAME]	->  (하 / 하이두)	OR	(p / person :wiki "카이두_칸" :name (이 / 이름 :op1 "하이두"))
+"하이두" [PS_NAME]	->  (하 / 하이두)	OR	(p / person :wiki "카이두_칸" :name (이 / 이름 :op1 "하이두"))
+-- VERBALIZED ------------------------------------
+(사 / 사이 :mod (왕 / 왕-00))
+(서 / 서-01 :mod (동 / 동-00))
+
+
+# ::id snt28.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그 사이 쿠빌라이는 중국식 정치기관인 중서성(中書省)을 설치하고, 수도를 몽골 고원의 카라코람에서 중국 북부의 대도(大都; 현재의 베이징)로 옮겼다.
+# ::note
+-- FRAMES ----------------------------------------
+설치 : VERBAL_NOUN
+	- build		(설 / 설치-01 :ARG0 agent :ARG1 thing_built :ARG2 location)
+북부 : DERIVED_NON-ENTRY -> (북 / 북부-00) ?
+옮기 : REDUCED_VERB_DETECTED
+	- move		(옮 / 옮-01 :ARG0 mover :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"中書省" [OGG_POLITICS]	->  (中 / 中書省)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "中書省"))
+"대도" [LCP_CAPITALCITY]	->  (대 / 대도)	OR	(c / city :wiki "대도" :name (이 / 이름 :op1 "대도"))
+"몽골 고원" [LC_OTHERS]	->  (몽 / 몽골고원)	OR	(l / location? :wiki "몽골고원" :name (이 / 이름 :op1 "몽골" :op2 "고원"))
+"베이징" [LCP_CAPITALCITY]	->  (베 / 베이징)	OR	(c / city :wiki "베이징시" :name (이 / 이름 :op1 "베이징"))
+"북부" [TM_DIRECTION]	->  (북 / 북부)	OR	(: / :direction :wiki "북부?" :name (이 / 이름 :op1 "북부"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+"중서성" [OGG_POLITICS]	->  (중 / 중서성)	OR	(g / government-organization :wiki "중서성" :name (이 / 이름 :op1 "중서성"))
+"카라코람" [LCG_MOUNTAIN]	->  (카 / 카라코람)	OR	(m / mountain :wiki "카라코람산맥" :name (이 / 이름 :op1 "카라코람"))
+"쿠빌라이" [PS_NAME]	->  (쿠 / 쿠빌라이)	OR	(p / person :wiki "쿠빌라이_칸" :name (이 / 이름 :op1 "쿠빌라이"))
+-- VERBALIZED ------------------------------------
+(기 / 기관 :mod (정 / 정치-00))
+(부 / 부 :mod (북 / 북-00))
+
+
+# ::id snt29.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 지방에는 몽골 제국의 금나라 공략의 과정에서 자립해 몽골에 귀의하여 화북 각지에서 호족 노릇을 하던 한족 현지군벌(한인제후)과 몽골인 귀족, 중앙정부와의 지배관계를 정리하고, 각 교통로에 총관부(고려의 쌍성총관부 등)를 설치하는 등 중국지배에 적합한 갖가지 제도를 도입하였다.
+# ::note
+-- FRAMES ----------------------------------------
+공략 : VERBAL_NOUN
+	- attack		(공 / 공략-01 :ARG0 agent :ARG1 entity_attacked)
+자립하 : DERIVED_NON-ENTRY
+귀의하 : DERIVED_NON-ENTRY
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+관계 : VERBAL_NOUN
+	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
+	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+정리 : VERBAL_NOUN
+	- arrange		(정 / 정리-01 :ARG0 agent :ARG1 thing_arranged)
+	- liquidate		(정 / 정리-02 :ARG0 agent :ARG1 thing_liquidated)
+교통로 : DERIVED_NON-ENTRY -> (교 / 교통로-00) ?
+총관부 : DERIVED_NON-ENTRY -> (총 / 총관부-00) ?
+설치 : VERBAL_NOUN
+	- build		(설 / 설치-01 :ARG0 agent :ARG1 thing_built :ARG2 location)
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+적합 : VERBAL_NOUN
+	- suitable		(적 / 적합-01 :ARG1 thing_being_suitable :ARG2 suitable_to)
+도입 : VERBAL_NOUN
+	- introduce		(도 / 도입-01 :ARG0 introducer :ARG1 entity_introduced :ARG2 introduced_from :ARG3 introduced_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"고려" [LCP_COUNTRY]	->  (고 / 고려)	OR	(c / country :wiki "고려" :name (이 / 이름 :op1 "고려"))
+"귀족" [CV_POSITION]	->  :mod (귀 / 귀족)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (귀 / 귀족))
+"금나라" [LCP_COUNTRY]	->  (금 / 금나라)	OR	(c / country :wiki "금나라" :name (이 / 이름 :op1 "금나라"))
+"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+"몽골" [LCP_COUNTRY]	->  (몽 / 몽골)	OR	(c / country :wiki "몽골" :name (이 / 이름 :op1 "몽골"))
+"몽골인" [CV_TRIBE]	->  (몽 / 몽골인)	OR	(e / ethnic-group|nationality :wiki "몽골족" :name (이 / 이름 :op1 "몽골인"))
+"쌍성총관부" [OGG_POLITICS]	->  (쌍 / 쌍성총관부)	OR	(g / government-organization :wiki "쌍성총관부" :name (이 / 이름 :op1 "쌍성총관부"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+"중앙정부" [OGG_POLITICS]	->  (중 / 중앙정부)	OR	(g / government-organization :wiki "중앙정부" :name (이 / 이름 :op1 "중앙정부"))
+"총관부" [OGG_POLITICS]	->  (총 / 총관부)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "총관부"))
+"한인제후" [CV_POSITION]	->  :mod (한 / 한인제후)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (한 / 한인제후))
+"한족" [CV_TRIBE]	->  (한 / 한족)	OR	(e / ethnic-group|nationality :wiki "한족" :name (이 / 이름 :op1 "한족"))
+"화북" [LC_OTHERS]	->  (화 / 화북)	OR	(l / location? :wiki "화베이" :name (이 / 이름 :op1 "화북"))
+-- VERBALIZED ------------------------------------
+(공 / 공략-01 :mod (나 / 나라-00))
+(관 / 관계-01 :ARG1 (지 / 지배-01))
+(군 / 군벌 :mod (현 / 현지-00))
+(노 / 노릇 :mod (호 / 호족-00))
+(로 / 로 :mod (교 / 교통-00))
+(부 / 부 :mod (총 / 총관-00))
+(정 / 정부 :mod (중 / 중앙-00))
+(제 / 제도 :mod (갖 / 갖가지-00))
+
+
+# ::id snt30.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이로써 칭기즈 칸이 세운 거대한 몽골 제국은, 서부의 여러 칸국들과 중국의 대칸령 사이의 느슨한 연합으로 재편되었다.
+# ::note
+-- FRAMES ----------------------------------------
+세우 : ** UNUSED_OR_NON-ENTRY **
+거대 : VERBAL_NOUN
+	- huge		(거 / 거대-01 :ARG1 thing_being_huge)
+서 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (서 / 서부-00) ?
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+느슨하 : VERB
+	- slack		(느 / 느슨하-01 :ARG1 thing_being_slack)
+연합 : VERBAL_NOUN
+	- combine		(연 / 연합-01 :ARG0 agent :ARG1 thing_combined :ARG2 end_product)
+재편 : VERBAL_NOUN
+	- reorganize		(재 / 재편-01 :ARG0 thing_reorganizing :ARG1 thing_reorganized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+"서부" [TM_DIRECTION]	->  (서 / 서부)	OR	(: / :direction :wiki "서부?" :name (이 / 이름 :op1 "서부"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+"칭기즈 칸" [PS_NAME]	->  (칭 / 칭기즈칸)	OR	(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
+-- VERBALIZED ------------------------------------
+(부 / 부 :ARG0-of (서 / 서-01))
+

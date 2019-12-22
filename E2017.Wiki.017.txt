@@ -110,7 +110,7 @@
 # ::note 17세기
 (걸 / 걸리-01
     :ARG1 (d / date-interval
-        :op2 (d2 / date-entity :year 1800))
+        :op2 (d2 / date-entity :century 17))
     :ARG2 (회 / 회복-01
         :ARG1 (인 / 인구
             :mod (세 / 세계)
@@ -130,7 +130,7 @@
 		:time (d2 / date-interval
 			:op1 (뒤 / 뒤
 				:op1 (그 / 그))
-            :op2 (d3 / date-entity :year 1800))
+            :op2 (d3 / date-entity :century 19))
 		:manner (산 / 산발-00
 			:ARG1 d)
 		:example (등 / 등
@@ -141,19 +141,17 @@
 			:ARG2 (상 / 상황
 				:mod (유 / 유행-01
 					:mod (범 / 범))
-				:time (d4 / date-inverval
-					:op1 (d5 / date-entity :year 1301)
-					:op2 (d6 / date-entity :year 1400))
+				:time (d4 / date-entity :century 14)
 				:location c
 				:subevent-of (e2 / event :wiki "제2차_페스트_범유행" :name (이5 / 이름 :op1 "제2차" :op2 "페스트" :op3 "범유행")
 					:ARG1-of (계 / 계속-01
 						:location (c2 / continent :wiki "유라시아" :name (이6 / 이름 :op1 "유라시아" :op2 "대륙"))
-						:duration (d7 / date-inverval
-							:op1 (d8 / date-entity :year 1345)
-							:op2 (d9 / date-entity :year 1840))))))
-			:condition (확 / 확정-01
-				:ARG1 (페 / 페스트균)
-				:ARG2 (병 / 병원체 :poss d2))))
+						:duration (d5 / date-interval
+							:op1 (d6 / date-entity :year 1345)
+							:op2 (d7 / date-entity :year 1840))))))
+		:condition (확 / 확정-01
+			:ARG1 (페 / 페스트균)
+			:ARG2 (병 / 병원체 :poss d2))))
 
 # ::id snt9.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 14세기의 페스트 유행은 유럽사에 있어 종교사, 사회사, 경제사적으로 지대한 영향을 미쳤다.
@@ -161,9 +159,7 @@
 (영 / 영향-01
     :ARG0 (유 / 유행-01
         :ARG (d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
-        :time (d2 / date-interval
-            :op1 (d3 / date-entity :year 1501)
-            :op2 (d4 / date-entity :year 1600)))
+        :time (d2 / date-entity :century 14))
     :ARG1 (역 / 역사
         :poss (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")))
     :topic (a / and
@@ -228,9 +224,7 @@
         :ARG1-of (퍼 / 퍼지-01
             :ARG2 (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")
                 :mod (중 / 중세))
-            :time (d2 / date-interval
-                :op1 (d3 / date-entity :year 1501)
-                :op2 (d4 / date-entity :year 1600))))
+            :time (d2 / date-entity :century 14)))
     :ARG2 (이3 / 이름 :op1 "대흑사병"))
 
 # ::id snt15.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
@@ -239,9 +233,7 @@
 (h / have-degree-91
     :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")
         :location (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))
-        :time (d2 / date-interval
-            :op1 (d3 / date-entity :year 1501)
-            :op2 (d4 / date-entity :year 1600)))
+        :time (d2 / date-entity :century 14))
     :ARG2 (영 / 영향-01
         :ARG0 d
         :ARG1 (사 / 사회
@@ -462,9 +454,7 @@
 				:ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "대흑사병")
 					:ARG1-of (전2 / 전파-01
 						:goal (c2 / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))
-						:time (d2 / date-interval
-							:op1 (d3 / date-entity :year 1501)
-							:op2 (d4 / date-entity :year 1600)))))))
+						:time (d2 / date-entity :century 14))))))
 	:ARG2 (받 / 받아들이-01
 		:ARG1 (가 / 가설 :quant (몇 / 몇) :unit (가2 / 가지))
 		:manner (널 / 널리)))
@@ -652,9 +642,7 @@
 	:domain (기 / 기후
 		:poss (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
 		:time (초 / 초
-			:op1 (d / date-interval
-				:op1 (d2 / date-entity :year 1501)
-				:op2 (d3 / date-entity :year 1600))))
+			:op1 (d / date-entity :century 14)))
 	:ARG1 (하 / 하락-01
 		:ARG1 (기2 / 기온
 			:mod (평 / 평균
@@ -708,9 +696,7 @@
 		:time (점 / 점령-01
 			:ARG0 (c / country :wiki "몽골" :name (이 / 이름 :op1 "몽골"))
 			:ARG1 (c2 / country :wiki "중국" :name (이2 / 이름 :op1 "중국"))
-			:time (d / date-interval
-				:op1 (d2 / date-entity :year 1401)
-				:op2 (d3 / date-entity :year 1500)))))
+			:time (d / date-entity :century 13))))
 
 # ::id snt36.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle ::preferred True
 # ::snt 이로 인해 13세기 후반에 중국의 인구는 대략 1억 2천만명에서 6천만명으로 급감하였다.
@@ -728,9 +714,7 @@
 			:ARG2 60000000
 			:unit (명2 / 명)))
 	:time (후 / 후반
-		:op1 (d / date-interval
-			:op1 (d2 / date-entity :year 1401)
-			:op2 (d3 / date-entity :year 1500))))
+		:op1 (d / date-entity :century 13)))
 
 # ::id snt37.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 14세기에는 중국에서도 흑사병이 번졌던 시기로 이로 인해 중국의 인구 중 약 30%가 사망한 것으로 추정된다.

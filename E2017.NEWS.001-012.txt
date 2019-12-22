@@ -1614,13 +1614,13 @@
                     :mod "가"
                     :ARG2 (몰 / 몰리-00
                         :ARG1 (좌2 / 좌판
-                            :quant (이 / 이상
-                                :op1 (p / percentage-entity :value 30))
                             :ARG1-of (i / include-91
                                 :ARG2 (좌3 / 좌판 :quant 332 :unit (개 / 개)
                                     :location (구2 / 구역 :quant 4 :unit (개2 / 개)
                                         :mod (v / value-interval :op1 "가" :op2 "라")
-                                        :mod (전 / 전체))))))))))
+                                        :mod (전 / 전체)))
+                                :ARG3 (이 / 이상
+                                    :op1 (p / percentage-entity :value 30)))))))))
     :ARG2 (영 / 영상
         :mod (C / CCTV)
         :ARG1-of (확 / 확보-01

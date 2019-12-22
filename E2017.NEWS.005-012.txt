@@ -1350,7 +1350,8 @@
 	:ARG1 (오 / 오르-01
 		:duration (t / temporal-quantity :value 1 :unit (달 / 달)))
 	:ARG2 (m / monetary-quantity :quant 290000000 :unit (원 / 원)
-		:mod (p / percentage-entity :value 20.7)))
+		:ARG1-of (i / include-91
+			:ARG3 (p / percentage-entity :value 20.7))))
 
 # ::id snt13.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 고종완 한국자산관리연구원장은 "내년부터 부활할 것으로 보이는 '초과이익환수제'를 피할 수 있는 재건축 단지가 먼저 오르고, 주변 일반 아파트까지 상대적으로 저평가됐다는 인식 때문에 덩달아 가격이 뛰는 '쌍끌이' 장세"라고 말했다.
@@ -2142,69 +2143,45 @@
 (발 / 발사-01 :mod (정 / 정상-00))
 
 
-# ::id snt11.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 태평양 괌 기지뿐 아니라 하와이 미군 태평양사령부까지 사정권에 두고 있다.
-# ::note
--- FRAMES ----------------------------------------
-사령부 : DERIVED_NON-ENTRY -> (사 / 사령부-00) ?
-사정 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (사 / 사정권-00) ?
-	- implore		(사 / 사정-01 :ARG0 agent :ARG1 thing_asked_for :ARG2 hearer)
-두 : VERB
-	- put		(두 / 두-01 :ARG0 agent :ARG1 theme :ARG2 location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"괌" [LCG_ISLAND]	->  (괌 / 괌)	OR	(i / island :wiki "괌" :name (이 / 이름 :op1 "괌"))
-"미군" [OGG_MILITARY]	->  (미 / 미군)	OR	(m / military :wiki "미군" :name (이 / 이름 :op1 "미군"))
-"태평양" [LCG_OCEAN]	->  (태 / 태평양)	OR	(o / ocean :wiki "태평양" :name (이 / 이름 :op1 "태평양"))
-"태평양사령부" [OGG_MILITARY]	->  (태 / 태평양사령부)	OR	(m / military :wiki "태평양사령부?" :name (이 / 이름 :op1 "태평양사령부"))
-"하와이" [LCG_ISLAND]	->  (하 / 하와이)	OR	(i / island :wiki "하와이주" :name (이 / 이름 :op1 "하와이"))
--- VERBALIZED ------------------------------------
-(권 / 권 :ARG0-of (사 / 사정-01))
-(부 / 부 :mod (사 / 사령-00))
+# ::note 사정권에 두다
+(가 / 가능-01
+	:ARG1 (도 / 도달-01
+		:ARG2 (m / military :wiki "미국_인도-태평양_사령부" :name (이 / 이름 :op1 "미군" :op2 "태평양사령부")
+			:mod (아 / 아니-02
+				:ARG1 (기 / 기지
+					:location (i / island :wiki "괌" :name (이2 / 이름 :op1 "괌")
+						:location (o / ocean :wiki "태평양" :name (이3 / 이름 :op1 "태평양"))))))))
 
-
-# ::id snt12.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 북극성-2도 최정점 고도 560여㎞로 500㎞를 비행했다.
 # ::note
--- FRAMES ----------------------------------------
-최정점 : DERIVED_NON-ENTRY -> (최 / 최정점-00) ?
-비행 : VERBAL_NOUN
-	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"500㎞" [QT_LENGTH]	->  :quant (5 / 500㎞)	OR	(d / distance-quantity :quant 500 :unit|scale (㎞ / ㎞))
-"560여㎞" [QT_LENGTH]	->  :quant (5 / 560여㎞)	OR	(d / distance-quantity :quant 560 :unit|scale (여 / 여㎞))
-"북극성-2" [LC_SPACE]	->  (북 / 북극성-2)	OR	(? / ?planet|star|moon|constellation :wiki - :name (이 / 이름 :op1 "북극성-2"))
--- VERBALIZED ------------------------------------
-(고 / 고도 :mod (정 / 정점-00))
-(극 / 극 :mod (북 / 북-00))
-(성 / 성 :mod (극 / 극-00))
+(a / and
+	:op2 (비 / 비행-01
+		:ARG0 (w / weapon* :wiki "북극성_2호" :name (이 / 이름 :op1 "북극성-2"))
+		:ARG1 (고 / 고도
+			:mod (최 / 최정점)
+			:mod (약 / 약
+				:op1 (d / distance-quantity :quant 560 :unit (k / kilometer))))
+		:extent (d2 / distance-quantity :quant 500 :unit (k2 / kilometer))))
 
-
-# ::id snt13.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 정상발사 각도로 쐈다면 1천㎞ 이상을 비행할 수 있어 주일미군기지를 타격할 수도 있다.
 # ::note
--- FRAMES ----------------------------------------
-발사 : VERBAL_NOUN
-	- fire		(발 / 발사-01 :ARG0 shooter :ARG1 thing_shot :ARG2 goal)
-쏘 : VERB
-	- shoot		(쏘 / 쏘-01 :ARG0 agent :ARG1 thing_shooted :ARG2 target)
-이상 : VERBAL_NOUN
-	- strange		(이 / 이상-01 :ARG1 thing_being_strange)
-비행 : VERBAL_NOUN
-	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
-있 : ** UNUSED_OR_NON-ENTRY **
-타격 : VERBAL_NOUN
-	- strike		(타 / 타격-01 :ARG0 hitter :ARG1 thing_hit)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1천㎞" [QT_LENGTH]	->  :quant (1 / 1천㎞)	OR	(d / distance-quantity :quant 1 :unit|scale (천 / 천㎞))
-"주일미군기지" [OGG_MILITARY]	->  (주 / 주일미군기지)	OR	(m / military :wiki - :name (이 / 이름 :op1 "주일미군기지"))
--- VERBALIZED ------------------------------------
-(각 / 각도-00 :mod (발 / 발사-01))
-(발 / 발사-01 :mod (정 / 정상-00))
-
+(가 / 가능-01
+	:ARG1 (타 / 타격-01
+		:ARG1 (기 / 기지
+			:poss (m / military :wiki "미군" :name (이 / 이름 :op1 "미군"))
+			:location (c / country :wiki "일본" :name (이2 / 이름 :op1 "일본"))))
+	:cause (가2 / 가능-01
+		:ARG1 (비 / 비행-01
+			:extent (이3 / 이상
+				:op1 (d / distance-quantity :quant 1000 :unit (k / kilometer))))
+		:condition (쏘 / 쏘-01
+			:manner (각 / 각도
+				:mod (발 / 발사-01)
+				:mod (정 / 정상)))))
 
 # ::id snt14.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 지난달 27일 발사 성공한 '북한판 패트리엇'으로 불리는 '번개 5호'(KN-06) 지대공 유도미사일은 사거리가 150여㎞로 추정된다.

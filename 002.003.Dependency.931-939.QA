@@ -228,8 +228,9 @@
 # ::note
 (뜻 / 뜻하-01
     :ARG1 (s / string-entity :value "어질머리")
-    :ARG2 (a / amr-unknown)
-    :condition (여 / 여기))
+    :ARG2 (a / amr-unknown
+        :domain (말 / 말))
+    :domain (여 / 여기))
 
 # ::id snt0.931.004_Q.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt BTB용액은 대표적인 산, 염기 지시약이다.
@@ -515,7 +516,9 @@
 (사 / 사용-01
     :mod (주 / 주로)
     :ARG0 (아 / 아이)
-    :ARG1 (a / amr-unknown)
+    :ARG1 (a / amr-unknown
+        :domain (책 / 책
+            :mod (이 / 이)))
     :ARG2 (교 / 교재)
     :location (서 / 서당)
     :time (시 / 시기
@@ -596,7 +599,7 @@
 (의 / 의미-01
     :ARG1 (s / string-entity :value "골")
     :ARG2 (a / amr-unknown
-        :mod (숫 / 숫자))
+        :domain (숫 / 숫자))
     :location (여 / 여기))
 
 # ::id snt0.931.008_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
@@ -825,7 +828,8 @@
 # ::snt 입은 있되 말은 못하는 '벙어리'라고 표현한 이것은 무엇일까?
 # ::note
 (표 / 표현-01
-    :topic (a / amr-unknown)
+    :topic (a / amr-unknown
+        :domain (이 / 이것))
     :ARG1 (s / string-entity :value "벙어리"
         :mod (c / contrast-01
             :ARG1 (입 / 입)
@@ -961,7 +965,7 @@
 # ::note
 (사 / 사용-01
     :ARG1 (a / amr-unknown
-        :mod (원 / 원소
+        :domain (원 / 원소
             :mod (이 / 이)
             :mod (번 / 번호 :value 9
                 :mod (원 / 원자))))
@@ -1125,7 +1129,7 @@
         :mod (중 / 중
             :op1 (극 / 극)))
     :ARG1 (a / amr-unknown
-        :mod (노 / 노래
+        :domain (노 / 노래
             :mod (이 / 이))
         :topic (희 / 희망-01))
     :concession (속 / 속
@@ -1175,7 +1179,8 @@
 # ::snt 그리스 신화 속 가이아의 아들 이름을 딴 이것은 무엇일까?
 # ::note
 (따 / 따오-01
-    :ARG1 (a / amr-unknown)
+    :ARG1 (a / amr-unknown
+        :domain (이 / 이것))
     :ARG2 (이 / 이름
         :name-of (사 / 사람
             :ARG0-of (h / have-rel-role-91
@@ -1316,7 +1321,8 @@
 # ::note
 (표 / 표현-01
     :ARG1 (던 / 던지-01
-        :ARG1 (a / amr-unknown))
+        :ARG1 (a / amr-unknown
+            :mod (이 / 이것)))
     :time (요 / 요즘)
     :ARG1-of (흔 / 흔하-00)
     :condition (나 / 나가-00
@@ -1691,7 +1697,8 @@
 (분 / 분비-00
     :ARG0 (세 / 세포
         :mod (비 / 비만)
-    :ARG1 (a / amr-unknown))
+    :ARG1 (a / amr-unknown
+        :domain (이 / 이것)))
 
 # ::id snt0.931.022_A.01_ver ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 부탄(종카어: འབྲུག་ཡུལ 드루크 율 → 용의 나라)은 인도와 중화인민공화국 사이의 히말라야 산맥에 있는 남아시아의 나라이다.
