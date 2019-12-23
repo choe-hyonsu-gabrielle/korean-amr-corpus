@@ -93,26 +93,15 @@
 (족 / 족 :ARG0-of (이 / 이민-01))
 
 
-# ::id snt5.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.009 ::date 2019-12-23 ::annotator gabrielle ::preferred True
 # ::snt 이후 주원장의 명나라에 의해 북쪽으로 쫓겨나 쇠퇴하게 된다.
 # ::note
--- FRAMES ----------------------------------------
-의하 : VERB
-	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
-쫓겨나 : ** UNUSED_OR_NON-ENTRY **
-쇠퇴하 : DERIVED_NON-ENTRY
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"명나라" [LCP_COUNTRY]	->  (명 / 명나라)	OR	(c / country :wiki "명나라" :name (이 / 이름 :op1 "명나라"))
-"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
-"주원장" [PS_NAME]	->  (주 / 주원장)	OR	(p / person :wiki "홍무제" :name (이 / 이름 :op1 "주원장"))
--- VERBALIZED ------------------------------------
-
+(쇠 / 쇠퇴-00
+    :cause (쫓 / 쫓겨나-00
+        :direction (북 / 북쪽)
+        :cause (c / country :wiki "명나라" :name (이 / 이름 :op1 "명나라")
+            :poss (p / person :wiki "홍무제" :name (이2 / 이름 :op1 "주원장"))))
+    :time (이3 / 이후))
 
 # ::id snt6.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 원은 당조의 제도를 계승하여 중국 대륙을 지배했지만, 몽골족이 한족에 동화되지는 않았다.
@@ -254,20 +243,15 @@
 (국 / 국가 :mod (직 / 직계-00))
 
 
-# ::id snt12.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.009 ::date 2019-12-23 ::annotator gabrielle ::preferred True
 # ::snt 그러면서도 중국화된 명칭과 제도를 사용하였다.
 # ::note
--- FRAMES ----------------------------------------
-그러 : VERB
-	- say		(그 / 그러-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- do_so		(그 / 그러-02 :ARG0 agent)
-사용 : VERBAL_NOUN
-	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
--- VERBALIZED ------------------------------------
-
+(c / contrast-01
+    :ARG2 (사 / 사용-01
+        :ARG1 (a / and
+            :ARG1-of (중 / 중국화-00)
+            :op1 (명 / 명칭)
+            :op2 (제 / 제도))))
 
 # ::id snt13.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 그러나 쿠빌라이가 대칸의 지위에 오르는 과정에서 쿠빌라이의 몽골 제국 전체에 대한 통솔력은 쇠퇴한다.

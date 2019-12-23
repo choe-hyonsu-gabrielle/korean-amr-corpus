@@ -3,47 +3,32 @@
 # ::note
 (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
 
-# ::id snt1.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
 # ::snt 하버드 대학교(Harvard University)는 미국의 아이비 리그 사립대학교이다.
 # ::note
--- FRAMES ----------------------------------------
-대학교 : DERIVED_NON-ENTRY -> (대 / 대학교-00) ?
-대학교 : DERIVED_NON-ENTRY -> (대 / 대학교-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"Harvard University" [OGG_EDUCATION]	->  (H / HarvardUniversity)	OR	(u / university :wiki - :name (이 / 이름 :op1 "Harvard" :op2 "University"))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"아이비 리그" [OGG_EDUCATION]	->  (아 / 아이비리그)	OR	(u / university :wiki "아이비_리그" :name (이 / 이름 :op1 "아이비" :op2 "리그"))
-"하버드 대학교" [OGG_EDUCATION]	->  (하 / 하버드대학교)	OR	(u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
--- VERBALIZED ------------------------------------
-(리 / 리그 :mod (아 / 아이비-00))
-(사 / 사립 :mod (리 / 리그-00))
+(대 / 대학교
+    :domain (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
+    :mod (사 / 사립)
+    :ARG1-of (i / include-91
+        :ARG2 (u2 / university :wiki "아이비_리그" :name (이2 / 이름 :op1 "아이비" :op2 "리그")))
+    :location (c / country :wiki "미국" :name (이3 / 이름 :op1 "미국")))
 
-
-# ::id snt2.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
 # ::snt 하버드 대학교는 오랜 역사와 큰 영향력, 그리고 많은 재산으로 세계의 일류 대학 중 하나가 되었다.
 # ::note
--- FRAMES ----------------------------------------
-대학교 : DERIVED_NON-ENTRY -> (대 / 대학교-00) ?
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-영향 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (영 / 영향력-00) ?
-	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
-많 : VERB
-	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
-"하버드 대학교" [OGG_EDUCATION]	->  (하 / 하버드대학교)	OR	(u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
--- VERBALIZED ------------------------------------
-(대 / 대학 :mod (일 / 일류-00))
-(력 / 력 :ARG0-of (영 / 영향-01))
-
+(되 / 되-01
+    :ARG1 (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
+    :ARG2 (대 / 대학
+        :mod (일 / 일류)
+        :mod (세 / 세계))
+    :manner (a / and
+        :op1 (역 / 역사
+            :ARG1-of (오 / 오래-01))
+        :op2 (힘 / 힘
+            :mod (영 / 영향-01)
+            :ARG1-of (크 / 크-01))
+        :op3 (재 / 재산
+            :ARG1-of (많 / 많-01))))
 
 # ::id snt3.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 하버드 대학교는 1636년에 매사추세츠 식민지 일반의회가 설립하였다.
@@ -165,35 +150,25 @@
     :ARG1 (교 / 교육-01
         :location (c / country :wiki "미국" :name (이2 / 이름 :op1 "미국"))))
 
-# ::id snt12.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
 # ::snt 하버드 대학교는 현재까지 졸업생과 교수를 포함해서 세계에서 가장 많은 157명의 노벨상 수상자를 배출했다.
 # ::note
--- FRAMES ----------------------------------------
-대학교 : DERIVED_NON-ENTRY -> (대 / 대학교-00) ?
-졸업 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (졸 / 졸업생-00) ?
-	- graduate		(졸 / 졸업-01 :ARG0 agent :ARG1 school)
-포함 : VERBAL_NOUN
-	- include		(포 / 포함-01 :ARG0 agent :ARG1 thing_included :ARG2 group)
-많 : VERB
-	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
-수상 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (수 / 수상자-00) ?
-	- receive_a_prize		(수 / 수상-01 :ARG0 receiver :ARG1 prize)
-배출 : VERBAL_NOUN
-	- produce		(배 / 배출-01 :ARG0 producer :ARG1 talent :ARG2 start_point :ARG3 end_point)
-	- eject		(배 / 배출-02 :ARG0 ejector :ARG1 thing_ejected :ARG2 start_point :ARG3 end_point)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"157명" [QT_MAN_COUNT]	->  :quant (1 / 157명)	OR	(c / concept* :quant 157 :unit|scale (명 / 명))
-"교수" [CV_OCCUPATION]	->  :mod (교 / 교수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교수))
-"노벨상" [CV_PRIZE]	->  (노 / 노벨상)	OR	(a / award :wiki "노벨상" :name (이 / 이름 :op1 "노벨상"))
-"수상자" [CV_POSITION]	->  :mod (수 / 수상자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수상자))
-"졸업생" [CV_POSITION]	->  :mod (졸 / 졸업생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (졸 / 졸업생))
-"하버드 대학교" [OGG_EDUCATION]	->  (하 / 하버드대학교)	OR	(u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
--- VERBALIZED ------------------------------------
-(생 / 생 :ARG0-of (졸 / 졸업-01))
-(수 / 수상-01 :mod (상 / 상-00))
-(자 / 자 :ARG0-of (수 / 수상-01))
-
+(배 / 배출-01
+    :ARG0 (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
+    :ARG1 (사 / 사람 :quant 157 :unit (명 / 명)
+        :ARG0-of (수 / 수상-01
+            :ARG1 (a / award :wiki "노벨상" :name (이2 / 이름 :op1 "노벨상")))
+        :ARG1-of (h / have-degree-91
+            :ARG2 (많 / 많-01)
+            :ARG3 (가 / 가장)
+            :ARG5 (세 / 세계))
+        :ARG1-of (i / include-91
+            :ARG2 (a2 / and
+                :op1 (학 / 학생
+                    :ARG0-of (졸 / 졸업-01
+                        :ARG1 u))
+                :op2 (교 / 교수))))
+    :time (현 / 현재))
 
 # ::id snt13.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 또한 프랭클린 루즈벨트와 존 F. 케네디에 이르기까지 미국에서 가장 많은 총 7명의 미국 대통령, 36명의 퓰리처상 수상자, 미국에서 가장 많은 21명의 연방 대법원 대법관과 7명의 세계은행 총재, 세계에서 가장 많은 62명의 억만장자와 미국에서 가장 많은 335명의 로즈 장학생이 하버드를 졸업했다.
@@ -299,58 +274,45 @@
     :domain (학 / 학부
         :poss (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))))
 
-# ::id snt16.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
 # ::snt 학부 학생들은 의학, 법학, 경영학 등의 전문 분야는 공부할 수 없으며 자연과학, 응용과학, 사회과학, 인문학 등을 공부한다.
 # ::note
--- FRAMES ----------------------------------------
-학생들 : DERIVED_NON-ENTRY -> (학 / 학생들-00) ?
-경영 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (경 / 경영학-00) ?
-	- manage		(경 / 경영-01 :ARG0 agent :ARG1 thing_managed)
-공부 : VERBAL_NOUN
-	- study		(공 / 공부-01 :ARG0 agent :ARG1 subject)
-없 : ** UNUSED_OR_NON-ENTRY **
-자연 : VERBAL_NOUN
-	- natural		(자 / 자연-01 :ARG1 thing_natural)
-인문학 : DERIVED_NON-ENTRY -> (인 / 인문학-00) ?
-공부 : VERBAL_NOUN
-	- study		(공 / 공부-01 :ARG0 agent :ARG1 subject)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"경영학" [FD_SOCIAL_SCIENCE]	->  (경 / 경영학)	OR	(s / study-field|group* :wiki "경영학" :name (이 / 이름 :op1 "경영학"))
-"법학" [FD_SOCIAL_SCIENCE]	->  (법 / 법학)	OR	(s / study-field|group* :wiki "법학" :name (이 / 이름 :op1 "법학"))
-"사회과학" [FD_SOCIAL_SCIENCE]	->  (사 / 사회과학)	OR	(s / study-field|group* :wiki "사회과학" :name (이 / 이름 :op1 "사회과학"))
-"응용과학" [FD_SCIENCE]	->  (응 / 응용과학)	OR	(s / study-field|group* :wiki "응용과학" :name (이 / 이름 :op1 "응용과학"))
-"의학" [FD_MEDICINE]	->  (의 / 의학)	OR	(s / study-field|group* :wiki "의학" :name (이 / 이름 :op1 "의학"))
-"인문학" [FD_SOCIAL_SCIENCE]	->  (인 / 인문학)	OR	(s / study-field|group* :wiki "인문학" :name (이 / 이름 :op1 "인문학"))
-"자연과학" [FD_SCIENCE]	->  (자 / 자연과학)	OR	(s / study-field|group* :wiki "자연과학" :name (이 / 이름 :op1 "자연과학"))
-"학생" [CV_OCCUPATION]	->  :mod (학 / 학생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (학 / 학생))
--- VERBALIZED ------------------------------------
-(과 / 과학 :mod (사 / 사회-00))
-(과 / 과학 :mod (응 / 응용-00))
-(과 / 과학-00 :mod (자 / 자연-01))
-(들 / 들 :mod (학 / 학생-00))
-(분 / 분야 :mod (전 / 전문-00))
-(학 / 학 :ARG0-of (경 / 경영-01))
-(학 / 학 :mod (인 / 인문-00))
-(학 / 학생 :mod (학 / 학부-00))
+(a / and
+    :op1 (가 / 가능-01
+        :polarity -
+        :ARG1 (공 / 공부-01
+            :ARG0 (학 / 학생
+                :ARG1-of (i / include-91
+                    :ARG2 (학2 / 학부)))
+            :ARG1 (분 / 분야
+                :mod (전 / 전문)
+                :example (등 / 등
+                    :op1 (의 / 의학)
+                    :op2 (법 / 법학)
+                    :op3 (경 / 경영학)))))
+    :op2 (공2 / 공부-01
+        :ARG0 학
+        :ARG1 (등2 / 등
+            :op1 (자 / 자연과학)
+            :op2 (응 / 응용과학)
+            :op3 (사 / 사회과학)
+            :op4 (인 / 인문학))))
 
-
-# ::id snt17.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
 # ::snt 전문대학원 과정에 메디컬 스쿨, 로스쿨, 비즈니스 스쿨과 케네디 스쿨 등을 두고 있다.
 # ::note
--- FRAMES ----------------------------------------
-대학원 : DERIVED_NON-ENTRY -> (대 / 대학원-00) ?
-두 : VERB
-	- put		(두 / 두-01 :ARG0 agent :ARG1 theme :ARG2 location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"케네디 스쿨" [OGG_EDUCATION]	->  (케 / 케네디스쿨)	OR	(u / university :wiki - :name (이 / 이름 :op1 "케네디" :op2 "스쿨"))
--- VERBALIZED ------------------------------------
-(대 / 대학 :mod (전 / 전문-00))
-(스 / 스쿨 :mod (메 / 메디컬-00))
-(스 / 스쿨 :mod (비 / 비즈니스-00))
-(원 / 원 :mod (대 / 대학-00))
-
+(i / include-91
+    :ARG1 (등 / 등
+        :op1 (대 / 대학원
+            :topic (의 / 의학))
+        :op2 (대2 / 대학원
+            :topic (법 / 법학))
+        :op3 (대3 / 대학원
+            :topic (경 / 경영학))
+        :op4 (u / university :wiki - :name (이 / 이름 :op1 "케네디" :op2 "스쿨")))
+    :ARG2 (과 / 과정
+        :poss (대4 / 대학원
+            :mod (전 / 전문))))
 
 # ::id snt18.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 아이비리그 대학 중의 하나인 하버드 대학교는 기독교인은 지식이 부족하면 안 된다는 신념을 실천하기 위하여 책과 현금을 기증한 영국 청교도 목사 존 하버드의 이름을 딴 미국 교육 역사에서 처음의 대학교이다.
@@ -516,18 +478,13 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt22.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
 # ::snt 1650년에 하버드 칼리지의 헌장(charter)이 수립되었다.
 # ::note
--- FRAMES ----------------------------------------
-수립 : VERBAL_NOUN
-	- establish		(수 / 수립-01 :ARG0 setter :ARG1 thing_set)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1650년" [DT_YEAR]	->  :time|duration (1 / 1650년)	OR	:time (d / date-entity :year 1650)	OR	:duration (t / temporal-quantity :quant 1650 :unit (년 / 년))  
-"하버드 칼리지" [OGG_EDUCATION]	->  (하 / 하버드칼리지)	OR	(u / university :wiki - :name (이 / 이름 :op1 "하버드" :op2 "칼리지"))
--- VERBALIZED ------------------------------------
-
+(수 / 수립-01
+    :ARG1 (헌 / 헌장
+        :topic (u / university :wiki - :name (이 / 이름 :op1 "하버드" :op2 "칼리지")))
+    :time (d / date-entity :year 1650))
 
 # ::id snt23.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 초기 하버드 대학교는 많은 청교도 목사를 양성했다.
@@ -541,65 +498,46 @@
             :ARG2 (목 / 목사)))
     :time (초 / 초기))
 
-# ::id snt24.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
 # ::snt 1782년에 메디컬 스쿨(Harvard Medical School), 1816년에 신학대학원(Harvard Divinity School), 1817년에 로스쿨(Harvard Law School), 1867년에 치의학대학원(Harvard School of Dental Medicine), 1908년에 비즈니스 스쿨(Harvard Business School), 1920년에 교육대학원(Harvard Graduate School of Education), 1922년에 공공보건대학원(Harvard School of Public Health), 그리고 1936년에 케네디 스쿨(Harvard Kennedy School)을 설립하면서 차츰 현대적인 종합대학이 됐다.
 # ::note
--- FRAMES ----------------------------------------
-대학원 : DERIVED_NON-ENTRY -> (대 / 대학원-00) ?
-치 : VERBAL_NOUN
-	- strike,_attack		(치 / 치-01 :ARG0 hitter,_attacker :ARG1 thing_hit,_attacked)
-	- set		(치 / 치-02 :ARG0 setter :ARG1 thing_set)
-	- run_over		(치 / 치-03 :ARG0 car :ARG1 victim)
-	- run_away		(치 / 치-04 :ARG0 agent :ARG1 flight)
-대학원 : DERIVED_NON-ENTRY -> (대 / 대학원-00) ?
-교육 : VERBAL_NOUN
-	- educate		(교 / 교육-01 :ARG0 teacher :ARG1 subject :ARG2 student)
-대학원 : DERIVED_NON-ENTRY -> (대 / 대학원-00) ?
-대학원 : DERIVED_NON-ENTRY -> (대 / 대학원-00) ?
-설립 : VERBAL_NOUN
-	- establish		(설 / 설립-01 :ARG0 agent :ARG1 thing_set)
-현대적 : DERIVED_NON-ENTRY -> (현 / 현대적-00) ?
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1782년" [DT_YEAR]	->  :time|duration (1 / 1782년)	OR	:time (d / date-entity :year 1782)	OR	:duration (t / temporal-quantity :quant 1782 :unit (년 / 년))  
-"1816년" [DT_YEAR]	->  :time|duration (1 / 1816년)	OR	:time (d / date-entity :year 1816)	OR	:duration (t / temporal-quantity :quant 1816 :unit (년 / 년))  
-"1817년" [DT_YEAR]	->  :time|duration (1 / 1817년)	OR	:time (d / date-entity :year 1817)	OR	:duration (t / temporal-quantity :quant 1817 :unit (년 / 년))  
-"1867년" [DT_YEAR]	->  :time|duration (1 / 1867년)	OR	:time (d / date-entity :year 1867)	OR	:duration (t / temporal-quantity :quant 1867 :unit (년 / 년))  
-"1908년" [DT_YEAR]	->  :time|duration (1 / 1908년)	OR	:time (d / date-entity :year 1908)	OR	:duration (t / temporal-quantity :quant 1908 :unit (년 / 년))  
-"1920년" [DT_YEAR]	->  :time|duration (1 / 1920년)	OR	:time (d / date-entity :year 1920)	OR	:duration (t / temporal-quantity :quant 1920 :unit (년 / 년))  
-"1922년" [DT_YEAR]	->  :time|duration (1 / 1922년)	OR	:time (d / date-entity :year 1922)	OR	:duration (t / temporal-quantity :quant 1922 :unit (년 / 년))  
-"1936년" [DT_YEAR]	->  :time|duration (1 / 1936년)	OR	:time (d / date-entity :year 1936)	OR	:duration (t / temporal-quantity :quant 1936 :unit (년 / 년))  
-"Harvard Business School" [OGG_EDUCATION]	->  (H / HarvardBusinessSchool)	OR	(u / university :wiki - :name (이 / 이름 :op1 "Harvard" :op2 "Business" :op3 "School"))
-"Harvard Divinity School" [OGG_EDUCATION]	->  (H / HarvardDivinitySchool)	OR	(u / university :wiki - :name (이 / 이름 :op1 "Harvard" :op2 "Divinity" :op3 "School"))
-"Harvard Graduate School of Education" [OGG_EDUCATION]	->  (H / HarvardGraduateSchoolofEducation)	OR	(u / university :wiki - :name (이 / 이름 :op1 "Harvard" :op2 "Graduate" :op3 "School" :op4 "of" :op5 "Education"))
-"Harvard Kennedy School" [OGG_EDUCATION]	->  (H / HarvardKennedySchool)	OR	(u / university :wiki - :name (이 / 이름 :op1 "Harvard" :op2 "Kennedy" :op3 "School"))
-"Harvard Law School" [OGG_EDUCATION]	->  (H / HarvardLawSchool)	OR	(u / university :wiki - :name (이 / 이름 :op1 "Harvard" :op2 "Law" :op3 "School"))
-"Harvard Medical School" [OGG_EDUCATION]	->  (H / HarvardMedicalSchool)	OR	(u / university :wiki - :name (이 / 이름 :op1 "Harvard" :op2 "Medical" :op3 "School"))
-"Harvard School of Dental Medicine" [OGG_EDUCATION]	->  (H / HarvardSchoolofDentalMedicine)	OR	(u / university :wiki - :name (이 / 이름 :op1 "Harvard" :op2 "School" :op3 "of" :op4 "Dental" :op5 "Medicine"))
-"Harvard School of Public Health" [OGG_EDUCATION]	->  (H / HarvardSchoolofPublicHealth)	OR	(u / university :wiki - :name (이 / 이름 :op1 "Harvard" :op2 "School" :op3 "of" :op4 "Public" :op5 "Health"))
-"케네디 스쿨" [PS_NAME]	->  (케 / 케네디스쿨)	OR	(p / person :wiki - :name (이 / 이름 :op1 "케네디" :op2 "스쿨"))
-"현대" [DT_OTHERS]	->  :time|duration (현 / 현대)	OR	:time (d / date-entity)	OR	:duration 
--- VERBALIZED ------------------------------------
-(대 / 대학 :mod (보 / 보건-00))
-(대 / 대학 :mod (신 / 신학-00))
-(대 / 대학 :mod (의 / 의학-00))
-(대 / 대학 :mod (종 / 종합-00))
-(대 / 대학-00 :mod (교 / 교육-01))
-(보 / 보건 :mod (공 / 공공-00))
-(스 / 스쿨 :mod (메 / 메디컬-00))
-(스 / 스쿨 :mod (비 / 비즈니스-00))
-(원 / 원 :mod (대 / 대학-00))
-(원 / 원 :mod (대 / 대학-00))
-(원 / 원 :mod (대 / 대학-00))
-(원 / 원 :mod (대 / 대학-00))
-(의 / 의학-00 :mod (치 / 치-01))
-(적 / 적 :mod (현 / 현대-00))
-
+(되 / 되-01
+    :ARG2 (대 / 대학
+        :mod (종 / 종합-00)
+        :mod (현 / 현대))
+    :manner (차 / 차츰)
+    :manner (a / and
+        :op1 (설 / 설립-01
+            :ARG1 (대2 / 대학원
+                :topic (의 / 의학))
+            :time (d / date-entity :year 1782))
+        :op2 (설2 / 설립-01
+            :ARG1 (대3 / 대학원
+                :topic (신 / 신학))
+            :time (d2 / date-entity :year 1816))
+        :op3 (설3 / 설립-01
+            :ARG1 (대4 / 대학원
+                :topic (법 / 법학))
+            :time (d3 / date-entity :year 1817))
+        :op4 (설4 / 설립-01
+            :ARG1 (대5 / 대학원
+                :topic (치 / 치의학))
+            :time (d4 / date-entity :year 1867))
+        :op5 (설5 / 설립-01
+            :ARG1 (대6 / 대학원
+                :topic (경 / 경영학))
+            :time (d5 / date-entity :year 1908))
+        :op6 (설6 / 설립-01
+            :ARG1 (대7 / 대학원
+                :topic (교 / 교육학))
+            :time (d6 / date-entity :year 1920))
+        :op7 (설7 / 설립-01
+            :ARG1 (대8 / 대학원
+                :topic (공 / 공공보건학))
+            :time (d7 / date-entity :year 1922))
+        :op8 (설8 / 설립-01
+            :ARG1 (u / university :wiki - :name (이 / 이름 :op1 "케네디" :op2 "스쿨"))
+            :time (d8 / date-entity :year 1936))))
 
 # ::id snt25.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 하버드 대학교의 메인 캠퍼스(main campus)는 중앙 케임브리지 시에 있는 하버드 야드(Harvard Yard) 중심에 있으며 그 인근에 있는 하버드 스퀘어(Harvard Square)까지 연장되어 있다.
@@ -654,36 +592,16 @@
 (편 / 편-00 :mod (건 / 건너-01))
 
 
-# ::id snt27.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
 # ::snt 메인 캠퍼스에서 찰스 강 건너편에 자리잡고 있는 올스턴 지역까지 도보로 갈 수 있다.
 # ::note
--- FRAMES ----------------------------------------
-건너 : VERBAL_NOUN
-	- cross		(건 / 건너-01 :ARG0 agent :ARG1 barrier)
-자리잡 : DERIVED_VERB_DETECTED
-	- place_oneself		(자 / 자리잡-01 :ARG0 thing_placing_oneself :ARG1 place_at)
-잡 : VERB
-	- catch		(잡 / 잡-01 :ARG0 getter :ARG1 thing_gotten)
-	- determine		(잡 / 잡-02 :ARG0 decider :ARG1 thing_determined :ARG2 attribute_of_arg1)
-가 : VERB
-	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
-	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
-	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
-	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
-	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
-	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"메인 캠퍼스" [OGG_EDUCATION]	->  (메 / 메인캠퍼스)	OR	(u / university :wiki - :name (이 / 이름 :op1 "메인" :op2 "캠퍼스"))
-"올스턴" [LCP_CITY]	->  (올 / 올스턴)	OR	(c / city :wiki "올스턴?" :name (이 / 이름 :op1 "올스턴"))
-"찰스 강" [LCG_RIVER]	->  (찰 / 찰스강)	OR	(r / river :wiki "찰스강" :name (이 / 이름 :op1 "찰스" :op2 "강"))
--- VERBALIZED ------------------------------------
-(건 / 건너-01 :mod (강 / 강-00))
-(캠 / 캠퍼스 :mod (메 / 메인-00))
-(편 / 편-00 :mod (건 / 건너-01))
-
+(가 / 가능-01
+    :ARG1 (가 / 가-01
+        :ARG2 (l / location :wiki - :name (이 / 이름 :op1 "메인" :op2 "캠퍼스"))
+        :ARG3 (c / city-district :wiki - :name (이 / 이름 :op1 "올스턴" :op2 "지역")
+            :location (건 / 건너편
+                :op1 (r / river :wiki "찰스강" :name (이 / 이름 :op1 "찰스" :op2 "강"))))
+        :manner (도 / 도보)))
 
 # ::id snt28.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 하버드 메디컬 스쿨, 하버드 덴털 스쿨, 하버드 공공보건대학원은 보스턴 롱우드 메디컬 앤드 아카데믹 에리어(Longwood Medical and Academic Area)에 위치해 있다.

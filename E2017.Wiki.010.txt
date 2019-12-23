@@ -30,10 +30,10 @@
         :ARG2 (대2 / 대학
             :mod (상 / 상위권)
             :ARG1-of (i / include-91
-                :ARG2 (아 / 아이비리그))
+                :ARG2 (u2 / university :wiki "아이비_리그" :name (이6 / 이름 :op1 "아이비" :op2 "리그")))
             :example (등 / 등
-                :op1 (u2 / university :wiki "컬럼비아_대학교" :name (이6 / 이름 :op1 "컬럼비아"))
-                :op2 (u3 / university :wiki "프린스턴_대학교" :name (이7 / 이름 :op1 "프린스턴"))))))
+                :op1 (u3 / university :wiki "컬럼비아_대학교" :name (이7 / 이름 :op1 "컬럼비아"))
+                :op2 (u4 / university :wiki "프린스턴_대학교" :name (이8 / 이름 :op1 "프린스턴"))))))
 
 # ::id snt2.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 특히 '시카고 학파'라고도 널리 알려진 만큼 경제학 분야는 명문대학들 중에서도 전 세계 1위로 평가받는다.
