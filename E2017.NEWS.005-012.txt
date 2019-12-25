@@ -6,7 +6,7 @@
 		:ARG1 (처 / 처벌-01
 			:mod (다 / 다)
 			:topic (담 / 담합-00
-				:topic (강 / 강 :mod 4))))
+				:topic (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업")))))
     :ARG1 (주2 / 주장-01
 		:ARG1 (a / and
 			:op1 (털 / 털어내-01)
