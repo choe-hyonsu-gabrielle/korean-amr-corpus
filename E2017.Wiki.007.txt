@@ -1,0 +1,899 @@
+# ::id snt0.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 아폴로 계획
+# ::note
+-- FRAMES ----------------------------------------
+list index out of range
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"아폴로" [AF_TRANSPORT]	->  (아 / 아폴로)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 아폴로 계획(-計劃)은 1961년부터 1972년까지 미국항공우주국에 의해 이루어진 일련의 유인 우주 비행 탐사 계획이다.
+# ::note
+-- FRAMES ----------------------------------------
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+우주국 : DERIVED_NON-ENTRY -> (우 / 우주국-00) ?
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+이루어지 : ** UNUSED_OR_NON-ENTRY **
+유인 : VERBAL_NOUN
+	- entice		(유 / 유인-01 :ARG0 agent :ARG1 thing_enticed)
+비행 : VERBAL_NOUN
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1961년부터 1972년까지" [DT_DURATION]	->  :time|duration (1 / 1961년부터1972년까지)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1961))	OR :duration (t / temporal-quantity :quant 1961 :unit (년 / 년))  
+"미국항공우주국" [OGG_SCIENCE]	->  (미 / 미국항공우주국)	OR	(o / organization|research-institute :wiki "미국_항공우주국" :name (이 / 이름 :op1 "미국항공우주국"))
+"아폴로" [AF_TRANSPORT]	->  (아 / 아폴로)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
+"우주" [LC_SPACE]	->  (우 / 우주)	OR	(? / ?planet|star|moon|constellation :wiki "우주" :name (이 / 이름 :op1 "우주"))
+-- VERBALIZED ------------------------------------
+(계 / 계획-01 :mod (탐 / 탐사-00))
+(국 / 국 :mod (우 / 우주-00))
+(비 / 비행-01 :mod (우 / 우주-00))
+(우 / 우주 :mod (항 / 항공-00))
+(우 / 우주-00 :mod (유 / 유인-01))
+(탐 / 탐사-00 :mod (비 / 비행-01))
+
+
+# ::id snt2.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 아폴로 계획의 목표는 1960년대 존 F. 케네디 대통령의 연설에서 언급되었던 "인간을 달에 착륙시킨 후 무사히 지구로 귀환시키는" 것으로 요약할 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+연설 : VERBAL_NOUN
+	- speak		(연 / 연설-01 :ARG0 agent :ARG1 speak_to)
+언급 : VERBAL_NOUN
+	- mention		(언 / 언급-01 :ARG0 speaker :ARG1 entity_being_mentioned)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+착륙 : VERBAL_NOUN
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+귀환 : VERBAL_NOUN
+	- return		(귀 / 귀환-01 :ARG1 entity_in_motion :ARG2 start_point :ARG3 end_point)
+요약하 : DERIVED_NON-ENTRY
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1960년대" [DT_YEAR]	->  :time|duration (1 / 1960년대)	OR	:time (d / date-entity :year 1960)	OR	:duration (t / temporal-quantity :quant 1960 :unit (년 / 년))  
+"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
+"아폴로" [AF_TRANSPORT]	->  (아 / 아폴로)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
+"존 F. 케네디" [PS_NAME]	->  (존 / 존F.케네디)	OR	(p / person :wiki "존_F._케네디" :name (이 / 이름 :op1 "존" :op2 "F." :op3 "케네디"))
+"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt3.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 목표는 1969년 아폴로 11호에 의해 달성되었다.
+# ::note
+-- FRAMES ----------------------------------------
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+달성 : VERBAL_NOUN
+	- attain		(달 / 달성-01 :ARG0 agent :ARG1 entity_attained)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1969년" [DT_YEAR]	->  :time|duration (1 / 1969년)	OR	:time (d / date-entity :year 1969)	OR	:duration (t / temporal-quantity :quant 1969 :unit (년 / 년))  
+"아폴로 11호" [AF_TRANSPORT]	->  (아 / 아폴로11호)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로_11호" :name (이 / 이름 :op1 "아폴로" :op2 "11호"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt4.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그 뒤로 아폴로 계획은 1970년대 초반까지 여섯 차례의 성공적인 달 착륙으로 이어졌다.
+# ::note
+-- FRAMES ----------------------------------------
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+성공 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (성 / 성공적-00) ?
+	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+착륙 : VERBAL_NOUN
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+이어지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1970년대 초반까지" [DT_OTHERS]	->  :time|duration (1 / 1970년대초반까지)	OR	:time (d / date-entity :year 1970)	OR	:duration (t / temporal-quantity :quant 1970 :unit (년 / 년))  
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"아폴로" [AF_TRANSPORT]	->  (아 / 아폴로)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
+"여섯 차례" [QT_COUNT]	->  :quant (여 / 여섯차례)	OR	(c / concept* :quant 여섯 :unit|scale (차 / 차례))
+-- VERBALIZED ------------------------------------
+(적 / 적 :ARG0-of (성 / 성공-01))
+(착 / 착륙-01 :ARG1 (달 / 달-01))
+
+
+# ::id snt5.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 후에 스카이랩 계획이나 미국과 소련의 공동 실험인 아폴로-소유즈 시험 계획에서도 아폴로 계획 당시에 만들어진 장비를 사용하였으며, 이들 탐사도 아폴로 계획의 일부로 다뤄지기도 한다.
+# ::note
+-- FRAMES ----------------------------------------
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+실험 : VERBAL_NOUN
+	- experiment		(실 / 실험-01 :ARG0 agent :ARG1 experimental_subject)
+시험 : VERBAL_NOUN
+	- experiment		(시 / 시험-01 :ARG0 agent :ARG1 experimental_subject)
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+장비 : VERBAL_NOUN
+	- equip		(장 / 장비-01 :ARG0 agent :ARG1 equipment :ARG2 entity_getting_equipment)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+다루 : VERB
+	- cover		(다 / 다루-01 :ARG0 agent :ARG1 thing_covered)
+	- treat		(다 / 다루-02 :ARG0 agent :ARG1 entity_treated :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"소련" [LCP_COUNTRY]	->  (소 / 소련)	OR	(c / country :wiki "소련" :name (이 / 이름 :op1 "소련"))
+"소유즈" [AF_TRANSPORT]	->  (소 / 소유즈)	OR	(v / vehicle|ship|aircraft|... :wiki "소유즈?" :name (이 / 이름 :op1 "소유즈"))
+"스카이랩" [LC_OTHERS]	->  (스 / 스카이랩)	OR	(l / location? :wiki "스카이랩" :name (이 / 이름 :op1 "스카이랩"))
+"아폴로" [AF_TRANSPORT]	->  (아 / 아폴로)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
+-- VERBALIZED ------------------------------------
+(계 / 계획-01 :ARG1 (시 / 시험-01))
+(계 / 계획-01 :mod (스 / 스카이랩-00))
+(당 / 당시-00 :mod (계 / 계획-01))
+(실 / 실험-01 :mod (공 / 공동-00))
+
+
+# ::id snt6.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 여러 번의 성공도 있었지만, 두 차례의 큰 사고도 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+성공 : VERBAL_NOUN
+	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
+있 : ** UNUSED_OR_NON-ENTRY **
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"두 차례" [QT_COUNT]	->  :quant (두 / 두차례)	OR	(c / concept* :quant 두 :unit|scale (차 / 차례))
+"여러 번" [QT_COUNT]	->  :quant (여 / 여러번)	OR	(c / concept* :quant 여러 :unit|scale (번 / 번))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt7.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1967년 1월 27일에는 지상 훈련 중이던 아폴로 1호가 화재로 인해 사령선이 전소되고 세 명의 우주비행사가 사망하였다.
+# ::note
+-- FRAMES ----------------------------------------
+훈련 : VERBAL_NOUN
+	- train		(훈 / 훈련-01 :ARG0 trainer :ARG1 skill :ARG2 trainee)
+인하 : VERB
+	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
+	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
+사령선 : DERIVED_NON-ENTRY -> (사 / 사령선-00) ?
+전소되 : DERIVED_NON-ENTRY
+비행 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (비 / 비행사-00) ?
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+사망 : VERBAL_NOUN
+	- die		(사 / 사망-01 :ARG0 causer :ARG1 entity_dying)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1967년 1월 27일" [DT_OTHERS]	->  :time|duration (1 / 1967년1월27일)	OR	:time (d / date-entity :year 1967 :month 1 :day 27)	OR	:duration (t / temporal-quantity :quant 1967 :unit (년 / 년))  (t / temporal-quantity :quant 1 :unit (월 / 월))  (t / temporal-quantity :quant 27 :unit (일 / 일))  
+"사령선" [AF_TRANSPORT]	->  (사 / 사령선)	OR	(v / vehicle|ship|aircraft|... :wiki - :name (이 / 이름 :op1 "사령선"))
+"세 명" [QT_MAN_COUNT]	->  :quant (세 / 세명)	OR	(c / concept* :quant 세 :unit|scale (명 / 명))
+"아폴로 1호" [AF_TRANSPORT]	->  (아 / 아폴로1호)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로_1호" :name (이 / 이름 :op1 "아폴로" :op2 "1호"))
+"우주비행사" [CV_OCCUPATION]	->  :mod (우 / 우주비행사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (우 / 우주비행사))
+-- VERBALIZED ------------------------------------
+(비 / 비행-01 :mod (우 / 우주-00))
+(사 / 사 :ARG0-of (비 / 비행-01))
+(선 / 선 :mod (사 / 사령-00))
+(훈 / 훈련-01 :mod (지 / 지상-00))
+
+
+# ::id snt8.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1970년 4월 13일에는 달로 가고 있던 아폴로 13호가 장비의 고장으로 달 궤도만을 선회하고는 간신히 지구로 귀환했다.
+# ::note
+-- FRAMES ----------------------------------------
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+가 : VERB
+	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
+	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
+	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
+	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
+	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
+	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
+장비 : VERBAL_NOUN
+	- equip		(장 / 장비-01 :ARG0 agent :ARG1 equipment :ARG2 entity_getting_equipment)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+선회 : VERBAL_NOUN
+	- turn		(선 / 선회-01 :ARG0 turner :ARG1 thing_turning :ARG2 direction)
+귀환 : VERBAL_NOUN
+	- return		(귀 / 귀환-01 :ARG1 entity_in_motion :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1970년 4월 13일" [DT_OTHERS]	->  :time|duration (1 / 1970년4월13일)	OR	:time (d / date-entity :year 1970 :month 4 :day 13)	OR	:duration (t / temporal-quantity :quant 1970 :unit (년 / 년))  (t / temporal-quantity :quant 4 :unit (월 / 월))  (t / temporal-quantity :quant 13 :unit (일 / 일))  
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"아폴로 13호" [TMI_HW]	->  (아 / 아폴로13호)	OR	(p / product? :wiki "아폴로_13호" :name (이 / 이름 :op1 "아폴로" :op2 "13호"))
+"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
+-- VERBALIZED ------------------------------------
+(궤 / 궤도-00 :mod (달 / 달-01))
+
+
+# ::id snt9.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 아폴로 계획은 드와이트 아이젠하워의 재임시절 추진되었던 유인 우주 비행 계획인 머큐리 계획을 기반으로 한 것이었다.
+# ::note
+-- FRAMES ----------------------------------------
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+추진 : VERBAL_NOUN
+	- drive_forward		(추 / 추진-01 :ARG0 agent :ARG1 thing_driven_forward)
+유인 : VERBAL_NOUN
+	- entice		(유 / 유인-01 :ARG0 agent :ARG1 thing_enticed)
+비행 : VERBAL_NOUN
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"드와이트 아이젠하워" [PS_NAME]	->  (드 / 드와이트아이젠하워)	OR	(p / person :wiki "드와이트_D._아이젠하워" :name (이 / 이름 :op1 "드와이트" :op2 "아이젠하워"))
+"아폴로" [AF_TRANSPORT]	->  (아 / 아폴로)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
+"우주" [LC_SPACE]	->  (우 / 우주)	OR	(? / ?planet|star|moon|constellation :wiki "우주" :name (이 / 이름 :op1 "우주"))
+-- VERBALIZED ------------------------------------
+(계 / 계획-01 :ARG1 (비 / 비행-01))
+(비 / 비행-01 :mod (우 / 우주-00))
+(시 / 시절 :mod (재 / 재임-00))
+(우 / 우주-00 :mod (유 / 유인-01))
+(추 / 추진-01 :mod (시 / 시절-00))
+
+
+# ::id snt10.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 머큐리 계획의 목표는 한 명의 우주비행사가 우주선에 탑승하여 지구 궤도 비행을 하는 것이었으나 아폴로 계획은 세명의 우주비행사가 우주선에 탑승하여 달에 착륙하는 것을 목표로 하였다.
+# ::note
+-- FRAMES ----------------------------------------
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+비행 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (비 / 비행사-00) ?
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+우주선 : DERIVED_NON-ENTRY -> (우 / 우주선-00) ?
+탑승 : VERBAL_NOUN
+	- board		(탑 / 탑승-01 :ARG0 passenger :ARG1 vehicle)
+비행 : VERBAL_NOUN
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+비행 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (비 / 비행사-00) ?
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+우주선 : DERIVED_NON-ENTRY -> (우 / 우주선-00) ?
+탑승 : VERBAL_NOUN
+	- board		(탑 / 탑승-01 :ARG0 passenger :ARG1 vehicle)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+착륙 : VERBAL_NOUN
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"머큐리" [AF_TRANSPORT]	->  (머 / 머큐리)	OR	(v / vehicle|ship|aircraft|... :wiki "머큐리?" :name (이 / 이름 :op1 "머큐리"))
+"세명" [QT_MAN_COUNT]	->  :quant (세 / 세명)	OR	(c / concept* :quant - :unit|scale (세 / 세명))
+"아폴로" [AF_TRANSPORT]	->  (아 / 아폴로)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
+"우주비행사" [CV_OCCUPATION]	->  :mod (우 / 우주비행사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (우 / 우주비행사))
+"우주비행사" [CV_OCCUPATION]	->  :mod (우 / 우주비행사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (우 / 우주비행사))
+"우주선" [AF_TRANSPORT]	->  (우 / 우주선)	OR	(v / vehicle|ship|aircraft|... :wiki "우주선" :name (이 / 이름 :op1 "우주선"))
+"우주선" [AF_TRANSPORT]	->  (우 / 우주선)	OR	(v / vehicle|ship|aircraft|... :wiki "우주선" :name (이 / 이름 :op1 "우주선"))
+"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
+"한 명" [QT_MAN_COUNT]	->  :quant (한 / 한명)	OR	(c / concept* :quant 한 :unit|scale (명 / 명))
+-- VERBALIZED ------------------------------------
+(궤 / 궤도 :mod (지 / 지구-00))
+(비 / 비행-01 :mod (궤 / 궤도-00))
+(비 / 비행-01 :mod (우 / 우주-00))
+(비 / 비행-01 :mod (우 / 우주-00))
+(사 / 사 :ARG0-of (비 / 비행-01))
+(사 / 사 :ARG0-of (비 / 비행-01))
+(선 / 선 :mod (우 / 우주-00))
+(선 / 선 :mod (우 / 우주-00))
+
+
+# ::id snt11.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 아폴로라는 이름은 미항공우주국의 에이브 실버스테인이 붙인 것으로 고대 그리스의 신인 아폴론의 이름을 딴 것이다.
+# ::note
+-- FRAMES ----------------------------------------
+우주국 : DERIVED_NON-ENTRY -> (우 / 우주국-00) ?
+붙이 : REDUCED_VERB_DETECTED
+	- put,_adhere,_light,_name		(붙 / 붙-01 :ARG0 agent :ARG1 thing_put :ARG2 put_on)
+	- spread		(붙 / 붙-02 :ARG1 flame :ARG2 direction)
+고대 : VERBAL_NOUN
+	- long_for		(고 / 고대-01 :ARG0 wanter :ARG1 thing_wanted)
+따 : VERB
+	- obtain		(따 / 따-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 received_from)
+	- quote		(따 / 따-01 :ARG0 quoter :ARG1 thing_quoted :ARG2 quoted_from)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"고대 그리스" [DT_DYNASTY]	->  :time|duration (고 / 고대그리스)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"미항공우주국" [OGG_SCIENCE]	->  (미 / 미항공우주국)	OR	(o / organization|research-institute :wiki "미국_항공우주국" :name (이 / 이름 :op1 "미항공우주국"))
+"신" [CV_POSITION]	->  :mod (신 / 신)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신))
+"아폴로" [PS_NAME]	->  (아 / 아폴로)	OR	(p / person :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
+"아폴론" [PS_NAME]	->  (아 / 아폴론)	OR	(p / person :wiki "아폴론" :name (이 / 이름 :op1 "아폴론"))
+"에이브 실버스테인" [PS_NAME]	->  (에 / 에이브실버스테인)	OR	(p / person :wiki - :name (이 / 이름 :op1 "에이브" :op2 "실버스테인"))
+-- VERBALIZED ------------------------------------
+(국 / 국 :mod (우 / 우주-00))
+(우 / 우주 :mod (항 / 항공-00))
+
+
+# ::id snt12.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 후일 실버스테인은 "내 아이의 이름을 짓는 것처럼 우주선의 이름을 붙였다."고 술회하였다.
+# ::note
+-- FRAMES ----------------------------------------
+짓 : VERB
+	- construct		(짓 / 짓-01 :ARG0 agent :ARG1 construction)
+우주선 : DERIVED_NON-ENTRY -> (우 / 우주선-00) ?
+붙이 : REDUCED_VERB_DETECTED
+	- put,_adhere,_light,_name		(붙 / 붙-01 :ARG0 agent :ARG1 thing_put :ARG2 put_on)
+	- spread		(붙 / 붙-02 :ARG1 flame :ARG2 direction)
+술회하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"실버스테인" [PS_NAME]	->  (실 / 실버스테인)	OR	(p / person :wiki - :name (이 / 이름 :op1 "실버스테인"))
+"우주선" [AF_TRANSPORT]	->  (우 / 우주선)	OR	(v / vehicle|ship|aircraft|... :wiki "우주선" :name (이 / 이름 :op1 "우주선"))
+-- VERBALIZED ------------------------------------
+(선 / 선 :mod (우 / 우주-00))
+
+
+# ::id snt13.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1960년 11월 존 F 케네디가 미국의 신임 대통령으로 당선되었다.
+# ::note
+-- FRAMES ----------------------------------------
+당선 : VERBAL_NOUN
+	- elect		(당 / 당선-01 :ARG0 voters :ARG1 candidate :ARG2 office_or_position)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1960년 11월" [DT_OTHERS]	->  :time|duration (1 / 1960년11월)	OR	:time (d / date-entity :year 1960 :month 11)	OR	:duration (t / temporal-quantity :quant 1960 :unit (년 / 년))  (t / temporal-quantity :quant 11 :unit (월 / 월))  
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"신임 대통령" [CV_POSITION]	->  :mod (신 / 신임대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신임 대통령))
+"존 F 케네디" [PS_NAME]	->  (존 / 존F케네디)	OR	(p / person :wiki - :name (이 / 이름 :op1 "존" :op2 "F" :op3 "케네디"))
+-- VERBALIZED ------------------------------------
+(대 / 대통령 :mod (신 / 신임-00))
+
+
+# ::id snt14.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 케네디는 우주 탐사와 미사일 방어에서 소비에트 연방에 대한 우위를 확보하여야 한다고 공약하였으나, 그의 정책은 우주 탐사보다는 미사일 경쟁에 치중되어 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+방어 : VERBAL_NOUN
+	- defend		(방 / 방어-01 :ARG0 defender :ARG1 entity_defended)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+공약 : VERBAL_NOUN
+	- pledge		(공 / 공약-01 :ARG0 agent :ARG1 thing_or_action_promised :ARG2 promised_to)
+경쟁 : VERBAL_NOUN
+	- compete		(경 / 경쟁-01 :ARGA causer :ARG0 competitor :ARG1 opponent)
+치중되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"미사일" [AF_WEAPON]	->  (미 / 미사일)	OR	(w / weapon* :wiki "유도탄" :name (이 / 이름 :op1 "미사일"))
+"미사일" [AF_WEAPON]	->  (미 / 미사일)	OR	(w / weapon* :wiki "유도탄" :name (이 / 이름 :op1 "미사일"))
+"소비에트 연방" [LCP_COUNTRY]	->  (소 / 소비에트연방)	OR	(c / country :wiki "소련" :name (이 / 이름 :op1 "소비에트" :op2 "연방"))
+"우주" [LC_SPACE]	->  (우 / 우주)	OR	(? / ?planet|star|moon|constellation :wiki "우주" :name (이 / 이름 :op1 "우주"))
+"우주" [LC_SPACE]	->  (우 / 우주)	OR	(? / ?planet|star|moon|constellation :wiki "우주" :name (이 / 이름 :op1 "우주"))
+"케네디" [PS_NAME]	->  (케 / 케네디)	OR	(p / person :wiki "케네디?" :name (이 / 이름 :op1 "케네디"))
+-- VERBALIZED ------------------------------------
+(경 / 경쟁-01 :mod (미 / 미사일-00))
+(방 / 방어-01 :mod (미 / 미사일-00))
+(탐 / 탐사 :mod (우 / 우주-00))
+(탐 / 탐사 :mod (우 / 우주-00))
+
+
+# ::id snt15.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1961년 4월 12일, 유리 가가린이 최초의 유인 우주 비행에 성공하자 미국은 이를 가능하게 한 소비에트의 기술력에 두려움을 느꼈다.
+# ::note
+-- FRAMES ----------------------------------------
+유인 : VERBAL_NOUN
+	- entice		(유 / 유인-01 :ARG0 agent :ARG1 thing_enticed)
+비행 : VERBAL_NOUN
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+성공 : VERBAL_NOUN
+	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
+가능 : VERBAL_NOUN
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+기술 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기술력-00) ?
+	- describe		(기 / 기술-01 :ARG0 describer :ARG1 thing_described)
+느끼 : VERB
+	- feel		(느 / 느끼-01 :ARG0 feeler :ARG1 thing_felt)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1961년 4월 12일" [DT_OTHERS]	->  :time|duration (1 / 1961년4월12일)	OR	:time (d / date-entity :year 1961 :month 4 :day 12)	OR	:duration (t / temporal-quantity :quant 1961 :unit (년 / 년))  (t / temporal-quantity :quant 4 :unit (월 / 월))  (t / temporal-quantity :quant 12 :unit (일 / 일))  
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"소비에트" [LCP_COUNTRY]	->  (소 / 소비에트)	OR	(c / country :wiki "소비에트" :name (이 / 이름 :op1 "소비에트"))
+"우주" [LC_SPACE]	->  (우 / 우주)	OR	(? / ?planet|star|moon|constellation :wiki "우주" :name (이 / 이름 :op1 "우주"))
+"유리 가가린" [PS_NAME]	->  (유 / 유리가가린)	OR	(p / person :wiki "유리_가가린" :name (이 / 이름 :op1 "유리" :op2 "가가린"))
+-- VERBALIZED ------------------------------------
+(력 / 력 :ARG0-of (기 / 기술-01))
+(비 / 비행-01 :mod (우 / 우주-00))
+(우 / 우주-00 :mod (유 / 유인-01))
+
+
+# ::id snt16.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 유리 가가린의 우주 비행이 이루어진 바로 다음날 미국은 우주 과학 위원회를 소집하고 소련과의 경쟁에서 우위를 차지할 방안을 모색했다.
+# ::note
+-- FRAMES ----------------------------------------
+비행 : VERBAL_NOUN
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+이루어지 : ** UNUSED_OR_NON-ENTRY **
+위원회 : DERIVED_NON-ENTRY -> (위 / 위원회-00) ?
+소집 : VERBAL_NOUN
+	- convene		(소 / 소집-01 :ARG0 agent :ARG1 thing_convened)
+경쟁 : VERBAL_NOUN
+	- compete		(경 / 경쟁-01 :ARGA causer :ARG0 competitor :ARG1 opponent)
+차지 : VERBAL_NOUN
+	- occupy		(차 / 차지-01 :ARG0 agent :ARG1 thing_occupied)
+모색 : VERBAL_NOUN
+	- explore		(모 / 모색-01 :ARG0 explorer :ARG1 thing_explored)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"다음날" [DT_DAY]	->  :time|duration (다 / 다음날)	OR	:time (d / date-entity)	OR	:duration 
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"소련" [LCP_COUNTRY]	->  (소 / 소련)	OR	(c / country :wiki "소련" :name (이 / 이름 :op1 "소련"))
+"우주 과학 위원회" [OGG_SCIENCE]	->  (우 / 우주과학위원회)	OR	(o / organization|research-institute :wiki - :name (이 / 이름 :op1 "우주" :op2 "과학" :op3 "위원회"))
+"우주" [LC_SPACE]	->  (우 / 우주)	OR	(? / ?planet|star|moon|constellation :wiki "우주" :name (이 / 이름 :op1 "우주"))
+"유리 가가린" [PS_NAME]	->  (유 / 유리가가린)	OR	(p / person :wiki "유리_가가린" :name (이 / 이름 :op1 "유리" :op2 "가가린"))
+-- VERBALIZED ------------------------------------
+(과 / 과학 :mod (우 / 우주-00))
+(비 / 비행-01 :mod (우 / 우주-00))
+(위 / 위원 :mod (과 / 과학-00))
+(회 / 회 :mod (위 / 위원-00))
+
+
+# ::id snt17.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1961년 4월 20일 케네디는 부통령 린든 존슨에게 현재의 미국 우주 계획의 상태를 검토할 것을 요구하는 메모를 전달하였다.
+# ::note
+-- FRAMES ----------------------------------------
+부통령 : DERIVED_NON-ENTRY -> (부 / 부통령-00) ?
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+검토 : VERBAL_NOUN
+	- check		(검 / 검토-01 :ARG0 checker :ARG1 thing_checked)
+요구 : VERBAL_NOUN
+	- request		(요 / 요구-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
+전달하 : REDUCED_VERB_DETECTED
+	- transmit		(전 / 전달-01 :ARG0 sender :ARG1 thing_sent :ARG2 sent_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1961년 4월 20일" [DT_OTHERS]	->  :time|duration (1 / 1961년4월20일)	OR	:time (d / date-entity :year 1961 :month 4 :day 20)	OR	:duration (t / temporal-quantity :quant 1961 :unit (년 / 년))  (t / temporal-quantity :quant 4 :unit (월 / 월))  (t / temporal-quantity :quant 20 :unit (일 / 일))  
+"린든 존슨" [PS_NAME]	->  (린 / 린든존슨)	OR	(p / person :wiki "린든_B._존슨" :name (이 / 이름 :op1 "린든" :op2 "존슨"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"부통령" [CV_POSITION]	->  :mod (부 / 부통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (부 / 부통령))
+"우주" [LC_SPACE]	->  (우 / 우주)	OR	(? / ?planet|star|moon|constellation :wiki "우주" :name (이 / 이름 :op1 "우주"))
+"케네디" [PS_NAME]	->  (케 / 케네디)	OR	(p / person :wiki "케네디?" :name (이 / 이름 :op1 "케네디"))
+-- VERBALIZED ------------------------------------
+(계 / 계획-01 :mod (우 / 우주-00))
+
+
+# ::id snt18.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 린든 존슨은 케네디의 이러한 요청에 대해 "1966년에서 1967년 사이에 달 착륙을 성공시키는 것이 소비에트에 대해 우주 경쟁에서 우위를 차지할 수 있는 방안이 될 것"이라 답했다.
+# ::note
+-- FRAMES ----------------------------------------
+이러하 : ** UNUSED_OR_NON-ENTRY **
+요청 : VERBAL_NOUN
+	- request		(요 / 요청-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+착륙 : VERBAL_NOUN
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+성공 : VERBAL_NOUN
+	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+경쟁 : VERBAL_NOUN
+	- compete		(경 / 경쟁-01 :ARGA causer :ARG0 competitor :ARG1 opponent)
+차지 : VERBAL_NOUN
+	- occupy		(차 / 차지-01 :ARG0 agent :ARG1 thing_occupied)
+있 : ** UNUSED_OR_NON-ENTRY **
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+답하 : DERIVED_VERB_DETECTED
+	- answer		(답 / 답하-01 :ARG0 agent :ARG1 utterance :ARG2 in_response_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1966년" [DT_YEAR]	->  :time|duration (1 / 1966년)	OR	:time (d / date-entity :year 1966)	OR	:duration (t / temporal-quantity :quant 1966 :unit (년 / 년))  
+"1967년" [DT_YEAR]	->  :time|duration (1 / 1967년)	OR	:time (d / date-entity :year 1967)	OR	:duration (t / temporal-quantity :quant 1967 :unit (년 / 년))  
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"린든 존슨" [PS_NAME]	->  (린 / 린든존슨)	OR	(p / person :wiki "린든_B._존슨" :name (이 / 이름 :op1 "린든" :op2 "존슨"))
+"소비에트" [LCP_COUNTRY]	->  (소 / 소비에트)	OR	(c / country :wiki "소비에트" :name (이 / 이름 :op1 "소비에트"))
+"우주" [LC_SPACE]	->  (우 / 우주)	OR	(? / ?planet|star|moon|constellation :wiki "우주" :name (이 / 이름 :op1 "우주"))
+"케네디" [PS_NAME]	->  (케 / 케네디)	OR	(p / person :wiki "케네디?" :name (이 / 이름 :op1 "케네디"))
+-- VERBALIZED ------------------------------------
+(경 / 경쟁-01 :mod (우 / 우주-00))
+(착 / 착륙-01 :ARG1 (달 / 달-01))
+
+
+# ::id snt19.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1961년 5월 25일 케네디는 미국 의회의 양원이 모두 모인 자리에서 아폴로 계획을 선포한다.
+# ::note
+-- FRAMES ----------------------------------------
+모이 : ** UNUSED_OR_NON-ENTRY **
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+선포 : VERBAL_NOUN
+	- proclaim		(선 / 선포-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1961년 5월 25일" [DT_OTHERS]	->  :time|duration (1 / 1961년5월25일)	OR	:time (d / date-entity :year 1961 :month 5 :day 25)	OR	:duration (t / temporal-quantity :quant 1961 :unit (년 / 년))  (t / temporal-quantity :quant 5 :unit (월 / 월))  (t / temporal-quantity :quant 25 :unit (일 / 일))  
+"미국 의회" [OGG_POLITICS]	->  (미 / 미국의회)	OR	(g / government-organization :wiki "미국_의회" :name (이 / 이름 :op1 "미국" :op2 "의회"))
+"케네디" [PS_NAME]	->  (케 / 케네디)	OR	(p / person :wiki "케네디?" :name (이 / 이름 :op1 "케네디"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt20.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 케네디가 이러한 선언을 할 당시 미국은 단지 한 명의 우주인이 지구 궤도 선회에 성공했을 뿐이었다.
+# ::note
+-- FRAMES ----------------------------------------
+이러하 : ** UNUSED_OR_NON-ENTRY **
+선언 : VERBAL_NOUN
+	- declare		(선 / 선언-01 :ARG0 announcer :ARG1 utterance :ARG2 hearer)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+선회 : VERBAL_NOUN
+	- turn		(선 / 선회-01 :ARG0 turner :ARG1 thing_turning :ARG2 direction)
+성공 : VERBAL_NOUN
+	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"우주인" [CV_POSITION]	->  :mod (우 / 우주인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (우 / 우주인))
+"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
+"케네디" [PS_NAME]	->  (케 / 케네디)	OR	(p / person :wiki "케네디?" :name (이 / 이름 :op1 "케네디"))
+"한 명" [QT_MAN_COUNT]	->  :quant (한 / 한명)	OR	(c / concept* :quant 한 :unit|scale (명 / 명))
+-- VERBALIZED ------------------------------------
+(궤 / 궤도 :mod (지 / 지구-00))
+(선 / 선회-01 :mod (궤 / 궤도-00))
+
+
+# ::id snt21.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 심지어 미항공우주국 내에서도 케네디의 이러한 선언이 달성될 수 있을지 의심하였다.
+# ::note
+-- FRAMES ----------------------------------------
+이러하 : ** UNUSED_OR_NON-ENTRY **
+선언 : VERBAL_NOUN
+	- declare		(선 / 선언-01 :ARG0 announcer :ARG1 utterance :ARG2 hearer)
+달성 : VERBAL_NOUN
+	- attain		(달 / 달성-01 :ARG0 agent :ARG1 entity_attained)
+있 : ** UNUSED_OR_NON-ENTRY **
+의심 : VERBAL_NOUN
+	- doubt		(의 / 의심-01 :ARG0 disbelief :ARG1 disbeliever)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"미항공우주국" [OGG_SCIENCE]	->  (미 / 미항공우주국)	OR	(o / organization|research-institute :wiki "미국_항공우주국" :name (이 / 이름 :op1 "미항공우주국"))
+"케네디" [PS_NAME]	->  (케 / 케네디)	OR	(p / person :wiki "케네디?" :name (이 / 이름 :op1 "케네디"))
+-- VERBALIZED ------------------------------------
+(우 / 우주국 :mod (항 / 항공-00))
+
+
+# ::id snt22.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 케네디가 제안한 목표와 같이 지구에서 달까지 무사히 왕복하기위해 아폴로 계획은 여러가지 방안이 제시되었다.
+# ::note
+-- FRAMES ----------------------------------------
+제안 : VERBAL_NOUN
+	- suggest		(제 / 제안-01 :ARG0 agent :ARG1 thing_suggested :ARG2 suggest_to)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+왕복하 : DERIVED_NON-ENTRY
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+제시 : VERBAL_NOUN
+	- present		(제 / 제시-01 :ARG0 agent :ARG1 thing_presented :ARG2 present_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
+"케네디" [PS_NAME]	->  (케 / 케네디)	OR	(p / person :wiki "케네디?" :name (이 / 이름 :op1 "케네디"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt23.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 직접 도달: 아폴로 계획은 하나의 우주선으로 달까지 직접 도달하여 착륙한 후, 다시 지구로 귀환하여야 한다. 이러한 임무를 달성하기 위해서는 매우 강력한 추진체가 필요하였고 노바 로켓을 사용하게 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+도달 : VERBAL_NOUN
+	- attain		(도 / 도달-01 :ARG1 reacher :ARG2 entity_attained)
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+우주선 : DERIVED_NON-ENTRY -> (우 / 우주선-00) ?
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+도달하 : REDUCED_VERB_DETECTED
+	- attain		(도 / 도달-01 :ARG1 reacher :ARG2 entity_attained)
+착륙 : VERBAL_NOUN
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+귀환 : VERBAL_NOUN
+	- return		(귀 / 귀환-01 :ARG1 entity_in_motion :ARG2 start_point :ARG3 end_point)
+이러하 : ** UNUSED_OR_NON-ENTRY **
+달성 : VERBAL_NOUN
+	- attain		(달 / 달성-01 :ARG0 agent :ARG1 entity_attained)
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+강력하 : VERB
+	- strong		(강 / 강력하-01 :ARG1 thing_being_strong)
+추진 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (추 / 추진체-00) ?
+	- drive_forward		(추 / 추진-01 :ARG0 agent :ARG1 thing_driven_forward)
+필요 : VERBAL_NOUN
+	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"노바 로켓" [TMI_HW]	->  (노 / 노바로켓)	OR	(p / product? :wiki - :name (이 / 이름 :op1 "노바" :op2 "로켓"))
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"아폴로" [AF_TRANSPORT]	->  (아 / 아폴로)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
+"우주선" [AF_TRANSPORT]	->  (우 / 우주선)	OR	(v / vehicle|ship|aircraft|... :wiki "우주선" :name (이 / 이름 :op1 "우주선"))
+"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
+"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
+-- VERBALIZED ------------------------------------
+(로 / 로켓 :mod (노 / 노바-00))
+(선 / 선 :mod (우 / 우주-00))
+(체 / 체 :ARG0-of (추 / 추진-01))
+
+
+# ::id snt24.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 지구 궤도 랑데뷰: 달 착륙에 필요한 착륙선과 같은 부품들을 다수의 로켓을 이용하여 지구 궤도에 올린 후 하나로 조립하여 달로 향하는 방식이 제안되었다.
+# ::note
+-- FRAMES ----------------------------------------
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+착륙 : VERBAL_NOUN
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+필요 : VERBAL_NOUN
+	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
+착륙 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (착 / 착륙선-00) ?
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+부품들 : DERIVED_NON-ENTRY -> (부 / 부품들-00) ?
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+올리 : ** UNUSED_OR_NON-ENTRY **
+조립 : VERBAL_NOUN
+	- assemble		(조 / 조립-01 :ARG0 agent :ARG1 thing_assembled)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+향하 : VERB
+	- towards		(향 / 향하-01 :ARG1 theme :ARG2 towards_what)
+제안 : VERBAL_NOUN
+	- suggest		(제 / 제안-01 :ARG0 agent :ARG1 thing_suggested :ARG2 suggest_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
+"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
+"착륙선" [AF_TRANSPORT]	->  (착 / 착륙선)	OR	(v / vehicle|ship|aircraft|... :wiki "착륙선" :name (이 / 이름 :op1 "착륙선"))
+"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
+-- VERBALIZED ------------------------------------
+(궤 / 궤도 :mod (지 / 지구-00))
+(궤 / 궤도 :mod (지 / 지구-00))
+(들 / 들 :mod (부 / 부품-00))
+(랑 / 랑데뷰 :mod (궤 / 궤도-00))
+(선 / 선 :ARG0-of (착 / 착륙-01))
+(착 / 착륙-01 :ARG1 (달 / 달-01))
+
+
+# ::id snt25.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 달 표면 랑데뷰: 먼저 연료를 채운 무인 우주선을 달로 보내고 유인 우주선을 뒤따라 보내 달 착륙을 한 후, 임무를 마치고 무인 우주선의 연료를 사용하여 귀환하는 방식이다.
+# ::note
+-- FRAMES ----------------------------------------
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+채우 : ** UNUSED_OR_NON-ENTRY **
+우주선 : DERIVED_NON-ENTRY -> (우 / 우주선-00) ?
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+보내 : VERB
+	- send		(보 / 보내-01 :ARG0 sender :ARG1 sent :ARG2 sent_to)
+	- spend		(보 / 보내-02 :ARG0 agent :ARG1 time)
+유인 : VERBAL_NOUN
+	- entice		(유 / 유인-01 :ARG0 agent :ARG1 thing_enticed)
+우주선 : DERIVED_NON-ENTRY -> (우 / 우주선-00) ?
+뒤따르 : ** UNUSED_OR_NON-ENTRY **
+보내 : VERB
+	- send		(보 / 보내-01 :ARG0 sender :ARG1 sent :ARG2 sent_to)
+	- spend		(보 / 보내-02 :ARG0 agent :ARG1 time)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+착륙 : VERBAL_NOUN
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+마치 : VERB
+	- finish		(마 / 마치-01 :ARG0 agent :ARG1 thing_finishing)
+우주선 : DERIVED_NON-ENTRY -> (우 / 우주선-00) ?
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+귀환 : VERBAL_NOUN
+	- return		(귀 / 귀환-01 :ARG1 entity_in_motion :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"무인 우주선" [AF_TRANSPORT]	->  (무 / 무인우주선)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_우주선" :name (이 / 이름 :op1 "무인" :op2 "우주선"))
+"무인 우주선" [AF_TRANSPORT]	->  (무 / 무인우주선)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_우주선" :name (이 / 이름 :op1 "무인" :op2 "우주선"))
+"유인 우주선" [AF_TRANSPORT]	->  (유 / 유인우주선)	OR	(v / vehicle|ship|aircraft|... :wiki - :name (이 / 이름 :op1 "유인" :op2 "우주선"))
+-- VERBALIZED ------------------------------------
+(랑 / 랑데뷰 :mod (표 / 표면-00))
+(선 / 선 :mod (우 / 우주-00))
+(선 / 선 :mod (우 / 우주-00))
+(선 / 선 :mod (우 / 우주-00))
+(우 / 우주 :mod (무 / 무인-00))
+(우 / 우주 :mod (무 / 무인-00))
+(우 / 우주-00 :mod (유 / 유인-01))
+(착 / 착륙-01 :ARG1 (달 / 달-01))
+(표 / 표면-00 :mod (달 / 달-01))
+
+
+# ::id snt26.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 달 궤도 랑데뷰: 하나의 로켓에 사령선과 착륙선을 모두 실어 이륙한 뒤 지구 궤도에서 달 착륙선과 사령선을 도킹시키고 달로 향한 후, 달 착륙선을 이용하여 달에 착륙한 다음, 임무를 마친 후 달 궤도에서 사령선과 다시 도킹하여 귀환하는 방안이다.
+# ::note
+-- FRAMES ----------------------------------------
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+사령선 : DERIVED_NON-ENTRY -> (사 / 사령선-00) ?
+착륙 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (착 / 착륙선-00) ?
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+싣 : VERB
+	- load		(싣 / 싣-01 :ARG0 agent :ARG1 theme :ARG2 location)
+	- print		(싣 / 싣-02 :ARG0 agent :ARG1 document :ARG2 printed_in)
+이륙 : VERBAL_NOUN
+	- take_off		(이 / 이륙-01 :ARG1 thing_taking_off :ARG2 location)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+착륙 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (착 / 착륙선-00) ?
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+사령선 : DERIVED_NON-ENTRY -> (사 / 사령선-00) ?
+도킹시키 : DERIVED_NON-ENTRY
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+향하 : VERB
+	- towards		(향 / 향하-01 :ARG1 theme :ARG2 towards_what)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+착륙 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (착 / 착륙선-00) ?
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+착륙 : VERBAL_NOUN
+	- land		(착 / 착륙-01 :ARG0 agent :ARG1 thing_landed :ARG2 location)
+마치 : VERB
+	- finish		(마 / 마치-01 :ARG0 agent :ARG1 thing_finishing)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+사령선 : DERIVED_NON-ENTRY -> (사 / 사령선-00) ?
+도킹하 : DERIVED_NON-ENTRY
+귀환 : VERBAL_NOUN
+	- return		(귀 / 귀환-01 :ARG1 entity_in_motion :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"사령선" [AF_TRANSPORT]	->  (사 / 사령선)	OR	(v / vehicle|ship|aircraft|... :wiki - :name (이 / 이름 :op1 "사령선"))
+"사령선" [CV_POSITION]	->  :mod (사 / 사령선)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사령선))
+"사령선" [CV_POSITION]	->  :mod (사 / 사령선)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사령선))
+"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
+"착륙선" [AF_TRANSPORT]	->  (착 / 착륙선)	OR	(v / vehicle|ship|aircraft|... :wiki "착륙선" :name (이 / 이름 :op1 "착륙선"))
+"착륙선" [AF_TRANSPORT]	->  (착 / 착륙선)	OR	(v / vehicle|ship|aircraft|... :wiki "착륙선" :name (이 / 이름 :op1 "착륙선"))
+"착륙선" [AF_TRANSPORT]	->  (착 / 착륙선)	OR	(v / vehicle|ship|aircraft|... :wiki "착륙선" :name (이 / 이름 :op1 "착륙선"))
+"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
+-- VERBALIZED ------------------------------------
+(궤 / 궤도 :mod (지 / 지구-00))
+(궤 / 궤도-00 :mod (달 / 달-01))
+(궤 / 궤도-00 :mod (달 / 달-01))
+(달 / 달-01 :mod (후 / 후-00))
+(랑 / 랑데뷰 :mod (궤 / 궤도-00))
+(선 / 선 :ARG0-of (착 / 착륙-01))
+(선 / 선 :ARG0-of (착 / 착륙-01))
+(선 / 선 :ARG0-of (착 / 착륙-01))
+(선 / 선 :mod (사 / 사령-00))
+(선 / 선 :mod (사 / 사령-00))
+(선 / 선 :mod (사 / 사령-00))
+(지 / 지구 :mod (뒤 / 뒤-00))
+(착 / 착륙-01 :ARG1 (달 / 달-01))
+(착 / 착륙-01 :ARG1 (달 / 달-01))
+
+
+# ::id snt27.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 실제 아폴로 계획은 직접 도달과 달 궤도 랑데뷰를 사용하였다.
+# ::note
+-- FRAMES ----------------------------------------
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+도달 : VERBAL_NOUN
+	- attain		(도 / 도달-01 :ARG1 reacher :ARG2 entity_attained)
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"달" [LC_SPACE]	->  (달 / 달)	OR	(? / ?planet|star|moon|constellation :wiki "달" :name (이 / 이름 :op1 "달"))
+"아폴로" [AF_TRANSPORT]	->  (아 / 아폴로)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
+-- VERBALIZED ------------------------------------
+(궤 / 궤도-00 :mod (달 / 달-01))
+(랑 / 랑데뷰 :mod (궤 / 궤도-00))
