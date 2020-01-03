@@ -3217,72 +3217,46 @@
 (선 / 선생 :mod (의 / 의사-00))
 
 
-# ::id snt31.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt31.E2017.NEWS.010 ::date 2019-12-30 ::annotator gabrielle ::preferred True
 # ::snt 위 교수는 "의료진 모두 하나가 돼서 환자 한 사람이 아닌 가족 전부를 감동시킨 '예술 작품'을 만들어낸 기분"이라고 했다.
 # ::note
--- FRAMES ----------------------------------------
-의료진 : DERIVED_NON-ENTRY -> (의 / 의료진-00) ?
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-감동 : VERBAL_NOUN
-	- move		(감 / 감동-01 :ARG0 causer :ARG1 person_moved)
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"가족" [CV_RELATION]	->  :mod (가 / 가족)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (가 / 가족))
-"교수" [CV_OCCUPATION]	->  :mod (교 / 교수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교수))
-"위" [PS_NAME]	->  (위 / 위)	OR	(p / person :wiki "위?" :name (이 / 이름 :op1 "위"))
-"의료진" [CV_POSITION]	->  :mod (의 / 의료진)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (의 / 의료진))
-"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
-"한 사람" [QT_MAN_COUNT]	->  :quant (한 / 한사람)	OR	(c / concept* :quant 한 :unit|scale (사 / 사람))
-"환자" [CV_POSITION]	->  :mod (환 / 환자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (환 / 환자))
--- VERBALIZED ------------------------------------
-(작 / 작품 :mod (예 / 예술-00))
-(전 / 전부 :mod (가 / 가족-00))
-(진 / 진 :mod (의 / 의료-00))
+(하 / 하-02
+	:ARG0 (p / person :wiki - :name (이 / 이름 :op1 "위")
+		:ARG0-of (h / have-org-role-91
+			:ARG2 (교 / 교수)))
+	:ARG1 (기 / 기분
+		:mod (만 / 만들-01
+			:ARG1 (작 / 작품
+				:mod (예 / 예술)
+				:ARG0-of (감 / 감동-01
+					:ARG1 (가 / 가족
+						:quant (전 / 전부)
+						:mod (아 / 아니-02
+							:ARG1 (환 / 환자 :quant 1 :unit (사 / 사람))))))
+			:manner (하2 / 하나되-00
+				:ARG1 (의 / 의료진
+					:quant (모 / 모두))))))
 
-
-# ::id snt32.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt32.E2017.NEWS.010 ::date 2019-12-30 ::annotator gabrielle ::preferred True
 # ::snt 우리나라 심폐소생술 시행률은 2008년 1.8%에서 2015년 13.1%로 해마다 늘고 있지만 선진국과 비교하면 여전히 낮은 편이다.
 # ::note
--- FRAMES ----------------------------------------
-소생술 : DERIVED_NON-ENTRY -> (소 / 소생술-00) ?
-시행 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (시 / 시행률-00) ?
-	- carry_out		(시 / 시행-01 :ARG0 agent :ARG1 thing_carried_out)
-늘 : VERB
-	- increase		(늘 / 늘-01 :ARG0 causal_agent :ARG1 thing_increasing :ARG2 start_point :ARG3 end_point)
-선진국 : DERIVED_NON-ENTRY -> (선 / 선진국-00) ?
-비교 : VERBAL_NOUN
-	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
-낮 : VERB
-	- low		(낮 / 낮-01 :ARG0 causer :ARG1 thing_being_low :ARG2 start_point :ARG3 end_point)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1.8%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 1.8%)
-"13.1%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 13.1%)
-"2008년" [DT_YEAR]	->  :time|duration (2 / 2008년)	OR	:time (d / date-entity :year 2008)	OR	:duration (t / temporal-quantity :quant 2008 :unit (년 / 년))  
-"2015년" [DT_YEAR]	->  :time|duration (2 / 2015년)	OR	:time (d / date-entity :year 2015)	OR	:duration (t / temporal-quantity :quant 2015 :unit (년 / 년))  
-"심폐소생술" [TR_MEDICINE]	->  (심 / 심폐소생술)	OR	(t / theory* :wiki "심폐소생술" :name (이 / 이름 :op1 "심폐소생술"))
--- VERBALIZED ------------------------------------
-(국 / 국 :mod (선 / 선진-00))
-(률 / 률 :ARG0-of (시 / 시행-01))
-(소 / 소생 :mod (심 / 심폐-00))
-(술 / 술 :mod (소 / 소생-00))
-(심 / 심폐 :mod (우 / 우리나라-00))
-
+(c / contrast-01
+	:ARG1 (늘 / 늘-01
+		:ARG1 (비 / 비율
+			:topic (시 / 시행-01
+				:ARG1 (심 / 심폐소생술))
+			:poss (우 / 우리나라))
+		:ARG2 (p / percentage-entity :value 1.8
+			:time (d / date-entity :year 2008))
+		:ARG3 (p2 / percentage-entity :value 13.1
+			:time (d2 / date-entity :year 2015))
+		:frequency (r / rate-entity-91
+			:ARG3 (t / temporal-quantity :quant 1 :unit (년 / 년))))
+	:ARG2 (h / have-degree-91
+		:ARG1 비
+		:ARG2 (낮 / 낮-01 :ARG1 비)
+		:ARG3 (여 / 여전하-01)
+		:ARG4 (선 / 선진국)))
 
 # ::id snt33.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle ::preferred True
 # ::snt 보건복지부 진영주 응급의료과장은 "올해 응급처치 교육사업을 강화해 한 가정 안에 적어도 한 사람은 심폐소생술을 할 수 있도록 할 방침"이라고 말했다.
