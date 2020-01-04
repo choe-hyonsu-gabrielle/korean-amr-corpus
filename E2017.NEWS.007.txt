@@ -1,0 +1,917 @@
+/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
+# ::id snt0.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 日, 10초 만에 "모시모시"… 한국 10단계 '미로'.
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"10단계" [QT_ORDER]	->  :ord (1 / 10단계)	OR	:ord (o / ordinal-entity :value 10단계)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"10초" [TI_DURATION]	->  :time|duration (1 / 10초)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration (t / temporal-quantity :quant 10 :unit (초 / 초))  
+"日" [LCP_COUNTRY]	->  (日 / 日)	OR	(c / country :wiki - :name (이 / 이름 :op1 "日"))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 30대 직장인 A 씨는 이달 초 연휴 때 신용카드 콜센터에 전화했다가 분통이 터졌다.
+# ::note
+-- FRAMES ----------------------------------------
+직장인 : DERIVED_NON-ENTRY -> (직 / 직장인-00) ?
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+터지 : VERB
+	- explode		(터 / 터지-01 :ARG1 thing_exploding)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"30대" [QT_AGE]	->  :age (3 / 30대)	OR	:age 30대
+"신용카드" [CV_CURRENCY]	->  (신 / 신용카드)	OR	(c / currency* :wiki "신용카드" :name (이 / 이름 :op1 "신용카드"))
+"전화" [CV_CURRENCY]	->  (전 / 전화)	OR	(c / currency* :wiki "전화" :name (이 / 이름 :op1 "전화"))
+"직장인" [CV_OCCUPATION]	->  :mod (직 / 직장인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (직 / 직장인))
+-- VERBALIZED ------------------------------------
+(때 / 때 :mod (연 / 연휴-00))
+(센 / 센터 :mod (콜 / 콜-00))
+(신 / 신용 :mod (때 / 때-00))
+(인 / 인 :mod (직 / 직장-00))
+(카 / 카드 :mod (신 / 신용-00))
+(콜 / 콜 :mod (카 / 카드-00))
+
+
+# ::id snt2.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 부가 서비스로 가능한 무료 주차 횟수가 몇 번 남았는지 기억이 나지 않아 전화 문의를 하려 했지만 통화 연결에 실패했다.
+# ::note
+-- FRAMES ----------------------------------------
+가능 : VERBAL_NOUN
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+주차 : VERBAL_NOUN
+	- park		(주 / 주차-01 :ARG0 agent :ARG1 thing_parked :ARG2 parking_place)
+남 : VERB
+	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
+기억 : VERBAL_NOUN
+	- remember		(기 / 기억-01 :ARG0 agent :ARG1 memory)
+나 : VERB
+	- happen		(나 / 나-01 :ARG1 thing_happening :ARG2 location)
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+문의 : VERBAL_NOUN
+	- ask		(문 / 문의-01 :ARG0 agent :ARG1 question :ARG2 hearer)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+통화 : VERBAL_NOUN
+	- talk_over_the_telephone		(통 / 통화-01 :ARG0 agent :ARG1 talked_with)
+연결 : VERBAL_NOUN
+	- connect		(연 / 연결-01 :ARG0 entity_connecting :ARG1 thing_connected :ARG2 connected_with)
+실패 : VERBAL_NOUN
+	- fail		(실 / 실패-01 :ARG1 thing_failing :ARG2 task)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"전화" [TMI_HW]	->  (전 / 전화)	OR	(p / product? :wiki "전화" :name (이 / 이름 :op1 "전화"))
+-- VERBALIZED ------------------------------------
+(문 / 문의-01 :ARG1 (전 / 전화-01))
+(연 / 연결-01 :ARG1 (통 / 통화-01))
+(주 / 주차-01 :mod (무 / 무료-00))
+(횟 / 횟수-00 :mod (주 / 주차-01))
+
+
+# ::id snt3.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '휴일엔 사고 관련이 아니면 상담원 연결이 되지 않는다'고 녹음된 목소리만 들었을 뿐이다.
+# ::note
+-- FRAMES ----------------------------------------
+관련 : VERBAL_NOUN
+	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
+연결 : VERBAL_NOUN
+	- connect		(연 / 연결-01 :ARG0 entity_connecting :ARG1 thing_connected :ARG2 connected_with)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+녹음 : VERBAL_NOUN
+	- record		(녹 / 녹음-01 :ARG0 recorder :ARG1 record)
+듣 : VERB
+	- hear		(듣 / 듣-01 :ARG0 agent :ARG1 thing_heard :ARG2 heard_from)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"상담원" [CV_POSITION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
+"휴일" [DT_DAY]	->  :time|duration (휴 / 휴일)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(관 / 관련-01 :mod (사 / 사고-00))
+(원 / 원 :mod (상 / 상담-00))
+
+
+# ::id snt4.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 미국에서 주재원으로 일하다 지난해 돌아온 B 씨는 미국에서 쓰던 카드를 해지하지 않았다는 사실을 알고 카드 뒷면에 있는 콜센터에 전화를 걸었다.
+# ::note
+-- FRAMES ----------------------------------------
+주재 : VERBAL_NOUN
+	- lead		(주 / 주재-01 :ARG0 agent :ARG1 thing_leaded)
+일하 : VERB
+	- work		(일 / 일하-01 :ARG0 worker)
+해돌아오 : DERIVED_NON-ENTRY
+돌아오 : VERB
+	- come_back		(돌 / 돌아오-01 :ARG0 agent :ARG1 path :ARG2 source :ARG3 goal)
+쓰 : VERB
+	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
+	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
+해지하 : DERIVED_NON-ENTRY
+알 : VERB
+	- know		(알 / 알-01 :ARGA causer :ARG0 knower :ARG1 theme)
+있 : ** UNUSED_OR_NON-ENTRY **
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+걸 : VERB
+	- apply		(걸 / 걸-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"전화" [TMI_HW]	->  (전 / 전화)	OR	(p / product? :wiki "전화" :name (이 / 이름 :op1 "전화"))
+"주재원" [CV_OCCUPATION]	->  :mod (주 / 주재원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (주 / 주재원))
+"지난해" [DT_YEAR]	->  :time|duration (지 / 지난해)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(뒷 / 뒷면 :mod (카 / 카드-00))
+(센 / 센터 :mod (콜 / 콜-00))
+(원 / 원-00 :mod (주 / 주재-01))
+(해 / 해 :mod (지 / 지난-00))
+
+
+# ::id snt5.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 미국 시각으론 토요일 오전 2시쯤 되는 때였지만 혹시나 하고 걸어 보았는데 상담원이 받았다.
+# ::note
+-- FRAMES ----------------------------------------
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+걸 : VERB
+	- apply		(걸 / 걸-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
+상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"상담원" [CV_OCCUPATION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
+"오전 2시" [TI_HOUR]	->  :time|duration (오 / 오전2시)	OR	:time (d / date-entity :time 2:00)	OR	:duration 
+"토요일" [DT_OTHERS]	->  :time|duration (토 / 토요일)	OR	:time (d / date-entity :weekday (토 / 토요일))	OR	:duration 
+-- VERBALIZED ------------------------------------
+(오 / 오전 :mod (요 / 요일-00))
+(요 / 요일 :mod (토 / 토-00))
+(원 / 원 :mod (상 / 상담-00))
+
+
+# ::id snt6.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그는 "전화 연결이 바로 되어서 오히려 내가 당황했다"고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+연결 : VERBAL_NOUN
+	- connect		(연 / 연결-01 :ARG0 entity_connecting :ARG1 thing_connected :ARG2 connected_with)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+당황 : VERBAL_NOUN
+	- be_perplexed		(당 / 당황-01 :ARG0 causer :ARG1 entity_perplexed)
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"전화" [TMI_HW]	->  (전 / 전화)	OR	(p / product? :wiki "전화" :name (이 / 이름 :op1 "전화"))
+-- VERBALIZED ------------------------------------
+(연 / 연결-01 :ARG1 (전 / 전화-01))
+
+
+# ::id snt7.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 한국 금융회사들이 소비자 편의를 위해 콜센터를 업그레이드했다고 저마다 홍보하고 있지만 선진국 및 글로벌 금융회사와 비교하면 여전히 상담 가능한 시간이 짧고 사용하기도 복잡한 것으로 나타났다.
+# ::note
+-- FRAMES ----------------------------------------
+회사들 : DERIVED_NON-ENTRY -> (회 / 회사들-00) ?
+소비 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (소 / 소비자-00) ?
+	- spend		(소 / 소비-01 :ARG0 agent :ARG1 unit_of_time :ARG2 activity)
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+홍보 : VERBAL_NOUN
+	- advertise		(홍 / 홍보-01 :ARG0 advertiser :ARG1 thing_advertised :ARG2 audience)
+선진국 : DERIVED_NON-ENTRY -> (선 / 선진국-00) ?
+비교 : VERBAL_NOUN
+	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
+가능 : VERBAL_NOUN
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+짧 : VERB
+	- short		(짧 / 짧-01 :ARG1 thing_being_short)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+복잡하 : VERB
+	- complex		(복 / 복잡하-01 :ARG1 thing_being_complex)
+나타나 : VERB
+	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"소비자" [CV_POSITION]	->  :mod (소 / 소비자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (소 / 소비자))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+(가 / 가능-01 :mod (상 / 상담-00))
+(국 / 국 :mod (선 / 선진-00))
+(금 / 금융 :mod (글 / 글로벌-00))
+(들 / 들 :mod (회 / 회사-00))
+(자 / 자 :ARG0-of (소 / 소비-01))
+(회 / 회사 :mod (금 / 금융-00))
+(회 / 회사 :mod (금 / 금융-00))
+
+
+# ::id snt8.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt IT(정보기술) 강국임을 강조하며 '말로 하는 ARS', '보이는 ARS' 등을 개발해 상담 서비스에 적용하고 있는데, 고령층이나 바쁜 직장인들에겐 이런 복잡한 선택 과정이 오히려 장애물로 작용한다는 지적도 나온다.
+# ::note
+-- FRAMES ----------------------------------------
+기술 : VERBAL_NOUN
+	- describe		(기 / 기술-01 :ARG0 describer :ARG1 thing_described)
+강조 : VERBAL_NOUN
+	- emphasize		(강 / 강조-01 :ARG0 emphasizer :ARG1 thing_emphasized :ARG2 hearer)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+보이 : REDUCED_VERB_DETECTED
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+개발 : VERBAL_NOUN
+	- develop		(개 / 개발-01 :ARG0 developer :ARG1 thing_developed)
+적용 : VERBAL_NOUN
+	- apply		(적 / 적용-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
+고령층 : DERIVED_NON-ENTRY -> (고 / 고령층-00) ?
+바쁘 : VERB
+	- busy		(바 / 바쁘-01 :ARG1 entity_being_busy)
+직장인 : DERIVED_NON-ENTRY -> (직 / 직장인-00) ?
+복잡하 : VERB
+	- complex		(복 / 복잡하-01 :ARG1 thing_being_complex)
+선택 : VERBAL_NOUN
+	- select		(선 / 선택-01 :ARG0 selector :ARG1 thing_selected :ARG2 selected_from :ARG3 selected_for)
+장애물 : DERIVED_NON-ENTRY -> (장 / 장애물-00) ?
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+지적 : VERBAL_NOUN
+	- point_out		(지 / 지적-01 :ARG0 pointer :ARG1 thing_pointed_out :ARG2 pointed_at)
+나오 : VERB
+	- come_out		(나 / 나오-01 :ARG0 thing_coming_out :ARG2 start_point :ARG3 end_point)
+	- do-light_verb		(나 / 나오-02 :ARG0 agent :ARG1 deverbal_noun :ARG2 start_point :ARG3 end_point)
+	- spill_out-CV		(나 / 나오-03 :ARG1 thing_coming_out :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"ARS" [TR_SCIENCE]	->  (A / ARS)	OR	(t / theory* :wiki "ARS?" :name (이 / 이름 :op1 "ARS"))
+"ARS" [TR_SCIENCE]	->  (A / ARS)	OR	(t / theory* :wiki "ARS?" :name (이 / 이름 :op1 "ARS"))
+"IT" [TR_SCIENCE]	->  (I / IT)	OR	(t / theory* :wiki "IT?" :name (이 / 이름 :op1 "IT"))
+"정보기술" [TR_SCIENCE]	->  (정 / 정보기술)	OR	(t / theory* :wiki "정보기술" :name (이 / 이름 :op1 "정보기술"))
+"직장인" [CV_OCCUPATION]	->  :mod (직 / 직장인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (직 / 직장인))
+-- VERBALIZED ------------------------------------
+(과 / 과정-00 :mod (선 / 선택-01))
+(기 / 기술-01 :mod (정 / 정보-00))
+(물 / 물 :mod (장 / 장애-00))
+(서 / 서비스 :mod (상 / 상담-00))
+(인 / 인 :mod (직 / 직장-00))
+(층 / 층 :mod (고 / 고령-00))
+
+
+# ::id snt9.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 본지가 한국의 4대 시중 은행(국민·신한·우리·KEB하나은행), 9개 카드사, 3대 생명보험사, 5대 손해보험사 등의 콜센터를 조사한 결과 24시간·365일 일반 상담(분실 신고 등 금융 사고와 관련된 상담 제외)이 가능한 금융사는 없었다.
+# ::note
+-- FRAMES ----------------------------------------
+하 : VERBAL_NOUN
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+카드사 : DERIVED_NON-ENTRY -> (카 / 카드사-00) ?
+보험사 : DERIVED_NON-ENTRY -> (보 / 보험사-00) ?
+보험사 : DERIVED_NON-ENTRY -> (보 / 보험사-00) ?
+조사 : VERBAL_NOUN
+	- investigate		(조 / 조사-01 :ARG0 agent :ARG1 thing_investigated)
+분실 : VERBAL_NOUN
+	- lose		(분 / 분실-01 :ARG0 agent :ARG1 thing_lost)
+신고 : VERBAL_NOUN
+	- report		(신 / 신고-01 :ARG0 reporter :ARG1 thing_reported :ARG2 reported_to)
+관련 : VERBAL_NOUN
+	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+제외 : VERBAL_NOUN
+	- exclude		(제 / 제외-01 :ARG0 agent :ARG1 thing_excluded :ARG2 excluded_from)
+가능 : VERBAL_NOUN
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+금융사 : DERIVED_NON-ENTRY -> (금 / 금융사-00) ?
+없 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"24시간" [TI_DURATION]	->  :time|duration (2 / 24시간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :time 24:00))	OR :duration (t / temporal-quantity :quant 24 :unit (시 / 시간))  
+"365일" [DT_DURATION]	->  :time|duration (3 / 365일)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :day 365))	OR :duration (t / temporal-quantity :quant 365 :unit (일 / 일))  
+"3대" [QT_COUNT]	->  :quant (3 / 3대)	OR	(c / concept* :quant 3 :unit|scale (대 / 대))
+"4대" [QT_COUNT]	->  :quant (4 / 4대)	OR	(c / concept* :quant 4 :unit|scale (대 / 대))
+"5대" [QT_COUNT]	->  :quant (5 / 5대)	OR	(c / concept* :quant 5 :unit|scale (대 / 대))
+"9개" [QT_COUNT]	->  :quant (9 / 9개)	OR	(c / concept* :quant 9 :unit|scale (개 / 개))
+"KEB하나은행" [OGG_SPORTS]	->  (K / KEB하나은행)	OR	(t / team|league|company :wiki "KEB하나은행" :name (이 / 이름 :op1 "KEB하나은행"))
+"국민" [OGG_ECONOMY]	->  (국 / 국민)	OR	(c / company|organization :wiki "국민" :name (이 / 이름 :op1 "국민"))
+"생명보험" [CV_FUNDS]	->  (생 / 생명보험)	OR	(f / funds* :wiki "생명보험" :name (이 / 이름 :op1 "생명보험"))
+"신한" [OGG_ECONOMY]	->  (신 / 신한)	OR	(c / company|organization :wiki "신한" :name (이 / 이름 :op1 "신한"))
+"우리" [OGG_ECONOMY]	->  (우 / 우리)	OR	(c / company|organization :wiki "우리?" :name (이 / 이름 :op1 "우리"))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+(보 / 보험 :mod (생 / 생명-00))
+(보 / 보험 :mod (손 / 손해-00))
+(사 / 사 :mod (금 / 금융-00))
+(사 / 사 :mod (보 / 보험-00))
+(사 / 사 :mod (보 / 보험-00))
+(사 / 사 :mod (카 / 카드-00))
+(사 / 사고 :mod (금 / 금융-00))
+(상 / 상담 :mod (일 / 일반-00))
+(신 / 신고-01 :ARG1 (분 / 분실-01))
+(은 / 은행 :mod (시 / 시중-00))
+(제 / 제외-01 :mod (상 / 상담-00))
+
+
+# ::id snt10.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 지난달 영업을 개시한 한국의 첫 인터넷 전문 은행인 케이뱅크(Kbank) 한 곳만 상담원을 통한 24시간 상담을 할 수 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+영업 : VERBAL_NOUN
+	- do_business		(영 / 영업-01 :ARG0 thing_doing_business)
+개시 : VERBAL_NOUN
+	- begin		(개 / 개시-01 :ARG0 agent :ARG1 event)
+상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
+통하 : VERB
+	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
+	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
+	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"24시간" [TI_DURATION]	->  :time|duration (2 / 24시간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :time 24:00))	OR :duration (t / temporal-quantity :quant 24 :unit (시 / 시간))  
+"Kbank" [TR_SCIENCE]	->  (K / Kbank)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "Kbank"))
+"상담원" [CV_OCCUPATION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
+"인터넷" [TMI_SERVICE]	->  (인 / 인터넷)	OR	(s / service* :wiki "인터넷" :name (이 / 이름 :op1 "인터넷"))
+"지난달" [DT_MONTH]	->  :time|duration (지 / 지난달)	OR	:time (d / date-entity)	OR	:duration 
+"첫" [QT_ORDER]	->  :ord (첫 / 첫)	OR	:ord (o / ordinal-entity :value 첫)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"케이뱅크" [OGG_ECONOMY]	->  (케 / 케이뱅크)	OR	(c / company|organization :wiki "케이뱅크" :name (이 / 이름 :op1 "케이뱅크"))
+"한 곳" [QT_COUNT]	->  :quant (한 / 한곳)	OR	(c / concept* :quant 한 :unit|scale (곳 / 곳))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+(달 / 달-01 :mod (지 / 지난-00))
+(영 / 영업-01 :ARG1 (달 / 달-01))
+(원 / 원 :mod (상 / 상담-00))
+(은 / 은행 :mod (전 / 전문-00))
+(전 / 전문 :mod (인 / 인터넷-00))
+
+
+# ::id snt11.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 글로벌 은행들과 비교했더니 한국 은행들의 상담 시간은 매우 짧았다.
+# ::note
+-- FRAMES ----------------------------------------
+은행들 : DERIVED_NON-ENTRY -> (은 / 은행들-00) ?
+비교 : VERBAL_NOUN
+	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
+은행들 : DERIVED_NON-ENTRY -> (은 / 은행들-00) ?
+짧 : VERB
+	- short		(짧 / 짧-01 :ARG1 thing_being_short)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"한국 은행" [OGG_ECONOMY]	->  (한 / 한국은행)	OR	(c / company|organization :wiki "한국은행" :name (이 / 이름 :op1 "한국" :op2 "은행"))
+-- VERBALIZED ------------------------------------
+(들 / 들 :mod (은 / 은행-00))
+(들 / 들 :mod (은 / 은행-00))
+(시 / 시간 :mod (상 / 상담-00))
+(은 / 은행 :mod (글 / 글로벌-00))
+
+
+# ::id snt12.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 대형 글로벌 금융사 중 대부분은 한국인에겐 낯선 365일·24시간 상담 서비스를 제공 중이다.
+# ::note
+-- FRAMES ----------------------------------------
+금융사 : DERIVED_NON-ENTRY -> (금 / 금융사-00) ?
+대부분 : DERIVED_NON-ENTRY -> (대 / 대부분-00) ?
+낯설 : ** UNUSED_OR_NON-ENTRY **
+제공 : VERBAL_NOUN
+	- provide		(제 / 제공-01 :ARG0 provider :ARG1 thing_provided :ARG2 provided_for)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"24시간" [TI_DURATION]	->  :time|duration (2 / 24시간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :time 24:00))	OR :duration (t / temporal-quantity :quant 24 :unit (시 / 시간))  
+"365일" [DT_DURATION]	->  :time|duration (3 / 365일)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :day 365))	OR :duration (t / temporal-quantity :quant 365 :unit (일 / 일))  
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+(글 / 글로벌 :mod (대 / 대형-00))
+(금 / 금융 :mod (글 / 글로벌-00))
+(사 / 사 :mod (금 / 금융-00))
+(서 / 서비스 :mod (상 / 상담-00))
+
+
+# ::id snt13.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 세계 10대 은행(자산 기준) 중 중국 건설은행, 미국 뱅크오브아메리카 두 곳을 뺀 8개 은행은 모두 언제든지 상담원과 통화를 할 수 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+건설 : VERBAL_NOUN
+	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
+빼 : VERB
+	- take_away		(빼 / 빼-01 :ARG0 taker :ARG1 thing_removed :ARG2 removed_from)
+상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
+통화 : VERBAL_NOUN
+	- talk_over_the_telephone		(통 / 통화-01 :ARG0 agent :ARG1 talked_with)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"10대" [QT_COUNT]	->  :quant (1 / 10대)	OR	(c / concept* :quant 10 :unit|scale (대 / 대))
+"8개" [QT_COUNT]	->  :quant (8 / 8개)	OR	(c / concept* :quant 8 :unit|scale (개 / 개))
+"건설은행" [OGG_ECONOMY]	->  (건 / 건설은행)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "건설은행"))
+"두 곳" [QT_COUNT]	->  :quant (두 / 두곳)	OR	(c / concept* :quant 두 :unit|scale (곳 / 곳))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"뱅크오브아메리카" [OGG_ECONOMY]	->  (뱅 / 뱅크오브아메리카)	OR	(c / company|organization :wiki "뱅크_오브_아메리카" :name (이 / 이름 :op1 "뱅크오브아메리카"))
+"상담원" [CV_OCCUPATION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+-- VERBALIZED ------------------------------------
+(기 / 기준 :mod (자 / 자산-00))
+(원 / 원 :mod (상 / 상담-00))
+(은 / 은행-00 :mod (건 / 건설-01))
+
+
+# ::id snt14.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 한국 은행은 평일엔 13시간(신한·우리은행) 혹은 14시간(국민·KEB하나은행)만 통화를 할 수 있는 것으로 확인됐다.
+# ::note
+-- FRAMES ----------------------------------------
+하 : VERBAL_NOUN
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+통화 : VERBAL_NOUN
+	- talk_over_the_telephone		(통 / 통화-01 :ARG0 agent :ARG1 talked_with)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+있 : ** UNUSED_OR_NON-ENTRY **
+확인 : VERBAL_NOUN
+	- confirm		(확 / 확인-01 :ARG0 confirmer :ARG1 thing_confirmed :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"13시간" [TI_DURATION]	->  :time|duration (1 / 13시간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :time 13:00))	OR :duration (t / temporal-quantity :quant 13 :unit (시 / 시간))  
+"14시간" [TI_DURATION]	->  :time|duration (1 / 14시간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :time 14:00))	OR :duration (t / temporal-quantity :quant 14 :unit (시 / 시간))  
+"KEB하나은행" [OGG_SPORTS]	->  (K / KEB하나은행)	OR	(t / team|league|company :wiki "KEB하나은행" :name (이 / 이름 :op1 "KEB하나은행"))
+"국민" [CV_POSITION]	->  :mod (국 / 국민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국민))
+"신한" [OGG_ECONOMY]	->  (신 / 신한)	OR	(c / company|organization :wiki "신한" :name (이 / 이름 :op1 "신한"))
+"우리은행" [OGG_ECONOMY]	->  (우 / 우리은행)	OR	(c / company|organization :wiki "우리은행" :name (이 / 이름 :op1 "우리은행"))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt15.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 주말엔 통화 가능 시간이 6시간인 은행(신한은행)도 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+통화 : VERBAL_NOUN
+	- talk_over_the_telephone		(통 / 통화-01 :ARG0 agent :ARG1 talked_with)
+가능 : VERBAL_NOUN
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"6시" [DT_DURATION]	->  :time|duration (6 / 6시)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :time 6:00))	OR :duration 
+"신한은행" [OGG_ECONOMY]	->  (신 / 신한은행)	OR	(c / company|organization :wiki "신한은행" :name (이 / 이름 :op1 "신한은행"))
+"주말" [DT_OTHERS]	->  :time|duration (주 / 주말)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(가 / 가능-01 :ARG1 (통 / 통화-01))
+(시 / 시간-00 :mod (가 / 가능-01))
+
+
+# ::id snt16.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 25일 오전 6~7시에 걸쳐 한국과 해외 금융회사의 콜센터에 실제로 전화를 걸어 보았더니 한국의 4대 은행은 모두 연결이 안 됐다.
+# ::note
+-- FRAMES ----------------------------------------
+걸치 : VERB
+	- extend		(걸 / 걸치-01 :ARG1 theme :ARG2 EXT_or_TMP)
+	- wear		(걸 / 걸치-02 :ARG0 wearer :ARG1 clothing)
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+걸 : VERB
+	- apply		(걸 / 걸-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
+연결 : VERBAL_NOUN
+	- connect		(연 / 연결-01 :ARG0 entity_connecting :ARG1 thing_connected :ARG2 connected_with)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"25일" [DT_DAY]	->  :time|duration (2 / 25일)	OR	:time (d / date-entity :day 25)	OR	:duration (t / temporal-quantity :quant 25 :unit (일 / 일))  
+"4대" [QT_COUNT]	->  :quant (4 / 4대)	OR	(c / concept* :quant 4 :unit|scale (대 / 대))
+"오전 6~7시" [TI_DURATION]	->  :time|duration (오 / 오전6~7시)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :time 7:00))	OR :duration 
+"전화" [TMI_HW]	->  (전 / 전화)	OR	(p / product? :wiki "전화" :name (이 / 이름 :op1 "전화"))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+(금 / 금융 :mod (해 / 해외-00))
+(센 / 센터 :mod (콜 / 콜-00))
+(회 / 회사 :mod (금 / 금융-00))
+
+
+# ::id snt17.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 반면 세계 최대 은행인 중국 공상은행은 전화를 걸자마자 "니하오", 일본 최대 은행 미쓰비시UFJ은행은 오전 6시 30분임에도 신호음이 간 지 10초 만에 "모시모시"라고 응답했다.
+# ::note
+-- FRAMES ----------------------------------------
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+걸 : VERB
+	- apply		(걸 / 걸-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
+가 : VERB
+	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
+	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
+	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
+	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
+	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
+	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
+응답 : VERBAL_NOUN
+	- answer		(응 / 응답-01 :ARG0 agent :ARG1 thing_answered)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"10초" [TI_DURATION]	->  :time|duration (1 / 10초)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration (t / temporal-quantity :quant 10 :unit (초 / 초))  
+"공상은행" [OGG_ECONOMY]	->  (공 / 공상은행)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "공상은행"))
+"모시모시" [PS_NAME]	->  (모 / 모시모시)	OR	(p / person :wiki - :name (이 / 이름 :op1 "모시모시"))
+"미쓰비시UFJ은" [OGG_ECONOMY]	->  (미 / 미쓰비시UFJ은)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "미쓰비시UFJ은"))
+"오전 6시 30분" [TI_OTHERS]	->  :time|duration (오 / 오전6시30분)	OR	:time (d / date-entity :time 6:30)	OR	:duration (t / temporal-quantity :quant 30 :unit (분 / 분))  
+"일본" [LCP_COUNTRY]	->  (일 / 일본)	OR	(c / country :wiki "일본" :name (이 / 이름 :op1 "일본"))
+"전화" [TMI_HW]	->  (전 / 전화)	OR	(p / product? :wiki "전화" :name (이 / 이름 :op1 "전화"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+-- VERBALIZED ------------------------------------
+(세 / 세계 :mod (반 / 반면-00))
+(은 / 은행 :mod (최 / 최대-00))
+(은 / 은행 :mod (최 / 최대-00))
+(음 / 음 :mod (신 / 신호-00))
+(최 / 최대 :mod (세 / 세계-00))
+
+
+# ::id snt18.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 밤 시간대인 미국 은행을 포함해 10대 은행 중 8개 은행은 상담원이 전화를 받았다.
+# ::note
+-- FRAMES ----------------------------------------
+시간대 : DERIVED_NON-ENTRY -> (시 / 시간대-00) ?
+포함 : VERBAL_NOUN
+	- include		(포 / 포함-01 :ARG0 agent :ARG1 thing_included :ARG2 group)
+상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"10대" [QT_AGE]	->  :age (1 / 10대)	OR	:age 10대
+"8개" [QT_COUNT]	->  :quant (8 / 8개)	OR	(c / concept* :quant 8 :unit|scale (개 / 개))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"밤" [TI_DURATION]	->  :time|duration (밤 / 밤)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"상담원" [CV_OCCUPATION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
+-- VERBALIZED ------------------------------------
+(대 / 대 :mod (시 / 시간-00))
+(시 / 시간 :mod (밤 / 밤-00))
+(원 / 원 :mod (상 / 상담-00))
+
+
+# ::id snt19.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 금융계 관계자는 "인도 등에 외주 콜센터를 운영하는 미국, 인건비가 싼 중국 등과 비교할 때 한국은 야간이나 휴일 근무 수당을 많이 지급해야 하기 때문에 상담 시간 연장에 따른 비용 부담이 매우 크게 작용하는 측면이 있다"고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+금융계 : DERIVED_NON-ENTRY -> (금 / 금융계-00) ?
+관계 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관계자-00) ?
+	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
+	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+운영 : VERBAL_NOUN
+	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
+싸 : VERB
+	- wrap		(싸 / 싸-01 :ARG0 agent :ARG1 thing_wrapped :ARG2 wrapped_with)
+	- cheap		(싸 / 싸-02 :ARG1 thing_being_cheap)
+비교 : VERBAL_NOUN
+	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
+근무 : VERBAL_NOUN
+	- work		(근 / 근무-01 :ARG0 agent :ARG2 location)
+지급 : VERBAL_NOUN
+	- supply		(지 / 지급-01 :ARG0 agent :ARG1 thing_provided :ARG2 entity_provided_for)
+연장 : VERBAL_NOUN
+	- extend		(연 / 연장-01 :ARG0 agent :ARG1 thing_getting_longer :ARG2 start_point :ARG3 end_point)
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+부담 : VERBAL_NOUN
+	- bear		(부 / 부담-01 :ARG0 agent :ARG1 expense)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+있 : ** UNUSED_OR_NON-ENTRY **
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"야간" [TI_DURATION]	->  :time|duration (야 / 야간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"인건비" [QT_PRICE]	->  :quant (인 / 인건비)	OR	(m / monetary-quantity :quant - :unit|scale (인 / 인건비))
+"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+"휴일" [DT_DAY]	->  :time|duration (휴 / 휴일)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(계 / 계 :mod (금 / 금융-00))
+(근 / 근무-01 :mod (휴 / 휴일-00))
+(부 / 부담-01 :mod (비 / 비용-00))
+(수 / 수당-00 :mod (근 / 근무-01))
+(시 / 시간 :mod (상 / 상담-00))
+(연 / 연장-01 :mod (시 / 시간-00))
+(자 / 자 :ARG0-of (관 / 관계-01))
+
+
+# ::id snt20.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 상담원 연결 과정도 한국 금융회사가 훨씬 복잡했다.
+# ::note
+-- FRAMES ----------------------------------------
+상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
+연결 : VERBAL_NOUN
+	- connect		(연 / 연결-01 :ARG0 entity_connecting :ARG1 thing_connected :ARG2 connected_with)
+복잡하 : VERB
+	- complex		(복 / 복잡하-01 :ARG1 thing_being_complex)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"상담원" [CV_OCCUPATION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+(과 / 과정-00 :mod (연 / 연결-01))
+(원 / 원 :mod (상 / 상담-00))
+(회 / 회사 :mod (금 / 금융-00))
+
+
+# ::id snt21.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 미국 등 선진국의 주요 콜센터는 대부분이 전화하는 즉시 사람이 응답을 하고, 소비자가 무엇을 원하는지를 그다음에 듣는다.
+# ::note
+-- FRAMES ----------------------------------------
+선진국 : DERIVED_NON-ENTRY -> (선 / 선진국-00) ?
+주요 : VERBAL_NOUN
+	- principal		(주 / 주요-01 :ARG1 thing_being_principal)
+대부분 : DERIVED_NON-ENTRY -> (대 / 대부분-00) ?
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+응답 : VERBAL_NOUN
+	- answer		(응 / 응답-01 :ARG0 agent :ARG1 thing_answered)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+소비 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (소 / 소비자-00) ?
+	- spend		(소 / 소비-01 :ARG0 agent :ARG1 unit_of_time :ARG2 activity)
+원하 : VERB
+	- want		(원 / 원하-01 :ARG0 wanter :ARG1 thing_wanted)
+듣 : VERB
+	- hear		(듣 / 듣-01 :ARG0 agent :ARG1 thing_heard :ARG2 heard_from)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"소비자" [CV_POSITION]	->  :mod (소 / 소비자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (소 / 소비자))
+-- VERBALIZED ------------------------------------
+(국 / 국 :mod (선 / 선진-00))
+(다 / 다음 :mod (그 / 그-00))
+(사 / 사람 :mod (즉 / 즉시-00))
+(자 / 자 :ARG0-of (소 / 소비-01))
+
+
+# ::id snt22.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 대부분의 한국 금융회사는 반대로 소비자가 무엇이 필요한지를 일일이 ARS 번호 입력을 한 다음에야 상담원이 응대한다.
+# ::note
+-- FRAMES ----------------------------------------
+대부분 : DERIVED_NON-ENTRY -> (대 / 대부분-00) ?
+반대 : VERBAL_NOUN
+	- oppose		(반 / 반대-01 :ARG0 opposer :ARG1 opposed_to)
+소비 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (소 / 소비자-00) ?
+	- spend		(소 / 소비-01 :ARG0 agent :ARG1 unit_of_time :ARG2 activity)
+필요 : VERBAL_NOUN
+	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
+응대하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"ARS" [TR_SCIENCE]	->  (A / ARS)	OR	(t / theory* :wiki "ARS?" :name (이 / 이름 :op1 "ARS"))
+"상담원" [CV_POSITION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
+"소비자" [CV_POSITION]	->  :mod (소 / 소비자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (소 / 소비자))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+(원 / 원 :mod (상 / 상담-00))
+(입 / 입력 :mod (번 / 번호-00))
+(자 / 자 :ARG0-of (소 / 소비-01))
+(회 / 회사 :mod (금 / 금융-00))
+
+
+# ::id snt23.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 미국 '디스커버 카드' 콜센터에 카드를 해지하는 상황을 가정해 전화를 했더니 50초 만에 상담원이 바로 전화를 받았다.
+# ::note
+-- FRAMES ----------------------------------------
+해지하 : DERIVED_NON-ENTRY
+가정 : VERBAL_NOUN
+	- assume		(가 / 가정-01 :ARG0 thinker :ARG1 thought)
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"50초" [TI_DURATION]	->  :time|duration (5 / 50초)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration (t / temporal-quantity :quant 50 :unit (초 / 초))  
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"상담원" [CV_OCCUPATION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
+"전화" [TMI_HW]	->  (전 / 전화)	OR	(p / product? :wiki "전화" :name (이 / 이름 :op1 "전화"))
+-- VERBALIZED ------------------------------------
+(센 / 센터 :mod (콜 / 콜-00))
+(원 / 원 :mod (상 / 상담-00))
+(카 / 카드 :mod (디 / 디스커버-00))
+
+
+# ::id snt24.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 똑같이 카드 해지를 하려고 한국 A 신용카드사에 전화를 건 결과 열 단계를 거친 끝에야 상담원과 통화를 할 수 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+카드사 : DERIVED_NON-ENTRY -> (카 / 카드사-00) ?
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+걸 : VERB
+	- apply		(걸 / 걸-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
+거치 : VERB
+	- pass_through		(거 / 거치-01 :ARG1 thing :ARG2 theme)
+	- mount		(거 / 거치-02 :ARG0 agent :ARG1 thing_mounted :ARG2 where_mount)
+상담원 : DERIVED_NON-ENTRY -> (상 / 상담원-00) ?
+통화 : VERBAL_NOUN
+	- talk_over_the_telephone		(통 / 통화-01 :ARG0 agent :ARG1 talked_with)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"상담원" [CV_OCCUPATION]	->  :mod (상 / 상담원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상담원))
+"신용카드" [CV_CURRENCY]	->  (신 / 신용카드)	OR	(c / currency* :wiki "신용카드" :name (이 / 이름 :op1 "신용카드"))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+(사 / 사 :mod (카 / 카드-00))
+(원 / 원 :mod (상 / 상담-00))
+(카 / 카드 :mod (신 / 신용-00))
+(해 / 해지 :mod (카 / 카드-00))
+
+
+# ::id snt25.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 길어지는 통화에 대한 전화 요금은 대부분 소비자가 부담(1분당 약 30원)해야 한다.
+# ::note
+-- FRAMES ----------------------------------------
+길어지 : ** UNUSED_OR_NON-ENTRY **
+통화 : VERBAL_NOUN
+	- talk_over_the_telephone		(통 / 통화-01 :ARG0 agent :ARG1 talked_with)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+대부분 : DERIVED_NON-ENTRY -> (대 / 대부분-00) ?
+소비 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (소 / 소비자-00) ?
+	- spend		(소 / 소비-01 :ARG0 agent :ARG1 unit_of_time :ARG2 activity)
+부담 : VERBAL_NOUN
+	- bear		(부 / 부담-01 :ARG0 agent :ARG1 expense)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1분당" [QT_COUNT]	->  :quant (1 / 1분당)	OR	(c / concept* :quant 1 :unit|scale (분 / 분당))
+"소비자" [CV_POSITION]	->  :mod (소 / 소비자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (소 / 소비자))
+"약 30원" [QT_PRICE]	->  :quant (약 / 약30원)	OR	(m / monetary-quantity :quant 약 :unit|scale (3 / 30원))
+"전화" [TMI_HW]	->  (전 / 전화)	OR	(p / product? :wiki "전화" :name (이 / 이름 :op1 "전화"))
+-- VERBALIZED ------------------------------------
+(소 / 소비-01 :mod (부 / 부분-00))
+(요 / 요금-00 :mod (전 / 전화-01))
+(자 / 자 :ARG0-of (소 / 소비-01))
+
+
+# ::id snt26.E2017.NEWS.007 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 금융소비자연맹 강형구 금융 국장은 "금융회사 콜센터의 통화 대기 시간뿐 아니라 민원 상담에 대한 전화 요금을 모두 소비자에게 부담하는 것은 적절치 않다"고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+소비 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (소 / 소비자-00) ?
+	- spend		(소 / 소비-01 :ARG0 agent :ARG1 unit_of_time :ARG2 activity)
+통화 : VERBAL_NOUN
+	- talk_over_the_telephone		(통 / 통화-01 :ARG0 agent :ARG1 talked_with)
+대기 : VERBAL_NOUN
+	- stand_by		(대 / 대기-01 :ARG0 causer :ARG1 entity_standing_by)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+전화 : VERBAL_NOUN
+	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
+소비 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (소 / 소비자-00) ?
+	- spend		(소 / 소비-01 :ARG0 agent :ARG1 unit_of_time :ARG2 activity)
+부담 : VERBAL_NOUN
+	- bear		(부 / 부담-01 :ARG0 agent :ARG1 expense)
+적절하 : VERB
+	- appropriate		(적 / 적절하-01 :ARG1 thing_being_appropriate :ARG2 appropriae_to)
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"강형구" [PS_NAME]	->  (강 / 강형구)	OR	(p / person :wiki - :name (이 / 이름 :op1 "강형구"))
+"금융 국장" [CV_POSITION]	->  :mod (금 / 금융국장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (금 / 금융 국장))
+"금융소비자연맹" [OGG_ECONOMY]	->  (금 / 금융소비자연맹)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "금융소비자연맹"))
+"소비자" [CV_POSITION]	->  :mod (소 / 소비자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (소 / 소비자))
+-- VERBALIZED ------------------------------------
+(국 / 국장 :mod (금 / 금융-00))
+(대 / 대기-01 :ARG1 (통 / 통화-01))
+(상 / 상담 :mod (민 / 민원-00))
+(소 / 소비-01 :mod (금 / 금융-00))
+(시 / 시간-00 :mod (대 / 대기-01))
+(요 / 요금-00 :mod (전 / 전화-01))
+(자 / 자 :ARG0-of (소 / 소비-01))
+(자 / 자 :ARG0-of (소 / 소비-01))
+(회 / 회사 :mod (금 / 금융-00))
+
+
+
+Process finished with exit code 0

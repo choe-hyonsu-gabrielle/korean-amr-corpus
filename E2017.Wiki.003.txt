@@ -1,0 +1,75 @@
+/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
+# ::id snt0.E2017.Wiki.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 소수 (수론)
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"소수" [TR_SCIENCE]	->  (소 / 소수)	OR	(t / theory* :wiki "소수?" :name (이 / 이름 :op1 "소수"))
+"수론" [TR_SCIENCE]	->  (수 / 수론)	OR	(t / theory* :wiki "정수론" :name (이 / 이름 :op1 "수론"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2017.Wiki.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 소수(素數, 발음: 소쑤)는 양의 약수가 1과 자기 자신 뿐인 1보다 큰 자연수로 정의된다.
+# ::note
+-- FRAMES ----------------------------------------
+자신 : VERBAL_NOUN
+	- confident		(자 / 자신 :ARG0 thing_confident :ARG1 confident_in)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+정의되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+string index out of range
+string index out of range
+"素數" [TR_SCIENCE]	->  (素 / 素數)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "素數"))
+"소수" [TR_SCIENCE]	->  (소 / 소수)	OR	(t / theory* :wiki "소수?" :name (이 / 이름 :op1 "소수"))
+"소쑤" [TR_SCIENCE]	->  (소 / 소쑤)	OR	(t / theory* :wiki "소수_(수론)" :name (이 / 이름 :op1 "소쑤"))
+"양의 약수" [TR_SCIENCE]	->  (양 / 양의약수)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "양의" :op2 "약수"))
+"자연수" [TR_SCIENCE]	->  (자 / 자연수)	OR	(t / theory* :wiki "자연수" :name (이 / 이름 :op1 "자연수"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt2.E2017.Wiki.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 정수론에서 매우 중요한 역할을 담당한다.
+# ::note
+-- FRAMES ----------------------------------------
+정수론 : DERIVED_NON-ENTRY -> (정 / 정수론-00) ?
+중요 : VERBAL_NOUN
+	- important		(중 / 중요-01 :ARG1 thing_being_important :ARG2 important_to)
+담당 : VERBAL_NOUN
+	- be_in_charge_of		(담 / 담당-01 :ARG0 agent :ARG1 thing_charged)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"정수론" [TR_SCIENCE]	->  (정 / 정수론)	OR	(t / theory* :wiki "정수론" :name (이 / 이름 :op1 "정수론"))
+-- VERBALIZED ------------------------------------
+(론 / 론 :mod (정 / 정수-00))
+
+
+# ::id snt3.E2017.Wiki.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 현재에 와서는 암호 분야에서의 사용으로 그 중요성이 부각되고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+오 : VERB
+	- come		(오 / 오-01 :ARG0 entity_coming :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- come		(오 / 오-02 :ARG1 entity_coming :ARG2 start_point :ARG3 end_point)
+	- bring_about-CV		(오 / 오-03 :ARG0 causer :ARG1 thing_brought_about)
+	- send_back-CV		(오 / 오-04 :ARG0 sender :ARG1 thing_sent :ARG2 sent_to)
+	- remit-CV		(오 / 오-05 :ARG0 sender :ARG1 money :ARG2 sent_to)
+	- hear-CV		(오 / 오-06 :ARG0 agent :ARG1 thing_heard :ARG2 heard_from)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+중요 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (중 / 중요성-00) ?
+	- important		(중 / 중요-01 :ARG1 thing_being_important :ARG2 important_to)
+부각 : VERBAL_NOUN
+	- bring_into_relief		(부 / 부각-01 :ARG0 bringer :ARG1 thing_brought_into_relief :ARG2 attribute_of_arg1)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(분 / 분야 :mod (암 / 암호-00))
+(성 / 성 :ARG0-of (중 / 중요-01))
+
+
+
+Process finished with exit code 0

@@ -1,0 +1,987 @@
+/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
+# ::id snt0.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt “같은 반 아이돌 연습생, 정유라만 조퇴 봐준다며 울었다.”
+# ::note
+-- FRAMES ----------------------------------------
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+연습 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (연 / 연습생-00) ?
+	- give_practice		(연 / 연습-01 :ARGA causer :ARG0 practicer :ARG1 skill)
+조퇴봐준 : DERIVED_NON-ENTRY
+봐준 : ** UNUSED_OR_NON-ENTRY **
+울 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"아이돌" [CV_POSITION]	->  :mod (아 / 아이돌)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (아 / 아이돌))
+"연습생" [CV_POSITION]	->  :mod (연 / 연습생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (연 / 연습생))
+"정유라" [PS_NAME]	->  (정 / 정유라)	OR	(p / person :wiki "정유라?" :name (이 / 이름 :op1 "정유라"))
+-- VERBALIZED ------------------------------------
+(생 / 생 :ARG0-of (연 / 연습-01))
+(아 / 아이돌 :mod (반 / 반-00))
+(연 / 연습-01 :mod (아 / 아이돌-00))
+
+
+# ::id snt1.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt “돈 자랑 많이 하고 불손하고 오만했다.”
+# ::note
+-- FRAMES ----------------------------------------
+자랑 : VERBAL_NOUN
+	- proud		(자 / 자랑-01 :ARG0 thing_proud :ARG1 proud_of)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+불손하 : DERIVED_NON-ENTRY
+오만하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(자 / 자랑-01 :mod (돈 / 돈-00))
+
+
+# ::id snt2.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 최순실(61) 씨의 딸 정유라(21) 씨가 다녔던 서울 청담고의 교사·학생들은 대부분 최 씨 모녀를 이런 식으로 기억했다.
+# ::note
+-- FRAMES ----------------------------------------
+다니 : VERB
+	- go_to_and_from		(다 / 다니-01 :ARG0 entity_moving :ARG1 place,_path)
+학생들 : DERIVED_NON-ENTRY -> (학 / 학생들-00) ?
+대부분 : DERIVED_NON-ENTRY -> (대 / 대부분-00) ?
+기억 : VERBAL_NOUN
+	- remember		(기 / 기억-01 :ARG0 agent :ARG1 memory)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"21" [QT_AGE]	->  :age (2 / 21)	OR	:age 21
+"61" [QT_AGE]	->  :age (6 / 61)	OR	:age 61
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"딸" [CV_RELATION]	->  :mod (딸 / 딸)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (딸 / 딸))
+"모녀" [CV_RELATION]	->  :mod (모 / 모녀)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (모 / 모녀))
+"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+"정유라" [PS_NAME]	->  (정 / 정유라)	OR	(p / person :wiki "정유라?" :name (이 / 이름 :op1 "정유라"))
+"청담고" [OGG_EDUCATION]	->  (청 / 청담고)	OR	(s / school|university :wiki "청담고?" :name (이 / 이름 :op1 "청담고"))
+"최" [PS_NAME]	->  (최 / 최)	OR	(p / person :wiki "최?" :name (이 / 이름 :op1 "최"))
+"최순실" [PS_NAME]	->  (최 / 최순실)	OR	(p / person :wiki "최순실" :name (이 / 이름 :op1 "최순실"))
+"학생" [CV_OCCUPATION]	->  :mod (학 / 학생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (학 / 학생))
+-- VERBALIZED ------------------------------------
+(들 / 들 :mod (학 / 학생-00))
+
+
+# ::id snt3.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 특히 최 씨는 체육특기자 담당 교사에게 “잘라버리겠다” “애 아빠(정윤회)가 가만 안 둘 것”이라며 엄포도 놓았다.
+# ::note
+-- FRAMES ----------------------------------------
+특기자 : DERIVED_NON-ENTRY -> (특 / 특기자-00) ?
+담당 : VERBAL_NOUN
+	- be_in_charge_of		(담 / 담당-01 :ARG0 agent :ARG1 thing_charged)
+자르 : VERB
+	- cut		(자 / 자르-01 :ARG0 agent :ARG1 thing_cut)
+두 : VERB
+	- put		(두 / 두-01 :ARG0 agent :ARG1 theme :ARG2 location)
+놓 : VERB
+	- put		(놓 / 놓-01 :ARG0 putter :ARG1 thing_put :ARG2 where_put)
+	- about		(놓 / 놓-02 :ARG0 impersonal :ARG1 about_what)
+-- FORCE CONVERT ---------------------------------
+:mod (특 / 특히)
+-- NE TYPES --------------------------------------
+"담당 교사" [CV_POSITION]	->  :mod (담 / 담당교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (담 / 담당 교사))
+"아빠" [CV_RELATION]	->  :mod (아 / 아빠)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (아 / 아빠))
+"정윤회" [PS_NAME]	->  (정 / 정윤회)	OR	(p / person :wiki "정윤회" :name (이 / 이름 :op1 "정윤회"))
+"체육특기자" [CV_POSITION]	->  :mod (체 / 체육특기자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (체 / 체육특기자))
+"최" [PS_NAME]	->  (최 / 최)	OR	(p / person :wiki "최?" :name (이 / 이름 :op1 "최"))
+-- VERBALIZED ------------------------------------
+(교 / 교사-00 :mod (담 / 담당-01))
+(아 / 아빠 :mod (애 / 애-00))
+(자 / 자 :mod (특 / 특기-00))
+(특 / 특기 :mod (체 / 체육-00))
+
+
+# ::id snt4.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 같은 사실은 19일 서울시교육청이 국회 김병욱 더불어민주당 의원에게 제출한 청담고 감사자료(지난해 11월 실시)에서 고스란히 드러났다.
+# ::note
+-- FRAMES ----------------------------------------
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+제출 : VERBAL_NOUN
+	- submit		(제 / 제출-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+감사 : VERBAL_NOUN
+	- thank		(감 / 감사-01 :ARG0 thanker :ARG1 thanked)
+실시 : VERBAL_NOUN
+	- perform		(실 / 실시-01 :ARG0 agent :ARG1 event_performed)
+드러나 : VERB
+	- expose		(드 / 드러나-01 :ARG0 exposer :ARG1 thing_seen :ARG2 seer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"19일" [DT_DAY]	->  :time|duration (1 / 19일)	OR	:time (d / date-entity :day 19)	OR	:duration (t / temporal-quantity :quant 19 :unit (일 / 일))  
+"국회" [OGG_POLITICS]	->  (국 / 국회)	OR	(g / government-organization :wiki "의회" :name (이 / 이름 :op1 "국회"))
+"김병욱" [PS_NAME]	->  (김 / 김병욱)	OR	(p / person :wiki "김병욱?" :name (이 / 이름 :op1 "김병욱"))
+"더불어민주당" [OGG_POLITICS]	->  (더 / 더불어민주당)	OR	(g / government-organization :wiki "더불어민주당" :name (이 / 이름 :op1 "더불어민주당"))
+"서울시교육청" [OGG_POLITICS]	->  (서 / 서울시교육청)	OR	(g / government-organization :wiki "서울특별시교육청" :name (이 / 이름 :op1 "서울시교육청"))
+"의원" [CV_POSITION]	->  :mod (의 / 의원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (의 / 의원))
+"지난해 11월" [DT_OTHERS]	->  :time|duration (지 / 지난해11월)	OR	:time (d / date-entity :month 11)	OR	:duration (t / temporal-quantity :quant 11 :unit (월 / 월))  
+"청담고" [OGG_EDUCATION]	->  (청 / 청담고)	OR	(s / school|university :wiki "청담고?" :name (이 / 이름 :op1 "청담고"))
+-- VERBALIZED ------------------------------------
+(자 / 자료-00 :mod (감 / 감사-01))
+(해 / 해 :mod (지 / 지난-00))
+
+
+# ::id snt5.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 감사자료에 따르면 담임들은 자신들이 작성하는 학교생활기록부에 정 씨에 대해 온통 칭찬만 적었다.
+# ::note
+-- FRAMES ----------------------------------------
+감사 : VERBAL_NOUN
+	- thank		(감 / 감사-01 :ARG0 thanker :ARG1 thanked)
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+담임들 : DERIVED_NON-ENTRY -> (담 / 담임들-00) ?
+자신 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (자 / 자신들-00) ?
+	- confident		(자 / 자신 :ARG0 thing_confident :ARG1 confident_in)
+작성 : VERBAL_NOUN
+	- make_out		(작 / 작성-01 :ARG0 writer,_planner :ARG1 document,_plan)
+생활 : VERBAL_NOUN
+	- live		(생 / 생활-01 :ARG0 entity_being_alive :ARG2 location)
+기록 : VERBAL_NOUN
+	- record		(기 / 기록-01 :ARG0 agent :ARG1 thing_recorded)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+적 : VERB
+	- write_down		(적 / 적-01 :ARG0 agent :ARG1 thing_written :ARG2 where_written)
+	- little		(적 / 적-02 :ARG1 thing_being_little)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"담임" [CV_POSITION]	->  :mod (담 / 담임)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (담 / 담임))
+"정" [PS_NAME]	->  (정 / 정)	OR	(p / person :wiki "정?" :name (이 / 이름 :op1 "정"))
+-- VERBALIZED ------------------------------------
+(기 / 기록-01 :ARG1 (생 / 생활-01))
+(들 / 들 :ARG0-of (자 / 자신-01))
+(들 / 들 :mod (담 / 담임-00))
+(부 / 부-00 :mod (기 / 기록-01))
+(생 / 생활-01 :mod (학 / 학교-00))
+(자 / 자료-00 :mod (감 / 감사-01))
+
+
+# ::id snt6.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1학년 담임교사는 “천성이 밝고 활달해 친구들의 고민을 잘 들어준다. 심성이 따뜻해 교우 관계가 원만하다”라고 기록했다.
+# ::note
+-- FRAMES ----------------------------------------
+밝 : VERB
+	- bright		(밝 / 밝-01 :ARG1 thing_being_bright)
+활달하 : VERB
+	- generous		(활 / 활달하-01 :ARG1 thing_being_generous)
+친구들 : DERIVED_NON-ENTRY -> (친 / 친구들-00) ?
+듣 : VERB
+	- hear		(듣 / 듣-01 :ARG0 agent :ARG1 thing_heard :ARG2 heard_from)
+따뜻하 : VERB
+	- warm		(따 / 따뜻하-01 :ARG1 thing_being_warm)
+관계 : VERBAL_NOUN
+	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
+	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+원만하 : VERB
+	- harmonious		(원 / 원만하-01 :ARG1 thing_harmonious)
+기록 : VERBAL_NOUN
+	- record		(기 / 기록-01 :ARG0 agent :ARG1 thing_recorded)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1학년" [QT_ORDER]	->  :ord (1 / 1학년)	OR	:ord (o / ordinal-entity :value 1학년)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"담임교사" [CV_POSITION]	->  :mod (담 / 담임교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (담 / 담임교사))
+"친구" [CV_RELATION]	->  :mod (친 / 친구)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (친 / 친구))
+-- VERBALIZED ------------------------------------
+(관 / 관계-01 :mod (교 / 교우-00))
+(교 / 교사 :mod (담 / 담임-00))
+(담 / 담임 :mod (학 / 학년-00))
+(들 / 들 :mod (친 / 친구-00))
+
+
+# ::id snt7.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 2학년 학생부에도 “훈련 등으로 친구들과 교류 시간은 부족하지만 급우들 사이에서 선망의 대상”이라고 쓰여있다.
+# ::note
+-- FRAMES ----------------------------------------
+학생부 : DERIVED_NON-ENTRY -> (학 / 학생부-00) ?
+훈련 : VERBAL_NOUN
+	- train		(훈 / 훈련-01 :ARG0 trainer :ARG1 skill :ARG2 trainee)
+친구들 : DERIVED_NON-ENTRY -> (친 / 친구들-00) ?
+교류 : VERBAL_NOUN
+	- interchange		(교 / 교류-01 :ARG0 agent :ARG1 thing_interchanged :ARG2 other_party)
+부족 : VERBAL_NOUN
+	- lack		(부 / 부족-01 :ARG1 thing_being_short :ARG2 lack_in)
+급우들 : DERIVED_NON-ENTRY -> (급 / 급우들-00) ?
+쓰이 : REDUCED_VERB_DETECTED
+	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
+	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2학년" [QT_ORDER]	->  :ord (2 / 2학년)	OR	:ord (o / ordinal-entity :value 2학년)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"친구" [CV_RELATION]	->  :mod (친 / 친구)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (친 / 친구))
+"학생" [CV_OCCUPATION]	->  :mod (학 / 학생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (학 / 학생))
+-- VERBALIZED ------------------------------------
+(들 / 들 :mod (급 / 급우-00))
+(들 / 들 :mod (친 / 친구-00))
+(부 / 부 :mod (학 / 학생-00))
+(시 / 시간-00 :mod (교 / 교류-01))
+(학 / 학생 :mod (학 / 학년-00))
+
+
+# ::id snt8.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 2학년 담임인 황 모 교사는 문학 시간에 출석도 하지 않은 정 씨에게 태도점수 만점을 줘 학생들의 항의를 받기도 했다.
+# ::note
+-- FRAMES ----------------------------------------
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+주 : VERB
+	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+학생들 : DERIVED_NON-ENTRY -> (학 / 학생들-00) ?
+항의 : VERBAL_NOUN
+	- protest		(항 / 항의-01 :ARG0 protester :ARG1 thing_being_objectionable)
+	- protest		(항 / 항의-02 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2학년" [QT_ORDER]	->  :ord (2 / 2학년)	OR	:ord (o / ordinal-entity :value 2학년)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"정" [PS_NAME]	->  (정 / 정)	OR	(p / person :wiki "정?" :name (이 / 이름 :op1 "정"))
+"학생" [CV_OCCUPATION]	->  :mod (학 / 학생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (학 / 학생))
+"황" [PS_NAME]	->  (황 / 황)	OR	(p / person :wiki "황" :name (이 / 이름 :op1 "황"))
+-- VERBALIZED ------------------------------------
+(담 / 담임 :mod (학 / 학년-00))
+(들 / 들 :mod (학 / 학생-00))
+(만 / 만점 :mod (점 / 점수-00))
+(시 / 시간 :mod (문 / 문학-00))
+(점 / 점수 :mod (태 / 태도-00))
+
+
+# ::id snt9.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 하지만 황 교사는 오히려 학생들에게 “못난 자식 감싸는 엄마 같은 마음이다. 국가대표 되려고 저렇게 고생하지 않느냐”며 정 씨를 두둔했다.
+# ::note
+-- FRAMES ----------------------------------------
+학생들 : DERIVED_NON-ENTRY -> (학 / 학생들-00) ?
+못나 : ** UNUSED_OR_NON-ENTRY **
+자식감싸 : DERIVED_NON-ENTRY
+감싸 : REDUCED_VERB_DETECTED
+	- wind,_dress		(감 / 감-01 :ARG0 roller :ARG1 thing_rolled :ARG2 location)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+대표 : VERBAL_NOUN
+	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+저렇 : ** UNUSED_OR_NON-ENTRY **
+고생 : VERBAL_NOUN
+	- have_a_hard_time		(고 / 고생-01 :ARG1 patient :ARG2 reason)
+두둔 : VERBAL_NOUN
+	- back		(두 / 두둔-01 :ARG0 agent :ARG1 entity_backed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"국가대표" [CV_POSITION]	->  :mod (국 / 국가대표)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국가대표))
+"엄마" [CV_RELATION]	->  :mod (엄 / 엄마)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (엄 / 엄마))
+"자식" [CV_RELATION]	->  :mod (자 / 자식)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (자 / 자식))
+"정" [PS_NAME]	->  (정 / 정)	OR	(p / person :wiki "정?" :name (이 / 이름 :op1 "정"))
+"학생" [CV_OCCUPATION]	->  :mod (학 / 학생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (학 / 학생))
+"황" [PS_NAME]	->  (황 / 황)	OR	(p / person :wiki "황" :name (이 / 이름 :op1 "황"))
+-- VERBALIZED ------------------------------------
+(대 / 대표-01 :mod (국 / 국가-00))
+(들 / 들 :mod (학 / 학생-00))
+
+
+# ::id snt10.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 반면 일반 교과 교사들은 정 씨를 ‘불성실한 학생’으로 기억했다.
+# ::note
+-- FRAMES ----------------------------------------
+교사들 : DERIVED_NON-ENTRY -> (교 / 교사들-00) ?
+불성실 : VERBAL_NOUN
+	- insincere		(불 / 불성실-01 :ARG1 thing_being_insincere)
+기억 : VERBAL_NOUN
+	- remember		(기 / 기억-01 :ARG0 agent :ARG1 memory)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"정" [PS_NAME]	->  (정 / 정)	OR	(p / person :wiki "정?" :name (이 / 이름 :op1 "정"))
+"학생" [CV_OCCUPATION]	->  :mod (학 / 학생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (학 / 학생))
+-- VERBALIZED ------------------------------------
+(교 / 교과 :mod (일 / 일반-00))
+(교 / 교사 :mod (교 / 교과-00))
+(들 / 들 :mod (교 / 교사-00))
+(일 / 일반 :mod (반 / 반면-00))
+
+
+# ::id snt11.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 2학년 체육 교사는 ＂교실서 잔다 하기에 다른 학생을 보내 ‘운동장에 나오라’고 하면 ‘깨우지 말라’며 따르지 않았다”고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+자 : ** UNUSED_OR_NON-ENTRY **
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+보내 : VERB
+	- send		(보 / 보내-01 :ARG0 sender :ARG1 sent :ARG2 sent_to)
+	- spend		(보 / 보내-02 :ARG0 agent :ARG1 time)
+운동장 : DERIVED_NON-ENTRY -> (운 / 운동장-00) ?
+나오 : VERB
+	- come_out		(나 / 나오-01 :ARG0 thing_coming_out :ARG2 start_point :ARG3 end_point)
+	- do-light_verb		(나 / 나오-02 :ARG0 agent :ARG1 deverbal_noun :ARG2 start_point :ARG3 end_point)
+	- spill_out-CV		(나 / 나오-03 :ARG1 thing_coming_out :ARG2 start_point :ARG3 end_point)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+깨우 : REDUCED_VERB_DETECTED
+	- wake		(깨 / 깨-01 :ARG0 causer :ARG1 sleeper :ARG2 sleep)
+	- break		(깨 / 깨-02 :ARG0 causer :ARG1 thing_broken)
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2학년" [QT_ORDER]	->  :ord (2 / 2학년)	OR	:ord (o / ordinal-entity :value 2학년)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"체육 교사" [CV_OCCUPATION]	->  :mod (체 / 체육교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (체 / 체육 교사))
+"학생" [CV_OCCUPATION]	->  :mod (학 / 학생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (학 / 학생))
+-- VERBALIZED ------------------------------------
+(교 / 교사 :mod (체 / 체육-00))
+(장 / 장 :mod (운 / 운동-00))
+(체 / 체육 :mod (학 / 학년-00))
+
+
+# ::id snt12.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1학년 과학 담당 오 모 교사는 “한 학기 1~2번 정도 본 것 같다”고 했다.
+# ::note
+-- FRAMES ----------------------------------------
+담당 : VERBAL_NOUN
+	- be_in_charge_of		(담 / 담당-01 :ARG0 agent :ARG1 thing_charged)
+정도보 : DERIVED_NON-ENTRY
+보 : VERB
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1~2번" [QT_ORDER]	->  :ord (1 / 1~2번)	OR	:ord (o / ordinal-entity :value 1~2번)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"1학년" [QT_ORDER]	->  :ord (1 / 1학년)	OR	:ord (o / ordinal-entity :value 1학년)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"과학" [FD_SCIENCE]	->  (과 / 과학)	OR	(s / study-field|group* :wiki "과학" :name (이 / 이름 :op1 "과학"))
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"오" [PS_NAME]	->  (오 / 오)	OR	(p / person :wiki "오?" :name (이 / 이름 :op1 "오"))
+"한 학기" [DT_DURATION]	->  :time|duration (한 / 한학기)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(과 / 과학 :mod (학 / 학년-00))
+(담 / 담당-01 :mod (과 / 과학-00))
+
+
+# ::id snt13.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 영어(2학년)를 담당했던 최 모 교사는 “수학여행 때 1박도 하지 않고 숙소 앞에서 엄마 차를 타고 돌아갔다”고 기억했다.
+# ::note
+-- FRAMES ----------------------------------------
+담당 : VERBAL_NOUN
+	- be_in_charge_of		(담 / 담당-01 :ARG0 agent :ARG1 thing_charged)
+여행 : VERBAL_NOUN
+	- travel		(여 / 여행-01 :ARG0 agent :ARG1 location)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+차 : VERBAL_NOUN
+	- fill		(차 / 차-01 :ARG0 thing_filling :ARG1 thing_filled :ARG2 fill_with)
+	- fasten		(차 / 차-02 :ARG0 agent :ARG1 thing_fastened :ARG2 goal)
+타 : VERB
+	- ride		(타 / 타-01 :ARGA causer :ARG0 agent :ARG1 vehicle)
+	- take		(타 / 타-02 :ARG1 taker :ARG2 thing_taken)
+	- burn		(타 / 타-03 :ARG1 thing_burning :ARG2 fire)
+돌아가 : VERB
+	- go_back		(돌 / 돌아가-01 :ARG0 agent :ARG1 path :ARG2 source :ARG3 goal)
+기억 : VERBAL_NOUN
+	- remember		(기 / 기억-01 :ARG0 agent :ARG1 memory)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1박" [DT_DURATION]	->  :time|duration (1 / 1박)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"2학년" [QT_ORDER]	->  :ord (2 / 2학년)	OR	:ord (o / ordinal-entity :value 2학년)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"수학" [FD_SCIENCE]	->  (수 / 수학)	OR	(s / study-field|group* :wiki "수학" :name (이 / 이름 :op1 "수학"))
+"숙소" [OGG_HOTEL]	->  (숙 / 숙소)	OR	(h / hotel|company :wiki "숙박" :name (이 / 이름 :op1 "숙소"))
+"엄마" [CV_RELATION]	->  :mod (엄 / 엄마)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (엄 / 엄마))
+"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
+"차" [AF_TRANSPORT]	->  (차 / 차)	OR	(v / vehicle|ship|aircraft|... :wiki "차?" :name (이 / 이름 :op1 "차"))
+"최" [PS_NAME]	->  (최 / 최)	OR	(p / person :wiki "최?" :name (이 / 이름 :op1 "최"))
+-- VERBALIZED ------------------------------------
+(때 / 때-00 :mod (여 / 여행-01))
+(앞 / 앞 :mod (숙 / 숙소-00))
+(여 / 여행-01 :mod (수 / 수학-00))
+(차 / 차-01 :mod (엄 / 엄마-00))
+
+
+# ::id snt14.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 정 씨의 한 동창생은 “자기는 대학이 이미 정해져 있어 공부할 필요도 없다, 잠자러 학교에 나온다고 말하곤 해 짜증 나고 기분 나빴다”고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+동창생 : DERIVED_NON-ENTRY -> (동 / 동창생-00) ?
+정하 : VERB
+	- set,_choose		(정 / 정하-01 :ARG0 setter :ARG1 thing_set)
+공부 : VERBAL_NOUN
+	- study		(공 / 공부-01 :ARG0 agent :ARG1 subject)
+필요 : VERBAL_NOUN
+	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
+없 : ** UNUSED_OR_NON-ENTRY **
+잠자 : ** UNUSED_OR_NON-ENTRY **
+나오 : VERB
+	- come_out		(나 / 나오-01 :ARG0 thing_coming_out :ARG2 start_point :ARG3 end_point)
+	- do-light_verb		(나 / 나오-02 :ARG0 agent :ARG1 deverbal_noun :ARG2 start_point :ARG3 end_point)
+	- spill_out-CV		(나 / 나오-03 :ARG1 thing_coming_out :ARG2 start_point :ARG3 end_point)
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+짜증나 : DERIVED_NON-ENTRY
+나 : VERB
+	- happen		(나 / 나-01 :ARG1 thing_happening :ARG2 location)
+기분나빴 : DERIVED_NON-ENTRY
+나빴 : REDUCED_VERB_DETECTED
+	- happen		(나 / 나-01 :ARG1 thing_happening :ARG2 location)
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"대학" [CV_RELATION]	->  :mod (대 / 대학)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (대 / 대학))
+"동창생" [CV_RELATION]	->  :mod (동 / 동창생)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (동 / 동창생))
+"정" [PS_NAME]	->  (정 / 정)	OR	(p / person :wiki "정?" :name (이 / 이름 :op1 "정"))
+"학교" [CV_RELATION]	->  :mod (학 / 학교)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (학 / 학교))
+"한" [CV_RELATION]	->  :mod (한 / 한)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (한 / 한))
+-- VERBALIZED ------------------------------------
+(생 / 생 :mod (동 / 동창-00))
+
+
+# ::id snt15.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 또 다른 동창생도 “아침에 왔다가 점심도 안 먹고 집에 갔다. 옆 친구와도 어울리지 않았다”고 전했다.
+# ::note
+-- FRAMES ----------------------------------------
+동창생 : DERIVED_NON-ENTRY -> (동 / 동창생-00) ?
+오 : VERB
+	- come		(오 / 오-01 :ARG0 entity_coming :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- come		(오 / 오-02 :ARG1 entity_coming :ARG2 start_point :ARG3 end_point)
+	- bring_about-CV		(오 / 오-03 :ARG0 causer :ARG1 thing_brought_about)
+	- send_back-CV		(오 / 오-04 :ARG0 sender :ARG1 thing_sent :ARG2 sent_to)
+	- remit-CV		(오 / 오-05 :ARG0 sender :ARG1 money :ARG2 sent_to)
+	- hear-CV		(오 / 오-06 :ARG0 agent :ARG1 thing_heard :ARG2 heard_from)
+먹 : VERB
+	- eat,_have		(먹 / 먹-01 :ARGA causer :ARG0 agent :ARG1 thing_eaten)
+가 : VERB
+	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
+	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
+	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
+	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
+	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
+	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
+어울리 : ** UNUSED_OR_NON-ENTRY **
+전하 : VERB
+	- report		(전 / 전하-01 :ARG0 agent :ARG1 thing_reported :ARG2 report_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"동창생" [CV_RELATION]	->  :mod (동 / 동창생)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (동 / 동창생))
+"아침" [TI_OTHERS]	->  :time|duration (아 / 아침)	OR	:time (d / date-entity)	OR	:duration 
+"옆" [TM_DIRECTION]	->  (옆 / 옆)	OR	(: / :direction :wiki - :name (이 / 이름 :op1 "옆"))
+"친구" [CV_RELATION]	->  :mod (친 / 친구)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (친 / 친구))
+-- VERBALIZED ------------------------------------
+(생 / 생 :mod (동 / 동창-00))
+(친 / 친구 :mod (옆 / 옆-00))
+
+
+# ::id snt16.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 청담고는 다른 학생들의 출석 인정엔 깐깐했지만 유독 정 씨에겐 관대했다.
+# ::note
+-- FRAMES ----------------------------------------
+학생들 : DERIVED_NON-ENTRY -> (학 / 학생들-00) ?
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+인정 : VERBAL_NOUN
+	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
+깐깐하 : ** UNUSED_OR_NON-ENTRY **
+관대하 : DERIVED_VERB_DETECTED
+	- magnanimous		(관 / 관대하-01 :ARG1 magnanimous_entity :ARG2 magnanimous_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"정" [PS_NAME]	->  (정 / 정)	OR	(p / person :wiki "정?" :name (이 / 이름 :op1 "정"))
+"청담고" [OGG_EDUCATION]	->  (청 / 청담고)	OR	(s / school|university :wiki "청담고?" :name (이 / 이름 :op1 "청담고"))
+"학생" [CV_OCCUPATION]	->  :mod (학 / 학생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (학 / 학생))
+-- VERBALIZED ------------------------------------
+(들 / 들 :mod (학 / 학생-00))
+(인 / 인정-01 :ARG1 (출 / 출석-01))
+
+
+# ::id snt17.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1학년 때 사회를 가르친 김 모 교사는 “예체능계 학생이 많아 출결이 깐깐한데 (정 씨는) 입학 때부터 출석 인정이 당연시돼 의아했다”고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+가르치 : VERB
+	- teach		(가 / 가르치-01 :ARG0 teacher :ARG1 subject :ARG2 student(s))
+예체능계 : DERIVED_NON-ENTRY -> (예 / 예체능계-00) ?
+많 : VERB
+	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
+깐깐하 : ** UNUSED_OR_NON-ENTRY **
+입학 : VERBAL_NOUN
+	- enter_school		(입 / 입학-01 :ARG0 agent :ARG1 goal)
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+인정 : VERBAL_NOUN
+	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
+당연시되 : DERIVED_NON-ENTRY
+의아하 : DERIVED_NON-ENTRY
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1학년" [QT_ORDER]	->  :ord (1 / 1학년)	OR	:ord (o / ordinal-entity :value 1학년)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"김" [PS_NAME]	->  (김 / 김)	OR	(p / person :wiki "김?" :name (이 / 이름 :op1 "김"))
+"사회" [FD_SOCIAL_SCIENCE]	->  (사 / 사회)	OR	(s / study-field|group* :wiki "사회" :name (이 / 이름 :op1 "사회"))
+"예체능" [FD_OTHERS]	->  (예 / 예체능)	OR	(s / study-field|group* :wiki - :name (이 / 이름 :op1 "예체능"))
+"정" [PS_NAME]	->  (정 / 정)	OR	(p / person :wiki "정?" :name (이 / 이름 :op1 "정"))
+"학생" [CV_OCCUPATION]	->  :mod (학 / 학생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (학 / 학생))
+-- VERBALIZED ------------------------------------
+(계 / 계 :mod (예 / 예체능-00))
+(때 / 때 :mod (학 / 학년-00))
+(때 / 때-00 :mod (입 / 입학-01))
+(사 / 사회 :mod (때 / 때-00))
+(인 / 인정-01 :ARG1 (출 / 출석-01))
+
+
+# ::id snt18.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 2학년 경제를 담당했던 송 모 교사도 “같은 반에 아이돌 연습생이 있었는데 정유라만 조퇴를 봐준다고 울면서 하소연을 하곤 했다”고 증언했다.
+# ::note
+-- FRAMES ----------------------------------------
+담당 : VERBAL_NOUN
+	- be_in_charge_of		(담 / 담당-01 :ARG0 agent :ARG1 thing_charged)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+연습 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (연 / 연습생-00) ?
+	- give_practice		(연 / 연습-01 :ARGA causer :ARG0 practicer :ARG1 skill)
+있 : ** UNUSED_OR_NON-ENTRY **
+봐주 : ** UNUSED_OR_NON-ENTRY **
+울 : ** UNUSED_OR_NON-ENTRY **
+하소연 : VERBAL_NOUN
+	- appeal		(하 / 하소연-01 :ARG0 appealer :ARG1 appealed_for :ARG2 appealed_to)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+증언 : VERBAL_NOUN
+	- testify		(증 / 증언-01 :ARG0 agent :ARG1 thing_testified)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2학년" [QT_ORDER]	->  :ord (2 / 2학년)	OR	:ord (o / ordinal-entity :value 2학년)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"경제" [FD_SOCIAL_SCIENCE]	->  (경 / 경제)	OR	(s / study-field|group* :wiki "경제" :name (이 / 이름 :op1 "경제"))
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"송" [PS_NAME]	->  (송 / 송)	OR	(p / person :wiki "송?" :name (이 / 이름 :op1 "송"))
+"아이돌" [CV_POSITION]	->  :mod (아 / 아이돌)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (아 / 아이돌))
+"연습생" [CV_POSITION]	->  :mod (연 / 연습생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (연 / 연습생))
+"정유라" [PS_NAME]	->  (정 / 정유라)	OR	(p / person :wiki "정유라?" :name (이 / 이름 :op1 "정유라"))
+-- VERBALIZED ------------------------------------
+(경 / 경제 :mod (학 / 학년-00))
+(생 / 생 :ARG0-of (연 / 연습-01))
+(연 / 연습-01 :mod (아 / 아이돌-00))
+
+
+# ::id snt19.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 당시 담임인 황 교사는 이 연습생에겐 “학교에 빠지면 안 된다”며 단호했다고 한다.
+# ::note
+-- FRAMES ----------------------------------------
+연습 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (연 / 연습생-00) ?
+	- give_practice		(연 / 연습-01 :ARGA causer :ARG0 practicer :ARG1 skill)
+빠지 : VERB
+	- get_into		(빠 / 빠지-01 :ARG0 causer :ARG1 thing_getting_into :ARG2 location)
+	- exclude		(빠 / 빠지-02 :ARG0 excluder :ARG1 thing_excluded :ARG2 excluded_from)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+단호하 : VERB
+	- resolute		(단 / 단호하-01 :ARG1 thing_being_resolute)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"담임" [CV_POSITION]	->  :mod (담 / 담임)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (담 / 담임))
+"연습생" [CV_POSITION]	->  :mod (연 / 연습생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (연 / 연습생))
+"학교" [OGG_EDUCATION]	->  (학 / 학교)	OR	(s / school|university :wiki "학교" :name (이 / 이름 :op1 "학교"))
+"황" [PS_NAME]	->  (황 / 황)	OR	(p / person :wiki "황" :name (이 / 이름 :op1 "황"))
+-- VERBALIZED ------------------------------------
+(담 / 담임 :mod (당 / 당시-00))
+(생 / 생 :ARG0-of (연 / 연습-01))
+
+
+# ::id snt20.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 결국 해당 학생은 같은 해 다른 학교로 전학을 갔다.
+# ::note
+-- FRAMES ----------------------------------------
+해당 : VERBAL_NOUN
+	- correspond_to		(해 / 해당-01 :ARG1 topic,_theme :ARG2 compared_with)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+가 : VERB
+	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
+	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
+	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
+	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
+	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
+	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"같은 해" [DT_YEAR]	->  :time|duration (같 / 같은해)	OR	:time (d / date-entity)	OR	:duration 
+"학교" [OGG_EDUCATION]	->  (학 / 학교)	OR	(s / school|university :wiki "학교" :name (이 / 이름 :op1 "학교"))
+"학생" [CV_OCCUPATION]	->  :mod (학 / 학생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (학 / 학생))
+-- VERBALIZED ------------------------------------
+(학 / 학생-00 :mod (해 / 해당-01))
+(해 / 해당-01 :mod (결 / 결국-00))
+
+
+# ::id snt21.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 당시 같은 반이었던 한 동창생은 “예체능을 전공하는 다른 친구들이 늘 정유라만 조퇴시켜 줘 불만이 많았다”고 전했다.
+# ::note
+-- FRAMES ----------------------------------------
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+동창생 : DERIVED_NON-ENTRY -> (동 / 동창생-00) ?
+전공하 : DERIVED_NON-ENTRY
+친구들 : DERIVED_NON-ENTRY -> (친 / 친구들-00) ?
+조퇴시키 : DERIVED_NON-ENTRY
+불만 : VERBAL_NOUN
+	- dissatisfied		(불 / 불만-01 :ARG0 causer :ARG1 person_feeling_dissatisfaction)
+많 : VERB
+	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
+전하 : VERB
+	- report		(전 / 전하-01 :ARG0 agent :ARG1 thing_reported :ARG2 report_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"동창생" [CV_RELATION]	->  :mod (동 / 동창생)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (동 / 동창생))
+"예체능" [FD_OTHERS]	->  (예 / 예체능)	OR	(s / study-field|group* :wiki - :name (이 / 이름 :op1 "예체능"))
+"정유라" [PS_NAME]	->  (정 / 정유라)	OR	(p / person :wiki "정유라?" :name (이 / 이름 :op1 "정유라"))
+"친구" [CV_RELATION]	->  :mod (친 / 친구)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (친 / 친구))
+"한" [QT_COUNT]	->  :quant (한 / 한)	OR	(c / concept* :quant - :unit|scale (한 / 한))
+-- VERBALIZED ------------------------------------
+(들 / 들 :mod (친 / 친구-00))
+(생 / 생 :mod (동 / 동창-00))
+
+
+# ::id snt22.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 하지만 감사에서 황 교사는 “정확하게 기억나지 않는다”라는 입장을 고수했다.
+# ::note
+-- FRAMES ----------------------------------------
+감사 : VERBAL_NOUN
+	- thank		(감 / 감사-01 :ARG0 thanker :ARG1 thanked)
+정확 : VERBAL_NOUN
+	- precise		(정 / 정확-01 :ARG1 thing_being_precise)
+기억나 : REDUCED_VERB_DETECTED
+	- remember		(기 / 기억-01 :ARG0 agent :ARG1 memory)
+고수 : VERBAL_NOUN
+	- adhere		(고 / 고수-01 :ARG0 adherer :ARG1 thing_adhered_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"황" [PS_NAME]	->  (황 / 황)	OR	(p / person :wiki "황" :name (이 / 이름 :op1 "황"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt23.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 실제로 고 3년 당시 정 씨의 출석일수는 17일에 불과했다.
+# ::note
+-- FRAMES ----------------------------------------
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"17일" [DT_DAY]	->  :time|duration (1 / 17일)	OR	:time (d / date-entity :day 17)	OR	:duration (t / temporal-quantity :quant 17 :unit (일 / 일))  
+"3년" [DT_DURATION]	->  :time|duration (3 / 3년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 3))	OR :duration (t / temporal-quantity :quant 3 :unit (년 / 년))  
+"정" [PS_NAME]	->  (정 / 정)	OR	(p / person :wiki "정?" :name (이 / 이름 :op1 "정"))
+-- VERBALIZED ------------------------------------
+(일 / 일수-00 :mod (출 / 출석-01))
+
+
+# ::id snt24.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 또 고 1·2 때는 각각 126일과 137일을 출석한 것으로 기록돼 있지만, 실제 출석일은 정확히 확인되지 않는다.
+# ::note
+-- FRAMES ----------------------------------------
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+기록 : VERBAL_NOUN
+	- record		(기 / 기록-01 :ARG0 agent :ARG1 thing_recorded)
+출석 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (출 / 출석일-00) ?
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+확인 : VERBAL_NOUN
+	- confirm		(확 / 확인-01 :ARG0 confirmer :ARG1 thing_confirmed :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"126일" [DT_DURATION]	->  :time|duration (1 / 126일)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :day 126))	OR :duration (t / temporal-quantity :quant 126 :unit (일 / 일))  
+"137일" [DT_DURATION]	->  :time|duration (1 / 137일)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :day 137))	OR :duration (t / temporal-quantity :quant 137 :unit (일 / 일))  
+"1·2때" [DT_OTHERS]	->  :time|duration (1 / 1·2때)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(일 / 일 :ARG0-of (출 / 출석-01))
+
+
+# ::id snt25.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 시 교육청 관계자는 “‘출석 인정’을 그냥 ‘출석’으로 기록해 실제 출석 날짜를 파악하기가 어렵다”고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+교육 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (교 / 교육청-00) ?
+	- educate		(교 / 교육-01 :ARG0 teacher :ARG1 subject :ARG2 student)
+관계 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관계자-00) ?
+	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
+	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+인정 : VERBAL_NOUN
+	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+기록 : VERBAL_NOUN
+	- record		(기 / 기록-01 :ARG0 agent :ARG1 thing_recorded)
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+파악 : VERBAL_NOUN
+	- grasp		(파 / 파악-01 :ARG0 grasper :ARG1 thing_grasped)
+어렵 : VERB
+	- difficult		(어 / 어렵-01 :ARG1 thing_being_difficult)
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"시 교육청" [OGG_POLITICS]	->  (시 / 시교육청)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "시" :op2 "교육청"))
+-- VERBALIZED ------------------------------------
+(교 / 교육-01 :mod (시 / 시-00))
+(날 / 날짜-00 :mod (출 / 출석-01))
+(인 / 인정-01 :ARG1 (출 / 출석-01))
+(자 / 자 :ARG0-of (관 / 관계-01))
+(청 / 청 :ARG0-of (교 / 교육-01))
+(출 / 출석-01 :mod (실 / 실제-00))
+
+
+# ::id snt26.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt ‘출석 인정’은 등교하지 않았지만 대회 참가 등으로 출석을 인정해 주는 경우로 ‘출석’과 구분해 기록해야만 한다.
+# ::note
+-- FRAMES ----------------------------------------
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+인정 : VERBAL_NOUN
+	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
+등교하 : DERIVED_NON-ENTRY
+참가 : VERBAL_NOUN
+	- participate		(참 / 참가-01 :ARG0 agent :ARG1 participated_in)
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+인정 : VERBAL_NOUN
+	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+구분 : VERBAL_NOUN
+	- divide		(구 / 구분-01 :ARG0 agent :ARG1 thing_being_divided :ARG2 resultant)
+기록 : VERBAL_NOUN
+	- record		(기 / 기록-01 :ARG0 agent :ARG1 thing_recorded)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(인 / 인정-01 :ARG1 (출 / 출석-01))
+(참 / 참가-01 :mod (대 / 대회-00))
+
+
+# ::id snt27.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 최 씨는 학교를 찾아와 교사들에게 막말을 하거나 엄포를 놓기도 했다.
+# ::note
+-- FRAMES ----------------------------------------
+찾아오 : VERB
+	- come_to		(찾 / 찾아오-01 :ARG1 thing_coming :ARG2 goal)
+교사들 : DERIVED_NON-ENTRY -> (교 / 교사들-00) ?
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+놓 : VERB
+	- put		(놓 / 놓-01 :ARG0 putter :ARG1 thing_put :ARG2 where_put)
+	- about		(놓 / 놓-02 :ARG0 impersonal :ARG1 about_what)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"최" [PS_NAME]	->  (최 / 최)	OR	(p / person :wiki "최?" :name (이 / 이름 :op1 "최"))
+"학교" [OGG_EDUCATION]	->  (학 / 학교)	OR	(s / school|university :wiki "학교" :name (이 / 이름 :op1 "학교"))
+-- VERBALIZED ------------------------------------
+(들 / 들 :mod (교 / 교사-00))
+
+
+# ::id snt28.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 정 씨의 고 2 때 체육특기자 담당 교사였던 송 모 교사가 정 씨에게 “1년에 4회 이상 대회 출전은 규정을 어기는 것”이라고 알려주자 최 씨가 학교를 찾아와 “너 같은 것은 교육부 장관에게 말해 당장 잘라 버릴 수 있다”라며 폭언을 퍼부었다.
+# ::note
+-- FRAMES ----------------------------------------
+특기자 : DERIVED_NON-ENTRY -> (특 / 특기자-00) ?
+담당 : VERBAL_NOUN
+	- be_in_charge_of		(담 / 담당-01 :ARG0 agent :ARG1 thing_charged)
+이상 : VERBAL_NOUN
+	- strange		(이 / 이상-01 :ARG1 thing_being_strange)
+출전 : VERBAL_NOUN
+	- take_part_in		(출 / 출전-01 :ARGA causer :ARG0 thing_taking_part_in :ARG1 take_part_in)
+규정 : VERBAL_NOUN
+	- regulate		(규 / 규정-01 :ARG0 regulator :ARG1 thing_regulated)
+어기 : VERB
+	- violate		(어 / 어기-01 :ARG0 thing_violating :ARG1 thing_violated)
+알리 : REDUCED_VERB_DETECTED
+	- know		(알 / 알-01 :ARGA causer :ARG0 knower :ARG1 theme)
+찾아오 : VERB
+	- come_to		(찾 / 찾아오-01 :ARG1 thing_coming :ARG2 goal)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+당장자르 : DERIVED_NON-ENTRY
+자르 : VERB
+	- cut		(자 / 자르-01 :ARG0 agent :ARG1 thing_cut)
+있 : ** UNUSED_OR_NON-ENTRY **
+퍼붓 : VERB
+	- pour		(퍼 / 퍼붓-01 :ARG0 agent :ARG1 thing_poured :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1년" [DT_DURATION]	->  :time|duration (1 / 1년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1))	OR :duration (t / temporal-quantity :quant 1 :unit (년 / 년))  
+"4회 이상" [QT_COUNT]	->  :quant (4 / 4회이상)	OR	(c / concept* :quant 4회 :unit|scale (이 / 이상))
+"고 2" [QT_AGE]	->  :age (고 / 고2)	OR	:age 고 2
+"교사" [CV_OCCUPATION]	->  :mod (교 / 교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교사))
+"교육부" [OGG_POLITICS]	->  (교 / 교육부)	OR	(g / government-organization :wiki "교육부?" :name (이 / 이름 :op1 "교육부"))
+"담당 교사" [CV_OCCUPATION]	->  :mod (담 / 담당교사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (담 / 담당 교사))
+"송" [PS_NAME]	->  (송 / 송)	OR	(p / person :wiki "송?" :name (이 / 이름 :op1 "송"))
+"장관" [CV_POSITION]	->  :mod (장 / 장관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장관))
+"정" [PS_NAME]	->  (정 / 정)	OR	(p / person :wiki "정?" :name (이 / 이름 :op1 "정"))
+"정" [PS_NAME]	->  (정 / 정)	OR	(p / person :wiki "정?" :name (이 / 이름 :op1 "정"))
+"체육특기자" [CV_POSITION]	->  :mod (체 / 체육특기자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (체 / 체육특기자))
+"최" [PS_NAME]	->  (최 / 최)	OR	(p / person :wiki "최?" :name (이 / 이름 :op1 "최"))
+"학교" [OGG_EDUCATION]	->  (학 / 학교)	OR	(s / school|university :wiki "학교" :name (이 / 이름 :op1 "학교"))
+-- VERBALIZED ------------------------------------
+(교 / 교사-00 :mod (담 / 담당-01))
+(대 / 대회-00 :mod (이 / 이상-01))
+(자 / 자 :mod (특 / 특기-00))
+(장 / 장관 :mod (교 / 교육부-00))
+(체 / 체육 :mod (때 / 때-00))
+(출 / 출전-01 :mod (대 / 대회-00))
+(특 / 특기 :mod (체 / 체육-00))
+
+
+# ::id snt29.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 2주 뒤 최 씨는 다시 담임을 만나 “건방져서 한마디 했다. 애 아빠(정윤회)도 ‘가만히 안 둔다’고 했다”고 전했다.
+# ::note
+-- FRAMES ----------------------------------------
+만나 : VERB
+	- meet		(만 / 만나-01 :ARG0 person/entity/obeject_meeting :ARG1 person/entity/obeject_being_met)
+건방지 : ** UNUSED_OR_NON-ENTRY **
+한마디하 : DERIVED_NON-ENTRY
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+두 : VERB
+	- put		(두 / 두-01 :ARG0 agent :ARG1 theme :ARG2 location)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+전하 : VERB
+	- report		(전 / 전하-01 :ARG0 agent :ARG1 thing_reported :ARG2 report_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2주" [DT_DURATION]	->  :time|duration (2 / 2주)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"담임" [CV_POSITION]	->  :mod (담 / 담임)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (담 / 담임))
+"아빠" [CV_RELATION]	->  :mod (아 / 아빠)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (아 / 아빠))
+"정윤회" [PS_NAME]	->  (정 / 정윤회)	OR	(p / person :wiki "정윤회" :name (이 / 이름 :op1 "정윤회"))
+"최" [PS_NAME]	->  (최 / 최)	OR	(p / person :wiki "최?" :name (이 / 이름 :op1 "최"))
+"한마디" [QT_COUNT]	->  :quant (한 / 한마디)	OR	(c / concept* :quant - :unit|scale (한 / 한마디))
+-- VERBALIZED ------------------------------------
+(아 / 아빠 :mod (애 / 애-00))
+
+
+# ::id snt30.E2017.NEWS.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 말에 담임은 항의하기는커녕 “애 아빠가 딸바보군요”라며 맞장구를 쳤다고 한다.
+# ::note
+-- FRAMES ----------------------------------------
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+항의 : VERBAL_NOUN
+	- protest		(항 / 항의-01 :ARG0 protester :ARG1 thing_being_objectionable)
+	- protest		(항 / 항의-02 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
+맞장구 : DERIVED_NON-ENTRY -> (맞 / 맞장구-00) ?
+치 : VERB
+	- strike,_attack		(치 / 치-01 :ARG0 hitter,_attacker :ARG1 thing_hit,_attacked)
+	- set		(치 / 치-02 :ARG0 setter :ARG1 thing_set)
+	- run_over		(치 / 치-03 :ARG0 car :ARG1 victim)
+	- run_away		(치 / 치-04 :ARG0 agent :ARG1 flight)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"담임" [CV_POSITION]	->  :mod (담 / 담임)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (담 / 담임))
+"딸" [CV_RELATION]	->  :mod (딸 / 딸)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (딸 / 딸))
+"아빠" [CV_RELATION]	->  :mod (아 / 아빠)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (아 / 아빠))
+-- VERBALIZED ------------------------------------
+(바 / 바보 :mod (딸 / 딸-00))
+(아 / 아빠 :mod (애 / 애-00))
+
+
+
+Process finished with exit code 0

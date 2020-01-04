@@ -1,0 +1,592 @@
+/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
+# ::id snt0.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 케냐
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 케냐 공화국 또는 케냐(Kenya)는 동아프리카의 공화국이다.
+# ::note
+-- FRAMES ----------------------------------------
+공화국 : DERIVED_NON-ENTRY -> (공 / 공화국-00) ?
+공화국 : DERIVED_NON-ENTRY -> (공 / 공화국-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Kenya" [LCP_COUNTRY]	->  (K / Kenya)	OR	(c / country :wiki - :name (이 / 이름 :op1 "Kenya"))
+"동아프리카" [LCG_CONTINENT]	->  (동 / 동아프리카)	OR	(c / continent :wiki "동아프리카" :name (이 / 이름 :op1 "동아프리카"))
+"케냐 공화국" [LCP_COUNTRY]	->  (케 / 케냐공화국)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐" :op2 "공화국"))
+"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+-- VERBALIZED ------------------------------------
+(국 / 국 :mod (공 / 공화-00))
+(국 / 국 :mod (공 / 공화-00))
+
+
+# ::id snt2.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 인도양에 면해 있으며 북동쪽으로 소말리아, 북쪽으로 에티오피아와 남수단, 서쪽으로 우간다, 남쪽으로 탄자니아와 국경을 맞닿고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+면하 : VERB
+	- escape		(면 / 면하-01 :ARG0 entity_escaping :ARG1 thing_escaped)
+	- face		(면 / 면하-02 :ARG1 thing_facing :ARG2 thing_faced)
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+남 : VERBAL_NOUN
+	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
+맞닿 : REDUCED_VERB_DETECTED
+	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
+	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
+	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
+	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"남수단" [LCP_COUNTRY]	->  (남 / 남수단)	OR	(c / country :wiki "남수단" :name (이 / 이름 :op1 "남수단"))
+"남쪽" [TM_DIRECTION]	->  (남 / 남쪽)	OR	(: / :direction :wiki "남쪽" :name (이 / 이름 :op1 "남쪽"))
+"북동쪽" [TM_DIRECTION]	->  (북 / 북동쪽)	OR	(: / :direction :wiki "북동쪽" :name (이 / 이름 :op1 "북동쪽"))
+"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
+"서쪽" [TM_DIRECTION]	->  (서 / 서쪽)	OR	(: / :direction :wiki "서쪽" :name (이 / 이름 :op1 "서쪽"))
+"소말리아" [LCP_COUNTRY]	->  (소 / 소말리아)	OR	(c / country :wiki "소말리아" :name (이 / 이름 :op1 "소말리아"))
+"에티오피아" [LCP_COUNTRY]	->  (에 / 에티오피아)	OR	(c / country :wiki "에티오피아" :name (이 / 이름 :op1 "에티오피아"))
+"우간다" [LCP_COUNTRY]	->  (우 / 우간다)	OR	(c / country :wiki "우간다" :name (이 / 이름 :op1 "우간다"))
+"인도양" [LCG_OCEAN]	->  (인 / 인도양)	OR	(o / ocean :wiki "인도양" :name (이 / 이름 :op1 "인도양"))
+"탄자니아" [LCP_COUNTRY]	->  (탄 / 탄자니아)	OR	(c / country :wiki "탄자니아" :name (이 / 이름 :op1 "탄자니아"))
+-- VERBALIZED ------------------------------------
+(동 / 동 :mod (북 / 북-00))
+
+
+# ::id snt3.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 수도는 나이로비이며 공용어는 영어와 스와힐리어이다.
+# ::note
+-- FRAMES ----------------------------------------
+공용어 : DERIVED_NON-ENTRY -> (공 / 공용어-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"나이로비" [LCP_CAPITALCITY]	->  (나 / 나이로비)	OR	(c / city :wiki "나이로비" :name (이 / 이름 :op1 "나이로비"))
+"스와힐리어" [CV_LANGUAGE]	->  (스 / 스와힐리어)	OR	(l / language :wiki "스와힐리어" :name (이 / 이름 :op1 "스와힐리어"))
+"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
+-- VERBALIZED ------------------------------------
+(어 / 어 :mod (공 / 공용-00))
+
+
+# ::id snt4.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 케냐의 주요 종족은 키쿠유족, 루히아족, 루오족, 칼렌진족, 캄바족, 키시족,메루족 등 여러 민족으로 구성되어 있어 각각 다른 언어를 사용한다.
+# ::note
+-- FRAMES ----------------------------------------
+주요 : VERBAL_NOUN
+	- principal		(주 / 주요-01 :ARG1 thing_being_principal)
+구성 : VERBAL_NOUN
+	- compose		(구 / 구성-01 :ARG0 agent :ARG1 thing_composed :ARG2 composed_of)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"루오족" [CV_TRIBE]	->  (루 / 루오족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "루오족"))
+"루히아족" [CV_TRIBE]	->  (루 / 루히아족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "루히아족"))
+"메루족" [CV_TRIBE]	->  (메 / 메루족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "메루족"))
+"칼렌진족" [CV_TRIBE]	->  (칼 / 칼렌진족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "칼렌진족"))
+"캄바족" [CV_TRIBE]	->  (캄 / 캄바족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "캄바족"))
+"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+"키시족" [CV_TRIBE]	->  (키 / 키시족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "키시족"))
+"키쿠유족" [CV_TRIBE]	->  (키 / 키쿠유족)	OR	(e / ethnic-group|nationality :wiki "키쿠유족" :name (이 / 이름 :op1 "키쿠유족"))
+-- VERBALIZED ------------------------------------
+(종 / 종족-00 :mod (주 / 주요-01))
+
+
+# ::id snt5.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 백인, 인도인, 아랍인 등 비아프리카계 민족은 전체 인구의 1% 정도를 차지한다.
+# ::note
+-- FRAMES ----------------------------------------
+차지 : VERBAL_NOUN
+	- occupy		(차 / 차지-01 :ARG0 agent :ARG1 thing_occupied)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 1%)
+"백인" [CV_TRIBE]	->  (백 / 백인)	OR	(e / ethnic-group|nationality :wiki "백인" :name (이 / 이름 :op1 "백인"))
+"비아프리카계" [CV_TRIBE]	->  (비 / 비아프리카계)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "비아프리카계"))
+"아랍인" [CV_TRIBE]	->  (아 / 아랍인)	OR	(e / ethnic-group|nationality :wiki "아랍인" :name (이 / 이름 :op1 "아랍인"))
+"인도인" [CV_TRIBE]	->  (인 / 인도인)	OR	(e / ethnic-group|nationality :wiki "인도인" :name (이 / 이름 :op1 "인도인"))
+-- VERBALIZED ------------------------------------
+(인 / 인구 :mod (전 / 전체-00))
+
+
+# ::id snt6.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 동아프리카에서 발견된 화석에 따르면 조상이 2백만 년 전 이 지역에서 살았다고 한다.
+# ::note
+-- FRAMES ----------------------------------------
+발견 : VERBAL_NOUN
+	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+살 : VERB
+	- reside		(살 / 살-01 :ARG0 entity_residing :ARG2 location)
+	- be_alive		(살 / 살-02 :ARG0 agent :ARG1 entity_being_alive)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2백만 년 전" [DT_OTHERS]	->  :time|duration (2 / 2백만년전)	OR	:time (d / date-entity)	OR	:duration 
+"동아프리카" [LCG_CONTINENT]	->  (동 / 동아프리카)	OR	(c / continent :wiki "동아프리카" :name (이 / 이름 :op1 "동아프리카"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt7.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 투르카나 호 근처에서의 최근 발굴에 따르면 호모 하빌리스(Homo habilis), 호모 에렉투스(Homo erectus)와 같은 호미니드인(hominid)이 260만 년 전 이 나라 땅에 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+발굴 : VERBAL_NOUN
+	- unearth		(발 / 발굴-01 :ARG0 agent :ARG1 thing_unearthed)
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"260만 년 전" [DT_OTHERS]	->  :time|duration (2 / 260만년전)	OR	:time (d / date-entity)	OR	:duration 
+"Homo erectus" [CV_TRIBE]	->  (H / Homoerectus)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "Homo" :op2 "erectus"))
+"Homo habilis" [CV_TRIBE]	->  (H / Homohabilis)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "Homo" :op2 "habilis"))
+"hominid" [CV_TRIBE]	->  (h / hominid)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "hominid"))
+"투르카나 호" [LCG_RIVER]	->  (투 / 투르카나호)	OR	(r / river :wiki "투르카나호" :name (이 / 이름 :op1 "투르카나" :op2 "호"))
+"호모 에렉투스" [CV_TRIBE]	->  (호 / 호모에렉투스)	OR	(e / ethnic-group|nationality :wiki "호모_에렉투스" :name (이 / 이름 :op1 "호모" :op2 "에렉투스"))
+"호모 하빌리스" [CV_TRIBE]	->  (호 / 호모하빌리스)	OR	(e / ethnic-group|nationality :wiki "호모_하빌리스" :name (이 / 이름 :op1 "호모" :op2 "하빌리스"))
+"호미니드인" [CV_TRIBE]	->  (호 / 호미니드인)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "호미니드인"))
+-- VERBALIZED ------------------------------------
+(근 / 근처 :mod (호 / 호-00))
+(땅 / 땅 :mod (나 / 나라-00))
+(발 / 발굴-01 :mod (최 / 최근-00))
+
+
+# ::id snt8.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 케냐의 식민 시대 역사는 1885년 독일이 잔지바르(현 탄자니아의 잔지바르 섬) 술탄의 케냐 해안 영토에 보호령을 설치한 것으로 시작되었다.
+# ::note
+-- FRAMES ----------------------------------------
+보호 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (보 / 보호령-00) ?
+	- protect		(보 / 보호-01 :ARG0 protector :ARG1 protected :ARG2 danger)
+설치 : VERBAL_NOUN
+	- build		(설 / 설치-01 :ARG0 agent :ARG1 thing_built :ARG2 location)
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1885년" [DT_YEAR]	->  :time|duration (1 / 1885년)	OR	:time (d / date-entity :year 1885)	OR	:duration (t / temporal-quantity :quant 1885 :unit (년 / 년))  
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"보호령" [CV_LAW]	->  (보 / 보호령)	OR	(l / law :wiki "보호국" :name (이 / 이름 :op1 "보호령"))
+"술탄" [CV_POSITION]	->  :mod (술 / 술탄)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (술 / 술탄))
+"식민 시대" [DT_DYNASTY]	->  :time|duration (식 / 식민시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"잔지바르 섬" [LCG_ISLAND]	->  (잔 / 잔지바르섬)	OR	(i / island :wiki "웅구자섬" :name (이 / 이름 :op1 "잔지바르" :op2 "섬"))
+"잔지바르" [LCG_ISLAND]	->  (잔 / 잔지바르)	OR	(i / island :wiki "잔지바르" :name (이 / 이름 :op1 "잔지바르"))
+"케냐 해안 영토" [LC_OTHERS]	->  (케 / 케냐해안영토)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "케냐" :op2 "해안" :op3 "영토"))
+"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+"탄자니아" [LCP_COUNTRY]	->  (탄 / 탄자니아)	OR	(c / country :wiki "탄자니아" :name (이 / 이름 :op1 "탄자니아"))
+-- VERBALIZED ------------------------------------
+(령 / 령 :ARG0-of (보 / 보호-01))
+(시 / 시대 :mod (식 / 식민-00))
+(역 / 역사 :mod (시 / 시대-00))
+(영 / 영토 :mod (해 / 해안-00))
+
+
+# ::id snt9.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그 후 1888년 영국 동아프리카 회사가 들어왔다.
+# ::note
+-- FRAMES ----------------------------------------
+들어오 : VERB
+	- come_in		(들 / 들어오-01 :ARG0 entity_coming_in :ARG2 start_point :ARG3 end_point)
+	- flood_in-CV		(들 / 들어오-02 :ARG1 thing_flooding_in :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1888년" [DT_YEAR]	->  :time|duration (1 / 1888년)	OR	:time (d / date-entity :year 1888)	OR	:duration (t / temporal-quantity :quant 1888 :unit (년 / 년))  
+"영국 동아프리카 회사" [OGG_ECONOMY]	->  (영 / 영국동아프리카회사)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "영국" :op2 "동아프리카" :op3 "회사"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt10.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 독일이 해안 영토를 1890년에 영국에게 넘겨줘 두 열강 사이의 분쟁도 적지 않았다.
+# ::note
+-- FRAMES ----------------------------------------
+넘겨주 : VERB
+	- hand_over		(넘 / 넘겨주-01 :ARG0 giver :ARG1 thing_given :ARG2 entity_given_to)
+적 : VERB
+	- write_down		(적 / 적-01 :ARG0 agent :ARG1 thing_written :ARG2 where_written)
+	- little		(적 / 적-02 :ARG1 thing_being_little)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1890년" [DT_YEAR]	->  :time|duration (1 / 1890년)	OR	:time (d / date-entity :year 1890)	OR	:duration (t / temporal-quantity :quant 1890 :unit (년 / 년))  
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"두 열강" [QT_COUNT]	->  :quant (두 / 두열강)	OR	(c / concept* :quant 두 :unit|scale (열 / 열강))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+-- VERBALIZED ------------------------------------
+(사 / 사이 :mod (열 / 열강-00))
+(영 / 영토 :mod (해 / 해안-00))
+
+
+# ::id snt11.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1952년 10월부터 1959년 12월까지 케냐는 영국의 지배에 대한 반란(마우마우 반란)으로 비상 사태하에 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+사태하 : DERIVED_NON-ENTRY -> (사 / 사태하-00) ?
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1952년 10월부터 1959년 12월까지" [DT_DURATION]	->  :time|duration (1 / 1952년10월부터1959년12월까지)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1952 :month 10))	OR :duration (t / temporal-quantity :quant 1952 :unit (년 / 년))  (t / temporal-quantity :quant 10 :unit (월 / 월))  
+"마우마우 반란" [EV_WAR_REVOLUTION]	->  (마 / 마우마우반란)	OR	(w / war|event :wiki - :name (이 / 이름 :op1 "마우마우" :op2 "반란"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+-- VERBALIZED ------------------------------------
+(사 / 사태 :mod (비 / 비상-00))
+(하 / 하 :mod (사 / 사태-00))
+
+
+# ::id snt12.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 영국은 단계적으로 케냐의 독립을 허용할 수밖에 없었다.
+# ::note
+-- FRAMES ----------------------------------------
+단계적 : DERIVED_NON-ENTRY -> (단 / 단계적-00) ?
+독립 : VERBAL_NOUN
+	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
+	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
+허용 : VERBAL_NOUN
+	- permit		(허 / 허용-01 :ARG0 agent :ARG1 action_permitted :ARG2 permitted_to)
+없 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (단 / 단계-00))
+
+
+# ::id snt13.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그리하여 1957년 처음으로 아프리카인들이 피선거권을 가진 입법 회의 직접 선거를 치렀다.
+# ::note
+-- FRAMES ----------------------------------------
+피선거 : DERIVED_NON-ENTRY -> (피 / 피선거-00) ?
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+입법 : VERBAL_NOUN
+	- legalize		(입 / 입법-01 :ARG0 agent :ARG1 thing_legalized)
+치르 : VERB
+	- undergo		(치 / 치르-01 :ARG0 thing_undergoing :ARG1 thing_undergone)
+	- carry_out		(치 / 치르-02 :ARG0 agent :ARG1 thing_carried_out)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1957년" [DT_YEAR]	->  :time|duration (1 / 1957년)	OR	:time (d / date-entity :year 1957)	OR	:duration (t / temporal-quantity :quant 1957 :unit (년 / 년))  
+"아프리카인" [CV_TRIBE]	->  (아 / 아프리카인)	OR	(e / ethnic-group|nationality :wiki "아프리카인" :name (이 / 이름 :op1 "아프리카인"))
+"입법 회의 직접 선거" [EV_OTHERS]	->  (입 / 입법회의직접선거)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "입법" :op2 "회의" :op3 "직접" :op4 "선거"))
+"피선거권" [CV_LAW]	->  (피 / 피선거권)	OR	(l / law :wiki "피선거권" :name (이 / 이름 :op1 "피선거권"))
+-- VERBALIZED ------------------------------------
+(권 / 권 :mod (선 / 선거-00))
+(선 / 선거 :mod (직 / 직접-00))
+(직 / 직접 :mod (회 / 회의-00))
+(회 / 회의-00 :mod (입 / 입법-01))
+
+
+# ::id snt14.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러면서 좀 더 온건한 세력에게 권력을 넘기려는 영국의 기대와는 달리 조모 케냐타(Jomo Kenyatta)가 이끄는 케냐 아프리카 국민연맹(KANU, Kenya African National Union)이 독립 정부 조직을 주도하게 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+그러 : VERB
+	- say		(그 / 그러-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- do_so		(그 / 그러-02 :ARG0 agent)
+온건하 : DERIVED_NON-ENTRY
+넘기 : VERB
+	- transfer		(넘 / 넘기-01 :ARG0 sender :ARG1 thing_sent :ARG2 sent_from :ARG3 sent_to)
+	- tolerate-CV		(넘 / 넘기-02 :ARG0 tolerater :ARG1 thing_tolerated)
+기대 : VERBAL_NOUN
+	- expect		(기 / 기대-01 :ARG0 agent :ARG1 thing_expected)
+이끌 : VERB
+	- lead		(이 / 이끌-01 :ARG0 thing_leading :ARG1 thing_led :ARG2 lead_to)
+독립 : VERBAL_NOUN
+	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
+	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
+조직 : VERBAL_NOUN
+	- organize		(조 / 조직-01 :ARG0 agent :ARG1 thing_organized :ARG2 organized_with)
+주도 : VERBAL_NOUN
+	- lead		(주 / 주도-01 :ARG0 thing_leading :ARG1 thing_led)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Jomo Kenyatta" [PS_NAME]	->  (J / JomoKenyatta)	OR	(p / person :wiki - :name (이 / 이름 :op1 "Jomo" :op2 "Kenyatta"))
+"KANU" [OGG_POLITICS]	->  (K / KANU)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "KANU"))
+"Kenya African National Union" [OGG_POLITICS]	->  (K / KenyaAfricanNationalUnion)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "Kenya" :op2 "African" :op3 "National" :op4 "Union"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"조모 케냐타" [PS_NAME]	->  (조 / 조모케냐타)	OR	(p / person :wiki "조모_케냐타" :name (이 / 이름 :op1 "조모" :op2 "케냐타"))
+"케냐 아프리카 국민연맹" [OGG_POLITICS]	->  (케 / 케냐아프리카국민연맹)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "케냐" :op2 "아프리카" :op3 "국민연맹"))
+-- VERBALIZED ------------------------------------
+(연 / 연맹 :mod (국 / 국민-00))
+(정 / 정부-00 :mod (독 / 독립-01))
+(조 / 조직-01 :mod (정 / 정부-00))
+
+
+# ::id snt15.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1963년 12월 12일 케냐는 독립을 선포했다.
+# ::note
+-- FRAMES ----------------------------------------
+독립 : VERBAL_NOUN
+	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
+	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
+선포 : VERBAL_NOUN
+	- proclaim		(선 / 선포-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1963년 12월 12일" [DT_OTHERS]	->  :time|duration (1 / 1963년12월12일)	OR	:time (d / date-entity :year 1963 :month 12 :day 12)	OR	:duration (t / temporal-quantity :quant 1963 :unit (년 / 년))  (t / temporal-quantity :quant 12 :unit (월 / 월))  (t / temporal-quantity :quant 12 :unit (일 / 일))  
+"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt16.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1년 후 케냐타는 케냐의 초대 대통령이 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+초대 : VERBAL_NOUN
+	- invite		(초 / 초대-01 :ARG0 agent :ARG1 thing_invited :ARG2 invite_to)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1년 후" [DT_OTHERS]	->  :time|duration (1 / 1년후)	OR	:time (d / date-entity :year 1)	OR	:duration (t / temporal-quantity :quant 1 :unit (년 / 년))  
+"초대 대통령" [CV_POSITION]	->  :mod (초 / 초대대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (초 / 초대 대통령))
+"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+"케냐타" [PS_NAME]	->  (케 / 케냐타)	OR	(p / person :wiki "케냐타?" :name (이 / 이름 :op1 "케냐타"))
+-- VERBALIZED ------------------------------------
+(대 / 대통령-00 :mod (초 / 초대-01))
+
+
+# ::id snt17.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 케냐 인민연맹(KPU, Kenya People's Union)이 정당 활동이 금지된 1969년 이후로는 KANU가 유일한 정당이었다.
+# ::note
+-- FRAMES ----------------------------------------
+활동 : VERBAL_NOUN
+	- act		(활 / 활동-01 :ARG0 agent :ARG1 role)
+금지 : VERBAL_NOUN
+	- prohibit		(금 / 금지-01 :ARG0 agent :ARG1 action_prohibited)
+유일 : VERBAL_NOUN
+	- unique		(유 / 유일-01 :ARG1 thing_being_unique)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1969년" [DT_YEAR]	->  :time|duration (1 / 1969년)	OR	:time (d / date-entity :year 1969)	OR	:duration (t / temporal-quantity :quant 1969 :unit (년 / 년))  
+"KANU" [OGG_POLITICS]	->  (K / KANU)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "KANU"))
+"KPU" [OGG_POLITICS]	->  (K / KPU)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "KPU"))
+"케냐 인민연맹" [OGG_POLITICS]	->  (케 / 케냐인민연맹)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "케냐" :op2 "인민연맹"))
+-- VERBALIZED ------------------------------------
+(연 / 연맹 :mod (인 / 인민-00))
+(활 / 활동-01 :mod (정 / 정당-00))
+
+
+# ::id snt18.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1978년 케냐타 사망 이후 부통령이었던 대니얼 아랍 모이(Daniel arap Moi)가 예상을 깨고 권력 암투에서 승리해 케냐의 2대 대통령으로 취임하였다.
+# ::note
+-- FRAMES ----------------------------------------
+사망 : VERBAL_NOUN
+	- die		(사 / 사망-01 :ARG0 causer :ARG1 entity_dying)
+부통령 : DERIVED_NON-ENTRY -> (부 / 부통령-00) ?
+예상 : VERBAL_NOUN
+	- expect		(예 / 예상-01 :ARG0 expecter :ARG1 thing_expected)
+깨 : VERB
+	- wake		(깨 / 깨-01 :ARG0 causer :ARG1 sleeper :ARG2 sleep)
+	- break		(깨 / 깨-02 :ARG0 causer :ARG1 thing_broken)
+승리 : VERBAL_NOUN
+	- win		(승 / 승리-01 :ARG0 winner :ARG1 loser)
+취임 : VERBAL_NOUN
+	- take_office		(취 / 취임-01 :ARG0 thing_taking_office :ARG1 take_office_as)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1978년" [DT_YEAR]	->  :time|duration (1 / 1978년)	OR	:time (d / date-entity :year 1978)	OR	:duration (t / temporal-quantity :quant 1978 :unit (년 / 년))  
+"2대" [QT_ORDER]	->  :ord (2 / 2대)	OR	:ord (o / ordinal-entity :value 2대)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"Daniel arap Moi" [PS_NAME]	->  (D / DanielarapMoi)	OR	(p / person :wiki - :name (이 / 이름 :op1 "Daniel" :op2 "arap" :op3 "Moi"))
+"대니얼 아랍 모이" [PS_NAME]	->  (대 / 대니얼아랍모이)	OR	(p / person :wiki "대니얼_아랍_모이" :name (이 / 이름 :op1 "대니얼" :op2 "아랍" :op3 "모이"))
+"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
+"부통령" [CV_POSITION]	->  :mod (부 / 부통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (부 / 부통령))
+"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+"케냐타 사망" [PS_NAME]	->  (케 / 케냐타사망)	OR	(p / person :wiki - :name (이 / 이름 :op1 "케냐타" :op2 "사망"))
+-- VERBALIZED ------------------------------------
+(암 / 암투 :mod (권 / 권력-00))
+(이 / 이후-00 :mod (사 / 사망-01))
+
+
+# ::id snt19.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1982년 6월 개헌으로 케냐는 공식적으로 일당 체제가 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+공식적 : DERIVED_NON-ENTRY -> (공 / 공식적-00) ?
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1982년 6월" [DT_OTHERS]	->  :time|duration (1 / 1982년6월)	OR	:time (d / date-entity :year 1982 :month 6)	OR	:duration (t / temporal-quantity :quant 1982 :unit (년 / 년))  (t / temporal-quantity :quant 6 :unit (월 / 월))  
+"일당 체제" [CV_POLICY]	->  (일 / 일당체제)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "일당" :op2 "체제"))
+"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (공 / 공식-00))
+(체 / 체제 :mod (일 / 일당-00))
+
+
+# ::id snt20.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그 후 1991년 12월, 국민들의 요구로 일당 체제를 폐기하고 1992년 다당(多黨) 선거가 치러졌다.
+# ::note
+-- FRAMES ----------------------------------------
+국민들 : DERIVED_NON-ENTRY -> (국 / 국민들-00) ?
+요구 : VERBAL_NOUN
+	- request		(요 / 요구-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
+폐기하 : DERIVED_NON-ENTRY
+치르 : VERB
+	- undergo		(치 / 치르-01 :ARG0 thing_undergoing :ARG1 thing_undergone)
+	- carry_out		(치 / 치르-02 :ARG0 agent :ARG1 thing_carried_out)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1991년 12월" [DT_OTHERS]	->  :time|duration (1 / 1991년12월)	OR	:time (d / date-entity :year 1991 :month 12)	OR	:duration (t / temporal-quantity :quant 1991 :unit (년 / 년))  (t / temporal-quantity :quant 12 :unit (월 / 월))  
+"1992년" [DT_YEAR]	->  :time|duration (1 / 1992년)	OR	:time (d / date-entity :year 1992)	OR	:duration (t / temporal-quantity :quant 1992 :unit (년 / 년))  
+"국민" [CV_POSITION]	->  :mod (국 / 국민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국민))
+"일당 체제" [CV_POLICY]	->  (일 / 일당체제)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "일당" :op2 "체제"))
+-- VERBALIZED ------------------------------------
+(들 / 들 :mod (국 / 국민-00))
+(체 / 체제 :mod (일 / 일당-00))
+
+
+# ::id snt21.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt KANU가 과반수의 표를 획득하고 모이가 재선되었지만 야당도 의회석의 45%를 차지했다.
+# ::note
+-- FRAMES ----------------------------------------
+획득 : VERBAL_NOUN
+	- acquire		(획 / 획득-01 :ARG0 agent :ARG1 thing_acquired :ARG2 acquired_from)
+재선되 : DERIVED_NON-ENTRY
+의회석 : DERIVED_NON-ENTRY -> (의 / 의회석-00) ?
+차지 : VERBAL_NOUN
+	- occupy		(차 / 차지-01 :ARG0 agent :ARG1 thing_occupied)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"45%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 45%)
+"KANU" [OGG_POLITICS]	->  (K / KANU)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "KANU"))
+"과반수" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 과반수)
+"모이" [PS_NAME]	->  (모 / 모이)	OR	(p / person :wiki "먹이" :name (이 / 이름 :op1 "모이"))
+-- VERBALIZED ------------------------------------
+(석 / 석 :mod (의 / 의회-00))
+(수 / 수 :mod (과 / 과반-00))
+
+
+# ::id snt22.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러나 헌법상 모이가 재선을 노릴 수 없게 된 2002년 대선에서는 야당이 연합하여 국민 무지개 연립(National Rainbow Coalition, NARC)을 결성, 므와이 키바키를 대표로 내세워 당선시켜 독립 후 계속되었던 KANU의 독주에 종지를 찍었다.
+# ::note
+-- FRAMES ----------------------------------------
+헌법상 : DERIVED_NON-ENTRY -> (헌 / 헌법상-00) ?
+노리 : VERB
+	- aim		(노 / 노리-01 :ARG0 aimer :ARG1 action)
+없 : ** UNUSED_OR_NON-ENTRY **
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+연합 : VERBAL_NOUN
+	- combine		(연 / 연합-01 :ARG0 agent :ARG1 thing_combined :ARG2 end_product)
+결성 : VERBAL_NOUN
+	- organize		(결 / 결성-01 :ARG0 agent :ARG1 thing_organized)
+대표 : VERBAL_NOUN
+	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
+내세우 : VERB
+	- support		(내 / 내세우-01 :ARG0 supporter :ARG1 thing_supported :ARG2 supported_as)
+당선 : VERBAL_NOUN
+	- elect		(당 / 당선-01 :ARG0 voters :ARG1 candidate :ARG2 office_or_position)
+독립 : VERBAL_NOUN
+	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
+	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
+계속 : VERBAL_NOUN
+	- continue		(계 / 계속-01 :ARG0 agent :ARG1 thing_continuing)
+찍 : VERB
+	- take_picture_of		(찍 / 찍-01 :ARG0 agent :ARG1 thing_taken_picture_of)
+	- print		(찍 / 찍-02 :ARG0 agent :ARG1 thing_printed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2002년" [DT_YEAR]	->  :time|duration (2 / 2002년)	OR	:time (d / date-entity :year 2002)	OR	:duration (t / temporal-quantity :quant 2002 :unit (년 / 년))  
+"KANU" [OGG_POLITICS]	->  (K / KANU)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "KANU"))
+"NARC" [OGG_POLITICS]	->  (N / NARC)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "NARC"))
+"National Rainbow Coalition" [OGG_POLITICS]	->  (N / NationalRainbowCoalition)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "National" :op2 "Rainbow" :op3 "Coalition"))
+"국민 무지개 연립" [OGG_POLITICS]	->  (국 / 국민무지개연립)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "국민" :op2 "무지개" :op3 "연립"))
+"대선" [EV_OTHERS]	->  (대 / 대선)	OR	(e / event? :wiki "대통령_선거" :name (이 / 이름 :op1 "대선"))
+"대표" [CV_POSITION]	->  :mod (대 / 대표)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대표))
+"모이" [PS_NAME]	->  (모 / 모이)	OR	(p / person :wiki "먹이" :name (이 / 이름 :op1 "모이"))
+"므와이 키바키" [PS_NAME]	->  (므 / 므와이키바키)	OR	(p / person :wiki - :name (이 / 이름 :op1 "므와이" :op2 "키바키"))
+"헌법" [CV_LAW]	->  (헌 / 헌법)	OR	(l / law :wiki "헌법" :name (이 / 이름 :op1 "헌법"))
+-- VERBALIZED ------------------------------------
+(계 / 계속-01 :mod (후 / 후-00))
+(무 / 무지개 :mod (국 / 국민-00))
+(상 / 상 :mod (헌 / 헌법-00))
+(연 / 연립 :mod (무 / 무지개-00))
+(후 / 후-00 :mod (독 / 독립-01))
+
+
+# ::id snt23.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그 후 개헌 문제가 케냐 정치의 최대 현안이 되었는데 이 문제로 국민 무지개 연립은 분열되었고 2005년에는 므와이 키바키가 지지한 개헌안이 대통령의 권한을 충분히 억제하지 않는다는 논란 속에 국민투표 끝에 부결되었다.
+# ::note
+-- FRAMES ----------------------------------------
+문제 : VERBAL_NOUN
+	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+문제 : VERBAL_NOUN
+	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
+분열 : VERBAL_NOUN
+	- separate		(분 / 분열-01 :ARG0 causer :ARG1 thing_divided :ARG2 divided_into)
+지지 : VERBAL_NOUN
+	- support		(지 / 지지-01 :ARG0 thing_supporting :ARG1 thing_supported)
+안 : VERBAL_NOUN
+	- embrace		(안 / 안-01 :ARGA causer :ARG0 thing_embracing :ARG1 thing_embraced)
+억제 : VERBAL_NOUN
+	- repress		(억 / 억제-01 :ARG1 thing_repressing :ARG2 thing_repressed)
+속 : VERBAL_NOUN
+	- deceive		(속 / 속-01 :ARG0 liar :ARG1 lied_to)
+투표 : VERBAL_NOUN
+	- vote		(투 / 투표-01 :ARG0 voter :ARG1 candidate_or_issue)
+부결 : VERBAL_NOUN
+	- reject		(부 / 부결-01 :ARG0 agent :ARG1 thing_rejected)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2005년" [DT_YEAR]	->  :time|duration (2 / 2005년)	OR	:time (d / date-entity :year 2005)	OR	:duration (t / temporal-quantity :quant 2005 :unit (년 / 년))  
+"국민 무지개 연립" [OGG_POLITICS]	->  (국 / 국민무지개연립)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "국민" :op2 "무지개" :op3 "연립"))
+"국민투표" [EV_OTHERS]	->  (국 / 국민투표)	OR	(e / event? :wiki "국민투표" :name (이 / 이름 :op1 "국민투표"))
+"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
+"므와이 키바키" [PS_NAME]	->  (므 / 므와이키바키)	OR	(p / person :wiki - :name (이 / 이름 :op1 "므와이" :op2 "키바키"))
+"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+-- VERBALIZED ------------------------------------
+(개 / 개헌 :mod (후 / 후-00))
+(끝 / 끝-00 :mod (투 / 투표-01))
+(무 / 무지개 :mod (국 / 국민-00))
+(문 / 문제-01 :mod (개 / 개헌-00))
+(속 / 속-01 :mod (논 / 논란-00))
+(안 / 안-01 :mod (개 / 개헌-00))
+(연 / 연립 :mod (무 / 무지개-00))
+(투 / 투표-01 :mod (국 / 국민-00))
+(현 / 현안 :mod (최 / 최대-00))
+
+
+
+Process finished with exit code 0

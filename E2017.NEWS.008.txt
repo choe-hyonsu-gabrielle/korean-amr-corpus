@@ -1,0 +1,802 @@
+/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
+# ::id snt0.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 한 달 새 1억 껑충… 집값, 과열인가 회복인가.
+# ::note
+-- FRAMES ----------------------------------------
+새 : VERBAL_NOUN
+	- leak		(새 / 새-01 :ARG1 thing_leaking :ARG2 where_from)
+과열 : VERBAL_NOUN
+	- overheat		(과 / 과열-01 :ARG0 agent :ARG1 thing_overheated)
+회복 : VERBAL_NOUN
+	- get_back		(회 / 회복-01 :ARG0 agent,_causer :ARG1 thing_gotten)
+-- FORCE CONVERT ---------------------------------
+:ARG1-of (새 / 새롭-01)
+-- NE TYPES --------------------------------------
+"1억" [QT_PRICE]	->  :quant (1 / 1억)	OR	(m / monetary-quantity :quant 1 :unit|scale (억 / 억))
+"한 달" [DT_DURATION]	->  :time|duration (한 / 한달)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(값 / 값 :mod (집 / 집-00))
+
+
+# ::id snt1.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 새 정부 출범 후 부동산 시장이 달아오르고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+출범 : VERBAL_NOUN
+	- launch		(출 / 출범-01 :ARG0 agent :ARG1 thing_launched)
+달아오르 : VERB
+	- flare		(달 / 달아오르-01 :ARG1 thing_flaring)
+-- FORCE CONVERT ---------------------------------
+:ARG1-of (새 / 새롭-01)
+-- NE TYPES --------------------------------------
+"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
+-- VERBALIZED ------------------------------------
+(부 / 부동 :mod (후 / 후-00))
+(산 / 산 :mod (부 / 부동-00))
+(시 / 시장 :mod (산 / 산-00))
+(출 / 출범-01 :mod (정 / 정부-00))
+(후 / 후-00 :mod (출 / 출범-01))
+
+
+# ::id snt2.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 서울에서는 재건축 아파트 단지를 중심으로 폭등세가 재현되고 아파트 분양권 거래량도 사상 최고로 치솟았다.
+# ::note
+-- FRAMES ----------------------------------------
+재건축 : DERIVED_NON-ENTRY -> (재 / 재건축-00) ?
+폭등 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (폭 / 폭등세-00) ?
+	- soar		(폭 / 폭등-01 :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+재현 : VERBAL_NOUN
+	- represent		(재 / 재현-01 :ARG1 thing_representing :ARG2 thing_represented)
+분양권 : DERIVED_NON-ENTRY -> (분 / 분양권-00) ?
+거래 : VERBAL_NOUN
+	- transact		(거 / 거래-01 :ARG0 agent :ARG1 thing_transacted)
+치솟 : VERB
+	- go_up_to		(치 / 치솟-01 :ARG1 thing_going_up :ARG2 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+-- VERBALIZED ------------------------------------
+(권 / 권 :mod (분 / 분양-00))
+(단 / 단지 :mod (아 / 아파트-00))
+(량 / 량-00 :mod (거 / 거래-01))
+(분 / 분양 :mod (아 / 아파트-00))
+(세 / 세 :ARG0-of (폭 / 폭등-01))
+(아 / 아파트 :mod (건 / 건축-00))
+(최 / 최고 :mod (사 / 사상-00))
+
+
+# ::id snt3.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '과열'을 우려하는 시각도 있지만, 2008년 글로벌 금융 위기 후 장기 침체에 허덕이던 부동산 시장이 이제 완전히 회복세로 돌아섰다는 전망이 퍼지고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+과열 : VERBAL_NOUN
+	- overheat		(과 / 과열-01 :ARG0 agent :ARG1 thing_overheated)
+우려 : VERBAL_NOUN
+	- worry		(우 / 우려-01 :ARG0 thing_worrying :ARG1 worry_about)
+있 : ** UNUSED_OR_NON-ENTRY **
+침체 : VERBAL_NOUN
+	- depress		(침 / 침체-01 :ARG0 thing_depressing :ARG1 thing_depressed)
+허덕이 : VERB
+	- languish		(허 / 허덕이-01 :ARG0 causer :ARG1 experiencer)
+회복 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (회 / 회복세-00) ?
+	- get_back		(회 / 회복-01 :ARG0 agent,_causer :ARG1 thing_gotten)
+돌아서 : VERB
+	- turn_around		(돌 / 돌아서-01 :ARG0 agent :ARG2 start_point :ARG3 end_point)
+전망 : VERBAL_NOUN
+	- predict		(전 / 전망-01 :ARG0 thing_predicting :ARG1 thing_predicted)
+퍼지 : VERB
+	- spread		(퍼 / 퍼지-01 :ARG1 thing_spreading :ARG2 thing_spread_through)
+	- resonate-CV		(퍼 / 퍼지-02 :ARG1 sound :ARG2 direction)
+-- FORCE CONVERT ---------------------------------
+:manner (완 / 완전-01)
+-- NE TYPES --------------------------------------
+"2008년" [DT_YEAR]	->  :time|duration (2 / 2008년)	OR	:time (d / date-entity :year 2008)	OR	:duration (t / temporal-quantity :quant 2008 :unit (년 / 년))  
+"글로벌 금융 위기" [EV_OTHERS]	->  (글 / 글로벌금융위기)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "글로벌" :op2 "금융" :op3 "위기"))
+-- VERBALIZED ------------------------------------
+(금 / 금융 :mod (글 / 글로벌-00))
+(산 / 산 :mod (부 / 부동-00))
+(세 / 세 :ARG0-of (회 / 회복-01))
+(시 / 시장 :mod (산 / 산-00))
+(위 / 위기 :mod (금 / 금융-00))
+(장 / 장기 :mod (후 / 후-00))
+(침 / 침체-01 :mod (장 / 장기-00))
+(후 / 후 :mod (위 / 위기-00))
+
+
+# ::id snt4.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 26일 부동산 정보 업체 부동산114는 "이번 주 서울 아파트 평균 매매 가격이 1주일 전보다 0.3% 올라 작년 10월 이후 가장 높은 상승률을 기록했다"고 밝혔다.
+# ::note
+-- FRAMES ----------------------------------------
+주 : VERBAL_NOUN
+	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+가격 : VERBAL_NOUN
+	- strike		(가 / 가격-01 :ARG0 hitter :ARG1 thing_hit :ARG2 instrument)
+오르 : VERB
+	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
+	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
+	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
+높 : VERB
+	- high		(높 / 높-01 :ARG0 causer :ARG1 thing_being_high :ARG2 start_point :ARG3 end_point)
+상승 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (상 / 상승률-00) ?
+	- ascend		(상 / 상승-01 :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+기록 : VERBAL_NOUN
+	- record		(기 / 기록-01 :ARG0 agent :ARG1 thing_recorded)
+밝히 : VERB
+	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
+	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"0.3%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 0.3%)
+"1주일 전" [DT_OTHERS]	->  :time|duration (1 / 1주일전)	OR	:time (d / date-entity)	OR	:duration 
+"26일" [DT_DAY]	->  :time|duration (2 / 26일)	OR	:time (d / date-entity :day 26)	OR	:duration (t / temporal-quantity :quant 26 :unit (일 / 일))  
+"부동산114" [OGG_ECONOMY]	->  (부 / 부동산114)	OR	(c / company|organization :wiki "부동산114" :name (이 / 이름 :op1 "부동산114"))
+"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+"이번 주" [DT_OTHERS]	->  :time|duration (이 / 이번주)	OR	:time (d / date-entity)	OR	:duration 
+"작년 10월 이후" [DT_OTHERS]	->  :time|duration (작 / 작년10월이후)	OR	:time (d / date-entity :month 10)	OR	:duration (t / temporal-quantity :quant 10 :unit (월 / 월))  
+-- VERBALIZED ------------------------------------
+(가 / 가격-01 :mod (매 / 매매-00))
+(률 / 률 :ARG0-of (상 / 상승-01))
+(매 / 매매 :mod (평 / 평균-00))
+(부 / 부동 :mod (업 / 업체-00))
+(산 / 산 :mod (부 / 부동-00))
+(산 / 산 :mod (부 / 부동-00))
+(업 / 업체 :mod (정 / 정보-00))
+(정 / 정보 :mod (산 / 산-00))
+(주 / 주-01 :mod (이 / 이번-00))
+(평 / 평균 :mod (아 / 아파트-00))
+
+
+# ::id snt5.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 대선 직전인 4월 28일 주간 상승률(0.03%)과 비교하면 10배다.
+# ::note
+-- FRAMES ----------------------------------------
+상승 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (상 / 상승률-00) ?
+	- ascend		(상 / 상승-01 :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+비교 : VERBAL_NOUN
+	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"0.03%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 0.03%)
+"10배" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 10배)
+"4월 28일" [DT_OTHERS]	->  :time|duration (4 / 4월28일)	OR	:time (d / date-entity :month 4 :day 28)	OR	:duration (t / temporal-quantity :quant 4 :unit (월 / 월))  (t / temporal-quantity :quant 28 :unit (일 / 일))  
+"대선" [EV_OTHERS]	->  (대 / 대선)	OR	(e / event? :wiki "대통령_선거" :name (이 / 이름 :op1 "대선"))
+"주간" [DT_DURATION]	->  :time|duration (주 / 주간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(률 / 률 :ARG0-of (상 / 상승-01))
+(상 / 상승-01 :mod (주 / 주간-00))
+(직 / 직전 :mod (대 / 대선-00))
+
+
+# ::id snt6.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 인터넷 부동산 관련 카페에는 "중개업소에 매물을 내놓으니 집도 안 보고 계약금이 입금됐다.", "4월에 (집) 팔았는데 그 뒤로 1억 원 넘게 올랐다. 속상해서 잠이 안 온다"는 등 부동산 열기를 입증하는 글들이 자주 눈에 띈다.
+# ::note
+-- FRAMES ----------------------------------------
+관련 : VERBAL_NOUN
+	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+내놓 : VERB
+	- place		(내 / 내놓-01 :ARG0 putter :ARG1 thing_put :ARG2 location)
+보 : VERB
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+계약 : VERBAL_NOUN
+	- contract		(계 / 계약-01 :ARG0 agent :ARG1 reason,_purpose :ARG2 contracted_with)
+입금 : VERBAL_NOUN
+	- deposit		(입 / 입금-01 :ARG0 agent :ARG1 thing_deposited :ARG2 deposit_at)
+팔 : VERB
+	- sell		(팔 / 팔-01 :ARG0 seller :ARG1 thing_sold :ARG2 buyer)
+넘 : VERB
+	- pass		(넘 / 넘-01 :ARG0 entity_passing :ARG1 thing_passed)
+	- exceed		(넘 / 넘-02 :ARG1 thing_that's_more :ARG2 thing_that's_less)
+오르 : VERB
+	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
+	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
+	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
+속상하 : ** UNUSED_OR_NON-ENTRY **
+오 : VERB
+	- come		(오 / 오-01 :ARG0 entity_coming :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- come		(오 / 오-02 :ARG1 entity_coming :ARG2 start_point :ARG3 end_point)
+	- bring_about-CV		(오 / 오-03 :ARG0 causer :ARG1 thing_brought_about)
+	- send_back-CV		(오 / 오-04 :ARG0 sender :ARG1 thing_sent :ARG2 sent_to)
+	- remit-CV		(오 / 오-05 :ARG0 sender :ARG1 money :ARG2 sent_to)
+	- hear-CV		(오 / 오-06 :ARG0 agent :ARG1 thing_heard :ARG2 heard_from)
+입증 : VERBAL_NOUN
+	- prove		(입 / 입증-01 :ARG1 thing_proving :ARG2 thing_proved)
+글들 : DERIVED_NON-ENTRY -> (글 / 글들-00) ?
+띄 : VERB
+	- be_in_sight		(띄 / 띄-01 :ARG1 entity_noticed :ARG2 entity_noticing)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1억 원" [QT_PRICE]	->  :quant (1 / 1억원)	OR	(m / monetary-quantity :quant 1억 :unit|scale (원 / 원))
+"4월" [DT_MONTH]	->  :time|duration (4 / 4월)	OR	:time (d / date-entity :month 4)	OR	:duration (t / temporal-quantity :quant 4 :unit (월 / 월))  
+"눈" [AM_PART]	->  (눈 / 눈)	OR	(눈 / 눈 :part-of|poss)
+"부동산 관련 카페" [TMI_SERVICE]	->  (부 / 부동산관련카페)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "부동산" :op2 "관련" :op3 "카페"))
+"인터넷" [TMI_SERVICE]	->  (인 / 인터넷)	OR	(s / service* :wiki "인터넷" :name (이 / 이름 :op1 "인터넷"))
+-- VERBALIZED ------------------------------------
+(관 / 관련-01 :mod (산 / 산-00))
+(금 / 금-00 :mod (계 / 계약-01))
+(들 / 들 :mod (글 / 글-00))
+(부 / 부동 :mod (인 / 인터넷-00))
+(산 / 산 :mod (부 / 부동-00))
+(산 / 산 :mod (부 / 부동-00))
+(업 / 업소 :mod (중 / 중개-00))
+(열 / 열기 :mod (산 / 산-00))
+(카 / 카페-00 :mod (관 / 관련-01))
+
+
+# ::id snt7.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이런 집값 급등세의 '진앙(震央)'은 서울 재건축 아파트 단지였다.
+# ::note
+-- FRAMES ----------------------------------------
+급등 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (급 / 급등세-00) ?
+	- rise_suddenly		(급 / 급등-01 :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+재건축 : DERIVED_NON-ENTRY -> (재 / 재건축-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+-- VERBALIZED ------------------------------------
+(값 / 값 :mod (집 / 집-00))
+(급 / 급등-01 :mod (값 / 값-00))
+(단 / 단지 :mod (아 / 아파트-00))
+(세 / 세 :ARG0-of (급 / 급등-01))
+(아 / 아파트 :mod (건 / 건축-00))
+
+
+# ::id snt8.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 강동구 둔촌동 주공 1단지 전용면적 50㎡는 최근 1층 매물이 8억 5000만 원에 팔렸다.
+# ::note
+-- FRAMES ----------------------------------------
+팔리 : REDUCED_VERB_DETECTED
+	- sell		(팔 / 팔-01 :ARG0 seller :ARG1 thing_sold :ARG2 buyer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1층" [QT_ORDER]	->  :ord (1 / 1층)	OR	:ord (o / ordinal-entity :value 1층)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"50㎡" [QT_SIZE]	->  :quant (5 / 50㎡)	OR	(a / area-quantity :quant 50 :unit|scale (㎡ / ㎡))
+"8억 5000만 원" [QT_PRICE]	->  :quant (8 / 8억5000만원)	OR	(m / monetary-quantity :quant 8억 5000만 :unit|scale (원 / 원))
+"강동구" [LCP_COUNTY]	->  (강 / 강동구)	OR	(c / county :wiki "강동구" :name (이 / 이름 :op1 "강동구"))
+"둔촌동" [LCP_COUNTY]	->  (둔 / 둔촌동)	OR	(c / county :wiki "둔촌동" :name (이 / 이름 :op1 "둔촌동"))
+"주공 1단지" [LC_OTHERS]	->  (주 / 주공1단지)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "주공" :op2 "1단지"))
+-- VERBALIZED ------------------------------------
+(매 / 매물 :mod (층 / 층-00))
+(면 / 면적 :mod (전 / 전용-00))
+(전 / 전용 :mod (단 / 단지-00))
+
+
+# ::id snt9.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 4월 초엔 같은 조건 아파트가 7억 8700만 원에 거래됐는데 한 달여 만에 7000만 원 가까이 오른 셈이다.
+# ::note
+-- FRAMES ----------------------------------------
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+거래 : VERBAL_NOUN
+	- transact		(거 / 거래-01 :ARG0 agent :ARG1 thing_transacted)
+오르 : VERB
+	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
+	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
+	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"4월 초" [DT_OTHERS]	->  :time|duration (4 / 4월초)	OR	:time (d / date-entity :month 4)	OR	:duration (t / temporal-quantity :quant 4 :unit (월 / 월))  
+"7000만 원" [QT_PRICE]	->  :quant (7 / 7000만원)	OR	(m / monetary-quantity :quant 7000만 :unit|scale (원 / 원))
+"7억 8700만 원" [QT_PRICE]	->  :quant (7 / 7억8700만원)	OR	(m / monetary-quantity :quant 7억 8700만 :unit|scale (원 / 원))
+"한 달" [DT_DURATION]	->  :time|duration (한 / 한달)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(아 / 아파트 :mod (조 / 조건-00))
+
+
+# ::id snt10.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 서울 강남구 삼성동 홍실아파트 전용 108㎡는 며칠 전 16억 9000만 원(8층)에 계약됐다.
+# ::note
+-- FRAMES ----------------------------------------
+계약 : VERBAL_NOUN
+	- contract		(계 / 계약-01 :ARG0 agent :ARG1 reason,_purpose :ARG2 contracted_with)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"108㎡" [QT_SIZE]	->  :quant (1 / 108㎡)	OR	(a / area-quantity :quant 108 :unit|scale (㎡ / ㎡))
+"16억 9000만 원" [QT_PRICE]	->  :quant (1 / 16억9000만원)	OR	(m / monetary-quantity :quant 16억 9000만 :unit|scale (원 / 원))
+"8층" [QT_ORDER]	->  :ord (8 / 8층)	OR	:ord (o / ordinal-entity :value 8층)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"강남구" [LCP_COUNTY]	->  (강 / 강남구)	OR	(c / county :wiki "강남구" :name (이 / 이름 :op1 "강남구"))
+"삼성동" [LCP_COUNTY]	->  (삼 / 삼성동)	OR	(c / county :wiki "삼성동?" :name (이 / 이름 :op1 "삼성동"))
+"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+"홍실아파트" [AF_BUILDING]	->  (홍 / 홍실아파트)	OR	(b / building|facility :wiki - :name (이 / 이름 :op1 "홍실아파트"))
+-- VERBALIZED ------------------------------------
+(아 / 아파트 :mod (홍 / 홍실-00))
+(전 / 전 :mod (며 / 며칠-00))
+(전 / 전용 :mod (아 / 아파트-00))
+
+
+# ::id snt11.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 지난달 같은 면적 3층 매물 거래가는 14억 원.
+# ::note
+-- FRAMES ----------------------------------------
+달 : VERBAL_NOUN
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+거래 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (거 / 거래가-00) ?
+	- transact		(거 / 거래-01 :ARG0 agent :ARG1 thing_transacted)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"14억 원" [QT_PRICE]	->  :quant (1 / 14억원)	OR	(m / monetary-quantity :quant 14억 :unit|scale (원 / 원))
+"3층" [QT_ORDER]	->  :ord (3 / 3층)	OR	:ord (o / ordinal-entity :value 3층)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"지난달" [DT_MONTH]	->  :time|duration (지 / 지난달)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(가 / 가 :ARG0-of (거 / 거래-01))
+(거 / 거래-01 :mod (매 / 매물-00))
+(달 / 달-01 :mod (지 / 지난-00))
+(매 / 매물 :mod (층 / 층-00))
+
+
+# ::id snt12.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 한 달 사이 2억 9000만 원(20.7%) 오른 것이다.
+# ::note
+-- FRAMES ----------------------------------------
+오르 : VERB
+	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
+	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
+	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"20.7%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 20.7%)
+"2억 9000만 원" [QT_PRICE]	->  :quant (2 / 2억9000만원)	OR	(m / monetary-quantity :quant 2억 9000만 :unit|scale (원 / 원))
+"한 달" [DT_DURATION]	->  :time|duration (한 / 한달)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt13.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 고종완 한국자산관리연구원장은 "내년부터 부활할 것으로 보이는 '초과이익환수제'를 피할 수 있는 재건축 단지가 먼저 오르고, 주변 일반 아파트까지 상대적으로 저평가됐다는 인식 때문에 덩달아 가격이 뛰는 '쌍끌이' 장세"라고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+부활하 : DERIVED_NON-ENTRY
+보이 : REDUCED_VERB_DETECTED
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+초과 : VERBAL_NOUN
+	- exceed		(초 / 초과-01 :ARG1 thing_that's_more :ARG2 thing_that's_less)
+환수제 : DERIVED_NON-ENTRY -> (환 / 환수제-00) ?
+피하 : VERB
+	- avoid		(피 / 피하-01 :ARG0 agent :ARG1 thing_avoided)
+있 : ** UNUSED_OR_NON-ENTRY **
+재건축 : DERIVED_NON-ENTRY -> (재 / 재건축-00) ?
+오르 : VERB
+	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
+	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
+	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
+상대 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (상 / 상대적-00) ?
+	- confront		(상 / 상대-01 :ARG0 agent :ARG1 confronted_with)
+평가 : VERBAL_NOUN
+	- estimate		(평 / 평가-01 :ARG0 agent :ARG1 thing_estimated)
+인식 : VERBAL_NOUN
+	- recognize		(인 / 인식-01 :ARGA thing_making_recognize :ARG0 thing_recognizing :ARG1 thing_recognized)
+덩달 : ** UNUSED_OR_NON-ENTRY **
+가격 : VERBAL_NOUN
+	- strike		(가 / 가격-01 :ARG0 hitter :ARG1 thing_hit :ARG2 instrument)
+뛰 : VERB
+	- run		(뛰 / 뛰-01 :ARG0 runner :ARG1 race,_path)
+	- rise		(뛰 / 뛰-02 :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"고종완" [PS_NAME]	->  (고 / 고종완)	OR	(p / person :wiki - :name (이 / 이름 :op1 "고종완"))
+"내년부터" [DT_OTHERS]	->  :time|duration (내 / 내년부터)	OR	:time (d / date-entity)	OR	:duration 
+"초과이익환수제" [CV_LAW]	->  (초 / 초과이익환수제)	OR	(l / law :wiki - :name (이 / 이름 :op1 "초과이익환수제"))
+"한국자산관리연구원장" [CV_POSITION]	->  :mod (한 / 한국자산관리연구원장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (한 / 한국자산관리연구원장))
+-- VERBALIZED ------------------------------------
+(단 / 단지 :mod (건 / 건축-00))
+(아 / 아파트 :mod (일 / 일반-00))
+(이 / 이익-00 :mod (초 / 초과-01))
+(일 / 일반 :mod (주 / 주변-00))
+(적 / 적 :ARG0-of (상 / 상대-01))
+(제 / 제 :mod (환 / 환수-00))
+(환 / 환수 :mod (이 / 이익-00))
+
+
+# ::id snt14.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 부동산 전문가들은 집값 상승세가 지속되는 이유에 대해 "대선 이후 정치적 불확실성이 사라지고, 경기 부양 기대감이 반영된 덕분"이라고 설명한다.
+# ::note
+-- FRAMES ----------------------------------------
+전문가 : DERIVED_NON-ENTRY -> (전 / 전문가-00) ?
+상승 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (상 / 상승세-00) ?
+	- ascend		(상 / 상승-01 :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+지속 : VERBAL_NOUN
+	- continue		(지 / 지속-01 :ARG0 agent :ARG1 thing_continued)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+정치적 : DERIVED_NON-ENTRY -> (정 / 정치적-00) ?
+불확실 : DERIVED_NON-ENTRY -> (불 / 불확실-00) ?
+사라지 : VERB
+	- disappear		(사 / 사라지-01 :ARG1 thing_disappearing)
+부양 : VERBAL_NOUN
+	- float		(부 / 부양-01 :ARG0 causer :ARG1 thing_floating)
+기대 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기대감-00) ?
+	- expect		(기 / 기대-01 :ARG0 agent :ARG1 thing_expected)
+반영 : VERBAL_NOUN
+	- reflect		(반 / 반영-01 :ARG0 causer :ARG1 thing_casting_a_reflection :ARG2 surface_casting_the_reflection)
+설명 : VERBAL_NOUN
+	- explain		(설 / 설명-01 :ARG0 explainer :ARG1 thing_explained :ARG2 explained_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"대선" [EV_OTHERS]	->  (대 / 대선)	OR	(e / event? :wiki "대통령_선거" :name (이 / 이름 :op1 "대선"))
+"전문가" [CV_OCCUPATION]	->  :mod (전 / 전문가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (전 / 전문가))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (전 / 전문-00))
+(감 / 감 :ARG0-of (기 / 기대-01))
+(값 / 값 :mod (집 / 집-00))
+(기 / 기대-01 :ARG1 (부 / 부양-01))
+(부 / 부양-01 :mod (경 / 경기-00))
+(산 / 산 :mod (부 / 부동-00))
+(상 / 상승-01 :mod (값 / 값-00))
+(성 / 성 :mod (확 / 확실-00))
+(세 / 세 :ARG0-of (상 / 상승-01))
+(이 / 이후 :mod (대 / 대선-00))
+(적 / 적 :mod (정 / 정치-00))
+(전 / 전문 :mod (산 / 산-00))
+(정 / 정치 :mod (이 / 이후-00))
+
+
+# ::id snt15.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 임병철 부동산114 책임연구원은 "문재인 정부가 부동산 시장에 그렇게 강한 규제를 내리진 않을 것이란 기대감과 함께 도시 재생 정책 등이 개발 호재로 작용할 수 있다는 전망이 매수 심리를 끌어올리고 있다"고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+연구 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (연 / 연구원-00) ?
+	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
+그렇 : VERB
+	- be_so		(그 / 그렇-01 :ARG1 entity_being_so)
+강하 : DERIVED_VERB_DETECTED
+	- strong		(강 / 강하-01 :ARG1 entity_being_strong)
+규제 : VERBAL_NOUN
+	- restrict		(규 / 규제-01 :ARG0 agent,_limiter :ARG1 thing_limited)
+내리 : VERB
+	- put_down		(내 / 내리-01 :ARG0 agent :ARG1 thing_put_down :ARG2 start_point :ARG3 end_point)
+	- get_off		(내 / 내리-02 :ARG0 agent :ARG1 vehicle)
+	- give-light_verb		(내 / 내리-03 :ARG0 agent :ARG1 deverbal_noun :ARG2 given_to)
+	- fall		(내 / 내리-04 :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+	- collapse-CV		(내 / 내리-05 :ARG1 stock :ARG2 start_point :ARG3 end_point)
+기대 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기대감-00) ?
+	- expect		(기 / 기대-01 :ARG0 agent :ARG1 thing_expected)
+개발 : VERBAL_NOUN
+	- develop		(개 / 개발-01 :ARG0 developer :ARG1 thing_developed)
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+있 : ** UNUSED_OR_NON-ENTRY **
+전망 : VERBAL_NOUN
+	- predict		(전 / 전망-01 :ARG0 thing_predicting :ARG1 thing_predicted)
+매수 : VERBAL_NOUN
+	- buy		(매 / 매수-01 :ARG0 buyer :ARG1 thing_bought :ARG2 seller)
+끌어올리 : ** UNUSED_OR_NON-ENTRY **
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+(책 / 책임지-01)
+-- NE TYPES --------------------------------------
+"도시 재생 정책" [CV_LAW]	->  (도 / 도시재생정책)	OR	(l / law :wiki - :name (이 / 이름 :op1 "도시" :op2 "재생" :op3 "정책"))
+"문재인" [PS_NAME]	->  (문 / 문재인)	OR	(p / person :wiki "문재인" :name (이 / 이름 :op1 "문재인"))
+"부동산114" [OGG_ECONOMY]	->  (부 / 부동산114)	OR	(c / company|organization :wiki "부동산114" :name (이 / 이름 :op1 "부동산114"))
+"임병철" [PS_NAME]	->  (임 / 임병철)	OR	(p / person :wiki - :name (이 / 이름 :op1 "임병철"))
+"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
+"책임연구원" [CV_POSITION]	->  :mod (책 / 책임연구원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (책 / 책임연구원))
+-- VERBALIZED ------------------------------------
+(감 / 감 :ARG0-of (기 / 기대-01))
+(산 / 산 :mod (부 / 부동-00))
+(산 / 산 :mod (부 / 부동-00))
+(시 / 시장 :mod (산 / 산-00))
+(심 / 심리-00 :mod (매 / 매수-01))
+(연 / 연구-01 :mod (책 / 책임-00))
+(원 / 원 :ARG0-of (연 / 연구-01))
+(재 / 재생 :mod (도 / 도시-00))
+(정 / 정책 :mod (재 / 재생-00))
+(호 / 호재-00 :mod (개 / 개발-01))
+
+
+# ::id snt16.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 대형 건설사 관계자는 "서울과 수도권 인기 주거지는 주택 공급은 적은데 집을 사려는 수요가 넘치기 때문에 집값이 오를 수밖에 없다"고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설사-00) ?
+	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
+관계 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관계자-00) ?
+	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
+	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+수도권 : DERIVED_NON-ENTRY -> (수 / 수도권-00) ?
+주거지 : DERIVED_NON-ENTRY -> (주 / 주거지-00) ?
+공급 : VERBAL_NOUN
+	- supply		(공 / 공급-01 :ARG0 agent :ARG1 thing_provided :ARG2 entity_provided_for_(beneficial))
+적 : VERB
+	- write_down		(적 / 적-01 :ARG0 agent :ARG1 thing_written :ARG2 where_written)
+	- little		(적 / 적-02 :ARG1 thing_being_little)
+사 : VERB
+	- buy		(사 / 사-01 :ARG0 buyer :ARG1 thing_bought :ARG2 seller)
+넘치 : REDUCED_VERB_DETECTED
+	- pass		(넘 / 넘-01 :ARG0 entity_passing :ARG1 thing_passed)
+	- exceed		(넘 / 넘-02 :ARG1 thing_that's_more :ARG2 thing_that's_less)
+오르 : VERB
+	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
+	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
+	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
+없 : ** UNUSED_OR_NON-ENTRY **
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"관계자" [CV_POSITION]	->  :mod (관 / 관계자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (관 / 관계자))
+"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+"수도권" [LC_OTHERS]	->  (수 / 수도권)	OR	(l / location? :wiki "수도권" :name (이 / 이름 :op1 "수도권"))
+-- VERBALIZED ------------------------------------
+(값 / 값 :mod (집 / 집-00))
+(건 / 건설-01 :mod (대 / 대형-00))
+(공 / 공급-01 :mod (주 / 주택-00))
+(권 / 권 :mod (수 / 수도-00))
+(사 / 사 :ARG0-of (건 / 건설-01))
+(자 / 자 :ARG0-of (관 / 관계-01))
+(주 / 주거 :mod (인 / 인기-00))
+(지 / 지 :mod (주 / 주거-00))
+
+
+# ::id snt17.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 최근 집값 오름세가 걱정할 만한 수준이 아니며, 다른 경제지표와 비교하면 집값 상승률이 오히려 낮다는 분석도 있다.
+# ::note
+-- FRAMES ----------------------------------------
+걱정 : VERBAL_NOUN
+	- worry		(걱 / 걱정-01 :ARG0 topic_of_worry :ARG1 worrier)
+비교 : VERBAL_NOUN
+	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
+상승 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (상 / 상승률-00) ?
+	- ascend		(상 / 상승-01 :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+낮 : VERB
+	- low		(낮 / 낮-01 :ARG0 causer :ARG1 thing_being_low :ARG2 start_point :ARG3 end_point)
+분석 : VERBAL_NOUN
+	- analyze		(분 / 분석-01 :ARG0 agent :ARG1 thing_analyzed)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(값 / 값 :mod (집 / 집-00))
+(값 / 값 :mod (집 / 집-00))
+(률 / 률 :ARG0-of (상 / 상승-01))
+(상 / 상승-01 :mod (값 / 값-00))
+(오 / 오름세 :mod (값 / 값-00))
+(지 / 지표 :mod (경 / 경제-00))
+(집 / 집 :mod (최 / 최근-00))
+
+
+# ::id snt18.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이준용 한국감정원 시장분석연구부장은 "서울·부산·세종 등 일부 지역을 제외하면 전국적으로는 안정세를 보이고, 서울과 수도권도 부동산 활황이던 글로벌 금융 위기 직전과 비교하면 상승 폭이 크지 않다"고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+분석 : VERBAL_NOUN
+	- analyze		(분 / 분석-01 :ARG0 agent :ARG1 thing_analyzed)
+연구 : VERBAL_NOUN
+	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
+제외 : VERBAL_NOUN
+	- exclude		(제 / 제외-01 :ARG0 agent :ARG1 thing_excluded :ARG2 excluded_from)
+전국적 : DERIVED_NON-ENTRY -> (전 / 전국적-00) ?
+안정 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (안 / 안정세-00) ?
+	- stabilize		(안 / 안정-01 :ARG0 agent :ARG1 thing_stabilized)
+보이 : REDUCED_VERB_DETECTED
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+수도권 : DERIVED_NON-ENTRY -> (수 / 수도권-00) ?
+비교 : VERBAL_NOUN
+	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
+상승 : VERBAL_NOUN
+	- ascend		(상 / 상승-01 :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"글로벌 금융 위기" [EV_OTHERS]	->  (글 / 글로벌금융위기)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "글로벌" :op2 "금융" :op3 "위기"))
+"부산" [LCP_CITY]	->  (부 / 부산)	OR	(c / city :wiki "부산광역시" :name (이 / 이름 :op1 "부산"))
+"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+"세종" [LCP_CITY]	->  (세 / 세종)	OR	(c / city :wiki "조선_세종" :name (이 / 이름 :op1 "세종"))
+"수도권" [LC_OTHERS]	->  (수 / 수도권)	OR	(l / location? :wiki "수도권" :name (이 / 이름 :op1 "수도권"))
+"시장분석연구부장" [CV_POSITION]	->  :mod (시 / 시장분석연구부장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (시 / 시장분석연구부장))
+"이준용" [PS_NAME]	->  (이 / 이준용)	OR	(p / person :wiki "이준용?" :name (이 / 이름 :op1 "이준용"))
+"한국감정원" [OGG_ECONOMY]	->  (한 / 한국감정원)	OR	(c / company|organization :wiki "한국감정원" :name (이 / 이름 :op1 "한국감정원"))
+-- VERBALIZED ------------------------------------
+(권 / 권 :mod (수 / 수도-00))
+(금 / 금융 :mod (글 / 글로벌-00))
+(부 / 부장-00 :mod (연 / 연구-01))
+(분 / 분석-01 :mod (시 / 시장-00))
+(산 / 산 :mod (부 / 부동-00))
+(세 / 세 :ARG0-of (안 / 안정-01))
+(연 / 연구-01 :ARG1 (분 / 분석-01))
+(위 / 위기 :mod (금 / 금융-00))
+(적 / 적 :mod (전 / 전국-00))
+(지 / 지역 :mod (일 / 일부-00))
+(직 / 직전 :mod (위 / 위기-00))
+(폭 / 폭-00 :mod (상 / 상승-01))
+(활 / 활황 :mod (산 / 산-00))
+
+
+# ::id snt19.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 2008년부터 2016년까지 서울 아파트 3.3㎡당 평균 매매가는 1748만 원에서 1916만 원으로 9.6% 오른 반면, 같은 기간 우리나라 GDP(국내총생산)는 1조 17억 달러에서 1조 4110억 달러로 41% 성장했다.
+# ::note
+-- FRAMES ----------------------------------------
+매매가 : DERIVED_NON-ENTRY -> (매 / 매매가-00) ?
+오르 : VERB
+	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
+	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
+	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+생산 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (총 / 총생산-00) ?
+	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
+성장 : VERBAL_NOUN
+	- grow		(성 / 성장-01 :ARG0 causer :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1748만 원" [QT_PRICE]	->  :quant (1 / 1748만원)	OR	(m / monetary-quantity :quant 1748만 :unit|scale (원 / 원))
+"1916만 원" [QT_PRICE]	->  :quant (1 / 1916만원)	OR	(m / monetary-quantity :quant 1916만 :unit|scale (원 / 원))
+"1조 17억 달러" [QT_PRICE]	->  :quant (1 / 1조17억달러)	OR	(m / monetary-quantity :quant 1조 17억 :unit|scale (달 / 달러))
+"1조 4110억 달러" [QT_PRICE]	->  :quant (1 / 1조4110억달러)	OR	(m / monetary-quantity :quant 1조 4110억 :unit|scale (달 / 달러))
+"2008년부터 2016년까지" [DT_DURATION]	->  :time|duration (2 / 2008년부터2016년까지)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 2008))	OR :duration (t / temporal-quantity :quant 2008 :unit (년 / 년))  
+"3.3㎡" [QT_SIZE]	->  :quant (3 / 3.3㎡)	OR	(a / area-quantity :quant 3.3 :unit|scale (㎡ / ㎡))
+"41%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 41%)
+"9.6%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 9.6%)
+"GDP" [TR_SOCIAL_SCIENCE]	->  (G / GDP)	OR	(t / theory* :wiki "국내총생산" :name (이 / 이름 :op1 "GDP"))
+"국내총생산" [TR_SOCIAL_SCIENCE]	->  (국 / 국내총생산)	OR	(t / theory* :wiki "국내총생산" :name (이 / 이름 :op1 "국내총생산"))
+"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (매 / 매매-00))
+(매 / 매매 :mod (평 / 평균-00))
+(우 / 우리나라 :mod (기 / 기간-00))
+
+
+# ::id snt20.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 종합주가지수(코스피)도 글로벌 금융 위기 전 최고치(2085포인트 · 2007년 11월 1일)보다 13% 가까이 올랐다.
+# ::note
+-- FRAMES ----------------------------------------
+최고치 : DERIVED_NON-ENTRY -> (최 / 최고치-00) ?
+오르 : VERB
+	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
+	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
+	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"13%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 13%)
+"2007년 11월 1일" [DT_OTHERS]	->  :time|duration (2 / 2007년11월1일)	OR	:time (d / date-entity :year 2007 :month 11 :day 1)	OR	:duration (t / temporal-quantity :quant 2007 :unit (년 / 년))  (t / temporal-quantity :quant 11 :unit (월 / 월))  (t / temporal-quantity :quant 1 :unit (일 / 일))  
+"2085포인트" [QT_OTHERS]	->  :quant (2 / 2085포인트)	OR	(c / concept* :quant 2085 :unit|scale (포 / 포인트))
+"글로벌 금융 위기" [EV_OTHERS]	->  (글 / 글로벌금융위기)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "글로벌" :op2 "금융" :op3 "위기"))
+"종합주가지수" [TR_SOCIAL_SCIENCE]	->  (종 / 종합주가지수)	OR	(t / theory* :wiki "코스피_지수" :name (이 / 이름 :op1 "종합주가지수"))
+"코스피" [TR_SOCIAL_SCIENCE]	->  (코 / 코스피)	OR	(t / theory* :wiki "코스피_지수" :name (이 / 이름 :op1 "코스피"))
+-- VERBALIZED ------------------------------------
+(금 / 금융 :mod (글 / 글로벌-00))
+(위 / 위기 :mod (금 / 금융-00))
+(전 / 전 :mod (위 / 위기-00))
+(주 / 주가 :mod (종 / 종합-00))
+(지 / 지수 :mod (주 / 주가-00))
+(최 / 최고 :mod (전 / 전-00))
+(치 / 치 :mod (최 / 최고-00))
+
+
+# ::id snt21.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그렇다고 지나친 낙관론은 금물이라는 게 전문가들 지적이다.
+# ::note
+-- FRAMES ----------------------------------------
+그렇 : VERB
+	- be_so		(그 / 그렇-01 :ARG1 entity_being_so)
+지나치 : VERB
+	- excessive		(지 / 지나치-01 :ARG1 thing_excessive)
+낙관 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (낙 / 낙관론-00) ?
+	- look_on_the_bright_side		(낙 / 낙관-01 :ARG0 agent :ARG1 thing_looked_on_the_bright_side_of)
+전문가 : DERIVED_NON-ENTRY -> (전 / 전문가-00) ?
+지적 : VERBAL_NOUN
+	- point_out		(지 / 지적-01 :ARG0 pointer :ARG1 thing_pointed_out :ARG2 pointed_at)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"전문가" [CV_OCCUPATION]	->  :mod (전 / 전문가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (전 / 전문가))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (전 / 전문-00))
+(론 / 론 :ARG0-of (낙 / 낙관-01))
+
+
+# ::id snt22.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이남수 신한금융투자 부동산팀장은 "하반기엔 금리 인상 가능성이 있는 데다가 주택 시장에 투기 수요가 몰리면 정부가 보유세 인상이나 가계 대출 관리 등 규제를 강화할 수 있다"며 "분위기에 휩쓸려 섣불리 투자했다가 '낭패'를 볼 수 있다는 걸 명심해야 한다"고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+투자 : VERBAL_NOUN
+	- invest		(투 / 투자-01 :ARG0 investor :ARG1 thing_invested :ARG2 invested_in)
+하 : VERBAL_NOUN
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+반기 : VERBAL_NOUN
+	- welcome		(반 / 반기-01 :ARG0 welcomer :ARG1 thing_welcomed)
+인상 : VERBAL_NOUN
+	- raise		(인 / 인상-01 :ARG0 thing_raising :ARG1 thing_raised :ARG2 start_point :ARG3 end_point)
+가능 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (가 / 가능성-00) ?
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+있 : ** UNUSED_OR_NON-ENTRY **
+몰리 : REDUCED_VERB_DETECTED
+	- drive		(몰 / 몰-01 :ARG0 agent :ARG1 thing_driven :ARG2 direction)
+	- gather		(몰 / 몰-02 :ARG0 agent :ARG1 entity_gathered :ARG2 gathered_into)
+보유 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (보 / 보유세-00) ?
+	- keep		(보 / 보유-01 :ARG0 agent :ARG1 thing_kept :ARG2 location)
+인상 : VERBAL_NOUN
+	- raise		(인 / 인상-01 :ARG0 thing_raising :ARG1 thing_raised :ARG2 start_point :ARG3 end_point)
+대출 : VERBAL_NOUN
+	- lend		(대 / 대출-01 :ARG0 agent :ARG1 thing_lent :ARG2 lent_to)
+관리 : VERBAL_NOUN
+	- manage		(관 / 관리-01 :ARG0 manager :ARG1 thing_managed)
+규제 : VERBAL_NOUN
+	- restrict		(규 / 규제-01 :ARG0 agent,_limiter :ARG1 thing_limited)
+강화 : VERBAL_NOUN
+	- intensify		(강 / 강화-01 :ARG0 agent,_causer :ARG1 thing_becoming_intense)
+있 : ** UNUSED_OR_NON-ENTRY **
+휩쓸리 : REDUCED_VERB_DETECTED
+	- sweep		(휩 / 휩쓸-01 :ARG0 agent :ARG1 thing_swept)
+투자 : VERBAL_NOUN
+	- invest		(투 / 투자-01 :ARG0 investor :ARG1 thing_invested :ARG2 invested_in)
+보 : VERB
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+있 : ** UNUSED_OR_NON-ENTRY **
+명심하 : DERIVED_NON-ENTRY
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"부동산팀장" [CV_POSITION]	->  :mod (부 / 부동산팀장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (부 / 부동산팀장))
+"신한금융투자" [OGG_ECONOMY]	->  (신 / 신한금융투자)	OR	(c / company|organization :wiki "신한금융투자" :name (이 / 이름 :op1 "신한금융투자"))
+"이남수" [PS_NAME]	->  (이 / 이남수)	OR	(p / person :wiki "이남수?" :name (이 / 이름 :op1 "이남수"))
+"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
+"하반기" [DT_DURATION]	->  :time|duration (하 / 하반기)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(가 / 가능-01 :ARG1 (인 / 인상-01))
+(관 / 관리-01 :ARG1 (대 / 대출-01))
+(금 / 금융 :mod (신 / 신한-00))
+(대 / 대출-01 :mod (가 / 가계-00))
+(반 / 반기-01 :ARG1 (하 / 하-01))
+(부 / 부동-00 :mod (투 / 투자-01))
+(산 / 산 :mod (부 / 부동-00))
+(성 / 성 :ARG0-of (가 / 가능-01))
+(세 / 세 :ARG0-of (보 / 보유-01))
+(수 / 수요 :mod (투 / 투기-00))
+(시 / 시장 :mod (주 / 주택-00))
+(인 / 인상-01 :mod (금 / 금리-00))
+(투 / 투자-01 :mod (금 / 금융-00))
+(팀 / 팀장 :mod (산 / 산-00))
+
+
+
+Process finished with exit code 0

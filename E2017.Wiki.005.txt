@@ -1,0 +1,640 @@
+/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
+# ::id snt0.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 힘 (물리)
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"물리" [FD_SCIENCE]	->  (물 / 물리)	OR	(s / study-field|group* :wiki "물리학" :name (이 / 이름 :op1 "물리"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 물리학에서 힘은 물체의 운동, 방향 또는 구조를 변화시키는 원인이다.
+# ::note
+-- FRAMES ----------------------------------------
+물리학 : DERIVED_NON-ENTRY -> (물 / 물리학-00) ?
+구조 : VERBAL_NOUN
+	- rescue		(구 / 구조-01 :ARG0 agent :ARG1 entity_rescued)
+변화 : VERBAL_NOUN
+	- change		(변 / 변화-01 :ARG0 causer :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"물리학" [FD_SCIENCE]	->  (물 / 물리학)	OR	(s / study-field|group* :wiki "물리학" :name (이 / 이름 :op1 "물리학"))
+-- VERBALIZED ------------------------------------
+(학 / 학 :mod (물 / 물리-00))
+
+
+# ::id snt2.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 다른 말로, 힘은 질량을 가진 물체의 속도를 변화시키는 요인(이는 정지 상태에서 이동하기 시작하는 것도 포함)이며, 즉 물체를 가속시키거나 신축성이 있는 물체는 변형시킬 수 있고, 가속과 변형 둘 다 일어날 수도 있다.
+# ::note
+-- FRAMES ----------------------------------------
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+변화 : VERBAL_NOUN
+	- change		(변 / 변화-01 :ARG0 causer :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
+정지 : VERBAL_NOUN
+	- stop		(정 / 정지-01 :ARG0 agent :ARG1 thing_stopped)
+이동 : VERBAL_NOUN
+	- move		(이 / 이동-01 :ARG0 agent :ARG2 start_point :ARG3 end_point)
+	- move		(이 / 이동-02 :ARG0 causer :ARG1 entity_in_motion :ARG2 start_point :ARG3 end_point)
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+포함 : VERBAL_NOUN
+	- include		(포 / 포함-01 :ARG0 agent :ARG1 thing_included :ARG2 group)
+가속시키 : DERIVED_NON-ENTRY
+신축성 : DERIVED_NON-ENTRY -> (신 / 신축성-00) ?
+있 : ** UNUSED_OR_NON-ENTRY **
+변형시키 : DERIVED_NON-ENTRY
+있 : ** UNUSED_OR_NON-ENTRY **
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"둘" [QT_COUNT]	->  :quant (둘 / 둘)	OR	(c / concept* :quant - :unit|scale (둘 / 둘))
+-- VERBALIZED ------------------------------------
+(상 / 상태-00 :mod (정 / 정지-01))
+(성 / 성 :mod (신 / 신축-00))
+
+
+# ::id snt3.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 또한 힘은 밀리거나 밀어내는 것이라는 직관적인 개념으로도 설명할 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+밀리 : VERB
+	- fall_behind		(밀 / 밀리-01 :ARG1 entity_falling_behind :ARG2 entity_fallen_behind)
+	- drop		(밀 / 밀리-02 :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+밀어내 : ** UNUSED_OR_NON-ENTRY **
+직관적 : DERIVED_NON-ENTRY -> (직 / 직관적-00) ?
+설명 : VERBAL_NOUN
+	- explain		(설 / 설명-01 :ARG0 explainer :ARG1 thing_explained :ARG2 explained_to)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (직 / 직관-00))
+
+
+# ::id snt4.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 힘은 크기와 방향을 모두 가졌기 때문에 벡터량으로 표현한다.
+# ::note
+-- FRAMES ----------------------------------------
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+표현 : VERBAL_NOUN
+	- express		(표 / 표현-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(량 / 량 :mod (벡 / 벡터-00))
+
+
+# ::id snt5.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 힘은 뉴턴이라는 국제단위계로 측정되며 F라는 기호로 표현한다.
+# ::note
+-- FRAMES ----------------------------------------
+단위계 : DERIVED_NON-ENTRY -> (단 / 단위계-00) ?
+측정 : VERBAL_NOUN
+	- measure		(측 / 측정-01 :ARG0 agent :ARG1 thing_measured)
+표현 : VERBAL_NOUN
+	- express		(표 / 표현-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(계 / 계 :mod (단 / 단위-00))
+(단 / 단위 :mod (국 / 국제-00))
+
+
+# ::id snt6.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 뉴턴 운동 법칙의 제2법칙의 원래 형태는 물체의 알짜힘이 미분 시간과 운동량의 변화의 곱과 같다는 형태였다.
+# ::note
+-- FRAMES ----------------------------------------
+변화 : VERBAL_NOUN
+	- change		(변 / 변화-01 :ARG0 causer :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"뉴턴 운동 법칙" [TR_SCIENCE]	->  (뉴 / 뉴턴운동법칙)	OR	(t / theory* :wiki "뉴턴_운동_법칙" :name (이 / 이름 :op1 "뉴턴" :op2 "운동" :op3 "법칙"))
+"제2법칙" [QT_ORDER]	->  :ord (제 / 제2법칙)	OR	:ord (o / ordinal-entity :value 제2법칙)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+-- VERBALIZED ------------------------------------
+(량 / 량 :mod (운 / 운동-00))
+(법 / 법칙 :mod (운 / 운동-00))
+(시 / 시간 :mod (미 / 미분-00))
+(형 / 형태 :mod (원 / 원래-00))
+(힘 / 힘 :mod (알 / 알짜-00))
+
+
+# ::id snt7.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 만약 물체의 질량이 일정할 경우, 이 법칙은 물체에 작용하는 알짜힘은 알짜힘의 방향에 작용하는 가속도에 비례하고 물체의 질량에 비례한다는 의미이다.
+# ::note
+-- FRAMES ----------------------------------------
+일정 : VERBAL_NOUN
+	- constant		(일 / 일정-01 :ARG1 thing_being_constant)
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+가속도 : DERIVED_NON-ENTRY -> (가 / 가속도-00) ?
+비례하 : DERIVED_NON-ENTRY
+비례하 : DERIVED_NON-ENTRY
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(물 / 물체 :mod (만 / 만약-00))
+(힘 / 힘 :mod (알 / 알짜-00))
+
+
+# ::id snt8.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 힘의 공식으로는 다음과 같이 표현된다.
+# ::note
+-- FRAMES ----------------------------------------
+표현 : VERBAL_NOUN
+	- express		(표 / 표현-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt9.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 기호 위의 화살표는 크기와 방향 모두를 가진 벡터량을 의미하는 기호이다.
+# ::note
+-- FRAMES ----------------------------------------
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(량 / 량 :mod (벡 / 벡터-00))
+(모 / 모두 :mod (방 / 방향-00))
+(위 / 위 :mod (기 / 기호-00))
+(표 / 표 :mod (화 / 화살-00))
+
+
+# ::id snt10.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 힘과 관련된 개념으로는 다음이 있다.
+# ::note
+-- FRAMES ----------------------------------------
+관련 : VERBAL_NOUN
+	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt11.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 먼저 추력은 물체의 속도를 증가시킨다.
+# ::note
+-- FRAMES ----------------------------------------
+증가 : VERBAL_NOUN
+	- increase		(증 / 증가-01 :ARG0 agent :ARG1 thing_increasing :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt12.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 항력은 물체의 속도를 감소시킨다.
+# ::note
+-- FRAMES ----------------------------------------
+감소 : VERBAL_NOUN
+	- reduce		(감 / 감소-01 :ARG0 agent :ARG1 thing_reduced :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt13.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 돌림힘은 물체에 대한 각속도 변화를 만들어낸다.
+# ::note
+-- FRAMES ----------------------------------------
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+변화 : VERBAL_NOUN
+	- change		(변 / 변화-01 :ARG0 causer :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(변 / 변화-01 :mod (각 / 각속도-00))
+(힘 / 힘 :mod (돌 / 돌림-00))
+
+
+# ::id snt14.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 확장된 개념의 각 부분은 일반적으로 인접한 부분에 힘을 작용시킨다.
+# ::note
+-- FRAMES ----------------------------------------
+확장 : VERBAL_NOUN
+	- expand		(확 / 확장-01 :ARG0 agent :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
+일반적 : DERIVED_NON-ENTRY -> (일 / 일반적-00) ?
+인접 : VERBAL_NOUN
+	- abut		(인 / 인접-01 :ARG1 thing_abutting :ARG2 abut_on)
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (일 / 일반-00))
+
+
+# ::id snt15.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이러한 힘의 분포는 물체의 소위 변형력을 통해 알 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+이러하 : ** UNUSED_OR_NON-ENTRY **
+분포 : VERBAL_NOUN
+	- distribute		(분 / 분포-01 :ARG0 distributor :ARG1 thing_distributed :ARG2 distributed_to)
+변형력 : DERIVED_NON-ENTRY -> (변 / 변형력-00) ?
+통하 : VERB
+	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
+	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
+	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
+알 : VERB
+	- know		(알 / 알-01 :ARGA causer :ARG0 knower :ARG1 theme)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(력 / 력 :mod (변 / 변형-00))
+
+
+# ::id snt16.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 압력은 이 변형력의 간단한 형태 중 하나이다.
+# ::note
+-- FRAMES ----------------------------------------
+변형력 : DERIVED_NON-ENTRY -> (변 / 변형력-00) ?
+간단하 : VERB
+	- simple		(간 / 간단하-01 :ARG1 thing_being_simple)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
+-- VERBALIZED ------------------------------------
+(력 / 력 :mod (변 / 변형-00))
+
+
+# ::id snt17.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 변형력은 보통 고체 물질의 변형이나 액체 물질이 흐르는 원인이 된다.
+# ::note
+-- FRAMES ----------------------------------------
+변형력 : DERIVED_NON-ENTRY -> (변 / 변형력-00) ?
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(력 / 력 :mod (변 / 변형-00))
+(물 / 물질 :mod (고 / 고체-00))
+(물 / 물질 :mod (액 / 액체-00))
+
+
+# ::id snt18.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 고전 고대의 철학자들은 정역학적이고 동역학적인 물체에 관한 힘에 대해 연구했고 단순 기계를 발명했지만, 사상가 아르키메데스와 아리스토텔레스의 힘에 대한 이해는 근본적인 오류가 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+고대 : VERBAL_NOUN
+	- long_for		(고 / 고대-01 :ARG0 wanter :ARG1 thing_wanted)
+철학자 : DERIVED_NON-ENTRY -> (철 / 철학자-00) ?
+정역학적 : DERIVED_NON-ENTRY -> (정 / 정역학적-00) ?
+동역학적 : DERIVED_NON-ENTRY -> (동 / 동역학적-00) ?
+관하 : VERB
+	- regarding		(관 / 관하-01 :ARG1 thing_under_consideration :ARG2 with_regard_to)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+연구 : VERBAL_NOUN
+	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
+단순 : VERBAL_NOUN
+	- simple		(단 / 단순-01 :ARG1 thing_being_simple)
+발명하 : DERIVED_NON-ENTRY
+사상가 : DERIVED_NON-ENTRY -> (사 / 사상가-00) ?
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+이해 : VERBAL_NOUN
+	- understand		(이 / 이해-01 :ARG0 understander :ARG1 thing_understood)
+근본적 : DERIVED_NON-ENTRY -> (근 / 근본적-00) ?
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"고대" [DT_OTHERS]	->  :time|duration (고 / 고대)	OR	:time (d / date-entity)	OR	:duration 
+"동역학" [FD_SCIENCE]	->  (동 / 동역학)	OR	(s / study-field|group* :wiki "동역학" :name (이 / 이름 :op1 "동역학"))
+"사상가" [CV_OCCUPATION]	->  :mod (사 / 사상가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사상가))
+"아르키메데스" [PS_NAME]	->  (아 / 아르키메데스)	OR	(p / person :wiki "아르키메데스" :name (이 / 이름 :op1 "아르키메데스"))
+"아리스토텔레스" [PS_NAME]	->  (아 / 아리스토텔레스)	OR	(p / person :wiki "아리스토텔레스" :name (이 / 이름 :op1 "아리스토텔레스"))
+"정역학" [FD_SCIENCE]	->  (정 / 정역학)	OR	(s / study-field|group* :wiki "정역학" :name (이 / 이름 :op1 "정역학"))
+"철학자" [CV_OCCUPATION]	->  :mod (철 / 철학자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (철 / 철학자))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (사 / 사상-00))
+(고 / 고대-01 :mod (고 / 고전-00))
+(기 / 기계-00 :mod (단 / 단순-01))
+(자 / 자 :mod (철 / 철학-00))
+(적 / 적 :mod (근 / 근본-00))
+(적 / 적 :mod (동 / 동역학-00))
+(적 / 적 :mod (정 / 정역학-00))
+
+
+# ::id snt19.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이러한 부분은 때때로 마찰력과 같은 명백하게 힘이 아닌 성분에 대해 불완전히 이해하거나 자연 운동에 대한 본질과 같은 것에 대한 불충분한 결과로 인해 나타난다.
+# ::note
+-- FRAMES ----------------------------------------
+이러하 : ** UNUSED_OR_NON-ENTRY **
+마찰 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (마 / 마찰력-00) ?
+	- rub		(마 / 마찰-01 :ARG0 agent,_causer :ARG1 entity_rubbing :ARG2 rubbed_with)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+명백하 : VERB
+	- evident		(명 / 명백하-01 :ARG1 thing_being_evident)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+이해 : VERBAL_NOUN
+	- understand		(이 / 이해-01 :ARG0 understander :ARG1 thing_understood)
+자연 : VERBAL_NOUN
+	- natural		(자 / 자연-01 :ARG1 thing_natural)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+불충분하 : DERIVED_VERB_DETECTED
+	- insufficient		(불 / 불충분하-01 :ARG1 thing_being_insufficient :ARG2 insufficient_to)
+인하 : VERB
+	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
+	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
+나타나 : VERB
+	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
+-- FORCE CONVERT ---------------------------------
+:manner (완 / 완전-01)
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(력 / 력 :ARG0-of (마 / 마찰-01))
+(운 / 운동-00 :mod (자 / 자연-01))
+
+
+# ::id snt20.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 근본적인 오류는 힘이 심지어 일정한 속도(등속도)로 운동하더라도 힘이 필요하다는 믿음이었다.
+# ::note
+-- FRAMES ----------------------------------------
+근본적 : DERIVED_NON-ENTRY -> (근 / 근본적-00) ?
+일정 : VERBAL_NOUN
+	- constant		(일 / 일정-01 :ARG1 thing_being_constant)
+등속도 : DERIVED_NON-ENTRY -> (등 / 등속도-00) ?
+운동하 : DERIVED_NON-ENTRY
+필요 : VERBAL_NOUN
+	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (근 / 근본-00))
+
+
+# ::id snt21.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이전의 운동과 힘에 관한 오류의 대부분은 결국 아이작 뉴턴에 의해 수정되었다.
+# ::note
+-- FRAMES ----------------------------------------
+이전 : VERBAL_NOUN
+	- move		(이 / 이전-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
+관하 : VERB
+	- regarding		(관 / 관하-01 :ARG1 thing_under_consideration :ARG2 with_regard_to)
+대부분 : DERIVED_NON-ENTRY -> (대 / 대부분-00) ?
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+수정 : VERBAL_NOUN
+	- correct		(수 / 수정-01 :ARG0 corrector :ARG1 thing_being_wrong)
+	- fertilize		(수 / 수정-02 :ARG0 agent :ARG1 one_part_of_gender :ARG2 other_part_of_gender)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"아이작 뉴턴" [PS_NAME]	->  (아 / 아이작뉴턴)	OR	(p / person :wiki "아이작_뉴턴" :name (이 / 이름 :op1 "아이작" :op2 "뉴턴"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt22.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그의 수학적 통찰력으로 만들어진 뉴턴 운동 법칙은 거의 3백 년동안 이보다 더 뛰어난 법칙이 나오지 않았다.
+# ::note
+-- FRAMES ----------------------------------------
+수학적 : DERIVED_NON-ENTRY -> (수 / 수학적-00) ?
+통찰력 : DERIVED_NON-ENTRY -> (통 / 통찰력-00) ?
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+뛰어나 : VERB
+	- excellent		(뛰 / 뛰어나-01 :ARG1 thing_being_excellent)
+나오 : VERB
+	- come_out		(나 / 나오-01 :ARG0 thing_coming_out :ARG2 start_point :ARG3 end_point)
+	- do-light_verb		(나 / 나오-02 :ARG0 agent :ARG1 deverbal_noun :ARG2 start_point :ARG3 end_point)
+	- spill_out-CV		(나 / 나오-03 :ARG1 thing_coming_out :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"3백 년동안" [DT_DURATION]	->  :time|duration (3 / 3백년동안)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"뉴턴 운동 법칙" [TR_SCIENCE]	->  (뉴 / 뉴턴운동법칙)	OR	(t / theory* :wiki "뉴턴_운동_법칙" :name (이 / 이름 :op1 "뉴턴" :op2 "운동" :op3 "법칙"))
+"수학" [FD_SCIENCE]	->  (수 / 수학)	OR	(s / study-field|group* :wiki "수학" :name (이 / 이름 :op1 "수학"))
+-- VERBALIZED ------------------------------------
+(력 / 력 :mod (통 / 통찰-00))
+(법 / 법칙 :mod (운 / 운동-00))
+(적 / 적 :mod (수 / 수학-00))
+
+
+# ::id snt23.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 20세기 초반에는 알버트 아인슈타인이 상대성 이론을 발표하면서 빛의 속도에 가까운 운동량을 가진 물체에 대한 제대로 된 힘의 움직임을 예측하고 중력은 관성으로 인해 생성된 힘이라는 통찰력을 가져다주었다.
+# ::note
+-- FRAMES ----------------------------------------
+상대 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (상 / 상대성-00) ?
+	- confront		(상 / 상대-01 :ARG0 agent :ARG1 confronted_with)
+발표 : VERBAL_NOUN
+	- announce		(발 / 발표-01 :ARG0 announcer :ARG1 announcement :ARG2 announced_to)
+가깝 : VERB
+	- near		(가 / 가깝-01 :ARG1 thing_being_near :ARG2 which_from)
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+예측 : VERBAL_NOUN
+	- predict		(예 / 예측-01 :ARG0 agent :ARG1 thing_predicted)
+인하 : VERB
+	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
+	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
+생성 : VERBAL_NOUN
+	- form		(생 / 생성-01 :ARG0 creator :ARG1 thing_created)
+통찰력 : DERIVED_NON-ENTRY -> (통 / 통찰력-00) ?
+가져다주 : VERB
+	- bring		(가 / 가져다주-01 :ARG0 bringer :ARG1 thing_brought :ARG2 brought_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"20세기 초반" [DT_OTHERS]	->  :time|duration (2 / 20세기초반)	OR	:time (d / date-entity)	OR	:duration 
+"상대성 이론" [TR_SCIENCE]	->  (상 / 상대성이론)	OR	(t / theory* :wiki "상대성이론" :name (이 / 이름 :op1 "상대성" :op2 "이론"))
+"알버트 아인슈타인" [PS_NAME]	->  (알 / 알버트아인슈타인)	OR	(p / person :wiki "알베르트_아인슈타인" :name (이 / 이름 :op1 "알버트" :op2 "아인슈타인"))
+-- VERBALIZED ------------------------------------
+(량 / 량 :mod (운 / 운동-00))
+(력 / 력 :mod (통 / 통찰-00))
+(성 / 성 :ARG0-of (상 / 상대-01))
+(초 / 초반 :mod (세 / 세기-00))
+
+
+# ::id snt24.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 현대에서는 양자역학의 기술을 이용해 빛의 속도에 가깝게 입자를 가속시킬 수 있고 입자물리학은 원자보다 작은 입자간의 힘을 설명하는 표준 모형을 만들어냈다.
+# ::note
+-- FRAMES ----------------------------------------
+기술 : VERBAL_NOUN
+	- describe		(기 / 기술-01 :ARG0 describer :ARG1 thing_described)
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+가깝 : VERB
+	- near		(가 / 가깝-01 :ARG1 thing_being_near :ARG2 which_from)
+가속시키 : DERIVED_NON-ENTRY
+있 : ** UNUSED_OR_NON-ENTRY **
+물리학 : DERIVED_NON-ENTRY -> (물 / 물리학-00) ?
+작 : VERB
+	- small		(작 / 작-01 :ARG1 thing_being_small)
+설명 : VERBAL_NOUN
+	- explain		(설 / 설명-01 :ARG0 explainer :ARG1 thing_explained :ARG2 explained_to)
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"양자역학" [FD_SCIENCE]	->  (양 / 양자역학)	OR	(s / study-field|group* :wiki "양자역학" :name (이 / 이름 :op1 "양자역학"))
+"입자물리학" [FD_SCIENCE]	->  (입 / 입자물리학)	OR	(s / study-field|group* :wiki "입자물리학" :name (이 / 이름 :op1 "입자물리학"))
+"현대" [DT_OTHERS]	->  :time|duration (현 / 현대)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(모 / 모형 :mod (표 / 표준-00))
+(물 / 물리 :mod (입 / 입자-00))
+(역 / 역학 :mod (양 / 양자-00))
+(학 / 학 :mod (물 / 물리-00))
+
+
+# ::id snt25.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 표준 모형은 게이지 보손이라는 입자를 교환하여 힘을 방출 및 흡수한다는 것을 예측했다.
+# ::note
+-- FRAMES ----------------------------------------
+교환 : VERBAL_NOUN
+	- exchange		(교 / 교환-01 :ARG0 agent :ARG1 thing_being_traded :ARG2 other_exchanger)
+방출 : VERBAL_NOUN
+	- release		(방 / 방출-01 :ARG0 releaser :ARG1 thing_released :ARG2 direction)
+흡수 : VERBAL_NOUN
+	- absorb		(흡 / 흡수-01 :ARG0 absorber :ARG1 thing_absorbed)
+예측 : VERBAL_NOUN
+	- predict		(예 / 예측-01 :ARG0 agent :ARG1 thing_predicted)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"게이지 보손" [TR_SCIENCE]	->  (게 / 게이지보손)	OR	(t / theory* :wiki "게이지_보손" :name (이 / 이름 :op1 "게이지" :op2 "보손"))
+-- VERBALIZED ------------------------------------
+(모 / 모형 :mod (표 / 표준-00))
+(보 / 보손 :mod (게 / 게이지-00))
+
+
+# ::id snt26.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 오직 4개의 상호 작용만이 현재 알려져 있다.
+# ::note
+-- FRAMES ----------------------------------------
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+알리 : REDUCED_VERB_DETECTED
+	- know		(알 / 알-01 :ARGA causer :ARG0 knower :ARG1 theme)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"4개" [QT_COUNT]	->  :quant (4 / 4개)	OR	(c / concept* :quant 4 :unit|scale (개 / 개))
+-- VERBALIZED ------------------------------------
+(작 / 작용-01 :mod (상 / 상호-00))
+
+
+# ::id snt27.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 힘의 크기에 따라 나누면 다음과 같다.
+# ::note
+-- FRAMES ----------------------------------------
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+나누 : VERB
+	- divide		(나 / 나누-01 :ARG0 entity_causing_separation :ARG1 thing_being_divided :ARG2 divided_into)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt28.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 강한 상호작용, 전자기력, 약한 상호작용, 중력이다.
+# ::note
+-- FRAMES ----------------------------------------
+강하 : VERB
+	- strong		(강 / 강하-01 :ARG1 entity_being_strong)
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+전자기력 : DERIVED_NON-ENTRY -> (전 / 전자기력-00) ?
+약하 : VERB
+	- vulnerable		(약 / 약하-01 :ARG1 thing_being_vulnerable :ARG2 stimulus)
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(력 / 력 :mod (전 / 전자기-00))
+(작 / 작용-01 :mod (상 / 상호-00))
+(작 / 작용-01 :mod (상 / 상호-00))
+
+
+# ::id snt29.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 고에너지 물리학은 1970년대와 80년대 입자들의 관측 결과 약한 상호작용과 전자기력이 근본적으로는 전기·약 작용 상호작용으로 표현할 수 있다는 것을 알아냈다.
+# ::note
+-- FRAMES ----------------------------------------
+고에너지 : DERIVED_NON-ENTRY -> (고 / 고에너지-00) ?
+물리학 : DERIVED_NON-ENTRY -> (물 / 물리학-00) ?
+입자들 : DERIVED_NON-ENTRY -> (입 / 입자들-00) ?
+관측 : VERBAL_NOUN
+	- observe		(관 / 관측-01 :ARG0 agent :ARG1 thing_looked_at)
+약하 : VERB
+	- vulnerable		(약 / 약하-01 :ARG1 thing_being_vulnerable :ARG2 stimulus)
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+전자기력 : DERIVED_NON-ENTRY -> (전 / 전자기력-00) ?
+근본적 : DERIVED_NON-ENTRY -> (근 / 근본적-00) ?
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+표현 : VERBAL_NOUN
+	- express		(표 / 표현-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
+있 : ** UNUSED_OR_NON-ENTRY **
+알아내 : VERB
+	- detect		(알 / 알아내-01 :ARG0 detector :ARG1 detected)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1970년대" [DT_YEAR]	->  :time|duration (1 / 1970년대)	OR	:time (d / date-entity :year 1970)	OR	:duration (t / temporal-quantity :quant 1970 :unit (년 / 년))  
+"80년대" [DT_YEAR]	->  :time|duration (8 / 80년대)	OR	:time (d / date-entity :year 80)	OR	:duration (t / temporal-quantity :quant 80 :unit (년 / 년))  
+"고에너지 물리학" [FD_SCIENCE]	->  (고 / 고에너지물리학)	OR	(s / study-field|group* :wiki "입자물리학" :name (이 / 이름 :op1 "고에너지" :op2 "물리학"))
+-- VERBALIZED ------------------------------------
+(결 / 결과-00 :mod (관 / 관측-01))
+(들 / 들 :mod (입 / 입자-00))
+(력 / 력 :mod (전 / 전자기-00))
+(물 / 물리 :mod (에 / 에너지-00))
+(상 / 상호-00 :mod (작 / 작용-01))
+(작 / 작용-01 :mod (상 / 상호-00))
+(작 / 작용-01 :mod (상 / 상호-00))
+(적 / 적 :mod (근 / 근본-00))
+(학 / 학 :mod (물 / 물리-00))
+
+
+
+Process finished with exit code 0

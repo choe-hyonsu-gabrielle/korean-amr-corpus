@@ -1,0 +1,927 @@
+/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
+# ::id snt0.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '13월의 보너스냐 세금폭탄이냐' 연말정산서비스 15일 시작.
+# ::note
+-- FRAMES ----------------------------------------
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"13월" [DT_MONTH]	->  :time|duration (1 / 13월)	OR	:time (d / date-entity :month 13)	OR	:duration (t / temporal-quantity :quant 13 :unit (월 / 월))  
+"15일" [DT_DAY]	->  :time|duration (1 / 15일)	OR	:time (d / date-entity :day 15)	OR	:duration (t / temporal-quantity :quant 15 :unit (일 / 일))  
+"연말정산서비스" [TMI_SERVICE]	->  (연 / 연말정산서비스)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "연말정산서비스"))
+-- VERBALIZED ------------------------------------
+(서 / 서비스 :mod (정 / 정산-00))
+(정 / 정산 :mod (연 / 연말-00))
+(폭 / 폭탄 :mod (세 / 세금-00))
+
+
+# ::id snt1.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 지난해 소득분에 대한 연말정산 서비스가 15일부터 시작된다.
+# ::note
+-- FRAMES ----------------------------------------
+소득분 : DERIVED_NON-ENTRY -> (소 / 소득분-00) ?
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"15일부터" [DT_OTHERS]	->  :time|duration (1 / 15일부터)	OR	:time (d / date-entity :day 15)	OR	:duration (t / temporal-quantity :quant 15 :unit (일 / 일))  
+"연말정산 서비스" [TMI_SERVICE]	->  (연 / 연말정산서비스)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "서비스"))
+"지난해" [DT_YEAR]	->  :time|duration (지 / 지난해)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(분 / 분 :mod (소 / 소득-00))
+(서 / 서비스 :mod (정 / 정산-00))
+(소 / 소득 :mod (지 / 지난해-00))
+(정 / 정산 :mod (연 / 연말-00))
+
+
+# ::id snt2.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 올해부터 4대 보험료 자료도 홈택스에서 조회할 수 있어 편리해졌지만 시력 보정용 안경이나 교복 구입비, 일부 종교단체 기부금 등은 근로자가 따로 꼼꼼히 챙겨야 13월의 세금 폭탄 대신 보너스를 받을 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+보험료 : DERIVED_NON-ENTRY -> (보 / 보험료-00) ?
+조회하 : DERIVED_NON-ENTRY
+있 : ** UNUSED_OR_NON-ENTRY **
+편리하 : DERIVED_NON-ENTRY
+보정용 : DERIVED_NON-ENTRY -> (보 / 보정용-00) ?
+구입 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (구 / 구입비-00) ?
+	- purchase		(구 / 구입-01 :ARG0 purchaser :ARG1 thing_purchased :ARG2 seller)
+기부 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기부금-00) ?
+	- donate		(기 / 기부-01 :ARG0 agent :ARG1 thing_given :ARG2 entity_given_to)
+근로자 : DERIVED_NON-ENTRY -> (근 / 근로자-00) ?
+챙기 : VERB
+	- pack		(챙 / 챙기-01 :ARG0 agent :ARG1 thing_packed)
+대신 : VERBAL_NOUN
+	- replace		(대 / 대신-01 :ARG0 agent :ARG1 thing_substituted :ARG2 thing_substituting)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"13월" [DT_MONTH]	->  :time|duration (1 / 13월)	OR	:time (d / date-entity :month 13)	OR	:duration (t / temporal-quantity :quant 13 :unit (월 / 월))  
+"4대" [QT_COUNT]	->  :quant (4 / 4대)	OR	(c / concept* :quant 4 :unit|scale (대 / 대))
+"근로자" [CV_POSITION]	->  :mod (근 / 근로자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (근 / 근로자))
+"보험료" [CV_TAX]	->  (보 / 보험료)	OR	(t / tax* :wiki "보험료" :name (이 / 이름 :op1 "보험료"))
+"시력 보정용 안경" [AF_WARES]	->  (시 / 시력보정용안경)	OR	(p / product? :wiki - :name (이 / 이름 :op1 "시력" :op2 "보정용" :op3 "안경"))
+"올해부터" [DT_OTHERS]	->  :time|duration (올 / 올해부터)	OR	:time (d / date-entity)	OR	:duration 
+"홈택스" [TMI_SERVICE]	->  (홈 / 홈택스)	OR	(s / service* :wiki "홈택스" :name (이 / 이름 :op1 "홈택스"))
+-- VERBALIZED ------------------------------------
+(구 / 구입-01 :mod (교 / 교복-00))
+(금 / 금 :ARG0-of (기 / 기부-01))
+(기 / 기부-01 :mod (단 / 단체-00))
+(단 / 단체 :mod (종 / 종교-00))
+(대 / 대신-01 :mod (폭 / 폭탄-00))
+(료 / 료 :mod (보 / 보험-00))
+(보 / 보너스-00 :mod (대 / 대신-01))
+(보 / 보정 :mod (시 / 시력-00))
+(비 / 비 :ARG0-of (구 / 구입-01))
+(용 / 용 :mod (보 / 보정-00))
+(자 / 자 :mod (근 / 근로-00))
+(종 / 종교 :mod (일 / 일부-00))
+(폭 / 폭탄 :mod (세 / 세금-00))
+
+
+# ::id snt3.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 국세청은 홈택스(www.hometax.go.kr)에서 소득·세액공제 자료를 조회할 수 있는 '연말정산 간소화 서비스'를 15일 오전 9시부터 개통한다고 12일 밝혔다.
+# ::note
+-- FRAMES ----------------------------------------
+국세청 : DERIVED_NON-ENTRY -> (국 / 국세청-00) ?
+조회하 : DERIVED_NON-ENTRY
+있 : ** UNUSED_OR_NON-ENTRY **
+간소화 : DERIVED_NON-ENTRY -> (간 / 간소화-00) ?
+개통 : VERBAL_NOUN
+	- open_for_traffic		(개 / 개통-01 :ARG0 agent :ARG1 path)
+밝히 : VERB
+	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
+	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"12일" [DT_DAY]	->  :time|duration (1 / 12일)	OR	:time (d / date-entity :day 12)	OR	:duration (t / temporal-quantity :quant 12 :unit (일 / 일))  
+"15일" [DT_DAY]	->  :time|duration (1 / 15일)	OR	:time (d / date-entity :day 15)	OR	:duration (t / temporal-quantity :quant 15 :unit (일 / 일))  
+"www.hometax.go.kr" [TMI_SITE]	->  :mod (u / url-entity :value www.hometax.go.kr)
+"국세청" [OGG_POLITICS]	->  (국 / 국세청)	OR	(g / government-organization :wiki "국세청?" :name (이 / 이름 :op1 "국세청"))
+"세액공제" [CV_TAX]	->  (세 / 세액공제)	OR	(t / tax* :wiki "세액공제" :name (이 / 이름 :op1 "세액공제"))
+"연말정산 간소화 서비스" [TMI_SERVICE]	->  (연 / 연말정산간소화서비스)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))
+"오전 9시부터" [TI_OTHERS]	->  :time|duration (오 / 오전9시부터)	OR	:time (d / date-entity :time 9:00)	OR	:duration 
+"홈택스" [TMI_SERVICE]	->  (홈 / 홈택스)	OR	(s / service* :wiki "홈택스" :name (이 / 이름 :op1 "홈택스"))
+-- VERBALIZED ------------------------------------
+(간 / 간소 :mod (정 / 정산-00))
+(공 / 공제 :mod (세 / 세액-00))
+(자 / 자료 :mod (공 / 공제-00))
+(정 / 정산 :mod (연 / 연말-00))
+(청 / 청 :mod (국 / 국세-00))
+(화 / 화 :mod (간 / 간소-00))
+
+
+# ::id snt4.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 맞춤형 원천징수제도에 따라 원천징수세액을 80%로 선택한 근로자는 그간 낸 세금이 적어 연말정산 때 세금을 더 낼 가능성이 크다.
+# ::note
+-- FRAMES ----------------------------------------
+맞춤형 : DERIVED_NON-ENTRY -> (맞 / 맞춤형-00) ?
+징수 : VERBAL_NOUN
+	- collect		(징 / 징수-01 :ARG0 agent :ARG1 thing_collected)
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+징수 : VERBAL_NOUN
+	- collect		(징 / 징수-01 :ARG0 agent :ARG1 thing_collected)
+선택 : VERBAL_NOUN
+	- select		(선 / 선택-01 :ARG0 selector :ARG1 thing_selected :ARG2 selected_from :ARG3 selected_for)
+근로자 : DERIVED_NON-ENTRY -> (근 / 근로자-00) ?
+그간내 : DERIVED_NON-ENTRY
+내 : VERB
+	- send		(내 / 내-01 :ARG0 agent :ARG1 thing_sent :ARG2 sent_to)
+	- make		(내 / 내-02 :ARG0 causer :ARG1 thing_made)
+적 : VERB
+	- write_down		(적 / 적-01 :ARG0 agent :ARG1 thing_written :ARG2 where_written)
+	- little		(적 / 적-02 :ARG1 thing_being_little)
+내 : VERB
+	- send		(내 / 내-01 :ARG0 agent :ARG1 thing_sent :ARG2 sent_to)
+	- make		(내 / 내-02 :ARG0 causer :ARG1 thing_made)
+가능 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (가 / 가능성-00) ?
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"80%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 80%)
+"근로자" [CV_POSITION]	->  :mod (근 / 근로자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (근 / 근로자))
+"맞춤형 원천징수제도" [CV_POLICY]	->  (맞 / 맞춤형원천징수제도)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "맞춤형" :op2 "원천징수제도"))
+"연말" [DT_DURATION]	->  :time|duration (연 / 연말)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"원천징수세액" [CV_TAX]	->  (원 / 원천징수세액)	OR	(t / tax* :wiki - :name (이 / 이름 :op1 "원천징수세액"))
+-- VERBALIZED ------------------------------------
+(때 / 때 :mod (정 / 정산-00))
+(성 / 성 :ARG0-of (가 / 가능-01))
+(세 / 세금 :mod (때 / 때-00))
+(세 / 세액-00 :mod (징 / 징수-01))
+(자 / 자 :mod (근 / 근로-00))
+(정 / 정산 :mod (연 / 연말-00))
+(제 / 제도-00 :mod (징 / 징수-01))
+(징 / 징수-01 :mod (원 / 원천-00))
+(징 / 징수-01 :mod (원 / 원천-00))
+(형 / 형 :mod (맞 / 맞춤-00))
+
+
+# ::id snt5.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 반면 120%를 선택하면 월급에서 세금을 미리 많이 떼 연말정산 때 많이 돌려받을 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+선택 : VERBAL_NOUN
+	- select		(선 / 선택-01 :ARG0 selector :ARG1 thing_selected :ARG2 selected_from :ARG3 selected_for)
+떼 : VERB
+	- remove		(떼 / 떼-01 :ARG0 agent :ARG1 theme :ARG2 removed_from)
+돌려받 : VERB
+	- get_back		(돌 / 돌려받-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 received_from)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"120%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 120%)
+"연말" [DT_DURATION]	->  :time|duration (연 / 연말)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(때 / 때 :mod (정 / 정산-00))
+(정 / 정산 :mod (연 / 연말-00))
+
+
+# ::id snt6.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 근로자들은 공인인증서로 홈택스에 접속해 연말정산 간소화 서비스를 통해 보장성 보험료, 의료비, 교육비, 주택자금, 기부금 등 소득·세액공제 증명 자료 14개 항목을 확인할 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+근로자 : DERIVED_NON-ENTRY -> (근 / 근로자-00) ?
+인증 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (인 / 인증서-00) ?
+	- authenticate		(인 / 인증-01 :ARG0 agent :ARG1 thing_authenticated :ARG2 authenticate_as)
+접속 : VERBAL_NOUN
+	- connect		(접 / 접속-01 :ARG0 agent :ARG1 thing_connected :ARG2 connect_with)
+간소화 : DERIVED_NON-ENTRY -> (간 / 간소화-00) ?
+통하 : VERB
+	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
+	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
+	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
+보장 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (보 / 보장성-00) ?
+	- guarantee		(보 / 보장-01 :ARG0 agent :ARG1 thing_guaranteed :ARG2 guaranteed_to)
+보험료 : DERIVED_NON-ENTRY -> (보 / 보험료-00) ?
+의료비 : DERIVED_NON-ENTRY -> (의 / 의료비-00) ?
+교육 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (교 / 교육비-00) ?
+	- educate		(교 / 교육-01 :ARG0 teacher :ARG1 subject :ARG2 student)
+기부 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기부금-00) ?
+	- donate		(기 / 기부-01 :ARG0 agent :ARG1 thing_given :ARG2 entity_given_to)
+증명 : VERBAL_NOUN
+	- prove		(증 / 증명-01 :ARG0 agent :ARG1 thing_proved)
+확인 : VERBAL_NOUN
+	- confirm		(확 / 확인-01 :ARG0 confirmer :ARG1 thing_confirmed :ARG2 hearer)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"14개" [QT_COUNT]	->  :quant (1 / 14개)	OR	(c / concept* :quant 14 :unit|scale (개 / 개))
+"공인인증서" [TMI_SERVICE]	->  (공 / 공인인증서)	OR	(s / service* :wiki "공인인증서" :name (이 / 이름 :op1 "공인인증서"))
+"근로자" [CV_POSITION]	->  :mod (근 / 근로자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (근 / 근로자))
+"보험료" [CV_TAX]	->  (보 / 보험료)	OR	(t / tax* :wiki "보험료" :name (이 / 이름 :op1 "보험료"))
+"세액공제" [CV_TAX]	->  (세 / 세액공제)	OR	(t / tax* :wiki "세액공제" :name (이 / 이름 :op1 "세액공제"))
+"연말정산 간소화 서비스" [TMI_SERVICE]	->  (연 / 연말정산간소화서비스)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))
+"주택자금" [CV_FUNDS]	->  (주 / 주택자금)	OR	(f / funds* :wiki - :name (이 / 이름 :op1 "주택자금"))
+"홈택스" [TMI_SERVICE]	->  (홈 / 홈택스)	OR	(s / service* :wiki "홈택스" :name (이 / 이름 :op1 "홈택스"))
+-- VERBALIZED ------------------------------------
+(간 / 간소 :mod (정 / 정산-00))
+(공 / 공제 :mod (세 / 세액-00))
+(금 / 금 :ARG0-of (기 / 기부-01))
+(료 / 료 :mod (보 / 보험-00))
+(비 / 비 :ARG0-of (교 / 교육-01))
+(비 / 비 :mod (의 / 의료-00))
+(서 / 서 :ARG0-of (인 / 인증-01))
+(성 / 성 :ARG0-of (보 / 보장-01))
+(인 / 인증-01 :mod (공 / 공인-00))
+(자 / 자 :mod (근 / 근로-00))
+(자 / 자금 :mod (주 / 주택-00))
+(자 / 자료-00 :mod (증 / 증명-01))
+(정 / 정산 :mod (연 / 연말-00))
+(증 / 증명-01 :mod (공 / 공제-00))
+(화 / 화 :mod (간 / 간소-00))
+
+
+# ::id snt7.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 올해부터는 국민연금, 건강보험료 등 4대 보험료 자료와 이전에 대부분 제출되지 않은 폐업 의료기관의 의료비 자료도 제공돼 근로자의 편의를 높였다.
+# ::note
+-- FRAMES ----------------------------------------
+건강 : VERBAL_NOUN
+	- healthy		(건 / 건강-01 :ARG1 entity_being_healthy)
+보험료 : DERIVED_NON-ENTRY -> (보 / 보험료-00) ?
+보험료 : DERIVED_NON-ENTRY -> (보 / 보험료-00) ?
+이전 : VERBAL_NOUN
+	- move		(이 / 이전-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
+대부분 : DERIVED_NON-ENTRY -> (대 / 대부분-00) ?
+제출 : VERBAL_NOUN
+	- submit		(제 / 제출-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+의료비 : DERIVED_NON-ENTRY -> (의 / 의료비-00) ?
+제공 : VERBAL_NOUN
+	- provide		(제 / 제공-01 :ARG0 provider :ARG1 thing_provided :ARG2 provided_for)
+근로자 : DERIVED_NON-ENTRY -> (근 / 근로자-00) ?
+높이 : REDUCED_VERB_DETECTED
+	- high		(높 / 높-01 :ARG0 causer :ARG1 thing_being_high :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"4대" [QT_COUNT]	->  :quant (4 / 4대)	OR	(c / concept* :quant 4 :unit|scale (대 / 대))
+"건강보험료" [CV_TAX]	->  (건 / 건강보험료)	OR	(t / tax* :wiki - :name (이 / 이름 :op1 "건강보험료"))
+"국민연금" [CV_FUNDS]	->  (국 / 국민연금)	OR	(f / funds* :wiki "국민연금" :name (이 / 이름 :op1 "국민연금"))
+"근로자" [CV_POSITION]	->  :mod (근 / 근로자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (근 / 근로자))
+"보험료" [CV_TAX]	->  (보 / 보험료)	OR	(t / tax* :wiki "보험료" :name (이 / 이름 :op1 "보험료"))
+"올해부터" [DT_OTHERS]	->  :time|duration (올 / 올해부터)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(기 / 기관 :mod (의 / 의료-00))
+(료 / 료 :mod (보 / 보험-00))
+(료 / 료 :mod (보 / 보험-00))
+(보 / 보험-00 :mod (건 / 건강-01))
+(비 / 비 :mod (의 / 의료-00))
+(연 / 연금 :mod (국 / 국민-00))
+(의 / 의료 :mod (폐 / 폐업-00))
+(자 / 자 :mod (근 / 근로-00))
+(제 / 제출-01 :mod (부 / 부분-00))
+
+
+# ::id snt8.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 다만 보청기나 휠체어 같은 장애인 보장구 구입비, 시력 보정용 안경·콘택트렌즈 구입비, 교복·체육복 구입비, 취학 전 아동 학원비, 일부 기부금은 조회되지 않을 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+장애인 : DERIVED_NON-ENTRY -> (장 / 장애인-00) ?
+보장 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (보 / 보장구-00) ?
+	- guarantee		(보 / 보장-01 :ARG0 agent :ARG1 thing_guaranteed :ARG2 guaranteed_to)
+구입 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (구 / 구입비-00) ?
+	- purchase		(구 / 구입-01 :ARG0 purchaser :ARG1 thing_purchased :ARG2 seller)
+보정용 : DERIVED_NON-ENTRY -> (보 / 보정용-00) ?
+구입 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (구 / 구입비-00) ?
+	- purchase		(구 / 구입-01 :ARG0 purchaser :ARG1 thing_purchased :ARG2 seller)
+체육복 : DERIVED_NON-ENTRY -> (체 / 체육복-00) ?
+구입 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (구 / 구입비-00) ?
+	- purchase		(구 / 구입-01 :ARG0 purchaser :ARG1 thing_purchased :ARG2 seller)
+학원비 : DERIVED_NON-ENTRY -> (학 / 학원비-00) ?
+기부 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기부금-00) ?
+	- donate		(기 / 기부-01 :ARG0 agent :ARG1 thing_given :ARG2 entity_given_to)
+조회되 : DERIVED_NON-ENTRY
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"보청기" [AF_WARES]	->  (보 / 보청기)	OR	(p / product? :wiki "보청기" :name (이 / 이름 :op1 "보청기"))
+"시력 보정용 안경" [AF_WARES]	->  (시 / 시력보정용안경)	OR	(p / product? :wiki - :name (이 / 이름 :op1 "시력" :op2 "보정용" :op3 "안경"))
+"장애인" [CV_POSITION]	->  :mod (장 / 장애인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장애인))
+"콘택트렌즈" [AF_WARES]	->  (콘 / 콘택트렌즈)	OR	(p / product? :wiki "콘택트_렌즈" :name (이 / 이름 :op1 "콘택트렌즈"))
+"휠체어" [AF_TRANSPORT]	->  (휠 / 휠체어)	OR	(v / vehicle|ship|aircraft|... :wiki "휠체어" :name (이 / 이름 :op1 "휠체어"))
+-- VERBALIZED ------------------------------------
+(구 / 구 :ARG0-of (보 / 보장-01))
+(구 / 구입-01 :mod (렌 / 렌즈-00))
+(금 / 금 :ARG0-of (기 / 기부-01))
+(기 / 기부-01 :mod (일 / 일부-00))
+(렌 / 렌즈 :mod (콘 / 콘택트-00))
+(보 / 보정 :mod (시 / 시력-00))
+(복 / 복 :mod (체 / 체육-00))
+(비 / 비 :ARG0-of (구 / 구입-01))
+(비 / 비 :ARG0-of (구 / 구입-01))
+(비 / 비 :ARG0-of (구 / 구입-01))
+(비 / 비 :mod (학 / 학원-00))
+(아 / 아동 :mod (전 / 전-00))
+(용 / 용 :mod (보 / 보정-00))
+(인 / 인 :mod (장 / 장애-00))
+(전 / 전 :mod (취 / 취학-00))
+(학 / 학원 :mod (아 / 아동-00))
+
+
+# ::id snt9.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 경우 근로자가 구입 장소나 기부단체에 직접 영수증을 따로 발급받아야 공제 혜택을 받을 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+근로자 : DERIVED_NON-ENTRY -> (근 / 근로자-00) ?
+구입 : VERBAL_NOUN
+	- purchase		(구 / 구입-01 :ARG0 purchaser :ARG1 thing_purchased :ARG2 seller)
+기부 : VERBAL_NOUN
+	- donate		(기 / 기부-01 :ARG0 agent :ARG1 thing_given :ARG2 entity_given_to)
+영수증 : DERIVED_NON-ENTRY -> (영 / 영수증-00) ?
+발급 : VERBAL_NOUN
+	- issue		(발 / 발급-01 :ARG0 agent :ARG1 thing_issued :ARG2 issued_to)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"근로자" [CV_POSITION]	->  :mod (근 / 근로자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (근 / 근로자))
+-- VERBALIZED ------------------------------------
+(근 / 근로 :mod (경 / 경우-00))
+(단 / 단체-00 :mod (기 / 기부-01))
+(자 / 자 :mod (근 / 근로-00))
+(장 / 장소-00 :mod (구 / 구입-01))
+(증 / 증 :mod (영 / 영수-00))
+(혜 / 혜택 :mod (공 / 공제-00))
+
+
+# ::id snt10.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 연말정산간소화 서비스에서 조회되지 않거나 사실과 다르게 조회된 의료비가 있으면 17일까지 홈택스 내 '의료비 신고센터'에 신고하면 된다.
+# ::note
+-- FRAMES ----------------------------------------
+조회되 : DERIVED_NON-ENTRY
+다르 : VERB
+	- different		(다 / 다르-01 :ARG1 theme :ARG2 different_from)
+조회되 : DERIVED_NON-ENTRY
+의료비 : DERIVED_NON-ENTRY -> (의 / 의료비-00) ?
+있 : ** UNUSED_OR_NON-ENTRY **
+의료비 : DERIVED_NON-ENTRY -> (의 / 의료비-00) ?
+신고 : VERBAL_NOUN
+	- report		(신 / 신고-01 :ARG0 reporter :ARG1 thing_reported :ARG2 reported_to)
+신고 : VERBAL_NOUN
+	- report		(신 / 신고-01 :ARG0 reporter :ARG1 thing_reported :ARG2 reported_to)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"17일까지" [DT_OTHERS]	->  :time|duration (1 / 17일까지)	OR	:time (d / date-entity :day 17)	OR	:duration (t / temporal-quantity :quant 17 :unit (일 / 일))  
+"연말정산간소화 서비스" [TMI_SERVICE]	->  (연 / 연말정산간소화서비스)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "연말정산간소화" :op2 "서비스"))
+"홈택스" [TMI_SERVICE]	->  (홈 / 홈택스)	OR	(s / service* :wiki "홈택스" :name (이 / 이름 :op1 "홈택스"))
+-- VERBALIZED ------------------------------------
+(간 / 간소화 :mod (정 / 정산-00))
+(비 / 비 :mod (의 / 의료-00))
+(비 / 비 :mod (의 / 의료-00))
+(서 / 서비스 :mod (간 / 간소화-00))
+(센 / 센터-00 :mod (신 / 신고-01))
+(정 / 정산 :mod (연 / 연말-00))
+
+
+# ::id snt11.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 국세청은 신고가 접수된 의료기관에 수정 자료를 제출해달라고 요구하고 이를 반영해 20일에 수정된 의료비 자료를 제공한다.
+# ::note
+-- FRAMES ----------------------------------------
+국세청 : DERIVED_NON-ENTRY -> (국 / 국세청-00) ?
+신고 : VERBAL_NOUN
+	- report		(신 / 신고-01 :ARG0 reporter :ARG1 thing_reported :ARG2 reported_to)
+접수 : VERBAL_NOUN
+	- receive		(접 / 접수-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 receeived_from)
+수정 : VERBAL_NOUN
+	- correct		(수 / 수정-01 :ARG0 corrector :ARG1 thing_being_wrong)
+	- fertilize		(수 / 수정-02 :ARG0 agent :ARG1 one_part_of_gender :ARG2 other_part_of_gender)
+제출 : VERBAL_NOUN
+	- submit		(제 / 제출-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+요구 : VERBAL_NOUN
+	- request		(요 / 요구-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
+반영 : VERBAL_NOUN
+	- reflect		(반 / 반영-01 :ARG0 causer :ARG1 thing_casting_a_reflection :ARG2 surface_casting_the_reflection)
+수정 : VERBAL_NOUN
+	- correct		(수 / 수정-01 :ARG0 corrector :ARG1 thing_being_wrong)
+	- fertilize		(수 / 수정-02 :ARG0 agent :ARG1 one_part_of_gender :ARG2 other_part_of_gender)
+의료비 : DERIVED_NON-ENTRY -> (의 / 의료비-00) ?
+제공 : VERBAL_NOUN
+	- provide		(제 / 제공-01 :ARG0 provider :ARG1 thing_provided :ARG2 provided_for)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"20일" [DT_DAY]	->  :time|duration (2 / 20일)	OR	:time (d / date-entity :day 20)	OR	:duration (t / temporal-quantity :quant 20 :unit (일 / 일))  
+"국세청" [OGG_POLITICS]	->  (국 / 국세청)	OR	(g / government-organization :wiki "국세청?" :name (이 / 이름 :op1 "국세청"))
+-- VERBALIZED ------------------------------------
+(기 / 기관 :mod (의 / 의료-00))
+(비 / 비 :mod (의 / 의료-00))
+(자 / 자료-00 :mod (수 / 수정-01))
+(청 / 청 :mod (국 / 국세-00))
+
+
+# ::id snt12.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 20일 이후에도 의료비 자료가 수정되지 않고 사실과 다르다면 근로자가 해당 병원을 찾아 영수증을 직접 수집해야 한다.
+# ::note
+-- FRAMES ----------------------------------------
+의료비 : DERIVED_NON-ENTRY -> (의 / 의료비-00) ?
+수정 : VERBAL_NOUN
+	- correct		(수 / 수정-01 :ARG0 corrector :ARG1 thing_being_wrong)
+	- fertilize		(수 / 수정-02 :ARG0 agent :ARG1 one_part_of_gender :ARG2 other_part_of_gender)
+다르 : VERB
+	- different		(다 / 다르-01 :ARG1 theme :ARG2 different_from)
+근로자 : DERIVED_NON-ENTRY -> (근 / 근로자-00) ?
+해당 : VERBAL_NOUN
+	- correspond_to		(해 / 해당-01 :ARG1 topic,_theme :ARG2 compared_with)
+찾 : VERB
+	- find		(찾 / 찾-01 :ARG0 finder :ARG1 thing_found)
+	- draw		(찾 / 찾-02 :ARG0 drawer :ARG1 thing_drawn :ARG2 source)
+영수증 : DERIVED_NON-ENTRY -> (영 / 영수증-00) ?
+수집 : VERBAL_NOUN
+	- gather		(수 / 수집-01 :ARG0 agent :ARG1 entity_gathered)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"20일 이후" [DT_OTHERS]	->  :time|duration (2 / 20일이후)	OR	:time (d / date-entity :day 20)	OR	:duration (t / temporal-quantity :quant 20 :unit (일 / 일))  
+"근로자" [CV_POSITION]	->  :mod (근 / 근로자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (근 / 근로자))
+-- VERBALIZED ------------------------------------
+(병 / 병원-00 :mod (해 / 해당-01))
+(비 / 비 :mod (의 / 의료-00))
+(자 / 자 :mod (근 / 근로-00))
+(증 / 증 :mod (영 / 영수-00))
+
+
+# ::id snt13.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 부양가족의 연말정산 간소화 자료는 사전에 자료 제공 동의를 받아야 열람할 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+부양 : VERBAL_NOUN
+	- float		(부 / 부양-01 :ARG0 causer :ARG1 thing_floating)
+간소화 : DERIVED_NON-ENTRY -> (간 / 간소화-00) ?
+제공 : VERBAL_NOUN
+	- provide		(제 / 제공-01 :ARG0 provider :ARG1 thing_provided :ARG2 provided_for)
+동의 : VERBAL_NOUN
+	- agree		(동 / 동의-01 :ARG0 agreer :ARG1 agreed_to)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+열람하 : DERIVED_NON-ENTRY
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"부양가족" [CV_RELATION]	->  :mod (부 / 부양가족)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (부 / 부양가족))
+"연말" [DT_DURATION]	->  :time|duration (연 / 연말)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(가 / 가족-00 :mod (부 / 부양-01))
+(간 / 간소 :mod (정 / 정산-00))
+(동 / 동의-01 :ARG1 (제 / 제공-01))
+(정 / 정산 :mod (연 / 연말-00))
+(제 / 제공-01 :mod (자 / 자료-00))
+(화 / 화 :mod (간 / 간소-00))
+
+
+# ::id snt14.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 올해는 온라인으로도 부양가족이 자료 제공 동의를 할 수 있어 편의성이 커졌다.
+# ::note
+-- FRAMES ----------------------------------------
+부양 : VERBAL_NOUN
+	- float		(부 / 부양-01 :ARG0 causer :ARG1 thing_floating)
+제공 : VERBAL_NOUN
+	- provide		(제 / 제공-01 :ARG0 provider :ARG1 thing_provided :ARG2 provided_for)
+동의 : VERBAL_NOUN
+	- agree		(동 / 동의-01 :ARG0 agreer :ARG1 agreed_to)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+있 : ** UNUSED_OR_NON-ENTRY **
+편의성 : DERIVED_NON-ENTRY -> (편 / 편의성-00) ?
+커지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"부양가족" [CV_RELATION]	->  :mod (부 / 부양가족)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (부 / 부양가족))
+"올해" [DT_YEAR]	->  :time|duration (올 / 올해)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(가 / 가족-00 :mod (부 / 부양-01))
+(동 / 동의-01 :ARG1 (제 / 제공-01))
+(성 / 성 :mod (편 / 편의-00))
+(제 / 제공-01 :mod (자 / 자료-00))
+
+
+# ::id snt15.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 의료비 중 배우자 난임 시술비는 사생활 보호를 위해 의료비와 별도로 구분되지 않는다.
+# ::note
+-- FRAMES ----------------------------------------
+의료비 : DERIVED_NON-ENTRY -> (의 / 의료비-00) ?
+배우 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (배 / 배우자-00) ?
+	- learn		(배 / 배우-01 :ARG0 agent :ARG1 theme :ARG2 source)
+시술비 : DERIVED_NON-ENTRY -> (시 / 시술비-00) ?
+사 : VERBAL_NOUN
+	- buy		(사 / 사-01 :ARG0 buyer :ARG1 thing_bought :ARG2 seller)
+생활 : VERBAL_NOUN
+	- live		(생 / 생활-01 :ARG0 entity_being_alive :ARG2 location)
+보호 : VERBAL_NOUN
+	- protect		(보 / 보호-01 :ARG0 protector :ARG1 protected :ARG2 danger)
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+의료비 : DERIVED_NON-ENTRY -> (의 / 의료비-00) ?
+구분 : VERBAL_NOUN
+	- divide		(구 / 구분-01 :ARG0 agent :ARG1 thing_being_divided :ARG2 resultant)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"난임" [TMM_DISEASE]	->  (난 / 난임)	OR	(d / desease :wiki "불임" :name (이 / 이름 :op1 "난임"))
+"배우자" [CV_RELATION]	->  :mod (배 / 배우자)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (배 / 배우자))
+-- VERBALIZED ------------------------------------
+(보 / 보호-01 :ARG1 (생 / 생활-01))
+(비 / 비 :mod (시 / 시술-00))
+(비 / 비 :mod (의 / 의료-00))
+(비 / 비 :mod (의 / 의료-00))
+(생 / 생활-01 :ARG1 (사 / 사-01))
+(시 / 시술 :mod (난 / 난임-00))
+(자 / 자 :ARG0-of (배 / 배우-01))
+
+
+# ::id snt16.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 근로자가 따로 난임 시술비 부분만 분류해 제출해야 700만 원 한도가 적용되지 않고 모두 공제받을 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+근로자 : DERIVED_NON-ENTRY -> (근 / 근로자-00) ?
+시술비 : DERIVED_NON-ENTRY -> (시 / 시술비-00) ?
+분류 : VERBAL_NOUN
+	- classify		(분 / 분류-01 :ARG0 classifier :ARG1 thing_being_classified :ARG2 classified_among)
+제출 : VERBAL_NOUN
+	- submit		(제 / 제출-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+적용 : VERBAL_NOUN
+	- apply		(적 / 적용-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
+공제받 : DERIVED_NON-ENTRY
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"700만 원" [QT_PRICE]	->  :quant (7 / 700만원)	OR	(m / monetary-quantity :quant 700만 :unit|scale (원 / 원))
+"근로자" [CV_POSITION]	->  :mod (근 / 근로자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (근 / 근로자))
+"난임" [TMM_DISEASE]	->  (난 / 난임)	OR	(d / desease :wiki "불임" :name (이 / 이름 :op1 "난임"))
+-- VERBALIZED ------------------------------------
+(비 / 비 :mod (시 / 시술-00))
+(시 / 시술 :mod (난 / 난임-00))
+(자 / 자 :mod (근 / 근로-00))
+
+
+# ::id snt17.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 신생아 등 환자의 주민등록번호를 의료기관에 알려주지 않을 때에도 의료비 자료가 조회되지 않는다.
+# ::note
+-- FRAMES ----------------------------------------
+신생아 : DERIVED_NON-ENTRY -> (신 / 신생아-00) ?
+등록 : VERBAL_NOUN
+	- register		(등 / 등록-01 :ARG0 entity_registering,_causer :ARG1 thing_registered :ARG2 register)
+알리 : REDUCED_VERB_DETECTED
+	- know		(알 / 알-01 :ARGA causer :ARG0 knower :ARG1 theme)
+의료비 : DERIVED_NON-ENTRY -> (의 / 의료비-00) ?
+조회되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"주민등록" [CV_POLICY]	->  (주 / 주민등록)	OR	(p / policy* :wiki "주민등록" :name (이 / 이름 :op1 "주민등록"))
+"환자" [CV_POSITION]	->  :mod (환 / 환자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (환 / 환자))
+-- VERBALIZED ------------------------------------
+(기 / 기관 :mod (의 / 의료-00))
+(등 / 등록-01 :mod (주 / 주민-00))
+(번 / 번호-00 :mod (등 / 등록-01))
+(비 / 비 :mod (의 / 의료-00))
+(아 / 아 :mod (신 / 신생-00))
+
+
+# ::id snt18.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 경우 근로자가 해당 병원에서 직접 영수증을 발급받아 공제해야 한다.
+# ::note
+-- FRAMES ----------------------------------------
+근로자 : DERIVED_NON-ENTRY -> (근 / 근로자-00) ?
+해당 : VERBAL_NOUN
+	- correspond_to		(해 / 해당-01 :ARG1 topic,_theme :ARG2 compared_with)
+영수증 : DERIVED_NON-ENTRY -> (영 / 영수증-00) ?
+발급 : VERBAL_NOUN
+	- issue		(발 / 발급-01 :ARG0 agent :ARG1 thing_issued :ARG2 issued_to)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+공제하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"근로자" [CV_POSITION]	->  :mod (근 / 근로자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (근 / 근로자))
+-- VERBALIZED ------------------------------------
+(근 / 근로 :mod (경 / 경우-00))
+(병 / 병원-00 :mod (해 / 해당-01))
+(자 / 자 :mod (근 / 근로-00))
+(증 / 증 :mod (영 / 영수-00))
+
+
+# ::id snt19.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 지난해 중 입사하거나 퇴사한 경우에는 근무한 기간의 자료만 선택해 공제받을 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+입사하 : DERIVED_NON-ENTRY
+퇴사하 : DERIVED_NON-ENTRY
+근무 : VERBAL_NOUN
+	- work		(근 / 근무-01 :ARG0 agent :ARG2 location)
+선택 : VERBAL_NOUN
+	- select		(선 / 선택-01 :ARG0 selector :ARG1 thing_selected :ARG2 selected_from :ARG3 selected_for)
+공제받 : DERIVED_NON-ENTRY
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"지난해" [DT_YEAR]	->  :time|duration (지 / 지난해)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(해 / 해 :mod (지 / 지난-00))
+
+
+# ::id snt20.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 연말정산 간소화 서비스에 나온 내용은 귀찮더라도 꼼꼼히 살펴봐야 한다.
+# ::note
+-- FRAMES ----------------------------------------
+간소화 : DERIVED_NON-ENTRY -> (간 / 간소화-00) ?
+나오 : VERB
+	- come_out		(나 / 나오-01 :ARG0 thing_coming_out :ARG2 start_point :ARG3 end_point)
+	- do-light_verb		(나 / 나오-02 :ARG0 agent :ARG1 deverbal_noun :ARG2 start_point :ARG3 end_point)
+	- spill_out-CV		(나 / 나오-03 :ARG1 thing_coming_out :ARG2 start_point :ARG3 end_point)
+귀찮 : ** UNUSED_OR_NON-ENTRY **
+살펴보 : VERB
+	- search		(살 / 살펴보-01 :ARG0 searcher :ARG1 searched_for)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"연말정산 간소화 서비스" [TMI_SERVICE]	->  (연 / 연말정산간소화서비스)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))
+-- VERBALIZED ------------------------------------
+(간 / 간소 :mod (정 / 정산-00))
+(정 / 정산 :mod (연 / 연말-00))
+(화 / 화 :mod (간 / 간소-00))
+
+
+# ::id snt21.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 자료가 잘못돼 공제 혜택을 과도하게 받으면 가산세를 물어야 할 수도 있기 때문이다.
+# ::note
+-- FRAMES ----------------------------------------
+잘못 : VERBAL_NOUN
+	- do_wrong		(잘 / 잘못-01 :ARG0 thing_doing_wrong)
+	- wrong		(잘 / 잘못-02 :ARG1 thing_wrong)
+과도 : VERBAL_NOUN
+	- excessive		(과 / 과도-01 :ARG1 thing_being_excessive)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+가산세 : DERIVED_NON-ENTRY -> (가 / 가산세-00) ?
+물 : VERB
+	- bite		(물 / 물-01 :ARG0 agent :ARG1 entity_bitten)
+	- pay		(물 / 물-02 :ARGA causer :ARG0 payer :ARG1 thing_paid :ARG2 person_being_paid)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"가산세" [CV_TAX]	->  (가 / 가산세)	OR	(t / tax* :wiki - :name (이 / 이름 :op1 "가산세"))
+-- VERBALIZED ------------------------------------
+(세 / 세 :mod (가 / 가산-00))
+(혜 / 혜택 :mod (공 / 공제-00))
+
+
+# ::id snt22.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 공제 자료를 기반으로 공제 신고서를 전산으로 작성할 수 있는 '편리한 연말정산' 서비스는 18일부터 이용할 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+신고 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (신 / 신고서-00) ?
+	- report		(신 / 신고-01 :ARG0 reporter :ARG1 thing_reported :ARG2 reported_to)
+작성 : VERBAL_NOUN
+	- make_out		(작 / 작성-01 :ARG0 writer,_planner :ARG1 document,_plan)
+있 : ** UNUSED_OR_NON-ENTRY **
+편리하 : DERIVED_NON-ENTRY
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"18일부터" [DT_OTHERS]	->  :time|duration (1 / 18일부터)	OR	:time (d / date-entity :day 18)	OR	:duration (t / temporal-quantity :quant 18 :unit (일 / 일))  
+"연말" [DT_DURATION]	->  :time|duration (연 / 연말)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(서 / 서 :ARG0-of (신 / 신고-01))
+(신 / 신고-01 :mod (공 / 공제-00))
+(자 / 자료 :mod (공 / 공제-00))
+(정 / 정산 :mod (연 / 연말-00))
+
+
+# ::id snt23.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 국세청 홈택스에 접속한 뒤 연말정산 간소화 서비스에서 공제받을 항목을 선택하면 공제 신고서에 내용이 자동으로 반영된다.
+# ::note
+-- FRAMES ----------------------------------------
+국세청 : DERIVED_NON-ENTRY -> (국 / 국세청-00) ?
+접속 : VERBAL_NOUN
+	- connect		(접 / 접속-01 :ARG0 agent :ARG1 thing_connected :ARG2 connect_with)
+간소화 : DERIVED_NON-ENTRY -> (간 / 간소화-00) ?
+공제받 : DERIVED_NON-ENTRY
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+선택 : VERBAL_NOUN
+	- select		(선 / 선택-01 :ARG0 selector :ARG1 thing_selected :ARG2 selected_from :ARG3 selected_for)
+신고 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (신 / 신고서-00) ?
+	- report		(신 / 신고-01 :ARG0 reporter :ARG1 thing_reported :ARG2 reported_to)
+반영 : VERBAL_NOUN
+	- reflect		(반 / 반영-01 :ARG0 causer :ARG1 thing_casting_a_reflection :ARG2 surface_casting_the_reflection)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"국세청" [OGG_POLITICS]	->  (국 / 국세청)	OR	(g / government-organization :wiki "국세청?" :name (이 / 이름 :op1 "국세청"))
+"연말정산 간소화 서비스" [TMI_SERVICE]	->  (연 / 연말정산간소화서비스)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))
+"홈택스" [TMI_SERVICE]	->  (홈 / 홈택스)	OR	(s / service* :wiki "홈택스" :name (이 / 이름 :op1 "홈택스"))
+-- VERBALIZED ------------------------------------
+(간 / 간소 :mod (정 / 정산-00))
+(서 / 서 :ARG0-of (신 / 신고-01))
+(신 / 신고-01 :mod (공 / 공제-00))
+(연 / 연말 :mod (뒤 / 뒤-00))
+(정 / 정산 :mod (연 / 연말-00))
+(청 / 청 :mod (국 / 국세-00))
+(화 / 화 :mod (간 / 간소-00))
+
+
+# ::id snt24.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 연말정산 간소화 서비스에서 조회되지 않은 자료만 근로자가 별도로 수집해 공제 신고서에 입력하면 된다.
+# ::note
+-- FRAMES ----------------------------------------
+간소화 : DERIVED_NON-ENTRY -> (간 / 간소화-00) ?
+조회되 : DERIVED_NON-ENTRY
+근로자 : DERIVED_NON-ENTRY -> (근 / 근로자-00) ?
+수집 : VERBAL_NOUN
+	- gather		(수 / 수집-01 :ARG0 agent :ARG1 entity_gathered)
+신고 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (신 / 신고서-00) ?
+	- report		(신 / 신고-01 :ARG0 reporter :ARG1 thing_reported :ARG2 reported_to)
+입력하 : DERIVED_NON-ENTRY
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"근로자" [CV_POSITION]	->  :mod (근 / 근로자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (근 / 근로자))
+"연말정산 간소화 서비스" [TMI_SERVICE]	->  (연 / 연말정산간소화서비스)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))
+-- VERBALIZED ------------------------------------
+(간 / 간소 :mod (정 / 정산-00))
+(서 / 서 :ARG0-of (신 / 신고-01))
+(신 / 신고-01 :mod (공 / 공제-00))
+(자 / 자 :mod (근 / 근로-00))
+(정 / 정산 :mod (연 / 연말-00))
+(화 / 화 :mod (간 / 간소-00))
+
+
+# ::id snt25.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 편리한 연말정산 서비스에서는 예상세액을 간편하게 계산할 수 있는 서비스도 제공한다.
+# ::note
+-- FRAMES ----------------------------------------
+편리하 : DERIVED_NON-ENTRY
+예상 : VERBAL_NOUN
+	- expect		(예 / 예상-01 :ARG0 expecter :ARG1 thing_expected)
+간편하 : VERB
+	- simple		(간 / 간편하-01 :ARG1 thing_being_simple)
+계산 : VERBAL_NOUN
+	- calculate		(계 / 계산-01 :ARG0 calculator :ARG1 thing_calculated)
+있 : ** UNUSED_OR_NON-ENTRY **
+제공 : VERBAL_NOUN
+	- provide		(제 / 제공-01 :ARG0 provider :ARG1 thing_provided :ARG2 provided_for)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"연말정산 서비스" [TMI_SERVICE]	->  (연 / 연말정산서비스)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "서비스"))
+-- VERBALIZED ------------------------------------
+(서 / 서비스 :mod (정 / 정산-00))
+(세 / 세액-00 :mod (예 / 예상-01))
+(정 / 정산 :mod (연 / 연말-00))
+
+
+# ::id snt26.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 맞벌이 부부 중 어느 쪽이 공제 혜택을 더 많이 받을 수 있을지 파악해 세 부담을 줄일 수 있는 맞벌이 근로자 절세 안내도 받을 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+벌이 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (맞 / 맞벌이-00) ?
+	- perform		(벌 / 벌이-01 :ARG0 performer :ARG1 thing_performed)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+있 : ** UNUSED_OR_NON-ENTRY **
+파악 : VERBAL_NOUN
+	- grasp		(파 / 파악-01 :ARG0 grasper :ARG1 thing_grasped)
+부담 : VERBAL_NOUN
+	- bear		(부 / 부담-01 :ARG0 agent :ARG1 expense)
+줄이 : REDUCED_VERB_DETECTED
+	- decrease		(줄 / 줄-01 :ARG0 agent :ARG1 thing_reduced :ARG2 start_point :ARG3 end_point)
+있 : ** UNUSED_OR_NON-ENTRY **
+벌이 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (맞 / 맞벌이-00) ?
+	- perform		(벌 / 벌이-01 :ARG0 performer :ARG1 thing_performed)
+근로자 : DERIVED_NON-ENTRY -> (근 / 근로자-00) ?
+안내 : VERBAL_NOUN
+	- escort		(안 / 안내-01 :ARG0 accompanier :ARG1 accompanied :ARG2 accompanied_to)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"근로자" [CV_POSITION]	->  :mod (근 / 근로자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (근 / 근로자))
+"맞벌이 부부" [CV_RELATION]	->  :mod (맞 / 맞벌이부부)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (맞 / 맞벌이 부부))
+-- VERBALIZED ------------------------------------
+(근 / 근로-00 :mod (벌 / 벌이-01))
+(부 / 부부-00 :mod (벌 / 벌이-01))
+(안 / 안내-01 :mod (절 / 절세-00))
+(자 / 자 :mod (근 / 근로-00))
+(혜 / 혜택 :mod (공 / 공제-00))
+
+
+# ::id snt27.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 홈택스 스마트폰 애플리케이션을 이용하면 연말정산 공제 요건, 절세 방법 등 '꿀팁'도 얻을 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+얻 : VERB
+	- get		(얻 / 얻-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 source)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"스마트폰" [TMI_HW]	->  (스 / 스마트폰)	OR	(p / product? :wiki "스마트폰" :name (이 / 이름 :op1 "스마트폰"))
+"애플리케이션" [TMI_SW]	->  (애 / 애플리케이션)	OR	(p / program :wiki "애플리케이션?" :name (이 / 이름 :op1 "애플리케이션"))
+"연말" [DT_DURATION]	->  :time|duration (연 / 연말)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"홈택스" [TMI_SERVICE]	->  (홈 / 홈택스)	OR	(s / service* :wiki "홈택스" :name (이 / 이름 :op1 "홈택스"))
+-- VERBALIZED ------------------------------------
+(공 / 공제 :mod (정 / 정산-00))
+(방 / 방법 :mod (절 / 절세-00))
+(스 / 스마트폰 :mod (홈 / 홈택스-00))
+(애 / 애플리케이션 :mod (스 / 스마트폰-00))
+(요 / 요건 :mod (공 / 공제-00))
+(정 / 정산 :mod (연 / 연말-00))
+
+
+# ::id snt28.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 연말정산 서비스를 이용하다 궁금한 점은 국세 상담센터(☎126)으로 문의하면 된다.
+# ::note
+-- FRAMES ----------------------------------------
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+궁금하 : ** UNUSED_OR_NON-ENTRY **
+문의 : VERBAL_NOUN
+	- ask		(문 / 문의-01 :ARG0 agent :ARG1 question :ARG2 hearer)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"126" [QT_PHONE]	->  :mod (p / phone-number-entity :value 126)
+"국세 상담센터" [OGG_POLITICS]	->  (국 / 국세상담센터)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "국세" :op2 "상담센터"))
+"연말정산 서비스" [TMI_SERVICE]	->  (연 / 연말정산서비스)	OR	(s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "서비스"))
+-- VERBALIZED ------------------------------------
+(상 / 상담 :mod (국 / 국세-00))
+(서 / 서비스 :mod (정 / 정산-00))
+(센 / 센터 :mod (상 / 상담-00))
+(정 / 정산 :mod (연 / 연말-00))
+
+
+# ::id snt29.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 국세청은 "16일, 18일과 부가가치세 신고 마감일인 25일에는 홈택스 이용이 집중될 것으로 예상해 대기 시간이 길어질 수 있다"며 "여유를 갖고 접속해달라"라고 당부했다.
+# ::note
+-- FRAMES ----------------------------------------
+국세청 : DERIVED_NON-ENTRY -> (국 / 국세청-00) ?
+가치세 : DERIVED_NON-ENTRY -> (가 / 가치세-00) ?
+신고 : VERBAL_NOUN
+	- report		(신 / 신고-01 :ARG0 reporter :ARG1 thing_reported :ARG2 reported_to)
+마감 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (마 / 마감일-00) ?
+	- close		(마 / 마감-01 :ARG0 agent :ARG1 thing_closing :ARG2 market)
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+집중 : VERBAL_NOUN
+	- concentrate		(집 / 집중-01 :ARG0 agent :ARG1 thing_concentrated :ARG2 concentrated_on)
+예상 : VERBAL_NOUN
+	- expect		(예 / 예상-01 :ARG0 expecter :ARG1 thing_expected)
+대기 : VERBAL_NOUN
+	- stand_by		(대 / 대기-01 :ARG0 causer :ARG1 entity_standing_by)
+길어지 : ** UNUSED_OR_NON-ENTRY **
+있 : ** UNUSED_OR_NON-ENTRY **
+갖 : VERB
+	- have		(갖 / 갖-01 :ARG0 agent :ARG1 possession)
+접속 : VERBAL_NOUN
+	- connect		(접 / 접속-01 :ARG0 agent :ARG1 thing_connected :ARG2 connect_with)
+당부 : VERBAL_NOUN
+	- ask		(당 / 당부-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"16일" [DT_DAY]	->  :time|duration (1 / 16일)	OR	:time (d / date-entity :day 16)	OR	:duration (t / temporal-quantity :quant 16 :unit (일 / 일))  
+"18일" [DT_DAY]	->  :time|duration (1 / 18일)	OR	:time (d / date-entity :day 18)	OR	:duration (t / temporal-quantity :quant 18 :unit (일 / 일))  
+"25일" [DT_DAY]	->  :time|duration (2 / 25일)	OR	:time (d / date-entity :day 25)	OR	:duration (t / temporal-quantity :quant 25 :unit (일 / 일))  
+"국세청" [OGG_POLITICS]	->  (국 / 국세청)	OR	(g / government-organization :wiki "국세청?" :name (이 / 이름 :op1 "국세청"))
+"부가가치세" [CV_TAX]	->  (부 / 부가가치세)	OR	(t / tax* :wiki "부가가치세" :name (이 / 이름 :op1 "부가가치세"))
+"홈택스" [TMI_SERVICE]	->  (홈 / 홈택스)	OR	(s / service* :wiki "홈택스" :name (이 / 이름 :op1 "홈택스"))
+-- VERBALIZED ------------------------------------
+(가 / 가치 :mod (부 / 부가-00))
+(마 / 마감-01 :ARG1 (신 / 신고-01))
+(세 / 세 :mod (가 / 가치-00))
+(시 / 시간-00 :mod (대 / 대기-01))
+(일 / 일 :ARG0-of (마 / 마감-01))
+(청 / 청 :mod (국 / 국세-00))
+
+
+
+Process finished with exit code 0

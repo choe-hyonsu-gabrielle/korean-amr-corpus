@@ -1,0 +1,1017 @@
+/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
+# ::id snt0.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 대당 2천여만 원 상당 北 무인기에 전략시설 속속 '노출'.
+# ::note
+-- FRAMES ----------------------------------------
+대 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대당-00) ?
+	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
+	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
+상당 : VERBAL_NOUN
+	- considerable		(상 / 상당-01 :ARG1 thing_being_considerable)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+노출 : VERBAL_NOUN
+	- expose		(노 / 노출-01 :ARG0 exposer :ARG1 thing_seen :ARG2 seer,_place)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2천여만 원" [QT_PRICE]	->  :quant (2 / 2천여만원)	OR	(m / monetary-quantity :quant 2천여만 :unit|scale (원 / 원))
+"北" [LCP_COUNTRY]	->  (北 / 北)	OR	(c / country :wiki - :name (이 / 이름 :op1 "北"))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(당 / 당 :ARG0-of (대 / 대-01))
+(시 / 시설 :mod (전 / 전략-00))
+
+
+# ::id snt1.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 북한 무인기로 추정되는 소형비행체가 사드(고고도 미사일방어체계)가 배치된 경북 성주골프장 전경을 촬영한 것을 보면 북측이 마음만 먹으면 우리 측 어느 지역에 있는 전략시설이라도 정찰할 수 있는 능력을 보여준다.
+# ::note
+-- FRAMES ----------------------------------------
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+추정 : VERBAL_NOUN
+	- estimate		(추 / 추정-01 :ARG0 agent :ARG thing_estimated)
+비행 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (비 / 비행체-00) ?
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+고고도 : DERIVED_NON-ENTRY -> (고 / 고고도-00) ?
+방어 : VERBAL_NOUN
+	- defend		(방 / 방어-01 :ARG0 defender :ARG1 entity_defended)
+배치 : VERBAL_NOUN
+	- distribute		(배 / 배치-01 :ARG0 distributor :ARG1 thing_distributed :ARG2 distributed_to)
+골프장 : DERIVED_NON-ENTRY -> (골 / 골프장-00) ?
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+보 : VERB
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+먹 : VERB
+	- eat,_have		(먹 / 먹-01 :ARGA causer :ARG0 agent :ARG1 thing_eaten)
+있 : ** UNUSED_OR_NON-ENTRY **
+정찰 : VERBAL_NOUN
+	- scout		(정 / 정찰-01 :ARG0 searcher :ARG1 thing_searched)
+있 : ** UNUSED_OR_NON-ENTRY **
+보이 : REDUCED_VERB_DETECTED
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"경북" [LCP_PROVINCE]	->  (경 / 경북)	OR	(p / province :wiki "경상북도" :name (이 / 이름 :op1 "경북"))
+"고고도 미사일방어체계" [AF_WEAPON]	->  (고 / 고고도미사일방어체계)	OR	(w / weapon* :wiki - :name (이 / 이름 :op1 "고고도" :op2 "미사일방어체계"))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"북측" [LCP_COUNTRY]	->  (북 / 북측)	OR	(c / country :wiki - :name (이 / 이름 :op1 "북측"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"사드" [AF_WEAPON]	->  (사 / 사드)	OR	(w / weapon* :wiki "THAAD" :name (이 / 이름 :op1 "사드"))
+"성주" [LCP_COUNTY]	->  (성 / 성주)	OR	(c / county :wiki "성주" :name (이 / 이름 :op1 "성주"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(미 / 미사일 :mod (고 / 고도-00))
+(방 / 방어-01 :mod (미 / 미사일-00))
+(비 / 비행-01 :mod (소 / 소형-00))
+(시 / 시설 :mod (전 / 전략-00))
+(장 / 장 :mod (골 / 골프-00))
+(체 / 체 :ARG0-of (비 / 비행-01))
+(체 / 체계-00 :mod (방 / 방어-01))
+
+
+# ::id snt2.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 군은 최종 분석 결과가 아직 안 나왔기 때문에 이번 소형비행체를 '북한 무인기'라고 단정적으로 표현하고 있지 않지만, 사실상 북한이 자행한 도발로 판단하고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+분석 : VERBAL_NOUN
+	- analyze		(분 / 분석-01 :ARG0 agent :ARG1 thing_analyzed)
+나오 : VERB
+	- come_out		(나 / 나오-01 :ARG0 thing_coming_out :ARG2 start_point :ARG3 end_point)
+	- do-light_verb		(나 / 나오-02 :ARG0 agent :ARG1 deverbal_noun :ARG2 start_point :ARG3 end_point)
+	- spill_out-CV		(나 / 나오-03 :ARG1 thing_coming_out :ARG2 start_point :ARG3 end_point)
+비행 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (비 / 비행체-00) ?
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+단정적 : DERIVED_NON-ENTRY -> (단 / 단정적-00) ?
+표현 : VERBAL_NOUN
+	- express		(표 / 표현-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
+사실상 : DERIVED_NON-ENTRY -> (사 / 사실상-00) ?
+자행 : VERBAL_NOUN
+	- practice		(자 / 자행-01 :ARG0 practicer :ARG1 action)
+판단 : VERBAL_NOUN
+	- judge		(판 / 판단-01 :ARG0 agent :ARG1 judgement)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+-- VERBALIZED ------------------------------------
+(결 / 결과-00 :mod (분 / 분석-01))
+(기 / 기 :mod (무 / 무인-00))
+(분 / 분석-01 :mod (최 / 최종-00))
+(비 / 비행-01 :mod (소 / 소형-00))
+(상 / 상 :mod (사 / 사실-00))
+(소 / 소형 :mod (이 / 이번-00))
+(적 / 적 :mod (단 / 단정-00))
+(체 / 체 :ARG0-of (비 / 비행-01))
+
+
+# ::id snt3.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 군의 한 관계자는 13일 "무인기에 탑재된 카메라에 찍힌 사진으로 비행경로를 추산하면 북한지역에서 발진해 군사분계선(MDL)을 넘어와 경북 성주지역까지 정찰하고 사진을 촬영하면서 북한지역으로 복귀하려다가 연료 부족으로 추락한 것으로 잠정 결론을 내렸다"고 전했다.
+# ::note
+-- FRAMES ----------------------------------------
+관계 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관계자-00) ?
+	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
+	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+탑재 : VERBAL_NOUN
+	- mount		(탑 / 탑재-01 :ARG0 agent :ARG1 entity_mounted :ARG2 vehicle)
+찍히 : REDUCED_VERB_DETECTED
+	- take_picture_of		(찍 / 찍-01 :ARG0 agent :ARG1 thing_taken_picture_of)
+	- print		(찍 / 찍-02 :ARG0 agent :ARG1 thing_printed)
+비행 : VERBAL_NOUN
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+추산 : VERBAL_NOUN
+	- estimate		(추 / 추산-01 :ARG0 agent :ARG1 thing_estimated)
+발진 : VERBAL_NOUN
+	- move_off		(발 / 발진-01 :ARG0 causer :ARG1 thing_moving :ARG2 start_point :ARG3 end_point)
+분계선 : DERIVED_NON-ENTRY -> (분 / 분계선-00) ?
+넘어오 : ** UNUSED_OR_NON-ENTRY **
+정찰 : VERBAL_NOUN
+	- scout		(정 / 정찰-01 :ARG0 searcher :ARG1 thing_searched)
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+복귀 : VERBAL_NOUN
+	- return		(복 / 복귀-01 :ARG0 agent :ARG2 start_point :ARG3 end_point)
+부족 : VERBAL_NOUN
+	- lack		(부 / 부족-01 :ARG1 thing_being_short :ARG2 lack_in)
+추락 : VERBAL_NOUN
+	- fall		(추 / 추락-01 :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+결론 : VERBAL_NOUN
+	- conclude		(결 / 결론-01 :ARG0 agent :ARG1 decision)
+내리 : VERB
+	- put_down		(내 / 내리-01 :ARG0 agent :ARG1 thing_put_down :ARG2 start_point :ARG3 end_point)
+	- get_off		(내 / 내리-02 :ARG0 agent :ARG1 vehicle)
+	- give-light_verb		(내 / 내리-03 :ARG0 agent :ARG1 deverbal_noun :ARG2 given_to)
+	- fall		(내 / 내리-04 :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+	- collapse-CV		(내 / 내리-05 :ARG1 stock :ARG2 start_point :ARG3 end_point)
+전하 : VERB
+	- report		(전 / 전하-01 :ARG0 agent :ARG1 thing_reported :ARG2 report_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"13일" [DT_DAY]	->  :time|duration (1 / 13일)	OR	:time (d / date-entity :day 13)	OR	:duration (t / temporal-quantity :quant 13 :unit (일 / 일))  
+"MDL" [LC_OTHERS]	->  (M / MDL)	OR	(l / location? :wiki "MDL?" :name (이 / 이름 :op1 "MDL"))
+"경북" [LCP_PROVINCE]	->  (경 / 경북)	OR	(p / province :wiki "경상북도" :name (이 / 이름 :op1 "경북"))
+"군사분계선" [LC_OTHERS]	->  (군 / 군사분계선)	OR	(l / location? :wiki "군사분계선" :name (이 / 이름 :op1 "군사분계선"))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"성주" [LCP_COUNTY]	->  (성 / 성주)	OR	(c / county :wiki "성주" :name (이 / 이름 :op1 "성주"))
+"카메라" [TMI_HW]	->  (카 / 카메라)	OR	(p / product? :wiki "사진기" :name (이 / 이름 :op1 "카메라"))
+"한 관계자" [QT_MAN_COUNT]	->  :quant (한 / 한관계자)	OR	(c / concept* :quant 한 :unit|scale (관 / 관계자))
+-- VERBALIZED ------------------------------------
+(결 / 결론-01 :mod (잠 / 잠정-00))
+(경 / 경로-00 :mod (비 / 비행-01))
+(기 / 기 :mod (무 / 무인-00))
+(부 / 부족-01 :mod (연 / 연료-00))
+(분 / 분계 :mod (군 / 군사-00))
+(선 / 선 :mod (분 / 분계-00))
+(자 / 자 :ARG0-of (관 / 관계-01))
+
+
+# ::id snt4.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 비록 북한 무인기가 미국의 고고도 무인정찰기 '글로벌호크'와 같은 첨단 비행체가 아니고, 촬영한 사진의 해상도도 정밀하지 않지만, 우리 군과 주한미군의 전략시설 배치 장소와 그 좌표를 지속해서 업그레이드하는 차원에서 도발을 계속하는 것으로 군 당국은 판단하고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+고고도 : DERIVED_NON-ENTRY -> (고 / 고고도-00) ?
+정찰 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (정 / 정찰기-00) ?
+	- scout		(정 / 정찰-01 :ARG0 searcher :ARG1 thing_searched)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+비행 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (비 / 비행체-00) ?
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+정밀하 : DERIVED_NON-ENTRY
+배치 : VERBAL_NOUN
+	- distribute		(배 / 배치-01 :ARG0 distributor :ARG1 thing_distributed :ARG2 distributed_to)
+지속 : VERBAL_NOUN
+	- continue		(지 / 지속-01 :ARG0 agent :ARG1 thing_continued)
+업그레이드하 : DERIVED_NON-ENTRY
+계속 : VERBAL_NOUN
+	- continue		(계 / 계속-01 :ARG0 agent :ARG1 thing_continuing)
+판단 : VERBAL_NOUN
+	- judge		(판 / 판단-01 :ARG0 agent :ARG1 judgement)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"글로벌호크" [AF_TRANSPORT]	->  (글 / 글로벌호크)	OR	(v / vehicle|ship|aircraft|... :wiki - :name (이 / 이름 :op1 "글로벌호크"))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"무인정찰기" [AF_TRANSPORT]	->  (무 / 무인정찰기)	OR	(v / vehicle|ship|aircraft|... :wiki - :name (이 / 이름 :op1 "무인정찰기"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"주한미군" [OGG_MILITARY]	->  (주 / 주한미군)	OR	(m / military :wiki "주한_미군" :name (이 / 이름 :op1 "주한미군"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :ARG0-of (정 / 정찰-01))
+(기 / 기 :mod (무 / 무인-00))
+(당 / 당국 :mod (군 / 군-00))
+(도 / 도 :mod (해 / 해상-00))
+(무 / 무인 :mod (고 / 고도-00))
+(미 / 미군 :mod (주 / 주한-00))
+(배 / 배치-01 :mod (시 / 시설-00))
+(비 / 비행-01 :mod (첨 / 첨단-00))
+(시 / 시설 :mod (전 / 전략-00))
+(장 / 장소-00 :mod (배 / 배치-01))
+(정 / 정찰-01 :mod (무 / 무인-00))
+(체 / 체 :ARG0-of (비 / 비행-01))
+(호 / 호크 :mod (글 / 글로벌-00))
+
+
+# ::id snt5.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 군 당국이 지난 8일 강원도 인제에서 주민에 의해 발견된 무인기의 내장 카메라(일본 소니사 DSLT·메모리 3.2GB)를 분석한 결과, 사드가 배치된 경북 성주골프장 전경이 찍혀 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+지나 : VERB
+	- pass		(지 / 지나-01 :ARG0 entity_passing :ARG1 thing_passed)
+	- be_only		(지 / 지나-02 :ARG1 thing_under_consideration :ARG2 criterion)
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+발견 : VERBAL_NOUN
+	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+내장 : VERBAL_NOUN
+	- include_within		(내 / 내장-01 :ARG1 whole :ARG2 part)
+분석 : VERBAL_NOUN
+	- analyze		(분 / 분석-01 :ARG0 agent :ARG1 thing_analyzed)
+배치 : VERBAL_NOUN
+	- distribute		(배 / 배치-01 :ARG0 distributor :ARG1 thing_distributed :ARG2 distributed_to)
+골프장 : DERIVED_NON-ENTRY -> (골 / 골프장-00) ?
+찍히 : REDUCED_VERB_DETECTED
+	- take_picture_of		(찍 / 찍-01 :ARG0 agent :ARG1 thing_taken_picture_of)
+	- print		(찍 / 찍-02 :ARG0 agent :ARG1 thing_printed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"3.2GB" [QT_OTHERS]	->  :quant (3 / 3.2GB)	OR	(c / concept* :quant 3.2 :unit|scale (G / GB))
+"DSLT" [TMI_MODEL]	->  (D / DSLT)	OR	(p / product :wiki "알파_DSLT" :name (이 / 이름 :op1 "DSLT"))
+"강원도" [LCP_PROVINCE]	->  (강 / 강원도)	OR	(p / province :wiki "강원도" :name (이 / 이름 :op1 "강원도"))
+"경북" [LCP_PROVINCE]	->  (경 / 경북)	OR	(p / province :wiki "경상북도" :name (이 / 이름 :op1 "경북"))
+"내장 카메라" [TMI_HW]	->  (내 / 내장카메라)	OR	(p / product? :wiki - :name (이 / 이름 :op1 "내장" :op2 "카메라"))
+"메모리" [TMI_HW]	->  (메 / 메모리)	OR	(p / product? :wiki "기억" :name (이 / 이름 :op1 "메모리"))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"성주" [LCP_COUNTY]	->  (성 / 성주)	OR	(c / county :wiki "성주" :name (이 / 이름 :op1 "성주"))
+"소니사" [OGG_ECONOMY]	->  (소 / 소니사)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "소니사"))
+"인제" [LCP_COUNTY]	->  (인 / 인제)	OR	(c / county :wiki "인제군" :name (이 / 이름 :op1 "인제"))
+"일본" [LCP_COUNTRY]	->  (일 / 일본)	OR	(c / country :wiki "일본" :name (이 / 이름 :op1 "일본"))
+"주민" [CV_POSITION]	->  :mod (주 / 주민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (주 / 주민))
+"지난 8일" [DT_DAY]	->  :time|duration (지 / 지난8일)	OR	:time (d / date-entity :day 8)	OR	:duration (t / temporal-quantity :quant 8 :unit (일 / 일))  
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(당 / 당국 :mod (군 / 군-00))
+(장 / 장 :mod (골 / 골프-00))
+(카 / 카메라-00 :mod (내 / 내장-01))
+
+
+# ::id snt6.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 사진을 확대하면 현재 배치된 발사대 2기와 레이더 등 사드체계 핵심장비가 있는 위치가 드러난다.
+# ::note
+-- FRAMES ----------------------------------------
+확대 : VERBAL_NOUN
+	- expand		(확 / 확대-01 :ARG0 agent :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
+배치 : VERBAL_NOUN
+	- distribute		(배 / 배치-01 :ARG0 distributor :ARG1 thing_distributed :ARG2 distributed_to)
+발사 : VERBAL_NOUN
+	- fire		(발 / 발사-01 :ARG0 shooter :ARG1 thing_shot :ARG2 goal)
+대 : VERBAL_NOUN
+	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
+	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
+장비 : VERBAL_NOUN
+	- equip		(장 / 장비-01 :ARG0 agent :ARG1 equipment :ARG2 entity_getting_equipment)
+있 : ** UNUSED_OR_NON-ENTRY **
+위치 : VERBAL_NOUN
+	- be_located		(위 / 위치-01 :ARG1 thing_located :ARG2 location)
+드러나 : VERB
+	- expose		(드 / 드러나-01 :ARG0 exposer :ARG1 thing_seen :ARG2 seer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2기" [QT_COUNT]	->  :quant (2 / 2기)	OR	(c / concept* :quant 2 :unit|scale (기 / 기))
+"사드체계" [AF_WEAPON]	->  (사 / 사드체계)	OR	(w / weapon* :wiki - :name (이 / 이름 :op1 "사드체계"))
+-- VERBALIZED ------------------------------------
+(대 / 대-01 :ARG1 (발 / 발사-01))
+(장 / 장비-01 :mod (핵 / 핵심-00))
+(체 / 체계 :mod (사 / 사드-00))
+(핵 / 핵심 :mod (체 / 체계-00))
+
+
+# ::id snt7.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 북한이 지난 4월 26일 사드체계가 배치된 이후 무인기를 날려 보내 성주골프장을 촬영했을 가능성이 큰 상황이다.
+# ::note
+-- FRAMES ----------------------------------------
+지나 : VERB
+	- pass		(지 / 지나-01 :ARG0 entity_passing :ARG1 thing_passed)
+	- be_only		(지 / 지나-02 :ARG1 thing_under_consideration :ARG2 criterion)
+배치 : VERBAL_NOUN
+	- distribute		(배 / 배치-01 :ARG0 distributor :ARG1 thing_distributed :ARG2 distributed_to)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+날리 : REDUCED_VERB_DETECTED
+	- fly		(날 / 날-01 :ARG0 agent :ARG1 path :ARG2 start_point :ARG3 end_point)
+보내 : VERB
+	- send		(보 / 보내-01 :ARG0 sender :ARG1 sent :ARG2 sent_to)
+	- spend		(보 / 보내-02 :ARG0 agent :ARG1 time)
+골프장 : DERIVED_NON-ENTRY -> (골 / 골프장-00) ?
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+가능 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (가 / 가능성-00) ?
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"성주" [LCP_COUNTY]	->  (성 / 성주)	OR	(c / county :wiki "성주" :name (이 / 이름 :op1 "성주"))
+"지난 4월 26일" [DT_OTHERS]	->  :time|duration (지 / 지난4월26일)	OR	:time (d / date-entity :month 4 :day 26)	OR	:duration (t / temporal-quantity :quant 4 :unit (월 / 월))  (t / temporal-quantity :quant 26 :unit (일 / 일))  
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(무 / 무인 :mod (이 / 이후-00))
+(성 / 성 :ARG0-of (가 / 가능-01))
+(장 / 장 :mod (골 / 골프-00))
+(체 / 체계 :mod (사 / 사드-00))
+
+
+# ::id snt8.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 인제에서 발견된 무인기가 고도 2∼3㎞로 추정되는 상공에서 찍은 성주골프장 전경 사진을 보면 공교롭게도 북한이 지난달 8일 조선중앙TV의 시사 대담 프로그램을 통해 보여준 사진과 너무 닮았다.
+# ::note
+-- FRAMES ----------------------------------------
+발견 : VERBAL_NOUN
+	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+추정 : VERBAL_NOUN
+	- estimate		(추 / 추정-01 :ARG0 agent :ARG thing_estimated)
+찍 : VERB
+	- take_picture_of		(찍 / 찍-01 :ARG0 agent :ARG1 thing_taken_picture_of)
+	- print		(찍 / 찍-02 :ARG0 agent :ARG1 thing_printed)
+골프장 : DERIVED_NON-ENTRY -> (골 / 골프장-00) ?
+보 : VERB
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+공교롭 : ** UNUSED_OR_NON-ENTRY **
+시사 : VERBAL_NOUN
+	- conduct_a_test_fire		(시 / 시사-01 :ARG0 agent :ARG1 weapon)
+통하 : VERB
+	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
+	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
+	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
+보이 : REDUCED_VERB_DETECTED
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+닮 : VERB
+	- resemble		(닮 / 닮-01 :ARG1 copy :ARG2 original)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2∼3㎞" [QT_LENGTH]	->  :quant (2 / 2∼3㎞)	OR	(d / distance-quantity :quant 2 :unit|scale (∼ / ∼3㎞))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"성주" [LCP_COUNTY]	->  (성 / 성주)	OR	(c / county :wiki "성주" :name (이 / 이름 :op1 "성주"))
+"인제" [LCP_COUNTY]	->  (인 / 인제)	OR	(c / county :wiki "인제군" :name (이 / 이름 :op1 "인제"))
+"조선중앙TV" [OGG_MEDIA]	->  (조 / 조선중앙TV)	OR	(c / company|organization :wiki "조선중앙텔레비죤" :name (이 / 이름 :op1 "조선중앙TV"))
+"지난달 8일" [DT_OTHERS]	->  :time|duration (지 / 지난달8일)	OR	:time (d / date-entity :day 8)	OR	:duration (t / temporal-quantity :quant 8 :unit (일 / 일))  
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(대 / 대담-00 :mod (시 / 시사-01))
+(사 / 사진 :mod (전 / 전경-00))
+(장 / 장 :mod (골 / 골프-00))
+(프 / 프로그램 :mod (대 / 대담-00))
+
+
+# ::id snt9.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 당시 북한 중앙TV는 출처가 '위성사진'이라고 밝히면서 "위성사진들에서 보는 바와 같이 현재 사드 발사기는 성주골프장의 북쪽 능선 부근에, 그리고 X 대역탐지기(레이더)와 지원 장비들은 골프장의 중간 부근 서쪽 능선 부근에 배치돼 있다"고 주장했다.
+# ::note
+-- FRAMES ----------------------------------------
+밝히 : VERB
+	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
+	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
+사진들 : DERIVED_NON-ENTRY -> (사 / 사진들-00) ?
+보 : VERB
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+발사 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (발 / 발사기-00) ?
+	- fire		(발 / 발사-01 :ARG0 shooter :ARG1 thing_shot :ARG2 goal)
+골프장 : DERIVED_NON-ENTRY -> (골 / 골프장-00) ?
+탐지 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (탐 / 탐지기-00) ?
+	- detect		(탐 / 탐지-01 :ARG0 agent :ARG1 thing_detected)
+지원 : VERBAL_NOUN
+	- support		(지 / 지원-01 :ARG0 agent :ARG1 person_or_project_supported)
+	- provide		(지 / 지원-02 :ARG0 agent :ARG1 thing_provided :ARG2 entity_provided_for)
+장비 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (장 / 장비들-00) ?
+	- equip		(장 / 장비-01 :ARG0 agent :ARG1 equipment :ARG2 entity_getting_equipment)
+골프장 : DERIVED_NON-ENTRY -> (골 / 골프장-00) ?
+배치 : VERBAL_NOUN
+	- distribute		(배 / 배치-01 :ARG0 distributor :ARG1 thing_distributed :ARG2 distributed_to)
+주장 : VERBAL_NOUN
+	- claim		(주 / 주장-01 :ARG0 thing_claiming :ARG1 thing_claimed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"X 대역탐지기" [TMI_HW]	->  (X / X대역탐지기)	OR	(p / product? :wiki - :name (이 / 이름 :op1 "X" :op2 "대역탐지기"))
+"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"사드" [AF_WEAPON]	->  (사 / 사드)	OR	(w / weapon* :wiki "THAAD" :name (이 / 이름 :op1 "사드"))
+"서쪽" [TM_DIRECTION]	->  (서 / 서쪽)	OR	(: / :direction :wiki "서쪽" :name (이 / 이름 :op1 "서쪽"))
+"성주" [LCP_COUNTY]	->  (성 / 성주)	OR	(c / county :wiki "성주" :name (이 / 이름 :op1 "성주"))
+"중앙TV" [OGG_MEDIA]	->  (중 / 중앙TV)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "중앙TV"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :ARG0-of (발 / 발사-01))
+(기 / 기 :ARG0-of (탐 / 탐지-01))
+(능 / 능선 :mod (북 / 북쪽-00))
+(능 / 능선 :mod (서 / 서쪽-00))
+(들 / 들 :ARG0-of (장 / 장비-01))
+(들 / 들 :mod (사 / 사진-00))
+(발 / 발사-01 :mod (사 / 사드-00))
+(부 / 부근 :mod (능 / 능선-00))
+(부 / 부근 :mod (능 / 능선-00))
+(부 / 부근 :mod (중 / 중간-00))
+(사 / 사진 :mod (위 / 위성-00))
+(사 / 사진 :mod (위 / 위성-00))
+(서 / 서쪽 :mod (부 / 부근-00))
+(장 / 장 :mod (골 / 골프-00))
+(장 / 장 :mod (골 / 골프-00))
+(장 / 장비-01 :ARG1 (지 / 지원-01))
+(탐 / 탐지-01 :mod (대 / 대역-00))
+
+
+# ::id snt10.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러면서 사드 발사대로 주장하는 물체와 사격통제레이더(X-밴드 레이더)로 주장하는 물체를 각각 검은색 원으로 표시한 사진 2장을 화면에 띄웠다.
+# ::note
+-- FRAMES ----------------------------------------
+그러 : VERB
+	- say		(그 / 그러-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- do_so		(그 / 그러-02 :ARG0 agent)
+발사 : VERBAL_NOUN
+	- fire		(발 / 발사-01 :ARG0 shooter :ARG1 thing_shot :ARG2 goal)
+대 : VERBAL_NOUN
+	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
+	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
+주장 : VERBAL_NOUN
+	- claim		(주 / 주장-01 :ARG0 thing_claiming :ARG1 thing_claimed)
+사격 : VERBAL_NOUN
+	- shoot		(사 / 사격-01 :ARG0 agent :ARG1 thing_shooted :ARG2 target)
+통제 : VERBAL_NOUN
+	- control		(통 / 통제-01 :ARG0 agent :ARG1 thing_controlled)
+주장 : VERBAL_NOUN
+	- claim		(주 / 주장-01 :ARG0 thing_claiming :ARG1 thing_claimed)
+표시 : VERBAL_NOUN
+	- mark		(표 / 표시-01 :ARG0 agent :ARG1 thing_marked :ARG2 instrument)
+	- express		(표 / 표시-02 :ARG0 speaker :ARG1 thing_expressed)
+띄우 : REDUCED_VERB_DETECTED
+	- be_in_sight		(띄 / 띄-01 :ARG1 entity_noticed :ARG2 entity_noticing)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2장" [QT_COUNT]	->  :quant (2 / 2장)	OR	(c / concept* :quant 2 :unit|scale (장 / 장))
+"X-밴드 레이더" [TMI_HW]	->  (X / X-밴드레이더)	OR	(p / product? :wiki - :name (이 / 이름 :op1 "X-밴드" :op2 "레이더"))
+"검은색" [TM_COLOR]	->  (검 / 검은색)	OR	(c / color* :wiki "검정" :name (이 / 이름 :op1 "검은색"))
+"사격통제레이더" [TMI_HW]	->  (사 / 사격통제레이더)	OR	(p / product? :wiki - :name (이 / 이름 :op1 "사격통제레이더"))
+"사드" [AF_WEAPON]	->  (사 / 사드)	OR	(w / weapon* :wiki "THAAD" :name (이 / 이름 :op1 "사드"))
+-- VERBALIZED ------------------------------------
+(대 / 대-01 :ARG1 (발 / 발사-01))
+(레 / 레이더 :mod (밴 / 밴드-00))
+(레 / 레이더-00 :mod (통 / 통제-01))
+(발 / 발사-01 :mod (사 / 사드-00))
+(원 / 원 :mod (검 / 검은색-00))
+(통 / 통제-01 :ARG1 (사 / 사격-01))
+
+
+# ::id snt11.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이들 사진과 합참이 공개한 사진이 닮은꼴이어서 다른 무인기가 촬영해 성공한 뒤 북한으로 복귀했을 가능성도 제기되고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+공개 : VERBAL_NOUN
+	- open_to_the_public		(공 / 공개-01 :ARG0 agent :ARG1 thing_opening :ARG2 seer)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+성공 : VERBAL_NOUN
+	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
+복귀 : VERBAL_NOUN
+	- return		(복 / 복귀-01 :ARG0 agent :ARG2 start_point :ARG3 end_point)
+가능 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (가 / 가능성-00) ?
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+제기 : VERBAL_NOUN
+	- bring_up		(제 / 제기-01 :ARG0 agent :ARG1 thing_brought_up :ARG2 bring_up_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"합참" [OGG_MILITARY]	->  (합 / 합참)	OR	(m / military :wiki "대한민국_합동참모본부" :name (이 / 이름 :op1 "합참"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(성 / 성 :ARG0-of (가 / 가능-01))
+
+
+# ::id snt12.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이번에 주한미군 사드 배치 지역 촬영 사실이 드러남으로써 미군의 다른 시설들도 이미 북한 무인기의 목표가 됐을 것으로 군 관계자들은 추정하고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+배치 : VERBAL_NOUN
+	- distribute		(배 / 배치-01 :ARG0 distributor :ARG1 thing_distributed :ARG2 distributed_to)
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+드러나 : VERB
+	- expose		(드 / 드러나-01 :ARG0 exposer :ARG1 thing_seen :ARG2 seer)
+시설들 : DERIVED_NON-ENTRY -> (시 / 시설들-00) ?
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+관계 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관계자-00) ?
+	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
+	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+추정 : VERBAL_NOUN
+	- estimate		(추 / 추정-01 :ARG0 agent :ARG thing_estimated)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"관계자" [CV_POSITION]	->  :mod (관 / 관계자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (관 / 관계자))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"미군" [OGG_MILITARY]	->  (미 / 미군)	OR	(m / military :wiki "미군" :name (이 / 이름 :op1 "미군"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"사드" [AF_WEAPON]	->  (사 / 사드)	OR	(w / weapon* :wiki "THAAD" :name (이 / 이름 :op1 "사드"))
+"주한미군" [OGG_MILITARY]	->  (주 / 주한미군)	OR	(m / military :wiki "주한_미군" :name (이 / 이름 :op1 "주한미군"))
+-- VERBALIZED ------------------------------------
+(관 / 관계-01 :mod (군 / 군-00))
+(기 / 기 :mod (무 / 무인-00))
+(들 / 들 :mod (시 / 시설-00))
+(미 / 미군 :mod (주 / 주한-00))
+(배 / 배치-01 :mod (사 / 사드-00))
+(사 / 사드 :mod (미 / 미군-00))
+(사 / 사실-00 :mod (촬 / 촬영-01))
+(자 / 자 :ARG0-of (관 / 관계-01))
+(지 / 지역-00 :mod (배 / 배치-01))
+(촬 / 촬영-01 :mod (지 / 지역-00))
+
+
+# ::id snt13.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 북한의 무인기는 우리 정부의 전략시설이나 군부대 배치 상황 등에 대한 정보도 집중적으로 수집하고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+배치 : VERBAL_NOUN
+	- distribute		(배 / 배치-01 :ARG0 distributor :ARG1 thing_distributed :ARG2 distributed_to)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+집중 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (집 / 집중적-00) ?
+	- concentrate		(집 / 집중-01 :ARG0 agent :ARG1 thing_concentrated :ARG2 concentrated_on)
+수집 : VERBAL_NOUN
+	- gather		(수 / 수집-01 :ARG0 agent :ARG1 entity_gathered)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"군부대" [OGG_MILITARY]	->  (군 / 군부대)	OR	(m / military :wiki - :name (이 / 이름 :op1 "군부대"))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(배 / 배치-01 :mod (부 / 부대-00))
+(부 / 부대 :mod (군 / 군-00))
+(상 / 상황-00 :mod (배 / 배치-01))
+(시 / 시설 :mod (전 / 전략-00))
+(적 / 적 :ARG0-of (집 / 집중-01))
+
+
+# ::id snt14.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 북한이 우리 측 지역으로 날려 보내는 무인기는 제작비용이 대당 최소 2천만 원에서 최대 4천만 원 수준인 것으로 분석되고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+날리 : REDUCED_VERB_DETECTED
+	- fly		(날 / 날-01 :ARG0 agent :ARG1 path :ARG2 start_point :ARG3 end_point)
+보내 : VERB
+	- send		(보 / 보내-01 :ARG0 sender :ARG1 sent :ARG2 sent_to)
+	- spend		(보 / 보내-02 :ARG0 agent :ARG1 time)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+제작 : VERBAL_NOUN
+	- produce		(제 / 제작-01 :ARG0 agent :ARG1 thing_produced)
+대 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대당-00) ?
+	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
+	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
+분석 : VERBAL_NOUN
+	- analyze		(분 / 분석-01 :ARG0 agent :ARG1 thing_analyzed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2천만 원" [QT_PRICE]	->  :quant (2 / 2천만원)	OR	(m / monetary-quantity :quant 2천만 :unit|scale (원 / 원))
+"4천만 원" [QT_PRICE]	->  :quant (4 / 4천만원)	OR	(m / monetary-quantity :quant 4천만 :unit|scale (원 / 원))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(당 / 당 :ARG0-of (대 / 대-01))
+(비 / 비용-00 :mod (제 / 제작-01))
+
+
+# ::id snt15.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 2014년 3월 24일 경기도 파주에서 발견된 북한 무인기는 서울 상공을 비행하면서 7∼9초 간격으로 서울 중심지역을 촬영했는데 청와대 전경도 선명하게 찍혔다.
+# ::note
+-- FRAMES ----------------------------------------
+발견 : VERBAL_NOUN
+	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+비행 : VERBAL_NOUN
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+선명하 : DERIVED_NON-ENTRY
+찍히 : REDUCED_VERB_DETECTED
+	- take_picture_of		(찍 / 찍-01 :ARG0 agent :ARG1 thing_taken_picture_of)
+	- print		(찍 / 찍-02 :ARG0 agent :ARG1 thing_printed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2014년 3월 24일" [DT_OTHERS]	->  :time|duration (2 / 2014년3월24일)	OR	:time (d / date-entity :year 2014 :month 3 :day 24)	OR	:duration (t / temporal-quantity :quant 2014 :unit (년 / 년))  (t / temporal-quantity :quant 3 :unit (월 / 월))  (t / temporal-quantity :quant 24 :unit (일 / 일))  
+"7∼9초" [DT_DURATION]	->  :time|duration (7 / 7∼9초)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration (t / temporal-quantity :quant 9 :unit (초 / 초))  
+"경기도" [LCP_PROVINCE]	->  (경 / 경기도)	OR	(p / province :wiki "경기도" :name (이 / 이름 :op1 "경기도"))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
+"파주" [LCP_CITY]	->  (파 / 파주)	OR	(c / city :wiki "파주시" :name (이 / 이름 :op1 "파주"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(지 / 지역 :mod (중 / 중심-00))
+
+
+# ::id snt16.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 파주 추락 무인기는 시속 100∼120㎞로 비행했으며, 고도 2.5㎞ 상공에서 사진을 촬영했다.
+# ::note
+-- FRAMES ----------------------------------------
+추락 : VERBAL_NOUN
+	- fall		(추 / 추락-01 :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+비행 : VERBAL_NOUN
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2.5㎞" [QT_LENGTH]	->  :quant (2 / 2.5㎞)	OR	(d / distance-quantity :quant 2.5 :unit|scale (㎞ / ㎞))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"시속 100∼120㎞" [QT_SPEED]	->  :quant (시 / 시속100∼120㎞)	OR	(s / speed|acceleration-quantity :quant 시속 :unit|scale (1 / 100∼120㎞))
+"파주" [LCP_CITY]	->  (파 / 파주)	OR	(c / city :wiki "파주시" :name (이 / 이름 :op1 "파주"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(무 / 무인-00 :mod (추 / 추락-01))
+
+
+# ::id snt17.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 193장 중 초반 15장은 검은색으로 물체의 형체를 알아볼 수 없었고, 178장은 판독이 가능했다.
+# ::note
+-- FRAMES ----------------------------------------
+알아보 : VERB
+	- recognize		(알 / 알아보-01 :ARG0 agent :ARG1 theme)
+없 : ** UNUSED_OR_NON-ENTRY **
+가능 : VERBAL_NOUN
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"15장" [QT_COUNT]	->  :quant (1 / 15장)	OR	(c / concept* :quant 15 :unit|scale (장 / 장))
+"178장" [QT_COUNT]	->  :quant (1 / 178장)	OR	(c / concept* :quant 178 :unit|scale (장 / 장))
+"193장" [QT_COUNT]	->  :quant (1 / 193장)	OR	(c / concept* :quant 193 :unit|scale (장 / 장))
+"검은색" [TM_COLOR]	->  (검 / 검은색)	OR	(c / color* :wiki "검정" :name (이 / 이름 :op1 "검은색"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt18.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 일제 캐논 카메라의 24㎜ 렌즈를 사용했다.
+# ::note
+-- FRAMES ----------------------------------------
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"24㎜" [QT_LENGTH]	->  :quant (2 / 24㎜)	OR	(d / distance-quantity :quant 24 :unit|scale (㎜ / ㎜))
+"카메라" [TMI_HW]	->  (카 / 카메라)	OR	(p / product? :wiki "사진기" :name (이 / 이름 :op1 "카메라"))
+"캐논" [OGG_ECONOMY]	->  (캐 / 캐논)	OR	(c / company|organization :wiki "캐논" :name (이 / 이름 :op1 "캐논"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt19.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 같은 해 3월 31일 백령도에서 발견된 무인기도 시속 100∼120㎞로 비행했으며, 고도 1.8㎞ 상공에서 촬영했다.
+# ::note
+-- FRAMES ----------------------------------------
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+발견 : VERBAL_NOUN
+	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+비행 : VERBAL_NOUN
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1.8㎞" [QT_LENGTH]	->  :quant (1 / 1.8㎞)	OR	(d / distance-quantity :quant 1.8 :unit|scale (㎞ / ㎞))
+"3월 31일" [DT_OTHERS]	->  :time|duration (3 / 3월31일)	OR	:time (d / date-entity :month 3 :day 31)	OR	:duration (t / temporal-quantity :quant 3 :unit (월 / 월))  (t / temporal-quantity :quant 31 :unit (일 / 일))  
+"같은 해" [DT_YEAR]	->  :time|duration (같 / 같은해)	OR	:time (d / date-entity)	OR	:duration 
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"백령도" [LCG_ISLAND]	->  (백 / 백령도)	OR	(i / island :wiki "백령도" :name (이 / 이름 :op1 "백령도"))
+"시속 100∼120㎞" [QT_SPEED]	->  :quant (시 / 시속100∼120㎞)	OR	(s / speed|acceleration-quantity :quant 시속 :unit|scale (1 / 100∼120㎞))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+
+
+# ::id snt20.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 119장의 사진 중 19장은 물체가 흐릿했고 나머지 100장에는 소청도와 대청도의 군부대 시설 모습이 담겨 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+흐릿하 : ** UNUSED_OR_NON-ENTRY **
+담기 : REDUCED_VERB_DETECTED
+	- include		(담 / 담-01 :ARG0 agent :ARG1 thing_included :ARG2 container)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"100장" [QT_COUNT]	->  :quant (1 / 100장)	OR	(c / concept* :quant 100 :unit|scale (장 / 장))
+"119장" [QT_COUNT]	->  :quant (1 / 119장)	OR	(c / concept* :quant 119 :unit|scale (장 / 장))
+"19장" [QT_COUNT]	->  :quant (1 / 19장)	OR	(c / concept* :quant 19 :unit|scale (장 / 장))
+"군부대" [OGG_MILITARY]	->  (군 / 군부대)	OR	(m / military :wiki - :name (이 / 이름 :op1 "군부대"))
+"대청도" [LCG_ISLAND]	->  (대 / 대청도)	OR	(i / island :wiki "대청도" :name (이 / 이름 :op1 "대청도"))
+"소청도" [LCG_ISLAND]	->  (소 / 소청도)	OR	(i / island :wiki "소청도" :name (이 / 이름 :op1 "소청도"))
+-- VERBALIZED ------------------------------------
+(모 / 모습 :mod (시 / 시설-00))
+(부 / 부대 :mod (군 / 군-00))
+(시 / 시설 :mod (부 / 부대-00))
+
+
+# ::id snt21.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 일제 니콘 D800 카메라와 니콘 35㎜ 렌즈를 이용해 사진이 촬영됐다.
+# ::note
+-- FRAMES ----------------------------------------
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"35㎜" [QT_LENGTH]	->  :quant (3 / 35㎜)	OR	(d / distance-quantity :quant 35 :unit|scale (㎜ / ㎜))
+"D800" [TMI_MODEL]	->  (D / D800)	OR	(p / product :wiki "니콘_D800" :name (이 / 이름 :op1 "D800"))
+"니콘" [OGG_ECONOMY]	->  (니 / 니콘)	OR	(c / company|organization :wiki "니콘" :name (이 / 이름 :op1 "니콘"))
+"니콘" [OGG_ECONOMY]	->  (니 / 니콘)	OR	(c / company|organization :wiki "니콘" :name (이 / 이름 :op1 "니콘"))
+"카메라" [TMI_HW]	->  (카 / 카메라)	OR	(p / product? :wiki "사진기" :name (이 / 이름 :op1 "카메라"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt22.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이번에 인제에 추락한 무인기와 형태가 비슷한 백령도 추락 무인기는 체코제 4행정 휘발유 엔진을 사용하는 등 조종계통이 복잡하게 설계된 최신형이었다.
+# ::note
+-- FRAMES ----------------------------------------
+추락 : VERBAL_NOUN
+	- fall		(추 / 추락-01 :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+비슷하 : VERB
+	- similar		(비 / 비슷하-01 :ARG1 entity_compared :ARG2 criterion)
+추락 : VERBAL_NOUN
+	- fall		(추 / 추락-01 :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+조종 : VERBAL_NOUN
+	- handle		(조 / 조종-01 :ARG0 agent :ARG1 thing_handled)
+복잡하 : VERB
+	- complex		(복 / 복잡하-01 :ARG1 thing_being_complex)
+설계 : VERBAL_NOUN
+	- design		(설 / 설계-01 :ARG0 designer :ARG1 thing_designed)
+최신형 : DERIVED_NON-ENTRY -> (최 / 최신형-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"4행정" [QT_COUNT]	->  :quant (4 / 4행정)	OR	(c / concept* :quant 4 :unit|scale (행 / 행정))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"백령도" [LCG_ISLAND]	->  (백 / 백령도)	OR	(i / island :wiki "백령도" :name (이 / 이름 :op1 "백령도"))
+"인제" [LCP_COUNTY]	->  (인 / 인제)	OR	(c / county :wiki "인제군" :name (이 / 이름 :op1 "인제"))
+-- VERBALIZED ------------------------------------
+(계 / 계통-00 :mod (조 / 조종-01))
+(기 / 기 :mod (무 / 무인-00))
+(기 / 기 :mod (무 / 무인-00))
+(무 / 무인-00 :mod (추 / 추락-01))
+(엔 / 엔진 :mod (유 / 유-00))
+(유 / 유 :mod (휘 / 휘발-00))
+(형 / 형 :mod (최 / 최신-00))
+(휘 / 휘발 :mod (행 / 행정-00))
+
+
+# ::id snt23.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이들 추락 무인기는 미국, 중국, 일본, 스위스, 체코, 한국 등 6개국의 상용부품으로 제작됐다.
+# ::note
+-- FRAMES ----------------------------------------
+추락 : VERBAL_NOUN
+	- fall		(추 / 추락-01 :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+제작 : VERBAL_NOUN
+	- produce		(제 / 제작-01 :ARG0 agent :ARG1 thing_produced)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"6개국" [QT_COUNT]	->  :quant (6 / 6개국)	OR	(c / concept* :quant 6 :unit|scale (개 / 개국))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"스위스" [LCP_COUNTRY]	->  (스 / 스위스)	OR	(c / country :wiki "스위스" :name (이 / 이름 :op1 "스위스"))
+"일본" [LCP_COUNTRY]	->  (일 / 일본)	OR	(c / country :wiki "일본" :name (이 / 이름 :op1 "일본"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+"체코" [LCP_COUNTRY]	->  (체 / 체코)	OR	(c / country :wiki "체코" :name (이 / 이름 :op1 "체코"))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(무 / 무인-00 :mod (추 / 추락-01))
+(부 / 부품 :mod (상 / 상용-00))
+
+
+# ::id snt24.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 북한 무인기는 GPS(인공위성 위치 정보) 수신기를 장착해 임무 명령 데이터에 의해 이륙한 후 입력된 좌표를 따라 비행하면서 사전에 명령받은 좌표 상공에서 사진을 촬영하고, 복귀 좌표를 따라 이륙 지점으로 되돌아오는 방식으로 제작됐다.
+# ::note
+-- FRAMES ----------------------------------------
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+위치 : VERBAL_NOUN
+	- be_located		(위 / 위치-01 :ARG1 thing_located :ARG2 location)
+수신 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (수 / 수신기-00) ?
+	- receive		(수 / 수신-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 received_from)
+장착 : VERBAL_NOUN
+	- install		(장 / 장착-01 :ARG0 thing_installing :ARG1 thing_installed :ARG2 install_at)
+명령 : VERBAL_NOUN
+	- order		(명 / 명령-01 :ARG0 agent :ARG1 impelled_action :ARG2 impelled_agent)
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+이륙 : VERBAL_NOUN
+	- take_off		(이 / 이륙-01 :ARG1 thing_taking_off :ARG2 location)
+입력되 : DERIVED_NON-ENTRY
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+비행 : VERBAL_NOUN
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+명령 : VERBAL_NOUN
+	- order		(명 / 명령-01 :ARG0 agent :ARG1 impelled_action :ARG2 impelled_agent)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+복귀 : VERBAL_NOUN
+	- return		(복 / 복귀-01 :ARG0 agent :ARG2 start_point :ARG3 end_point)
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+이륙 : VERBAL_NOUN
+	- take_off		(이 / 이륙-01 :ARG1 thing_taking_off :ARG2 location)
+되돌아오 : ** UNUSED_OR_NON-ENTRY **
+제작 : VERBAL_NOUN
+	- produce		(제 / 제작-01 :ARG0 agent :ARG1 thing_produced)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"GPS" [TMI_HW]	->  (G / GPS)	OR	(p / product? :wiki "GPS" :name (이 / 이름 :op1 "GPS"))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"인공위성" [TMI_HW]	->  (인 / 인공위성)	OR	(p / product? :wiki "인공위성" :name (이 / 이름 :op1 "인공위성"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :ARG0-of (수 / 수신-01))
+(기 / 기 :mod (무 / 무인-00))
+(데 / 데이터-00 :mod (명 / 명령-01))
+(명 / 명령-01 :mod (임 / 임무-00))
+(상 / 상공 :mod (좌 / 좌표-00))
+(위 / 위성 :mod (인 / 인공-00))
+(위 / 위치-01 :mod (위 / 위성-00))
+(입 / 입력 :mod (후 / 후-00))
+(정 / 정보-00 :mod (위 / 위치-01))
+(좌 / 좌표-00 :mod (복 / 복귀-01))
+(지 / 지점-00 :mod (이 / 이륙-01))
+
+
+# ::id snt25.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 무인기의 항법장치에 내장된 중앙처리장치(CPU)에 연결된 카메라에 소형컴퓨터가 신호를 주면 촬영 시간 간격과 촬영 위치를 조정할 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+장치 : VERBAL_NOUN
+	- install		(장 / 장치-01 :ARG0 putter :ARG1 thing_put :ARG2 location)
+내장 : VERBAL_NOUN
+	- include_within		(내 / 내장-01 :ARG1 whole :ARG2 part)
+처리 : VERBAL_NOUN
+	- treat		(처 / 처리-01 :ARG0 agent :ARG1 thing_treated)
+장치 : VERBAL_NOUN
+	- install		(장 / 장치-01 :ARG0 putter :ARG1 thing_put :ARG2 location)
+연결 : VERBAL_NOUN
+	- connect		(연 / 연결-01 :ARG0 entity_connecting :ARG1 thing_connected :ARG2 connected_with)
+주 : VERB
+	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+촬영 : VERBAL_NOUN
+	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
+위치 : VERBAL_NOUN
+	- be_located		(위 / 위치-01 :ARG1 thing_located :ARG2 location)
+조정 : VERBAL_NOUN
+	- adjust		(조 / 조정-01 :ARG0 agent :ARG1 thing_adjusted :ARG2 adjusted_to)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"CPU" [TMI_HW]	->  (C / CPU)	OR	(p / product? :wiki "중앙_처리_장치" :name (이 / 이름 :op1 "CPU"))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"소형컴퓨터" [TMI_HW]	->  (소 / 소형컴퓨터)	OR	(p / product? :wiki - :name (이 / 이름 :op1 "소형컴퓨터"))
+"중앙처리장치" [TMI_HW]	->  (중 / 중앙처리장치)	OR	(p / product? :wiki "중앙_처리_장치" :name (이 / 이름 :op1 "중앙처리장치"))
+"카메라" [TMI_HW]	->  (카 / 카메라)	OR	(p / product? :wiki "사진기" :name (이 / 이름 :op1 "카메라"))
+-- VERBALIZED ------------------------------------
+(간 / 간격 :mod (시 / 시간-00))
+(기 / 기 :mod (무 / 무인-00))
+(시 / 시간-00 :mod (촬 / 촬영-01))
+(위 / 위치-01 :ARG1 (촬 / 촬영-01))
+(장 / 장치-01 :ARG1 (처 / 처리-01))
+(장 / 장치-01 :mod (항 / 항법-00))
+(처 / 처리-01 :mod (중 / 중앙-00))
+(컴 / 컴퓨터 :mod (소 / 소형-00))
+
+
+# ::id snt26.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 파주와 삼척, 백령도에서 발견된 북한 무인기 중량은 10∼14㎏이지만, 카메라와 낙하산을 제거하면 실제 무인기에다 3∼4㎏의 물체를 탑재할 수 있는 것으로 분석됐다.
+# ::note
+-- FRAMES ----------------------------------------
+발견 : VERBAL_NOUN
+	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+낙하산 : DERIVED_NON-ENTRY -> (낙 / 낙하산-00) ?
+제거 : VERBAL_NOUN
+	- remove		(제 / 제거-01 :ARG0 agent :ARG1 thing_removed :ARG2 removed_from)
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+탑재 : VERBAL_NOUN
+	- mount		(탑 / 탑재-01 :ARG0 agent :ARG1 entity_mounted :ARG2 vehicle)
+있 : ** UNUSED_OR_NON-ENTRY **
+분석 : VERBAL_NOUN
+	- analyze		(분 / 분석-01 :ARG0 agent :ARG1 thing_analyzed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"10∼14㎏" [QT_WEIGHT]	->  :quant (1 / 10∼14㎏)	OR	(m / mass-quantity :quant 10 :unit|scale (∼ / ∼14㎏))
+"3∼4㎏" [QT_WEIGHT]	->  :quant (3 / 3∼4㎏)	OR	(m / mass-quantity :quant 3 :unit|scale (∼ / ∼4㎏))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"백령도" [LCG_ISLAND]	->  (백 / 백령도)	OR	(i / island :wiki "백령도" :name (이 / 이름 :op1 "백령도"))
+"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+"삼척" [LCP_CITY]	->  (삼 / 삼척)	OR	(c / city :wiki "삼척시" :name (이 / 이름 :op1 "삼척"))
+"카메라" [TMI_HW]	->  (카 / 카메라)	OR	(p / product? :wiki "사진기" :name (이 / 이름 :op1 "카메라"))
+"파주" [LCP_CITY]	->  (파 / 파주)	OR	(c / city :wiki "파주시" :name (이 / 이름 :op1 "파주"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(기 / 기 :mod (무 / 무인-00))
+(무 / 무인 :mod (실 / 실제-00))
+(산 / 산 :mod (낙 / 낙하-00))
+
+
+# ::id snt27.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 군이 무인기에 4㎏의 폭약을 달아 건물에 충돌하는 시뮬레이션 실험을 한 결과, 건물은 거의 피해가 없었고 폭발로 인한 인명 살상 범위는 1∼2m로 나타났다.
+# ::note
+-- FRAMES ----------------------------------------
+무인기 : DERIVED_NON-ENTRY -> (무 / 무인기-00) ?
+달 : VERB
+	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
+	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
+충돌 : VERBAL_NOUN
+	- clash		(충 / 충돌-01 :ARG0 thing_clashing :ARG1 clash_with)
+실험 : VERBAL_NOUN
+	- experiment		(실 / 실험-01 :ARG0 agent :ARG1 experimental_subject)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+없 : ** UNUSED_OR_NON-ENTRY **
+폭발 : VERBAL_NOUN
+	- explode		(폭 / 폭발-01 :ARG0 agent,_causer :ARG1 thing_exploded)
+인하 : VERB
+	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
+	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
+나타나 : VERB
+	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1∼2m" [QT_LENGTH]	->  :quant (1 / 1∼2m)	OR	(d / distance-quantity :quant 1 :unit|scale (∼ / ∼2m))
+"4㎏" [QT_WEIGHT]	->  :quant (4 / 4㎏)	OR	(m / mass-quantity :quant 4 :unit|scale (㎏ / ㎏))
+"무인기" [AF_TRANSPORT]	->  (무 / 무인기)	OR	(v / vehicle|ship|aircraft|... :wiki "무인_항공기" :name (이 / 이름 :op1 "무인기"))
+"폭약" [AF_WEAPON]	->  (폭 / 폭약)	OR	(w / weapon* :wiki "화약" :name (이 / 이름 :op1 "폭약"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (무 / 무인-00))
+(범 / 범위 :mod (살 / 살상-00))
+(살 / 살상 :mod (인 / 인명-00))
+(실 / 실험-01 :mod (시 / 시뮬레이션-00))
+
+
+
+Process finished with exit code 0

@@ -1,0 +1,674 @@
+/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
+# ::id snt0.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 라인 강
+# ::note
+-- FRAMES ----------------------------------------
+list index out of range
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 라인 강은 유럽의 강으로 길이가 1,230km에 이른다.
+# ::note
+-- FRAMES ----------------------------------------
+이르 : VERB
+	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
+	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- early		(이 / 이르-03 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1,230km" [QT_LENGTH]	->  :quant (1 / 1,230km)	OR	(d / distance-quantity :quant 1 :unit|scale (, / ,230km))
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt2.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 여러 언어에서 라인 강이란 이름은 켈트어의 "레노스(Renos: 흐르는 것)"에서 유래했다.
+# ::note
+-- FRAMES ----------------------------------------
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+유래하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"켈트어" [CV_LANGUAGE]	->  (켈 / 켈트어)	OR	(l / language :wiki "켈트어파" :name (이 / 이름 :op1 "켈트어"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt3.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 라인 강은 네덜란드와의 국경에서 이름이 바뀌기 때문에 북해로 흘러 들어가지 않는다고도 할 수 있는데, 관례적으로 그 이름이 바뀐 부분까지를 라인 강에 포함시킨다.
+# ::note
+-- FRAMES ----------------------------------------
+바뀌 : ** UNUSED_OR_NON-ENTRY **
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+들어가 : VERB
+	- go_in		(들 / 들어가-01 :ARG0 thing_going_in :ARG2 start_point :ARG3 end_point)
+	- enter		(들 / 들어가-02 :ARG1 entity_entering :ARG2 place_or_thing_entered)
+	- begin		(들 / 들어가-03 :ARG0 beginner :ARG1 theme)
+	- flow_in-CV		(들 / 들어가-04 :ARG1 thing_flowing :ARG2 start_point :ARG3 end_point)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+있 : ** UNUSED_OR_NON-ENTRY **
+관례적 : DERIVED_NON-ENTRY -> (관 / 관례적-00) ?
+바뀌 : ** UNUSED_OR_NON-ENTRY **
+포함 : VERBAL_NOUN
+	- include		(포 / 포함-01 :ARG0 agent :ARG1 thing_included :ARG2 group)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"네덜란드" [LCP_COUNTRY]	->  (네 / 네덜란드)	OR	(c / country :wiki "네덜란드" :name (이 / 이름 :op1 "네덜란드"))
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"북해" [LCG_OCEAN]	->  (북 / 북해)	OR	(o / ocean :wiki "북해" :name (이 / 이름 :op1 "북해"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (관 / 관례-00))
+
+
+# ::id snt4.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 다뉴브 강과 함께 로마 제국의 북쪽 경계였으며, 그때부터 물자를 내륙 깊이 이동하는 수로로 이용되었다.
+# ::note
+-- FRAMES ----------------------------------------
+경계 : VERBAL_NOUN
+	- beware		(경 / 경계-01 :ARG0 agent :ARG1 thing_wary_of)
+이동 : VERBAL_NOUN
+	- move		(이 / 이동-01 :ARG0 agent :ARG2 start_point :ARG3 end_point)
+	- move		(이 / 이동-02 :ARG0 causer :ARG1 entity_in_motion :ARG2 start_point :ARG3 end_point)
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"다뉴브 강" [LCG_RIVER]	->  (다 / 다뉴브강)	OR	(r / river :wiki "도나우강" :name (이 / 이름 :op1 "다뉴브" :op2 "강"))
+"로마 제국" [LCP_COUNTRY]	->  (로 / 로마제국)	OR	(c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마" :op2 "제국"))
+"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt5.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러나 4세기 경에 라인 강이 언 틈을 타 게르만족이 서로마를 정벌하였다.
+# ::note
+-- FRAMES ----------------------------------------
+세기경 : DERIVED_NON-ENTRY -> (세 / 세기경-00) ?
+얼 : VERB
+	- be_frozen		(얼 / 얼-01 :ARG1 thing_freezing)
+타 : VERB
+	- ride		(타 / 타-01 :ARGA causer :ARG0 agent :ARG1 vehicle)
+	- take		(타 / 타-02 :ARG1 taker :ARG2 thing_taken)
+	- burn		(타 / 타-03 :ARG1 thing_burning :ARG2 fire)
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+정벌하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"4세기 경" [DT_OTHERS]	->  :time|duration (4 / 4세기경)	OR	:time (d / date-entity)	OR	:duration 
+"게르만족" [CV_TRIBE]	->  (게 / 게르만족)	OR	(e / ethnic-group|nationality :wiki "게르만족" :name (이 / 이름 :op1 "게르만족"))
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"서로마" [LCP_COUNTRY]	->  (서 / 서로마)	OR	(c / country :wiki "서로마_제국" :name (이 / 이름 :op1 "서로마"))
+-- VERBALIZED ------------------------------------
+(경 / 경 :mod (세 / 세기-00))
+
+
+# ::id snt6.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 라인 강은 유럽에서 경제적으로 매우 중요한 강으로 스위스 중부의 알프스에서 발원하여 1,320km를 흘러 북해로 유입한다.
+# ::note
+-- FRAMES ----------------------------------------
+경제적 : DERIVED_NON-ENTRY -> (경 / 경제적-00) ?
+중요 : VERBAL_NOUN
+	- important		(중 / 중요-01 :ARG1 thing_being_important :ARG2 important_to)
+발원하 : DERIVED_NON-ENTRY
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+유입 : VERBAL_NOUN
+	- flow		(유 / 유입-01 :ARG0 thing_making_flow :ARG1 thing_flowing :ARG2 flow_in)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1,320km" [QT_LENGTH]	->  :quant (1 / 1,320km)	OR	(d / distance-quantity :quant 1 :unit|scale (, / ,320km))
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"북해" [LCG_OCEAN]	->  (북 / 북해)	OR	(o / ocean :wiki "북해" :name (이 / 이름 :op1 "북해"))
+"스위스" [LCP_COUNTRY]	->  (스 / 스위스)	OR	(c / country :wiki "스위스" :name (이 / 이름 :op1 "스위스"))
+"알프스" [LCG_MOUNTAIN]	->  (알 / 알프스)	OR	(m / mountain :wiki "알프스?" :name (이 / 이름 :op1 "알프스"))
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+"중부" [TM_DIRECTION]	->  (중 / 중부)	OR	(: / :direction :wiki "중부?" :name (이 / 이름 :op1 "중부"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (경 / 경제-00))
+
+
+# ::id snt7.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 최상류의 포르더라인 강과 힌터라인 강은 알프스의 눈이 완전히 녹는 6월과 7월에 유량이 최고조에 달한다.
+# ::note
+-- FRAMES ----------------------------------------
+최상류 : DERIVED_NON-ENTRY -> (최 / 최상류-00) ?
+녹 : VERB
+	- melt		(녹 / 녹-01 :ARG0 causer :ARG1 thing_melted)
+	- attract		(녹 / 녹-01 :ARG0 agent,_causer :ARG1 thing_attracted)
+고조 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (최 / 최고조-00) ?
+	- enhance		(고 / 고조-01 :ARG0 causer :ARG1 thing_enhanced)
+달하 : VERB
+	- amount_to		(달 / 달하-01 :ARG1 thing_counted :ARG2 count,_total)
+-- FORCE CONVERT ---------------------------------
+:manner (완 / 완전-01)
+-- NE TYPES --------------------------------------
+"6월" [DT_MONTH]	->  :time|duration (6 / 6월)	OR	:time (d / date-entity :month 6)	OR	:duration (t / temporal-quantity :quant 6 :unit (월 / 월))  
+"7월" [DT_MONTH]	->  :time|duration (7 / 7월)	OR	:time (d / date-entity :month 7)	OR	:duration (t / temporal-quantity :quant 7 :unit (월 / 월))  
+"알프스" [LCG_MOUNTAIN]	->  (알 / 알프스)	OR	(m / mountain :wiki "알프스?" :name (이 / 이름 :op1 "알프스"))
+"포르더라인 강" [LCG_RIVER]	->  (포 / 포르더라인강)	OR	(r / river :wiki - :name (이 / 이름 :op1 "포르더라인" :op2 "강"))
+"힌터라인 강" [LCG_RIVER]	->  (힌 / 힌터라인강)	OR	(r / river :wiki - :name (이 / 이름 :op1 "힌터라인" :op2 "강"))
+-- VERBALIZED ------------------------------------
+(류 / 류 :mod (최 / 최상-00))
+
+
+# ::id snt8.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 상류의 라인 강은 북쪽으로 흘러 작은 삼각주를 지나 콘스탄츠 호에 이른다.
+# ::note
+-- FRAMES ----------------------------------------
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+작 : VERB
+	- small		(작 / 작-01 :ARG1 thing_being_small)
+지나 : VERB
+	- pass		(지 / 지나-01 :ARG0 entity_passing :ARG1 thing_passed)
+	- be_only		(지 / 지나-02 :ARG1 thing_under_consideration :ARG2 criterion)
+이르 : VERB
+	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
+	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- early		(이 / 이르-03 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
+"콘스탄츠 호" [LCG_RIVER]	->  (콘 / 콘스탄츠호)	OR	(r / river :wiki "보덴호" :name (이 / 이름 :op1 "콘스탄츠" :op2 "호"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt9.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 콘스탄츠 호의 서쪽에서 강은 다시 서쪽으로 흐르다가 북부 스위스의 사프하우젠에 있는 30m 높이의 라인 폭포로 떨어진다.
+# ::note
+-- FRAMES ----------------------------------------
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+북부 : DERIVED_NON-ENTRY -> (북 / 북부-00) ?
+있 : ** UNUSED_OR_NON-ENTRY **
+떨어지 : VERB
+	- fall		(떨 / 떨어지-01 :ARG0 causer :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+	- run_out		(떨 / 떨어지-02 :ARG1 thing_running_out :ARG2 possessor)
+	- be_off		(떨 / 떨어지-03 :ARG1 theme :ARG2 be_off_from)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"30m" [QT_LENGTH]	->  :quant (3 / 30m)	OR	(d / distance-quantity :quant 30 :unit|scale (m / m))
+"라인 폭포" [LC_TOUR]	->  (라 / 라인폭포)	OR	(l / location? :wiki "라인_폭포" :name (이 / 이름 :op1 "라인" :op2 "폭포"))
+"북부" [TM_DIRECTION]	->  (북 / 북부)	OR	(: / :direction :wiki "북부?" :name (이 / 이름 :op1 "북부"))
+"사프하우젠" [LCP_PROVINCE]	->  (사 / 사프하우젠)	OR	(p / province :wiki - :name (이 / 이름 :op1 "사프하우젠"))
+"서쪽" [TM_DIRECTION]	->  (서 / 서쪽)	OR	(: / :direction :wiki "서쪽" :name (이 / 이름 :op1 "서쪽"))
+"서쪽" [TM_DIRECTION]	->  (서 / 서쪽)	OR	(: / :direction :wiki "서쪽" :name (이 / 이름 :op1 "서쪽"))
+"스위스" [LCP_COUNTRY]	->  (스 / 스위스)	OR	(c / country :wiki "스위스" :name (이 / 이름 :op1 "스위스"))
+"콘스탄츠 호" [LCG_RIVER]	->  (콘 / 콘스탄츠호)	OR	(r / river :wiki "보덴호" :name (이 / 이름 :op1 "콘스탄츠" :op2 "호"))
+-- VERBALIZED ------------------------------------
+(부 / 부 :mod (북 / 북-00))
+
+
+# ::id snt10.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 흑림지대(슈바르츠발트)의 남쪽 자락을 따라 흐르다가 바젤 근처에서 북쪽으로 방향을 바꾸기 전에 두 차례의 골짜기를 지난다.
+# ::note
+-- FRAMES ----------------------------------------
+남 : VERBAL_NOUN
+	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+바꾸 : VERB
+	- change,_replace		(바 / 바꾸-01 :ARG0 causer_of_transformation :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
+	- exchange,_switch		(바 / 바꾸-02 :ARG0 agent :ARG1 thing_being_traded :ARG2 other_exchanger :ARG3 other_item_in_exchange)
+지나 : VERB
+	- pass		(지 / 지나-01 :ARG0 entity_passing :ARG1 thing_passed)
+	- be_only		(지 / 지나-02 :ARG1 thing_under_consideration :ARG2 criterion)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"남쪽" [TM_DIRECTION]	->  (남 / 남쪽)	OR	(: / :direction :wiki "남쪽" :name (이 / 이름 :op1 "남쪽"))
+"두 차례" [QT_COUNT]	->  :quant (두 / 두차례)	OR	(c / concept* :quant 두 :unit|scale (차 / 차례))
+"바젤" [LCP_CITY]	->  (바 / 바젤)	OR	(c / city :wiki "바젤" :name (이 / 이름 :op1 "바젤"))
+"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
+"슈바르츠발트" [LCG_MOUNTAIN]	->  (슈 / 슈바르츠발트)	OR	(m / mountain :wiki "슈바르츠발트" :name (이 / 이름 :op1 "슈바르츠발트"))
+"흑림지대" [LCG_MOUNTAIN]	->  (흑 / 흑림지대)	OR	(m / mountain :wiki - :name (이 / 이름 :op1 "흑림지대"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt11.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 바젤부터 라인 강은 약 160km정도 프랑스와 독일의 국경을 따라 흐른다.
+# ::note
+-- FRAMES ----------------------------------------
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"바젤" [LCP_CITY]	->  (바 / 바젤)	OR	(c / city :wiki "바젤" :name (이 / 이름 :op1 "바젤"))
+"약 160km" [QT_LENGTH]	->  :quant (약 / 약160km)	OR	(d / distance-quantity :quant 약 :unit|scale (1 / 160km))
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt12.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 다시 독일 영토를 흐르게 되는데 이 구간은 지난 2세기 동안의 하천 직강화를 통해 곡류로 흐르던 강이 이제 직선으로 흐르게 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+지나 : VERB
+	- pass		(지 / 지나-01 :ARG0 entity_passing :ARG1 thing_passed)
+	- be_only		(지 / 지나-02 :ARG1 thing_under_consideration :ARG2 criterion)
+통하 : VERB
+	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
+	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
+	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"지난 2세기 동안" [DT_OTHERS]	->  :time|duration (지 / 지난2세기동안)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(동 / 동안 :mod (세 / 세기-00))
+(직 / 직강화 :mod (하 / 하천-00))
+
+
+# ::id snt13.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 구간은 라인 지구대에 해당되는 곳으로 지구대의 폭은 비교적 넓어 32km 정도이며 강을 따라 범람원도 형성되어 있다.
+# ::note
+-- FRAMES ----------------------------------------
+해당 : VERBAL_NOUN
+	- correspond_to		(해 / 해당-01 :ARG1 topic,_theme :ARG2 compared_with)
+지구대 : DERIVED_NON-ENTRY -> (지 / 지구대-00) ?
+비교 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (비 / 비교적-00) ?
+	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
+넓 : VERB
+	- wide		(넓 / 넓-01 :ARG0 causer :ARG1 thing_being_wide)
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+형성 : VERBAL_NOUN
+	- form		(형 / 형성-01 :ARG0 creator :ARG1 thing_created)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"32km" [QT_LENGTH]	->  :quant (3 / 32km)	OR	(d / distance-quantity :quant 32 :unit|scale (k / km))
+"라인 지구대" [LC_OTHERS]	->  (라 / 라인지구대)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "라인" :op2 "지구대"))
+-- VERBALIZED ------------------------------------
+(대 / 대 :mod (지 / 지구-00))
+(적 / 적 :ARG0-of (비 / 비교-01))
+
+
+# ::id snt14.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 지구대의 양쪽은 서쪽의 보주 산맥과 동쪽의 슈바르츠발트 산맥이다.
+# ::note
+-- FRAMES ----------------------------------------
+지구대 : DERIVED_NON-ENTRY -> (지 / 지구대-00) ?
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"동쪽" [TM_DIRECTION]	->  (동 / 동쪽)	OR	(: / :direction :wiki "동쪽" :name (이 / 이름 :op1 "동쪽"))
+"보주 산맥" [LCG_MOUNTAIN]	->  (보 / 보주산맥)	OR	(m / mountain :wiki "보주산맥" :name (이 / 이름 :op1 "보주" :op2 "산맥"))
+"서쪽" [TM_DIRECTION]	->  (서 / 서쪽)	OR	(: / :direction :wiki "서쪽" :name (이 / 이름 :op1 "서쪽"))
+"슈바르츠발트 산맥" [LCG_MOUNTAIN]	->  (슈 / 슈바르츠발트산맥)	OR	(m / mountain :wiki - :name (이 / 이름 :op1 "슈바르츠발트" :op2 "산맥"))
+-- VERBALIZED ------------------------------------
+(대 / 대 :mod (지 / 지구-00))
+
+
+# ::id snt15.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 협곡의 서쪽 편은 훈스뤼크 구릉지와 아이펠 구릉지가 있고, 동쪽 편으로는 타우누스 구릉지와 베스트발트 구릉지가 있다.
+# ::note
+-- FRAMES ----------------------------------------
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+구릉지 : DERIVED_NON-ENTRY -> (구 / 구릉지-00) ?
+구릉지 : DERIVED_NON-ENTRY -> (구 / 구릉지-00) ?
+있 : ** UNUSED_OR_NON-ENTRY **
+구릉지 : DERIVED_NON-ENTRY -> (구 / 구릉지-00) ?
+구릉지 : DERIVED_NON-ENTRY -> (구 / 구릉지-00) ?
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"동쪽" [TM_DIRECTION]	->  (동 / 동쪽)	OR	(: / :direction :wiki "동쪽" :name (이 / 이름 :op1 "동쪽"))
+"베스트발트 구릉지" [LCG_MOUNTAIN]	->  (베 / 베스트발트구릉지)	OR	(m / mountain :wiki - :name (이 / 이름 :op1 "베스트발트" :op2 "구릉지"))
+"서쪽" [TM_DIRECTION]	->  (서 / 서쪽)	OR	(: / :direction :wiki "서쪽" :name (이 / 이름 :op1 "서쪽"))
+"아이펠 구릉지" [LCG_MOUNTAIN]	->  (아 / 아이펠구릉지)	OR	(m / mountain :wiki - :name (이 / 이름 :op1 "아이펠" :op2 "구릉지"))
+"타우누스 구릉지" [LCG_MOUNTAIN]	->  (타 / 타우누스구릉지)	OR	(m / mountain :wiki - :name (이 / 이름 :op1 "타우누스" :op2 "구릉지"))
+"훈스뤼크 구릉지" [LCG_MOUNTAIN]	->  (훈 / 훈스뤼크구릉지)	OR	(m / mountain :wiki - :name (이 / 이름 :op1 "훈스뤼크" :op2 "구릉지"))
+-- VERBALIZED ------------------------------------
+(지 / 지 :mod (구 / 구릉-00))
+(지 / 지 :mod (구 / 구릉-00))
+(지 / 지 :mod (구 / 구릉-00))
+(지 / 지 :mod (구 / 구릉-00))
+
+
+# ::id snt16.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 구불구불한 협곡을 따라서 수 백 년의 역사를 가진 고성들이 언덕 위에 세워져 있다.
+# ::note
+-- FRAMES ----------------------------------------
+구불구불하 : ** UNUSED_OR_NON-ENTRY **
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+고성들 : DERIVED_NON-ENTRY -> (고 / 고성들-00) ?
+세우 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"수 백 년" [DT_OTHERS]	->  :time|duration (수 / 수백년)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(들 / 들 :mod (고 / 고성-00))
+(위 / 위 :mod (언 / 언덕-00))
+
+
+# ::id snt17.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 본에 이르기 전에 강 폭은 다시 넓어지고 평야를 만나면서, 쾰른, 뒤셀도르프, 뒤스부르크 등의 공업 도시를 만난다.
+# ::note
+-- FRAMES ----------------------------------------
+이르 : VERB
+	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
+	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- early		(이 / 이르-03 :ARG1 time)
+넓어지 : ** UNUSED_OR_NON-ENTRY **
+만나 : VERB
+	- meet		(만 / 만나-01 :ARG0 person/entity/obeject_meeting :ARG1 person/entity/obeject_being_met)
+만나 : VERB
+	- meet		(만 / 만나-01 :ARG0 person/entity/obeject_meeting :ARG1 person/entity/obeject_being_met)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"뒤셀도르프" [LCP_CITY]	->  (뒤 / 뒤셀도르프)	OR	(c / city :wiki "뒤셀도르프" :name (이 / 이름 :op1 "뒤셀도르프"))
+"뒤스부르크" [LCP_CITY]	->  (뒤 / 뒤스부르크)	OR	(c / city :wiki "뒤스부르크" :name (이 / 이름 :op1 "뒤스부르크"))
+"본" [LCP_CITY]	->  (본 / 본)	OR	(c / city :wiki "본?" :name (이 / 이름 :op1 "본"))
+"쾰른" [LCP_CITY]	->  (쾰 / 쾰른)	OR	(c / city :wiki "쾰른" :name (이 / 이름 :op1 "쾰른"))
+-- VERBALIZED ------------------------------------
+(도 / 도시 :mod (공 / 공업-00))
+(폭 / 폭 :mod (강 / 강-00))
+
+
+# ::id snt18.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 라인 강을 따라서는 레버쿠젠의 바이어 화학 같은 대규모 공업시설이 밀집해 있어 화물선의 통행이 많은 곳이다.
+# ::note
+-- FRAMES ----------------------------------------
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+대규모 : DERIVED_NON-ENTRY -> (대 / 대규모-00) ?
+밀집 : VERBAL_NOUN
+	- cluster		(밀 / 밀집-01 :ARG1 thing_clustered :ARG2 location)
+화물선 : DERIVED_NON-ENTRY -> (화 / 화물선-00) ?
+많 : VERB
+	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"레버쿠젠" [LCP_CITY]	->  (레 / 레버쿠젠)	OR	(c / city :wiki "레버쿠젠" :name (이 / 이름 :op1 "레버쿠젠"))
+"바이어 화학" [OGG_ECONOMY]	->  (바 / 바이어화학)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "바이어" :op2 "화학"))
+"화물선" [AF_TRANSPORT]	->  (화 / 화물선)	OR	(v / vehicle|ship|aircraft|... :wiki "화물선" :name (이 / 이름 :op1 "화물선"))
+-- VERBALIZED ------------------------------------
+(공 / 공업 :mod (규 / 규모-00))
+(선 / 선 :mod (화 / 화물-00))
+(시 / 시설 :mod (공 / 공업-00))
+
+
+# ::id snt19.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 물동량은 강 하구 로테르담에서부터 쾰른까지의 구간에 집중되고 산업 시설이 몰려 있어 정부의 강력한 통제에도 불구하고 강의 오염이 심각한 편이다.
+# ::note
+-- FRAMES ----------------------------------------
+집중 : VERBAL_NOUN
+	- concentrate		(집 / 집중-01 :ARG0 agent :ARG1 thing_concentrated :ARG2 concentrated_on)
+몰리 : REDUCED_VERB_DETECTED
+	- drive		(몰 / 몰-01 :ARG0 agent :ARG1 thing_driven :ARG2 direction)
+	- gather		(몰 / 몰-02 :ARG0 agent :ARG1 entity_gathered :ARG2 gathered_into)
+강력하 : VERB
+	- strong		(강 / 강력하-01 :ARG1 thing_being_strong)
+통제 : VERBAL_NOUN
+	- control		(통 / 통제-01 :ARG0 agent :ARG1 thing_controlled)
+불구하 : DERIVED_VERB_DETECTED
+	- in_spite_of		(불 / 불구하-01 :ARG1 in_spite_of_what)
+오염 : VERBAL_NOUN
+	- contaminate		(오 / 오염-01 :ARG0 thing_contaminating :ARG1 thing_contaminated)
+심각하 : DERIVED_VERB_DETECTED
+	- serious		(심 / 심각하-01 :ARG1 thing_being_serious)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"로테르담" [LCP_CITY]	->  (로 / 로테르담)	OR	(c / city :wiki "로테르담" :name (이 / 이름 :op1 "로테르담"))
+"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
+"쾰른" [LCP_CITY]	->  (쾰 / 쾰른)	OR	(c / city :wiki "쾰른" :name (이 / 이름 :op1 "쾰른"))
+-- VERBALIZED ------------------------------------
+(량 / 량 :mod (물 / 물동-00))
+(시 / 시설 :mod (산 / 산업-00))
+(하 / 하구 :mod (강 / 강-00))
+
+
+# ::id snt20.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 라인 강의 하구는 독일과 네덜란드의 국경 근처 엠머리치 근처에서 시작된다.
+# ::note
+-- FRAMES ----------------------------------------
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"네덜란드" [LCP_COUNTRY]	->  (네 / 네덜란드)	OR	(c / country :wiki "네덜란드" :name (이 / 이름 :op1 "네덜란드"))
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"엠머리치" [LCP_CITY]	->  (엠 / 엠머리치)	OR	(c / city :wiki - :name (이 / 이름 :op1 "엠머리치"))
+-- VERBALIZED ------------------------------------
+(근 / 근처 :mod (국 / 국경-00))
+
+
+# ::id snt21.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 본류는 네덜란드 로테르담을 거쳐 북해로 흐르고, 분류인 모이제 강도 라인 강과 평행하게 흐르다가 북해로 유입한다.
+# ::note
+-- FRAMES ----------------------------------------
+거치 : VERB
+	- pass_through		(거 / 거치-01 :ARG1 thing :ARG2 theme)
+	- mount		(거 / 거치-02 :ARG0 agent :ARG1 thing_mounted :ARG2 where_mount)
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+분류 : VERBAL_NOUN
+	- classify		(분 / 분류-01 :ARG0 classifier :ARG1 thing_being_classified :ARG2 classified_among)
+평행하 : REDUCED_VERB_DETECTED
+	- parallel		(평 / 평행-01 :ARG1 thing_under_consideration :ARG2 in_comparison_to)
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+유입 : VERBAL_NOUN
+	- flow		(유 / 유입-01 :ARG0 thing_making_flow :ARG1 thing_flowing :ARG2 flow_in)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"네덜란드" [LCP_COUNTRY]	->  (네 / 네덜란드)	OR	(c / country :wiki "네덜란드" :name (이 / 이름 :op1 "네덜란드"))
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"로테르담" [LCP_CITY]	->  (로 / 로테르담)	OR	(c / city :wiki "로테르담" :name (이 / 이름 :op1 "로테르담"))
+"모이제 강" [LCG_RIVER]	->  (모 / 모이제강)	OR	(r / river :wiki - :name (이 / 이름 :op1 "모이제" :op2 "강"))
+"북해" [LCG_OCEAN]	->  (북 / 북해)	OR	(o / ocean :wiki "북해" :name (이 / 이름 :op1 "북해"))
+"북해" [LCG_OCEAN]	->  (북 / 북해)	OR	(o / ocean :wiki "북해" :name (이 / 이름 :op1 "북해"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt22.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 네덜란드어로 라인 강은 "Rijn"이라고 부른다.
+# ::note
+-- FRAMES ----------------------------------------
+부르 : VERB
+	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
+	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"네덜란드어" [CV_LANGUAGE]	->  (네 / 네덜란드어)	OR	(l / language :wiki "네덜란드어" :name (이 / 이름 :op1 "네덜란드어"))
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt23.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 라인 강은 서쪽으로 네덜란드를 관통하는데, 하류에서 뫼즈 강과 스헬트 강과 합쳐져 흐른다.
+# ::note
+-- FRAMES ----------------------------------------
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+관통하 : DERIVED_NON-ENTRY
+합치 : VERB
+	- combine		(합 / 합치-01 :ARG0 agent :ARG1 ingredient_one :ARG2 ingredient_two)
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"네덜란드" [LCP_COUNTRY]	->  (네 / 네덜란드)	OR	(c / country :wiki "네덜란드" :name (이 / 이름 :op1 "네덜란드"))
+"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+"뫼즈 강" [LCG_RIVER]	->  (뫼 / 뫼즈강)	OR	(r / river :wiki "뫼즈강" :name (이 / 이름 :op1 "뫼즈" :op2 "강"))
+"서쪽" [TM_DIRECTION]	->  (서 / 서쪽)	OR	(: / :direction :wiki "서쪽" :name (이 / 이름 :op1 "서쪽"))
+"스헬트 강" [LCG_RIVER]	->  (스 / 스헬트강)	OR	(r / river :wiki - :name (이 / 이름 :op1 "스헬트" :op2 "강"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt24.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 3개의 강은 합쳐져 하류에서 매우 큰 삼각주를 이루며, 서유럽에서 가장 큰 강이다.
+# ::note
+-- FRAMES ----------------------------------------
+합치 : VERB
+	- combine		(합 / 합치-01 :ARG0 agent :ARG1 ingredient_one :ARG2 ingredient_two)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+이루 : VERB
+	- establish		(이 / 이루-01 :ARG0 setter :ARG1 thing_set)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"3개" [QT_COUNT]	->  :quant (3 / 3개)	OR	(c / concept* :quant 3 :unit|scale (개 / 개))
+"서유럽" [LCG_CONTINENT]	->  (서 / 서유럽)	OR	(c / continent :wiki "서유럽" :name (이 / 이름 :op1 "서유럽"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt25.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이곳에서 시작되어, 복잡한 환경으로 흐르게 되며, 원래 Rijn이라는 이름은, 이곳에서 나온 이름이며, 유일하게 조그마한 넓은 대지 속 북쪽의 작은 개울에만 사용되었다.
+# ::note
+-- FRAMES ----------------------------------------
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+복잡하 : VERB
+	- complex		(복 / 복잡하-01 :ARG1 thing_being_complex)
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+나오 : VERB
+	- come_out		(나 / 나오-01 :ARG0 thing_coming_out :ARG2 start_point :ARG3 end_point)
+	- do-light_verb		(나 / 나오-02 :ARG0 agent :ARG1 deverbal_noun :ARG2 start_point :ARG3 end_point)
+	- spill_out-CV		(나 / 나오-03 :ARG1 thing_coming_out :ARG2 start_point :ARG3 end_point)
+유일 : VERBAL_NOUN
+	- unique		(유 / 유일-01 :ARG1 thing_being_unique)
+조그마하 : ** UNUSED_OR_NON-ENTRY **
+넓 : VERB
+	- wide		(넓 / 넓-01 :ARG0 causer :ARG1 thing_being_wide)
+속 : VERBAL_NOUN
+	- deceive		(속 / 속-01 :ARG0 liar :ARG1 lied_to)
+작 : VERB
+	- small		(작 / 작-01 :ARG1 thing_being_small)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
+-- VERBALIZED ------------------------------------
+(북 / 북-00 :mod (속 / 속-01))
+(속 / 속-01 :mod (대 / 대지-00))
+
+
+# ::id snt26.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 네덜란드 이름인 "Rijn"은 여러개의 물이 흐르는 모습을 본따 지어졌다.
+# ::note
+-- FRAMES ----------------------------------------
+물 : VERBAL_NOUN
+	- bite		(물 / 물-01 :ARG0 agent :ARG1 entity_bitten)
+	- pay		(물 / 물-02 :ARGA causer :ARG0 payer :ARG1 thing_paid :ARG2 person_being_paid)
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+본따 : DERIVED_NON-ENTRY
+따 : VERB
+	- obtain		(따 / 따-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 received_from)
+	- quote		(따 / 따-01 :ARG0 quoter :ARG1 thing_quoted :ARG2 quoted_from)
+짓 : VERB
+	- construct		(짓 / 짓-01 :ARG0 agent :ARG1 construction)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"네덜란드" [LCP_COUNTRY]	->  (네 / 네덜란드)	OR	(c / country :wiki "네덜란드" :name (이 / 이름 :op1 "네덜란드"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt27.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그리고 다시 되돌아와, 더 먼 서쪽으로 흘러, Noord강에 재합류하여서 강이 Nieuwe Maas와 북해로 들어간다.
+# ::note
+-- FRAMES ----------------------------------------
+되돌아오 : ** UNUSED_OR_NON-ENTRY **
+멀 : VERB
+	- be_far_from		(멀 / 멀-01 :ARG1 thing_being_faraway :ARG2 which_from)
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+흐르 : VERB
+	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
+합류 : VERBAL_NOUN
+	- join		(합 / 합류-01 :ARG0 agent :ARG1 thing_joined)
+들어가 : VERB
+	- go_in		(들 / 들어가-01 :ARG0 thing_going_in :ARG2 start_point :ARG3 end_point)
+	- enter		(들 / 들어가-02 :ARG1 entity_entering :ARG2 place_or_thing_entered)
+	- begin		(들 / 들어가-03 :ARG0 beginner :ARG1 theme)
+	- flow_in-CV		(들 / 들어가-04 :ARG1 thing_flowing :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Nieuwe Maas" [LC_OTHERS]	->  (N / NieuweMaas)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "Nieuwe" :op2 "Maas"))
+"Noord강" [LCG_RIVER]	->  (N / Noord강)	OR	(r / river :wiki - :name (이 / 이름 :op1 "Noord강"))
+"북해" [LCG_OCEAN]	->  (북 / 북해)	OR	(o / ocean :wiki "북해" :name (이 / 이름 :op1 "북해"))
+"서쪽" [TM_DIRECTION]	->  (서 / 서쪽)	OR	(: / :direction :wiki "서쪽" :name (이 / 이름 :op1 "서쪽"))
+-- VERBALIZED ------------------------------------
+
+
+
+Process finished with exit code 0

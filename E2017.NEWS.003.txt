@@ -1,0 +1,696 @@
+/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
+# ::id snt0.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 경찰 '소래포구 어시장 화재' 목격자 3명 진술 확보.
+# ::note
+-- FRAMES ----------------------------------------
+목격 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (목 / 목격자-00) ?
+	- witness		(목 / 목격-01 :ARG0 agent :ARG1 thing_witnessed)
+진술 : VERBAL_NOUN
+	- state		(진 / 진술-01 :ARG0 agent :ARG1 thing_stated)
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"3명" [QT_MAN_COUNT]	->  :quant (3 / 3명)	OR	(c / concept* :quant 3 :unit|scale (명 / 명))
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+"목격자" [CV_POSITION]	->  :mod (목 / 목격자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (목 / 목격자))
+"소래포구 어시장 화재" [EV_OTHERS]	->  (소 / 소래포구어시장화재)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "소래포구" :op2 "어시장" :op3 "화재"))
+-- VERBALIZED ------------------------------------
+(시 / 시장 :mod (어 / 어-00))
+(자 / 자 :ARG0-of (목 / 목격-01))
+(화 / 화재 :mod (시 / 시장-00))
+(확 / 확보-01 :ARG1 (진 / 진술-01))
+
+
+# ::id snt1.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 6억여 원의 재산피해(소방서 추산)를 낸 인천 소래포구 어시장 화재사고와 관련, 경찰이 최초 목격자 진술을 확보하는 등 화재 원인을 밝히기 위한 본격적인 조사에 착수했다.
+# ::note
+-- FRAMES ----------------------------------------
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+추산 : VERBAL_NOUN
+	- estimate		(추 / 추산-01 :ARG0 agent :ARG1 thing_estimated)
+내 : VERB
+	- send		(내 / 내-01 :ARG0 agent :ARG1 thing_sent :ARG2 sent_to)
+	- make		(내 / 내-02 :ARG0 causer :ARG1 thing_made)
+관련 : VERBAL_NOUN
+	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+목격 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (목 / 목격자-00) ?
+	- witness		(목 / 목격-01 :ARG0 agent :ARG1 thing_witnessed)
+진술 : VERBAL_NOUN
+	- state		(진 / 진술-01 :ARG0 agent :ARG1 thing_stated)
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+밝히 : VERB
+	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
+	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+본격적 : DERIVED_NON-ENTRY -> (본 / 본격적-00) ?
+조사 : VERBAL_NOUN
+	- investigate		(조 / 조사-01 :ARG0 agent :ARG1 thing_investigated)
+착수 : VERBAL_NOUN
+	- start		(착 / 착수-01 :ARG0 agent :ARG1 theme)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"6억여 원" [QT_PRICE]	->  :quant (6 / 6억여원)	OR	(m / monetary-quantity :quant 6억여 :unit|scale (원 / 원))
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+"목격자" [CV_POSITION]	->  :mod (목 / 목격자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (목 / 목격자))
+"소래포구 어시장 화재사고" [EV_OTHERS]	->  (소 / 소래포구어시장화재사고)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "소래포구" :op2 "어시장" :op3 "화재사고"))
+"소방서" [OGG_POLITICS]	->  (소 / 소방서)	OR	(g / government-organization :wiki "소방서" :name (이 / 이름 :op1 "소방서"))
+"인천" [LCP_CITY]	->  (인 / 인천)	OR	(c / city :wiki "인천광역시" :name (이 / 이름 :op1 "인천"))
+-- VERBALIZED ------------------------------------
+(목 / 목격-01 :mod (최 / 최초-00))
+(사 / 사고 :mod (화 / 화재-00))
+(서 / 서-01 :mod (소 / 소방-00))
+(시 / 시장 :mod (어 / 어-00))
+(원 / 원인 :mod (화 / 화재-00))
+(자 / 자 :ARG0-of (목 / 목격-01))
+(적 / 적 :mod (본 / 본격-00))
+(추 / 추산-01 :ARG1 (서 / 서-01))
+(피 / 피해 :mod (재 / 재산-00))
+(화 / 화재 :mod (시 / 시장-00))
+
+
+# ::id snt2.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 인천 남동 경찰서는 18일 발생한 인천시 남동구 논현동 소래포구 어시장 화재사고와 관련한 목격자 3명의 진술을 확보해 조사하고 있다고 19일 밝혔다.
+# ::note
+-- FRAMES ----------------------------------------
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+발생 : VERBAL_NOUN
+	- arise		(발 / 발생-01 :ARG0 causer :ARG1 thing_arising :ARG2 source)
+관련 : VERBAL_NOUN
+	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+목격 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (목 / 목격자-00) ?
+	- witness		(목 / 목격-01 :ARG0 agent :ARG1 thing_witnessed)
+진술 : VERBAL_NOUN
+	- state		(진 / 진술-01 :ARG0 agent :ARG1 thing_stated)
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+조사 : VERBAL_NOUN
+	- investigate		(조 / 조사-01 :ARG0 agent :ARG1 thing_investigated)
+밝히 : VERB
+	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
+	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"18일" [DT_DAY]	->  :time|duration (1 / 18일)	OR	:time (d / date-entity :day 18)	OR	:duration (t / temporal-quantity :quant 18 :unit (일 / 일))  
+"19일" [DT_DAY]	->  :time|duration (1 / 19일)	OR	:time (d / date-entity :day 19)	OR	:duration (t / temporal-quantity :quant 19 :unit (일 / 일))  
+"3명" [QT_MAN_COUNT]	->  :quant (3 / 3명)	OR	(c / concept* :quant 3 :unit|scale (명 / 명))
+"경찰서" [OGG_POLITICS]	->  (경 / 경찰서)	OR	(g / government-organization :wiki "경찰서" :name (이 / 이름 :op1 "경찰서"))
+"남동" [LCP_COUNTY]	->  (남 / 남동)	OR	(c / county :wiki "남동?" :name (이 / 이름 :op1 "남동"))
+"남동구" [LCP_COUNTY]	->  (남 / 남동구)	OR	(c / county :wiki "남동구" :name (이 / 이름 :op1 "남동구"))
+"논현동" [LCP_COUNTY]	->  (논 / 논현동)	OR	(c / county :wiki "논현동?" :name (이 / 이름 :op1 "논현동"))
+"목격자" [CV_POSITION]	->  :mod (목 / 목격자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (목 / 목격자))
+"소래포구 어시장 화재사고" [EV_OTHERS]	->  (소 / 소래포구어시장화재사고)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "소래포구" :op2 "어시장" :op3 "화재사고"))
+"인천" [LCP_CITY]	->  (인 / 인천)	OR	(c / city :wiki "인천광역시" :name (이 / 이름 :op1 "인천"))
+"인천시" [LCP_CITY]	->  (인 / 인천시)	OR	(c / city :wiki "인천광역시" :name (이 / 이름 :op1 "인천시"))
+-- VERBALIZED ------------------------------------
+(사 / 사고 :mod (화 / 화재-00))
+(서 / 서-01 :mod (경 / 경찰-00))
+(시 / 시장 :mod (어 / 어-00))
+(자 / 자 :ARG0-of (목 / 목격-01))
+(화 / 화재 :mod (시 / 시장-00))
+
+
+# ::id snt3.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 가운데 한 명은 18일 오전 1시 36분께 불이 번진 것을 보고 처음 119에 신고한 어시장 상인이다.
+# ::note
+-- FRAMES ----------------------------------------
+불 : VERBAL_NOUN
+	- blow		(불 / 불-01 :ARG1 wind)
+번지 : VERB
+	- spread		(번 / 번지-01 :ARG1 thing_spreading :ARG2 start_point :ARG3 end_point)
+보 : VERB
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+신고 : VERBAL_NOUN
+	- report		(신 / 신고-01 :ARG0 reporter :ARG1 thing_reported :ARG2 reported_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"119" [QT_PHONE]	->  :mod (p / phone-number-entity :value 119)
+"18일" [DT_DAY]	->  :time|duration (1 / 18일)	OR	:time (d / date-entity :day 18)	OR	:duration (t / temporal-quantity :quant 18 :unit (일 / 일))  
+"상인" [CV_OCCUPATION]	->  :mod (상 / 상인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상인))
+"오전 1시 36분" [TI_OTHERS]	->  :time|duration (오 / 오전1시36분)	OR	:time (d / date-entity :time 1:36)	OR	:duration (t / temporal-quantity :quant 36 :unit (분 / 분))  
+"한 명" [QT_MAN_COUNT]	->  :quant (한 / 한명)	OR	(c / concept* :quant 한 :unit|scale (명 / 명))
+-- VERBALIZED ------------------------------------
+(상 / 상인 :mod (시 / 시장-00))
+(시 / 시장 :mod (어 / 어-00))
+
+
+# ::id snt4.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 최초 목격자인 이 상인은 가건물 형태인 좌판 구역 뒤편의 건물 4층 횟집에서 영업을 마치고 가게 내부를 정리하다가 화재를 목격했다.
+# ::note
+-- FRAMES ----------------------------------------
+목격 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (목 / 목격자-00) ?
+	- witness		(목 / 목격-01 :ARG0 agent :ARG1 thing_witnessed)
+가건물 : DERIVED_NON-ENTRY -> (가 / 가건물-00) ?
+영업 : VERBAL_NOUN
+	- do_business		(영 / 영업-01 :ARG0 thing_doing_business)
+마치 : VERB
+	- finish		(마 / 마치-01 :ARG0 agent :ARG1 thing_finishing)
+정리 : VERBAL_NOUN
+	- arrange		(정 / 정리-01 :ARG0 agent :ARG1 thing_arranged)
+	- liquidate		(정 / 정리-02 :ARG0 agent :ARG1 thing_liquidated)
+목격 : VERBAL_NOUN
+	- witness		(목 / 목격-01 :ARG0 agent :ARG1 thing_witnessed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"4층" [QT_ORDER]	->  :ord (4 / 4층)	OR	:ord (o / ordinal-entity :value 4층)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"목격자" [CV_POSITION]	->  :mod (목 / 목격자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (목 / 목격자))
+"상인" [CV_OCCUPATION]	->  :mod (상 / 상인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상인))
+-- VERBALIZED ------------------------------------
+(구 / 구역 :mod (좌 / 좌판-00))
+(내 / 내부 :mod (가 / 가게-00))
+(뒤 / 뒤편 :mod (구 / 구역-00))
+(목 / 목격-01 :mod (최 / 최초-00))
+(자 / 자 :ARG0-of (목 / 목격-01))
+(형 / 형태 :mod (건 / 건물-00))
+(횟 / 횟집 :mod (층 / 층-00))
+
+
+# ::id snt5.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 횟집 상인은 경찰에서 "'펑' 하는 소리가 들려 바닷가 쪽으로 내려다보니 '가'구역 쪽 비닐 천막 안에서 불이 나 있었다"며 "처음에는 불이 작았는데 나중에 걷잡을 수 없이 커졌다"고 진술했다.
+# ::note
+-- FRAMES ----------------------------------------
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+들리 : REDUCED_VERB_DETECTED
+	- pick_up		(들 / 들-01 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- let_in		(들 / 들-02 :ARG0 agent :ARG1 thing_let_in :ARG2 goal)
+	- require		(들 / 들-03 :ARG1 requirer :ARG2 thing_required)
+	- grow_older		(들 / 들-04 :ARG1 person :ARG2 age)
+	- let_in-CV		(들 / 들-05 :ARG0 agent :ARG1 thing_let_in :ARG2 source)
+내려다보 : ** UNUSED_OR_NON-ENTRY **
+가 : VERBAL_NOUN
+	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
+	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
+	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
+	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
+	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
+	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
+안 : VERBAL_NOUN
+	- embrace		(안 / 안-01 :ARGA causer :ARG0 thing_embracing :ARG1 thing_embraced)
+불 : VERBAL_NOUN
+	- blow		(불 / 불-01 :ARG1 wind)
+나 : VERB
+	- happen		(나 / 나-01 :ARG1 thing_happening :ARG2 location)
+있 : ** UNUSED_OR_NON-ENTRY **
+불 : VERBAL_NOUN
+	- blow		(불 / 불-01 :ARG1 wind)
+작 : VERB
+	- small		(작 / 작-01 :ARG1 thing_being_small)
+걷잡 : REDUCED_VERB_DETECTED
+	- walk		(걷 / 걷-01 :ARG0 walker :ARG1 path :ARG2 start_point :ARG3 end_point)
+커지 : ** UNUSED_OR_NON-ENTRY **
+진술 : VERBAL_NOUN
+	- state		(진 / 진술-01 :ARG0 agent :ARG1 thing_stated)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+"상인" [CV_OCCUPATION]	->  :mod (상 / 상인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상인))
+-- VERBALIZED ------------------------------------
+(상 / 상인 :mod (횟 / 횟집-00))
+(안 / 안-01 :mod (천 / 천막-00))
+(천 / 천막 :mod (비 / 비닐-00))
+
+
+# ::id snt6.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 경찰이 확보한 나머지 목격자 2명은 어시장 내 양념 가게 운영자와 어시장 상인회 측이 고용한 야간 경비원이다.
+# ::note
+-- FRAMES ----------------------------------------
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+목격 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (목 / 목격자-00) ?
+	- witness		(목 / 목격-01 :ARG0 agent :ARG1 thing_witnessed)
+운영 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (운 / 운영자-00) ?
+	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
+상인회 : DERIVED_NON-ENTRY -> (상 / 상인회-00) ?
+고용 : VERBAL_NOUN
+	- hire		(고 / 고용-01 :ARG0 employer :ARG1 employee :ARG2 job)
+경비원 : DERIVED_NON-ENTRY -> (경 / 경비원-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2명" [QT_MAN_COUNT]	->  :quant (2 / 2명)	OR	(c / concept* :quant 2 :unit|scale (명 / 명))
+"경비원" [CV_OCCUPATION]	->  :mod (경 / 경비원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (경 / 경비원))
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+"목격자" [CV_POSITION]	->  :mod (목 / 목격자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (목 / 목격자))
+"야간" [TI_DURATION]	->  :time|duration (야 / 야간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"어시장" [LC_OTHERS]	->  (어 / 어시장)	OR	(l / location? :wiki "어시장" :name (이 / 이름 :op1 "어시장"))
+"어시장" [LC_OTHERS]	->  (어 / 어시장)	OR	(l / location? :wiki "어시장" :name (이 / 이름 :op1 "어시장"))
+"운영자" [CV_POSITION]	->  :mod (운 / 운영자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (운 / 운영자))
+-- VERBALIZED ------------------------------------
+(가 / 가게 :mod (양 / 양념-00))
+(경 / 경비 :mod (야 / 야간-00))
+(목 / 목격-01 :mod (나 / 나머지-00))
+(상 / 상인 :mod (시 / 시장-00))
+(시 / 시장 :mod (어 / 어-00))
+(시 / 시장 :mod (어 / 어-00))
+(운 / 운영-01 :mod (가 / 가게-00))
+(원 / 원 :mod (경 / 경비-00))
+(자 / 자 :ARG0-of (목 / 목격-01))
+(자 / 자 :ARG0-of (운 / 운영-01))
+(회 / 회 :mod (상 / 상인-00))
+
+
+# ::id snt7.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 경비원은 경찰에서 "화재 발생 시각 직전에 순찰했는데 특별한 이상 징후는 없었다"고 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+경비원 : DERIVED_NON-ENTRY -> (경 / 경비원-00) ?
+발생 : VERBAL_NOUN
+	- arise		(발 / 발생-01 :ARG0 causer :ARG1 thing_arising :ARG2 source)
+순찰 : VERBAL_NOUN
+	- patrol		(순 / 순찰-01 :ARG0 agent :ARG1 area)
+특별 : VERBAL_NOUN
+	- special		(특 / 특별-01 :ARG1 thing_being_special)
+이상 : VERBAL_NOUN
+	- strange		(이 / 이상-01 :ARG1 thing_being_strange)
+없 : ** UNUSED_OR_NON-ENTRY **
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"경비원" [CV_OCCUPATION]	->  :mod (경 / 경비원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (경 / 경비원))
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+-- VERBALIZED ------------------------------------
+(발 / 발생-01 :mod (화 / 화재-00))
+(시 / 시각-00 :mod (발 / 발생-01))
+(원 / 원 :mod (경 / 경비-00))
+(직 / 직전 :mod (시 / 시각-00))
+(징 / 징후-00 :mod (이 / 이상-01))
+
+
+# ::id snt8.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 경찰과 국립과학수사연구원 요원들은 전날 경찰이 폐쇄회로(CC)TV 영상으로 확인한 최초 발화점인 가건물 내 '가' 구역 한 좌판 인근 바닥에서 불에 녹아 끊어진 전선 여러 개를 수거해 분석하고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+요원들 : DERIVED_NON-ENTRY -> (요 / 요원들-00) ?
+날 : VERBAL_NOUN
+	- fly		(날 / 날-01 :ARG0 agent :ARG1 path :ARG2 start_point :ARG3 end_point)
+폐쇄 : VERBAL_NOUN
+	- close		(폐 / 폐쇄-01 :ARG0 agent :ARG1 thing_closing)
+확인 : VERBAL_NOUN
+	- confirm		(확 / 확인-01 :ARG0 confirmer :ARG1 thing_confirmed :ARG2 hearer)
+가건물 : DERIVED_NON-ENTRY -> (가 / 가건물-00) ?
+가 : VERBAL_NOUN
+	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
+	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
+	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
+	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
+	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
+	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
+불 : VERBAL_NOUN
+	- blow		(불 / 불-01 :ARG1 wind)
+녹 : VERB
+	- melt		(녹 / 녹-01 :ARG0 causer :ARG1 thing_melted)
+	- attract		(녹 / 녹-01 :ARG0 agent,_causer :ARG1 thing_attracted)
+끊어지 : ** UNUSED_OR_NON-ENTRY **
+수거 : VERBAL_NOUN
+	- take_away		(수 / 수거-01 :ARG0 taker :ARG1 thing_taken)
+분석 : VERBAL_NOUN
+	- analyze		(분 / 분석-01 :ARG0 agent :ARG1 thing_analyzed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"TV" [TMI_HW]	->  (T / TV)	OR	(p / product? :wiki "텔레비전" :name (이 / 이름 :op1 "TV"))
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+"국립과학수사연구원" [OGG_POLITICS]	->  (국 / 국립과학수사연구원)	OR	(g / government-organization :wiki "국립과학수사연구원" :name (이 / 이름 :op1 "국립과학수사연구원"))
+"요원" [CV_POSITION]	->  :mod (요 / 요원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (요 / 요원))
+"전날" [DT_DAY]	->  :time|duration (전 / 전날)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(경 / 경찰-00 :mod (날 / 날-01))
+(날 / 날-01 :mod (전 / 전-00))
+(들 / 들 :mod (요 / 요원-00))
+(바 / 바닥 :mod (인 / 인근-00))
+(발 / 발화점 :mod (최 / 최초-00))
+(인 / 인근 :mod (좌 / 좌판-00))
+(회 / 회로-00 :mod (폐 / 폐쇄-01))
+
+
+# ::id snt9.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 해당 전선은 좌판 영업에 필요한 수족관과 겨울철 전기장판 등 각종 전기용품을 사용하는 데 쓰인 것으로 경찰은 보고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+해당 : VERBAL_NOUN
+	- correspond_to		(해 / 해당-01 :ARG1 topic,_theme :ARG2 compared_with)
+영업 : VERBAL_NOUN
+	- do_business		(영 / 영업-01 :ARG0 thing_doing_business)
+필요 : VERBAL_NOUN
+	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
+수족관 : DERIVED_NON-ENTRY -> (수 / 수족관-00) ?
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+쓰이 : REDUCED_VERB_DETECTED
+	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
+	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
+보 : VERB
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"겨울철" [DT_SEASON]	->  :time|duration (겨 / 겨울철)	OR	:time (d / date-entity :season (겨 / 겨울))	OR	:duration 
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+-- VERBALIZED ------------------------------------
+(관 / 관 :mod (수 / 수족-00))
+(영 / 영업-01 :mod (좌 / 좌판-00))
+(용 / 용품 :mod (전 / 전기-00))
+(장 / 장판 :mod (전 / 전기-00))
+(전 / 전기 :mod (각 / 각종-00))
+(전 / 전기 :mod (철 / 철-00))
+(전 / 전선-00 :mod (해 / 해당-01))
+(철 / 철 :mod (겨 / 겨울-00))
+
+
+# ::id snt10.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 앞서 경찰은 전날 화재 현장 인근에 있는 관리사무소에서 어시장에 설치된 60여 대의 폐쇄회로(CC)TV 영상을 확보해 최초 발화점을 찾았다.
+# ::note
+-- FRAMES ----------------------------------------
+날 : VERBAL_NOUN
+	- fly		(날 / 날-01 :ARG0 agent :ARG1 path :ARG2 start_point :ARG3 end_point)
+있 : ** UNUSED_OR_NON-ENTRY **
+관리 : VERBAL_NOUN
+	- manage		(관 / 관리-01 :ARG0 manager :ARG1 thing_managed)
+사무소 : DERIVED_NON-ENTRY -> (사 / 사무소-00) ?
+설치 : VERBAL_NOUN
+	- build		(설 / 설치-01 :ARG0 agent :ARG1 thing_built :ARG2 location)
+폐쇄 : VERBAL_NOUN
+	- close		(폐 / 폐쇄-01 :ARG0 agent :ARG1 thing_closing)
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+찾 : VERB
+	- find		(찾 / 찾-01 :ARG0 finder :ARG1 thing_found)
+	- draw		(찾 / 찾-02 :ARG0 drawer :ARG1 thing_drawn :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"60여 대" [QT_COUNT]	->  :quant (6 / 60여대)	OR	(c / concept* :quant 60여 :unit|scale (대 / 대))
+"TV" [TMI_HW]	->  (T / TV)	OR	(p / product? :wiki "텔레비전" :name (이 / 이름 :op1 "TV"))
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+"전날" [DT_DAY]	->  :time|duration (전 / 전날)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(날 / 날-01 :mod (전 / 전-00))
+(발 / 발화점 :mod (최 / 최초-00))
+(사 / 사무-00 :mod (관 / 관리-01))
+(소 / 소 :mod (사 / 사무-00))
+(시 / 시장 :mod (어 / 어-00))
+(인 / 인근 :mod (현 / 현장-00))
+(현 / 현장 :mod (화 / 화재-00))
+(화 / 화재-00 :mod (날 / 날-01))
+(회 / 회로-00 :mod (폐 / 폐쇄-01))
+
+
+# ::id snt11.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 경찰이 확보한 CCTV 영상에는 전체 4개 구역(가∼라) 332개 좌판 중 30% 이상이 몰려있는 '가' 구역 좌판 한 곳에서 가장 먼저 연기가 피어오른 장면이 담겼다.
+# ::note
+-- FRAMES ----------------------------------------
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+가 : VERBAL_NOUN
+	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
+	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
+	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
+	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
+	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
+	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
+이상 : VERBAL_NOUN
+	- strange		(이 / 이상-01 :ARG1 thing_being_strange)
+몰리 : REDUCED_VERB_DETECTED
+	- drive		(몰 / 몰-01 :ARG0 agent :ARG1 thing_driven :ARG2 direction)
+	- gather		(몰 / 몰-02 :ARG0 agent :ARG1 entity_gathered :ARG2 gathered_into)
+가 : VERBAL_NOUN
+	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
+	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
+	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
+	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
+	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
+	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
+연기 : VERBAL_NOUN
+	- postpone		(연 / 연기-01 :ARG0 agent :ARG1 event_delayed)
+피어오르 : ** UNUSED_OR_NON-ENTRY **
+담기 : REDUCED_VERB_DETECTED
+	- include		(담 / 담-01 :ARG0 agent :ARG1 thing_included :ARG2 container)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"30% 이상" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 30% 이상)
+"332개" [QT_COUNT]	->  :quant (3 / 332개)	OR	(c / concept* :quant 332 :unit|scale (개 / 개))
+"4개" [QT_COUNT]	->  :quant (4 / 4개)	OR	(c / concept* :quant 4 :unit|scale (개 / 개))
+"CCTV" [TMI_HW]	->  (C / CCTV)	OR	(p / product? :wiki "CCTV?" :name (이 / 이름 :op1 "CCTV"))
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+"한 곳" [QT_COUNT]	->  :quant (한 / 한곳)	OR	(c / concept* :quant 한 :unit|scale (곳 / 곳))
+-- VERBALIZED ------------------------------------
+(좌 / 좌판 :mod (구 / 구역-00))
+
+
+# ::id snt12.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 경찰과 국과수 등은 이날 오전부터 화재 현장에서 2차 합동 감식을 벌인다.
+# ::note
+-- FRAMES ----------------------------------------
+벌이 : VERB
+	- perform		(벌 / 벌이-01 :ARG0 performer :ARG1 thing_performed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2차" [QT_ORDER]	->  :ord (2 / 2차)	OR	:ord (o / ordinal-entity :value 2차)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+"국과수" [OGG_POLITICS]	->  (국 / 국과수)	OR	(g / government-organization :wiki "국립과학수사연구원" :name (이 / 이름 :op1 "국과수"))
+"오전부터" [TI_OTHERS]	->  :time|duration (오 / 오전부터)	OR	:time (d / date-entity)	OR	:duration 
+"이날" [DT_DAY]	->  :time|duration (이 / 이날)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(감 / 감식 :mod (합 / 합동-00))
+(오 / 오전 :mod (이 / 이날-00))
+(현 / 현장 :mod (화 / 화재-00))
+
+
+# ::id snt13.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 경찰은 어시장 상인들이 사고 원인으로 지목한 '가' 구역 내 변압기에 대해서도 정밀 감식을 벌일 계획이다.
+# ::note
+-- FRAMES ----------------------------------------
+상인들 : DERIVED_NON-ENTRY -> (상 / 상인들-00) ?
+지목 : VERBAL_NOUN
+	- select		(지 / 지목-01 :ARG0 agent :ARG1 thing_selected :ARG2 select_as)
+가 : VERBAL_NOUN
+	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
+	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
+	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
+	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
+	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
+	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
+변압기 : DERIVED_NON-ENTRY -> (변 / 변압기-00) ?
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+벌이 : VERB
+	- perform		(벌 / 벌이-01 :ARG0 performer :ARG1 thing_performed)
+계획 : VERBAL_NOUN
+	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+"변압기" [TMI_HW]	->  (변 / 변압기)	OR	(p / product? :wiki "변압기" :name (이 / 이름 :op1 "변압기"))
+"상인" [CV_OCCUPATION]	->  :mod (상 / 상인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상인))
+-- VERBALIZED ------------------------------------
+(감 / 감식 :mod (정 / 정밀-00))
+(기 / 기 :mod (변 / 변압-00))
+(들 / 들 :mod (상 / 상인-00))
+(상 / 상인 :mod (시 / 시장-00))
+(시 / 시장 :mod (어 / 어-00))
+(원 / 원인 :mod (사 / 사고-00))
+
+
+# ::id snt14.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 또 조만간 한국전력공사 관계자들을 불러 어시장 내 변압기 용량 등을 확인할 방침이다.
+# ::note
+-- FRAMES ----------------------------------------
+관계 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관계자-00) ?
+	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
+	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+부르 : VERB
+	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
+	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
+변압기 : DERIVED_NON-ENTRY -> (변 / 변압기-00) ?
+확인 : VERBAL_NOUN
+	- confirm		(확 / 확인-01 :ARG0 confirmer :ARG1 thing_confirmed :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"관계자" [CV_POSITION]	->  :mod (관 / 관계자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (관 / 관계자))
+"변압기" [TMI_HW]	->  (변 / 변압기)	OR	(p / product? :wiki "변압기" :name (이 / 이름 :op1 "변압기"))
+"한국전력공사" [OGG_ECONOMY]	->  (한 / 한국전력공사)	OR	(c / company|organization :wiki "한국전력공사" :name (이 / 이름 :op1 "한국전력공사"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (변 / 변압-00))
+(시 / 시장 :mod (어 / 어-00))
+(자 / 자 :ARG0-of (관 / 관계-01))
+
+
+# ::id snt15.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 경찰 관계자는 "목격자 3명의 진술과 최초 발화점인 '가' 구역 좌판 바닥에서 피복이 벗겨진 전선 여러 가닥을 확보했다"며 "CCTV 영상에서 화재 발생 시각에 사람이 드나든 흔적을 전혀 찾을 수 없어 전기적인 요인에 의한 자연 발화 가능성이 크다"고 했다.
+# ::note
+-- FRAMES ----------------------------------------
+관계 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관계자-00) ?
+	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
+	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+목격 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (목 / 목격자-00) ?
+	- witness		(목 / 목격-01 :ARG0 agent :ARG1 thing_witnessed)
+진술 : VERBAL_NOUN
+	- state		(진 / 진술-01 :ARG0 agent :ARG1 thing_stated)
+가 : VERBAL_NOUN
+	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
+	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
+	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
+	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
+	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
+	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
+	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
+벗겨지 : ** UNUSED_OR_NON-ENTRY **
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+발생 : VERBAL_NOUN
+	- arise		(발 / 발생-01 :ARG0 causer :ARG1 thing_arising :ARG2 source)
+드나들 : ** UNUSED_OR_NON-ENTRY **
+찾 : VERB
+	- find		(찾 / 찾-01 :ARG0 finder :ARG1 thing_found)
+	- draw		(찾 / 찾-02 :ARG0 drawer :ARG1 thing_drawn :ARG2 source)
+없 : ** UNUSED_OR_NON-ENTRY **
+전기적 : DERIVED_NON-ENTRY -> (전 / 전기적-00) ?
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+자연 : VERBAL_NOUN
+	- natural		(자 / 자연-01 :ARG1 thing_natural)
+가능 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (가 / 가능성-00) ?
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"3명" [QT_MAN_COUNT]	->  :quant (3 / 3명)	OR	(c / concept* :quant 3 :unit|scale (명 / 명))
+"CCTV" [TMI_HW]	->  (C / CCTV)	OR	(p / product? :wiki "CCTV?" :name (이 / 이름 :op1 "CCTV"))
+"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
+"관계자" [CV_POSITION]	->  :mod (관 / 관계자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (관 / 관계자))
+"목격자" [CV_POSITION]	->  :mod (목 / 목격자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (목 / 목격자))
+-- VERBALIZED ------------------------------------
+(가 / 가능-01 :mod (발 / 발화-00))
+(관 / 관계-01 :mod (경 / 경찰-00))
+(바 / 바닥 :mod (좌 / 좌판-00))
+(발 / 발생-01 :mod (화 / 화재-00))
+(발 / 발화-00 :mod (자 / 자연-01))
+(발 / 발화점 :mod (최 / 최초-00))
+(성 / 성 :ARG0-of (가 / 가능-01))
+(시 / 시각-00 :mod (발 / 발생-01))
+(자 / 자 :ARG0-of (관 / 관계-01))
+(자 / 자 :ARG0-of (목 / 목격-01))
+(적 / 적 :mod (전 / 전기-00))
+(좌 / 좌판 :mod (구 / 구역-00))
+
+
+# ::id snt16.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 앞서 전날 오전 1시 36분께 소래포구 어시장에서 불이 나 2시간 30분 만에 진화됐다.
+# ::note
+-- FRAMES ----------------------------------------
+날 : VERBAL_NOUN
+	- fly		(날 / 날-01 :ARG0 agent :ARG1 path :ARG2 start_point :ARG3 end_point)
+불 : VERBAL_NOUN
+	- blow		(불 / 불-01 :ARG1 wind)
+나 : VERB
+	- happen		(나 / 나-01 :ARG1 thing_happening :ARG2 location)
+진화되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2시간 30분" [TI_DURATION]	->  :time|duration (2 / 2시간30분)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :time 2:30))	OR :duration (t / temporal-quantity :quant 2 :unit (시 / 시간))  (t / temporal-quantity :quant 30 :unit (분 / 분))  
+"소래포구" [LCP_COUNTY]	->  (소 / 소래포구)	OR	(c / county :wiki "소래포구항" :name (이 / 이름 :op1 "소래포구"))
+"어시장" [LC_OTHERS]	->  (어 / 어시장)	OR	(l / location? :wiki "어시장" :name (이 / 이름 :op1 "어시장"))
+"오전 1시 36분" [TI_OTHERS]	->  :time|duration (오 / 오전1시36분)	OR	:time (d / date-entity :time 1:36)	OR	:duration (t / temporal-quantity :quant 36 :unit (분 / 분))  
+"전날" [DT_DAY]	->  :time|duration (전 / 전날)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(날 / 날-01 :mod (전 / 전-00))
+(시 / 시장 :mod (어 / 어-00))
+(오 / 오전-00 :mod (날 / 날-01))
+
+
+# ::id snt17.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 새벽 시간대에 불이 나 상인 등의 인명피해는 없었지만, 소래포구 어시장 내 좌판 220여 개와 좌판 인근 횟집 등 점포 20여 곳이 불에 탔다.
+# ::note
+-- FRAMES ----------------------------------------
+시간대 : DERIVED_NON-ENTRY -> (시 / 시간대-00) ?
+불 : VERBAL_NOUN
+	- blow		(불 / 불-01 :ARG1 wind)
+나 : VERB
+	- happen		(나 / 나-01 :ARG1 thing_happening :ARG2 location)
+없 : ** UNUSED_OR_NON-ENTRY **
+불 : VERBAL_NOUN
+	- blow		(불 / 불-01 :ARG1 wind)
+타 : VERB
+	- ride		(타 / 타-01 :ARGA causer :ARG0 agent :ARG1 vehicle)
+	- take		(타 / 타-02 :ARG1 taker :ARG2 thing_taken)
+	- burn		(타 / 타-03 :ARG1 thing_burning :ARG2 fire)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"20여 곳" [QT_COUNT]	->  :quant (2 / 20여곳)	OR	(c / concept* :quant 20여 :unit|scale (곳 / 곳))
+"220여 개" [QT_COUNT]	->  :quant (2 / 220여개)	OR	(c / concept* :quant 220여 :unit|scale (개 / 개))
+"상인" [CV_OCCUPATION]	->  :mod (상 / 상인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상인))
+"새벽" [TI_DURATION]	->  :time|duration (새 / 새벽)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"소래포구" [LCP_COUNTY]	->  (소 / 소래포구)	OR	(c / county :wiki "소래포구항" :name (이 / 이름 :op1 "소래포구"))
+"어시장" [LC_OTHERS]	->  (어 / 어시장)	OR	(l / location? :wiki "어시장" :name (이 / 이름 :op1 "어시장"))
+-- VERBALIZED ------------------------------------
+(대 / 대 :mod (시 / 시간-00))
+(시 / 시간 :mod (새 / 새벽-00))
+(시 / 시장 :mod (어 / 어-00))
+(인 / 인근 :mod (좌 / 좌판-00))
+(피 / 피해 :mod (인 / 인명-00))
+(횟 / 횟집 :mod (인 / 인근-00))
+
+
+# ::id snt18.E2017.NEWS.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 소방당국은 현재까지 파악된 재산피해 추정액이 6억5천만원이라고 밝혔다.
+# ::note
+-- FRAMES ----------------------------------------
+파악 : VERBAL_NOUN
+	- grasp		(파 / 파악-01 :ARG0 grasper :ARG1 thing_grasped)
+추정 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (추 / 추정액-00) ?
+	- estimate		(추 / 추정-01 :ARG0 agent :ARG thing_estimated)
+밝히 : VERB
+	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
+	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"6억5천만원" [QT_PRICE]	->  :quant (6 / 6억5천만원)	OR	(m / monetary-quantity :quant 6 :unit|scale (억 / 억5천만원))
+"소방당국" [OGG_POLITICS]	->  (소 / 소방당국)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "소방당국"))
+-- VERBALIZED ------------------------------------
+(당 / 당국 :mod (소 / 소방-00))
+(액 / 액 :ARG0-of (추 / 추정-01))
+(추 / 추정-01 :mod (피 / 피해-00))
+(피 / 피해 :mod (재 / 재산-00))
+
+
+
+Process finished with exit code 0
