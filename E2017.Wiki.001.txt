@@ -1,78 +1,45 @@
-/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle ::preferred True
 # ::snt 케냐
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
--- VERBALIZED ------------------------------------
+(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
 
-
-# ::id snt1.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle ::preferred True
 # ::snt 케냐 공화국 또는 케냐(Kenya)는 동아프리카의 공화국이다.
 # ::note
--- FRAMES ----------------------------------------
-공화국 : DERIVED_NON-ENTRY -> (공 / 공화국-00) ?
-공화국 : DERIVED_NON-ENTRY -> (공 / 공화국-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"Kenya" [LCP_COUNTRY]	->  (K / Kenya)	OR	(c / country :wiki - :name (이 / 이름 :op1 "Kenya"))
-"동아프리카" [LCG_CONTINENT]	->  (동 / 동아프리카)	OR	(c / continent :wiki "동아프리카" :name (이 / 이름 :op1 "동아프리카"))
-"케냐 공화국" [LCP_COUNTRY]	->  (케 / 케냐공화국)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐" :op2 "공화국"))
-"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
--- VERBALIZED ------------------------------------
-(국 / 국 :mod (공 / 공화-00))
-(국 / 국 :mod (공 / 공화-00))
+(공 / 공화국
+	:domain (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+	:location (c2 / continent :wiki "동아프리카" :name (이 / 이름 :op1 "동아프리카")))
 
-
-# ::id snt2.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle ::preferred True
 # ::snt 인도양에 면해 있으며 북동쪽으로 소말리아, 북쪽으로 에티오피아와 남수단, 서쪽으로 우간다, 남쪽으로 탄자니아와 국경을 맞닿고 있다.
-# ::note
--- FRAMES ----------------------------------------
-면하 : VERB
-	- escape		(면 / 면하-01 :ARG0 entity_escaping :ARG1 thing_escaped)
-	- face		(면 / 면하-02 :ARG1 thing_facing :ARG2 thing_faced)
-서 : VERBAL_NOUN
-	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
-	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
-	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
-남 : VERBAL_NOUN
-	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
-맞닿 : REDUCED_VERB_DETECTED
-	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
-	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
-	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
-	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"남수단" [LCP_COUNTRY]	->  (남 / 남수단)	OR	(c / country :wiki "남수단" :name (이 / 이름 :op1 "남수단"))
-"남쪽" [TM_DIRECTION]	->  (남 / 남쪽)	OR	(: / :direction :wiki "남쪽" :name (이 / 이름 :op1 "남쪽"))
-"북동쪽" [TM_DIRECTION]	->  (북 / 북동쪽)	OR	(: / :direction :wiki "북동쪽" :name (이 / 이름 :op1 "북동쪽"))
-"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
-"서쪽" [TM_DIRECTION]	->  (서 / 서쪽)	OR	(: / :direction :wiki "서쪽" :name (이 / 이름 :op1 "서쪽"))
-"소말리아" [LCP_COUNTRY]	->  (소 / 소말리아)	OR	(c / country :wiki "소말리아" :name (이 / 이름 :op1 "소말리아"))
-"에티오피아" [LCP_COUNTRY]	->  (에 / 에티오피아)	OR	(c / country :wiki "에티오피아" :name (이 / 이름 :op1 "에티오피아"))
-"우간다" [LCP_COUNTRY]	->  (우 / 우간다)	OR	(c / country :wiki "우간다" :name (이 / 이름 :op1 "우간다"))
-"인도양" [LCG_OCEAN]	->  (인 / 인도양)	OR	(o / ocean :wiki "인도양" :name (이 / 이름 :op1 "인도양"))
-"탄자니아" [LCP_COUNTRY]	->  (탄 / 탄자니아)	OR	(c / country :wiki "탄자니아" :name (이 / 이름 :op1 "탄자니아"))
--- VERBALIZED ------------------------------------
-(동 / 동 :mod (북 / 북-00))
+# ::note relative-position 적용 여부
+(a / and
+	:op1 (면 / 면하-02
+		:ARG2 (o / ocean :wiki "인도양" :name (이 / 이름 :op1 "인도양")))
+	:op2 (맞 / 맞닿-00
+		:ARG1 (국 / 국경)
+		:ARG2 (a2 / and
+			:op1 (c / country :wiki "소말리아" :name (이2 / 이름 :op1 "소말리아")
+				:direction (북 / 북동쪽))
+			:op2 (a3 / and
+				:op1 (c2 / country :wiki "에티오피아" :name (이3 / 이름 :op1 "에티오피아"))
+				:op2 (c3 / country :wiki "남수단" :name (이4 / 이름 :op1 "남수단"))
+				:direction (북2 / 북쪽))
+			:op3 (c4 / country :wiki "우간다" :name (이5 / 이름 :op1 "우간다")
+				:direction (서 / 서쪽))
+			:op4 (c5 / country :wiki "탄자니아" :name (이6 / 이름 :op1 "탄자니아")
+				:direction (남 / 남쪽)))))
 
-
-# ::id snt3.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle ::preferred True
 # ::snt 수도는 나이로비이며 공용어는 영어와 스와힐리어이다.
 # ::note
--- FRAMES ----------------------------------------
-공용어 : DERIVED_NON-ENTRY -> (공 / 공용어-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"나이로비" [LCP_CAPITALCITY]	->  (나 / 나이로비)	OR	(c / city :wiki "나이로비" :name (이 / 이름 :op1 "나이로비"))
-"스와힐리어" [CV_LANGUAGE]	->  (스 / 스와힐리어)	OR	(l / language :wiki "스와힐리어" :name (이 / 이름 :op1 "스와힐리어"))
-"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
--- VERBALIZED ------------------------------------
-(어 / 어 :mod (공 / 공용-00))
-
+(a / and
+	:op1 (c / city :wiki "나이로비" :name (이 / 이름 :op1 "나이로비")
+		:domain (수 / 수도))
+	:op2 (a2 / and
+		:domain (공 / 공용어)
+		:op1 (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
+		:op2 (l2 / language :wiki "스와힐리어" :name (이3 / 이름 :op1 "스와힐리어"))))
 
 # ::id snt4.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 케냐의 주요 종족은 키쿠유족, 루히아족, 루오족, 칼렌진족, 캄바족, 키시족,메루족 등 여러 민족으로 구성되어 있어 각각 다른 언어를 사용한다.
