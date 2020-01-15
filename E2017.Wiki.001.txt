@@ -41,72 +41,59 @@
 		:op1 (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
 		:op2 (l2 / language :wiki "스와힐리어" :name (이3 / 이름 :op1 "스와힐리어"))))
 
-# ::id snt4.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
 # ::snt 케냐의 주요 종족은 키쿠유족, 루히아족, 루오족, 칼렌진족, 캄바족, 키시족,메루족 등 여러 민족으로 구성되어 있어 각각 다른 언어를 사용한다.
-# ::note
--- FRAMES ----------------------------------------
-주요 : VERBAL_NOUN
-	- principal		(주 / 주요-01 :ARG1 thing_being_principal)
-구성 : VERBAL_NOUN
-	- compose		(구 / 구성-01 :ARG0 agent :ARG1 thing_composed :ARG2 composed_of)
-사용 : VERBAL_NOUN
-	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"루오족" [CV_TRIBE]	->  (루 / 루오족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "루오족"))
-"루히아족" [CV_TRIBE]	->  (루 / 루히아족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "루히아족"))
-"메루족" [CV_TRIBE]	->  (메 / 메루족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "메루족"))
-"칼렌진족" [CV_TRIBE]	->  (칼 / 칼렌진족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "칼렌진족"))
-"캄바족" [CV_TRIBE]	->  (캄 / 캄바족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "캄바족"))
-"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
-"키시족" [CV_TRIBE]	->  (키 / 키시족)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "키시족"))
-"키쿠유족" [CV_TRIBE]	->  (키 / 키쿠유족)	OR	(e / ethnic-group|nationality :wiki "키쿠유족" :name (이 / 이름 :op1 "키쿠유족"))
--- VERBALIZED ------------------------------------
-(종 / 종족-00 :mod (주 / 주요-01))
+# ::note 접속과 내포 구별이 불분명, include-91을 사용하지 않음
+(a / and
+	:op1 (구 / 구성-01
+		:ARG1 (종 / 종족
+			:mod (주 / 주요)
+			:poss (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐")))
+		:ARG2 (민 / 민족
+			:quant (여 / 여러)
+			:example (등 / 등
+				:op1 (e / ethnic-group :wiki "키쿠유족" :name (이2 / 이름 :op1 "키쿠유족"))
+				:op2 (e2 / ethnic-group :wiki - :name (이3 / 이름 :op1 "루히아족"))
+				:op3 (e3 / ethnic-group :wiki - :name (이4 / 이름 :op1 "루오족"))
+				:op4 (e4 / ethnic-group :wiki - :name (이5 / 이름 :op1 "칼렌진족"))
+				:op5 (e5 / ethnic-group :wiki - :name (이6 / 이름 :op1 "캄바족"))
+				:op6 (e6 / ethnic-group :wiki - :name (이7 / 이름 :op1 "키시족"))
+				:op7 (e7 / ethnic-group :wiki - :name (이8 / 이름 :op1 "메루족")))))
+	:op2 (사 / 사용-01
+		:ARG0 민
+		:ARG1 (언 / 언어
+			:ARG1-of (다 / 다르-01
+				:mod (각 / 각각)))))
 
-
-# ::id snt5.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
 # ::snt 백인, 인도인, 아랍인 등 비아프리카계 민족은 전체 인구의 1% 정도를 차지한다.
-# ::note
--- FRAMES ----------------------------------------
-차지 : VERBAL_NOUN
-	- occupy		(차 / 차지-01 :ARG0 agent :ARG1 thing_occupied)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 1%)
-"백인" [CV_TRIBE]	->  (백 / 백인)	OR	(e / ethnic-group|nationality :wiki "백인" :name (이 / 이름 :op1 "백인"))
-"비아프리카계" [CV_TRIBE]	->  (비 / 비아프리카계)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "비아프리카계"))
-"아랍인" [CV_TRIBE]	->  (아 / 아랍인)	OR	(e / ethnic-group|nationality :wiki "아랍인" :name (이 / 이름 :op1 "아랍인"))
-"인도인" [CV_TRIBE]	->  (인 / 인도인)	OR	(e / ethnic-group|nationality :wiki "인도인" :name (이 / 이름 :op1 "인도인"))
--- VERBALIZED ------------------------------------
-(인 / 인구 :mod (전 / 전체-00))
+# ::note 차지-01을 사용하지 않고 include-91을 사용하는 것에 대해 검토 필요. be 동사와 같이 용언 프레임을 직접 활용할 수 없는 경우에만 용도를 한정? 비아프리카계
+(i / include-91
+	:ARG1 (민 / 민족
+		:mod (e / ethnic-group :wiki - :name (이 / 이름 :op1 "아프리카계")
+			:polarity -)
+		:example (등 / 등
+			:op1 (e2 / ethnic-group :wiki "백인" :name (이2 / 이름 :op1 "백인"))
+			:op2 (e3 / ethnic-group :wiki "인도인" :name (이3 / 이름 :op1 "인도인"))
+			:op3 (e4 / ethnic-group :wiki "아랍인" :name (이4 / 이름 :op1 "아랍인"))))
+	:ARG2 (인 / 인구
+		:quant (전 / 전체))
+	:ARG3 (정 / 정도
+		:quant (p / percentage-entity :value 1%)))
 
-
-# ::id snt6.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
 # ::snt 동아프리카에서 발견된 화석에 따르면 조상이 2백만 년 전 이 지역에서 살았다고 한다.
-# ::note
--- FRAMES ----------------------------------------
-발견 : VERBAL_NOUN
-	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
-따르 : VERB
-	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
-	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
-살 : VERB
-	- reside		(살 / 살-01 :ARG0 entity_residing :ARG2 location)
-	- be_alive		(살 / 살-02 :ARG0 agent :ARG1 entity_being_alive)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2백만 년 전" [DT_OTHERS]	->  :time|duration (2 / 2백만년전)	OR	:time (d / date-entity)	OR	:duration 
-"동아프리카" [LCG_CONTINENT]	->  (동 / 동아프리카)	OR	(c / continent :wiki "동아프리카" :name (이 / 이름 :op1 "동아프리카"))
--- VERBALIZED ------------------------------------
-
+# ::note 따르-02
+(살 / 살-02
+	:ARG1 (조 / 조상)
+	:location (지 / 지역
+		:mod (이 / 이))
+	:time (전 / 전
+		:op1 (t / temporal-quantity :quant 2000000 :unit (년 / 년)))
+	:ARG1-of (따 / 따르-02
+		:ARG2 (화 / 화석
+			:ARG1-of (발 / 발견-01
+				:location (c / continent :wiki "동아프리카" :name (이2 / 이름 :op1 "동아프리카"))))))
 
 # ::id snt7.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 투르카나 호 근처에서의 최근 발굴에 따르면 호모 하빌리스(Homo habilis), 호모 에렉투스(Homo erectus)와 같은 호미니드인(hominid)이 260만 년 전 이 나라 땅에 있었다.
@@ -165,39 +152,29 @@
 (영 / 영토 :mod (해 / 해안-00))
 
 
-# ::id snt9.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
 # ::snt 그 후 1888년 영국 동아프리카 회사가 들어왔다.
 # ::note
--- FRAMES ----------------------------------------
-들어오 : VERB
-	- come_in		(들 / 들어오-01 :ARG0 entity_coming_in :ARG2 start_point :ARG3 end_point)
-	- flood_in-CV		(들 / 들어오-02 :ARG1 thing_flooding_in :ARG2 start_point :ARG3 end_point)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1888년" [DT_YEAR]	->  :time|duration (1 / 1888년)	OR	:time (d / date-entity :year 1888)	OR	:duration (t / temporal-quantity :quant 1888 :unit (년 / 년))  
-"영국 동아프리카 회사" [OGG_ECONOMY]	->  (영 / 영국동아프리카회사)	OR	(c / company|organization :wiki - :name (이 / 이름 :op1 "영국" :op2 "동아프리카" :op3 "회사"))
--- VERBALIZED ------------------------------------
+(들 / 들어오-01
+	:ARG0 (c / company :wiki - :name (이 / 이름 :op1 "영국" :op2 "동아프리카" :op3 "회사"))
+	:time (후 / 후
+		:mod (그 / 그))
+	:time (d / date-entity :year 1888))
 
-
-# ::id snt10.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
 # ::snt 독일이 해안 영토를 1890년에 영국에게 넘겨줘 두 열강 사이의 분쟁도 적지 않았다.
-# ::note
--- FRAMES ----------------------------------------
-넘겨주 : VERB
-	- hand_over		(넘 / 넘겨주-01 :ARG0 giver :ARG1 thing_given :ARG2 entity_given_to)
-적 : VERB
-	- write_down		(적 / 적-01 :ARG0 agent :ARG1 thing_written :ARG2 where_written)
-	- little		(적 / 적-02 :ARG1 thing_being_little)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1890년" [DT_YEAR]	->  :time|duration (1 / 1890년)	OR	:time (d / date-entity :year 1890)	OR	:duration (t / temporal-quantity :quant 1890 :unit (년 / 년))  
-"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
-"두 열강" [QT_COUNT]	->  :quant (두 / 두열강)	OR	(c / concept* :quant 두 :unit|scale (열 / 열강))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
--- VERBALIZED ------------------------------------
-(사 / 사이 :mod (열 / 열강-00))
-(영 / 영토 :mod (해 / 해안-00))
-
+# ::note 두 열강이 분쟁하다, ~도 적지 않았다
+(적 / 적-02
+	:polarity -
+	:ARG1 (분 / 분쟁-00
+		:mod (사 / 사이
+			:op1 (열 / 열강 :quant 2)))
+	:cause (넘 / 넘겨주-01
+		:ARG0 (c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+		:ARG1 (영 / 영토
+			:location (해 / 해안))
+		:ARG2 (c2 / country :wiki "영국" :name (이2 / 이름 :op1 "영국"))
+		:time (d / date-entity :year 1890)))
 
 # ::id snt11.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 1952년 10월부터 1959년 12월까지 케냐는 영국의 지배에 대한 반란(마우마우 반란)으로 비상 사태하에 있었다.
@@ -220,24 +197,16 @@
 (하 / 하 :mod (사 / 사태-00))
 
 
-# ::id snt12.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
 # ::snt 영국은 단계적으로 케냐의 독립을 허용할 수밖에 없었다.
-# ::note
--- FRAMES ----------------------------------------
-단계적 : DERIVED_NON-ENTRY -> (단 / 단계적-00) ?
-독립 : VERBAL_NOUN
-	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
-	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
-허용 : VERBAL_NOUN
-	- permit		(허 / 허용-01 :ARG0 agent :ARG1 action_permitted :ARG2 permitted_to)
-없 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
--- VERBALIZED ------------------------------------
-(적 / 적 :mod (단 / 단계-00))
-
+# ::note 적 파생
+(o / obligate-01
+	:ARG2 (허 / 허용-01
+		:ARG0 (c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+		:ARG1 (독 / 독립-01
+			:ARG0 (c2 / country :wiki "케냐" :name (이2 / 이름 :op1 "케냐"))
+			:ARG1 c)
+		:manner (단 / 단계적)))
 
 # ::id snt13.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 그리하여 1957년 처음으로 아프리카인들이 피선거권을 가진 입법 회의 직접 선거를 치렀다.
