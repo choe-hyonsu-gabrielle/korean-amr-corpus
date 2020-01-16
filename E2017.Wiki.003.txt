@@ -31,21 +31,13 @@ string index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt2.E2017.Wiki.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.003 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 정수론에서 매우 중요한 역할을 담당한다.
 # ::note
--- FRAMES ----------------------------------------
-정수론 : DERIVED_NON-ENTRY -> (정 / 정수론-00) ?
-중요 : VERBAL_NOUN
-	- important		(중 / 중요-01 :ARG1 thing_being_important :ARG2 important_to)
-담당 : VERBAL_NOUN
-	- be_in_charge_of		(담 / 담당-01 :ARG0 agent :ARG1 thing_charged)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"정수론" [TR_SCIENCE]	->  (정 / 정수론)	OR	(t / theory* :wiki "정수론" :name (이 / 이름 :op1 "정수론"))
--- VERBALIZED ------------------------------------
-(론 / 론 :mod (정 / 정수-00))
-
+(담 / 담당-01
+	:ARG1 (역 / 역할
+		:ARG1-of (중 / 중요-01
+			:ARG2 (정 / 정수론))))
 
 # ::id snt3.E2017.Wiki.003 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 현재에 와서는 암호 분야에서의 사용으로 그 중요성이 부각되고 있다.

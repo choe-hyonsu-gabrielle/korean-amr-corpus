@@ -95,62 +95,45 @@
 			:ARG1-of (발 / 발견-01
 				:location (c / continent :wiki "동아프리카" :name (이2 / 이름 :op1 "동아프리카"))))))
 
-# ::id snt7.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 투르카나 호 근처에서의 최근 발굴에 따르면 호모 하빌리스(Homo habilis), 호모 에렉투스(Homo erectus)와 같은 호미니드인(hominid)이 260만 년 전 이 나라 땅에 있었다.
 # ::note
--- FRAMES ----------------------------------------
-발굴 : VERBAL_NOUN
-	- unearth		(발 / 발굴-01 :ARG0 agent :ARG1 thing_unearthed)
-따르 : VERB
-	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
-	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
-같 : VERB
-	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"260만 년 전" [DT_OTHERS]	->  :time|duration (2 / 260만년전)	OR	:time (d / date-entity)	OR	:duration 
-"Homo erectus" [CV_TRIBE]	->  (H / Homoerectus)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "Homo" :op2 "erectus"))
-"Homo habilis" [CV_TRIBE]	->  (H / Homohabilis)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "Homo" :op2 "habilis"))
-"hominid" [CV_TRIBE]	->  (h / hominid)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "hominid"))
-"투르카나 호" [LCG_RIVER]	->  (투 / 투르카나호)	OR	(r / river :wiki "투르카나호" :name (이 / 이름 :op1 "투르카나" :op2 "호"))
-"호모 에렉투스" [CV_TRIBE]	->  (호 / 호모에렉투스)	OR	(e / ethnic-group|nationality :wiki "호모_에렉투스" :name (이 / 이름 :op1 "호모" :op2 "에렉투스"))
-"호모 하빌리스" [CV_TRIBE]	->  (호 / 호모하빌리스)	OR	(e / ethnic-group|nationality :wiki "호모_하빌리스" :name (이 / 이름 :op1 "호모" :op2 "하빌리스"))
-"호미니드인" [CV_TRIBE]	->  (호 / 호미니드인)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "호미니드인"))
--- VERBALIZED ------------------------------------
-(근 / 근처 :mod (호 / 호-00))
-(땅 / 땅 :mod (나 / 나라-00))
-(발 / 발굴-01 :mod (최 / 최근-00))
+(e / ethnic-group :wiki - :name (이 / 이름 :op1 "호미니드인")
+	:ARG1-of (따 / 따르-02
+		:ARG2 (발 / 발굴-01
+			:time (최 / 최근)
+			:location (근 / 근처
+				:op1 (l / lake :wiki "투르카나호" :name (이2 / 이름 :op1 "투르카나" :op2 "호")))))
+	:ARG1-of (같 / 같-01
+		:ARG2 (a / and
+			:op1 (호 / 호모-하빌리스)
+			:op2 (호2 / 호모-에렉투스)))
+	:location (땅 / 땅
+		:location (나 / 나라
+			:mod (이3 / 이)))
+	:time (전 / 전
+		:op1 (t / temporal-quantity :quant 2600000 :unit (년 / 년))))
 
-
-# ::id snt8.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 케냐의 식민 시대 역사는 1885년 독일이 잔지바르(현 탄자니아의 잔지바르 섬) 술탄의 케냐 해안 영토에 보호령을 설치한 것으로 시작되었다.
 # ::note
--- FRAMES ----------------------------------------
-보호 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (보 / 보호령-00) ?
-	- protect		(보 / 보호-01 :ARG0 protector :ARG1 protected :ARG2 danger)
-설치 : VERBAL_NOUN
-	- build		(설 / 설치-01 :ARG0 agent :ARG1 thing_built :ARG2 location)
-시작 : VERBAL_NOUN
-	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1885년" [DT_YEAR]	->  :time|duration (1 / 1885년)	OR	:time (d / date-entity :year 1885)	OR	:duration (t / temporal-quantity :quant 1885 :unit (년 / 년))  
-"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
-"보호령" [CV_LAW]	->  (보 / 보호령)	OR	(l / law :wiki "보호국" :name (이 / 이름 :op1 "보호령"))
-"술탄" [CV_POSITION]	->  :mod (술 / 술탄)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (술 / 술탄))
-"식민 시대" [DT_DYNASTY]	->  :time|duration (식 / 식민시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"잔지바르 섬" [LCG_ISLAND]	->  (잔 / 잔지바르섬)	OR	(i / island :wiki "웅구자섬" :name (이 / 이름 :op1 "잔지바르" :op2 "섬"))
-"잔지바르" [LCG_ISLAND]	->  (잔 / 잔지바르)	OR	(i / island :wiki "잔지바르" :name (이 / 이름 :op1 "잔지바르"))
-"케냐 해안 영토" [LC_OTHERS]	->  (케 / 케냐해안영토)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "케냐" :op2 "해안" :op3 "영토"))
-"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
-"탄자니아" [LCP_COUNTRY]	->  (탄 / 탄자니아)	OR	(c / country :wiki "탄자니아" :name (이 / 이름 :op1 "탄자니아"))
--- VERBALIZED ------------------------------------
-(령 / 령 :ARG0-of (보 / 보호-01))
-(시 / 시대 :mod (식 / 식민-00))
-(역 / 역사 :mod (시 / 시대-00))
-(영 / 영토 :mod (해 / 해안-00))
-
+(시 / 시작-01
+	:ARG1 (역 / 역사
+		:topic (시2 / 시대
+			:mod (식 / 식민))
+		:poss (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐")))
+	:cause (설 / 설치-01
+		:ARG0 (c2 / country :wiki "독일" :name (이2 / 이름 :op1 "독일"))
+		:ARG1 (보 / 보호령)
+		:ARG2 (영 / 영토
+			:location (해 / 해안
+				:location c)
+			:poss (술 / 술탄
+				:location (i / island :wiki "잔지바르" :name (이3 / 이름 :op1 "잔지바르")
+					:ARG1-of (b / be-located-at-91
+						:ARG2 (c3 / country :wiki "탄자니아" :name (이4 / 이름 :op1 "탄자니아"))
+						:time (현 / 현)))))
+		:time (d / date-entity :year 1885)))
 
 # ::id snt9.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
 # ::snt 그 후 1888년 영국 동아프리카 회사가 들어왔다.
@@ -176,26 +159,21 @@
 		:ARG2 (c2 / country :wiki "영국" :name (이2 / 이름 :op1 "영국"))
 		:time (d / date-entity :year 1890)))
 
-# ::id snt11.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 1952년 10월부터 1959년 12월까지 케냐는 영국의 지배에 대한 반란(마우마우 반란)으로 비상 사태하에 있었다.
 # ::note
--- FRAMES ----------------------------------------
-지배 : VERBAL_NOUN
-	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-사태하 : DERIVED_NON-ENTRY -> (사 / 사태하-00) ?
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1952년 10월부터 1959년 12월까지" [DT_DURATION]	->  :time|duration (1 / 1952년10월부터1959년12월까지)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1952 :month 10))	OR :duration (t / temporal-quantity :quant 1952 :unit (년 / 년))  (t / temporal-quantity :quant 10 :unit (월 / 월))  
-"마우마우 반란" [EV_WAR_REVOLUTION]	->  (마 / 마우마우반란)	OR	(w / war|event :wiki - :name (이 / 이름 :op1 "마우마우" :op2 "반란"))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
--- VERBALIZED ------------------------------------
-(사 / 사태 :mod (비 / 비상-00))
-(하 / 하 :mod (사 / 사태-00))
-
+(사 / 사태
+	:mod (비 / 비상)
+	:domain (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+	:cause (e / event :wiki - :name (이2 / 이름 :op1 "마우마우" :op2 "반란")
+		:mod (반 / 반란-00
+			:ARG0 c
+			:ARG1 (지 / 지배-01
+				:ARG0 (c2 / country :wiki "영국" :name (이3 / 이름 :op1 "영국"))
+				:ARG1 c)))
+	:duration (d / date-inverval
+		:op1 (d2 / date-entity :year 1952 :month 10)
+		:op2 (d3 / date-entity :year 1959 :month 12)))
 
 # ::id snt12.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
 # ::snt 영국은 단계적으로 케냐의 독립을 허용할 수밖에 없었다.
@@ -223,7 +201,7 @@
 -- FORCE CONVERT ---------------------------------
 -- NE TYPES --------------------------------------
 "1957년" [DT_YEAR]	->  :time|duration (1 / 1957년)	OR	:time (d / date-entity :year 1957)	OR	:duration (t / temporal-quantity :quant 1957 :unit (년 / 년))  
-"아프리카인" [CV_TRIBE]	->  (아 / 아프리카인)	OR	(e / ethnic-group|nationality :wiki "아프리카인" :name (이 / 이름 :op1 "아프리카인"))
+"아프리카인" [CV_TRIBE]	->  (아 / 아프리카인)	OR	(e / ethnic-group :wiki "아프리카인" :name (이 / 이름 :op1 "아프리카인"))
 "입법 회의 직접 선거" [EV_OTHERS]	->  (입 / 입법회의직접선거)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "입법" :op2 "회의" :op3 "직접" :op4 "선거"))
 "피선거권" [CV_LAW]	->  (피 / 피선거권)	OR	(l / law :wiki "피선거권" :name (이 / 이름 :op1 "피선거권"))
 -- VERBALIZED ------------------------------------
@@ -274,42 +252,26 @@
 (조 / 조직-01 :mod (정 / 정부-00))
 
 
-# ::id snt15.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 1963년 12월 12일 케냐는 독립을 선포했다.
 # ::note
--- FRAMES ----------------------------------------
-독립 : VERBAL_NOUN
-	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
-	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
-선포 : VERBAL_NOUN
-	- proclaim		(선 / 선포-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1963년 12월 12일" [DT_OTHERS]	->  :time|duration (1 / 1963년12월12일)	OR	:time (d / date-entity :year 1963 :month 12 :day 12)	OR	:duration (t / temporal-quantity :quant 1963 :unit (년 / 년))  (t / temporal-quantity :quant 12 :unit (월 / 월))  (t / temporal-quantity :quant 12 :unit (일 / 일))  
-"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
--- VERBALIZED ------------------------------------
+(선 / 선포-01
+	:ARG0 (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+	:ARG1 (독 / 독립-01
+		:ARG0 c)
+	:time (d / date-entity :year 1963 :month 12 :day 12))
 
-
-# ::id snt16.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 1년 후 케냐타는 케냐의 초대 대통령이 되었다.
 # ::note
--- FRAMES ----------------------------------------
-초대 : VERBAL_NOUN
-	- invite		(초 / 초대-01 :ARG0 agent :ARG1 thing_invited :ARG2 invite_to)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1년 후" [DT_OTHERS]	->  :time|duration (1 / 1년후)	OR	:time (d / date-entity :year 1)	OR	:duration (t / temporal-quantity :quant 1 :unit (년 / 년))  
-"초대 대통령" [CV_POSITION]	->  :mod (초 / 초대대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (초 / 초대 대통령))
-"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
-"케냐타" [PS_NAME]	->  (케 / 케냐타)	OR	(p / person :wiki "케냐타?" :name (이 / 이름 :op1 "케냐타"))
--- VERBALIZED ------------------------------------
-(대 / 대통령-00 :mod (초 / 초대-01))
-
+(되 / 되-01
+	:ARG1 (p / person :wiki "조모_케냐타" :name (이 / 이름 :op1 "케냐타"))
+	:ARG2 (h / have-org-role-91
+		:ARG1 (c / country :wiki "케냐" :name (이2 / 이름 :op1 "케냐"))
+		:ARG2 (대 / 대통령
+			:ord (o / ordinal-entity :value 1)))
+	:time (후 / 후
+		:op1 (t / temporal-quantity :quant 1 :unit (년 / 년))))
 
 # ::id snt17.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 케냐 인민연맹(KPU, Kenya People's Union)이 정당 활동이 금지된 1969년 이후로는 KANU가 유일한 정당이었다.
@@ -523,6 +485,3 @@
 (투 / 투표-01 :mod (국 / 국민-00))
 (현 / 현안 :mod (최 / 최대-00))
 
-
-
-Process finished with exit code 0

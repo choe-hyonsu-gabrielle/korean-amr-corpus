@@ -1,14 +1,8 @@
 /usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 칭기즈 칸
 # ::note
--- FRAMES ----------------------------------------
-list index out of range
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"칭기즈 칸" [PS_NAME]	->  (칭 / 칭기즈칸)	OR	(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
--- VERBALIZED ------------------------------------
-
+(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
 
 # ::id snt1.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 칭기즈 칸(1155/62/67년 4월 16일 ~ 1227년 8월 25일)은 세계 역사상 가장 넓은 대륙을 점유한 몽골 제국의 창업자이자 초대 카간이다.
@@ -35,16 +29,13 @@ list index out of range
 (자 / 자 :mod (창 / 창업-00))
 
 
-# ::id snt2.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 원래 이름은 보르지긴 테무진이다.
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"보르지긴 테무진" [PS_NAME]	->  (보 / 보르지긴테무진)	OR	(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "보르지긴" :op2 "테무진"))
--- VERBALIZED ------------------------------------
-(이 / 이름 :mod (원 / 원래-00))
-
+(이 / 이름 :op1 "보르지긴" :op2 "테무진"
+	:name-of (p / person :wiki "칭기즈_칸")
+	:domain (이2 / 이름
+		:mod (원 / 원래)))
 
 # ::id snt3.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 몽골의 여러 부족을 통합하고, 출신이 아닌 능력에 따라 대우하는 합리적 인사제도인 능력주의에 기반한 강한 군대를 이끌어 역사상 가장 성공한 군사, 정치지도자가 되었다.
@@ -315,17 +306,16 @@ list index out of range
 (장 / 장이 :mod (대 / 대장-00))
 
 
-# ::id snt14.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 그러나 그의 유년시대는 결코 행복한 것이 아니었다.
 # ::note
--- FRAMES ----------------------------------------
-행복 : VERBAL_NOUN
-	- happy		(행 / 행복-01 :ARG1 entity_being_happy)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(시 / 시대 :mod (유 / 유년-00))
-
+(c / contrast-01
+	:ARG2 (행 / 행복-01
+		:polarity -
+		:ARG1 (시 / 시대
+			:mod (유 / 유년)
+			:poss (그 / 그))
+		:mod (결 / 결코)))
 
 # ::id snt15.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 그가 9세 때 몽골 왕족 보르지긴족의 후예인 아버지 예수게이가 그의 부족과 오랜 불화관계에 있던 타타르족에 의해 독살되었다.
@@ -503,21 +493,17 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt21.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 이러한 이유로 메르키트족은 테무진의 아내인 보르테를 납치했다.
 # ::note
--- FRAMES ----------------------------------------
-이러하 : ** UNUSED_OR_NON-ENTRY **
-납치 : VERBAL_NOUN
-	- hijack,_kidnap		(납 / 납치-01 :ARG0 criminal :ARG1 victim)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"메르키트족" [OGG_SPORTS]	->  (메 / 메르키트족)	OR	(t / team|league|company :wiki "메르키트_연맹" :name (이 / 이름 :op1 "메르키트족"))
-"보르테" [PS_NAME]	->  (보 / 보르테)	OR	(p / person :wiki "보르테_카툰" :name (이 / 이름 :op1 "보르테"))
-"아내" [CV_RELATION]	->  :mod (아 / 아내)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (아 / 아내))
-"테무진" [PS_NAME]	->  (테 / 테무진)	OR	(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "테무진"))
--- VERBALIZED ------------------------------------
-
+(납 / 납치-01
+	:ARG0 (e / ethnic-group :wiki "메르키트_연맹" :name (이 / 이름 :op1 "메르키트족"))
+	:ARG1 (p / person :wiki "보르테_카툰" :name (이2 / 이름 :op1 "보르테")
+		:ARG0-of (h / have-rel-role-91
+			:ARG1 (p2 / person :wiki "칭기즈_칸" :name (이3 / 이름 :op1 "테무진"))
+			:ARG2 (아 / 아내)))
+	:cause (이4 / 이유
+		:ARG1-of (이4 / 이렇-01)))
 
 # ::id snt22.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 테무진은 아버지 예수게이와 의형제를 맺었던 케레이트족의 왕인 토그릴 완 칸에게 사정을 말하여 보르테를 다시 찾아올 수 있었다.
@@ -663,7 +649,3 @@ list index out of range
 (부 / 부족-01 :mod (이 / 이웃-00))
 (비 / 비사 :mod (원 / 원조-00))
 (여 / 여부 :mod (사 / 사실-00))
-
-
-
-Process finished with exit code 0
