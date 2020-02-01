@@ -2,32 +2,32 @@
 # ::id snt0.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 칭기즈 칸
 # ::note
-(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
+(p / person
+	:wiki "칭기즈_칸"
+	:name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
 
-# ::id snt1.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 칭기즈 칸(1155/62/67년 4월 16일 ~ 1227년 8월 25일)은 세계 역사상 가장 넓은 대륙을 점유한 몽골 제국의 창업자이자 초대 카간이다.
 # ::note
--- FRAMES ----------------------------------------
-역사상 : DERIVED_NON-ENTRY -> (역 / 역사상-00) ?
-넓 : VERB
-	- wide		(넓 / 넓-01 :ARG0 causer :ARG1 thing_being_wide)
-점유 : VERBAL_NOUN
-	- occupy		(점 / 점유-01 :ARG1 thing_occupying :ARG2 thing_occupied)
-창업자 : DERIVED_NON-ENTRY -> (창 / 창업자-00) ?
-초대 : VERBAL_NOUN
-	- invite		(초 / 초대-01 :ARG0 agent :ARG1 thing_invited :ARG2 invite_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1155/62/67년 4월 16일 ~ 1227년 8월 25일" [DT_OTHERS]	->  :time|duration (1 / 1155/62/67년4월16일~1227년8월25일)	OR	:time (d / date-entity :year 67 :month 4 :day 16)	OR	:duration (t / temporal-quantity :quant 67 :unit (년 / 년))  (t / temporal-quantity :quant 4 :unit (월 / 월))  (t / temporal-quantity :quant 16 :unit (일 / 일))  
-"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
-"창업자" [CV_POSITION]	->  :mod (창 / 창업자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (창 / 창업자))
-"초대 카간" [CV_POSITION]	->  :mod (초 / 초대카간)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (초 / 초대 카간))
-"칭기즈 칸" [PS_NAME]	->  (칭 / 칭기즈칸)	OR	(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
--- VERBALIZED ------------------------------------
-(상 / 상 :mod (역 / 역사-00))
-(역 / 역사 :mod (세 / 세계-00))
-(자 / 자 :mod (창 / 창업-00))
-
+(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸")
+	:ARG1-of (살 / 살-02
+		:time (d / date-interval
+			:op1 (d2 / date-entity
+				:year (o / or
+					:op1 1155
+					:op2 1162
+					:op3 1167)
+				:month 4
+				:day 16)
+			:op2 (d3 / date-entity :year 1227 :month 8 :day 25)))
+	:ARG0-of (h / have-org-role-91
+		:ARG1 (c / country :wiki "몽골_제국" :name (이2 / 이름 :op1 "몽골" :op2 "제국"))
+		:ARG2 (a / and
+			:op1 (사 / 사람
+				:ARG0-of (창 / 창업-00
+					:ARG1 c))
+			:op2 (카 / 카간
+				:ord (o2 / ordinal-entity :value 1)))))
 
 # ::id snt2.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle ::preferred True
 # ::snt 원래 이름은 보르지긴 테무진이다.
@@ -37,179 +37,120 @@
 	:domain (이2 / 이름
 		:mod (원 / 원래)))
 
-# ::id snt3.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 몽골의 여러 부족을 통합하고, 출신이 아닌 능력에 따라 대우하는 합리적 인사제도인 능력주의에 기반한 강한 군대를 이끌어 역사상 가장 성공한 군사, 정치지도자가 되었다.
 # ::note
--- FRAMES ----------------------------------------
-부족 : VERBAL_NOUN
-	- lack		(부 / 부족-01 :ARG1 thing_being_short :ARG2 lack_in)
-통합 : VERBAL_NOUN
-	- combine		(통 / 통합-01 :ARG0 agent :ARG1 ingredient_one :ARG2 ingredient_two)
-따르 : VERB
-	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
-	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
-대우하 : DERIVED_NON-ENTRY
-합리적 : DERIVED_NON-ENTRY -> (합 / 합리적-00) ?
-주의 : VERBAL_NOUN
-	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
-기반하 : DERIVED_NON-ENTRY
-강하 : VERB
-	- strong		(강 / 강하-01 :ARG1 entity_being_strong)
-이끌 : VERB
-	- lead		(이 / 이끌-01 :ARG0 thing_leading :ARG1 thing_led :ARG2 lead_to)
-역사상 : DERIVED_NON-ENTRY -> (역 / 역사상-00) ?
-성공 : VERBAL_NOUN
-	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
-지도 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (지 / 지도자-00) ?
-	- instruct		(지 / 지도-01 :ARG0 agent :ARG1 thing_instructed)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"군사" [CV_POSITION]	->  :mod (군 / 군사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (군 / 군사))
-"능력주의" [TR_SCIENCE]	->  (능 / 능력주의)	OR	(t / theory* :wiki "능력주의" :name (이 / 이름 :op1 "능력주의"))
-"몽골" [LCP_COUNTRY]	->  (몽 / 몽골)	OR	(c / country :wiki "몽골" :name (이 / 이름 :op1 "몽골"))
-"인사제도" [CV_POLICY]	->  (인 / 인사제도)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "인사제도"))
-"정치지도자" [CV_POSITION]	->  :mod (정 / 정치지도자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (정 / 정치지도자))
--- VERBALIZED ------------------------------------
-(상 / 상 :mod (역 / 역사-00))
-(자 / 자 :ARG0-of (지 / 지도-01))
-(적 / 적 :mod (합 / 합리-00))
-(제 / 제도 :mod (인 / 인사-00))
-(주 / 주의-01 :mod (능 / 능력-00))
-(지 / 지도-01 :mod (정 / 정치-00))
+(되 / 되-01
+	:ARG2 (사 / 사람
+		:ARG0-of (지 / 지도-01
+			:ARG1 (a / and
+				:op1 (군 / 군사)
+				:op2 (정 / 정치)))
+		:ARG1-of (h / have-degree-91
+			:ARG2 (성 / 성공-01)
+			:ARG3 (가 / 가장)
+			:ARG5 (역 / 역사)))
+	:cause (a2 / and
+		:op1 (통 / 통합-01 
+			:ARG1 (부 / 부족
+				:quant (여 / 여러)
+				:location (c / country :wiki "몽골" :name (이2 / 이름 :op1 "몽골"))))
+		:op2 (이 / 이끌-01
+			:ARG1 (군2 / 군대
+				:ARG1-of (강 / 강하-01)
+				:ARG1-of (기 / 기반-00
+					:ARG2 (능2 / 능력주의
+						:mod (제 / 제도
+							:topic (인 / 인사)
+							:mod (합 / 합리적)
+							:mod (대 / 대우-00
+								:ARG2 (능 / 능력
+									:mod (출 / 출신 :polarity -))))))))))
 
-
-# ::id snt4.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 세계에서 가장 뛰어난 정복왕 중 한 사람이다.
 # ::note
--- FRAMES ----------------------------------------
-뛰어나 : VERB
-	- excellent		(뛰 / 뛰어나-01 :ARG1 thing_being_excellent)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"정복왕" [CV_POSITION]	->  :mod (정 / 정복왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (정 / 정복왕))
-"한 사람" [QT_MAN_COUNT]	->  :quant (한 / 한사람)	OR	(c / concept* :quant 한 :unit|scale (사 / 사람))
--- VERBALIZED ------------------------------------
-(왕 / 왕 :mod (정 / 정복-00))
+(i / include-91
+	:ARG2 (정 / 정복왕
+		:ARG1-of (h / have-degree-91
+			:ARG2 (뛰 / 뛰어나-01)
+			:ARG3 (가 / 가장)
+			:ARG5 (정2 / 정복왕
+				:part-of (세 / 세계)))))
 
-
-# ::id snt5.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 중국사에는 원(元) 태조(太祖)로 기록된다.
-# ::note
--- FRAMES ----------------------------------------
-기록 : VERBAL_NOUN
-	- record		(기 / 기록-01 :ARG0 agent :ARG1 thing_recorded)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"元" [LCP_COUNTRY]	->  (元 / 元)	OR	(c / country :wiki - :name (이 / 이름 :op1 "元"))
-"太祖" [CV_POSITION]	->  :mod (太 / 太祖)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (太 / 太祖))
-"원" [LCP_COUNTRY]	->  (원 / 원)	OR	(c / country :wiki "원?" :name (이 / 이름 :op1 "원"))
-"중국사" [FD_SOCIAL_SCIENCE]	->  (중 / 중국사)	OR	(s / study-field|group* :wiki "중국의_역사" :name (이 / 이름 :op1 "중국사"))
-"태조" [CV_POSITION]	->  :mod (태 / 태조)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (태 / 태조))
--- VERBALIZED ------------------------------------
+# ::note :attribute 사용
+(기 / 기록-01
+	:attribute (태 / 태조
+		:ARG2-of (h / have-org-role-91
+			:ARG1 (c / country :wiki "원나라" :name (이 / 이름 :op1 "원"))))
+	:location (중 / 중국사))
 
-
-# ::id snt6.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 오늘날 그의 이름은 몽골 칭기즈 칸 국제공항으로 남아 있다.
 # ::note
--- FRAMES ----------------------------------------
-날 : VERBAL_NOUN
-	- fly		(날 / 날-01 :ARG0 agent :ARG1 path :ARG2 start_point :ARG3 end_point)
-남 : VERB
-	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"몽골" [LCP_COUNTRY]	->  (몽 / 몽골)	OR	(c / country :wiki "몽골" :name (이 / 이름 :op1 "몽골"))
-"오늘날" [DT_OTHERS]	->  :time|duration (오 / 오늘날)	OR	:time (d / date-entity)	OR	:duration 
-"칭기즈 칸 국제공항" [LC_OTHERS]	->  (칭 / 칭기즈칸국제공항)	OR	(l / location? :wiki "칭기즈_칸_국제공항" :name (이 / 이름 :op1 "칭기즈" :op2 "칸" :op3 "국제공항"))
--- VERBALIZED ------------------------------------
-(공 / 공항 :mod (국 / 국제-00))
-(국 / 국제 :mod (칸 / 칸-00))
-(날 / 날-01 :mod (오 / 오늘-00))
+(남 / 남-01
+	:ARG1 (이 / 이름
+		:name-of (그 / 그))
+	:ARG2 (이2 / 이름 :op1 "칭기즈" :op2 "칸" :op3 "국제공항"
+		:name-of (a / airport :wiki "칭기즈_칸_국제공항"))
+	:time (오 / 오늘날))
 
-
-# ::id snt7.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 칭기즈 칸의 정확한 출생연도에 대해서는 1155년, 1161년, 1162년, 1167년 등 몇 가지 설이 존재하나, 정설로 인정되고 있는 것은 아직 없다.
 # ::note
--- FRAMES ----------------------------------------
-정확 : VERBAL_NOUN
-	- precise		(정 / 정확-01 :ARG1 thing_being_precise)
-출생 : VERBAL_NOUN
-	- born		(출 / 출생-01 :ARG1 thing_born)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-존재 : VERBAL_NOUN
-	- exist		(존 / 존재-01 :ARG1 thing_existing :ARG2 location)
-인정 : VERBAL_NOUN
-	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
-없 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1155년" [DT_YEAR]	->  :time|duration (1 / 1155년)	OR	:time (d / date-entity :year 1155)	OR	:duration (t / temporal-quantity :quant 1155 :unit (년 / 년))  
-"1161년" [DT_YEAR]	->  :time|duration (1 / 1161년)	OR	:time (d / date-entity :year 1161)	OR	:duration (t / temporal-quantity :quant 1161 :unit (년 / 년))  
-"1162년" [DT_YEAR]	->  :time|duration (1 / 1162년)	OR	:time (d / date-entity :year 1162)	OR	:duration (t / temporal-quantity :quant 1162 :unit (년 / 년))  
-"1167년" [DT_YEAR]	->  :time|duration (1 / 1167년)	OR	:time (d / date-entity :year 1167)	OR	:duration (t / temporal-quantity :quant 1167 :unit (년 / 년))  
-"칭기즈 칸" [PS_NAME]	->  (칭 / 칭기즈칸)	OR	(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
--- VERBALIZED ------------------------------------
-(연 / 연도-00 :mod (출 / 출생-01))
+(c / contrast-01
+	:ARG1 (존 / 존재-01
+		:ARG1 (설 / 설 :quant (몇 / 몇) :unit (가 / 가지)
+			:example (등 / 등
+				:op1 (d / date-entity :year 1155)
+				:op2 (d2 / date-entity :year 1161)
+				:op3 (d3 / date-entity :year 1162)
+				:op4 (d4 / date-entity :year 1167))
+			:topic (연 / 연도
+				:ARG1-of (정 / 정확-01)
+				:time-of (출 / 출생-01
+					:ARG1 (p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))))))
+	:ARG2 (정2 / 정설
+		:polarity -
+		:ARG1-of (인 / 인정-01)
+		:mod (아 / 아직)))
 
-
-# ::id snt8.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 현재 몽골에서 기념하는 칭기즈 칸의 탄신일은 1162년 11월 14일이다.
 # ::note
--- FRAMES ----------------------------------------
-기념 : VERBAL_NOUN
-	- commemorate		(기 / 기념-01 :ARG0 agent_or_memorial_itself :ARG1 thing_remembered)
-탄신일 : DERIVED_NON-ENTRY -> (탄 / 탄신일-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1162년 11월 14일" [DT_OTHERS]	->  :time|duration (1 / 1162년11월14일)	OR	:time (d / date-entity :year 1162 :month 11 :day 14)	OR	:duration (t / temporal-quantity :quant 1162 :unit (년 / 년))  (t / temporal-quantity :quant 11 :unit (월 / 월))  (t / temporal-quantity :quant 14 :unit (일 / 일))  
-"몽골" [LCP_COUNTRY]	->  (몽 / 몽골)	OR	(c / country :wiki "몽골" :name (이 / 이름 :op1 "몽골"))
-"칭기즈 칸" [PS_NAME]	->  (칭 / 칭기즈칸)	OR	(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
--- VERBALIZED ------------------------------------
-(일 / 일 :mod (탄 / 탄신-00))
+(d / date-entity :year 1162 :month 11 :day 14
+	:domain (탄 / 탄신일
+		:poss (p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
+		:ARG1-of (기 / 기념-01
+			:ARG0 (c / country :wiki "몽골" :name (이2 / 이름 :op1 "몽골")))))
 
-
-# ::id snt9.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 테무진의 유년시절에 대한 기록은 자세하지 않다.
 # ::note
--- FRAMES ----------------------------------------
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-기록 : VERBAL_NOUN
-	- record		(기 / 기록-01 :ARG0 agent :ARG1 thing_recorded)
-자세하 : VERB
-	- detailed		(자 / 자세하-01 :ARG1 thing_detailed)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"테무진" [PS_NAME]	->  (테 / 테무진)	OR	(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "테무진"))
--- VERBALIZED ------------------------------------
-(시 / 시절 :mod (유 / 유년-00))
+(자 / 자세하-01
+	:polarity -
+	:ARG1 (기 / 기록-01
+		:ARG1 (시 / 시절
+			:mod (유 / 유년)
+			:poss (p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "테무진")))))
 
-
-# ::id snt10.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 칭기즈 칸은 그의 아버지 예수게이가 타타르족과의 전투를 승리로 끝낸 직후에 태어났다.
 # ::note
--- FRAMES ----------------------------------------
-전투 : VERBAL_NOUN
-	- combat		(전 / 전투-01 :ARG0 one_fighter :ARG1 other_fighter)
-승리 : VERBAL_NOUN
-	- win		(승 / 승리-01 :ARG0 winner :ARG1 loser)
-끝내 : ** UNUSED_OR_NON-ENTRY **
-태어나 : VERB
-	- be_born		(태 / 태어나-01 :ARG1 person)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"아버지" [CV_RELATION]	->  :mod (아 / 아버지)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (아 / 아버지))
-"예수게이" [PS_NAME]	->  (예 / 예수게이)	OR	(p / person :wiki "예수게이" :name (이 / 이름 :op1 "예수게이"))
-"칭기즈 칸" [PS_NAME]	->  (칭 / 칭기즈칸)	OR	(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
-"타타르족" [CV_TRIBE]	->  (타 / 타타르족)	OR	(e / ethnic-group|nationality :wiki "타타르인" :name (이 / 이름 :op1 "타타르족"))
--- VERBALIZED ------------------------------------
-
+(태 / 태어나-01
+	:ARG1 (p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
+	:time (직 / 직후
+		:mod (승 / 승리-01
+			:ARG0 (p2 / person :wiki "예수게이" :name (이2 / 이름 :op1 "예수게이")
+				:ARG0-of (h / have-rel-role-91
+					:ARG1 p
+					:ARG2 (아 / 아버지)))
+			:ARG1 (e / ethnic-group :wiki "타타르인" :name (이3 / 이름 :op1 "타타르족")
+			:location (전 / 전투-01
+				:ARG0 p2
+				:ARG1 e)))))
 
 # ::id snt11.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 전설에 따르면 그가 태어날 때 손에 고대 동방 사람들에게 생명을 상징하는 피 한 움큼을 쥐고 있는 등 여러가지 상서로운 징표들이 나타났다.

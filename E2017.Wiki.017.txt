@@ -392,34 +392,27 @@
 			:ARG2 (임2 / 임파선종
 				:mod (서 / 서혜)))))
 
-# ::id snt23.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 흑사병은 박테리아의 일종인 예르시니아 페스티스가 원인균으로 이에 감염된 쥐의 혈액을 먹은 벼룩이 사람의 피를 빨면서 병을 옮기게 된다.
 # ::note
--- FRAMES ----------------------------------------
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-감염 : VERBAL_NOUN
-	- infect		(감 / 감염-01 :ARG0 causer_of_infection :ARG1 thing_infected :ARG2 germ,_disease)
-먹 : VERB
-	- eat,_have		(먹 / 먹-01 :ARGA causer :ARG0 agent :ARG1 thing_eaten)
-빨 : ** UNUSED_OR_NON-ENTRY **
-옮기 : REDUCED_VERB_DETECTED
-	- move		(옮 / 옮-01 :ARG0 mover :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"박테리아" [AM_OTHERS]	->  (박 / 박테리아)	OR	(a / animal* :wiki "세균" :name (이 / 이름 :op1 "박테리아"))
-"벼룩" [AM_INSECT]	->  (벼 / 벼룩)	OR	(a / animal* :wiki "벼룩" :name (이 / 이름 :op1 "벼룩"))
-"예르시니아 페스티스" [AM_OTHERS]	->  (예 / 예르시니아페스티스)	OR	(a / animal* :wiki "페스트균" :name (이 / 이름 :op1 "예르시니아" :op2 "페스티스"))
-"쥐" [AM_MAMMALIA]	->  (쥐 / 쥐)	OR	(a / animal* :wiki "쥐" :name (이 / 이름 :op1 "쥐"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(균 / 균 :mod (원 / 원인-00))
-(병 / 병 :mod (흑 / 흑사-00))
-
+(a / and
+	:op1 (c / cause-01
+		:ARG0 (a2 / animal :wiki "페스트균" :name (이 / 이름 :op1 "예르시니아" :op2 "페스티스")
+			:mod (박 / 박테리아))
+		:ARG1 (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병")))
+	:op2 (옮 / 옮-01
+		:ARG0 (벼 / 벼룩
+			:ARG0-of (먹 / 먹-01
+				:ARG1 (혈 / 혈액
+					:poss (쥐 / 쥐
+						:ARG1-of (감 / 감염-01
+							:ARG2 a2)))))
+		:ARG1 d
+		:ARG3 (사 / 사람)
+		:manner (빨 / 빨-00
+			:ARG0 벼
+			:ARG1 (피 / 피
+				:poss 사))))
 
 # ::id snt24.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
 # ::snt 흑사병이 쥐와 사람이 함께 걸리는 전염병이기는 하나, 장거리 여행을 하는 것은 쥐가 아닌 사람이라는 주장이다.
@@ -477,43 +470,29 @@
 		:mod (외 / 외
 			:mod (그 / 그))))
 
-# ::id snt27.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 역사학자 마이클 W 돌스는 유스티니아누스 시대의 비잔틴 제국의 흑사병 유행에 주목하면서 흑사병의 전염 경로를 북아프리카에서 중앙아시아를 거쳐 유럽에 전파되었다고 추정하고 있다.
-# ::note
--- FRAMES ----------------------------------------
-역사학 : DERIVED_NON-ENTRY -> (역 / 역사학-00) ?
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-유행 : VERBAL_NOUN
-	- popular		(유 / 유행-01 :ARG0 thing_makking_popular :ARG thing_popular)
-주목 : VERBAL_NOUN
-	- pay_attention_to		(주 / 주목-01 :ARG0 thing_paying_attention :ARG1 pay_attention_to)
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-전염 : VERBAL_NOUN
-	- communicate		(전 / 전염-01 :ARG0 thing_communicating :ARG1 thing_communicated :ARG2 communicate_to)
-거치 : VERB
-	- pass_through		(거 / 거치-01 :ARG1 thing :ARG2 theme)
-	- mount		(거 / 거치-02 :ARG0 agent :ARG1 thing_mounted :ARG2 where_mount)
-전파 : VERBAL_NOUN
-	- propagate		(전 / 전파-01 :ARG0 agent :ARG1 thing_propagated)
-추정 : VERBAL_NOUN
-	- estimate		(추 / 추정-01 :ARG0 agent :ARG thing_estimated)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"마이클 W 돌스" [PS_NAME]	->  (마 / 마이클W돌스)	OR	(p / person :wiki - :name (이 / 이름 :op1 "마이클" :op2 "W" :op3 "돌스"))
-"북아프리카" [LCG_CONTINENT]	->  (북 / 북아프리카)	OR	(c / continent :wiki "북아프리카" :name (이 / 이름 :op1 "북아프리카"))
-"비잔틴 제국" [DT_DYNASTY]	->  :time|duration (비 / 비잔틴제국)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"역사학자" [CV_OCCUPATION]	->  :mod (역 / 역사학자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (역 / 역사학자))
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
-"유스티니아누스 시대" [DT_DYNASTY]	->  :time|duration (유 / 유스티니아누스시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"중앙아시아" [LCG_CONTINENT]	->  (중 / 중앙아시아)	OR	(c / continent :wiki "중앙아시아" :name (이 / 이름 :op1 "중앙아시아"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(경 / 경로-00 :mod (전 / 전염-01))
-(병 / 병 :mod (흑 / 흑사-00))
-(병 / 병 :mod (흑 / 흑사-00))
-(학 / 학 :mod (역 / 역사-00))
-
+# ::note attribute 사용
+(a / and
+	:op1 (주 / 주목-01
+		:ARG0 (p / person :wiki - :name (이 / 이름 :op1 "마이클" :op2 "W" :op3 "돌스")
+			:mod (학 / 학자
+				:topic (역 / 역사학)))
+		:ARG1 (유 / 유행-01
+			:ARG1 (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병"))
+			:time (시 / 시대
+				:mod (p2 / person :wiki "유스티니아누스_1세" :name (이3 / 이름 :op1 "유스티니아누스")))
+			:location (c / country :wiki "비잔티움_제국" :name (이4 / 이름 :op1 "비잔틴" :op2 "제국"))))
+	:op2 (추 / 추정-01
+		:ARG0 p
+		:ARG1 (경 / 경로
+			:path-of (전 / 전염-01
+				:ARG1 d))
+		:attribute (전2 / 전파-01
+			:ARG1 d
+			:source (c2 / continent :wiki "북아프리카" :name (이5 / 이름 :op1 "북아프리카"))
+			:path (c3 / continent :wiki "중앙아시아" :name (이6 / 이름 :op1 "중앙아시아"))
+			:destination (c4 / continent :wiki "유럽" :name (이7 / 이름 :op1 "유럽")))))
 
 # ::id snt28.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
 # ::snt 이러저러한 가설에도 불구하고 흑사병이 유럽에 들어온 데에는 비단길과 몽골 제국이 관련되어 있는 것만은 분명하다.
@@ -716,30 +695,21 @@
 	:time (후 / 후반
 		:op1 (d / date-entity :century 13)))
 
-# ::id snt37.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt37.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 14세기에는 중국에서도 흑사병이 번졌던 시기로 이로 인해 중국의 인구 중 약 30%가 사망한 것으로 추정된다.
 # ::note
--- FRAMES ----------------------------------------
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-번지 : VERB
-	- spread		(번 / 번지-01 :ARG1 thing_spreading :ARG2 start_point :ARG3 end_point)
-인하 : VERB
-	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
-	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
-사망 : VERBAL_NOUN
-	- die		(사 / 사망-01 :ARG0 causer :ARG1 entity_dying)
-추정 : VERBAL_NOUN
-	- estimate		(추 / 추정-01 :ARG0 agent :ARG thing_estimated)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"14세기" [DT_OTHERS]	->  :time|duration (1 / 14세기)	OR	:time (d / date-entity)	OR	:duration 
-"약 30%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 약 30%)
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(병 / 병 :mod (흑 / 흑사-00))
-
+(추 / 추정-01
+	:ARG (사 / 사망-01
+		:ARG0 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")
+			:ARG1-of (번 / 번지-01
+				:ARG3 (c / country :wiki "중국" :name (이2 / 이름 :op1 "중국"))
+				:time (d2 / date-entity :century 14)))
+		:ARG1 (사2 / 사람
+			:ARG1-of (i / include-91
+				:ARG2 (인 / 인구
+					:poss c)
+				:ARG3 (약 / 약
+					:op1 (p / percentage-entity :value 30))))))
 
 # ::id snt38.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
 # ::snt 흑사병이 중앙아시아에서부터 번지기 시작했다는 가설은 중국의 기록에 의해서도 뒷받침되고 있다.
@@ -753,42 +723,31 @@
 				:ARG1 (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병"))
 				:ARG2 (c2 / continent :wiki "중앙아시아" :name (이3 / 이름 :op1 "중앙아시아"))))))
 
-# ::id snt39.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt39.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 1330년대 초 중국에서도 흑사병이 돌기 시작했으며 1334년 허베이에서 흑사병이 번졌으며, 유럽에서도 흑사병의 위세가 한창이던 1348년 – 1354년 동안 중국 각지에서도 흑사병 확산이 있었다.
-# ::note
--- FRAMES ----------------------------------------
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-돌 : VERB
-	- go_around		(돌 / 돌-01 :ARG0 entity_in_motion :ARG1 path,_place)
-시작 : VERBAL_NOUN
-	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-번지 : VERB
-	- spread		(번 / 번지-01 :ARG1 thing_spreading :ARG2 start_point :ARG3 end_point)
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-확산 : VERBAL_NOUN
-	- spread		(확 / 확산-01 :ARG0 agent :ARG1 thing_spreaded :ARG2 direction)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1330년대 초" [DT_OTHERS]	->  :time|duration (1 / 1330년대초)	OR	:time (d / date-entity :year 1330)	OR	:duration (t / temporal-quantity :quant 1330 :unit (년 / 년))  
-"1334년" [DT_YEAR]	->  :time|duration (1 / 1334년)	OR	:time (d / date-entity :year 1334)	OR	:duration (t / temporal-quantity :quant 1334 :unit (년 / 년))  
-"1348년 – 1354년 동안" [DT_DURATION]	->  :time|duration (1 / 1348년–1354년동안)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1348))	OR :duration (t / temporal-quantity :quant 1348 :unit (년 / 년))  
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
-"허베이" [LCP_PROVINCE]	->  (허 / 허베이)	OR	(p / province :wiki "허베이성" :name (이 / 이름 :op1 "허베이"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(병 / 병 :mod (흑 / 흑사-00))
-(병 / 병 :mod (흑 / 흑사-00))
-(병 / 병 :mod (흑 / 흑사-00))
-(병 / 병 :mod (흑 / 흑사-00))
-
+# ::note 돌기 시작하다 처리 
+(a / and
+	:op1 (시 / 시작-01
+		:ARG1 (돌 / 돌-00
+			:ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+			:location (c / country :wiki "중국" :name (이2 / 이름 :op1 "중국")))
+		:time (초 / 초
+			:op1 (d2 / date-entity :decade 1330)))
+	:op2 (번 / 번지-01
+		:ARG1 d
+		:ARG3 (p / province :wiki "허베이성" :name (이3 / 이름 :op1 "허베이"))
+		:time (d3 / date-entity :year 1334))
+	:op3 (확 / 확산-01
+		:ARG1 d
+		:location (각 / 각지
+			:part-of c)
+		:time (d4 / date-interval
+			:op1 (d5 / date-entity :year 1348)
+			:op2 (d6 / date-entity :year 1354)
+			:mod (한 / 한창
+				:domain (위 / 위세
+					:mod d)
+				:location (c2 / continent :wiki "유럽" :name (이4 / 이름 :op1 "유럽"))))))
 
 # ::id snt40.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
 # ::snt 당시 흑사병이 심했던 지역으로는 허베이 이외에 장시 성, 산시 성, 후난 성, 광둥 성, 광시, 허난 성, 쓰이위엔 등이었다.
@@ -806,36 +765,27 @@
 		:op7 (p7 / province :wiki "허난성" :name (이8 / 이름 :op1 "허난" :op2 "성"))
 		:op8 (p8 / province :wiki - :name (이9 / 이름 :op1 "쓰이위엔"))))
 
-# ::id snt41.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt41.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 이 시기 중국의 역사 역시 몽골족이 세운 원나라 시대였으며 몽골과 비단길을 오가던 상인들에 의해 흑사병이 전파된 것으로 추정된다.
 # ::note
--- FRAMES ----------------------------------------
-세우 : ** UNUSED_OR_NON-ENTRY **
-오가 : VERB
-	- come_and_go		(오 / 오가-01 :ARG1 thing_moving :ARG2 path)
-상인들 : DERIVED_NON-ENTRY -> (상 / 상인들-00) ?
-의하 : VERB
-	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
-흑사병 : DERIVED_NON-ENTRY -> (흑 / 흑사병-00) ?
-전파 : VERBAL_NOUN
-	- propagate		(전 / 전파-01 :ARG0 agent :ARG1 thing_propagated)
-추정 : VERBAL_NOUN
-	- estimate		(추 / 추정-01 :ARG0 agent :ARG thing_estimated)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"몽골" [LCP_COUNTRY]	->  (몽 / 몽골)	OR	(c / country :wiki "몽골" :name (이 / 이름 :op1 "몽골"))
-"몽골족" [CV_TRIBE]	->  (몽 / 몽골족)	OR	(e / ethnic-group|nationality :wiki "몽골족" :name (이 / 이름 :op1 "몽골족"))
-"비단길" [AF_ROAD]	->  (비 / 비단길)	OR	(r / road :wiki "비단길" :name (이 / 이름 :op1 "비단길"))
-"상인" [CV_OCCUPATION]	->  :mod (상 / 상인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상인))
-"원나라 시" [DT_DYNASTY]	->  :time|duration (원 / 원나라시)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
-"흑사병" [TMM_DISEASE]	->  (흑 / 흑사병)	OR	(d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
--- VERBALIZED ------------------------------------
-(길 / 길-01 :mod (비 / 비단-00))
-(들 / 들 :mod (상 / 상인-00))
-(병 / 병 :mod (흑 / 흑사-00))
-(시 / 시대 :mod (나 / 나라-00))
-
+(a / and
+	:op1 (시 / 시대
+		:domain (역 / 역사
+			:mod (c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+			:time (시2 / 시기
+				:mod (이2 / 이)))
+		:mod (역2 / 역시)
+		:mod (c2 / country :wiki "원나라" :name (이3 / 이름 :op1 "원나라")
+			:ARG1-of (서 / 서-02
+				:ARG0 (e / ethnic-group :wiki "몽골족" :name (이4 / 이름 :op1 "몽골족")))))
+	:op2 (추 / 추정-01
+		:ARG1 (전 / 전파-01
+			:ARG0 (상 / 상인
+				:ARG1-of (오 / 오가-01
+					:ARG2 (a2 / and
+						:op1 (c3 / country :wiki "몽골" :name (이5 / 이름 :op1 "몽골"))
+						:op2 (r / road :wiki "비단길" :name (이6 / 이름 :op1 "비단길")))))
+			:ARG1 (d / desease :wiki "흑사병" :name (이7 / 이름 :op1 "흑사병")))))
 
 # ::id snt42.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
 # ::snt 1347년에 처음 발생한 트라브존과 콘스탄티노플의 흑사병 역시 이러한 가설을 뒷받침하고 있다.
@@ -851,4 +801,3 @@
 	:mod (역 / 역시)
 	:ARG1 (가 / 가설
 		:ARG1-of (이4 / 이러하-00)))
-

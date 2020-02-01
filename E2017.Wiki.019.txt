@@ -3,7 +3,11 @@
 # ::note
 (c / company
     :wiki "ABC_(미국의_방송사)"
-    :name (이 / 이름 :op1 "ABC"))
+    :name (이 / 이름 :op1 "ABC")
+    :ARG1-of (i / include-91
+        :ARG2 (회 / 회사
+            :ARG0 (방 / 방송-00)
+            :location (c2 / country :wiki "미국" :name (이2 / 이름 :op1 "미국")))))
 
 # ::id snt1.E2017.Wiki.019 ::date 2019-11-25 ::annotator gabrielle ::preferred True
 # ::snt 미국방송회사(美國放送協會)는 미국의 텔레비전, 라디오 방송을 운영하는 방송사이다.

@@ -186,30 +186,18 @@
 			:ARG1 c)
 		:manner (단 / 단계적)))
 
-# ::id snt13.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.001 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 그리하여 1957년 처음으로 아프리카인들이 피선거권을 가진 입법 회의 직접 선거를 치렀다.
 # ::note
--- FRAMES ----------------------------------------
-피선거 : DERIVED_NON-ENTRY -> (피 / 피선거-00) ?
-가지 : VERB
-	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
-입법 : VERBAL_NOUN
-	- legalize		(입 / 입법-01 :ARG0 agent :ARG1 thing_legalized)
-치르 : VERB
-	- undergo		(치 / 치르-01 :ARG0 thing_undergoing :ARG1 thing_undergone)
-	- carry_out		(치 / 치르-02 :ARG0 agent :ARG1 thing_carried_out)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1957년" [DT_YEAR]	->  :time|duration (1 / 1957년)	OR	:time (d / date-entity :year 1957)	OR	:duration (t / temporal-quantity :quant 1957 :unit (년 / 년))  
-"아프리카인" [CV_TRIBE]	->  (아 / 아프리카인)	OR	(e / ethnic-group :wiki "아프리카인" :name (이 / 이름 :op1 "아프리카인"))
-"입법 회의 직접 선거" [EV_OTHERS]	->  (입 / 입법회의직접선거)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "입법" :op2 "회의" :op3 "직접" :op4 "선거"))
-"피선거권" [CV_LAW]	->  (피 / 피선거권)	OR	(l / law :wiki "피선거권" :name (이 / 이름 :op1 "피선거권"))
--- VERBALIZED ------------------------------------
-(권 / 권 :mod (선 / 선거-00))
-(선 / 선거 :mod (직 / 직접-00))
-(직 / 직접 :mod (회 / 회의-00))
-(회 / 회의-00 :mod (입 / 입법-01))
-
+(a / and
+	:op2 (치 / 치르-02
+		:ARG1 (직 / 직접선거
+			:mod (입 / 입법회의)
+			:mod (가 / 가지-01
+				:ARG0 (e / ethnic-group :wiki "아프리카인" :name (이 / 이름 :op1 "아프리카인"))
+				:ARG1 (피 / 피선거권))
+			:ord (o / ordinal-entity :value 1))
+		:time (d / date-entity :year 1957)))
 
 # ::id snt14.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 그러면서 좀 더 온건한 세력에게 권력을 넘기려는 영국의 기대와는 달리 조모 케냐타(Jomo Kenyatta)가 이끄는 케냐 아프리카 국민연맹(KANU, Kenya African National Union)이 독립 정부 조직을 주도하게 되었다.
@@ -325,47 +313,33 @@
 (이 / 이후-00 :mod (사 / 사망-01))
 
 
-# ::id snt19.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.001 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 1982년 6월 개헌으로 케냐는 공식적으로 일당 체제가 되었다.
 # ::note
--- FRAMES ----------------------------------------
-공식적 : DERIVED_NON-ENTRY -> (공 / 공식적-00) ?
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1982년 6월" [DT_OTHERS]	->  :time|duration (1 / 1982년6월)	OR	:time (d / date-entity :year 1982 :month 6)	OR	:duration (t / temporal-quantity :quant 1982 :unit (년 / 년))  (t / temporal-quantity :quant 6 :unit (월 / 월))  
-"일당 체제" [CV_POLICY]	->  (일 / 일당체제)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "일당" :op2 "체제"))
-"케냐" [LCP_COUNTRY]	->  (케 / 케냐)	OR	(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
--- VERBALIZED ------------------------------------
-(적 / 적 :mod (공 / 공식-00))
-(체 / 체제 :mod (일 / 일당-00))
+(되 / 되-01
+	:ARG1 (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+	:ARG2 (체 / 체제
+		:mod (일 / 일당))
+	:mod (공 / 공식)
+	:cause (개 / 개헌-00
+		:time (d / date-entity :year 1982 :month 6)))
 
-
-# ::id snt20.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.001 ::date 2019-02-01 ::annotator gabrielle ::preferred True
 # ::snt 그 후 1991년 12월, 국민들의 요구로 일당 체제를 폐기하고 1992년 다당(多黨) 선거가 치러졌다.
 # ::note
--- FRAMES ----------------------------------------
-국민들 : DERIVED_NON-ENTRY -> (국 / 국민들-00) ?
-요구 : VERBAL_NOUN
-	- request		(요 / 요구-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
-폐기하 : DERIVED_NON-ENTRY
-치르 : VERB
-	- undergo		(치 / 치르-01 :ARG0 thing_undergoing :ARG1 thing_undergone)
-	- carry_out		(치 / 치르-02 :ARG0 agent :ARG1 thing_carried_out)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1991년 12월" [DT_OTHERS]	->  :time|duration (1 / 1991년12월)	OR	:time (d / date-entity :year 1991 :month 12)	OR	:duration (t / temporal-quantity :quant 1991 :unit (년 / 년))  (t / temporal-quantity :quant 12 :unit (월 / 월))  
-"1992년" [DT_YEAR]	->  :time|duration (1 / 1992년)	OR	:time (d / date-entity :year 1992)	OR	:duration (t / temporal-quantity :quant 1992 :unit (년 / 년))  
-"국민" [CV_POSITION]	->  :mod (국 / 국민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국민))
-"일당 체제" [CV_POLICY]	->  (일 / 일당체제)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "일당" :op2 "체제"))
--- VERBALIZED ------------------------------------
-(들 / 들 :mod (국 / 국민-00))
-(체 / 체제 :mod (일 / 일당-00))
-
+(a / and
+	:op1 (폐 / 폐기-00
+		:ARG1 (체 / 체제
+			:mod (일 / 일당))
+		:cause (요 / 요구-01
+			:ARG0 (국 / 국민))
+		:time (d / date-entity :year 1991 :month 12))
+	:op2 (치 / 치르-02
+		:ARG1 (선 / 선거-00
+			:mod (다 / 다당))
+		:time (d / date-entity :year 1992))
+	:time (후 / 후
+		:op1 (그 / 그)))
 
 # ::id snt21.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt KANU가 과반수의 표를 획득하고 모이가 재선되었지만 야당도 의회석의 45%를 차지했다.
