@@ -49,7 +49,7 @@
 
 # ::id snt2.E2017.NEWS.003 ::date 2019-09-08T01:05 ::annotator gabrielle ::preferred True
 # ::snt 인천 남동 경찰서는 18일 발생한 인천시 남동구 논현동 소래포구 어시장 화재사고와 관련한 목격자 3명의 진술을 확보해 조사하고 있다고 19일 밝혔다.
-# ::note 주소 객체
+# ::note 주소 객체 --> 인천시, 남동구, 논현동 모두 분리
 (밝 / 밝히-01
     :ARG0 (g / government-organization
         :wiki "인천남동경찰서"
@@ -67,11 +67,11 @@
                     :location (m / market
                         :wiki "소래포구_종합어시장"
                         :name (이2 / 이름 :op1 "소래포구" :op2 "어시장")
-                        :location (c / city-district
-                            :wiki "논현동_(인천)"
-                            :name (이3 / 이름 :op1 "인천시" :op2 "남동구" :op3 "논현동")))
+                        :location (c / city-district :wiki "논현동_(인천)" :name (이3 / 이름 :op1 "논현동")
+                            :location (c2 / city :wiki "남동구" :name (이4 / 이름 :op1 "남동구")
+                                :location (c3 / city :wiki "인천광역시" :name (이5 / 이름 :op1 "인천시")))))
                     :ARG1-of (발 / 발생-01
-                        :time (d / date-entity :day 18)))))
+                        :time (d / date-entity :day 18))))))
     :time (d2 / date-entity :day 19))
 
 # ::id snt3.E2017.NEWS.003 ::date 2019-09-08T01:15 ::annotator gabrielle ::preferred True
