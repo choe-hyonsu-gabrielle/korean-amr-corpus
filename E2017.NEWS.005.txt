@@ -1,1120 +1,771 @@
-/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
 # ::id snt0.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 文 대통령, 경제부총리 김동연·외교부 장관 여성 강경화 내정.
 # ::note
--- FRAMES ----------------------------------------
-부총리 : DERIVED_NON-ENTRY -> (부 / 부총리-00) ?
-외교부 : DERIVED_NON-ENTRY -> (외 / 외교부-00) ?
-내정 : VERBAL_NOUN
-	- appoint_informally		(내 / 내정-01 :ARG0 agent :ARG1 appointee,_employee :ARG2 job,_position)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"文" [PS_NAME]	->  (文 / 文)	OR	(p / person :wiki - :name (이 / 이름 :op1 "文"))
-"강경화" [PS_NAME]	->  (강 / 강경화)	OR	(p / person :wiki "강경화" :name (이 / 이름 :op1 "강경화"))
-"경제부총리" [CV_POSITION]	->  :mod (경 / 경제부총리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (경 / 경제부총리))
-"김동연" [PS_NAME]	->  (김 / 김동연)	OR	(p / person :wiki "김동연" :name (이 / 이름 :op1 "김동연"))
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"외교부" [OGG_POLITICS]	->  (외 / 외교부)	OR	(g / government-organization :wiki "외교부?" :name (이 / 이름 :op1 "외교부"))
-"장관" [CV_POSITION]	->  :mod (장 / 장관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장관))
--- VERBALIZED ------------------------------------
-(부 / 부 :mod (외 / 외교-00))
-(여 / 여성 :mod (장 / 장관-00))
-
+(a / and
+    :op1 (내 / 내정-01
+        :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "文")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (대 / 대통령)))
+        :ARG1 (p2 / person :wiki "김동연" :name (이2 / 이름 :op1 "김동연"))
+        :ARG2 (경 / 경제부총리))
+    :op2 (내2 / 내정-01
+        :ARG0 p
+        :ARG1 (p3 / person :wiki "강경화" :name (이3 / 이름 :op1 "강경화")
+            :mod (여 / 여성))
+        :ARG2 (장 / 장관
+            :ARG2-of (h2 / have-org-role-91
+                :ARG1 (g / government-organization :wiki "대한민국_외교부" :name (이4 / 이름 :op1 "외교부"))))))
 
 # ::id snt1.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 문재인 대통령은 21일 '경제 사령탑'인 경제부총리 겸 기획재정부 장관 후보자에 김동연(60) 아주대 총장, 외교부 장관 후보자에 여성인 강경화(62) 유엔 사무총장 정책특보를 각각 내정했다.
 # ::note
--- FRAMES ----------------------------------------
-부총리 : DERIVED_NON-ENTRY -> (부 / 부총리-00) ?
-기획 : VERBAL_NOUN
-	- plan		(기 / 기획-01 :ARG0 agent :ARG1 thing_planned)
-후보자 : DERIVED_NON-ENTRY -> (후 / 후보자-00) ?
-후보자 : DERIVED_NON-ENTRY -> (후 / 후보자-00) ?
-내정 : VERBAL_NOUN
-	- appoint_informally		(내 / 내정-01 :ARG0 agent :ARG1 appointee,_employee :ARG2 job,_position)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"21일" [DT_DAY]	->  :time|duration (2 / 21일)	OR	:time (d / date-entity :day 21)	OR	:duration (t / temporal-quantity :quant 21 :unit (일 / 일))  
-"60" [QT_AGE]	->  :age (6 / 60)	OR	:age 60
-"62" [QT_AGE]	->  :age (6 / 62)	OR	:age 62
-"강경화" [PS_NAME]	->  (강 / 강경화)	OR	(p / person :wiki "강경화" :name (이 / 이름 :op1 "강경화"))
-"경제 사령탑" [CV_POSITION]	->  :mod (경 / 경제사령탑)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (경 / 경제 사령탑))
-"경제부총리" [CV_POSITION]	->  :mod (경 / 경제부총리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (경 / 경제부총리))
-"기획재정부" [OGG_POLITICS]	->  (기 / 기획재정부)	OR	(g / government-organization :wiki "대한민국_기획재정부" :name (이 / 이름 :op1 "기획재정부"))
-"김동연" [PS_NAME]	->  (김 / 김동연)	OR	(p / person :wiki "김동연" :name (이 / 이름 :op1 "김동연"))
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"문재인" [PS_NAME]	->  (문 / 문재인)	OR	(p / person :wiki "문재인" :name (이 / 이름 :op1 "문재인"))
-"사무총장 정책특보" [CV_POSITION]	->  :mod (사 / 사무총장정책특보)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사무총장 정책특보))
-"아주대" [OGG_EDUCATION]	->  (아 / 아주대)	OR	(s / school|university :wiki "아주대학교" :name (이 / 이름 :op1 "아주대"))
-"외교부" [OGG_POLITICS]	->  (외 / 외교부)	OR	(g / government-organization :wiki "외교부?" :name (이 / 이름 :op1 "외교부"))
-"유엔" [OGG_POLITICS]	->  (유 / 유엔)	OR	(g / government-organization :wiki "유엔" :name (이 / 이름 :op1 "유엔"))
-"장관" [CV_POSITION]	->  :mod (장 / 장관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장관))
-"장관" [CV_POSITION]	->  :mod (장 / 장관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장관))
-"총장" [CV_POSITION]	->  :mod (총 / 총장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총장))
-"후보자" [CV_POSITION]	->  :mod (후 / 후보자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후보자))
-"후보자" [CV_POSITION]	->  :mod (후 / 후보자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후보자))
--- VERBALIZED ------------------------------------
-(부 / 부 :mod (외 / 외교-00))
-(부 / 부 :mod (재 / 재정-00))
-(사 / 사령 :mod (경 / 경제-00))
-(자 / 자 :mod (후 / 후보-00))
-(자 / 자 :mod (후 / 후보-00))
-(장 / 장관 :mod (부 / 부-00))
-(장 / 장관 :mod (부 / 부-00))
-(재 / 재정-00 :mod (기 / 기획-01))
-(정 / 정책 :mod (총 / 총장-00))
-(총 / 총장 :mod (사 / 사무-00))
-(탑 / 탑 :mod (사 / 사령-00))
-(특 / 특보 :mod (정 / 정책-00))
-(후 / 후보 :mod (장 / 장관-00))
-(후 / 후보 :mod (장 / 장관-00))
-
+(a / and
+    :op1 (내 / 내정-01
+        :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문재인")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (대 / 대통령)))
+        :ARG1 (p2 / person :wiki "김동연" :name (이2 / 이름 :op1 "김동연")
+            :age (t / temporal-quantity :value 60)
+            :ARG0-of (h2 / have-org-role-91
+                :ARG1 (u / university :wiki "아주대학교" :name (이3 / 이름 :op1 "아주대"))
+                :ARG2 (총 / 총장)))
+        :ARG2 (a2 / and
+            :mod (사 / 사령탑
+                :mod (경 / 경제))
+            :op1 (경2 / 경제부총리)
+            :op2 (장 / 장관 :wiki "대한민국의_기획재정부_장관"
+                :ARG2-of (h3 / have-org-role-91
+                    :ARG1 (g / government-organization :wiki "대한민국_기획재정부" :name (이4 / 이름 :op1 "기획재정부")))))
+        :time (d / date-entity :day 21))
+    :op2 (내2 / 내정-01
+        :ARG0 p
+        :ARG1 (p3 / person :wiki "강경화" :name (이5 / 이름 :op1 "강경화")
+            :age (t2 / temporal-quantity :value 62)
+            :mod (여 / 여성)
+            :ARG0-of (h4 / have-org-role-91
+                :ARG1 (o / organization :wiki "유엔" :name (이6 / 이름 :op1 "유엔"))
+                :ARG2 (정 / 정책특보
+                    :poss (사2 / 사무총장))))
+        :ARG2 (장2 / 장관
+            :ARG2-of (h5 / have-org-role-91
+                :ARG1 (g2 / government-organization :wiki "대한민국_외교부" :name (이7 / 이름 :op1 "외교부"))))
+        :time (d2 / date-entity :day 21))
+    :mod (각 / 각각))
 
 # ::id snt2.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 인사가 다소 지연되던 청와대 국가안보실장엔 정의용(71) 아시아정당 국제회의 공동 상임위원장이, 정책실장엔 장하성(64) 고려대 경영학과 교수가 임명됐다.
 # ::note
--- FRAMES ----------------------------------------
-지연 : VERBAL_NOUN
-	- delay		(지 / 지연-01 :ARG0 agent :ARG1 thing_delayed)
-위원장 : DERIVED_NON-ENTRY -> (위 / 위원장-00) ?
-경영 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (경 / 경영학-00) ?
-	- manage		(경 / 경영-01 :ARG0 agent :ARG1 thing_managed)
-임명 : VERBAL_NOUN
-	- appoint		(임 / 임명-01 :ARG0 thing_appointing :ARG1 thing_appointed :ARG2 appoint_as)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"64" [QT_AGE]	->  :age (6 / 64)	OR	:age 64
-"71" [QT_AGE]	->  :age (7 / 71)	OR	:age 71
-"경영학과" [OGG_EDUCATION]	->  (경 / 경영학과)	OR	(s / school|university :wiki "경영학" :name (이 / 이름 :op1 "경영학과"))
-"고려대" [OGG_EDUCATION]	->  (고 / 고려대)	OR	(s / school|university :wiki "고려대학교" :name (이 / 이름 :op1 "고려대"))
-"교수" [CV_OCCUPATION]	->  :mod (교 / 교수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교수))
-"국가안보실" [OGG_POLITICS]	->  (국 / 국가안보실)	OR	(g / government-organization :wiki "대한민국_국가안보실" :name (이 / 이름 :op1 "국가안보실"))
-"상임위원장" [CV_POSITION]	->  :mod (상 / 상임위원장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상임위원장))
-"아시아정당 국제회의" [OGG_POLITICS]	->  (아 / 아시아정당국제회의)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "아시아정당" :op2 "국제회의"))
-"장하성" [PS_NAME]	->  (장 / 장하성)	OR	(p / person :wiki "장하성" :name (이 / 이름 :op1 "장하성"))
-"정의용" [PS_NAME]	->  (정 / 정의용)	OR	(p / person :wiki "정의용" :name (이 / 이름 :op1 "정의용"))
-"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
--- VERBALIZED ------------------------------------
-(공 / 공동 :mod (회 / 회의-00))
-(교 / 교수 :mod (과 / 과-00))
-(상 / 상임 :mod (공 / 공동-00))
-(실 / 실 :mod (안 / 안보-00))
-(실 / 실 :mod (정 / 정책-00))
-(안 / 안보 :mod (국 / 국가-00))
-(위 / 위원 :mod (상 / 상임-00))
-(장 / 장 :mod (실 / 실-00))
-(장 / 장 :mod (실 / 실-00))
-(장 / 장 :mod (위 / 위원-00))
-(학 / 학 :ARG0-of (경 / 경영-01))
-(회 / 회의 :mod (국 / 국제-00))
-
+(a / and
+    :op1 (임 / 임명-01
+        :ARG1 (p / person :wiki "정의용" :name (이 / 이름 :op1 "정의용")
+            :age (t / temporal-quantity :value 71)
+            :ARG0-of (h / have-org-role-91
+                :ARG1 (o / organization :wiki - :name (이2 / 이름 :op1 "아시아정당" :op2 "국제회의"))
+                :ARG2 (상 / 상임위원장
+                    :mod (공 / 공동))))
+        :ARG2 (국 / 국가안보실장 :wiki "대한민국의_국가안보실장"
+            :ARG2-of (h2 / have-org-role-91
+                :ARG1 (g / government-organization :wiki "청와대" :name (이3 / 이름 :op1 "청와대")))
+            :mod (지 / 지연-01
+                :ARG1 (인 / 인사))))
+    :op2 (임2 / 임명-01
+        :ARG1 (p2 / person :wiki "장하성" :name (이4 / 이름 :op1 "장하성")
+            :age (t2 / temporal-quantity :value 64)
+            :ARG0-of (h3 / have-org-role-91
+                :ARG1 (u / university :wiki "고려대학교" :name (이5 / 이름 :op1 "고려대학교"))
+                :ARG2 (교 / 교수
+                    :topic (경 / 경영학))))
+        :ARG2 (정 / 정책실장 :wiki "대한민국의_대통령비서실_정책실장"
+            :ARG2-of (h4 / have-org-role-91
+                :ARG1 g))))
 
 # ::id snt3.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 문 대통령은 이날 청와대 춘추관 브리핑룸에서 "새 정부의 경제-외교안보 분야 인사를 직접 국민에게 말씀드리겠다"며 직접 이 같은 인사를 발표했다.
 # ::note
--- FRAMES ----------------------------------------
-브리핑 : VERBAL_NOUN
-	- brief		(브 / 브리핑-01 :ARG0 giver :ARG1 information :ARG2 receiver)
-말씀 : VERBAL_NOUN
-	- tell		(말 / 말씀-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
-같 : VERB
-	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
-발표 : VERBAL_NOUN
-	- announce		(발 / 발표-01 :ARG0 announcer :ARG1 announcement :ARG2 announced_to)
--- FORCE CONVERT ---------------------------------
-:ARG1-of (새 / 새롭-01)
--- NE TYPES --------------------------------------
-"국민" [CV_POSITION]	->  :mod (국 / 국민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국민))
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"문" [PS_NAME]	->  (문 / 문)	OR	(p / person :wiki "문" :name (이 / 이름 :op1 "문"))
-"이날" [DT_DAY]	->  :time|duration (이 / 이날)	OR	:time (d / date-entity)	OR	:duration 
-"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
-"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
-"춘추관" [AF_BUILDING]	->  (춘 / 춘추관)	OR	(b / building|facility :wiki "춘추관" :name (이 / 이름 :op1 "춘추관"))
--- VERBALIZED ------------------------------------
-(룸 / 룸-00 :mod (브 / 브리핑-01))
-(분 / 분야 :mod (안 / 안보-00))
-(안 / 안보 :mod (외 / 외교-00))
-(인 / 인사 :mod (분 / 분야-00))
-
+(발 / 발표-01
+    :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (대 / 대통령)))
+    :ARG1 (인 / 인사
+        :ARG1-of (같 / 같-01
+            :ARG2 (이2 / 이)))
+    :time (이3 / 이날)
+    :manner (말 / 말하-01
+        :ARG0 p
+        :ARG1 (말2 / 말씀-01
+            :ARG0 p
+            :ARG1 (인2 / 인사
+                :domain (a / and
+                    :op1 (경 / 경제)
+                    :op2 (외 / 외교안보))
+                :poss (정 / 정부
+                    :ARG1-of (새 / 새롭-01)))
+            :ARG2 (국 / 국민)
+            :manner (직 / 직접)))
+    :location (브 / 브리핑룸
+        :part-of (b / building :wiki - :name (이4 / 이름 :op1 "춘추관")
+            :part-of (g / government-organization :wiki "청와대" :name (이5 / 이름 :op1 "청와대")))))
 
 # ::id snt4.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 외교안보실장 하마평에 올랐던 문정인(66) 연세대 명예특임 교수와, 대미 특사인 홍석현(68) 전 중앙일보·JTBC 사장은 대통령의 통일외교안보특보를 맡게 됐다.
 # ::note
--- FRAMES ----------------------------------------
-오르 : VERB
-	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
-	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
-	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
-	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
-통일 : VERBAL_NOUN
-	- unify		(통 / 통일-01 :ARG0 agent :ARG1 thing_unified :ARG2 result)
-맡 : VERB
-	- have_charge_of		(맡 / 맡-01 :ARGA causer :ARG0 agent :ARG1 thing_had_charge_of)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"66" [QT_AGE]	->  :age (6 / 66)	OR	:age 66
-"68" [QT_AGE]	->  :age (6 / 68)	OR	:age 68
-"JTBC" [OGG_MEDIA]	->  (J / JTBC)	OR	(c / company|organization :wiki "JTBC" :name (이 / 이름 :op1 "JTBC"))
-"대미 특사" [CV_POSITION]	->  :mod (대 / 대미특사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대미 특사))
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"명예특임 교수" [CV_OCCUPATION]	->  :mod (명 / 명예특임교수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (명 / 명예특임 교수))
-"문정인" [PS_NAME]	->  (문 / 문정인)	OR	(p / person :wiki "문정인?" :name (이 / 이름 :op1 "문정인"))
-"사장" [CV_POSITION]	->  :mod (사 / 사장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사장))
-"연세대" [OGG_EDUCATION]	->  (연 / 연세대)	OR	(s / school|university :wiki "연세대학교" :name (이 / 이름 :op1 "연세대"))
-"외교안보실장" [CV_POSITION]	->  :mod (외 / 외교안보실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (외 / 외교안보실장))
-"중앙일보" [OGG_MEDIA]	->  (중 / 중앙일보)	OR	(c / company|organization :wiki "중앙일보" :name (이 / 이름 :op1 "중앙일보"))
-"통일외교안보특보" [CV_POSITION]	->  :mod (통 / 통일외교안보특보)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (통 / 통일외교안보특보))
-"홍석현" [PS_NAME]	->  (홍 / 홍석현)	OR	(p / person :wiki "홍석현" :name (이 / 이름 :op1 "홍석현"))
--- VERBALIZED ------------------------------------
-(교 / 교수 :mod (특 / 특임-00))
-(실 / 실장 :mod (안 / 안보-00))
-(안 / 안보 :mod (외 / 외교-00))
-(안 / 안보 :mod (외 / 외교-00))
-(외 / 외교-00 :mod (통 / 통일-01))
-(특 / 특보 :mod (안 / 안보-00))
-(특 / 특사 :mod (대 / 대미-00))
-(특 / 특임 :mod (명 / 명예-00))
+(h / have-org-role-91
+    :ARG0 (a / and
+        :op1 (p / person :wiki "문정인_(대학_교수)" :name (이 / 이름 :op1 "문정인")
+            :age (t / temporal-quantity :value 66)
+            :ARG0-of (h2 / have-org-role-91
+                :ARG1 (u / university :wiki "연세대학교" :name (이2 / 이름 :op1 "연세대"))
+                :ARG2 (교 / 교수
+                    :ARG2-of (특 / 특임-00)
+                    :mod (명 / 명예)))
+            :ARG0-of (오 / 오르-03
+                :ARG1 (하 / 하마평
+                    :topic (h3 / have-org-role-91
+                        :ARG2 (외 / 외교안보실장)))))
+        :op2 (p2 / person :wiki "홍석현" :name (이3 / 이름 :op1 "홍석현")
+            :age (t2 / temporal-quantity :value 68)
+            :ARG0-of (h4 / have-org-role-91
+                :ARG1 (c / company :wiki "중앙일보" :wiki "JTBC" :name (이4 / 이름 :op1 "중앙일보·JTBC"))
+                :ARG2 (사 / 사장)
+                :time (전 / 전))
+            :mod (특 / 특사
+                :mod (대 / 대미))))
+    :ARG2 (통 / 통일외교안보특보
+        :poss (대2 / 대통령)))
 
-
-# ::id snt5.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 국민경제자문회의 부의장엔 김광두(70) 서강대 경제학과 석좌교수가 인선됐다.
 # ::note
--- FRAMES ----------------------------------------
-자문 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (자 / 자문회-00) ?
-	- consult		(자 / 자문-01 :ARG0 thing_consulting :ARG1 thing_consulted)
-부의장 : DERIVED_NON-ENTRY -> (부 / 부의장-00) ?
-경제학 : DERIVED_NON-ENTRY -> (경 / 경제학-00) ?
-인선되 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"70" [QT_AGE]	->  :age (7 / 70)	OR	:age 70
-"경제학과" [OGG_EDUCATION]	->  (경 / 경제학과)	OR	(s / school|university :wiki - :name (이 / 이름 :op1 "경제학과"))
-"국민경제자문회" [OGG_POLITICS]	->  (국 / 국민경제자문회)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "국민경제자문회"))
-"김광두" [PS_NAME]	->  (김 / 김광두)	OR	(p / person :wiki - :name (이 / 이름 :op1 "김광두"))
-"부의장" [CV_POSITION]	->  :mod (부 / 부의장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (부 / 부의장))
-"서강대" [OGG_EDUCATION]	->  (서 / 서강대)	OR	(s / school|university :wiki "서강대학교" :name (이 / 이름 :op1 "서강대"))
-"석좌교수" [CV_POSITION]	->  :mod (석 / 석좌교수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (석 / 석좌교수))
--- VERBALIZED ------------------------------------
-(경 / 경제 :mod (국 / 국민-00))
-(교 / 교수 :mod (석 / 석좌-00))
-(석 / 석좌 :mod (과 / 과-00))
-(자 / 자문-01 :mod (경 / 경제-00))
-(학 / 학 :mod (경 / 경제-00))
-(회 / 회 :ARG0-of (자 / 자문-01))
-
+(h / have-org-role-91
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "김광두")
+        :age (t / temporal-quantity :value 70)
+        :ARG0-of (h2 / have-org-role-91
+            :ARG1 (u / university :wiki "서강대학교" :name (이2 / 이름 :op1 "서강대"))
+            :ARG2 (교 / 교수
+                :mod (석 / 석좌)
+                :topic (경 / 경제학과))))
+    :ARG1 (g / government-organization :wiki "대한민국_국민경제자문회의" :name (이3 / 이름 :op1 "국민경제자문회의"))
+    :ARG2 (부 / 부의장))
 
 # ::id snt6.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 김동연 부총리 후보자는 충북 음성 출신으로 '고졸신화의 인간승리 드라마'로 불린다.
 # ::note
--- FRAMES ----------------------------------------
-부총리 : DERIVED_NON-ENTRY -> (부 / 부총리-00) ?
-후보자 : DERIVED_NON-ENTRY -> (후 / 후보자-00) ?
-승리 : VERBAL_NOUN
-	- win		(승 / 승리-01 :ARG0 winner :ARG1 loser)
-불리 : VERB
-	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"김동연" [PS_NAME]	->  (김 / 김동연)	OR	(p / person :wiki "김동연" :name (이 / 이름 :op1 "김동연"))
-"드라마" [FD_ART]	->  (드 / 드라마)	OR	(s / study-field|group* :wiki "드라마" :name (이 / 이름 :op1 "드라마"))
-"부총리" [CV_POSITION]	->  :mod (부 / 부총리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (부 / 부총리))
-"음성" [LCP_COUNTY]	->  (음 / 음성)	OR	(c / county :wiki "음성" :name (이 / 이름 :op1 "음성"))
-"충북" [LCP_PROVINCE]	->  (충 / 충북)	OR	(p / province :wiki "충청북도" :name (이 / 이름 :op1 "충북"))
-"후보자" [CV_POSITION]	->  :mod (후 / 후보자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후보자))
--- VERBALIZED ------------------------------------
-(드 / 드라마-00 :mod (승 / 승리-01))
-(승 / 승리-01 :mod (인 / 인간-00))
-(신 / 신화 :mod (고 / 고졸-00))
-(자 / 자 :mod (후 / 후보-00))
-(후 / 후보 :mod (총 / 총리-00))
+(부 / 부르-02
+    :ARG1 (p / person :wiki "김동연" :name (이 / 이름 :op1 "김동연")
+        :mod (후 / 후보
+            :topic (h / have-org-role-91
+                :ARG2 (부2 / 부총리)))
+        :ARG1-of (태 / 태어나-01
+            :location (c / county :wiki "음성군" :name (이2 / 이름 :op1 "충북" :op2 "음성"))))
+    :ARG2 (드 / 드라마
+        :mod (승 / 승리-01
+            :ARG0 (인 / 인간))
+        :mod (신 / 신화
+            :mod (졸 / 졸업-01
+                :ARG1 (고 / 고등학교)))))
 
-
-# ::id snt7.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 덕수상고 졸업 뒤 은행에 취직해 직장생활을 하며 행정고시와 입법고시에 동시 합격한 입지전적의 인물로 평가받는다.
 # ::note
--- FRAMES ----------------------------------------
-졸업 : VERBAL_NOUN
-	- graduate		(졸 / 졸업-01 :ARG0 agent :ARG1 school)
-취직하 : DERIVED_NON-ENTRY
-생활 : VERBAL_NOUN
-	- live		(생 / 생활-01 :ARG0 entity_being_alive :ARG2 location)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-고시 : VERBAL_NOUN
-	- notify		(고 / 고시-01 :ARG0 agent :ARG1 thing_notified :ARG2 notified_to)
-입법 : VERBAL_NOUN
-	- legalize		(입 / 입법-01 :ARG0 agent :ARG1 thing_legalized)
-고시 : VERBAL_NOUN
-	- notify		(고 / 고시-01 :ARG0 agent :ARG1 thing_notified :ARG2 notified_to)
-합격하 : DERIVED_NON-ENTRY
-입지전적 : DERIVED_NON-ENTRY -> (입 / 입지전적-00) ?
-평가 : VERBAL_NOUN
-	- estimate		(평 / 평가-01 :ARG0 agent :ARG1 thing_estimated)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"덕수상고" [OGG_EDUCATION]	->  (덕 / 덕수상고)	OR	(s / school|university :wiki "덕수고등학교" :name (이 / 이름 :op1 "덕수상고"))
-"입법고시" [CV_POLICY]	->  (입 / 입법고시)	OR	(p / policy* :wiki "입법고시" :name (이 / 이름 :op1 "입법고시"))
-"행정고시" [CV_POLICY]	->  (행 / 행정고시)	OR	(p / policy* :wiki "5급_국가공무원_공개경쟁채용시험" :name (이 / 이름 :op1 "행정고시"))
--- VERBALIZED ------------------------------------
-(고 / 고시-01 :ARG1 (입 / 입법-01))
-(고 / 고시-01 :mod (행 / 행정-00))
-(뒤 / 뒤-00 :mod (졸 / 졸업-01))
-(생 / 생활-01 :mod (직 / 직장-00))
-(은 / 은행 :mod (뒤 / 뒤-00))
-(적 / 적 :mod (입 / 입지전-00))
-(합 / 합격 :mod (동 / 동시-00))
-
+(평 / 평가-01
+    :ARG1 (인 / 인물
+        :mod (입 / 입지전)
+        :ARG1-of (합 / 합격-00
+            :mod (동 / 동시)
+            :topic (행 / 행정고시)
+            :topic (입 / 입법고시)
+            :manner (생 / 생활-01
+                :ARG2 (직 / 직장)
+                :time (이 / 이후
+                    :op1 (졸 / 졸업-01
+                        :ARG1 (s / school :wiki "덕수고등학교" :name (이2 / 이름 :op1 "덕수상고")))
+                    :op2 (취 / 취직-00
+                        :ARG1 (은 / 은행)))))))
 
 # ::id snt8.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 문 대통령은 "새 정부는 일찍이 경험하지 못한 저성장 위기 속 출범해 빠른 시일 내 위기를 극복하고 일자리를 통한 경제 활성화를 만드는 게 가장 중요한 국정과제"라며 "종합적 위기관리능력과 과감한 추진력을 가장 중요하게 고려했다"고 밝혔다.
 # ::note
--- FRAMES ----------------------------------------
-경험 : VERBAL_NOUN
-	- experience		(경 / 경험-01 :ARG1 experiencer :ARG2 thing_experienced)
-성장 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (저 / 저성장-00) ?
-	- grow		(성 / 성장-01 :ARG0 causer :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
-속 : VERBAL_NOUN
-	- deceive		(속 / 속-01 :ARG0 liar :ARG1 lied_to)
-출범 : VERBAL_NOUN
-	- launch		(출 / 출범-01 :ARG0 agent :ARG1 thing_launched)
-빠르 : VERB
-	- quick		(빠 / 빠르-01 :ARG1 entity_being_quick)
-극복 : VERBAL_NOUN
-	- conquer		(극 / 극복-01 :ARG0 agent :ARG1 thing_conquered)
-일 : VERBAL_NOUN
-	- rise		(일 / 일-01 :ARG1 thing_rising)
-통하 : VERB
-	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
-	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
-	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
-활성화 : DERIVED_VERB_DETECTED
-	- activate		(활 / 활성화-01 :ARG0 activator :ARG1 thing_being_active)
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-중요 : VERBAL_NOUN
-	- important		(중 / 중요-01 :ARG1 thing_being_important :ARG2 important_to)
-종합적 : DERIVED_NON-ENTRY -> (종 / 종합적-00) ?
-관리 : VERBAL_NOUN
-	- manage		(관 / 관리-01 :ARG0 manager :ARG1 thing_managed)
-과감하 : VERB
-	- bold		(과 / 과감하-01 :ARG1 entity_being_bold)
-추진 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (추 / 추진력-00) ?
-	- drive_forward		(추 / 추진-01 :ARG0 agent :ARG1 thing_driven_forward)
-중요 : VERBAL_NOUN
-	- important		(중 / 중요-01 :ARG1 thing_being_important :ARG2 important_to)
-고려 : VERBAL_NOUN
-	- consider		(고 / 고려-01 :ARG0 agent :ARG1 thing_under_consideration)
-밝히 : VERB
-	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
-	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
--- FORCE CONVERT ---------------------------------
-:ARG1-of (새 / 새롭-01)
--- NE TYPES --------------------------------------
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"문" [PS_NAME]	->  (문 / 문)	OR	(p / person :wiki "문" :name (이 / 이름 :op1 "문"))
-"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
--- VERBALIZED ------------------------------------
-(과 / 과제 :mod (국 / 국정-00))
-(관 / 관리-01 :mod (위 / 위기-00))
-(능 / 능력-00 :mod (관 / 관리-01))
-(력 / 력 :ARG0-of (추 / 추진-01))
-(속 / 속-01 :mod (위 / 위기-00))
-(위 / 위기-00 :mod (성 / 성장-01))
-(자 / 자리-00 :mod (일 / 일-01))
-(적 / 적 :mod (종 / 종합-00))
-(출 / 출범-01 :ARG1 (속 / 속-01))
-(화 / 화 :mod (활 / 활성-00))
-(활 / 활성 :mod (경 / 경제-00))
+(밝 / 밝히-01
+    :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (대 / 대통령)))
+    :ARG1 (중 / 중요-01
+        :mod (가 / 가장)
+        :topic (과 / 과제
+            :mod (국 / 국정))
+        :ARG1 (a / and
+            :op1 (활 / 활성화-01
+                :ARG1 (경 / 경제)
+                :manner (일 / 일자리))
+            :op2 (극 / 극복-01
+                :ARG1 (위 / 위기)
+                :time (내 / 내
+                    :op1 (시 / 시일
+                        :ARG1-of (빠 / 빠르-01)))))
+        :cause (출 / 출범-01
+            :ARG1 (정 / 정부
+                :ARG1-of (새 / 새롭-01))
+            :duration-of (위2 / 위기
+                :mod (저 / 저성장-00
+                    :ARG2 (경2 / 경험-01
+                        :polarity -
+                        :time (일2 / 일찍))))))
+    :ARG1 (고 / 고려-01
+        :ARG1 (중2 / 중요-01
+            :ARG1 (a2 / and
+                :op1 (가2 / 가능-01
+                    :ARG1 (추 / 추진-01
+                        :manner (과2 / 과감하-01)))
+                :op2 (가3 / 가능-01
+                    :ARG1 (관 / 관리-01
+                        :ARG1 (위3 / 위기
+                            :mod (종 / 종합))))))))
 
-
-# ::id snt9.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 이어 "김 후보자는 저와 개인적 인연이 없지만 누구보다 국민 어려움에 공감하는 분"이라며 "특히 기획예산처, 재정부 요직을 두루 거치며 경제에 대한 거시적 통찰력과 조정능력이 검증된 유능한 관료란 점에서 적임자로 판단했다"고 말했다.
-# ::note
--- FRAMES ----------------------------------------
-후보자 : DERIVED_NON-ENTRY -> (후 / 후보자-00) ?
-개인적 : DERIVED_NON-ENTRY -> (개 / 개인적-00) ?
-없 : ** UNUSED_OR_NON-ENTRY **
-공감 : VERBAL_NOUN
-	- sympathize		(공 / 공감-01 :ARG0 experiencer :ARG1 sympathized_with)
-기획 : VERBAL_NOUN
-	- plan		(기 / 기획-01 :ARG0 agent :ARG1 thing_planned)
-거치 : VERB
-	- pass_through		(거 / 거치-01 :ARG1 thing :ARG2 theme)
-	- mount		(거 / 거치-02 :ARG0 agent :ARG1 thing_mounted :ARG2 where_mount)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-거시적 : DERIVED_NON-ENTRY -> (거 / 거시적-00) ?
-통찰력 : DERIVED_NON-ENTRY -> (통 / 통찰력-00) ?
-조정 : VERBAL_NOUN
-	- adjust		(조 / 조정-01 :ARG0 agent :ARG1 thing_adjusted :ARG2 adjusted_to)
-검증되 : DERIVED_NON-ENTRY
-유능 : VERBAL_NOUN
-	- competent		(유 / 유능-01 :ARG1 thing_competent)
-적임자 : DERIVED_NON-ENTRY -> (적 / 적임자-00) ?
-판단 : VERBAL_NOUN
-	- judge		(판 / 판단-01 :ARG0 agent :ARG1 judgement)
-말하 : VERB
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
-:mod (특 / 특히)
--- NE TYPES --------------------------------------
-"국민" [CV_POSITION]	->  :mod (국 / 국민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국민))
-"기획예산처" [OGG_POLITICS]	->  (기 / 기획예산처)	OR	(g / government-organization :wiki "대한민국_기획예산처" :name (이 / 이름 :op1 "기획예산처"))
-"김" [PS_NAME]	->  (김 / 김)	OR	(p / person :wiki "김?" :name (이 / 이름 :op1 "김"))
-"재정부" [OGG_POLITICS]	->  (재 / 재정부)	OR	(g / government-organization :wiki "재정부?" :name (이 / 이름 :op1 "재정부"))
-"적임자" [CV_POSITION]	->  :mod (적 / 적임자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (적 / 적임자))
-"조정" [PS_NAME]	->  (조 / 조정)	OR	(p / person :wiki "조정?" :name (이 / 이름 :op1 "조정"))
-"후보자" [CV_POSITION]	->  :mod (후 / 후보자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후보자))
--- VERBALIZED ------------------------------------
-(능 / 능력-00 :mod (조 / 조정-01))
-(력 / 력 :mod (통 / 통찰-00))
-(부 / 부 :mod (재 / 재정-00))
-(어 / 어려움 :mod (국 / 국민-00))
-(예 / 예산-00 :mod (기 / 기획-01))
-(요 / 요직 :mod (부 / 부-00))
-(자 / 자 :mod (적 / 적임-00))
-(자 / 자 :mod (후 / 후보-00))
-(적 / 적 :mod (개 / 개인-00))
-(적 / 적 :mod (거 / 거시-00))
-(처 / 처 :mod (예 / 예산-00))
-
+# ::note 거치다 거치하다 lemma issue
+(a / and
+    :op2 (말 / 말하-01
+        :ARG1 (공 / 공감-01
+            :ARG0 (p / person :name (이 / 이름 :op1 "김")
+                :mod (후 / 후보))
+            :ARG1 (어 / 어렵-01
+                :poss (국 / 국민))
+            :concession (만 / 만나-01
+                :polarity -
+                :ARG0 p
+                :ARG1 (나 / 나)
+                :manner (개 / 개인)))
+        :ARG1 (판 / 판단-01
+            :ARG1 (사 / 사람
+                :ARG1-of (적 / 적합-01))
+            :cause (관 / 관료
+                :ARG1-of (유 / 유능-01)
+                :domain p
+                :mod (검 / 검증-00
+                    :ARG1 (가 / 가능-01
+                        :ARG1 (a2 / and
+                            :op1 (조 / 조정-01)
+                            :op2 (통 / 통찰-00
+                                :manner (거 / 거시))
+                            :topic (경 / 경제)))
+                    :manner (거2 / 거치-01
+                        :mod (특 / 특히)
+                        :ARG1 p
+                        :ARG2 (직 / 직위
+                            :ARG1-of (중 / 중요-01)
+                            :ARG2-of (h / have-org-role-91
+                                :ARG0 p
+                                :ARG1 (g / government-organization :wiki "대한민국_기획예산처" :name (이2 / 이름 "기획예산처")))
+                            :ARG2-of (h2 / have-org-role-91
+                                :ARG0 p
+                                :ARG1 (g2 / government-organization :wiki "대한민국_기획재정부" :name (이3 / 이름 "재정부"))))))))))
 
 # ::id snt10.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 강경화 장관 후보자는 서울 출생으로 이화여고를 졸업, 매사추세츠대학 커뮤니케이션 박사 학위를 받았다.
 # ::note
--- FRAMES ----------------------------------------
-후보자 : DERIVED_NON-ENTRY -> (후 / 후보자-00) ?
-출생 : VERBAL_NOUN
-	- born		(출 / 출생-01 :ARG1 thing_born)
-졸업 : VERBAL_NOUN
-	- graduate		(졸 / 졸업-01 :ARG0 agent :ARG1 school)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"강경화" [PS_NAME]	->  (강 / 강경화)	OR	(p / person :wiki "강경화" :name (이 / 이름 :op1 "강경화"))
-"매사추세츠대학" [OGG_EDUCATION]	->  (매 / 매사추세츠대학)	OR	(s / school|university :wiki - :name (이 / 이름 :op1 "매사추세츠대학"))
-"박사" [CV_POSITION]	->  :mod (박 / 박사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (박 / 박사))
-"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
-"이화여고" [OGG_EDUCATION]	->  (이 / 이화여고)	OR	(s / school|university :wiki "이화여자고등학교" :name (이 / 이름 :op1 "이화여고"))
-"장관" [CV_POSITION]	->  :mod (장 / 장관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장관))
-"커뮤니케이션" [FD_OTHERS]	->  (커 / 커뮤니케이션)	OR	(s / study-field|group* :wiki "의사소통" :name (이 / 이름 :op1 "커뮤니케이션"))
-"후보자" [CV_POSITION]	->  :mod (후 / 후보자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후보자))
--- VERBALIZED ------------------------------------
-(박 / 박사 :mod (커 / 커뮤니케이션-00))
-(자 / 자 :mod (후 / 후보-00))
-(커 / 커뮤니케이션 :mod (대 / 대학-00))
-(학 / 학위 :mod (박 / 박사-00))
-(후 / 후보 :mod (장 / 장관-00))
+(받 / 받-01
+    :ARG0 (p / person :wiki "강경화" :name (이 / 이름 :op1 "강경화")
+        :mod (후 / 후보
+            :topic (h / have-org-role-91
+                :ARG2 (장 / 장관)))
+        :ARG1-of (태 / 태어나-01
+            :location (c / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울")))
+        :ARG0-of (졸 / 졸업-01
+            :ARG1 (s / school :wiki "이화여자고등학교" :name (이3 / 이름 :op1 "이화여고"))))
+    :ARG1 (학 / 학위
+        :mod (박 / 박사)
+        :topic (커 / 커뮤니케이션))
+    :ARG2 (u / university :wiki "매사추세츠_대학교_애머스트" :name (이4 / 이름 :op1 "매사추세츠대학")))
 
-
-# ::id snt11.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 문 대통령은 강 후보자에 대해 "비(非) 외무고시 출신 외교부 첫 여성 국장과 유엔 최고위직 등 외교 분야에서 한국 최초, 최고 여성 수식어가 따라다닌다"며 "2006년부터 유엔에서 활동하며 국제외교무대에서 쌓은 인적 네트워크, 전문성을 바탕으로 민감한 외교 현안을 슬기롭게 헤쳐 나갈 적임자로 판단했다"고 말했다.
-# ::note
--- FRAMES ----------------------------------------
-후보자 : DERIVED_NON-ENTRY -> (후 / 후보자-00) ?
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-비 : VERBAL_NOUN
-	- be_empty		(비 / 비-01 :ARG1 thing_being_empty)
-고시 : VERBAL_NOUN
-	- notify		(고 / 고시-01 :ARG0 agent :ARG1 thing_notified :ARG2 notified_to)
-외교부 : DERIVED_NON-ENTRY -> (외 / 외교부-00) ?
-최고위 : DERIVED_NON-ENTRY -> (최 / 최고위-00) ?
-수식어 : DERIVED_NON-ENTRY -> (수 / 수식어-00) ?
-따라다니 : ** UNUSED_OR_NON-ENTRY **
-활동 : VERBAL_NOUN
-	- act		(활 / 활동-01 :ARG0 agent :ARG1 role)
-쌓 : VERB
-	- heap		(쌓 / 쌓-01 :ARG0 agent :ARG1 thing_heaped :ARG2 heaped_on)
-전문성 : DERIVED_NON-ENTRY -> (전 / 전문성-00) ?
-민감하 : VERB
-	- sensitive		(민 / 민감하-01 :ARG1 thing_being_sensitive :ARG2 sensitive_to)
-슬기롭 : DERIVED_NON-ENTRY
-헤치 : ** UNUSED_OR_NON-ENTRY **
-적임자 : DERIVED_NON-ENTRY -> (적 / 적임자-00) ?
-판단 : VERBAL_NOUN
-	- judge		(판 / 판단-01 :ARG0 agent :ARG1 judgement)
-말하 : VERB
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2006년부터" [DT_OTHERS]	->  :time|duration (2 / 2006년부터)	OR	:time (d / date-entity :year 2006)	OR	:duration (t / temporal-quantity :quant 2006 :unit (년 / 년))  
-"강" [PS_NAME]	->  (강 / 강)	OR	(p / person :wiki "강" :name (이 / 이름 :op1 "강"))
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"문" [PS_NAME]	->  (문 / 문)	OR	(p / person :wiki "문" :name (이 / 이름 :op1 "문"))
-"여성 국장" [CV_POSITION]	->  :mod (여 / 여성국장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (여 / 여성 국장))
-"외교부" [OGG_POLITICS]	->  (외 / 외교부)	OR	(g / government-organization :wiki "외교부?" :name (이 / 이름 :op1 "외교부"))
-"외무고시" [CV_POLICY]	->  (외 / 외무고시)	OR	(p / policy* :wiki "고등고시" :name (이 / 이름 :op1 "외무고시"))
-"유엔" [OGG_POLITICS]	->  (유 / 유엔)	OR	(g / government-organization :wiki "유엔" :name (이 / 이름 :op1 "유엔"))
-"유엔" [OGG_POLITICS]	->  (유 / 유엔)	OR	(g / government-organization :wiki "유엔" :name (이 / 이름 :op1 "유엔"))
-"적임자" [CV_POSITION]	->  :mod (적 / 적임자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (적 / 적임자))
-"첫" [QT_ORDER]	->  :ord (첫 / 첫)	OR	:ord (o / ordinal-entity :value 첫)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"최고위직" [CV_POSITION]	->  :mod (최 / 최고위직)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (최 / 최고위직))
-"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
-"후보자" [CV_POSITION]	->  :mod (후 / 후보자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후보자))
--- VERBALIZED ------------------------------------
-(고 / 고시-01 :mod (외 / 외무-00))
-(국 / 국장 :mod (여 / 여성-00))
-(네 / 네트워크 :mod (인 / 인적-00))
-(무 / 무대 :mod (외 / 외교-00))
-(부 / 부 :mod (외 / 외교-00))
-(분 / 분야 :mod (외 / 외교-00))
-(성 / 성 :mod (전 / 전문-00))
-(수 / 수식 :mod (여 / 여성-00))
-(어 / 어 :mod (수 / 수식-00))
-(여 / 여성 :mod (최 / 최고-00))
-(외 / 외교 :mod (국 / 국제-00))
-(외 / 외교 :mod (출 / 출신-00))
-(자 / 자 :mod (적 / 적임-00))
-(자 / 자 :mod (후 / 후보-00))
-(직 / 직 :mod (고 / 고위-00))
-(출 / 출신-00 :mod (고 / 고시-01))
-(현 / 현안 :mod (외 / 외교-00))
+# ::note 판단-01 동격 처리?, 인적
+(말 / 말하-01
+    :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (대 / 대통령)))
+    :topic (p2 / person :wiki "강경화" :name (이2 / 이름 :op1 "강")
+        :mod (후 / 후보
+            :topic (h2 / have-org-role-91
+                :ARG2 (장 / 장관))))
+    :ARG1 (따 / 따르-01
+        :ARG0 (수 / 수식어
+            :mod (여 / 여성
+                :mod (최 / 최초
+                    :mod (c / country :wiki "대한민국" :name (이3 / 이름 :op1 "한국")))
+                :mod (최2 / 최고
+                    :mod c))
+            :topic (외 / 외교
+                :example (등 / 등
+                    :op1 (h3 / have-org-role-91
+                        :ARG0 p2
+                        :ARG1 (g / government-organization :wiki "대한민국_외교부" :name (이4 / 이름 :op1 "외교부"))
+                        :ARG2 (국 / 국장)
+                        :mod (첫 / 첫)
+                        :mod (출 / 출신
+                            :polarity -
+                            :op1 (외2 / 외무고시)))
+                    :op2 (h4 / have-org-role-91
+                        :ARG0 p2
+                        :ARG1 (o / organization :wiki "유엔" :name (이5 / 이름 :op1 "유엔"))
+                        :mod (최3 / 최고위))))))
+    :ARG1 (판 / 판단-01
+        :ARG0 p
+        :ARG1 p2
+        :ARG1 (사 / 사람
+            :ARG1-of (적 / 적합-01)
+            :ARG0-of (헤 / 헤쳐나가-00
+                :manner (슬 / 슬기롭-00)
+                :ARG1 (현 / 현안
+                    :topic (외3 / 외교)
+                    :ARG1-of (민 / 민감하-01))
+                :manner (a / and
+                    :op1 (전 / 전문성)
+                    :op2 (네 / 네트워크
+                        :mod (사 / 사람))
+                    :ARG1-of (쌓 / 쌓-01
+                        :ARG2 (무 / 무대
+                            :mod (외4 / 외교
+                                :mod (국2 / 국제)))
+                        :manner (활 / 활동-01
+                            :ARG0 p2
+                            :location o
+                            :time (이6 / 이후
+                                :op1 (d / date-entity :year 2006)))))))))
 
-
-# ::id snt12.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred False
 # ::snt 특히 "내각 구성에서 성 평등 관점에서도 큰 의미가 있다. 여러 어려움, 외교 난제가 산적한 현실에 후보자가 국제외교무대에서의 경험과 추진력으로 대한민국의 당면 외교위기를 해결하고 외교 위상을 높여주길 기대한다"고 밝혔다.
 # ::note
--- FRAMES ----------------------------------------
-구성 : VERBAL_NOUN
-	- compose		(구 / 구성-01 :ARG0 agent :ARG1 thing_composed :ARG2 composed_of)
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-의미 : VERBAL_NOUN
-	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
-있 : ** UNUSED_OR_NON-ENTRY **
-산적 : VERBAL_NOUN
-	- form_a_pile		(산 / 산적-01 :ARG1 thing_forming_a_pile :ARG2 location)
-후보자 : DERIVED_NON-ENTRY -> (후 / 후보자-00) ?
-경험 : VERBAL_NOUN
-	- experience		(경 / 경험-01 :ARG1 experiencer :ARG2 thing_experienced)
-추진 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (추 / 추진력-00) ?
-	- drive_forward		(추 / 추진-01 :ARG0 agent :ARG1 thing_driven_forward)
-당면 : VERBAL_NOUN
-	- face		(당 / 당면-01 :ARG1 facer :ARG2 thing_faced)
-해결 : VERBAL_NOUN
-	- solve		(해 / 해결-01 :ARG0 solver :ARG1 the_problem)
-높이 : REDUCED_VERB_DETECTED
-	- high		(높 / 높-01 :ARG0 causer :ARG1 thing_being_high :ARG2 start_point :ARG3 end_point)
-기대 : VERBAL_NOUN
-	- expect		(기 / 기대-01 :ARG0 agent :ARG1 thing_expected)
-밝히 : VERB
-	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
-	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
--- FORCE CONVERT ---------------------------------
-:mod (특 / 특히)
--- NE TYPES --------------------------------------
-"대한민국" [LCP_COUNTRY]	->  (대 / 대한민국)	OR	(c / country :wiki "대한민국" :name (이 / 이름 :op1 "대한민국"))
-"후보자" [CV_POSITION]	->  :mod (후 / 후보자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후보자))
--- VERBALIZED ------------------------------------
-(관 / 관점 :mod (평 / 평등-00))
-(구 / 구성-01 :mod (내 / 내각-00))
-(난 / 난제 :mod (외 / 외교-00))
-(력 / 력 :ARG0-of (추 / 추진-01))
-(무 / 무대 :mod (외 / 외교-00))
-(외 / 외교 :mod (국 / 국제-00))
-(외 / 외교-00 :mod (당 / 당면-01))
-(위 / 위기 :mod (외 / 외교-00))
-(위 / 위상 :mod (외 / 외교-00))
-(자 / 자 :mod (후 / 후보-00))
-(평 / 평등 :mod (성 / 성-00))
+(밝 / 밝히-01
+    :mod (특 / 특히)
+    :ARG1 (a / and
+        :op1 (의 / 의미-01
+            :mod (크 / 크-01)
+            :topic (구 / 구성-01
+                :ARG1 (내 / 내각))
+            :topic (평 / 평등-00
+                :mod (성 / 성)))
+        :op2 (기 / 기대-01
+            :ARG1 (a2 / and
+                :op1 (해 / 해결-01
+                    :ARG0 (사 / 사람
+                        :mod (후 / 후보))
+                    :ARG1 (위 / 위기
+                        :mod (외 / 외교)
+                        :ARG2-of (당 / 당면-01
+                            :ARG1 (c / country :wiki "대한민국" :name (이 / 이름 :op1 "대한민국"))))
+                    :instrument (a3 / and
+                        :op1 (경 / 경험-01
+                            :location (무 / 무대
+                                :mod (외2 / 외교
+                                    :mod (국 / 국제))))
+                        :op2 (능 / 능력
+                            :mod (추 / 추진-01))
+                        :poss 사))
+                :op2 (높 / 높-01
+                    :ARG0 사
+                    :ARG1 (위2 / 위상
+                        :mod (외3 / 외교))))
+            :topic (현 / 현실
+                :mod (산 / 산적-01
+                    :ARG1 (a4 / and
+                        :op1 (어 / 어렵-01)
+                        :op2 (난 / 난제
+                            :mod (외4 / 외교))
+                        :quant (여 / 여러)))))))
 
-
-# ::id snt13.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
 # ::snt 정의용 신임 실장은 서울 출신으로 서울고, 서울대 외교학과를 졸업했다.
 # ::note
--- FRAMES ----------------------------------------
-외교학 : DERIVED_NON-ENTRY -> (외 / 외교학-00) ?
-졸업 : VERBAL_NOUN
-	- graduate		(졸 / 졸업-01 :ARG0 agent :ARG1 school)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
-"서울고" [OGG_EDUCATION]	->  (서 / 서울고)	OR	(s / school|university :wiki "서울고등학교" :name (이 / 이름 :op1 "서울고"))
-"서울대" [OGG_EDUCATION]	->  (서 / 서울대)	OR	(s / school|university :wiki "서울대학교" :name (이 / 이름 :op1 "서울대"))
-"신임 실장" [CV_POSITION]	->  :mod (신 / 신임실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신임 실장))
-"외교학과" [OGG_EDUCATION]	->  (외 / 외교학과)	OR	(s / school|university :wiki - :name (이 / 이름 :op1 "외교학과"))
-"정의용" [PS_NAME]	->  (정 / 정의용)	OR	(p / person :wiki "정의용" :name (이 / 이름 :op1 "정의용"))
--- VERBALIZED ------------------------------------
-(실 / 실장 :mod (신 / 신임-00))
-(학 / 학 :mod (외 / 외교-00))
+(a / and
+    :op1 (출 / 출생-01
+        :ARG1 (p / person :wiki "정의용" :name (이 / 이름 :op1 "정의용")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (실 / 실장))
+            :ARG1-of (신 / 신임-00))
+        :location (c / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울")))
+    :op2 (졸 / 졸업-01
+        :ARG0 p
+        :ARG1 (s / school :wiki "서울고등학교" :name (이3 / 이름 :op1 "서울고"))
+        :ARG1 (학 / 학과
+            :topic (외 / 외교학)
+            :part-of (u / university :wiki "서울대학교" :name (이4 / 이름 :op1 "서울대")))))
 
-
-# ::id snt14.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
 # ::snt 현재 아시아정당 국제회의 공동 상임위원장이다.
 # ::note
--- FRAMES ----------------------------------------
-위원장 : DERIVED_NON-ENTRY -> (위 / 위원장-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"상임위원장" [CV_POSITION]	->  :mod (상 / 상임위원장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (상 / 상임위원장))
-"아시아정당 국제회의" [OGG_POLITICS]	->  (아 / 아시아정당국제회의)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "아시아정당" :op2 "국제회의"))
--- VERBALIZED ------------------------------------
-(공 / 공동 :mod (회 / 회의-00))
-(상 / 상임 :mod (공 / 공동-00))
-(위 / 위원 :mod (상 / 상임-00))
-(장 / 장 :mod (위 / 위원-00))
-(회 / 회의 :mod (국 / 국제-00))
+(h / have-org-role-91
+    :ARG1 (o / organization :wiki - :name (이 / 이름 :op1 "아시아정당" :op2 "국제회의"))
+    :ARG2 (상 / 상임위원장
+        :mod (공 / 공동))
+    :time (현 / 현재))
 
-
-# ::id snt15.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
 # ::snt 문 대통령이 각국 정상들과 '전화 외교'를 할 때 배석해 역할을 해왔다.
 # ::note
--- FRAMES ----------------------------------------
-정상들 : DERIVED_NON-ENTRY -> (정 / 정상들-00) ?
-전화 : VERBAL_NOUN
-	- call		(전 / 전화-01 :ARG0 agent :ARG1 thing_called)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-배석 : VERBAL_NOUN
-	- sit_with		(배 / 배석-01 :ARG0 sitter :ARG1 meeting)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"문" [PS_NAME]	->  (문 / 문)	OR	(p / person :wiki "문" :name (이 / 이름 :op1 "문"))
--- VERBALIZED ------------------------------------
-(들 / 들 :mod (정 / 정상-00))
-(배 / 배석-01 :mod (때 / 때-00))
-(외 / 외교-00 :mod (전 / 전화-01))
-(정 / 정상 :mod (각 / 각국-00))
+(역 / 역할-00
+    :manner (배 / 배석-01)
+    :time (하 / 하-01
+        :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (대 / 대통령)))
+        :ARG1 (외 / 외교
+            :medium (전 / 전화))
+        :accompanier (정 / 정상
+            :poss (각 / 각국))))
 
-
-# ::id snt16.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred False
 # ::snt 이어 "지금처럼 북핵, 사드(THAAD), 경제가 하나로 얽힌 숙제를 풀려면 확고한 안보의식과 함께 외교적 능력이 있어야 해 정 실장이 적임자라 판단했다"며 "안보가 곧 경제, 민생이라는 통합적 정책 운용을 통해 하루빨리 국민이 안심하고 생활하는 국가안보 상황을 만들어주길 기대한다"고 말했다.
 # ::note
--- FRAMES ----------------------------------------
-얽히 : REDUCED_VERB_DETECTED
-	- entwine		(얽 / 얽-01 :ARG0 agent :ARG1 thing_entwined)
-풀 : VERB
-	- solve		(풀 / 풀-01 :ARG0 solver :ARG1 the_problem)
-	- release		(풀 / 풀-02 :ARG0 releaser :ARG1 thing_released)
-	- warm_up		(풀 / 풀-03 :ARG0 agent :ARG1 body)
-확고하 : VERB
-	- firm		(확 / 확고하-01 :ARG1 thing_being_firm)
-의식 : VERBAL_NOUN
-	- conscious_of		(의 / 의식-01 :ARG0 thing_being_conscious :ARG1 conscious_of)
-외교적 : DERIVED_NON-ENTRY -> (외 / 외교적-00) ?
-있 : ** UNUSED_OR_NON-ENTRY **
-적임자 : DERIVED_NON-ENTRY -> (적 / 적임자-00) ?
-판단 : VERBAL_NOUN
-	- judge		(판 / 판단-01 :ARG0 agent :ARG1 judgement)
-통합 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (통 / 통합적-00) ?
-	- combine		(통 / 통합-01 :ARG0 agent :ARG1 ingredient_one :ARG2 ingredient_two)
-운용 : VERBAL_NOUN
-	- use		(운 / 운용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
-통하 : VERB
-	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
-	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
-	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
-안심 : VERBAL_NOUN
-	- relieve		(안 / 안심-01 :ARG0 thing_relieving :ARG1 thing_relieved)
-생활 : VERBAL_NOUN
-	- live		(생 / 생활-01 :ARG0 entity_being_alive :ARG2 location)
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-기대 : VERBAL_NOUN
-	- expect		(기 / 기대-01 :ARG0 agent :ARG1 thing_expected)
-말하 : VERB
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"THAAD" [AF_WEAPON]	->  (T / THAAD)	OR	(w / weapon* :wiki "THAAD" :name (이 / 이름 :op1 "THAAD"))
-"국민" [CV_POSITION]	->  :mod (국 / 국민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국민))
-"사드" [AF_WEAPON]	->  (사 / 사드)	OR	(w / weapon* :wiki "THAAD" :name (이 / 이름 :op1 "사드"))
-"실장" [CV_POSITION]	->  :mod (실 / 실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (실 / 실장))
-"적임자" [CV_POSITION]	->  :mod (적 / 적임자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (적 / 적임자))
-"정" [PS_NAME]	->  (정 / 정)	OR	(p / person :wiki "정?" :name (이 / 이름 :op1 "정"))
-"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
-"핵" [AF_WEAPON]	->  (핵 / 핵)	OR	(w / weapon* :wiki "핵?" :name (이 / 이름 :op1 "핵"))
--- VERBALIZED ------------------------------------
-(상 / 상황 :mod (안 / 안보-00))
-(안 / 안보 :mod (국 / 국가-00))
-(운 / 운용-01 :mod (정 / 정책-00))
-(의 / 의식-01 :mod (안 / 안보-00))
-(자 / 자 :mod (적 / 적임-00))
-(적 / 적 :ARG0-of (통 / 통합-01))
-(적 / 적 :mod (외 / 외교-00))
-(핵 / 핵 :mod (북 / 북-00))
+(말 / 말하-01
+    :ARG1 (a / and
+        :op1 (판 / 판단-01
+            :ARG1 (사 / 사람
+                :mod (적 / 적임)
+                :domain (p / person :wiki "정의용" :name (이 / 이름 :op1 "정")
+                    :ARG0-of (h / have-org-role-91
+                        :ARG2 (실 / 실장))))
+            :cause (필 / 필요-01
+                :ARG1 (a2 / and
+                    :op1 (의 / 의식-01
+                        :ARG1 (안 / 안보)
+                        :ARG1-of (확 / 확고하-01))
+                    :op2 (능 / 능력
+                        :mod (외 / 외교))))
+            :purpose (풀 / 풀-01
+                :ARG1 (숙 / 숙제
+                    :mod (얽 / 얽-01
+                        :mod (하 / 하나)
+                        :ARG1 (a3 / and
+                            :op1 (북 / 북핵)
+                            :op2 (사2 / 사드)
+                            :op3 (경 / 경제))))))
+        :op2 (기 / 기대-01
+            :ARG1 (만 / 만들-03
+                :ARG1 (상 / 상황
+                    :mod (안2 / 안보
+                        :mod (국 / 국가))
+                    :mod (안3 / 안심-01
+                        :ARG1 (국2 / 국민
+                            :ARG1-of (생 / 생활-01))))
+                :mod (하2 / 하루빨리)
+                :manner (운 / 운용-01
+                    :ARG1 (정 / 정책
+                        :mod (통 / 통합-01)
+                        :mod (a4 / and
+                            :domain (안4 / 안보)
+                            :mod (곧 / 곧)
+                            :op1 (경2 / 경제)
+                            :op2 (민 / 민생))))))))
 
-
-# ::id snt17.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
 # ::snt 장하성 신임 실장은 광주 출생으로, 경기고를 졸업해 펜실베니아대 경영학 박사학위를 받았다.
 # ::note
--- FRAMES ----------------------------------------
-출생 : VERBAL_NOUN
-	- born		(출 / 출생-01 :ARG1 thing_born)
-졸업 : VERBAL_NOUN
-	- graduate		(졸 / 졸업-01 :ARG0 agent :ARG1 school)
-경영 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (경 / 경영학-00) ?
-	- manage		(경 / 경영-01 :ARG0 agent :ARG1 thing_managed)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"경기고" [OGG_EDUCATION]	->  (경 / 경기고)	OR	(s / school|university :wiki "경기고등학교" :name (이 / 이름 :op1 "경기고"))
-"경영학" [FD_SOCIAL_SCIENCE]	->  (경 / 경영학)	OR	(s / study-field|group* :wiki "경영학" :name (이 / 이름 :op1 "경영학"))
-"광주" [LCP_CITY]	->  (광 / 광주)	OR	(c / city :wiki "광주광역시" :name (이 / 이름 :op1 "광주"))
-"박사" [CV_POSITION]	->  :mod (박 / 박사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (박 / 박사))
-"신임 실장" [CV_POSITION]	->  :mod (신 / 신임실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신임 실장))
-"장하성" [PS_NAME]	->  (장 / 장하성)	OR	(p / person :wiki "장하성" :name (이 / 이름 :op1 "장하성"))
-"펜실베니아대" [OGG_EDUCATION]	->  (펜 / 펜실베니아대)	OR	(s / school|university :wiki "펜실베이니아_대학교" :name (이 / 이름 :op1 "펜실베니아대"))
--- VERBALIZED ------------------------------------
-(실 / 실장 :mod (신 / 신임-00))
-(학 / 학 :ARG0-of (경 / 경영-01))
-(학 / 학위 :mod (박 / 박사-00))
+(a / and
+    :op1 (출 / 출생-01
+        :ARG1 (p / person :wiki "장하성" :name (이 / 이름 :op1 "장하성")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (실 / 실장))
+            :ARG1-of (신 / 신임-00))
+        :location (c / city :wiki "광주광역시" :name (이2 / 이름 :op1 "광주")))
+    :op2 (졸 / 졸업-01
+        :ARG0 p
+        :ARG1 (s / school :wiki "경기고등학교" :name (이3 / 이름 :op1 "경기고")))
+    :op3 (받 / 받-01
+        :ARG0 p
+        :ARG1 (학 / 학위
+            :mod (박 / 박사)
+            :topic (경 / 경영학))
+        :ARG2 (u / university :wiki "펜실베이니아_대학교" :name (이4 / 이름 :op1 "펜실베니아대"))))
 
-
-# ::id snt18.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
 # ::snt 문 대통령은 "장 실장은 한국 사회의 경제적 불평등을 지속적으로 연구한 경제학 분야의 석학, 실천 운동가"라며 "과거 재벌 대기업 중심 경제 패러다임에서 벗어나 사람 중심, 중소기업 중심으로 경제사회정책을 변화시키고, 경제민주화와 소득주도성장, 국민성장을 함께 추진할 최고 적임자로 판단했다"고 밝혔다.
 # ::note
--- FRAMES ----------------------------------------
-경제적 : DERIVED_NON-ENTRY -> (경 / 경제적-00) ?
-불평등 : DERIVED_NON-ENTRY -> (불 / 불평등-00) ?
-지속 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (지 / 지속적-00) ?
-	- continue		(지 / 지속-01 :ARG0 agent :ARG1 thing_continued)
-연구 : VERBAL_NOUN
-	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
-경제학 : DERIVED_NON-ENTRY -> (경 / 경제학-00) ?
-실천 : VERBAL_NOUN
-	- practice		(실 / 실천-01 :ARG0 practicer :ARG1 thing_practiced)
-운동가 : DERIVED_NON-ENTRY -> (운 / 운동가-00) ?
-기업 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대기업-00) ?
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-벗어나 : VERB
-	- get_out_of		(벗 / 벗어나-01 :ARG0 entity_escaping :ARG1 place_or_thing_escaped)
-기업 : VERBAL_NOUN
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-변화 : VERBAL_NOUN
-	- change		(변 / 변화-01 :ARG0 causer :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
-민주화 : DERIVED_NON-ENTRY -> (민 / 민주화-00) ?
-주도 : VERBAL_NOUN
-	- lead		(주 / 주도-01 :ARG0 thing_leading :ARG1 thing_led)
-성장 : VERBAL_NOUN
-	- grow		(성 / 성장-01 :ARG0 causer :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
-성장 : VERBAL_NOUN
-	- grow		(성 / 성장-01 :ARG0 causer :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
-추진 : VERBAL_NOUN
-	- drive_forward		(추 / 추진-01 :ARG0 agent :ARG1 thing_driven_forward)
-적임자 : DERIVED_NON-ENTRY -> (적 / 적임자-00) ?
-판단 : VERBAL_NOUN
-	- judge		(판 / 판단-01 :ARG0 agent :ARG1 judgement)
-밝히 : VERB
-	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
-	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"경제학" [FD_SOCIAL_SCIENCE]	->  (경 / 경제학)	OR	(s / study-field|group* :wiki "경제학" :name (이 / 이름 :op1 "경제학"))
-"국민" [CV_POSITION]	->  :mod (국 / 국민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국민))
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"문" [PS_NAME]	->  (문 / 문)	OR	(p / person :wiki "문" :name (이 / 이름 :op1 "문"))
-"석학" [CV_POSITION]	->  :mod (석 / 석학)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (석 / 석학))
-"실장" [CV_POSITION]	->  :mod (실 / 실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (실 / 실장))
-"운동가" [CV_OCCUPATION]	->  :mod (운 / 운동가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (운 / 운동가))
-"장" [PS_NAME]	->  (장 / 장)	OR	(p / person :wiki "장?" :name (이 / 이름 :op1 "장"))
-"적임자" [CV_POSITION]	->  :mod (적 / 적임자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (적 / 적임자))
-"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
--- VERBALIZED ------------------------------------
-(가 / 가 :mod (운 / 운동-00))
-(경 / 경제 :mod (중 / 중심-00))
-(기 / 기업-01 :mod (중 / 중소-00))
-(민 / 민주 :mod (경 / 경제-00))
-(사 / 사회 :mod (경 / 경제-00))
-(성 / 성장-01 :ARG1 (주 / 주도-01))
-(성 / 성장-01 :mod (국 / 국민-00))
-(운 / 운동-00 :mod (실 / 실천-01))
-(자 / 자 :mod (적 / 적임-00))
-(재 / 재벌 :mod (과 / 과거-00))
-(적 / 적 :ARG0-of (지 / 지속-01))
-(적 / 적 :mod (경 / 경제-00))
-(적 / 적임 :mod (최 / 최고-00))
-(정 / 정책 :mod (사 / 사회-00))
-(주 / 주도-01 :mod (소 / 소득-00))
-(중 / 중심 :mod (사 / 사람-00))
-(중 / 중심-00 :mod (기 / 기업-01))
-(중 / 중심-00 :mod (기 / 기업-01))
-(패 / 패러다임 :mod (경 / 경제-00))
-(학 / 학 :mod (경 / 경제-00))
-(화 / 화 :mod (민 / 민주-00))
+(밝 / 밝히-01
+    :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (대 / 대통령)))
+    :ARG1 (a / and
+        :op1 (a2 / and
+            :domain (p2 / person :wiki "장하성" :name (이2 / 이름 :op1 "장")
+                :ARG0-of (h2 / have-org-role-91
+                    :ARG2 (실 / 실장)))
+            :op1 (석 / 석학
+                :topic (경 / 경제학))
+            :op2 (사 / 사람
+                :ARG0-of (운 / 운동-00)
+                :ARG0-of (실2 / 실천-01))
+            :ARG0-of (연 / 연구-01
+                :ARG1 (평 / 평등-00
+                    :polarity -
+                    :mod (경2 / 경제)
+                    :poss (사2 / 사회
+                        :mod (c / country :wiki "대한민국" :name (이3 / 이름 :op1 "한국"))))))
+        :op2 (판 / 판단-01
+            :ARG0 p
+            :ARG1 (사3 / 사람
+                :domain p2
+                :mod (적 / 적임)
+                :ARG0-of (예 / 예정-01
+                    :ARG0 p2
+                    :ARG1 (a3 / and
+                        :op1 (변 / 변화-01
+                            :ARG0 p2
+                            :ARG1 (정 / 정책
+                                :mod (경3 / 경제)
+                                :mod (사3 / 사회))
+                            :ARG3 (중 / 중심
+                                :op1 (사4 / 사람)
+                                :op2 (중2 / 중소기업))
+                            :manner (벗 / 벗어나-01
+                                :ARG1 (패 / 패러다임
+                                    :mod (경4 / 경제)
+                                    :mod (중3 / 중심
+                                        :op1 (대2 / 대기업))
+                                    :time (과 / 과거))))
+                        :op2 (추 / 추진-01
+                            :ARG0 p2
+                            :ARG1 (a4 / and
+                                :op1 (민 / 민주화-00
+                                    :ARG1 (경5 / 경제))
+                                :op2 (성 / 성장-01
+                                    :ARG1-of (주 / 주도-01
+                                        :ARG0 (소 / 소득)))
+                                :op3 (성2 / 성장-01
+                                    :mod (국 / 국민))))))))))
 
-
-# ::id snt19.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred False
 # ::snt 그는 "특히 한국경제에 대한 해박한 이론을 바탕으로 기업지배구조 개선운동을 한 경험이 한국 사회 구조적 난제 해결에 큰 도움이 되리라 판단했다"며 "이번에 처음으로 공직을 맡게 됐는데 그동안 역대 정부와 정치권 요청을 고사하다 큰 결단을 해줘서 감사하다"고 했다.
 # ::note
--- FRAMES ----------------------------------------
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-해박하 : ** UNUSED_OR_NON-ENTRY **
-기업 : VERBAL_NOUN
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-지배 : VERBAL_NOUN
-	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
-구조 : VERBAL_NOUN
-	- rescue		(구 / 구조-01 :ARG0 agent :ARG1 entity_rescued)
-개선 : VERBAL_NOUN
-	- improve		(개 / 개선-01 :ARG0 improver :ARG1 thing_improving :ARG2 start_point :ARG3 end_point)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-경험 : VERBAL_NOUN
-	- experience		(경 / 경험-01 :ARG1 experiencer :ARG2 thing_experienced)
-구조 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (구 / 구조적-00) ?
-	- rescue		(구 / 구조-01 :ARG0 agent :ARG1 entity_rescued)
-해결 : VERBAL_NOUN
-	- solve		(해 / 해결-01 :ARG0 solver :ARG1 the_problem)
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-판단 : VERBAL_NOUN
-	- judge		(판 / 판단-01 :ARG0 agent :ARG1 judgement)
-맡 : VERB
-	- have_charge_of		(맡 / 맡-01 :ARGA causer :ARG0 agent :ARG1 thing_had_charge_of)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-정치권 : DERIVED_NON-ENTRY -> (정 / 정치권-00) ?
-요청 : VERBAL_NOUN
-	- request		(요 / 요청-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
-고사하 : DERIVED_NON-ENTRY
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-감사 : VERBAL_NOUN
-	- thank		(감 / 감사-01 :ARG0 thanker :ARG1 thanked)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
-:mod (특 / 특히)
--- NE TYPES --------------------------------------
-"공직" [CV_POSITION]	->  :mod (공 / 공직)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (공 / 공직))
-"기업지배구조 개선운동" [EV_ACTIVITY]	->  (기 / 기업지배구조개선운동)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "기업지배구조" :op2 "개선운동"))
-"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
-"정치권" [CV_LAW]	->  (정 / 정치권)	OR	(l / law :wiki - :name (이 / 이름 :op1 "정치권"))
-"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
-"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
--- VERBALIZED ------------------------------------
-(개 / 개선-01 :ARG1 (구 / 구조-01))
-(구 / 구조-01 :ARG1 (지 / 지배-01))
-(구 / 구조-01 :mod (사 / 사회-00))
-(권 / 권 :mod (정 / 정치-00))
-(역 / 역대 :mod (그 / 그동안-00))
-(운 / 운동-00 :mod (개 / 개선-01))
-(적 / 적 :ARG0-of (구 / 구조-01))
-(정 / 정부 :mod (역 / 역대-00))
-(지 / 지배-01 :ARG1 (기 / 기업-01))
-(해 / 해결-01 :mod (난 / 난제-00))
+(하 / 하-02
+    :ARG0 (그 / 그)
+    :ARG1 (a / and
+        :op1 (판 / 판단-01
+            :ARG1 (돕 / 돕-01
+                :degree (크 / 크-01)
+                :ARG0 (경 / 경험-01
+                    :ARG1 (운 / 운동-00
+                        :purpose (개 / 개선-01
+                            :ARG1 (구 / 구조
+                                :mod (지 / 지배-01
+                                    :ARG1 (기 / 기업)))
+                            :instrument (이 / 이론
+                                :ARG2-of (해 / 해박하-00)
+                                :topic (경2 / 경제
+                                    :mod (c / country :wiki "대한민국" :name (이2 / 이름 :op1 "한국"))))))))
+                :ARG1 (해2 / 해결-01
+                    :ARG1 (난 / 난제
+                        :mod (구2 / 구조)
+                        :poss (사 / 사회
+                            :mod c))))
+        :op2 (감 / 감사-01
+            :ARG0 그
+            :cause (결 / 결단-00
+                :mod (크2 / 크-01)
+                :ARG2-of (c / contrast-01
+                    :ARG1 (고 / 고사-00
+                        :ARG1 (요 / 요청-01
+                            :ARG0 (정 / 정치권)
+                            :ARG0 (정2 / 정부
+                                :mod (역 / 역대))
+                            :time (그2 / 그동안)))))
+            :topic (맡 / 맡-01
+                :ARG1 (공 / 공직)
+                :time (이2 / 이번)
+                :mod (처 / 처음)))))
 
-
-# ::id snt20.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
 # ::snt 문정인 신임 특보는 제주가 고향으로, 오현고를 졸업하고 메릴랜드대에서 정치학 박사 학위를 받았다.
 # ::note
--- FRAMES ----------------------------------------
-졸업 : VERBAL_NOUN
-	- graduate		(졸 / 졸업-01 :ARG0 agent :ARG1 school)
-정치학 : DERIVED_NON-ENTRY -> (정 / 정치학-00) ?
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"메릴랜드대" [OGG_EDUCATION]	->  (메 / 메릴랜드대)	OR	(s / school|university :wiki - :name (이 / 이름 :op1 "메릴랜드대"))
-"문정인" [PS_NAME]	->  (문 / 문정인)	OR	(p / person :wiki "문정인?" :name (이 / 이름 :op1 "문정인"))
-"박사" [CV_POSITION]	->  :mod (박 / 박사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (박 / 박사))
-"신임 특보" [CV_POSITION]	->  :mod (신 / 신임특보)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신임 특보))
-"오현고" [OGG_EDUCATION]	->  (오 / 오현고)	OR	(s / school|university :wiki "오현고등학교" :name (이 / 이름 :op1 "오현고"))
-"정치학" [FD_SOCIAL_SCIENCE]	->  (정 / 정치학)	OR	(s / study-field|group* :wiki "정치학" :name (이 / 이름 :op1 "정치학"))
-"제주" [LCP_PROVINCE]	->  (제 / 제주)	OR	(p / province :wiki "제주?" :name (이 / 이름 :op1 "제주"))
--- VERBALIZED ------------------------------------
-(특 / 특보 :mod (신 / 신임-00))
-(학 / 학 :mod (정 / 정치-00))
-(학 / 학위 :mod (박 / 박사-00))
+(a / and
+    :op1 (출 / 출생-01
+        :ARG1 (p / person :wiki "문정인_(대학_교수)" :name (이 / 이름 :op1 "문정인")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (특 / 특보))
+            :ARG1-of (신 / 신임-00))
+        :location (c / city :wiki "제주시" :name (이2 / 이름 :op1 "제주")))
+    :op2 (졸 / 졸업-01
+        :ARG0 p
+        :ARG1 (s / school :wiki "오현고등학교" :name (이3 / 이름 :op1 "오현고")))
+    :op3 (받 / 받-01
+        :ARG0 p
+        :ARG1 (학 / 학위
+            :mod (박 / 박사)
+            :topic (정 / 정치학))
+        :ARG2 (u / university :wiki "메릴랜드_대학교" :name (이4 / 이름 :op1 "메릴랜드대"))))
 
-
-# ::id snt21.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
 # ::snt 홍석현 신임 특보는 서울 출신으로 경기고, 스탠포드대를 졸업했다.
 # ::note
--- FRAMES ----------------------------------------
-졸업 : VERBAL_NOUN
-	- graduate		(졸 / 졸업-01 :ARG0 agent :ARG1 school)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"경기고" [OGG_EDUCATION]	->  (경 / 경기고)	OR	(s / school|university :wiki "경기고등학교" :name (이 / 이름 :op1 "경기고"))
-"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
-"스탠포드대" [OGG_EDUCATION]	->  (스 / 스탠포드대)	OR	(s / school|university :wiki "스탠퍼드_대학교" :name (이 / 이름 :op1 "스탠포드대"))
-"신임 특보" [CV_POSITION]	->  :mod (신 / 신임특보)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신임 특보))
-"홍석현" [PS_NAME]	->  (홍 / 홍석현)	OR	(p / person :wiki "홍석현" :name (이 / 이름 :op1 "홍석현"))
--- VERBALIZED ------------------------------------
-(특 / 특보 :mod (신 / 신임-00))
+(a / and
+    :op1 (출 / 출생-01
+        :ARG1 (p / person :wiki "홍석현" :name (이 / 이름 :op1 "홍석현")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (특 / 특보))
+            :ARG1-of (신 / 신임-00))
+        :location (c / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울")))
+    :op2 (졸 / 졸업-01
+        :ARG0 p
+        :ARG1 (s / school :wiki "경기고등학교" :name (이3 / 이름 :op1 "경기고"))
+        :ARG1 (u / university :wiki "스탠퍼드_대학교" :name (이4 / 이름 :op1 "스탠포드대"))))
 
-
-# ::id snt22.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
 # ::snt 한국신문협회 고문을 맡고 있다.
 # ::note
--- FRAMES ----------------------------------------
-신문 : VERBAL_NOUN
-	- question		(신 / 신문-01 :ARG0 asker :ARG1 entity_asked)
-고문 : VERBAL_NOUN
-	- torture		(고 / 고문-01 :ARG0 agent :ARG1 person_tortured)
-맡 : VERB
-	- have_charge_of		(맡 / 맡-01 :ARGA causer :ARG0 agent :ARG1 thing_had_charge_of)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"고문" [CV_POSITION]	->  :mod (고 / 고문)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (고 / 고문))
-"한국신문협회" [OGG_MEDIA]	->  (한 / 한국신문협회)	OR	(c / company|organization :wiki "한국신문협회" :name (이 / 이름 :op1 "한국신문협회"))
--- VERBALIZED ------------------------------------
-(고 / 고문-01 :mod (협 / 협회-00))
-(협 / 협회-00 :mod (신 / 신문-01))
+(h / have-org-role-91
+    :ARG1 (o / organization :wiki "한국신문협회" :name (이 / 이름 :op1 "한국신문협회"))
+    :ARG2 (고 / 고문))
 
-
-# ::id snt23.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred False
 # ::snt 문 대통령은 "비록 비상임이지만 국제사회에서 능력과 권위를 인정받은 두 분의 참여로 산적한 외교안보 (문제) 실마리가 풀릴 것으로 기대한다"며 "앞으로 두 분은 새 정부의 기조와 방향을 저와 함께 논의하고 챙겨갈 것"이라고 말했다.
 # ::note
--- FRAMES ----------------------------------------
-비상임 : DERIVED_NON-ENTRY -> (비 / 비상임-00) ?
-인정 : VERBAL_NOUN
-	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
-참여 : VERBAL_NOUN
-	- participate_in		(참 / 참여-01 :ARGA causer :ARG0 thing_participating :ARG1 participate_in)
-산적 : VERBAL_NOUN
-	- form_a_pile		(산 / 산적-01 :ARG1 thing_forming_a_pile :ARG2 location)
-문제 : VERBAL_NOUN
-	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
-풀리 : REDUCED_VERB_DETECTED
-	- solve		(풀 / 풀-01 :ARG0 solver :ARG1 the_problem)
-	- release		(풀 / 풀-02 :ARG0 releaser :ARG1 thing_released)
-	- warm_up		(풀 / 풀-03 :ARG0 agent :ARG1 body)
-기대 : VERBAL_NOUN
-	- expect		(기 / 기대-01 :ARG0 agent :ARG1 thing_expected)
-논의 : VERBAL_NOUN
-	- discuss		(논 / 논의-01 :ARG0 discussant :ARG1 topic :ARG2 conversation_partner)
-챙기 : VERB
-	- pack		(챙 / 챙기-01 :ARG0 agent :ARG1 thing_packed)
-가 : VERB
-	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
-	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
-	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
-	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
-	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
-	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
-말하 : VERB
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
-:ARG1-of (새 / 새롭-01)
--- NE TYPES --------------------------------------
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"두 분" [QT_MAN_COUNT]	->  :quant (두 / 두분)	OR	(c / concept* :quant 두 :unit|scale (분 / 분))
-"두 분" [QT_MAN_COUNT]	->  :quant (두 / 두분)	OR	(c / concept* :quant 두 :unit|scale (분 / 분))
-"문" [PS_NAME]	->  (문 / 문)	OR	(p / person :wiki "문" :name (이 / 이름 :op1 "문"))
-"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
--- VERBALIZED ------------------------------------
-(사 / 사회 :mod (국 / 국제-00))
-(안 / 안보 :mod (외 / 외교-00))
+(말 / 말하-01
+    :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (대 / 대통령)))
+    :ARG1 (a / and
+        :op1 (기 / 기대-01
+            :ARG1 (풀 / 풀-01
+                :ARG1 (문 / 문제
+                    :topic (안 / 안보
+                        :mod (외 / 외교))
+                    :ARG1-of (산 / 산적-01))
+                :cause (참 / 참여-01
+                    :ARG0 (사 / 사람 :quant 2
+                        :mod (인 / 인정-01
+                            :ARG0 (사2 / 사회
+                                :mod (국 / 국제))
+                            :ARG1 (a2 / and
+                                :op1 (능 / 능력)
+                                :op2 (권 / 권위)
+                                :poss 사)))))
+            :concession (상 / 상임-00
+                :polarity -
+                :mod (비 / 비록)))
+        :op2 (예 / 예정-01
+            :time (이2 / 이후
+                :op1 (지 / 지금))
+            :ARG1 (a3 / and
+                :op1 (논 / 논의-01
+                    :ARG0 사
+                    :ARG1 (a4 / and
+                        :op1 (기2 / 기조)
+                        :op2 (방 / 방향)
+                        :poss (정 / 정부
+                            :ARG1-of (새 / 새롭-01)))
+                    :ARG2 p
+                    :manner (함 / 함께)))
+                :op2 (챙 / 챙기-01
+                    :ARG0 사
+                    :ARG1 a4
+                    :accompanier p))))))
 
-
-# ::id snt24.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
 # ::snt 김광두 신임 부의장은 전남 나주 출생으로 광주제일고를 졸업, 하와이대 경제학 박사 학위를 받았다.
 # ::note
--- FRAMES ----------------------------------------
-부의장 : DERIVED_NON-ENTRY -> (부 / 부의장-00) ?
-출생 : VERBAL_NOUN
-	- born		(출 / 출생-01 :ARG1 thing_born)
-졸업 : VERBAL_NOUN
-	- graduate		(졸 / 졸업-01 :ARG0 agent :ARG1 school)
-경제학 : DERIVED_NON-ENTRY -> (경 / 경제학-00) ?
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"경제학" [FD_SOCIAL_SCIENCE]	->  (경 / 경제학)	OR	(s / study-field|group* :wiki "경제학" :name (이 / 이름 :op1 "경제학"))
-"광주제일고" [OGG_EDUCATION]	->  (광 / 광주제일고)	OR	(s / school|university :wiki "광주제일고등학교" :name (이 / 이름 :op1 "광주제일고"))
-"김광두" [PS_NAME]	->  (김 / 김광두)	OR	(p / person :wiki - :name (이 / 이름 :op1 "김광두"))
-"나주" [LCP_CITY]	->  (나 / 나주)	OR	(c / city :wiki "나주시" :name (이 / 이름 :op1 "나주"))
-"박사" [CV_POSITION]	->  :mod (박 / 박사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (박 / 박사))
-"부의장" [CV_POSITION]	->  :mod (부 / 부의장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (부 / 부의장))
-"전남" [LCP_PROVINCE]	->  (전 / 전남)	OR	(p / province :wiki "전라남도" :name (이 / 이름 :op1 "전남"))
-"하와이대" [OGG_EDUCATION]	->  (하 / 하와이대)	OR	(s / school|university :wiki - :name (이 / 이름 :op1 "하와이대"))
--- VERBALIZED ------------------------------------
-(학 / 학 :mod (경 / 경제-00))
-(학 / 학위 :mod (박 / 박사-00))
+(a / and
+    :op1 (출 / 출생-01
+        :ARG1 (p / person :wiki - :name (이 / 이름 :op1 "김광두")
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (부 / 부의장))
+            :ARG1-of (신 / 신임-00))
+        :location (c / city :wiki "나주시" :name (이2 / 이름 :op1 "전남" :op2 "나주")))
+    :op2 (졸 / 졸업-01
+        :ARG0 p
+        :ARG1 (s / school :wiki "광주제일고등학교" :name (이3 / 이름 :op1 "광주제일고")))
+    :op3 (받 / 받-01
+        :ARG0 p
+        :ARG1 (학 / 학위
+            :mod (박 / 박사)
+            :topic (경 / 경제학))
+        :ARG2 (u / university :wiki "하와이_대학교" :name (이4 / 이름 :op1 "하와이대"))))
 
-
-# ::id snt25.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred False
 # ::snt 문 대통령은 "우리 경제를 살리는데 국가 역량을 모으기 위해 헌법기구인 자문회의를 활성화하려 한다"며 "김 부의장은 대한민국 개혁적 보수를 대표하는 경제학자로 저와는 다소 다른 시각에서 정치 경제를 바라본 분이나, 이제 경제문제도 합리적 진보와 개혁적 보수가 손을 맞잡아야 한다"고 설명했다.
 # ::note
--- FRAMES ----------------------------------------
-살리 : REDUCED_VERB_DETECTED
-	- reside		(살 / 살-01 :ARG0 entity_residing :ARG2 location)
-	- be_alive		(살 / 살-02 :ARG0 agent :ARG1 entity_being_alive)
-모으 : VERB
-	- gather		(모 / 모으-01 :ARG0 causal_agent :ARG1 entity_gathered :ARG2 gathered_into)
-위하 : VERB
-	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
-자문 : VERBAL_NOUN
-	- consult		(자 / 자문-01 :ARG0 thing_consulting :ARG1 thing_consulted)
-활성화 : DERIVED_VERB_DETECTED
-	- activate		(활 / 활성화-01 :ARG0 activator :ARG1 thing_being_active)
-부의장 : DERIVED_NON-ENTRY -> (부 / 부의장-00) ?
-개혁 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (개 / 개혁적-00) ?
-	- reform		(개 / 개혁-01 :ARG0 agent :ARG1 thing_changed)
-보수 : VERBAL_NOUN
-	- repair		(보 / 보수-01 :ARG0 agent :ARG1 entity_repaired)
-대표 : VERBAL_NOUN
-	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
-경제학 : DERIVED_NON-ENTRY -> (경 / 경제학-00) ?
-바라보 : REDUCED_VERB_DETECTED
-	- hope,_want		(바 / 바라-01 :ARG0 hoper,_wanter :ARG1 thing_hoped,_wanted :ARG2 source)
-문제 : VERBAL_NOUN
-	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
-합리적 : DERIVED_NON-ENTRY -> (합 / 합리적-00) ?
-개혁 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (개 / 개혁적-00) ?
-	- reform		(개 / 개혁-01 :ARG0 agent :ARG1 thing_changed)
-보수 : VERBAL_NOUN
-	- repair		(보 / 보수-01 :ARG0 agent :ARG1 entity_repaired)
-맞잡 : REDUCED_VERB_DETECTED
-	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
-	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
-	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
-	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
-설명 : VERBAL_NOUN
-	- explain		(설 / 설명-01 :ARG0 explainer :ARG1 thing_explained :ARG2 explained_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"경제학자" [CV_OCCUPATION]	->  :mod (경 / 경제학자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (경 / 경제학자))
-"김" [PS_NAME]	->  (김 / 김)	OR	(p / person :wiki "김?" :name (이 / 이름 :op1 "김"))
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"대한민국" [LCP_COUNTRY]	->  (대 / 대한민국)	OR	(c / country :wiki "대한민국" :name (이 / 이름 :op1 "대한민국"))
-"문" [PS_NAME]	->  (문 / 문)	OR	(p / person :wiki "문" :name (이 / 이름 :op1 "문"))
-"부의장" [CV_POSITION]	->  :mod (부 / 부의장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (부 / 부의장))
-"손" [AM_PART]	->  (손 / 손)	OR	(손 / 손 :part-of|poss)
-"자문회의" [OGG_LAW]	->  (자 / 자문회의)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "자문회의"))
-"헌법" [CV_LAW]	->  (헌 / 헌법)	OR	(l / law :wiki "헌법" :name (이 / 이름 :op1 "헌법"))
--- VERBALIZED ------------------------------------
-(경 / 경제 :mod (정 / 정치-00))
-(기 / 기구 :mod (헌 / 헌법-00))
-(문 / 문제-01 :mod (경 / 경제-00))
-(역 / 역량 :mod (국 / 국가-00))
-(적 / 적 :ARG0-of (개 / 개혁-01))
-(적 / 적 :ARG0-of (개 / 개혁-01))
-(적 / 적 :mod (합 / 합리-00))
-(학 / 학 :mod (경 / 경제-00))
-(화 / 화 :mod (활 / 활성-00))
-(회 / 회의-00 :mod (자 / 자문-01))
+(설 / 설명-01
+    :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
+        :ARG0-of (h / have-org-role-91
+            :ARG2 (대 / 대통령)))
+    :ARG1 (a / and
+        :op1 (계 / 계획-01
+            :ARG0 p
+            :ARG1 (활 / 활성화-01
+                :ARG0 p
+                :ARG1 (회 / 회의
+                    :purpose (자 / 자문-01)
+                    :mod (기 / 기구
+                        :mod (헌 / 헌법))))
+            :purpose (모 / 모으-01
+                :ARG1 (역 / 역량
+                    :poss (국 / 국가))
+                :purpose (살 / 살-02
+                    :ARG1 (경 / 경제
+                        :poss (우 / 우리)))))
+        :op2 (c / contrast-01
+            :ARG1 (사 / 사람
+                :domain (p2 / person :wiki - :name (이2 / 이름 :op1 "김")
+                    :ARG0-of (h2 / have-org-role-91
+                        :ARG2 (부 / 부의장)))
+                :mod (학 / 학자
+                    :topic (경2 / 경제학)
+                    :ARG0-of (대2 / 대표-01
+                        :ARG1 (보 / 보수
+                            :mod (개 / 개혁-01)
+                            :mod (c2 / country :wiki "대한민국" :name (이3 / 이름 :op1 "대한민국")))))
+                :ARG0-of (바 / 바라보-00
+                    :ARG1 (a2 / and
+                        :op1 (정 / 정치)
+                        :op2 (경3 / 경제))
+                    :manner (시 / 시각
+                        :poss p2
+                        :ARG1-of (다 / 다르-01
+                            :ARG2 p
+                            :degree (다 / 다소)))))
+            :ARG2 (o / obligate-01
+                :ARG2 (손 / 손을-맞잡-00
+                    :ARG0 (진 / 진보
+                        :mod (합 / 합리))
+                    :ARG1 (보2 / 보수
+                        :mod (개2 / 개혁-01))
+                    :ARG2 (문 / 문제
+                        :topic (경4 / 경제)))
+                :time (이4 / 이제)))))
 
-
-# ::id snt26.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
 # ::snt 그러면서 "경제가 갈 길이 성장 분배 이분법이 아니라 선순환이 있다. 이론과 실무를 두루 경험한 김 부의장이 중책을 맡은 만큼 헌법 취지대로 활성화해 고단한 국민 삶을 개선하는데 실질적 역할을 해줄 것을 기대한다"고 부연했다.
 # ::note
--- FRAMES ----------------------------------------
-그러 : VERB
-	- say		(그 / 그러-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- do_so		(그 / 그러-02 :ARG0 agent)
-가 : VERB
-	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
-	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
-	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
-	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
-	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
-	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
-길 : VERBAL_NOUN
-	- long		(길 / 길-01 :ARG1 thing_being_long)
-성장 : VERBAL_NOUN
-	- grow		(성 / 성장-01 :ARG0 causer :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
-분배 : VERBAL_NOUN
-	- distribute		(분 / 분배-01 :ARG0 distributor :ARG1 thing_distributed :ARG2 distributed_to)
-이분법 : DERIVED_NON-ENTRY -> (이 / 이분법-00) ?
-있 : ** UNUSED_OR_NON-ENTRY **
-경험 : VERBAL_NOUN
-	- experience		(경 / 경험-01 :ARG1 experiencer :ARG2 thing_experienced)
-부의장 : DERIVED_NON-ENTRY -> (부 / 부의장-00) ?
-맡 : VERB
-	- have_charge_of		(맡 / 맡-01 :ARGA causer :ARG0 agent :ARG1 thing_had_charge_of)
-활성화 : DERIVED_VERB_DETECTED
-	- activate		(활 / 활성화-01 :ARG0 activator :ARG1 thing_being_active)
-고단하 : ** UNUSED_OR_NON-ENTRY **
-개선 : VERBAL_NOUN
-	- improve		(개 / 개선-01 :ARG0 improver :ARG1 thing_improving :ARG2 start_point :ARG3 end_point)
-실질적 : DERIVED_NON-ENTRY -> (실 / 실질적-00) ?
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-기대 : VERBAL_NOUN
-	- expect		(기 / 기대-01 :ARG0 agent :ARG1 thing_expected)
-부연하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"국민" [CV_POSITION]	->  :mod (국 / 국민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국민))
-"김" [PS_NAME]	->  (김 / 김)	OR	(p / person :wiki "김?" :name (이 / 이름 :op1 "김"))
-"부의장" [CV_POSITION]	->  :mod (부 / 부의장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (부 / 부의장))
-"이분법" [TR_SCIENCE]	->  (이 / 이분법)	OR	(t / theory* :wiki "이분법?" :name (이 / 이름 :op1 "이분법"))
-"헌법" [CV_LAW]	->  (헌 / 헌법)	OR	(l / law :wiki "헌법" :name (이 / 이름 :op1 "헌법"))
--- VERBALIZED ------------------------------------
-(법 / 법 :mod (이 / 이분-00))
-(분 / 분배-01 :ARG1 (성 / 성장-01))
-(삶 / 삶 :mod (국 / 국민-00))
-(이 / 이분-00 :mod (분 / 분배-01))
-(적 / 적 :mod (실 / 실질-00))
-(취 / 취지 :mod (헌 / 헌법-00))
-(화 / 화 :mod (활 / 활성-00))
-
-
-
-Process finished with exit code 0
+(a / and
+    :op2 (부 / 부연-00
+        :ARG1 (a2 / and
+            :op1 (선 / 선순환-00
+                :domain (길 / 길
+                    :ARG1-of (가 / 가-01
+                        :ARG0 (경 / 경제)))
+                :mod (이 / 이분법
+                    :polarity -
+                    :op1 (성 / 성장-01)
+                    :op2 (분 / 분배-01)))
+            :op2 (기 / 기대-01
+                :ARG1 (하 / 하-01
+                    :ARG0 (p / person :wiki - :name (이2 / 이름 :op1 "김")
+                        :ARG0-of (h / have-org-role-91
+                            :ARG2 (부2 / 부의장))
+                        :ARG1-of (경 / 경험-01
+                            :mod (두 / 두루)
+                            :ARG2 (a3 / and
+                                :op1 (이3 / 이론)
+                                :op2 (실 / 실무))))
+                    :ARG1 (역 / 역할
+                        :mod (실2 / 실질))
+                    :purpose (개 / 개선-01
+                        :ARG1 (살 / 살아가-01
+                            :ARG0 (국 / 국민)
+                            :ARG1-of (고 / 고단하-00))
+                        :manner (활 / 활성화-01
+                            :manner (취 / 취지
+                                :mod (헌 / 헌법)))))
+                :cause (맡 / 맡-01
+                    :ARG0 p
+                    :ARG1 (중 / 중책))))))

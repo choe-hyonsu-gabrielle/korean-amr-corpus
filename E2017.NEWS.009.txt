@@ -1,66 +1,34 @@
-/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.009 ::date 2019-11-19 ::annotator gabrielle ::preferred True
 # ::snt 北, IRBM 이어 지대공·지대함 미사일 성공… ICBM만 남아.
 # ::note
--- FRAMES ----------------------------------------
-잇 : VERB
-	- connect		(잇 / 잇-01 :ARG1 thing_connecting :ARG2 thing_connected :ARG3 connect_to)
-	- follow		(잇 / 잇-02 :ARG1 thing_following :ARG2 thing_followed :ARG3 follow_to)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
-성공 : VERBAL_NOUN
-	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
-남 : VERB
-	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"ICBM" [AF_WEAPON]	->  (I / ICBM)	OR	(w / weapon* :wiki "대륙간탄도유도탄" :name (이 / 이름 :op1 "ICBM"))
-"IRBM" [TR_SCIENCE]	->  (I / IRBM)	OR	(t / theory* :wiki "중거리탄도유도탄" :name (이 / 이름 :op1 "IRBM"))
-"北" [LCP_COUNTRY]	->  (北 / 北)	OR	(c / country :wiki - :name (이 / 이름 :op1 "北"))
-"지대공·지대함 미사일" [AF_WEAPON]	->  (지 / 지대공·지대함미사일)	OR	(w / weapon* :wiki - :name (이 / 이름 :op1 "지대공·지대함" :op2 "미사일"))
--- VERBALIZED ------------------------------------
-(공 / 공-00 :mod (대 / 대-01))
-(대 / 대-01 :ARG1 (지 / 지-01))
-(대 / 대-01 :ARG1 (지 / 지-01))
-(미 / 미사일 :mod (함 / 함-00))
-(성 / 성공-01 :mod (미 / 미사일-00))
-(함 / 함-00 :mod (대 / 대-01))
-
+(a / and
+	:domain (c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "北"))
+	:op1 (성 / 성공-01
+		:ARG0 c
+		:ARG1 (a2 / and
+			:op1 (미 / 미사일
+				:source (지 / 지상)
+				:destination (공 / 공중))
+			:op2 (미2 / 미사일
+				:source (지2 / 지상)
+				:destination (함 / 함정)))
+		:ARG1-of (잇 / 잇-02
+			:ARG2 (미3 / 미사일
+				:path (탄 / 탄도) 
+				:extent (중 / 중거리))))
+	:op2 (남 / 남-01
+		:ARG1 (미4 / 미사일
+			:path (탄2 / 탄도
+				:mod (대 / 대륙간)))))
 
 # ::id snt1.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 북한은 8일 강원도 원산에서 지대함 순항미사일 수발을 동해상으로 발사하는 데 성공해 미사일 다종화 능력을 과시했다.
 # ::note
 -- FRAMES ----------------------------------------
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
 발사 : VERBAL_NOUN
 	- fire		(발 / 발사-01 :ARG0 shooter :ARG1 thing_shot :ARG2 goal)
 성공 : VERBAL_NOUN
 	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
-다종 : DERIVED_NON-ENTRY -> (다 / 다종-00) ?
 과시 : VERBAL_NOUN
 	- show_off		(과 / 과시-01 :ARG0 shower :ARG1 thing_shown :ARG2 seer)
 -- FORCE CONVERT ---------------------------------
@@ -87,55 +55,9 @@
 -- FRAMES ----------------------------------------
 같 : VERB
 	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
-달 : VERBAL_NOUN
-	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
-	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
-준중 : DERIVED_NON-ENTRY -> (준 / 준중-00) ?
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
 잇 : VERB
 	- connect		(잇 / 잇-01 :ARG1 thing_connecting :ARG2 thing_connected :ARG3 connect_to)
 	- follow		(잇 / 잇-02 :ARG1 thing_following :ARG2 thing_followed :ARG3 follow_to)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
 성공 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (성 / 성공적-00) ?
 	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
 발사 : VERBAL_NOUN
@@ -194,7 +116,6 @@
 	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
 	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
 	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-신형 : DERIVED_NON-ENTRY -> (신 / 신형-00) ?
 보이 : REDUCED_VERB_DETECTED
 	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
 	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
@@ -221,15 +142,6 @@
 -- FRAMES ----------------------------------------
 발사 : VERBAL_NOUN
 	- fire		(발 / 발사-01 :ARG0 shooter :ARG1 thing_shot :ARG2 goal)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
 열리 : REDUCED_VERB_DETECTED
 	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
 	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
@@ -264,24 +176,17 @@
 (형 / 형 :mod (원 / 원통-00))
 
 
-# ::id snt5.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.009 ::date 2019-11-19 ::annotator gabrielle ::preferred True
 # ::snt 북한이 그간 쐈던 미사일도 모두 열병식에서 공개됐다.
 # ::note
--- FRAMES ----------------------------------------
-그간쏘 : DERIVED_NON-ENTRY
-쏘 : VERB
-	- shoot		(쏘 / 쏘-01 :ARG0 agent :ARG1 thing_shooted :ARG2 target)
-열병식 : DERIVED_NON-ENTRY -> (열 / 열병식-00) ?
-공개 : VERBAL_NOUN
-	- open_to_the_public		(공 / 공개-01 :ARG0 agent :ARG1 thing_opening :ARG2 seer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"미사일" [AF_WEAPON]	->  (미 / 미사일)	OR	(w / weapon* :wiki "유도탄" :name (이 / 이름 :op1 "미사일"))
-"북한" [LCP_COUNTRY]	->  (북 / 북한)	OR	(c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
-"열병식" [EV_OTHERS]	->  (열 / 열병식)	OR	(e / event? :wiki "열병식" :name (이 / 이름 :op1 "열병식"))
--- VERBALIZED ------------------------------------
-(식 / 식 :mod (열 / 열병-00))
-
+(공 / 공개-01
+	:ARG0 (c / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한"))
+	:ARG1 (미 / 미사일
+		:quant (모 / 모든)
+		:ARG1-of (쏘 / 쏘-01
+			:ARG0 c
+			:duration (그 / 그간)))
+	:location (열 / 열병식))
 
 # ::id snt6.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 북한이 열병식에서 공개한 미사일 중 아직까지 쏘지 않은 것은 대륙간탄도미사일(ICBM)뿐이다.
@@ -457,69 +362,45 @@
 (발 / 발사-01 :mod (정 / 정상-00))
 
 
-# ::id snt11.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 태평양 괌 기지뿐 아니라 하와이 미군 태평양사령부까지 사정권에 두고 있다.
-# ::note
--- FRAMES ----------------------------------------
-사령부 : DERIVED_NON-ENTRY -> (사 / 사령부-00) ?
-사정 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (사 / 사정권-00) ?
-	- implore		(사 / 사정-01 :ARG0 agent :ARG1 thing_asked_for :ARG2 hearer)
-두 : VERB
-	- put		(두 / 두-01 :ARG0 agent :ARG1 theme :ARG2 location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"괌" [LCG_ISLAND]	->  (괌 / 괌)	OR	(i / island :wiki "괌" :name (이 / 이름 :op1 "괌"))
-"미군" [OGG_MILITARY]	->  (미 / 미군)	OR	(m / military :wiki "미군" :name (이 / 이름 :op1 "미군"))
-"태평양" [LCG_OCEAN]	->  (태 / 태평양)	OR	(o / ocean :wiki "태평양" :name (이 / 이름 :op1 "태평양"))
-"태평양사령부" [OGG_MILITARY]	->  (태 / 태평양사령부)	OR	(m / military :wiki "태평양사령부?" :name (이 / 이름 :op1 "태평양사령부"))
-"하와이" [LCG_ISLAND]	->  (하 / 하와이)	OR	(i / island :wiki "하와이주" :name (이 / 이름 :op1 "하와이"))
--- VERBALIZED ------------------------------------
-(권 / 권 :ARG0-of (사 / 사정-01))
-(부 / 부 :mod (사 / 사령-00))
+# ::note 사정권에 두다
+(가 / 가능-01
+	:ARG1 (도 / 도달-01
+		:ARG2 (m / military :wiki "미국_인도-태평양_사령부" :name (이 / 이름 :op1 "미군" :op2 "태평양사령부")
+			:mod (아 / 아니-02
+				:ARG1 (기 / 기지
+					:location (i / island :wiki "괌" :name (이2 / 이름 :op1 "괌")
+						:location (o / ocean :wiki "태평양" :name (이3 / 이름 :op1 "태평양"))))))))
 
-
-# ::id snt12.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 북극성-2도 최정점 고도 560여㎞로 500㎞를 비행했다.
 # ::note
--- FRAMES ----------------------------------------
-최정점 : DERIVED_NON-ENTRY -> (최 / 최정점-00) ?
-비행 : VERBAL_NOUN
-	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"500㎞" [QT_LENGTH]	->  :quant (5 / 500㎞)	OR	(d / distance-quantity :quant 500 :unit|scale (㎞ / ㎞))
-"560여㎞" [QT_LENGTH]	->  :quant (5 / 560여㎞)	OR	(d / distance-quantity :quant 560 :unit|scale (여 / 여㎞))
-"북극성-2" [LC_SPACE]	->  (북 / 북극성-2)	OR	(? / ?planet|star|moon|constellation :wiki - :name (이 / 이름 :op1 "북극성-2"))
--- VERBALIZED ------------------------------------
-(고 / 고도 :mod (정 / 정점-00))
-(극 / 극 :mod (북 / 북-00))
-(성 / 성 :mod (극 / 극-00))
+(a / and
+	:op2 (비 / 비행-01
+		:ARG0 (w / weapon* :wiki "북극성_2호" :name (이 / 이름 :op1 "북극성-2"))
+		:ARG1 (고 / 고도
+			:mod (최 / 최정점)
+			:mod (약 / 약
+				:op1 (d / distance-quantity :quant 560 :unit (k / kilometer))))
+		:extent (d2 / distance-quantity :quant 500 :unit (k2 / kilometer))))
 
-
-# ::id snt13.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
 # ::snt 정상발사 각도로 쐈다면 1천㎞ 이상을 비행할 수 있어 주일미군기지를 타격할 수도 있다.
 # ::note
--- FRAMES ----------------------------------------
-발사 : VERBAL_NOUN
-	- fire		(발 / 발사-01 :ARG0 shooter :ARG1 thing_shot :ARG2 goal)
-쏘 : VERB
-	- shoot		(쏘 / 쏘-01 :ARG0 agent :ARG1 thing_shooted :ARG2 target)
-이상 : VERBAL_NOUN
-	- strange		(이 / 이상-01 :ARG1 thing_being_strange)
-비행 : VERBAL_NOUN
-	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
-있 : ** UNUSED_OR_NON-ENTRY **
-타격 : VERBAL_NOUN
-	- strike		(타 / 타격-01 :ARG0 hitter :ARG1 thing_hit)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1천㎞" [QT_LENGTH]	->  :quant (1 / 1천㎞)	OR	(d / distance-quantity :quant 1 :unit|scale (천 / 천㎞))
-"주일미군기지" [OGG_MILITARY]	->  (주 / 주일미군기지)	OR	(m / military :wiki - :name (이 / 이름 :op1 "주일미군기지"))
--- VERBALIZED ------------------------------------
-(각 / 각도-00 :mod (발 / 발사-01))
-(발 / 발사-01 :mod (정 / 정상-00))
-
+(가 / 가능-01
+	:ARG1 (타 / 타격-01
+		:ARG1 (기 / 기지
+			:poss (m / military :wiki "미군" :name (이 / 이름 :op1 "미군"))
+			:location (c / country :wiki "일본" :name (이2 / 이름 :op1 "일본"))))
+	:cause (가2 / 가능-01
+		:ARG1 (비 / 비행-01
+			:extent (이3 / 이상
+				:op1 (d / distance-quantity :quant 1000 :unit (k / kilometer))))
+		:condition (쏘 / 쏘-01
+			:manner (각 / 각도
+				:mod (발 / 발사-01)
+				:mod (정 / 정상)))))
 
 # ::id snt14.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 지난달 27일 발사 성공한 '북한판 패트리엇'으로 불리는 '번개 5호'(KN-06) 지대공 유도미사일은 사거리가 150여㎞로 추정된다.
@@ -531,15 +412,6 @@
 	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
 불리 : VERB
 	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
 유도 : VERBAL_NOUN
 	- induce		(유 / 유도-01 :ARG0 agent :ARG1 thing_induced :ARG2 induce_to)
 추정 : VERBAL_NOUN
@@ -594,15 +466,6 @@
 # ::snt 이번에 지대함 순항미사일까지 발사에 성공함으로써 공중과 해상의 타격체계를 갖추게 된 것으로 평가된다.
 # ::note
 -- FRAMES ----------------------------------------
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
 발사 : VERBAL_NOUN
 	- fire		(발 / 발사-01 :ARG0 shooter :ARG1 thing_shot :ARG2 goal)
 성공 : VERBAL_NOUN
@@ -635,30 +498,6 @@
 -- FRAMES ----------------------------------------
 발사 : VERBAL_NOUN
 	- fire		(발 / 발사-01 :ARG0 shooter :ARG1 thing_shot :ARG2 goal)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
 대하 : VERB
 	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
 명중 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (명 / 명중률-00) ?
@@ -689,49 +528,10 @@
 # ::snt 애초 지대지 미사일로 개발된 스커드 미사일을 지대지 또는 유사시 지대함 미사일로 겸용해 사용하도록 개조했으며 액체연료와 산화제를 빠른 시간에 주입할 수 있는 자동화 시스템과 이동식 발사차량(TEL)에서 미사일을 세우는 기립 장치를 자동화했다.
 # ::note
 -- FRAMES ----------------------------------------
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
 개발 : VERBAL_NOUN
 	- develop		(개 / 개발-01 :ARG0 developer :ARG1 thing_developed)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
 유사 : VERBAL_NOUN
 	- resemble		(유 / 유사-01 :ARG1 copy :ARG2 original)
-지 : VERBAL_NOUN
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
 겸용하 : DERIVED_NON-ENTRY
 사용 : VERBAL_NOUN
 	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
@@ -782,27 +582,17 @@
 (화 / 화 :mod (자 / 자동-00))
 
 
-# ::id snt19.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.009 ::date 2019-11-25 ::annotator gabrielle ::preferred True
 # ::snt 우리 군이 구축 중인 KAMD 무력화를 노리고 개발한 미사일로 평가되고 있다.
-# ::note
--- FRAMES ----------------------------------------
-구축 : VERBAL_NOUN
-	- construct		(구 / 구축-01 :ARG0 builder :ARG1 construction)
-무력화 : DERIVED_VERB_DETECTED
-	- neutralize		(무 / 무력화-01 :ARG0 causer :ARG1 entity_neutralized)
-노리 : VERB
-	- aim		(노 / 노리-01 :ARG0 aimer :ARG1 action)
-개발 : VERBAL_NOUN
-	- develop		(개 / 개발-01 :ARG0 developer :ARG1 thing_developed)
-평가 : VERBAL_NOUN
-	- estimate		(평 / 평가-01 :ARG0 agent :ARG1 thing_estimated)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"KAMD" [AF_WEAPON]	->  (K / KAMD)	OR	(w / weapon* :wiki "한국형_미사일_방어체제" :name (이 / 이름 :op1 "KAMD"))
-"미사일" [AF_WEAPON]	->  (미 / 미사일)	OR	(w / weapon* :wiki "유도탄" :name (이 / 이름 :op1 "미사일"))
--- VERBALIZED ------------------------------------
-(화 / 화 :mod (무 / 무력-00))
-
+# ::note KAMD를 named-entity로 보지 않고 풀어 쓰지도 않음. ICBM 등 수정 필요. 무엇을 무엇으로 평가하다의 동격 처리 방법
+(평 / 평가-01
+	:ARG1 (미 / 미사일
+		:ARG1-of (개 / 개발-01
+			:purpose (무 / 무력화-01
+				:ARG1 (K / KAMD
+					:ARG1-of (구 / 구축-01
+						:ARG0 (군 / 군
+							:poss (우 / 우리))))))))
 
 # ::id snt20.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 북한의 최근 미사일 개발 동향은 중국의 반접근 지역거부(A2/AD) 전략을 모방한 '북한판 접근거부' 전략으로 전문가들은 평가하고 있다.
@@ -841,48 +631,31 @@
 (지 / 지역-00 :mod (접 / 접근-01))
 
 
-# ::id snt21.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.009 ::date 2019-11-25 ::annotator gabrielle ::preferred True
 # ::snt A2는 오키나와 등 미국의 전진기지나 항모강습단을 공격할 수 있는 능력을 확보해 미군 전력이 서태평양 해역으로 접근하는 것을 지연시키는 전략이다.
 # ::note
--- FRAMES ----------------------------------------
-전진 : VERBAL_NOUN
-	- advance		(전 / 전진-01 :ARG0 agent :ARG2 start_point :ARG3 end_point)
-강습단 : DERIVED_NON-ENTRY -> (강 / 강습단-00) ?
-공격 : VERBAL_NOUN
-	- attack		(공 / 공격-01 :ARG0 attacker :ARG1 entity_attacked :ARG2 attacked_for)
-있 : ** UNUSED_OR_NON-ENTRY **
-확보 : VERBAL_NOUN
-	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
-서 : VERBAL_NOUN
-	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
-	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
-	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
-접근 : VERBAL_NOUN
-	- approach		(접 / 접근-01 :ARG0 entity_in_motion :ARG2 destination)
-지연 : VERBAL_NOUN
-	- delay		(지 / 지연-01 :ARG0 agent :ARG1 thing_delayed)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"A2" [QT_OTHERS]	->  :quant (A / A2)	OR	(c / concept* :quant 2 :unit|scale (A / A))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"미군" [OGG_MILITARY]	->  (미 / 미군)	OR	(m / military :wiki "미군" :name (이 / 이름 :op1 "미군"))
-"서태평양" [LCG_OCEAN]	->  (서 / 서태평양)	OR	(o / ocean :wiki - :name (이 / 이름 :op1 "서태평양"))
-"오키나와" [LCP_CITY]	->  (오 / 오키나와)	OR	(c / city :wiki "오키나와?" :name (이 / 이름 :op1 "오키나와"))
-"전진기지" [OGG_MILITARY]	->  (전 / 전진기지)	OR	(m / military :wiki - :name (이 / 이름 :op1 "전진기지"))
-"항모강습단" [OGG_MILITARY]	->  (항 / 항모강습단)	OR	(m / military :wiki - :name (이 / 이름 :op1 "항모강습단"))
--- VERBALIZED ------------------------------------
-(강 / 강습 :mod (항 / 항모-00))
-(기 / 기지-00 :mod (전 / 전진-01))
-(단 / 단 :mod (강 / 강습-00))
-(전 / 전력 :mod (미 / 미군-00))
-
+(전 / 전략
+	:domain (A / A2)
+	:mod (지 / 지연-01
+		:ARG1 (접 / 접근-01
+			:ARG0 (전2 / 전력
+				:poss (m / military :wiki "미군" :name (이 / 이름 :op1 "미군")))
+			:ARG2 (해 / 해역
+				:location (o / ocean :wiki - :name (이2 / 이름 :op1 "서태평양"))))
+		:manner (확 / 확보-01
+			:ARG1 (능 / 능력
+				:mod (공 / 공격-01
+					:ARG1 (o2 / or
+						:op1 (전3 / 전진기지
+							:location (등 / 등
+								:op1 (c / city :wiki "오키나와섬" :name (이3 / 이름 :op1 "오키나와")))
+							:poss (c2 / country :wiki "미국" :name (이4 / 이름 :op1 "미국")))
+						:op2 (항 / 항모강습단 :poss c2)))))))
 
 # ::id snt22.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt AD는 대만해협이나 동·남중국해 등 중국의 연안 지역에서 분쟁이 발생할 때 미군이나 동맹군의 '행동의 자유(Freedom of Action)'를 차단해 일정한 지역에 개입을 못 하도록 거부하는 것이다.
 # ::note
 -- FRAMES ----------------------------------------
-남 : VERBAL_NOUN
-	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
 발생 : VERBAL_NOUN
 	- arise		(발 / 발생-01 :ARG0 causer :ARG1 thing_arising :ARG2 source)
 행동 : VERBAL_NOUN
@@ -966,7 +739,3 @@
 (전 / 전략 :mod (미 / 미사일-00))
 (전 / 전략-00 :mod (억 / 억제-01))
 (지 / 지역-00 :mod (접 / 접근-01))
-
-
-
-Process finished with exit code 0

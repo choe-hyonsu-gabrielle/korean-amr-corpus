@@ -1,4 +1,3 @@
-/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
 # ::id snt0.E2017.NEWS.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 대당 2천여만 원 상당 北 무인기에 전략시설 속속 '노출'.
 # ::note
@@ -1012,6 +1011,3 @@
 (살 / 살상 :mod (인 / 인명-00))
 (실 / 실험-01 :mod (시 / 시뮬레이션-00))
 
-
-
-Process finished with exit code 0

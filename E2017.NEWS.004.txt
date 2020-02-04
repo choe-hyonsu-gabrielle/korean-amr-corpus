@@ -1,953 +1,631 @@
-/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.004 ::date 2019-09-09T03:57 ::annotator gabrielle ::preferred True
 # ::snt “이직 자유” “뼈 묻어야”… 신구세대 직장인 문화 충돌.
 # ::note
--- FRAMES ----------------------------------------
-뼈묻 : DERIVED_NON-ENTRY
-묻 : VERB
-	- ask		(묻 / 묻-01 :ARG0 asker :ARG1 question :ARG2 hearer)
-	- bury		(묻 / 묻-02 :ARG0 agent :ARG1 thing_buried :ARG2 location)
-	- stick		(묻 / 묻-03 :ARG0 causal_agent :ARG1 thing_sticking :ARG2 stuck_to)
-직장인 : DERIVED_NON-ENTRY -> (직 / 직장인-00) ?
-충돌 : VERBAL_NOUN
-	- clash		(충 / 충돌-01 :ARG0 thing_clashing :ARG1 clash_with)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"뼈" [TM_CELL_TISSUE]	->  (뼈 / 뼈)	OR	(뼈 / 뼈 :part-of|poss)
-"직장인" [CV_OCCUPATION]	->  :mod (직 / 직장인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (직 / 직장인))
--- VERBALIZED ------------------------------------
-(세 / 세대 :mod (신 / 신구-00))
-(인 / 인 :mod (직 / 직장-00))
-(자 / 자유 :mod (이 / 이직-00))
-(직 / 직장 :mod (세 / 세대-00))
-(충 / 충돌-01 :mod (문 / 문화-00))
+(m / multi-sentence
+    :snt1 (말 / 말하-01
+        :ARG1 (자 / 자유롭-01
+            :domain (이 / 이직-00)))
+    :snt2 (말2 / 말하-01
+        :ARG1 (묻 / 묻-02
+            :ARG1 (뼈 / 뼈)))
+    :snt3 (충 / 충돌-01
+        :ARG0 (문 / 문화
+            :mod (사 / 사람
+                :ARG0-of (일 / 일하-01
+                    :location (직 / 직장)))
+            :poss (신 / 신세대))
+        :ARG1 (문 / 문화
+            :mod (사2 / 사람
+                :ARG0-of (일2 / 일하-01
+                    :location (직 / 직장)))
+            :poss (구 / 구세대))))
 
 
-# ::id snt1.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.004 ::date 2019-09-11T00:43 ::annotator gabrielle ::preferred True
 # ::snt 윤모(28) 씨는 1년여 동안 다니던 대기업에 지난달 사표를 냈다.
-# ::note
--- FRAMES ----------------------------------------
-동안다니 : DERIVED_NON-ENTRY
-다니 : VERB
-	- go_to_and_from		(다 / 다니-01 :ARG0 entity_moving :ARG1 place,_path)
-기업 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대기업-00) ?
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-달 : VERBAL_NOUN
-	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
-	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
-내 : VERB
-	- send		(내 / 내-01 :ARG0 agent :ARG1 thing_sent :ARG2 sent_to)
-	- make		(내 / 내-02 :ARG0 causer :ARG1 thing_made)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1년" [DT_DURATION]	->  :time|duration (1 / 1년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1))	OR :duration (t / temporal-quantity :quant 1 :unit (년 / 년))  
-"28" [QT_AGE]	->  :age (2 / 28)	OR	:age 28
-"윤모" [PS_NAME]	->  (윤 / 윤모)	OR	(p / person :wiki - :name (이 / 이름 :op1 "윤모"))
-"지난달" [DT_MONTH]	->  :time|duration (지 / 지난달)	OR	:time (d / date-entity)	OR	:duration 
--- VERBALIZED ------------------------------------
-(달 / 달-01 :mod (지 / 지난-00))
-(사 / 사표-00 :mod (달 / 달-01))
+# ::note 퇴사-00
+(사 / 사임-01
+    :ARG0 (p / person :name (이 / 이름 :op1 "윤"))
+    :ARG1 (h / have-org-role-91
+        :ARG0 p
+        :ARG1 (대 / 대기업
+            :ARG2-of (근 / 근무-01
+                :ARG0 p
+                :duration (여 / 여
+                    :op1 (t / temporal-quantity :quant 1 :unit (년 / 년))))))
+    :time (지 / 지난달))
 
-
-# ::id snt2.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.004 ::date 2019-09-11T00:54 ::annotator gabrielle ::preferred True
 # ::snt 위계질서가 강해 의견도 자유롭게 내기 힘든 회사 분위기가 답답하게 느껴졌다.
-# ::note
--- FRAMES ----------------------------------------
-강하 : DERIVED_VERB_DETECTED
-	- strong		(강 / 강하-01 :ARG1 entity_being_strong)
-자유롭 : DERIVED_VERB_DETECTED
-	- free		(자 / 자유롭-01 :ARG1 thing_free)
-힘들 : VERB
-	- difficult		(힘 / 힘들-01 :ARG1 thing_being_difficult)
-답답하 : ** UNUSED_OR_NON-ENTRY **
-느끼 : VERB
-	- feel		(느 / 느끼-01 :ARG0 feeler :ARG1 thing_felt)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(분 / 분위기 :mod (회 / 회사-00))
-(질 / 질서 :mod (위 / 위계-00))
+# ::note 보조사
+(느 / 느끼-01
+    :ARG1 (답 / 답답하-00)
+    :topic (분 / 분위기
+        :poss (회 / 회사
+            :mod (힘 / 힘들-01
+                :ARG1 (내 / 내-01
+                    :ARG1 (의 / 의견)
+                    :manner (자 / 자유롭-01))
+                :cause (강 / 강하-01
+                    :ARG1 (질 / 질서
+                        :mod (위 / 위계)))))))
 
-
-# ::id snt3.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.004 ::date 2019-09-11T01:17 ::annotator gabrielle ::preferred True
 # ::snt 팀장에게 “대학원에서 공부를 더 하고 싶다”며 회사를 그만두겠다고 했다.
-# ::note
--- FRAMES ----------------------------------------
-대학원 : DERIVED_NON-ENTRY -> (대 / 대학원-00) ?
-공부 : VERBAL_NOUN
-	- study		(공 / 공부-01 :ARG0 agent :ARG1 subject)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-그만두 : VERB
-	- cease		(그 / 그만두-01 :ARG0 agent :ARG1 thing_ceased)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"팀장" [CV_POSITION]	->  :mod (팀 / 팀장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (팀 / 팀장))
--- VERBALIZED ------------------------------------
-(원 / 원 :mod (대 / 대학-00))
+# ::note 퇴사-00
+(하 / 하-02
+    :ARG1 (사 / 사임-01
+        :ARG1 (h / have-org-role-91
+            :ARG1 (회 / 회사)))
+    :ARG2 (사 / 사람
+        :ARG0-of (h2 / have-org-role-91
+            :ARG2 (팀 / 팀장)))
+    :manner (말 / 말하-01
+        :ARG1 (원 / 원하-01
+            :ARG1 (공 / 공부-01
+                :mod (더 / 더)
+                :location (대 / 대학원)))))
 
-
-# ::id snt4.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.004 ::date 2019-09-11T01:29 ::annotator gabrielle ::preferred True
 # ::snt 그러나 팀장은 “나중에 다른 곳에 취업해 ‘뒤통수 쳤다’는 얘기가 들리지 않게 하라”고 했다.
 # ::note
--- FRAMES ----------------------------------------
-취업 : VERBAL_NOUN
-	- work		(취 / 취업-01 :ARG0 thing_working :ARG1 work_at)
-통수치 : DERIVED_NON-ENTRY
-치 : VERB
-	- strike,_attack		(치 / 치-01 :ARG0 hitter,_attacker :ARG1 thing_hit,_attacked)
-	- set		(치 / 치-02 :ARG0 setter :ARG1 thing_set)
-	- run_over		(치 / 치-03 :ARG0 car :ARG1 victim)
-	- run_away		(치 / 치-04 :ARG0 agent :ARG1 flight)
-들리 : REDUCED_VERB_DETECTED
-	- pick_up		(들 / 들-01 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- let_in		(들 / 들-02 :ARG0 agent :ARG1 thing_let_in :ARG2 goal)
-	- require		(들 / 들-03 :ARG1 requirer :ARG2 thing_required)
-	- grow_older		(들 / 들-04 :ARG1 person :ARG2 age)
-	- let_in-CV		(들 / 들-05 :ARG0 agent :ARG1 thing_let_in :ARG2 source)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"팀장" [CV_POSITION]	->  :mod (팀 / 팀장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (팀 / 팀장))
--- VERBALIZED ------------------------------------
-(통 / 통수 :mod (뒤 / 뒤-00))
+(c / contrast-01
+    :ARG2 (하 / 하-02
+        :ARG0 (사 / 사람
+            :ARG0-of (h / have-org-role-91
+                :ARG2 (팀 / 팀장)))
+        :ARG1 (하2 / 하-04
+            :mode imperative
+            :ARG1 (이 / 이야기-01
+                :polarity -
+                :ARG1 (배 / 배신-00)
+                :cause (취 / 취업-01
+                    :ARG1 (곳 / 곳
+                        :ARG1-of (다 / 다르-01)))))))
 
-
-# ::id snt5.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.004 ::date 2019-09-11T01:53 ::annotator gabrielle ::preferred True
 # ::snt 다른 상사도 “정말 대학원에 가는지 모르겠지만 혹시 다른 회사에 가는 거라면 어딜 가도 똑같다”고 달랬다.
-# ::note
--- FRAMES ----------------------------------------
-대학원 : DERIVED_NON-ENTRY -> (대 / 대학원-00) ?
-가 : VERB
-	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
-	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
-	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
-	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
-	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
-	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
-모르 : VERB
-	- not_know		(모 / 모르-01 :ARG0 agent :ARG1 theme)
-가 : VERB
-	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
-	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
-	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
-	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
-	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
-	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
-가 : VERB
-	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
-	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
-	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
-	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
-	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
-	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
-똑같 : VERB
-	- same		(똑 / 똑같-01 :ARG1 thing_being_the_same :ARG2 same_as)
-달래 : VERB
-	- soothe		(달 / 달래-01 :ARG0 agent :ARG1 entity_soothed)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"상사" [CV_RELATION]	->  :mod (상 / 상사)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (상 / 상사))
--- VERBALIZED ------------------------------------
-(원 / 원 :mod (대 / 대학-00))
+# ::note 보조사 퇴사-00
+(달 / 달래-01
+    :mod (또 / 또한)
+    :ARG0 (사 / 사람
+        :ARG0-of (h / have-rel-role-91
+            :ARG2 (상 / 상사)))
+    :manner (말 / 말하-01
+        :ARG0 사
+        :ARG1 (a / and
+            :op1 (의 / 의심-01
+                :ARG0 (예 / 예정-01
+                    :ARG1 (입 / 입학-01
+                        :ARG1 (대 / 대학원))))
+            :op2 (똑 / 똑같-01
+                :ARG1 (회 / 회사
+                    :ARG1-of (다 / 다르-01))
+                :condition (원 / 원하-01
+                    :ARG1 (가 / 가-01
+                        :ARG3 회))))))
 
-
-# ::id snt6.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.004 ::date 2019-09-11T02:18 ::annotator gabrielle ::preferred True
 # ::snt 윤 씨는 1일 “인수인계를 하러 회사에 머문 일주일 동안 매일 눈총에 시달렸다”며 “사표를 쓰고 나면 후련할 줄 알았는데 되레 더 억눌리는 기분이 들었다”고 했다.
-# ::note
--- FRAMES ----------------------------------------
-인수 : VERBAL_NOUN
-	- take_over		(인 / 인수-01 :ARG0 agent :ARG1 thing_taken_over :ARG2 take_from)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-머물 : ** UNUSED_OR_NON-ENTRY **
-일 : VERBAL_NOUN
-	- rise		(일 / 일-01 :ARG1 thing_rising)
-시달리 : VERB
-	- trouble		(시 / 시달리-01 :ARG0 cause_of_trouble :ARG1 experiencer)
-쓰 : VERB
-	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
-	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
-	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
-후련하 : ** UNUSED_OR_NON-ENTRY **
-알 : VERB
-	- know		(알 / 알-01 :ARGA causer :ARG0 knower :ARG1 theme)
-억눌리 : ** UNUSED_OR_NON-ENTRY **
-들 : VERB
-	- pick_up		(들 / 들-01 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- let_in		(들 / 들-02 :ARG0 agent :ARG1 thing_let_in :ARG2 goal)
-	- require		(들 / 들-03 :ARG1 requirer :ARG2 thing_required)
-	- grow_older		(들 / 들-04 :ARG1 person :ARG2 age)
-	- let_in-CV		(들 / 들-05 :ARG0 agent :ARG1 thing_let_in :ARG2 source)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1일" [DT_DAY]	->  :time|duration (1 / 1일)	OR	:time (d / date-entity :day 1)	OR	:duration (t / temporal-quantity :quant 1 :unit (일 / 일))  
-"매일" [DT_OTHERS]	->  :time|duration (매 / 매일)	OR	:time (d / date-entity)	OR	:duration 
-"윤" [PS_NAME]	->  (윤 / 윤)	OR	(p / person :wiki "윤?" :name (이 / 이름 :op1 "윤"))
-"일주일 동안" [DT_DURATION]	->  :time|duration (일 / 일주일동안)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
--- VERBALIZED ------------------------------------
-(동 / 동안 :mod (주 / 주일-00))
-(인 / 인계-00 :mod (인 / 인수-01))
-(주 / 주일-00 :mod (일 / 일-01))
+# ::note 퇴사-00
+(하 / 하-02
+    :ARG0 (p / person :name (이 / 이름 :op1 "윤"))
+    :time (d / date-entity :day 1)
+    :ARG1 (a / and
+        :op1 (시 / 시달리-01
+            :ARG1 (눈 / 눈총)
+            :duration (t / temporal-quantity :quant 1 :unit (주 / 주일)
+                :duration-of (머 / 머무르-01
+                    :ARG2 (회 / 회사)
+                    :purpose (a2 / and
+                        :op1 (인 / 인수-01)
+                        :op2 (인2 / 인계-00)))))
+        :op2 (c / contrast-01
+            :ARG1 (기 / 기대-01
+                :ARG1 (후 / 후련하-00)
+                :cause (사 / 사임-01))
+            :ARG2 (느 / 느끼-01
+                :ARG1 (억 / 억누르-00
+                    :degree (더 / 더))))))
 
-
-# ::id snt7.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.004 ::date 2019-09-11T09:11 ::annotator gabrielle ::preferred True
 # ::snt 이직과 퇴직을 하기 위해 사표를 내는 1∼2년 차 직장인들이 늘고 있다.
 # ::note
--- FRAMES ----------------------------------------
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-위하 : VERB
-	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
-내 : VERB
-	- send		(내 / 내-01 :ARG0 agent :ARG1 thing_sent :ARG2 sent_to)
-	- make		(내 / 내-02 :ARG0 causer :ARG1 thing_made)
-차 : VERBAL_NOUN
-	- fill		(차 / 차-01 :ARG0 thing_filling :ARG1 thing_filled :ARG2 fill_with)
-	- fasten		(차 / 차-02 :ARG0 agent :ARG1 thing_fastened :ARG2 goal)
-직장인 : DERIVED_NON-ENTRY -> (직 / 직장인-00) ?
-늘 : VERB
-	- increase		(늘 / 늘-01 :ARG0 causal_agent :ARG1 thing_increasing :ARG2 start_point :ARG3 end_point)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1∼2년 차" [DT_DURATION]	->  :time|duration (1 / 1∼2년차)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 2))	OR :duration (t / temporal-quantity :quant 2 :unit (년 / 년))  
-"직장인" [CV_OCCUPATION]	->  :mod (직 / 직장인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (직 / 직장인))
--- VERBALIZED ------------------------------------
-(인 / 인 :mod (직 / 직장-00))
-(직 / 직장-00 :mod (차 / 차-01))
+(늘 / 늘-01
+    :ARG1 (사 / 사임-01 
+        :ARG0 (사 / 사람
+            :ARG0-of (일 / 일하-01
+                :location (직 / 직장)
+                :duration (차 / 차
+                    :op1 (t / temporal-quantity :quant 1 :unit (년 / 년))
+                    :op2 (t2 / temporal-quantity :quant 2 :unit (년2 / 년)))))
+    :purpose (o / or
+        :op1 (이 / 이직-00)
+        :op2 (퇴 / 퇴직-00))))
 
-
-# ::id snt8.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.004 ::date 2019-09-11T10:18 ::annotator gabrielle ::preferred True
 # ::snt 한국경영자총협회(경총)가 지난해 6월 전국 306개 기업을 대상으로 실시한 ‘신입사원 채용실태 조사’에 따르면 1년 안에 퇴사한 대졸 신입사원 비율은 27.7%다.
 # ::note
--- FRAMES ----------------------------------------
-기업 : VERBAL_NOUN
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-실시 : VERBAL_NOUN
-	- perform		(실 / 실시-01 :ARG0 agent :ARG1 event_performed)
-채용 : VERBAL_NOUN
-	- employ		(채 / 채용-01 :ARG0 agent :ARG1 thing_employed)
-조사 : VERBAL_NOUN
-	- investigate		(조 / 조사-01 :ARG0 agent :ARG1 thing_investigated)
-따르 : VERB
-	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
-	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
-안 : VERBAL_NOUN
-	- embrace		(안 / 안-01 :ARGA causer :ARG0 thing_embracing :ARG1 thing_embraced)
-퇴사하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1년" [DT_DURATION]	->  :time|duration (1 / 1년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1))	OR :duration (t / temporal-quantity :quant 1 :unit (년 / 년))  
-"27.7%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 27.7%)
-"306개" [QT_COUNT]	->  :quant (3 / 306개)	OR	(c / concept* :quant 306 :unit|scale (개 / 개))
-"경총" [OGG_ECONOMY]	->  (경 / 경총)	OR	(c / company|organization :wiki "한국경영자총협회" :name (이 / 이름 :op1 "경총"))
-"신입사원" [CV_POSITION]	->  :mod (신 / 신입사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신입사원))
-"신입사원" [CV_POSITION]	->  :mod (신 / 신입사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신입사원))
-"지난해 6월" [DT_OTHERS]	->  :time|duration (지 / 지난해6월)	OR	:time (d / date-entity :month 6)	OR	:duration (t / temporal-quantity :quant 6 :unit (월 / 월))  
-"한국경영자총협회" [OGG_ECONOMY]	->  (한 / 한국경영자총협회)	OR	(c / company|organization :wiki "한국경영자총협회" :name (이 / 이름 :op1 "한국경영자총협회"))
--- VERBALIZED ------------------------------------
-(비 / 비율 :mod (사 / 사원-00))
-(사 / 사원 :mod (신 / 신입-00))
-(사 / 사원 :mod (신 / 신입-00))
-(신 / 신입 :mod (대 / 대졸-00))
-(실 / 실태-00 :mod (채 / 채용-01))
-(조 / 조사-01 :mod (실 / 실태-00))
-(채 / 채용-01 :mod (사 / 사원-00))
-(해 / 해 :mod (지 / 지난-00))
-
+(전 / 전하-01
+    :ARG0 (설 / 설문조사-01 :name (이 / 이름 :op1 "신입사원" :op2 "채용실태" :op3 "조사")
+        :ARG1-of (실 / 실시-01
+            :ARG0 (o / organization
+                :wiki "한국경영자총협회"
+                :name (이2 / 이름 :op1 "한국경영자총협회(경총)"))
+            :beneficiary (기 / 기업 :quant 306 :unit (개 / 개)
+                :location (전 / 전국))
+            :time (d / date-entity :month 6 :year (지 / 지난해))))
+    :ARG1 (i / include-91
+        :ARG1 (사 / 사람
+            :ARG0-of (퇴 / 퇴사-00
+                :time (a / at-most
+                    :op1 (t / temporal-quantity :quant 1 :unit (년 / 년)))))
+        :ARG2 (사2 / 사람
+            :ARG0-of (입 / 입사-00
+                :manner (새 / 새롭-01))
+            :ARG0-of (졸 / 졸업-01
+                :ARG1 (대 / 대학)))
+        :ARG3 (p / percentage-entity :value 27.7)))
 
 # ::id snt9.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 2012년(23.6%)과 2014년(25.2%)을 지나며 꾸준히 늘고 있는 셈이다.
 # ::note
--- FRAMES ----------------------------------------
-지나 : VERB
-	- pass		(지 / 지나-01 :ARG0 entity_passing :ARG1 thing_passed)
-	- be_only		(지 / 지나-02 :ARG1 thing_under_consideration :ARG2 criterion)
-늘 : VERB
-	- increase		(늘 / 늘-01 :ARG0 causal_agent :ARG1 thing_increasing :ARG2 start_point :ARG3 end_point)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2012년" [DT_YEAR]	->  :time|duration (2 / 2012년)	OR	:time (d / date-entity :year 2012)	OR	:duration (t / temporal-quantity :quant 2012 :unit (년 / 년))  
-"2014년" [DT_YEAR]	->  :time|duration (2 / 2014년)	OR	:time (d / date-entity :year 2014)	OR	:duration (t / temporal-quantity :quant 2014 :unit (년 / 년))  
-"23.6%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 23.6%)
-"25.2%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 25.2%)
--- VERBALIZED ------------------------------------
-
+(늘 / 늘-01
+    :ARG2 (p / percentage-entity :value 23.6
+        :time (d / date-entity :year 2012))
+    :ARG2 (p2 (percentage-entity :value 25.2
+        :time (d2 / date-entity :year 2014)))
+    :manner (꾸 / 꾸준하-01))
 
 # ::id snt10.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 신입사원 4명 중 한 명 꼴로 퇴사할 정도지만 아직까지 회사와 직원 간의 ‘아름다운 이별’ 문화는 자리잡지 못했다.
-# ::note
--- FRAMES ----------------------------------------
-퇴사하 : DERIVED_NON-ENTRY
-아름답 : DERIVED_VERB_DETECTED
-	- beatiful		(아 / 아름답-01 :ARG1 thing_beautiful)
-자리잡 : DERIVED_VERB_DETECTED
-	- place_oneself		(자 / 자리잡-01 :ARG0 thing_placing_oneself :ARG1 place_at)
-잡 : VERB
-	- catch		(잡 / 잡-01 :ARG0 getter :ARG1 thing_gotten)
-	- determine		(잡 / 잡-02 :ARG0 decider :ARG1 thing_determined :ARG2 attribute_of_arg1)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"4명" [QT_MAN_COUNT]	->  :quant (4 / 4명)	OR	(c / concept* :quant 4 :unit|scale (명 / 명))
-"신입사원" [CV_POSITION]	->  :mod (신 / 신입사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신입사원))
-"아름다운 이별" [AFW_MUSIC]	->  (아 / 아름다운이별)	OR	(m / music :wiki - :name (이 / 이름 :op1 "아름다운" :op2 "이별"))
-"직원" [CV_POSITION]	->  :mod (직 / 직원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (직 / 직원))
-"한 명" [QT_MAN_COUNT]	->  :quant (한 / 한명)	OR	(c / concept* :quant 한 :unit|scale (명 / 명))
--- VERBALIZED ------------------------------------
-(사 / 사원 :mod (신 / 신입-00))
-
+# ::note 
+(a / and
+    :op1 (i / include-91
+        :ARG1 (사 / 사람
+            :ARG0-of (퇴 / 퇴사-00))
+        :ARG2 (사2 / 사람
+            :ARG0-of (입 / 입사-00
+                :manner (새 / 새롭-01)))
+        :ARG3 (r / ratio-of
+            :op1 1
+            :op2 4))
+    :op2 (자 / 자리잡-01
+        :polarity -
+        :ARG0 (문 / 문화
+            :mod (이 / 이별-00
+                :ARG0 (직 / 직원)
+                :ARG1 (회 / 회사)
+                :manner (아 / 아름답-01)))
+        :time (지 / 지금)))
 
 # ::id snt11.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 인수인계 기간 동안 회사에서 유령 취급을 받거나 악담을 듣는 등 따돌림 당하는 일도 벌어진다.
 # ::note
--- FRAMES ----------------------------------------
-인수 : VERBAL_NOUN
-	- take_over		(인 / 인수-01 :ARG0 agent :ARG1 thing_taken_over :ARG2 take_from)
-취급 : VERBAL_NOUN
-	- handle		(취 / 취급-01 :ARG0 handler :ARG1 thing_handled)
-	- treat		(취 / 취급-02 :ARG0 agent :ARG1 entity_treated :ARG2 attribute)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
-듣 : VERB
-	- hear		(듣 / 듣-01 :ARG0 agent :ARG1 thing_heard :ARG2 heard_from)
-따돌림당하 : DERIVED_NON-ENTRY
-당하 : VERB
-	- suffer		(당 / 당하-01 :ARG1 entity_suffering :ARG2 thing_suffered :ARG3 source)
-	- reasonable		(당 / 당하-02 :ARG1 thing_being_reasonable)
-일 : VERBAL_NOUN
-	- rise		(일 / 일-01 :ARG1 thing_rising)
-벌어지 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(기 / 기간 :mod (인 / 인계-00))
-(동 / 동안 :mod (기 / 기간-00))
-(인 / 인계-00 :mod (인 / 인수-01))
-(취 / 취급-01 :mod (유 / 유령-00))
-(회 / 회사 :mod (동 / 동안-00))
-
+(당 / 당하-01
+    :ARG2 (따 / 따돌리-00)
+    :example (등 / 등
+        :op1 (취 / 취급-02
+            :ARG2 (유 / 유령))
+        :op2 (듣 / 듣-01
+            :ARG1 (악 / 악담)))
+    :duration (a2 / and
+        :op1 (인 / 인수-01)
+        :op2 (인2 / 인계-00)))
 
 # ::id snt12.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 대기업 유통업체에 다녔던 강 모(31·여) 씨도 퇴사를 입 밖에 낸 뒤로 왕따가 됐다.
 # ::note
--- FRAMES ----------------------------------------
-기업 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대기업-00) ?
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-유통 : VERBAL_NOUN
-	- circulate		(유 / 유통-01 :ARG0 causer :ARG1 thing_going_round)
-다니 : VERB
-	- go_to_and_from		(다 / 다니-01 :ARG0 entity_moving :ARG1 place,_path)
-입 : VERBAL_NOUN
-	- wear		(입 / 입-01 :ARG0 wearer :ARG1 clothing)
-	- incur		(입 / 입-02 :ARG0 causer :ARG1 patient :ARG2 thing_incurred)
-내 : VERB
-	- send		(내 / 내-01 :ARG0 agent :ARG1 thing_sent :ARG2 sent_to)
-	- make		(내 / 내-02 :ARG0 causer :ARG1 thing_made)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"31" [QT_AGE]	->  :age (3 / 31)	OR	:age 31
-"강 모" [PS_NAME]	->  (강 / 강모)	OR	(p / person :wiki - :name (이 / 이름 :op1 "강" :op2 "모"))
-"입" [AM_PART]	->  (입 / 입)	OR	(입 / 입 :part-of|poss)
--- VERBALIZED ------------------------------------
-(모 / 모 :mod (강 / 강-00))
-(밖 / 밖-00 :mod (입 / 입-01))
-(업 / 업체-00 :mod (유 / 유통-01))
-(유 / 유통-01 :ARG1 (기 / 기업-01))
-
+(되 / 되-01
+    :ARG1 (p / person :name (이 / 이름 :op1 "강") :age 31 :mod "여"
+        :ARG0-of (다 / 다니-01
+            :ARG1 (업 / 업체
+                :mod (유 / 유통-01)
+                :poss (대 / 대기업))))
+    :ARG2 (왕 / 왕따)
+    :time (이2 / 이후
+        :op1 (언 / 언급-01
+            :ARG0 p
+            :ARG1 (퇴 / 퇴사-00))))
 
 # ::id snt13.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt “왜 미리 말을 안 해서 회사를 당황시키느냐”는 핀잔도 들었다.
 # ::note
--- FRAMES ----------------------------------------
-말 : VERBAL_NOUN
-	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-당황 : VERBAL_NOUN
-	- be_perplexed		(당 / 당황-01 :ARG0 causer :ARG1 entity_perplexed)
-듣 : VERB
-	- hear		(듣 / 듣-01 :ARG0 agent :ARG1 thing_heard :ARG2 heard_from)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
+(핀 / 핀잔-00
+    :manner (말 / 말하-01
+        :ARG1 (a / and
+            :op1 (말2 / 말하-01
+                :polarity -
+                :time (이 / 이전
+                    :op1 (지 / 지금)))
+            :op2 (당 / 당황-01
+                :ARG1 (회 / 회사)))))
 
-
-# ::id snt14.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.004 ::date 2019-09-16T18:45 ::annotator gabrielle ::preferred True
 # ::snt 강 씨는 “회사생활 마지막 2주 동안은 ‘인수인계를 대충 한다’는 트집까지 잡혔다”며 “평소 사이좋던 팀원들이 얼굴색을 바꾸고 차갑게 대해 마음이 무거웠다”고 말했다.
-# ::note
--- FRAMES ----------------------------------------
-생활 : VERBAL_NOUN
-	- live		(생 / 생활-01 :ARG0 entity_being_alive :ARG2 location)
-인수 : VERBAL_NOUN
-	- take_over		(인 / 인수-01 :ARG0 agent :ARG1 thing_taken_over :ARG2 take_from)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-잡히 : REDUCED_VERB_DETECTED
-	- catch		(잡 / 잡-01 :ARG0 getter :ARG1 thing_gotten)
-	- determine		(잡 / 잡-02 :ARG0 decider :ARG1 thing_determined :ARG2 attribute_of_arg1)
-사이좋 : ** UNUSED_OR_NON-ENTRY **
-팀원들 : DERIVED_NON-ENTRY -> (팀 / 팀원들-00) ?
-바꾸 : VERB
-	- change,_replace		(바 / 바꾸-01 :ARG0 causer_of_transformation :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
-	- exchange,_switch		(바 / 바꾸-02 :ARG0 agent :ARG1 thing_being_traded :ARG2 other_exchanger :ARG3 other_item_in_exchange)
-차갑 : VERB
-	- cold		(차 / 차갑-01 :ARG1 thing_cold)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-무겁 : VERB
-	- heavy		(무 / 무겁-01 :ARG1 entity_being_heavy)
-말하 : VERB
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2주 동안" [DT_DURATION]	->  :time|duration (2 / 2주동안)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"강" [PS_NAME]	->  (강 / 강)	OR	(p / person :wiki "강" :name (이 / 이름 :op1 "강"))
-"얼굴" [AM_PART]	->  (얼 / 얼굴)	OR	(얼 / 얼굴 :part-of|poss)
-"팀원" [CV_POSITION]	->  :mod (팀 / 팀원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (팀 / 팀원))
--- VERBALIZED ------------------------------------
-(들 / 들 :mod (팀 / 팀원-00))
-(마 / 마지막-00 :mod (생 / 생활-01))
-(색 / 색 :mod (얼 / 얼굴-00))
-(생 / 생활-01 :mod (회 / 회사-00))
-(인 / 인계-00 :mod (인 / 인수-01))
-
+(말 / 말하-01
+    :ARG0 (p / person :name (이 / 이름 :op1 "강")
+    :ARG1 (트 / 트집잡-00
+        :ARG1 p
+        :manner (말2 / 말하-01
+            :ARG1 (하 / 하-01
+                :ARG0 p
+                :ARG1 (a / and
+                    :op1 (인 / 인수-01
+                    :op2 (인 / 인계-00)))
+                :manner (대 / 대충))
+            :ARG2 p)
+        duration (t / temporal-quantity :quant 2 :unit (주 / 주)
+            :mod (마 / 마지막)
+            :duration-of (생 / 생활-01
+                :ARG0 p
+                :ARG2 (회 / 회사))))))
 
 # ::id snt15.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 경총 조사에 따르면 새내기 직장인들이 회사를 1년 만에 그만두는 이유는 ‘조직·직무적응 실패’(49.1%)였다.
 # ::note
--- FRAMES ----------------------------------------
-조사 : VERBAL_NOUN
-	- investigate		(조 / 조사-01 :ARG0 agent :ARG1 thing_investigated)
-따르 : VERB
-	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
-	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
-새 : VERBAL_NOUN
-	- leak		(새 / 새-01 :ARG1 thing_leaking :ARG2 where_from)
-직장인 : DERIVED_NON-ENTRY -> (직 / 직장인-00) ?
-그만두 : VERB
-	- cease		(그 / 그만두-01 :ARG0 agent :ARG1 thing_ceased)
-조직 : VERBAL_NOUN
-	- organize		(조 / 조직-01 :ARG0 agent :ARG1 thing_organized :ARG2 organized_with)
-적응 : VERBAL_NOUN
-	- adapt		(적 / 적응-01 :ARG0 agent :ARG1 entity_adapted :ARG2 adapted_to)
-실패 : VERBAL_NOUN
-	- fail		(실 / 실패-01 :ARG1 thing_failing :ARG2 task)
--- FORCE CONVERT ---------------------------------
-:ARG1-of (새 / 새롭-01)
--- NE TYPES --------------------------------------
-"1년" [DT_DURATION]	->  :time|duration (1 / 1년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1))	OR :duration (t / temporal-quantity :quant 1 :unit (년 / 년))  
-"49.1%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 49.1%)
-"경총" [OGG_ECONOMY]	->  (경 / 경총)	OR	(c / company|organization :wiki "한국경영자총협회" :name (이 / 이름 :op1 "경총"))
-"새내기" [CV_POSITION]	->  :mod (새 / 새내기)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (새 / 새내기))
-"직장인" [CV_OCCUPATION]	->  :mod (직 / 직장인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (직 / 직장인))
--- VERBALIZED ------------------------------------
-(내 / 내기-00 :mod (새 / 새-01))
-(실 / 실패-01 :ARG1 (적 / 적응-01))
-(인 / 인 :mod (직 / 직장-00))
-(적 / 적응-01 :mod (직 / 직무-00))
-(직 / 직장 :mod (내 / 내기-00))
-
+(전 / 전하-01
+    :ARG0 (조 / 조사-01
+        :ARG0 (o / organization
+            :wiki "한국경영자총협회"
+            :name (이 / 이름 :op1 "경총")))
+    :ARG1 (그 / 그만두-01
+        :ARG0 (사 / 사람
+            :ARG0-of (일 / 일하-01
+                :location (직 / 직장))
+            :mod (새 / 새내기))
+        :ARG1 (회 / 회사)
+        :time (이 / 이전
+            :op1 (t / temporal-quantity :quant 1 :unit (년 / 년)))
+        :ARG1-of (c / cause-01
+            :ARG0 (실 / 실패-01
+                :ARG2 (o2 / or
+                    :op1 (적 / 적응-01
+                        :ARG2 (조2 / 조직))
+                    :op2 (적2 / 적응-01
+                        :ARG2 (직2 / 직무)))
+                :ARG1-of (i / include-91
+                    :ARG2 c
+                    :ARG3 (p / percentage-entity :value 49.1))))))
 
 # ::id snt16.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이어 ‘급여·복리후생 불만’(20.0%), ‘근무지역·근무환경에 대한 불만’(15.9%)이었다.
 # ::note
--- FRAMES ----------------------------------------
-불만 : VERBAL_NOUN
-	- dissatisfied		(불 / 불만-01 :ARG0 causer :ARG1 person_feeling_dissatisfaction)
-근무 : VERBAL_NOUN
-	- work		(근 / 근무-01 :ARG0 agent :ARG2 location)
-근무 : VERBAL_NOUN
-	- work		(근 / 근무-01 :ARG0 agent :ARG2 location)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-불만 : VERBAL_NOUN
-	- dissatisfied		(불 / 불만-01 :ARG0 causer :ARG1 person_feeling_dissatisfaction)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"15.9%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 15.9%)
-"20.0%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 20.0%)
--- VERBALIZED ------------------------------------
-(불 / 불만-01 :mod (후 / 후생-00))
-(지 / 지역-00 :mod (근 / 근무-01))
-(환 / 환경-00 :mod (근 / 근무-01))
-(후 / 후생 :mod (복 / 복리-00))
-
+(a / and
+    :op1 (o / or
+        :op1 (불 / 불만-01
+            :ARG0 (급 / 급여))
+        :op2 (불2 / 불만-01
+            :ARG0 (복 / 복리후생))
+        :ARG1-of (i / include-91
+            :ARG3 (p / percentage-entity :value 20.0)))
+    :op2 (o / or
+        :op1 (불3 / 불만-01
+            :ARG0 (지 / 지역
+                :ARG2 (근 / 근무-01)))
+        :op2 (불4 / 불만-01
+            :ARG0 (환 / 환경
+                :ARG2 (근2 / 근무-01)))
+        :ARG1-of (i2 / include-91
+            :ARG3 (p2 / percentage-entity :value 15.9))))
 
 # ::id snt17.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 취업난이 심각해지다 보니 일단 합격한 회사에 다니면서 다른 회사 신입사원 공채에 재도전하는 것도 흔한 풍경이다.
 # ::note
--- FRAMES ----------------------------------------
-취업 : VERBAL_NOUN
-	- work		(취 / 취업-01 :ARG0 thing_working :ARG1 work_at)
-심각하 : DERIVED_VERB_DETECTED
-	- serious		(심 / 심각하-01 :ARG1 thing_being_serious)
-합격하 : DERIVED_NON-ENTRY
-다니 : VERB
-	- go_to_and_from		(다 / 다니-01 :ARG0 entity_moving :ARG1 place,_path)
-도전 : VERBAL_NOUN
-	- challenge		(도 / 도전-01 :ARG0 agent)
-흔하 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"신입사원" [CV_POSITION]	->  :mod (신 / 신입사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신입사원))
--- VERBALIZED ------------------------------------
-(공 / 공채 :mod (사 / 사원-00))
-(난 / 난-00 :mod (취 / 취업-01))
-(사 / 사원 :mod (신 / 신입-00))
-(신 / 신입 :mod (회 / 회사-00))
-
+(흔 / 흔하-00
+    :ARG1 (재 / 재도전-00
+        :ARG1 (채 / 채용-01
+            :mod (공 / 공개-01)
+            :ARG0 (회 / 회사
+                :ARG1-of (다 / 다르-01))
+            :ARG1 (사 / 사람
+                :ARG0-of (일 / 일하-01)
+                :ARG0-of (입 / 입사-00
+                    :manner (새 / 새롭-01))))
+        :manner (다2 / 다니-01
+            :ARG1 (회2 / 회사
+                :ARG1-of (합 / 합격-00))
+            :mod (일2 / 일단)))
+    :cause (심 / 심각하-01
+        :ARG1 (어 / 어렵-01
+            :ARG1 (취 / 취업-01))))
 
 # ::id snt18.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이명진 고려대 사회학과 교수는 “저 연차 직장인들은 ‘한 번 몸담으면 뼈를 묻는다’는 인식은 옅어지고 일과 삶의 질 사이에 균형을 맞추려는 ‘워크 앤드 라이프 밸런스(Work & Life balance)’를 중시한다”며 “하지만 기업은 평생고용·연공서열제 때의 사고방식을 이어가고 있다”고 분석했다.
 # ::note
--- FRAMES ----------------------------------------
-사회학 : DERIVED_NON-ENTRY -> (사 / 사회학-00) ?
-직장인 : DERIVED_NON-ENTRY -> (직 / 직장인-00) ?
-몸담 : VERB
-	- work_in		(몸 / 몸담-01 :ARG0 agent :ARG1 job)
-묻 : VERB
-	- ask		(묻 / 묻-01 :ARG0 asker :ARG1 question :ARG2 hearer)
-	- bury		(묻 / 묻-02 :ARG0 agent :ARG1 thing_buried :ARG2 location)
-	- stick		(묻 / 묻-03 :ARG0 causal_agent :ARG1 thing_sticking :ARG2 stuck_to)
-인식 : VERBAL_NOUN
-	- recognize		(인 / 인식-01 :ARGA thing_making_recognize :ARG0 thing_recognizing :ARG1 thing_recognized)
-옅 : ** UNUSED_OR_NON-ENTRY **
-일 : VERBAL_NOUN
-	- rise		(일 / 일-01 :ARG1 thing_rising)
-맞추 : VERB
-	- tune		(맞 / 맞추-01 :ARG0 agent :ARG1 thing_tuned :ARG2 thing_tuned_for)
-중시 : VERBAL_NOUN
-	- attach_importance_to		(중 / 중시-01 :ARG0 agent :ARG1 attach_importance_to)
-기업 : VERBAL_NOUN
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-고용 : VERBAL_NOUN
-	- hire		(고 / 고용-01 :ARG0 employer :ARG1 employee :ARG2 job)
-서열제 : DERIVED_NON-ENTRY -> (서 / 서열제-00) ?
-잇 : VERB
-	- connect		(잇 / 잇-01 :ARG1 thing_connecting :ARG2 thing_connected :ARG3 connect_to)
-	- follow		(잇 / 잇-02 :ARG1 thing_following :ARG2 thing_followed :ARG3 follow_to)
-분석 : VERBAL_NOUN
-	- analyze		(분 / 분석-01 :ARG0 agent :ARG1 thing_analyzed)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"고려대" [OGG_EDUCATION]	->  (고 / 고려대)	OR	(s / school|university :wiki "고려대학교" :name (이 / 이름 :op1 "고려대"))
-"교수" [CV_OCCUPATION]	->  :mod (교 / 교수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교수))
-"뼈" [TM_CELL_TISSUE]	->  (뼈 / 뼈)	OR	(뼈 / 뼈 :part-of|poss)
-"연공서열제" [CV_POLICY]	->  (연 / 연공서열제)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "연공서열제"))
-"이명진" [PS_NAME]	->  (이 / 이명진)	OR	(p / person :wiki "이명진" :name (이 / 이름 :op1 "이명진"))
-"직장인" [CV_OCCUPATION]	->  :mod (직 / 직장인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (직 / 직장인))
-"한 번" [QT_COUNT]	->  :quant (한 / 한번)	OR	(c / concept* :quant 한 :unit|scale (번 / 번))
--- VERBALIZED ------------------------------------
-(고 / 고용-01 :mod (평 / 평생-00))
-(교 / 교수 :mod (과 / 과-00))
-(라 / 라이프 :mod (앤 / 앤드-00))
-(방 / 방식 :mod (사 / 사고-00))
-(밸 / 밸런스 :mod (라 / 라이프-00))
-(사 / 사이 :mod (질 / 질-00))
-(서 / 서열 :mod (연 / 연공-00))
-(앤 / 앤드 :mod (워 / 워크-00))
-(인 / 인 :mod (직 / 직장-00))
-(제 / 제 :mod (서 / 서열-00))
-(직 / 직장 :mod (연 / 연차-00))
-(학 / 학 :mod (사 / 사회-00))
-
+(분 / 분석-01
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "이명진")
+        :ARG0-of (h / have-org-role-91
+            :ARG1 (u / university :wiki "고려대학교" :name (이2 / 이름 :op1 "고려대"))
+            :ARG2 (교 / 교수
+                :topic (사 / 사회학))))
+    :manner (말 / 말하-01
+        :ARG0 p
+        :ARG1 (a / and
+            :op1 (옅 / 옅-00
+                :ARG1 (인 / 인식-01
+                    :mod (묻 / 묻-02
+                        :ARG1 (뼈 / 뼈)
+                        :condition (몸 / 몸담-01
+                            :mod (한 / 한번))))
+                :domain (사2 / 사람
+                    :ARG0-of (일 / 일하-01
+                        :location (직 / 직장))
+                    :mod (낮 / 낮-01
+                        :ARG1 (연 / 연차))))
+            :op2 (중 / 중시-01
+                :ARG0 사2
+                :ARG1 (p2 / political-movement
+                    :wiki "일과_생활의_균형"
+                    :name (이3 / 이름 :op1 "워크" :op2 "앤드" :op3 "라이프" :op4 "밸런스(Work" :op5 "&" :op6 "Life" :op7 "balance)")
+                    :ARG1-of (의 / 의미-01
+                        :ARG2 (맞 / 맞추-01
+                            :ARG1 (균 / 균형)
+                            :ARG2 (사3 / 사이
+                                :op1 (질 / 질
+                                    :mod (일2 / 일하-01))
+                                :op2 (질2 / 질)
+                                    :mod (살 / 살아가-01)))))))
+        :ARG1 (c / contrast-01
+            :ARG2 (이4 / 이어가-01
+                :ARG0 (기 / 기업)
+                :ARG1 (방 / 방식
+                    :mod (사4 / 사고-00)
+                    :time (때 / 때
+                        :op1 (고 / 고용-01
+                            :duration (평 / 평생))
+                        :op2 (연2 / 연공서열제)))))))
 
 # ::id snt19.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 직장 안에 ‘군대식(式) 위계’가 여전히 자리 잡고 있다는 지적도 있다.
-# ::note
--- FRAMES ----------------------------------------
-안 : VERBAL_NOUN
-	- embrace		(안 / 안-01 :ARGA causer :ARG0 thing_embracing :ARG1 thing_embraced)
-군대식 : DERIVED_NON-ENTRY -> (군 / 군대식-00) ?
-자리잡 : DERIVED_VERB_DETECTED
-	- place_oneself		(자 / 자리잡-01 :ARG0 thing_placing_oneself :ARG1 place_at)
-잡 : VERB
-	- catch		(잡 / 잡-01 :ARG0 getter :ARG1 thing_gotten)
-	- determine		(잡 / 잡-02 :ARG0 decider :ARG1 thing_determined :ARG2 attribute_of_arg1)
-지적 : VERBAL_NOUN
-	- point_out		(지 / 지적-01 :ARG0 pointer :ARG1 thing_pointed_out :ARG2 pointed_at)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(식 / 식 :mod (군 / 군대-00))
-(안 / 안-01 :mod (직 / 직장-00))
-
+# ::note 보조사
+(지 / 지적-01
+    :ARG1 (자 / 자리잡-01
+        :ARG0 (위 / 위계
+            :manner (군 / 군대))
+        :ARG1 (직 / 직장)
+        :manner (여 / 여전하-01))
+    :mod (또 / 또한))
 
 # ::id snt20.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이택광 경희대 글로벌커뮤니케이션학과 교수는 “저 연차 직장인이 직장을 관두면 ‘끈기나 노력이 부족해서 그렇다’고 바라보면서 생기는 갈등”이라며 “퇴직하는 직장인을 ‘회사에 녹아들지 못한 고문관’으로 바라보고 있는 것”이라고 말했다.
-# ::note
--- FRAMES ----------------------------------------
-커뮤니케이션학 : DERIVED_NON-ENTRY -> (커 / 커뮤니케이션학-00) ?
-직장인 : DERIVED_NON-ENTRY -> (직 / 직장인-00) ?
-관두 : ** UNUSED_OR_NON-ENTRY **
-노력 : VERBAL_NOUN
-	- endeavor		(노 / 노력-01 :ARG0 agent :ARG1 proposition)
-부족 : VERBAL_NOUN
-	- lack		(부 / 부족-01 :ARG1 thing_being_short :ARG2 lack_in)
-그렇 : VERB
-	- be_so		(그 / 그렇-01 :ARG1 entity_being_so)
-바라보 : REDUCED_VERB_DETECTED
-	- hope,_want		(바 / 바라-01 :ARG0 hoper,_wanter :ARG1 thing_hoped,_wanted :ARG2 source)
-생기 : VERB
-	- happen		(생 / 생기-01 :ARG1 thing_happening :ARG2 location)
-퇴직하 : DERIVED_NON-ENTRY
-직장인 : DERIVED_NON-ENTRY -> (직 / 직장인-00) ?
-녹아들 : ** UNUSED_OR_NON-ENTRY **
-고문 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (고 / 고문관-00) ?
-	- torture		(고 / 고문-01 :ARG0 agent :ARG1 person_tortured)
-바라보 : REDUCED_VERB_DETECTED
-	- hope,_want		(바 / 바라-01 :ARG0 hoper,_wanter :ARG1 thing_hoped,_wanted :ARG2 source)
-말하 : VERB
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"경희대" [OGG_EDUCATION]	->  (경 / 경희대)	OR	(s / school|university :wiki "경희대학교" :name (이 / 이름 :op1 "경희대"))
-"고문관" [CV_POSITION]	->  :mod (고 / 고문관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (고 / 고문관))
-"교수" [CV_OCCUPATION]	->  :mod (교 / 교수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교수))
-"이택광" [PS_NAME]	->  (이 / 이택광)	OR	(p / person :wiki "이택광" :name (이 / 이름 :op1 "이택광"))
-"직장인" [CV_OCCUPATION]	->  :mod (직 / 직장인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (직 / 직장인))
-"직장인" [CV_OCCUPATION]	->  :mod (직 / 직장인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (직 / 직장인))
--- VERBALIZED ------------------------------------
-(관 / 관 :ARG0-of (고 / 고문-01))
-(인 / 인 :mod (직 / 직장-00))
-(인 / 인 :mod (직 / 직장-00))
-(직 / 직장 :mod (연 / 연차-00))
-(커 / 커뮤니케이션 :mod (글 / 글로벌-00))
-(학 / 학 :mod (커 / 커뮤니케이션-00))
-
+# ::note 퇴직 수정 필요
+(말 / 말하-01
+    :ARG0 (사 / 사람 :wiki "이택광" :name (이 / 이름 :op1 "이택광")
+        :ARG0-of (h / have-org-role-91
+            :ARG1 (u / university :wiki "경희대학교" :name (이2 / 이름 :op1 "경희대"))
+            :ARG2 (교 / 교수
+                :topic (글 / 글로벌커뮤니케이션학))))
+    :ARG1 (생 / 생기-01
+        :ARG1 (갈 / 갈등-00)
+        :manner (바 / 바라보-00
+            :ARG1 (그 / 그렇-01
+                :cause (o / or
+                    :op1 (부 / 부족-01
+                        :ARG1 (끈 / 끈기))
+                    :op1 (부2 / 부족-01
+                        :ARG1 (노 / 노력-01)))))
+        :condition (관 / 관두-00
+            :ARG0 (사2 / 사람
+                :ARG0-of (일 / 일하-01
+                    :location (직 / 직장))
+                :mod (낮 / 낮-01
+                    :ARG1 (연 / 연차)))
+            :ARG1 (직2 / 직장)))
+    :ARG1 (바2 / 바라보-00
+        :ARG1 (사3 / 사람
+            :ARG0-of (일2 / 일하-01
+                :location (직3 / 직장))
+            :ARG0-of (퇴 / 퇴직-00))
+        :ARG1 (고 / 고문관
+            :mod (녹 / 녹아들-00
+                :polarity -
+                :ARG2 (회 / 회사)))))
 
 # ::id snt21.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 기업은 막 교육을 마친 신입사원이 퇴직하면 회사에 손해라는 걸 감안해야 한다는 입장이다.
 # ::note
--- FRAMES ----------------------------------------
-기업 : VERBAL_NOUN
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-교육 : VERBAL_NOUN
-	- educate		(교 / 교육-01 :ARG0 teacher :ARG1 subject :ARG2 student)
-마치 : VERB
-	- finish		(마 / 마치-01 :ARG0 agent :ARG1 thing_finishing)
-퇴직하 : DERIVED_NON-ENTRY
-감안 : VERBAL_NOUN
-	- consider		(감 / 감안-01 :ARG0 agent :ARG1 thing_considered)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"신입사원" [CV_POSITION]	->  :mod (신 / 신입사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신입사원))
--- VERBALIZED ------------------------------------
-(사 / 사원 :mod (신 / 신입-00))
-
+(입 / 입장
+    :poss (기 / 기업)
+    :domain (o / obligate-01
+        :ARG2 (감 / 감안-01
+            :ARG0 (회 / 회사)
+            :ARG1 (손 / 손해))
+        :condition (퇴 / 퇴직-00
+            :ARG0 (사 / 사람
+                :ARG0-of (일 / 일하-01)
+                :ARG0-of (입2 / 입사-00
+                    :manner (새 / 새롭-01))
+                :ARG0-of (마 / 마치-01
+                    :ARG1 (교 / 교육-01)
+                    :mod (막 / 막))))))
 
 # ::id snt22.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 한 기업 인사 담당자는 “사원 한 명을 교육하는 데 돈이 많이 드는데, 사원이 회사를 나간다면 회사는 아깝고 아쉬운 마음이 든다”며 “악담까진 아니라도 ‘여기서 못 버티면 다른 곳에서도 또 그만둔다’는 만류를 할 때가 잦다”고 했다.
 # ::note
--- FRAMES ----------------------------------------
-기업 : VERBAL_NOUN
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-담당 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (담 / 담당자-00) ?
-	- be_in_charge_of		(담 / 담당-01 :ARG0 agent :ARG1 thing_charged)
-교육 : VERBAL_NOUN
-	- educate		(교 / 교육-01 :ARG0 teacher :ARG1 subject :ARG2 student)
-들 : VERB
-	- pick_up		(들 / 들-01 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- let_in		(들 / 들-02 :ARG0 agent :ARG1 thing_let_in :ARG2 goal)
-	- require		(들 / 들-03 :ARG1 requirer :ARG2 thing_required)
-	- grow_older		(들 / 들-04 :ARG1 person :ARG2 age)
-	- let_in-CV		(들 / 들-05 :ARG0 agent :ARG1 thing_let_in :ARG2 source)
-나가 : VERB
-	- go_out		(나 / 나가-01 :ARG0 agent :ARG2 start_point :ARG3 end_point)
-	- get_out_of_order		(나 / 나가-02 :ARG1 thing_getting_out_of_order)
-	- do-light_verb		(나 / 나가-03 :ARG0 agent :ARG1 deverbal_noun :ARG2 start_point :ARG3 end_point)
-	- puth_through-CV		(나 / 나가-04 :ARG0 agent :ARG1 thing_pushed_through)
-아깝 : ** UNUSED_OR_NON-ENTRY **
-아쉽 : VERB
-	- needed		(아 / 아쉽-01 :ARG1 thing)
-들 : VERB
-	- pick_up		(들 / 들-01 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- let_in		(들 / 들-02 :ARG0 agent :ARG1 thing_let_in :ARG2 goal)
-	- require		(들 / 들-03 :ARG1 requirer :ARG2 thing_required)
-	- grow_older		(들 / 들-04 :ARG1 person :ARG2 age)
-	- let_in-CV		(들 / 들-05 :ARG0 agent :ARG1 thing_let_in :ARG2 source)
-버티 : VERB
-	- endure		(버 / 버티-01 :ARG0 agent :ARG1 thing_endured_or_period_of_time)
-그만두 : VERB
-	- cease		(그 / 그만두-01 :ARG0 agent :ARG1 thing_ceased)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-잦 : VERB
-	- frequent		(잦 / 잦-01 :ARG1 thing_frequent)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"사원" [CV_POSITION]	->  :mod (사 / 사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사원))
-"인사 담당자" [CV_POSITION]	->  :mod (인 / 인사담당자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (인 / 인사 담당자))
-"한 기업" [QT_COUNT]	->  :quant (한 / 한기업)	OR	(c / concept* :quant 한 :unit|scale (기 / 기업))
-"한 명" [QT_MAN_COUNT]	->  :quant (한 / 한명)	OR	(c / concept* :quant 한 :unit|scale (명 / 명))
--- VERBALIZED ------------------------------------
-(담 / 담당-01 :mod (인 / 인사-00))
-(인 / 인사-00 :mod (기 / 기업-01))
-(자 / 자 :ARG0-of (담 / 담당-01))
-
+(하 / 하-02
+    :ARG0 (사 / 사람
+        :ARG0-of (h / have-org-role-91
+            :ARG1 (기 / 기업)
+            :ARG3 (인 / 인사)))
+    :ARG1 (a / and
+        :op1 (들 / 들-03
+            :ARG2 (돈 / 돈
+                :quant (많 / 많-01))
+            :purpose (교 / 교육-01
+                :ARG2 (사2 / 사람
+                    :ARG0-of (일 / 일하-01))))
+        :op2 (느 / 느끼-01
+            :ARG0 (회 / 회사)
+            :ARG1 (a2 / and
+                :op1 (아 / 아깝-00)
+                :op2 (아2 / 아쉽-01))
+            :condition (나 / 나가-01
+                :ARG0 사2
+                :ARG2 회)))
+    :ARG1 (잦 / 잦-01
+        :ARG1 (만 / 만류-00
+            :mod (악 / 악담 :polarity -)
+            :ARG0 사
+            :ARG1 사2
+            :manner (말 / 말하-01
+                :ARG0 사
+                :ARG2 사2
+                :ARG1 (그 / 그만두-01
+                    :ARG0 사2
+                    :location (곳 / 곳
+                        :ARG1-of (다 / 다르-01))
+                    :condition (버 / 버티-01
+                        :polarity -
+                        :location (여 / 여기)))))))
 
 # ::id snt23.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 새롭게 신입사원을 뽑아도 업무에 적응하기까지 걸리는 시간도 길다.
 # ::note
--- FRAMES ----------------------------------------
-새롭 : VERB
-	- new		(새 / 새롭-01 :ARG1 thing_being_new)
-뽑 : VERB
-	- select		(뽑 / 뽑-01 :ARG0 agent :ARG1 entity_selected :ARG2 selected_from)
-적응 : VERBAL_NOUN
-	- adapt		(적 / 적응-01 :ARG0 agent :ARG1 entity_adapted :ARG2 adapted_to)
-걸리 : VERB
-	- be_required		(걸 / 걸리-01 :ARG1 time :ARG2 event)
-	- fall_ill		(걸 / 걸리-02 :ARG1 patient :ARG2 illness)
-	- have_to_do_with		(걸 / 걸리-03 :ARG1 theme :ARG2 with_what)
-길 : VERB
-	- long		(길 / 길-01 :ARG1 thing_being_long)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"신입사원" [CV_POSITION]	->  :mod (신 / 신입사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신입사원))
--- VERBALIZED ------------------------------------
-(사 / 사원 :mod (신 / 신입-00))
-
+(길 / 길-01
+    :mod (또 / 또한)
+    :ARG1 (t / temporal-quantity
+        :duration-of (적 / 적응-01
+            :ARG2 (업 / 업무)))
+    :concession (채 / 채용-01
+        :ARG1 (사 / 사람
+            :ARG0-of (일 / 일하-01)
+            :ARG0-of (입2 / 입사-00
+                :manner (새 / 새롭-01)))
+        :manner (새2 / 새롭-01)))
 
 # ::id snt24.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 실제 경총 조사 결과 기업들의 대졸 신입사원에 대한 업무 수행 만족도는 2010년 조사 이후 계속해서 내려가는 추세다.
 # ::note
--- FRAMES ----------------------------------------
-조사 : VERBAL_NOUN
-	- investigate		(조 / 조사-01 :ARG0 agent :ARG1 thing_investigated)
-기업 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기업들-00) ?
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-수행 : VERBAL_NOUN
-	- carry_out		(수 / 수행-01 :ARG0 agent :ARG1 thing_carried_out)
-만족 : VERBAL_NOUN
-	- satisfy		(만 / 만족-01 :ARG0 causer :ARG1 patient)
-조사 : VERBAL_NOUN
-	- investigate		(조 / 조사-01 :ARG0 agent :ARG1 thing_investigated)
-계속 : VERBAL_NOUN
-	- continue		(계 / 계속-01 :ARG0 agent :ARG1 thing_continuing)
-내려가 : VERB
-	- go_down		(내 / 내려가-01 :ARG0 agent :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- go_down_straight-CV		(내 / 내려가-02 :ARG0 thing_going_down :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- go_down_forcefully-CV		(내 / 내려가-03 :ARG0 agent :ARG1 theme :ARG2 start_point :ARG3 end_point)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2010년" [DT_YEAR]	->  :time|duration (2 / 2010년)	OR	:time (d / date-entity :year 2010)	OR	:duration (t / temporal-quantity :quant 2010 :unit (년 / 년))  
-"경총" [OGG_POLITICS]	->  (경 / 경총)	OR	(g / government-organization :wiki "한국경영자총협회" :name (이 / 이름 :op1 "경총"))
-"신입사원" [CV_POSITION]	->  :mod (신 / 신입사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신입사원))
--- VERBALIZED ------------------------------------
-(결 / 결과-00 :mod (조 / 조사-01))
-(계 / 계속-01 :mod (이 / 이후-00))
-(기 / 기업-01 :mod (결 / 결과-00))
-(도 / 도-00 :mod (만 / 만족-01))
-(들 / 들 :ARG0-of (기 / 기업-01))
-(만 / 만족-01 :ARG1 (수 / 수행-01))
-(사 / 사원 :mod (신 / 신입-00))
-(수 / 수행-01 :mod (업 / 업무-00))
-(신 / 신입 :mod (대 / 대졸-00))
-(이 / 이후-00 :mod (조 / 조사-01))
-
+(전 / 전하-01
+    :ARG0 (조 / 조사-01
+        :mod (실 / 실제)
+        :ARG0 (o / organization
+            :wiki "한국경영자총협회"
+            :name (이 / 이름 :op1 "경총")))
+    :ARG1 (추 / 추세
+        :mod (내 / 내려가-01
+            :ARG0 (h / have-degree-91
+                :ARG0 (기 / 기업)
+                :ARG1 (만 / 만족-01
+                    :ARG1 기
+                    :ARG0 (수 / 수행-01
+                        :ARG0 (사 / 사람
+                            :ARG0-of (일 / 일하-01)
+                            :ARG0-of (입2 / 입사-00
+                                :manner (새 / 새롭-01))
+                            :ARG0-of (졸 / 졸업-01
+                                :ARG1 (대 / 대학)))
+                        :ARG1 (업 / 업무))))
+            :manner (계 / 계속-01)
+            :time (이2 / 이후
+                :op1 (조2 / 조사-01
+                    :time (d / date-entity :year 2010))))))
 
 # ::id snt25.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 전문가들은 기업과 신입사원이 서로를 이해하는 게 먼저라고 조언했다.
 # ::note
--- FRAMES ----------------------------------------
-전문가 : DERIVED_NON-ENTRY -> (전 / 전문가-00) ?
-기업 : VERBAL_NOUN
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-이해 : VERBAL_NOUN
-	- understand		(이 / 이해-01 :ARG0 understander :ARG1 thing_understood)
-조언 : VERBAL_NOUN
-	- advise		(조 / 조언-01 :ARG0 agent :ARG1 thing_advised)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"신입사원" [CV_POSITION]	->  :mod (신 / 신입사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신입사원))
-"전문가" [CV_OCCUPATION]	->  :mod (전 / 전문가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (전 / 전문가))
--- VERBALIZED ------------------------------------
-(가 / 가 :mod (전 / 전문-00))
-(사 / 사원 :mod (신 / 신입-00))
-
+(조 / 조언-01
+    :ARG0 (전 / 전문가)
+    :ARG1 (우 / 우선-01
+        :ARG1 (이 / 이해-01
+            :ARG0 (e / either
+                :op1 (기 / 기업)
+                :op2 (사 / 사람
+                    :ARG0-of (일 / 일하-01)
+                    :ARG0-of (입2 / 입사-00
+                        :manner (새 / 새롭-01))))
+            :ARG1 (서 / 서로))))
 
 # ::id snt26.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 서이종 서울대 사회학과 교수는 “기업은 새 인력을 받아들이면서 성장하고, 신입사원은 조직에서 여러 세대와 어울려서 일한다는 점을 알아야 한다”며 “서로의 문화를 이해하려고 노력하는 자세가 중요하다”고 말했다.
 # ::note
--- FRAMES ----------------------------------------
-사회학 : DERIVED_NON-ENTRY -> (사 / 사회학-00) ?
-기업 : VERBAL_NOUN
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-받아들이 : VERB
-	- accept		(받 / 받아들이-01 :ARG0 acceptor :ARG1 thing_accepted :ARG2 accepted_from :ARG3 attribute_of_arg1)
-성장 : VERBAL_NOUN
-	- grow		(성 / 성장-01 :ARG0 causer :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
-조직 : VERBAL_NOUN
-	- organize		(조 / 조직-01 :ARG0 agent :ARG1 thing_organized :ARG2 organized_with)
-어울리 : ** UNUSED_OR_NON-ENTRY **
-일하 : VERB
-	- work		(일 / 일하-01 :ARG0 worker)
-알 : VERB
-	- know		(알 / 알-01 :ARGA causer :ARG0 knower :ARG1 theme)
-이해 : VERBAL_NOUN
-	- understand		(이 / 이해-01 :ARG0 understander :ARG1 thing_understood)
-노력 : VERBAL_NOUN
-	- endeavor		(노 / 노력-01 :ARG0 agent :ARG1 proposition)
-중요 : VERBAL_NOUN
-	- important		(중 / 중요-01 :ARG1 thing_being_important :ARG2 important_to)
-말하 : VERB
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
-:ARG1-of (새 / 새롭-01)
--- NE TYPES --------------------------------------
-"교수" [CV_OCCUPATION]	->  :mod (교 / 교수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교수))
-"서울대" [OGG_EDUCATION]	->  (서 / 서울대)	OR	(s / school|university :wiki "서울대학교" :name (이 / 이름 :op1 "서울대"))
-"서이종" [PS_NAME]	->  (서 / 서이종)	OR	(p / person :wiki - :name (이 / 이름 :op1 "서이종"))
-"신입사원" [CV_POSITION]	->  :mod (신 / 신입사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신입사원))
--- VERBALIZED ------------------------------------
-(교 / 교수 :mod (과 / 과-00))
-(사 / 사원 :mod (신 / 신입-00))
-(학 / 학 :mod (사 / 사회-00))
-
+(말 / 말하-01
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "서이종")
+        :ARG0-of (h / have-org-role-91
+            :ARG1 (u / university :wiki "서울대학교" :name (이2 / 이름 :op1 "서울대"))
+            :ARG2 (교 / 교수
+                :topic (사 / 사회학))))
+    :ARG1 (o / obligate-01
+        :ARG2 (알 / 알-01
+            :ARG1 (a / and
+                :op1 (성 / 성장-01
+                    :ARG1 (기 / 기업)
+                    :manner (받 / 받아들이-01
+                        :ARG0 기
+                        :ARG1 (인 / 인력
+                            :ARG1-of (새 / 새롭-01))))
+                :op2 (일 / 일하-01
+                    :ARG0 (사2 / 사람
+                        :ARG0-of (일2 / 일하-01)
+                        :ARG0-of (입 / 입사-00
+                            :manner (새2 / 새롭-01)))
+                    :location (조 / 조직)
+                    :manner (어 / 어울리-00
+                        :ARG0 사2
+                        :ARG1 (세 / 세대 :quant (여 / 여러)))))))
+    :ARG1 (중 / 중요-01
+        :ARG1 (자 / 자세
+            :mod (노 / 노력-01
+                :ARG1 (이3 / 이해-01
+                    :ARG1 (문 / 문화
+                        :poss (서 / 서로)))))))
 
 # ::id snt27.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이직이 거부할 수 없는 흐름이라면 기업과 신입사원이 서로의 적합성을 시험해 볼 기간이 필요하다는 의견도 있다.
 # ::note
--- FRAMES ----------------------------------------
-거부 : VERBAL_NOUN
-	- refuse		(거 / 거부-01 :ARG0 entity_refusing :ARG1 refused_action,_object :ARG2 anti-benefactive)
-없 : ** UNUSED_OR_NON-ENTRY **
-기업 : VERBAL_NOUN
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-적합 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (적 / 적합성-00) ?
-	- suitable		(적 / 적합-01 :ARG1 thing_being_suitable :ARG2 suitable_to)
-시험 : VERBAL_NOUN
-	- experiment		(시 / 시험-01 :ARG0 agent :ARG1 experimental_subject)
-필요 : VERBAL_NOUN
-	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"신입사원" [CV_POSITION]	->  :mod (신 / 신입사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (신 / 신입사원))
--- VERBALIZED ------------------------------------
-(사 / 사원 :mod (신 / 신입-00))
-(성 / 성 :ARG0-of (적 / 적합-01))
-
+(의 / 의견
+    :mod (필 / 필요-01
+        :ARG1 (t / temporal-quantity
+            :duration-of (시 / 시험-01
+                :ARG0 (a / and
+                    :op1 (기 / 기업)
+                    :op2 (사 / 사람
+                        :ARG0-of (일 / 일하-01)
+                        :ARG0-of (입 / 입사-00
+                            :manner (새 / 새롭-01))))
+                :ARG1 (적 / 적합-01
+                    :ARG2 (서 / 서로))))
+        :condition (흐 / 흐름
+            :mod (가 / 가능-01
+                :polarity -
+                :ARG1 (거 / 거부-01
+                    :ARG1 (이 / 이직-00))))))
 
 # ::id snt28.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 윤인진 고려대 사회학과 교수는 “고용 초반 6개월∼1년 정도는 회사와 사원이 서로 맞는 정도를 시험해 보고 판단하는 것도 한 방법”이라며 “다만 불안정한 고용 제도로 악용될 가능성이 있어 여기에 대한 고민은 필요하다”고 말했다.
 # ::note
--- FRAMES ----------------------------------------
-사회학 : DERIVED_NON-ENTRY -> (사 / 사회학-00) ?
-고용 : VERBAL_NOUN
-	- hire		(고 / 고용-01 :ARG0 employer :ARG1 employee :ARG2 job)
-맞 : VERB
-	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
-	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
-	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
-	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
-시험 : VERBAL_NOUN
-	- experiment		(시 / 시험-01 :ARG0 agent :ARG1 experimental_subject)
-판단 : VERBAL_NOUN
-	- judge		(판 / 판단-01 :ARG0 agent :ARG1 judgement)
-불안정 : VERBAL_NOUN
-	- unstable		(불 / 불안정-01 :ARG1 thing_being_unstable)
-고용 : VERBAL_NOUN
-	- hire		(고 / 고용-01 :ARG0 employer :ARG1 employee :ARG2 job)
-악용되 : DERIVED_NON-ENTRY
-가능 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (가 / 가능성-00) ?
-	- possible		(가 / 가능-01 :ARG1 event_being_possible)
-있 : ** UNUSED_OR_NON-ENTRY **
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-필요 : VERBAL_NOUN
-	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
-말하 : VERB
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"6개월∼1년" [DT_DURATION]	->  :time|duration (6 / 6개월∼1년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1))	OR :duration (t / temporal-quantity :quant 1 :unit (년 / 년))  
-"고려대" [OGG_EDUCATION]	->  (고 / 고려대)	OR	(s / school|university :wiki "고려대학교" :name (이 / 이름 :op1 "고려대"))
-"고용제도" [CV_POSITION]	->  :mod (고 / 고용제도)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (고 / 고용제도))
-"교수" [CV_OCCUPATION]	->  :mod (교 / 교수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교수))
-"사원" [CV_POSITION]	->  :mod (사 / 사원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사원))
-"사회학과" [OGG_EDUCATION]	->  (사 / 사회학과)	OR	(s / school|university :wiki "사회학" :name (이 / 이름 :op1 "사회학과"))
-"윤인진" [PS_NAME]	->  (윤 / 윤인진)	OR	(p / person :wiki - :name (이 / 이름 :op1 "윤인진"))
--- VERBALIZED ------------------------------------
-(교 / 교수 :mod (과 / 과-00))
-(성 / 성 :ARG0-of (가 / 가능-01))
-(제 / 제도-00 :mod (고 / 고용-01))
-(초 / 초반-00 :mod (고 / 고용-01))
-(학 / 학 :mod (사 / 사회-00))
-
-
-
-Process finished with exit code 0
+(말 / 말하-01
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "윤인진")
+        :ARG0-of (h / have-org-role-91
+            :ARG1 (u / university :wiki "고려대학교" :name (이2 / 이름 :op1 "고려대"))
+            :ARG2 (교 / 교수
+                :topic (사 / 사회학))))
+    :ARG1 (가 / 가능-01
+        :ARG1 (판 / 판단-01
+            :manner (시 / 시험-01
+                :ARG0 (a / and
+                    :op1 (회 / 회사)
+                    :op2 (사2 / 사람
+                        :ARG0-of (일 / 일하-01)))
+                :ARG1 (h / have-degree-91
+                    :ARG2 (맞 / 맞-01
+                        :ARG1 a
+                        :ARG2 (서 / 서로)))
+                :time (초 / 초반
+                    :op1 (고 / 고용-01))
+                :duration (o / or
+                    :op1 (t / temporal-quantity
+                        :unit (개 / 개월)
+                        :quant 6)
+                    :op2 (t2 / temporal-quantity
+                        :unit (년 / 년)
+                        :quant 1)))))
+    :ARG1 (필 / 필요-01
+        ARG1 (고2 / 고민-00
+            :ARG1 (가2 / 가능-01
+                :ARG1 (악 / 악용-00
+                    :ARG2 (제 / 제도
+                        :purpose (고3 / 고용-01)
+                        :ARG1-of (안 / 안정-01
+                            :polarity -)))))))

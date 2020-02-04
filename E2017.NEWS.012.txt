@@ -1,4 +1,3 @@
-/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
 # ::id snt0.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt '조국 책임론'에 靑 선 긋기.
 # ::note
@@ -891,6 +890,3 @@
 (위 / 위-00 :mod (운 / 운영-01))
 (출 / 출석-01 :mod (위 / 위-00))
 
-
-
-Process finished with exit code 0
