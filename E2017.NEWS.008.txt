@@ -242,7 +242,7 @@
 
 # ::id snt13.E2017.NEWS.008 ::date 2019-02-04 ::annotator gabrielle ::preferred True
 # ::snt 고종완 한국자산관리연구원장은 "내년부터 부활할 것으로 보이는 '초과이익환수제'를 피할 수 있는 재건축 단지가 먼저 오르고, 주변 일반 아파트까지 상대적으로 저평가됐다는 인식 때문에 덩달아 가격이 뛰는 '쌍끌이' 장세"라고 말했다.
-# ::note
+# ::note '덩달다'로 주석하지 않고 덩달아 또는 덩달아서 형으로 주석
 (말 / 말하-01
 	:ARG0 (p / person :wiki - :name (이 / 이름 :op1 "고종완")
 		:ARG0-of (h / have-org-role-91
@@ -275,7 +275,7 @@
 
 # ::id snt14.E2017.NEWS.008 ::date 2019-02-04 ::annotator gabrielle ::preferred True
 # ::snt 부동산 전문가들은 집값 상승세가 지속되는 이유에 대해 "대선 이후 정치적 불확실성이 사라지고, 경기 부양 기대감이 반영된 덕분"이라고 설명한다.
-# ::note 동격을 부여하지 않고 attribute로 했음, 상승세 --> 추세 + 상승-01
+# ::note 동격을 부여하지 않고 attribute로 가주석, 상승세 --> 추세 + 상승-01
 (설 / 설명-01
 	:ARG0 (전 / 전문가
 		:topic (부 / 부동산))
@@ -297,131 +297,81 @@
 					:ARG1 (부2 / 부양-01
 						:ARG1 (경 / 경기)))))))
 
-# ::id snt15.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.008 ::date 2019-02-05 ::annotator gabrielle ::preferred True
 # ::snt 임병철 부동산114 책임연구원은 "문재인 정부가 부동산 시장에 그렇게 강한 규제를 내리진 않을 것이란 기대감과 함께 도시 재생 정책 등이 개발 호재로 작용할 수 있다는 전망이 매수 심리를 끌어올리고 있다"고 말했다.
-# ::note
--- FRAMES ----------------------------------------
-연구 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (연 / 연구원-00) ?
-	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
-그렇 : VERB
-	- be_so		(그 / 그렇-01 :ARG1 entity_being_so)
-규제 : VERBAL_NOUN
-	- restrict		(규 / 규제-01 :ARG0 agent,_limiter :ARG1 thing_limited)
-내리 : VERB
-	- put_down		(내 / 내리-01 :ARG0 agent :ARG1 thing_put_down :ARG2 start_point :ARG3 end_point)
-	- get_off		(내 / 내리-02 :ARG0 agent :ARG1 vehicle)
-	- give-light_verb		(내 / 내리-03 :ARG0 agent :ARG1 deverbal_noun :ARG2 given_to)
-	- fall		(내 / 내리-04 :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
-	- collapse-CV		(내 / 내리-05 :ARG1 stock :ARG2 start_point :ARG3 end_point)
-기대 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기대감-00) ?
-	- expect		(기 / 기대-01 :ARG0 agent :ARG1 thing_expected)
-개발 : VERBAL_NOUN
-	- develop		(개 / 개발-01 :ARG0 developer :ARG1 thing_developed)
-작용 : VERBAL_NOUN
-	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
-있 : ** UNUSED_OR_NON-ENTRY **
-전망 : VERBAL_NOUN
-	- predict		(전 / 전망-01 :ARG0 thing_predicting :ARG1 thing_predicted)
-매수 : VERBAL_NOUN
-	- buy		(매 / 매수-01 :ARG0 buyer :ARG1 thing_bought :ARG2 seller)
-끌어올리 : ** UNUSED_OR_NON-ENTRY **
-말하 : VERB
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
-(책 / 책임지-01)
--- NE TYPES --------------------------------------
-"도시 재생 정책" [CV_LAW]	->  (도 / 도시재생정책)	OR	(l / law :wiki - :name (이 / 이름 :op1 "도시" :op2 "재생" :op3 "정책"))
-"문재인" [PS_NAME]	->  (문 / 문재인)	OR	(p / person :wiki "문재인" :name (이 / 이름 :op1 "문재인"))
-"부동산114" [OGG_ECONOMY]	->  (부 / 부동산114)	OR	(c / company|organization :wiki "부동산114" :name (이 / 이름 :op1 "부동산114"))
-"임병철" [PS_NAME]	->  (임 / 임병철)	OR	(p / person :wiki - :name (이 / 이름 :op1 "임병철"))
-"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
-"책임연구원" [CV_POSITION]	->  :mod (책 / 책임연구원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (책 / 책임연구원))
--- VERBALIZED ------------------------------------
-(감 / 감 :ARG0-of (기 / 기대-01))
-(산 / 산 :mod (부 / 부동-00))
-(산 / 산 :mod (부 / 부동-00))
-(시 / 시장 :mod (산 / 산-00))
-(심 / 심리-00 :mod (매 / 매수-01))
-(연 / 연구-01 :mod (책 / 책임-00))
-(원 / 원 :ARG0-of (연 / 연구-01))
-(재 / 재생 :mod (도 / 도시-00))
-(정 / 정책 :mod (재 / 재생-00))
-(호 / 호재-00 :mod (개 / 개발-01))
+# ::note 규제를 내리다 --> 규제
+(말 / 말하-01
+	:ARG0 (p / person :wiki - :name (이 / 이름 :op1 "임병철")
+		:ARG0-of (h / have-org-role-91
+			:ARG1 (c / company :wiki "부동산114" :name (이2 / 이름 :op1 "부동산114"))
+			:ARG2 (책 / 책임연구원)))
+	:ARG1 (끌 / 끌어올리-00
+		:ARG0 (a / and
+			:op1 (기 / 기대-01
+				:ARG1 (강 / 강하-01
+					:polarity -
+					:manner (그 / 그렇-01)
+					:ARG1 (규 / 규제-01
+						:ARG0 (정 / 정부
+							:mod (p2 / person :wiki "문재인" :name (이3 / 이름 :op1 "문재인")))
+						:ARG1 (시 / 시장
+							:mod (부 / 부동산)))))
+			:op2 (전 / 전망-01
+				:ARG1 (가 / 가능-01
+					:ARG1 (작 / 작용-01
+						:ARG1 (등 / 등
+							:op1 (정2 / 정책
+								:topic (재 / 재생-00
+									:ARG1 (도 / 도시))))
+						:ARG2 (호 / 호재
+							:mod (개 / 개발-01))))))
+		:ARG1 (심 / 심리
+			:mod (매 / 매수))))
 
-
-# ::id snt16.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.008 ::date 2019-02-05 ::annotator gabrielle ::preferred True
 # ::snt 대형 건설사 관계자는 "서울과 수도권 인기 주거지는 주택 공급은 적은데 집을 사려는 수요가 넘치기 때문에 집값이 오를 수밖에 없다"고 말했다.
 # ::note
--- FRAMES ----------------------------------------
-건설 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (건 / 건설사-00) ?
-	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
-관계 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관계자-00) ?
-	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
-	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-수도권 : DERIVED_NON-ENTRY -> (수 / 수도권-00) ?
-주거지 : DERIVED_NON-ENTRY -> (주 / 주거지-00) ?
-공급 : VERBAL_NOUN
-	- supply		(공 / 공급-01 :ARG0 agent :ARG1 thing_provided :ARG2 entity_provided_for_(beneficial))
-적 : VERB
-	- write_down		(적 / 적-01 :ARG0 agent :ARG1 thing_written :ARG2 where_written)
-	- little		(적 / 적-02 :ARG1 thing_being_little)
-사 : VERB
-	- buy		(사 / 사-01 :ARG0 buyer :ARG1 thing_bought :ARG2 seller)
-넘치 : REDUCED_VERB_DETECTED
-	- pass		(넘 / 넘-01 :ARG0 entity_passing :ARG1 thing_passed)
-	- exceed		(넘 / 넘-02 :ARG1 thing_that's_more :ARG2 thing_that's_less)
-오르 : VERB
-	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
-	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
-	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
-	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
-없 : ** UNUSED_OR_NON-ENTRY **
-말하 : VERB
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"관계자" [CV_POSITION]	->  :mod (관 / 관계자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (관 / 관계자))
-"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
-"수도권" [LC_OTHERS]	->  (수 / 수도권)	OR	(l / location? :wiki "수도권" :name (이 / 이름 :op1 "수도권"))
--- VERBALIZED ------------------------------------
-(값 / 값 :mod (집 / 집-00))
-(건 / 건설-01 :mod (대 / 대형-00))
-(공 / 공급-01 :mod (주 / 주택-00))
-(권 / 권 :mod (수 / 수도-00))
-(사 / 사 :ARG0-of (건 / 건설-01))
-(자 / 자 :ARG0-of (관 / 관계-01))
-(주 / 주거 :mod (인 / 인기-00))
-(지 / 지 :mod (주 / 주거-00))
+(말 / 말하-01
+	:ARG0 (사 / 사람
+		:ARG1-of (관 / 관계-02
+			:ARG2 (회 / 회사
+				:ARG0-of (건 / 건설-01)
+				:mod (대 / 대형))))
+	:ARG1 (오 / 오르-01
+		:domain (주 / 주거지
+			:mod (인 / 인기)
+			:location (a / and
+				:op1 (c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
+				:op2 (수 / 수도권)))
+		:ARG0 (넘 / 넘-02
+			:ARG1 (수2 / 수요
+				:purpose (사2 / 사-01
+					:ARG1 (집 / 집)))
+			:concession (적 / 적-02
+				:ARG1 (공 / 공급-01
+					:ARG1 (주2 / 주택))))
+		:ARG1 (집2 / 집값)))
 
-
-# ::id snt17.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.008 ::date 2019-02-05 ::annotator gabrielle ::preferred True
 # ::snt 최근 집값 오름세가 걱정할 만한 수준이 아니며, 다른 경제지표와 비교하면 집값 상승률이 오히려 낮다는 분석도 있다.
 # ::note
--- FRAMES ----------------------------------------
-걱정 : VERBAL_NOUN
-	- worry		(걱 / 걱정-01 :ARG0 topic_of_worry :ARG1 worrier)
-비교 : VERBAL_NOUN
-	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
-상승 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (상 / 상승률-00) ?
-	- ascend		(상 / 상승-01 :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
-낮 : VERB
-	- low		(낮 / 낮-01 :ARG0 causer :ARG1 thing_being_low :ARG2 start_point :ARG3 end_point)
-분석 : VERBAL_NOUN
-	- analyze		(분 / 분석-01 :ARG0 agent :ARG1 thing_analyzed)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(값 / 값 :mod (집 / 집-00))
-(값 / 값 :mod (집 / 집-00))
-(률 / 률 :ARG0-of (상 / 상승-01))
-(상 / 상승-01 :mod (값 / 값-00))
-(오 / 오름세 :mod (값 / 값-00))
-(지 / 지표 :mod (경 / 경제-00))
-(집 / 집 :mod (최 / 최근-00))
-
+(분 / 분석-01
+	:ARG1 (a / and
+		:op1 (수 / 수준
+			:polarity -
+			:mod (걱 / 걱정-01
+				:ARG0 (추 / 추세
+					:mod (오 / 오르-01
+						:ARG1 (집 / 집값)))))
+		:op2 (낮 / 낮-01
+			:mod (오2 / 오히려)
+			:ARG1 (비 / 비율
+				:mod (상 / 상승-01
+					:ARG1 집))
+			:condition (비2 / 비교-01
+				:ARG2 (지 / 지표
+					:topic (경 / 경제)
+					:ARG1-of (다 / 다르-01))))))
 
 # ::id snt18.E2017.NEWS.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 이준용 한국감정원 시장분석연구부장은 "서울·부산·세종 등 일부 지역을 제외하면 전국적으로는 안정세를 보이고, 서울과 수도권도 부동산 활황이던 글로벌 금융 위기 직전과 비교하면 상승 폭이 크지 않다"고 말했다.
