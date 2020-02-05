@@ -284,17 +284,19 @@
 
 # ::id snt12.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle
 # ::snt 2015년 특별 사면 때 입찰 담합으로 부정당업체 제재를 받은 70여 개 업체를 비롯해 2000여 개 건설 업체가 각종 제재에서 사면 혜택을 받았다.
-# ::note 자격격은 동격으로 처리
+# ::note 자격격은 동격으로 처리하는 것이 원칙이나, 표적화 문제로 우선 :attribute로 주석
 (사 / 사면-00
 	:ARG1 (업 / 업체 :quant (여 / 여 :op1 2000) :unit (개 / 개)
 		:ARG0-of (건 / 건설-01)
 		:ARG1-of (비 / 비롯하-01
 			:ARG2 (업2 / 업체 :quant (여2 / 여 :op1 70) :unit (개2 / 개)
 				:ARG1-of (제 / 제재-01
-					:ARG1 (업3 / 업체
+					:attribute (업3 / 업체
 						:ARG1-of (정 / 정당-01 :polarity -))
 					:cause (담 / 담합-00
 						:purpose (입 / 입찰-01))))))
+	:ARG2 (제2 / 제재-01
+		:mod (각 / 각종))
 	:time (사2 / 사면-00
 		:ARG1-of (특 / 특별-01)
 		:time (d / date-entity :year 2015)))
