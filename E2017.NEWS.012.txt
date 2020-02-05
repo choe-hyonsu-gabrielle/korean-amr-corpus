@@ -1,4 +1,4 @@
-# ::id snt0.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt '조국 책임론'에 靑 선 긋기.
 # ::note
 -- FRAMES ----------------------------------------
@@ -14,7 +14,7 @@
 (론 / 론 :mod (책 / 책임-00))
 
 
-# ::id snt1.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 거듭된 인사 검증 실패 논란에 조국 청와대 민정수석의 책임론이 불거지고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -36,7 +36,7 @@
 (실 / 실패-01 :mod (검 / 검증-00))
 
 
-# ::id snt2.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 야당은 조 수석의 책임을 묻기 위해 국회 운영위원회 출석까지 요구하고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -65,7 +65,7 @@
 (회 / 회 :mod (위 / 위원-00))
 
 
-# ::id snt3.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 하지만 청와대는 조 수석의 책임론을 불식시키기 위해 안간힘을 쓰고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -91,7 +91,7 @@
 (론 / 론 :mod (책 / 책임-00))
 
 
-# ::id snt4.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이낙연 총리를 시작으로 장관 후보자들의 상당수가 문재인 대통령이 후보 시절부터 밝혀온 '5대 비리 고위공직 원천 배제 원칙'에 해당하고 안경환 전 법무부 장관 후보자가 낙마하면서 야당은 '인사 파행'의 책임을 조 수석에 묻고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -151,7 +151,7 @@
 (후 / 후보 :mod (장 / 장관-00))
 
 
-# ::id snt5.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 정우택 자유한국당 대표 권한대행 겸 원내대표는 "(조 수석이) 정상적으로 운영위 회의에 참석하고 청와대 인사 관련자를 출석시켜 정부 인사 시스템을 점검해야 한다"고 밝혔다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -196,7 +196,7 @@
 (회 / 회의 :mod (위 / 위-00))
 
 
-# ::id snt6.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 김동철 국민의당 원내대표도 "안경환 낙마, 김상곤 논문표절 등 인사 참사가 끊이지 않고 있기 때문에 청와대 인사검증 시스템을 점검할 필요가 있다"며 "조 수석의 (운영위) 출석은 너무나 당연하다"고 조 수석의 운영위 출석을 요구했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -247,7 +247,7 @@
 (표 / 표절-01 :mod (논 / 논문-00))
 
 
-# ::id snt7.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 하지만 청와대는 민정수석의 운영위 출석은 전례가 없는 일이라고 선을 긋고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -270,7 +270,7 @@
 (출 / 출석-01 :mod (위 / 위-00))
 
 
-# ::id snt8.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 청와대 관계자는 20일 "민정수석이 운영위에 참석하지 않는 게 관례"라고 잘라 말했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -297,7 +297,7 @@
 (자 / 자 :ARG0-of (관 / 관계-01))
 
 
-# ::id snt9.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 결국 이날 열린 운영위 회의는 조 수석의 출석을 둘러싸고 여야 간 대치가 벌어지다 파행됐다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -324,7 +324,7 @@
 (회 / 회의 :mod (위 / 위-00))
 
 
-# ::id snt10.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 청와대는 아예 대통령 비서실장을 위원장으로 하는 인사추천위원회를 가동해 조 수석의 인사 책임론을 불식시키고 부담을 덜어주려는 모양새다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -373,7 +373,7 @@
 (회 / 회 :mod (위 / 위원-00))
 
 
-# ::id snt11.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 인사추천위는 연일 불거지는 인사실패에 안경환 전 법무부 장관 후보자가 결국 자진 사퇴를 택하자 체계적인 인사검증을 위해 도입된 인사시스템이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -416,7 +416,7 @@
 (후 / 후보 :mod (장 / 장관-00))
 
 
-# ::id snt12.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 인사추천위는 비서실장을 위원장으로 하고 인사수석이 간사를 맡는다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -448,7 +448,7 @@
 (추 / 추천-01 :mod (인 / 인사-00))
 
 
-# ::id snt13.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 민정수석은 인사추천위원으로 참여하게 된다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -467,7 +467,7 @@
 (수 / 수석 :mod (민 / 민정-00))
 
 
-# ::id snt14.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 청와대 인선에 관해 조 수석 책임이 일정 부분 덜어지는 셈이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -488,7 +488,7 @@
 (책 / 책임 :mod (수 / 수석-00))
 
 
-# ::id snt15.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 청와대는 아예 지금까지 문제가 불거진 인사 검증 실패에 대해서도 '조국 책임론'과 선을 긋고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -513,7 +513,7 @@
 (실 / 실패-01 :mod (검 / 검증-00))
 
 
-# ::id snt16.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 임종석 대통령 비서실장은 이날 인사추천위 1차 회의 결과 브리핑에서 "(인사추천위 가동) 이전에도 이미 이전 정부의 인사위원회를 준용해 저희가 (인사를) 의논해왔고, 수석비서관들 회의는 비서실장이 주도해왔다"며 "그렇기 때문에 이전 검증에도 문제가 있다면 그 책임은 비서실장에 있다"고 밝혔다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -583,7 +583,7 @@
 (회 / 회 :mod (위 / 위원-00))
 
 
-# ::id snt17.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 인사 실패의 책임이 조 수석이 아닌 비서실장인 자신에게 있다는 것이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -604,7 +604,7 @@
 (실 / 실패-01 :mod (인 / 인사-00))
 
 
-# ::id snt18.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 임 실장의 이러한 발언은 야권에서 제기하는 조 수석에 책임을 묻는 것을 의식한 것으로 해석된다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -631,7 +631,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt19.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이와 관련, 자유한국당의 한 의원은 뉴시스와 통화에서 "(인사 실패에 따르는) 책임을 분산시키려고 하는 것"이라며 "하지만 (인사는) 민정수석의 직무란 게 누가 봐도 명확하다"고 지적했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -679,7 +679,7 @@
 (실 / 실패-01 :mod (인 / 인사-00))
 
 
-# ::id snt20.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 정양석 바른정당 원내수석부대표도 뉴시스와 통화에서 "(인사와 관련해선) 당연히 민정수석 담당"이라며 "비서실장이 전부 다 할 거면 민정수석을 무엇하러 두느냐"고 비판했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -727,7 +727,7 @@
 (정 / 정당 :mod (바 / 바른-00))
 
 
-# ::id snt21.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 정 원내수석은 그러면서 "국민이 불안해하고 국회가 반발하는데 청와대가 (조 수석의) 방패막이가 돼 줄 거냐. 누구를 위해서 그러는 거냐"고 지적한 뒤 "부적절하다"고 꼬집었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -775,7 +775,7 @@
 (수 / 수석 :mod (원 / 원내-00))
 
 
-# ::id snt22.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 야당은 계속해서 '조국 책임론'에 불을 지필 예정이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -799,7 +799,7 @@
 (론 / 론 :mod (책 / 책임-00))
 
 
-# ::id snt23.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 김선동 자유한국당 원내수석부대표는 뉴시스와 통화에서 "(조 수석의) 운영위 출석을 계속 요구할 것"이라며 "인사시스템이 왜 이렇게 작동됐는지 궁금해하는 상황에서 그런 부분을 규명하겠다는 것이 아주 정상적이고 당연한 상황"이라며 "앞으로의 인사 참사를 막기 위해서도 필요한 일"이라고 말했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -860,7 +860,7 @@
 (출 / 출석-01 :mod (위 / 위-00))
 
 
-# ::id snt24.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 정 원내수석 역시 조 수석의 운영위 출석 요구와 관련, "인사가 엉망인 상황인데 당연히 나와야 한다"고 주장했다.
 # ::note
 -- FRAMES ----------------------------------------

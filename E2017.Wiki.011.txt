@@ -1,9 +1,9 @@
-# ::id snt0.E2017.Wiki.011 ::date 2019-12-20 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.011 ::date 2019-12-20 ::annotator gabrielle
 # ::snt 엽록체
 # ::note
 (엽 / 엽록체)
 
-# ::id snt1.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 엽록체(葉綠體)는 진핵생물에서 광합성을 하는 세포 소기관이다.
 # ::note 광합성하다로 처리
 (소 / 소기관
@@ -12,7 +12,7 @@
         :part-of (진 / 진핵생물))
     :ARG1-of (광 / 광합성-00))
 
-# ::id snt2.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 엽록체는 엽록소가 있어 세포를 관찰했을 때 뚜렷한 녹색이 나타나는 것을 쉽게 확인할 수 있다.
 # ::note
 (가 / 가능-01
@@ -26,7 +26,7 @@
     :cause (엽 / 엽록소
         :location (엽2 / 엽록체)))
 
-# ::id snt3.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle
 # ::snt (독자적인 DNA와 리보솜을 가지고 있으며, 현재의 남조균류와 공통 조상을 가졌을 것으로 추측된다.)
 # ::note 독자적
 (a / and
@@ -42,7 +42,7 @@
                     :ARG2 (남 / 남조균류
                         :time (현 / 현재)))))))
 
-# ::id snt4.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 독립적으로 분열하여 증식하며, 빛을 받기 전에는 엽록소를 합성하지 않아 백색(백색체)이지만 가시광선 하에서 엽록소를 합성하여 녹색을 띠게 된다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -79,7 +79,7 @@
 (하 / 하 :mod (광 / 광선-00))
 
 
-# ::id snt5.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.011 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 유관속 식물의 엽록체는 비광합성 세포에서 색소체로서 존재한다.
 # ::note 유관속 식물의 엽록체는 비광합성 세포에 존재하는 색소체다. 로 표상할 경우 :attribute 도입 필요 없음.
 (엽 / 엽록체
@@ -91,7 +91,7 @@
             :polarity -))
     :attribute (색 / 색소체))
 
-# ::id snt6.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 색소체에는, 녹말체, 잡색체, 백색체 등 다양한 종류가 있지만, 모든 색소체는, 이중막으로 둘러싸여 엽록체 DNA를 가지는 것이 특징이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -122,7 +122,7 @@
 (체 / 체 :mod (잡 / 잡색-00))
 
 
-# ::id snt7.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 엽록체의 형태는 분류군에 따라 다양한데 일반적으로는 해초류에서 다양성이 높다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -150,7 +150,7 @@
 (적 / 적 :mod (일 / 일반-00))
 
 
-# ::id snt8.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 별모양, 판모양 등 여러 형태의 것이 알려져 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -164,7 +164,7 @@
 (모 / 모양 :mod (판 / 판-00))
 
 
-# ::id snt9.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 종자 식물의 경우, 엽록체의 형태는 단순한 원반상이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -179,7 +179,7 @@
 (식 / 식물 :mod (종 / 종자-00))
 
 
-# ::id snt10.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 크기는 직경 약 5μm정도, 현미경으로 보면 세포의 바깥쪽에 줄지어 보이는데 세포의 중앙부를 액포가 차지하고 있기 때문이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -215,7 +215,7 @@
 (부 / 부 :mod (중 / 중앙-00))
 
 
-# ::id snt11.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 원형질 유동에 의해 이동하는 것을 볼 수 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -240,7 +240,7 @@
 (질 / 질 :mod (원 / 원형-00))
 
 
-# ::id snt12.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 미토콘드리아와 같이 엽록체에서도 내막에서 생체 내 합성을 한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -259,7 +259,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt13.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 종자 식물의 엽록체에서 내막은 실질적인 광합성이 일어나며 틸라코이드라고 한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -285,7 +285,7 @@
 (합 / 합성 :mod (광 / 광-00))
 
 
-# ::id snt14.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 원반형의 틸라코이드가 겹겹이 쌓인 구조를 그라나라고 하며 틸라코이드 내부의 빈 공간을 내강(lumen)이라고 한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -321,7 +321,7 @@
 (형 / 형 :mod (원 / 원반-00))
 
 
-# ::id snt15.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 보조색소, 광합성에 관여하는 효소를 포함한 단백질은 엽록소와 함께 틸라코이드막 위에 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -344,7 +344,7 @@
 (합 / 합성 :mod (광 / 광-00))
 
 
-# ::id snt16.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 엽록체의 엽록소는 주로 가시광선의 청색과 적색을 흡수하고 녹색을 잘 흡수하지 않아 우리 눈에 녹색으로 보이게 된다(보색효과).
 # ::note
 -- FRAMES ----------------------------------------
@@ -381,7 +381,7 @@
 (효 / 효과 :mod (보 / 보색-00))
 
 
-# ::id snt17.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 조류(藻類)의 경우 육상식물과는 달리 틸라코이드 수가 적고 많음에 따라 황금색, 갈색, 적색으로 색이 다르게 보이기도 한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -416,7 +416,7 @@
 (육 / 육상 :mod (경 / 경우-00))
 
 
-# ::id snt18.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 스트로마에는 독자적인 엽록체 DNA(cpDNA: chlorphyll DNA)와 리보솜이 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -433,7 +433,7 @@
 (적 / 적 :mod (독 / 독자-00))
 
 
-# ::id snt19.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 엽록체 DNA는 다양한 단백질과 함께 세포핵과 같은 모양이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -449,7 +449,7 @@
 (핵 / 핵 :mod (세 / 세포-00))
 
 
-# ::id snt20.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 진핵생물 DNA결합단백질인 히스티딘이나 세균의 DNA 결합 단백질로서 알려진 HU, DPS등의 단백질은 녹색 식물의 엽록체에는 존재하지 않는다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -475,7 +475,7 @@
 (식 / 식물 :mod (녹 / 녹색-00))
 
 
-# ::id snt21.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 대신에 아황산 환원 효소가 DNA 결합 단백질로서 기능하고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -494,7 +494,7 @@
 (효 / 효소-00 :mod (환 / 환원-01))
 
 
-# ::id snt22.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 엽록체 DNA도 세포핵의 DNA처럼 복제, 전사, 번역과정이 일어난다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -515,7 +515,7 @@
 (핵 / 핵 :mod (세 / 세포-00))
 
 
-# ::id snt23.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 엽록체는 식물세포의 대사과정에 있어서 중요한 기능을 하고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -537,7 +537,7 @@
 (세 / 세포 :mod (식 / 식물-00))
 
 
-# ::id snt24.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.011 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 광합성 외에 질소대사, 아미노산 합성, 지질 합성, 색소 합성 등을 하고 있다.
 # ::note
 -- FRAMES ----------------------------------------

@@ -1,9 +1,9 @@
-# ::id snt0.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle
 # ::snt 계산 복잡도 이론
 # ::note
 (계 / 계산복잡도이론)
 
-# ::id snt1.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle
 # ::snt 계산 복잡도 이론은 컴퓨터 과학에서 계산 이론의 분야로, 계산 문제를 푸는 알고리듬을 복잡도에 따라 분류하여 문제의 모임을 구성하는 방법을 연구한다.
 # ::note
 (a / and
@@ -24,7 +24,7 @@
                     :manner (따 / 따르-02
                         :ARG2 (복 / 복잡도)))))))
 
-# ::id snt2.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle
 # ::snt 이 때 알고리듬의 수행은 실제 컴퓨터가 할 수 있지만, 평가하는 데에는 튜링 기계와 관련이 있는 정량화된 방법을 사용한다.
 # ::note
 (c / contrast-01
@@ -43,7 +43,7 @@
         :ARG2 (평 / 평가-01
             :ARG1 알)))
 
-# ::id snt3.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle
 # ::snt 복잡도의 기준은 알고리듬이 소모하는 소요 시간과 메모리 사용량 등의 자원이다.
 # ::note 소모하는 표상 안함
 (자 / 자원
@@ -57,7 +57,7 @@
             :mod (사 / 사용-01
                 :ARG1 (메 / 메모리)))))
 
-# ::id snt4.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle
 # ::snt 전자를 시간 복잡도, 후자를 공간 복잡도라 한다.
 # ::note
 (a / and
@@ -68,7 +68,7 @@
         :ARG1 (후 / 후자)
         :ARG2 (공 / 공간복잡도)))
 
-# ::id snt5.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.014 ::date 2019-12-17 ::annotator gabrielle
 # ::snt 일반적으로 이와 같은 시공간 등의 자원은 입력의 크기에 의존하는 것으로 취급한다.
 # ::note 일반적 (취급하는 것이 일반적이다)
 (취 / 취급-02

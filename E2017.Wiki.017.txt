@@ -1,11 +1,11 @@
-# ::id snt0.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle
 # ::snt 흑사병
 # ::note
 (d / desease
     :wiki "흑사병"
     :name (이 / 이름 :op1 "흑사병"))
 
-# ::id snt1.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle
 # ::snt 흑사병(黑死病, Black Death)은 인류 역사에 기록된 최악의 범유행 사건 중 하나이다.
 # ::note 접두사 '범'을 처리
 (사 / 사건
@@ -17,7 +17,7 @@
             :mod (인 / 인류)))
     :domain (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")))
 
-# ::id snt2.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle
 # ::snt 유럽 지역에서는 1346년–1353년 사이에 범유행이 절정에 달했으며, 이 범유행으로 유라시아 대륙에서 최저 7500만, 최고 2억 명에 달하는 사람들이 죽었다.
 # ::note
 (a / and
@@ -38,7 +38,7 @@
             :unit (명 / 명))
         :location (c / continent :wiki "유라시아" :name (이 / 이름 :op1 "유라시아" :op2 "대륙"))))
 
-# ::id snt3.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle
 # ::snt 흑사병의 병원균이 무엇인지에 관해서는 많은 이설들이 제기되어 왔으나 2010년-2011년 남유럽인들을 대상으로 수행한 DNA 분석 결과 페스트의 병원균인 페스트균이 병원균임이 밝혀졌다.
 # ::note 페스트의 병원균인 페스트균이 병원균임이??
 (a / and
@@ -57,7 +57,7 @@
         :ARG1 (병2 / 병원균
             :domain (페 / 페스트균))))
 
-# ::id snt4.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle
 # ::snt 흑사병은 중앙아시아의 건조한 평원지대에서 시작되어 비단길을 따라 서쪽으로 이동해 1343년경 크림 반도에 닿았다.
 # ::note
 (a / and
@@ -74,7 +74,7 @@
         :ARG2 (p / peninsula :wiki "크림반도" :name (이5 / 이름 :op1 "크림" :op2 "반도"))
         :time (d2 / date-entity :year 1343)))
 
-# ::id snt5.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle
 # ::snt 거기서부터 화물선에 들끓던 검은쥐들에 기생하던 동양쥐벼룩을 기주로 하여 지중해 해운망을 따라 유럽 전역으로 퍼져나갔다.
 # ::note 기주로 하다
 (퍼 / 퍼지-01
@@ -91,7 +91,7 @@
         :ARG2 (기2 / 기주))
     :source (거 / 거기))
 
-# ::id snt6.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle
 # ::snt 이때 흑사병은 유럽의 총 인구의 30-60%를 죽였다.
 # ::note
 (죽 / 죽-01
@@ -105,7 +105,7 @@
                 :op1 (p / percentage-entity :value 30)
                 :op2 (p2 / percentage-entity :value 60))))))
 
-# ::id snt7.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle
 # ::snt 흑사병으로 인해 줄어든 세계 인구가 흑사병 이전 수준까지 회복되는 데는 17세기까지 시간이 걸렸다.
 # ::note 17세기
 (걸 / 걸리-01
@@ -120,7 +120,7 @@
             :mod (이2 / 이전
                 :op1 d3))))
 
-# ::id snt8.E2017.Wiki.017 ::date 2019-12-10 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.017 ::date 2019-12-10 ::annotator gabrielle
 # ::snt 그 뒤로도 19세기까지 유럽에서는 페스트가 산발적으로 유행했는데(런던 대역병 등), 흑사병의 병원체를 페스트균으로 확정한다면 흑사병이란 1345년에서 1840년까지 유라시아 대륙에서 계속된 제2차 페스트 범유행의 일부로서 14세기 유럽의 범유행 상황을 가리키는 말이라고 할 수 있다.
 # ::note 페스트균...?
 (a / and
@@ -153,7 +153,7 @@
 			:ARG1 (페 / 페스트균)
 			:ARG2 (병 / 병원체 :poss d2))))
 
-# ::id snt9.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle
 # ::snt 14세기의 페스트 유행은 유럽사에 있어 종교사, 사회사, 경제사적으로 지대한 영향을 미쳤다.
 # ::notes 영향을 미치다
 (영 / 영향-01
@@ -171,7 +171,7 @@
             :topic (경 / 경제)))
     :ARG1-of (지 / 지대하-00))
 
-# ::id snt10.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle
 # ::snt 유럽에서는 1347년 처음 창궐한 이래 많은 희생자가 발생하여 공포의 대상이었다.
 # ::note 많은 희생자가 발생하여 --> 많은 사람들이 희생되어
 (대 / 대상
@@ -185,7 +185,7 @@
                 :mod (처 / 처음)
                 :time (d / date-entity :year 1347)))))
 
-# ::id snt11.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle
 # ::snt 1340년대 흑사병으로 약 2천5백만 명이 희생되었다.
 # ::note
 (희 / 희생-01
@@ -195,7 +195,7 @@
         :op1 (d3 / date-entity :year 1340)
         :op2 (d4 / date-entity :year 1350)))
 
-# ::id snt12.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle
 # ::snt 이 때의 흑사병은 중앙아시아나 인도에서 발원하여 전파된 것으로 추정되고 있다.
 # ::note 발원하다 없어짐
 (추 / 추정-01
@@ -206,7 +206,7 @@
             :op2 (c2 / country :wiki "인도" :name (이3 / 이름 :op1 "인도")))
         :time (이4 / 이때)))
 
-# ::id snt13.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle
 # ::snt 이는 당시 유럽의 인구의 약 30%에 달하는 숫자이다.
 # ::note 약 op1
 (i / include-91
@@ -216,7 +216,7 @@
         :time (당 / 당시))
     :ARG3 (약 / 약 :op1 (p / percentage-entity :value 30)))
 
-# ::id snt14.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle
 # ::snt 14세기 중세 유럽에 퍼져나간 흑사병은 "대흑사병"이라 불린다.
 # ::note
 (부 / 부르-02
@@ -227,7 +227,7 @@
             :time (d2 / date-entity :century 14)))
     :ARG2 (이3 / 이름 :op1 "대흑사병"))
 
-# ::id snt15.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle
 # ::snt 14세기 유럽의 흑사병은 사회 구조를 붕괴시킬 정도로 유럽 사회에 큰 영향을 주었다.
 # ::note 영향을 주다 / 정도결과구문
 (h / have-degree-91
@@ -245,7 +245,7 @@
         :ARG1 (구 / 구조
             :poss 사)))
 
-# ::id snt16.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 당시 유럽에서는 흑사병이 왜 생기는지는 몰랐기 때문에, 거지, 유대인, 한센병 환자, 외국인 등이 흑사병을 몰고 다니는 자들로 몰려서 집단폭력을 당하거나, 심지어는 학살을 당하기도 하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -288,7 +288,7 @@
 (폭 / 폭력 :mod (집 / 집단-00))
 
 
-# ::id snt17.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle
 # ::snt 물론 사회학적으로 비평했을 때 흑사병 기간동안 일어난 학살들은 마녀사냥처럼 흑사병으로 인한 사회적 혼란을 사회적 소수자들에게 전가한 희생양적인 폭력이었다.
 # ::note 흑사병 기간동안
 (폭 / 폭력
@@ -307,7 +307,7 @@
 	:ARG1-of (같 / 같-01
 		:ARG2 (마 / 마녀사냥)))
 
-# ::id snt18.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle
 # ::snt 한편, 흑사병의 창궐은 삶에 대한 태도도 바꾸어 "지금 이 순간을 즐기자"는 신조를 낳았고, 이는 보카치오의 《데카메론》 등에 반영되었다.
 # ::note 낳다 생략
 (c / contrast-01
@@ -329,7 +329,7 @@
 					:ARG1-of (쓰 / 쓰-02
 						:ARG0 (p / person :wiki "조반니_보카치오" :name (이4 / 이름 :op1 "보카치오"))))))))
 
-# ::id snt19.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle
 # ::snt 흑사병은 유럽인들의 종교적인 사고에도 영향을 주어, 일부 사람들은 하느님이 흑사병으로 심판하니 고행을 함으로써 죄를 씻어야 한다는 주장을 하고 다니기도 했다.
 # ::note 주장을 하고 다니기도 --> 주장하기도?? / 영향을 주다 --> 영향 / 죄를 씻다
 (a / and
@@ -350,7 +350,7 @@
 				:manner d
 				:ARG1 e))))
 
-# ::id snt20.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle
 # ::snt 흑사병이라는 이름은 1883년에 붙여졌는데, 피부의 혈소 침전에 의해 피부가 검게 변하는 증상 때문에 붙여진 이름이다.
 # ::note
 (붙 / 붙-01
@@ -365,7 +365,7 @@
 				:location (피 / 피부))))
 	:time (d / date-entity :year 1883))
 
-# ::id snt21.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle
 # ::snt 증상이 더욱 진행되면 검게 변색된 부위에 괴저가 발생하고, 죽음에 이르게 된다.
 # ::note 죽음에 이르게 된다 --> 죽게 된다
 (a / and
@@ -379,7 +379,7 @@
 	:op2 (되 / 되-01
 		:ARG2 (죽 / 죽-01)))
 
-# ::id snt22.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle
 # ::snt 흑사병은 임상병리학에서 서혜 임파선종 중 가장 위험한 종류로 다루어진다.
 # ::note
 (다 / 다루-02
@@ -392,7 +392,7 @@
 			:ARG2 (임2 / 임파선종
 				:mod (서 / 서혜)))))
 
-# ::id snt23.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 흑사병은 박테리아의 일종인 예르시니아 페스티스가 원인균으로 이에 감염된 쥐의 혈액을 먹은 벼룩이 사람의 피를 빨면서 병을 옮기게 된다.
 # ::note
 (a / and
@@ -414,7 +414,7 @@
 			:ARG1 (피 / 피
 				:poss 사))))
 
-# ::id snt24.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle
 # ::snt 흑사병이 쥐와 사람이 함께 걸리는 전염병이기는 하나, 장거리 여행을 하는 것은 쥐가 아닌 사람이라는 주장이다.
 # ::note
 (주 / 주장-01
@@ -435,7 +435,7 @@
 					:ARG0 (쥐2 / 쥐)
 					:path (장2 / 장거리))))))
 
-# ::id snt25.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle
 # ::snt 14세기에 유럽에 전파된 대흑사병의 전염 경로는 정확히 밝혀지지는 않았지만 몇 가지 가설이 널리 받아들여지고 있다.
 # ::note
 (c / contrast-01
@@ -452,7 +452,7 @@
 		:ARG1 (가 / 가설 :quant (몇 / 몇) :unit (가2 / 가지))
 		:manner (널 / 널리)))
 
-# ::id snt26.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle
 # ::snt 가장 유력한 가설은 중앙아시아의 스텝 지역을 통해 전파되었다는 것이며, 그 외에도 인도에서 기원하였다는 설 등이 있다.
 # ::note
 (a / and
@@ -470,7 +470,7 @@
 		:mod (외 / 외
 			:mod (그 / 그))))
 
-# ::id snt27.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 역사학자 마이클 W 돌스는 유스티니아누스 시대의 비잔틴 제국의 흑사병 유행에 주목하면서 흑사병의 전염 경로를 북아프리카에서 중앙아시아를 거쳐 유럽에 전파되었다고 추정하고 있다.
 # ::note attribute 사용
 (a / and
@@ -494,7 +494,7 @@
 			:path (c3 / continent :wiki "중앙아시아" :name (이6 / 이름 :op1 "중앙아시아"))
 			:destination (c4 / continent :wiki "유럽" :name (이7 / 이름 :op1 "유럽")))))
 
-# ::id snt28.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle
 # ::snt 이러저러한 가설에도 불구하고 흑사병이 유럽에 들어온 데에는 비단길과 몽골 제국이 관련되어 있는 것만은 분명하다.
 # ::note
 (분 / 분명-01
@@ -508,7 +508,7 @@
 	:concession (가 / 가설
 		:ARG1-of (이5 / 이러저러하-00)))
 
-# ::id snt29.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt29.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 몽골 제국은 비단길을 통해 중앙아시아와 유럽을 점령하였으며, 1347년 몽골의 포위 공격이 있었던 크림 반도의 페오도시야에서 흑사병이 처음으로 창궐하였기 때문이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -544,7 +544,7 @@
 (병 / 병 :mod (흑 / 흑사-00))
 
 
-# ::id snt30.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt30.E2017.Wiki.017 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 페도오시아를 포위 공격했던 킵차크 칸국의 자니베크 칸은 흑사병에 걸려 죽은 군인의 시체를 투석기에 담아 도시의 성벽 너머로 던져 넣음으로써 흑사병을 생물학 무기로 사용하였으며, 그 결과 도시에 흑사병이 퍼지게 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -604,7 +604,7 @@
 (학 / 학 :mod (생 / 생물-00))
 
 
-# ::id snt31.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
+# ::id snt31.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle
 # ::snt 그 후 흑사병은 전 유럽으로 확산되었다.
 # ::note
 (확 / 확산-01
@@ -614,7 +614,7 @@
 	:time (후 / 후
 		:mod (그 / 그)))
 
-# ::id snt32.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
+# ::id snt32.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle
 # ::snt 14세기 초 유럽의 기후는 중세온난기가 끝나고 연 평균 기온이 하락하기 시작하였다.
 # ::note
 (시 / 시작-01
@@ -630,7 +630,7 @@
 		:op1 (온 / 온난기
 			:mod (중 / 중세))))
 
-# ::id snt33.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
+# ::id snt33.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle
 # ::snt 이러한 사정으로 인해 흑사병에 의한 피해는 더욱 악화되었다.
 # ::note
 (악 / 악화-01
@@ -640,7 +640,7 @@
 		:cause (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")))
 	:degree (더 / 더욱))
 
-# ::id snt34.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle ::preferred True
+# ::id snt34.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle
 # ::snt 몽골에 의한 전파가 흑사병 확산의 유일한 원인은 아닐지라도 전쟁과 기아, 그리고 기후의 변화 등이 흑사병 창궐의 주된 원인이 되었다.
 # ::note 유일한 원인...
 (c / cause-01
@@ -661,7 +661,7 @@
 			:ARG1 (확 / 확산-01
 				:ARG1 d))))
 
-# ::id snt35.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
+# ::id snt35.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle
 # ::snt 13세기 몽골의 중국 점령 시기에 농업과 상업은 심하게 붕괴되었고 기아가 만연했다.
 # ::note
 (a / and
@@ -677,7 +677,7 @@
 			:ARG1 (c2 / country :wiki "중국" :name (이2 / 이름 :op1 "중국"))
 			:time (d / date-entity :century 13))))
 
-# ::id snt36.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle ::preferred True
+# ::id snt36.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle
 # ::snt 이로 인해 13세기 후반에 중국의 인구는 대략 1억 2천만명에서 6천만명으로 급감하였다.
 # ::note
 (급 / 급감-00
@@ -695,7 +695,7 @@
 	:time (후 / 후반
 		:op1 (d / date-entity :century 13)))
 
-# ::id snt37.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt37.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 14세기에는 중국에서도 흑사병이 번졌던 시기로 이로 인해 중국의 인구 중 약 30%가 사망한 것으로 추정된다.
 # ::note
 (추 / 추정-01
@@ -711,7 +711,7 @@
 				:ARG3 (약 / 약
 					:op1 (p / percentage-entity :value 30))))))
 
-# ::id snt38.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
+# ::id snt38.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle
 # ::snt 흑사병이 중앙아시아에서부터 번지기 시작했다는 가설은 중국의 기록에 의해서도 뒷받침되고 있다.
 # ::note
 (뒷 / 뒷받침-01
@@ -723,7 +723,7 @@
 				:ARG1 (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병"))
 				:ARG2 (c2 / continent :wiki "중앙아시아" :name (이3 / 이름 :op1 "중앙아시아"))))))
 
-# ::id snt39.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt39.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 1330년대 초 중국에서도 흑사병이 돌기 시작했으며 1334년 허베이에서 흑사병이 번졌으며, 유럽에서도 흑사병의 위세가 한창이던 1348년 – 1354년 동안 중국 각지에서도 흑사병 확산이 있었다.
 # ::note 돌기 시작하다 처리 
 (a / and
@@ -749,7 +749,7 @@
 					:mod d)
 				:location (c2 / continent :wiki "유럽" :name (이4 / 이름 :op1 "유럽"))))))
 
-# ::id snt40.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
+# ::id snt40.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle
 # ::snt 당시 흑사병이 심했던 지역으로는 허베이 이외에 장시 성, 산시 성, 후난 성, 광둥 성, 광시, 허난 성, 쓰이위엔 등이었다.
 # ::note
 (심 / 심하-01
@@ -765,7 +765,7 @@
 		:op7 (p7 / province :wiki "허난성" :name (이8 / 이름 :op1 "허난" :op2 "성"))
 		:op8 (p8 / province :wiki - :name (이9 / 이름 :op1 "쓰이위엔"))))
 
-# ::id snt41.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt41.E2017.Wiki.017 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 이 시기 중국의 역사 역시 몽골족이 세운 원나라 시대였으며 몽골과 비단길을 오가던 상인들에 의해 흑사병이 전파된 것으로 추정된다.
 # ::note
 (a / and
@@ -787,7 +787,7 @@
 						:op2 (r / road :wiki "비단길" :name (이6 / 이름 :op1 "비단길")))))
 			:ARG1 (d / desease :wiki "흑사병" :name (이7 / 이름 :op1 "흑사병")))))
 
-# ::id snt42.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle ::preferred True
+# ::id snt42.E2017.Wiki.017 ::date 2019-12-05 ::annotator gabrielle
 # ::snt 1347년에 처음 발생한 트라브존과 콘스탄티노플의 흑사병 역시 이러한 가설을 뒷받침하고 있다.
 # ::note
 (뒷 / 뒷받침-01

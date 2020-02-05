@@ -1,11 +1,11 @@
 /usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.Wiki.003 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.003 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 소수 (수론)
 # ::note
 (소 / 소수
 	:topic (수 / 수론))
 
-# ::id snt1.E2017.Wiki.003 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.003 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 소수(素數, 발음: 소쑤)는 양의 약수가 1과 자기 자신 뿐인 1보다 큰 자연수로 정의된다.
 # ::note
 (정 / 정의-00
@@ -22,7 +22,7 @@
 			:op2 (자2 / 자신
 				:mod (자3 / 자기)))))
 
-# ::id snt2.E2017.Wiki.003 ::date 2019-01-16 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.003 ::date 2019-01-16 ::annotator gabrielle
 # ::snt 정수론에서 매우 중요한 역할을 담당한다.
 # ::note
 (담 / 담당-01
@@ -30,7 +30,7 @@
 		:ARG1-of (중 / 중요-01
 			:ARG2 (정 / 정수론))))
 
-# ::id snt3.E2017.Wiki.003 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.003 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 현재에 와서는 암호 분야에서의 사용으로 그 중요성이 부각되고 있다.
 # ::note
 (부 / 부각-01

@@ -1,4 +1,4 @@
-# ::id snt0.E2017.NEWS.003 ::date 2019-09-08T00:24 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.003 ::date 2019-09-08T00:24 ::annotator gabrielle
 # ::snt 경찰 '소래포구 어시장 화재' 목격자 3명 진술 확보.
 # ::note
 (확 / 확보-01
@@ -12,7 +12,7 @@
                         :name (이 / 이름 :op1 "소래포구" :op2 "어시장")))
             :quant 3)))
 
-# ::id snt1.E2017.NEWS.003 ::date 2019-09-08T00:49 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.003 ::date 2019-09-08T00:49 ::annotator gabrielle
 # ::snt 6억여 원의 재산피해(소방서 추산)를 낸 인천 소래포구 어시장 화재사고와 관련, 경찰이 최초 목격자 진술을 확보하는 등 화재 원인을 밝히기 위한 본격적인 조사에 착수했다.
 # ::note
 (착 / 착수-01
@@ -47,7 +47,7 @@
                         :quant (여 / 여 :op1 600000000)
                         :unit (원2 / 원)))))))
 
-# ::id snt2.E2017.NEWS.003 ::date 2019-09-08T01:05 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.003 ::date 2019-09-08T01:05 ::annotator gabrielle
 # ::snt 인천 남동 경찰서는 18일 발생한 인천시 남동구 논현동 소래포구 어시장 화재사고와 관련한 목격자 3명의 진술을 확보해 조사하고 있다고 19일 밝혔다.
 # ::note 주소 객체 --> 인천시, 남동구, 논현동 모두 분리
 (밝 / 밝히-01
@@ -74,7 +74,7 @@
                         :time (d / date-entity :day 18))))))
     :time (d2 / date-entity :day 19))
 
-# ::id snt3.E2017.NEWS.003 ::date 2019-09-08T01:15 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.003 ::date 2019-09-08T01:15 ::annotator gabrielle
 # ::snt 이 가운데 한 명은 18일 오전 1시 36분께 불이 번진 것을 보고 처음 119에 신고한 어시장 상인이다.
 # ::note
 (상 / 상인
@@ -92,7 +92,7 @@
         :ARG2 (p / phone-number-entity :value 119)
         :mod (처 / 처음)))
 
-# ::id snt4.E2017.NEWS.003 ::date 2019-09-08T01:25 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.003 ::date 2019-09-08T01:25 ::annotator gabrielle
 # ::snt 최초 목격자인 이 상인은 가건물 형태인 좌판 구역 뒤편의 건물 4층 횟집에서 영업을 마치고 가게 내부를 정리하다가 화재를 목격했다.
 # ::note
 (목 / 목격-01
@@ -119,7 +119,7 @@
                 :ARG1 (영 / 영업-01)
                 :location 횟))))
 
-# ::id snt5.E2017.NEWS.003 ::date 2019-09-08T02:25 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.003 ::date 2019-09-08T02:25 ::annotator gabrielle
 # ::snt 이 횟집 상인은 경찰에서 "'펑' 하는 소리가 들려 바닷가 쪽으로 내려다보니 '가'구역 쪽 비닐 천막 안에서 불이 나 있었다"며 "처음에는 불이 작았는데 나중에 걷잡을 수 없이 커졌다"고 진술했다.
 # ::note
 (진 / 진술-01
@@ -155,7 +155,7 @@
             :time (처 / 처음)))
     :location (경 / 경찰))
 
-# ::id snt6.E2017.NEWS.003 ::date 2019-09-08T03:01 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.003 ::date 2019-09-08T03:01 ::annotator gabrielle
 # ::snt 경찰이 확보한 나머지 목격자 2명은 어시장 내 양념 가게 운영자와 어시장 상인회 측이 고용한 야간 경비원이다.
 # ::note
 (경 / 경비원
@@ -175,7 +175,7 @@
             :op2 (상 / 상인회
                 :mod (어 / 어시장)))))
 
-# ::id snt7.E2017.NEWS.003 ::date 2019-09-08T03:11 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.003 ::date 2019-09-08T03:11 ::annotator gabrielle
 # ::snt 경비원은 경찰에서 "화재 발생 시각 직전에 순찰했는데 특별한 이상 징후는 없었다"고 말했다.
 # ::note
 (말 / 말하-01
@@ -192,7 +192,7 @@
             :ARG1-of (특 / 특별-01)))
     :ARG2 (경2 / 경찰))
 
-# ::id snt8.E2017.NEWS.003 ::date 2019-09-08T03:28 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.003 ::date 2019-09-08T03:28 ::annotator gabrielle
 # ::snt 경찰과 국립과학수사연구원 요원들은 전날 경찰이 폐쇄회로(CC)TV 영상으로 확인한 최초 발화점인 가건물 내 '가' 구역 한 좌판 인근 바닥에서 불에 녹아 끊어진 전선 여러 개를 수거해 분석하고 있다.
 (a / and
     :op1 (수 / 수거-01
@@ -226,7 +226,7 @@
         :ARG0 a2
         :ARG1 전))
 
-# ::id snt9.E2017.NEWS.003 ::date 2019-09-08T03:28 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.003 ::date 2019-09-08T03:28 ::annotator gabrielle
 # ::snt 해당 전선은 좌판 영업에 필요한 수족관과 겨울철 전기장판 등 각종 전기용품을 사용하는 데 쓰인 것으로 경찰은 보고 있다.
 # ::note
 (추 / 추측-01
@@ -244,7 +244,7 @@
                     :op2 (전3 / 전기장판
                         :time (겨 / 겨울철))))))))
 
-# ::id snt10.E2017.NEWS.003 ::date 2019-09-09T01:25 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.003 ::date 2019-09-09T01:25 ::annotator gabrielle
 # ::snt 앞서 경찰은 전날 화재 현장 인근에 있는 관리사무소에서 어시장에 설치된 60여 대의 폐쇄회로(CC)TV 영상을 확보해 최초 발화점을 찾았다.
 # ::note
 (찾 / 찾-01
@@ -266,7 +266,7 @@
                     :mod (화 / 화재))))
         :time (전 / 전날)))
 
-# ::id snt11.E2017.NEWS.003 ::date 2019-09-09T01:37 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.003 ::date 2019-09-09T01:37 ::annotator gabrielle
 # ::snt 경찰이 확보한 CCTV 영상에는 전체 4개 구역(가∼라) 332개 좌판 중 30% 이상이 몰려있는 '가' 구역 좌판 한 곳에서 가장 먼저 연기가 피어오른 장면이 담겼다.
 (담 / 담-01
     :ARG1 (장 / 장면
@@ -292,7 +292,7 @@
         :ARG1-of (확 / 확보-01
             :ARG0 (경 / 경찰))))
 
-# ::id snt12.E2017.NEWS.003 ::date 2019-09-09T02:13 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.003 ::date 2019-09-09T02:13 ::annotator gabrielle
 # ::snt 경찰과 국과수 등은 이날 오전부터 화재 현장에서 2차 합동 감식을 벌인다.
 # ::note
 (벌 / 벌이-01
@@ -311,7 +311,7 @@
             :day (이 / 이날)
             :dayperiod (오 / 오전))))
 
-# ::id snt13.E2017.NEWS.003 ::date 2019-09-09T02:25 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.003 ::date 2019-09-09T02:25 ::annotator gabrielle
 # ::snt 경찰은 어시장 상인들이 사고 원인으로 지목한 '가' 구역 내 변압기에 대해서도 정밀 감식을 벌일 계획이다.
 # ::note
 (계 / 계획-01
@@ -328,7 +328,7 @@
                         :ARG2 (원 / 원인
                             :mod (사 / 사고)))))))
 
-# ::id snt14.E2017.NEWS.003 ::date 2019-09-09T02:34 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.003 ::date 2019-09-09T02:34 ::annotator gabrielle
 # ::snt 또 조만간 한국전력공사 관계자들을 불러 어시장 내 변압기 용량 등을 확인할 방침이다.
 # ::note
 (계 / 계획-01
@@ -346,7 +346,7 @@
     :mod (또 / 또)
     :time (조 / 조만간))
 
-# ::id snt15.E2017.NEWS.003 ::date 2019-09-09T02:52 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.003 ::date 2019-09-09T02:52 ::annotator gabrielle
 # ::snt 경찰 관계자는 "목격자 3명의 진술과 최초 발화점인 '가' 구역 좌판 바닥에서 피복이 벗겨진 전선 여러 가닥을 확보했다"며 "CCTV 영상에서 화재 발생 시각에 사람이 드나든 흔적을 전혀 찾을 수 없어 전기적인 요인에 의한 자연 발화 가능성이 크다"고 했다.
 # ::note
 (하 / 하-02
@@ -382,7 +382,7 @@
                 :location (영 / 영상
                     :mod (C / CCTV))))))
 
-# ::id snt16.E2017.NEWS.003 ::date 2019-09-09T03:23 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.003 ::date 2019-09-09T03:23 ::annotator gabrielle
 # ::snt 앞서 전날 오전 1시 36분께 소래포구 어시장에서 불이 나 2시간 30분 만에 진화됐다.
 # ::note
 (진 / 진화-00
@@ -401,7 +401,7 @@
                 :time "13:36")
             :mod (앞 / 앞서))))
 
-# ::id snt17.E2017.NEWS.003 ::date 2019-09-09T03:37 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.003 ::date 2019-09-09T03:37 ::annotator gabrielle
 # ::snt 새벽 시간대에 불이 나 상인 등의 인명피해는 없었지만, 소래포구 어시장 내 좌판 220여 개와 좌판 인근 횟집 등 점포 20여 곳이 불에 탔다.
 # ::note
 (타 / 타-03
@@ -427,7 +427,7 @@
             :time (시 / 시간대
                 :mod (새 / 새벽)))))
 
-# ::id snt18.E2017.NEWS.003 ::date 2019-09-09T03:37 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.003 ::date 2019-09-09T03:37 ::annotator gabrielle
 # ::snt 소방당국은 현재까지 파악된 재산피해 추정액이 6억5천만원이라고 밝혔다.
 # ::note
 (밝 / 밝히-01

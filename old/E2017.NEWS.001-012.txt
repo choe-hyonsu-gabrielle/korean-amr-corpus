@@ -1,4 +1,4 @@
-# ::id snt0.E2017.NEWS.001 ::date 2019-09-01 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.001 ::date 2019-09-01 ::annotator gabrielle
 # ::snt '13월의 보너스냐 세금폭탄이냐' 연말정산서비스 15일 시작.
 # ::note 12/18 검수
 (m / multi-sentence
@@ -11,7 +11,7 @@
         :ARG1 (s / service* :wiki - :name (이 / 이름 :op1 "연말정산서비스"))
         :time (d / date-entity :day 15)))
 
-# ::id snt1.E2017.NEWS.001 ::date 2019-09-01 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.001 ::date 2019-09-01 ::annotator gabrielle
 # ::snt 지난해 소득분에 대한 연말정산 서비스가 15일부터 시작된다.
 # ::note 12/18 검수
 (시 / 시작-01
@@ -20,7 +20,7 @@
             :time (지 / 지난해)))
     :time (d / date-entity :day 15))
 
-# ::id snt2.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 올해부터 4대 보험료 자료도 홈택스에서 조회할 수 있어 편리해졌지만 시력 보정용 안경이나 교복 구입비, 일부 종교단체 기부금 등은 근로자가 따로 꼼꼼히 챙겨야 13월의 세금 폭탄 대신 보너스를 받을 수 있다.
 # ::note 12/18 검수
 (c / contrast-01
@@ -59,7 +59,7 @@
             :manner (따 / 따로)
             :manner (꼼 / 꼼꼼-00))))
 
-# ::id snt3.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 국세청은 홈택스(www.hometax.go.kr)에서 소득·세액공제 자료를 조회할 수 있는 '연말정산 간소화 서비스'를 15일 오전 9시부터 개통한다고 12일 밝혔다.
 # ::note 12/18 검수
 (밝 / 밝히-01
@@ -78,7 +78,7 @@
         :time (d / date-entity :day 15 :time 9:00))
     :time (d2 / date-entity :day 12))
 
-# ::id snt4.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 맞춤형 원천징수제도에 따라 원천징수세액을 80%로 선택한 근로자는 그간 낸 세금이 적어 연말정산 때 세금을 더 낼 가능성이 크다.
 # ::note 12/18 검수
 (크 / 크-01
@@ -105,7 +105,7 @@
                 :ARG1-of (적 / 적-02))
             :duration (그 / 그간))))
 
-# ::id snt5.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 반면 120%를 선택하면 월급에서 세금을 미리 많이 떼 연말정산 때 많이 돌려받을 수 있다.
 # ::note 12/18 검수
 (c / contrast-01
@@ -122,7 +122,7 @@
         :condition (선 / 선택-01
             :ARG1 (p / percentage-entity :value 120))))
 
-# ::id snt6.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 근로자들은 공인인증서로 홈택스에 접속해 연말정산 간소화 서비스를 통해 보장성 보험료, 의료비, 교육비, 주택자금, 기부금 등 소득·세액공제 증명 자료 14개 항목을 확인할 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -150,7 +150,7 @@
             :ARG1 (s2 / service* :wiki "홈택스" :name (이2 / 이름 :op1 "홈택스"))
             :instrument (공 / 공인인증서))))
 
-# ::id snt7.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 올해부터는 국민연금, 건강보험료 등 4대 보험료 자료와 이전에 대부분 제출되지 않은 폐업 의료기관의 의료비 자료도 제공돼 근로자의 편의를 높였다.
 # ::note 12/18 검수
 (높 / 높-01
@@ -210,7 +210,7 @@
                     :ARG1-of (기 / 기부-01)
                     :quant (일 / 일부))))))
 
-# ::id snt9.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 이 경우 근로자가 구입 장소나 기부단체에 직접 영수증을 따로 발급받아야 공제 혜택을 받을 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -234,7 +234,7 @@
     :domain (경 / 경우
         :mod (이 / 이)))
 
-# ::id snt10.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 연말정산간소화 서비스에서 조회되지 않거나 사실과 다르게 조회된 의료비가 있으면 17일까지 홈택스 내 '의료비 신고센터'에 신고하면 된다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -254,7 +254,7 @@
             :part-of (s3 / service* :wiki "홈택스" :name (이3 / 이름 :op1 "홈택스")))
         :time (이4 / 이전 :op1 (d / date-entity :day 17))))
 
-# ::id snt11.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 국세청은 신고가 접수된 의료기관에 수정 자료를 제출해달라고 요구하고 이를 반영해 20일에 수정된 의료비 자료를 제공한다.
 # ::note 12/18 검수
 (제 / 제공-01
@@ -277,7 +277,7 @@
             :ARG0 g
             :ARG1 자2)))
 
-# ::id snt12.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 20일 이후에도 의료비 자료가 수정되지 않고 사실과 다르다면 근로자가 해당 병원을 찾아 영수증을 직접 수집해야 한다.
 # ::note 12/18 검수
 (o / obligate-01
@@ -300,7 +300,7 @@
         :time (이 / 이후
             :op1 (d / date-entity :day 20))))
 
-# ::id snt13.E2017.NEWS.001 ::date 2019-07-12 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.001 ::date 2019-07-12 ::annotator gabrielle
 # ::snt 부양가족의 연말정산 간소화 자료는 사전에 자료 제공 동의를 받아야 열람할 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -315,7 +315,7 @@
                 :ARG1 자)
             :time (사 / 사전)))
 
-# ::id snt14.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 올해는 온라인으로도 부양가족이 자료 제공 동의를 할 수 있어 편의성이 커졌다.
 # ::note 12/18 검수
 (크 / 크-01
@@ -329,7 +329,7 @@
             :medium (온 / 온라인)))
     :time (올 / 올해))
 
-# ::id snt15.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 의료비 중 배우자 난임 시술비는 사생활 보호를 위해 의료비와 별도로 구분되지 않는다.
 # ::note 12/18 검수
 (구 / 구분-01
@@ -345,7 +345,7 @@
     :purpose (보 / 보호-01
         :ARG1 (사 / 사생활)))
 
-# ::id snt16.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 근로자가 따로 난임 시술비 부분만 분류해 제출해야 700만 원 한도가 적용되지 않고 모두 공제받을 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -366,7 +366,7 @@
                     :topic (난 / 난임)))
             :manner (따 / 따로))))
 
-# ::id snt17.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 신생아 등 환자의 주민등록번호를 의료기관에 알려주지 않을 때에도 의료비 자료가 조회되지 않는다.
 # ::note 12/18 검수
 (조 / 조회-00
@@ -382,7 +382,7 @@
         :ARG2 (기 / 기관
             :mod (의2 / 의료)))
 
-# ::id snt18.E2017.NEWS.001 ::date 2019-09-03T12:43 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.001 ::date 2019-09-03T12:43 ::annotator gabrielle
 # ::snt 이 경우 근로자가 해당 병원에서 직접 영수증을 발급받아 공제해야 한다.
 # ::note 12/18 검수
 (o / obligate-01
@@ -399,7 +399,7 @@
     :domain (경 / 경우
         :mod (이 / 이)))
 
-# ::id snt19.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 지난해 중 입사하거나 퇴사한 경우에는 근무한 기간의 자료만 선택해 공제받을 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -413,7 +413,7 @@
         :op2 (퇴 / 퇴사-00)
         :time (지 / 지난해)))
 
-# ::id snt20.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 연말정산 간소화 서비스에 나온 내용은 귀찮더라도 꼼꼼히 살펴봐야 한다.
 # ::note 12/18 검수
 (o / obligate-01
@@ -424,7 +424,7 @@
         :manner (꼼 / 꼼꼼-00))
     :concession (귀 / 귀찮-01))
 
-# ::id snt21.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 자료가 잘못돼 공제 혜택을 과도하게 받으면 가산세를 물어야 할 수도 있기 때문이다.
 # ::note 12/18 검수
 (c / cause-01
@@ -439,7 +439,7 @@
             :cause (잘 / 잘못-02
                 :ARG1 (자 / 자료)))))
 
-# ::id snt22.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 공제 자료를 기반으로 공제 신고서를 전산으로 작성할 수 있는 '편리한 연말정산' 서비스는 18일부터 이용할 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -457,7 +457,7 @@
     :time (이3 / 이후
         :op1 (d / date-entity :day 18)))
 
-# ::id snt23.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 국세청 홈택스에 접속한 뒤 연말정산 간소화 서비스에서 공제받을 항목을 선택하면 공제 신고서에 내용이 자동으로 반영된다.
 # ::note 12/18 검수
 (반 / 반영-01
@@ -474,7 +474,7 @@
             :ARG1 (s2 / service* :wiki "홈택스" :name (이2 / 이름 :op1 "홈택스")
                 :mod (g / government-organization :wiki "대한민국_국세청 :name (이3 / 이름 :op1 "국세청"))))))
 
-# ::id snt24.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 연말정산 간소화 서비스에서 조회되지 않은 자료만 근로자가 별도로 수집해 공제 신고서에 입력하면 된다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -492,7 +492,7 @@
                     :polarity -
                     :medium (s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스")))))))
 
-# ::id snt25.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 편리한 연말정산 서비스에서는 예상세액을 간편하게 계산할 수 있는 서비스도 제공한다.
 # ::note 12/18 검수
 (a / and
@@ -505,7 +505,7 @@
                         :ARG1-of (예 / 예상-01))
                     :manner (간 / 간편하-01))))))
 
-# ::id snt26.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 맞벌이 부부 중 어느 쪽이 공제 혜택을 더 많이 받을 수 있을지 파악해 세 부담을 줄일 수 있는 맞벌이 근로자 절세 안내도 받을 수 있다.
 # ::note 12/18 검수
 (a / and
@@ -532,7 +532,7 @@
                                     :ARG1-of (많 / 많-01
                                         :degree (더 / 더)))))))))))
 
-# ::id snt27.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 홈택스 스마트폰 애플리케이션을 이용하면 연말정산 공제 요건, 절세 방법 등 '꿀팁'도 얻을 수 있다.
 # ::note 12/18 검수
 (a / and
@@ -550,7 +550,7 @@
                 :mod (스 / 스마트폰)
                 :mod (s / service* :wiki "홈택스" :name (이2 / 이름 :op1 "홈택스"))))))
 
-# ::id snt28.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 연말정산 서비스를 이용하다 궁금한 점은 국세 상담센터(☎126)으로 문의하면 된다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -561,7 +561,7 @@
         :ARG2 (g / government-organization :wiki "국세상담센터" :name (이2 / 이름 :op1 "국세" :op2 "상담센터")
             :mod (p / phone-number-entity :value 126))))
 
-# ::id snt29.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt29.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 국세청은 "16일, 18일과 부가가치세 신고 마감일인 25일에는 홈택스 이용이 집중될 것으로 예상해 대기 시간이 길어질 수 있다"며 "여유를 갖고 접속해달라"라고 당부했다.
 # ::note 12/18 검수
 (당 / 당부-01
@@ -588,7 +588,7 @@
                         :ARG1 (신 / 신고-01
                             :ARG1 (부 / 부가가치세))))))))
 
-# ::id snt0.E2017.NEWS.002 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.002 ::date 2019-09-04 ::annotator gabrielle
 # ::snt “같은 반 아이돌 연습생, 정유라만 조퇴 봐준다며 울었다.”
 # ::note 12/18 검수
 (말 / 말하-01
@@ -605,7 +605,7 @@
                 :ARG2 (조 / 조퇴-00
                     :ARG0 p)))))
 
-# ::id snt1.E2017.NEWS.002 ::date 2019-09-04T19:15 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.002 ::date 2019-09-04T19:15 ::annotator gabrielle
 # ::snt “돈 자랑 많이 하고 불손하고 오만했다.”
 # ::note 12/18 검수
 (말 / 말하-01
@@ -616,7 +616,7 @@
         :op2 (불 / 불손-00)
         :op3 (오 / 오만-00)))
 
-# ::id snt2.E2017.NEWS.002 ::date 2019-09-04T19:18 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.002 ::date 2019-09-04T19:18 ::annotator gabrielle
 # ::snt 최순실(61) 씨의 딸 정유라(21) 씨가 다녔던 서울 청담고의 교사·학생들은 대부분 최 씨 모녀를 이런 식으로 기억했다.
 # ::note
 (기 / 기억-01
@@ -649,7 +649,7 @@
         :op2 p2)
     :manner (이5 / 이렇-01))
 
-# ::id snt3.E2017.NEWS.002 ::date 2019-09-04T19:43 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.002 ::date 2019-09-04T19:43 ::annotator gabrielle
 # ::snt 특히 최 씨는 체육특기자 담당 교사에게 “잘라버리겠다” “애 아빠(정윤회)가 가만 안 둘 것”이라며 엄포도 놓았다.
 # ::note 보조사
 (협 / 협박-01
@@ -676,7 +676,7 @@
         :ARG2 사)
     :mod (특 / 특히))
 
-# ::id snt4.E2017.NEWS.002 ::date 2019-09-04T20:06 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.002 ::date 2019-09-04T20:06 ::annotator gabrielle
 # ::snt 이 같은 사실은 19일 서울시교육청이 국회 김병욱 더불어민주당 의원에게 제출한 청담고 감사자료(지난해 11월 실시)에서 고스란히 드러났다.
 # ::note
 (드 / 드러나-01
@@ -710,7 +710,7 @@
             :time (d2 / date-entity :day 19)))
     :manner (고 / 고스란히))
 
-# ::id snt5.E2017.NEWS.002 ::date 2019-09-04T21:05 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.002 ::date 2019-09-04T21:05 ::annotator gabrielle
 # ::snt 감사자료에 따르면 담임들은 자신들이 작성하는 학교생활기록부에 정 씨에 대해 온통 칭찬만 적었다.
 # ::note 보조사
 (전 / 전하-01
@@ -732,7 +732,7 @@
             :ARG1-of (작 / 작성-01
                 :ARG0 p))))
 
-# ::id snt6.E2017.NEWS.002 ::date 2019-09-04T21:09 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.002 ::date 2019-09-04T21:09 ::annotator gabrielle
 # ::snt 1학년 담임교사는 “천성이 밝고 활달해 친구들의 고민을 잘 들어준다. 심성이 따뜻해 교우 관계가 원만하다”라고 기록했다.
 # ::note
 (기 / 기록-01
@@ -758,7 +758,7 @@
             :cause (따 / 따뜻하-01
                 :ARG1 (심 / 심성)))))
 
-# ::id snt7.E2017.NEWS.002 ::date 2019-09-04T21:19 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.002 ::date 2019-09-04T21:19 ::annotator gabrielle
 # ::snt 2학년 학생부에도 “훈련 등으로 친구들과 교류 시간은 부족하지만 급우들 사이에서 선망의 대상”이라고 쓰여있다.
 # ::note 보조사
 (쓰 / 쓰-01
@@ -776,7 +776,7 @@
     :location (학 / 학생부
         :mod (학2 / 학년 :ord (o / ordinal-entity :value 2))))
 
-# ::id snt8.E2017.NEWS.002 ::date 2019-09-04T21:29 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.002 ::date 2019-09-04T21:29 ::annotator gabrielle
 # ::snt 2학년 담임인 황 모 교사는 문학 시간에 출석도 하지 않은 정 씨에게 태도점수 만점을 줘 학생들의 항의를 받기도 했다.
 # ::note
 (항 / 항의-01
@@ -800,7 +800,7 @@
                 :ARG1 (수 / 수업
                     :topic (문 / 문학))))))
 
-# ::id snt9.E2017.NEWS.002 ::date 2019-09-04T21:51 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.002 ::date 2019-09-04T21:51 ::annotator gabrielle
 # ::snt 하지만 황 교사는 오히려 학생들에게 “못난 자식 감싸는 엄마 같은 마음이다. 국가대표 되려고 저렇게 고생하지 않느냐”며 정 씨를 두둔했다.
 # ::note
 (c / contrast-01
@@ -835,7 +835,7 @@
                         :ARG3 (공 / 공부-01))))
         :mod (오 / 오히려)))
 
-# ::id snt10.E2017.NEWS.002 ::date 2019-09-06T12:52 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.002 ::date 2019-09-06T12:52 ::annotator gabrielle
 # ::snt 반면 일반 교과 교사들은 정 씨를 ‘불성실한 학생’으로 기억했다.
 # ::note '기억하다'를 '여기다'로 처리
 (c / contrast-01
@@ -854,7 +854,7 @@
             :ARG1-of (성 / 성실-01
                 :polarity -))))
 
-# ::id snt11.E2017.NEWS.002 ::date 2019-09-06T01:04 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.002 ::date 2019-09-06T01:04 ::annotator gabrielle
 # ::snt 2학년 체육 교사는 ＂교실서 잔다 하기에 다른 학생을 보내 ‘운동장에 나오라’고 하면 ‘깨우지 말라’며 따르지 않았다”고 말했다.
 # ::note 2학년 체육 교사의 해석 (((1학년) 체육) 교사) 또는 '1학년을 가르치는 체육 교사'
 (말 / 말하-01
@@ -887,7 +887,7 @@
             :ARG1 (자 / 자-00
                 :location (교 / 교실)))))
 
-# ::id snt12.E2017.NEWS.002 ::date 2019-09-06T01:16 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.002 ::date 2019-09-06T01:16 ::annotator gabrielle
 # ::snt 1학년 과학 담당 오 모 교사는 “한 학기 1~2번 정도 본 것 같다”고 했다.
 # ::note 1학년 과학 담당의 해석
 (하 / 하-02
@@ -907,7 +907,7 @@
                     :ARG1 2
                     :ARG2 (t2 / temporal-quantity :quant 1 :unit (학3 / 학기)))))))
 
-# ::id snt13.E2017.NEWS.002 ::date 2019-09-06T01:26 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.002 ::date 2019-09-06T01:26 ::annotator gabrielle
 # ::snt 영어(2학년)를 담당했던 최 모 교사는 “수학여행 때 1박도 하지 않고 숙소 앞에서 엄마 차를 타고 돌아갔다”고 기억했다.
 # ::note
 (기 / 기억-01
@@ -929,7 +929,7 @@
                 :op1 (숙 / 숙소)))
         :time (수 / 수학여행)))
 
-# ::id snt14.E2017.NEWS.002 ::date 2019-09-06T01:36 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.002 ::date 2019-09-06T01:36 ::annotator gabrielle
 # ::snt 정 씨의 한 동창생은 “자기는 대학이 이미 정해져 있어 공부할 필요도 없다, 잠자러 학교에 나온다고 말하곤 해 짜증 나고 기분 나빴다”고 말했다.
 # ::note
 (말 / 말하-01
@@ -960,7 +960,7 @@
                     :ARG3 (학 / 학교)
                     :purpose (잠 / 잠자-00))))))
 
-# ::id snt15.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle
 # ::snt 또 다른 동창생도 “아침에 왔다가 점심도 안 먹고 집에 갔다. 옆 친구와도 어울리지 않았다”고 전했다.
 # ::note 점심도 안 먹고 가다 처리
 (전 / 전하-01
@@ -987,7 +987,7 @@
                         :ARG2 (친 / 친구
                             :location (옆 / 옆))))))))
 
-# ::id snt16.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle
 # ::snt 청담고는 다른 학생들의 출석 인정엔 깐깐했지만 유독 정 씨에겐 관대했다.
 # ::note
 (관 / 관대하-01
@@ -1007,7 +1007,7 @@
                         :ARG3 (공 / 공부-01))
                     :ARG1-of (다 / 다르-01))))))
 
-# ::id snt17.E2017.NEWS.002 ::date 2019-09-06T02:06 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.002 ::date 2019-09-06T02:06 ::annotator gabrielle
 # ::snt 1학년 때 사회를 가르친 김 모 교사는 “예체능계 학생이 많아 출결이 깐깐한데 (정 씨는) 입학 때부터 출석 인정이 당연시돼 의아했다”고 말했다.
 # ::note 깐깐하다 주격 조사
 (말 / 말하-01
@@ -1033,7 +1033,7 @@
                         :ARG3 (공 / 공부-01))
                     :mod (예 / 예체능계)))))))
 
-# ::id snt18.E2017.NEWS.002 ::date 2019-09-06T02:16 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.002 ::date 2019-09-06T02:16 ::annotator gabrielle
 # ::snt 2학년 경제를 담당했던 송 모 교사도 “같은 반에 아이돌 연습생이 있었는데 정유라만 조퇴를 봐준다고 울면서 하소연을 하곤 했다”고 증언했다.
 # ::note 보조사
 (증 / 증언-01
@@ -1058,7 +1058,7 @@
         :manner (울 / 울-00
             :ARG0 p2)))
 
-# ::id snt19.E2017.NEWS.002 ::date 2019-09-06T02:26 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.002 ::date 2019-09-06T02:26 ::annotator gabrielle
 # ::snt 당시 담임인 황 교사는 이 연습생에겐 “학교에 빠지면 안 된다”며 단호했다고 한다.
 # ::note
 (하 / 하-02
@@ -1078,7 +1078,7 @@
                     :ARG3 (연 / 연습-01))
                 :mod (이2 / 이)))))
 
-# ::id snt20.E2017.NEWS.002 ::date 2019-09-07T01:56 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.002 ::date 2019-09-07T01:56 ::annotator gabrielle
 # ::snt 결국 해당 학생은 같은 해 다른 학교로 전학을 갔다.
 # ::note
 (가 / 가-01
@@ -1093,7 +1093,7 @@
         :ARG1-of (같 / 같-01))
     :mod (결 / 결국))
 
-# ::id snt21.E2017.NEWS.002 ::date 2019-09-07T01:57 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.002 ::date 2019-09-07T01:57 ::annotator gabrielle
 # ::snt 당시 같은 반이었던 한 동창생은 “예체능을 전공하는 다른 친구들이 늘 정유라만 조퇴시켜 줘 불만이 많았다”고 전했다.
 # ::note
 (전 / 전하-01
@@ -1118,7 +1118,7 @@
                 :wiki "정유라_(승마_선수)"
                 :name (이 / 이름 :op1 "정유라")))))
 
-# ::id snt22.E2017.NEWS.002 ::date 2019-09-07T02:07 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.002 ::date 2019-09-07T02:07 ::annotator gabrielle
 # ::snt 하지만 감사에서 황 교사는 “정확하게 기억나지 않는다”라는 입장을 고수했다.
 # ::note
 (c / contrast-01
@@ -1133,7 +1133,7 @@
                     :manner (정 / 정확-01))))
         :time (감 / 감사-00)))
 
-# ::id snt23.E2017.NEWS.002 ::date 2019-09-07T02:09 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.002 ::date 2019-09-07T02:09 ::annotator gabrielle
 # ::snt 실제로 고 3년 당시 정 씨의 출석일수는 17일에 불과했다.
 # ::note
 (불 / 불과-01
@@ -1147,7 +1147,7 @@
     :ARG1 (t2 / temporal-quantity :quant 17 :unit (일 / 일))
     :mod (실 / 실제))
 
-# ::id snt24.E2017.NEWS.002 ::date 2019-09-07T02:11 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.002 ::date 2019-09-07T02:11 ::annotator gabrielle
 # ::snt 또 고 1·2 때는 각각 126일과 137일을 출석한 것으로 기록돼 있지만, 실제 출석일은 정확히 확인되지 않는다.
 # ::note
 (확 / 확인-01
@@ -1169,7 +1169,7 @@
             :mod (각 / 각각)))
     :mod (또 / 또))
 
-# ::id snt25.E2017.NEWS.002 ::date 2019-09-07T02:14 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.NEWS.002 ::date 2019-09-07T02:14 ::annotator gabrielle
 # ::snt 시 교육청 관계자는 “‘출석 인정’을 그냥 ‘출석’으로 기록해 실제 출석 날짜를 파악하기가 어렵다”고 말했다.
 # ::note
 (말 / 말하-01
@@ -1191,7 +1191,7 @@
                 :ARG1 (인 / 인정-01
                     :ARG1 (출3 / 출석-01))))))
 
-# ::id snt26.E2017.NEWS.002 ::date 2019-09-07T02:24 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.002 ::date 2019-09-07T02:24 ::annotator gabrielle
 # ::snt ‘출석 인정’은 등교하지 않았지만 대회 참가 등으로 출석을 인정해 주는 경우로 ‘출석’과 구분해 기록해야만 한다.
 # ::note
 (o / obligate-01
@@ -1208,7 +1208,7 @@
         :domain (인 / 인정-01
             :ARG1 (출3 / 출석-01))))
 
-# ::id snt27.E2017.NEWS.002 ::date 2019-09-07T02:28 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.NEWS.002 ::date 2019-09-07T02:28 ::annotator gabrielle
 # ::snt 최 씨는 학교를 찾아와 교사들에게 막말을 하거나 엄포를 놓기도 했다.
 # ::note
 (a / and
@@ -1310,7 +1310,7 @@
     :time (뒤 / 뒤
         :op1 (temporal-quantity :quant 2 :unit (주 / 주))))
 
-# ::id snt30.E2017.NEWS.002 ::date 2019-09-08T00:17 ::annotator gabrielle ::preferred True
+# ::id snt30.E2017.NEWS.002 ::date 2019-09-08T00:17 ::annotator gabrielle
 # ::snt 이 말에 담임은 항의하기는커녕 “애 아빠가 딸바보군요”라며 맞장구를 쳤다고 한다.
 # ::note 보조사
 (하 / 하-02
@@ -1332,7 +1332,7 @@
             :ARG0 사
             :ARG1 말)))
 
-# ::id snt0.E2017.NEWS.003 ::date 2019-09-08T00:24 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.003 ::date 2019-09-08T00:24 ::annotator gabrielle
 # ::snt 경찰 '소래포구 어시장 화재' 목격자 3명 진술 확보.
 # ::note
 (확 / 확보-01
@@ -1346,7 +1346,7 @@
                         :name (이 / 이름 :op1 "소래포구" :op2 "어시장")))
             :quant 3)))
 
-# ::id snt1.E2017.NEWS.003 ::date 2019-09-08T00:49 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.003 ::date 2019-09-08T00:49 ::annotator gabrielle
 # ::snt 6억여 원의 재산피해(소방서 추산)를 낸 인천 소래포구 어시장 화재사고와 관련, 경찰이 최초 목격자 진술을 확보하는 등 화재 원인을 밝히기 위한 본격적인 조사에 착수했다.
 # ::note
 (착 / 착수-01
@@ -1381,7 +1381,7 @@
                         :quant (여 / 여 :op1 600000000)
                         :unit (원2 / 원)))))))
 
-# ::id snt2.E2017.NEWS.003 ::date 2019-09-08T01:05 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.003 ::date 2019-09-08T01:05 ::annotator gabrielle
 # ::snt 인천 남동 경찰서는 18일 발생한 인천시 남동구 논현동 소래포구 어시장 화재사고와 관련한 목격자 3명의 진술을 확보해 조사하고 있다고 19일 밝혔다.
 # ::note 주소 객체
 (밝 / 밝히-01
@@ -1408,7 +1408,7 @@
                         :time (d / date-entity :day 18)))))
     :time (d2 / date-entity :day 19))
 
-# ::id snt3.E2017.NEWS.003 ::date 2019-09-08T01:15 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.003 ::date 2019-09-08T01:15 ::annotator gabrielle
 # ::snt 이 가운데 한 명은 18일 오전 1시 36분께 불이 번진 것을 보고 처음 119에 신고한 어시장 상인이다.
 # ::note
 (상 / 상인
@@ -1426,7 +1426,7 @@
         :ARG2 (p / phone-number-entity :value 119)
         :mod (처 / 처음)))
 
-# ::id snt4.E2017.NEWS.003 ::date 2019-09-08T01:25 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.003 ::date 2019-09-08T01:25 ::annotator gabrielle
 # ::snt 최초 목격자인 이 상인은 가건물 형태인 좌판 구역 뒤편의 건물 4층 횟집에서 영업을 마치고 가게 내부를 정리하다가 화재를 목격했다.
 # ::note
 (목 / 목격-01
@@ -1453,7 +1453,7 @@
                 :ARG1 (영 / 영업-01)
                 :location 횟))))
 
-# ::id snt5.E2017.NEWS.003 ::date 2019-09-08T02:25 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.003 ::date 2019-09-08T02:25 ::annotator gabrielle
 # ::snt 이 횟집 상인은 경찰에서 "'펑' 하는 소리가 들려 바닷가 쪽으로 내려다보니 '가'구역 쪽 비닐 천막 안에서 불이 나 있었다"며 "처음에는 불이 작았는데 나중에 걷잡을 수 없이 커졌다"고 진술했다.
 # ::note
 (진 / 진술-01
@@ -1489,7 +1489,7 @@
             :time (처 / 처음)))
     :location (경 / 경찰))
 
-# ::id snt6.E2017.NEWS.003 ::date 2019-09-08T03:01 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.003 ::date 2019-09-08T03:01 ::annotator gabrielle
 # ::snt 경찰이 확보한 나머지 목격자 2명은 어시장 내 양념 가게 운영자와 어시장 상인회 측이 고용한 야간 경비원이다.
 # ::note
 (경 / 경비원
@@ -1509,7 +1509,7 @@
             :op2 (상 / 상인회
                 :mod (어 / 어시장)))))
 
-# ::id snt7.E2017.NEWS.003 ::date 2019-09-08T03:11 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.003 ::date 2019-09-08T03:11 ::annotator gabrielle
 # ::snt 경비원은 경찰에서 "화재 발생 시각 직전에 순찰했는데 특별한 이상 징후는 없었다"고 말했다.
 # ::note
 (말 / 말하-01
@@ -1526,7 +1526,7 @@
             :ARG1-of (특 / 특별-01)))
     :ARG2 (경2 / 경찰))
 
-# ::id snt8.E2017.NEWS.003 ::date 2019-09-08T03:28 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.003 ::date 2019-09-08T03:28 ::annotator gabrielle
 # ::snt 경찰과 국립과학수사연구원 요원들은 전날 경찰이 폐쇄회로(CC)TV 영상으로 확인한 최초 발화점인 가건물 내 '가' 구역 한 좌판 인근 바닥에서 불에 녹아 끊어진 전선 여러 개를 수거해 분석하고 있다.
 (a / and
     :op1 (수 / 수거-01
@@ -1560,7 +1560,7 @@
         :ARG0 a2
         :ARG1 전))
 
-# ::id snt9.E2017.NEWS.003 ::date 2019-09-08T03:28 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.003 ::date 2019-09-08T03:28 ::annotator gabrielle
 # ::snt 해당 전선은 좌판 영업에 필요한 수족관과 겨울철 전기장판 등 각종 전기용품을 사용하는 데 쓰인 것으로 경찰은 보고 있다.
 # ::note
 (추 / 추측-01
@@ -1578,7 +1578,7 @@
                     :op2 (전3 / 전기장판
                         :time (겨 / 겨울철))))))))
 
-# ::id snt10.E2017.NEWS.003 ::date 2019-09-09T01:25 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.003 ::date 2019-09-09T01:25 ::annotator gabrielle
 # ::snt 앞서 경찰은 전날 화재 현장 인근에 있는 관리사무소에서 어시장에 설치된 60여 대의 폐쇄회로(CC)TV 영상을 확보해 최초 발화점을 찾았다.
 # ::note
 (찾 / 찾-01
@@ -1600,7 +1600,7 @@
                     :mod (화 / 화재))))
         :time (전 / 전날)))
 
-# ::id snt11.E2017.NEWS.003 ::date 2019-09-09T01:37 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.003 ::date 2019-09-09T01:37 ::annotator gabrielle
 # ::snt 경찰이 확보한 CCTV 영상에는 전체 4개 구역(가∼라) 332개 좌판 중 30% 이상이 몰려있는 '가' 구역 좌판 한 곳에서 가장 먼저 연기가 피어오른 장면이 담겼다.
 (담 / 담-01
     :ARG1 (장 / 장면
@@ -1626,7 +1626,7 @@
         :ARG1-of (확 / 확보-01
             :ARG0 (경 / 경찰))))
 
-# ::id snt12.E2017.NEWS.003 ::date 2019-09-09T02:13 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.003 ::date 2019-09-09T02:13 ::annotator gabrielle
 # ::snt 경찰과 국과수 등은 이날 오전부터 화재 현장에서 2차 합동 감식을 벌인다.
 # ::note
 (벌 / 벌이-01
@@ -1645,7 +1645,7 @@
             :day (이 / 이날)
             :dayperiod (오 / 오전))))
 
-# ::id snt13.E2017.NEWS.003 ::date 2019-09-09T02:25 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.003 ::date 2019-09-09T02:25 ::annotator gabrielle
 # ::snt 경찰은 어시장 상인들이 사고 원인으로 지목한 '가' 구역 내 변압기에 대해서도 정밀 감식을 벌일 계획이다.
 # ::note
 (계 / 계획-01
@@ -1662,7 +1662,7 @@
                         :ARG2 (원 / 원인
                             :mod (사 / 사고)))))))
 
-# ::id snt14.E2017.NEWS.003 ::date 2019-09-09T02:34 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.003 ::date 2019-09-09T02:34 ::annotator gabrielle
 # ::snt 또 조만간 한국전력공사 관계자들을 불러 어시장 내 변압기 용량 등을 확인할 방침이다.
 # ::note
 (계 / 계획-01
@@ -1680,7 +1680,7 @@
     :mod (또 / 또)
     :time (조 / 조만간))
 
-# ::id snt15.E2017.NEWS.003 ::date 2019-09-09T02:52 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.003 ::date 2019-09-09T02:52 ::annotator gabrielle
 # ::snt 경찰 관계자는 "목격자 3명의 진술과 최초 발화점인 '가' 구역 좌판 바닥에서 피복이 벗겨진 전선 여러 가닥을 확보했다"며 "CCTV 영상에서 화재 발생 시각에 사람이 드나든 흔적을 전혀 찾을 수 없어 전기적인 요인에 의한 자연 발화 가능성이 크다"고 했다.
 # ::note
 (하 / 하-02
@@ -1716,7 +1716,7 @@
                 :location (영 / 영상
                     :mod (C / CCTV))))))
 
-# ::id snt16.E2017.NEWS.003 ::date 2019-09-09T03:23 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.003 ::date 2019-09-09T03:23 ::annotator gabrielle
 # ::snt 앞서 전날 오전 1시 36분께 소래포구 어시장에서 불이 나 2시간 30분 만에 진화됐다.
 # ::note
 (진 / 진화-00
@@ -1735,7 +1735,7 @@
                 :time "13:36")
             :mod (앞 / 앞서))))
 
-# ::id snt17.E2017.NEWS.003 ::date 2019-09-09T03:37 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.003 ::date 2019-09-09T03:37 ::annotator gabrielle
 # ::snt 새벽 시간대에 불이 나 상인 등의 인명피해는 없었지만, 소래포구 어시장 내 좌판 220여 개와 좌판 인근 횟집 등 점포 20여 곳이 불에 탔다.
 # ::note
 (타 / 타-03
@@ -1761,7 +1761,7 @@
             :time (시 / 시간대
                 :mod (새 / 새벽)))))
 
-# ::id snt18.E2017.NEWS.003 ::date 2019-09-09T03:37 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.003 ::date 2019-09-09T03:37 ::annotator gabrielle
 # ::snt 소방당국은 현재까지 파악된 재산피해 추정액이 6억5천만원이라고 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -1777,7 +1777,7 @@
                 :ARG0 당
                 :time (현 / 현재)))))
 
-# ::id snt0.E2017.NEWS.004 ::date 2019-09-09T03:57 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.004 ::date 2019-09-09T03:57 ::annotator gabrielle
 # ::snt “이직 자유” “뼈 묻어야”… 신구세대 직장인 문화 충돌.
 # ::note
 (m / multi-sentence
@@ -1800,7 +1800,7 @@
             :poss (구 / 구세대))))
 
 
-# ::id snt1.E2017.NEWS.004 ::date 2019-09-11T00:43 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.004 ::date 2019-09-11T00:43 ::annotator gabrielle
 # ::snt 윤모(28) 씨는 1년여 동안 다니던 대기업에 지난달 사표를 냈다.
 # ::note 퇴사-00
 (사 / 사임-01
@@ -1814,7 +1814,7 @@
                     :op1 (t / temporal-quantity :quant 1 :unit (년 / 년))))))
     :time (지 / 지난달))
 
-# ::id snt2.E2017.NEWS.004 ::date 2019-09-11T00:54 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.004 ::date 2019-09-11T00:54 ::annotator gabrielle
 # ::snt 위계질서가 강해 의견도 자유롭게 내기 힘든 회사 분위기가 답답하게 느껴졌다.
 # ::note 보조사
 (느 / 느끼-01
@@ -1829,7 +1829,7 @@
                     :ARG1 (질 / 질서
                         :mod (위 / 위계)))))))
 
-# ::id snt3.E2017.NEWS.004 ::date 2019-09-11T01:17 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.004 ::date 2019-09-11T01:17 ::annotator gabrielle
 # ::snt 팀장에게 “대학원에서 공부를 더 하고 싶다”며 회사를 그만두겠다고 했다.
 # ::note 퇴사-00
 (하 / 하-02
@@ -1845,7 +1845,7 @@
                 :mod (더 / 더)
                 :location (대 / 대학원)))))
 
-# ::id snt4.E2017.NEWS.004 ::date 2019-09-11T01:29 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.004 ::date 2019-09-11T01:29 ::annotator gabrielle
 # ::snt 그러나 팀장은 “나중에 다른 곳에 취업해 ‘뒤통수 쳤다’는 얘기가 들리지 않게 하라”고 했다.
 # ::note
 (c / contrast-01
@@ -1862,7 +1862,7 @@
                     :ARG1 (곳 / 곳
                         :ARG1-of (다 / 다르-01)))))))
 
-# ::id snt5.E2017.NEWS.004 ::date 2019-09-11T01:53 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.004 ::date 2019-09-11T01:53 ::annotator gabrielle
 # ::snt 다른 상사도 “정말 대학원에 가는지 모르겠지만 혹시 다른 회사에 가는 거라면 어딜 가도 똑같다”고 달랬다.
 # ::note 보조사 퇴사-00
 (달 / 달래-01
@@ -1884,7 +1884,7 @@
                     :ARG1 (가 / 가-01
                         :ARG3 회))))))
 
-# ::id snt6.E2017.NEWS.004 ::date 2019-09-11T02:18 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.004 ::date 2019-09-11T02:18 ::annotator gabrielle
 # ::snt 윤 씨는 1일 “인수인계를 하러 회사에 머문 일주일 동안 매일 눈총에 시달렸다”며 “사표를 쓰고 나면 후련할 줄 알았는데 되레 더 억눌리는 기분이 들었다”고 했다.
 # ::note 퇴사-00
 (하 / 하-02
@@ -1907,7 +1907,7 @@
                 :ARG1 (억 / 억누르-00
                     :degree (더 / 더))))))
 
-# ::id snt7.E2017.NEWS.004 ::date 2019-09-11T09:11 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.004 ::date 2019-09-11T09:11 ::annotator gabrielle
 # ::snt 이직과 퇴직을 하기 위해 사표를 내는 1∼2년 차 직장인들이 늘고 있다.
 # ::note
 (늘 / 늘-01
@@ -1922,7 +1922,7 @@
         :op1 (이 / 이직-00)
         :op2 (퇴 / 퇴직-00))))
 
-# ::id snt8.E2017.NEWS.004 ::date 2019-09-11T10:18 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.004 ::date 2019-09-11T10:18 ::annotator gabrielle
 # ::snt 한국경영자총협회(경총)가 지난해 6월 전국 306개 기업을 대상으로 실시한 ‘신입사원 채용실태 조사’에 따르면 1년 안에 퇴사한 대졸 신입사원 비율은 27.7%다.
 # ::note
 (전 / 전하-01
@@ -1946,7 +1946,7 @@
                 :ARG1 (대 / 대학)))
         :ARG3 (p / percentage-entity :value 27.7)))
 
-# ::id snt9.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 2012년(23.6%)과 2014년(25.2%)을 지나며 꾸준히 늘고 있는 셈이다.
 # ::note
 (늘 / 늘-01
@@ -1956,7 +1956,7 @@
         :time (d2 / date-entity :year 2014)))
     :manner (꾸 / 꾸준하-01))
 
-# ::id snt10.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 신입사원 4명 중 한 명 꼴로 퇴사할 정도지만 아직까지 회사와 직원 간의 ‘아름다운 이별’ 문화는 자리잡지 못했다.
 # ::note 
 (a / and
@@ -1978,7 +1978,7 @@
                 :manner (아 / 아름답-01)))
         :time (지 / 지금)))
 
-# ::id snt11.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 인수인계 기간 동안 회사에서 유령 취급을 받거나 악담을 듣는 등 따돌림 당하는 일도 벌어진다.
 # ::note
 (당 / 당하-01
@@ -1992,7 +1992,7 @@
         :op1 (인 / 인수-01)
         :op2 (인2 / 인계-00)))
 
-# ::id snt12.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 대기업 유통업체에 다녔던 강 모(31·여) 씨도 퇴사를 입 밖에 낸 뒤로 왕따가 됐다.
 # ::note
 (되 / 되-01
@@ -2007,7 +2007,7 @@
             :ARG0 p
             :ARG1 (퇴 / 퇴사-00))))
 
-# ::id snt13.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt “왜 미리 말을 안 해서 회사를 당황시키느냐”는 핀잔도 들었다.
 # ::note
 (핀 / 핀잔-00
@@ -2020,7 +2020,7 @@
             :op2 (당 / 당황-01
                 :ARG1 (회 / 회사)))))
 
-# ::id snt14.E2017.NEWS.004 ::date 2019-09-16T18:45 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.004 ::date 2019-09-16T18:45 ::annotator gabrielle
 # ::snt 강 씨는 “회사생활 마지막 2주 동안은 ‘인수인계를 대충 한다’는 트집까지 잡혔다”며 “평소 사이좋던 팀원들이 얼굴색을 바꾸고 차갑게 대해 마음이 무거웠다”고 말했다.
 (말 / 말하-01
     :ARG0 (p / person :name (이 / 이름 :op1 "강")
@@ -2040,7 +2040,7 @@
                 :ARG0 p
                 :ARG2 (회 / 회사))))))
 
-# ::id snt15.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 경총 조사에 따르면 새내기 직장인들이 회사를 1년 만에 그만두는 이유는 ‘조직·직무적응 실패’(49.1%)였다.
 # ::note
 (전 / 전하-01
@@ -2067,7 +2067,7 @@
                     :ARG2 c
                     :ARG3 (p / percentage-entity :value 49.1))))))
 
-# ::id snt16.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이어 ‘급여·복리후생 불만’(20.0%), ‘근무지역·근무환경에 대한 불만’(15.9%)이었다.
 # ::note
 (a / and
@@ -2088,7 +2088,7 @@
         :ARG1-of (i2 / include-91
             :ARG3 (p2 / percentage-entity :value 15.9))))
 
-# ::id snt17.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 취업난이 심각해지다 보니 일단 합격한 회사에 다니면서 다른 회사 신입사원 공채에 재도전하는 것도 흔한 풍경이다.
 # ::note
 (흔 / 흔하-00
@@ -2109,7 +2109,7 @@
         :ARG1 (어 / 어렵-01
             :ARG1 (취 / 취업-01))))
 
-# ::id snt18.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이명진 고려대 사회학과 교수는 “저 연차 직장인들은 ‘한 번 몸담으면 뼈를 묻는다’는 인식은 옅어지고 일과 삶의 질 사이에 균형을 맞추려는 ‘워크 앤드 라이프 밸런스(Work & Life balance)’를 중시한다”며 “하지만 기업은 평생고용·연공서열제 때의 사고방식을 이어가고 있다”고 분석했다.
 # ::note
 (분 / 분석-01
@@ -2155,7 +2155,7 @@
                             :duration (평 / 평생))
                         :op2 (연2 / 연공서열제)))))))
 
-# ::id snt19.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 직장 안에 ‘군대식(式) 위계’가 여전히 자리 잡고 있다는 지적도 있다.
 # ::note 보조사
 (지 / 지적-01
@@ -2166,7 +2166,7 @@
         :manner (여 / 여전하-01))
     :mod (또 / 또한))
 
-# ::id snt20.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이택광 경희대 글로벌커뮤니케이션학과 교수는 “저 연차 직장인이 직장을 관두면 ‘끈기나 노력이 부족해서 그렇다’고 바라보면서 생기는 갈등”이라며 “퇴직하는 직장인을 ‘회사에 녹아들지 못한 고문관’으로 바라보고 있는 것”이라고 말했다.
 # ::note 퇴직 수정 필요
 (말 / 말하-01
@@ -2201,7 +2201,7 @@
                 :polarity -
                 :ARG2 (회 / 회사)))))
 
-# ::id snt21.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 기업은 막 교육을 마친 신입사원이 퇴직하면 회사에 손해라는 걸 감안해야 한다는 입장이다.
 # ::note
 (입 / 입장
@@ -2219,7 +2219,7 @@
                     :ARG1 (교 / 교육-01)
                     :mod (막 / 막))))))
 
-# ::id snt22.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 한 기업 인사 담당자는 “사원 한 명을 교육하는 데 돈이 많이 드는데, 사원이 회사를 나간다면 회사는 아깝고 아쉬운 마음이 든다”며 “악담까진 아니라도 ‘여기서 못 버티면 다른 곳에서도 또 그만둔다’는 만류를 할 때가 잦다”고 했다.
 # ::note
 (하 / 하-02
@@ -2258,7 +2258,7 @@
                         :polarity -
                         :location (여 / 여기)))))))
 
-# ::id snt23.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 새롭게 신입사원을 뽑아도 업무에 적응하기까지 걸리는 시간도 길다.
 # ::note
 (길 / 길-01
@@ -2273,7 +2273,7 @@
                 :manner (새 / 새롭-01)))
         :manner (새2 / 새롭-01)))
 
-# ::id snt24.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 실제 경총 조사 결과 기업들의 대졸 신입사원에 대한 업무 수행 만족도는 2010년 조사 이후 계속해서 내려가는 추세다.
 # ::note
 (전 / 전하-01
@@ -2301,7 +2301,7 @@
                 :op1 (조2 / 조사-01
                     :time (d / date-entity :year 2010))))))
 
-# ::id snt25.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 전문가들은 기업과 신입사원이 서로를 이해하는 게 먼저라고 조언했다.
 # ::note
 (조 / 조언-01
@@ -2316,7 +2316,7 @@
                         :manner (새 / 새롭-01))))
             :ARG1 (서 / 서로))))
 
-# ::id snt26.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 서이종 서울대 사회학과 교수는 “기업은 새 인력을 받아들이면서 성장하고, 신입사원은 조직에서 여러 세대와 어울려서 일한다는 점을 알아야 한다”며 “서로의 문화를 이해하려고 노력하는 자세가 중요하다”고 말했다.
 # ::note
 (말 / 말하-01
@@ -2350,7 +2350,7 @@
                     :ARG1 (문 / 문화
                         :poss (서 / 서로)))))))
 
-# ::id snt27.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이직이 거부할 수 없는 흐름이라면 기업과 신입사원이 서로의 적합성을 시험해 볼 기간이 필요하다는 의견도 있다.
 # ::note
 (의 / 의견
@@ -2371,7 +2371,7 @@
                 :ARG1 (거 / 거부-01
                     :ARG1 (이 / 이직-00))))))
 
-# ::id snt28.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 윤인진 고려대 사회학과 교수는 “고용 초반 6개월∼1년 정도는 회사와 사원이 서로 맞는 정도를 시험해 보고 판단하는 것도 한 방법”이라며 “다만 불안정한 고용 제도로 악용될 가능성이 있어 여기에 대한 고민은 필요하다”고 말했다.
 # ::note
 (말 / 말하-01
@@ -2409,7 +2409,7 @@
                         :ARG1-of (안 / 안정-01
                             :polarity -)))))))
 
-# ::id snt0.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 文 대통령, 경제부총리 김동연·외교부 장관 여성 강경화 내정.
 # ::note
 (a / and
@@ -2427,7 +2427,7 @@
             :ARG2-of (h2 / have-org-role-91
                 :ARG1 (g / government-organization :wiki "대한민국_외교부" :name (이4 / 이름 :op1 "외교부"))))))
 
-# ::id snt1.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 문재인 대통령은 21일 '경제 사령탑'인 경제부총리 겸 기획재정부 장관 후보자에 김동연(60) 아주대 총장, 외교부 장관 후보자에 여성인 강경화(62) 유엔 사무총장 정책특보를 각각 내정했다.
 # ::note
 (a / and
@@ -2463,7 +2463,7 @@
         :time (d2 / date-entity :day 21))
     :mod (각 / 각각))
 
-# ::id snt2.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 인사가 다소 지연되던 청와대 국가안보실장엔 정의용(71) 아시아정당 국제회의 공동 상임위원장이, 정책실장엔 장하성(64) 고려대 경영학과 교수가 임명됐다.
 # ::note
 (a / and
@@ -2490,7 +2490,7 @@
             :ARG2-of (h4 / have-org-role-91
                 :ARG1 g))))
 
-# ::id snt3.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 문 대통령은 이날 청와대 춘추관 브리핑룸에서 "새 정부의 경제-외교안보 분야 인사를 직접 국민에게 말씀드리겠다"며 직접 이 같은 인사를 발표했다.
 # ::note
 (발 / 발표-01
@@ -2517,7 +2517,7 @@
         :part-of (b / building :wiki - :name (이4 / 이름 :op1 "춘추관")
             :part-of (g / government-organization :wiki "청와대" :name (이5 / 이름 :op1 "청와대")))))
 
-# ::id snt4.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 외교안보실장 하마평에 올랐던 문정인(66) 연세대 명예특임 교수와, 대미 특사인 홍석현(68) 전 중앙일보·JTBC 사장은 대통령의 통일외교안보특보를 맡게 됐다.
 # ::note
 (h / have-org-role-91
@@ -2558,7 +2558,7 @@
     :ARG1 (g / government-organization :wiki "대한민국_국민경제자문회의" :name (이3 / 이름 :op1 "국민경제자문회의"))
     :ARG2 (부 / 부의장))
 
-# ::id snt6.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 김동연 부총리 후보자는 충북 음성 출신으로 '고졸신화의 인간승리 드라마'로 불린다.
 # ::note
 (부 / 부르-02
@@ -2593,7 +2593,7 @@
                     :op2 (취 / 취직-00
                         :ARG1 (은 / 은행)))))))
 
-# ::id snt8.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 문 대통령은 "새 정부는 일찍이 경험하지 못한 저성장 위기 속 출범해 빠른 시일 내 위기를 극복하고 일자리를 통한 경제 활성화를 만드는 게 가장 중요한 국정과제"라며 "종합적 위기관리능력과 과감한 추진력을 가장 중요하게 고려했다"고 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -2672,7 +2672,7 @@
                                 :ARG0 p
                                 :ARG1 (g2 / government-organization :wiki "대한민국_기획재정부" :name (이3 / 이름 "재정부"))))))))))
 
-# ::id snt10.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 강경화 장관 후보자는 서울 출생으로 이화여고를 졸업, 매사추세츠대학 커뮤니케이션 박사 학위를 받았다.
 # ::note
 (받 / 받-01
@@ -2786,7 +2786,7 @@
                             :mod (외4 / 외교))
                         :quant (여 / 여러)))))))
 
-# ::id snt13.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 정의용 신임 실장은 서울 출신으로 서울고, 서울대 외교학과를 졸업했다.
 # ::note
 (a / and
@@ -2803,7 +2803,7 @@
             :topic (외 / 외교학)
             :part-of (u / university :wiki "서울대학교" :name (이4 / 이름 :op1 "서울대")))))
 
-# ::id snt14.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 현재 아시아정당 국제회의 공동 상임위원장이다.
 # ::note
 (h / have-org-role-91
@@ -2812,7 +2812,7 @@
         :mod (공 / 공동))
     :time (현 / 현재))
 
-# ::id snt15.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 문 대통령이 각국 정상들과 '전화 외교'를 할 때 배석해 역할을 해왔다.
 # ::note
 (역 / 역할-00
@@ -2870,7 +2870,7 @@
                             :op1 (경2 / 경제)
                             :op2 (민 / 민생))))))))
 
-# ::id snt17.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 장하성 신임 실장은 광주 출생으로, 경기고를 졸업해 펜실베니아대 경영학 박사학위를 받았다.
 # ::note
 (a / and
@@ -2890,7 +2890,7 @@
             :topic (경 / 경영학))
         :ARG2 (u / university :wiki "펜실베이니아_대학교" :name (이4 / 이름 :op1 "펜실베니아대"))))
 
-# ::id snt18.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 문 대통령은 "장 실장은 한국 사회의 경제적 불평등을 지속적으로 연구한 경제학 분야의 석학, 실천 운동가"라며 "과거 재벌 대기업 중심 경제 패러다임에서 벗어나 사람 중심, 중소기업 중심으로 경제사회정책을 변화시키고, 경제민주화와 소득주도성장, 국민성장을 함께 추진할 최고 적임자로 판단했다"고 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -2986,7 +2986,7 @@
                 :time (이2 / 이번)
                 :mod (처 / 처음)))))
 
-# ::id snt20.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 문정인 신임 특보는 제주가 고향으로, 오현고를 졸업하고 메릴랜드대에서 정치학 박사 학위를 받았다.
 # ::note
 (a / and
@@ -3006,7 +3006,7 @@
             :topic (정 / 정치학))
         :ARG2 (u / university :wiki "메릴랜드_대학교" :name (이4 / 이름 :op1 "메릴랜드대"))))
 
-# ::id snt21.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 홍석현 신임 특보는 서울 출신으로 경기고, 스탠포드대를 졸업했다.
 # ::note
 (a / and
@@ -3021,7 +3021,7 @@
         :ARG1 (s / school :wiki "경기고등학교" :name (이3 / 이름 :op1 "경기고"))
         :ARG1 (u / university :wiki "스탠퍼드_대학교" :name (이4 / 이름 :op1 "스탠포드대"))))
 
-# ::id snt22.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle
 # ::snt 한국신문협회 고문을 맡고 있다.
 # ::note
 (h / have-org-role-91
@@ -3072,7 +3072,7 @@
                     :ARG1 a4
                     :accompanier p))))))
 
-# ::id snt24.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle
 # ::snt 김광두 신임 부의장은 전남 나주 출생으로 광주제일고를 졸업, 하와이대 경제학 박사 학위를 받았다.
 # ::note
 (a / and
@@ -3144,7 +3144,7 @@
                         :topic (경4 / 경제)))
                 :time (이4 / 이제)))))
 
-# ::id snt26.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle
 # ::snt 그러면서 "경제가 갈 길이 성장 분배 이분법이 아니라 선순환이 있다. 이론과 실무를 두루 경험한 김 부의장이 중책을 맡은 만큼 헌법 취지대로 활성화해 고단한 국민 삶을 개선하는데 실질적 역할을 해줄 것을 기대한다"고 부연했다.
 # ::note
 (a / and

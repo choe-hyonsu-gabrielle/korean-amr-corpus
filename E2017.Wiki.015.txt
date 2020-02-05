@@ -1,9 +1,9 @@
-# ::id snt0.E2017.Wiki.015 ::date 2019-12-09 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.015 ::date 2019-12-09 ::annotator gabrielle
 # ::snt 산소
 # ::note
 (산 / 산소)
 
-# ::id snt1.E2017.Wiki.015 ::date 2019-12-09 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.015 ::date 2019-12-09 ::annotator gabrielle
 # ::snt 산소(酸素)는 화학 원소의 하나로, 원소 기호는 O이고 원자 번호는 8이다.
 # ::note 원소 기호 ...
 (a / and
@@ -18,7 +18,7 @@
         :domain 산
         :mod (원3 / 원소)))
 
-# ::id snt2.E2017.Wiki.015 ::date 2019-12-10 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.015 ::date 2019-12-10 ::annotator gabrielle
 # ::snt 일반적으로 산소원자 두 개가 결합하여 무색, 무미, 무취인 기체 상태로 존재한다.
 # ::note
 (a / and
@@ -33,7 +33,7 @@
                 :mod (맛 / 맛 :polarity -)
                 :mod (냄 / 냄새 :polarity -)))))
 
-# ::id snt3.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle
 # ::snt 공기의 주성분 중 하나로, 지구뿐 아니라 우주 전체에 걸쳐 다른 원소와 공유 결합된 상태로 널리 퍼져 있다.
 # ::note
 (a / and
@@ -53,7 +53,7 @@
 				:ARG2 (원 / 원소
 					:ARG2-of (다 / 다르-01))))))
 
-# ::id snt4.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 유리 산소(산소 분자, O2)가 처음으로 지구 대기에 나타난 것은 고원생대로, 혐기성 생물(세균 및 고세균)의 물질 대사 과정의 부산물로 만들어졌다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -88,7 +88,7 @@
 (성 / 성 :mod (혐 / 혐기-00))
 
 
-# ::id snt5.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 유리 산소의 증가는 그 당시 대부분의 생물들을 죽음으로 몰아 갔으나, 반대로 산소를 이용하는 새로운 생물이 등장하는 계기가 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -131,7 +131,7 @@
 (산 / 산소-00 :mod (유 / 유리-01))
 
 
-# ::id snt6.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 산소는 대부분 광합성 작용으로 만들어지는데, 약 4분의 3은 대양의 식물성 플랑크톤과 조류가, 나머지 4분의 1은 육상 식물이 만든다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -162,7 +162,7 @@
 (합 / 합성 :mod (광 / 광-00))
 
 
-# ::id snt7.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle
 # ::snt 사람에게도 생명활동에 꼭 필요한 물질로써, 산소가 결핍되면 5분이 지나 뇌사 상태에 빠지고 8분 뒤면 사망한다.
 # ::note
 (a / and
@@ -181,7 +181,7 @@
 			:time (뒤 / 뒤
 				:op1 (t2 / temporal-quantity :quant 8 :unit (분2 / 분))))))
 
-# ::id snt8.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle
 # ::snt 사람을 비롯한 동물군의 체내에서 산소를 운반하는 것은 적혈구의 주요 역할이다.
 # ::note
 (역 / 역할
@@ -195,7 +195,7 @@
 				:ARG1-of (비 / 비롯하-01
 					:ARG2 (사 / 사람))))))
 
-# ::id snt9.E2017.Wiki.015 ::date 2019-12-10 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.015 ::date 2019-12-10 ::annotator gabrielle
 # ::snt 산소는 1774년 영국의 조지프 프리스틀리가 발견한 원소이다.
 # ::note
 (발 / 발견-01
@@ -204,7 +204,7 @@
     :ARG1 (산 / 산소)
     :time (d / date-entity :year 1774))
 
-# ::id snt10.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle
 # ::snt 프리스틀리는 산화 수은(II)를 가열하는 도중 발생하는 기체가 촛불이 훨씬 더 잘 타도록 하는 성질이 있음을 발견하였다.
 # ::note
 (발 / 발견-01
@@ -221,7 +221,7 @@
 							:ARG1 (수 / 수은
 								:mod (산 / 산화)))))))))
 
-# ::id snt11.E2017.Wiki.015 ::date 2019-12-10 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.015 ::date 2019-12-10 ::annotator gabrielle
 # ::snt 또한 프리스틀리는 이 기체가 호흡과 관련되어 있다는 것을 발견하였다.
 # ::note 또한?
 (a / and
@@ -233,7 +233,7 @@
                 :mod (이2 / 이))
             :ARG2 (호 / 호흡-00))))
 
-# ::id snt12.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle
 # ::snt 그는 이 기체의 이름을 ‘탈 플로지스톤 공기’라 불렀다.
 # ::note
 (부 / 부르-02
@@ -244,7 +244,7 @@
 		:mod (플 / 플로지스톤
 			:mod (탈 / 탈))))
 
-# ::id snt13.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle
 # ::snt 한편 스웨덴의 칼 빌헬름 셸레는 산소를 독자적으로 발견하였으나, 산소의 발견을 먼저 발표한 것은 프리스틀리였다.
 # ::note
 (c / contrast-01
@@ -260,7 +260,7 @@
 			:ARG1 (산2 / 산소))
 		:time (먼 / 먼저)))
 
-# ::id snt14.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle
 # ::snt 그 뒤 앙투안 라부아지에는 이 기체의 이름을 ‘산소’로 정하였다.
 # ::note
 (정 / 정하-01
@@ -271,7 +271,7 @@
 	:time (뒤 / 뒤
 		:mod (그 / 그)))
 
-# ::id snt16.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle
 # ::snt 플로지스톤설은 1667년 독일의 화학자 J. J. 베허가 처음 말했다.
 # ::note
 (말 / 말하-01
@@ -283,7 +283,7 @@
 		:topic (플 / 플로지스톤))
 	:time (d / date-entity :year 1667))
 
-# ::id snt17.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 주요 내용은 모든 가연성 물질에는 플로지스톤이라는 입자가 있어 연소 과정에서 플로지스톤이 소모되고, 플로지스톤이 모두 소모되면 연소과정이 끝난다는 옛 학설이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -311,7 +311,7 @@
 (성 / 성 :mod (가 / 가연-00))
 
 
-# ::id snt18.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle
 # ::snt 1783년 라부아지에가 플로지스톤이 존재하지 않음을 확인하였다.
 # ::note
 (확 / 확인-01
@@ -322,7 +322,7 @@
 	:time (d / date-entity :year 1783))
 
 
-# ::id snt19.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 산소는 질량 백분율로 대기와 해양을 포함한 지각의 49.5%를 차지한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -342,7 +342,7 @@
 (분 / 분 :mod (백 / 백-00))
 
 
-# ::id snt20.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 건조한 공기에서 산소는 부피 백분율로 20.946%을 차지한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -359,7 +359,7 @@
 (율 / 율 :mod (백 / 백분-00))
 
 
-# ::id snt21.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 지각에 존재하는 산소는 대부분이 규산염이나 산화물, 물의 형태로도 존재한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -381,7 +381,7 @@
 (염 / 염 :mod (규 / 규산-00))
 
 
-# ::id snt22.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 물에 포함된 산소는 지각에 존재하는 산소 전체의 질량 백분율의 88.81%를 차지한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -406,7 +406,7 @@
 (전 / 전체 :mod (산 / 산소-00))
 
 
-# ::id snt23.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 많은 양의 산소가 호흡, 연소 등으로 사용되지만 대기 중의 산소의 비율은 거의 일정한데, 이는 광합성 때문이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -430,7 +430,7 @@
 (합 / 합성 :mod (광 / 광-00))
 
 
-# ::id snt24.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 대기 중의 산소는 세 종류의 동위 원소로 이루어져 있는데, 16O가 99.759%, 17O가 0.037%, 18O가 0.204%를 차지한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -456,7 +456,7 @@ exception raised
 (원 / 원소 :mod (동 / 동위-00))
 
 
-# ::id snt25.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.Wiki.015 ::date 2019-12-16 ::annotator gabrielle
 # ::snt 대기 중의 산소는 대부분 이원자 분자 상태로 존재한다.
 # ::note
 (존 / 존재-01
@@ -468,7 +468,7 @@ exception raised
 	:ARG2 (중 / 중
 		:op1 (대2 / 대기)))
 
-# ::id snt26.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 물에 존재하는 산소의 경우 지역에 따라 동위 원소의 비율이 다르게 나타난다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -492,7 +492,7 @@ exception raised
 (지 / 지역 :mod (경 / 경우-00))
 
 
-# ::id snt27.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle
 # ::snt 14O, 15O, 19O는 인공적으로 합성되는 방사성 동위 원소이다.
 # ::note
 (원 / 원소
@@ -505,7 +505,7 @@ exception raised
 	:ARG1-of (합 / 합성-00
 		:manner (인 / 인공)))
 
-# ::id snt28.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 산소의 동소체는 이원자 분자 형태의 O2, 오존으로 알려진 삼원자 분자 형태의 O3, 희귀하고 불안정한 O4 등이 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -529,7 +529,7 @@ exception raised
 (형 / 형태 :mod (분 / 분자-00))
 
 
-# ::id snt29.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle ::preferred True
+# ::id snt29.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle
 # ::snt O4는 자성을 띠지 않고 옅은 푸른 빛깔을 띤다.
 # ::note
 (a / and
@@ -541,7 +541,7 @@ exception raised
 		:ARG1 (빛 / 빛깔
 			:ARG1-of (푸 / 푸르-01))))
 
-# ::id snt30.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle ::preferred True
+# ::id snt30.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle
 # ::snt O4 분자는 쉽게 해리되어 O2 두 분자를 생성한다.
 # ::note
 (생 / 생성-01
@@ -551,7 +551,7 @@ exception raised
 		:ARG1 분
 		:manner (쉽 / 쉽-01)))
 
-# ::id snt31.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt31.E2017.Wiki.015 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 지구 대기에 존재하는 오존의 90% 이상이 지표로부터 15~40㎞ 고도의 오존층에 위치하고 있으며, 생명체에게 해로운, 우주로부터 오는 단파 자외선을 거의 흡수한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -592,7 +592,7 @@ exception raised
 (층 / 층 :mod (오 / 오존-00))
 
 
-# ::id snt32.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle ::preferred True
+# ::id snt32.E2017.Wiki.015 ::date 2019-12-17 ::annotator gabrielle
 # ::snt 그러나 지표 가까이에 존재하는 오존은 강한 산화력을 가지며 건강에 해로워 대기 오염물질로 취급한다.
 # ::note
 (a / and

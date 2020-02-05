@@ -1,4 +1,4 @@
-# ::id snt0.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 文 대통령, 경제부총리 김동연·외교부 장관 여성 강경화 내정.
 # ::note
 (a / and
@@ -16,7 +16,7 @@
             :ARG2-of (h2 / have-org-role-91
                 :ARG1 (g / government-organization :wiki "대한민국_외교부" :name (이4 / 이름 :op1 "외교부"))))))
 
-# ::id snt1.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 문재인 대통령은 21일 '경제 사령탑'인 경제부총리 겸 기획재정부 장관 후보자에 김동연(60) 아주대 총장, 외교부 장관 후보자에 여성인 강경화(62) 유엔 사무총장 정책특보를 각각 내정했다.
 # ::note
 (a / and
@@ -52,7 +52,7 @@
         :time (d2 / date-entity :day 21))
     :mod (각 / 각각))
 
-# ::id snt2.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 인사가 다소 지연되던 청와대 국가안보실장엔 정의용(71) 아시아정당 국제회의 공동 상임위원장이, 정책실장엔 장하성(64) 고려대 경영학과 교수가 임명됐다.
 # ::note
 (a / and
@@ -79,7 +79,7 @@
             :ARG2-of (h4 / have-org-role-91
                 :ARG1 g))))
 
-# ::id snt3.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 문 대통령은 이날 청와대 춘추관 브리핑룸에서 "새 정부의 경제-외교안보 분야 인사를 직접 국민에게 말씀드리겠다"며 직접 이 같은 인사를 발표했다.
 # ::note
 (발 / 발표-01
@@ -106,7 +106,7 @@
         :part-of (b / building :wiki - :name (이4 / 이름 :op1 "춘추관")
             :part-of (g / government-organization :wiki "청와대" :name (이5 / 이름 :op1 "청와대")))))
 
-# ::id snt4.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 외교안보실장 하마평에 올랐던 문정인(66) 연세대 명예특임 교수와, 대미 특사인 홍석현(68) 전 중앙일보·JTBC 사장은 대통령의 통일외교안보특보를 맡게 됐다.
 # ::note
 (h / have-org-role-91
@@ -147,7 +147,7 @@
     :ARG1 (g / government-organization :wiki "대한민국_국민경제자문회의" :name (이3 / 이름 :op1 "국민경제자문회의"))
     :ARG2 (부 / 부의장))
 
-# ::id snt6.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 김동연 부총리 후보자는 충북 음성 출신으로 '고졸신화의 인간승리 드라마'로 불린다.
 # ::note
 (부 / 부르-02
@@ -182,7 +182,7 @@
                     :op2 (취 / 취직-00
                         :ARG1 (은 / 은행)))))))
 
-# ::id snt8.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 문 대통령은 "새 정부는 일찍이 경험하지 못한 저성장 위기 속 출범해 빠른 시일 내 위기를 극복하고 일자리를 통한 경제 활성화를 만드는 게 가장 중요한 국정과제"라며 "종합적 위기관리능력과 과감한 추진력을 가장 중요하게 고려했다"고 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -261,7 +261,7 @@
                                 :ARG0 p
                                 :ARG1 (g2 / government-organization :wiki "대한민국_기획재정부" :name (이3 / 이름 "재정부"))))))))))
 
-# ::id snt10.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 강경화 장관 후보자는 서울 출생으로 이화여고를 졸업, 매사추세츠대학 커뮤니케이션 박사 학위를 받았다.
 # ::note
 (받 / 받-01
@@ -375,7 +375,7 @@
                             :mod (외4 / 외교))
                         :quant (여 / 여러)))))))
 
-# ::id snt13.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 정의용 신임 실장은 서울 출신으로 서울고, 서울대 외교학과를 졸업했다.
 # ::note
 (a / and
@@ -392,7 +392,7 @@
             :topic (외 / 외교학)
             :part-of (u / university :wiki "서울대학교" :name (이4 / 이름 :op1 "서울대")))))
 
-# ::id snt14.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 현재 아시아정당 국제회의 공동 상임위원장이다.
 # ::note
 (h / have-org-role-91
@@ -401,7 +401,7 @@
         :mod (공 / 공동))
     :time (현 / 현재))
 
-# ::id snt15.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 문 대통령이 각국 정상들과 '전화 외교'를 할 때 배석해 역할을 해왔다.
 # ::note
 (역 / 역할-00
@@ -459,7 +459,7 @@
                             :op1 (경2 / 경제)
                             :op2 (민 / 민생))))))))
 
-# ::id snt17.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 장하성 신임 실장은 광주 출생으로, 경기고를 졸업해 펜실베니아대 경영학 박사학위를 받았다.
 # ::note
 (a / and
@@ -479,7 +479,7 @@
             :topic (경 / 경영학))
         :ARG2 (u / university :wiki "펜실베이니아_대학교" :name (이4 / 이름 :op1 "펜실베니아대"))))
 
-# ::id snt18.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 문 대통령은 "장 실장은 한국 사회의 경제적 불평등을 지속적으로 연구한 경제학 분야의 석학, 실천 운동가"라며 "과거 재벌 대기업 중심 경제 패러다임에서 벗어나 사람 중심, 중소기업 중심으로 경제사회정책을 변화시키고, 경제민주화와 소득주도성장, 국민성장을 함께 추진할 최고 적임자로 판단했다"고 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -575,7 +575,7 @@
                 :time (이2 / 이번)
                 :mod (처 / 처음)))))
 
-# ::id snt20.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 문정인 신임 특보는 제주가 고향으로, 오현고를 졸업하고 메릴랜드대에서 정치학 박사 학위를 받았다.
 # ::note
 (a / and
@@ -595,7 +595,7 @@
             :topic (정 / 정치학))
         :ARG2 (u / university :wiki "메릴랜드_대학교" :name (이4 / 이름 :op1 "메릴랜드대"))))
 
-# ::id snt21.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
 # ::snt 홍석현 신임 특보는 서울 출신으로 경기고, 스탠포드대를 졸업했다.
 # ::note
 (a / and
@@ -610,7 +610,7 @@
         :ARG1 (s / school :wiki "경기고등학교" :name (이3 / 이름 :op1 "경기고"))
         :ARG1 (u / university :wiki "스탠퍼드_대학교" :name (이4 / 이름 :op1 "스탠포드대"))))
 
-# ::id snt22.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle
 # ::snt 한국신문협회 고문을 맡고 있다.
 # ::note
 (h / have-org-role-91
@@ -661,7 +661,7 @@
                     :ARG1 a4
                     :accompanier p))))))
 
-# ::id snt24.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle
 # ::snt 김광두 신임 부의장은 전남 나주 출생으로 광주제일고를 졸업, 하와이대 경제학 박사 학위를 받았다.
 # ::note
 (a / and
@@ -733,7 +733,7 @@
                         :topic (경4 / 경제)))
                 :time (이4 / 이제)))))
 
-# ::id snt26.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle
 # ::snt 그러면서 "경제가 갈 길이 성장 분배 이분법이 아니라 선순환이 있다. 이론과 실무를 두루 경험한 김 부의장이 중책을 맡은 만큼 헌법 취지대로 활성화해 고단한 국민 삶을 개선하는데 실질적 역할을 해줄 것을 기대한다"고 부연했다.
 # ::note
 (a / and

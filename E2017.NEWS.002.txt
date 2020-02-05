@@ -1,4 +1,4 @@
-# ::id snt0.E2017.NEWS.002 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.002 ::date 2019-09-04 ::annotator gabrielle
 # ::snt “같은 반 아이돌 연습생, 정유라만 조퇴 봐준다며 울었다.”
 # ::note 12/18 검수
 (말 / 말하-01
@@ -15,7 +15,7 @@
                 :ARG2 (조 / 조퇴-00
                     :ARG0 p)))))
 
-# ::id snt1.E2017.NEWS.002 ::date 2019-09-04T19:15 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.002 ::date 2019-09-04T19:15 ::annotator gabrielle
 # ::snt “돈 자랑 많이 하고 불손하고 오만했다.”
 # ::note 12/18 검수
 (말 / 말하-01
@@ -26,7 +26,7 @@
         :op2 (불 / 불손-00)
         :op3 (오 / 오만-00)))
 
-# ::id snt2.E2017.NEWS.002 ::date 2019-09-04T19:18 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.002 ::date 2019-09-04T19:18 ::annotator gabrielle
 # ::snt 최순실(61) 씨의 딸 정유라(21) 씨가 다녔던 서울 청담고의 교사·학생들은 대부분 최 씨 모녀를 이런 식으로 기억했다.
 # ::note
 (기 / 기억-01
@@ -59,7 +59,7 @@
         :op2 p2)
     :manner (이5 / 이렇-01))
 
-# ::id snt3.E2017.NEWS.002 ::date 2019-09-04T19:43 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.002 ::date 2019-09-04T19:43 ::annotator gabrielle
 # ::snt 특히 최 씨는 체육특기자 담당 교사에게 “잘라버리겠다” “애 아빠(정윤회)가 가만 안 둘 것”이라며 엄포도 놓았다.
 # ::note 보조사
 (협 / 협박-01
@@ -86,7 +86,7 @@
         :ARG2 사)
     :mod (특 / 특히))
 
-# ::id snt4.E2017.NEWS.002 ::date 2019-09-04T20:06 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.002 ::date 2019-09-04T20:06 ::annotator gabrielle
 # ::snt 이 같은 사실은 19일 서울시교육청이 국회 김병욱 더불어민주당 의원에게 제출한 청담고 감사자료(지난해 11월 실시)에서 고스란히 드러났다.
 # ::note
 (드 / 드러나-01
@@ -120,7 +120,7 @@
             :time (d2 / date-entity :day 19)))
     :manner (고 / 고스란히))
 
-# ::id snt5.E2017.NEWS.002 ::date 2019-09-04T21:05 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.002 ::date 2019-09-04T21:05 ::annotator gabrielle
 # ::snt 감사자료에 따르면 담임들은 자신들이 작성하는 학교생활기록부에 정 씨에 대해 온통 칭찬만 적었다.
 # ::note 보조사
 (전 / 전하-01
@@ -142,7 +142,7 @@
             :ARG1-of (작 / 작성-01
                 :ARG0 p))))
 
-# ::id snt6.E2017.NEWS.002 ::date 2019-09-04T21:09 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.002 ::date 2019-09-04T21:09 ::annotator gabrielle
 # ::snt 1학년 담임교사는 “천성이 밝고 활달해 친구들의 고민을 잘 들어준다. 심성이 따뜻해 교우 관계가 원만하다”라고 기록했다.
 # ::note
 (기 / 기록-01
@@ -168,7 +168,7 @@
             :cause (따 / 따뜻하-01
                 :ARG1 (심 / 심성)))))
 
-# ::id snt7.E2017.NEWS.002 ::date 2019-09-04T21:19 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.002 ::date 2019-09-04T21:19 ::annotator gabrielle
 # ::snt 2학년 학생부에도 “훈련 등으로 친구들과 교류 시간은 부족하지만 급우들 사이에서 선망의 대상”이라고 쓰여있다.
 # ::note 보조사
 (쓰 / 쓰-01
@@ -186,7 +186,7 @@
     :location (학 / 학생부
         :mod (학2 / 학년 :ord (o / ordinal-entity :value 2))))
 
-# ::id snt8.E2017.NEWS.002 ::date 2019-09-04T21:29 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.002 ::date 2019-09-04T21:29 ::annotator gabrielle
 # ::snt 2학년 담임인 황 모 교사는 문학 시간에 출석도 하지 않은 정 씨에게 태도점수 만점을 줘 학생들의 항의를 받기도 했다.
 # ::note
 (항 / 항의-01
@@ -210,7 +210,7 @@
                 :ARG1 (수 / 수업
                     :topic (문 / 문학))))))
 
-# ::id snt9.E2017.NEWS.002 ::date 2019-09-04T21:51 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.002 ::date 2019-09-04T21:51 ::annotator gabrielle
 # ::snt 하지만 황 교사는 오히려 학생들에게 “못난 자식 감싸는 엄마 같은 마음이다. 국가대표 되려고 저렇게 고생하지 않느냐”며 정 씨를 두둔했다.
 # ::note
 (c / contrast-01
@@ -245,7 +245,7 @@
                         :ARG3 (공 / 공부-01))))
         :mod (오 / 오히려)))
 
-# ::id snt10.E2017.NEWS.002 ::date 2019-09-06T12:52 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.002 ::date 2019-09-06T12:52 ::annotator gabrielle
 # ::snt 반면 일반 교과 교사들은 정 씨를 ‘불성실한 학생’으로 기억했다.
 # ::note '기억하다'를 '여기다'로 처리
 (c / contrast-01
@@ -264,7 +264,7 @@
             :ARG1-of (성 / 성실-01
                 :polarity -))))
 
-# ::id snt11.E2017.NEWS.002 ::date 2019-09-06T01:04 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.002 ::date 2019-09-06T01:04 ::annotator gabrielle
 # ::snt 2학년 체육 교사는 ＂교실서 잔다 하기에 다른 학생을 보내 ‘운동장에 나오라’고 하면 ‘깨우지 말라’며 따르지 않았다”고 말했다.
 # ::note 2학년 체육 교사의 해석 (((1학년) 체육) 교사) 또는 '1학년을 가르치는 체육 교사'
 (말 / 말하-01
@@ -297,7 +297,7 @@
             :ARG1 (자 / 자-00
                 :location (교 / 교실)))))
 
-# ::id snt12.E2017.NEWS.002 ::date 2019-09-06T01:16 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.002 ::date 2019-09-06T01:16 ::annotator gabrielle
 # ::snt 1학년 과학 담당 오 모 교사는 “한 학기 1~2번 정도 본 것 같다”고 했다.
 # ::note 1학년 과학 담당의 해석
 (하 / 하-02
@@ -317,7 +317,7 @@
                     :ARG1 2
                     :ARG2 (t2 / temporal-quantity :quant 1 :unit (학3 / 학기)))))))
 
-# ::id snt13.E2017.NEWS.002 ::date 2019-09-06T01:26 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.002 ::date 2019-09-06T01:26 ::annotator gabrielle
 # ::snt 영어(2학년)를 담당했던 최 모 교사는 “수학여행 때 1박도 하지 않고 숙소 앞에서 엄마 차를 타고 돌아갔다”고 기억했다.
 # ::note
 (기 / 기억-01
@@ -339,7 +339,7 @@
                 :op1 (숙 / 숙소)))
         :time (수 / 수학여행)))
 
-# ::id snt14.E2017.NEWS.002 ::date 2019-09-06T01:36 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.002 ::date 2019-09-06T01:36 ::annotator gabrielle
 # ::snt 정 씨의 한 동창생은 “자기는 대학이 이미 정해져 있어 공부할 필요도 없다, 잠자러 학교에 나온다고 말하곤 해 짜증 나고 기분 나빴다”고 말했다.
 # ::note
 (말 / 말하-01
@@ -370,7 +370,7 @@
                     :ARG3 (학 / 학교)
                     :purpose (잠 / 잠자-00))))))
 
-# ::id snt15.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle
 # ::snt 또 다른 동창생도 “아침에 왔다가 점심도 안 먹고 집에 갔다. 옆 친구와도 어울리지 않았다”고 전했다.
 # ::note 점심도 안 먹고 가다 처리
 (전 / 전하-01
@@ -397,7 +397,7 @@
                         :ARG2 (친 / 친구
                             :location (옆 / 옆))))))))
 
-# ::id snt16.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle
 # ::snt 청담고는 다른 학생들의 출석 인정엔 깐깐했지만 유독 정 씨에겐 관대했다.
 # ::note
 (관 / 관대하-01
@@ -417,7 +417,7 @@
                         :ARG3 (공 / 공부-01))
                     :ARG1-of (다 / 다르-01))))))
 
-# ::id snt17.E2017.NEWS.002 ::date 2019-09-06T02:06 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.002 ::date 2019-09-06T02:06 ::annotator gabrielle
 # ::snt 1학년 때 사회를 가르친 김 모 교사는 “예체능계 학생이 많아 출결이 깐깐한데 (정 씨는) 입학 때부터 출석 인정이 당연시돼 의아했다”고 말했다.
 # ::note 깐깐하다 주격 조사
 (말 / 말하-01
@@ -443,7 +443,7 @@
                         :ARG3 (공 / 공부-01))
                     :mod (예 / 예체능계)))))))
 
-# ::id snt18.E2017.NEWS.002 ::date 2019-09-06T02:16 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.002 ::date 2019-09-06T02:16 ::annotator gabrielle
 # ::snt 2학년 경제를 담당했던 송 모 교사도 “같은 반에 아이돌 연습생이 있었는데 정유라만 조퇴를 봐준다고 울면서 하소연을 하곤 했다”고 증언했다.
 # ::note 보조사
 (증 / 증언-01
@@ -468,7 +468,7 @@
         :manner (울 / 울-00
             :ARG0 p2)))
 
-# ::id snt19.E2017.NEWS.002 ::date 2019-09-06T02:26 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.002 ::date 2019-09-06T02:26 ::annotator gabrielle
 # ::snt 당시 담임인 황 교사는 이 연습생에겐 “학교에 빠지면 안 된다”며 단호했다고 한다.
 # ::note
 (하 / 하-02
@@ -488,7 +488,7 @@
                     :ARG3 (연 / 연습-01))
                 :mod (이2 / 이)))))
 
-# ::id snt20.E2017.NEWS.002 ::date 2019-09-07T01:56 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.002 ::date 2019-09-07T01:56 ::annotator gabrielle
 # ::snt 결국 해당 학생은 같은 해 다른 학교로 전학을 갔다.
 # ::note
 (가 / 가-01
@@ -503,7 +503,7 @@
         :ARG1-of (같 / 같-01))
     :mod (결 / 결국))
 
-# ::id snt21.E2017.NEWS.002 ::date 2019-09-07T01:57 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.002 ::date 2019-09-07T01:57 ::annotator gabrielle
 # ::snt 당시 같은 반이었던 한 동창생은 “예체능을 전공하는 다른 친구들이 늘 정유라만 조퇴시켜 줘 불만이 많았다”고 전했다.
 # ::note
 (전 / 전하-01
@@ -528,7 +528,7 @@
                 :wiki "정유라_(승마_선수)"
                 :name (이 / 이름 :op1 "정유라")))))
 
-# ::id snt22.E2017.NEWS.002 ::date 2019-09-07T02:07 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.002 ::date 2019-09-07T02:07 ::annotator gabrielle
 # ::snt 하지만 감사에서 황 교사는 “정확하게 기억나지 않는다”라는 입장을 고수했다.
 # ::note
 (c / contrast-01
@@ -543,7 +543,7 @@
                     :manner (정 / 정확-01))))
         :time (감 / 감사-00)))
 
-# ::id snt23.E2017.NEWS.002 ::date 2019-09-07T02:09 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.002 ::date 2019-09-07T02:09 ::annotator gabrielle
 # ::snt 실제로 고 3년 당시 정 씨의 출석일수는 17일에 불과했다.
 # ::note
 (불 / 불과-01
@@ -557,7 +557,7 @@
     :ARG1 (t2 / temporal-quantity :quant 17 :unit (일 / 일))
     :mod (실 / 실제))
 
-# ::id snt24.E2017.NEWS.002 ::date 2019-09-07T02:11 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.002 ::date 2019-09-07T02:11 ::annotator gabrielle
 # ::snt 또 고 1·2 때는 각각 126일과 137일을 출석한 것으로 기록돼 있지만, 실제 출석일은 정확히 확인되지 않는다.
 # ::note
 (확 / 확인-01
@@ -579,7 +579,7 @@
             :mod (각 / 각각)))
     :mod (또 / 또))
 
-# ::id snt25.E2017.NEWS.002 ::date 2019-09-07T02:14 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.NEWS.002 ::date 2019-09-07T02:14 ::annotator gabrielle
 # ::snt 시 교육청 관계자는 “‘출석 인정’을 그냥 ‘출석’으로 기록해 실제 출석 날짜를 파악하기가 어렵다”고 말했다.
 # ::note
 (말 / 말하-01
@@ -601,7 +601,7 @@
                 :ARG1 (인 / 인정-01
                     :ARG1 (출3 / 출석-01))))))
 
-# ::id snt26.E2017.NEWS.002 ::date 2019-09-07T02:24 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.002 ::date 2019-09-07T02:24 ::annotator gabrielle
 # ::snt ‘출석 인정’은 등교하지 않았지만 대회 참가 등으로 출석을 인정해 주는 경우로 ‘출석’과 구분해 기록해야만 한다.
 # ::note
 (o / obligate-01
@@ -618,7 +618,7 @@
         :domain (인 / 인정-01
             :ARG1 (출3 / 출석-01))))
 
-# ::id snt27.E2017.NEWS.002 ::date 2019-09-07T02:28 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.NEWS.002 ::date 2019-09-07T02:28 ::annotator gabrielle
 # ::snt 최 씨는 학교를 찾아와 교사들에게 막말을 하거나 엄포를 놓기도 했다.
 # ::note
 (a / and
@@ -720,7 +720,7 @@
     :time (뒤 / 뒤
         :op1 (temporal-quantity :quant 2 :unit (주 / 주))))
 
-# ::id snt30.E2017.NEWS.002 ::date 2019-09-08T00:17 ::annotator gabrielle ::preferred True
+# ::id snt30.E2017.NEWS.002 ::date 2019-09-08T00:17 ::annotator gabrielle
 # ::snt 이 말에 담임은 항의하기는커녕 “애 아빠가 딸바보군요”라며 맞장구를 쳤다고 한다.
 # ::note 보조사
 (하 / 하-02

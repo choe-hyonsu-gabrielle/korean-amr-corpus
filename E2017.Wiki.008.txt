@@ -1,9 +1,9 @@
-# ::id snt0.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 하버드 대학교
 # ::note
 (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
 
-# ::id snt1.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle
 # ::snt 하버드 대학교(Harvard University)는 미국의 아이비 리그 사립대학교이다.
 # ::note
 (대 / 대학교
@@ -13,7 +13,7 @@
         :ARG2 (u2 / university :wiki "아이비_리그" :name (이2 / 이름 :op1 "아이비" :op2 "리그")))
     :location (c / country :wiki "미국" :name (이3 / 이름 :op1 "미국")))
 
-# ::id snt2.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle
 # ::snt 하버드 대학교는 오랜 역사와 큰 영향력, 그리고 많은 재산으로 세계의 일류 대학 중 하나가 되었다.
 # ::note
 (되 / 되-01
@@ -30,7 +30,7 @@
         :op3 (재 / 재산
             :ARG1-of (많 / 많-01))))
 
-# ::id snt3.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 하버드 대학교는 1636년에 매사추세츠 식민지 일반의회가 설립하였다.
 # ::note
 (설 / 설립-01
@@ -38,7 +38,7 @@
     :ARG1 (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
     :time (d / date-entity :year 1636))
 
-# ::id snt4.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 미국에서 가장 오래된 대학교며, 처음에는 '새로운 대학'(New College) 또는 '새 도시 대학'(The college at New Towne)으로 불렸으나, 1639년 3월 13일에 '하버드 칼리지'(Harvard College)라는 이름을 지었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -62,7 +62,7 @@
 (대 / 대학 :mod (도 / 도시-00))
 
 
-# ::id snt5.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 젊은 청교도 성직자 존 하버드의 성을 따서 지은 것이다.
 # ::note
 (짓 / 짓-01
@@ -74,7 +74,7 @@
                     :ARG2 (성 / 성직자))
                 ::ARG1-of (젊 / 젊-01)))))
 
-# ::id snt6.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 그는 유언을 남겨서 4백여권의 책과 재산의 절반인 현금 779파운드를 학교에 기부하였다.
 # ::note
 (기 / 기부-01
@@ -93,7 +93,7 @@
         :ARG0 그
         :ARG1 (유 / 유산)))
 
-# ::id snt7.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 훗날에 여러 학과와 전문대학원들이 통합되면서 하버드 대학교가 되었다.
 # ::note
 (되 / 되-01
@@ -105,7 +105,7 @@
     :ARG2 (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
     :time (훗 / 훗날))
 
-# ::id snt8.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 지금도 학부는 하버드 칼리지라고 부른다.
 # ::note 보조사 '도' 누락
 (부 / 부르-02
@@ -114,7 +114,7 @@
         :name-of (s / school :wiki -))
     :time (지 / 지금))
 
-# ::id snt9.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 찰스 윌리엄 엘리엇은 40년간 하버드 총장으로 일하면서 하버드 대학교를 근대 연구 대학으로 변모시켰다.
 # ::note
 (변 / 변모-01
@@ -128,7 +128,7 @@
         :ARG0-of (연 / 연구-01)
         :mod (근 / 근대)))
 
-# ::id snt10.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 엘리엇의 개혁은 선택 과목, 소규모 강의 등에 관한 변화도 포함하고 있었다.
 # ::note
 (i / include-91
@@ -141,7 +141,7 @@
             :op2 (강 / 강의
                 :mod (소 / 소규모)))))
 
-# ::id snt11.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 하버드 모델은 미국 교육에 영향을 끼쳤다.
 # ::note
 (영 / 영향-01
@@ -150,7 +150,7 @@
     :ARG1 (교 / 교육-01
         :location (c / country :wiki "미국" :name (이2 / 이름 :op1 "미국"))))
 
-# ::id snt12.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle
 # ::snt 하버드 대학교는 현재까지 졸업생과 교수를 포함해서 세계에서 가장 많은 157명의 노벨상 수상자를 배출했다.
 # ::note
 (배 / 배출-01
@@ -170,7 +170,7 @@
                 :op2 (교 / 교수))))
     :time (현 / 현재))
 
-# ::id snt13.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 또한 프랭클린 루즈벨트와 존 F. 케네디에 이르기까지 미국에서 가장 많은 총 7명의 미국 대통령, 36명의 퓰리처상 수상자, 미국에서 가장 많은 21명의 연방 대법원 대법관과 7명의 세계은행 총재, 세계에서 가장 많은 62명의 억만장자와 미국에서 가장 많은 335명의 로즈 장학생이 하버드를 졸업했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -226,7 +226,7 @@
 (총 / 총재 :mod (은 / 은행-00))
 
 
-# ::id snt14.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 세계 각국에 포진한 하버드 유학파들로 인해 하버드 출신은 미국뿐만 아니라 전 세계의 지도층을 형성하고 있다는 말이 나올 정도로, 미국내뿐만 아니라 세계적으로도 높은 권위를 자랑한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -266,7 +266,7 @@
 (파 / 파 :ARG0-of (유 / 유학-01))
 
 
-# ::id snt15.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 하버드 대학교의 학부는 4년제 과정이다.
 # ::note
 (과 / 과정
@@ -274,7 +274,7 @@
     :domain (학 / 학부
         :poss (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))))
 
-# ::id snt16.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle
 # ::snt 학부 학생들은 의학, 법학, 경영학 등의 전문 분야는 공부할 수 없으며 자연과학, 응용과학, 사회과학, 인문학 등을 공부한다.
 # ::note
 (a / and
@@ -298,7 +298,7 @@
             :op3 (사 / 사회과학)
             :op4 (인 / 인문학))))
 
-# ::id snt17.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle
 # ::snt 전문대학원 과정에 메디컬 스쿨, 로스쿨, 비즈니스 스쿨과 케네디 스쿨 등을 두고 있다.
 # ::note
 (i / include-91
@@ -314,7 +314,7 @@
         :poss (대4 / 대학원
             :mod (전 / 전문))))
 
-# ::id snt18.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 아이비리그 대학 중의 하나인 하버드 대학교는 기독교인은 지식이 부족하면 안 된다는 신념을 실천하기 위하여 책과 현금을 기증한 영국 청교도 목사 존 하버드의 이름을 딴 미국 교육 역사에서 처음의 대학교이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -359,7 +359,7 @@
 (인 / 인 :mod (교 / 교-00))
 
 
-# ::id snt19.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 하버드 대학교는 1636년 메사추세츠 식민지 관할 의원회(Great and General Court of Massachusetts Bay Colony)의 투표를 거쳐 대학교 설립을 구체화시키게 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -396,7 +396,7 @@
 (회 / 회 :mod (의 / 의원-00))
 
 
-# ::id snt20.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 영국 식민지 시대에 시작된 하버드 대학교는 처음에는 학생 아홉 명과 강사 한 명을 두고 목사 양성을 목적으로 출범했다고 한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -431,7 +431,7 @@
 (지 / 지 :mod (식 / 식민-00))
 
 
-# ::id snt21.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 찰스턴 출신의 존 하버드 목사가 이곳에 정착한지 얼마되지 않은 1638년 세상을 떠나면서 그의 장서와 재산을 뉴 잉글랜드에 새로 세워진 대학교인 하버드 대학교에 기증함으로써, 하버드 대학교는 존 하버드 목사의 이름을 추모하는 의미에서 1639년 하버드 칼리지(Harvard College)로 명명되게 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -478,7 +478,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt22.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle
 # ::snt 1650년에 하버드 칼리지의 헌장(charter)이 수립되었다.
 # ::note
 (수 / 수립-01
@@ -486,7 +486,7 @@
         :topic (u / university :wiki - :name (이 / 이름 :op1 "하버드" :op2 "칼리지")))
     :time (d / date-entity :year 1650))
 
-# ::id snt23.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 초기 하버드 대학교는 많은 청교도 목사를 양성했다.
 # ::note
 (양 / 양성-01
@@ -498,7 +498,7 @@
             :ARG2 (목 / 목사)))
     :time (초 / 초기))
 
-# ::id snt24.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle
 # ::snt 1782년에 메디컬 스쿨(Harvard Medical School), 1816년에 신학대학원(Harvard Divinity School), 1817년에 로스쿨(Harvard Law School), 1867년에 치의학대학원(Harvard School of Dental Medicine), 1908년에 비즈니스 스쿨(Harvard Business School), 1920년에 교육대학원(Harvard Graduate School of Education), 1922년에 공공보건대학원(Harvard School of Public Health), 그리고 1936년에 케네디 스쿨(Harvard Kennedy School)을 설립하면서 차츰 현대적인 종합대학이 됐다.
 # ::note
 (되 / 되-01
@@ -539,7 +539,7 @@
             :ARG1 (u / university :wiki - :name (이 / 이름 :op1 "케네디" :op2 "스쿨"))
             :time (d8 / date-entity :year 1936))))
 
-# ::id snt25.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 하버드 대학교의 메인 캠퍼스(main campus)는 중앙 케임브리지 시에 있는 하버드 야드(Harvard Yard) 중심에 있으며 그 인근에 있는 하버드 스퀘어(Harvard Square)까지 연장되어 있다.
 # ::note
 (a / and
@@ -555,7 +555,7 @@
             :location (인 / 인근
                 :op1 중))))
 
-# ::id snt26.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 하버드 비즈니스 스쿨과 하버드 스타디움(Harvard Stadium)을 포함한 많은 대학의 운동 시설들은 찰스 강의 다른 면인 하버드 스퀘어로부터 남서쪽 건너편에 있는 보스턴 올스턴 지역에 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -592,7 +592,7 @@
 (편 / 편-00 :mod (건 / 건너-01))
 
 
-# ::id snt27.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.Wiki.008 ::date 2019-12-23 ::annotator gabrielle
 # ::snt 메인 캠퍼스에서 찰스 강 건너편에 자리잡고 있는 올스턴 지역까지 도보로 갈 수 있다.
 # ::note
 (가 / 가능-01
@@ -603,7 +603,7 @@
                 :op1 (r / river :wiki "찰스강" :name (이 / 이름 :op1 "찰스" :op2 "강"))))
         :manner (도 / 도보)))
 
-# ::id snt28.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 하버드 메디컬 스쿨, 하버드 덴털 스쿨, 하버드 공공보건대학원은 보스턴 롱우드 메디컬 앤드 아카데믹 에리어(Longwood Medical and Academic Area)에 위치해 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -629,14 +629,14 @@
 (원 / 원 :mod (대 / 대학-00))
 
 
-# ::id snt29.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt29.E2017.Wiki.008 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 하버드 로스쿨은 하버드 야드 북쪽에 위치해 있다.
 # ::note 위치하다
 (u / university :wiki "하버드_법학대학원" :name (이 / 이름 :op1 "하버드" :op2 "로스쿨")
     :location (북 / 북쪽
         :direction-of (l / location :wiki - :name (이2 / 이름 :op1 "하버드" :op2 "야드"))))
 
-# ::id snt30.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt30.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 하버드 야드에는 중앙 관리 사무소, 대학교 메인 도서관들, 세버 홀(Sever Hall), 유니버시티 홀(University Hall)을 포함한 대학교 건물들, 메모리얼 교회(Memorial Church), 다수의 학부 1학년생 기숙사들이 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -679,7 +679,7 @@
 (홀 / 홀 :mod (유 / 유니버시티-00))
 
 
-# ::id snt31.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt31.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 각각 기숙사는 학부생, 사감, 교수를 위한 방 뿐만 아니라 식당, 도서관, 다양한 그밖에 학생시설들을 포함한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -708,7 +708,7 @@
 (시 / 시설 :mod (학 / 학생-00))
 
 
-# ::id snt32.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt32.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그 시설은 에드워드 하크니스(Edward Harkness)에 의해서 최선을 다해서 하나의 선물로 만들어졌다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -730,7 +730,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt33.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt33.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이전 래드클리프 칼리지 캠퍼스의 중앙인 래드클리프 야드는 교육대학원과 캠브리지 공원에 인접해 있다.
 # ::note
 -- FRAMES ----------------------------------------

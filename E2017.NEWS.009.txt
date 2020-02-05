@@ -1,4 +1,4 @@
-# ::id snt0.E2017.NEWS.009 ::date 2019-11-19 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.009 ::date 2019-11-19 ::annotator gabrielle
 # ::snt 北, IRBM 이어 지대공·지대함 미사일 성공… ICBM만 남아.
 # ::note
 (a / and
@@ -21,7 +21,7 @@
 			:path (탄2 / 탄도
 				:mod (대 / 대륙간)))))
 
-# ::id snt1.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 북한은 8일 강원도 원산에서 지대함 순항미사일 수발을 동해상으로 발사하는 데 성공해 미사일 다종화 능력을 과시했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -49,7 +49,7 @@
 (화 / 화 :mod (종 / 종-00))
 
 
-# ::id snt2.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 지난달 14일 중거리탄도미사일(IRBM) 화성-12와 같은 달 21일 준중거리탄도미사일(MRBM) 북극성-2형, 27일 KN-06 지대공미사일, 29일 스커드계열 지대함·지대지 겸용 탄도미사일에 이어 이번 지대함 순항미사일까지 성공적으로 발사했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -105,7 +105,7 @@
 (함 / 함-00 :mod (대 / 대-01))
 
 
-# ::id snt3.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 화성-12 발사 이후 한 달도 되지 않은 기간에 5종의 신형 미사일 능력을 보여준 셈이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -136,7 +136,7 @@
 (이 / 이후-00 :mod (발 / 발사-01))
 
 
-# ::id snt4.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이번에 발사한 지대함 순항미사일은 4월 15일 평양에서 열린 김일성 생일 105주년 기념 열병식에서 차량에 실린 원통형 발사관 4개짜리 미사일로 추정된다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -176,7 +176,7 @@
 (형 / 형 :mod (원 / 원통-00))
 
 
-# ::id snt5.E2017.NEWS.009 ::date 2019-11-19 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.009 ::date 2019-11-19 ::annotator gabrielle
 # ::snt 북한이 그간 쐈던 미사일도 모두 열병식에서 공개됐다.
 # ::note
 (공 / 공개-01
@@ -188,7 +188,7 @@
 			:duration (그 / 그간)))
 	:location (열 / 열병식))
 
-# ::id snt6.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 북한이 열병식에서 공개한 미사일 중 아직까지 쏘지 않은 것은 대륙간탄도미사일(ICBM)뿐이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -208,7 +208,7 @@
 (식 / 식 :mod (열 / 열병-00))
 
 
-# ::id snt7.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 군 당국은 북한이 발사에 성공한 IRBM 화성-12의 액체연료 엔진 3∼4개를 클러스터링(결합)한 ICBM을 조만간 쏘아 올릴 가능성이 큰 것으로 판단하고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -239,7 +239,7 @@
 (연 / 연료 :mod (액 / 액체-00))
 
 
-# ::id snt8.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이와 관련, 북한 노동신문은 지난달 31일 "우리는 최고 수뇌부의 명령에 따라 임의의 시간에 임의의 장소에서 대륙간탄도로켓 시험발사를 진행할 준비가 되어있다"고 주장했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -284,7 +284,7 @@
 (신 / 신문-01 :mod (노 / 노동-00))
 
 
-# ::id snt9.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 북한이 지난달 14일 이후 발사에 성공한 5종의 미사일은 유사시 한반도로 전개되는 미군 증원전력의 길목을 겨냥하고, 우리 군이 구축 중인 한국형 미사일방어체계(KAMD) 무력화를 노린 전략무기로 평가되고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -332,7 +332,7 @@
 (화 / 화 :mod (무 / 무력-00))
 
 
-# ::id snt10.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 화성-12는 최정점 고도 2천110여㎞로 780여㎞를 비행했으나, 군 당국은 정상발사 각도(30∼45도)로 쏠 경우 4천500∼5천㎞를 비행할 수 있을 것으로 판단하고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -362,7 +362,7 @@
 (발 / 발사-01 :mod (정 / 정상-00))
 
 
-# ::id snt11.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 태평양 괌 기지뿐 아니라 하와이 미군 태평양사령부까지 사정권에 두고 있다.
 # ::note 사정권에 두다
 (가 / 가능-01
@@ -373,7 +373,7 @@
 					:location (i / island :wiki "괌" :name (이2 / 이름 :op1 "괌")
 						:location (o / ocean :wiki "태평양" :name (이3 / 이름 :op1 "태평양"))))))))
 
-# ::id snt12.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 북극성-2도 최정점 고도 560여㎞로 500㎞를 비행했다.
 # ::note
 (a / and
@@ -385,7 +385,7 @@
 				:op1 (d / distance-quantity :quant 560 :unit (k / kilometer))))
 		:extent (d2 / distance-quantity :quant 500 :unit (k2 / kilometer))))
 
-# ::id snt13.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.009 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 정상발사 각도로 쐈다면 1천㎞ 이상을 비행할 수 있어 주일미군기지를 타격할 수도 있다.
 # ::note
 (가 / 가능-01
@@ -402,7 +402,7 @@
 				:mod (발 / 발사-01)
 				:mod (정 / 정상)))))
 
-# ::id snt14.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 지난달 27일 발사 성공한 '북한판 패트리엇'으로 불리는 '번개 5호'(KN-06) 지대공 유도미사일은 사거리가 150여㎞로 추정된다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -432,7 +432,7 @@
 (유 / 유도-01 :mod (공 / 공-00))
 
 
-# ::id snt15.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 유사시 평양 등 북한 상공으로 전개되는 한미 연합군 항공기를 노리고 개발한 미사일이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -462,7 +462,7 @@
 (항 / 항공 :mod (군 / 군-00))
 
 
-# ::id snt16.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이번에 지대함 순항미사일까지 발사에 성공함으로써 공중과 해상의 타격체계를 갖추게 된 것으로 평가된다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -492,7 +492,7 @@
 (함 / 함-00 :mod (대 / 대-01))
 
 
-# ::id snt17.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 특히 지난달 29일 발사한 스커드 계열의 지대함·지대지 겸용 미사일은 해상과 지상의 표적에 대한 명중률이 향상된 것으로 분석됐다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -524,7 +524,7 @@
 (함 / 함-00 :mod (대 / 대-01))
 
 
-# ::id snt18.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 애초 지대지 미사일로 개발된 스커드 미사일을 지대지 또는 유사시 지대함 미사일로 겸용해 사용하도록 개조했으며 액체연료와 산화제를 빠른 시간에 주입할 수 있는 자동화 시스템과 이동식 발사차량(TEL)에서 미사일을 세우는 기립 장치를 자동화했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -582,7 +582,7 @@
 (화 / 화 :mod (자 / 자동-00))
 
 
-# ::id snt19.E2017.NEWS.009 ::date 2019-11-25 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.009 ::date 2019-11-25 ::annotator gabrielle
 # ::snt 우리 군이 구축 중인 KAMD 무력화를 노리고 개발한 미사일로 평가되고 있다.
 # ::note KAMD를 named-entity로 보지 않고 풀어 쓰지도 않음. ICBM 등 수정 필요. 무엇을 무엇으로 평가하다의 동격 처리 방법
 (평 / 평가-01
@@ -594,7 +594,7 @@
 						:ARG0 (군 / 군
 							:poss (우 / 우리))))))))
 
-# ::id snt20.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 북한의 최근 미사일 개발 동향은 중국의 반접근 지역거부(A2/AD) 전략을 모방한 '북한판 접근거부' 전략으로 전문가들은 평가하고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -631,7 +631,7 @@
 (지 / 지역-00 :mod (접 / 접근-01))
 
 
-# ::id snt21.E2017.NEWS.009 ::date 2019-11-25 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.009 ::date 2019-11-25 ::annotator gabrielle
 # ::snt A2는 오키나와 등 미국의 전진기지나 항모강습단을 공격할 수 있는 능력을 확보해 미군 전력이 서태평양 해역으로 접근하는 것을 지연시키는 전략이다.
 # ::note
 (전 / 전략
@@ -652,7 +652,7 @@
 							:poss (c2 / country :wiki "미국" :name (이4 / 이름 :op1 "미국")))
 						:op2 (항 / 항모강습단 :poss c2)))))))
 
-# ::id snt22.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt AD는 대만해협이나 동·남중국해 등 중국의 연안 지역에서 분쟁이 발생할 때 미군이나 동맹군의 '행동의 자유(Freedom of Action)'를 차단해 일정한 지역에 개입을 못 하도록 거부하는 것이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -690,7 +690,7 @@
 (지 / 지역 :mod (연 / 연안-00))
 
 
-# ::id snt23.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.009 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 김동엽 경남대 극동문제연구소 교수는 "지금 북한의 미사일 전략의 핵심은 거부적 억제전략으로 보인다"면서 "중국의 A2/AD(반접근 지역거부)를 모방한 북한판 접근거부로 분석된다"고 말했다.
 # ::note
 -- FRAMES ----------------------------------------

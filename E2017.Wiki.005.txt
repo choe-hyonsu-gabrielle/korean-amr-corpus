@@ -1,5 +1,5 @@
 /usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 힘 (물리)
 # ::note
 -- FRAMES ----------------------------------------
@@ -9,7 +9,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt1.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 물리학에서 힘은 물체의 운동, 방향 또는 구조를 변화시키는 원인이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -25,7 +25,7 @@
 (학 / 학 :mod (물 / 물리-00))
 
 
-# ::id snt2.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 다른 말로, 힘은 질량을 가진 물체의 속도를 변화시키는 요인(이는 정지 상태에서 이동하기 시작하는 것도 포함)이며, 즉 물체를 가속시키거나 신축성이 있는 물체는 변형시킬 수 있고, 가속과 변형 둘 다 일어날 수도 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -60,7 +60,7 @@
 (성 / 성 :mod (신 / 신축-00))
 
 
-# ::id snt3.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 또한 힘은 밀리거나 밀어내는 것이라는 직관적인 개념으로도 설명할 수 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -78,7 +78,7 @@
 (적 / 적 :mod (직 / 직관-00))
 
 
-# ::id snt4.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 힘은 크기와 방향을 모두 가졌기 때문에 벡터량으로 표현한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -92,7 +92,7 @@
 (량 / 량 :mod (벡 / 벡터-00))
 
 
-# ::id snt5.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 힘은 뉴턴이라는 국제단위계로 측정되며 F라는 기호로 표현한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -108,7 +108,7 @@
 (단 / 단위 :mod (국 / 국제-00))
 
 
-# ::id snt6.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 뉴턴 운동 법칙의 제2법칙의 원래 형태는 물체의 알짜힘이 미분 시간과 운동량의 변화의 곱과 같다는 형태였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -128,7 +128,7 @@
 (힘 / 힘 :mod (알 / 알짜-00))
 
 
-# ::id snt7.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 만약 물체의 질량이 일정할 경우, 이 법칙은 물체에 작용하는 알짜힘은 알짜힘의 방향에 작용하는 가속도에 비례하고 물체의 질량에 비례한다는 의미이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -150,7 +150,7 @@
 (힘 / 힘 :mod (알 / 알짜-00))
 
 
-# ::id snt8.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 힘의 공식으로는 다음과 같이 표현된다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -161,7 +161,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt9.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 기호 위의 화살표는 크기와 방향 모두를 가진 벡터량을 의미하는 기호이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -178,7 +178,7 @@
 (표 / 표 :mod (화 / 화살-00))
 
 
-# ::id snt10.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 힘과 관련된 개념으로는 다음이 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -190,7 +190,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt11.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 먼저 추력은 물체의 속도를 증가시킨다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -201,7 +201,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt12.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 항력은 물체의 속도를 감소시킨다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -212,7 +212,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt13.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 돌림힘은 물체에 대한 각속도 변화를 만들어낸다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -231,7 +231,7 @@
 (힘 / 힘 :mod (돌 / 돌림-00))
 
 
-# ::id snt14.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 확장된 개념의 각 부분은 일반적으로 인접한 부분에 힘을 작용시킨다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -248,7 +248,7 @@
 (적 / 적 :mod (일 / 일반-00))
 
 
-# ::id snt15.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이러한 힘의 분포는 물체의 소위 변형력을 통해 알 수 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -269,7 +269,7 @@
 (력 / 력 :mod (변 / 변형-00))
 
 
-# ::id snt16.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 압력은 이 변형력의 간단한 형태 중 하나이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -283,7 +283,7 @@
 (력 / 력 :mod (변 / 변형-00))
 
 
-# ::id snt17.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 변형력은 보통 고체 물질의 변형이나 액체 물질이 흐르는 원인이 된다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -303,7 +303,7 @@
 (물 / 물질 :mod (액 / 액체-00))
 
 
-# ::id snt18.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 고전 고대의 철학자들은 정역학적이고 동역학적인 물체에 관한 힘에 대해 연구했고 단순 기계를 발명했지만, 사상가 아르키메데스와 아리스토텔레스의 힘에 대한 이해는 근본적인 오류가 있었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -347,7 +347,7 @@
 (적 / 적 :mod (정 / 정역학-00))
 
 
-# ::id snt19.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이러한 부분은 때때로 마찰력과 같은 명백하게 힘이 아닌 성분에 대해 불완전히 이해하거나 자연 운동에 대한 본질과 같은 것에 대한 불충분한 결과로 인해 나타난다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -385,7 +385,7 @@
 (운 / 운동-00 :mod (자 / 자연-01))
 
 
-# ::id snt20.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이 근본적인 오류는 힘이 심지어 일정한 속도(등속도)로 운동하더라도 힘이 필요하다는 믿음이었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -402,7 +402,7 @@
 (적 / 적 :mod (근 / 근본-00))
 
 
-# ::id snt21.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이전의 운동과 힘에 관한 오류의 대부분은 결국 아이작 뉴턴에 의해 수정되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -422,7 +422,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt22.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그의 수학적 통찰력으로 만들어진 뉴턴 운동 법칙은 거의 3백 년동안 이보다 더 뛰어난 법칙이 나오지 않았다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -449,7 +449,7 @@
 (적 / 적 :mod (수 / 수학-00))
 
 
-# ::id snt23.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 20세기 초반에는 알버트 아인슈타인이 상대성 이론을 발표하면서 빛의 속도에 가까운 운동량을 가진 물체에 대한 제대로 된 힘의 움직임을 예측하고 중력은 관성으로 인해 생성된 힘이라는 통찰력을 가져다주었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -490,7 +490,7 @@
 (초 / 초반 :mod (세 / 세기-00))
 
 
-# ::id snt24.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 현대에서는 양자역학의 기술을 이용해 빛의 속도에 가깝게 입자를 가속시킬 수 있고 입자물리학은 원자보다 작은 입자간의 힘을 설명하는 표준 모형을 만들어냈다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -523,7 +523,7 @@
 (학 / 학 :mod (물 / 물리-00))
 
 
-# ::id snt25.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 표준 모형은 게이지 보손이라는 입자를 교환하여 힘을 방출 및 흡수한다는 것을 예측했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -543,7 +543,7 @@
 (보 / 보손 :mod (게 / 게이지-00))
 
 
-# ::id snt26.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 오직 4개의 상호 작용만이 현재 알려져 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -558,7 +558,7 @@
 (작 / 작용-01 :mod (상 / 상호-00))
 
 
-# ::id snt27.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 힘의 크기에 따라 나누면 다음과 같다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -574,7 +574,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt28.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 강한 상호작용, 전자기력, 약한 상호작용, 중력이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -595,7 +595,7 @@
 (작 / 작용-01 :mod (상 / 상호-00))
 
 
-# ::id snt29.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt29.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 고에너지 물리학은 1970년대와 80년대 입자들의 관측 결과 약한 상호작용과 전자기력이 근본적으로는 전기·약 작용 상호작용으로 표현할 수 있다는 것을 알아냈다.
 # ::note
 -- FRAMES ----------------------------------------

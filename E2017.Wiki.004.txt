@@ -1,5 +1,5 @@
 /usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 마르틴 루터
 # ::note
 -- FRAMES ----------------------------------------
@@ -9,7 +9,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt1.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 본래 아우구스티노회 수사였던 루터는 로마 가톨릭교회의 여러 가르침과 전통을 거부하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -26,7 +26,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt2.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 대사의 오용과 남용을 강하게 성토한 그는 1517년 95개 논제를 게시함으로써 도미니코회 수사이자 대사령 설교 담당자인 요한 테첼에 맞섰다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -59,7 +59,7 @@
 (자 / 자 :ARG0-of (담 / 담당-01))
 
 
-# ::id snt3.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 1520년 그는 교황 레오 10세로부터 자신의 모든 주장을 철회하라는 요구를 받았으나 거부하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -83,7 +83,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt4.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 1521년 보름스 회의에서 마찬가지로 신성 로마 제국의 카를 5세 황제로부터 같은 요구를 받았으나 거부함으로써 결국 교황에게 파문을 선고받았다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -113,7 +113,7 @@
 (교 / 교황 :mod (결 / 결국-00))
 
 
-# ::id snt5.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 또한 황제로부터 삭권 박탈당했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -129,7 +129,7 @@
 (박 / 박탈-01 :mod (삭 / 삭권-00))
 
 
-# ::id snt6.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 마르틴 루터는 원래 로마 가톨릭교회의 사제였으나, 로마 가톨릭교회에 항거하여, 가톨릭교회의 교리를 논박하고, 성서가 지니고 있는 기독교 신앙에서의 권위와 그리스도에 대한 믿음과 하나님의 은혜를 통한 구원을 강조하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -162,7 +162,7 @@
 (신 / 신앙 :mod (기 / 기독교-00))
 
 
-# ::id snt7.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt (다섯 솔라) 그러나 루터는 스스로가 시작한 이 일을 ‘종교 개혁’으로 생각하지 않았는데, 그 이유는 종교 개혁이 하나님에게 이끌림을 받아, 할 수 없이 한 일이기 때문이라고 말하였기 때문이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -211,7 +211,7 @@
 (개 / 개혁-01 :mod (종 / 종교-00))
 
 
-# ::id snt8.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그는 ‘복음주의자’로서 복음을 전파하기를 원했고, 자신이 설교자, 박사, 교수라고 불리기를 원했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -240,7 +240,7 @@
 (주 / 주의-01 :mod (복 / 복음-00))
 
 
-# ::id snt9.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그러나 그의 삶 가운데 그가 행했던 일들은 엄청난 결과를 가져왔다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -259,7 +259,7 @@
 (들 / 들 :ARG0-of (일 / 일-01))
 
 
-# ::id snt10.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그로 인해 개신교가 태동했을 뿐 아니라, 성서 번역, 많은 저작 활동, 작곡과 설교를 통해 사회와 역사가 크게 변화되었기 때문이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -288,7 +288,7 @@
 (활 / 활동-01 :mod (저 / 저작-00))
 
 
-# ::id snt11.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 대한민국의 기독교 한국 루터회에서는 그를 말틴 루터라고 부른다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -303,7 +303,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt12.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 루터는 1483년 독일의 작센안할트 주의 아이스레벤(Eisleben)에서 광산업에 종사하는 아버지 한스 루터(Hans Luther)와 어머니 마가레테 린데만 (Margarethe Lindemann) 사이에서 태어났다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -331,7 +331,7 @@
 (산 / 산업 :mod (광 / 광-00))
 
 
-# ::id snt13.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그의 집안은 중산층으로 생계에는 지장이 없었으나 상당히 검소하여, 그의 모친은 다른 동네 부인들과 같이 장작을 주웠다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -351,7 +351,7 @@
 (층 / 층 :mod (중 / 중산-00))
 
 
-# ::id snt14.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그의 부친은 교회의 타락을 묵인하지 않는 양심을 가진 기독교인으로 알려져 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -369,7 +369,7 @@
 (인 / 인 :mod (기 / 기독교-00))
 
 
-# ::id snt15.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 루터는 주기도문에서 "하늘에 계신 우리 아버지"라는 문장에 부담을 느낄만큼 엄격한 아버지의 그늘에서 자랐다고 전해진다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -394,7 +394,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt16.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그래서 진로문제도 자신의 적성과 흥미가 아닌, 아버지의 뜻대로 정해야 하였는데, 루터의 아버지는 아들을 법률가가 되어 사회적 성공을 하게 하려고, 에르푸르트 대학교에 입학시켰다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -436,7 +436,7 @@
 (적 / 적 :mod (사 / 사회-00))
 
 
-# ::id snt17.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 예비학교를 마친 루터는 5월에 본격적으로 법률 공부를 시작하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -457,7 +457,7 @@
 (학 / 학교 :mod (예 / 예비-00))
 
 
-# ::id snt18.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 루터가 대학교에서 공부를 계속 하던 중, 집에 갔다가 에르푸르트로 돌아가는 길이었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -490,7 +490,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt19.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 7월 2일, 슈토테르하임 근처에서 무시무시한 벼락이 옆에 떨어지는 순간 루터는 땅으로 엎어지면서 광부들의 수호성인을 부르며 소리질렀다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -521,7 +521,7 @@
 (성 / 성인-00 :mod (수 / 수호-01))
 
 
-# ::id snt20.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 수도원에 들어가려는 생각이 이미 무르익었던 터라 루터는 뇌우를 하나님의 음성으로 받아들이는 데 전혀 주저하지 않았다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -546,7 +546,7 @@
 (원 / 원 :mod (수 / 수도-00))
 
 
-# ::id snt21.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 루터는 자신의 기대에 어긋나는 아들의 진로변경에 좌절을 느낀 부친의 분노어린 반대에도 불구하고 7월 17일, 에르푸르트에 있는 “아우구스티누스(어거스틴) 은둔자 수도회” 소속 “검은 수도원”에 입회하여 수사신부가 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -607,7 +607,7 @@
 (회 / 회 :mod (수 / 수도-00))
 
 
-# ::id snt22.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 루터는 죄인인 인간이 어떻게 거룩하신 하나님과 바른 관계를 맺을 수 있을 것인가에 대해서 고뇌하였는데, 수도회에서는 그를 비텐베르크 대학교에서 공부하게 하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -639,7 +639,7 @@
 (회 / 회 :mod (수 / 수도-00))
 
 
-# ::id snt23.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 비텐베르크 대학교의 요한 스타우피츠 교수는 루터가 성서에 대해 진지하게 공부하면 평안을 찾을 것이라고 생각하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -664,7 +664,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt24.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그래서 그를 성서학 교수사제로 임명하였는데, 스타우피츠 교수의 결정은 루터가 신앙적인 고민을 해결하는데 도움이 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -694,7 +694,7 @@
 (학 / 학 :mod (성 / 성서-00))
 
 
-# ::id snt25.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 루터는 성서를 학문적으로 연구하면서 칭의론에 대해 생각하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -713,7 +713,7 @@
 (적 / 적 :mod (학 / 학문-00))
 
 
-# ::id snt26.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 칭의론은 인간은 죄인이라는 사실은 변하지 않지만, 그리스도를 믿는 믿음을 통해 올바른 사람으로 인정받는다는 교리이다.
 # ::note
 -- FRAMES ----------------------------------------

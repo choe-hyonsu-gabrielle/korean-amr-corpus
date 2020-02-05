@@ -1,4 +1,4 @@
-# ::id snt0.E2017.Wiki.019 ::date 2019-11-25 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.019 ::date 2019-11-25 ::annotator gabrielle
 # ::snt ABC (미국의 방송사)
 # ::note
 (c / company
@@ -9,7 +9,7 @@
             :ARG0 (방 / 방송-00)
             :location (c2 / country :wiki "미국" :name (이2 / 이름 :op1 "미국")))))
 
-# ::id snt1.E2017.Wiki.019 ::date 2019-11-25 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.019 ::date 2019-11-25 ::annotator gabrielle
 # ::snt 미국방송회사(美國放送協會)는 미국의 텔레비전, 라디오 방송을 운영하는 방송사이다.
 # ::note
 (운 / 운영-01
@@ -20,7 +20,7 @@
             :op2 (라 / 라디오)))
     :location (c2 / country :wiki "미국" :name (이2 / 이름 :op1 "미국")))
 
-# ::id snt2.E2017.Wiki.019 ::date 2019-11-25 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.019 ::date 2019-11-25 ::annotator gabrielle
 # ::snt 1948년 4월 19일에 텔레비전 방송을 시작하였다.
 # ::note
 (시 / 시작-01
@@ -28,7 +28,7 @@
         :medium (텔 / 텔레비전))
     :time (d / date-entity :year 1948 :month 4 :day 19))
 
-# ::id snt3.E2017.Wiki.019 ::date 2019-11-25 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.019 ::date 2019-11-25 ::annotator gabrielle
 # ::snt 현재 월트 디즈니 컴퍼니가 소유하고 있으며, 디즈니-ABC 텔레비전 그룹에 속해있다.
 # ::note
 (a / and
@@ -38,7 +38,7 @@
     :op2 (i / include-91
         :ARG2 (c2 / company :wiki - :name (이2 / 이름 :op1 "디즈니-ABC" :op2 "텔레비전" :op3 "그룹"))))
 
-# ::id snt4.E2017.Wiki.019 ::date 2019-12-01 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.019 ::date 2019-12-01 ::annotator gabrielle
 # ::snt 1939년 미국연방통신위원회는 NBC의 독점적인 시장지배를 인지하고 NBC의 두 네트워크를 NBC 레드 네트워크와 NBC 블루 네트워크 두 회사로 분리시키기로 결정했다.
 # ::note
 (결 / 결정-01
@@ -60,7 +60,7 @@
             :manner (독 / 독점-01)))
     :time (d / date-entity :year 1939))
 
-# ::id snt5.E2017.Wiki.019 ::date 2019-12-01 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.019 ::date 2019-12-01 ::annotator gabrielle
 # ::snt 1942년 NBC 레드와 NBC 블루는 완전히 다른 회사로 분리되었다.
 # ::note
 (분 / 분리-01
@@ -70,7 +70,7 @@
     :manner (완 / 완전-01)
     :time (d / date-entity :year 1942))
 
-# ::id snt6.E2017.Wiki.019 ::date 2019-12-01 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.019 ::date 2019-12-01 ::annotator gabrielle
 # ::snt 1944년 NBC 블루는 ABC (American Broadcasting Company)로 사명을 바꾸었고, NBC 레드는 NBC로 불리게 되었다.
 # ::note 사명
 (a / and

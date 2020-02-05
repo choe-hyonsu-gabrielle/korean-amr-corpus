@@ -1,4 +1,4 @@
-# ::id snt0.E2017.NEWS.001 ::date 2019-09-01 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.001 ::date 2019-09-01 ::annotator gabrielle
 # ::snt '13월의 보너스냐 세금폭탄이냐' 연말정산서비스 15일 시작.
 # ::note 12/18 검수
 (a / and
@@ -11,7 +11,7 @@
         :ARG1 (s / service* :wiki - :name (이 / 이름 :op1 "연말정산서비스"))
         :time (d / date-entity :day 15)))
 
-# ::id snt1.E2017.NEWS.001 ::date 2019-09-01 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.001 ::date 2019-09-01 ::annotator gabrielle
 # ::snt 지난해 소득분에 대한 연말정산 서비스가 15일부터 시작된다.
 # ::note 12/18 검수
 (시 / 시작-01
@@ -20,7 +20,7 @@
             :time (지 / 지난해)))
     :time (d / date-entity :day 15))
 
-# ::id snt2.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 올해부터 4대 보험료 자료도 홈택스에서 조회할 수 있어 편리해졌지만 시력 보정용 안경이나 교복 구입비, 일부 종교단체 기부금 등은 근로자가 따로 꼼꼼히 챙겨야 13월의 세금 폭탄 대신 보너스를 받을 수 있다.
 # ::note 12/18 검수
 (c / contrast-01
@@ -59,7 +59,7 @@
             :manner (따 / 따로)
             :manner (꼼 / 꼼꼼-00))))
 
-# ::id snt3.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 국세청은 홈택스(www.hometax.go.kr)에서 소득·세액공제 자료를 조회할 수 있는 '연말정산 간소화 서비스'를 15일 오전 9시부터 개통한다고 12일 밝혔다.
 # ::note 12/18 검수
 (밝 / 밝히-01
@@ -78,7 +78,7 @@
         :time (d / date-entity :day 15 :time 9:00))
     :time (d2 / date-entity :day 12))
 
-# ::id snt4.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 맞춤형 원천징수제도에 따라 원천징수세액을 80%로 선택한 근로자는 그간 낸 세금이 적어 연말정산 때 세금을 더 낼 가능성이 크다.
 # ::note 12/18 검수
 (크 / 크-01
@@ -105,7 +105,7 @@
                 :ARG1-of (적 / 적-02))
             :duration (그 / 그간))))
 
-# ::id snt5.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 반면 120%를 선택하면 월급에서 세금을 미리 많이 떼 연말정산 때 많이 돌려받을 수 있다.
 # ::note 12/18 검수
 (c / contrast-01
@@ -122,7 +122,7 @@
         :condition (선 / 선택-01
             :ARG1 (p / percentage-entity :value 120))))
 
-# ::id snt6.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 근로자들은 공인인증서로 홈택스에 접속해 연말정산 간소화 서비스를 통해 보장성 보험료, 의료비, 교육비, 주택자금, 기부금 등 소득·세액공제 증명 자료 14개 항목을 확인할 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -150,7 +150,7 @@
             :ARG1 (s2 / service* :wiki "홈택스" :name (이2 / 이름 :op1 "홈택스"))
             :instrument (공 / 공인인증서))))
 
-# ::id snt7.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 올해부터는 국민연금, 건강보험료 등 4대 보험료 자료와 이전에 대부분 제출되지 않은 폐업 의료기관의 의료비 자료도 제공돼 근로자의 편의를 높였다.
 # ::note 12/18 검수
 (높 / 높-01
@@ -210,7 +210,7 @@
                     :ARG1-of (기 / 기부-01)
                     :quant (일 / 일부))))))
 
-# ::id snt9.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 이 경우 근로자가 구입 장소나 기부단체에 직접 영수증을 따로 발급받아야 공제 혜택을 받을 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -234,7 +234,7 @@
     :domain (경 / 경우
         :mod (이 / 이)))
 
-# ::id snt10.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 연말정산간소화 서비스에서 조회되지 않거나 사실과 다르게 조회된 의료비가 있으면 17일까지 홈택스 내 '의료비 신고센터'에 신고하면 된다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -254,7 +254,7 @@
             :part-of (s3 / service* :wiki "홈택스" :name (이3 / 이름 :op1 "홈택스")))
         :time (이4 / 이전 :op1 (d / date-entity :day 17))))
 
-# ::id snt11.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 국세청은 신고가 접수된 의료기관에 수정 자료를 제출해달라고 요구하고 이를 반영해 20일에 수정된 의료비 자료를 제공한다.
 # ::note 12/18 검수
 (제 / 제공-01
@@ -277,7 +277,7 @@
             :ARG0 g
             :ARG1 자2)))
 
-# ::id snt12.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 20일 이후에도 의료비 자료가 수정되지 않고 사실과 다르다면 근로자가 해당 병원을 찾아 영수증을 직접 수집해야 한다.
 # ::note 12/18 검수
 (o / obligate-01
@@ -300,7 +300,7 @@
         :time (이 / 이후
             :op1 (d / date-entity :day 20))))
 
-# ::id snt13.E2017.NEWS.001 ::date 2019-07-12 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.001 ::date 2019-07-12 ::annotator gabrielle
 # ::snt 부양가족의 연말정산 간소화 자료는 사전에 자료 제공 동의를 받아야 열람할 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -315,7 +315,7 @@
                 :ARG1 자)
             :time (사 / 사전)))
 
-# ::id snt14.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.001 ::date 2019-09-02 ::annotator gabrielle
 # ::snt 올해는 온라인으로도 부양가족이 자료 제공 동의를 할 수 있어 편의성이 커졌다.
 # ::note 12/18 검수
 (크 / 크-01
@@ -329,7 +329,7 @@
             :medium (온 / 온라인)))
     :time (올 / 올해))
 
-# ::id snt15.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.001 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 의료비 중 배우자 난임 시술비는 사생활 보호를 위해 의료비와 별도로 구분되지 않는다.
 # ::note 12/18 검수
 (구 / 구분-01
@@ -345,7 +345,7 @@
     :purpose (보 / 보호-01
         :ARG1 (사 / 사생활)))
 
-# ::id snt16.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 근로자가 따로 난임 시술비 부분만 분류해 제출해야 700만 원 한도가 적용되지 않고 모두 공제받을 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -366,7 +366,7 @@
                     :topic (난 / 난임)))
             :manner (따 / 따로))))
 
-# ::id snt17.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 신생아 등 환자의 주민등록번호를 의료기관에 알려주지 않을 때에도 의료비 자료가 조회되지 않는다.
 # ::note 12/18 검수
 (조 / 조회-00
@@ -382,7 +382,7 @@
         :ARG2 (기 / 기관
             :mod (의2 / 의료)))
 
-# ::id snt18.E2017.NEWS.001 ::date 2019-09-03T12:43 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.001 ::date 2019-09-03T12:43 ::annotator gabrielle
 # ::snt 이 경우 근로자가 해당 병원에서 직접 영수증을 발급받아 공제해야 한다.
 # ::note 12/18 검수
 (o / obligate-01
@@ -399,7 +399,7 @@
     :domain (경 / 경우
         :mod (이 / 이)))
 
-# ::id snt19.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 지난해 중 입사하거나 퇴사한 경우에는 근무한 기간의 자료만 선택해 공제받을 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -413,7 +413,7 @@
         :op2 (퇴 / 퇴사-00)
         :time (지 / 지난해)))
 
-# ::id snt20.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 연말정산 간소화 서비스에 나온 내용은 귀찮더라도 꼼꼼히 살펴봐야 한다.
 # ::note 12/18 검수
 (o / obligate-01
@@ -424,7 +424,7 @@
         :manner (꼼 / 꼼꼼-00))
     :concession (귀 / 귀찮-01))
 
-# ::id snt21.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 자료가 잘못돼 공제 혜택을 과도하게 받으면 가산세를 물어야 할 수도 있기 때문이다.
 # ::note 12/18 검수
 (c / cause-01
@@ -439,7 +439,7 @@
             :cause (잘 / 잘못-02
                 :ARG1 (자 / 자료)))))
 
-# ::id snt22.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 공제 자료를 기반으로 공제 신고서를 전산으로 작성할 수 있는 '편리한 연말정산' 서비스는 18일부터 이용할 수 있다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -457,7 +457,7 @@
     :time (이3 / 이후
         :op1 (d / date-entity :day 18)))
 
-# ::id snt23.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.001 ::date 2019-09-03 ::annotator gabrielle
 # ::snt 국세청 홈택스에 접속한 뒤 연말정산 간소화 서비스에서 공제받을 항목을 선택하면 공제 신고서에 내용이 자동으로 반영된다.
 # ::note 12/18 검수
 (반 / 반영-01
@@ -474,7 +474,7 @@
             :ARG1 (s2 / service* :wiki "홈택스" :name (이2 / 이름 :op1 "홈택스")
                 :mod (g / government-organization :wiki "대한민국_국세청 :name (이3 / 이름 :op1 "국세청"))))))
 
-# ::id snt24.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 연말정산 간소화 서비스에서 조회되지 않은 자료만 근로자가 별도로 수집해 공제 신고서에 입력하면 된다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -492,7 +492,7 @@
                     :polarity -
                     :medium (s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스")))))))
 
-# ::id snt25.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 편리한 연말정산 서비스에서는 예상세액을 간편하게 계산할 수 있는 서비스도 제공한다.
 # ::note 12/18 검수
 (a / and
@@ -505,7 +505,7 @@
                         :ARG1-of (예 / 예상-01))
                     :manner (간 / 간편하-01))))))
 
-# ::id snt26.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 맞벌이 부부 중 어느 쪽이 공제 혜택을 더 많이 받을 수 있을지 파악해 세 부담을 줄일 수 있는 맞벌이 근로자 절세 안내도 받을 수 있다.
 # ::note 12/18 검수
 (a / and
@@ -532,7 +532,7 @@
                                     :ARG1-of (많 / 많-01
                                         :degree (더 / 더)))))))))))
 
-# ::id snt27.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 홈택스 스마트폰 애플리케이션을 이용하면 연말정산 공제 요건, 절세 방법 등 '꿀팁'도 얻을 수 있다.
 # ::note 12/18 검수
 (a / and
@@ -550,7 +550,7 @@
                 :mod (스 / 스마트폰)
                 :mod (s / service* :wiki "홈택스" :name (이2 / 이름 :op1 "홈택스"))))))
 
-# ::id snt28.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 연말정산 서비스를 이용하다 궁금한 점은 국세 상담센터(☎126)으로 문의하면 된다.
 # ::note 12/18 검수
 (가 / 가능-01
@@ -561,7 +561,7 @@
         :ARG2 (g / government-organization :wiki "국세상담센터" :name (이2 / 이름 :op1 "국세" :op2 "상담센터")
             :mod (p / phone-number-entity :value 126))))
 
-# ::id snt29.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle ::preferred True
+# ::id snt29.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 국세청은 "16일, 18일과 부가가치세 신고 마감일인 25일에는 홈택스 이용이 집중될 것으로 예상해 대기 시간이 길어질 수 있다"며 "여유를 갖고 접속해달라"라고 당부했다.
 # ::note 12/18 검수
 (당 / 당부-01

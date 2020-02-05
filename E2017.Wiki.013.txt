@@ -1,11 +1,11 @@
-# ::id snt0.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 니콜라 테슬라
 # ::note
 (p / person
     :wiki "니콜라_테슬라"
     :name (이 / 이름 :op1 "니콜라" :op2 "테슬라"))
 
-# ::id snt1.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 니콜라 테슬라(세르비아인, 1856년 7월 10일 ~ 1943년 1월 7일 경)는 오스트리아 헝가리 제국 출신 미국의 발명가, 물리학자, 기계공학자이자 전기공학자이다.
 # ::note
 (a / and
@@ -24,7 +24,7 @@
         :topic (전 / 전기공학))
     :location (c2 / country :wiki "미국" :name (이3 / 이름 :op1 "미국")))
 
-# ::id snt2.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 그는 상업 전기에 중요한 기여를 했으며, 19세기 말과 20세기 초 전자기학의 혁명적인 발전을 가능케 한 인물로 잘 알려져 있다.
 # ::note KPB는 자격격(~으로)를 동격(ARG1)으로 처리. 알-01 참고. '상업 전기에 중요한 기여를 했으며'에 대해 '기여가 상업전기에 중요하다' vs '중요한 기여를 상업 전기에 하다' 중 전자 채택. 혁명적. 세기 처리 기준 재확인.
 (알 / 알-01
@@ -46,7 +46,7 @@
                             :op2 (초 / 초
                                 :op1 (d2 / date-entity :century 20)))))))))
 
-# ::id snt3.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 테슬라의 특허와 이론적 연구는 전기 배전의 다상시스템과 교류 모터를 포함한 현대적 교류 시스템의 기초를 형성하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -77,7 +77,7 @@
 (적 / 적 :mod (현 / 현대-00))
 
 
-# ::id snt4.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 그의 이러한 연구는 2차 산업 혁명을 선도하는 역할을 하였다.
 # ::note 역할을 하다 --> 선도하다
 (선 / 선도-01
@@ -87,7 +87,7 @@
     :ARG1 (산 / 산업혁명
         :ord (o / ordinal-entity :value 2)))
 
-# ::id snt5.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 오스트리아 제국(현재의 크로아티아)의 크로아티아 군대 프런티어(Croatian Military Frontier)안의 쉬말리안이라는 마을에서 태어난 세르비아계 오스트리아인 테슬라는 태어날 때부터 오스트리아 제국의 지배를 받았으며 후에 미국의 시민이 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -122,7 +122,7 @@
 (프 / 프런티어 :mod (군 / 군대-00))
 
 
-# ::id snt6.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 라디오를 통한 무선 통신을 1894년 최초로 실현시킨 것과 전류전쟁의 승리로 인해 테슬라는 미국에서 가장 대단한 전기 공학자 중 하나로 널리 존경을 받았다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -161,7 +161,7 @@
 (통 / 통신-01 :mod (무 / 무선-00))
 
 
-# ::id snt7.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 그는 현대 전기 공학을 개척했으며 수많은 그의 발명은 선도자로서 중요한 역할을 하였다.
 # ::note
 (a / and
@@ -203,7 +203,7 @@
 (전 / 전기 :mod (현 / 현대-00))
 
 
-# ::id snt8.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 테슬라는 1893년 이전에 무선 에너지 통신부터 전력 장치까지 개발했으며, 비록 완성하진 못했지만 그의 와덴클리프 탑 프로젝트에서 대륙을 잇는 무선 통신을 실현시키기를 갈망했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -238,7 +238,7 @@
 (프 / 프로젝트 :mod (탑 / 탑-00))
 
 
-# ::id snt9.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 자기장의 국제 단위인 테슬라는 니콜라 테슬라의 이름을 딴 것이다.
 # ::note
 (따 / 따-01
@@ -248,7 +248,7 @@
 	:ARG2 (이 / 이름 :op1 "니콜라" :op2 "테슬라"
 		:name-of (p / person :wiki "니콜라_테슬라")))
 
-# ::id snt10.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 테슬라의 부친은 정교회 사제였다.
 # ::note
 (h / have-org-role-91
@@ -259,7 +259,7 @@
 	:ARG1 (r / religious-group :wiki "동방_정교회" :name (이2 / 이름 :op1 "정교회"))
 	:ARG2 (사2 / 사제))
 
-# ::id snt11.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle
 # ::snt 테슬라는 어릴 때부터 시를 즐겨 썼으며 나중에 미국으로 이민을 갈 때 시들 중 일부를 가져가기도 했다.
 # ::note -기도 하다 / 이민을 가다
 (a / and
@@ -282,7 +282,7 @@
 			:ARG1 c)
 		:time (나 / 나중)))
 
-# ::id snt12.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 다만 그는 자신의 시가 공개되는 것을 대단히 꺼려했으며 지극히 개인적인 이유로 시를 즐겼다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -308,7 +308,7 @@
 (적 / 적 :mod (개 / 개인-00))
 
 
-# ::id snt13.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle
 # ::snt 테슬라는 평생 동안 특별한 일이 있을 때마다 시 쓰기를 계속했다.
 # ::note 시 쓰기를 계속했다 / 계속 시를 썼다
 (계 / 계속-01
@@ -320,7 +320,7 @@
 			:ARG1-of (특 / 특별-01)))
 	:duration (평 / 평생))
 
-# ::id snt14.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 테슬라는 아주 어렸을 때부터 발명을 하기 시작했다.
 # ::note
 (시 / 시작-01
@@ -330,7 +330,7 @@
         :ARG1 p
         :degree (아 / 아주)))
 
-# ::id snt15.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 그가 가장 처음으로 발명한 것은 다섯 살 때 만든 작은 수차였다.
 # ::note
 (수 / 수차
@@ -342,7 +342,7 @@
         :ARG0 그
         :ord (o / ordinal-entity :value 1)))
 
-# ::id snt16.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 이는 오랜 시간이 흐른 후 독특한 터빈을 고안할 때 이용되었다고 알려져 있다.
 # ::note 흐르 표상 안함
 (알 / 알-01
@@ -355,7 +355,7 @@
                 :op1 (시 / 시간
                     :ARG1-of (오 / 오래-01))))))
 
-# ::id snt17.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 테슬라의 발명품 중에는 여러 실패작들도 많았는데, 대표적으로 ‘열여섯 마리 풍뎅이로 움직이는 장치’가 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -383,7 +383,7 @@
 (품 / 품 :mod (발 / 발명-00))
 
 
-# ::id snt18.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 테슬라는 발명에만 관심이 있던 것이 아니라 여느 아이와 같이 장난치기를 좋아하는 호기심 많은 소년이었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -400,7 +400,7 @@
 (심 / 심 :mod (호 / 호기-00))
 
 
-# ::id snt19.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 언제는 마을에 사는 부인이 입고 있던 긴 치마 위로 떨어져 치마를 찢어 놓은 적도 있었으며, 살아날 가망이 없다는 판정을 세 번이나 받았을 정도로 위험한 장난을 많이 쳤다고 한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -452,7 +452,7 @@
 (위 / 위 :mod (치 / 치마-00))
 
 
-# ::id snt20.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 물에서 놀다가 익사할 뻔한 적도 있었으며, 뜨거운 우유통 속에 들어가 산 채로 익을 뻔한 적도 있었다고 한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -491,7 +491,7 @@
 (통 / 통 :mod (우 / 우유-00))
 
 
-# ::id snt21.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.013 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 이처럼 테슬라는 매우 위험한 상황에 자주 놓였었다.
 # ::note 이처럼
 (놓 / 놓-01
@@ -503,7 +503,7 @@
     :frequency (자 / 자주)
     :mod (이 / 이처럼))
 
-# ::id snt22.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle
 # ::snt 테슬라의 형 다니엘은 열두 살에 불의의 사고로 죽었다.
 # ::note
 (죽 / 죽-01
@@ -517,7 +517,7 @@
 		:ARG1 p
 		:ARG2 (t / temporal-quantity :quant 12 :unit (살 / 살))))
 
-# ::id snt23.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle
 # ::snt 테슬라의 자서전에 따르면, 아버지의 친구가 선물해 준 말 때문에 다쳐 죽었다고 한다.
 # ::note 선물을 주다
 (말 / 말하-01
@@ -535,7 +535,7 @@
 									:ARG2 (아 / 아버지)))
 							:ARG2 (친 / 친구))))))))
 
-# ::id snt24.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이러한 비극적인 사건으로 인해서 테슬라는 어렸을 때부터 마음속으로 무서운 생각을 자주 했는데, 이는 후에 테슬라가 병적인 공포증과 강박관념을 가지게 되는 데 큰 영향을 끼쳤다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -588,7 +588,7 @@
 (증 / 증 :ARG0-of (공 / 공포-01))
 
 
-# ::id snt25.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle
 # ::snt 테슬라는 어렸을 때부터 상당히 유별난 성격을 가지고 있었다.
 # ::note
 (가 / 가지-01
@@ -600,7 +600,7 @@
 		:op1 (어 / 어리-01
 			:ARG1 p)))
 
-# ::id snt26.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 대표적인 예로 그는 식사를 할 때 항상 음식의 부피를 잰 후에야 먹기를 시작했는데, 그렇지 않으면 그는 식사에 아무런 흥미를 느낄 수 없었다고 한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -637,7 +637,7 @@
 (적 / 적 :ARG0-of (대 / 대표-01))
 
 
-# ::id snt27.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 뿐만 아니라 그는 반짝이는 크리스털이나 날카롭게 각진 면을 보면 흥미를 느끼곤 했지만 여자들의 귀걸이에는 격렬한 반감을 일으켰다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -667,7 +667,7 @@
 (들 / 들 :mod (여 / 여자-00))
 
 
-# ::id snt28.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.Wiki.013 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 또한 그는 신체적 접촉과 관련해 매우 민감했는데, 유명한 예로 그는 ‘누군가를 총으로 겨누고 있다면 모를까, 그렇지 않은 경우라면’ 절대로 다른 사람의 머리카락을 만지지 않았다고 한다.
 # ::note
 -- FRAMES ----------------------------------------

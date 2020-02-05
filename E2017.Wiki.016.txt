@@ -1,9 +1,9 @@
-# ::id snt0.E2017.Wiki.016 ::date 2019-12-06 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.016 ::date 2019-12-06 ::annotator gabrielle
 # ::snt 위그노
 # ::note
 (r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노"))
 
-# ::id snt1.E2017.Wiki.016 ::date 2019-12-06 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.016 ::date 2019-12-06 ::annotator gabrielle
 # ::snt 위그노는 프랑스의 개신교 신자들을 가리키는 말이다.
 # ::note
 (가 / 가리키-01
@@ -12,7 +12,7 @@
         :mod (개 / 개신교)
         :location (c / country :wiki "프랑스" :name (이2 / 이름 :op1 "프랑스"))))
 
-# ::id snt2.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle
 # ::snt 칼뱅주의를 추종한 프랑스 개신교 신자들은 스위스 주네브에서 세력을 규합하는데, 후에 이들을 프라이부르크, 베른, 제네바의 동맹이라는 뜻으로 위그노라고 불렀다.
 # ::note
 (a / and
@@ -36,7 +36,7 @@
                         :op3 (c4 / city :wiki "제네바" :name (이7 / 이름 :op1 "제네바"))))))
         :time (후 / 후)))
 
-# ::id snt3.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle
 # ::snt 프랑수아 1세는 그의 통치 기간에 위그노의 수가 늘어나도록, 그들을 관대하게 다루었다.
 # ::note
 (다 / 다루-02
@@ -51,7 +51,7 @@
     :time (통 / 통치-01
         :ARG0 p))
 
-# ::id snt4.E2017.Wiki.016 ::date 2019-12-06 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.016 ::date 2019-12-06 ::annotator gabrielle
 # ::snt 프랑스의 로마 가톨릭 교도들이 이끄는 기즈 가족과 프랑수아 2세는 위그노들에게 대항하였다.
 # ::note
 (대 / 대항-01
@@ -64,7 +64,7 @@
         :op2 (p / person :wiki "프랑수아_2세" :name (이4 / 이름 :op1 "프랑수아" :op2 "2세")))
     :ARG1 (r / religious-group :wiki "위그노" :name (이5 / 이름 :op1 "위그노")))
 
-# ::id snt5.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle
 # ::snt 1562년 위그노 전쟁, 1572년 성 바르톨로메오 축일 학살 등으로 로마 가톨릭 교도들과 갈등을 겪었으며, 교리적으로도 혼란을 겪었다.
 (o / or
     :op1 (갈 / 갈등-00
@@ -78,7 +78,7 @@
         :op2 (e / event :wiki "성_바르톨로메오_축일의_학살" :name (이2 / 이름 :op1 "성" :op2 "바르톨로메오" :op3 "축일" :op4 "학살")
             :time (d2 / date-entity :year 1572))))
 
-# ::id snt6.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle
 # ::snt 부의 정당한 축적을 인정한 칼뱅주의의 특징상 주로 상공업자 중에서 신도가 많았다.
 # ::note
 (많 / 많-01
@@ -95,7 +95,7 @@
                     :ARG1 (부 / 부)
                     :manner (정 / 정당하-01))))))
 
-# ::id snt7.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle
 # ::snt 프랑수아 2세가 1560년 사망하자, 샤를 9세와 황태후 카트린 드 메디시스가 정부를 지배하였다.
 # ::note
 (지 / 지배-01
@@ -109,7 +109,7 @@
         :ARG1 (p3 / person :wiki "프랑수아_2세" :name (이3 / 이름 :op1 "프랑수아" :op2 "2세"))
         :time (d / date-entity :year 1560)))
 
-# ::id snt8.E2017.Wiki.016 ::date 2019-12-06 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.016 ::date 2019-12-06 ::annotator gabrielle
 # ::snt 카트린은 기즈 공에 대항하는 위그노들의 균형을 촉진시켰다.
 # ::note
 (촉 / 촉진-01
@@ -119,7 +119,7 @@
             :ARG0-of (대 / 대항-01
                 :ARG1 (p2 / person :wiki "프랑수아_드_기즈_공작" :name (이3 / 이름 :op1 "기즈" :op2 "공"))))))
 
-# ::id snt9.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle
 # ::snt 그러나 두 교파 간의 기분은 내란이 일어나는 고통스러운 원인을 가져왔다.
 # ::note 비문
 (c / contrast-01
@@ -129,7 +129,7 @@
         :cause (기 / 기분
             :poss (교 / 교파 :quant 2))))
 
-# ::id snt10.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle
 # ::snt 성 바르톨로메오 축일에 프랑스 전국에서 가톨릭 교도들이 수천명의 위그노들을 학살하였다.
 # ::note
 (학 / 학살-01
@@ -142,7 +142,7 @@
     :time (축 / 축일
         :mod (p / person :wiki "바르톨로메오" :name (이2 / 이름 :op1 "성" :op2 "바르톨로메오"))))
 
-# ::id snt11.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle
 # ::snt 앙리 3세가 암살되고, 나바라의 군주 앙리(엔리케)가 부르봉 왕조를 열고, 앙리 4세로서 왕위에 올랐다.
 # ::note
 (a / and
@@ -159,7 +159,7 @@
         :ARG1 p2
         :ARG2 (왕2 / 왕위)))
 
-# ::id snt12.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle
 # ::snt 개신교 신자들에 대한 차별을 금지하는 낭트 칙령을 세워 위그노들에게도 신앙의 자유를 주었다.
 # ::note
 (주 / 주-01
@@ -173,7 +173,7 @@
                     :ARG1 (신2 / 신자
                         :mod (개 / 개신교)))))))
 
-# ::id snt13.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle
 # ::snt 루이 14세가 가톨릭을 프랑스의 국교로 삼기 위하여 낭트 칙령을 폐기하자, 수많은 위그노들이 네덜란드, 영국, 프로이센 등지로 망명하였다.
 # ::note
 (망 / 망명-00
@@ -191,7 +191,7 @@
             :ARG2 (국 / 국교
                 :poss (c4 / country :wiki "프랑스" :name (이7 / 이름 :op1 "프랑스"))))))
 
-# ::id snt14.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle
 # ::snt 일부는 북아메리카 (현재의 뉴욕과 캐롤라이나지역)으로 건너가기도 했다.
 # ::note
 (건 / 건너가-01
@@ -203,7 +203,7 @@
                 :op2 (s / state :wiki - :name (이3 / 이름 :op1 "캐롤라이나"))))))
 
 
-# ::id snt15.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle
 # ::snt 상공업은 물론, 여러가지 기술을 지니었던 그들이 망명하자, 프랑스의 경제는 몰락하고 말았다.
 # ::note
 (몰 / 몰락-00
@@ -216,7 +216,7 @@
                     :quant (여 / 여러가지)
                     :example (상 / 상공업))))))
 
-# ::id snt16.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle
 # ::snt 이것이 후에 프랑스 대혁명이 일어나는 원인을 가져왔다.
 # ::note 일어나 센스 번호 없음
 (일 / 일어나-01
@@ -224,7 +224,7 @@
     :ARG1 (e / event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스" :op2 "대혁명"))
     :time (후 / 후))
 
-# ::id snt17.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.016 ::date 2019-12-09 ::annotator gabrielle
 # ::snt 1802년 이후 위그노 곧 개신교 신자에 대한 종교의 자유가 인정되었다.
 # ::note
 (인 / 인정-01

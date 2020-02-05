@@ -1,16 +1,16 @@
-# ::id snt0.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle
 # ::snt 케냐
 # ::note
 (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
 
-# ::id snt1.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle
 # ::snt 케냐 공화국 또는 케냐(Kenya)는 동아프리카의 공화국이다.
 # ::note
 (공 / 공화국
 	:domain (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
 	:location (c2 / continent :wiki "동아프리카" :name (이 / 이름 :op1 "동아프리카")))
 
-# ::id snt2.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle
 # ::snt 인도양에 면해 있으며 북동쪽으로 소말리아, 북쪽으로 에티오피아와 남수단, 서쪽으로 우간다, 남쪽으로 탄자니아와 국경을 맞닿고 있다.
 # ::note relative-position 적용 여부
 (a / and
@@ -30,7 +30,7 @@
 			:op4 (c5 / country :wiki "탄자니아" :name (이6 / 이름 :op1 "탄자니아")
 				:direction (남 / 남쪽)))))
 
-# ::id snt3.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle
 # ::snt 수도는 나이로비이며 공용어는 영어와 스와힐리어이다.
 # ::note
 (a / and
@@ -41,7 +41,7 @@
 		:op1 (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
 		:op2 (l2 / language :wiki "스와힐리어" :name (이3 / 이름 :op1 "스와힐리어"))))
 
-# ::id snt4.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle
 # ::snt 케냐의 주요 종족은 키쿠유족, 루히아족, 루오족, 칼렌진족, 캄바족, 키시족,메루족 등 여러 민족으로 구성되어 있어 각각 다른 언어를 사용한다.
 # ::note 접속과 내포 구별이 불분명, include-91을 사용하지 않음
 (a / and
@@ -65,7 +65,7 @@
 			:ARG1-of (다 / 다르-01
 				:mod (각 / 각각)))))
 
-# ::id snt5.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle
 # ::snt 백인, 인도인, 아랍인 등 비아프리카계 민족은 전체 인구의 1% 정도를 차지한다.
 # ::note 차지-01을 사용하지 않고 include-91을 사용하는 것에 대해 검토 필요. be 동사와 같이 용언 프레임을 직접 활용할 수 없는 경우에만 용도를 한정? 비아프리카계
 (i / include-91
@@ -81,7 +81,7 @@
 	:ARG3 (정 / 정도
 		:quant (p / percentage-entity :value 1%)))
 
-# ::id snt6.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle
 # ::snt 동아프리카에서 발견된 화석에 따르면 조상이 2백만 년 전 이 지역에서 살았다고 한다.
 # ::note 따르-02
 (살 / 살-02
@@ -95,7 +95,7 @@
 			:ARG1-of (발 / 발견-01
 				:location (c / continent :wiki "동아프리카" :name (이2 / 이름 :op1 "동아프리카"))))))
 
-# ::id snt7.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle
 # ::snt 투르카나 호 근처에서의 최근 발굴에 따르면 호모 하빌리스(Homo habilis), 호모 에렉투스(Homo erectus)와 같은 호미니드인(hominid)이 260만 년 전 이 나라 땅에 있었다.
 # ::note
 (e / ethnic-group :wiki - :name (이 / 이름 :op1 "호미니드인")
@@ -114,7 +114,7 @@
 	:time (전 / 전
 		:op1 (t / temporal-quantity :quant 2600000 :unit (년 / 년))))
 
-# ::id snt8.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle
 # ::snt 케냐의 식민 시대 역사는 1885년 독일이 잔지바르(현 탄자니아의 잔지바르 섬) 술탄의 케냐 해안 영토에 보호령을 설치한 것으로 시작되었다.
 # ::note
 (시 / 시작-01
@@ -135,7 +135,7 @@
 						:time (현 / 현)))))
 		:time (d / date-entity :year 1885)))
 
-# ::id snt9.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle
 # ::snt 그 후 1888년 영국 동아프리카 회사가 들어왔다.
 # ::note
 (들 / 들어오-01
@@ -144,7 +144,7 @@
 		:mod (그 / 그))
 	:time (d / date-entity :year 1888))
 
-# ::id snt10.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle
 # ::snt 독일이 해안 영토를 1890년에 영국에게 넘겨줘 두 열강 사이의 분쟁도 적지 않았다.
 # ::note 두 열강이 분쟁하다, ~도 적지 않았다
 (적 / 적-02
@@ -159,7 +159,7 @@
 		:ARG2 (c2 / country :wiki "영국" :name (이2 / 이름 :op1 "영국"))
 		:time (d / date-entity :year 1890)))
 
-# ::id snt11.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle
 # ::snt 1952년 10월부터 1959년 12월까지 케냐는 영국의 지배에 대한 반란(마우마우 반란)으로 비상 사태하에 있었다.
 # ::note
 (사 / 사태
@@ -175,7 +175,7 @@
 		:op1 (d2 / date-entity :year 1952 :month 10)
 		:op2 (d3 / date-entity :year 1959 :month 12)))
 
-# ::id snt12.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle
 # ::snt 영국은 단계적으로 케냐의 독립을 허용할 수밖에 없었다.
 # ::note 적 파생
 (o / obligate-01
@@ -186,7 +186,7 @@
 			:ARG1 c)
 		:manner (단 / 단계적)))
 
-# ::id snt13.E2017.Wiki.001 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.001 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 그리하여 1957년 처음으로 아프리카인들이 피선거권을 가진 입법 회의 직접 선거를 치렀다.
 # ::note
 (a / and
@@ -199,7 +199,7 @@
 			:ord (o / ordinal-entity :value 1))
 		:time (d / date-entity :year 1957)))
 
-# ::id snt14.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그러면서 좀 더 온건한 세력에게 권력을 넘기려는 영국의 기대와는 달리 조모 케냐타(Jomo Kenyatta)가 이끄는 케냐 아프리카 국민연맹(KANU, Kenya African National Union)이 독립 정부 조직을 주도하게 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -240,7 +240,7 @@
 (조 / 조직-01 :mod (정 / 정부-00))
 
 
-# ::id snt15.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle
 # ::snt 1963년 12월 12일 케냐는 독립을 선포했다.
 # ::note
 (선 / 선포-01
@@ -249,7 +249,7 @@
 		:ARG0 c)
 	:time (d / date-entity :year 1963 :month 12 :day 12))
 
-# ::id snt16.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.001 ::date 2019-01-16 ::annotator gabrielle
 # ::snt 1년 후 케냐타는 케냐의 초대 대통령이 되었다.
 # ::note
 (되 / 되-01
@@ -261,7 +261,7 @@
 	:time (후 / 후
 		:op1 (t / temporal-quantity :quant 1 :unit (년 / 년))))
 
-# ::id snt17.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 케냐 인민연맹(KPU, Kenya People's Union)이 정당 활동이 금지된 1969년 이후로는 KANU가 유일한 정당이었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -282,7 +282,7 @@
 (활 / 활동-01 :mod (정 / 정당-00))
 
 
-# ::id snt18.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 1978년 케냐타 사망 이후 부통령이었던 대니얼 아랍 모이(Daniel arap Moi)가 예상을 깨고 권력 암투에서 승리해 케냐의 2대 대통령으로 취임하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -313,7 +313,7 @@
 (이 / 이후-00 :mod (사 / 사망-01))
 
 
-# ::id snt19.E2017.Wiki.001 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.001 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 1982년 6월 개헌으로 케냐는 공식적으로 일당 체제가 되었다.
 # ::note
 (되 / 되-01
@@ -324,7 +324,7 @@
 	:cause (개 / 개헌-00
 		:time (d / date-entity :year 1982 :month 6)))
 
-# ::id snt20.E2017.Wiki.001 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.001 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 그 후 1991년 12월, 국민들의 요구로 일당 체제를 폐기하고 1992년 다당(多黨) 선거가 치러졌다.
 # ::note
 (a / and
@@ -341,7 +341,7 @@
 	:time (후 / 후
 		:op1 (그 / 그)))
 
-# ::id snt21.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle
 # ::snt KANU가 과반수의 표를 획득하고 모이가 재선되었지만 야당도 의회석의 45%를 차지했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -362,7 +362,7 @@
 (수 / 수 :mod (과 / 과반-00))
 
 
-# ::id snt22.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그러나 헌법상 모이가 재선을 노릴 수 없게 된 2002년 대선에서는 야당이 연합하여 국민 무지개 연립(National Rainbow Coalition, NARC)을 결성, 므와이 키바키를 대표로 내세워 당선시켜 독립 후 계속되었던 KANU의 독주에 종지를 찍었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -413,7 +413,7 @@
 (후 / 후-00 :mod (독 / 독립-01))
 
 
-# ::id snt23.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.001 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그 후 개헌 문제가 케냐 정치의 최대 현안이 되었는데 이 문제로 국민 무지개 연립은 분열되었고 2005년에는 므와이 키바키가 지지한 개헌안이 대통령의 권한을 충분히 억제하지 않는다는 논란 속에 국민투표 끝에 부결되었다.
 # ::note
 -- FRAMES ----------------------------------------

@@ -1,9 +1,9 @@
-# ::id snt0.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 시카고 대학교
 # ::note
 (u / university :wiki "시카고_대학교" :name (이 / 이름 :op1 "시카고" :op2 "대학교"))
 
-# ::id snt1.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 시카고 대학교는 미국 일리노이 주 시카고에 있는 석유 재벌 존 D. 록펠러의 기부금으로 1890년에 설립된 명문의 연구 중심 사립 대학이며, 그 학업적 명성은 컬럼비아와 프린스턴 등의 아이비리그의 상위권 대학들과 어깨를 나란히 한다.
 # ::note 학업적
 (a / and
@@ -35,7 +35,7 @@
                 :op1 (u3 / university :wiki "컬럼비아_대학교" :name (이7 / 이름 :op1 "컬럼비아"))
                 :op2 (u4 / university :wiki "프린스턴_대학교" :name (이8 / 이름 :op1 "프린스턴"))))))
 
-# ::id snt2.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 특히 '시카고 학파'라고도 널리 알려진 만큼 경제학 분야는 명문대학들 중에서도 전 세계 1위로 평가받는다.
 # ::note 라고 알려지다
 (h / have-degree-91
@@ -53,7 +53,7 @@
         :ARG1 (s / school :wiki "시카고_학파_(경제학)" :name (이 / 이름 :op1 "시카고" :op2 "학파"))
         :manner (널 / 널리)))
 
-# ::id snt3.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 1891년 윌리엄 레이니 하퍼(William Rainey Harper)가 초대 총장으로 취임하여 1892년에 운영을 시작했다.
 # ::note
 (a / and
@@ -66,7 +66,7 @@
         :ARG1 (운 / 운영-01)
         :time (d2 / date-entity :year 1892)))
 
-# ::id snt4.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 1890년 석유 재벌 존 D. 록펠러의 기부금으로 개교하였다.
 # ::note
 (개 / 개교-00
@@ -77,7 +77,7 @@
                     :topic (석 / 석유)))))
     :time (d / date-entity :year 1890))
 
-# ::id snt5.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 학생들은 대도시 시카고로부터 각종 인턴십이나 일할 수 있는 기회 또는 문화생활의 혜택을 받고 있다.
 # ::note
 (받 / 받-01
@@ -95,7 +95,7 @@
     :ARG2 (c / city :wiki "시카고" :name (이 / 이름 :op1 "시카고")
         :mod (대 / 대도시)))
 
-# ::id snt6.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 학부생 16% 정도가 아시아계 학생이다.
 # ::note
 (i / include-91
@@ -104,7 +104,7 @@
     :ARG2 (학 / 학부생)
     :ARG3 (p / percentage-entity :value 16))
 
-# ::id snt7.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 지금까지 세계에서 네번째로 많은 총 89명의 노벨상 수상자들이 시카고대학에서 수학하거나 교수로 지냈다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -129,7 +129,7 @@
 (자 / 자 :ARG0-of (수 / 수상-01))
 
 
-# ::id snt8.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 미국 일리노이 주의 시카고 다운타운에서 남쪽으로 7마일 떨어진 하이드팍에 위치한 이 대학은 교수-학생 비율이 1대 5정도로 미국에서 가장 양호한 교수자원을 가진 학교 중의 하나로 평가되고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -168,7 +168,7 @@
 (자 / 자원 :mod (교 / 교수-00))
 
 
-# ::id snt9.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 시카고 대학은 실용적인 학문보다는 순수학문에 치중하는 전통적 경향을 띄고 있으며, 따라서 이 대학의 학생들은 처음 2년간 폭넓은 교양과목을 강조하는 리버럴 아츠 프로그램을 택하고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -199,7 +199,7 @@
 (학 / 학문 :mod (순 / 순수-00))
 
 
-# ::id snt10.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 뿐만 아니라, 시카고의 학구적인 학풍은 여러 대학 안내 책자에서 동부의 스와스모어 대학교와 서부의 캘리포니아 공과대학교, 리드 대학교와 더불어 미국에서 학생 공부시간이 가장 많은 것으로 소개되고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -234,7 +234,7 @@
 (책 / 책자-00 :mod (안 / 안내-01))
 
 
-# ::id snt11.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 세계적으로 이름이 잘 알려진 교수들도 학부생을 가르치고 있을 뿐만 아니라 이 대학과 관련된 노벨상 수상자가 지난 100년간 89명이나 된다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -271,7 +271,7 @@
 (적 / 적 :mod (세 / 세계-00))
 
 
-# ::id snt12.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 시카고 대학은 많은 분야에서 잘 알려져 있지만 전통적으로 사회과학 분야에서 특히 강세를 보이고 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -298,7 +298,7 @@
 (적 / 적 :mod (전 / 전통-00))
 
 
-# ::id snt13.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 특히 경제학과 물리학은 시카고가 주력으로 내세우는 학과이다.
 # ::note
 (내 / 내세우-01
@@ -311,7 +311,7 @@
             :topic (물 / 물리학))))
     :ARG2 (주 / 주력))
 
-# ::id snt14.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그 외에도 정치학, 철학, 사회학 등은 최상위의 위치를 인정받고 있으며, 천문학, 지리학, 수학 등도 정상급에 올라 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -345,7 +345,7 @@
 (학 / 학 :mod (천 / 천문-00))
 
 
-# ::id snt15.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 시카고 대학의 학부생 80% 이상은 졸업 후 5년 이내에 전문대학원이나 일반대학원 과정으로 진학한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -372,7 +372,7 @@
 (후 / 후-00 :mod (졸 / 졸업-01))
 
 
-# ::id snt16.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 전문대학원 중에는 의학대학원(Pritzker School of Medicine, University of Chicago), 법학대학원(University of Chicago Law School), 경영대학원(University of Chicago Booth School of Business) 등이 유명하다.
 # ::note
 (h / have-degree-91
@@ -388,7 +388,7 @@
     :ARG5 (대4 / 대학원
         :mod (전 / 전문)))
 
-# ::id snt17.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 버락 오바마 대통령은 1993년부터 2004년까지 시카고대학교 법학대학원에서 강사로 재직하며 헌법학 강의를 했다.
 # ::note ARGM-PRD에 해당하는 논항을 :attribute로 처리
 (a / and
@@ -407,7 +407,7 @@
         :ARG0 p
         :ARG1 (헌 / 헌법학)))
 
-# ::id snt18.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 2018년 졸업예정으로 2014년 가을에 입학하는 학부 신입생(Class of 2018)의 경우 27,503명의 지원자 중 8.37%인 2,304명이 합격했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -440,7 +440,7 @@
 (자 / 자 :ARG0-of (지 / 지원-01))
 
 
-# ::id snt19.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 2013년 《U.S. 뉴스 & 월드 리포트》 미국 종합대학 학부 순위에서 시카고 대학교의 학부는 스탠포드와 공동 5위로 평가되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -462,7 +462,7 @@
 (학 / 학부 :mod (대 / 대학-00))
 
 
-# ::id snt20.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 전문대학원은 의학대학원이 11위, 경영대학원이 종합MBA 순위 4위, 파트타임MBA 순위 2위, 재무MBA 순위 2위, 경영자MBA 순위 2위, 로스쿨이 컬럼비아와 공동 4위를 기록했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -496,7 +496,7 @@
 (타 / 타임 :mod (파 / 파트-00))
 
 
-# ::id snt21.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 또한 경영대학원은 《파이낸셜 타임스》의 2014년 세계 경영대학원 순위에서 세계 9위, 《이코노미스트》의 2013년 세계 경영대학원 순위에서 세계 1위를 기록했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -530,7 +530,7 @@
 (원 / 원 :mod (대 / 대학-00))
 
 
-# ::id snt22.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 세계 대학 순위에서는 시카고 대학을 2014년 《U.S. 뉴스 & 월드 리포트》세계 대학 순위가 9위로, 2014년 중국 세계 대학 학술 순위가 9위로, 2014년 영국 타임즈 고등교육 세계 대학 랭킹이 9위로, 타임즈 고등교육 세계 대학 학계 평판도 순위가 14위로, 2013년 영국 QS 세계 대학 순위가 9위로, 2013년 사우디아라비아 세계대학랭킹센터(Center for World University Rankings)가 발표한 세계 대학 순위가 9위로 평가했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -592,7 +592,7 @@
 (학 / 학술 :mod (대 / 대학-00))
 
 
-# ::id snt23.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 세계경제포럼이 선정한 세계 최상위 26개 대학 중 하나이다.
 # ::note
 (i / include-91
@@ -602,7 +602,7 @@
         :ARG2-of (선 / 선정-01
             :ARG0 (o / organization :wiki "세계_경제_포럼" :name (이 / 이름 :op1 "세계경제포럼")))))
 
-# ::id snt24.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 시카고대는 수많은 유명 인물들을 배출했다.
 # ::note
 (배 / 배출-01
@@ -611,7 +611,7 @@
         :ARG1-of (유 / 유명-01)
         :ARG1-of (수 / 수많-01)))
 
-# ::id snt25.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 정치 분야에는 볼리비아 제74대 대통령 곤살로 산체스 데 로사다, 전 엘살바도르 대통령 알바로 마가냐 등이 있다.
 # ::note
 (등 / 등
@@ -628,7 +628,7 @@
             :ARG2 (대2 / 대통령)
             :time (전 / 전))))
 
-# ::id snt26.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 재계에는 전 세계은행 총재 폴 월포위츠, 마이크로소프트 CEO 사티아 나델라, 질레트 회장 제임스 킬츠, 전 IBM 회장 존 오펠, 패러마운트 픽처스 회장 셰리 랜싱, 전 모건 스탠리 회장 필립 J. 퍼셀 등이 있다.
 # ::note
 (등 / 등
@@ -661,7 +661,7 @@
             :ARG2 (회4 / 회장)
             :time (전3 / 전))))
 
-# ::id snt27.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 현재 세계에서 가장 많은 28명의 노벨 경제학상 수상 졸업생과 교수를 배출했으며 시카고 학파로 유명한 경제학 분야에는 노벨 경제학상 수상자 폴 새뮤얼슨, 밀턴 프리드먼, 허버트 사이먼, 제임스 뷰캐넌, 조지 스티글러, 로버트 루카스, 해리 마코위츠, 게리 베커, 마이런 스콜스, 유진 파마 등이 시카고대를 졸업했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -715,7 +715,7 @@
 (학 / 학 :mod (경 / 경제-00))
 
 
-# ::id snt28.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그 외에도 학계에는 퓰리처상 수상 정치학자 세바스찬 드 그래지어, 정치학자 새뮤얼 헌팅턴, 필즈상 수상 수학자 폴 코언과 존 그리그스 톰프슨, 튜링상 수상 수학자 리처드 해밍, 사회학자 윌리엄 푸트 화이트, 심리학자 로렌스 콜버그, 캐나다의 환경운동가 데이비드 스즈키, 과학 저술가 마틴 가드너, 1978년 튜링상 수상 컴퓨터 과학자 로버트 플로이드, 생물학자 린 마굴리스 등이 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -791,7 +791,7 @@
 (학 / 학 :mod (정 / 정치-00))
 
 
-# ::id snt29.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt29.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 천문학 분야에서는 퓰리처상을 수상한 칼 세이건, 천문학자 에드윈 허블 등이 있다.
 # ::note
 (등 / 등
@@ -804,7 +804,7 @@
         :mod (학 / 학자
             :topic (천2 / 천문학))))
 
-# ::id snt30.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt30.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 문학/예술계에는 퓰리처상 수상 소설가 솔 벨로, 휴고상 수상 소설가 커트 보네거트, 비평가 및 소설가 수전 손택, 캐나다의 소설가 스티븐 리콕 등이 있다.
 # ::note
 (등 / 등
@@ -828,7 +828,7 @@
         :mod (소4 / 소설가)
         :location (c / country :wiki "캐나다" :name (이7 / 이름 :op1 "캐나다"))))
 
-# ::id snt31.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt31.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 음악가로는 아카데미상을 수상한 필립 글래스, 배우로는 《마이 걸》로 잘 알려진 애나 클럼스키 등이 있다.
 # ::note ~로 알려지다 :ARGA
 (등 / 등
@@ -842,7 +842,7 @@
             :ARGA (s / show :wiki "마이_걸_(영화)" :name (이4 / 이름 :op1 "마이" :op2 "걸"))
             :degree (잘 / 잘))))
 
-# ::id snt32.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle ::preferred True
+# ::id snt32.E2017.Wiki.010 ::date 2019-12-22 ::annotator gabrielle
 # ::snt 한인 동문으로는 외교관 윤치창, SK그룹 설립자 최종건, 전 SK그룹 회장 최종현, 현 SK그룹 회장 최태원, LG전자 부회장 구본준, 조선일보 뉴미디어실 부실장 겸 전략기획마케팅팀장 방정오 등이 있다.
 # ::note
 (등 / 등

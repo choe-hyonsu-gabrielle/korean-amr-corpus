@@ -1,9 +1,9 @@
-# ::id snt0.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 제국주의
 # ::note
 (제 / 제국주의)
 
-# ::id snt1.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 제국주의(帝國主義)는 특정국가가 다른 나라, 지역 등을 군사적, 정치적, 경제적으로 지배하려는 정책, 또는 그러한 것을 목적으로 하는 사상을 가리킨다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -40,7 +40,7 @@
 (주 / 주의-01 :mod (제 / 제국-00))
 
 
-# ::id snt2.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 엄밀히 말해 영역의 지배보다는 영향력, 곧 패권을 확대하는 정책 또는 사상을 가리킨다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -61,7 +61,7 @@
 (력 / 력 :ARG0-of (영 / 영향-01))
 
 
-# ::id snt3.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 제국주의라는 말의 어원은 라틴어의 imperium(제국), imperator(황제)인데, 프랑스의 나폴레옹 1세와 3세의 로마제국 재현(再現)의 시도를 제국주의라 하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -99,7 +99,7 @@
 (주 / 주의-01 :mod (제 / 제국-00))
 
 
-# ::id snt4.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그러나 이 말이 일반화된 것은 나폴레옹 3세의 몰락을 보도하였던 영국의 신문 데일리 뉴스의 1870년 6월 8일자 보도에서 프랑스 제2제정을 제국주의라고 지칭한 후부터이며, 그것은 전제정치와 동일한 의미였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -141,7 +141,7 @@
 (화 / 화 :mod (일 / 일반-00))
 
 
-# ::id snt5.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 제국주의란 말이 사회적 의미를 가지게 된 것은 1877년 러시아가 이스탄불을 점령하려고 하였을 때 영국의 총리 B.디즈레일리가 무력행사에 의한 강경정책을 취하여 이른바 징고이즘(jingoism)이 생겨난 이후부터이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -197,7 +197,7 @@
 (행 / 행사-01 :mod (무 / 무력-00))
 
 
-# ::id snt6.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이 때부터 제국주의는 종종 열광적인 주전론(主戰論)과 같은 뜻으로 쓰이게 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -229,7 +229,7 @@
 (주 / 주의-01 :mod (제 / 제국-00))
 
 
-# ::id snt7.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 1880∼1890년대 영국은 제국주의를 영국의 번영과 진보를 상징하는 표상으로 여기는 경향이 생겨 그것을 오히려 구가(謳歌)하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -251,7 +251,7 @@
 (주 / 주의-01 :mod (제 / 제국-00))
 
 
-# ::id snt8.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그러나 1870년경부터 제국주의라는 말은 근대적인 의미와 내용을 가진 말로 사용되었는데, 그것은 사회적 불안이 증대하는 한편 자본주의국가간의 팽창주의적 경쟁이 격화되었기 때문이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -298,7 +298,7 @@
 (주 / 주의-01 :mod (팽 / 팽창-00))
 
 
-# ::id snt9.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 영국은 자유무역정책을 보호정책으로 전환하고 광대한 식민지를 통일적으로 긴밀히 조직하려고 하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -332,7 +332,7 @@
 (지 / 지 :mod (식 / 식민-00))
 
 
-# ::id snt10.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 즉, 1870년대 수에즈운하주(株) 매수, 인도의 지배 강화, 1884년 제국연방동맹의 성립에 의거한 자치령과 본국과의 결합 시도, 1903년 식민지장관 A.N.체임벌린의 보호관세정책, 보어전쟁 등이 그것이었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -378,7 +378,7 @@
 (지 / 지 :mod (식 / 식민-00))
 
 
-# ::id snt11.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이러한 경향은 비단 영국만의 일이 아니었고, 오히려 해외진출을 불가결의 요건으로 삼던 후진자본주의국가에서 더욱 현저하였으며, 이런 강대국들의 정책이 세계의 분할과 국제대립의 격화 및 군비확장을 초래하는 결과가 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -423,7 +423,7 @@
 (확 / 확장-01 :mod (군 / 군비-00))
 
 
-# ::id snt12.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 제국주의는 제국을 가리키는 임페라토르(Imperator)에서 왔으며 이는 원래 로마의 황제를 뜻하는 말이었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -452,7 +452,7 @@
 (주 / 주의-01 :mod (제 / 제국-00))
 
 
-# ::id snt13.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 유럽의 역사상 많은 국가나 왕이 로마 제국을 모델로 스스로 제국임을 선포한 것에서 그들이 취하였던 팽창주의 정책 및 사상을 제국주의라 부르게 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -491,7 +491,7 @@
 (주 / 주의-01 :mod (팽 / 팽창-00))
 
 
-# ::id snt14.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 제국주의는 사회주의나 공산주의 이후 등에서 비판적인 용어로 많이 사용되었으나 제국주의라는 낱말 자체는 그 이전부터 흔히 쓰였던 말이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -531,7 +531,7 @@
 (주 / 주의-01 :mod (제 / 제국-00))
 
 
-# ::id snt15.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 주로 유럽중심으로 이루어져왔다.
 # ::note
 (이 / 이루-01
@@ -539,7 +539,7 @@
 	:manner (중 / 중심
 		:op1 (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))))
 
-# ::id snt16.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 유럽의 초기 식민지는 희귀한 자원과 노예의 확보를 위한 것이었다.
 # ::note
 (식 / 식민지
@@ -551,7 +551,7 @@
                 :ARG1-of (희 / 희귀-00))
             :op2 (노 / 노예))))
 
-# ::id snt17.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 이후 산업혁명은 대량생산을 위해 보다 많은 자원과 노동력을 필요로 하였고 동시에 생산된 제품을 판매할 판매처가 필요했다.
 # ::note
 (a / and
@@ -576,7 +576,7 @@
 		:ARG2 산
 		:mod (동 / 동시)))
 
-# ::id snt18.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 당시의 대표적인 식민무역은 영국의 경우 인도의 값싼 노동력과 면화로 면직물을 만들고 이것을 다시 인도에서 아편과 바꾼 후 중국에서 은과 교환하는 것이었다.
 # ::note 교환-01에 :ARG3 없음
 (a / and
@@ -606,7 +606,7 @@
 		:ARG3 (은 / 은)
 		:location c3))
 
-# ::id snt19.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 이는 나중에 아편 전쟁이 일어나는 원인이 되었다.
 # ::note
 (c / cause-01
@@ -614,7 +614,7 @@
 	:ARG1 (w / war :wiki "아편_전쟁" :name (이2 / 이름 :op1 "아편" :op2 "전쟁"))
 	:time (나 / 나중))
 
-# ::id snt20.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 이를 위해 제국주의 국가는 식민지에 척식회사를 설립하였는데 영국의 동인도회사나 일본의 동양척식주식회사 등이 그것이다.
 # ::note 척식 회사
 (설 / 설립-01
@@ -630,7 +630,7 @@
 	:location (식 / 식민지)
 	:purpose (이5 / 이))
 
-# ::id snt21.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 후발주자로 미국과 일본이 제국주의 열강대열에 등장했다.
 # ::note
 (등 / 등장-01
@@ -643,7 +643,7 @@
 	:ARG3 (주 / 주자
 		:ARG1 (후 / 후발-00)))
 
-# ::id snt22.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 제국주의의 전성기였던 제1차 세계대전 직전의 시기에 이르러 세계는 이른바 열강이라 불리던 제국주의 국가와 식민지로 양분될 지경에 이르렀으며 에티오피아와 타이 등 몇몇 국가를 제외하고는 대부분 열강의 지배하에 들어갔다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -693,7 +693,7 @@
 (하 / 하 :ARG0-of (지 / 지배-01))
 
 
-# ::id snt23.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 여러 세계대전을 거치고 이후 식민지 해방의 합의사안으로 민족자결주의가 합의되었으며, 세계대전 당시 제국주의를 비판하면서 볼셰비키 혁명과 UN세계주의 (냉전)이념에도 영향을 주었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -741,7 +741,7 @@
 (혁 / 혁명 :mod (볼 / 볼셰비키-00))
 
 
-# ::id snt24.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 신자유주의 여파로 식민지에 대한 옛 제국주의 국가의 정치 경제적 영향은 지속되었으며, 또한 UN이 창설된 이후 미국, 중국, 러시아 등의 신강대국의 영향력이 확대되어 타민족들의 독립을 방해하거나 침략하였다.
 # ::note
 -- FRAMES ----------------------------------------

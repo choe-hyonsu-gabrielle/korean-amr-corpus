@@ -1,4 +1,4 @@
-# ::id snt0.E2017.NEWS.010 ::date 2019-11-25 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.010 ::date 2019-11-25 ::annotator gabrielle
 # ::snt 30분 지나면 포기하는데… 77분 집념, 멈춘 심장 깨우다.
 # ::note
 (c / contrast-01
@@ -11,7 +11,7 @@
 		:ARG1 (심 / 심장
 			:ARG1-of (멈 / 멈추-01))))
 
-# ::id snt1.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 심장 발작으로 쓰러진 30대 심근경색 환자가 77분에 걸친 심폐소생술 끝에 살아나는 기적 같은 일이 벌어졌다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -43,7 +43,7 @@
 (환 / 환자-00 :mod (경 / 경색-01))
 
 
-# ::id snt2.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 의료진은 심폐소생 시술 20분이 지나도 맥박이 뛰지 않으면 회생 가능성이 희박하다고 보고, 30분이 지나면 시술을 중단하는 게 보통이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -85,7 +85,7 @@
 (진 / 진 :mod (의 / 의료-00))
 
 
-# ::id snt3.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 하지만 119구급대와 병원 의료진은 77분간 한 차례도 쉬지 않고 8000번 가까이 가슴을 압박하는 심폐소생술을 시도한 끝에 이 환자를 살려냈다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -118,7 +118,7 @@
 (진 / 진 :mod (의 / 의료-00))
 
 
-# ::id snt4.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 심근경색 환자 임중수(36) 씨는 지난달 23일 오후 2시 20분쯤 서울 신촌 세브란스병원에 진료를 받으러 가는 길에 의식을 잃고 쓰러졌다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -156,7 +156,7 @@
 (환 / 환자-00 :mod (경 / 경색-01))
 
 
-# ::id snt5.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle
 # ::snt 10여 분 뒤 현장에 도착한 119구급대에 따르면 "당시 임 씨의 맥박은 거의 멈춘 상태였다"고 한다.
 # ::note
 (하 / 하-02
@@ -174,7 +174,7 @@
 			:ARG1 맥)
 		:ARG3 (거 / 거의)))
 
-# ::id snt6.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle
 # ::snt 이때부터 구급대원들은 심폐소생술(CPR)에 들어갔다.
 # ::note
 (들 / 들어가-03
@@ -183,7 +183,7 @@
 	:ARG1 (심 / 심폐소생술)
 	:time (이 / 이때))
 
-# ::id snt7.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle
 # ::snt 1분에 보통 100~120회(성인 기준) 흉부를 5~6cm 깊이까지 강하게 압박하는 방식이다.
 # ::note
 (방 / 방식
@@ -201,7 +201,7 @@
 				:op2 120)
 			:ARG2 (t / temporal-quantity :quant 1 :unit (분 / 분)))))
 
-# ::id snt8.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle
 # ::snt 구급차가 세브란스병원 응급실에 도착하자 이번엔 의료진이 심폐소생술을 이어갔다.
 # ::note
 (이 / 이어가-01
@@ -213,7 +213,7 @@
 		:ARG3 (응 / 응급실
 			:part-of (f / facility :wiki "세브란스병원" :name (이3 / 이름 :op1 "세브란스병원")))))
 
-# ::id snt9.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle
 # ::snt 심폐소생술 시술 30분은 보통 의사들의 '심리적 장벽'으로 불린다.
 # ::note
 (부 / 부르-01
@@ -224,7 +224,7 @@
 		:mod (심2 / 심리))
 	:mod (보 / 보통))
 
-# ::id snt10.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle
 # ::snt 임 씨 맥박이 쉽사리 돌아오지 않자 의료진은 전기 충격 요법도 병행했다.
 # ::note
 (병 / 병행-01
@@ -235,7 +235,7 @@
 		:ARG0 (맥 / 맥박)
 		:manner (쉽 / 쉽사리)))
 
-# ::id snt11.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle
 # ::snt 출력을 최대로 높여 9번 충격을 주고, 항부정맥제도 투여했지만 별다른 효과가 없었다.
 # ::note
 (효 / 효과
@@ -250,7 +250,7 @@
 		:op2 (투 / 투여-00
 			:ARG2 (항 / 항부정맥제))))
 
-# ::id snt12.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.010 ::date 2019-12-20 ::annotator gabrielle
 # ::snt 임 씨 갈비뼈가 6~7개쯤 부러지고, 전기 충격 여파로 1~2도 화상까지 입었다.
 # ::note
 (a / and
@@ -269,7 +269,7 @@
 				:op1 1
 				:op2 2))))
 
-# ::id snt13.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle
 # ::snt 의료진도 체력 소모가 극심해지면서 모두가 땀에 전 상태가 됐다.
 # ::note 땀에 절다 --> 지쳤다?
 (땀 / 땀에절-00
@@ -280,7 +280,7 @@
 			:ARG0 의
 			:ARG1 (체 / 체력))))
 
-# ::id snt14.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이윤정 심장내과 의사는 "내일 엄청난 근육통에 시달리겠구나 생각하면서도 온 힘을 쥐어짜 임 씨 가슴팍을 눌렀다"고 말했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -315,7 +315,7 @@
 (팍 / 팍 :mod (가 / 가슴-00))
 
 
-# ::id snt15.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 심폐소생술 시술 40분이 지났을 무렵, 심장내과 위진 교수가 "체외 심폐 순환기(ECMO)를 써보자"고 했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -355,7 +355,7 @@
 (심 / 심폐 :mod (체 / 체외-00))
 
 
-# ::id snt16.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt ECMO는 환자 정맥에서 혈액을 체외로 빼내 동맥혈로 정화해 다시 환자 몸에 넣어주는 장비다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -382,7 +382,7 @@
 (혈 / 혈 :mod (동 / 동맥-00))
 
 
-# ::id snt17.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 2014년 심근경색으로 쓰러진 이건희 삼성전자 회장 진료에 이용되면서 대중적으로 알려졌다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -407,7 +407,7 @@
 (진 / 진료 :mod (회 / 회장-00))
 
 
-# ::id snt18.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt ECMO 시술을 하려면 심장혈관 진료에 특화된 심도자실로 임 씨를 옮겨야 했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -433,7 +433,7 @@
 (혈 / 혈관 :mod (심 / 심장-00))
 
 
-# ::id snt19.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle
 # ::snt 응급실에서 뛰어가도 5분은 걸리는 거리였다.
 # ::note
 (걸 / 걸리-01
@@ -442,7 +442,7 @@
 	:ARG2 (뛰 / 뛰어가-01
 		:ARG2 (응 / 응급실)))
 
-# ::id snt20.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 의사 한 명이 임 씨가 누운 침대로 훌쩍 올라타 심폐소생술을 계속하는 동안, 나머지 의료진이 침대를 붙들고 달리기 시작했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -477,7 +477,7 @@
 (진 / 진 :mod (의 / 의료-00))
 
 
-# ::id snt21.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle
 # ::snt 오후 3시 30분 심도자실로 임 씨를 옮겨 ECMO 부착 시술에 들어갔다.
 # ::note
 (a / and
@@ -490,7 +490,7 @@
 			:ARG1 (부 / 부착-00
 				:ARG1 (체 / 체외심폐순환기)))))
 
-# ::id snt22.E2017.NEWS.010 ::date 2019-11-24 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.010 ::date 2019-11-24 ::annotator gabrielle
 # ::snt 그 사이에도 심폐소생술은 계속됐다.
 # ::note
 (계 / 계속-01
@@ -498,19 +498,19 @@
 	:time (사 / 사이
 		:op1 (그 / 그)))
 
-# ::id snt23.E2017.NEWS.010 ::date 2019-11-24 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.010 ::date 2019-11-24 ::annotator gabrielle
 # ::snt 오후 4시.
 # ::note
 (d / date-entity
 	:time 16:00)
 
-# ::id snt24.E2017.NEWS.010 ::date 2019-11-24 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.010 ::date 2019-11-24 ::annotator gabrielle
 # ::snt 결과는 대성공이었다.
 # ::note
 (대 / 대성공-00
 	:domain (결 / 결과))
 
-# ::id snt25.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle
 # ::snt ECMO가 성공적으로 작동하면서 환자 맥박이 조금씩 돌아왔다.
 # ::note
 (a / and
@@ -522,7 +522,7 @@
 			:poss (환 / 환자))
 		:manner (조 / 조금씩)))
 
-# ::id snt26.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 77분간 임 씨 가슴을 8000여 번 힘줘 누르느라 의료진이 탈진하다시피 한 심폐소생술도 비로소 종료됐다.
 # ::note 
 -- FRAMES ----------------------------------------
@@ -549,7 +549,7 @@
 (진 / 진 :mod (의 / 의료-00))
 
 
-# ::id snt27.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 의료진은 오후 4시 37분 임 씨를 심장혈관 중환자실로 옮겨 인공 심박동기, 인공호흡기, 혈액 투석 장치 등을 달아주고 나서야 한숨을 돌릴 수 있었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -592,7 +592,7 @@
 (호 / 호흡-01 :mod (인 / 인공-00))
 
 
-# ::id snt28.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt28.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 위진 교수는 "내심 되살리기 어렵다고 생각했지만 환자 나이가 젊어서 우리가 포기하지 않으면 기적이 일어날 수 있다는 믿음으로 시술했다"고 했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -627,7 +627,7 @@
 (나 / 나이 :mod (환 / 환자-00))
 
 
-# ::id snt29.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt29.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 임 씨는 "깨어나고도 1주일이 지나서야 '내가 죽었다가 살아났구나' 실감이 났다. 어떻게 살아 돌아왔는지 신기할 따름"이라고 말했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -659,7 +659,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt30.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt30.E2017.NEWS.010 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 임 씨의 어머니 정순자(62) 씨는 "너무나 훌륭한 의사 선생님을 만나 아들이 살아오니 잔치라도 열고 싶은 마음"이라고 했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -693,7 +693,7 @@
 (선 / 선생 :mod (의 / 의사-00))
 
 
-# ::id snt31.E2017.NEWS.010 ::date 2019-12-30 ::annotator gabrielle ::preferred True
+# ::id snt31.E2017.NEWS.010 ::date 2019-12-30 ::annotator gabrielle
 # ::snt 위 교수는 "의료진 모두 하나가 돼서 환자 한 사람이 아닌 가족 전부를 감동시킨 '예술 작품'을 만들어낸 기분"이라고 했다.
 # ::note
 (하 / 하-02
@@ -713,7 +713,7 @@
 				:ARG1 (의 / 의료진
 					:quant (모 / 모두))))))
 
-# ::id snt32.E2017.NEWS.010 ::date 2019-12-30 ::annotator gabrielle ::preferred True
+# ::id snt32.E2017.NEWS.010 ::date 2019-12-30 ::annotator gabrielle
 # ::snt 우리나라 심폐소생술 시행률은 2008년 1.8%에서 2015년 13.1%로 해마다 늘고 있지만 선진국과 비교하면 여전히 낮은 편이다.
 # ::note
 (c / contrast-01
@@ -734,7 +734,7 @@
 		:ARG3 (여 / 여전하-01)
 		:ARG4 (선 / 선진국)))
 
-# ::id snt33.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle ::preferred True
+# ::id snt33.E2017.NEWS.010 ::date 2019-12-19 ::annotator gabrielle
 # ::snt 보건복지부 진영주 응급의료과장은 "올해 응급처치 교육사업을 강화해 한 가정 안에 적어도 한 사람은 심폐소생술을 할 수 있도록 할 방침"이라고 말했다.
 # ::note 한 가정에 적어도 한 사람
 (말 / 말하-01

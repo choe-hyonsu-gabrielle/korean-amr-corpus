@@ -1,4 +1,4 @@
-# ::id snt0.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle
 # ::snt 日, 10초 만에 "모시모시"… 한국 10단계 '미로'.
 # ::note 의미 중심 표상
 (c / contrast-01
@@ -11,7 +11,7 @@
 		:ARG1 (단 / 단계 :quant 10)
 		:location (c3 / country :wiki "대한민국" :name (이3 / 이름 :op1 "한국"))))
 
-# ::id snt1.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle
 # ::snt 30대 직장인 A 씨는 이달 초 연휴 때 신용카드 콜센터에 전화했다가 분통이 터졌다.
 # ::note
 (분 / 분통이-터지-00
@@ -29,7 +29,7 @@
 			:mod (초 / 초
 				:mod (이 / 이달)))))
 
-# ::id snt2.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle
 # ::snt 부가 서비스로 가능한 무료 주차 횟수가 몇 번 남았는지 기억이 나지 않아 전화 문의를 하려 했지만 통화 연결에 실패했다.
 # ::note modality 시도 / 통화연결을 통화로 간결하게
 (c / contrast-01
@@ -48,7 +48,7 @@
 	:ARG2 (실 / 실패-01
 		:ARG2 (통 / 통화-01)))
 
-# ::id snt3.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle
 # ::snt '휴일엔 사고 관련이 아니면 상담원 연결이 되지 않는다'고 녹음된 목소리만 들었을 뿐이다.
 # ::note 을 뿐이다 -> 불과-01
 (불 / 불과-01
@@ -65,7 +65,7 @@
 					:ARG2 (사2 / 사고))
 				:time (휴 / 휴일)))))
 
-# ::id snt4.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle
 # ::snt 미국에서 주재원으로 일하다 지난해 돌아온 B 씨는 미국에서 쓰던 카드를 해지하지 않았다는 사실을 알고 카드 뒷면에 있는 콜센터에 전화를 걸었다.
 # ::note 카드 뒷면에 있는 / 주재원으로 일하다
 (a / and
@@ -89,7 +89,7 @@
 			:mod (뒷 / 뒷면
 				:mod 카))))
 
-# ::id snt5.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle
 # ::snt 미국 시각으론 토요일 오전 2시쯤 되는 때였지만 혹시나 하고 걸어 보았는데 상담원이 받았다.
 # ::note
 (전 / 전화-01
@@ -102,7 +102,7 @@
 			:weekday (토 / 토요일)
 			:timezone (c / country :wiki "미국" :name (이 / 이름 :op1 "미국")))))
 
-# ::id snt6.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle
 # ::snt 그는 "전화 연결이 바로 되어서 오히려 내가 당황했다"고 말했다.
 # ::note
 (말 / 말하-01
@@ -114,7 +114,7 @@
 			:manner (전 / 전화-01))
 		:ARG1 그))
 
-# ::id snt7.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle
 # ::snt 한국 금융회사들이 소비자 편의를 위해 콜센터를 업그레이드했다고 저마다 홍보하고 있지만 선진국 및 글로벌 금융회사와 비교하면 여전히 상담 가능한 시간이 짧고 사용하기도 복잡한 것으로 나타났다.
 # ::note
 (c / contrast-01
@@ -145,7 +145,7 @@
 				:op1 (선 / 선진국)
 				:op2 (글 / 글로벌)))))
 
-# ::id snt8.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle
 # ::snt IT(정보기술) 강국임을 강조하며 '말로 하는 ARS', '보이는 ARS' 등을 개발해 상담 서비스에 적용하고 있는데, 고령층이나 바쁜 직장인들에겐 이런 복잡한 선택 과정이 오히려 장애물로 작용한다는 지적도 나온다.
 # ::note 직장인 고령층. verb가 나오지 않으면 verbalize 하지 않음.
 (c / contrast-01
@@ -171,7 +171,7 @@
 				:op2 (직 / 직장인
 					:ARG1-of (바 / 바쁘-01))))))
 
-# ::id snt9.E2017.NEWS.007 ::date 2019-11-19 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.NEWS.007 ::date 2019-11-19 ::annotator gabrielle
 # ::snt 본지가 한국의 4대 시중 은행(국민·신한·우리·KEB하나은행), 9개 카드사, 3대 생명보험사, 5대 손해보험사 등의 콜센터를 조사한 결과 24시간·365일 일반 상담(분실 신고 등 금융 사고와 관련된 상담 제외)이 가능한 금융사는 없었다.
 # ::note 5대 등의 처리: ((수를 나타내는 말 뒤에 쓰여)) 규모나 가치 면에서 그 수 안에 꼽힘을 이르는 말.
 (a / and
@@ -213,7 +213,7 @@
 			:duration (t / temporal-quantity :quant 24 :unit (시2 / 시간))
 			:duration (t2 / temporal-quantity :quant 365 :unit (일2 / 일)))))
 
-# ::id snt10.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle
 # ::snt 지난달 영업을 개시한 한국의 첫 인터넷 전문 은행인 케이뱅크(Kbank) 한 곳만 상담원을 통한 24시간 상담을 할 수 있었다.
 # ::note 24시간
 (가 / 가능-01
@@ -230,7 +230,7 @@
 		:ARG1 (사 / 사람
 			:ARG0-of (상2 / 상담-00))))
 
-# ::id snt11.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle
 # ::snt 글로벌 은행들과 비교했더니 한국 은행들의 상담 시간은 매우 짧았다.
 # ::note
 (a / and
@@ -247,7 +247,7 @@
 		:ARG3 (매 / 매우)
 		:ARG4 은2))
 
-# ::id snt12.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle
 # ::snt 대형 글로벌 금융사 중 대부분은 한국인에겐 낯선 365일·24시간 상담 서비스를 제공 중이다.
 # ::note
 (제 / 제공-01
@@ -265,7 +265,7 @@
 	:duration (t / temporal-quantity :quant 24 :unit (시 / 시간))
 	:duration (t2 / temporal-quantity :quant 365 :unit (일 / 일)))
 
-# ::id snt13.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle
 # ::snt 세계 10대 은행(자산 기준) 중 중국 건설은행, 미국 뱅크오브아메리카 두 곳을 뺀 8개 은행은 모두 언제든지 상담원과 통화를 할 수 있었다.
 # ::note
 (가 / 가능-01
@@ -287,7 +287,7 @@
 			:ARG1-of (상 / 상담-00)))
 	:time (언 / 언제든지))
 
-# ::id snt14.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle
 # ::snt 한국 은행은 평일엔 13시간(신한·우리은행) 혹은 14시간(국민·KEB하나은행)만 통화를 할 수 있는 것으로 확인됐다.
 # ::note
 (확 / 확인-01
@@ -307,7 +307,7 @@
 				:duration (t2 / temporal-quantity :quant 14 :unit (시2 / 시간))))
 		:time (평 / 평일)))
 
-# ::id snt15.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle
 # ::snt 주말엔 통화 가능 시간이 6시간인 은행(신한은행)도 있었다.
 # ::note
 (가 / 가능-01
@@ -316,7 +316,7 @@
 		:duration (t / temporal-quantity :quant 6 :unit (시 / 시간)))
 	:time (주 / 주말))
 
-# ::id snt16.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle
 # ::snt 25일 오전 6~7시에 걸쳐 한국과 해외 금융회사의 콜센터에 실제로 전화를 걸어 보았더니 한국의 4대 은행은 모두 연결이 안 됐다.
 # ::note
 (a / and
@@ -336,7 +336,7 @@
 		:ARG1 (은 / 은행 :mod 4
 			:location c)))
 
-# ::id snt17.E2017.NEWS.007 ::date 2019-11-25 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.NEWS.007 ::date 2019-11-25 ::annotator gabrielle
 # ::snt 반면 세계 최대 은행인 중국 공상은행은 전화를 걸자마자 "니하오", 일본 최대 은행 미쓰비시UFJ은행은 오전 6시 30분임에도 신호음이 간 지 10초 만에 "모시모시"라고 응답했다.
 # ::note ~자마자
 (c / contrast-01
@@ -367,7 +367,7 @@
 			:concession (b / be-temporally-at-91
 				:ARG2 (d / date-entity :time 6:30)))))
 
-# ::id snt18.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.NEWS.007 ::date 2019-11-17 ::annotator gabrielle
 # ::snt 밤 시간대인 미국 은행을 포함해 10대 은행 중 8개 은행은 상담원이 전화를 받았다.
 # ::note
 (가 / 가능-01
@@ -383,7 +383,7 @@
 						:time (d / date-entity
 							:dayperiod (밤 / 밤))))))))
 
-# ::id snt19.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle
 # ::snt 금융계 관계자는 "인도 등에 외주 콜센터를 운영하는 미국, 인건비가 싼 중국 등과 비교할 때 한국은 야간이나 휴일 근무 수당을 많이 지급해야 하기 때문에 상담 시간 연장에 따른 비용 부담이 매우 크게 작용하는 측면이 있다"고 말했다.
 # ::note
 (말 / 말하-01
@@ -422,7 +422,7 @@
 						:mod (싸 / 싸-02
 							:ARG1 (인 / 인건비))))))))
 
-# ::id snt20.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle
 # ::snt 상담원 연결 과정도 한국 금융회사가 훨씬 복잡했다.
 # ::note 이중주어문 어순 도치
 (a / and
@@ -435,7 +435,7 @@
 				:ARG1 (사 / 사람
 					:ARG1-of (상 / 상담-00))))))
 
-# ::id snt21.E2017.NEWS.007 ::date 2019-11-19 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.NEWS.007 ::date 2019-11-19 ::annotator gabrielle
 # ::snt 미국 등 선진국의 주요 콜센터는 대부분이 전화하는 즉시 사람이 응답을 하고, 소비자가 무엇을 원하는지를 그다음에 듣는다.
 # ::note 의문문이 아닌 경우에 '무엇을 원하는지'의 처리
 (a / and
@@ -456,7 +456,7 @@
 		:ARG2 (사2 / 사람
 			:ARG0-of (소 / 소비-01))))
 
-# ::id snt22.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle
 # ::snt 대부분의 한국 금융회사는 반대로 소비자가 무엇이 필요한지를 일일이 ARS 번호 입력을 한 다음에야 상담원이 응대한다.
 # ::note
 (c / contrast-01
@@ -477,7 +477,7 @@
 						:ARG2 소))
 				:manner (일 / 일일이)))))
 
-# ::id snt23.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.NEWS.007 ::date 2019-11-24 ::annotator gabrielle
 # ::snt 미국 '디스커버 카드' 콜센터에 카드를 해지하는 상황을 가정해 전화를 했더니 50초 만에 상담원이 바로 전화를 받았다.
 # ::note
 (a / and
@@ -496,7 +496,7 @@
 		:time (후 / 후
 			:op1 (t / temporal-quantity :quant 50 :unit (초 / 초)))))
 
-# ::id snt24.E2017.NEWS.007 ::date 2019-11-25 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.NEWS.007 ::date 2019-11-25 ::annotator gabrielle
 # ::snt 똑같이 카드 해지를 하려고 한국 A 신용카드사에 전화를 건 결과 열 단계를 거친 끝에야 상담원과 통화를 할 수 있었다.
 # ::note '결과'가 cause가 아닌 경우, A사, A씨 등에 대한 처리 방법 고민할 것, 단계 처리 방안
 (a / and
@@ -515,7 +515,7 @@
 			:op1 (거 / 거치-01
 				:ARG2 (단 / 단계 :op1 10)))))
 
-# ::id snt25.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle
 # ::snt 길어지는 통화에 대한 전화 요금은 대부분 소비자가 부담(1분당 약 30원)해야 한다.
 # ::note 어지다 -> 길어지-00
 (o / obligate-01
@@ -531,7 +531,7 @@
 			:topic (길 / 길어지-00
 				:ARG1 (통 / 통화-01)))))
 
-# ::id snt26.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle
 # ::snt 금융소비자연맹 강형구 금융 국장은 "금융회사 콜센터의 통화 대기 시간뿐 아니라 민원 상담에 대한 전화 요금을 모두 소비자에게 부담하는 것은 적절치 않다"고 말했다.
 (말 / 말하-01
 	:ARG0 (p / person :wiki - :name (이 / 이름 :op1 "강형구")

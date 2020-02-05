@@ -1,5 +1,5 @@
 /usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 라인 강
 # ::note
 -- FRAMES ----------------------------------------
@@ -10,7 +10,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt1.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 라인 강은 유럽의 강으로 길이가 1,230km에 이른다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -26,7 +26,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt2.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 여러 언어에서 라인 강이란 이름은 켈트어의 "레노스(Renos: 흐르는 것)"에서 유래했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -40,7 +40,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt3.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 라인 강은 네덜란드와의 국경에서 이름이 바뀌기 때문에 북해로 흘러 들어가지 않는다고도 할 수 있는데, 관례적으로 그 이름이 바뀐 부분까지를 라인 강에 포함시킨다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -74,7 +74,7 @@ list index out of range
 (적 / 적 :mod (관 / 관례-00))
 
 
-# ::id snt4.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 다뉴브 강과 함께 로마 제국의 북쪽 경계였으며, 그때부터 물자를 내륙 깊이 이동하는 수로로 이용되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -93,7 +93,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt5.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그러나 4세기 경에 라인 강이 언 틈을 타 게르만족이 서로마를 정벌하였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -119,7 +119,7 @@ list index out of range
 (경 / 경 :mod (세 / 세기-00))
 
 
-# ::id snt6.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 라인 강은 유럽에서 경제적으로 매우 중요한 강으로 스위스 중부의 알프스에서 발원하여 1,320km를 흘러 북해로 유입한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -144,7 +144,7 @@ list index out of range
 (적 / 적 :mod (경 / 경제-00))
 
 
-# ::id snt7.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 최상류의 포르더라인 강과 힌터라인 강은 알프스의 눈이 완전히 녹는 6월과 7월에 유량이 최고조에 달한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -168,7 +168,7 @@ list index out of range
 (류 / 류 :mod (최 / 최상-00))
 
 
-# ::id snt8.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 상류의 라인 강은 북쪽으로 흘러 작은 삼각주를 지나 콘스탄츠 호에 이른다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -191,7 +191,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt9.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 콘스탄츠 호의 서쪽에서 강은 다시 서쪽으로 흐르다가 북부 스위스의 사프하우젠에 있는 30m 높이의 라인 폭포로 떨어진다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -225,7 +225,7 @@ list index out of range
 (부 / 부 :mod (북 / 북-00))
 
 
-# ::id snt10.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 흑림지대(슈바르츠발트)의 남쪽 자락을 따라 흐르다가 바젤 근처에서 북쪽으로 방향을 바꾸기 전에 두 차례의 골짜기를 지난다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -253,7 +253,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt11.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 바젤부터 라인 강은 약 160km정도 프랑스와 독일의 국경을 따라 흐른다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -272,7 +272,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt12.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 다시 독일 영토를 흐르게 되는데 이 구간은 지난 2세기 동안의 하천 직강화를 통해 곡류로 흐르던 강이 이제 직선으로 흐르게 되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -308,7 +308,7 @@ list index out of range
 (직 / 직강화 :mod (하 / 하천-00))
 
 
-# ::id snt13.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이 구간은 라인 지구대에 해당되는 곳으로 지구대의 폭은 비교적 넓어 32km 정도이며 강을 따라 범람원도 형성되어 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -333,7 +333,7 @@ list index out of range
 (적 / 적 :ARG0-of (비 / 비교-01))
 
 
-# ::id snt14.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 지구대의 양쪽은 서쪽의 보주 산맥과 동쪽의 슈바르츠발트 산맥이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -352,7 +352,7 @@ list index out of range
 (대 / 대 :mod (지 / 지구-00))
 
 
-# ::id snt15.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 협곡의 서쪽 편은 훈스뤼크 구릉지와 아이펠 구릉지가 있고, 동쪽 편으로는 타우누스 구릉지와 베스트발트 구릉지가 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -381,7 +381,7 @@ list index out of range
 (지 / 지 :mod (구 / 구릉-00))
 
 
-# ::id snt16.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이 구불구불한 협곡을 따라서 수 백 년의 역사를 가진 고성들이 언덕 위에 세워져 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -401,7 +401,7 @@ list index out of range
 (위 / 위 :mod (언 / 언덕-00))
 
 
-# ::id snt17.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 본에 이르기 전에 강 폭은 다시 넓어지고 평야를 만나면서, 쾰른, 뒤셀도르프, 뒤스부르크 등의 공업 도시를 만난다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -425,7 +425,7 @@ list index out of range
 (폭 / 폭 :mod (강 / 강-00))
 
 
-# ::id snt18.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 라인 강을 따라서는 레버쿠젠의 바이어 화학 같은 대규모 공업시설이 밀집해 있어 화물선의 통행이 많은 곳이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -452,7 +452,7 @@ list index out of range
 (시 / 시설 :mod (공 / 공업-00))
 
 
-# ::id snt19.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 물동량은 강 하구 로테르담에서부터 쾰른까지의 구간에 집중되고 산업 시설이 몰려 있어 정부의 강력한 통제에도 불구하고 강의 오염이 심각한 편이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -482,7 +482,7 @@ list index out of range
 (하 / 하구 :mod (강 / 강-00))
 
 
-# ::id snt20.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 라인 강의 하구는 독일과 네덜란드의 국경 근처 엠머리치 근처에서 시작된다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -498,7 +498,7 @@ list index out of range
 (근 / 근처 :mod (국 / 국경-00))
 
 
-# ::id snt21.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 본류는 네덜란드 로테르담을 거쳐 북해로 흐르고, 분류인 모이제 강도 라인 강과 평행하게 흐르다가 북해로 유입한다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -526,7 +526,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt22.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 네덜란드어로 라인 강은 "Rijn"이라고 부른다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -540,7 +540,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt23.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 라인 강은 서쪽으로 네덜란드를 관통하는데, 하류에서 뫼즈 강과 스헬트 강과 합쳐져 흐른다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -563,7 +563,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt24.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이 3개의 강은 합쳐져 하류에서 매우 큰 삼각주를 이루며, 서유럽에서 가장 큰 강이다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -582,7 +582,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt25.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이곳에서 시작되어, 복잡한 환경으로 흐르게 되며, 원래 Rijn이라는 이름은, 이곳에서 나온 이름이며, 유일하게 조그마한 넓은 대지 속 북쪽의 작은 개울에만 사용되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -620,7 +620,7 @@ list index out of range
 (속 / 속-01 :mod (대 / 대지-00))
 
 
-# ::id snt26.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 네덜란드 이름인 "Rijn"은 여러개의 물이 흐르는 모습을 본따 지어졌다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -641,7 +641,7 @@ list index out of range
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt27.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt27.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그리고 다시 되돌아와, 더 먼 서쪽으로 흘러, Noord강에 재합류하여서 강이 Nieuwe Maas와 북해로 들어간다.
 # ::note
 -- FRAMES ----------------------------------------

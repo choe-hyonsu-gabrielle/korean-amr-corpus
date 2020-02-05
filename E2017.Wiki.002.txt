@@ -1,12 +1,12 @@
 /usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle ::preferred True
+# ::id snt0.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle
 # ::snt 칭기즈 칸
 # ::note
 (p / person
 	:wiki "칭기즈_칸"
 	:name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
 
-# ::id snt1.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt1.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 칭기즈 칸(1155/62/67년 4월 16일 ~ 1227년 8월 25일)은 세계 역사상 가장 넓은 대륙을 점유한 몽골 제국의 창업자이자 초대 카간이다.
 # ::note
 (p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸")
@@ -29,7 +29,7 @@
 			:op2 (카 / 카간
 				:ord (o2 / ordinal-entity :value 1)))))
 
-# ::id snt2.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle ::preferred True
+# ::id snt2.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle
 # ::snt 원래 이름은 보르지긴 테무진이다.
 # ::note
 (이 / 이름 :op1 "보르지긴" :op2 "테무진"
@@ -37,7 +37,7 @@
 	:domain (이2 / 이름
 		:mod (원 / 원래)))
 
-# ::id snt3.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt3.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 몽골의 여러 부족을 통합하고, 출신이 아닌 능력에 따라 대우하는 합리적 인사제도인 능력주의에 기반한 강한 군대를 이끌어 역사상 가장 성공한 군사, 정치지도자가 되었다.
 # ::note
 (되 / 되-01
@@ -67,7 +67,7 @@
 								:ARG2 (능 / 능력
 									:mod (출 / 출신 :polarity -))))))))))
 
-# ::id snt4.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt4.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 세계에서 가장 뛰어난 정복왕 중 한 사람이다.
 # ::note
 (i / include-91
@@ -78,7 +78,7 @@
 			:ARG5 (정2 / 정복왕
 				:part-of (세 / 세계)))))
 
-# ::id snt5.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt5.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 중국사에는 원(元) 태조(太祖)로 기록된다.
 # ::note :attribute 사용
 (기 / 기록-01
@@ -87,7 +87,7 @@
 			:ARG1 (c / country :wiki "원나라" :name (이 / 이름 :op1 "원"))))
 	:location (중 / 중국사))
 
-# ::id snt6.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt6.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 오늘날 그의 이름은 몽골 칭기즈 칸 국제공항으로 남아 있다.
 # ::note
 (남 / 남-01
@@ -97,7 +97,7 @@
 		:name-of (a / airport :wiki "칭기즈_칸_국제공항"))
 	:time (오 / 오늘날))
 
-# ::id snt7.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt7.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 칭기즈 칸의 정확한 출생연도에 대해서는 1155년, 1161년, 1162년, 1167년 등 몇 가지 설이 존재하나, 정설로 인정되고 있는 것은 아직 없다.
 # ::note
 (c / contrast-01
@@ -117,7 +117,7 @@
 		:ARG1-of (인 / 인정-01)
 		:mod (아 / 아직)))
 
-# ::id snt8.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt8.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 현재 몽골에서 기념하는 칭기즈 칸의 탄신일은 1162년 11월 14일이다.
 # ::note
 (d / date-entity :year 1162 :month 11 :day 14
@@ -126,7 +126,7 @@
 		:ARG1-of (기 / 기념-01
 			:ARG0 (c / country :wiki "몽골" :name (이2 / 이름 :op1 "몽골")))))
 
-# ::id snt9.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt9.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 테무진의 유년시절에 대한 기록은 자세하지 않다.
 # ::note
 (자 / 자세하-01
@@ -136,7 +136,7 @@
 			:mod (유 / 유년)
 			:poss (p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "테무진")))))
 
-# ::id snt10.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle ::preferred True
+# ::id snt10.E2017.Wiki.002 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 칭기즈 칸은 그의 아버지 예수게이가 타타르족과의 전투를 승리로 끝낸 직후에 태어났다.
 # ::note
 (태 / 태어나-01
@@ -152,7 +152,7 @@
 				:ARG0 p2
 				:ARG1 e)))))
 
-# ::id snt11.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt11.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 전설에 따르면 그가 태어날 때 손에 고대 동방 사람들에게 생명을 상징하는 피 한 움큼을 쥐고 있는 등 여러가지 상서로운 징표들이 나타났다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -186,7 +186,7 @@
 (손 / 손 :mod (때 / 때-00))
 
 
-# ::id snt12.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt12.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 예수게이는 이를 길한 징조로 생각하여 패배한 타타르 군주, 테무 진 우게의 이름을 따서 자식에게 테무친이라는 이름을 지어주었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -212,7 +212,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt13.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt13.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 칭기즈 칸의 이름에 대한 또 다른 해석으로는 ‘테무친’이 ‘대장장이’라는 뜻임을 근거로 당시 유목민 사회에서 쇠가 중요했음을 반영한 것이라고 주장하는 학자들도 있다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -247,7 +247,7 @@
 (장 / 장이 :mod (대 / 대장-00))
 
 
-# ::id snt14.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle ::preferred True
+# ::id snt14.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle
 # ::snt 그러나 그의 유년시대는 결코 행복한 것이 아니었다.
 # ::note
 (c / contrast-01
@@ -258,7 +258,7 @@
 			:poss (그 / 그))
 		:mod (결 / 결코)))
 
-# ::id snt15.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt15.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그가 9세 때 몽골 왕족 보르지긴족의 후예인 아버지 예수게이가 그의 부족과 오랜 불화관계에 있던 타타르족에 의해 독살되었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -284,7 +284,7 @@
 (관 / 관계-01 :mod (불 / 불화-00))
 
 
-# ::id snt16.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt16.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 예수게이가 죽자 부족 사람들은 예수게이와 정적인 타이치우트 일가의 사주를 받아, 예수게이의 미망인 호엘룬과 그 자녀들이 지도력을 발휘하기에는 너무 약하다고 생각하고 기회를 이용하여 권력을 찬탈했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -327,7 +327,7 @@
 (인 / 인 :mod (미 / 미망-00))
 
 
-# ::id snt17.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt17.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이로 인해 테무진의 영세한 가문은 유목민의 일상음식인 양고기와 우유는 전혀 먹지 못하고 풀뿌리와 생선으로 연명하는 극심한 가난을 경험했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -366,7 +366,7 @@
 (음 / 음식 :mod (일 / 일상-00))
 
 
-# ::id snt18.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt18.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 테무진과 그의 가족은 비록 보르지긴족들의 배척을 받긴 했지만 왕족 출신이라는 이유로 상당한 대접을 받은 것 같다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -390,7 +390,7 @@
 (출 / 출신 :mod (왕 / 왕족-00))
 
 
-# ::id snt19.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt19.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 무엇보다도 그는 아버지 예수게이가 죽기 전에 정혼해준 아내 보르테를 되찾아올 수 있었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -409,7 +409,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt20.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt20.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그러나 몽골 북방에 사는 메르키트족은 예수게이가 그들에게 빼앗은 여자인 호엘룬을 아내로 삼았기 때문에 테무진에게 반감을 가지고 있었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -434,7 +434,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt21.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle ::preferred True
+# ::id snt21.E2017.Wiki.002 ::date 2019-01-16 ::annotator gabrielle
 # ::snt 이러한 이유로 메르키트족은 테무진의 아내인 보르테를 납치했다.
 # ::note
 (납 / 납치-01
@@ -446,7 +446,7 @@
 	:cause (이4 / 이유
 		:ARG1-of (이4 / 이렇-01)))
 
-# ::id snt22.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt22.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 테무진은 아버지 예수게이와 의형제를 맺었던 케레이트족의 왕인 토그릴 완 칸에게 사정을 말하여 보르테를 다시 찾아올 수 있었다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -474,7 +474,7 @@
 (형 / 형제 :mod (의 / 의-00))
 
 
-# ::id snt23.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt23.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 당시 토그릴 완 칸은 몽골 지역 안에서 가장 강대한 통치자였다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -493,7 +493,7 @@
 (자 / 자 :ARG0-of (통 / 통치-01))
 
 
-# ::id snt24.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt24.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 테무진은 결혼기념물로 받은 잘의 모피를 토그릴에게 선물했고 답례로 토그릴 완 칸은 테무진의 흩어진 부족민들을 모아주겠다고 약속했다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -527,7 +527,7 @@
 (민 / 민 :ARG0-of (부 / 부족-01))
 
 
-# ::id snt25.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt25.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그 후 토그릴 완 칸은 테무진에게 2만 명의 병력을 제공하고 테무진의 어릴 적 친구인 쟈무카도 설득시켜 병력을 제공하게 함으로써 그 약속을 지켰다.
 # ::note
 -- FRAMES ----------------------------------------
@@ -555,7 +555,7 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt26.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt26.E2017.Wiki.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 테무진 일가의 궁핍과 이웃 부족의 왕이 제공한 대규모 병력은 상반된 이야기이기 때문에 사실 여부가 의심스러우나, 〈몽골 비사〉, (원조비사)에 나오는 이야기를 그대로 인용한 것이다.
 # ::note
 -- FRAMES ----------------------------------------
