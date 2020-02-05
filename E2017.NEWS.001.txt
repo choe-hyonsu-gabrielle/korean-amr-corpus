@@ -1,13 +1,13 @@
 # ::id snt0.E2017.NEWS.001 ::date 2019-09-01 ::annotator gabrielle ::preferred True
 # ::snt '13월의 보너스냐 세금폭탄이냐' 연말정산서비스 15일 시작.
 # ::note 12/18 검수
-(m / multi-sentence
-    :snt1 (a / amr-choice
+(a / and
+    :op1 (a2 / amr-choice
         :op1 (보 / 보너스
             :time (d / date-entity :month 13))
         :op2 (폭 / 폭탄
             :mod (세 / 세금)))
-    :snt2 (시 / 시작-01
+    :op2 (시 / 시작-01
         :ARG1 (s / service* :wiki - :name (이 / 이름 :op1 "연말정산서비스"))
         :time (d / date-entity :day 15)))
 
