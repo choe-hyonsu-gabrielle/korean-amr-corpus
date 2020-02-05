@@ -586,7 +586,7 @@
 # ::snt 우리 군이 구축 중인 KAMD 무력화를 노리고 개발한 미사일로 평가되고 있다.
 # ::note KAMD를 named-entity로 보지 않고 풀어 쓰지도 않음. ICBM 등 수정 필요. 무엇을 무엇으로 평가하다의 동격 처리 방법
 (평 / 평가-01
-	:ARG1 (미 / 미사일
+	:attribute (미 / 미사일
 		:ARG1-of (개 / 개발-01
 			:purpose (무 / 무력화-01
 				:ARG1 (K / KAMD

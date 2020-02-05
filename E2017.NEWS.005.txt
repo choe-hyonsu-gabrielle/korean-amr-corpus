@@ -280,7 +280,7 @@
 
 # ::id snt11.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle ::preferred False
 # ::snt 문 대통령은 강 후보자에 대해 "비(非) 외무고시 출신 외교부 첫 여성 국장과 유엔 최고위직 등 외교 분야에서 한국 최초, 최고 여성 수식어가 따라다닌다"며 "2006년부터 유엔에서 활동하며 국제외교무대에서 쌓은 인적 네트워크, 전문성을 바탕으로 민감한 외교 현안을 슬기롭게 헤쳐 나갈 적임자로 판단했다"고 말했다.
-# ::note 판단-01 동격 처리?, 인적
+# ::note 판단-01 동격 처리? --> 우선 :attribute 표시, 인적 네트워크 어떻게 표상?
 (말 / 말하-01
     :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
         :ARG0-of (h / have-org-role-91
@@ -310,7 +310,7 @@
                         :ARG0 p2
                         :ARG1 (o / organization :wiki "유엔" :name (이5 / 이름 :op1 "유엔"))
                         :mod (최3 / 최고위))))))
-    :ARG1 (판 / 판단-01
+    :attribute (판 / 판단-01
         :ARG0 p
         :ARG1 p2
         :ARG1 (사 / 사람
