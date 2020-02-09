@@ -116,7 +116,7 @@
 (a / amr-unknown
     :domain (동 / 동물
         :polarity -
-        :ARG2-of (비 / 비유-01
+        :mod (비 / 비유-01
             :ARG1 (일 / 일생
                 :poss (남 / 남자))
             :location (p / publication :wiki "탈무드" :name (이 / 이름 :op1 "탈무드")))))
@@ -161,7 +161,7 @@
 (a / amr-unknown
     :domain (악 / 악기
         :polarity -
-        :ARG1-of (연 / 연주-00
+        :mod (연 / 연주-00
             :instrument (활 / 활))))
 
 # ::id snt0.E2016.788.06_A_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
@@ -260,215 +260,162 @@
 
 
 
-# ::id snt0.E2016.788.07_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.07_Q_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 역대 왕조 중 마지막 왕이 아닌 사람은?
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"왕" [CV_POSITION]	->  :mod (왕 / 왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (왕 / 왕))
--- VERBALIZED ------------------------------------
-(왕 / 왕 :mod (마 / 마지막))
-(왕 / 왕조 :mod (역 / 역대))
+(a / amr-unknown
+    :ARG0-of (h / have-org-role-91
+        :polarity -
+        :ARG1 (왕 / 왕조
+            :mod (역 / 역대))
+        :ARG2 (왕2 / 왕
+            :ord (마 / 마지막))))
 
-
-# ::id snt0.E2016.788.08_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.08_A_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 썰매는 얼음이나 눈 위를 잘 달릴 수 있도록 바퀴 대신 평행한 가로대를 단 탈 것이다.
 # ::note
--- FRAMES ----------------------------------------
-달리 : VERB
-	- run		(달 / 달리-01 :ARG0 thing_running :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- depend		(달 / 달리-02 :ARG1 thing_depending :ARG2 depend_on)
-	- be_not_enough		(달 / 달리-03 :ARG1 thing_being_not_enough)
-	- differ		(달 / 달리-04 :ARG0 entity_being_different :ARG1 topic :ARG2 different_from)
-있 : ** UNUSED_OR_NON-ENTRY **
-대신 : VERBAL_NOUN
-	- replace		(대 / 대신-01 :ARG0 agent :ARG1 thing_substituted :ARG2 thing_substituting)
-평행 : VERBAL_NOUN
-	- parallel		(평 / 평행-01 :ARG1 thing_under_consideration :ARG2 in_comparison_to)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
-달 : VERB
-	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
-	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
-타 : VERB
-	- ride		(타 / 타-01 :ARGA causer :ARG0 agent :ARG1 vehicle)
-	- take		(타 / 타-02 :ARG1 taker :ARG2 thing_taken)
-	- burn		(타 / 타-03 :ARG1 thing_burning :ARG2 fire)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"썰매" [CV_SPORTS_INST]	->  (썰 / 썰매)	OR	(s / sports-instrument* :wiki "썰매" :name (이 / 이름 :op1 "썰매"))
--- VERBALIZED ------------------------------------
-(대 / 대 :mod (가 / 가로))
-(대 / 대신 :mod (바 / 바퀴))
-(위 / 위 :mod (눈 / 눈))
-(평 / 평행 :ARG1 (대 / 대신))
+(탈 / 탈것
+    :domain (썰 / 썰매)
+    :ARG2-of (달 / 달-02
+        :ARG1 (가 / 가로대
+            :ARG1-of (평 / 평행-01)
+        :ARG1-of (i / instead-of-91
+            :ARG2 (바 / 바퀴)))
+        :purpose (가2 / 가능-01
+            :ARG1 (달2 / 달리-01
+                :ARG1 (위 / 위
+                    :op1 (o / or
+                        :op1 (얼 / 얼음)
+                        :op2 (눈 / 눈)))
+                :manner (잘 / 잘)))))
 
-
-# ::id snt1.E2016.788.08_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.788.08_A_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 추운지방에서는 중요한 수송수단이며, 오늘날은 주로 스포츠에 많이 사용된다.
 # ::note
--- FRAMES ----------------------------------------
-춥 : VERB
-	- cold		(춥 / 춥-01 :ARG1 weather)
-중요 : VERBAL_NOUN
-	- important		(중 / 중요-01 :ARG1 thing_being_important :ARG2 important_to)
-수송 : VERBAL_NOUN
-	- transport		(수 / 수송-01 :ARG0 agent :ARG1 thing_transported :ARG2 start_point :ARG3 end_point)
-날 : VERBAL_NOUN
-	- fly		(날 / 날-01 :ARG0 agent :ARG1 path :ARG2 start_point :ARG3 end_point)
-사용 : VERBAL_NOUN
-	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"오늘날" [DT_OTHERS]	->  :time|duration (오 / 오늘날)	OR	:time (d / date-entity)	OR	:duration 
--- VERBALIZED ------------------------------------
-(날 / 날 :mod (오 / 오늘))
-(수 / 수단 :mod (수 / 수송))
+(a / and
+    :op1 (수 / 수단
+        :purpose (수2 / 수송-01)
+        :ARG1-of (중 / 중요-01)
+        :location (지 / 지방
+            :mod (춥 / 춥-01)))
+    :op2 (사 / 사용-01
+        :ARG2 (스 / 스포츠)
+        :mod (주 / 주로)
+        :degree (많 / 많-01)
+        :time (오 / 오늘날)))
 
-
-# ::id snt0.E2016.788.08_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.08_A_02 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 얼음판이나 눈 위에서 사람이나 물건을 싣고 끄는 기구.
 # ::note
--- FRAMES ----------------------------------------
-싣 : VERB
-	- load		(싣 / 싣-01 :ARG0 agent :ARG1 theme :ARG2 location)
-	- print		(싣 / 싣-02 :ARG0 agent :ARG1 document :ARG2 printed_in)
-끌 : VERB
-	- drag		(끌 / 끌-01 :ARG0 agent :ARG1 thing_dragged)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(위 / 위 :mod (눈 / 눈))
-(판 / 판 :mod (얼 / 얼음))
+(기 / 기구
+    :mod (끌 / 끌-01
+        :manner (싣 / 싣-01
+            :ARG1 (o / or
+                :op1 (사 / 사람)
+                :op2 (물 / 물건)))
+        :location (위 / 위
+            :op1 (o2 / or
+                :op1 (얼 / 얼음판)
+                :op2 (눈 / 눈)))))
 
-
-# ::id snt0.E2016.788.08_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.08_Q_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 2음절의 이것은 눈이나 얼음 위에서 사람을 태우거나 물건 등을 싣고 끄는 기구이다.
 # ::note
--- FRAMES ----------------------------------------
-태우 : ** UNUSED_OR_NON-ENTRY **
-싣 : VERB
-	- load		(싣 / 싣-01 :ARG0 agent :ARG1 theme :ARG2 location)
-	- print		(싣 / 싣-02 :ARG0 agent :ARG1 document :ARG2 printed_in)
-끌 : VERB
-	- drag		(끌 / 끌-01 :ARG0 agent :ARG1 thing_dragged)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2음절" [QT_COUNT]	->  :quant (2 / 2음절)	OR	(c / concept* :quant 2 :unit|scale (음 / 음절))
--- VERBALIZED ------------------------------------
-(위 / 위 :mod (얼 / 얼음))
+(기 / 기구
+    :domain (이 / 이것
+        :mod (음 / 음절 :mod 2))
+    :mod (끌 / 끌-01
+        :manner (o / or
+            :op1 (타 / 타-01
+                :ARG0 (사 / 사람))
+            :op2 (싣 / 싣-01
+                :ARG1 (등 / 등
+                    :op1 (물 / 물건))))
+        :location (위 / 위
+            :op1 (o2 / or
+                :op1 (눈 / 눈)
+                :op2 (얼 / 얼음)))))
 
-
-# ::id snt1.E2016.788.08_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.788.08_Q_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 겨울철 어린이들의 전통놀이에도 쓰이는 이것은 무엇일까?
 # ::note
--- FRAMES ----------------------------------------
-어린이들 : DERIVED_NON-ENTRY -> (어 / 어린이들-00) ?
-쓰이 : REDUCED_VERB_DETECTED
-	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
-	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
-	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"겨울철" [DT_SEASON]	->  :time|duration (겨 / 겨울철)	OR	:time (d / date-entity :season (겨 / 겨울))	OR	:duration 
--- VERBALIZED ------------------------------------
-(놀 / 놀이 :mod (전 / 전통))
-(들 / 들 :mod (어 / 어린이))
-(어 / 어린이 :mod (철 / 철))
-(철 / 철 :mod (겨 / 겨울))
+(a / amr-unknown
+    :ARG1-of (쓰 / 쓰-01
+        :ARG0 (어 / 어린이)
+        :ARG2 (놀 / 놀이
+            :mod (전 / 전통))
+        :time (d / date-entity
+            :season (겨 / 겨울철))))
 
-
-# ::id snt0.E2016.788.09_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.09_A_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 중화인민공화국이 원산지인 중형견으로 한번에 4~6마리 정도의 새끼를 출산한다.
 # ::note
--- FRAMES ----------------------------------------
-공화국 : DERIVED_NON-ENTRY -> (공 / 공화국-00) ?
-원산지 : DERIVED_NON-ENTRY -> (원 / 원산지-00) ?
-출산 : VERBAL_NOUN
-	- give_birth_to		(출 / 출산-01 :ARGA causer :ARG0 thing_giving_birth :ARG1 give_birth_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"4~6마리" [QT_COUNT]	->  :quant (4 / 4~6마리)	OR	(c / concept* :quant 4 :unit|scale (~ / ~6마리))
-"새끼" [CV_RELATION]	->  :mod (새 / 새끼)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (새 / 새끼))
-"중화인민공화국" [LCP_COUNTRY]	->  (중 / 중화인민공화국)	OR	(c / country :wiki "중화인민공화국" :name (이 / 이름 :op1 "중화인민공화국"))
-"한번" [QT_COUNT]	->  :quant (한 / 한번)	OR	(c / concept* :quant - :unit|scale (한 / 한번))
--- VERBALIZED ------------------------------------
-(공 / 공화 :mod (인 / 인민))
-(국 / 국 :mod (공 / 공화))
-(지 / 지 :mod (원 / 원산))
+(a / and
+    :op1 (개 / 개
+        :mod (중 / 중형)
+        :mod (원 / 원산지
+            :domain (c / country :wiki "중화인민공화국" :name (이 / 이름 :op1 "중화인민공화국"))))
+    :op2 (출 / 출산-01
+        :ARG1 (새 / 새끼
+            :quant (정 / 정도
+                :op1 4
+                :op2 6)
+            :unit (마 / 마리))
+        :frequency (r / rate-entity-91
+            :ARG1 "1")))
 
-
-# ::id snt1.E2016.788.09_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.788.09_A_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 가장 큰 특징은 흑색 내지 보라색 혀를 가지고 있다는 것이고 북방계 스피츠에 속하는 오래된 품종이다.
 # ::note
--- FRAMES ----------------------------------------
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-가지 : VERB
-	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
-북방계 : DERIVED_NON-ENTRY -> (북 / 북방계-00) ?
-속하 : VERB
-	- belong_to		(속 / 속하-01 :ARG1 thing_belonging :ARG2 belong_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"보라색" [TM_COLOR]	->  (보 / 보라색)	OR	(c / color* :wiki "보라" :name (이 / 이름 :op1 "보라색"))
-"북방" [TM_DIRECTION]	->  (북 / 북방)	OR	(: / :direction :wiki "북방?" :name (이 / 이름 :op1 "북방"))
-"스피츠" [AM_MAMMALIA]	->  (스 / 스피츠)	OR	(a / animal* :wiki "스피츠?" :name (이 / 이름 :op1 "스피츠"))
-"혀" [AM_PART]	->  (혀 / 혀)	OR	(혀 / 혀 :part-of|poss)
-"흑색" [TM_COLOR]	->  (흑 / 흑색)	OR	(c / color* :wiki "검정" :name (이 / 이름 :op1 "흑색"))
--- VERBALIZED ------------------------------------
-(계 / 계 :mod (북 / 북방))
-(색 / 색 :mod (보 / 보라))
-(혀 / 혀 :mod (색 / 색))
+(a / and
+    :op1 (가 / 가지-01
+        :domain (특 / 특징
+            :mod (크 / 크-01
+                :degree (가2 / 가장)))
+        :ARG1 (혀 / 혀
+            :mod (o / or
+                :op1 (흑 / 흑색)
+                :op2 (보 / 보라색))))
+    :op2 (품 / 품종
+        :mod (오 / 오래되-01)
+        :ARG1-of (i / include-91
+            :ARG2 (스 / 스피츠
+                :mod (북 / 북방계)))))
 
-
-# ::id snt0.E2016.788.09_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.09_A_02 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 중국 원산이다.
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
--- VERBALIZED ------------------------------------
+(원 / 원산
+    :mod (c / country :wiki "중국" :name (이 / 이름 :op1 "중국")))
 
-
-# ::id snt1.E2016.788.09_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.788.09_A_02 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt '차우'란 중국어로 썰매의 뜻으로 썰매를 끄는 개였다.
 # ::note
--- FRAMES ----------------------------------------
-끌 : VERB
-	- drag		(끌 / 끌-01 :ARG0 agent :ARG1 thing_dragged)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"개" [AM_MAMMALIA]	->  (개 / 개)	OR	(a / animal* :wiki "개" :name (이 / 이름 :op1 "개"))
-"썰매" [CV_SPORTS_INST]	->  (썰 / 썰매)	OR	(s / sports-instrument* :wiki "썰매" :name (이 / 이름 :op1 "썰매"))
-"썰매" [CV_SPORTS_INST]	->  (썰 / 썰매)	OR	(s / sports-instrument* :wiki "썰매" :name (이 / 이름 :op1 "썰매"))
-"중국어" [CV_LANGUAGE]	->  (중 / 중국어)	OR	(l / language :wiki "중국어" :name (이 / 이름 :op1 "중국어"))
-"차우" [AM_MAMMALIA]	->  (차 / 차우)	OR	(a / animal* :wiki "차우" :name (이 / 이름 :op1 "차우"))
--- VERBALIZED ------------------------------------
+(a / and
+    :op1 (뜻 / 뜻하-01
+        :ARG1 (s / string-entity :value "차우")
+        :ARG2 (썰 / 썰매)
+        :medium (l / language :wiki "중국어" :name (이 / 이름 :op1 "중국어")))
+    :op2 (개 / 개
+        :ARG0-of (끌 / 끌-01
+            :ARG1 (썰2 / 썰매))))
 
-
-# ::id snt0.E2016.788.09_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.09_Q_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 개의 한 품종인 이것은 사자와 곰을 닮아 '사자견'이라고 불리며, 중국이 원산지이다.
 # ::note
--- FRAMES ----------------------------------------
-닮 : VERB
-	- resemble		(닮 / 닮-01 :ARG1 copy :ARG2 original)
-불리 : VERB
-	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
-원산지 : DERIVED_NON-ENTRY -> (원 / 원산지-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"개" [AM_MAMMALIA]	->  (개 / 개)	OR	(a / animal* :wiki "개" :name (이 / 이름 :op1 "개"))
-"곰" [AM_MAMMALIA]	->  (곰 / 곰)	OR	(a / animal* :wiki "곰" :name (이 / 이름 :op1 "곰"))
-"사자" [AM_MAMMALIA]	->  (사 / 사자)	OR	(a / animal* :wiki "사자" :name (이 / 이름 :op1 "사자"))
-"사자견" [AM_MAMMALIA]	->  (사 / 사자견)	OR	(a / animal* :wiki - :name (이 / 이름 :op1 "사자견"))
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
--- VERBALIZED ------------------------------------
-(지 / 지 :mod (원 / 원산))
-
+(a / and
+    :op1 (부 / 부르-02
+        :ARG1 (이 / 이것
+            :mod (품 / 품종
+                :mod (개 / 개)))
+        :ARG2 (s / string-entity :value "사자견")
+        :cause (닮 / 닮-01
+            :ARG1 이
+            :ARG2 (a2 / and
+                :op1 (사 / 사자)
+                :op2 (곰 / 곰))))
+    :op2 (원 / 원산지
+        :mod (c / country :wiki "중국" :name (이2 / 이름 :op1 "중국"))))
 
 # ::id snt1.E2016.788.09_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 일반적으로는 혀의 색깔이 검정이나 파란색 계통을 띠며, 흔히 '썰매를 끄는 개'로 알려져 있는 4음절의 이 개는 무엇일까?
