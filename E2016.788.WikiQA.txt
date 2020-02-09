@@ -1011,59 +1011,37 @@
             :ARG2 (악 / 악기
                 :mod w))))
 
-# ::id snt2.E2016.788.16_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2016.788.16_A_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 독일에 귀화하여, 72년 뮌헨올림픽 개막축하 오페라에서 연주한 《심청》, 《나비의 꿈》, 《광주여 영원하라》 등의 작품이 있다.
 # ::note
--- FRAMES ----------------------------------------
-귀화하 : DERIVED_NON-ENTRY
-개막 : VERBAL_NOUN
-	- open		(개 / 개막-01 :ARG0 opener :ARG1 thing_opening)
-축하 : VERBAL_NOUN
-	- congratulate		(축 / 축하-01 :ARG0 agent :ARG1 thing_congratulated)
-연주하 : DERIVED_NON-ENTRY
-영원하 : DERIVED_NON-ENTRY
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"72년" [DT_YEAR]	->  :time|duration (7 / 72년)	OR	:time (d / date-entity :year 72)	OR	:duration (t / temporal-quantity :quant 72 :unit (년 / 년))  
-"광주여 영원하라" [AFW_MUSIC]	->  (광 / 광주여영원하라)	OR	(m / music :wiki - :name (이 / 이름 :op1 "광주여" :op2 "영원하라"))
-"나비의 꿈" [AFW_MUSIC]	->  (나 / 나비의꿈)	OR	(m / music :wiki "나비의_꿈" :name (이 / 이름 :op1 "나비의" :op2 "꿈"))
-"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
-"뮌헨올림픽" [EV_SPORTS]	->  (뮌 / 뮌헨올림픽)	OR	(g / game :wiki - :name (이 / 이름 :op1 "뮌헨올림픽"))
-"심청" [AFW_MUSIC]	->  (심 / 심청)	OR	(m / music :wiki "심청?" :name (이 / 이름 :op1 "심청"))
-"오페라" [FD_ART]	->  (오 / 오페라)	OR	(s / study-field|group* :wiki "오페라" :name (이 / 이름 :op1 "오페라"))
--- VERBALIZED ------------------------------------
-(개 / 개막 :mod (올 / 올림픽))
-(오 / 오페라 :mod (축 / 축하))
-(축 / 축하 :ARG1 (개 / 개막))
+(a / and
+    :op1 (귀 / 귀화-00
+        :ARG1 (c / country :wiki "독일" :name (이 / 이름 :op1 "독일")))
+    :op2 (작 / 작품
+        :example (등 / 등
+            :op1 (m / music :wiki - :name (이2 / 이름 :op1 "심청")
+                :ARG1-of (연 / 연주-00
+                    :time (오 / 오페라
+                        :mod (축 / 축하-01
+                            :ARG1 (개 / 개막-01
+                                :ARG1 (g / game :wiki "1972년_하계_올림픽" :name (이3 / 이름 :op1 "뮌헨올림픽"))
+                                :time (d / date-entity :year 1972))))))
+            :op2 (m2 / music :wiki - :name (이4 / 이름 :op1 "나비의" :op2 "꿈"))
+            :op3 (m3 / music :wiki - :name (이5 / 이름 :op1 "광주여" :op2 "영원하라")))))
 
-
-# ::id snt0.E2016.788.16_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.16_A_02 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 1972년 서베를린음대의 명예교수로 임용됐고, 1972년 오페라 "심청"이 성공적으로 공연됐다.
-# ::note
--- FRAMES ----------------------------------------
-서 : VERBAL_NOUN
-	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
-	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
-	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
-임용 : VERBAL_NOUN
-	- employ		(임 / 임용-01 :ARG0 thing_employing :ARG1 thing_employed :ARG2 employ_as)
-성공 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (성 / 성공적-00) ?
-	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
-공연 : VERBAL_NOUN
-	- perform		(공 / 공연-01 :ARG0 agent :ARG1 performance)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1972년" [DT_YEAR]	->  :time|duration (1 / 1972년)	OR	:time (d / date-entity :year 1972)	OR	:duration (t / temporal-quantity :quant 1972 :unit (년 / 년))  
-"1972년" [DT_YEAR]	->  :time|duration (1 / 1972년)	OR	:time (d / date-entity :year 1972)	OR	:duration (t / temporal-quantity :quant 1972 :unit (년 / 년))  
-"명예교수" [CV_POSITION]	->  :mod (명 / 명예교수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (명 / 명예교수))
-"서베를린음대" [OGG_EDUCATION]	->  (서 / 서베를린음대)	OR	(s / school|university :wiki - :name (이 / 이름 :op1 "서베를린음대"))
-"심청" [AFW_MUSIC]	->  (심 / 심청)	OR	(m / music :wiki "심청?" :name (이 / 이름 :op1 "심청"))
-"오페라" [FD_ART]	->  (오 / 오페라)	OR	(s / study-field|group* :wiki "오페라" :name (이 / 이름 :op1 "오페라"))
--- VERBALIZED ------------------------------------
-(교 / 교수 :mod (명 / 명예))
-(적 / 적 :ARG0-of (성 / 성공))
-
+# ::note 성공적
+(a / and
+    :op1 (임 / 임용-01
+        :ARG2 (h / have-org-role-91
+            :ARG1 (u / university :wiki - :name (이 / 이름 :op1 "서베를린음대"))
+            :ARG2 (명 / 명예교수)))
+    :op2 (공 / 공연-01
+        :ARG1 (m / music :wiki - :name (이2 / 이름 :op1 "심청")
+            :mod (오 / 오페라))
+        :manner (성 / 성공적))
+    :time (d / date-entity :year 1972))
 
 # ::id snt0.E2016.788.16_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 1972년 오페라 (심청)으로 세계적인 작곡가라는 명성을 얻은 이 사람은 유럽 평론가들에 의해 '유럽에 현존하는 5대 작곡가'로 선정되기도 했다.

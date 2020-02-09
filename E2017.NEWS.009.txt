@@ -14,7 +14,7 @@
 				:destination (함 / 함정)))
 		:ARG1-of (잇 / 잇-02
 			:ARG2 (미3 / 미사일
-				:path (탄 / 탄도) 
+				:path (탄 / 탄도)
 				:extent (중 / 중거리))))
 	:op2 (남 / 남-01
 		:ARG1 (미4 / 미사일

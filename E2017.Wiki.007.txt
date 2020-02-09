@@ -64,46 +64,29 @@
         :op2 (초 / 초반
             :op1 (d2 / date-entity :decade 1970))))
 
-# ::id snt5.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt5.E2017.Wiki.007 ::date 2019-02-09 ::annotator gabrielle
 # ::snt 후에 스카이랩 계획이나 미국과 소련의 공동 실험인 아폴로-소유즈 시험 계획에서도 아폴로 계획 당시에 만들어진 장비를 사용하였으며, 이들 탐사도 아폴로 계획의 일부로 다뤄지기도 한다.
 # ::note
--- FRAMES ----------------------------------------
-계획 : VERBAL_NOUN
-	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
-실험 : VERBAL_NOUN
-	- experiment		(실 / 실험-01 :ARG0 agent :ARG1 experimental_subject)
-시험 : VERBAL_NOUN
-	- experiment		(시 / 시험-01 :ARG0 agent :ARG1 experimental_subject)
-계획 : VERBAL_NOUN
-	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
-계획 : VERBAL_NOUN
-	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-장비 : VERBAL_NOUN
-	- equip		(장 / 장비-01 :ARG0 agent :ARG1 equipment :ARG2 entity_getting_equipment)
-사용 : VERBAL_NOUN
-	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
-계획 : VERBAL_NOUN
-	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
-다루 : VERB
-	- cover		(다 / 다루-01 :ARG0 agent :ARG1 thing_covered)
-	- treat		(다 / 다루-02 :ARG0 agent :ARG1 entity_treated :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"소련" [LCP_COUNTRY]	->  (소 / 소련)	OR	(c / country :wiki "소련" :name (이 / 이름 :op1 "소련"))
-"소유즈" [AF_TRANSPORT]	->  (소 / 소유즈)	OR	(v / vehicle|ship|aircraft|... :wiki "소유즈?" :name (이 / 이름 :op1 "소유즈"))
-"스카이랩" [LC_OTHERS]	->  (스 / 스카이랩)	OR	(l / location? :wiki "스카이랩" :name (이 / 이름 :op1 "스카이랩"))
-"아폴로" [AF_TRANSPORT]	->  (아 / 아폴로)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
--- VERBALIZED ------------------------------------
-(계 / 계획-01 :ARG1 (시 / 시험-01))
-(계 / 계획-01 :mod (스 / 스카이랩-00))
-(당 / 당시-00 :mod (계 / 계획-01))
-(실 / 실험-01 :mod (공 / 공동-00))
-
+(a / and
+	:op1 (사 / 사용-01
+		:ARG1 (장 / 장비
+			:ARG1-of (만 / 만들-01
+				:time (당 / 당시
+					:mod (p / project* :wiki "아폴로_계획" :name (이 / 이름 :op1 "아폴로" :op2 "계획")))))
+		:ARG2 (a2 / and
+			:op1 (p2 / project* :wiki "스카이랩" :name (이2 / 이름 :op1 "스카이랩" :op2 "계획"))
+			:op2 (p3 / project* :wiki "아폴로-소유스_시험_계획" :name (이3 / 이름 :op1 "아폴로-소유즈" :op2 "시험" :op3 "계획")
+				:mod (실 / 실험-01
+					:mod (공 / 공동)
+					:ARG0 (a3 / and
+						:op1 (c / country :wiki "미국" :name (이4 / 이름 :op1 "미국"))
+						:op2 (c2 / country :wiki "소련" :name (이5 / 이름 :op1 "소련"))))))
+		:time (후 / 후))
+	:op2 (다 / 다루-02
+		:ARG1 a2
+		:ARG2 (i / include-91
+			:ARG1 a
+			:ARG2 p)))
 
 # ::id snt6.E2017.Wiki.007 ::date 2019-12-30 ::annotator gabrielle
 # ::snt 여러 번의 성공도 있었지만, 두 차례의 큰 사고도 있었다.
@@ -147,41 +130,19 @@
         :manner (간 / 간신하-00))
     :time (d / date-entity :year 1970 :month 4 :day 13))
 
-# ::id snt9.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt9.E2017.Wiki.007 ::date 2019-02-09 ::annotator gabrielle
 # ::snt 아폴로 계획은 드와이트 아이젠하워의 재임시절 추진되었던 유인 우주 비행 계획인 머큐리 계획을 기반으로 한 것이었다.
 # ::note
--- FRAMES ----------------------------------------
-계획 : VERBAL_NOUN
-	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
-추진 : VERBAL_NOUN
-	- drive_forward		(추 / 추진-01 :ARG0 agent :ARG1 thing_driven_forward)
-유인 : VERBAL_NOUN
-	- entice		(유 / 유인-01 :ARG0 agent :ARG1 thing_enticed)
-비행 : VERBAL_NOUN
-	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
-계획 : VERBAL_NOUN
-	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
-계획 : VERBAL_NOUN
-	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"드와이트 아이젠하워" [PS_NAME]	->  (드 / 드와이트아이젠하워)	OR	(p / person :wiki "드와이트_D._아이젠하워" :name (이 / 이름 :op1 "드와이트" :op2 "아이젠하워"))
-"아폴로" [AF_TRANSPORT]	->  (아 / 아폴로)	OR	(v / vehicle|ship|aircraft|... :wiki "아폴로?" :name (이 / 이름 :op1 "아폴로"))
-"우주" [LC_SPACE]	->  (우 / 우주)	OR	(? / ?planet|star|moon|constellation :wiki "우주" :name (이 / 이름 :op1 "우주"))
--- VERBALIZED ------------------------------------
-(계 / 계획-01 :ARG1 (비 / 비행-01))
-(비 / 비행-01 :mod (우 / 우주-00))
-(시 / 시절 :mod (재 / 재임-00))
-(우 / 우주-00 :mod (유 / 유인-01))
-(추 / 추진-01 :mod (시 / 시절-00))
-
+(기 / 기반-00
+	:ARG1 (p / project* :wiki "아폴로_계획" :name (이 / 이름 :op1 "아폴로" :op2 "계획"))
+	:ARG2 (p2 / project* :wiki "머큐리_계획" :name (이2 / 이름 :op1 "머큐리" :op2 "계획")
+		:mod (계 / 계획-01
+			:mod (비 / 비행-01
+				:ARG0 (사 / 사람)
+				:ARG1 (우 / 우주)))
+		:ARG1-of (추 / 추진-01
+			:time (재 / 재임-00
+				:ARG0 (p3 / person :wiki "드와이트_D._아이젠하워" :name (이3 / 이름 :op1 "드와이트" :op2 "아이젠하워"))))))
 
 # ::id snt10.E2017.Wiki.007 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 머큐리 계획의 목표는 한 명의 우주비행사가 우주선에 탑승하여 지구 궤도 비행을 하는 것이었으나 아폴로 계획은 세명의 우주비행사가 우주선에 탑승하여 달에 착륙하는 것을 목표로 하였다.
