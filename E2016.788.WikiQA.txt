@@ -417,201 +417,138 @@
     :op2 (원 / 원산지
         :mod (c / country :wiki "중국" :name (이2 / 이름 :op1 "중국"))))
 
-# ::id snt1.E2016.788.09_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.788.09_Q_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 일반적으로는 혀의 색깔이 검정이나 파란색 계통을 띠며, 흔히 '썰매를 끄는 개'로 알려져 있는 4음절의 이 개는 무엇일까?
 # ::note
--- FRAMES ----------------------------------------
-일반적 : DERIVED_NON-ENTRY -> (일 / 일반적-00) ?
-파란색 : DERIVED_NON-ENTRY -> (파 / 파란색-00) ?
-띠 : VERB
-	- be_charged_with		(띠 / 띠-01 :ARG0 thing_in_charge :ARG1 charged_with)
-끌 : VERB
-	- drag		(끌 / 끌-01 :ARG0 agent :ARG1 thing_dragged)
-알려지 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"4음절" [QT_COUNT]	->  :quant (4 / 4음절)	OR	(c / concept* :quant 4 :unit|scale (음 / 음절))
-"개" [AM_MAMMALIA]	->  (개 / 개)	OR	(a / animal* :wiki "개" :name (이 / 이름 :op1 "개"))
-"개" [AM_MAMMALIA]	->  (개 / 개)	OR	(a / animal* :wiki "개" :name (이 / 이름 :op1 "개"))
-"검정" [TM_COLOR]	->  (검 / 검정)	OR	(c / color* :wiki "검정" :name (이 / 이름 :op1 "검정"))
-"썰매" [CV_SPORTS_INST]	->  (썰 / 썰매)	OR	(s / sports-instrument* :wiki "썰매" :name (이 / 이름 :op1 "썰매"))
-"파란색" [TM_COLOR]	->  (파 / 파란색)	OR	(c / color* :wiki "파랑" :name (이 / 이름 :op1 "파란색"))
-"혀" [AM_PART]	->  (혀 / 혀)	OR	(혀 / 혀 :part-of|poss)
--- VERBALIZED ------------------------------------
-(색 / 색 :mod (파 / 파란))
-(적 / 적 :mod (일 / 일반))
+(a / amr-unknown
+    :domain (개 / 개
+        :mod (이 / 이)
+        :mod (음 / 음절 :mod 4)
+        :ARG1-of (알 / 알-01
+            :attribute (개2 / 개
+                :ARG0-of (끌 / 끌-01
+                    :ARG1 (썰 / 썰매)))
+            :mod (흔 / 흔히))
+        :mod (띠 / 띠-00
+            :mod (일 / 일반적)
+            :ARG1 (색 / 색깔
+                :poss (혀 / 혀))
+            :ARG2 (계 / 계통
+                :mod (o / or
+                    :op1 (검 / 검정)
+                    :op2 (파 / 파란색))))))
 
-
-# ::id snt0.E2016.788.10_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.10_A_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 곶(串, Cape)은 바다 또는 호수 쪽으로 튀어나온 모양을 한 육지로, 3면이 물로 둘러싸인 땅을 말한다.
 # ::note
--- FRAMES ----------------------------------------
-튀어나오 : ** UNUSED_OR_NON-ENTRY **
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-물 : VERBAL_NOUN
-	- bite		(물 / 물-01 :ARG0 agent :ARG1 entity_bitten)
-	- pay		(물 / 물-02 :ARGA causer :ARG0 payer :ARG1 thing_paid :ARG2 person_being_paid)
-둘러싸이 : REDUCED_VERB_DETECTED
-	- surround		(둘 / 둘러싸-01 :ARG0 causal_agent :ARG1 thing_surrounded :ARG2 thing_surrounding)
-말하 : DERIVED_VERB_DETECTED
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"3면" [QT_COUNT]	->  :quant (3 / 3면)	OR	(c / concept* :quant 3 :unit|scale (면 / 면))
--- VERBALIZED ------------------------------------
+(a / and
+    :domain (곶 / 곶)
+    :op1 (육 / 육지
+        :mod (모 / 모양
+            :mod (튀 / 튀어나오-00
+                :direction (쪽 / 쪽
+                    :op1 (o / or
+                        :op1 (바 / 바다)
+                        :op2 (호 / 호수))))))
+    :op2 (말 / 말하-01
+        :ARG1 (면 / 면
+            :mod 3
+            :part-of (땅 / 땅)
+            :ARG1-of (둘 / 둘러싸-01
+                :ARG2 (물 / 물)))))
 
-
-# ::id snt1.E2016.788.10_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.788.10_A_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 갑(岬) 또는 단(端)이라고도 하며, 등대가 설치된 경우가 많다.
 # ::note
--- FRAMES ----------------------------------------
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-설치 : VERBAL_NOUN
-	- build		(설 / 설치-01 :ARG0 agent :ARG1 thing_built :ARG2 location)
-많 : VERB
-	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
+(a / and
+    :op1 (하 / 하-03
+        :ARG2 (o / or
+            :op1 (갑 / 갑)
+            :op2 (단 / 단)))
+    :op2 (많 / 많-01
+        :ARG1 (경 / 경우
+            :mod (설 / 설치-01
+                :ARG1 (등 / 등대)))))
 
-
-# ::id snt2.E2016.788.10_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2016.788.10_A_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 그 규모가 크면 반도라고 한다.
 # ::note
--- FRAMES ----------------------------------------
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
+(하 / 하-03
+    :ARG2 (반 / 반도)
+    :condition (크 / 크-01
+        :ARG1 (규 / 규모
+            :poss (그 / 그))))
 
-
-# ::id snt0.E2016.788.10_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.10_A_02 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 갑(岬) 또는 단(端)이라고도 하고, 흔히 관(串)자를 빌려 ‘관’ 또는 ‘곶’으로 부르기도 한다.
 # ::note
--- FRAMES ----------------------------------------
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-빌리 : VERB
-	- borrow		(빌 / 빌리-01 :ARG0 borrower :ARG1 thing_borrowed :ARG2 loaner)
-부르 : VERB
-	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
-	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
+(a / and
+    :op1 (하 / 하-03
+        :ARG2 (o / or
+            :op1 (갑 / 갑)
+            :op2 (단 / 단)))
+    :op2 (하2 / 하-03
+        :ARG2 (o2 / or
+            :op1 (관 / 관)
+            :op2 (곶 / 곶))
+        :manner (빌 / 빌리-01
+            :ARG1 (s / string-entity :value "관")
+            :mod (흔 / 흔히))))
 
-
-# ::id snt1.E2016.788.10_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.788.10_A_02 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 곶보다 규모가 큰 것을 반도라고 하는데, 반도의 말단부를 곶이라고 하는 경우도 있다.
 # ::note
--- FRAMES ----------------------------------------
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-말단부 : DERIVED_NON-ENTRY -> (말 / 말단부-00) ?
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(부 / 부 :mod (말 / 말단))
+(c / contrast-01
+    :ARG1 (하 / 하-03
+        :ARG1 (h / have-degree-91
+            :ARG2 (크 / 크-01
+                :ARG1 (규 / 규모))
+            :ARG4 (곶 / 곶))
+        :ARG2 (반 / 반도))
+    :ARG2 (경 / 경우
+        :mod (하2 / 하-03
+            :ARG1 (말 / 말단부
+                :part-of (2반 / 반도))
+            :ARG2 (곶2 / 곶))))
 
-
-# ::id snt0.E2016.788.10_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.10_Q_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt '갑' 또는 '단'이라고도 하는 이것은 바다 쪽으로 좁고, 길게 뻗어 있는 육지의 한 부분을 뜻한다.
 # ::note
--- FRAMES ----------------------------------------
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-좁 : VERB
-	- narrow		(좁 / 좁-01 :ARG0 causer,_agent :ARG1 thing_being_narrow)
-길 : VERB
-	- long		(길 / 길-01 :ARG1 thing_being_long)
-뻗 : VERB
-	- extend		(뻗 / 뻗-01 :ARG1 thing_getting_longer :ARG2 start_point :ARG3 end_point)
-뜻하 : DERIVED_VERB_DETECTED
-	- mean		(뜻 / 뜻하-01 :ARG1 symbol :ARG2 thing_symbolized)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"한 부분" [QT_COUNT]	->  :quant (한 / 한부분)	OR	(c / concept* :quant 한 :unit|scale (부 / 부분))
--- VERBALIZED ------------------------------------
+(뜻 / 뜻하-01
+    :ARG1 (이 / 이것
+        :ARG1-of (하 / 하-03
+            :ARG2 (o / or
+                :op1 (갑 / 갑)
+                :op2 (단 / 단))))
+    :ARG2 (부 / 부분
+        :mod (한 / 한)
+        :part-of (육 / 육지)
+        :mod (뻗 / 뻗-01
+            :manner (길 / 길-01))
+        :mod (좁 / 좁-01
+            :direction (바 / 바다))))
 
-
-# ::id snt1.E2016.788.10_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.788.10_Q_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 이것보다 규모가 큰 것은 '반도'라고 부르는데, 무엇일까?
 # ::note
--- FRAMES ----------------------------------------
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-부르 : VERB
-	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
-	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
+(부 / 부르-02
+    :ARG1 (h / have-degree-91
+        :ARG2 (크 / 크-01
+            :ARG1 (규 / 규모))
+        :ARG4 (a / amr-unknown))
+    :ARG2 (반 / 반도))
 
-
-# ::id snt0.E2016.788.11_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.788.11_A_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 호미곶(虎尾串) 또는 동외곶(冬外串) 또는 장기곶(長鬐串)은 포항시의 동북쪽 끝에 있는 곶이다.
 # ::note
--- FRAMES ----------------------------------------
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-exception raised
-"冬外串" [LCG_BAY]	->  (冬 / 冬外串)	OR	(b / bay :wiki - :name (이 / 이름 :op1 "冬外串"))
-"虎尾串" [LCG_BAY]	->  (虎 / 虎尾串)	OR	(b / bay :wiki X :name (이 / 이름 :op1 "虎尾串"))
-"長鬐串" [LCG_BAY]	->  (長 / 長鬐串)	OR	(b / bay :wiki - :name (이 / 이름 :op1 "長鬐串"))
-"동북쪽" [TM_DIRECTION]	->  (동 / 동북쪽)	OR	(: / :direction :wiki "북동쪽" :name (이 / 이름 :op1 "동북쪽"))
-"동외곶" [LCG_BAY]	->  (동 / 동외곶)	OR	(b / bay :wiki "호미곶" :name (이 / 이름 :op1 "동외곶"))
-"장기곶" [LCG_BAY]	->  (장 / 장기곶)	OR	(b / bay :wiki "호미곶" :name (이 / 이름 :op1 "장기곶"))
-"포항시" [LCP_CITY]	->  (포 / 포항시)	OR	(c / city :wiki "포항시" :name (이 / 이름 :op1 "포항시"))
-"호미곶" [LCG_BAY]	->  (호 / 호미곶)	OR	(b / bay :wiki "호미곶" :name (이 / 이름 :op1 "호미곶"))
--- VERBALIZED ------------------------------------
-
+(곶 / 곶
+    :domain (o / or
+        :op1 (c / cape* :wiki "호미곶" :name (이 / 이름 :op1 "호미곶"))
+        :op2 (c2 / cape* :wiki "호미곶" :name (이2 / 이름 :op1 "동외곶"))
+        :op3 (c3 / cape* :wiki "호미곶" :name (이3 / 이름 :op1 "장기곶")))
+    :location (끝 / 끝
+        :op1 (c4 / city :wiki "포항시" :name (이4 / 이름 :op1 "포항시"))
+        :direction (동 / 동북쪽)))
 
 # ::id snt0.E2016.788.11_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt <지명> 경상북도 동해안 남부와 영일 반도 사이에 있는 만.
