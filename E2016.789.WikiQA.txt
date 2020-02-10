@@ -1,78 +1,47 @@
-# ::id snt0.E2016.789.01_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.01_A_01 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 낙성대(落星垈)는 강감찬 장군이 태어난 곳으로, 서울특별시 관악구 봉천동 228번지에 위치해 있다.
-# ::note
--- FRAMES ----------------------------------------
-태어나 : VERB
-	- be_born		(태 / 태어나-01 :ARG1 person)
-번지 : VERBAL_NOUN
-	- spread		(번 / 번지-01 :ARG1 thing_spreading :ARG2 start_point :ARG3 end_point)
-위치 : VERBAL_NOUN
-	- be_located		(위 / 위치-01 :ARG1 thing_located :ARG2 location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"228번지" [LCP_COUNTY]	->  (2 / 228번지)	OR	(c / county :wiki - :name (이 / 이름 :op1 "228번지"))
-"落星垈" [AF_CULTURAL_ASSET]	->  (落 / 落星垈)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "落星垈"))
-"강감찬" [PS_NAME]	->  (강 / 강감찬)	OR	(p / person :wiki "강감찬" :name (이 / 이름 :op1 "강감찬"))
-"관악구" [LCP_COUNTY]	->  (관 / 관악구)	OR	(c / county :wiki "관악구" :name (이 / 이름 :op1 "관악구"))
-"낙성대" [AF_CULTURAL_ASSET]	->  (낙 / 낙성대)	OR	(c / cultural-asset* :wiki "낙성대" :name (이 / 이름 :op1 "낙성대"))
-"봉천동" [LCP_COUNTY]	->  (봉 / 봉천동)	OR	(c / county :wiki "봉천동" :name (이 / 이름 :op1 "봉천동"))
-"서울특별시" [LCP_CAPITALCITY]	->  (서 / 서울특별시)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울특별시"))
-"장군" [CV_POSITION]	->  :mod (장 / 장군)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장군))
--- VERBALIZED ------------------------------------
+# ::note street-address-91 = ARG1: street number/번지  ARG2: street/읍면동리  ARG3: unit (apartment, suite etc.)/동호수  ARG4: city/시군구  ARG5: state, province, district/도,특별시  ARG6: zip code/우편번호  ARG7: country/국가
+(a / and
+    :op1 (c / cultural-asset* :wiki "낙성대" :name (이 / 이름 :op1 "낙성대")
+        :location-of (태 / 태어나-01
+            :ARG1 (p / person :wiki "강감찬" :name (이2 / 이름 :op1 "강감찬"))))
+    :op2 (b / be-located-at-91
+        :ARG1 c
+        :ARG2 (s / street-address-91
+            :ARG1 "228"
+            :ARG2 (c2 / city-district :wiki "봉천동" :name (이3 / 이름 :op1 "봉천동"))
+            :ARG4 (c3 / city :wiki "관악구" :name (이4 / 이름 :op1 "관악구"))
+            :ARG5 (c4 / city :wiki "서울특별시" :name (이5 / 이름 :op1 "서울특별시")))))
 
-
-# ::id snt0.E2016.789.01_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.01_A_02 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt <지명> 서울특별시 관악구 봉천동에 있는 강감찬 장군의 출생지.
 # ::note
--- FRAMES ----------------------------------------
-지명 : VERBAL_NOUN
-	- appoint		(지 / 지명-01 :ARG0 thing_appointing :ARG1 thing_appointed :ARG2 appoint_as)
-있 : ** UNUSED_OR_NON-ENTRY **
-출생 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (출 / 출생지-00) ?
-	- born		(출 / 출생-01 :ARG1 thing_born)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"강감찬" [PS_NAME]	->  (강 / 강감찬)	OR	(p / person :wiki "강감찬" :name (이 / 이름 :op1 "강감찬"))
-"관악구" [LCP_COUNTY]	->  (관 / 관악구)	OR	(c / county :wiki "관악구" :name (이 / 이름 :op1 "관악구"))
-"봉천동" [LCP_COUNTY]	->  (봉 / 봉천동)	OR	(c / county :wiki "봉천동" :name (이 / 이름 :op1 "봉천동"))
-"서울특별시" [LCP_CAPITALCITY]	->  (서 / 서울특별시)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울특별시"))
-"장군" [CV_POSITION]	->  :mod (장 / 장군)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장군))
--- VERBALIZED ------------------------------------
-(지 / 지 :ARG0-of (출 / 출생))
+(장 / 장소
+    :topic (지 / 지명)
+    :location (c / city-district :wiki "봉천동" :name (이 / 이름 :op1 "봉천동")
+        :location (c2 / city :wiki "관악구" :name (이2 / 이름 :op1 "관악구")
+            :location (c3 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울특별시"))))
+    :location-of (출 / 출생-01
+        :ARG1 (p / person :wiki "강감찬" :name (이4 / 이름 :op1 "강감찬"))))
 
-
-# ::id snt0.E2016.789.01_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.01_Q_01 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 서울 관악구에 있는 '낙성대'와 관련 있는 인물로 맞는 사람은?
 # ::note
--- FRAMES ----------------------------------------
-있 : ** UNUSED_OR_NON-ENTRY **
-관련 : VERBAL_NOUN
-	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-있 : ** UNUSED_OR_NON-ENTRY **
-맞 : VERB
-	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
-	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
-	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
-	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"관악구" [LCP_COUNTY]	->  (관 / 관악구)	OR	(c / county :wiki "관악구" :name (이 / 이름 :op1 "관악구"))
-"낙성대" [AF_CULTURAL_ASSET]	->  (낙 / 낙성대)	OR	(c / cultural-asset* :wiki "낙성대" :name (이 / 이름 :op1 "낙성대"))
-"서울" [LCP_CAPITALCITY]	->  (서 / 서울)	OR	(c / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))
--- VERBALIZED ------------------------------------
+(관 / 관련-01
+    :ARG1 (a / amr-unknown
+        :mod (사 / 사람))
+    :ARG2 (c / cultural-asset* :wiki "낙성대" :name (이 / 이름 :op1 "낙성대")
+        :location (c2 / city :wiki "관악구" :name (이2 / 이름 :op1 "관악구")
+            :location (c3 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울")))))
 
-
-# ::id snt0.E2016.789.02_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.02_A_01 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 방점은 음절의 발음상의 높낮이를 나타낸다.
 # ::note
--- FRAMES ----------------------------------------
-발음상 : DERIVED_NON-ENTRY -> (발 / 발음상-00) ?
-나타내 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(상 / 상 :mod (발 / 발음))
-
+(나 / 나타나-01
+    :ARG1 (방 / 방점)
+    :attribute (높 / 높낮이
+        :mod (발 / 발음-00
+            :ARG1 (음 / 음절))))
 
 # ::id snt0.E2016.789.02_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 중세 후기 국어(15∼16세기)의 정음 자료에서 음절에 따라 그 음절의 높낮이를 보이기 위하여, 그 글자의 왼쪽에 찍어 놓은 둥근 점.
@@ -130,68 +99,37 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt0.E2016.789.03_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.03_A_01 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 벨로드롬(영어: velodrome)은 트랙 자전거를 위한 경기장을 말한다.
 # ::note
--- FRAMES ----------------------------------------
-위하 : VERB
-	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
-경기장 : DERIVED_NON-ENTRY -> (경 / 경기장-00) ?
-말하 : DERIVED_VERB_DETECTED
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"velodrome" [AF_BUILDING]	->  (v / velodrome)	OR	(b / building|facility :wiki - :name (이 / 이름 :op1 "velodrome"))
-"벨로드롬" [AF_BUILDING]	->  (벨 / 벨로드롬)	OR	(b / building|facility :wiki "벨로드롬" :name (이 / 이름 :op1 "벨로드롬"))
-"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
-"트랙 자전거" [AF_TRANSPORT]	->  (트 / 트랙자전거)	OR	(v / vehicle|ship|aircraft|... :wiki "트랙_자전거" :name (이 / 이름 :op1 "트랙" :op2 "자전거"))
--- VERBALIZED ------------------------------------
-(자 / 자전거 :mod (트 / 트랙))
-(장 / 장 :mod (경 / 경기))
+(말 / 말하-01
+    :ARG1 (벨 / 벨로드롬)
+    :attribute (장 / 장소
+        :location-of (경 / 경기-00)
+        :purpose (자 / 자전거
+            :mod (트 / 트랙))))
 
-
-# ::id snt0.E2016.789.03_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.03_A_02 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt <운동> 주로(走路)를 비탈지게 만든 사이클 전용 경기장.
 # ::note
--- FRAMES ----------------------------------------
-비탈지 : ** UNUSED_OR_NON-ENTRY **
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-경기장 : DERIVED_NON-ENTRY -> (경 / 경기장-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"사이클" [CV_SPORTS]	->  (사 / 사이클)	OR	(s / sports* :wiki "사이클?" :name (이 / 이름 :op1 "사이클"))
--- VERBALIZED ------------------------------------
-(경 / 경기 :mod (전 / 전용))
-(장 / 장 :mod (경 / 경기))
-(전 / 전용 :mod (사 / 사이클))
+(장 / 장소
+    :topic (운 / 운동)
+    :location-of (경 / 경기-00
+        :purpose (전 / 전용-00
+            :mod (사 / 사이클)))
+    :mod (만 / 만들-01
+        :ARG1 (주 / 주로
+            :ARG1-of (비 / 비탈지-00))))
 
-
-# ::id snt0.E2016.789.03_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.03_Q_01 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 사이클 전용 경기장을 가리키는 말로 맞는 것은?
 # ::note
--- FRAMES ----------------------------------------
-경기장 : DERIVED_NON-ENTRY -> (경 / 경기장-00) ?
-가리키 : VERB
-	- indicate		(가 / 가리키-01 :ARG0 indicator :ARG1 thing_indicated)
-말 : VERBAL_NOUN
-	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
-맞 : VERB
-	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
-	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
-	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
-	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"사이클" [CV_SPORTS]	->  (사 / 사이클)	OR	(s / sports* :wiki "사이클?" :name (이 / 이름 :op1 "사이클"))
--- VERBALIZED ------------------------------------
-(경 / 경기 :mod (전 / 전용))
-(장 / 장 :mod (경 / 경기))
-(전 / 전용 :mod (사 / 사이클))
-
+(가 / 가리키-01
+    :ARG0 (a / amr-unknown)
+    :ARG1 (장 / 장소
+        :location-of (경 / 경기-00
+            :purpose (전 / 전용-00
+                :mod (사 / 사이클)))))
 
 # ::id snt0.E2016.789.04_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 변온동물에서도 체온을 조절하는 것을 볼 수 있는데 예를 들면, 꿀벌은 저온에서는 집단이 되어 열의 발산을 방지함과 동시에 근육운동으로 발열한다.
@@ -532,63 +470,40 @@
 (이 / 이름 :mod (프 / 프로그램))
 
 
-# ::id snt0.E2016.789.07_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.07_Q_01 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 특정 날짜에 발생하는 컴퓨터 악성코드의 이름이 아닌 것은?
 # ::note
--- FRAMES ----------------------------------------
-특정 : VERBAL_NOUN
-	- specify		(특 / 특정-01 :ARG0 specifier :ARG1 thing_specified)
-발생 : VERBAL_NOUN
-	- arise		(발 / 발생-01 :ARG0 causer :ARG1 thing_arising :ARG2 source)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"컴퓨터" [TMI_HW]	->  (컴 / 컴퓨터)	OR	(p / product? :wiki "컴퓨터" :name (이 / 이름 :op1 "컴퓨터"))
--- VERBALIZED ------------------------------------
-(날 / 날짜 :mod (특 / 특정))
-(악 / 악성 :mod (컴 / 컴퓨터))
-(코 / 코드 :mod (악 / 악성))
+(a / amr-unknown
+    :domain (이 / 이름
+        :polarity -
+        :name-of (악 / 악성코드
+            :mod (컴 / 컴퓨터)
+            :ARG1-of (발 / 발생-01
+                :time (날 / 날짜
+                    :ARG1-of (특 / 특정-01))))))
 
-
-# ::id snt0.E2016.789.08_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.08_A_01 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt [같은 말] 영애(윗사람의 딸을 높여 이르는 말).
 # ::note
--- FRAMES ----------------------------------------
-같 : VERB
-	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
-말 : VERBAL_NOUN
-	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
-높이 : REDUCED_VERB_DETECTED
-	- high		(높 / 높-01 :ARG0 causer :ARG1 thing_being_high :ARG2 start_point :ARG3 end_point)
-이르 : VERB
-	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
-	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- early		(이 / 이르-03 :ARG1 time)
-말 : VERBAL_NOUN
-	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"딸" [CV_RELATION]	->  :mod (딸 / 딸)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (딸 / 딸))
-"영애" [CV_RELATION]	->  :mod (영 / 영애)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (영 / 영애))
--- VERBALIZED ------------------------------------
+(같 / 같-01
+    :ARG1 (s / string-entity :value "영애"
+        :ARG1-of (이 / 이르-02
+            :manner (높 / 높-00)
+            :attribute (사 / 사람)
+                :ARG2-of (h / have-rel-role-91
+                    :ARG1 (윗 / 윗사람)
+                    :ARG2 (딸 / 딸)))))
 
-
-# ::id snt0.E2016.789.08_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.08_A_02 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 윗사람의 딸을 높여 이르는 말.
 # ::note
--- FRAMES ----------------------------------------
-높이 : REDUCED_VERB_DETECTED
-	- high		(높 / 높-01 :ARG0 causer :ARG1 thing_being_high :ARG2 start_point :ARG3 end_point)
-이르 : VERB
-	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
-	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- early		(이 / 이르-03 :ARG1 time)
-말 : VERBAL_NOUN
-	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"딸" [CV_RELATION]	->  :mod (딸 / 딸)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (딸 / 딸))
--- VERBALIZED ------------------------------------
-
+(말 / 말
+    :ARG1-of (이 / 이르-02
+        :manner (높 / 높-00)
+        :attribute (사 / 사람)
+            :ARG2-of (h / have-rel-role-91
+                :ARG1 (윗 / 윗사람)
+                :ARG2 (딸 / 딸))))
 
 # ::id snt0.E2016.789.08_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 윗사람의 딸을 높여 부르는 말이 아닌 것은?
@@ -673,17 +588,14 @@
 (활 / 활동 :mod (종 / 종교))
 
 
-# ::id snt0.E2016.789.09_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.09_Q_01 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 아동문학상이 아닌 것은?
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"아동문학상" [CV_PRIZE]	->  (아 / 아동문학상)	OR	(a / award :wiki - :name (이 / 이름 :op1 "아동문학상"))
--- VERBALIZED ------------------------------------
-(문 / 문학 :mod (아 / 아동))
-(상 / 상 :mod (문 / 문학))
-
+(a / amr-unknown
+    :domain (상 / 상
+        :topic (문 / 문학
+            :purpose (아 / 아동))
+        :polarity -))
 
 # ::id snt0.E2016.789.10_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 1618∼1648년 독일을 무대로 신교(프로테스탄트)와 구교(가톨릭) 간에 벌어진 종교전쟁.
