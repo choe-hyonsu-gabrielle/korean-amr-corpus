@@ -660,47 +660,42 @@
 (파 / 파 :mod (교 / 교))
 
 
-# ::id snt2.E2016.789.10_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2016.789.10_A_02 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 이 전쟁은 황제파의 대전 상대국에 따라 보헤미아-팔츠 전쟁(1618~1623), 덴마크 전쟁(1625~1629), 스웨덴 전쟁(1630~1635), 프랑스-스웨덴 전쟁(1635~1648)으로 전개되었다.
 # ::note
--- FRAMES ----------------------------------------
-황제파 : DERIVED_NON-ENTRY -> (황 / 황제파-00) ?
-상대 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (상 / 상대국-00) ?
-	- confront		(상 / 상대-01 :ARG0 agent :ARG1 confronted_with)
-따르 : VERB
-	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
-	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
-전개 : VERBAL_NOUN
-	- deploy		(전 / 전개-01 :ARG0 agent :ARG1 thing_deployed :ARG2 start_state :ARG3 end_state)
-	- deploy		(전 / 전개-02 :ARG0 agent :ARG2 start_state :ARG3 end_state)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1618~1623" [DT_DURATION]	->  :time|duration (1 / 1618~1623)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"1625~1629" [DT_DURATION]	->  :time|duration (1 / 1625~1629)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"1630~1635" [DT_DURATION]	->  :time|duration (1 / 1630~1635)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"1635~1648" [DT_DURATION]	->  :time|duration (1 / 1635~1648)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"덴마크 전쟁" [EV_WAR_REVOLUTION]	->  (덴 / 덴마크전쟁)	OR	(w / war|event :wiki - :name (이 / 이름 :op1 "덴마크" :op2 "전쟁"))
-"보헤미아-팔츠 전쟁" [EV_WAR_REVOLUTION]	->  (보 / 보헤미아-팔츠전쟁)	OR	(w / war|event :wiki - :name (이 / 이름 :op1 "보헤미아-팔츠" :op2 "전쟁"))
-"스웨덴 전쟁" [EV_WAR_REVOLUTION]	->  (스 / 스웨덴전쟁)	OR	(w / war|event :wiki - :name (이 / 이름 :op1 "스웨덴" :op2 "전쟁"))
-"프랑스-스웨덴 전쟁" [EV_SPORTS]	->  (프 / 프랑스-스웨덴전쟁)	OR	(g / game :wiki - :name (이 / 이름 :op1 "프랑스-스웨덴" :op2 "전쟁"))
-"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
--- VERBALIZED ------------------------------------
-(국 / 국 :ARG0-of (상 / 상대))
-(상 / 상대 :mod (대 / 대전))
-(파 / 파 :mod (황 / 황제))
+(전 / 전개-01
+    :ARG1 (전2 / 전쟁
+        :mod (이 / 이))
+    :manner (따 / 따르-02
+        :ARG2 (국 / 국가
+            :ARG1-of (상 / 상대-01
+                :ARG0 (황 / 황제파)
+                :mod (대 / 대전))))
+    :subevent (w / war :wiki - :name (이2 / 이름 :op1 "보헤미아-팔츠" :op2 "전쟁")
+        :time (d / date-inverval
+            :op1 (d2 / date-entity :year 1618)
+            :op2 (d3 / date-entity :year 1623)))
+    :subevent (w2 / war :wiki - :name (이3 / 이름 :op1 "덴마크" :op2 "전쟁")
+        :time (d4 / date-inverval
+            :op1 (d5 / date-entity :year 1625)
+            :op2 (d6 / date-entity :year 1629)))
+    :subevent (w3 / war :wiki - :name (이4 / 이름 :op1 "스웨덴" :op2 "전쟁")
+        :time (d7 / date-inverval
+            :op1 (d8 / date-entity :year 1630)
+            :op2 (d9 / date-entity :year 1635)))
+    :subevent (w4 / war :wiki - :name (이5 / 이름 :op1 "프랑스-스웨덴" :op2 "전쟁")
+        :time (d10 / date-inverval
+            :op1 (d11 / date-entity :year 1635)
+            :op2 (d12 / date-entity :year 1648))))
 
-
-# ::id snt0.E2016.789.10_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.10_Q_01 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 영국과 관련된 전쟁이 아닌 것은?
 # ::note
--- FRAMES ----------------------------------------
-관련 : VERBAL_NOUN
-	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
--- VERBALIZED ------------------------------------
-
+(a / amr-unknown
+    :domain (전 / 전쟁
+        :polarity -
+        :ARG1-of (관 / 관련-01
+            :ARG2 (c / country :wiki "영국" :name (이 / 이름 :op1 "영국")))))
 
 # ::id snt0.E2016.789.11_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 천 년 동안 단 한 번 만난다는 뜻으로, 좀처럼 만나기 어려운 좋은 기회를 이르는 말.
@@ -1124,50 +1119,33 @@
 (침 / 침해 :ARG1 (생 / 생활))
 
 
-# ::id snt0.E2016.789.14_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.14_A_01 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 소금에 약간 절여서 통으로 말린 조기.
 # ::note
--- FRAMES ----------------------------------------
-절이 : ** UNUSED_OR_NON-ENTRY **
-말리 : VERB
-	- stop		(말 / 말리-01 :ARG0 agent :ARG1 action_stopped)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"소금" [CV_FOOD]	->  (소 / 소금)	OR	(f / food-dish :wiki "소금" :name (이 / 이름 :op1 "소금"))
-"조기" [AM_FISH]	->  (조 / 조기)	OR	(a / animal* :wiki "조기?" :name (이 / 이름 :op1 "조기"))
--- VERBALIZED ------------------------------------
+(조 / 조기
+    :ARG1-of (마 / 마르-01
+        :manner (통 / 통)
+        :manner (절 / 절-00
+            :ARG1 조
+            :ARG2 (소 / 소금)
+            :degree (약 / 약간))))
 
-
-# ::id snt0.E2016.789.14_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.14_A_02 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 조기를 소금에 절여 말린 것.
 # ::note
--- FRAMES ----------------------------------------
-절이 : ** UNUSED_OR_NON-ENTRY **
-말리 : VERB
-	- stop		(말 / 말리-01 :ARG0 agent :ARG1 action_stopped)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"소금" [CV_FOOD]	->  (소 / 소금)	OR	(f / food-dish :wiki "소금" :name (이 / 이름 :op1 "소금"))
-"조기" [AM_FISH]	->  (조 / 조기)	OR	(a / animal* :wiki "조기?" :name (이 / 이름 :op1 "조기"))
--- VERBALIZED ------------------------------------
+(것 / 것
+    :ARG1-of (마 / 마르-01
+        :manner (절 / 절-00
+            :ARG1 (조 / 조기)
+            :ARG2 (소 / 소금))))
 
-
-# ::id snt1.E2016.789.14_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.789.14_A_02 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 참조기로 만든 영광굴비가 유명하다.
 # ::note
--- FRAMES ----------------------------------------
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-유명 : VERBAL_NOUN
-	- famous_for		(유 / 유명-01 :ARG1 thing_famous :ARG2 famous_for)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"영광굴비" [CV_FOOD]	->  (영 / 영광굴비)	OR	(f / food-dish :wiki - :name (이 / 이름 :op1 "영광굴비"))
-"참조기" [AM_FISH]	->  (참 / 참조기)	OR	(a / animal* :wiki "참조기" :name (이 / 이름 :op1 "참조기"))
--- VERBALIZED ------------------------------------
-
+(유 / 유명-01
+    :ARG1 (f / food-dish :wiki - :name (이 / 이름 :op1 "영광굴비")
+        :ARG1-of (만 / 만들-01
+            :instrument (참 / 참조기))))
 
 # ::id snt0.E2016.789.14_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 2음절의 이것은 조기를 소금에 절여 말린 생선을 말한다.

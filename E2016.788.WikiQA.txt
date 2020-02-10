@@ -2405,25 +2405,23 @@
 (자 / 자 :ARG0-of (관 / 관측))
 
 
-# ::id snt1.E2016.788.26_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.788.26_A_02 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 파동을 일으키는 물체와 관측자가 가까워질수록 커지고, 멀어질수록 작아진다.
 # ::note
--- FRAMES ----------------------------------------
-일으키 : VERB
-	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
-관측 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관측자-00) ?
-	- observe		(관 / 관측-01 :ARG0 agent :ARG1 thing_looked_at)
-가깝 : VERB
-	- near		(가 / 가깝-01 :ARG1 thing_being_near :ARG2 which_from)
-커지 : ** UNUSED_OR_NON-ENTRY **
-멀 : VERB
-	- be_far_from		(멀 / 멀-01 :ARG1 thing_being_faraway :ARG2 which_from)
-작아지 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(자 / 자 :ARG0-of (관 / 관측))
-
+(a / and
+    :op1 (c / correlate-91
+        :ARG1 (가 / 가깝-01
+            :ARG1 (물 / 물체
+                :ARG0-of (일 / 일으키-01
+                    :ARG1 (파 / 파동)))
+            :ARG2 (사 / 사람
+                :ARG0-of (관 / 관측-01)))
+        :ARG2 (크 / 크-01))
+    :op2 (c2 / correlate-91
+        :ARG1 (멀 / 멀-01
+            :ARG1 물
+            :ARG2 사)
+        :ARG2 (작 / 작-01)))
 
 # ::id snt2.E2016.788.26_A_02 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 1842년에 오스트리아의 물리학자 도플러가 처음으로 발견하였다.
