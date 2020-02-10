@@ -943,7 +943,7 @@
 # ::id 085402.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 독재자에게 지배당하는 국민들은 그의 뜻에 따라 생각하고 움직여야 했다.
 # ::note
-((o / obligate-01
+(o / obligate-01
     :ARG1 (국 / 국민
         :ARG1-of (지 / 지배-01
             :ARG0 (독 / 독재자)))
@@ -952,7 +952,7 @@
             :ARG1 (뜻 / 뜻
                 :poss 독))
         :op1 (생 / 생각-01)
-        :op2 (움 / 움직이-01)))))
+        :op2 (움 / 움직이-01)))
 
 # ::id 037051.02.krdict.nikl.ex.snt.002 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 유민이는 부잣집 막내딸로 귀하게 자랐다.
