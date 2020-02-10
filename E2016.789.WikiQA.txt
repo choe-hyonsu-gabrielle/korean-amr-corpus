@@ -131,108 +131,60 @@
             :purpose (전 / 전용-00
                 :mod (사 / 사이클)))))
 
-# ::id snt0.E2016.789.04_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.04_A_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
 # ::snt 변온동물에서도 체온을 조절하는 것을 볼 수 있는데 예를 들면, 꿀벌은 저온에서는 집단이 되어 열의 발산을 방지함과 동시에 근육운동으로 발열한다.
 # ::note
--- FRAMES ----------------------------------------
-조절 : VERBAL_NOUN
-	- adjust		(조 / 조절-01 :ARG0 agent :ARG1 thing_adjusted)
-보 : VERB
-	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
-	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
-	- according_to		(보 / 보-03 :ARG1 theme)
-	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
-	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
-	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
-	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
-있 : ** UNUSED_OR_NON-ENTRY **
-들 : VERB
-	- pick_up		(들 / 들-01 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- let_in		(들 / 들-02 :ARG0 agent :ARG1 thing_let_in :ARG2 goal)
-	- require		(들 / 들-03 :ARG1 requirer :ARG2 thing_required)
-	- grow_older		(들 / 들-04 :ARG1 person :ARG2 age)
-	- let_in-CV		(들 / 들-05 :ARG0 agent :ARG1 thing_let_in :ARG2 source)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-열 : VERBAL_NOUN
-	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
-	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
-방지 : VERBAL_NOUN
-	- prevent		(방 / 방지-01 :ARG0 agent :ARG1 theme)
-발열하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"근육" [TM_CELL_TISSUE]	->  (근 / 근육)	OR	(근 / 근육 :part-of|poss)
-"꿀벌" [AM_INSECT]	->  (꿀 / 꿀벌)	OR	(a / animal* :wiki "꿀벌" :name (이 / 이름 :op1 "꿀벌"))
-"변온동물" [AM_TYPE]	->  (변 / 변온동물)	OR	(a / animal* :wiki "변온동물" :name (이 / 이름 :op1 "변온동물"))
--- VERBALIZED ------------------------------------
-(동 / 동물 :mod (변 / 변온))
-(운 / 운동 :mod (근 / 근육))
+(가 / 가능-01
+	:ARG1 (보 / 보-01
+		:ARG1 (조 / 조절-01
+			:ARG0 (변 / 변온동물)
+			:ARG1 (체 / 체온
+				:poss 변)
+			:example (a / and
+				:op1 (방 / 방지-01
+					:ARG0 (꿀 / 꿀벌)
+					:ARG1 (발 / 발산-00
+						:ARG1 (열 / 열))
+					:manner (되 / 되-01
+						:ARG1 꿀
+						:ARG2 (집 / 집단)
+						:condition (저 / 저온)))
+				:op2 (발2 / 발열-00
+					:ARG0 꿀
+					:manner (운 / 운동-00
+						:ARG0 (근 / 근육
+							:poss 꿀)))))))
 
-
-# ::id snt0.E2016.789.04_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.04_A_02 ::date 2019-02-11 ::annotator gabrielle ::preferred True
 # ::snt 변온동물에서도 체온조절하는 것을 볼 수 있는데 예를 들면, 꿀벌은 저온에서는 집단이 되어 열의 발산을 방지함과 동시에 근육운동에 의하여 발열한다.
 # ::note
--- FRAMES ----------------------------------------
-조절 : VERBAL_NOUN
-	- adjust		(조 / 조절-01 :ARG0 agent :ARG1 thing_adjusted)
-보 : VERB
-	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
-	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
-	- according_to		(보 / 보-03 :ARG1 theme)
-	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
-	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
-	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
-	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
-있 : ** UNUSED_OR_NON-ENTRY **
-들 : VERB
-	- pick_up		(들 / 들-01 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- let_in		(들 / 들-02 :ARG0 agent :ARG1 thing_let_in :ARG2 goal)
-	- require		(들 / 들-03 :ARG1 requirer :ARG2 thing_required)
-	- grow_older		(들 / 들-04 :ARG1 person :ARG2 age)
-	- let_in-CV		(들 / 들-05 :ARG0 agent :ARG1 thing_let_in :ARG2 source)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-열 : VERBAL_NOUN
-	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
-	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
-방지 : VERBAL_NOUN
-	- prevent		(방 / 방지-01 :ARG0 agent :ARG1 theme)
-의하 : VERB
-	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
-발열하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"근육" [TM_CELL_TISSUE]	->  (근 / 근육)	OR	(근 / 근육 :part-of|poss)
-"꿀벌" [AM_INSECT]	->  (꿀 / 꿀벌)	OR	(a / animal* :wiki "꿀벌" :name (이 / 이름 :op1 "꿀벌"))
-"변온동물" [AM_TYPE]	->  (변 / 변온동물)	OR	(a / animal* :wiki "변온동물" :name (이 / 이름 :op1 "변온동물"))
--- VERBALIZED ------------------------------------
-(동 / 동물 :mod (변 / 변온))
-(운 / 운동 :mod (근 / 근육))
-(조 / 조절 :mod (체 / 체온))
+(가 / 가능-01
+	:ARG1 (보 / 보-01
+		:ARG1 (조 / 조절-01
+			:ARG0 (변 / 변온동물)
+			:ARG1 (체 / 체온
+				:poss 변)
+			:example (a / and
+				:op1 (방 / 방지-01
+					:ARG0 (꿀 / 꿀벌)
+					:ARG1 (발 / 발산-00
+						:ARG1 (열 / 열))
+					:manner (되 / 되-01
+						:ARG1 꿀
+						:ARG2 (집 / 집단)
+						:condition (저 / 저온)))
+				:op2 (발2 / 발열-00
+					:ARG0 꿀
+					:manner (운 / 운동-00
+						:ARG0 (근 / 근육
+							:poss 꿀)))))))
 
-
-# ::id snt0.E2016.789.04_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.04_Q_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
 # ::snt 변온동물로 맞는 것은?
 # ::note
--- FRAMES ----------------------------------------
-맞 : VERB
-	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
-	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
-	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
-	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"변온동물" [AM_TYPE]	->  (변 / 변온동물)	OR	(a / animal* :wiki "변온동물" :name (이 / 이름 :op1 "변온동물"))
--- VERBALIZED ------------------------------------
-(동 / 동물 :mod (변 / 변온))
-
+(맞 / 맞-01
+	:ARG1 (a / amr-unknown)
+	:ARG2 (변 / 변온동물))
 
 # ::id snt0.E2016.789.05_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 《출사표》(出師表)는 원래 신하가 적을 정벌하러 떠나기 전에 황제나 왕에게 올리던 표문(表文)이다.
@@ -403,35 +355,27 @@
 -- VERBALIZED ------------------------------------
 
 
-# ::id snt0.E2016.789.07_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.07_A_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
 # ::snt 트로이 목마(Trojan horse)는 악성 루틴이 숨어 있는 프로그램으로, 겉보기에는 정상적인 프로그램으로 보이지만 실행하면 악성 코드를 실행한다.
 # ::note
--- FRAMES ----------------------------------------
-숨 : VERB
-	- hide		(숨 / 숨-01 :ARG0 hider :ARG1 thing_hidden :ARG2 where_hide)
-정상적 : DERIVED_NON-ENTRY -> (정 / 정상적-00) ?
-보이 : REDUCED_VERB_DETECTED
-	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
-	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
-	- according_to		(보 / 보-03 :ARG1 theme)
-	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
-	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
-	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
-	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
-실행 : VERBAL_NOUN
-	- perform		(실 / 실행-01 :ARG0 performer :ARG1 thing_performed)
-실행 : VERBAL_NOUN
-	- perform		(실 / 실행-01 :ARG0 performer :ARG1 thing_performed)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"Trojan horse" [TMI_SW]	->  (T / Trojanhorse)	OR	(p / program :wiki - :name (이 / 이름 :op1 "Trojan" :op2 "horse"))
-"트로이 목마" [TMI_SW]	->  (트 / 트로이목마)	OR	(p / program :wiki "트로이_목마" :name (이 / 이름 :op1 "트로이" :op2 "목마"))
--- VERBALIZED ------------------------------------
-(루 / 루틴 :mod (악 / 악성))
-(보 / 보기 :mod (겉 / 겉))
-(적 / 적 :mod (정 / 정상))
-(코 / 코드 :mod (악 / 악성))
-
+(a / and
+	:op1 (프 / 프로그램
+		:domain (p / program :wiki "트로이_목마" :name (이 / 이름 :op1 "트로이" :op2 "목마"))
+		:ARG2-of (숨 / 숨-01
+			:ARG1 (루 / 루틴
+				:mod (악 / 악성))))
+	:op2 (c / contrast-01
+		:ARG1 (보 / 보-02
+			:ARG1 p
+			:attribute (프2 / 프로그램
+				:mod (정 / 정상))
+			:mod (겉 / 겉보기))
+		:ARG2 (실 / 실행-01
+			:ARG0 p
+			:ARG1 (코 / 코드
+				:mod (악2 / 악성))
+			:condition (실2 / 실행-01
+				:ARG1 p))))
 
 # ::id snt0.E2016.789.07_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 대부분 유명한 공개용 프로그램 이름을 하고 있지만 프로그램을 실행하면 시스템을 파괴하는 등의 일을 하는 것이다.

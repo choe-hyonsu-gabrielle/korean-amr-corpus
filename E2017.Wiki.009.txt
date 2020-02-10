@@ -12,86 +12,73 @@
         :ARG0 (c2 / country :wiki "몽골_제국" :name (이2 / 이름 :op1 "몽골" :op2 "제국"))
         :time (d / date-entity :century 13)))
 
-# ::id snt2.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt2.E2017.Wiki.009 ::date 2019-02-11 ::annotator gabrielle
 # ::snt 일반적으로 13세기 중반부터 14세기 중반까지 몽골 제국이 중원을 지배하고 통치한 시기를 말한다.
 # ::note
--- FRAMES ----------------------------------------
-일반적 : DERIVED_NON-ENTRY -> (일 / 일반적-00) ?
-지배 : VERBAL_NOUN
-	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
-통치 : VERBAL_NOUN
-	- govern		(통 / 통치-01 :ARG0 agent :ARG1 thing_governed)
-말하 : DERIVED_VERB_DETECTED
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"13세기 중반" [DT_OTHERS]	->  :time|duration (1 / 13세기중반)	OR	:time (d / date-entity)	OR	:duration 
-"14세기 중반" [DT_OTHERS]	->  :time|duration (1 / 14세기중반)	OR	:time (d / date-entity)	OR	:duration 
-"몽골 제국" [LCP_COUNTRY]	->  (몽 / 몽골제국)	OR	(c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
--- VERBALIZED ------------------------------------
-(적 / 적 :mod (일 / 일반-00))
-(중 / 중반 :mod (세 / 세기-00))
-(중 / 중반 :mod (세 / 세기-00))
+(말 / 말하-01
+	:mod (일 / 일반적)
+	:attribute (시 / 시기
+		:mod (a / and
+			:op1 (지 / 지배-01
+				:ARG0 (c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+				:ARG1 (중 / 중원))
+			:op2 (통 / 통치-01
+				:ARG0 c
+				:ARG1 중)
+			:time (d / date-interval
+				:op1 (중2 / 중반
+					:op1 (d2 / date-entity :century 13))
+				:op2 (중3 / 중반
+					:op1 (d3 / date-entity :century 14))))))
 
-
-# ::id snt3.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt3.E2017.Wiki.009 ::date 2019-02-11 ::annotator gabrielle
 # ::snt 몽골족의 정복 황조 원나라는 중국 대륙과 몽골 고원을 중심으로 한 영역을 지배하다가 명나라를 건국하는 주원장(朱元璋)에게 쫓겨 북쪽으로 이전한 뒤("북원"), 유목민 국가로 1635년까지 존속한 국가다.
 # ::note
--- FRAMES ----------------------------------------
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-지배 : VERBAL_NOUN
-	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
-건국하 : DERIVED_NON-ENTRY
-쫓기 : ** UNUSED_OR_NON-ENTRY **
-이전 : VERBAL_NOUN
-	- move		(이 / 이전-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
-유목민 : DERIVED_NON-ENTRY -> (유 / 유목민-00) ?
-존속하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1635년" [DT_YEAR]	->  :time|duration (1 / 1635년)	OR	:time (d / date-entity :year 1635)	OR	:duration (t / temporal-quantity :quant 1635 :unit (년 / 년))  
-"朱元璋" [PS_NAME]	->  (朱 / 朱元璋)	OR	(p / person :wiki - :name (이 / 이름 :op1 "朱元璋"))
-"명나라" [LCP_COUNTRY]	->  (명 / 명나라)	OR	(c / country :wiki "명나라" :name (이 / 이름 :op1 "명나라"))
-"몽골 고원" [LC_OTHERS]	->  (몽 / 몽골고원)	OR	(l / location? :wiki "몽골고원" :name (이 / 이름 :op1 "몽골" :op2 "고원"))
-"몽골족" [CV_TRIBE]	->  (몽 / 몽골족)	OR	(e / ethnic-group|nationality :wiki "몽골족" :name (이 / 이름 :op1 "몽골족"))
-"북원" [LC_OTHERS]	->  (북 / 북원)	OR	(l / location? :wiki "북원" :name (이 / 이름 :op1 "북원"))
-"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
-"원나라" [LCP_COUNTRY]	->  (원 / 원나라)	OR	(c / country :wiki "원나라" :name (이 / 이름 :op1 "원나라"))
-"유목민" [CV_TRIBE]	->  (유 / 유목민)	OR	(e / ethnic-group|nationality :wiki "유목민" :name (이 / 이름 :op1 "유목민"))
-"주원장" [PS_NAME]	->  (주 / 주원장)	OR	(p / person :wiki "홍무제" :name (이 / 이름 :op1 "주원장"))
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
--- VERBALIZED ------------------------------------
-(민 / 민 :mod (유 / 유목-00))
-(황 / 황조 :mod (정 / 정복-00))
+(a / and
+	:op1 (지 / 지배-01
+		:ARG0 (c / country :wiki "원나라" :name (이 / 이름 :op1 "원나라")
+			:mod (황 / 황조
+				:mod (정 / 정복-00
+					:ARG1 (e / ethnic-group :wiki "몽골족" :name (이2 / 이름 :op1 "몽골족")))))
+		:ARG1 (a2 / and
+			:op1 (대 / 대륙
+				:mod (c2 / country :wiki "중국" :name (이3 / 이름 :op1 "중국")))
+			:op2 (p / plateau* :wiki "몽골고원" :name (이4 / 이름 :op1 "몽골" :op2 "고원"))))
+	:op2 (이5 / 이전-01
+		:ARG1 c
+		:ARG3 (c3 / country :wiki "북원" :name (이6 / 이름 :op1 "북원"))
+		:direction (북 / 북쪽)
+		:cause (쫓 / 쫓-00
+			:ARG0 (p2 / person :wiki "홍무제" :name (이7 / 이름 :op1 "주원장")
+				:ARG0-of (건 / 건국-00
+					:ARG1 (c4 / country :wiki "명나라" :name (이8 / 이름 :op1 "명나라"))))))
+	:op3 (존 / 존속-00
+		:ARG1 c
+		:attribute (국 / 국가
+			:mod (유 / 유목민))
+		:time (d / date-interval
+			:op2 (d2 / date-entity :year 1635))))
 
-
-# ::id snt4.E2017.Wiki.009 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt4.E2017.Wiki.009 ::date 2019-02-11 ::annotator gabrielle
 # ::snt 원은 송나라를 멸망시킨 이민족의 정복 국가이며, 중국 대륙을 자체 병탄·병합하였다.
 # ::note
--- FRAMES ----------------------------------------
-멸망시키 : DERIVED_NON-ENTRY
-이민 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (이 / 이민족-00) ?
-	- move_abroad		(이 / 이민-01 :ARG0 agent :ARG1 goal)
-병합 : VERBAL_NOUN
-	- combine		(병 / 병합-01 :ARG0 agent :ARG1 one_thing_combined :ARG2 the_other_thing_combined)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"송나라" [LCP_COUNTRY]	->  (송 / 송나라)	OR	(c / country :wiki "송나라" :name (이 / 이름 :op1 "송나라"))
-"원" [LCP_COUNTRY]	->  (원 / 원)	OR	(c / country :wiki "원?" :name (이 / 이름 :op1 "원"))
-"이민족" [CV_TRIBE]	->  (이 / 이민족)	OR	(e / ethnic-group|nationality :wiki "야만" :name (이 / 이름 :op1 "이민족"))
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
--- VERBALIZED ------------------------------------
-(국 / 국가 :mod (정 / 정복-00))
-(병 / 병탄 :mod (자 / 자체-00))
-(족 / 족 :ARG0-of (이 / 이민-01))
-
+(a / and
+	:op1 (국 / 국가
+		:domain (c / country :wiki "원나라" :name (이 / 이름 :op1 "원"))
+		:mod (정 / 정복-00
+			:ARG0 (이2 / 이민족
+				:cause-of (멸 / 멸망-00
+					:ARG1 (c2 / country :wiki "송나라" :name (이3 / 이름 :op1 "송나라"))))))
+	:op2 (a2 / and
+		:op1 (병 / 병탄-00
+			:ARG0 c
+			:ARG1 (대 / 대륙
+				:mod (c3 / country :wiki "중국" :name (이4 / 이름 :op1 "중국")))
+			:manner (자 / 자체))
+		:op2 (병2 / 병합-01
+			:ARG0 c
+			:ARG1 대
+			:manner (자2 / 자체))))
 
 # ::id snt5.E2017.Wiki.009 ::date 2019-12-23 ::annotator gabrielle
 # ::snt 이후 주원장의 명나라에 의해 북쪽으로 쫓겨나 쇠퇴하게 된다.
