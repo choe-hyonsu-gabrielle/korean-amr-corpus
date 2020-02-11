@@ -43,61 +43,37 @@
         :mod (발 / 발음-00
             :ARG1 (음 / 음절))))
 
-# ::id snt0.E2016.789.02_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.02_A_02 ::date 2019-02-11 ::annotator gabrielle ::preferred True
 # ::snt 중세 후기 국어(15∼16세기)의 정음 자료에서 음절에 따라 그 음절의 높낮이를 보이기 위하여, 그 글자의 왼쪽에 찍어 놓은 둥근 점.
 # ::note
--- FRAMES ----------------------------------------
-따르 : VERB
-	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
-	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
-보이 : REDUCED_VERB_DETECTED
-	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
-	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
-	- according_to		(보 / 보-03 :ARG1 theme)
-	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
-	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
-	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
-	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
-위하 : VERB
-	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
-찍 : VERB
-	- take_picture_of		(찍 / 찍-01 :ARG0 agent :ARG1 thing_taken_picture_of)
-	- print		(찍 / 찍-02 :ARG0 agent :ARG1 thing_printed)
-둥글 : VERB
-	- dome-shaped		(둥 / 둥글-01 :ARG1 thing_being_dome-shaped)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"15∼16세기" [DT_DURATION]	->  :time|duration (1 / 15∼16세기)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"왼쪽" [TM_DIRECTION]	->  (왼 / 왼쪽)	OR	(: / :direction :wiki "상하좌우" :name (이 / 이름 :op1 "왼쪽"))
-"중세 후기" [DT_OTHERS]	->  :time|duration (중 / 중세후기)	OR	:time (d / date-entity)	OR	:duration 
--- VERBALIZED ------------------------------------
-(국 / 국어 :mod (후 / 후기))
-(자 / 자료 :mod (정 / 정음))
-(후 / 후기 :mod (중 / 중세))
+(점 / 점
+	:ARG1-of (둥 / 둥글-01)
+	:ARG1-of (찍 / 찍-02
+		:location (왼 / 왼쪽
+			:op1 (음 / 음절
+				:mod (그 / 그))))
+	:purpose (보 / 보-02
+		:ARG1 (높 / 높낮이
+			:poss 음)
+		:manner (따 / 따르-02
+			:ARG2 음))
+	:location (자 / 자료
+		:mod (정 / 정음)
+		:mod (국 / 국어
+			:time (후 / 후기
+				:op1 (중 / 중세))
+			:time (d / date-interval
+				:op1 (d2 / date-entity :century 15)
+				:op2 (d3 / date-entity :century 16)))))
 
-
-# ::id snt0.E2016.789.02_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.789.02_Q_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
 # ::snt 훈민정음 해례본에 보이는 방점의 역할로 맞는 것은?
 # ::note
--- FRAMES ----------------------------------------
-보이 : REDUCED_VERB_DETECTED
-	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
-	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
-	- according_to		(보 / 보-03 :ARG1 theme)
-	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
-	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
-	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
-	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
-맞 : VERB
-	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
-	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
-	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
-	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"훈민정음 해례본" [AFW_DOCUMENT]	->  (훈 / 훈민정음해례본)	OR	(p / publication? :wiki "훈민정음" :name (이 / 이름 :op1 "훈민정음" :op2 "해례본"))
--- VERBALIZED ------------------------------------
-
+(a / amr-unknown
+	:domain (역 / 역할
+		:poss (방 / 방점
+			:ARG1-of (보 / 보-01
+				:location (b / book :wiki "훈민정음" :name (이 / 이름 :op1 "훈민정음" :op2 "해례본"))))))
 
 # ::id snt0.E2016.789.03_A_01 ::date 2019-02-10 ::annotator gabrielle ::preferred True
 # ::snt 벨로드롬(영어: velodrome)은 트랙 자전거를 위한 경기장을 말한다.
