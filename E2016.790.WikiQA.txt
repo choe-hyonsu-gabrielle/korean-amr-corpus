@@ -92,7 +92,7 @@
 (a / amr-unknown
     :domain (나 / 나라
         :ARG0-of (개 / 개최-01
-            :ARG1 (a2 / and
+            :ARG1 (모 / 모두
                 :op1 (g / game :wiki "올림픽" :name (이 / 이름 :op1 "올림픽")
                     :time (d / date-entity :season (겨 / 겨울)))
                 :op2 (g2 / game :wiki "올림픽" :name (이2 / 이름 :op1 "올림픽")
