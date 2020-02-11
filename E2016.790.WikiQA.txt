@@ -1,0 +1,3267 @@
+# ::id snt0.E2016.790.01_A_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 범용직렬버스(汎用直列 ── , Universal Serial Bus; USB, 문화어: 범용직렬모선, 汎用直列母線, 일반직렬모선, 一般直列母線)는 컴퓨터와 주변 기기를 연결하는 데 쓰이는 입출력 표준 가운데 하나이다.
+# ::note
+(표 / 표준
+    :domain (버 / 버스
+        :manner (직 / 직렬)
+        :purpose (범 / 범용))
+    :mod (a / and
+        :op1 (입 / 입력-00)
+        :op2 (출 / 출력-00))
+    :purpose (쓰 / 쓰-01
+        :ARG2 (연 / 연결-01
+            :ARG1 (컴 / 컴퓨터)
+            :ARG2 (기 / 기기
+                :mod (주 / 주변)))))
+
+# ::id snt0.E2016.790.01_A_02 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt universal serial bus의 약어
+# ::note 축약-00을 사용하지 않음 - 한자형태소의 표상 문제
+(약 / 약어
+    :mod (s / string-entity :value "universal serial bus"))
+
+# ::id snt0.E2016.790.01_Q_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 이동형 저장장치 USB 메모리에서 B에 해당하는 단어로 맞는 것은?
+# ::note
+(a / amr-unknown
+    :domain (단 / 단어
+        :ARG1-of (해 / 해당-01
+            :ARG2 (s / string-entity :value "B"
+                :ARG1-of (i / include-91
+                    :ARG2 (s2 / string-entity :value "USB 메모리"
+                        :ARG1-of (뜻 / 뜻하-01
+                            :ARG2 (장 / 장치
+                                :purpose (저 / 저장-01)
+                                :mod (이 / 이동-02)))))))))
+
+# ::id snt0.E2016.790.02_A_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 동계 올림픽은 많은 나라들이 개최해왔다.
+# ::note
+(개 / 개최-01
+    :ARG0 (나 / 나라
+        :ARG1-of (많 / 많-01))
+    :ARG1 (g / game :wiki "올림픽" :name (이 / 이름 :op1 "올림픽")
+            :time (d / date-entity :season (겨 / 겨울))))
+
+# ::id snt1.E2016.790.02_A_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 미국은 4번으로 그 횟수가 가장 많고, 프랑스는 3번, 이탈리아, 일본, 오스트리아, 노르웨이를 포함한 몇몇 나라들은 2번씩 개최하였다.
+# ::note
+(a / and
+    :op1 (h / have-quant-91
+        :ARG1 (개 / 개최-01
+            :ARG0 (c / country :wiki "미국" :name (이 / 이름 :op1 "미국")))
+        :ARG2 4
+        :ARG5 (국 / 국가
+            :ARG1-of (i / include-91
+                :ARG2 (세 / 세계)))
+        :ARG1-of (많 / 많-01
+            :degree (가 / 가장)))
+    :op2 (h2 / have-degree-91
+        :ARG1 (개2 / 개최-01
+            :ARG0 (c2 / country :wiki "프랑스" :name (이2 / 이름 :op1 "프랑스")))
+        :ARG2 3)
+    :op3 (h3 / have-degree-91
+        :ARG1 (개3 / 개최-01
+            :ARG0 (나 / 나라
+                :quant (몇 / 몇몇)
+                :ARG2-of (i2 / include-91
+                    :ARG1 (a2 / and
+                        :op1 (c3 / country :wiki "이탈리아" :name (이3 / 이름 :op1 "이탈리아"))
+                        :op2 (c4 / country :wiki "일본" :name (이4 / 이름 :op1 "일본"))
+                        :op3 (c5 / country :wiki "오스트리아" :name (이5 / 이름 :op1 "오스트리아"))
+                        :op4 (c6 / country :wiki "노르웨이" :name (이6 / 이름 :op1 "노르웨이"))))))
+        :ARG2 2))
+
+# ::id snt0.E2016.790.02_A_02 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 1960년 하계 올림픽(영어: 1960 Summer Olympics, Games of the XVII Olympiad, 이탈리아어: Giochi della XVII Olimpiade)은 이탈리아 로마에서 8월 25일부터 9월 11일까지 개최된 제17회 하계 올림픽이다.
+# ::note 이슈 문장
+(g / game :wiki "올림픽" :name (이 / 이름 :op1 "올림픽")
+    :domain (g2 / game :wiki "1960년_하계_올림픽" :name (이2 / 이름 :op1 "1960년" :op2 "하계" :op3 "올림픽"))
+    :time (d / date-entity :season (여 / 여름))
+    :ord (o / ordinal-entity :value 17)
+    :ARG1-of (개 / 개최-01
+        :location (c / city :wiki "로마" :name (이3 / 이름 :op1 "로마")
+            :location (c2 / country :wiki "이탈리아" :name (이4 / 이름 :op1 "이탈리아")))
+        :time (d2 / date-inverval
+            :op1 (d3 / date-entity :month 8 :day 25)
+            :op2 (d4 / date-entity :month 9 :day 11))))
+
+# ::id snt0.E2016.790.02_Q_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 동계와 하계올림픽을 모두 개최한 나라로 맞는 것은?
+# ::note
+(a / amr-unknown
+    :domain (나 / 나라
+        :ARG0-of (개 / 개최-01
+            :ARG1 (a2 / and
+                :op1 (g / game :wiki "올림픽" :name (이 / 이름 :op1 "올림픽")
+                    :time (d / date-entity :season (겨 / 겨울)))
+                :op2 (g2 / game :wiki "올림픽" :name (이2 / 이름 :op1 "올림픽")
+                    :time (d2 / date-entity :season (여 / 여름)))))))
+
+# ::id snt0.E2016.790.03_A_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 노을 또는 놀은 새벽이나 아침, 저녁에 태양 광선이 대기를 통과하는 거리가 길어져서 태양 광선 중 파장이 짧은 파란색은 대기 중에서 산란되고, 파장이 긴 빨간색은 산란되지 않아 하늘이 빨간색으로 보이는 현상이다.
+# ::note
+(현 / 현상
+    :domain (o / or
+        :op1 (노 / 노을)
+        :op2 (놀 / 놀))
+    :mod (보 / 보-01
+        :ARG1 (하 / 하늘)
+        :attribute (빨 / 빨간색)
+        :cause (a / and
+            :op1 (산 / 산란-00
+                :ARG1 (파 / 파란색
+                    :mod (짧 / 짧-01
+                        :ARG1 (파2 / 파장))
+                    :ARG1-of (i / include-91
+                        :ARG2 (광 / 광선
+                            :mod (태 / 태양))))
+                :location (대 / 대기))
+            :op2 (산2 / 산란-00
+                :polarity -
+                :ARG1 (빨2 / 빨간색
+                    :mod (길 / 길-01
+                        :ARG1 (파3 / 파장))
+                    :ARG1-of (i2 / include-91
+                        :ARG2 광)))
+            :cause (되 / 되-01
+                :ARG1 (거 / 거리
+                    :mod (통 / 통과-01
+                        :ARG0 광
+                        :ARG1 대
+                        :time (저 / 저녁)))
+                :ARG2 (길2 / 길-01
+                    :ARG1 거)))))
+
+# ::id snt0.E2016.790.03_A_02 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 이는 파장이 짧은 푸른색이 산란되어 버리는 반면에 파장이 긴 붉은색의 빛이 산란되지 않고 관측자에게 도달하기 때문이다.
+# ::note
+(c / cause-01
+    :ARG1 (c2 / contrast-01
+        :ARG1 (산 / 산란-00
+            :ARG1 (푸 / 푸른색
+                :mod (짧 / 짧-01
+                    :ARG1 (파 / 파장))))
+        :ARG2 (도 / 도달-01
+            :ARG1 (빛 / 빛
+                :mod (붉 / 붉은색)
+                :mod (길 / 길-01
+                    :ARG1 (파2 / 파장)))
+            :manner (산2 / 산란-00
+                :polarity -
+                :ARG1 빛)
+            :ARG2 (사 / 사람
+                :ARG0-of (관 / 관측-01)))))
+
+# ::id snt0.E2016.790.03_Q_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 빛의 산란현상으로 맞는 것은?
+# ::note
+(a / amr-unknown
+    :domain (현 / 현상
+        :mod (산 / 산란-00
+            :ARG1 (빛 / 빛))))
+
+# ::id snt0.E2016.790.04_A_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 도둑이 되레 매를 든다는 뜻으로, 잘못한 사람이 도리어 잘한 사람을 나무라는 경우를 이르는 말.
+# ::note
+(a / and
+    :op1 (뜻 / 뜻하-01
+        :ARG1 (말 / 말)
+        :ARG2 (들 / 들-01
+            :ARG0 (도 / 도둑)
+            :ARG1 (매 / 매)
+            :mod (되 / 되레)))
+    :op2 (이 / 이르-02
+        :ARG1 말
+        :attribute (경 / 경우
+            :mod (나 / 나무라-01
+                :ARG0 (사 / 사람
+                    :ARG0-of (잘 / 잘못-01))
+                :ARG1 (사2 / 사람
+                    :ARG0-of (잘2 / 잘하-01))
+                :mod (도2 / 도리어)))))
+
+# ::id snt1.E2016.790.04_A_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 賊 : 도둑 적
+# ::note
+(뜻 / 뜻하-01
+    :ARG1 (s / string-entity :value "賊")
+    :ARG2 (도 / 도둑))
+
+# ::id snt0.E2016.790.04_A_02 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 賊(적)－도둑, 反(반)－도리어, 荷(하)－들다, 杖(장)－지팡이.
+# ::note
+(a / and
+    :op1 (뜻 / 뜻하-01
+        :ARG1 (s / string-entity :value "賊")
+        :ARG2 (도 / 도둑))
+    :op2 (뜻2 / 뜻하-01
+        :ARG1 (s2 / string-entity :value "反")
+        :ARG2 (도2 / 도리어))
+    :op3 (뜻3 / 뜻하-01
+        :ARG1 (s3 / string-entity :value "荷")
+        :ARG2 (들 / 들-01))
+    :op4 (뜻4 / 뜻하-01
+        :ARG1 (s4 / string-entity :value "杖")
+        :ARG2 (지 / 지팡이)))
+
+# ::id snt1.E2016.790.04_A_02 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt 도둑이 도리어 몽둥이를 들다.
+# ::note
+(들 / 들-01
+    :ARG0 (도 / 도둑)
+    :ARG1 (몽 / 몽둥이)
+    :mod (도2 / 도리어))
+
+# ::id snt0.E2016.790.04_Q_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
+# ::snt '적반하장'에서 '적'의 뜻으로 맞는 것은?
+# ::note
+(a / amr-unknown
+    :ARG2-of (뜻 / 뜻하-01
+        :ARG1 (s / string-entity :value "적"
+            :ARG1-of (i / include-91
+                :ARG2 (s2 / string-entity :value "적반하장")))))
+
+# ::id snt0.E2016.790.05_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 반대로 림프구가 감소하는 것은 림프구 감소증(lymphocytopenia)이라 하며 이 현상은 에이즈의 원인이 되는 HIV(human immunodeficiency virus)에 감염되어 T-세포가 줄어들 때 잘 나타나는 증상이다.
+# ::note
+-- FRAMES ----------------------------------------
+반대 : VERBAL_NOUN
+	- oppose		(반 / 반대-01 :ARG0 opposer :ARG1 opposed_to)
+감소 : VERBAL_NOUN
+	- reduce		(감 / 감소-01 :ARG0 agent :ARG1 thing_reduced :ARG2 start_point :ARG3 end_point)
+감소 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (감 / 감소증-00) ?
+	- reduce		(감 / 감소-01 :ARG0 agent :ARG1 thing_reduced :ARG2 start_point :ARG3 end_point)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+감염 : VERBAL_NOUN
+	- infect		(감 / 감염-01 :ARG0 causer_of_infection :ARG1 thing_infected :ARG2 germ,_disease)
+줄어들 : VERB
+	- decrease		(줄 / 줄어들-01 :ARG1 thing_decreasing :ARG2 start_point :ARG3 end_point)
+나타나 : VERB
+	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"HIV" [AM_OTHERS]	->  (H / HIV)	OR	(a / animal* :wiki "인간면역결핍_바이러스" :name (이 / 이름 :op1 "HIV"))
+"T-세포" [TM_CELL_TISSUE]	->  (T / T-세포)	OR	(T / T-세포 :part-of|poss)
+"human immunodeficiency virus" [AM_OTHERS]	->  (h / humanimmunodeficiencyvirus)	OR	(a / animal* :wiki - :name (이 / 이름 :op1 "human" :op2 "immunodeficiency" :op3 "virus"))
+"lymphocytopenia" [TMM_DISEASE]	->  (l / lymphocytopenia)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "lymphocytopenia"))
+"림프구 감소증" [TMM_DISEASE]	->  (림 / 림프구감소증)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "림프구" :op2 "감소증"))
+"림프구" [TM_CELL_TISSUE]	->  (림 / 림프구)	OR	(림 / 림프구 :part-of|poss)
+"에이즈" [TMM_DISEASE]	->  (에 / 에이즈)	OR	(d / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "에이즈"))
+-- VERBALIZED ------------------------------------
+(감 / 감소 :mod (구 / 구))
+(구 / 구 :mod (림 / 림프))
+(구 / 구 :mod (림 / 림프))
+(증 / 증 :ARG0-of (감 / 감소))
+
+
+# ::id snt0.E2016.790.05_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt AIDS(에이즈)는 면역결핍바이러스인 에이즈바이러스(HIV)에 감염돼 면역기능이 저하되는 질환이다.
+# ::note
+-- FRAMES ----------------------------------------
+감염 : VERBAL_NOUN
+	- infect		(감 / 감염-01 :ARG0 causer_of_infection :ARG1 thing_infected :ARG2 germ,_disease)
+저하 : VERBAL_NOUN
+	- deteriorate		(저 / 저하-01 :ARG0 thing_deteriorating :ARG1 thing_deteriorated)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"AIDS" [TMM_DISEASE]	->  (A / AIDS)	OR	(d / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "AIDS"))
+"HIV" [AM_OTHERS]	->  (H / HIV)	OR	(a / animal* :wiki "인간면역결핍_바이러스" :name (이 / 이름 :op1 "HIV"))
+"에이즈" [TMM_DISEASE]	->  (에 / 에이즈)	OR	(d / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "에이즈"))
+"에이즈바이러스" [AM_OTHERS]	->  (에 / 에이즈바이러스)	OR	(a / animal* :wiki - :name (이 / 이름 :op1 "에이즈바이러스"))
+-- VERBALIZED ------------------------------------
+(결 / 결핍 :mod (면 / 면역))
+(기 / 기능 :mod (면 / 면역))
+(바 / 바이러스 :mod (결 / 결핍))
+(바 / 바이러스 :mod (에 / 에이즈))
+
+
+# ::id snt1.E2016.790.05_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 우리말로는 "후천성면역결핍증(後天性免疫缺乏症)"이다.
+# ::note
+-- FRAMES ----------------------------------------
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+후천성 : DERIVED_NON-ENTRY -> (후 / 후천성-00) ?
+결핍증 : DERIVED_NON-ENTRY -> (결 / 결핍증-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"後天性免疫缺乏症" [TMM_DISEASE]	->  (後 / 後天性免疫缺乏症)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "後天性免疫缺乏症"))
+"후천성면역결핍증" [TMM_DISEASE]	->  (후 / 후천성면역결핍증)	OR	(d / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "후천성면역결핍증"))
+-- VERBALIZED ------------------------------------
+(결 / 결핍 :mod (면 / 면역))
+(말 / 말 :mod (우 / 우리))
+(성 / 성 :mod (후 / 후천))
+(증 / 증 :mod (결 / 결핍))
+
+
+# ::id snt2.E2016.790.05_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 항체 생산 세포인 B-림프구를 돕는 헬퍼 T-림프구가 특수한 계통의 세균의 침입을 받으면, 헬퍼 T-림프구의 기능이 약해지거나 그 수가 감소하여 B-림프구의 항체 생산 능력이 크게 떨어진다.
+# ::note
+-- FRAMES ----------------------------------------
+생산 : VERBAL_NOUN
+	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
+돕 : VERB
+	- help		(돕 / 돕-01 :ARG0 helper :ARG1 benefactor,_project)
+특수 : VERBAL_NOUN
+	- special		(특 / 특수-01 :ARG1 thing_being_special)
+침입 : VERBAL_NOUN
+	- penetrate		(침 / 침입-01 :ARG0 agent :ARG1 place_or_thing_entered)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+약하 : VERB
+	- vulnerable		(약 / 약하-01 :ARG1 thing_being_vulnerable :ARG2 stimulus)
+감소 : VERBAL_NOUN
+	- reduce		(감 / 감소-01 :ARG0 agent :ARG1 thing_reduced :ARG2 start_point :ARG3 end_point)
+생산 : VERBAL_NOUN
+	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+떨어지 : VERB
+	- fall		(떨 / 떨어지-01 :ARG0 causer :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+	- run_out		(떨 / 떨어지-02 :ARG1 thing_running_out :ARG2 possessor)
+	- be_off		(떨 / 떨어지-03 :ARG1 theme :ARG2 be_off_from)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"B-림프구" [TM_CELL_TISSUE]	->  (B / B-림프구)	OR	(B / B-림프구 :part-of|poss)
+"B-림프구" [TM_CELL_TISSUE]	->  (B / B-림프구)	OR	(B / B-림프구 :part-of|poss)
+"세균" [AM_TYPE]	->  (세 / 세균)	OR	(a / animal* :wiki "세균" :name (이 / 이름 :op1 "세균"))
+"항체" [MT_CHEMICAL]	->  (항 / 항체)	OR	(m / material* :wiki "항체" :name (이 / 이름 :op1 "항체"))
+"항체" [MT_CHEMICAL]	->  (항 / 항체)	OR	(m / material* :wiki "항체" :name (이 / 이름 :op1 "항체"))
+"헬퍼 T-림프구" [TM_CELL_TISSUE]	->  (헬 / 헬퍼T-림프구)	OR	(헬 / 헬퍼 T-림프구 :part-of|poss)
+"헬퍼 T-림프구" [TM_CELL_TISSUE]	->  (헬 / 헬퍼T-림프구)	OR	(헬 / 헬퍼 T-림프구 :part-of|poss)
+-- VERBALIZED ------------------------------------
+(구 / 구 :mod (림 / 림프))
+(구 / 구 :mod (림 / 림프))
+(구 / 구 :mod (림 / 림프))
+(구 / 구 :mod (림 / 림프))
+(능 / 능력 :mod (생 / 생산))
+(생 / 생산 :mod (항 / 항체))
+(생 / 생산 :mod (항 / 항체))
+(세 / 세포 :mod (생 / 생산))
+
+
+# ::id snt0.E2016.790.05_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 후천성 면역 결핍증을 일으키는 에이즈 바이러스가 파괴하는 림프구로 맞는 것은?
+# ::note
+-- FRAMES ----------------------------------------
+후천성 : DERIVED_NON-ENTRY -> (후 / 후천성-00) ?
+결핍증 : DERIVED_NON-ENTRY -> (결 / 결핍증-00) ?
+일으키 : VERB
+	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
+파괴 : VERBAL_NOUN
+	- destroy		(파 / 파괴-01 :ARG0 agent,_causer :ARG1 thing_destroyed)
+맞 : VERB
+	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
+	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
+	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
+	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"림프구" [TM_CELL_TISSUE]	->  (림 / 림프구)	OR	(림 / 림프구 :part-of|poss)
+"에이즈 바이러스" [AM_OTHERS]	->  (에 / 에이즈바이러스)	OR	(a / animal* :wiki - :name (이 / 이름 :op1 "에이즈" :op2 "바이러스"))
+"후천성 면역 결핍증" [TMM_DISEASE]	->  (후 / 후천성면역결핍증)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "후천성" :op2 "면역" :op3 "결핍증"))
+-- VERBALIZED ------------------------------------
+(결 / 결핍 :mod (면 / 면역))
+(구 / 구 :mod (림 / 림프))
+(바 / 바이러스 :mod (에 / 에이즈))
+(성 / 성 :mod (후 / 후천))
+(증 / 증 :mod (결 / 결핍))
+
+
+# ::id snt0.E2016.790.06_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 리골레토 - 만토바 공작의 어릿광대
+# ::note
+-- FRAMES ----------------------------------------
+list index out of range
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"공작" [CV_POSITION]	->  :mod (공 / 공작)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (공 / 공작))
+"리골레토" [AFW_MUSIC]	->  (리 / 리골레토)	OR	(m / music :wiki "리골레토" :name (이 / 이름 :op1 "리골레토"))
+"만토바" [PS_NAME]	->  (만 / 만토바)	OR	(p / person :wiki "만토바" :name (이 / 이름 :op1 "만토바"))
+"어릿광대" [CV_OCCUPATION]	->  :mod (어 / 어릿광대)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (어 / 어릿광대))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.06_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 투란도트 공주와 혼인하려는 남자는 먼저 그 여자가 내는 세 가지 수수께끼를 풀어야 한다.
+# ::note
+-- FRAMES ----------------------------------------
+혼인하 : DERIVED_NON-ENTRY
+내 : VERB
+	- send		(내 / 내-01 :ARG0 agent :ARG1 thing_sent :ARG2 sent_to)
+	- make		(내 / 내-02 :ARG0 causer :ARG1 thing_made)
+풀 : VERB
+	- solve		(풀 / 풀-01 :ARG0 solver :ARG1 the_problem)
+	- release		(풀 / 풀-02 :ARG0 releaser :ARG1 thing_released)
+	- warm_up		(풀 / 풀-03 :ARG0 agent :ARG1 body)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"공주" [CV_POSITION]	->  :mod (공 / 공주)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (공 / 공주))
+"세 가지" [QT_COUNT]	->  :quant (세 / 세가지)	OR	(c / concept* :quant 세 :unit|scale (가 / 가지))
+"투란도트" [PS_NAME]	->  (투 / 투란도트)	OR	(p / person :wiki "투란도트" :name (이 / 이름 :op1 "투란도트"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.06_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 등장인물의 이름이 제목으로 쓰인 오페라가 아닌 것은?
+# ::note
+-- FRAMES ----------------------------------------
+등장 : VERBAL_NOUN
+	- appear		(등 / 등장-01 :ARG1 entity_appearing :ARG2 location :ARG3 attribute_of_Arg1)
+쓰이 : REDUCED_VERB_DETECTED
+	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
+	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"오페라" [FD_ART]	->  (오 / 오페라)	OR	(s / study-field|group* :wiki "오페라" :name (이 / 이름 :op1 "오페라"))
+-- VERBALIZED ------------------------------------
+(인 / 인물 :mod (등 / 등장))
+
+
+# ::id snt0.E2016.790.07_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 삼라만상 森羅萬象
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.07_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 삼라(森羅)는 넓게 퍼져 있는 숲처럼 늘어선 모양을 가리킵니다.
+# ::note
+-- FRAMES ----------------------------------------
+넓 : VERB
+	- wide		(넓 / 넓-01 :ARG0 causer :ARG1 thing_being_wide)
+퍼지 : VERB
+	- spread		(퍼 / 퍼지-01 :ARG1 thing_spreading :ARG2 thing_spread_through)
+	- resonate-CV		(퍼 / 퍼지-02 :ARG1 sound :ARG2 direction)
+늘어서 : ** UNUSED_OR_NON-ENTRY **
+가리키 : VERB
+	- indicate		(가 / 가리키-01 :ARG0 indicator :ARG1 thing_indicated)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.07_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '석 삼(三)'자가 사용된 사자성어가 아닌 것은?
+# ::note
+-- FRAMES ----------------------------------------
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"三" [QT_COUNT]	->  :quant (三 / 三)	OR	(c / concept* :quant - :unit|scale (三 / 三))
+"삼" [QT_COUNT]	->  :quant (삼 / 삼)	OR	(c / concept* :quant - :unit|scale (삼 / 삼))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.08_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 《오만과 편견》(Pride and Prejudice)은 제인 오스틴이 쓴 소설이다.
+# ::note
+-- FRAMES ----------------------------------------
+쓰 : VERB
+	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
+	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Pride and Prejudice" [AFW_DOCUMENT]	->  (P / PrideandPrejudice)	OR	(p / publication? :wiki - :name (이 / 이름 :op1 "Pride" :op2 "and" :op3 "Prejudice"))
+"소설" [FD_ART]	->  (소 / 소설)	OR	(s / study-field|group* :wiki "소설" :name (이 / 이름 :op1 "소설"))
+"오만과 편견" [AFW_DOCUMENT]	->  (오 / 오만과편견)	OR	(p / publication? :wiki "오만과_편견" :name (이 / 이름 :op1 "오만과" :op2 "편견"))
+"제인 오스틴" [PS_NAME]	->  (제 / 제인오스틴)	OR	(p / person :wiki "제인_오스틴" :name (이 / 이름 :op1 "제인" :op2 "오스틴"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.08_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <문학> 영국의 소설가 오스틴이 지은 장편 소설.
+# ::note
+-- FRAMES ----------------------------------------
+소설가 : DERIVED_NON-ENTRY -> (소 / 소설가-00) ?
+짓 : VERB
+	- construct		(짓 / 짓-01 :ARG0 agent :ARG1 construction)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"문학" [FD_ART]	->  (문 / 문학)	OR	(s / study-field|group* :wiki "문학" :name (이 / 이름 :op1 "문학"))
+"소설가" [CV_OCCUPATION]	->  :mod (소 / 소설가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (소 / 소설가))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"오스틴" [PS_NAME]	->  (오 / 오스틴)	OR	(p / person :wiki "오스틴?" :name (이 / 이름 :op1 "오스틴"))
+"장편 소설" [FD_ART]	->  (장 / 장편소설)	OR	(s / study-field|group* :wiki "장편소설" :name (이 / 이름 :op1 "장편" :op2 "소설"))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (소 / 소설))
+(소 / 소설 :mod (장 / 장편))
+
+
+# ::id snt0.E2016.790.08_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 브론테 자매가 집필한 작품이 아닌 것은?
+# ::note
+-- FRAMES ----------------------------------------
+집필하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"브론테" [PS_NAME]	->  (브 / 브론테)	OR	(p / person :wiki "브론테?" :name (이 / 이름 :op1 "브론테"))
+"자매" [CV_RELATION]	->  :mod (자 / 자매)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (자 / 자매))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.09_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 추운 겨울철의 세 벗이라는 뜻으로, 추위에 잘 견디는 소나무ㆍ대나무ㆍ매화나무를 통틀어 이르는 말.
+# ::note
+-- FRAMES ----------------------------------------
+춥 : VERB
+	- cold		(춥 / 춥-01 :ARG1 weather)
+벗 : VERBAL_NOUN
+	- take_off		(벗 / 벗-01 :ARG0 agent :ARG1 thing_taken_off)
+견디 : VERB
+	- endure		(견 / 견디-01 :ARG0 agent :ARG1 thing_endured_or_period_of_time)
+이르 : VERB
+	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
+	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- early		(이 / 이르-03 :ARG1 time)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"겨울철" [DT_SEASON]	->  :time|duration (겨 / 겨울철)	OR	:time (d / date-entity :season (겨 / 겨울))	OR	:duration 
+"대나무" [PT_TREE]	->  (대 / 대나무)	OR	(p / plant* :wiki "대나무" :name (이 / 이름 :op1 "대나무"))
+"매화나무" [PT_TREE]	->  (매 / 매화나무)	OR	(p / plant* :wiki "매실나무" :name (이 / 이름 :op1 "매화나무"))
+"세 벗" [QT_COUNT]	->  :quant (세 / 세벗)	OR	(c / concept* :quant 세 :unit|scale (벗 / 벗))
+"소나무" [PT_TREE]	->  (소 / 소나무)	OR	(p / plant* :wiki "소나무" :name (이 / 이름 :op1 "소나무"))
+-- VERBALIZED ------------------------------------
+(철 / 철 :mod (겨 / 겨울))
+
+
+# ::id snt0.E2016.790.09_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 추위에 강한 소나무, 대나무, 매화나무를 가리킴.
+# ::note
+-- FRAMES ----------------------------------------
+강하 : VERB
+	- strong		(강 / 강하-01 :ARG1 entity_being_strong)
+가리키 : VERB
+	- indicate		(가 / 가리키-01 :ARG0 indicator :ARG1 thing_indicated)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"대나무" [PT_TREE]	->  (대 / 대나무)	OR	(p / plant* :wiki "대나무" :name (이 / 이름 :op1 "대나무"))
+"매화나무" [PT_TREE]	->  (매 / 매화나무)	OR	(p / plant* :wiki "매실나무" :name (이 / 이름 :op1 "매화나무"))
+"소나무" [PT_TREE]	->  (소 / 소나무)	OR	(p / plant* :wiki "소나무" :name (이 / 이름 :op1 "소나무"))
+-- VERBALIZED ------------------------------------
+(나 / 나무 :mod (매 / 매화))
+
+
+# ::id snt0.E2016.790.09_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '세한삼우'에 속하는 나무가 아닌 것은?
+# ::note
+-- FRAMES ----------------------------------------
+속하 : VERB
+	- belong_to		(속 / 속하-01 :ARG1 thing_belonging :ARG2 belong_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.10_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 세포이(sepoy)는 영국 지배 시기 인도에서 채용된 현지 용병을 부르는 명칭이었다.
+# ::note
+-- FRAMES ----------------------------------------
+지배 : VERBAL_NOUN
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+채용 : VERBAL_NOUN
+	- employ		(채 / 채용-01 :ARG0 agent :ARG1 thing_employed)
+부르 : VERB
+	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
+	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"용병" [CV_POSITION]	->  :mod (용 / 용병)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (용 / 용병))
+"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+-- VERBALIZED ------------------------------------
+(시 / 시기 :mod (지 / 지배))
+(용 / 용병 :mod (현 / 현지))
+
+
+# ::id snt0.E2016.790.10_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <역사> 1857년에 영국령(英國領) 인도에서 영국 동인도 회사의 용병 세포이가 일으킨 항쟁.
+# ::note
+-- FRAMES ----------------------------------------
+일으키 : VERB
+	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1857년" [DT_YEAR]	->  :time|duration (1 / 1857년)	OR	:time (d / date-entity :year 1857)	OR	:duration (t / temporal-quantity :quant 1857 :unit (년 / 년))  
+"英國領" [LCP_COUNTRY]	->  (英 / 英國領)	OR	(c / country :wiki - :name (이 / 이름 :op1 "英國領"))
+"영국 동인도 회사" [OGG_ECONOMY]	->  (영 / 영국동인도회사)	OR	(c / company|organization :wiki "영국_동인도_회사" :name (이 / 이름 :op1 "영국" :op2 "동인도" :op3 "회사"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"용병" [CV_POSITION]	->  :mod (용 / 용병)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (용 / 용병))
+"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+-- VERBALIZED ------------------------------------
+(세 / 세포이 :mod (용 / 용병))
+
+
+# ::id snt0.E2016.790.10_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 사건 이름이 지역명이 아닌 것은?
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(명 / 명 :mod (지 / 지역))
+(이 / 이름 :mod (사 / 사건))
+
+
+# ::id snt0.E2016.790.11_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 각기병(脚氣病)은 비타민 B1(티아민) 결핍으로 인해 심부전과 말초 신경 장애를 초래하는 질환이다.
+# ::note
+-- FRAMES ----------------------------------------
+인하 : VERB
+	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
+	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
+초래 : VERBAL_NOUN
+	- bring_about		(초 / 초래-01 :ARG0 thing_bringing :ARG1 bring_about)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"脚氣病" [TMM_DISEASE]	->  (脚 / 脚氣病)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "脚氣病"))
+"각기병" [TMM_DISEASE]	->  (각 / 각기병)	OR	(d / desease :wiki "각기병" :name (이 / 이름 :op1 "각기병"))
+"말초 신경 장애" [TMM_DISEASE]	->  (말 / 말초신경장애)	OR	(d / desease :wiki "말초신경증" :name (이 / 이름 :op1 "말초" :op2 "신경" :op3 "장애"))
+"비타민 B1" [MT_CHEMICAL]	->  (비 / 비타민B1)	OR	(m / material* :wiki "티아민" :name (이 / 이름 :op1 "비타민" :op2 "B1"))
+"심부전" [TMM_DISEASE]	->  (심 / 심부전)	OR	(d / desease :wiki "심부전" :name (이 / 이름 :op1 "심부전"))
+"티아민" [MT_CHEMICAL]	->  (티 / 티아민)	OR	(m / material* :wiki "티아민" :name (이 / 이름 :op1 "티아민"))
+-- VERBALIZED ------------------------------------
+(병 / 병 :mod (각 / 각기))
+(신 / 신경 :mod (말 / 말초))
+(장 / 장애 :mod (신 / 신경))
+
+
+# ::id snt1.E2016.790.11_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 심부전에 따라 다리의 부종이 신경 장애로 인해 하지의 저림이 일어나는 것부터 각기병이라고 한다.
+# ::note
+-- FRAMES ----------------------------------------
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+인하 : VERB
+	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
+	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"각기병" [TMM_DISEASE]	->  (각 / 각기병)	OR	(d / desease :wiki "각기병" :name (이 / 이름 :op1 "각기병"))
+"다리" [AM_PART]	->  (다 / 다리)	OR	(다 / 다리 :part-of|poss)
+"부종" [TMM_DISEASE]	->  (부 / 부종)	OR	(d / desease :wiki "부종" :name (이 / 이름 :op1 "부종"))
+"신경 장애" [TMM_DISEASE]	->  (신 / 신경장애)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "신경" :op2 "장애"))
+"심부전" [TMM_DISEASE]	->  (심 / 심부전)	OR	(d / desease :wiki "심부전" :name (이 / 이름 :op1 "심부전"))
+"하지" [AM_PART]	->  (하 / 하지)	OR	(하 / 하지 :part-of|poss)
+-- VERBALIZED ------------------------------------
+(병 / 병 :mod (각 / 각기))
+(장 / 장애 :mod (신 / 신경))
+
+
+# ::id snt0.E2016.790.11_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <의학> 비타민 비 원(B1)이 부족하여 일어나는 영양실조 증상.
+# ::note
+-- FRAMES ----------------------------------------
+비 : VERBAL_NOUN
+	- be_empty		(비 / 비-01 :ARG1 thing_being_empty)
+부족 : VERBAL_NOUN
+	- lack		(부 / 부족-01 :ARG1 thing_being_short :ARG2 lack_in)
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"B1" [MT_CHEMICAL]	->  (B / B1)	OR	(m / material* :wiki "B1?" :name (이 / 이름 :op1 "B1"))
+"비타민 비 원" [MT_CHEMICAL]	->  (비 / 비타민비원)	OR	(m / material* :wiki - :name (이 / 이름 :op1 "비타민" :op2 "비" :op3 "원"))
+"영양실조" [TMM_DISEASE]	->  (영 / 영양실조)	OR	(d / desease :wiki "영양실조" :name (이 / 이름 :op1 "영양실조"))
+"의학" [FD_MEDICINE]	->  (의 / 의학)	OR	(s / study-field|group* :wiki "의학" :name (이 / 이름 :op1 "의학"))
+-- VERBALIZED ------------------------------------
+(비 / 비 :mod (비 / 비타민))
+(실 / 실조 :mod (영 / 영양))
+(원 / 원 :mod (비 / 비))
+(증 / 증상 :mod (실 / 실조))
+
+
+# ::id snt1.E2016.790.11_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 말초 신경에 장애가 생겨 다리가 붓고 마비되며 전신 권태의 증상이 나타나기도 한다.
+# ::note
+-- FRAMES ----------------------------------------
+생기 : VERB
+	- happen		(생 / 생기-01 :ARG1 thing_happening :ARG2 location)
+붓 : ** UNUSED_OR_NON-ENTRY **
+마비 : VERBAL_NOUN
+	- paralyze		(마 / 마비-01 :ARG0 reason :ARG1 entity_paralyzed)
+나타나 : VERB
+	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"다리" [AM_PART]	->  (다 / 다리)	OR	(다 / 다리 :part-of|poss)
+"마비" [TMM_DISEASE]	->  (마 / 마비)	OR	(d / desease :wiki "마비" :name (이 / 이름 :op1 "마비"))
+"말초 신경" [TM_CELL_TISSUE]	->  (말 / 말초신경)	OR	(말 / 말초 신경 :part-of|poss)
+"전신 권태" [TMM_DISEASE]	->  (전 / 전신권태)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "전신" :op2 "권태"))
+-- VERBALIZED ------------------------------------
+(권 / 권태 :mod (전 / 전신))
+(신 / 신경 :mod (말 / 말초))
+
+
+# ::id snt0.E2016.790.11_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이것은 비타민 B1인 티아민의 부족으로 생기는 질병으로 다발성 신경염이 나타나고 다리 근육이 쓰리고 아프기 시작하면서 무릎반사 작용이 떨어진다.
+# ::note
+-- FRAMES ----------------------------------------
+부족 : VERBAL_NOUN
+	- lack		(부 / 부족-01 :ARG1 thing_being_short :ARG2 lack_in)
+생기 : VERB
+	- happen		(생 / 생기-01 :ARG1 thing_happening :ARG2 location)
+다발성 : DERIVED_NON-ENTRY -> (다 / 다발성-00) ?
+나타나 : VERB
+	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
+쓰리 : VERB
+	- smart		(쓰 / 쓰리-01 :ARG1 entity_experiencing_pain :ARG2 cause_of_pain)
+아프 : VERB
+	- painful		(아 / 아프-01 :ARG1 thing_painful)
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+반사 : VERBAL_NOUN
+	- reflect		(반 / 반사-01 :ARG0 causer :ARG1 thing_reflected)
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+떨어지 : VERB
+	- fall		(떨 / 떨어지-01 :ARG0 causer :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
+	- run_out		(떨 / 떨어지-02 :ARG1 thing_running_out :ARG2 possessor)
+	- be_off		(떨 / 떨어지-03 :ARG1 theme :ARG2 be_off_from)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"근육" [TM_CELL_TISSUE]	->  (근 / 근육)	OR	(근 / 근육 :part-of|poss)
+"다리" [AM_PART]	->  (다 / 다리)	OR	(다 / 다리 :part-of|poss)
+"다발성 신경염" [TMM_DISEASE]	->  (다 / 다발성신경염)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "다발성" :op2 "신경염"))
+"무릎" [AM_PART]	->  (무 / 무릎)	OR	(무 / 무릎 :part-of|poss)
+"비타민 B1" [MT_CHEMICAL]	->  (비 / 비타민B1)	OR	(m / material* :wiki "티아민" :name (이 / 이름 :op1 "비타민" :op2 "B1"))
+"티아민" [MT_CHEMICAL]	->  (티 / 티아민)	OR	(m / material* :wiki "티아민" :name (이 / 이름 :op1 "티아민"))
+-- VERBALIZED ------------------------------------
+(근 / 근육 :mod (다 / 다리))
+(반 / 반사 :mod (무 / 무릎))
+(성 / 성 :mod (다 / 다발))
+(염 / 염 :mod (신 / 신경))
+(작 / 작용 :ARG1 (반 / 반사))
+
+
+# ::id snt1.E2016.790.11_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 결국 근육이 마비되어 제대로 걷지 못하는 증세가 나타나는 이 질병은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+마비 : VERBAL_NOUN
+	- paralyze		(마 / 마비-01 :ARG0 reason :ARG1 entity_paralyzed)
+걷 : VERB
+	- walk		(걷 / 걷-01 :ARG0 walker :ARG1 path :ARG2 start_point :ARG3 end_point)
+나타나 : VERB
+	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"근육" [TM_CELL_TISSUE]	->  (근 / 근육)	OR	(근 / 근육 :part-of|poss)
+"마비" [TMM_DISEASE]	->  (마 / 마비)	OR	(d / desease :wiki "마비" :name (이 / 이름 :op1 "마비"))
+-- VERBALIZED ------------------------------------
+(근 / 근육 :mod (결 / 결국))
+
+
+# ::id snt0.E2016.790.12_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 세종과학기지(世宗科學基地)는 사우스 셰틀랜드 제도의 킹조지 섬 남서쪽 해안 바르톤 반도(남위 62° 13′ 서경 58° 47′)에 있는 대한민국의 과학 기지로 한국해양연구원 부설 극지연구소 산하의 연구소이다.
+# ::note
+-- FRAMES ----------------------------------------
+있 : ** UNUSED_OR_NON-ENTRY **
+연구 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (연 / 연구소-00) ?
+	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"世宗科學基地" [OGG_SCIENCE]	->  (世 / 世宗科學基地)	OR	(o / organization|research-institute :wiki - :name (이 / 이름 :op1 "世宗科學基地"))
+"극지연구소" [OGG_SCIENCE]	->  (극 / 극지연구소)	OR	(o / organization|research-institute :wiki "극지연구소" :name (이 / 이름 :op1 "극지연구소"))
+"남서쪽" [TM_DIRECTION]	->  (남 / 남서쪽)	OR	(: / :direction :wiki "남서쪽" :name (이 / 이름 :op1 "남서쪽"))
+"남위 62° 13′" [QT_OTHERS]	->  :quant (남 / 남위62°13′)	OR	(c / concept* :quant 남위 62° :unit|scale (1 / 13′))
+"대한민국" [LCP_COUNTRY]	->  (대 / 대한민국)	OR	(c / country :wiki "대한민국" :name (이 / 이름 :op1 "대한민국"))
+"바르톤 반도" [LCG_BAY]	->  (바 / 바르톤반도)	OR	(b / bay :wiki - :name (이 / 이름 :op1 "바르톤" :op2 "반도"))
+"사우스 셰틀랜드 제도" [LCG_ISLAND]	->  (사 / 사우스셰틀랜드제도)	OR	(i / island :wiki "사우스셰틀랜드_제도" :name (이 / 이름 :op1 "사우스" :op2 "셰틀랜드" :op3 "제도"))
+"서경 58° 47′" [QT_OTHERS]	->  :quant (서 / 서경58°47′)	OR	(c / concept* :quant 서경 58° :unit|scale (4 / 47′))
+"세종과학기지" [OGG_SCIENCE]	->  (세 / 세종과학기지)	OR	(o / organization|research-institute :wiki "세종과학기지" :name (이 / 이름 :op1 "세종과학기지"))
+"킹조지 섬" [LCG_ISLAND]	->  (킹 / 킹조지섬)	OR	(i / island :wiki "킹조지섬" :name (이 / 이름 :op1 "킹조지" :op2 "섬"))
+"한국해양연구원" [OGG_SCIENCE]	->  (한 / 한국해양연구원)	OR	(o / organization|research-institute :wiki "한국해양연구원" :name (이 / 이름 :op1 "한국해양연구원"))
+-- VERBALIZED ------------------------------------
+(기 / 기지 :mod (과 / 과학))
+(남 / 남서 :mod (섬 / 섬))
+(소 / 소 :ARG0-of (연 / 연구))
+
+
+# ::id snt1.E2016.790.12_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이름은 조선의 제4대왕 세종대왕을 따서 지었으며, 1988년 2월 17일 건립되었다.
+# ::note
+-- FRAMES ----------------------------------------
+따 : VERB
+	- obtain		(따 / 따-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 received_from)
+	- quote		(따 / 따-01 :ARG0 quoter :ARG1 thing_quoted :ARG2 quoted_from)
+짓 : VERB
+	- construct		(짓 / 짓-01 :ARG0 agent :ARG1 construction)
+건립되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1988년 2월 17일" [DT_OTHERS]	->  :time|duration (1 / 1988년2월17일)	OR	:time (d / date-entity :year 1988 :month 2 :day 17)	OR	:duration (t / temporal-quantity :quant 1988 :unit (년 / 년))  (t / temporal-quantity :quant 2 :unit (월 / 월))  (t / temporal-quantity :quant 17 :unit (일 / 일))  
+"세종대왕" [PS_NAME]	->  (세 / 세종대왕)	OR	(p / person :wiki "조선_세종" :name (이 / 이름 :op1 "세종대왕"))
+"왕" [CV_POSITION]	->  :mod (왕 / 왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (왕 / 왕))
+"제4대" [QT_ORDER]	->  :ord (제 / 제4대)	OR	:ord (o / ordinal-entity :value 제4대)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"조선" [LCP_COUNTRY]	->  (조 / 조선)	OR	(c / country :wiki "조선" :name (이 / 이름 :op1 "조선"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.12_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 남극대륙 북쪽, 사우스 쉐틀랜드제도의 킹조지섬 바턴반도에 있는 한국 최초의 남극과학기지.
+# ::note
+-- FRAMES ----------------------------------------
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"남극과학기지" [OGG_SCIENCE]	->  (남 / 남극과학기지)	OR	(o / organization|research-institute :wiki "남극_기지" :name (이 / 이름 :op1 "남극과학기지"))
+"남극대륙" [LCG_CONTINENT]	->  (남 / 남극대륙)	OR	(c / continent :wiki "남극" :name (이 / 이름 :op1 "남극대륙"))
+"바턴반도" [LCG_BAY]	->  (바 / 바턴반도)	OR	(b / bay :wiki - :name (이 / 이름 :op1 "바턴반도"))
+"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
+"사우스 쉐틀랜드제도" [LCG_ISLAND]	->  (사 / 사우스쉐틀랜드제도)	OR	(i / island :wiki - :name (이 / 이름 :op1 "사우스" :op2 "쉐틀랜드제도"))
+"킹조지섬" [LCG_ISLAND]	->  (킹 / 킹조지섬)	OR	(i / island :wiki "킹조지섬" :name (이 / 이름 :op1 "킹조지섬"))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+(과 / 과학 :mod (남 / 남극))
+(기 / 기지 :mod (과 / 과학))
+(대 / 대륙 :mod (남 / 남극))
+(북 / 북쪽 :mod (대 / 대륙))
+
+
+# ::id snt0.E2016.790.12_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 우리나라는 1986년 남극조약에 가입한 후 본격적인 남극연구 활동을 위하여 1988년 사우스 쉐틀랜드 군도 킹조지 섬에 이것을 건설하였다.
+# ::note
+-- FRAMES ----------------------------------------
+가입 : VERBAL_NOUN
+	- enter		(가 / 가입-01 :ARG0 agent :ARG2 group_or_thing_entered)
+	- affiliate		(가 / 가입-02 :ARG0 causer_of_affiliation :ARG1 thing_affiliated :ARG2 affiliated_with)
+본격적 : DERIVED_NON-ENTRY -> (본 / 본격적-00) ?
+연구 : VERBAL_NOUN
+	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
+활동 : VERBAL_NOUN
+	- act		(활 / 활동-01 :ARG0 agent :ARG1 role)
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+건설 : VERBAL_NOUN
+	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1986년" [DT_YEAR]	->  :time|duration (1 / 1986년)	OR	:time (d / date-entity :year 1986)	OR	:duration (t / temporal-quantity :quant 1986 :unit (년 / 년))  
+"1988년" [DT_YEAR]	->  :time|duration (1 / 1988년)	OR	:time (d / date-entity :year 1988)	OR	:duration (t / temporal-quantity :quant 1988 :unit (년 / 년))  
+"남극" [LCG_CONTINENT]	->  (남 / 남극)	OR	(c / continent :wiki "남극" :name (이 / 이름 :op1 "남극"))
+"남극조약" [EV_OTHERS]	->  (남 / 남극조약)	OR	(e / event? :wiki "남극조약" :name (이 / 이름 :op1 "남극조약"))
+"사우스 쉐틀랜드 군도" [LCG_ISLAND]	->  (사 / 사우스쉐틀랜드군도)	OR	(i / island :wiki - :name (이 / 이름 :op1 "사우스" :op2 "쉐틀랜드" :op3 "군도"))
+"킹조지 섬" [LCG_ISLAND]	->  (킹 / 킹조지섬)	OR	(i / island :wiki "킹조지섬" :name (이 / 이름 :op1 "킹조지" :op2 "섬"))
+-- VERBALIZED ------------------------------------
+(나 / 나라 :mod (우 / 우리))
+(본 / 본격 :mod (후 / 후))
+(연 / 연구 :mod (남 / 남극))
+(적 / 적 :mod (본 / 본격))
+(조 / 조약 :mod (남 / 남극))
+(활 / 활동 :ARG1 (연 / 연구))
+
+
+# ::id snt1.E2016.790.12_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 우리나라 최초의 남극 과학기지인 이것은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"남극 과학기지" [OGG_SCIENCE]	->  (남 / 남극과학기지)	OR	(o / organization|research-institute :wiki "남극_기지" :name (이 / 이름 :op1 "남극" :op2 "과학기지"))
+-- VERBALIZED ------------------------------------
+(과 / 과학 :mod (남 / 남극))
+(기 / 기지 :mod (과 / 과학))
+(나 / 나라 :mod (우 / 우리))
+(최 / 최초 :mod (나 / 나라))
+
+
+# ::id snt0.E2016.790.13_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 남극 동남단의 로스해(Ross Sea)에 접한 테라노바만(Terra Nova Bay)에 있는 한국의 두 번째 남극 과학기지.
+# ::note
+-- FRAMES ----------------------------------------
+접하 : VERB
+	- encounter		(접 / 접하-01 :ARG0 thing_encountering :ARG1 thing_encountered)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Ross Sea" [LCG_OCEAN]	->  (R / RossSea)	OR	(o / ocean :wiki - :name (이 / 이름 :op1 "Ross" :op2 "Sea"))
+"Terra Nova Bay" [LCG_BAY]	->  (T / TerraNovaBay)	OR	(b / bay :wiki - :name (이 / 이름 :op1 "Terra" :op2 "Nova" :op3 "Bay"))
+"남극" [LCG_CONTINENT]	->  (남 / 남극)	OR	(c / continent :wiki "남극" :name (이 / 이름 :op1 "남극"))
+"남극과학기지" [OGG_SCIENCE]	->  (남 / 남극과학기지)	OR	(o / organization|research-institute :wiki "남극_기지" :name (이 / 이름 :op1 "남극과학기지"))
+"동남단" [TM_DIRECTION]	->  (동 / 동남단)	OR	(: / :direction :wiki - :name (이 / 이름 :op1 "동남단"))
+"두 번째" [QT_OTHERS]	->  :quant (두 / 두번째)	OR	(c / concept* :quant 두 :unit|scale (번 / 번째))
+"로스해" [LCG_OCEAN]	->  (로 / 로스해)	OR	(o / ocean :wiki "로스해" :name (이 / 이름 :op1 "로스해"))
+"테라노바만" [LCG_BAY]	->  (테 / 테라노바만)	OR	(b / bay :wiki - :name (이 / 이름 :op1 "테라노바만"))
+"한국" [LCP_COUNTRY]	->  (한 / 한국)	OR	(c / country :wiki "한국" :name (이 / 이름 :op1 "한국"))
+-- VERBALIZED ------------------------------------
+(과 / 과학 :mod (남 / 남극))
+(기 / 기지 :mod (과 / 과학))
+(단 / 단 :mod (동 / 동남))
+(동 / 동남 :mod (남 / 남극))
+
+
+# ::id snt0.E2016.790.13_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 장보고기지는 대한민국이 지난 1988년 세종과학기지를 건설한 지 26년 만에 완공한 두 번째 남극기지이자 남극대륙 내륙에 짓는 첫 기지이다.
+# ::note
+-- FRAMES ----------------------------------------
+지나 : VERB
+	- pass		(지 / 지나-01 :ARG0 entity_passing :ARG1 thing_passed)
+	- be_only		(지 / 지나-02 :ARG1 thing_under_consideration :ARG2 criterion)
+건설 : VERBAL_NOUN
+	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
+완공 : VERBAL_NOUN
+	- complete		(완 / 완공-01 :ARG0 agent :ARG1 thing_completed)
+짓 : VERB
+	- construct		(짓 / 짓-01 :ARG0 agent :ARG1 construction)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"26년" [DT_DURATION]	->  :time|duration (2 / 26년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 26))	OR :duration (t / temporal-quantity :quant 26 :unit (년 / 년))  
+"남극" [LCG_CONTINENT]	->  (남 / 남극)	OR	(c / continent :wiki "남극" :name (이 / 이름 :op1 "남극"))
+"남극대륙" [LCG_CONTINENT]	->  (남 / 남극대륙)	OR	(c / continent :wiki "남극" :name (이 / 이름 :op1 "남극대륙"))
+"대한민국" [LCP_COUNTRY]	->  (대 / 대한민국)	OR	(c / country :wiki "대한민국" :name (이 / 이름 :op1 "대한민국"))
+"두 번째" [QT_ORDER]	->  :ord (두 / 두번째)	OR	:ord (o / ordinal-entity :value 두 번째)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"세종과학기지" [OGG_SCIENCE]	->  (세 / 세종과학기지)	OR	(o / organization|research-institute :wiki "세종과학기지" :name (이 / 이름 :op1 "세종과학기지"))
+"장보고기지" [OGG_SCIENCE]	->  (장 / 장보고기지)	OR	(o / organization|research-institute :wiki - :name (이 / 이름 :op1 "장보고기지"))
+"지난 1988년" [DT_YEAR]	->  :time|duration (지 / 지난1988년)	OR	:time (d / date-entity :year 1988)	OR	:duration (t / temporal-quantity :quant 1988 :unit (년 / 년))  
+"첫 기지" [QT_OTHERS]	->  :quant (첫 / 첫기지)	OR	(c / concept* :quant 첫 :unit|scale (기 / 기지))
+-- VERBALIZED ------------------------------------
+(기 / 기지 :mod (남 / 남극))
+(내 / 내륙 :mod (대 / 대륙))
+(대 / 대륙 :mod (남 / 남극))
+
+
+# ::id snt0.E2016.790.13_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이것은 세종과학기지에 이은 우리나라의 두 번째 남극기지로 2014년에 준공될 예정이다.
+# ::note
+-- FRAMES ----------------------------------------
+잇 : VERB
+	- connect		(잇 / 잇-01 :ARG1 thing_connecting :ARG2 thing_connected :ARG3 connect_to)
+	- follow		(잇 / 잇-02 :ARG1 thing_following :ARG2 thing_followed :ARG3 follow_to)
+준공 : VERBAL_NOUN
+	- complete		(준 / 준공-01 :ARG0 agent :ARG1 thing_completed)
+예정 : VERBAL_NOUN
+	- plan		(예 / 예정-01 :ARG0 thing_planning :ARG1 thing_planned)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2014년" [DT_YEAR]	->  :time|duration (2 / 2014년)	OR	:time (d / date-entity :year 2014)	OR	:duration (t / temporal-quantity :quant 2014 :unit (년 / 년))  
+"두 번째" [QT_OTHERS]	->  :quant (두 / 두번째)	OR	(c / concept* :quant 두 :unit|scale (번 / 번째))
+"세종과학기지" [OGG_SCIENCE]	->  (세 / 세종과학기지)	OR	(o / organization|research-institute :wiki "세종과학기지" :name (이 / 이름 :op1 "세종과학기지"))
+-- VERBALIZED ------------------------------------
+(기 / 기지 :mod (남 / 남극))
+(나 / 나라 :mod (우 / 우리))
+
+
+# ::id snt1.E2016.790.13_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 세종기지의 지리적 한계를 극복하고 남극대륙 중심부로 진출하여 빙해시추와 운석탐사 기술 개발 등 다양한 연구가 가능할 것으로 기대되고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+지리적 : DERIVED_NON-ENTRY -> (지 / 지리적-00) ?
+극복 : VERBAL_NOUN
+	- conquer		(극 / 극복-01 :ARG0 agent :ARG1 thing_conquered)
+중심부 : DERIVED_NON-ENTRY -> (중 / 중심부-00) ?
+진출 : VERBAL_NOUN
+	- advance		(진 / 진출-01 :ARG0 thing_advancing :ARG1 path :ARG2 start_point :ARG3 end_point)
+기술 : VERBAL_NOUN
+	- describe		(기 / 기술-01 :ARG0 describer :ARG1 thing_described)
+개발 : VERBAL_NOUN
+	- develop		(개 / 개발-01 :ARG0 developer :ARG1 thing_developed)
+다양 : VERBAL_NOUN
+	- diverse		(다 / 다양-01 :ARG1 entity_being_diverse)
+연구 : VERBAL_NOUN
+	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
+가능 : VERBAL_NOUN
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+기대 : VERBAL_NOUN
+	- expect		(기 / 기대-01 :ARG0 agent :ARG1 thing_expected)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"남극대륙" [LCG_CONTINENT]	->  (남 / 남극대륙)	OR	(c / continent :wiki "남극" :name (이 / 이름 :op1 "남극대륙"))
+"세종기지" [OGG_SCIENCE]	->  (세 / 세종기지)	OR	(o / organization|research-institute :wiki "세종과학기지" :name (이 / 이름 :op1 "세종기지"))
+"중심부" [TM_DIRECTION]	->  (중 / 중심부)	OR	(: / :direction :wiki - :name (이 / 이름 :op1 "중심부"))
+-- VERBALIZED ------------------------------------
+(개 / 개발 :ARG1 (기 / 기술))
+(기 / 기술 :mod (탐 / 탐사))
+(대 / 대륙 :mod (남 / 남극))
+(부 / 부 :mod (중 / 중심))
+(시 / 시추 :mod (빙 / 빙해))
+(적 / 적 :mod (지 / 지리))
+(중 / 중심 :mod (대 / 대륙))
+(탐 / 탐사 :mod (운 / 운석))
+
+
+# ::id snt2.E2016.790.13_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 신라 시대 장군의 이름이기도 한 이 과학기지는 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"신라 시대" [DT_DYNASTY]	->  :time|duration (신 / 신라시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"장군" [CV_POSITION]	->  :mod (장 / 장군)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장군))
+-- VERBALIZED ------------------------------------
+(기 / 기지 :mod (과 / 과학))
+(장 / 장군 :mod (시 / 시대))
+
+
+# ::id snt0.E2016.790.14_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 알츠하이머병(Alzheimer's disease (AD)=Alzheimer disease)은 치매의 가장 흔한 형태이며 75%의 치매환자가 알츠하이머병이다.
+# ::note
+-- FRAMES ----------------------------------------
+흔하 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"75%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 75%)
+"AD" [TMM_DISEASE]	->  (A / AD)	OR	(d / desease :wiki "AD?" :name (이 / 이름 :op1 "AD"))
+"Alzheimer disease" [TMM_DISEASE]	->  (A / Alzheimerdisease)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "Alzheimer" :op2 "disease"))
+"Alzheimer's disease" [TMM_DISEASE]	->  (A / Alzheimer'sdisease)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "Alzheimer's" :op2 "disease"))
+"알츠하이머병" [TMM_DISEASE]	->  (알 / 알츠하이머병)	OR	(d / desease :wiki "알츠하이머병" :name (이 / 이름 :op1 "알츠하이머병"))
+"알츠하이머병" [TMM_DISEASE]	->  (알 / 알츠하이머병)	OR	(d / desease :wiki "알츠하이머병" :name (이 / 이름 :op1 "알츠하이머병"))
+"치매" [TMM_DISEASE]	->  (치 / 치매)	OR	(d / desease :wiki "치매" :name (이 / 이름 :op1 "치매"))
+"치매" [TMM_DISEASE]	->  (치 / 치매)	OR	(d / desease :wiki "치매" :name (이 / 이름 :op1 "치매"))
+-- VERBALIZED ------------------------------------
+(환 / 환자 :mod (치 / 치매))
+
+
+# ::id snt0.E2016.790.14_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <의학> 원인을 알 수 없는 뚜렷한 뇌 위축으로 기억력과 지남력이 감퇴하는 병.
+# ::note
+-- FRAMES ----------------------------------------
+알 : VERB
+	- know		(알 / 알-01 :ARGA causer :ARG0 knower :ARG1 theme)
+없 : ** UNUSED_OR_NON-ENTRY **
+뚜렷하 : VERB
+	- positive		(뚜 / 뚜렷하-01 :ARG1 thing_being_positive)
+위축 : VERBAL_NOUN
+	- shrink		(위 / 위축-01 :ARG0 causer :ARG1 thing_shrinking)
+기억 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기억력-00) ?
+	- remember		(기 / 기억-01 :ARG0 agent :ARG1 memory)
+지남력 : DERIVED_NON-ENTRY -> (지 / 지남력-00) ?
+감퇴하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"뇌 위축" [TMM_DISEASE]	->  (뇌 / 뇌위축)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "뇌" :op2 "위축"))
+"의학" [FD_MEDICINE]	->  (의 / 의학)	OR	(s / study-field|group* :wiki "의학" :name (이 / 이름 :op1 "의학"))
+-- VERBALIZED ------------------------------------
+(력 / 력 :ARG0-of (기 / 기억))
+(력 / 력 :mod (지 / 지남))
+(위 / 위축 :mod (뇌 / 뇌))
+
+
+# ::id snt1.E2016.790.14_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 노인성 치매와 거의 같은 뜻으로 쓴다.
+# ::note
+-- FRAMES ----------------------------------------
+노인성 : DERIVED_NON-ENTRY -> (노 / 노인성-00) ?
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+쓰 : VERB
+	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
+	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"노인성 치매" [TMM_DISEASE]	->  (노 / 노인성치매)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "노인성" :op2 "치매"))
+-- VERBALIZED ------------------------------------
+(성 / 성 :mod (노 / 노인))
+
+
+# ::id snt0.E2016.790.14_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 흔히 알츠하이머병으로 알려진 2음절의 이것은 지능, 의지, 기억 등의 인지기능이 현저하게 감퇴한 것을 뜻한다.
+# ::note
+-- FRAMES ----------------------------------------
+알려지 : ** UNUSED_OR_NON-ENTRY **
+의지 : VERBAL_NOUN
+	- depend_on		(의 / 의지-01 :ARG0 thing_depending :ARG1 depend_on)
+기억 : VERBAL_NOUN
+	- remember		(기 / 기억-01 :ARG0 agent :ARG1 memory)
+현저하 : DERIVED_VERB_DETECTED
+	- distinctive		(현 / 현저하-01 :ARG1 thing_being_distinctive)
+감퇴하 : DERIVED_NON-ENTRY
+뜻하 : DERIVED_VERB_DETECTED
+	- mean		(뜻 / 뜻하-01 :ARG1 symbol :ARG2 thing_symbolized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2음절" [QT_COUNT]	->  :quant (2 / 2음절)	OR	(c / concept* :quant 2 :unit|scale (음 / 음절))
+"알츠하이머병" [TMM_DISEASE]	->  (알 / 알츠하이머병)	OR	(d / desease :wiki "알츠하이머병" :name (이 / 이름 :op1 "알츠하이머병"))
+-- VERBALIZED ------------------------------------
+(기 / 기능 :mod (인 / 인지))
+
+
+# ::id snt1.E2016.790.14_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 대뇌 신경세포의 광범위한 손상에 의해 발생하는 정신작용의 장애를 지칭하는 이것은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+광범위 : VERBAL_NOUN
+	- extensive		(광 / 광범위-01 :ARG1 entity_being_extensive)
+손상 : VERBAL_NOUN
+	- hurt		(손 / 손상-01 :ARG0 causer,_agent :ARG1 patient)
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+발생 : VERBAL_NOUN
+	- arise		(발 / 발생-01 :ARG0 causer :ARG1 thing_arising :ARG2 source)
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+지칭 : VERBAL_NOUN
+	- refer_to		(지 / 지칭-01 :ARG0 agent :ARG1 thing_referring :ARG2 refer_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"대뇌 신경세포" [TM_CELL_TISSUE]	->  (대 / 대뇌신경세포)	OR	(대 / 대뇌 신경세포 :part-of|poss)
+-- VERBALIZED ------------------------------------
+(세 / 세포 :mod (신 / 신경))
+(신 / 신경 :mod (대 / 대뇌))
+(작 / 작용 :mod (정 / 정신))
+
+
+# ::id snt0.E2016.790.15_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <의학> 사지와 몸이 떨리고 경직되는 중추 신경 계통의 퇴행병.
+# ::note
+-- FRAMES ----------------------------------------
+떨리 : REDUCED_VERB_DETECTED
+	- shake		(떨 / 떨-01 :ARG0 causer :ARG1 thing_shaking)
+	- be_exasperated		(떨 / 떨-02 :ARG1 experience :ARG2 teeth)
+경직되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"몸" [AM_PART]	->  (몸 / 몸)	OR	(몸 / 몸 :part-of|poss)
+"사지" [AM_PART]	->  (사 / 사지)	OR	(사 / 사지 :part-of|poss)
+"의학" [FD_MEDICINE]	->  (의 / 의학)	OR	(s / study-field|group* :wiki "의학" :name (이 / 이름 :op1 "의학"))
+"중추 신경 계통" [TM_CELL_TISSUE]	->  (중 / 중추신경계통)	OR	(중 / 중추 신경 계통 :part-of|poss)
+"퇴행병" [TMM_DISEASE]	->  (퇴 / 퇴행병)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "퇴행병"))
+-- VERBALIZED ------------------------------------
+(계 / 계통 :mod (신 / 신경))
+(신 / 신경 :mod (중 / 중추))
+
+
+# ::id snt1.E2016.790.15_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 머리를 앞으로 내밀고 몸통과 무릎이 굽은 자세와 작은 보폭의 독특한 보행을 보이며 얼굴이 가면 같은 표정으로 바뀐다.
+# ::note
+-- FRAMES ----------------------------------------
+내밀 : REDUCED_VERB_DETECTED
+	- send		(내 / 내-01 :ARG0 agent :ARG1 thing_sent :ARG2 sent_to)
+	- make		(내 / 내-02 :ARG0 causer :ARG1 thing_made)
+굽 : VERB
+	- bake		(굽 / 굽-01 :ARG0 agent :ARG1 thing_baked)
+작 : VERB
+	- small		(작 / 작-01 :ARG1 thing_being_small)
+독특 : VERBAL_NOUN
+	- peculiar		(독 / 독특-01 :ARG1 thing_being_peculiar)
+보이 : REDUCED_VERB_DETECTED
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+표정 : VERBAL_NOUN
+	- mark		(표 / 표정-01 :ARG0 agent :ARG1 thing_marked :ARG2 marked_on)
+바뀌 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"머리" [AM_PART]	->  (머 / 머리)	OR	(머 / 머리 :part-of|poss)
+"몸통" [AM_PART]	->  (몸 / 몸통)	OR	(몸 / 몸통 :part-of|poss)
+"무릎" [AM_PART]	->  (무 / 무릎)	OR	(무 / 무릎 :part-of|poss)
+"얼굴" [AM_PART]	->  (얼 / 얼굴)	OR	(얼 / 얼굴 :part-of|poss)
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt2.E2016.790.15_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 대뇌의 신경 전달 물질인 도파민이 줄어들어 일어나며, 연령이 높을수록 발생 빈도가 높다.
+# ::note
+-- FRAMES ----------------------------------------
+전달 : VERBAL_NOUN
+	- transmit		(전 / 전달-01 :ARG0 sender :ARG1 thing_sent :ARG2 sent_to)
+줄어들 : VERB
+	- decrease		(줄 / 줄어들-01 :ARG1 thing_decreasing :ARG2 start_point :ARG3 end_point)
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+높 : VERB
+	- high		(높 / 높-01 :ARG0 causer :ARG1 thing_being_high :ARG2 start_point :ARG3 end_point)
+발생 : VERBAL_NOUN
+	- arise		(발 / 발생-01 :ARG0 causer :ARG1 thing_arising :ARG2 source)
+높 : VERB
+	- high		(높 / 높-01 :ARG0 causer :ARG1 thing_being_high :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"대뇌" [TM_CELL_TISSUE]	->  (대 / 대뇌)	OR	(대 / 대뇌 :part-of|poss)
+"도파민" [MT_CHEMICAL]	->  (도 / 도파민)	OR	(m / material* :wiki "도파민" :name (이 / 이름 :op1 "도파민"))
+-- VERBALIZED ------------------------------------
+(물 / 물질 :mod (전 / 전달))
+(빈 / 빈도 :mod (발 / 발생))
+(전 / 전달 :mod (신 / 신경))
+
+
+# ::id snt0.E2016.790.15_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 뇌의 신경세포 손상으로 손과 팔에 경련이 일어나고, 다리는 보행이 어려워지는 손상을 입는 질병이다.
+# ::note
+-- FRAMES ----------------------------------------
+손상 : VERBAL_NOUN
+	- hurt		(손 / 손상-01 :ARG0 causer,_agent :ARG1 patient)
+팔 : VERBAL_NOUN
+	- sell		(팔 / 팔-01 :ARG0 seller :ARG1 thing_sold :ARG2 buyer)
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+어렵 : VERB
+	- difficult		(어 / 어렵-01 :ARG1 thing_being_difficult)
+손상 : VERBAL_NOUN
+	- hurt		(손 / 손상-01 :ARG0 causer,_agent :ARG1 patient)
+입 : VERB
+	- wear		(입 / 입-01 :ARG0 wearer :ARG1 clothing)
+	- incur		(입 / 입-02 :ARG0 causer :ARG1 patient :ARG2 thing_incurred)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"경련" [TMM_DISEASE]	->  (경 / 경련)	OR	(d / desease :wiki "경련" :name (이 / 이름 :op1 "경련"))
+"뇌" [TM_CELL_TISSUE]	->  (뇌 / 뇌)	OR	(뇌 / 뇌 :part-of|poss)
+"다리" [AM_PART]	->  (다 / 다리)	OR	(다 / 다리 :part-of|poss)
+"손" [AM_PART]	->  (손 / 손)	OR	(손 / 손 :part-of|poss)
+"신경세포" [TM_CELL_TISSUE]	->  (신 / 신경세포)	OR	(신 / 신경세포 :part-of|poss)
+"팔" [AM_PART]	->  (팔 / 팔)	OR	(팔 / 팔 :part-of|poss)
+-- VERBALIZED ------------------------------------
+(세 / 세포 :mod (신 / 신경))
+(손 / 손상 :mod (세 / 세포))
+
+
+# ::id snt1.E2016.790.15_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 과도한 산화질소가 파킨 단백질에 결합하여 파킨 단백질이 제기능을 하지 못하는 것이 원인이 된다.
+# ::note
+-- FRAMES ----------------------------------------
+과도 : VERBAL_NOUN
+	- excessive		(과 / 과도-01 :ARG1 thing_being_excessive)
+단백질 : DERIVED_NON-ENTRY -> (단 / 단백질-00) ?
+결합하 : DERIVED_NON-ENTRY
+단백질 : DERIVED_NON-ENTRY -> (단 / 단백질-00) ?
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"단백질" [MT_CHEMICAL]	->  (단 / 단백질)	OR	(m / material* :wiki "단백질" :name (이 / 이름 :op1 "단백질"))
+"단백질" [MT_CHEMICAL]	->  (단 / 단백질)	OR	(m / material* :wiki "단백질" :name (이 / 이름 :op1 "단백질"))
+"산화질소" [MT_CHEMICAL]	->  (산 / 산화질소)	OR	(m / material* :wiki "질소_산화물" :name (이 / 이름 :op1 "산화질소"))
+"파킨" [MT_CHEMICAL]	->  (파 / 파킨)	OR	(m / material* :wiki - :name (이 / 이름 :op1 "파킨"))
+"파킨" [MT_CHEMICAL]	->  (파 / 파킨)	OR	(m / material* :wiki - :name (이 / 이름 :op1 "파킨"))
+-- VERBALIZED ------------------------------------
+(단 / 단백 :mod (파 / 파킨))
+(단 / 단백 :mod (파 / 파킨))
+(질 / 질 :mod (단 / 단백))
+(질 / 질 :mod (단 / 단백))
+(질 / 질소 :mod (산 / 산화))
+
+
+# ::id snt2.E2016.790.15_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 또한 도파민(dopamine)을 만들어내는 뇌세포가 점차 손실되어 병의 진행은 점차 심각해진다.
+# ::note
+-- FRAMES ----------------------------------------
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+손실 : VERBAL_NOUN
+	- lose		(손 / 손실-01 :ARG0 entity_losing_something :ARG1 thing_lost)
+진행 : VERBAL_NOUN
+	- proceed		(진 / 진행-01 :ARG0 agent :ARG1 thing_proceeding)
+심각하 : DERIVED_VERB_DETECTED
+	- serious		(심 / 심각하-01 :ARG1 thing_being_serious)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"dopamine" [MT_CHEMICAL]	->  (d / dopamine)	OR	(m / material* :wiki - :name (이 / 이름 :op1 "dopamine"))
+"뇌세포" [TM_CELL_TISSUE]	->  (뇌 / 뇌세포)	OR	(뇌 / 뇌세포 :part-of|poss)
+"도파민" [MT_CHEMICAL]	->  (도 / 도파민)	OR	(m / material* :wiki "도파민" :name (이 / 이름 :op1 "도파민"))
+-- VERBALIZED ------------------------------------
+(세 / 세포 :mod (뇌 / 뇌))
+
+
+# ::id snt3.E2016.790.15_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 중국 최고지도자 덩샤오핑[鄧小平]과 미국의 권투선수 무하마드 알리가 앓았던 병이기도 하다.
+# ::note
+-- FRAMES ----------------------------------------
+지도 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (지 / 지도자-00) ?
+	- instruct		(지 / 지도-01 :ARG0 agent :ARG1 thing_instructed)
+앓 : VERB
+	- suffer		(앓 / 앓-01 :ARG0 thing_suffering :ARG1 suffer_from)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"鄧小平" [PS_NAME]	->  (鄧 / 鄧小平)	OR	(p / person :wiki - :name (이 / 이름 :op1 "鄧小平"))
+"권투선수" [CV_OCCUPATION]	->  :mod (권 / 권투선수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (권 / 권투선수))
+"덩샤오핑" [PS_NAME]	->  (덩 / 덩샤오핑)	OR	(p / person :wiki "덩샤오핑" :name (이 / 이름 :op1 "덩샤오핑"))
+"무하마드 알리" [PS_NAME]	->  (무 / 무하마드알리)	OR	(p / person :wiki "무하마드_알리" :name (이 / 이름 :op1 "무하마드" :op2 "알리"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+"최고지도자" [CV_POSITION]	->  :mod (최 / 최고지도자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (최 / 최고지도자))
+-- VERBALIZED ------------------------------------
+(선 / 선수 :mod (권 / 권투))
+(자 / 자 :ARG0-of (지 / 지도))
+(지 / 지도 :mod (최 / 최고))
+
+
+# ::id snt0.E2016.790.15_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 치매와 더불어 대표적인 노인성 질환인 이 질병은 대뇌에서 도파민의 분비에 이상이 생기는 질환이다.
+# ::note
+-- FRAMES ----------------------------------------
+더불 : ** UNUSED_OR_NON-ENTRY **
+대표 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대표적-00) ?
+	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
+노인성 : DERIVED_NON-ENTRY -> (노 / 노인성-00) ?
+이상 : VERBAL_NOUN
+	- strange		(이 / 이상-01 :ARG1 thing_being_strange)
+생기 : VERB
+	- happen		(생 / 생기-01 :ARG1 thing_happening :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"노인성 질환" [TMM_DISEASE]	->  (노 / 노인성질환)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "노인성" :op2 "질환"))
+"대뇌" [TM_CELL_TISSUE]	->  (대 / 대뇌)	OR	(대 / 대뇌 :part-of|poss)
+"도파민" [MT_CHEMICAL]	->  (도 / 도파민)	OR	(m / material* :wiki "도파민" :name (이 / 이름 :op1 "도파민"))
+"치매" [TMM_DISEASE]	->  (치 / 치매)	OR	(d / desease :wiki "치매" :name (이 / 이름 :op1 "치매"))
+-- VERBALIZED ------------------------------------
+(성 / 성 :mod (노 / 노인))
+(적 / 적 :ARG0-of (대 / 대표))
+
+
+# ::id snt1.E2016.790.15_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 운동장애와 더불어 손 떨림과 무표정한 얼굴이 나타나는데, 복싱선수인 무하마드 알리와 교황 요한 바오로 2세가 앓았다고 알려진 이 질병은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+더불 : ** UNUSED_OR_NON-ENTRY **
+손떨리 : DERIVED_NON-ENTRY
+떨리 : REDUCED_VERB_DETECTED
+	- shake		(떨 / 떨-01 :ARG0 causer :ARG1 thing_shaking)
+	- be_exasperated		(떨 / 떨-02 :ARG1 experience :ARG2 teeth)
+무표정하 : DERIVED_NON-ENTRY
+나타나 : VERB
+	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
+앓 : VERB
+	- suffer		(앓 / 앓-01 :ARG0 thing_suffering :ARG1 suffer_from)
+알려지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"교황" [CV_POSITION]	->  :mod (교 / 교황)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교황))
+"무하마드 알리" [PS_NAME]	->  (무 / 무하마드알리)	OR	(p / person :wiki "무하마드_알리" :name (이 / 이름 :op1 "무하마드" :op2 "알리"))
+"복싱선수" [CV_OCCUPATION]	->  :mod (복 / 복싱선수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (복 / 복싱선수))
+"손" [AM_PART]	->  (손 / 손)	OR	(손 / 손 :part-of|poss)
+"얼굴" [AM_PART]	->  (얼 / 얼굴)	OR	(얼 / 얼굴 :part-of|poss)
+"요한 바오로 2세" [PS_NAME]	->  (요 / 요한바오로2세)	OR	(p / person :wiki "교황_요한_바오로_2세" :name (이 / 이름 :op1 "요한" :op2 "바오로" :op3 "2세"))
+"운동장애" [TMM_DISEASE]	->  (운 / 운동장애)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "운동장애"))
+-- VERBALIZED ------------------------------------
+(선 / 선수 :mod (복 / 복싱))
+(장 / 장애 :mod (운 / 운동))
+
+
+# ::id snt0.E2016.790.16_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 의상은 많은 사찰을 창시한 것으로 알려졌는데, 그중 영주의 부석사가 유명하다.
+# ::note
+-- FRAMES ----------------------------------------
+많 : VERB
+	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
+창시하 : DERIVED_NON-ENTRY
+알려지 : ** UNUSED_OR_NON-ENTRY **
+유명 : VERBAL_NOUN
+	- famous_for		(유 / 유명-01 :ARG1 thing_famous :ARG2 famous_for)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"부석사" [AF_CULTURAL_ASSET]	->  (부 / 부석사)	OR	(c / cultural-asset* :wiki "부석사" :name (이 / 이름 :op1 "부석사"))
+"영주" [LCP_CITY]	->  (영 / 영주)	OR	(c / city :wiki "영주시" :name (이 / 이름 :op1 "영주"))
+"의상" [PS_NAME]	->  (의 / 의상)	OR	(p / person :wiki "옷" :name (이 / 이름 :op1 "의상"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.16_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <인명> 통일 신라 시대의 승려(625~702).
+# ::note
+-- FRAMES ----------------------------------------
+통일 : VERBAL_NOUN
+	- unify		(통 / 통일-01 :ARG0 agent :ARG1 thing_unified :ARG2 result)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"625~702" [DT_DURATION]	->  :time|duration (6 / 625~702)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"승려" [CV_OCCUPATION]	->  :mod (승 / 승려)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (승 / 승려))
+"통일 신라 시대" [DT_DYNASTY]	->  :time|duration (통 / 통일신라시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.790.16_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 속성은 김(金).
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"金" [PS_NAME]	->  (金 / 金)	OR	(p / person :wiki - :name (이 / 이름 :op1 "金"))
+"김" [PS_NAME]	->  (김 / 김)	OR	(p / person :wiki "김?" :name (이 / 이름 :op1 "김"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt2.E2016.790.16_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 신라 십성의 한 사람으로, 당나라에 건너가 화엄(華嚴)을 공부하고 귀국 후 왕명(王命)을 좇아 부석사를 세우고 화엄종을 강론하여 우리나라 화엄종의 창시자가 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+건너가 : VERB
+	- go_over		(건 / 건너가-01 :ARG0 entity_in_motion :ARG1 barrier :ARG2 start_point :ARG3 end_point)
+공부 : VERBAL_NOUN
+	- study		(공 / 공부-01 :ARG0 agent :ARG1 subject)
+귀국 : VERBAL_NOUN
+	- return_to_one's_country		(귀 / 귀국-01 :ARG0 agent)
+좇 : ** UNUSED_OR_NON-ENTRY **
+세우 : ** UNUSED_OR_NON-ENTRY **
+강론하 : DERIVED_NON-ENTRY
+창시자 : DERIVED_NON-ENTRY -> (창 / 창시자-00) ?
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"당나라" [LCP_COUNTRY]	->  (당 / 당나라)	OR	(c / country :wiki "당나라" :name (이 / 이름 :op1 "당나라"))
+"부석사" [AF_CULTURAL_ASSET]	->  (부 / 부석사)	OR	(c / cultural-asset* :wiki "부석사" :name (이 / 이름 :op1 "부석사"))
+"신라" [LCP_COUNTRY]	->  (신 / 신라)	OR	(c / country :wiki "신라" :name (이 / 이름 :op1 "신라"))
+"창시자" [CV_POSITION]	->  :mod (창 / 창시자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (창 / 창시자))
+"한 사람" [QT_MAN_COUNT]	->  :quant (한 / 한사람)	OR	(c / concept* :quant 한 :unit|scale (사 / 사람))
+"화엄종" [OGG_RELIGION]	->  (화 / 화엄종)	OR	(r / religious-group :wiki "화엄종" :name (이 / 이름 :op1 "화엄종"))
+"화엄종" [OGG_RELIGION]	->  (화 / 화엄종)	OR	(r / religious-group :wiki "화엄종" :name (이 / 이름 :op1 "화엄종"))
+-- VERBALIZED ------------------------------------
+(나 / 나라 :mod (우 / 우리))
+(왕 / 왕명 :mod (후 / 후))
+(자 / 자 :mod (창 / 창시))
+(종 / 종 :mod (화 / 화엄))
+(종 / 종 :mod (화 / 화엄))
+(화 / 화엄 :mod (나 / 나라))
+(후 / 후 :mod (귀 / 귀국))
+
+
+# ::id snt3.E2016.790.16_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 전국 열 군데에 화엄종의 사찰을 세웠으며, 많은 제자를 길러 냈다.
+# ::note
+-- FRAMES ----------------------------------------
+세우 : ** UNUSED_OR_NON-ENTRY **
+많 : VERB
+	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
+기르 : VERB
+	- raise		(기 / 기르-01 :ARG0 agent :ARG1 thing_rising)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"열 군데" [QT_COUNT]	->  :quant (열 / 열군데)	OR	(c / concept* :quant 열 :unit|scale (군 / 군데))
+"제자" [CV_RELATION]	->  :mod (제 / 제자)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (제 / 제자))
+"화엄종" [OGG_RELIGION]	->  (화 / 화엄종)	OR	(r / religious-group :wiki "화엄종" :name (이 / 이름 :op1 "화엄종"))
+-- VERBALIZED ------------------------------------
+(종 / 종 :mod (화 / 화엄))
+
+
+# ::id snt4.E2016.790.16_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 저서로 ≪화엄일승법계도(華嚴一乘法界圖)≫ 따위가 있다.
+# ::note
+-- FRAMES ----------------------------------------
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"華嚴一乘法界圖" [AFW_DOCUMENT]	->  (華 / 華嚴一乘法界圖)	OR	(p / publication? :wiki - :name (이 / 이름 :op1 "華嚴一乘法界圖"))
+"화엄일승법계도" [AFW_DOCUMENT]	->  (화 / 화엄일승법계도)	OR	(p / publication? :wiki "화엄일승법계도" :name (이 / 이름 :op1 "화엄일승법계도"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.16_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 진골 가문에서 태어난 승려인 이 사람은 당으로 유학을 다녀온 후, 부석사 등 큰 사찰을 건립하였다.
+# ::note
+-- FRAMES ----------------------------------------
+태어나 : VERB
+	- be_born		(태 / 태어나-01 :ARG1 person)
+유학 : VERBAL_NOUN
+	- study_abroad		(유 / 유학-01 :ARG0 thing_studying_abroad :ARG1 location)
+다녀오 : VERB
+	- come_back		(다 / 다녀오-01 :ARG0 agent :ARG1 location)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+건립하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"당" [LCP_COUNTRY]	->  (당 / 당)	OR	(c / country :wiki "당?" :name (이 / 이름 :op1 "당"))
+"부석사" [AF_CULTURAL_ASSET]	->  (부 / 부석사)	OR	(c / cultural-asset* :wiki "부석사" :name (이 / 이름 :op1 "부석사"))
+"승려" [CV_OCCUPATION]	->  :mod (승 / 승려)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (승 / 승려))
+"진골" [CV_POSITION]	->  :mod (진 / 진골)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (진 / 진골))
+-- VERBALIZED ------------------------------------
+(가 / 가문 :mod (진 / 진골))
+
+
+# ::id snt1.E2016.790.16_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <화엄일승법계도> 등 우리나라 화엄종 성립에도 큰 역할을 했던 이 사람은 누구일까?
+# ::note
+-- FRAMES ----------------------------------------
+성립 : VERBAL_NOUN
+	- form		(성 / 성립-01 :ARG0 creator :ARG1 thing_cteated)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"화엄일승법계도" [AFW_DOCUMENT]	->  (화 / 화엄일승법계도)	OR	(p / publication? :wiki "화엄일승법계도" :name (이 / 이름 :op1 "화엄일승법계도"))
+"화엄종" [OGG_RELIGION]	->  (화 / 화엄종)	OR	(r / religious-group :wiki "화엄종" :name (이 / 이름 :op1 "화엄종"))
+-- VERBALIZED ------------------------------------
+(나 / 나라 :mod (우 / 우리))
+(성 / 성립 :mod (종 / 종))
+(종 / 종 :mod (화 / 화엄))
+(화 / 화엄 :mod (나 / 나라))
+
+
+# ::id snt0.E2016.790.17_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 671년(신라 문무왕 11년) 의상이 ‘관음보살’의 진신이 이 해변의 굴 안에 머문다는 말을 듣고 굴 속에 들어가 예불하던 중 관음보살이 수정으로 만든 염주를 주면서 절을 지을 곳을 알려 주어 이곳에 사찰을 창건하고 ‘낙산사’라 하였다 한다.
+# ::note
+-- FRAMES ----------------------------------------
+안 : VERBAL_NOUN
+	- embrace		(안 / 안-01 :ARGA causer :ARG0 thing_embracing :ARG1 thing_embraced)
+머물 : ** UNUSED_OR_NON-ENTRY **
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+듣 : VERB
+	- hear		(듣 / 듣-01 :ARG0 agent :ARG1 thing_heard :ARG2 heard_from)
+속 : VERBAL_NOUN
+	- deceive		(속 / 속-01 :ARG0 liar :ARG1 lied_to)
+들어가 : VERB
+	- go_in		(들 / 들어가-01 :ARG0 thing_going_in :ARG2 start_point :ARG3 end_point)
+	- enter		(들 / 들어가-02 :ARG1 entity_entering :ARG2 place_or_thing_entered)
+	- begin		(들 / 들어가-03 :ARG0 beginner :ARG1 theme)
+	- flow_in-CV		(들 / 들어가-04 :ARG1 thing_flowing :ARG2 start_point :ARG3 end_point)
+예불하 : DERIVED_NON-ENTRY
+수정 : VERBAL_NOUN
+	- correct		(수 / 수정-01 :ARG0 corrector :ARG1 thing_being_wrong)
+	- fertilize		(수 / 수정-02 :ARG0 agent :ARG1 one_part_of_gender :ARG2 other_part_of_gender)
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+주 : VERB
+	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+짓 : VERB
+	- construct		(짓 / 짓-01 :ARG0 agent :ARG1 construction)
+알리 : REDUCED_VERB_DETECTED
+	- know		(알 / 알-01 :ARGA causer :ARG0 knower :ARG1 theme)
+창건하 : DERIVED_NON-ENTRY
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"671년" [DT_YEAR]	->  :time|duration (6 / 671년)	OR	:time (d / date-entity :year 671)	OR	:duration (t / temporal-quantity :quant 671 :unit (년 / 년))  
+"관음보살" [PS_NAME]	->  (관 / 관음보살)	OR	(p / person :wiki "관세음보살" :name (이 / 이름 :op1 "관음보살"))
+"관음보살" [PS_NAME]	->  (관 / 관음보살)	OR	(p / person :wiki "관세음보살" :name (이 / 이름 :op1 "관음보살"))
+"낙산사" [AF_CULTURAL_ASSET]	->  (낙 / 낙산사)	OR	(c / cultural-asset* :wiki "낙산사" :name (이 / 이름 :op1 "낙산사"))
+"수정" [MT_ROCK]	->  (수 / 수정)	OR	(m / material* :wiki "수정?" :name (이 / 이름 :op1 "수정"))
+"신라 문무왕 11년" [DT_DYNASTY]	->  :time|duration (신 / 신라문무왕11년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 11))	OR :duration (t / temporal-quantity :quant 11 :unit (년 / 년))  
+"의상" [PS_NAME]	->  (의 / 의상)	OR	(p / person :wiki "옷" :name (이 / 이름 :op1 "의상"))
+-- VERBALIZED ------------------------------------
+(보 / 보살 :mod (관 / 관음))
+(보 / 보살 :mod (관 / 관음))
+(속 / 속 :mod (굴 / 굴))
+(안 / 안 :mod (굴 / 굴))
+
+
+# ::id snt0.E2016.790.17_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <불교> 강원도 양양군 강현면 전진리 오봉산에 있는 절.
+# ::note
+-- FRAMES ----------------------------------------
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"강원도" [LCP_PROVINCE]	->  (강 / 강원도)	OR	(p / province :wiki "강원도" :name (이 / 이름 :op1 "강원도"))
+"강현면" [LCP_COUNTY]	->  (강 / 강현면)	OR	(c / county :wiki "강현면" :name (이 / 이름 :op1 "강현면"))
+"불교" [OGG_RELIGION]	->  (불 / 불교)	OR	(r / religious-group :wiki "불교" :name (이 / 이름 :op1 "불교"))
+"양양군" [LCP_COUNTY]	->  (양 / 양양군)	OR	(c / county :wiki "양양군" :name (이 / 이름 :op1 "양양군"))
+"오봉산" [LCG_MOUNTAIN]	->  (오 / 오봉산)	OR	(m / mountain :wiki "오봉산?" :name (이 / 이름 :op1 "오봉산"))
+"전진리" [LCP_COUNTY]	->  (전 / 전진리)	OR	(c / county :wiki "강현면" :name (이 / 이름 :op1 "전진리"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.790.17_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 관동 팔경의 하나로 신라 문무왕 11년(671) 의상 대사에 의하여 창건되었으나 6ㆍ25 전쟁 때 소실되어 1953년에 재건되었다.
+# ::note
+-- FRAMES ----------------------------------------
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+창건되 : DERIVED_NON-ENTRY
+소실되 : DERIVED_NON-ENTRY
+재건 : VERBAL_NOUN
+	- rebuild		(재 / 재건-01 :ARG0 agent :ARG1 thing_rebuilt)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1953년" [DT_YEAR]	->  :time|duration (1 / 1953년)	OR	:time (d / date-entity :year 1953)	OR	:duration (t / temporal-quantity :quant 1953 :unit (년 / 년))  
+"671" [DT_YEAR]	->  :time|duration (6 / 671)	OR	:time (d / date-entity)	OR	:duration 
+"6ㆍ25 전쟁 때" [DT_OTHERS]	->  :time|duration (6 / 6ㆍ25전쟁때)	OR	:time (d / date-entity)	OR	:duration 
+"관동 팔경" [LC_TOUR]	->  (관 / 관동팔경)	OR	(l / location? :wiki "관동팔경" :name (이 / 이름 :op1 "관동" :op2 "팔경"))
+"신라 문무왕 11년" [DT_DYNASTY]	->  :time|duration (신 / 신라문무왕11년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 11))	OR :duration (t / temporal-quantity :quant 11 :unit (년 / 년))  
+"의상 대사" [PS_NAME]	->  (의 / 의상대사)	OR	(p / person :wiki - :name (이 / 이름 :op1 "의상" :op2 "대사"))
+"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
+-- VERBALIZED ------------------------------------
+(때 / 때 :mod (전 / 전쟁))
+(소 / 소실 :mod (때 / 때))
+
+
+# ::id snt0.E2016.790.17_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이것은 <삼국유사>에서 승려 의상이 관세음보살을 만난 곳에 세운 사찰로 관세음보살이 항상 머무른다는 의미가 있다.
+# ::note
+-- FRAMES ----------------------------------------
+만나 : VERB
+	- meet		(만 / 만나-01 :ARG0 person/entity/obeject_meeting :ARG1 person/entity/obeject_being_met)
+세우 : ** UNUSED_OR_NON-ENTRY **
+머무르 : VERB
+	- remain		(머 / 머무르-01 :ARG1 thing_remaining :ARG2 location)
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"관세음보살" [PS_NAME]	->  (관 / 관세음보살)	OR	(p / person :wiki "관세음보살" :name (이 / 이름 :op1 "관세음보살"))
+"관세음보살" [PS_NAME]	->  (관 / 관세음보살)	OR	(p / person :wiki "관세음보살" :name (이 / 이름 :op1 "관세음보살"))
+"삼국유사" [AFW_DOCUMENT]	->  (삼 / 삼국유사)	OR	(p / publication? :wiki "삼국유사" :name (이 / 이름 :op1 "삼국유사"))
+"승려" [CV_OCCUPATION]	->  :mod (승 / 승려)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (승 / 승려))
+"의상" [PS_NAME]	->  (의 / 의상)	OR	(p / person :wiki "옷" :name (이 / 이름 :op1 "의상"))
+-- VERBALIZED ------------------------------------
+(보 / 보살 :mod (관 / 관세음))
+(보 / 보살 :mod (관 / 관세음))
+
+
+# ::id snt1.E2016.790.17_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 해변에 있으며, 2005년 4월 강원도에서 일어난 큰 산불로 많은 피해를 입었던 이 사찰은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+있 : ** UNUSED_OR_NON-ENTRY **
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+많 : VERB
+	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
+입 : VERB
+	- wear		(입 / 입-01 :ARG0 wearer :ARG1 clothing)
+	- incur		(입 / 입-02 :ARG0 causer :ARG1 patient :ARG2 thing_incurred)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2005년 4월" [DT_OTHERS]	->  :time|duration (2 / 2005년4월)	OR	:time (d / date-entity :year 2005 :month 4)	OR	:duration (t / temporal-quantity :quant 2005 :unit (년 / 년))  (t / temporal-quantity :quant 4 :unit (월 / 월))  
+"강원도" [LCP_PROVINCE]	->  (강 / 강원도)	OR	(p / province :wiki "강원도" :name (이 / 이름 :op1 "강원도"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.18_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 황룡사(皇龍寺)는 경상북도 경주시에 있었던 사찰로서, 경주에서 가장 컸던 사찰로 알려져 있으나, 현재는 터만 남아 있다.
+# ::note
+-- FRAMES ----------------------------------------
+있 : ** UNUSED_OR_NON-ENTRY **
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+알려지 : ** UNUSED_OR_NON-ENTRY **
+남 : VERB
+	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"皇龍寺" [AF_CULTURAL_ASSET]	->  (皇 / 皇龍寺)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "皇龍寺"))
+"경상북도" [LCP_PROVINCE]	->  (경 / 경상북도)	OR	(p / province :wiki "경상북도" :name (이 / 이름 :op1 "경상북도"))
+"경주" [LCP_CITY]	->  (경 / 경주)	OR	(c / city :wiki "경주시" :name (이 / 이름 :op1 "경주"))
+"경주시" [LCP_CITY]	->  (경 / 경주시)	OR	(c / city :wiki "경주시" :name (이 / 이름 :op1 "경주시"))
+"황룡사" [AF_CULTURAL_ASSET]	->  (황 / 황룡사)	OR	(c / cultural-asset* :wiki "경주_황룡사지" :name (이 / 이름 :op1 "황룡사"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.790.18_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 황룡사는 9층 목탑과 장륙상(丈六像)과 더불어 신라 삼보(三寶)의 하나로 유명하였다.
+# ::note
+-- FRAMES ----------------------------------------
+더불 : ** UNUSED_OR_NON-ENTRY **
+유명 : VERBAL_NOUN
+	- famous_for		(유 / 유명-01 :ARG1 thing_famous :ARG2 famous_for)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"9층" [QT_ORDER]	->  :ord (9 / 9층)	OR	:ord (o / ordinal-entity :value 9층)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"丈六像" [AFW_ART_CRAFT]	->  (丈 / 丈六像)	OR	(p / picture :wiki - :name (이 / 이름 :op1 "丈六像"))
+"三寶" [QT_COUNT]	->  :quant (三 / 三寶)	OR	(c / concept* :quant - :unit|scale (三 / 三寶))
+"삼보" [QT_COUNT]	->  :quant (삼 / 삼보)	OR	(c / concept* :quant - :unit|scale (삼 / 삼보))
+"신라" [LCP_COUNTRY]	->  (신 / 신라)	OR	(c / country :wiki "신라" :name (이 / 이름 :op1 "신라"))
+"장륙상" [AFW_ART_CRAFT]	->  (장 / 장륙상)	OR	(p / picture :wiki "경주_황룡사지" :name (이 / 이름 :op1 "장륙상"))
+"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
+"황룡사" [AF_CULTURAL_ASSET]	->  (황 / 황룡사)	OR	(c / cultural-asset* :wiki "경주_황룡사지" :name (이 / 이름 :op1 "황룡사"))
+-- VERBALIZED ------------------------------------
+(목 / 목탑 :mod (층 / 층))
+(상 / 상 :mod (장 / 장륙))
+
+
+# ::id snt2.E2016.790.18_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 신라의 사찰로 553년(진흥왕 14년) 기공이 시작되어 569년에 완공되었다고 여겨지나, 566년(진흥왕 27년) 일단 준공되었다가 645년(선덕여왕 14년)에 완성되었다는 설도 있다.
+# ::note
+-- FRAMES ----------------------------------------
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+완공 : VERBAL_NOUN
+	- complete		(완 / 완공-01 :ARG0 agent :ARG1 thing_completed)
+여기 : VERB
+	- consider		(여 / 여기-01 :ARG0 thing_considering :ARG thing_considered)
+준공 : VERBAL_NOUN
+	- complete		(준 / 준공-01 :ARG0 agent :ARG1 thing_completed)
+완성 : VERBAL_NOUN
+	- accomplish		(완 / 완성-01 :ARG0 agent :ARG1 thing_accomplished)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"553년" [DT_YEAR]	->  :time|duration (5 / 553년)	OR	:time (d / date-entity :year 553)	OR	:duration (t / temporal-quantity :quant 553 :unit (년 / 년))  
+"566년" [DT_YEAR]	->  :time|duration (5 / 566년)	OR	:time (d / date-entity :year 566)	OR	:duration (t / temporal-quantity :quant 566 :unit (년 / 년))  
+"569년" [DT_YEAR]	->  :time|duration (5 / 569년)	OR	:time (d / date-entity :year 569)	OR	:duration (t / temporal-quantity :quant 569 :unit (년 / 년))  
+"645년" [DT_YEAR]	->  :time|duration (6 / 645년)	OR	:time (d / date-entity :year 645)	OR	:duration (t / temporal-quantity :quant 645 :unit (년 / 년))  
+"선덕여왕 14년" [DT_DYNASTY]	->  :time|duration (선 / 선덕여왕14년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 14))	OR :duration (t / temporal-quantity :quant 14 :unit (년 / 년))  
+"신라" [LCP_COUNTRY]	->  (신 / 신라)	OR	(c / country :wiki "신라" :name (이 / 이름 :op1 "신라"))
+"진흥왕 14년" [DT_DYNASTY]	->  :time|duration (진 / 진흥왕14년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 14))	OR :duration (t / temporal-quantity :quant 14 :unit (년 / 년))  
+"진흥왕 27년" [DT_DYNASTY]	->  :time|duration (진 / 진흥왕27년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 27))	OR :duration (t / temporal-quantity :quant 27 :unit (년 / 년))  
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt3.E2016.790.18_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 고려 고종 25년(1238년)에 몽골의 침입으로 소실되었다.
+# ::note
+-- FRAMES ----------------------------------------
+침입 : VERBAL_NOUN
+	- penetrate		(침 / 침입-01 :ARG0 agent :ARG1 place_or_thing_entered)
+소실되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1238년" [DT_YEAR]	->  :time|duration (1 / 1238년)	OR	:time (d / date-entity :year 1238)	OR	:duration (t / temporal-quantity :quant 1238 :unit (년 / 년))  
+"고려 고종 25년" [DT_DYNASTY]	->  :time|duration (고 / 고려고종25년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 25))	OR :duration (t / temporal-quantity :quant 25 :unit (년 / 년))  
+"몽골" [LCP_COUNTRY]	->  (몽 / 몽골)	OR	(c / country :wiki "몽골" :name (이 / 이름 :op1 "몽골"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt4.E2016.790.18_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 현재 그 터인 황룡사지(皇龍寺址)가 사적 제6호로 지정되어 있다.
+# ::note
+-- FRAMES ----------------------------------------
+지정 : VERBAL_NOUN
+	- establish		(지 / 지정-01 :ARG0 agent :ARG1 thing_set :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"皇龍寺址" [AF_CULTURAL_ASSET]	->  (皇 / 皇龍寺址)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "皇龍寺址"))
+"제6호" [QT_ORDER]	->  :ord (제 / 제6호)	OR	:ord (o / ordinal-entity :value 제6호)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"황룡사지" [AF_CULTURAL_ASSET]	->  (황 / 황룡사지)	OR	(c / cultural-asset* :wiki "경주_황룡사지" :name (이 / 이름 :op1 "황룡사지"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.18_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <불교> 경상북도 경주에 있던 절.
+# ::note
+-- FRAMES ----------------------------------------
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"경상북도" [LCP_PROVINCE]	->  (경 / 경상북도)	OR	(p / province :wiki "경상북도" :name (이 / 이름 :op1 "경상북도"))
+"경주" [LCP_CITY]	->  (경 / 경주)	OR	(c / city :wiki "경주시" :name (이 / 이름 :op1 "경주"))
+"불교" [OGG_RELIGION]	->  (불 / 불교)	OR	(r / religious-group :wiki "불교" :name (이 / 이름 :op1 "불교"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.790.18_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 신라 진흥왕 때에 착공하여 선덕여왕 14년(645)에 완성한 것으로, 신라 호국 신앙의 중심지였다.
+# ::note
+-- FRAMES ----------------------------------------
+착공 : VERBAL_NOUN
+	- start		(착 / 착공-01 :ARG0 agent :ARG1 thing_started)
+완성 : VERBAL_NOUN
+	- accomplish		(완 / 완성-01 :ARG0 agent :ARG1 thing_accomplished)
+중심지 : DERIVED_NON-ENTRY -> (중 / 중심지-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"645" [DT_YEAR]	->  :time|duration (6 / 645)	OR	:time (d / date-entity)	OR	:duration 
+"선덕여왕 14년" [DT_DYNASTY]	->  :time|duration (선 / 선덕여왕14년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 14))	OR :duration (t / temporal-quantity :quant 14 :unit (년 / 년))  
+"신라 진흥왕 때" [DT_DYNASTY]	->  :time|duration (신 / 신라진흥왕때)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"신라" [LCP_COUNTRY]	->  (신 / 신라)	OR	(c / country :wiki "신라" :name (이 / 이름 :op1 "신라"))
+-- VERBALIZED ------------------------------------
+(신 / 신앙 :mod (호 / 호국))
+(지 / 지 :mod (중 / 중심))
+
+
+# ::id snt2.E2016.790.18_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 고려 고종 때에 몽골군의 침입으로 소실되어 지금은 터만 남아 있다.
+# ::note
+-- FRAMES ----------------------------------------
+침입 : VERBAL_NOUN
+	- penetrate		(침 / 침입-01 :ARG0 agent :ARG1 place_or_thing_entered)
+소실되 : DERIVED_NON-ENTRY
+남 : VERB
+	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"고려 고종 때" [DT_DYNASTY]	->  :time|duration (고 / 고려고종때)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"몽골군" [OGG_MILITARY]	->  (몽 / 몽골군)	OR	(m / military :wiki "몽골군" :name (이 / 이름 :op1 "몽골군"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.18_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이것은 신라 진흥왕 때 짓기 시작하여 선덕여왕 때 완성한 사찰로 신라 호국 신앙의 중심이 되었던 사찰이다.
+# ::note
+-- FRAMES ----------------------------------------
+때짓 : DERIVED_NON-ENTRY
+짓 : VERB
+	- construct		(짓 / 짓-01 :ARG0 agent :ARG1 construction)
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+완성 : VERBAL_NOUN
+	- accomplish		(완 / 완성-01 :ARG0 agent :ARG1 thing_accomplished)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"선덕여왕 때" [DT_DYNASTY]	->  :time|duration (선 / 선덕여왕때)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"신라 진흥왕 때" [DT_DYNASTY]	->  :time|duration (신 / 신라진흥왕때)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"신라" [LCP_COUNTRY]	->  (신 / 신라)	OR	(c / country :wiki "신라" :name (이 / 이름 :op1 "신라"))
+-- VERBALIZED ------------------------------------
+(신 / 신앙 :mod (호 / 호국))
+(완 / 완성 :mod (때 / 때))
+
+
+# ::id snt1.E2016.790.18_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 고려 시대 때 몽골의 침략으로 불타 지금은 절터만 남아있는데, 9층 목탑으로 유명했던 이 사찰은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+침략 : VERBAL_NOUN
+	- invade		(침 / 침략-01 :ARG0 agent :ARG1 entity_invaded)
+불타 : VERB
+	- burn		(불 / 불타-01 :ARG0 pyromaniac :ARG1 thing_burning)
+남 : VERB
+	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
+유명 : VERBAL_NOUN
+	- famous_for		(유 / 유명-01 :ARG1 thing_famous :ARG2 famous_for)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"9층" [QT_ORDER]	->  :ord (9 / 9층)	OR	:ord (o / ordinal-entity :value 9층)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"고려 시대" [DT_DYNASTY]	->  :time|duration (고 / 고려시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"몽골" [LCP_COUNTRY]	->  (몽 / 몽골)	OR	(c / country :wiki "몽골" :name (이 / 이름 :op1 "몽골"))
+-- VERBALIZED ------------------------------------
+(때 / 때 :mod (시 / 시대))
+(목 / 목탑 :mod (층 / 층))
+
+
+# ::id snt0.E2016.790.19_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 솔거(率居, ? ~ ?)는 신라 때의 화가이다.
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"솔거" [PS_NAME]	->  (솔 / 솔거)	OR	(p / person :wiki "솔거" :name (이 / 이름 :op1 "솔거"))
+"신라 때" [DT_DYNASTY]	->  :time|duration (신 / 신라때)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"화가" [CV_OCCUPATION]	->  :mod (화 / 화가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (화 / 화가))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.790.19_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 삼국사기에 의하면 솔거는 미천한 집안 출신으로 그 조상을 알 수 없다.
+# ::note
+-- FRAMES ----------------------------------------
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+미천하 : ** UNUSED_OR_NON-ENTRY **
+알 : VERB
+	- know		(알 / 알-01 :ARGA causer :ARG0 knower :ARG1 theme)
+없 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"삼국사기" [AFW_DOCUMENT]	->  (삼 / 삼국사기)	OR	(p / publication? :wiki "삼국사기" :name (이 / 이름 :op1 "삼국사기"))
+"솔거" [PS_NAME]	->  (솔 / 솔거)	OR	(p / person :wiki "솔거" :name (이 / 이름 :op1 "솔거"))
+-- VERBALIZED ------------------------------------
+(출 / 출신 :mod (집 / 집안))
+
+
+# ::id snt2.E2016.790.19_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 선천적으로 그림에 뛰어났으며 황룡사 벽에 그린 노송(老松)이 실물과 같아 새들이 날아들었다 부딪혀 죽었다는 일화가 전해진다.
+# ::note
+-- FRAMES ----------------------------------------
+선천적 : DERIVED_NON-ENTRY -> (선 / 선천적-00) ?
+뛰어나 : VERB
+	- excellent		(뛰 / 뛰어나-01 :ARG1 thing_being_excellent)
+그리 : VERB
+	- draw		(그 / 그리-01 :ARG0 agent :ARG1 thing_drawn)
+	- long_for		(그 / 그리-02 :ARG0 person_experiencing_emotion :ARG1 thing_longed_for)
+	- describe		(그 / 그리-03 :ARG0 describer :ARG1 thing_described)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+새 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (새 / 새들-00) ?
+	- leak		(새 / 새-01 :ARG1 thing_leaking :ARG2 where_from)
+날아들 : ** UNUSED_OR_NON-ENTRY **
+부딪히 : VERB
+	- encounter		(부 / 부딪히-01 :ARG1 entity_encountered :ARG2 barrier)
+죽 : VERB
+	- die		(죽 / 죽-01 :ARG0 causer :ARG1 entity_dying)
+전하 : VERB
+	- report		(전 / 전하-01 :ARG0 agent :ARG1 thing_reported :ARG2 report_to)
+-- FORCE CONVERT ---------------------------------
+:ARG1-of (새 / 새롭-01)
+-- NE TYPES --------------------------------------
+"老松" [PT_TREE]	->  (老 / 老松)	OR	(p / plant* :wiki - :name (이 / 이름 :op1 "老松"))
+"노송" [PT_TREE]	->  (노 / 노송)	OR	(p / plant* :wiki "편백" :name (이 / 이름 :op1 "노송"))
+"새" [AM_TYPE]	->  (새 / 새)	OR	(a / animal* :wiki "새" :name (이 / 이름 :op1 "새"))
+"황룡사" [AF_CULTURAL_ASSET]	->  (황 / 황룡사)	OR	(c / cultural-asset* :wiki "경주_황룡사지" :name (이 / 이름 :op1 "황룡사"))
+-- VERBALIZED ------------------------------------
+(들 / 들 :ARG0-of (새 / 새))
+(적 / 적 :mod (선 / 선천))
+
+
+# ::id snt0.E2016.790.19_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <인명> 신라 진흥왕 때의 화가(?~?).
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"신라 진흥왕 때" [DT_DYNASTY]	->  :time|duration (신 / 신라진흥왕때)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"화가" [CV_OCCUPATION]	->  :mod (화 / 화가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (화 / 화가))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.790.19_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 황룡사의 벽화 <노송도>와 분황사의 <관음보살>, 진주 단속사의 <유마거사상> 따위를 그렸으나 지금은 전하지 않는다.
+# ::note
+-- FRAMES ----------------------------------------
+그리 : VERB
+	- draw		(그 / 그리-01 :ARG0 agent :ARG1 thing_drawn)
+	- long_for		(그 / 그리-02 :ARG0 person_experiencing_emotion :ARG1 thing_longed_for)
+	- describe		(그 / 그리-03 :ARG0 describer :ARG1 thing_described)
+전하 : VERB
+	- report		(전 / 전하-01 :ARG0 agent :ARG1 thing_reported :ARG2 report_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"관음보살" [AFW_ART_CRAFT]	->  (관 / 관음보살)	OR	(p / picture :wiki "관세음보살" :name (이 / 이름 :op1 "관음보살"))
+"노송도" [AFW_ART_CRAFT]	->  (노 / 노송도)	OR	(p / picture :wiki - :name (이 / 이름 :op1 "노송도"))
+"단속사" [AF_CULTURAL_ASSET]	->  (단 / 단속사)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "단속사"))
+"벽화" [FD_ART]	->  (벽 / 벽화)	OR	(s / study-field|group* :wiki "벽화" :name (이 / 이름 :op1 "벽화"))
+"분황사" [AF_CULTURAL_ASSET]	->  (분 / 분황사)	OR	(c / cultural-asset* :wiki "분황사" :name (이 / 이름 :op1 "분황사"))
+"유마거사상" [AFW_ART_CRAFT]	->  (유 / 유마거사상)	OR	(p / picture :wiki - :name (이 / 이름 :op1 "유마거사상"))
+"진주" [LCP_CITY]	->  (진 / 진주)	OR	(c / city :wiki "진주" :name (이 / 이름 :op1 "진주"))
+"황룡사" [AF_CULTURAL_ASSET]	->  (황 / 황룡사)	OR	(c / cultural-asset* :wiki "경주_황룡사지" :name (이 / 이름 :op1 "황룡사"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.19_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 사람은 황룡사의 벽화 <노송도>를 그렸다고 전해지는 신라 시대의 화가이다.
+# ::note
+-- FRAMES ----------------------------------------
+그리 : VERB
+	- draw		(그 / 그리-01 :ARG0 agent :ARG1 thing_drawn)
+	- long_for		(그 / 그리-02 :ARG0 person_experiencing_emotion :ARG1 thing_longed_for)
+	- describe		(그 / 그리-03 :ARG0 describer :ARG1 thing_described)
+전하 : VERB
+	- report		(전 / 전하-01 :ARG0 agent :ARG1 thing_reported :ARG2 report_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"노송도" [AFW_ART_CRAFT]	->  (노 / 노송도)	OR	(p / picture :wiki - :name (이 / 이름 :op1 "노송도"))
+"벽화" [FD_ART]	->  (벽 / 벽화)	OR	(s / study-field|group* :wiki "벽화" :name (이 / 이름 :op1 "벽화"))
+"신라 시대" [DT_DYNASTY]	->  :time|duration (신 / 신라시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"화가" [CV_OCCUPATION]	->  :mod (화 / 화가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (화 / 화가))
+"황룡사" [AF_CULTURAL_ASSET]	->  (황 / 황룡사)	OR	(c / cultural-asset* :wiki "경주_황룡사지" :name (이 / 이름 :op1 "황룡사"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.790.19_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그의 작품을 본 새들이 착각하고 날아들다가 벽에 부딪혔다는 일화로 알려진 이 사람은 누구일까?
+# ::note
+-- FRAMES ----------------------------------------
+보 : VERB
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+새 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (새 / 새들-00) ?
+	- leak		(새 / 새-01 :ARG1 thing_leaking :ARG2 where_from)
+착각 : VERBAL_NOUN
+	- mistake		(착 / 착각-01 :ARG0 agent :ARG1 thing_mistaken)
+날아들 : ** UNUSED_OR_NON-ENTRY **
+부딪히 : VERB
+	- encounter		(부 / 부딪히-01 :ARG1 entity_encountered :ARG2 barrier)
+알려지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+:ARG1-of (새 / 새롭-01)
+-- NE TYPES --------------------------------------
+"새" [AM_TYPE]	->  (새 / 새)	OR	(a / animal* :wiki "새" :name (이 / 이름 :op1 "새"))
+-- VERBALIZED ------------------------------------
+(들 / 들 :ARG0-of (새 / 새))
+
+
+# ::id snt0.E2016.790.20_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1962년 브루나이 국회의원 선거가 유일한 선거로 치뤄졌으며 그 이후로는 선거가 실시된 적이 없으며 오직 국왕만이 브루나이에서 왕권을 가지고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+유일 : VERBAL_NOUN
+	- unique		(유 / 유일-01 :ARG1 thing_being_unique)
+치르 : VERB
+	- undergo		(치 / 치르-01 :ARG0 thing_undergoing :ARG1 thing_undergone)
+	- carry_out		(치 / 치르-02 :ARG0 agent :ARG1 thing_carried_out)
+실시 : VERBAL_NOUN
+	- perform		(실 / 실시-01 :ARG0 agent :ARG1 event_performed)
+없 : ** UNUSED_OR_NON-ENTRY **
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1962년" [DT_YEAR]	->  :time|duration (1 / 1962년)	OR	:time (d / date-entity :year 1962)	OR	:duration (t / temporal-quantity :quant 1962 :unit (년 / 년))  
+"국왕" [CV_POSITION]	->  :mod (국 / 국왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국왕))
+"국회의원 선거" [EV_OTHERS]	->  (국 / 국회의원선거)	OR	(e / event? :wiki "총선거" :name (이 / 이름 :op1 "국회의원" :op2 "선거"))
+"브루나이" [LCP_COUNTRY]	->  (브 / 브루나이)	OR	(c / country :wiki "브루나이" :name (이 / 이름 :op1 "브루나이"))
+"브루나이" [LCP_COUNTRY]	->  (브 / 브루나이)	OR	(c / country :wiki "브루나이" :name (이 / 이름 :op1 "브루나이"))
+-- VERBALIZED ------------------------------------
+(선 / 선거 :mod (의 / 의원))
+(의 / 의원 :mod (국 / 국회))
+
+
+# ::id snt0.E2016.790.20_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 일정한 조직이나 집단이 대표자나 임원을 뽑는 일.
+# ::note
+-- FRAMES ----------------------------------------
+일정 : VERBAL_NOUN
+	- constant		(일 / 일정-01 :ARG1 thing_being_constant)
+조직 : VERBAL_NOUN
+	- organize		(조 / 조직-01 :ARG0 agent :ARG1 thing_organized :ARG2 organized_with)
+대표 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대표자-00) ?
+	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
+뽑 : VERB
+	- select		(뽑 / 뽑-01 :ARG0 agent :ARG1 entity_selected :ARG2 selected_from)
+일 : VERBAL_NOUN
+	- rise		(일 / 일-01 :ARG1 thing_rising)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"대표자" [CV_POSITION]	->  :mod (대 / 대표자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대표자))
+"임원" [CV_POSITION]	->  :mod (임 / 임원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (임 / 임원))
+-- VERBALIZED ------------------------------------
+(자 / 자 :ARG0-of (대 / 대표))
+
+
+# ::id snt0.E2016.790.20_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 브루나이는 이슬람 절대 세습 왕정제로 이것이 없다.
+# ::note
+-- FRAMES ----------------------------------------
+왕정제 : DERIVED_NON-ENTRY -> (왕 / 왕정제-00) ?
+없 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"브루나이" [LCP_COUNTRY]	->  (브 / 브루나이)	OR	(c / country :wiki "브루나이" :name (이 / 이름 :op1 "브루나이"))
+"이슬람" [OGG_RELIGION]	->  (이 / 이슬람)	OR	(r / religious-group :wiki "이슬람교" :name (이 / 이름 :op1 "이슬람"))
+-- VERBALIZED ------------------------------------
+(세 / 세습 :mod (절 / 절대))
+(왕 / 왕정 :mod (세 / 세습))
+(절 / 절대 :mod (이 / 이슬람))
+(제 / 제 :mod (왕 / 왕정))
+
+
+# ::id snt1.E2016.790.20_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 일정한 조직이나 집단이 대표자나 임원을 뽑는 일로 우리나라는 올해 대통령과 국회의원 이것이 있는데, 이것은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+일정 : VERBAL_NOUN
+	- constant		(일 / 일정-01 :ARG1 thing_being_constant)
+조직 : VERBAL_NOUN
+	- organize		(조 / 조직-01 :ARG0 agent :ARG1 thing_organized :ARG2 organized_with)
+대표 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대표자-00) ?
+	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
+뽑 : VERB
+	- select		(뽑 / 뽑-01 :ARG0 agent :ARG1 entity_selected :ARG2 selected_from)
+일 : VERBAL_NOUN
+	- rise		(일 / 일-01 :ARG1 thing_rising)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"국회의원" [CV_POSITION]	->  :mod (국 / 국회의원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국회의원))
+"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
+"대표자" [CV_POSITION]	->  :mod (대 / 대표자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대표자))
+"올해" [DT_YEAR]	->  :time|duration (올 / 올해)	OR	:time (d / date-entity)	OR	:duration 
+"임원" [CV_POSITION]	->  :mod (임 / 임원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (임 / 임원))
+-- VERBALIZED ------------------------------------
+(나 / 나라 :mod (우 / 우리))
+(대 / 대통령 :mod (올 / 올해))
+(의 / 의원 :mod (국 / 국회))
+(자 / 자 :ARG0-of (대 / 대표))
+
+
+# ::id snt0.E2016.790.21_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 선거와 관련하여 유권자에 대한 계약으로써의 공약, 곧 목표와 이행 가능성, 예산 확보의 근거 등을 구체적으로 제시한 공약을 말한다.
+# ::note
+-- FRAMES ----------------------------------------
+관련 : VERBAL_NOUN
+	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+유권자 : DERIVED_NON-ENTRY -> (유 / 유권자-00) ?
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+계약 : VERBAL_NOUN
+	- contract		(계 / 계약-01 :ARG0 agent :ARG1 reason,_purpose :ARG2 contracted_with)
+공약 : VERBAL_NOUN
+	- pledge		(공 / 공약-01 :ARG0 agent :ARG1 thing_or_action_promised :ARG2 promised_to)
+이행 : VERBAL_NOUN
+	- perform		(이 / 이행-01 :ARG0 agent :ARG1 thing_performed)
+가능 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (가 / 가능성-00) ?
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+근거 : VERBAL_NOUN
+	- base		(근 / 근거-01 :ARG1 thing_based :ARG2 based_on)
+구체적 : DERIVED_NON-ENTRY -> (구 / 구체적-00) ?
+제시 : VERBAL_NOUN
+	- present		(제 / 제시-01 :ARG0 agent :ARG1 thing_presented :ARG2 present_to)
+공약 : VERBAL_NOUN
+	- pledge		(공 / 공약-01 :ARG0 agent :ARG1 thing_or_action_promised :ARG2 promised_to)
+말하 : DERIVED_VERB_DETECTED
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"유권자" [CV_POSITION]	->  :mod (유 / 유권자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (유 / 유권자))
+-- VERBALIZED ------------------------------------
+(가 / 가능 :ARG1 (이 / 이행))
+(성 / 성 :ARG0-of (가 / 가능))
+(자 / 자 :mod (유 / 유권))
+(적 / 적 :mod (구 / 구체))
+(확 / 확보 :mod (예 / 예산))
+
+
+# ::id snt1.E2016.790.21_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 어원은 '증거' 또는 '증거물'이라는 의미의 라틴어 마니페스투(manifestus)이다.
+# ::note
+-- FRAMES ----------------------------------------
+증거물 : DERIVED_NON-ENTRY -> (증 / 증거물-00) ?
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"라틴어" [CV_LANGUAGE]	->  (라 / 라틴어)	OR	(l / language :wiki "라틴어" :name (이 / 이름 :op1 "라틴어"))
+-- VERBALIZED ------------------------------------
+(물 / 물 :mod (증 / 증거))
+
+
+# ::id snt2.E2016.790.21_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1997년 영국 노동당의 토니 블레어가 집권에 성공한 것은 매니페스토 10대 정책을 구체적으로 제시한 데 힘입었다.
+# ::note
+-- FRAMES ----------------------------------------
+집권 : VERBAL_NOUN
+	- take_power		(집 / 집권-01 :ARG0 thing_taking_power)
+성공 : VERBAL_NOUN
+	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
+구체적 : DERIVED_NON-ENTRY -> (구 / 구체적-00) ?
+제시 : VERBAL_NOUN
+	- present		(제 / 제시-01 :ARG0 agent :ARG1 thing_presented :ARG2 present_to)
+힘입 : VERB
+	- owe		(힘 / 힘입-01 :ARG1 theme :ARG2 owed_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"10대" [QT_COUNT]	->  :quant (1 / 10대)	OR	(c / concept* :quant 10 :unit|scale (대 / 대))
+"1997년" [DT_YEAR]	->  :time|duration (1 / 1997년)	OR	:time (d / date-entity :year 1997)	OR	:duration (t / temporal-quantity :quant 1997 :unit (년 / 년))  
+"노동당" [OGG_POLITICS]	->  (노 / 노동당)	OR	(g / government-organization :wiki "노동당" :name (이 / 이름 :op1 "노동당"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"토니 블레어" [PS_NAME]	->  (토 / 토니블레어)	OR	(p / person :wiki "토니_블레어" :name (이 / 이름 :op1 "토니" :op2 "블레어"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (구 / 구체))
+
+
+# ::id snt0.E2016.790.21_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 선거와 관련하여 유권자에게 추진 일정과 예산 확보의 근거 등을 구체적으로 제시한 공약을 지칭한다.
+# ::note
+-- FRAMES ----------------------------------------
+관련 : VERBAL_NOUN
+	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+유권자 : DERIVED_NON-ENTRY -> (유 / 유권자-00) ?
+추진 : VERBAL_NOUN
+	- drive_forward		(추 / 추진-01 :ARG0 agent :ARG1 thing_driven_forward)
+일정 : VERBAL_NOUN
+	- constant		(일 / 일정-01 :ARG1 thing_being_constant)
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+근거 : VERBAL_NOUN
+	- base		(근 / 근거-01 :ARG1 thing_based :ARG2 based_on)
+구체적 : DERIVED_NON-ENTRY -> (구 / 구체적-00) ?
+제시 : VERBAL_NOUN
+	- present		(제 / 제시-01 :ARG0 agent :ARG1 thing_presented :ARG2 present_to)
+공약 : VERBAL_NOUN
+	- pledge		(공 / 공약-01 :ARG0 agent :ARG1 thing_or_action_promised :ARG2 promised_to)
+지칭 : VERBAL_NOUN
+	- refer_to		(지 / 지칭-01 :ARG0 agent :ARG1 thing_referring :ARG2 refer_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"유권자" [CV_POSITION]	->  :mod (유 / 유권자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (유 / 유권자))
+-- VERBALIZED ------------------------------------
+(일 / 일정 :ARG1 (추 / 추진))
+(자 / 자 :mod (유 / 유권))
+(적 / 적 :mod (구 / 구체))
+(확 / 확보 :mod (예 / 예산))
+
+
+# ::id snt1.E2016.790.21_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 어원은 라틴어의 '마니페스투스(manifestus)'에서 나온 말로 당시에는 '증거'의 뜻으로 쓰였다.
+# ::note
+-- FRAMES ----------------------------------------
+나오 : VERB
+	- come_out		(나 / 나오-01 :ARG0 thing_coming_out :ARG2 start_point :ARG3 end_point)
+	- do-light_verb		(나 / 나오-02 :ARG0 agent :ARG1 deverbal_noun :ARG2 start_point :ARG3 end_point)
+	- spill_out-CV		(나 / 나오-03 :ARG1 thing_coming_out :ARG2 start_point :ARG3 end_point)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+쓰이 : REDUCED_VERB_DETECTED
+	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
+	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"라틴어" [CV_LANGUAGE]	->  (라 / 라틴어)	OR	(l / language :wiki "라틴어" :name (이 / 이름 :op1 "라틴어"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt2.E2016.790.21_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 매니페스토가 일반적인 공약과 다른 점은 구체적인 실천방안, 우선순위, 예산방침까지 제시한다는 것이다.
+# ::note
+-- FRAMES ----------------------------------------
+일반적 : DERIVED_NON-ENTRY -> (일 / 일반적-00) ?
+공약 : VERBAL_NOUN
+	- pledge		(공 / 공약-01 :ARG0 agent :ARG1 thing_or_action_promised :ARG2 promised_to)
+다르 : VERB
+	- different		(다 / 다르-01 :ARG1 theme :ARG2 different_from)
+구체적 : DERIVED_NON-ENTRY -> (구 / 구체적-00) ?
+실천 : VERBAL_NOUN
+	- practice		(실 / 실천-01 :ARG0 practicer :ARG1 thing_practiced)
+우선 : VERBAL_NOUN
+	- have_priority		(우 / 우선-01 :ARG0 agent :ARG1 thing_having_priority :ARG2 prior_to)
+제시 : VERBAL_NOUN
+	- present		(제 / 제시-01 :ARG0 agent :ARG1 thing_presented :ARG2 present_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(방 / 방안 :mod (실 / 실천))
+(방 / 방침 :mod (예 / 예산))
+(순 / 순위 :mod (우 / 우선))
+(적 / 적 :mod (구 / 구체))
+(적 / 적 :mod (일 / 일반))
+
+
+# ::id snt3.E2016.790.21_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그 후 1997년 영국 노동당의 토니 블레어가 '노동당과 국민과의 계약'이란 10대 비전을 발표하면서 이를 실현하기 위한 구체적인 방안인 매니페스토를 제시해 집권에 성공, 매니페스토가 세상에 널리 알려지게 됐다.
+# ::note
+-- FRAMES ----------------------------------------
+계약 : VERBAL_NOUN
+	- contract		(계 / 계약-01 :ARG0 agent :ARG1 reason,_purpose :ARG2 contracted_with)
+발표 : VERBAL_NOUN
+	- announce		(발 / 발표-01 :ARG0 announcer :ARG1 announcement :ARG2 announced_to)
+실현 : VERBAL_NOUN
+	- materialize		(실 / 실현-01 :ARG0 agent :ARG1 thing_being_materialized)
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+구체적 : DERIVED_NON-ENTRY -> (구 / 구체적-00) ?
+제시 : VERBAL_NOUN
+	- present		(제 / 제시-01 :ARG0 agent :ARG1 thing_presented :ARG2 present_to)
+집권 : VERBAL_NOUN
+	- take_power		(집 / 집권-01 :ARG0 thing_taking_power)
+성공 : VERBAL_NOUN
+	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
+알려지 : ** UNUSED_OR_NON-ENTRY **
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"10대" [QT_COUNT]	->  :quant (1 / 10대)	OR	(c / concept* :quant 10 :unit|scale (대 / 대))
+"1997년" [DT_YEAR]	->  :time|duration (1 / 1997년)	OR	:time (d / date-entity :year 1997)	OR	:duration (t / temporal-quantity :quant 1997 :unit (년 / 년))  
+"국민" [CV_POSITION]	->  :mod (국 / 국민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국민))
+"노동당" [OGG_POLITICS]	->  (노 / 노동당)	OR	(g / government-organization :wiki "노동당" :name (이 / 이름 :op1 "노동당"))
+"노동당" [OGG_POLITICS]	->  (노 / 노동당)	OR	(g / government-organization :wiki "노동당" :name (이 / 이름 :op1 "노동당"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"토니 블레어" [PS_NAME]	->  (토 / 토니블레어)	OR	(p / person :wiki "토니_블레어" :name (이 / 이름 :op1 "토니" :op2 "블레어"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (구 / 구체))
+
+
+# ::id snt0.E2016.790.21_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이것은 선거와 관련하여 유권자에게 목표와 이행 가능성 등을 구체적으로 제시한 공약을 말한다.
+# ::note
+-- FRAMES ----------------------------------------
+관련 : VERBAL_NOUN
+	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+유권자 : DERIVED_NON-ENTRY -> (유 / 유권자-00) ?
+이행 : VERBAL_NOUN
+	- perform		(이 / 이행-01 :ARG0 agent :ARG1 thing_performed)
+가능 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (가 / 가능성-00) ?
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+구체적 : DERIVED_NON-ENTRY -> (구 / 구체적-00) ?
+제시 : VERBAL_NOUN
+	- present		(제 / 제시-01 :ARG0 agent :ARG1 thing_presented :ARG2 present_to)
+공약 : VERBAL_NOUN
+	- pledge		(공 / 공약-01 :ARG0 agent :ARG1 thing_or_action_promised :ARG2 promised_to)
+말하 : DERIVED_VERB_DETECTED
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"유권자" [CV_POSITION]	->  :mod (유 / 유권자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (유 / 유권자))
+-- VERBALIZED ------------------------------------
+(가 / 가능 :ARG1 (이 / 이행))
+(성 / 성 :ARG0-of (가 / 가능))
+(자 / 자 :mod (유 / 유권))
+(적 / 적 :mod (구 / 구체))
+
+
+# ::id snt1.E2016.790.21_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1997년 영국 노동당의 토니 블레어가 10대 정책을 구체적으로 제시한 데 힘입어 집권에 성공하였다.
+# ::note
+-- FRAMES ----------------------------------------
+구체적 : DERIVED_NON-ENTRY -> (구 / 구체적-00) ?
+제시 : VERBAL_NOUN
+	- present		(제 / 제시-01 :ARG0 agent :ARG1 thing_presented :ARG2 present_to)
+힘입 : VERB
+	- owe		(힘 / 힘입-01 :ARG1 theme :ARG2 owed_to)
+집권 : VERBAL_NOUN
+	- take_power		(집 / 집권-01 :ARG0 thing_taking_power)
+성공 : VERBAL_NOUN
+	- succeed		(성 / 성공-01 :ARG0 entity_succeeding :ARG1 task)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"10대" [QT_COUNT]	->  :quant (1 / 10대)	OR	(c / concept* :quant 10 :unit|scale (대 / 대))
+"1997년" [DT_YEAR]	->  :time|duration (1 / 1997년)	OR	:time (d / date-entity :year 1997)	OR	:duration (t / temporal-quantity :quant 1997 :unit (년 / 년))  
+"노동당" [OGG_POLITICS]	->  (노 / 노동당)	OR	(g / government-organization :wiki "노동당" :name (이 / 이름 :op1 "노동당"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"토니 블레어" [PS_NAME]	->  (토 / 토니블레어)	OR	(p / person :wiki "토니_블레어" :name (이 / 이름 :op1 "토니" :op2 "블레어"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (구 / 구체))
+
+
+# ::id snt2.E2016.790.21_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '증거', '증거물'이라는 뜻의 라틴어에서 유래한 이것은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+증거물 : DERIVED_NON-ENTRY -> (증 / 증거물-00) ?
+유래하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"라틴어" [CV_LANGUAGE]	->  (라 / 라틴어)	OR	(l / language :wiki "라틴어" :name (이 / 이름 :op1 "라틴어"))
+-- VERBALIZED ------------------------------------
+(물 / 물 :mod (증 / 증거))
+
+
+# ::id snt0.E2016.790.22_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 폐기물(廢棄物)은 우리가 생활함에 있어서 사용하고 물질적 가치가 없어진 것이다.
+# ::note
+-- FRAMES ----------------------------------------
+폐기물 : DERIVED_NON-ENTRY -> (폐 / 폐기물-00) ?
+생활 : VERBAL_NOUN
+	- live		(생 / 생활-01 :ARG0 entity_being_alive :ARG2 location)
+있 : ** UNUSED_OR_NON-ENTRY **
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+물질적 : DERIVED_NON-ENTRY -> (물 / 물질적-00) ?
+없어지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(물 / 물 :mod (폐 / 폐기))
+(적 / 적 :mod (물 / 물질))
+
+
+# ::id snt0.E2016.790.22_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 쓰레기·연소재·폐유·폐산·폐알칼리·동물의 사체 등 사람의 생활이나 사업활동에 필요 없게 된 물질.
+# ::note
+-- FRAMES ----------------------------------------
+연소 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (연 / 연소재-00) ?
+	- burn		(연 / 연소-01 :ARG1 thing_burning :ARG2 thing_burnt)
+폐알칼리 : DERIVED_NON-ENTRY -> (폐 / 폐알칼리-00) ?
+생활 : VERBAL_NOUN
+	- live		(생 / 생활-01 :ARG0 entity_being_alive :ARG2 location)
+사업 : VERBAL_NOUN
+	- do_business		(사 / 사업-01 :ARG0 agent)
+활동 : VERBAL_NOUN
+	- act		(활 / 활동-01 :ARG0 agent :ARG1 role)
+필요 : VERBAL_NOUN
+	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
+없 : ** UNUSED_OR_NON-ENTRY **
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(재 / 재 :ARG0-of (연 / 연소))
+(활 / 활동 :ARG1 (사 / 사업))
+
+
+# ::id snt0.E2016.790.22_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 3음절의 이것은 쓰레기, 연소재, 폐유, 폐알칼리, 동물의 사체 등 사람의 생활이나 사업 활동에 필요 없게 된 물질을 말한다.
+# ::note
+-- FRAMES ----------------------------------------
+연소 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (연 / 연소재-00) ?
+	- burn		(연 / 연소-01 :ARG1 thing_burning :ARG2 thing_burnt)
+폐알칼리 : DERIVED_NON-ENTRY -> (폐 / 폐알칼리-00) ?
+생활 : VERBAL_NOUN
+	- live		(생 / 생활-01 :ARG0 entity_being_alive :ARG2 location)
+사업 : VERBAL_NOUN
+	- do_business		(사 / 사업-01 :ARG0 agent)
+활동 : VERBAL_NOUN
+	- act		(활 / 활동-01 :ARG0 agent :ARG1 role)
+필요 : VERBAL_NOUN
+	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
+없 : ** UNUSED_OR_NON-ENTRY **
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+말하 : DERIVED_VERB_DETECTED
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"3음절" [QT_COUNT]	->  :quant (3 / 3음절)	OR	(c / concept* :quant 3 :unit|scale (음 / 음절))
+-- VERBALIZED ------------------------------------
+(재 / 재 :ARG0-of (연 / 연소))
+(활 / 활동 :ARG1 (사 / 사업))
+
+
+# ::id snt1.E2016.790.22_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이것은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.23_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 영어의 리사이클(recycle)은 그대로 명사도 되지만 기본적으로 동사이며, 명사적 의미로는 리사이클링(recycling)으로 부르는 것이 보통이다.
+# ::note
+-- FRAMES ----------------------------------------
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+기본적 : DERIVED_NON-ENTRY -> (기 / 기본적-00) ?
+명사적 : DERIVED_NON-ENTRY -> (명 / 명사적-00) ?
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+부르 : VERB
+	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
+	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (기 / 기본))
+(적 / 적 :mod (명 / 명사))
+
+
+# ::id snt0.E2016.790.23_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 자원을 절약하고 환경 오염을 방지하기 위하여 불용품이나 폐물을 재생하여 이용하는 일.
+# ::note
+-- FRAMES ----------------------------------------
+절약하 : DERIVED_NON-ENTRY
+오염 : VERBAL_NOUN
+	- contaminate		(오 / 오염-01 :ARG0 thing_contaminating :ARG1 thing_contaminated)
+방지 : VERBAL_NOUN
+	- prevent		(방 / 방지-01 :ARG0 agent :ARG1 theme)
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+불용품 : DERIVED_NON-ENTRY -> (불 / 불용품-00) ?
+재생하 : DERIVED_NON-ENTRY
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+일 : VERBAL_NOUN
+	- rise		(일 / 일-01 :ARG1 thing_rising)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(오 / 오염 :mod (환 / 환경))
+
+
+# ::id snt1.E2016.790.23_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt ‘재활용’으로 순화.
+# ::note
+-- FRAMES ----------------------------------------
+활용 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (재 / 재활용-00) ?
+	- utilize		(활 / 활용-01 :ARG0 agent :ARG1 thing_utilized :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.23_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이것은 하수나 폐기물을 자원의 유효 활용을 위해 재처리하여 이용하는 것으로 쓰레기의 퇴비화, 소각 시설의 열 이용 등에 의한 에너지 자원의 절약도 포함된다.
+# ::note
+-- FRAMES ----------------------------------------
+폐기물 : DERIVED_NON-ENTRY -> (폐 / 폐기물-00) ?
+유효 : VERBAL_NOUN
+	- effective		(유 / 유효-01 :ARG1 thing_being_effective :ARG2 effective_for)
+활용 : VERBAL_NOUN
+	- utilize		(활 / 활용-01 :ARG0 agent :ARG1 thing_utilized :ARG2 purpose)
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+처리 : VERBAL_NOUN
+	- treat		(처 / 처리-01 :ARG0 agent :ARG1 thing_treated)
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+퇴비화 : DERIVED_NON-ENTRY -> (퇴 / 퇴비화-00) ?
+열 : VERBAL_NOUN
+	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
+	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
+이용 : VERBAL_NOUN
+	- use		(이 / 이용-01 :ARG0 user :ARG1 thing_used :ARG2 purpose)
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+포함 : VERBAL_NOUN
+	- include		(포 / 포함-01 :ARG0 agent :ARG1 thing_included :ARG2 group)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(물 / 물 :mod (폐 / 폐기))
+(시 / 시설 :mod (소 / 소각))
+(이 / 이용 :ARG1 (열 / 열))
+(자 / 자원 :mod (에 / 에너지))
+(화 / 화 :mod (퇴 / 퇴비))
+(활 / 활용 :ARG1 (유 / 유효))
+
+
+# ::id snt1.E2016.790.23_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 영어로 재활용을 뜻하는 5음절의 이것은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+활용 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (재 / 재활용-00) ?
+	- utilize		(활 / 활용-01 :ARG0 agent :ARG1 thing_utilized :ARG2 purpose)
+뜻하 : DERIVED_VERB_DETECTED
+	- mean		(뜻 / 뜻하-01 :ARG1 symbol :ARG2 thing_symbolized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"5음절" [QT_COUNT]	->  :quant (5 / 5음절)	OR	(c / concept* :quant 5 :unit|scale (음 / 음절))
+"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.24_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <음악> 이탈리아의 대중 가곡.
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"가곡" [FD_ART]	->  (가 / 가곡)	OR	(s / study-field|group* :wiki "가곡" :name (이 / 이름 :op1 "가곡"))
+"음악" [FD_ART]	->  (음 / 음악)	OR	(s / study-field|group* :wiki "음악" :name (이 / 이름 :op1 "음악"))
+"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
+-- VERBALIZED ------------------------------------
+(가 / 가곡 :mod (대 / 대중))
+
+
+# ::id snt0.E2016.790.24_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '노래' 또는 '가요'를 의미하며 일반적으로 오페라의 아리아와 같은 순클라식곡은 제외하고 널리 대중이 애창하고 있는 이탈리아의 포퓰러송.
+# ::note
+-- FRAMES ----------------------------------------
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+일반적 : DERIVED_NON-ENTRY -> (일 / 일반적-00) ?
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+클라식곡 : DERIVED_NON-ENTRY -> (클 / 클라식곡-00) ?
+제외 : VERBAL_NOUN
+	- exclude		(제 / 제외-01 :ARG0 agent :ARG1 thing_excluded :ARG2 excluded_from)
+애창하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"가요" [FD_ART]	->  (가 / 가요)	OR	(s / study-field|group* :wiki "가요?" :name (이 / 이름 :op1 "가요"))
+"아리아" [FD_ART]	->  (아 / 아리아)	OR	(s / study-field|group* :wiki "아리아" :name (이 / 이름 :op1 "아리아"))
+"오페라" [FD_ART]	->  (오 / 오페라)	OR	(s / study-field|group* :wiki "오페라" :name (이 / 이름 :op1 "오페라"))
+"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
+-- VERBALIZED ------------------------------------
+(곡 / 곡 :mod (클 / 클라식))
+(적 / 적 :mod (일 / 일반))
+
+
+# ::id snt0.E2016.790.24_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '이탈리아의 대중가요'라고 불리는 3음절의 이것은 멜로디가 밝고 누구나 쉽게 부를 수 있으며, 주로 사랑에 대한 노래가 많은 이것은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+불리 : VERB
+	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
+밝 : VERB
+	- bright		(밝 / 밝-01 :ARG1 thing_being_bright)
+쉽 : VERB
+	- easy		(쉽 / 쉽-01 :ARG1 event)
+부르 : VERB
+	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
+	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
+있 : ** UNUSED_OR_NON-ENTRY **
+사랑 : VERBAL_NOUN
+	- love		(사 / 사랑-01 :ARG0 lover :ARG1 thing_loved)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+많 : VERB
+	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"3음절" [QT_COUNT]	->  :quant (3 / 3음절)	OR	(c / concept* :quant 3 :unit|scale (음 / 음절))
+"대중가요" [FD_ART]	->  (대 / 대중가요)	OR	(s / study-field|group* :wiki "대중음악" :name (이 / 이름 :op1 "대중가요"))
+"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
+-- VERBALIZED ------------------------------------
+(가 / 가요 :mod (대 / 대중))
+
+
+# ::id snt0.E2016.790.25_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <물리> 자석의 주위, 전류의 주위, 지구의 표면 따위와 같이 자기의 작용이 미치는 공간.
+# ::note
+-- FRAMES ----------------------------------------
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+미치 : VERB
+	- give		(미 / 미치-01 :ARG0 causer :ARG1 influence :ARG2 entity_given_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"물리" [FD_SCIENCE]	->  (물 / 물리)	OR	(s / study-field|group* :wiki "물리학" :name (이 / 이름 :op1 "물리"))
+"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.25_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 자석이나 전류, 변화하는 전기장 등의 주위에 자기력이 작용하는 공간으로, 자계(磁界) 또는 자장(磁場)이라고도 한다.
+# ::note
+-- FRAMES ----------------------------------------
+변화 : VERBAL_NOUN
+	- change		(변 / 변화-01 :ARG0 causer :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
+자기력 : DERIVED_NON-ENTRY -> (자 / 자기력-00) ?
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(력 / 력 :mod (자 / 자기))
+(장 / 장 :mod (전 / 전기))
+
+
+# ::id snt0.E2016.790.25_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 3음절의 이것은 자석의 주위, 전류의 주위, 지구의 표면 등 자기의 작용이 미치는 공간을 말한다.
+# ::note
+-- FRAMES ----------------------------------------
+작용 : VERBAL_NOUN
+	- function		(작 / 작용-01 :ARG1 thing_functioning :ARG2 function_as)
+미치 : VERB
+	- give		(미 / 미치-01 :ARG0 causer :ARG1 influence :ARG2 entity_given_to)
+말하 : DERIVED_VERB_DETECTED
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"3음절" [QT_COUNT]	->  :quant (3 / 3음절)	OR	(c / concept* :quant 3 :unit|scale (음 / 음절))
+"지구" [LC_SPACE]	->  (지 / 지구)	OR	(? / ?planet|star|moon|constellation :wiki "지구" :name (이 / 이름 :op1 "지구"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.790.25_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 전하의 운동에 영향을 미치는 이것은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+전하 : VERBAL_NOUN
+	- report		(전 / 전하-01 :ARG0 agent :ARG1 thing_reported :ARG2 report_to)
+영향 : VERBAL_NOUN
+	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
+미치 : VERB
+	- give		(미 / 미치-01 :ARG0 causer :ARG1 influence :ARG2 entity_given_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.26_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 율리시스(영어: Ulysses)는 태양을 탐사하기 위해 설계된 무인 탐사선이다.
+# ::note
+-- FRAMES ----------------------------------------
+탐사하 : DERIVED_NON-ENTRY
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+설계 : VERBAL_NOUN
+	- design		(설 / 설계-01 :ARG0 designer :ARG1 thing_designed)
+탐사선 : DERIVED_NON-ENTRY -> (탐 / 탐사선-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Ulysses" [AF_TRANSPORT]	->  (U / Ulysses)	OR	(v / vehicle|ship|aircraft|... :wiki - :name (이 / 이름 :op1 "Ulysses"))
+"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
+"율리시스" [AF_TRANSPORT]	->  (율 / 율리시스)	OR	(v / vehicle|ship|aircraft|... :wiki "율리시스?" :name (이 / 이름 :op1 "율리시스"))
+"태양" [LC_SPACE]	->  (태 / 태양)	OR	(? / ?planet|star|moon|constellation :wiki "태양" :name (이 / 이름 :op1 "태양"))
+-- VERBALIZED ------------------------------------
+(선 / 선 :mod (탐 / 탐사))
+(탐 / 탐사 :mod (무 / 무인))
+
+
+# ::id snt1.E2016.790.26_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '오디세우스'의 이름을 따 명명된 이 탐사선은, NASA와 ESA의 공동 사업으로서 1990년 10월 6일에 디스커버리 우주왕복선의 STS-41 미션으로 발사되었다.
+# ::note
+-- FRAMES ----------------------------------------
+따 : VERB
+	- obtain		(따 / 따-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 received_from)
+	- quote		(따 / 따-01 :ARG0 quoter :ARG1 thing_quoted :ARG2 quoted_from)
+명명 : VERBAL_NOUN
+	- name		(명 / 명명-01 :ARG0 namer :ARG1 named :ARG2 name)
+탐사선 : DERIVED_NON-ENTRY -> (탐 / 탐사선-00) ?
+사업 : VERBAL_NOUN
+	- do_business		(사 / 사업-01 :ARG0 agent)
+왕복선 : DERIVED_NON-ENTRY -> (왕 / 왕복선-00) ?
+발사 : VERBAL_NOUN
+	- fire		(발 / 발사-01 :ARG0 shooter :ARG1 thing_shot :ARG2 goal)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1990년 10월 6일" [DT_OTHERS]	->  :time|duration (1 / 1990년10월6일)	OR	:time (d / date-entity :year 1990 :month 10 :day 6)	OR	:duration (t / temporal-quantity :quant 1990 :unit (년 / 년))  (t / temporal-quantity :quant 10 :unit (월 / 월))  (t / temporal-quantity :quant 6 :unit (일 / 일))  
+"ESA" [OGG_SCIENCE]	->  (E / ESA)	OR	(o / organization|research-institute :wiki "ESA?" :name (이 / 이름 :op1 "ESA"))
+"NASA" [OGG_SCIENCE]	->  (N / NASA)	OR	(o / organization|research-institute :wiki "미국_항공우주국" :name (이 / 이름 :op1 "NASA"))
+"STS-41" [TMI_PROJECT]	->  (S / STS-41)	OR	(p / project* :wiki - :name (이 / 이름 :op1 "STS-41"))
+"디스커버리" [AF_TRANSPORT]	->  (디 / 디스커버리)	OR	(v / vehicle|ship|aircraft|... :wiki "디스커버리?" :name (이 / 이름 :op1 "디스커버리"))
+"오디세우스" [PS_NAME]	->  (오 / 오디세우스)	OR	(p / person :wiki "오디세우스" :name (이 / 이름 :op1 "오디세우스"))
+"우주왕복선" [AF_TRANSPORT]	->  (우 / 우주왕복선)	OR	(v / vehicle|ship|aircraft|... :wiki "우주왕복선" :name (이 / 이름 :op1 "우주왕복선"))
+-- VERBALIZED ------------------------------------
+(사 / 사업 :mod (공 / 공동))
+(선 / 선 :mod (왕 / 왕복))
+(선 / 선 :mod (탐 / 탐사))
+(왕 / 왕복 :mod (우 / 우주))
+(우 / 우주 :mod (디 / 디스커버리))
+
+
+# ::id snt0.E2016.790.26_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 율리시스(Ulysses)호는 미국, 유럽의 공동 태양 탐사선으로 자기장이 강해 접근하기 힘든 태양 극궤도를 처음으로 탐사하였으며 태양자기장, 태양풍의 연구를 진행하여 태양계의 전체 모습을 얻는 것이 목표였다.
+# ::note
+-- FRAMES ----------------------------------------
+탐사선 : DERIVED_NON-ENTRY -> (탐 / 탐사선-00) ?
+강하 : VERB
+	- strong		(강 / 강하-01 :ARG1 entity_being_strong)
+접근 : VERBAL_NOUN
+	- approach		(접 / 접근-01 :ARG0 entity_in_motion :ARG2 destination)
+힘들 : VERB
+	- difficult		(힘 / 힘들-01 :ARG1 thing_being_difficult)
+탐사하 : DERIVED_NON-ENTRY
+연구 : VERBAL_NOUN
+	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
+진행 : VERBAL_NOUN
+	- proceed		(진 / 진행-01 :ARG0 agent :ARG1 thing_proceeding)
+태양계 : DERIVED_NON-ENTRY -> (태 / 태양계-00) ?
+얻 : VERB
+	- get		(얻 / 얻-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Ulysses" [AF_TRANSPORT]	->  (U / Ulysses)	OR	(v / vehicle|ship|aircraft|... :wiki - :name (이 / 이름 :op1 "Ulysses"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+"율리시스" [AF_TRANSPORT]	->  (율 / 율리시스)	OR	(v / vehicle|ship|aircraft|... :wiki "율리시스?" :name (이 / 이름 :op1 "율리시스"))
+"태양" [LC_SPACE]	->  (태 / 태양)	OR	(? / ?planet|star|moon|constellation :wiki "태양" :name (이 / 이름 :op1 "태양"))
+"태양" [LC_SPACE]	->  (태 / 태양)	OR	(? / ?planet|star|moon|constellation :wiki "태양" :name (이 / 이름 :op1 "태양"))
+"태양계" [LC_SPACE]	->  (태 / 태양계)	OR	(? / ?planet|star|moon|constellation :wiki "태양계" :name (이 / 이름 :op1 "태양계"))
+-- VERBALIZED ------------------------------------
+(계 / 계 :mod (태 / 태양))
+(궤 / 궤도 :mod (극 / 극))
+(극 / 극 :mod (태 / 태양))
+(모 / 모습 :mod (전 / 전체))
+(선 / 선 :mod (탐 / 탐사))
+(장 / 장 :mod (자 / 자기))
+(탐 / 탐사 :mod (태 / 태양))
+(태 / 태양 :mod (공 / 공동))
+
+
+# ::id snt0.E2016.790.26_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이것은 자기장이 강해 접근하기 힘든 태양 극궤도를 처음으로 탐사한 탐사선이다.
+# ::note
+-- FRAMES ----------------------------------------
+강하 : VERB
+	- strong		(강 / 강하-01 :ARG1 entity_being_strong)
+접근 : VERBAL_NOUN
+	- approach		(접 / 접근-01 :ARG0 entity_in_motion :ARG2 destination)
+힘들 : VERB
+	- difficult		(힘 / 힘들-01 :ARG1 thing_being_difficult)
+탐사하 : DERIVED_NON-ENTRY
+탐사선 : DERIVED_NON-ENTRY -> (탐 / 탐사선-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"태양" [LC_SPACE]	->  (태 / 태양)	OR	(? / ?planet|star|moon|constellation :wiki "태양" :name (이 / 이름 :op1 "태양"))
+-- VERBALIZED ------------------------------------
+(궤 / 궤도 :mod (극 / 극))
+(극 / 극 :mod (태 / 태양))
+(선 / 선 :mod (탐 / 탐사))
+(장 / 장 :mod (자 / 자기))
+
+
+# ::id snt1.E2016.790.26_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 태양자기장, 태양풍의 연구를 진행하여 태양계의 전체 모습을 얻는 것을 목표로 미국과 유럽이 공동으로 작업한 이 탐사선은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+연구 : VERBAL_NOUN
+	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
+진행 : VERBAL_NOUN
+	- proceed		(진 / 진행-01 :ARG0 agent :ARG1 thing_proceeding)
+태양계 : DERIVED_NON-ENTRY -> (태 / 태양계-00) ?
+얻 : VERB
+	- get		(얻 / 얻-01 :ARG0 receiver :ARG1 thing_gotten :ARG2 source)
+작업 : VERBAL_NOUN
+	- work		(작 / 작업-01 :ARG0 worker)
+탐사선 : DERIVED_NON-ENTRY -> (탐 / 탐사선-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+"태양계" [LC_SPACE]	->  (태 / 태양계)	OR	(? / ?planet|star|moon|constellation :wiki "태양계" :name (이 / 이름 :op1 "태양계"))
+-- VERBALIZED ------------------------------------
+(계 / 계 :mod (태 / 태양))
+(모 / 모습 :mod (전 / 전체))
+(선 / 선 :mod (탐 / 탐사))
+
+
+# ::id snt0.E2016.790.27_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그릇의 아가리나 바닥 또는 흙구덩이에 걸쳐 놓는 막대기.
+# ::note
+-- FRAMES ----------------------------------------
+걸치 : VERB
+	- extend		(걸 / 걸치-01 :ARG1 theme :ARG2 EXT_or_TMP)
+	- wear		(걸 / 걸치-02 :ARG0 wearer :ARG1 clothing)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(구 / 구덩이 :mod (흙 / 흙))
+
+
+# ::id snt1.E2016.790.27_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그 위에 놓는 물건이 빠지거나 바닥에 닿지 않게 하기 위하여 놓는다.
+# ::note
+-- FRAMES ----------------------------------------
+놓 : VERB
+	- put		(놓 / 놓-01 :ARG0 putter :ARG1 thing_put :ARG2 where_put)
+	- about		(놓 / 놓-02 :ARG0 impersonal :ARG1 about_what)
+빠지 : VERB
+	- get_into		(빠 / 빠지-01 :ARG0 causer :ARG1 thing_getting_into :ARG2 location)
+	- exclude		(빠 / 빠지-02 :ARG0 excluder :ARG1 thing_excluded :ARG2 excluded_from)
+닿 : VERB
+	- reach		(닿 / 닿-01 :ARG1 theme :ARG2 destination)
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.27_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '너스레를 떤다'고 할 때의 너스레는 남을 놀리려고 늘어놓거나 떠벌리는 말을 뜻한다.
+# ::note
+-- FRAMES ----------------------------------------
+떨 : VERB
+	- shake		(떨 / 떨-01 :ARG0 causer :ARG1 thing_shaking)
+	- be_exasperated		(떨 / 떨-02 :ARG1 experience :ARG2 teeth)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+남 : VERBAL_NOUN
+	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
+놀리 : ** UNUSED_OR_NON-ENTRY **
+늘어놓 : ** UNUSED_OR_NON-ENTRY **
+떠벌리 : VERB
+	- brag		(떠 / 떠벌리-01 :ARG0 agent :ARG1 thing_bragged)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+뜻하 : DERIVED_VERB_DETECTED
+	- mean		(뜻 / 뜻하-01 :ARG1 symbol :ARG2 thing_symbolized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.790.27_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그런데 너스레는 흙구덩이나 그릇의 아가리 또는 바닥에 이리저리 걸쳐 놓아서 그 위에 놓는 물건이 빠지거나 바닥에 닿지 않게 하는 막대기를 뜻하기도 한다.
+# ::note
+-- FRAMES ----------------------------------------
+걸치 : VERB
+	- extend		(걸 / 걸치-01 :ARG1 theme :ARG2 EXT_or_TMP)
+	- wear		(걸 / 걸치-02 :ARG0 wearer :ARG1 clothing)
+놓 : VERB
+	- put		(놓 / 놓-01 :ARG0 putter :ARG1 thing_put :ARG2 where_put)
+	- about		(놓 / 놓-02 :ARG0 impersonal :ARG1 about_what)
+빠지 : VERB
+	- get_into		(빠 / 빠지-01 :ARG0 causer :ARG1 thing_getting_into :ARG2 location)
+	- exclude		(빠 / 빠지-02 :ARG0 excluder :ARG1 thing_excluded :ARG2 excluded_from)
+닿 : VERB
+	- reach		(닿 / 닿-01 :ARG1 theme :ARG2 destination)
+뜻하 : DERIVED_VERB_DETECTED
+	- mean		(뜻 / 뜻하-01 :ARG1 symbol :ARG2 thing_symbolized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(구 / 구덩이 :mod (흙 / 흙))
+
+
+# ::id snt0.E2016.790.27_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 3음절의 이것은 원래 흙구덩이나 그릇의 바닥에 물건이 빠지지 않도록 걸쳐놓은 막대기를 일컫는 순우리말이다.
+# ::note
+-- FRAMES ----------------------------------------
+빠지 : VERB
+	- get_into		(빠 / 빠지-01 :ARG0 causer :ARG1 thing_getting_into :ARG2 location)
+	- exclude		(빠 / 빠지-02 :ARG0 excluder :ARG1 thing_excluded :ARG2 excluded_from)
+걸치 : VERB
+	- extend		(걸 / 걸치-01 :ARG1 theme :ARG2 EXT_or_TMP)
+	- wear		(걸 / 걸치-02 :ARG0 wearer :ARG1 clothing)
+일컫 : VERB
+	- refer_to		(일 / 일컫-01 :ARG0 agent :ARG1 thing_referred :ARG2 refer_as)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"3음절" [QT_COUNT]	->  :quant (3 / 3음절)	OR	(c / concept* :quant 3 :unit|scale (음 / 음절))
+-- VERBALIZED ------------------------------------
+(구 / 구덩이 :mod (흙 / 흙))
+(흙 / 흙 :mod (원 / 원래))
+
+
+# ::id snt1.E2016.790.27_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 말을 장황하게 펼쳐놓을 때 '이것을 떤다'라고 하는데, 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+장황하 : ** UNUSED_OR_NON-ENTRY **
+펼치 : VERB
+	- unfold		(펼 / 펼치-01 :ARG0 agent :ARG1 thing_unfolded)
+떨 : VERB
+	- shake		(떨 / 떨-01 :ARG0 causer :ARG1 thing_shaking)
+	- be_exasperated		(떨 / 떨-02 :ARG1 experience :ARG2 teeth)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.28_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <민속> 돌팔매질을 하여 승부를 겨루는 놀이.
+# ::note
+-- FRAMES ----------------------------------------
+돌 : VERBAL_NOUN
+	- go_around		(돌 / 돌-01 :ARG0 entity_in_motion :ARG1 path,_place)
+팔매질 : DERIVED_NON-ENTRY -> (팔 / 팔매질-00) ?
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+겨루 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(질 / 질 :mod (팔 / 팔매))
+(팔 / 팔매 :mod (돌 / 돌))
+
+
+# ::id snt1.E2016.790.28_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 고구려 때에, 대보름에 하류층에서 하던 놀이로, 고려ㆍ조선 왕조를 통하여 계속되었다.
+# ::note
+-- FRAMES ----------------------------------------
+대보름 : DERIVED_NON-ENTRY -> (대 / 대보름-00) ?
+하류층 : DERIVED_NON-ENTRY -> (하 / 하류층-00) ?
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+통하 : VERB
+	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
+	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
+	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
+계속 : VERBAL_NOUN
+	- continue		(계 / 계속-01 :ARG0 agent :ARG1 thing_continuing)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"고구려 때" [DT_DYNASTY]	->  :time|duration (고 / 고구려때)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"고려" [LCP_COUNTRY]	->  (고 / 고려)	OR	(c / country :wiki "고려" :name (이 / 이름 :op1 "고려"))
+"대보름" [DT_DAY]	->  :time|duration (대 / 대보름)	OR	:time (d / date-entity)	OR	:duration 
+"조선 왕조" [DT_DYNASTY]	->  :time|duration (조 / 조선왕조)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(층 / 층 :mod (하 / 하류))
+
+
+# ::id snt0.E2016.790.28_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 음력 정월 대보름날 각 지방에서 행하던 남성의 돌던지기놀이로 ‘편쌈’이라고 하며 한자어로는 ‘석전(石戰)’ 또는 ‘편전(便戰)’이라고 쓴다.
+# ::note
+-- FRAMES ----------------------------------------
+대보름날 : DERIVED_NON-ENTRY -> (대 / 대보름날-00) ?
+행하 : VERB
+	- do		(행 / 행하-01 :ARG0 agent :ARG1 thing_done)
+돌 : VERBAL_NOUN
+	- go_around		(돌 / 돌-01 :ARG0 entity_in_motion :ARG1 path,_place)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+쓰 : VERB
+	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
+	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"便戰" [CV_SPORTS]	->  (便 / 便戰)	OR	(s / sports* :wiki - :name (이 / 이름 :op1 "便戰"))
+"石戰" [CV_SPORTS]	->  (石 / 石戰)	OR	(s / sports* :wiki - :name (이 / 이름 :op1 "石戰"))
+"석전" [CV_SPORTS]	->  (석 / 석전)	OR	(s / sports* :wiki - :name (이 / 이름 :op1 "석전"))
+"음력 정월 대보름날" [DT_DAY]	->  :time|duration (음 / 음력정월대보름날)	OR	:time (d / date-entity)	OR	:duration 
+"편쌈" [CV_SPORTS]	->  (편 / 편쌈)	OR	(s / sports* :wiki - :name (이 / 이름 :op1 "편쌈"))
+"편전" [CV_SPORTS]	->  (편 / 편전)	OR	(s / sports* :wiki "편전" :name (이 / 이름 :op1 "편전"))
+"한자어" [CV_LANGUAGE]	->  (한 / 한자어)	OR	(l / language :wiki "한국어의_한자어" :name (이 / 이름 :op1 "한자어"))
+-- VERBALIZED ------------------------------------
+(놀 / 놀이 :mod (던 / 던지기))
+(던 / 던지기 :mod (돌 / 돌))
+(정 / 정월 :mod (음 / 음력))
+
+
+# ::id snt0.E2016.790.28_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이것은 음력 정월 대보름날 각 지방에서 남성들이 망패 등 너스레 부분을 쥐고 하는 놀이이다.
+# ::note
+-- FRAMES ----------------------------------------
+대보름날 : DERIVED_NON-ENTRY -> (대 / 대보름날-00) ?
+남성들 : DERIVED_NON-ENTRY -> (남 / 남성들-00) ?
+쥐 : VERB
+	- clasp		(쥐 / 쥐-01 :ARG0 agent :ARG1 thing_clasped :ARG2 clasp_with)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"음력 정월 대보름날" [DT_DAY]	->  :time|duration (음 / 음력정월대보름날)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(들 / 들 :mod (남 / 남성))
+(부 / 부분 :mod (너 / 너스레))
+(정 / 정월 :mod (음 / 음력))
+
+
+# ::id snt1.E2016.790.28_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '돌 던지기', '편쌈'이라고도 불리며, 두 편으로 나뉘어 서로 돌팔매질을 하여 승부를 겨루던 2음절의 이것은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+돌 : VERBAL_NOUN
+	- go_around		(돌 / 돌-01 :ARG0 entity_in_motion :ARG1 path,_place)
+던지 : VERB
+	- throw		(던 / 던지-01 :ARG0 thrower :ARG1 thing_thrown :ARG2 thrown_to,_at)
+불리 : VERB
+	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
+나뉘 : REDUCED_VERB_DETECTED
+	- happen		(나 / 나-01 :ARG1 thing_happening :ARG2 location)
+돌 : VERBAL_NOUN
+	- go_around		(돌 / 돌-01 :ARG0 entity_in_motion :ARG1 path,_place)
+팔매질 : DERIVED_NON-ENTRY -> (팔 / 팔매질-00) ?
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+겨루 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2음절" [QT_COUNT]	->  :quant (2 / 2음절)	OR	(c / concept* :quant 2 :unit|scale (음 / 음절))
+"두 편" [QT_COUNT]	->  :quant (두 / 두편)	OR	(c / concept* :quant 두 :unit|scale (편 / 편))
+"편쌈" [CV_SPORTS]	->  (편 / 편쌈)	OR	(s / sports* :wiki - :name (이 / 이름 :op1 "편쌈"))
+-- VERBALIZED ------------------------------------
+(질 / 질 :mod (팔 / 팔매))
+(팔 / 팔매 :mod (돌 / 돌))
+
+
+# ::id snt0.E2016.790.29_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 오셀로는 지나치게 단순한 주인공이라고 보이기 쉬우나 그가 자기의 가슴에 검(劍)을 박는 최후의 장면에서 참회하는 그의 심정과 다시금 데스데모나의 진실을 확신하게 된 그의 기쁨을 읽어볼 때에 대개는 이 작품의 주제를 이해할 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+지나치 : VERB
+	- excessive		(지 / 지나치-01 :ARG1 thing_excessive)
+단순 : VERBAL_NOUN
+	- simple		(단 / 단순-01 :ARG1 thing_being_simple)
+보이 : REDUCED_VERB_DETECTED
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+쉽 : VERB
+	- easy		(쉽 / 쉽-01 :ARG1 event)
+검 : VERBAL_NOUN
+	- black		(검 / 검-01 :ARG1 thing_being_black)
+박 : VERB
+	- drive		(박 / 박-01 :ARG0 agent :ARG1 thing_driven :ARG2 location)
+참회하 : DERIVED_NON-ENTRY
+확신 : VERBAL_NOUN
+	- believe_firmly		(확 / 확신-01 :ARG0 believer :ARG1 belief)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+읽 : VERB
+	- read		(읽 / 읽-01 :ARG0 reader :ARG1 thing_readed)
+이해 : VERBAL_NOUN
+	- understand		(이 / 이해-01 :ARG0 understander :ARG1 thing_understood)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"劍" [AF_WEAPON]	->  (劍 / 劍)	OR	(w / weapon* :wiki - :name (이 / 이름 :op1 "劍"))
+"가슴" [AM_PART]	->  (가 / 가슴)	OR	(가 / 가슴 :part-of|poss)
+"검" [AF_WEAPON]	->  (검 / 검)	OR	(w / weapon* :wiki "도검" :name (이 / 이름 :op1 "검"))
+"데스데모나" [PS_NAME]	->  (데 / 데스데모나)	OR	(p / person :wiki - :name (이 / 이름 :op1 "데스데모나"))
+"오셀로" [PS_NAME]	->  (오 / 오셀로)	OR	(p / person :wiki "오셀로" :name (이 / 이름 :op1 "오셀로"))
+"주인공" [CV_POSITION]	->  :mod (주 / 주인공)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (주 / 주인공))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.790.29_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <문학> 영국의 극작가 셰익스피어가 지은 4대 비극의 하나.
+# ::note
+-- FRAMES ----------------------------------------
+짓 : VERB
+	- construct		(짓 / 짓-01 :ARG0 agent :ARG1 construction)
+대 : VERBAL_NOUN
+	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
+	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"4대" [QT_COUNT]	->  :quant (4 / 4대)	OR	(c / concept* :quant 4 :unit|scale (대 / 대))
+"극작가" [CV_OCCUPATION]	->  :mod (극 / 극작가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (극 / 극작가))
+"문학" [FD_ART]	->  (문 / 문학)	OR	(s / study-field|group* :wiki "문학" :name (이 / 이름 :op1 "문학"))
+"비극" [FD_ART]	->  (비 / 비극)	OR	(s / study-field|group* :wiki "비극" :name (이 / 이름 :op1 "비극"))
+"셰익스피어" [PS_NAME]	->  (셰 / 셰익스피어)	OR	(p / person :wiki "윌리엄_셰익스피어" :name (이 / 이름 :op1 "셰익스피어"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
+-- VERBALIZED ------------------------------------
+(비 / 비극 :mod (대 / 대))
+(작 / 작가 :mod (극 / 극))
+
+
+# ::id snt1.E2016.790.29_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 무어 인(Moor人)의 장군 오셀로가 아내인 데스데모나의 정조를 의심하여 그녀를 죽이지만, 후에 그의 부관 이아고(Iago)의 계략이었음을 알고 자살한다는 내용으로, 1604년에 초연되었다.
+# ::note
+-- FRAMES ----------------------------------------
+무어인 : DERIVED_NON-ENTRY -> (무 / 무어인-00) ?
+의심 : VERBAL_NOUN
+	- doubt		(의 / 의심-01 :ARG0 disbelief :ARG1 disbeliever)
+죽이 : REDUCED_VERB_DETECTED
+	- die		(죽 / 죽-01 :ARG0 causer :ARG1 entity_dying)
+알 : VERB
+	- know		(알 / 알-01 :ARGA causer :ARG0 knower :ARG1 theme)
+자살 : VERBAL_NOUN
+	- kill_oneself		(자 / 자살-01 :ARG0 thing_killing_oneself)
+초연되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1604년" [DT_YEAR]	->  :time|duration (1 / 1604년)	OR	:time (d / date-entity :year 1604)	OR	:duration (t / temporal-quantity :quant 1604 :unit (년 / 년))  
+"Iago" [PS_NAME]	->  (I / Iago)	OR	(p / person :wiki - :name (이 / 이름 :op1 "Iago"))
+"Moor人" [CV_TRIBE]	->  (M / Moor人)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "Moor人"))
+"데스데모나" [PS_NAME]	->  (데 / 데스데모나)	OR	(p / person :wiki - :name (이 / 이름 :op1 "데스데모나"))
+"무어 인" [CV_TRIBE]	->  (무 / 무어인)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "무어" :op2 "인"))
+"부관" [CV_POSITION]	->  :mod (부 / 부관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (부 / 부관))
+"아내" [CV_RELATION]	->  :mod (아 / 아내)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (아 / 아내))
+"오셀로" [PS_NAME]	->  (오 / 오셀로)	OR	(p / person :wiki "오셀로" :name (이 / 이름 :op1 "오셀로"))
+"이아고" [PS_NAME]	->  (이 / 이아고)	OR	(p / person :wiki "이아고?" :name (이 / 이름 :op1 "이아고"))
+"장군" [CV_POSITION]	->  :mod (장 / 장군)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장군))
+-- VERBALIZED ------------------------------------
+(인 / 인 :mod (무 / 무어))
+
+
+# ::id snt0.E2016.790.29_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 셰익스피어의 비극인 이 작품은 다른 비극작품에 비해 인간의 사랑과 질투를 강렬하게 묘사하고 있다는 평가를 받는다.
+# ::note
+-- FRAMES ----------------------------------------
+비하 : VERB
+	- compare_with		(비 / 비하-01 :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
+사랑 : VERBAL_NOUN
+	- love		(사 / 사랑-01 :ARG0 lover :ARG1 thing_loved)
+강렬하 : ** UNUSED_OR_NON-ENTRY **
+묘사 : VERBAL_NOUN
+	- depict		(묘 / 묘사-01 :ARG0 depictor :ARG1 thing_depicted)
+평가 : VERBAL_NOUN
+	- estimate		(평 / 평가-01 :ARG0 agent :ARG1 thing_estimated)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"비극" [FD_ART]	->  (비 / 비극)	OR	(s / study-field|group* :wiki "비극" :name (이 / 이름 :op1 "비극"))
+"비극" [FD_ART]	->  (비 / 비극)	OR	(s / study-field|group* :wiki "비극" :name (이 / 이름 :op1 "비극"))
+"셰익스피어" [PS_NAME]	->  (셰 / 셰익스피어)	OR	(p / person :wiki "윌리엄_셰익스피어" :name (이 / 이름 :op1 "셰익스피어"))
+-- VERBALIZED ------------------------------------
+(작 / 작품 :mod (비 / 비극))
+
+
+# ::id snt1.E2016.790.29_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 주인공과 데스데모나와의 비극적 사랑을 다룬 이 작품은 무엇일까?
+# ::note
+-- FRAMES ----------------------------------------
+비극적 : DERIVED_NON-ENTRY -> (비 / 비극적-00) ?
+사랑 : VERBAL_NOUN
+	- love		(사 / 사랑-01 :ARG0 lover :ARG1 thing_loved)
+다루 : VERB
+	- cover		(다 / 다루-01 :ARG0 agent :ARG1 thing_covered)
+	- treat		(다 / 다루-02 :ARG0 agent :ARG1 entity_treated :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"데스데모나" [PS_NAME]	->  (데 / 데스데모나)	OR	(p / person :wiki - :name (이 / 이름 :op1 "데스데모나"))
+"주인공" [CV_POSITION]	->  :mod (주 / 주인공)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (주 / 주인공))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (비 / 비극))
+
