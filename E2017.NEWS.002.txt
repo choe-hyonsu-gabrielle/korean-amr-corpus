@@ -122,25 +122,17 @@
 
 # ::id snt5.E2017.NEWS.002 ::date 2019-09-04T21:05 ::annotator gabrielle
 # ::snt 감사자료에 따르면 담임들은 자신들이 작성하는 학교생활기록부에 정 씨에 대해 온통 칭찬만 적었다.
-# ::note 보조사
-(전 / 전하-01
-    :ARG0 (자 / 자료
-            :topic (감 / 감사-00))
-    :ARG1 (적 / 적-01
-        :ARG0 (사 / 사람
-            :ARG0-of (h / have-org-role-91
-                :ARG2 (담 / 담임)
-                :ARG3 (가 / 가르치-01
-                    :ARG2 (p / person
-                        :wiki "정유라_(승마_선수)"
-                        :name (이 / 이름 :op1 "정")))))
-        :topic p
-        :mod (온 / 온통)
-        :ARG1 (칭 / 칭찬-00
-            :mod (만 / 만))
-        :ARG2 (학 / 학교생활기록부
-            :ARG1-of (작 / 작성-01
-                :ARG0 p))))
+# ::note 보조사 누락
+(적 / 적-01
+    :ARG0 (담 / 담임)
+    :mod (온 / 온통)
+    :ARG1 (칭 / 칭찬-00)
+    :ARG2 (학 / 학교생활기록부
+        :ARG1-of (작 / 작성-01
+            :ARG0 담)))
+    :mod (따 / 따르-02
+        :ARG2 (자 / 자료
+            :topic (감 / 감사-00))))
 
 # ::id snt6.E2017.NEWS.002 ::date 2019-09-04T21:09 ::annotator gabrielle
 # ::snt 1학년 담임교사는 “천성이 밝고 활달해 친구들의 고민을 잘 들어준다. 심성이 따뜻해 교우 관계가 원만하다”라고 기록했다.
@@ -200,7 +192,8 @@
             :ARG3 (가 / 가르치-01)))
     :cause (주 / 주-01
         :ARG0 p
-        :ARG1 (s / score-on-scale-91 :ARG1 "만점"
+        :ARG1 (s / score-on-scale-91
+            :ARG1 "만점"
             :topic (태 / 태도))
         :ARG2 (p2 / person
             :wiki "정유라_(승마_선수)"
@@ -368,7 +361,8 @@
                 :op2 (나3 / 나오-01
                     :ARG0 p
                     :ARG3 (학 / 학교)
-                    :purpose (잠 / 잠자-00))))))
+                    :purpose (자 / 자-00
+                        :ARG1 (잠 / 잠)))))))
 
 # ::id snt15.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle
 # ::snt 또 다른 동창생도 “아침에 왔다가 점심도 안 먹고 집에 갔다. 옆 친구와도 어울리지 않았다”고 전했다.
@@ -688,37 +682,28 @@
 # ::snt 2주 뒤 최 씨는 다시 담임을 만나 “건방져서 한마디 했다. 애 아빠(정윤회)도 ‘가만히 안 둔다’고 했다”고 전했다.
 # ::note 보조사
 (전 / 전하-01
-    :ARG0 (p / person
-        :wiki "최순실"
-        :name (이 / 이름 :op1 "최"))
+    :ARG0 (p / person :wiki "최순실" :name (이 / 이름 :op1 "최"))
     :ARG1 (m / multi-sentence
         :snt1 (하 / 하-02
             :ARG0 p
             :ARG1 (한 / 한마디)
-            :cause (건 / 건방지-00
-                :ARG1 (사 / 사람
-                    :ARG0-of (h / have-org-role-91
-                        :ARG2 (담 / 담임)
-                        :ARG3 (가 / 가르치-01)))))
+            :cause (건 / 건방지-00))
         :snt2 (하2 / 하-02
             :ARG0 (e / either
-                :op2 (p2 / person
-                    :wiki "정윤회"
-                    :name (이2 / 이름 :op1 "정윤회")
-                    :ARG0-of (h2 / have-rel-role-91
+                :op2 (p2 / person :wiki "정윤회" :name (이2 / 이름 :op1 "정윤회")
+                    :ARG0-of (h / have-rel-role-91
                         :ARG1 (애 / 애)
                         :ARG2 (아 / 아빠))))
             :ARG1 (가2 / 가만두-01
                 :polarity -
-                :ARG0 p2
-                :ARG1 p3)))
-    :ARG2 p3
+                :ARG0 p2)))
+    :ARG2 (담 / 담임)
     :manner (만 / 만나-01
         :ARG0 p
-        :ARG1 p3
+        :ARG1 담
         :mod (다 / 다시))
     :time (뒤 / 뒤
-        :op1 (temporal-quantity :quant 2 :unit (주 / 주))))
+        :op1 (t / temporal-quantity :quant 2 :unit (주 / 주))))
 
 # ::id snt30.E2017.NEWS.002 ::date 2019-09-08T00:17 ::annotator gabrielle
 # ::snt 이 말에 담임은 항의하기는커녕 “애 아빠가 딸바보군요”라며 맞장구를 쳤다고 한다.
