@@ -228,7 +228,7 @@
                 :ARG2 (기 / 기부-01
                     :ARG0 사)))
         :ARG1 (영 / 영수증)
-        :ARG2 근
+        :ARG2 사
         :manner (직 / 직접)
         :manner (따 / 따로))
     :domain (경 / 경우
@@ -239,15 +239,15 @@
 # ::note 12/18 검수
 (가 / 가능-01
     :condition (o / or
-        :op1 (의 / 의료비
-            :ARG1-of (조 / 조회-00
+        :op1 (가2 / 가능-01
+            :polarity -
+            :ARG1 (조 / 조회-00
+                :ARG1 (의 / 의료비)
+                :medium (s / service* :wiki - :name (이 / 이름 :op1 "연말정산간소화" :op2 "서비스")))))
+        :op2 (의2 / 의료비
+            :ARG1-of (조2 / 조회-00
                 :manner (다 / 다르-01
                     :ARG2 (사 / 사실))))
-        :op2 (가2 / 가능-01
-            :polarity -
-            :ARG1 (조2 / 조회-00
-                :ARG1 (의2 / 의료비)
-                :medium (s / service* :wiki - :name (이 / 이름 :op1 "연말정산간소화" :op2 "서비스")))))
     :ARG1 (신 / 신고-01
         :ARG1 o
         :ARG2 (s2 / service* :wiki - :name (이2 / 이름 :op1 "의료비" :op2 "신고센터")
