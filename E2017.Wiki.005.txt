@@ -1,29 +1,21 @@
-/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt0.E2017.Wiki.005 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 힘 (물리)
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"물리" [FD_SCIENCE]	->  (물 / 물리)	OR	(s / study-field|group* :wiki "물리학" :name (이 / 이름 :op1 "물리"))
--- VERBALIZED ------------------------------------
+(힘 / 힘
+	:topic (물 / 물리))
 
-
-# ::id snt1.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt1.E2017.Wiki.005 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 물리학에서 힘은 물체의 운동, 방향 또는 구조를 변화시키는 원인이다.
 # ::note
--- FRAMES ----------------------------------------
-물리학 : DERIVED_NON-ENTRY -> (물 / 물리학-00) ?
-구조 : VERBAL_NOUN
-	- rescue		(구 / 구조-01 :ARG0 agent :ARG1 entity_rescued)
-변화 : VERBAL_NOUN
-	- change		(변 / 변화-01 :ARG0 causer :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"물리학" [FD_SCIENCE]	->  (물 / 물리학)	OR	(s / study-field|group* :wiki "물리학" :name (이 / 이름 :op1 "물리학"))
--- VERBALIZED ------------------------------------
-(학 / 학 :mod (물 / 물리-00))
-
+(원 / 원인
+	:domain (힘 / 힘
+		:topic (물 / 물리학))
+	:mod (변 / 변화-01
+		:ARG1 (o / or
+			:op1 (운 / 운동-00)
+			:op2 (방 / 방향)
+			:op3 (구 / 구조)
+			:poss (물2 / 물체))))
 
 # ::id snt2.E2017.Wiki.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 다른 말로, 힘은 질량을 가진 물체의 속도를 변화시키는 요인(이는 정지 상태에서 이동하기 시작하는 것도 포함)이며, 즉 물체를 가속시키거나 신축성이 있는 물체는 변형시킬 수 있고, 가속과 변형 둘 다 일어날 수도 있다.

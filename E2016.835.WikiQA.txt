@@ -1,0 +1,3551 @@
+/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
+# ::id snt0.E2016.835.01_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 로마 제국의 전성시대에 잇달아 군림한 5인의 명군(名君).
+# ::note
+-- FRAMES ----------------------------------------
+잇달 : VERB
+	- continuous		(잇 / 잇달-01 :ARG1 thing_continuous)
+군림하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"5인" [QT_MAN_COUNT]	->  :quant (5 / 5인)	OR	(c / concept* :quant 5 :unit|scale (인 / 인))
+"로마 제국" [LCP_COUNTRY]	->  (로 / 로마제국)	OR	(c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마" :op2 "제국"))
+-- VERBALIZED ------------------------------------
+(시 / 시대 :mod (전 / 전성))
+
+
+# ::id snt1.E2016.835.01_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 네르바(재위 96∼98), 트라야누스(재위 98∼117), 하드리아누스(재위 117∼138), 안토니누스 피우스(재위 138∼161), 마르쿠스 아우렐리우스(재위 161∼180)의 5제(帝)를 말한다.
+# ::note
+-- FRAMES ----------------------------------------
+말하 : DERIVED_VERB_DETECTED
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"117∼138" [DT_DURATION]	->  :time|duration (1 / 117∼138)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"138∼161" [DT_DURATION]	->  :time|duration (1 / 138∼161)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"161∼180" [DT_DURATION]	->  :time|duration (1 / 161∼180)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"5제" [QT_COUNT]	->  :quant (5 / 5제)	OR	(c / concept* :quant 5 :unit|scale (제 / 제))
+"96∼98" [DT_DURATION]	->  :time|duration (9 / 96∼98)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"98∼117" [DT_DURATION]	->  :time|duration (9 / 98∼117)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"네르바" [PS_NAME]	->  (네 / 네르바)	OR	(p / person :wiki "네르바" :name (이 / 이름 :op1 "네르바"))
+"마르쿠스 아우렐리우스" [PS_NAME]	->  (마 / 마르쿠스아우렐리우스)	OR	(p / person :wiki "마르쿠스_아우렐리우스" :name (이 / 이름 :op1 "마르쿠스" :op2 "아우렐리우스"))
+"안토니누스 피우스" [PS_NAME]	->  (안 / 안토니누스피우스)	OR	(p / person :wiki "안토니누스_피우스" :name (이 / 이름 :op1 "안토니누스" :op2 "피우스"))
+"트라야누스" [PS_NAME]	->  (트 / 트라야누스)	OR	(p / person :wiki "트라야누스" :name (이 / 이름 :op1 "트라야누스"))
+"하드리아누스" [PS_NAME]	->  (하 / 하드리아누스)	OR	(p / person :wiki "하드리아누스" :name (이 / 이름 :op1 "하드리아누스"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.01_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 로마의 평화라고 이야기되는 시기의 다섯 명의 황제인 로마 제국 전성기에 로마를 다스렸던 네르바, 트라야누스, 하드리아누스, 안토니누스 피우스, 마르쿠스 아우렐리우스 등 5인의 황제를 지칭하는 용어이다.
+# ::note
+-- FRAMES ----------------------------------------
+이야기 : VERBAL_NOUN
+	- talk		(이 / 이야기-01 :ARG0 talker :ARG1 subject :ARG2 hearer)
+전성기 : DERIVED_NON-ENTRY -> (전 / 전성기-00) ?
+다스리 : ** UNUSED_OR_NON-ENTRY **
+지칭 : VERBAL_NOUN
+	- refer_to		(지 / 지칭-01 :ARG0 agent :ARG1 thing_referring :ARG2 refer_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"5인" [QT_MAN_COUNT]	->  :quant (5 / 5인)	OR	(c / concept* :quant 5 :unit|scale (인 / 인))
+"네르바" [PS_NAME]	->  (네 / 네르바)	OR	(p / person :wiki "네르바" :name (이 / 이름 :op1 "네르바"))
+"다섯 명" [QT_MAN_COUNT]	->  :quant (다 / 다섯명)	OR	(c / concept* :quant 다섯 :unit|scale (명 / 명))
+"로마 제국" [LCP_COUNTRY]	->  (로 / 로마제국)	OR	(c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마" :op2 "제국"))
+"로마" [LCP_CAPITALCITY]	->  (로 / 로마)	OR	(c / city :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"마르쿠스 아우렐리우스" [PS_NAME]	->  (마 / 마르쿠스아우렐리우스)	OR	(p / person :wiki "마르쿠스_아우렐리우스" :name (이 / 이름 :op1 "마르쿠스" :op2 "아우렐리우스"))
+"안토니누스 피우스" [PS_NAME]	->  (안 / 안토니누스피우스)	OR	(p / person :wiki "안토니누스_피우스" :name (이 / 이름 :op1 "안토니누스" :op2 "피우스"))
+"트라야누스" [PS_NAME]	->  (트 / 트라야누스)	OR	(p / person :wiki "트라야누스" :name (이 / 이름 :op1 "트라야누스"))
+"하드리아누스" [PS_NAME]	->  (하 / 하드리아누스)	OR	(p / person :wiki "하드리아누스" :name (이 / 이름 :op1 "하드리아누스"))
+"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
+"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (전 / 전성))
+(전 / 전성 :mod (제 / 제국))
+
+
+# ::id snt0.E2016.835.01_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 로마의 평화 시대를 이끈 5현제에 해당하는 사람은?
+# ::note
+-- FRAMES ----------------------------------------
+이끌 : VERB
+	- lead		(이 / 이끌-01 :ARG0 thing_leading :ARG1 thing_led :ARG2 lead_to)
+해당 : VERBAL_NOUN
+	- correspond_to		(해 / 해당-01 :ARG1 topic,_theme :ARG2 compared_with)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"5현제" [QT_COUNT]	->  :quant (5 / 5현제)	OR	(c / concept* :quant 5 :unit|scale (현 / 현제))
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+-- VERBALIZED ------------------------------------
+(시 / 시대 :mod (평 / 평화))
+
+
+# ::id snt0.E2016.835.02_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 회화에서의 원근법을 사용하여 그림을 그린 최초의 화가.
+# ::note
+-- FRAMES ----------------------------------------
+원근법 : DERIVED_NON-ENTRY -> (원 / 원근법-00) ?
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+그리 : VERB
+	- draw		(그 / 그리-01 :ARG0 agent :ARG1 thing_drawn)
+	- long_for		(그 / 그리-02 :ARG0 person_experiencing_emotion :ARG1 thing_longed_for)
+	- describe		(그 / 그리-03 :ARG0 describer :ARG1 thing_described)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"원근법" [TR_ART]	->  (원 / 원근법)	OR	(t / theory* :wiki "원근법" :name (이 / 이름 :op1 "원근법"))
+"화가" [CV_OCCUPATION]	->  :mod (화 / 화가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (화 / 화가))
+"회화" [FD_ART]	->  (회 / 회화)	OR	(s / study-field|group* :wiki "회화" :name (이 / 이름 :op1 "회화"))
+-- VERBALIZED ------------------------------------
+(법 / 법 :mod (원 / 원근))
+
+
+# ::id snt0.E2016.835.02_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그의 뒤를 이어 원근법을 구체적으로 회화에 처음 도입한 사람은 30년도 채 못 살고 약물 중독으로 추정되는 이유로 요절한 피렌체의 화가 마사초(Masaccio, 1401~1428)다.
+# ::note
+-- FRAMES ----------------------------------------
+잇 : VERB
+	- connect		(잇 / 잇-01 :ARG1 thing_connecting :ARG2 thing_connected :ARG3 connect_to)
+	- follow		(잇 / 잇-02 :ARG1 thing_following :ARG2 thing_followed :ARG3 follow_to)
+원근법 : DERIVED_NON-ENTRY -> (원 / 원근법-00) ?
+구체적 : DERIVED_NON-ENTRY -> (구 / 구체적-00) ?
+도입 : VERBAL_NOUN
+	- introduce		(도 / 도입-01 :ARG0 introducer :ARG1 entity_introduced :ARG2 introduced_from :ARG3 introduced_to)
+살 : VERB
+	- reside		(살 / 살-01 :ARG0 entity_residing :ARG2 location)
+	- be_alive		(살 / 살-02 :ARG0 agent :ARG1 entity_being_alive)
+추정 : VERBAL_NOUN
+	- estimate		(추 / 추정-01 :ARG0 agent :ARG thing_estimated)
+요절하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1401~1428" [DT_DURATION]	->  :time|duration (1 / 1401~1428)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"30년" [DT_DURATION]	->  :time|duration (3 / 30년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 30))	OR :duration (t / temporal-quantity :quant 30 :unit (년 / 년))  
+"Masaccio" [PS_NAME]	->  (M / Masaccio)	OR	(p / person :wiki - :name (이 / 이름 :op1 "Masaccio"))
+"마사초" [PS_NAME]	->  (마 / 마사초)	OR	(p / person :wiki "마사초" :name (이 / 이름 :op1 "마사초"))
+"약물 중독" [TMM_DISEASE]	->  (약 / 약물중독)	OR	(d / desease :wiki "약물_중독" :name (이 / 이름 :op1 "약물" :op2 "중독"))
+"원근법" [TR_ART]	->  (원 / 원근법)	OR	(t / theory* :wiki "원근법" :name (이 / 이름 :op1 "원근법"))
+"피렌체" [LCP_CITY]	->  (피 / 피렌체)	OR	(c / city :wiki "피렌체" :name (이 / 이름 :op1 "피렌체"))
+"화가" [CV_OCCUPATION]	->  :mod (화 / 화가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (화 / 화가))
+"회화" [FD_ART]	->  (회 / 회화)	OR	(s / study-field|group* :wiki "회화" :name (이 / 이름 :op1 "회화"))
+-- VERBALIZED ------------------------------------
+(도 / 도입 :mod (처 / 처음))
+(법 / 법 :mod (원 / 원근))
+(적 / 적 :mod (구 / 구체))
+(중 / 중독 :mod (약 / 약물))
+
+
+# ::id snt0.E2016.835.02_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 르네상스 회화의 대표 양식인 원근법을 최초로 사용한 화가로 맞는 것은?
+# ::note
+-- FRAMES ----------------------------------------
+대표 : VERBAL_NOUN
+	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
+원근법 : DERIVED_NON-ENTRY -> (원 / 원근법-00) ?
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+맞 : VERB
+	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
+	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
+	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
+	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"르네상스" [EV_ACTIVITY]	->  (르 / 르네상스)	OR	(e / event? :wiki "르네상스" :name (이 / 이름 :op1 "르네상스"))
+"원근법" [TR_ART]	->  (원 / 원근법)	OR	(t / theory* :wiki "원근법" :name (이 / 이름 :op1 "원근법"))
+"화가" [CV_OCCUPATION]	->  :mod (화 / 화가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (화 / 화가))
+"회화" [FD_ART]	->  (회 / 회화)	OR	(s / study-field|group* :wiki "회화" :name (이 / 이름 :op1 "회화"))
+-- VERBALIZED ------------------------------------
+(법 / 법 :mod (원 / 원근))
+(양 / 양식 :mod (대 / 대표))
+(회 / 회화 :mod (르 / 르네상스))
+
+
+# ::id snt0.E2016.835.03_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 연합군 최초의 미국 전투비행단으로 제1차 세계대전에 참전한 미국 청년들의 실화를 다룬 이 영화는 영화배우 출신 영화감독 토니 빌의 <라파예트(Flyboys)>(2006)다.
+# ::note
+-- FRAMES ----------------------------------------
+연합 : VERBAL_NOUN
+	- combine		(연 / 연합-01 :ARG0 agent :ARG1 thing_combined :ARG2 end_product)
+전투 : VERBAL_NOUN
+	- combat		(전 / 전투-01 :ARG0 one_fighter :ARG1 other_fighter)
+비행 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (비 / 비행단-00) ?
+	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
+참전하 : DERIVED_NON-ENTRY
+청년들 : DERIVED_NON-ENTRY -> (청 / 청년들-00) ?
+다루 : VERB
+	- cover		(다 / 다루-01 :ARG0 agent :ARG1 thing_covered)
+	- treat		(다 / 다루-02 :ARG0 agent :ARG1 entity_treated :ARG2 attribute)
+배우 : VERBAL_NOUN
+	- learn		(배 / 배우-01 :ARG0 agent :ARG1 theme :ARG2 source)
+감독 : VERBAL_NOUN
+	- supervise		(감 / 감독-01 :ARG0 agent :ARG1 entity_supervised)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2006" [DT_YEAR]	->  :time|duration (2 / 2006)	OR	:time (d / date-entity)	OR	:duration 
+"Flyboys" [AFW_VIDEO]	->  (F / Flyboys)	OR	(b / broadcast-program|movie :wiki - :name (이 / 이름 :op1 "Flyboys"))
+"라파예트" [AFW_VIDEO]	->  (라 / 라파예트)	OR	(b / broadcast-program|movie :wiki "라파예트?" :name (이 / 이름 :op1 "라파예트"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"연합군" [OGG_MILITARY]	->  (연 / 연합군)	OR	(m / military :wiki "연합국" :name (이 / 이름 :op1 "연합군"))
+"영화" [FD_ART]	->  (영 / 영화)	OR	(s / study-field|group* :wiki "영화" :name (이 / 이름 :op1 "영화"))
+"영화감독" [CV_OCCUPATION]	->  :mod (영 / 영화감독)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (영 / 영화감독))
+"영화배우" [CV_OCCUPATION]	->  :mod (영 / 영화배우)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (영 / 영화배우))
+"전투비행단" [OGG_MILITARY]	->  (전 / 전투비행단)	OR	(m / military :wiki - :name (이 / 이름 :op1 "전투비행단"))
+"제1차 세계대전" [EV_WAR_REVOLUTION]	->  (제 / 제1차세계대전)	OR	(w / war|event :wiki "제1차_세계_대전" :name (이 / 이름 :op1 "제1차" :op2 "세계대전"))
+"토니 빌" [PS_NAME]	->  (토 / 토니빌)	OR	(p / person :wiki - :name (이 / 이름 :op1 "토니" :op2 "빌"))
+-- VERBALIZED ------------------------------------
+(감 / 감독 :mod (영 / 영화))
+(군 / 군 :mod (연 / 연합))
+(단 / 단 :ARG0-of (비 / 비행))
+(대 / 대전 :mod (세 / 세계))
+(들 / 들 :mod (청 / 청년))
+(배 / 배우 :mod (영 / 영화))
+(비 / 비행 :ARG1 (전 / 전투))
+(영 / 영화 :mod (출 / 출신))
+(최 / 최초 :mod (군 / 군))
+(출 / 출신 :mod (배 / 배우))
+
+
+# ::id snt0.E2016.835.03_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 제2차 세계대전을 배경으로 하는 영화가 아닌 것은?
+# ::note
+-- FRAMES ----------------------------------------
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"영화" [FD_ART]	->  (영 / 영화)	OR	(s / study-field|group* :wiki "영화" :name (이 / 이름 :op1 "영화"))
+"제2차 세계대전" [EV_WAR_REVOLUTION]	->  (제 / 제2차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제2차" :op2 "세계대전"))
+-- VERBALIZED ------------------------------------
+(대 / 대전 :mod (세 / 세계))
+
+
+# ::id snt0.E2016.835.04_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 저항권의 사상은 중세에도 있었지만 근대적 의미에서의 저항권은 근세 초기의 폭군방벌론(暴君放伐論)을 거쳐 17∼18세기에 이르러 대두된 자연법사상과 사회계약설, 특히 J.로크의 사상을 배경으로 하여 성립하였다.
+# ::note
+-- FRAMES ----------------------------------------
+저항 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (저 / 저항권-00) ?
+	- resist		(저 / 저항-01 :ARG0 thing_resisting :ARG1 thing_resisted)
+있 : ** UNUSED_OR_NON-ENTRY **
+근대적 : DERIVED_NON-ENTRY -> (근 / 근대적-00) ?
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+저항 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (저 / 저항권-00) ?
+	- resist		(저 / 저항-01 :ARG0 thing_resisting :ARG1 thing_resisted)
+방벌론 : DERIVED_NON-ENTRY -> (방 / 방벌론-00) ?
+거치 : VERB
+	- pass_through		(거 / 거치-01 :ARG1 thing :ARG2 theme)
+	- mount		(거 / 거치-02 :ARG0 agent :ARG1 thing_mounted :ARG2 where_mount)
+이르 : VERB
+	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
+	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- early		(이 / 이르-03 :ARG1 time)
+대두 : VERBAL_NOUN
+	- emerge		(대 / 대두-01 :ARG1 entity_emerging :ARG2 as_what)
+자연 : VERBAL_NOUN
+	- natural		(자 / 자연-01 :ARG1 thing_natural)
+계약 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (계 / 계약설-00) ?
+	- contract		(계 / 계약-01 :ARG0 agent :ARG1 reason,_purpose :ARG2 contracted_with)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+성립 : VERBAL_NOUN
+	- form		(성 / 성립-01 :ARG0 creator :ARG1 thing_cteated)
+-- FORCE CONVERT ---------------------------------
+:mod (특 / 특히)
+-- NE TYPES --------------------------------------
+"17∼18세기" [DT_DURATION]	->  :time|duration (1 / 17∼18세기)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"J.로크" [PS_NAME]	->  (J / J.로크)	OR	(p / person :wiki - :name (이 / 이름 :op1 "J.로크"))
+"暴君放伐論" [TR_SOCIAL_SCIENCE]	->  (暴 / 暴君放伐論)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "暴君放伐論"))
+"근대" [DT_OTHERS]	->  :time|duration (근 / 근대)	OR	:time (d / date-entity)	OR	:duration 
+"근세 초기" [DT_OTHERS]	->  :time|duration (근 / 근세초기)	OR	:time (d / date-entity)	OR	:duration 
+"사회계약설" [TR_SOCIAL_SCIENCE]	->  (사 / 사회계약설)	OR	(t / theory* :wiki "사회_계약" :name (이 / 이름 :op1 "사회계약설"))
+"자연법사상" [TR_SOCIAL_SCIENCE]	->  (자 / 자연법사상)	OR	(t / theory* :wiki "자연법" :name (이 / 이름 :op1 "자연법사상"))
+"저항권" [CV_LAW]	->  (저 / 저항권)	OR	(l / law :wiki "저항권" :name (이 / 이름 :op1 "저항권"))
+"저항권" [CV_LAW]	->  (저 / 저항권)	OR	(l / law :wiki "저항권" :name (이 / 이름 :op1 "저항권"))
+"중세" [DT_DYNASTY]	->  :time|duration (중 / 중세)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"폭군방벌론" [TR_SOCIAL_SCIENCE]	->  (폭 / 폭군방벌론)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "폭군방벌론"))
+-- VERBALIZED ------------------------------------
+(계 / 계약 :mod (사 / 사회))
+(권 / 권 :ARG0-of (저 / 저항))
+(권 / 권 :ARG0-of (저 / 저항))
+(론 / 론 :mod (방 / 방벌))
+(방 / 방벌 :mod (폭 / 폭군))
+(법 / 법 :mod (자 / 자연))
+(사 / 사상 :mod (법 / 법))
+(설 / 설 :ARG0-of (계 / 계약))
+(적 / 적 :mod (근 / 근대))
+(초 / 초기 :mod (근 / 근세))
+
+
+# ::id snt1.E2016.835.04_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 미국의 독립전쟁과 프랑스혁명 등에 큰 영향을 끼쳤던 저항권은 19세기에 이르러 재판제도의 정비와 법실증주의(法實證主義)로 인하여 한때 자취를 감추었다.
+# ::note
+-- FRAMES ----------------------------------------
+독립 : VERBAL_NOUN
+	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
+	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+영향 : VERBAL_NOUN
+	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
+끼치 : VERB
+	- render		(끼 / 끼치-01 :ARG0 causer :ARG1 influence :ARG2 receiver)
+저항 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (저 / 저항권-00) ?
+	- resist		(저 / 저항-01 :ARG0 thing_resisting :ARG1 thing_resisted)
+이르 : VERB
+	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
+	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- early		(이 / 이르-03 :ARG1 time)
+재판 : VERBAL_NOUN
+	- judge		(재 / 재판-01 :ARG0 thing_judging :ARG1 thing_judged)
+정비 : VERBAL_NOUN
+	- maintain		(정 / 정비-01 :ARG0 agent :ARG1 thing_maintained)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+인하 : VERB
+	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
+	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
+감추 : REDUCED_VERB_DETECTED
+	- wind,_dress		(감 / 감-01 :ARG0 roller :ARG1 thing_rolled :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"19세기" [DT_OTHERS]	->  :time|duration (1 / 19세기)	OR	:time (d / date-entity)	OR	:duration 
+"法實證主義" [TR_SOCIAL_SCIENCE]	->  (法 / 法實證主義)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "法實證主義"))
+"독립전쟁" [EV_WAR_REVOLUTION]	->  (독 / 독립전쟁)	OR	(w / war|event :wiki "독립_전쟁" :name (이 / 이름 :op1 "독립전쟁"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"법실증주의" [TR_SOCIAL_SCIENCE]	->  (법 / 법실증주의)	OR	(t / theory* :wiki "법실증주의" :name (이 / 이름 :op1 "법실증주의"))
+"재판제도" [CV_POLICY]	->  (재 / 재판제도)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "재판제도"))
+"저항권" [CV_LAW]	->  (저 / 저항권)	OR	(l / law :wiki "저항권" :name (이 / 이름 :op1 "저항권"))
+"프랑스혁명" [EV_WAR_REVOLUTION]	->  (프 / 프랑스혁명)	OR	(w / war|event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스혁명"))
+-- VERBALIZED ------------------------------------
+(권 / 권 :ARG0-of (저 / 저항))
+(실 / 실증 :mod (법 / 법))
+(자 / 자취 :mod (한 / 한때))
+(전 / 전쟁 :mod (독 / 독립))
+(제 / 제도 :mod (재 / 재판))
+(주 / 주의 :mod (실 / 실증))
+
+
+# ::id snt0.E2016.835.04_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 저항권은 17, 18세기 존 로크의 사상을 배경으로 성립되었다.
+# ::note
+-- FRAMES ----------------------------------------
+저항 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (저 / 저항권-00) ?
+	- resist		(저 / 저항-01 :ARG0 thing_resisting :ARG1 thing_resisted)
+성립 : VERBAL_NOUN
+	- form		(성 / 성립-01 :ARG0 creator :ARG1 thing_cteated)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"17, 18세기" [DT_OTHERS]	->  :time|duration (1 / 17,18세기)	OR	:time (d / date-entity)	OR	:duration 
+"저항권" [CV_LAW]	->  (저 / 저항권)	OR	(l / law :wiki "저항권" :name (이 / 이름 :op1 "저항권"))
+"존 로크" [PS_NAME]	->  (존 / 존로크)	OR	(p / person :wiki "존_로크" :name (이 / 이름 :op1 "존" :op2 "로크"))
+-- VERBALIZED ------------------------------------
+(권 / 권 :ARG0-of (저 / 저항))
+
+
+# ::id snt0.E2016.835.04_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 저항권을 인정해 영국의 명예혁명과 미국의 독립혁명에 영향을 준 사람은?
+# ::note
+-- FRAMES ----------------------------------------
+저항 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (저 / 저항권-00) ?
+	- resist		(저 / 저항-01 :ARG0 thing_resisting :ARG1 thing_resisted)
+인정 : VERBAL_NOUN
+	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
+독립 : VERBAL_NOUN
+	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
+	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
+영향 : VERBAL_NOUN
+	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
+주 : VERB
+	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"독립혁명" [EV_WAR_REVOLUTION]	->  (독 / 독립혁명)	OR	(w / war|event :wiki "미국_독립_혁명" :name (이 / 이름 :op1 "독립혁명"))
+"명예혁명" [EV_WAR_REVOLUTION]	->  (명 / 명예혁명)	OR	(w / war|event :wiki "명예혁명" :name (이 / 이름 :op1 "명예혁명"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"저항권" [CV_LAW]	->  (저 / 저항권)	OR	(l / law :wiki "저항권" :name (이 / 이름 :op1 "저항권"))
+-- VERBALIZED ------------------------------------
+(권 / 권 :ARG0-of (저 / 저항))
+(혁 / 혁명 :mod (독 / 독립))
+(혁 / 혁명 :mod (명 / 명예))
+
+
+# ::id snt0.E2016.835.05_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 각국의 수뇌자로는 미국의 대통령 프랭클린 루스벨트, 소비에트 연방의 당 서기장 이오시프 스탈린, 영국의 총리 윈스턴 처칠이다.
+# ::note
+-- FRAMES ----------------------------------------
+수뇌자 : DERIVED_NON-ENTRY -> (수 / 수뇌자-00) ?
+서기장 : DERIVED_NON-ENTRY -> (서 / 서기장-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"당 서기장" [CV_POSITION]	->  :mod (당 / 당서기장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (당 / 당 서기장))
+"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"소비에트 연방" [LCP_COUNTRY]	->  (소 / 소비에트연방)	OR	(c / country :wiki "소련" :name (이 / 이름 :op1 "소비에트" :op2 "연방"))
+"수뇌자" [CV_POSITION]	->  :mod (수 / 수뇌자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수뇌자))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"윈스턴 처칠" [PS_NAME]	->  (윈 / 윈스턴처칠)	OR	(p / person :wiki "윈스턴_처칠" :name (이 / 이름 :op1 "윈스턴" :op2 "처칠"))
+"이오시프 스탈린" [PS_NAME]	->  (이 / 이오시프스탈린)	OR	(p / person :wiki "이오시프_스탈린" :name (이 / 이름 :op1 "이오시프" :op2 "스탈린"))
+"총리" [CV_POSITION]	->  :mod (총 / 총리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총리))
+"프랭클린 루스벨트" [PS_NAME]	->  (프 / 프랭클린루스벨트)	OR	(p / person :wiki "프랭클린_D._루스벨트" :name (이 / 이름 :op1 "프랭클린" :op2 "루스벨트"))
+-- VERBALIZED ------------------------------------
+(서 / 서기 :mod (당 / 당))
+(자 / 자 :mod (수 / 수뇌))
+(장 / 장 :mod (서 / 서기))
+
+
+# ::id snt0.E2016.835.05_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <역사> 1945년 2월 크림 반도의 얄타에서 열린 연합국 수뇌 회담.
+# ::note
+-- FRAMES ----------------------------------------
+열리 : REDUCED_VERB_DETECTED
+	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
+	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
+연합 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (연 / 연합국-00) ?
+	- combine		(연 / 연합-01 :ARG0 agent :ARG1 thing_combined :ARG2 end_product)
+회담 : VERBAL_NOUN
+	- converse		(회 / 회담-01 :ARG0 one_talker :ARG1 other_talker(s))
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1945년 2월" [DT_OTHERS]	->  :time|duration (1 / 1945년2월)	OR	:time (d / date-entity :year 1945 :month 2)	OR	:duration (t / temporal-quantity :quant 1945 :unit (년 / 년))  (t / temporal-quantity :quant 2 :unit (월 / 월))  
+"수뇌" [CV_POSITION]	->  :mod (수 / 수뇌)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수뇌))
+"얄타" [LCP_CITY]	->  (얄 / 얄타)	OR	(c / city :wiki "얄타" :name (이 / 이름 :op1 "얄타"))
+"연합국" [OGG_MILITARY]	->  (연 / 연합국)	OR	(m / military :wiki "연합국" :name (이 / 이름 :op1 "연합국"))
+"크림 반도" [LCG_BAY]	->  (크 / 크림반도)	OR	(b / bay :wiki "크림반도" :name (이 / 이름 :op1 "크림" :op2 "반도"))
+-- VERBALIZED ------------------------------------
+(국 / 국 :ARG0-of (연 / 연합))
+(반 / 반도 :mod (크 / 크림))
+(회 / 회담 :mod (수 / 수뇌))
+
+
+# ::id snt1.E2016.835.05_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 미국의 루스벨트, 영국의 처칠, 소련의 스탈린이 참석하여 패전국에 대한 처리, 국제연합의 창설, 소련의 대일(對日) 참전 따위에 관하여 협의하였으며 얄타 비밀 협정을 체결하였다.
+# ::note
+-- FRAMES ----------------------------------------
+참석 : VERBAL_NOUN
+	- attend		(참 / 참석-01 :ARG0 agent :ARG1 thing_attended)
+패전국 : DERIVED_NON-ENTRY -> (패 / 패전국-00) ?
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+처리 : VERBAL_NOUN
+	- treat		(처 / 처리-01 :ARG0 agent :ARG1 thing_treated)
+창설 : VERBAL_NOUN
+	- establish		(창 / 창설-01 :ARG0 agent :ARG1 thing_established)
+관하 : VERB
+	- regarding		(관 / 관하-01 :ARG1 thing_under_consideration :ARG2 with_regard_to)
+협의 : VERBAL_NOUN
+	- discuss		(협 / 협의-01 :ARG0 discussant :ARG1 topic :ARG2 conversation_partner)
+체결 : VERBAL_NOUN
+	- enter_into		(체 / 체결-01 :ARG0 one_party :ARG1 treaty :ARG2 other_party)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"국제연합" [OGG_POLITICS]	->  (국 / 국제연합)	OR	(g / government-organization :wiki "유엔" :name (이 / 이름 :op1 "국제연합"))
+"루스벨트" [PS_NAME]	->  (루 / 루스벨트)	OR	(p / person :wiki "루스벨트?" :name (이 / 이름 :op1 "루스벨트"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"소련" [LCP_COUNTRY]	->  (소 / 소련)	OR	(c / country :wiki "소련" :name (이 / 이름 :op1 "소련"))
+"소련" [LCP_COUNTRY]	->  (소 / 소련)	OR	(c / country :wiki "소련" :name (이 / 이름 :op1 "소련"))
+"스탈린" [PS_NAME]	->  (스 / 스탈린)	OR	(p / person :wiki "이오시프_스탈린" :name (이 / 이름 :op1 "스탈린"))
+"얄타" [LCP_CITY]	->  (얄 / 얄타)	OR	(c / city :wiki "얄타" :name (이 / 이름 :op1 "얄타"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"처칠" [PS_NAME]	->  (처 / 처칠)	OR	(p / person :wiki "윈스턴_처칠" :name (이 / 이름 :op1 "처칠"))
+-- VERBALIZED ------------------------------------
+(국 / 국 :mod (패 / 패전))
+(협 / 협정 :mod (비 / 비밀))
+
+
+# ::id snt0.E2016.835.05_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 2차 세계 대전 중 개최된 얄타 회담에 참석한 지도자가 아닌 사람은?
+# ::note
+-- FRAMES ----------------------------------------
+개최 : VERBAL_NOUN
+	- hold		(개 / 개최-01 :ARG0 holder :ARG1 thing_held)
+회담 : VERBAL_NOUN
+	- converse		(회 / 회담-01 :ARG0 one_talker :ARG1 other_talker(s))
+참석 : VERBAL_NOUN
+	- attend		(참 / 참석-01 :ARG0 agent :ARG1 thing_attended)
+지도 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (지 / 지도자-00) ?
+	- instruct		(지 / 지도-01 :ARG0 agent :ARG1 thing_instructed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2차 세계 대전" [EV_WAR_REVOLUTION]	->  (2 / 2차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "2차" :op2 "세계" :op3 "대전"))
+"얄타 회담" [EV_OTHERS]	->  (얄 / 얄타회담)	OR	(e / event? :wiki "얄타_회담" :name (이 / 이름 :op1 "얄타" :op2 "회담"))
+"지도자" [CV_POSITION]	->  :mod (지 / 지도자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (지 / 지도자))
+-- VERBALIZED ------------------------------------
+(대 / 대전 :mod (세 / 세계))
+(자 / 자 :ARG0-of (지 / 지도))
+
+
+# ::id snt0.E2016.835.06_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <인명> 오스트리아 태생의 독일 정치가(1889~1945).
+# ::note
+-- FRAMES ----------------------------------------
+정치가 : DERIVED_NON-ENTRY -> (정 / 정치가-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1889~1945" [DT_DURATION]	->  :time|duration (1 / 1889~1945)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"오스트리아" [LCP_COUNTRY]	->  (오 / 오스트리아)	OR	(c / country :wiki "오스트리아" :name (이 / 이름 :op1 "오스트리아"))
+"정치가" [CV_OCCUPATION]	->  :mod (정 / 정치가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (정 / 정치가))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (정 / 정치))
+
+
+# ::id snt1.E2016.835.06_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1919년에 독일 노동당에 입당하여 1921년부터 나치스의 당수를 지냈으며 1933년에 독일 연방의 총리가 되고 다음 해 총통이 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+입당 : VERBAL_NOUN
+	- join		(입 / 입당-01 :ARG0 agent :ARG1 join_in)
+지내 : VERB
+	- get_along		(지 / 지내-01 :ARG0 agent :ARG1 got_along_with :ARG2 manner)
+	- serve		(지 / 지내-02 :ARG0 agent :ARG1 job,_position)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1919년" [DT_YEAR]	->  :time|duration (1 / 1919년)	OR	:time (d / date-entity :year 1919)	OR	:duration (t / temporal-quantity :quant 1919 :unit (년 / 년))  
+"1921년" [DT_YEAR]	->  :time|duration (1 / 1921년)	OR	:time (d / date-entity :year 1921)	OR	:duration (t / temporal-quantity :quant 1921 :unit (년 / 년))  
+"1933년" [DT_YEAR]	->  :time|duration (1 / 1933년)	OR	:time (d / date-entity :year 1933)	OR	:duration (t / temporal-quantity :quant 1933 :unit (년 / 년))  
+"나치스" [OGG_POLITICS]	->  (나 / 나치스)	OR	(g / government-organization :wiki "국가사회주의_독일_노동자당" :name (이 / 이름 :op1 "나치스"))
+"노동당" [OGG_POLITICS]	->  (노 / 노동당)	OR	(g / government-organization :wiki "노동당" :name (이 / 이름 :op1 "노동당"))
+"다음 해" [DT_YEAR]	->  :time|duration (다 / 다음해)	OR	:time (d / date-entity)	OR	:duration 
+"당수" [CV_POSITION]	->  :mod (당 / 당수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (당 / 당수))
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"총리" [CV_POSITION]	->  :mod (총 / 총리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총리))
+"총통" [CV_POSITION]	->  :mod (총 / 총통)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총통))
+-- VERBALIZED ------------------------------------
+(당 / 당 :mod (노 / 노동))
+(총 / 총통 :mod (해 / 해))
+(해 / 해 :mod (다 / 다음))
+
+
+# ::id snt2.E2016.835.06_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt  반유대주의와 게르만 민족의 우월성을 내세워 제이차 세계 대전을 일으켰다.
+# ::note
+-- FRAMES ----------------------------------------
+반유대 : DERIVED_NON-ENTRY -> (반 / 반유대-00) ?
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+우월 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (우 / 우월성-00) ?
+	- superior		(우 / 우월-01 :ARG1 thing_superior :ARG2 superior_to)
+내세우 : VERB
+	- support		(내 / 내세우-01 :ARG0 supporter :ARG1 thing_supported :ARG2 supported_as)
+일으키 : VERB
+	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"게르만 민족" [CV_TRIBE]	->  (게 / 게르만민족)	OR	(e / ethnic-group|nationality :wiki "게르만족" :name (이 / 이름 :op1 "게르만" :op2 "민족"))
+"반유대주의" [TR_SOCIAL_SCIENCE]	->  (반 / 반유대주의)	OR	(t / theory* :wiki "반유대주의" :name (이 / 이름 :op1 "반유대주의"))
+"제이차 세계 대전" [EV_WAR_REVOLUTION]	->  (제 / 제이차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제이차" :op2 "세계" :op3 "대전"))
+-- VERBALIZED ------------------------------------
+(대 / 대전 :mod (세 / 세계))
+(성 / 성 :ARG0-of (우 / 우월))
+(주 / 주의 :mod (유 / 유대))
+
+
+# ::id snt0.E2016.835.06_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 독일의 정치가이며 독재자로 불린다.
+# ::note
+-- FRAMES ----------------------------------------
+정치가 : DERIVED_NON-ENTRY -> (정 / 정치가-00) ?
+독재자 : DERIVED_NON-ENTRY -> (독 / 독재자-00) ?
+불리 : VERB
+	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"독재자" [CV_POSITION]	->  :mod (독 / 독재자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (독 / 독재자))
+"정치가" [CV_OCCUPATION]	->  :mod (정 / 정치가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (정 / 정치가))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (정 / 정치))
+(자 / 자 :mod (독 / 독재))
+
+
+# ::id snt1.E2016.835.06_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 게르만 민족주의와 반유태주의를 내걸어 1933년 독일수상이 되었고 1934년 독일 국가원수가 되었으며 총통으로 불리었다.
+# ::note
+-- FRAMES ----------------------------------------
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+반유태 : DERIVED_NON-ENTRY -> (반 / 반유태-00) ?
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+내걸 : VERB
+	- hang_out		(내 / 내걸-01 :ARG0 agent :ARG1 thing_hung :ARG2 location)
+	- offer		(내 / 내걸-02 :ARG0 agent :ARG1 price :ARG2 purpose)
+수상 : VERBAL_NOUN
+	- receive_a_prize		(수 / 수상-01 :ARG0 receiver :ARG1 prize)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+불리 : VERB
+	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1933년" [DT_YEAR]	->  :time|duration (1 / 1933년)	OR	:time (d / date-entity :year 1933)	OR	:duration (t / temporal-quantity :quant 1933 :unit (년 / 년))  
+"1934년" [DT_YEAR]	->  :time|duration (1 / 1934년)	OR	:time (d / date-entity :year 1934)	OR	:duration (t / temporal-quantity :quant 1934 :unit (년 / 년))  
+"게르만" [CV_TRIBE]	->  (게 / 게르만)	OR	(e / ethnic-group|nationality :wiki "게르만족" :name (이 / 이름 :op1 "게르만"))
+"국가원수" [CV_POSITION]	->  :mod (국 / 국가원수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국가원수))
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"민족주의" [TR_SOCIAL_SCIENCE]	->  (민 / 민족주의)	OR	(t / theory* :wiki "민족주의" :name (이 / 이름 :op1 "민족주의"))
+"반유태주의" [TR_SOCIAL_SCIENCE]	->  (반 / 반유태주의)	OR	(t / theory* :wiki "반유대주의" :name (이 / 이름 :op1 "반유태주의"))
+"총통" [CV_POSITION]	->  :mod (총 / 총통)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총통))
+-- VERBALIZED ------------------------------------
+(원 / 원수 :mod (국 / 국가))
+(주 / 주의 :mod (민 / 민족))
+(주 / 주의 :mod (유 / 유태))
+
+
+# ::id snt2.E2016.835.06_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 제2차세계대전을 일으켰지만 패색이 짙어지자 자살하였다.
+# ::note
+-- FRAMES ----------------------------------------
+일으키 : VERB
+	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
+짙 : VERB
+	- dark		(짙 / 짙-01 :ARG1 thing_dark)
+자살 : VERBAL_NOUN
+	- kill_oneself		(자 / 자살-01 :ARG0 thing_killing_oneself)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"제2차세계대전" [EV_WAR_REVOLUTION]	->  (제 / 제2차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제2차세계대전"))
+-- VERBALIZED ------------------------------------
+(대 / 대전 :mod (세 / 세계))
+
+
+# ::id snt0.E2016.835.06_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 나치당의 당수였던 이 사람은 1933년 독일 총리에 임명됐다.
+# ::note
+-- FRAMES ----------------------------------------
+임명 : VERBAL_NOUN
+	- appoint		(임 / 임명-01 :ARG0 thing_appointing :ARG1 thing_appointed :ARG2 appoint_as)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1933년" [DT_YEAR]	->  :time|duration (1 / 1933년)	OR	:time (d / date-entity :year 1933)	OR	:duration (t / temporal-quantity :quant 1933 :unit (년 / 년))  
+"나치당" [OGG_POLITICS]	->  (나 / 나치당)	OR	(g / government-organization :wiki "국가사회주의_독일_노동자당" :name (이 / 이름 :op1 "나치당"))
+"당수" [CV_POSITION]	->  :mod (당 / 당수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (당 / 당수))
+"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+"총리" [CV_POSITION]	->  :mod (총 / 총리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총리))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.835.06_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이후 이탈리아의 무솔리니와 함께 제2차 세계대전을 일으킨 이 사람은?
+# ::note
+-- FRAMES ----------------------------------------
+일으키 : VERB
+	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"무솔리니" [PS_NAME]	->  (무 / 무솔리니)	OR	(p / person :wiki "베니토_무솔리니" :name (이 / 이름 :op1 "무솔리니"))
+"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
+"제2차 세계대전" [EV_WAR_REVOLUTION]	->  (제 / 제2차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제2차" :op2 "세계대전"))
+-- VERBALIZED ------------------------------------
+(대 / 대전 :mod (세 / 세계))
+
+
+# ::id snt0.E2016.835.07_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 장미 전쟁 (薔薇戰爭, 영어: Wars of the Roses)은 붉은 장미를 표시로 삼은 랭커스터 왕가와 흰 장미를 표시로 삼은 요크 왕가 사이의 왕위 쟁탈전이었다.
+# ::note
+-- FRAMES ----------------------------------------
+붉 : VERB
+	- red		(붉 / 붉-01 :ARG1 thing_being_red)
+표시 : VERBAL_NOUN
+	- mark		(표 / 표시-01 :ARG0 agent :ARG1 thing_marked :ARG2 instrument)
+	- express		(표 / 표시-02 :ARG0 speaker :ARG1 thing_expressed)
+삼 : VERB
+	- consider		(삼 / 삼-01 :ARG0 thinker :ARG1 thing_under_consideration :ARG2 attribute)
+희 : VERB
+	- white		(희 / 희-01 :ARG1 thing_being_white)
+표시 : VERBAL_NOUN
+	- mark		(표 / 표시-01 :ARG0 agent :ARG1 thing_marked :ARG2 instrument)
+	- express		(표 / 표시-02 :ARG0 speaker :ARG1 thing_expressed)
+삼 : VERB
+	- consider		(삼 / 삼-01 :ARG0 thinker :ARG1 thing_under_consideration :ARG2 attribute)
+쟁탈전 : DERIVED_NON-ENTRY -> (쟁 / 쟁탈전-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Wars of the Roses" [EV_WAR_REVOLUTION]	->  (W / WarsoftheRoses)	OR	(w / war|event :wiki - :name (이 / 이름 :op1 "Wars" :op2 "of" :op3 "the" :op4 "Roses"))
+"薔薇戰爭" [EV_WAR_REVOLUTION]	->  (薔 / 薔薇戰爭)	OR	(w / war|event :wiki - :name (이 / 이름 :op1 "薔薇戰爭"))
+"랭커스터 왕가" [OG_OTHERS]	->  (랭 / 랭커스터왕가)	OR	(o / organization? :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터" :op2 "왕가"))
+"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
+"요크 왕가" [OG_OTHERS]	->  (요 / 요크왕가)	OR	(o / organization? :wiki "요크가" :name (이 / 이름 :op1 "요크" :op2 "왕가"))
+"장미 전쟁" [EV_WAR_REVOLUTION]	->  (장 / 장미전쟁)	OR	(w / war|event :wiki "장미_전쟁" :name (이 / 이름 :op1 "장미" :op2 "전쟁"))
+"장미" [PT_FLOWER]	->  (장 / 장미)	OR	(p / plant* :wiki "장미" :name (이 / 이름 :op1 "장미"))
+"장미" [PT_FLOWER]	->  (장 / 장미)	OR	(p / plant* :wiki "장미" :name (이 / 이름 :op1 "장미"))
+-- VERBALIZED ------------------------------------
+(사 / 사이 :mod (왕 / 왕가))
+(쟁 / 쟁탈 :mod (왕 / 왕위))
+(전 / 전 :mod (쟁 / 쟁탈))
+(전 / 전쟁 :mod (장 / 장미))
+
+
+# ::id snt1.E2016.835.07_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1455년부터 1485년까지 벌어졌다.
+# ::note
+-- FRAMES ----------------------------------------
+벌어지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1455년부터 1485년까지" [DT_DURATION]	->  :time|duration (1 / 1455년부터1485년까지)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1455))	OR :duration (t / temporal-quantity :quant 1455 :unit (년 / 년))  
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.07_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <역사> 1455년부터 1485년까지 영국의 랭커스터가와 요크가 사이에서 벌어졌던 왕위 쟁탈전.
+# ::note
+-- FRAMES ----------------------------------------
+벌어지 : ** UNUSED_OR_NON-ENTRY **
+쟁탈전 : DERIVED_NON-ENTRY -> (쟁 / 쟁탈전-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1455년부터 1485년까지" [DT_DURATION]	->  :time|duration (1 / 1455년부터1485년까지)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1455))	OR :duration (t / temporal-quantity :quant 1455 :unit (년 / 년))  
+"랭커스터가" [OG_OTHERS]	->  (랭 / 랭커스터가)	OR	(o / organization? :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터가"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"요크가" [OG_OTHERS]	->  (요 / 요크가)	OR	(o / organization? :wiki "요크가" :name (이 / 이름 :op1 "요크가"))
+-- VERBALIZED ------------------------------------
+(쟁 / 쟁탈 :mod (왕 / 왕위))
+(전 / 전 :mod (쟁 / 쟁탈))
+
+
+# ::id snt0.E2016.835.07_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1455~1485년까지 30년간 영국의 봉건 귀족인 랭커스터와 요크 두 가문 사이의 왕위 계승 문제를 둘러싸고 벌어진 이 전쟁은?
+# ::note
+-- FRAMES ----------------------------------------
+문제 : VERBAL_NOUN
+	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
+둘러싸 : VERB
+	- surround		(둘 / 둘러싸-01 :ARG0 causal_agent :ARG1 thing_surrounded :ARG2 thing_surrounding)
+벌어지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1455~1485년까지" [DT_DURATION]	->  :time|duration (1 / 1455~1485년까지)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1485))	OR :duration (t / temporal-quantity :quant 1485 :unit (년 / 년))  
+"30년간" [DT_DURATION]	->  :time|duration (3 / 30년간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 30))	OR :duration (t / temporal-quantity :quant 30 :unit (년 / 년))  
+"귀족" [CV_POSITION]	->  :mod (귀 / 귀족)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (귀 / 귀족))
+"두 가문" [QT_COUNT]	->  :quant (두 / 두가문)	OR	(c / concept* :quant 두 :unit|scale (가 / 가문))
+"랭커스터" [OG_OTHERS]	->  (랭 / 랭커스터)	OR	(o / organization? :wiki "랭커스터?" :name (이 / 이름 :op1 "랭커스터"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"요크" [OG_OTHERS]	->  (요 / 요크)	OR	(o / organization? :wiki "요크" :name (이 / 이름 :op1 "요크"))
+-- VERBALIZED ------------------------------------
+(계 / 계승 :mod (왕 / 왕위))
+(귀 / 귀족 :mod (봉 / 봉건))
+(문 / 문제 :mod (계 / 계승))
+(사 / 사이 :mod (가 / 가문))
+
+
+# ::id snt0.E2016.835.08_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 플로렌스(Florence)는 이탈리아의 도시 "피렌체"의 영어식 이름이다.
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Florence" [LCP_CITY]	->  (F / Florence)	OR	(c / city :wiki "Florence?" :name (이 / 이름 :op1 "Florence"))
+"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
+"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
+"플로렌스" [LCP_CITY]	->  (플 / 플로렌스)	OR	(c / city :wiki "플로렌스?" :name (이 / 이름 :op1 "플로렌스"))
+"피렌체" [LCP_CITY]	->  (피 / 피렌체)	OR	(c / city :wiki "피렌체" :name (이 / 이름 :op1 "피렌체"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.08_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <지명> ‘피렌체’의 영어 이름.
+# ::note
+-- FRAMES ----------------------------------------
+지명 : VERBAL_NOUN
+	- appoint		(지 / 지명-01 :ARG0 thing_appointing :ARG1 thing_appointed :ARG2 appoint_as)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
+"피렌체" [LCP_CITY]	->  (피 / 피렌체)	OR	(c / city :wiki "피렌체" :name (이 / 이름 :op1 "피렌체"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.08_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 르네상스의 중심 도시로 전체가 유네스코 세계문화유산으로 지정되어 있다.
+# ::note
+-- FRAMES ----------------------------------------
+지정 : VERBAL_NOUN
+	- establish		(지 / 지정-01 :ARG0 agent :ARG1 thing_set :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"르네상스" [EV_ACTIVITY]	->  (르 / 르네상스)	OR	(e / event? :wiki "르네상스" :name (이 / 이름 :op1 "르네상스"))
+"유네스코" [OG_OTHERS]	->  (유 / 유네스코)	OR	(o / organization? :wiki "유네스코" :name (이 / 이름 :op1 "유네스코"))
+-- VERBALIZED ------------------------------------
+(도 / 도시 :mod (중 / 중심))
+(문 / 문화 :mod (세 / 세계))
+(유 / 유산 :mod (문 / 문화))
+
+
+# ::id snt1.E2016.835.08_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt '꽃 같은 도시'라는 뜻으로 '플로렌스'라고도 불리는 이 도시는?
+# ::note
+-- FRAMES ----------------------------------------
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+불리 : VERB
+	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"꽃" [PT_PART]	->  (꽃 / 꽃)	OR	(꽃 / 꽃 :part-of|poss)
+"플로렌스" [LCP_CITY]	->  (플 / 플로렌스)	OR	(c / city :wiki "플로렌스?" :name (이 / 이름 :op1 "플로렌스"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.09_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 콜로세움(Colosseum, 이탈리아어: Colosseo 콜로세오)은 고대 로마 시대의 건축물 가운데 하나로 로마 제국 시대에 만들어진 원형 경기장이다.
+# ::note
+-- FRAMES ----------------------------------------
+고대 : VERBAL_NOUN
+	- long_for		(고 / 고대-01 :ARG0 wanter :ARG1 thing_wanted)
+건축물 : DERIVED_NON-ENTRY -> (건 / 건축물-00) ?
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+경기장 : DERIVED_NON-ENTRY -> (경 / 경기장-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Colosseo" [AF_CULTURAL_ASSET]	->  (C / Colosseo)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "Colosseo"))
+"Colosseum" [AF_CULTURAL_ASSET]	->  (C / Colosseum)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "Colosseum"))
+"고대 로마 시대" [DT_DYNASTY]	->  :time|duration (고 / 고대로마시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"로마 제국 시대" [DT_DYNASTY]	->  :time|duration (로 / 로마제국시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"이탈리아어" [CV_LANGUAGE]	->  (이 / 이탈리아어)	OR	(l / language :wiki "이탈리아어" :name (이 / 이름 :op1 "이탈리아어"))
+"콜로세오" [AF_CULTURAL_ASSET]	->  (콜 / 콜로세오)	OR	(c / cultural-asset* :wiki "콜로세움" :name (이 / 이름 :op1 "콜로세오"))
+"콜로세움" [AF_CULTURAL_ASSET]	->  (콜 / 콜로세움)	OR	(c / cultural-asset* :wiki "콜로세움" :name (이 / 이름 :op1 "콜로세움"))
+"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
+-- VERBALIZED ------------------------------------
+(경 / 경기 :mod (원 / 원형))
+(물 / 물 :mod (건 / 건축))
+(시 / 시대 :mod (제 / 제국))
+(장 / 장 :mod (경 / 경기))
+
+
+# ::id snt1.E2016.835.09_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 원래 이름은 플라비우스 원형 극장이었다.
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"플라비우스 원형극장" [AF_CULTURAL_ASSET]	->  (플 / 플라비우스원형극장)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "플라비우스" :op2 "원형극장"))
+-- VERBALIZED ------------------------------------
+(극 / 극장 :mod (원 / 원형))
+(이 / 이름 :mod (원 / 원래))
+
+
+# ::id snt0.E2016.835.09_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 정식 명칭은 '플라비우스 원형경기장(Amphitheatrum Flavium)'이라고 한다.
+# ::note
+-- FRAMES ----------------------------------------
+경기장 : DERIVED_NON-ENTRY -> (경 / 경기장-00) ?
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Amphitheatrum Flavium" [AF_CULTURAL_ASSET]	->  (A / AmphitheatrumFlavium)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "Amphitheatrum" :op2 "Flavium"))
+"플라비우스 원형경기장" [AF_CULTURAL_ASSET]	->  (플 / 플라비우스원형경기장)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "플라비우스" :op2 "원형경기장"))
+-- VERBALIZED ------------------------------------
+(경 / 경기 :mod (원 / 원형))
+(명 / 명칭 :mod (정 / 정식))
+(장 / 장 :mod (경 / 경기))
+
+
+# ::id snt0.E2016.835.09_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이탈리아 로마에 있는 로마 제정 시대의 건축물로 정식명칭은 '플라비우스 원형경기장'이다.
+# ::note
+-- FRAMES ----------------------------------------
+있 : ** UNUSED_OR_NON-ENTRY **
+제정 : VERBAL_NOUN
+	- establish		(제 / 제정-01 :ARG0 agent :ARG1 thing_established)
+건축물 : DERIVED_NON-ENTRY -> (건 / 건축물-00) ?
+경기장 : DERIVED_NON-ENTRY -> (경 / 경기장-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"로마 제정 시대" [DT_DYNASTY]	->  :time|duration (로 / 로마제정시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"로마" [LCP_CAPITALCITY]	->  (로 / 로마)	OR	(c / city :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
+"플라비우스 원형경기장" [AF_CULTURAL_ASSET]	->  (플 / 플라비우스원형경기장)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "플라비우스" :op2 "원형경기장"))
+-- VERBALIZED ------------------------------------
+(경 / 경기 :mod (원 / 원형))
+(명 / 명칭 :mod (정 / 정식))
+(물 / 물 :mod (건 / 건축))
+(시 / 시대 :mod (제 / 제정))
+(장 / 장 :mod (경 / 경기))
+
+
+# ::id snt1.E2016.835.09_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 검투사들의 시합이나 각종 공연이 펼쳐졌던 이 건축물은?
+# ::note
+-- FRAMES ----------------------------------------
+검 : VERBAL_NOUN
+	- black		(검 / 검-01 :ARG1 thing_being_black)
+투사들 : DERIVED_NON-ENTRY -> (투 / 투사들-00) ?
+공연 : VERBAL_NOUN
+	- perform		(공 / 공연-01 :ARG0 agent :ARG1 performance)
+펼쳐지 : ** UNUSED_OR_NON-ENTRY **
+건축물 : DERIVED_NON-ENTRY -> (건 / 건축물-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"검투사" [CV_OCCUPATION]	->  :mod (검 / 검투사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (검 / 검투사))
+-- VERBALIZED ------------------------------------
+(공 / 공연 :mod (각 / 각종))
+(들 / 들 :mod (투 / 투사))
+(물 / 물 :mod (건 / 건축))
+(투 / 투사 :mod (검 / 검))
+
+
+# ::id snt0.E2016.835.10_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <인명> 프랑스의 애국 소녀(1412~1431).
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1412~1431" [DT_DURATION]	->  :time|duration (1 / 1412~1431)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+-- VERBALIZED ------------------------------------
+(소 / 소녀 :mod (애 / 애국))
+
+
+# ::id snt1.E2016.835.10_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 백년전쟁 당시 16세의 나이로 출전하여 영국군 포위를 뚫고 진두에 서서 오를레앙 성을 탈환하였다.
+# ::note
+-- FRAMES ----------------------------------------
+출전 : VERBAL_NOUN
+	- take_part_in		(출 / 출전-01 :ARGA causer :ARG0 thing_taking_part_in :ARG1 take_part_in)
+포위 : VERBAL_NOUN
+	- surround		(포 / 포위-01 :ARG0 agent :ARG1 thing_surrounded)
+뚫 : VERB
+	- penetrate		(뚫 / 뚫-01 :ARG0 agent :ARG1 path,_hole :ARG2 barrier,_location)
+서 : VERB
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+탈환 : VERBAL_NOUN
+	- retake		(탈 / 탈환-01 :ARG0 agent :ARG1 thing_gotten :ARG2 gotten_from)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"16세" [QT_AGE]	->  :age (1 / 16세)	OR	:age 16세
+"백년전쟁" [EV_WAR_REVOLUTION]	->  (백 / 백년전쟁)	OR	(w / war|event :wiki "백년_전쟁" :name (이 / 이름 :op1 "백년전쟁"))
+"영국군" [OGG_MILITARY]	->  (영 / 영국군)	OR	(m / military :wiki "영국군" :name (이 / 이름 :op1 "영국군"))
+"오를레앙 성" [AF_BUILDING]	->  (오 / 오를레앙성)	OR	(b / building|facility :wiki - :name (이 / 이름 :op1 "오를레앙" :op2 "성"))
+-- VERBALIZED ------------------------------------
+(당 / 당시 :mod (전 / 전쟁))
+(포 / 포위 :mod (군 / 군))
+
+
+# ::id snt0.E2016.835.10_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 15세기 전반에 영국의 백년전쟁 후기에 프랑스를 위기에서 구한 영웅적인 소녀이다.
+# ::note
+-- FRAMES ----------------------------------------
+구하 : VERB
+	- save		(구 / 구하-01 :ARG0 saver :ARG1 victim)
+	- obtain		(구 / 구하-02 :ARG0 agent :ARG1 thing_obtained :ARG2 obtained_from)
+영웅적 : DERIVED_NON-ENTRY -> (영 / 영웅적-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"15세기 전반" [DT_OTHERS]	->  :time|duration (1 / 15세기전반)	OR	:time (d / date-entity)	OR	:duration 
+"백년전쟁 후기" [DT_OTHERS]	->  :time|duration (백 / 백년전쟁후기)	OR	:time (d / date-entity)	OR	:duration 
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (영 / 영웅))
+(전 / 전반 :mod (세 / 세기))
+(후 / 후기 :mod (전 / 전쟁))
+
+
+# ::id snt0.E2016.835.10_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 백년전쟁 후기에 프랑스를 위기에서 구한 영웅적인 소녀이다.
+# ::note
+-- FRAMES ----------------------------------------
+구하 : VERB
+	- save		(구 / 구하-01 :ARG0 saver :ARG1 victim)
+	- obtain		(구 / 구하-02 :ARG0 agent :ARG1 thing_obtained :ARG2 obtained_from)
+영웅적 : DERIVED_NON-ENTRY -> (영 / 영웅적-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"백년전쟁 후기" [DT_OTHERS]	->  :time|duration (백 / 백년전쟁후기)	OR	:time (d / date-entity)	OR	:duration 
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (영 / 영웅))
+(후 / 후기 :mod (전 / 전쟁))
+
+
+# ::id snt1.E2016.835.10_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <오를레앙의 여자>라고도 불리는 이 사람은?
+# ::note
+-- FRAMES ----------------------------------------
+불리 : VERB
+	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"오를레앙" [LCP_CITY]	->  (오 / 오를레앙)	OR	(c / city :wiki "오를레앙" :name (이 / 이름 :op1 "오를레앙"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.11_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 마틴 루터 킹 주니어(영어: Martin Luther King, Jr. 마틴 루서 킹 2세, 1929년 1월 15일 ~ 1968년 4월 4일)는 미국의 침례교 목사이자 인권 운동가, 흑인 해방 운동가, 권리 신장 운동가로, 미국 내 흑인의 인권 운동을 이끈 개신교 목사들 가운데 한 사람으로 꼽힌다.
+# ::note
+-- FRAMES ----------------------------------------
+운동가 : DERIVED_NON-ENTRY -> (운 / 운동가-00) ?
+운동가 : DERIVED_NON-ENTRY -> (운 / 운동가-00) ?
+신장 : VERBAL_NOUN
+	- expand		(신 / 신장 :ARG0 causer_of_growth :ARG1 thing_grown)
+운동가 : DERIVED_NON-ENTRY -> (운 / 운동가-00) ?
+이끌 : VERB
+	- lead		(이 / 이끌-01 :ARG0 thing_leading :ARG1 thing_led :ARG2 lead_to)
+목사들 : DERIVED_NON-ENTRY -> (목 / 목사들-00) ?
+꼽히 : REDUCED_VERB_DETECTED
+	- consider		(꼽 / 꼽-01 :ARG0 thinker :ARG1 thing_under_consideration :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1929년 1월 15일 ~ 1968년 4월 4일" [DT_DURATION]	->  :time|duration (1 / 1929년1월15일~1968년4월4일)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1929 :month 1 :day 15))	OR :duration (t / temporal-quantity :quant 1929 :unit (년 / 년))  (t / temporal-quantity :quant 1 :unit (월 / 월))  (t / temporal-quantity :quant 15 :unit (일 / 일))  
+"Martin Luther King, Jr." [PS_NAME]	->  (M / MartinLutherKing,Jr.)	OR	(p / person :wiki - :name (이 / 이름 :op1 "Martin" :op2 "Luther" :op3 "King," :op4 "Jr."))
+"개신교" [OGG_RELIGION]	->  (개 / 개신교)	OR	(r / religious-group :wiki "개신교" :name (이 / 이름 :op1 "개신교"))
+"권리 신장 운동가" [CV_OCCUPATION]	->  :mod (권 / 권리신장운동가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (권 / 권리 신장 운동가))
+"마틴 루서 킹 2세" [PS_NAME]	->  (마 / 마틴루서킹2세)	OR	(p / person :wiki "마틴_루터_킹_주니어" :name (이 / 이름 :op1 "마틴" :op2 "루서" :op3 "킹" :op4 "2세"))
+"마틴 루터 킹 주니어" [PS_NAME]	->  (마 / 마틴루터킹주니어)	OR	(p / person :wiki "마틴_루터_킹_주니어" :name (이 / 이름 :op1 "마틴" :op2 "루터" :op3 "킹" :op4 "주니어"))
+"목사" [CV_OCCUPATION]	->  :mod (목 / 목사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (목 / 목사))
+"목사" [CV_OCCUPATION]	->  :mod (목 / 목사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (목 / 목사))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
+"인권 운동가" [CV_OCCUPATION]	->  :mod (인 / 인권운동가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (인 / 인권 운동가))
+"인권" [CV_LAW]	->  (인 / 인권)	OR	(l / law :wiki "인권" :name (이 / 이름 :op1 "인권"))
+"침례교" [OGG_RELIGION]	->  (침 / 침례교)	OR	(r / religious-group :wiki "침례교" :name (이 / 이름 :op1 "침례교"))
+"한 사람" [QT_MAN_COUNT]	->  :quant (한 / 한사람)	OR	(c / concept* :quant 한 :unit|scale (사 / 사람))
+"흑인 해방 운동가" [CV_OCCUPATION]	->  :mod (흑 / 흑인해방운동가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (흑 / 흑인 해방 운동가))
+"흑인" [CV_TRIBE]	->  (흑 / 흑인)	OR	(e / ethnic-group|nationality :wiki "흑인" :name (이 / 이름 :op1 "흑인"))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (운 / 운동))
+(가 / 가 :mod (운 / 운동))
+(가 / 가 :mod (운 / 운동))
+(교 / 교 :mod (침 / 침례))
+(들 / 들 :mod (목 / 목사))
+(목 / 목사 :mod (개 / 개신교))
+(목 / 목사 :mod (교 / 교))
+(신 / 신장 :mod (권 / 권리))
+(운 / 운동 :mod (신 / 신장))
+(운 / 운동 :mod (인 / 인권))
+(운 / 운동 :mod (인 / 인권))
+(운 / 운동 :mod (해 / 해방))
+(해 / 해방 :mod (흑 / 흑인))
+
+
+# ::id snt1.E2016.835.11_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1964년 노벨 평화상을 받았다.
+# ::note
+-- FRAMES ----------------------------------------
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1964년" [DT_YEAR]	->  :time|duration (1 / 1964년)	OR	:time (d / date-entity :year 1964)	OR	:duration (t / temporal-quantity :quant 1964 :unit (년 / 년))  
+"노벨 평화상" [CV_PRIZE]	->  (노 / 노벨평화상)	OR	(a / award :wiki "노벨_평화상" :name (이 / 이름 :op1 "노벨" :op2 "평화상"))
+-- VERBALIZED ------------------------------------
+(상 / 상 :mod (평 / 평화))
+
+
+# ::id snt0.E2016.835.11_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <인명> 미국의 목사(1929~1968).
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1929~1968" [DT_DURATION]	->  :time|duration (1 / 1929~1968)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"목사" [CV_OCCUPATION]	->  :mod (목 / 목사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (목 / 목사))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.835.11_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 비폭력주의의 원칙을 지키면서 흑인 차별 철폐 운동에 앞장섰으며, 1964년에 노벨 평화상을 받았다.
+# ::note
+-- FRAMES ----------------------------------------
+비폭력주의 : DERIVED_NON-ENTRY -> (비 / 비폭력주의-00) ?
+지키 : VERB
+	- keep		(지 / 지키-01 :ARG0 keeper :ARG1 thing_kept)
+차별 : VERBAL_NOUN
+	- discriminate		(차 / 차별-01 :ARG0 agent :ARG1 thing_discriminated)
+철폐 : VERBAL_NOUN
+	- abolish		(철 / 철폐-01 :ARG0 agent :ARG1 thing_abolished)
+앞장서 : VERB
+	- lead		(앞 / 앞장서-01 :ARG0 agent :ARG1 purpose)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1964년" [DT_YEAR]	->  :time|duration (1 / 1964년)	OR	:time (d / date-entity :year 1964)	OR	:duration (t / temporal-quantity :quant 1964 :unit (년 / 년))  
+"노벨 평화상" [CV_PRIZE]	->  (노 / 노벨평화상)	OR	(a / award :wiki "노벨_평화상" :name (이 / 이름 :op1 "노벨" :op2 "평화상"))
+"비폭력주의" [TR_SOCIAL_SCIENCE]	->  (비 / 비폭력주의)	OR	(t / theory* :wiki "비폭력" :name (이 / 이름 :op1 "비폭력주의"))
+"흑인" [CV_TRIBE]	->  (흑 / 흑인)	OR	(e / ethnic-group|nationality :wiki "흑인" :name (이 / 이름 :op1 "흑인"))
+-- VERBALIZED ------------------------------------
+(상 / 상 :mod (평 / 평화))
+(운 / 운동 :mod (철 / 철폐))
+(차 / 차별 :mod (흑 / 흑인))
+(철 / 철폐 :ARG1 (차 / 차별))
+
+
+# ::id snt0.E2016.835.11_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 미국에서 매년 1월 셋째 주 월요일은 목사이자 흑인 민권운동가였던 이 사람을 기억하는 기념일이다.
+# ::note
+-- FRAMES ----------------------------------------
+주 : VERBAL_NOUN
+	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+운동가 : DERIVED_NON-ENTRY -> (운 / 운동가-00) ?
+기억 : VERBAL_NOUN
+	- remember		(기 / 기억-01 :ARG0 agent :ARG1 memory)
+기념 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기념일-00) ?
+	- commemorate		(기 / 기념-01 :ARG0 agent_or_memorial_itself :ARG1 thing_remembered)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1월 셋째 주 월요일" [DT_OTHERS]	->  :time|duration (1 / 1월셋째주월요일)	OR	:time (d / date-entity :month 1 :weekday (월 / 월요일))	OR	:duration (t / temporal-quantity :quant 1 :unit (월 / 월))  
+"목사" [CV_OCCUPATION]	->  :mod (목 / 목사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (목 / 목사))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"민권운동가" [CV_OCCUPATION]	->  :mod (민 / 민권운동가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (민 / 민권운동가))
+"흑인" [CV_TRIBE]	->  (흑 / 흑인)	OR	(e / ethnic-group|nationality :wiki "흑인" :name (이 / 이름 :op1 "흑인"))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (운 / 운동))
+(민 / 민권 :mod (흑 / 흑인))
+(요 / 요일 :mod (월 / 월))
+(운 / 운동 :mod (민 / 민권))
+(월 / 월 :mod (주 / 주))
+(일 / 일 :ARG0-of (기 / 기념))
+
+
+# ::id snt1.E2016.835.11_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 인종차별반대 운동으로 1964년 노벨 평화상을 받기도 한 이 사람은?
+# ::note
+-- FRAMES ----------------------------------------
+차별 : VERBAL_NOUN
+	- discriminate		(차 / 차별-01 :ARG0 agent :ARG1 thing_discriminated)
+반대 : VERBAL_NOUN
+	- oppose		(반 / 반대-01 :ARG0 opposer :ARG1 opposed_to)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1964년" [DT_YEAR]	->  :time|duration (1 / 1964년)	OR	:time (d / date-entity :year 1964)	OR	:duration (t / temporal-quantity :quant 1964 :unit (년 / 년))  
+"노벨 평화상" [CV_PRIZE]	->  (노 / 노벨평화상)	OR	(a / award :wiki "노벨_평화상" :name (이 / 이름 :op1 "노벨" :op2 "평화상"))
+-- VERBALIZED ------------------------------------
+(반 / 반대 :ARG1 (차 / 차별))
+(상 / 상 :mod (평 / 평화))
+(운 / 운동 :mod (반 / 반대))
+(차 / 차별 :mod (인 / 인종))
+
+
+# ::id snt0.E2016.835.12_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 르네상스(프랑스어: Renaissance, 이탈리아어: Rinascimento) 또는 문예 부흥(文藝復興), 학예 부흥(學藝復興)은 유럽 문명사에서 14세기부터 16세기 사이에 일어난 문예부흥 운동을 말한다.
+# ::note
+-- FRAMES ----------------------------------------
+문명사 : DERIVED_NON-ENTRY -> (문 / 문명사-00) ?
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+말하 : DERIVED_VERB_DETECTED
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"14세기부터 16세기" [DT_DURATION]	->  :time|duration (1 / 14세기부터16세기)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"Renaissance" [EV_ACTIVITY]	->  (R / Renaissance)	OR	(e / event? :wiki "Renaissance?" :name (이 / 이름 :op1 "Renaissance"))
+"Rinascimento" [EV_ACTIVITY]	->  (R / Rinascimento)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "Rinascimento"))
+"르네상스" [EV_ACTIVITY]	->  (르 / 르네상스)	OR	(e / event? :wiki "르네상스" :name (이 / 이름 :op1 "르네상스"))
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+"이탈리아어" [CV_LANGUAGE]	->  (이 / 이탈리아어)	OR	(l / language :wiki "이탈리아어" :name (이 / 이름 :op1 "이탈리아어"))
+"프랑스어" [CV_LANGUAGE]	->  (프 / 프랑스어)	OR	(l / language :wiki "프랑스어" :name (이 / 이름 :op1 "프랑스어"))
+-- VERBALIZED ------------------------------------
+(부 / 부흥 :mod (문 / 문예))
+(부 / 부흥 :mod (문 / 문예))
+(부 / 부흥 :mod (학 / 학예))
+(사 / 사 :mod (문 / 문명))
+(사 / 사이 :mod (세 / 세기))
+(운 / 운동 :mod (부 / 부흥))
+
+
+# ::id snt1.E2016.835.12_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 과학 혁명의 토대가 만들어져 중세를 근세와 이어주는 시기가 되었다.
+# ::note
+-- FRAMES ----------------------------------------
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+잇 : VERB
+	- connect		(잇 / 잇-01 :ARG1 thing_connecting :ARG2 thing_connected :ARG3 connect_to)
+	- follow		(잇 / 잇-02 :ARG1 thing_following :ARG2 thing_followed :ARG3 follow_to)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"근세" [DT_OTHERS]	->  :time|duration (근 / 근세)	OR	:time (d / date-entity)	OR	:duration 
+"중세" [DT_DYNASTY]	->  :time|duration (중 / 중세)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(혁 / 혁명 :mod (과 / 과학))
+
+
+# ::id snt2.E2016.835.12_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 여기서 문예부흥이란 구체적으로 14세기에서 시작하여 16세기 말에 유럽에서 일어난 문화, 예술 전반에 걸친 고대 그리스와 로마 문명의 재인식과 재수용을 의미한다.
+# ::note
+-- FRAMES ----------------------------------------
+구체적 : DERIVED_NON-ENTRY -> (구 / 구체적-00) ?
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+걸치 : VERB
+	- extend		(걸 / 걸치-01 :ARG1 theme :ARG2 EXT_or_TMP)
+	- wear		(걸 / 걸치-02 :ARG0 wearer :ARG1 clothing)
+고대 : VERBAL_NOUN
+	- long_for		(고 / 고대-01 :ARG0 wanter :ARG1 thing_wanted)
+인식 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (재 / 재인식-00) ?
+	- recognize		(인 / 인식-01 :ARGA thing_making_recognize :ARG0 thing_recognizing :ARG1 thing_recognized)
+수용 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (재 / 재수용-00) ?
+	- accommodate		(수 / 수용-01 :ARG0 entity_accommodating :ARG1 entity_accommodated)
+	- accept		(수 / 수용-02 :ARG0 acceptor :ARG1 thing_accepted :ARG2 accepted_from)
+	- expropriate		(수 / 수용-03 :ARG0 agent :ARG1 thing_expropriated :ARG2 expropriated_from)
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"14세기" [DT_OTHERS]	->  :time|duration (1 / 14세기)	OR	:time (d / date-entity)	OR	:duration 
+"16세기 말" [DT_OTHERS]	->  :time|duration (1 / 16세기말)	OR	:time (d / date-entity)	OR	:duration 
+"고대 그리스" [DT_DYNASTY]	->  :time|duration (고 / 고대그리스)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+-- VERBALIZED ------------------------------------
+(부 / 부흥 :mod (문 / 문예))
+(적 / 적 :mod (구 / 구체))
+(전 / 전반 :mod (예 / 예술))
+
+
+# ::id snt0.E2016.835.12_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 14∼16세기에 서유럽 문명사에 나타난 문화운동.
+# ::note
+-- FRAMES ----------------------------------------
+문명사 : DERIVED_NON-ENTRY -> (문 / 문명사-00) ?
+나타나 : VERB
+	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"14∼16세기" [DT_DURATION]	->  :time|duration (1 / 14∼16세기)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"서유럽" [LCG_CONTINENT]	->  (서 / 서유럽)	OR	(c / continent :wiki "서유럽" :name (이 / 이름 :op1 "서유럽"))
+-- VERBALIZED ------------------------------------
+(사 / 사 :mod (문 / 문명))
+(운 / 운동 :mod (문 / 문화))
+
+
+# ::id snt1.E2016.835.12_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 르네상스는 학문 또는 예술의 재생·부활이라는 의미를 가지고 있는데, 프랑스어의 renaissance, 이탈리아어의 rina scenza, rinascimento에서 어원을 찾을 수 있다.
+# ::note
+-- FRAMES ----------------------------------------
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+찾 : VERB
+	- find		(찾 / 찾-01 :ARG0 finder :ARG1 thing_found)
+	- draw		(찾 / 찾-02 :ARG0 drawer :ARG1 thing_drawn :ARG2 source)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"르네상스" [EV_ACTIVITY]	->  (르 / 르네상스)	OR	(e / event? :wiki "르네상스" :name (이 / 이름 :op1 "르네상스"))
+"이탈리아어" [CV_LANGUAGE]	->  (이 / 이탈리아어)	OR	(l / language :wiki "이탈리아어" :name (이 / 이름 :op1 "이탈리아어"))
+"프랑스어" [CV_LANGUAGE]	->  (프 / 프랑스어)	OR	(l / language :wiki "프랑스어" :name (이 / 이름 :op1 "프랑스어"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt2.E2016.835.12_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 고대의 그리스·로마 문화를 이상으로 하여 이들을 부흥시킴으로써 새 문화를 창출해내려는 운동으로, 그 범위는 사상·문학·미술·건축 등 다방면에 걸친 것이었다.
+# ::note
+-- FRAMES ----------------------------------------
+고대 : VERBAL_NOUN
+	- long_for		(고 / 고대-01 :ARG0 wanter :ARG1 thing_wanted)
+이상 : VERBAL_NOUN
+	- strange		(이 / 이상-01 :ARG1 thing_being_strange)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+부흥시키 : DERIVED_NON-ENTRY
+창출 : VERBAL_NOUN
+	- create		(창 / 창출-01 :ARG0 thing_creating :ARG1 thing_created)
+다방면 : DERIVED_NON-ENTRY -> (다 / 다방면-00) ?
+걸치 : VERB
+	- extend		(걸 / 걸치-01 :ARG1 theme :ARG2 EXT_or_TMP)
+	- wear		(걸 / 걸치-02 :ARG0 wearer :ARG1 clothing)
+-- FORCE CONVERT ---------------------------------
+:ARG1-of (새 / 새롭-01)
+-- NE TYPES --------------------------------------
+"고대" [DT_OTHERS]	->  :time|duration (고 / 고대)	OR	:time (d / date-entity)	OR	:duration 
+"그리스·로마 문화" [CV_NAME]	->  (그 / 그리스·로마문화)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "그리스·로마" :op2 "문화"))
+"문학" [FD_ART]	->  (문 / 문학)	OR	(s / study-field|group* :wiki "문학" :name (이 / 이름 :op1 "문학"))
+"미술" [FD_ART]	->  (미 / 미술)	OR	(s / study-field|group* :wiki "미술" :name (이 / 이름 :op1 "미술"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.12_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 14~16세기에 서유럽 문명사에 나타난 문화운동이다.
+# ::note
+-- FRAMES ----------------------------------------
+문명사 : DERIVED_NON-ENTRY -> (문 / 문명사-00) ?
+나타나 : VERB
+	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"14~16세기" [DT_DURATION]	->  :time|duration (1 / 14~16세기)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"서유럽" [LCG_CONTINENT]	->  (서 / 서유럽)	OR	(c / continent :wiki "서유럽" :name (이 / 이름 :op1 "서유럽"))
+-- VERBALIZED ------------------------------------
+(사 / 사 :mod (문 / 문명))
+(운 / 운동 :mod (문 / 문화))
+
+
+# ::id snt1.E2016.835.12_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그리스ㆍ로마의 문화적 전통이 다시 살아났다는 의미에서 사용된 이 용어는?
+# ::note
+-- FRAMES ----------------------------------------
+문화적 : DERIVED_NON-ENTRY -> (문 / 문화적-00) ?
+살아나 : VERB
+	- restore		(살 / 살아나-01 :ARG1 thing_restored)
+의미 : VERBAL_NOUN
+	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"그리스" [LCP_COUNTRY]	->  (그 / 그리스)	OR	(c / country :wiki "그리스" :name (이 / 이름 :op1 "그리스"))
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (문 / 문화))
+
+
+# ::id snt0.E2016.835.13_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <인명> 마케도니아의 왕(B.C.356~B.C.323).
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"B.C.356~B.C.323" [DT_DURATION]	->  :time|duration (B / B.C.356~B.C.323)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"마케도니아" [LCP_COUNTRY]	->  (마 / 마케도니아)	OR	(c / country :wiki "마케도니아?" :name (이 / 이름 :op1 "마케도니아"))
+"왕" [CV_POSITION]	->  :mod (왕 / 왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (왕 / 왕))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.835.13_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그리스, 페르시아, 인도에 이르는 대제국을 건설하였으며, 그 정복지에 다수의 도시를 건설하여 동서 교통, 경제 발전에 기여하였고, 그리스 문화와 오리엔트 문화를 융합한 헬레니즘 문화를 이룩하였다.
+# ::note
+-- FRAMES ----------------------------------------
+이르 : VERB
+	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
+	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- early		(이 / 이르-03 :ARG1 time)
+대제국 : DERIVED_NON-ENTRY -> (대 / 대제국-00) ?
+건설 : VERBAL_NOUN
+	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
+정복지 : DERIVED_NON-ENTRY -> (정 / 정복지-00) ?
+건설 : VERBAL_NOUN
+	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
+발전 : VERBAL_NOUN
+	- develop		(발 / 발전-01 :ARG0 developer :ARG1 thing_developed :ARG2 secondary_predication)
+기여 : VERBAL_NOUN
+	- contribute		(기 / 기여-01 :ARG0 agent :ARG1 contributed_to)
+융합하 : DERIVED_NON-ENTRY
+이룩하 : VERB
+	- achieve		(이 / 이룩하-01 :ARG0 agent :ARG1 thing_achieved)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"그리스 문화" [CV_NAME]	->  (그 / 그리스문화)	OR	(e / ethnic-group|nationality :wiki "그리스_문화" :name (이 / 이름 :op1 "그리스" :op2 "문화"))
+"그리스" [LCP_COUNTRY]	->  (그 / 그리스)	OR	(c / country :wiki "그리스" :name (이 / 이름 :op1 "그리스"))
+"동서" [TM_DIRECTION]	->  (동 / 동서)	OR	(: / :direction :wiki "동서" :name (이 / 이름 :op1 "동서"))
+"오리엔트 문화" [CV_NAME]	->  (오 / 오리엔트문화)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "오리엔트" :op2 "문화"))
+"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+"페르시아" [LCP_COUNTRY]	->  (페 / 페르시아)	OR	(c / country :wiki "페르시아?" :name (이 / 이름 :op1 "페르시아"))
+"헬레니즘 문화" [CV_NAME]	->  (헬 / 헬레니즘문화)	OR	(e / ethnic-group|nationality :wiki "헬레니즘_문명" :name (이 / 이름 :op1 "헬레니즘" :op2 "문화"))
+-- VERBALIZED ------------------------------------
+(교 / 교통 :mod (동 / 동서))
+(문 / 문화 :mod (오 / 오리엔트))
+(문 / 문화 :mod (헬 / 헬레니즘))
+(발 / 발전 :mod (경 / 경제))
+(지 / 지 :mod (정 / 정복))
+
+
+# ::id snt0.E2016.835.13_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 마케도니아의 왕(재위 BC 336∼BC 323).
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"BC 336∼BC 323" [DT_DURATION]	->  :time|duration (B / BC336∼BC323)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"마케도니아" [LCP_COUNTRY]	->  (마 / 마케도니아)	OR	(c / country :wiki "마케도니아?" :name (이 / 이름 :op1 "마케도니아"))
+"왕" [CV_POSITION]	->  :mod (왕 / 왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (왕 / 왕))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.835.13_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그리스·페르시아 ·인도에 이르는 대제국을 건설하여 그리스 문화와 오리엔트 문화를 융합시킨 새로운 헬레니즘 문화를 이룩하였다.
+# ::note
+-- FRAMES ----------------------------------------
+이르 : VERB
+	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
+	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- early		(이 / 이르-03 :ARG1 time)
+대제국 : DERIVED_NON-ENTRY -> (대 / 대제국-00) ?
+건설 : VERBAL_NOUN
+	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
+융합시키 : DERIVED_NON-ENTRY
+새롭 : VERB
+	- new		(새 / 새롭-01 :ARG1 thing_being_new)
+이룩하 : VERB
+	- achieve		(이 / 이룩하-01 :ARG0 agent :ARG1 thing_achieved)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"그리스 문화" [CV_NAME]	->  (그 / 그리스문화)	OR	(e / ethnic-group|nationality :wiki "그리스_문화" :name (이 / 이름 :op1 "그리스" :op2 "문화"))
+"그리스" [LCP_COUNTRY]	->  (그 / 그리스)	OR	(c / country :wiki "그리스" :name (이 / 이름 :op1 "그리스"))
+"오리엔트 문화" [CV_NAME]	->  (오 / 오리엔트문화)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "오리엔트" :op2 "문화"))
+"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+"페르시아" [LCP_COUNTRY]	->  (페 / 페르시아)	OR	(c / country :wiki "페르시아?" :name (이 / 이름 :op1 "페르시아"))
+"헬레니즘 문화" [CV_NAME]	->  (헬 / 헬레니즘문화)	OR	(e / ethnic-group|nationality :wiki "헬레니즘_문명" :name (이 / 이름 :op1 "헬레니즘" :op2 "문화"))
+-- VERBALIZED ------------------------------------
+(문 / 문화 :mod (오 / 오리엔트))
+(문 / 문화 :mod (헬 / 헬레니즘))
+
+
+# ::id snt0.E2016.835.13_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 마케도니아의 왕이다.
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"마케도니아" [LCP_COUNTRY]	->  (마 / 마케도니아)	OR	(c / country :wiki "마케도니아?" :name (이 / 이름 :op1 "마케도니아"))
+"왕" [CV_POSITION]	->  :mod (왕 / 왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (왕 / 왕))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.835.13_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그리스ㆍ페르시아ㆍ인도에 이르는 대제국을 건설해 그리스 문화와 오리엔트 문화를 융합시킨 새로운 헬레니즘 문화를 이룩한 이 사람은?
+# ::note
+-- FRAMES ----------------------------------------
+이르 : VERB
+	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
+	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- early		(이 / 이르-03 :ARG1 time)
+대제국 : DERIVED_NON-ENTRY -> (대 / 대제국-00) ?
+건설 : VERBAL_NOUN
+	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
+융합시키 : DERIVED_NON-ENTRY
+새롭 : VERB
+	- new		(새 / 새롭-01 :ARG1 thing_being_new)
+이룩하 : VERB
+	- achieve		(이 / 이룩하-01 :ARG0 agent :ARG1 thing_achieved)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"그리스 문화" [CV_NAME]	->  (그 / 그리스문화)	OR	(e / ethnic-group|nationality :wiki "그리스_문화" :name (이 / 이름 :op1 "그리스" :op2 "문화"))
+"그리스" [LCP_COUNTRY]	->  (그 / 그리스)	OR	(c / country :wiki "그리스" :name (이 / 이름 :op1 "그리스"))
+"오리엔트 문화" [CV_NAME]	->  (오 / 오리엔트문화)	OR	(e / ethnic-group|nationality :wiki - :name (이 / 이름 :op1 "오리엔트" :op2 "문화"))
+"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+"페르시아" [LCP_COUNTRY]	->  (페 / 페르시아)	OR	(c / country :wiki "페르시아?" :name (이 / 이름 :op1 "페르시아"))
+"헬레니즘 문화" [CV_NAME]	->  (헬 / 헬레니즘문화)	OR	(e / ethnic-group|nationality :wiki "헬레니즘_문명" :name (이 / 이름 :op1 "헬레니즘" :op2 "문화"))
+-- VERBALIZED ------------------------------------
+(문 / 문화 :mod (오 / 오리엔트))
+(문 / 문화 :mod (헬 / 헬레니즘))
+
+
+# ::id snt0.E2016.835.14_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <역사> 18세기 후반부터 약 100년 동안 유럽에서 일어난 생산 기술과 그에 따른 사회 조직의 큰 변화.
+# ::note
+-- FRAMES ----------------------------------------
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+생산 : VERBAL_NOUN
+	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
+기술 : VERBAL_NOUN
+	- describe		(기 / 기술-01 :ARG0 describer :ARG1 thing_described)
+따르 : VERB
+	- follow		(따 / 따르-01 :ARG0 agent :ARG1 thing_followed)
+	- according_to		(따 / 따르-02 :ARG1 thing :ARG2 theme)
+조직 : VERBAL_NOUN
+	- organize		(조 / 조직-01 :ARG0 agent :ARG1 thing_organized :ARG2 organized_with)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+변화 : VERBAL_NOUN
+	- change		(변 / 변화-01 :ARG0 causer :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"18세기 후반부터 약 100년 동안" [DT_DURATION]	->  :time|duration (1 / 18세기후반부터약100년동안)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 100))	OR :duration (t / temporal-quantity :quant 100 :unit (년 / 년))  
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+-- VERBALIZED ------------------------------------
+(기 / 기술 :ARG1 (생 / 생산))
+(조 / 조직 :mod (사 / 사회))
+(후 / 후반 :mod (세 / 세기))
+
+
+# ::id snt1.E2016.835.14_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 영국에서 일어난 방적 기계의 개량이 발단이 되어 1760~1840년에 유럽 여러 나라에서 계속 일어났다.
+# ::note
+-- FRAMES ----------------------------------------
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+개량 : VERBAL_NOUN
+	- modify		(개 / 개량-01 :ARG0 causer_of_transformation :ARG1 thing_changing)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1760~1840년" [DT_DURATION]	->  :time|duration (1 / 1760~1840년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1840))	OR :duration (t / temporal-quantity :quant 1840 :unit (년 / 년))  
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+-- VERBALIZED ------------------------------------
+(기 / 기계 :mod (방 / 방적))
+
+
+# ::id snt2.E2016.835.14_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 수공업적 작업장이 기계 설비에 의한 큰 공장으로 전환되었는데, 이로 인하여 자본주의 경제가 확립되었다.
+# ::note
+-- FRAMES ----------------------------------------
+수공업적 : DERIVED_NON-ENTRY -> (수 / 수공업적-00) ?
+작업 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (작 / 작업장-00) ?
+	- work		(작 / 작업-01 :ARG0 worker)
+의하 : VERB
+	- by_means_of		(의 / 의하-01 :ARG1 thing :ARG2 theme)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+전환 : VERBAL_NOUN
+	- shift		(전 / 전환-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_state :ARG3 end_state)
+인하 : VERB
+	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
+	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+확립 : VERBAL_NOUN
+	- establish		(확 / 확립-01 :ARG0 agent :ARG1 thing_set)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"자본주의" [TR_SOCIAL_SCIENCE]	->  (자 / 자본주의)	OR	(t / theory* :wiki "자본주의" :name (이 / 이름 :op1 "자본주의"))
+-- VERBALIZED ------------------------------------
+(경 / 경제 :mod (주 / 주의))
+(설 / 설비 :mod (기 / 기계))
+(장 / 장 :ARG0-of (작 / 작업))
+(적 / 적 :mod (수 / 수공업))
+(주 / 주의 :mod (자 / 자본))
+
+
+# ::id snt0.E2016.835.14_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 18세기 영국에서 기계의 등장으로 인하여 생긴 사회경제 구조상의 변혁.
+# ::note
+-- FRAMES ----------------------------------------
+등장 : VERBAL_NOUN
+	- appear		(등 / 등장-01 :ARG1 entity_appearing :ARG2 location :ARG3 attribute_of_Arg1)
+인하 : VERB
+	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
+	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
+생기 : VERB
+	- happen		(생 / 생기-01 :ARG1 thing_happening :ARG2 location)
+구조 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (구 / 구조상-00) ?
+	- rescue		(구 / 구조-01 :ARG0 agent :ARG1 entity_rescued)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"18세기" [DT_OTHERS]	->  :time|duration (1 / 18세기)	OR	:time (d / date-entity)	OR	:duration 
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+-- VERBALIZED ------------------------------------
+(경 / 경제 :mod (사 / 사회))
+(구 / 구조 :mod (경 / 경제))
+(상 / 상 :ARG0-of (구 / 구조))
+
+
+# ::id snt1.E2016.835.14_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 기계가 등장하면서 종래의 수공업적 소규모 생산으로부터 대량생산의 공장제 기계공업으로 전환된 산업상의 일대 변혁을 뜻한다.
+# ::note
+-- FRAMES ----------------------------------------
+등장 : VERBAL_NOUN
+	- appear		(등 / 등장-01 :ARG1 entity_appearing :ARG2 location :ARG3 attribute_of_Arg1)
+수공업적 : DERIVED_NON-ENTRY -> (수 / 수공업적-00) ?
+소규모 : DERIVED_NON-ENTRY -> (소 / 소규모-00) ?
+생산 : VERBAL_NOUN
+	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
+생산 : VERBAL_NOUN
+	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
+공장제 : DERIVED_NON-ENTRY -> (공 / 공장제-00) ?
+전환 : VERBAL_NOUN
+	- shift		(전 / 전환-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_state :ARG3 end_state)
+산업상 : DERIVED_NON-ENTRY -> (산 / 산업상-00) ?
+뜻하 : DERIVED_VERB_DETECTED
+	- mean		(뜻 / 뜻하-01 :ARG1 symbol :ARG2 thing_symbolized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(공 / 공업 :mod (기 / 기계))
+(상 / 상 :mod (산 / 산업))
+(생 / 생산 :mod (규 / 규모))
+(생 / 생산 :mod (대 / 대량))
+(적 / 적 :mod (수 / 수공업))
+(제 / 제 :mod (공 / 공장))
+
+
+# ::id snt2.E2016.835.14_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 방직기계의 등장으로 영국이 제일 먼저, 그리고 가장 철저히 경험하였고, 차츰 세계 각국으로 퍼져 계속하여 일어났다.
+# ::note
+-- FRAMES ----------------------------------------
+등장 : VERBAL_NOUN
+	- appear		(등 / 등장-01 :ARG1 entity_appearing :ARG2 location :ARG3 attribute_of_Arg1)
+경험 : VERBAL_NOUN
+	- experience		(경 / 경험-01 :ARG1 experiencer :ARG2 thing_experienced)
+퍼지 : VERB
+	- spread		(퍼 / 퍼지-01 :ARG1 thing_spreading :ARG2 thing_spread_through)
+	- resonate-CV		(퍼 / 퍼지-02 :ARG1 sound :ARG2 direction)
+계속 : VERBAL_NOUN
+	- continue		(계 / 계속-01 :ARG0 agent :ARG1 thing_continuing)
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+-- VERBALIZED ------------------------------------
+(각 / 각국 :mod (세 / 세계))
+(기 / 기계 :mod (방 / 방직))
+
+
+# ::id snt0.E2016.835.14_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이것은 소규모 수공업 생산에서 대량생산이 가능한 공장제 공업으로 전환된 산업의 변화를 말한다.
+# ::note
+-- FRAMES ----------------------------------------
+소규모 : DERIVED_NON-ENTRY -> (소 / 소규모-00) ?
+수공업 : DERIVED_NON-ENTRY -> (수 / 수공업-00) ?
+생산 : VERBAL_NOUN
+	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
+생산 : VERBAL_NOUN
+	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
+가능 : VERBAL_NOUN
+	- possible		(가 / 가능-01 :ARG1 event_being_possible)
+공장제 : DERIVED_NON-ENTRY -> (공 / 공장제-00) ?
+전환 : VERBAL_NOUN
+	- shift		(전 / 전환-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_state :ARG3 end_state)
+변화 : VERBAL_NOUN
+	- change		(변 / 변화-01 :ARG0 causer :ARG1 thing_changing :ARG2 start_state :ARG3 end_state)
+말하 : DERIVED_VERB_DETECTED
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(생 / 생산 :mod (대 / 대량))
+(수 / 수공 :mod (규 / 규모))
+(업 / 업 :mod (수 / 수공))
+(제 / 제 :mod (공 / 공장))
+
+
+# ::id snt1.E2016.835.14_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 방직기계의 등장으로 영국에서 제일 먼저 일어났는데 이 혁명은?
+# ::note
+-- FRAMES ----------------------------------------
+등장 : VERBAL_NOUN
+	- appear		(등 / 등장-01 :ARG1 entity_appearing :ARG2 location :ARG3 attribute_of_Arg1)
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+-- VERBALIZED ------------------------------------
+(기 / 기계 :mod (방 / 방직))
+
+
+# ::id snt0.E2016.835.15_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 프랑스의 군인·제1통령·황제.
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"군인" [CV_OCCUPATION]	->  :mod (군 / 군인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (군 / 군인))
+"제1통령" [QT_ORDER]	->  :ord (제 / 제1통령)	OR	:ord (o / ordinal-entity :value 제1통령)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt1.E2016.835.15_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 프랑스혁명의 사회적 격동기 후 제1제정을 건설했다.
+# ::note
+-- FRAMES ----------------------------------------
+사회적 : DERIVED_NON-ENTRY -> (사 / 사회적-00) ?
+격동기 : DERIVED_NON-ENTRY -> (격 / 격동기-00) ?
+제정 : VERBAL_NOUN
+	- establish		(제 / 제정-01 :ARG0 agent :ARG1 thing_established)
+건설 : VERBAL_NOUN
+	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"제1제정" [QT_ORDER]	->  :ord (제 / 제1제정)	OR	:ord (o / ordinal-entity :value 제1제정)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"프랑스혁명" [EV_WAR_REVOLUTION]	->  (프 / 프랑스혁명)	OR	(w / war|event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스혁명"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (격 / 격동))
+(적 / 적 :mod (사 / 사회))
+
+
+# ::id snt2.E2016.835.15_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 제1통령으로 국정을 정비하고 법전을 편찬하는 등 개혁정치를 실시했으며 유럽의 여러 나라를 침략하며 세력을 팽창했다.
+# ::note
+-- FRAMES ----------------------------------------
+정비 : VERBAL_NOUN
+	- maintain		(정 / 정비-01 :ARG0 agent :ARG1 thing_maintained)
+편찬하 : DERIVED_NON-ENTRY
+개혁 : VERBAL_NOUN
+	- reform		(개 / 개혁-01 :ARG0 agent :ARG1 thing_changed)
+실시 : VERBAL_NOUN
+	- perform		(실 / 실시-01 :ARG0 agent :ARG1 event_performed)
+침략 : VERBAL_NOUN
+	- invade		(침 / 침략-01 :ARG0 agent :ARG1 entity_invaded)
+팽창하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+"제1통령" [QT_ORDER]	->  :ord (제 / 제1통령)	OR	:ord (o / ordinal-entity :value 제1통령)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+-- VERBALIZED ------------------------------------
+(정 / 정치 :mod (개 / 개혁))
+
+
+# ::id snt0.E2016.835.15_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 프랑스의 군인이자 제1통령이며 황제를 지낸 인물
+# ::note
+-- FRAMES ----------------------------------------
+list index out of range
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"군인" [CV_OCCUPATION]	->  :mod (군 / 군인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (군 / 군인))
+"제1통령" [QT_ORDER]	->  :ord (제 / 제1통령)	OR	:ord (o / ordinal-entity :value 제1통령)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.15_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 프랑스혁명의 사회적 격동기에 국정을 정비하고 법전을 편찬하는 등 개혁정치를 실시했으며 유럽의 여러 나라를 침략하며 세력을 팽창했다.
+# ::note
+-- FRAMES ----------------------------------------
+사회적 : DERIVED_NON-ENTRY -> (사 / 사회적-00) ?
+격동기 : DERIVED_NON-ENTRY -> (격 / 격동기-00) ?
+정비 : VERBAL_NOUN
+	- maintain		(정 / 정비-01 :ARG0 agent :ARG1 thing_maintained)
+편찬하 : DERIVED_NON-ENTRY
+개혁 : VERBAL_NOUN
+	- reform		(개 / 개혁-01 :ARG0 agent :ARG1 thing_changed)
+실시 : VERBAL_NOUN
+	- perform		(실 / 실시-01 :ARG0 agent :ARG1 event_performed)
+침략 : VERBAL_NOUN
+	- invade		(침 / 침략-01 :ARG0 agent :ARG1 entity_invaded)
+팽창하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+"프랑스혁명" [EV_WAR_REVOLUTION]	->  (프 / 프랑스혁명)	OR	(w / war|event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스혁명"))
+-- VERBALIZED ------------------------------------
+(기 / 기 :mod (격 / 격동))
+(적 / 적 :mod (사 / 사회))
+(정 / 정치 :mod (개 / 개혁))
+
+
+# ::id snt1.E2016.835.15_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 프랑스의 군인으로 황제까지 지낸 이 사람은?
+# ::note
+-- FRAMES ----------------------------------------
+지내 : VERB
+	- get_along		(지 / 지내-01 :ARG0 agent :ARG1 got_along_with :ARG2 manner)
+	- serve		(지 / 지내-02 :ARG0 agent :ARG1 job,_position)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"군인" [CV_OCCUPATION]	->  :mod (군 / 군인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (군 / 군인))
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.16_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 《라 만차의 돈 키호테》(Don Quijote de La Mancha, [doŋkiˈxoteð̞elaˈmantʃa])는 스페인의 작가 미겔 데 세르반테스가 지은 소설이며 제목은 등장하는 주인공의 이름이다.
+# ::note
+-- FRAMES ----------------------------------------
+짓 : VERB
+	- construct		(짓 / 짓-01 :ARG0 agent :ARG1 construction)
+등장 : VERBAL_NOUN
+	- appear		(등 / 등장-01 :ARG1 entity_appearing :ARG2 location :ARG3 attribute_of_Arg1)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"Don Quijote de La Mancha" [AFW_DOCUMENT]	->  (D / DonQuijotedeLaMancha)	OR	(p / publication? :wiki - :name (이 / 이름 :op1 "Don" :op2 "Quijote" :op3 "de" :op4 "La" :op5 "Mancha"))
+"라 만차의 돈 키호테" [AFW_DOCUMENT]	->  (라 / 라만차의돈키호테)	OR	(p / publication? :wiki - :name (이 / 이름 :op1 "라" :op2 "만차의" :op3 "돈" :op4 "키호테"))
+"미겔 데 세르반테스" [PS_NAME]	->  (미 / 미겔데세르반테스)	OR	(p / person :wiki "미겔_데_세르반테스" :name (이 / 이름 :op1 "미겔" :op2 "데" :op3 "세르반테스"))
+"소설" [FD_ART]	->  (소 / 소설)	OR	(s / study-field|group* :wiki "소설" :name (이 / 이름 :op1 "소설"))
+"스페인" [LCP_COUNTRY]	->  (스 / 스페인)	OR	(c / country :wiki "스페인" :name (이 / 이름 :op1 "스페인"))
+"작가" [CV_OCCUPATION]	->  :mod (작 / 작가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (작 / 작가))
+"주인공" [CV_POSITION]	->  :mod (주 / 주인공)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (주 / 주인공))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.16_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <문학> 에스파냐의 작가 세르반테스 사아베드라가 지은 소설.
+# ::note
+-- FRAMES ----------------------------------------
+짓 : VERB
+	- construct		(짓 / 짓-01 :ARG0 agent :ARG1 construction)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"문학" [FD_ART]	->  (문 / 문학)	OR	(s / study-field|group* :wiki "문학" :name (이 / 이름 :op1 "문학"))
+"세르반테스 사아베드라" [PS_NAME]	->  (세 / 세르반테스사아베드라)	OR	(p / person :wiki "미겔_데_세르반테스" :name (이 / 이름 :op1 "세르반테스" :op2 "사아베드라"))
+"소설" [FD_ART]	->  (소 / 소설)	OR	(s / study-field|group* :wiki "소설" :name (이 / 이름 :op1 "소설"))
+"에스파냐" [LCP_COUNTRY]	->  (에 / 에스파냐)	OR	(c / country :wiki "스페인" :name (이 / 이름 :op1 "에스파냐"))
+"작가" [CV_OCCUPATION]	->  :mod (작 / 작가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (작 / 작가))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.16_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 근대소설의 선구적 작품으로 영화와 뮤지컬로도 만들어졌다.
+# ::note
+-- FRAMES ----------------------------------------
+선구적 : DERIVED_NON-ENTRY -> (선 / 선구적-00) ?
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"근대소설" [FD_ART]	->  (근 / 근대소설)	OR	(s / study-field|group* :wiki - :name (이 / 이름 :op1 "근대소설"))
+"뮤지컬" [FD_ART]	->  (뮤 / 뮤지컬)	OR	(s / study-field|group* :wiki "뮤지컬" :name (이 / 이름 :op1 "뮤지컬"))
+"영화" [FD_ART]	->  (영 / 영화)	OR	(s / study-field|group* :wiki "영화" :name (이 / 이름 :op1 "영화"))
+-- VERBALIZED ------------------------------------
+(소 / 소설 :mod (근 / 근대))
+(적 / 적 :mod (선 / 선구))
+
+
+# ::id snt1.E2016.835.16_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 에스파냐의 작가 세르반테스가 쓴 소설로 몰락하는 기사 계급을 풍자한 이 소설의 제목은?
+# ::note
+-- FRAMES ----------------------------------------
+쓰 : VERB
+	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
+	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
+몰락하 : DERIVED_NON-ENTRY
+풍자하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"기사" [CV_POSITION]	->  :mod (기 / 기사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (기 / 기사))
+"세르반테스" [PS_NAME]	->  (세 / 세르반테스)	OR	(p / person :wiki "미겔_데_세르반테스" :name (이 / 이름 :op1 "세르반테스"))
+"소설" [FD_ART]	->  (소 / 소설)	OR	(s / study-field|group* :wiki "소설" :name (이 / 이름 :op1 "소설"))
+"소설" [FD_ART]	->  (소 / 소설)	OR	(s / study-field|group* :wiki "소설" :name (이 / 이름 :op1 "소설"))
+"에스파냐" [LCP_COUNTRY]	->  (에 / 에스파냐)	OR	(c / country :wiki "스페인" :name (이 / 이름 :op1 "에스파냐"))
+"작가" [CV_OCCUPATION]	->  :mod (작 / 작가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (작 / 작가))
+-- VERBALIZED ------------------------------------
+(계 / 계급 :mod (기 / 기사))
+
+
+# ::id snt0.E2016.835.17_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이탈리아 제노바 출신의 탐험가이자 아메리카 대륙의 발견자.
+# ::note
+-- FRAMES ----------------------------------------
+탐험가 : DERIVED_NON-ENTRY -> (탐 / 탐험가-00) ?
+발견 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (발 / 발견자-00) ?
+	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"아메리카" [LCG_CONTINENT]	->  (아 / 아메리카)	OR	(c / continent :wiki "아메리카" :name (이 / 이름 :op1 "아메리카"))
+"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
+"제노바" [LCP_CITY]	->  (제 / 제노바)	OR	(c / city :wiki "제노바" :name (이 / 이름 :op1 "제노바"))
+"탐험가" [CV_OCCUPATION]	->  :mod (탐 / 탐험가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (탐 / 탐험가))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (탐 / 탐험))
+(자 / 자 :ARG0-of (발 / 발견))
+
+
+# ::id snt1.E2016.835.17_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 서인도 항로를 개척하여 아메리카 대륙이 유럽인들의 활동무대가 되게 함.
+# ::note
+-- FRAMES ----------------------------------------
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+개척 : VERBAL_NOUN
+	- exploit		(개 / 개척-01 :ARG0 agent :ARG1 field)
+활동 : VERBAL_NOUN
+	- act		(활 / 활동-01 :ARG0 agent :ARG1 role)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"서인도" [LC_OTHERS]	->  (서 / 서인도)	OR	(l / location? :wiki "서인도" :name (이 / 이름 :op1 "서인도"))
+"아메리카" [LCG_CONTINENT]	->  (아 / 아메리카)	OR	(c / continent :wiki "아메리카" :name (이 / 이름 :op1 "아메리카"))
+"유럽인" [CV_TRIBE]	->  (유 / 유럽인)	OR	(e / ethnic-group|nationality :wiki "유럽인" :name (이 / 이름 :op1 "유럽인"))
+-- VERBALIZED ------------------------------------
+(무 / 무대 :mod (활 / 활동))
+
+
+# ::id snt0.E2016.835.17_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이탈리아의 탐험가.
+# ::note
+-- FRAMES ----------------------------------------
+탐험가 : DERIVED_NON-ENTRY -> (탐 / 탐험가-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
+"탐험가" [CV_OCCUPATION]	->  :mod (탐 / 탐험가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (탐 / 탐험가))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (탐 / 탐험))
+
+
+# ::id snt1.E2016.835.17_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 에스파냐 여왕 이사벨의 후원을 받아 인도를 찾아 항해를 떠나 쿠바, 아이티, 트리니다드 등을 발견했다.
+# ::note
+-- FRAMES ----------------------------------------
+후원 : VERBAL_NOUN
+	- support		(후 / 후원-01 :ARG0 agent :ARG1 person_or_project_supported)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+찾 : VERB
+	- find		(찾 / 찾-01 :ARG0 finder :ARG1 thing_found)
+	- draw		(찾 / 찾-02 :ARG0 drawer :ARG1 thing_drawn :ARG2 source)
+떠나 : VERB
+	- depart		(떠 / 떠나-01 :ARG0 agent :ARG2 start_point :ARG3 end_point)
+발견 : VERBAL_NOUN
+	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"아이티" [LCP_COUNTRY]	->  (아 / 아이티)	OR	(c / country :wiki "아이티" :name (이 / 이름 :op1 "아이티"))
+"에스파냐" [LCP_COUNTRY]	->  (에 / 에스파냐)	OR	(c / country :wiki "스페인" :name (이 / 이름 :op1 "에스파냐"))
+"여왕" [CV_POSITION]	->  :mod (여 / 여왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (여 / 여왕))
+"이사벨" [PS_NAME]	->  (이 / 이사벨)	OR	(p / person :wiki "이사벨?" :name (이 / 이름 :op1 "이사벨"))
+"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+"쿠바" [LCP_COUNTRY]	->  (쿠 / 쿠바)	OR	(c / country :wiki "쿠바" :name (이 / 이름 :op1 "쿠바"))
+"트리니다드" [LCP_CITY]	->  (트 / 트리니다드)	OR	(c / city :wiki "트리니다드?" :name (이 / 이름 :op1 "트리니다드"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt2.E2016.835.17_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그의 서인도 항로 발견으로 아메리카대륙은 유럽인들의 활동 무대가 되었고, 에스파냐가 주축이 된 신대륙 식민지 경영도 시작되었다.
+# ::note
+-- FRAMES ----------------------------------------
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+발견 : VERBAL_NOUN
+	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
+활동 : VERBAL_NOUN
+	- act		(활 / 활동-01 :ARG0 agent :ARG1 role)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+신대륙 : DERIVED_NON-ENTRY -> (신 / 신대륙-00) ?
+식민지 : DERIVED_NON-ENTRY -> (식 / 식민지-00) ?
+경영 : VERBAL_NOUN
+	- manage		(경 / 경영-01 :ARG0 agent :ARG1 thing_managed)
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"서인도" [LC_OTHERS]	->  (서 / 서인도)	OR	(l / location? :wiki "서인도" :name (이 / 이름 :op1 "서인도"))
+"신대륙" [LCG_CONTINENT]	->  (신 / 신대륙)	OR	(c / continent :wiki "신대륙" :name (이 / 이름 :op1 "신대륙"))
+"아메리카대륙" [LCG_CONTINENT]	->  (아 / 아메리카대륙)	OR	(c / continent :wiki "아메리카" :name (이 / 이름 :op1 "아메리카대륙"))
+"에스파냐" [LCP_COUNTRY]	->  (에 / 에스파냐)	OR	(c / country :wiki "스페인" :name (이 / 이름 :op1 "에스파냐"))
+"유럽인" [CV_TRIBE]	->  (유 / 유럽인)	OR	(e / ethnic-group|nationality :wiki "유럽인" :name (이 / 이름 :op1 "유럽인"))
+-- VERBALIZED ------------------------------------
+(무 / 무대 :mod (활 / 활동))
+(발 / 발견 :mod (항 / 항로))
+(식 / 식민 :mod (대 / 대륙))
+(지 / 지 :mod (식 / 식민))
+
+
+# ::id snt0.E2016.835.17_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이탈리아 출신의 탐험가로 에스파냐의 이사벨 여왕의 후원으로 항해를 시작했다.
+# ::note
+-- FRAMES ----------------------------------------
+탐험가 : DERIVED_NON-ENTRY -> (탐 / 탐험가-00) ?
+후원 : VERBAL_NOUN
+	- support		(후 / 후원-01 :ARG0 agent :ARG1 person_or_project_supported)
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"에스파냐" [LCP_COUNTRY]	->  (에 / 에스파냐)	OR	(c / country :wiki "스페인" :name (이 / 이름 :op1 "에스파냐"))
+"여왕" [CV_POSITION]	->  :mod (여 / 여왕)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (여 / 여왕))
+"이사벨" [PS_NAME]	->  (이 / 이사벨)	OR	(p / person :wiki "이사벨?" :name (이 / 이름 :op1 "이사벨"))
+"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
+"탐험가" [CV_OCCUPATION]	->  :mod (탐 / 탐험가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (탐 / 탐험가))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (탐 / 탐험))
+
+
+# ::id snt1.E2016.835.17_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 서인도 항로를 발견하는 등 신대륙 발견에 중요한 역할을 한 이 탐험가는?
+# ::note
+-- FRAMES ----------------------------------------
+서 : VERBAL_NOUN
+	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
+	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
+	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
+발견 : VERBAL_NOUN
+	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
+신대륙 : DERIVED_NON-ENTRY -> (신 / 신대륙-00) ?
+발견 : VERBAL_NOUN
+	- detect		(발 / 발견-01 :ARG0 detector :ARG1 entity_detected)
+중요 : VERBAL_NOUN
+	- important		(중 / 중요-01 :ARG1 thing_being_important :ARG2 important_to)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+탐험가 : DERIVED_NON-ENTRY -> (탐 / 탐험가-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"서인도" [LC_OTHERS]	->  (서 / 서인도)	OR	(l / location? :wiki "서인도" :name (이 / 이름 :op1 "서인도"))
+"신대륙" [LCG_CONTINENT]	->  (신 / 신대륙)	OR	(c / continent :wiki "신대륙" :name (이 / 이름 :op1 "신대륙"))
+"탐험가" [CV_OCCUPATION]	->  :mod (탐 / 탐험가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (탐 / 탐험가))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (탐 / 탐험))
+(발 / 발견 :mod (대 / 대륙))
+
+
+# ::id snt0.E2016.835.18_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <역사> 고대 그리스의 도시 국가에서 시민들의 일상생활이 이루어지던 공공의 광장.
+# ::note
+-- FRAMES ----------------------------------------
+고대 : VERBAL_NOUN
+	- long_for		(고 / 고대-01 :ARG0 wanter :ARG1 thing_wanted)
+시민들 : DERIVED_NON-ENTRY -> (시 / 시민들-00) ?
+생활 : VERBAL_NOUN
+	- live		(생 / 생활-01 :ARG0 entity_being_alive :ARG2 location)
+이루어지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"고대 그리스" [DT_DYNASTY]	->  :time|duration (고 / 고대그리스)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"시민" [CV_POSITION]	->  :mod (시 / 시민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (시 / 시민))
+-- VERBALIZED ------------------------------------
+(국 / 국가 :mod (도 / 도시))
+(들 / 들 :mod (시 / 시민))
+(생 / 생활 :mod (일 / 일상))
+
+
+# ::id snt0.E2016.835.18_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 고대 그리스 도시국가의 광장으로 민회(民會)나 재판, 상업, 사교 등의 다양한 활동이 이루어졌다.
+# ::note
+-- FRAMES ----------------------------------------
+고대 : VERBAL_NOUN
+	- long_for		(고 / 고대-01 :ARG0 wanter :ARG1 thing_wanted)
+재판 : VERBAL_NOUN
+	- judge		(재 / 재판-01 :ARG0 thing_judging :ARG1 thing_judged)
+다양 : VERBAL_NOUN
+	- diverse		(다 / 다양-01 :ARG1 entity_being_diverse)
+활동 : VERBAL_NOUN
+	- act		(활 / 활동-01 :ARG0 agent :ARG1 role)
+이루어지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"고대 그리스" [DT_DYNASTY]	->  :time|duration (고 / 고대그리스)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(국 / 국가 :mod (도 / 도시))
+
+
+# ::id snt1.E2016.835.18_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 오늘날에는 공적인 의사소통이나 직접민주주의를 상징하는 말로 널리 사용된다.
+# ::note
+-- FRAMES ----------------------------------------
+날 : VERBAL_NOUN
+	- fly		(날 / 날-01 :ARG0 agent :ARG1 path :ARG2 start_point :ARG3 end_point)
+소통 : VERBAL_NOUN
+	- connect		(소 / 소통-01 :ARG0 causal_agent :ARG1 thing_connected :ARG2 connected_with)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+상징 : VERBAL_NOUN
+	- symbolize		(상 / 상징-01 :ARG1 symbol :ARG2 thing_symbolized)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"오늘날" [DT_OTHERS]	->  :time|duration (오 / 오늘날)	OR	:time (d / date-entity)	OR	:duration 
+"직접민주주의" [TR_SOCIAL_SCIENCE]	->  (직 / 직접민주주의)	OR	(t / theory* :wiki "직접_민주제" :name (이 / 이름 :op1 "직접민주주의"))
+-- VERBALIZED ------------------------------------
+(날 / 날 :mod (오 / 오늘))
+(민 / 민주 :mod (직 / 직접))
+(소 / 소통 :mod (의 / 의사))
+(주 / 주의 :mod (민 / 민주))
+
+
+# ::id snt0.E2016.835.18_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 오늘날에는 공적인 의사소통이나 직접 민주주의를 상징하는 말로 널리 사용된다.
+# ::note
+-- FRAMES ----------------------------------------
+날 : VERBAL_NOUN
+	- fly		(날 / 날-01 :ARG0 agent :ARG1 path :ARG2 start_point :ARG3 end_point)
+소통 : VERBAL_NOUN
+	- connect		(소 / 소통-01 :ARG0 causal_agent :ARG1 thing_connected :ARG2 connected_with)
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+상징 : VERBAL_NOUN
+	- symbolize		(상 / 상징-01 :ARG1 symbol :ARG2 thing_symbolized)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"오늘날" [DT_OTHERS]	->  :time|duration (오 / 오늘날)	OR	:time (d / date-entity)	OR	:duration 
+"직접 민주주의" [TR_SOCIAL_SCIENCE]	->  (직 / 직접민주주의)	OR	(t / theory* :wiki "직접_민주제" :name (이 / 이름 :op1 "직접" :op2 "민주주의"))
+-- VERBALIZED ------------------------------------
+(날 / 날 :mod (오 / 오늘))
+(소 / 소통 :mod (의 / 의사))
+(주 / 주의 :mod (민 / 민주))
+
+
+# ::id snt1.E2016.835.18_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 고대 그리스 도시국가의 광장을 일컫는 것에서 유래한 이 말은?
+# ::note
+-- FRAMES ----------------------------------------
+고대 : VERBAL_NOUN
+	- long_for		(고 / 고대-01 :ARG0 wanter :ARG1 thing_wanted)
+일컫 : VERB
+	- refer_to		(일 / 일컫-01 :ARG0 agent :ARG1 thing_referred :ARG2 refer_as)
+유래하 : DERIVED_NON-ENTRY
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"고대 그리스" [DT_DYNASTY]	->  :time|duration (고 / 고대그리스)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(국 / 국가 :mod (도 / 도시))
+
+
+# ::id snt0.E2016.835.19_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1813년 라이프치히 전투에서 패배한 나폴레옹은 다음 해 4월에 폐위되어 엘바섬으로 추방되었다.
+# ::note
+-- FRAMES ----------------------------------------
+전투 : VERBAL_NOUN
+	- combat		(전 / 전투-01 :ARG0 one_fighter :ARG1 other_fighter)
+패배 : VERBAL_NOUN
+	- lose		(패 / 패배-01 :ARG0 loser :ARG1 winner)
+폐위되 : DERIVED_NON-ENTRY
+추방 : VERBAL_NOUN
+	- banish		(추 / 추방-01 :ARG0 thing_banishing :ARG1 thing_banished :ARG2 start_point :ARG3 end_point)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1813년" [DT_YEAR]	->  :time|duration (1 / 1813년)	OR	:time (d / date-entity :year 1813)	OR	:duration (t / temporal-quantity :quant 1813 :unit (년 / 년))  
+"나폴레옹" [PS_NAME]	->  (나 / 나폴레옹)	OR	(p / person :wiki "나폴레옹_보나파르트" :name (이 / 이름 :op1 "나폴레옹"))
+"다음 해 4월" [DT_OTHERS]	->  :time|duration (다 / 다음해4월)	OR	:time (d / date-entity :month 4)	OR	:duration (t / temporal-quantity :quant 4 :unit (월 / 월))  
+"라이프치히 전투" [EV_WAR_REVOLUTION]	->  (라 / 라이프치히전투)	OR	(w / war|event :wiki "라이프치히_전투" :name (이 / 이름 :op1 "라이프치히" :op2 "전투"))
+"엘바섬" [LCG_ISLAND]	->  (엘 / 엘바섬)	OR	(i / island :wiki "엘바섬" :name (이 / 이름 :op1 "엘바섬"))
+-- VERBALIZED ------------------------------------
+(해 / 해 :mod (다 / 다음))
+
+
+# ::id snt1.E2016.835.19_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러나 빈 회의에서 전후처리 문제로 연합군 사이에 다툼이 일어나는 것을 본 나폴레옹은 1815년 2월 26일 엘바섬을 탈출해 남프랑스의 주앙에 상륙한 뒤 병사를 모으면서 파리로 향했다.
+# ::note
+-- FRAMES ----------------------------------------
+처리 : VERBAL_NOUN
+	- treat		(처 / 처리-01 :ARG0 agent :ARG1 thing_treated)
+문제 : VERBAL_NOUN
+	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
+연합 : VERBAL_NOUN
+	- combine		(연 / 연합-01 :ARG0 agent :ARG1 thing_combined :ARG2 end_product)
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+보 : VERB
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+탈출 : VERBAL_NOUN
+	- escape		(탈 / 탈출-01 :ARG0 agent :ARG1 place_or_thing_escaped)
+남 : VERBAL_NOUN
+	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
+상륙 : VERBAL_NOUN
+	- land		(상 / 상륙-01 :ARGA causer :ARG0 agent :ARG1 location)
+모으 : VERB
+	- gather		(모 / 모으-01 :ARG0 causal_agent :ARG1 entity_gathered :ARG2 gathered_into)
+향하 : VERB
+	- towards		(향 / 향하-01 :ARG1 theme :ARG2 towards_what)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1815년 2월 26일" [DT_OTHERS]	->  :time|duration (1 / 1815년2월26일)	OR	:time (d / date-entity :year 1815 :month 2 :day 26)	OR	:duration (t / temporal-quantity :quant 1815 :unit (년 / 년))  (t / temporal-quantity :quant 2 :unit (월 / 월))  (t / temporal-quantity :quant 26 :unit (일 / 일))  
+"나폴레옹" [PS_NAME]	->  (나 / 나폴레옹)	OR	(p / person :wiki "나폴레옹_보나파르트" :name (이 / 이름 :op1 "나폴레옹"))
+"남프랑스" [LCP_PROVINCE]	->  (남 / 남프랑스)	OR	(p / province :wiki "남프랑스" :name (이 / 이름 :op1 "남프랑스"))
+"병사" [CV_POSITION]	->  :mod (병 / 병사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (병 / 병사))
+"빈 회의" [EV_OTHERS]	->  (빈 / 빈회의)	OR	(e / event? :wiki "빈_회의" :name (이 / 이름 :op1 "빈" :op2 "회의"))
+"엘바섬" [LCG_ISLAND]	->  (엘 / 엘바섬)	OR	(i / island :wiki "엘바섬" :name (이 / 이름 :op1 "엘바섬"))
+"연합군" [OGG_MILITARY]	->  (연 / 연합군)	OR	(m / military :wiki "연합국" :name (이 / 이름 :op1 "연합군"))
+"주앙" [LCG_BAY]	->  (주 / 주앙)	OR	(b / bay :wiki "주앙?" :name (이 / 이름 :op1 "주앙"))
+"파리" [LCP_CAPITALCITY]	->  (파 / 파리)	OR	(c / city :wiki "파리?" :name (이 / 이름 :op1 "파리"))
+-- VERBALIZED ------------------------------------
+(군 / 군 :mod (연 / 연합))
+(문 / 문제 :ARG1 (처 / 처리))
+(병 / 병사 :mod (뒤 / 뒤))
+(사 / 사이 :mod (군 / 군))
+(처 / 처리 :mod (전 / 전후))
+
+
+# ::id snt0.E2016.835.19_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <지명> 이탈리아 반도와 코르시카 섬 사이에 있는 섬.
+# ::note
+-- FRAMES ----------------------------------------
+지명 : VERBAL_NOUN
+	- appoint		(지 / 지명-01 :ARG0 thing_appointing :ARG1 thing_appointed :ARG2 appoint_as)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"이탈리아 반도" [LCG_BAY]	->  (이 / 이탈리아반도)	OR	(b / bay :wiki "이탈리아반도" :name (이 / 이름 :op1 "이탈리아" :op2 "반도"))
+"코르시카 섬" [LCG_ISLAND]	->  (코 / 코르시카섬)	OR	(i / island :wiki "코르시카" :name (이 / 이름 :op1 "코르시카" :op2 "섬"))
+-- VERBALIZED ------------------------------------
+(사 / 사이 :mod (섬 / 섬))
+
+
+# ::id snt1.E2016.835.19_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 나폴레옹 일세의 유배지로 유명하다.
+# ::note
+-- FRAMES ----------------------------------------
+유배지 : DERIVED_NON-ENTRY -> (유 / 유배지-00) ?
+유명 : VERBAL_NOUN
+	- famous_for		(유 / 유명-01 :ARG1 thing_famous :ARG2 famous_for)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"나폴레옹 일세" [PS_NAME]	->  (나 / 나폴레옹일세)	OR	(p / person :wiki - :name (이 / 이름 :op1 "나폴레옹" :op2 "일세"))
+-- VERBALIZED ------------------------------------
+(지 / 지 :mod (유 / 유배))
+
+
+# ::id snt0.E2016.835.19_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이탈리아 서해안 티레니아 해 토스카나 열도에 딸린 섬이다.
+# ::note
+-- FRAMES ----------------------------------------
+서해안 : DERIVED_NON-ENTRY -> (서 / 서해안-00) ?
+딸리 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"서해안" [LC_OTHERS]	->  (서 / 서해안)	OR	(l / location? :wiki "황해" :name (이 / 이름 :op1 "서해안"))
+"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
+"토스카나" [LCP_PROVINCE]	->  (토 / 토스카나)	OR	(p / province :wiki "토스카나주" :name (이 / 이름 :op1 "토스카나"))
+"티레니아 해" [LCG_OCEAN]	->  (티 / 티레니아해)	OR	(o / ocean :wiki "티레니아해" :name (이 / 이름 :op1 "티레니아" :op2 "해"))
+-- VERBALIZED ------------------------------------
+(안 / 안 :mod (서 / 서해))
+
+
+# ::id snt1.E2016.835.19_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 러시아 원정에 실패하고 라이프치히에서 대패를 당한 나폴레옹이 유배되었다가 탈출해 백일천하를 실현하기도 했는데 이 섬의 이름은?
+# ::note
+-- FRAMES ----------------------------------------
+실패 : VERBAL_NOUN
+	- fail		(실 / 실패-01 :ARG1 thing_failing :ARG2 task)
+대패 : VERBAL_NOUN
+	- be_defeated_utterly		(대 / 대패-01 :ARG1 entity_defeated :ARG2 entity_victorious)
+당하 : VERB
+	- suffer		(당 / 당하-01 :ARG1 entity_suffering :ARG2 thing_suffered :ARG3 source)
+	- reasonable		(당 / 당하-02 :ARG1 thing_being_reasonable)
+유배되 : DERIVED_NON-ENTRY
+탈출 : VERBAL_NOUN
+	- escape		(탈 / 탈출-01 :ARG0 agent :ARG1 place_or_thing_escaped)
+실현 : VERBAL_NOUN
+	- materialize		(실 / 실현-01 :ARG0 agent :ARG1 thing_being_materialized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"나폴레옹" [PS_NAME]	->  (나 / 나폴레옹)	OR	(p / person :wiki "나폴레옹_보나파르트" :name (이 / 이름 :op1 "나폴레옹"))
+"라이프치히" [LCP_CITY]	->  (라 / 라이프치히)	OR	(c / city :wiki "라이프치히" :name (이 / 이름 :op1 "라이프치히"))
+"러시아" [LCP_COUNTRY]	->  (러 / 러시아)	OR	(c / country :wiki "러시아" :name (이 / 이름 :op1 "러시아"))
+-- VERBALIZED ------------------------------------
+(천 / 천하 :mod (백 / 백일))
+
+
+# ::id snt0.E2016.835.20_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <고유> 르네상스 시기의 이탈리아의 명가(名家).
+# ::note
+-- FRAMES ----------------------------------------
+고유 : VERBAL_NOUN
+	- peculiar		(고 / 고유-01 :ARG1 thing_being_peculiar)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"르네상스 시기" [DT_DYNASTY]	->  :time|duration (르 / 르네상스시기)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
+-- VERBALIZED ------------------------------------
+(시 / 시기 :mod (르 / 르네상스))
+
+
+# ::id snt1.E2016.835.20_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 피렌체의 지배자로 13세기 말부터 동방무역과 금융업으로 번성하였으며, 문예를 보호ㆍ장려하여 르네상스에 크게 공헌하였다.
+# ::note
+-- FRAMES ----------------------------------------
+지배 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (지 / 지배자-00) ?
+	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
+업 : VERBAL_NOUN
+	- put		(업 / 업-01 :ARG0 agent :ARG1 thing_put :ARG2 back)
+번성하 : DERIVED_NON-ENTRY
+보호 : VERBAL_NOUN
+	- protect		(보 / 보호-01 :ARG0 protector :ARG1 protected :ARG2 danger)
+장려 : VERBAL_NOUN
+	- encourage		(장 / 장려-01 :ARG0 agent :ARG1 thing_encouraged)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+공헌 : VERBAL_NOUN
+	- contribute		(공 / 공헌-01 :ARG0 agent :ARG1 contributed_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"13세기 말" [DT_OTHERS]	->  :time|duration (1 / 13세기말)	OR	:time (d / date-entity)	OR	:duration 
+"르네상스" [EV_ACTIVITY]	->  (르 / 르네상스)	OR	(e / event? :wiki "르네상스" :name (이 / 이름 :op1 "르네상스"))
+"지배자" [CV_POSITION]	->  :mod (지 / 지배자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (지 / 지배자))
+"피렌체" [LCP_CITY]	->  (피 / 피렌체)	OR	(c / city :wiki "피렌체" :name (이 / 이름 :op1 "피렌체"))
+-- VERBALIZED ------------------------------------
+(무 / 무역 :mod (동 / 동방))
+(업 / 업 :mod (금 / 금융))
+(자 / 자 :ARG0-of (지 / 지배))
+
+
+# ::id snt0.E2016.835.20_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 15~16세기 피렌체공화국에서 가장 유력하고 영향력이 높았던 시민 가문이며 공화국의 실제적인 통치자였다.
+# ::note
+-- FRAMES ----------------------------------------
+공화국 : DERIVED_NON-ENTRY -> (공 / 공화국-00) ?
+유력 : VERBAL_NOUN
+	- strong		(유 / 유력-01 :ARG1 thing_strong)
+영향 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (영 / 영향력-00) ?
+	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
+높 : VERB
+	- high		(높 / 높-01 :ARG0 causer :ARG1 thing_being_high :ARG2 start_point :ARG3 end_point)
+공화국 : DERIVED_NON-ENTRY -> (공 / 공화국-00) ?
+실제적 : DERIVED_NON-ENTRY -> (실 / 실제적-00) ?
+통치 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (통 / 통치자-00) ?
+	- govern		(통 / 통치-01 :ARG0 agent :ARG1 thing_governed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"15~16세기" [DT_DURATION]	->  :time|duration (1 / 15~16세기)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"시민" [CV_POSITION]	->  :mod (시 / 시민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (시 / 시민))
+"통치자" [CV_POSITION]	->  :mod (통 / 통치자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (통 / 통치자))
+"피렌체공화국" [LCP_COUNTRY]	->  (피 / 피렌체공화국)	OR	(c / country :wiki "피렌체_공화국" :name (이 / 이름 :op1 "피렌체공화국"))
+-- VERBALIZED ------------------------------------
+(가 / 가문 :mod (시 / 시민))
+(국 / 국 :mod (공 / 공화))
+(국 / 국 :mod (공 / 공화))
+(력 / 력 :ARG0-of (영 / 영향))
+(자 / 자 :ARG0-of (통 / 통치))
+(적 / 적 :mod (실 / 실제))
+
+
+# ::id snt1.E2016.835.20_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt  학문과 예술을 후원하여 르네상스시대가 피렌체에서 열리는데 결정적인 역할을 하였다.
+# ::note
+-- FRAMES ----------------------------------------
+후원 : VERBAL_NOUN
+	- support		(후 / 후원-01 :ARG0 agent :ARG1 person_or_project_supported)
+열리 : REDUCED_VERB_DETECTED
+	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
+	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
+결정 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (결 / 결정적-00) ?
+	- decide,_determine		(결 / 결정-01 :ARG0 decider :ARG1 thing_determined :ARG2 attribute)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"르네상스시대" [DT_DYNASTY]	->  :time|duration (르 / 르네상스시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"피렌체" [LCP_CITY]	->  (피 / 피렌체)	OR	(c / city :wiki "피렌체" :name (이 / 이름 :op1 "피렌체"))
+-- VERBALIZED ------------------------------------
+(시 / 시대 :mod (르 / 르네상스))
+(적 / 적 :ARG0-of (결 / 결정))
+
+
+# ::id snt0.E2016.835.20_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 학문과 예술을 후원하여 르네상스 시대가 피렌체에서 열리는데 결정적인 역할을 했다.
+# ::note
+-- FRAMES ----------------------------------------
+후원 : VERBAL_NOUN
+	- support		(후 / 후원-01 :ARG0 agent :ARG1 person_or_project_supported)
+열리 : REDUCED_VERB_DETECTED
+	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
+	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
+결정 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (결 / 결정적-00) ?
+	- decide,_determine		(결 / 결정-01 :ARG0 decider :ARG1 thing_determined :ARG2 attribute)
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"르네상스 시대" [DT_DYNASTY]	->  :time|duration (르 / 르네상스시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"피렌체" [LCP_CITY]	->  (피 / 피렌체)	OR	(c / city :wiki "피렌체" :name (이 / 이름 :op1 "피렌체"))
+-- VERBALIZED ------------------------------------
+(시 / 시대 :mod (르 / 르네상스))
+(적 / 적 :ARG0-of (결 / 결정))
+
+
+# ::id snt1.E2016.835.20_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 미켈란젤로 등 여러 예술가들을 후원한 이 가문의 이름은?
+# ::note
+-- FRAMES ----------------------------------------
+예술가 : DERIVED_NON-ENTRY -> (예 / 예술가-00) ?
+후원 : VERBAL_NOUN
+	- support		(후 / 후원-01 :ARG0 agent :ARG1 person_or_project_supported)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"미켈란젤로" [PS_NAME]	->  (미 / 미켈란젤로)	OR	(p / person :wiki "미켈란젤로_부오나로티" :name (이 / 이름 :op1 "미켈란젤로"))
+"예술가" [CV_OCCUPATION]	->  :mod (예 / 예술가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (예 / 예술가))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (예 / 예술))
+
+
+# ::id snt0.E2016.835.21_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1790년 자코뱅당에 가입하여 혁명 재판소를 설치하고 왕당파를 처형하였다.
+# ::note
+-- FRAMES ----------------------------------------
+가입 : VERBAL_NOUN
+	- enter		(가 / 가입-01 :ARG0 agent :ARG2 group_or_thing_entered)
+	- affiliate		(가 / 가입-02 :ARG0 causer_of_affiliation :ARG1 thing_affiliated :ARG2 affiliated_with)
+재판 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (재 / 재판소-00) ?
+	- judge		(재 / 재판-01 :ARG0 thing_judging :ARG1 thing_judged)
+설치 : VERBAL_NOUN
+	- build		(설 / 설치-01 :ARG0 agent :ARG1 thing_built :ARG2 location)
+파 : VERBAL_NOUN
+	- dig		(파 / 파-01 :ARG0 agent :ARG1 end_product :ARG2 thing_removed)
+처형 : VERBAL_NOUN
+	- punish		(처 / 처형-01 :ARG0 thing_punishing :ARG1 thing_punished)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1790년" [DT_YEAR]	->  :time|duration (1 / 1790년)	OR	:time (d / date-entity :year 1790)	OR	:duration (t / temporal-quantity :quant 1790 :unit (년 / 년))  
+"왕당파" [OGG_POLITICS]	->  (왕 / 왕당파)	OR	(g / government-organization :wiki "왕당파" :name (이 / 이름 :op1 "왕당파"))
+"자코뱅당" [OGG_POLITICS]	->  (자 / 자코뱅당)	OR	(g / government-organization :wiki "자코뱅" :name (이 / 이름 :op1 "자코뱅당"))
+"혁명 재판소" [OGG_LAW]	->  (혁 / 혁명재판소)	OR	(g / government-organization :wiki "혁명 재판소?" :name (이 / 이름 :op1 "혁명" :op2 "재판소"))
+-- VERBALIZED ------------------------------------
+(소 / 소 :ARG0-of (재 / 재판))
+(재 / 재판 :mod (혁 / 혁명))
+(파 / 파 :mod (왕 / 왕당))
+
+
+# ::id snt1.E2016.835.21_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 그러나 로베스 피에르와 뜻이 맞지 않는 일이 잦았고 결국 1794년에 전세가 호전되기 시작하자 3월부터 시작된 혁명 세력 내의 좌, 우파에 대한 탄압 중에 "외국인과 결탁하여 뇌물을 받고 반혁명 세력을 도와준 혐의"로 혁명 재판을 받고 단두대에서 처형당했다.
+# ::note
+-- FRAMES ----------------------------------------
+맞 : VERB
+	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
+	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
+	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
+	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
+일 : VERBAL_NOUN
+	- rise		(일 / 일-01 :ARG1 thing_rising)
+잦 : VERB
+	- frequent		(잦 / 잦-01 :ARG1 thing_frequent)
+호전 : VERBAL_NOUN
+	- improve		(호 / 호전-01 :ARG0 improver :ARG1 thing_improving)
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+탄압 : VERBAL_NOUN
+	- suppress		(탄 / 탄압-01 :ARG0 suppressor :ARG1 thing_suppressed)
+외국인 : DERIVED_NON-ENTRY -> (외 / 외국인-00) ?
+결탁하 : DERIVED_NON-ENTRY
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+반혁명 : DERIVED_NON-ENTRY -> (반 / 반혁명-00) ?
+도와주 : ** UNUSED_OR_NON-ENTRY **
+재판 : VERBAL_NOUN
+	- judge		(재 / 재판-01 :ARG0 thing_judging :ARG1 thing_judged)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+대 : VERBAL_NOUN
+	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
+	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
+처형 : VERBAL_NOUN
+	- punish		(처 / 처형-01 :ARG0 thing_punishing :ARG1 thing_punished)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1794년" [DT_YEAR]	->  :time|duration (1 / 1794년)	OR	:time (d / date-entity :year 1794)	OR	:duration (t / temporal-quantity :quant 1794 :unit (년 / 년))  
+"3월부터" [DT_OTHERS]	->  :time|duration (3 / 3월부터)	OR	:time (d / date-entity :month 3)	OR	:duration (t / temporal-quantity :quant 3 :unit (월 / 월))  
+"로베스 피에르" [PS_NAME]	->  (로 / 로베스피에르)	OR	(p / person :wiki - :name (이 / 이름 :op1 "로베스" :op2 "피에르"))
+"외국인" [CV_POSITION]	->  :mod (외 / 외국인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (외 / 외국인))
+-- VERBALIZED ------------------------------------
+(대 / 대 :mod (단 / 단두))
+(세 / 세력 :mod (혁 / 혁명))
+(세 / 세력 :mod (혁 / 혁명))
+(인 / 인 :mod (외 / 외국))
+(재 / 재판 :mod (혁 / 혁명))
+
+
+# ::id snt0.E2016.835.21_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <인명> 프랑스 혁명 시기의 정치가(1759~1794).
+# ::note
+-- FRAMES ----------------------------------------
+정치가 : DERIVED_NON-ENTRY -> (정 / 정치가-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1759~1794" [DT_DURATION]	->  :time|duration (1 / 1759~1794)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"정치가" [CV_OCCUPATION]	->  :mod (정 / 정치가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (정 / 정치가))
+"프랑스 혁명" [EV_WAR_REVOLUTION]	->  (프 / 프랑스혁명)	OR	(w / war|event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스" :op2 "혁명"))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (정 / 정치))
+(시 / 시기 :mod (혁 / 혁명))
+
+
+# ::id snt1.E2016.835.21_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 자코뱅파의 지도자로 혁명 재판소를 설치하고 왕당파를 처형하였으나, 로베스 피에르의 독재에 반대하다가 처형되었다.
+# ::note
+-- FRAMES ----------------------------------------
+지도 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (지 / 지도자-00) ?
+	- instruct		(지 / 지도-01 :ARG0 agent :ARG1 thing_instructed)
+재판 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (재 / 재판소-00) ?
+	- judge		(재 / 재판-01 :ARG0 thing_judging :ARG1 thing_judged)
+설치 : VERBAL_NOUN
+	- build		(설 / 설치-01 :ARG0 agent :ARG1 thing_built :ARG2 location)
+파 : VERBAL_NOUN
+	- dig		(파 / 파-01 :ARG0 agent :ARG1 end_product :ARG2 thing_removed)
+처형 : VERBAL_NOUN
+	- punish		(처 / 처형-01 :ARG0 thing_punishing :ARG1 thing_punished)
+반대 : VERBAL_NOUN
+	- oppose		(반 / 반대-01 :ARG0 opposer :ARG1 opposed_to)
+처형 : VERBAL_NOUN
+	- punish		(처 / 처형-01 :ARG0 thing_punishing :ARG1 thing_punished)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"로베스 피에르" [PS_NAME]	->  (로 / 로베스피에르)	OR	(p / person :wiki - :name (이 / 이름 :op1 "로베스" :op2 "피에르"))
+"왕당파" [OGG_POLITICS]	->  (왕 / 왕당파)	OR	(g / government-organization :wiki "왕당파" :name (이 / 이름 :op1 "왕당파"))
+"자코뱅파" [OGG_POLITICS]	->  (자 / 자코뱅파)	OR	(g / government-organization :wiki "자코뱅" :name (이 / 이름 :op1 "자코뱅파"))
+"지도자" [CV_POSITION]	->  :mod (지 / 지도자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (지 / 지도자))
+"혁명 재판소" [OGG_LAW]	->  (혁 / 혁명재판소)	OR	(g / government-organization :wiki "혁명 재판소?" :name (이 / 이름 :op1 "혁명" :op2 "재판소"))
+-- VERBALIZED ------------------------------------
+(소 / 소 :ARG0-of (재 / 재판))
+(자 / 자 :ARG0-of (지 / 지도))
+(재 / 재판 :mod (혁 / 혁명))
+(파 / 파 :mod (왕 / 왕당))
+
+
+# ::id snt0.E2016.835.21_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 공안위원회의 초대 위원장이기도 했으나 로베스 피에르와의 갈등으로 단두대에서 처형된 인물이다.
+# ::note
+-- FRAMES ----------------------------------------
+위원회 : DERIVED_NON-ENTRY -> (위 / 위원회-00) ?
+초대 : VERBAL_NOUN
+	- invite		(초 / 초대-01 :ARG0 agent :ARG1 thing_invited :ARG2 invite_to)
+위원장 : DERIVED_NON-ENTRY -> (위 / 위원장-00) ?
+대 : VERBAL_NOUN
+	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
+	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
+처형 : VERBAL_NOUN
+	- punish		(처 / 처형-01 :ARG0 thing_punishing :ARG1 thing_punished)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"공안위원회" [OGG_POLITICS]	->  (공 / 공안위원회)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "공안위원회"))
+"로베스 피에르" [PS_NAME]	->  (로 / 로베스피에르)	OR	(p / person :wiki - :name (이 / 이름 :op1 "로베스" :op2 "피에르"))
+"초대 위원장" [CV_POSITION]	->  :mod (초 / 초대위원장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (초 / 초대 위원장))
+-- VERBALIZED ------------------------------------
+(대 / 대 :mod (단 / 단두))
+(위 / 위원 :mod (공 / 공안))
+(위 / 위원 :mod (초 / 초대))
+(장 / 장 :mod (위 / 위원))
+(회 / 회 :mod (위 / 위원))
+
+
+# ::id snt1.E2016.835.21_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 자코뱅당 내부의 온건파 우두머리인 이 사람은?
+# ::note
+-- FRAMES ----------------------------------------
+파 : VERBAL_NOUN
+	- dig		(파 / 파-01 :ARG0 agent :ARG1 end_product :ARG2 thing_removed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"우두머리" [CV_POSITION]	->  :mod (우 / 우두머리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (우 / 우두머리))
+"자코뱅당" [OGG_POLITICS]	->  (자 / 자코뱅당)	OR	(g / government-organization :wiki "자코뱅" :name (이 / 이름 :op1 "자코뱅당"))
+-- VERBALIZED ------------------------------------
+(우 / 우두머리 :mod (파 / 파))
+(파 / 파 :mod (온 / 온건))
+
+
+# ::id snt0.E2016.835.22_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 악티움 해전(기원전 31년)은 마르쿠스 안토니우스와 옥타비아누스(후의 아우구스투스) 간에 로마의 패권을 두고 겨룬 해전이다.
+# ::note
+-- FRAMES ----------------------------------------
+기원 : VERBAL_NOUN
+	- wish		(기 / 기원-01 :ARG0 agent :ARG1 thing_wished_for)
+두 : VERB
+	- put		(두 / 두-01 :ARG0 agent :ARG1 theme :ARG2 location)
+겨루 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"기원전 31년" [DT_OTHERS]	->  :time|duration (기 / 기원전31년)	OR	:time (d / date-entity :year 31)	OR	:duration (t / temporal-quantity :quant 31 :unit (년 / 년))  
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"마르쿠스 안토니우스" [PS_NAME]	->  (마 / 마르쿠스안토니우스)	OR	(p / person :wiki "마르쿠스_안토니우스" :name (이 / 이름 :op1 "마르쿠스" :op2 "안토니우스"))
+"아우구스투스" [PS_NAME]	->  (아 / 아우구스투스)	OR	(p / person :wiki "아우구스투스" :name (이 / 이름 :op1 "아우구스투스"))
+"악티움 해전" [EV_WAR_REVOLUTION]	->  (악 / 악티움해전)	OR	(w / war|event :wiki "악티움_해전" :name (이 / 이름 :op1 "악티움" :op2 "해전"))
+"옥타비아누스" [PS_NAME]	->  (옥 / 옥타비아누스)	OR	(p / person :wiki "아우구스투스" :name (이 / 이름 :op1 "옥타비아누스"))
+-- VERBALIZED ------------------------------------
+(전 / 전 :mod (기 / 기원))
+
+
+# ::id snt1.E2016.835.22_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 로마의 경우 해전에 상당히 취약했으며, 악티움 해전의 경우에도 '해전을 육전화'한 로마 식의 전투가 벌어졌다.
+# ::note
+-- FRAMES ----------------------------------------
+취약 : VERBAL_NOUN
+	- vulnerable		(취 / 취약-01 :ARG1 vulnerable_thing :ARG2 vulnerable_to)
+육전화 : DERIVED_NON-ENTRY -> (육 / 육전화-00) ?
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+전투 : VERBAL_NOUN
+	- combat		(전 / 전투-01 :ARG0 one_fighter :ARG1 other_fighter)
+벌어지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"악티움 해전" [EV_WAR_REVOLUTION]	->  (악 / 악티움해전)	OR	(w / war|event :wiki "악티움_해전" :name (이 / 이름 :op1 "악티움" :op2 "해전"))
+-- VERBALIZED ------------------------------------
+(해 / 해전 :mod (경 / 경우))
+(화 / 화 :mod (육 / 육전))
+
+
+# ::id snt2.E2016.835.22_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 해전 자체는 별 특징이 없이 옥타비아누스 측의 승리로 끝났다.
+# ::note
+-- FRAMES ----------------------------------------
+승리 : VERBAL_NOUN
+	- win		(승 / 승리-01 :ARG0 winner :ARG1 loser)
+끝나 : VERB
+	- finish		(끝 / 끝나-01 :ARG0 agent :ARG1 thing_finishing)
+	- terminate		(끝 / 끝나-02 :ARG1 thing_closing)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"옥타비아누스" [PS_NAME]	->  (옥 / 옥타비아누스)	OR	(p / person :wiki "아우구스투스" :name (이 / 이름 :op1 "옥타비아누스"))
+-- VERBALIZED ------------------------------------
+(자 / 자체 :mod (해 / 해전))
+
+
+# ::id snt0.E2016.835.22_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt BC 31년 9월 2일 옥타비아누스(뒤에 아우구스투스 황제)가 그리스 악티움 앞바다에서 안토니우스와 클레오파트라의 연합군을 격파한 전투.
+# ::note
+-- FRAMES ----------------------------------------
+연합 : VERBAL_NOUN
+	- combine		(연 / 연합-01 :ARG0 agent :ARG1 thing_combined :ARG2 end_product)
+격파 : VERBAL_NOUN
+	- destroy		(격 / 격파-01 :ARG0 destroyer :ARG1 thing_destroyed)
+전투 : VERBAL_NOUN
+	- combat		(전 / 전투-01 :ARG0 one_fighter :ARG1 other_fighter)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"BC 31년 9월 2일" [DT_OTHERS]	->  :time|duration (B / BC31년9월2일)	OR	:time (d / date-entity :year 31 :month 9 :day 2)	OR	:duration (t / temporal-quantity :quant 31 :unit (년 / 년))  (t / temporal-quantity :quant 9 :unit (월 / 월))  (t / temporal-quantity :quant 2 :unit (일 / 일))  
+"그리스" [LCP_COUNTRY]	->  (그 / 그리스)	OR	(c / country :wiki "그리스" :name (이 / 이름 :op1 "그리스"))
+"아우구스투스" [PS_NAME]	->  (아 / 아우구스투스)	OR	(p / person :wiki "아우구스투스" :name (이 / 이름 :op1 "아우구스투스"))
+"악티움" [LCP_CITY]	->  (악 / 악티움)	OR	(c / city :wiki - :name (이 / 이름 :op1 "악티움"))
+"안토니우스" [PS_NAME]	->  (안 / 안토니우스)	OR	(p / person :wiki "마르쿠스_안토니우스" :name (이 / 이름 :op1 "안토니우스"))
+"연합군" [OGG_MILITARY]	->  (연 / 연합군)	OR	(m / military :wiki "연합국" :name (이 / 이름 :op1 "연합군"))
+"옥타비아누스" [PS_NAME]	->  (옥 / 옥타비아누스)	OR	(p / person :wiki "아우구스투스" :name (이 / 이름 :op1 "옥타비아누스"))
+"클레오파트라" [PS_NAME]	->  (클 / 클레오파트라)	OR	(p / person :wiki "클레오파트라_7세_필로파토르" :name (이 / 이름 :op1 "클레오파트라"))
+"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
+-- VERBALIZED ------------------------------------
+(군 / 군 :mod (연 / 연합))
+(바 / 바다 :mod (앞 / 앞))
+
+
+# ::id snt1.E2016.835.22_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 육상과 해상전투는 잠시 더 계속되었으나 옥타비아누스군의 대승리로 끝났다.
+# ::note
+-- FRAMES ----------------------------------------
+전투 : VERBAL_NOUN
+	- combat		(전 / 전투-01 :ARG0 one_fighter :ARG1 other_fighter)
+계속 : VERBAL_NOUN
+	- continue		(계 / 계속-01 :ARG0 agent :ARG1 thing_continuing)
+승리 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대승리-00) ?
+	- win		(승 / 승리-01 :ARG0 winner :ARG1 loser)
+끝나 : VERB
+	- finish		(끝 / 끝나-01 :ARG0 agent :ARG1 thing_finishing)
+	- terminate		(끝 / 끝나-02 :ARG1 thing_closing)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"옥타비아누스군" [OGG_MILITARY]	->  (옥 / 옥타비아누스군)	OR	(m / military :wiki - :name (이 / 이름 :op1 "옥타비아누스군"))
+-- VERBALIZED ------------------------------------
+(전 / 전투 :mod (해 / 해상))
+
+
+# ::id snt2.E2016.835.22_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 안토니우스와 클레오파트라는 이듬해 알렉산드리아에서 죽었으며 옥타비아누스는 악티움 해전의 승리를 통해 내전을 종식하고 로마 최고의 권력자로 부상할 수 있었다.
+# ::note
+-- FRAMES ----------------------------------------
+죽 : VERB
+	- die		(죽 / 죽-01 :ARG0 causer :ARG1 entity_dying)
+승리 : VERBAL_NOUN
+	- win		(승 / 승리-01 :ARG0 winner :ARG1 loser)
+통하 : VERB
+	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
+	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
+	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
+종식 : VERBAL_NOUN
+	- terminate		(종 / 종식-01 :ARG0 agent :ARG1 thing_terminated)
+권력자 : DERIVED_NON-ENTRY -> (권 / 권력자-00) ?
+부상 : VERBAL_NOUN
+	- injure		(부 / 부상-01 :ARG0 agent :ARG1 patient)
+	- float		(부 / 부상-02 :ARG1 thing_floating :ARG2 start_state :ARG3 end_state)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"악티움 해전" [EV_WAR_REVOLUTION]	->  (악 / 악티움해전)	OR	(w / war|event :wiki "악티움_해전" :name (이 / 이름 :op1 "악티움" :op2 "해전"))
+"안토니우스" [PS_NAME]	->  (안 / 안토니우스)	OR	(p / person :wiki "마르쿠스_안토니우스" :name (이 / 이름 :op1 "안토니우스"))
+"알렉산드리아" [LCP_CITY]	->  (알 / 알렉산드리아)	OR	(c / city :wiki "알렉산드리아" :name (이 / 이름 :op1 "알렉산드리아"))
+"옥타비아누스" [PS_NAME]	->  (옥 / 옥타비아누스)	OR	(p / person :wiki "아우구스투스" :name (이 / 이름 :op1 "옥타비아누스"))
+"클레오파트라" [PS_NAME]	->  (클 / 클레오파트라)	OR	(p / person :wiki "클레오파트라_7세_필로파토르" :name (이 / 이름 :op1 "클레오파트라"))
+-- VERBALIZED ------------------------------------
+(자 / 자 :mod (권 / 권력))
+
+
+# ::id snt0.E2016.835.22_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 기원전 31년 옥타비아누스와 안토니우스가 로마의 패권을 놓고 다툰 해전이다.
+# ::note
+-- FRAMES ----------------------------------------
+기원 : VERBAL_NOUN
+	- wish		(기 / 기원-01 :ARG0 agent :ARG1 thing_wished_for)
+놓 : VERB
+	- put		(놓 / 놓-01 :ARG0 putter :ARG1 thing_put :ARG2 where_put)
+	- about		(놓 / 놓-02 :ARG0 impersonal :ARG1 about_what)
+다투 : VERB
+	- compete		(다 / 다투-01 :ARG0 competitor :ARG1 prize :ARG2 opponent)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"기원전 31년" [DT_OTHERS]	->  :time|duration (기 / 기원전31년)	OR	:time (d / date-entity :year 31)	OR	:duration (t / temporal-quantity :quant 31 :unit (년 / 년))  
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"안토니우스" [PS_NAME]	->  (안 / 안토니우스)	OR	(p / person :wiki "마르쿠스_안토니우스" :name (이 / 이름 :op1 "안토니우스"))
+"옥타비아누스" [PS_NAME]	->  (옥 / 옥타비아누스)	OR	(p / person :wiki "아우구스투스" :name (이 / 이름 :op1 "옥타비아누스"))
+-- VERBALIZED ------------------------------------
+(전 / 전 :mod (기 / 기원))
+
+
+# ::id snt1.E2016.835.22_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 옥타비아누스가 로마 최고의 권력자로 부상하는 계기가 된 이 해전은?
+# ::note
+-- FRAMES ----------------------------------------
+권력자 : DERIVED_NON-ENTRY -> (권 / 권력자-00) ?
+부상 : VERBAL_NOUN
+	- injure		(부 / 부상-01 :ARG0 agent :ARG1 patient)
+	- float		(부 / 부상-02 :ARG1 thing_floating :ARG2 start_state :ARG3 end_state)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"옥타비아누스" [PS_NAME]	->  (옥 / 옥타비아누스)	OR	(p / person :wiki "아우구스투스" :name (이 / 이름 :op1 "옥타비아누스"))
+-- VERBALIZED ------------------------------------
+(자 / 자 :mod (권 / 권력))
+
+
+# ::id snt0.E2016.835.23_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 미셸 에켐 드 몽테뉴(Michel Eyquem de Montaigne 1533년 2월 28일 - 1592년 9월 13일)는 프랑스 철학자, 사상가, 수필가이다.
+# ::note
+-- FRAMES ----------------------------------------
+철학자 : DERIVED_NON-ENTRY -> (철 / 철학자-00) ?
+사상가 : DERIVED_NON-ENTRY -> (사 / 사상가-00) ?
+수필가 : DERIVED_NON-ENTRY -> (수 / 수필가-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1533년 2월 28일 - 1592년 9월 13일" [DT_DURATION]	->  :time|duration (1 / 1533년2월28일-1592년9월13일)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1533 :month 2 :day 28))	OR :duration (t / temporal-quantity :quant 1533 :unit (년 / 년))  (t / temporal-quantity :quant 2 :unit (월 / 월))  (t / temporal-quantity :quant 28 :unit (일 / 일))  
+"Michel Eyquem de Montaigne" [PS_NAME]	->  (M / MichelEyquemdeMontaigne)	OR	(p / person :wiki - :name (이 / 이름 :op1 "Michel" :op2 "Eyquem" :op3 "de" :op4 "Montaigne"))
+"미셸 에켐 드 몽테뉴" [PS_NAME]	->  (미 / 미셸에켐드몽테뉴)	OR	(p / person :wiki "미셸_드_몽테뉴" :name (이 / 이름 :op1 "미셸" :op2 "에켐" :op3 "드" :op4 "몽테뉴"))
+"사상가" [CV_OCCUPATION]	->  :mod (사 / 사상가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사상가))
+"수필가" [CV_OCCUPATION]	->  :mod (수 / 수필가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수필가))
+"철학자" [CV_OCCUPATION]	->  :mod (철 / 철학자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (철 / 철학자))
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (사 / 사상))
+(가 / 가 :mod (수 / 수필))
+(자 / 자 :mod (철 / 철학))
+
+
+# ::id snt1.E2016.835.23_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1580년 유명한 <수상록>을 완성시켰는데, 그는 이 책에서 인간의 거짓 없는 모습을 그렸다.
+# ::note
+-- FRAMES ----------------------------------------
+유명 : VERBAL_NOUN
+	- famous_for		(유 / 유명-01 :ARG1 thing_famous :ARG2 famous_for)
+완성 : VERBAL_NOUN
+	- accomplish		(완 / 완성-01 :ARG0 agent :ARG1 thing_accomplished)
+없 : ** UNUSED_OR_NON-ENTRY **
+그리 : VERB
+	- draw		(그 / 그리-01 :ARG0 agent :ARG1 thing_drawn)
+	- long_for		(그 / 그리-02 :ARG0 person_experiencing_emotion :ARG1 thing_longed_for)
+	- describe		(그 / 그리-03 :ARG0 describer :ARG1 thing_described)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1580년" [DT_YEAR]	->  :time|duration (1 / 1580년)	OR	:time (d / date-entity :year 1580)	OR	:duration (t / temporal-quantity :quant 1580 :unit (년 / 년))  
+"수상록" [AFW_DOCUMENT]	->  (수 / 수상록)	OR	(p / publication? :wiki "수상록" :name (이 / 이름 :op1 "수상록"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.23_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <인명> 프랑스의 사상가(1533~1592).
+# ::note
+-- FRAMES ----------------------------------------
+사상가 : DERIVED_NON-ENTRY -> (사 / 사상가-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1533~1592" [DT_DURATION]	->  :time|duration (1 / 1533~1592)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"사상가" [CV_OCCUPATION]	->  :mod (사 / 사상가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사상가))
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (사 / 사상))
+
+
+# ::id snt1.E2016.835.23_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 프랑스에 모럴리스트의 전통을 구축하고 17세기 이후의 프랑스, 유럽 문학에 큰 영향을 주었다.
+# ::note
+-- FRAMES ----------------------------------------
+구축 : VERBAL_NOUN
+	- construct		(구 / 구축-01 :ARG0 builder :ARG1 construction)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+영향 : VERBAL_NOUN
+	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
+주 : VERB
+	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"17세기 이후" [DT_OTHERS]	->  :time|duration (1 / 17세기이후)	OR	:time (d / date-entity)	OR	:duration 
+"모럴리스트" [CV_OCCUPATION]	->  :mod (모 / 모럴리스트)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (모 / 모럴리스트))
+"문학" [FD_ART]	->  (문 / 문학)	OR	(s / study-field|group* :wiki "문학" :name (이 / 이름 :op1 "문학"))
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+-- VERBALIZED ------------------------------------
+(이 / 이후 :mod (세 / 세기))
+
+
+# ::id snt2.E2016.835.23_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 저서에 ≪수상록≫ 따위가 있다.
+# ::note
+-- FRAMES ----------------------------------------
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"수상록" [AFW_DOCUMENT]	->  (수 / 수상록)	OR	(p / publication? :wiki "수상록" :name (이 / 이름 :op1 "수상록"))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.23_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 16세기 후반 프랑스의 사상가이자 문학가로 그의 대표작인 <수상록>은 17세기 이래 프랑스 문학, 유럽 각국의 문학에 큰 영향을 끼치기도 했다.
+# ::note
+-- FRAMES ----------------------------------------
+사상가 : DERIVED_NON-ENTRY -> (사 / 사상가-00) ?
+문학가 : DERIVED_NON-ENTRY -> (문 / 문학가-00) ?
+대표 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대표작-00) ?
+	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+영향 : VERBAL_NOUN
+	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
+끼치 : VERB
+	- render		(끼 / 끼치-01 :ARG0 causer :ARG1 influence :ARG2 receiver)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"16세기 후반" [DT_OTHERS]	->  :time|duration (1 / 16세기후반)	OR	:time (d / date-entity)	OR	:duration 
+"17세기" [DT_OTHERS]	->  :time|duration (1 / 17세기)	OR	:time (d / date-entity)	OR	:duration 
+"문학" [FD_ART]	->  (문 / 문학)	OR	(s / study-field|group* :wiki "문학" :name (이 / 이름 :op1 "문학"))
+"문학" [FD_ART]	->  (문 / 문학)	OR	(s / study-field|group* :wiki "문학" :name (이 / 이름 :op1 "문학"))
+"문학가" [CV_OCCUPATION]	->  :mod (문 / 문학가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (문 / 문학가))
+"사상가" [CV_OCCUPATION]	->  :mod (사 / 사상가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사상가))
+"수상록" [AFW_DOCUMENT]	->  (수 / 수상록)	OR	(p / publication? :wiki "수상록" :name (이 / 이름 :op1 "수상록"))
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+-- VERBALIZED ------------------------------------
+(가 / 가 :mod (문 / 문학))
+(가 / 가 :mod (사 / 사상))
+(작 / 작 :ARG0-of (대 / 대표))
+(후 / 후반 :mod (세 / 세기))
+
+
+# ::id snt1.E2016.835.23_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 이 사람은?
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.24_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 아치(arch, 홍예[虹蜺])는 개구부를 확보하며 상당한 하중을 압축 응력으로 지지할 수 있도록 만든 곡선 형태의 구조물이다.
+# ::note
+-- FRAMES ----------------------------------------
+개구부 : DERIVED_NON-ENTRY -> (개 / 개구부-00) ?
+확보 : VERBAL_NOUN
+	- secure		(확 / 확보-01 :ARG0 agent :ARG1 thing_secured)
+상당 : VERBAL_NOUN
+	- considerable		(상 / 상당-01 :ARG1 thing_being_considerable)
+압축 : VERBAL_NOUN
+	- condense		(압 / 압축-01 :ARG0 thing_condensing :ARG1 thing_condensed :ARG2 condense_into)
+지지 : VERBAL_NOUN
+	- support		(지 / 지지-01 :ARG0 thing_supporting :ARG1 thing_supported)
+있 : ** UNUSED_OR_NON-ENTRY **
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+구조 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (구 / 구조물-00) ?
+	- rescue		(구 / 구조-01 :ARG0 agent :ARG1 entity_rescued)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- VERBALIZED ------------------------------------
+(물 / 물 :ARG0-of (구 / 구조))
+(부 / 부 :mod (개 / 개구))
+(응 / 응력 :mod (압 / 압축))
+(형 / 형태 :mod (곡 / 곡선))
+
+
+# ::id snt1.E2016.835.24_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 아치는 기원전 2500년 경 인더스 문명에서 최초로 사용되었고 그 후 메소포타미아, 이집트, 아시리아, 에트루리아에서도 사용되었으며, 고대 로마에서 더욱 다듬어졌다.
+# ::note
+-- FRAMES ----------------------------------------
+기원 : VERBAL_NOUN
+	- wish		(기 / 기원-01 :ARG0 agent :ARG1 thing_wished_for)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+고대 : VERBAL_NOUN
+	- long_for		(고 / 고대-01 :ARG0 wanter :ARG1 thing_wanted)
+다듬 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"고대 로마" [DT_DYNASTY]	->  :time|duration (고 / 고대로마)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"기원전 2500년 경" [DT_OTHERS]	->  :time|duration (기 / 기원전2500년경)	OR	:time (d / date-entity :year 2500)	OR	:duration (t / temporal-quantity :quant 2500 :unit (년 / 년))  
+"메소포타미아" [LC_OTHERS]	->  (메 / 메소포타미아)	OR	(l / location? :wiki "메소포타미아" :name (이 / 이름 :op1 "메소포타미아"))
+"아시리아" [LCP_COUNTRY]	->  (아 / 아시리아)	OR	(c / country :wiki "아시리아" :name (이 / 이름 :op1 "아시리아"))
+"에트루리아" [LCP_COUNTRY]	->  (에 / 에트루리아)	OR	(c / country :wiki "에트루리아" :name (이 / 이름 :op1 "에트루리아"))
+"이집트" [LCP_COUNTRY]	->  (이 / 이집트)	OR	(c / country :wiki "이집트" :name (이 / 이름 :op1 "이집트"))
+"인더스 문명" [CV_NAME]	->  (인 / 인더스문명)	OR	(e / ethnic-group|nationality :wiki "인더스_문명" :name (이 / 이름 :op1 "인더스" :op2 "문명"))
+-- VERBALIZED ------------------------------------
+(전 / 전 :mod (기 / 기원))
+
+
+# ::id snt0.E2016.835.24_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 아치는 이집트·그리스 시대의 기둥과 보와 같은 직선재를 사용한 문형(門型)의 구조형식에 이어 로마 시대에 발전을 이룩한 것으로, 교량의 건설도 이 방식으로 비교적 수월해져서 현재의 로마 부근에도 이 시대의 유적으로서 많은 수로교(水路橋)·하수도 등의 아치가 현존하고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+보 : VERBAL_NOUN
+	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
+	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
+	- according_to		(보 / 보-03 :ARG1 theme)
+	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
+	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
+	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
+	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
+같 : VERB
+	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
+직선재 : DERIVED_NON-ENTRY -> (직 / 직선재-00) ?
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+구조 : VERBAL_NOUN
+	- rescue		(구 / 구조-01 :ARG0 agent :ARG1 entity_rescued)
+잇 : VERB
+	- connect		(잇 / 잇-01 :ARG1 thing_connecting :ARG2 thing_connected :ARG3 connect_to)
+	- follow		(잇 / 잇-02 :ARG1 thing_following :ARG2 thing_followed :ARG3 follow_to)
+발전 : VERBAL_NOUN
+	- develop		(발 / 발전-01 :ARG0 developer :ARG1 thing_developed :ARG2 secondary_predication)
+이룩하 : VERB
+	- achieve		(이 / 이룩하-01 :ARG0 agent :ARG1 thing_achieved)
+건설 : VERBAL_NOUN
+	- construct		(건 / 건설-01 :ARG0 agent :ARG1 thing_constructed)
+비교 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (비 / 비교적-00) ?
+	- compare_with		(비 / 비교-01 :ARG0 agent :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
+수월하 : VERB
+	- easy		(수 / 수월하-01 :ARG1 thing_being_easy)
+많 : VERB
+	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
+현존하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"그리스 시대" [DT_DYNASTY]	->  :time|duration (그 / 그리스시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"로마 시대" [DT_DYNASTY]	->  :time|duration (로 / 로마시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"로마" [LCP_CAPITALCITY]	->  (로 / 로마)	OR	(c / city :wiki "로마" :name (이 / 이름 :op1 "로마"))
+"이집트" [LCP_COUNTRY]	->  (이 / 이집트)	OR	(c / country :wiki "이집트" :name (이 / 이름 :op1 "이집트"))
+-- VERBALIZED ------------------------------------
+(교 / 교 :mod (수 / 수로))
+(도 / 도 :mod (하 / 하수))
+(재 / 재 :mod (직 / 직선))
+(적 / 적 :ARG0-of (비 / 비교))
+(형 / 형식 :mod (구 / 구조))
+
+
+# ::id snt0.E2016.835.24_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 로마 건축의 특징적 양식이다.
+# ::note
+-- FRAMES ----------------------------------------
+특징적 : DERIVED_NON-ENTRY -> (특 / 특징적-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (특 / 특징))
+
+
+# ::id snt1.E2016.835.24_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 건축물의 상부를 반원형으로 형성해 만든 것으로 이것 양식의 문이나 다리가 많은데, 2음절의 이것은?
+# ::note
+-- FRAMES ----------------------------------------
+건축물 : DERIVED_NON-ENTRY -> (건 / 건축물-00) ?
+반원형 : DERIVED_NON-ENTRY -> (반 / 반원형-00) ?
+형성 : VERBAL_NOUN
+	- form		(형 / 형성-01 :ARG0 creator :ARG1 thing_created)
+만들 : VERB
+	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
+	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
+	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
+많 : VERB
+	- many,_much		(많 / 많-01 :ARG1 thing_being_abundant :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2음절" [QT_COUNT]	->  :quant (2 / 2음절)	OR	(c / concept* :quant 2 :unit|scale (음 / 음절))
+"반원형" [TM_SHAPE]	->  (반 / 반원형)	OR	(s / shape* :wiki - :name (이 / 이름 :op1 "반원형"))
+-- VERBALIZED ------------------------------------
+(물 / 물 :mod (건 / 건축))
+(형 / 형 :mod (반 / 반원))
+
+
+# ::id snt0.E2016.835.25_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 승자전(勝者戰)은 경기의 최종 승자를 가리기 위해 승자끼리만 계속해서 맞붙는 방식으로 토너먼트(tournament)라 부르기도 한다.
+# ::note
+-- FRAMES ----------------------------------------
+승자전 : DERIVED_NON-ENTRY -> (승 / 승자전-00) ?
+가리 : VERB
+	- obscure		(가 / 가리-01 :ARG0 agent,_causer :ARG1 entity_obscured)
+	- sort		(가 / 가리-02 :ARG0 sorter :ARG1 entity_sorted)
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+승자끼리 : DERIVED_NON-ENTRY -> (승 / 승자끼리-00) ?
+계속 : VERBAL_NOUN
+	- continue		(계 / 계속-01 :ARG0 agent :ARG1 thing_continuing)
+맞붙 : VERB
+	- fight		(맞 / 맞붙-01 :ARG0 first_fighter :ARG1 second_fighter)
+부르 : VERB
+	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
+	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"tournament" [TM_SPORTS]	->  (t / tournament)	OR	(s / sports-term* :wiki - :name (이 / 이름 :op1 "tournament"))
+"勝者戰" [TM_SPORTS]	->  (勝 / 勝者戰)	OR	(s / sports-term* :wiki - :name (이 / 이름 :op1 "勝者戰"))
+"승자" [CV_POSITION]	->  :mod (승 / 승자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (승 / 승자))
+"승자" [CV_POSITION]	->  :mod (승 / 승자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (승 / 승자))
+"승자전" [TM_SPORTS]	->  (승 / 승자전)	OR	(s / sports-term* :wiki "승자전" :name (이 / 이름 :op1 "승자전"))
+"토너먼트" [TM_SPORTS]	->  (토 / 토너먼트)	OR	(s / sports-term* :wiki "승자전" :name (이 / 이름 :op1 "토너먼트"))
+-- VERBALIZED ------------------------------------
+(끼 / 끼리 :mod (승 / 승자))
+(승 / 승자 :mod (최 / 최종))
+(전 / 전 :mod (승 / 승자))
+
+
+# ::id snt1.E2016.835.25_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 중세 유럽 기사들의 무예 대결에서 유래하였다.
+# ::note
+-- FRAMES ----------------------------------------
+기사들 : DERIVED_NON-ENTRY -> (기 / 기사들-00) ?
+대결 : VERBAL_NOUN
+	- confront		(대 / 대결-01 :ARG1 entity_confronted :ARG2 confronted_with)
+유래하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"기사" [CV_POSITION]	->  :mod (기 / 기사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (기 / 기사))
+"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+"중세" [DT_DYNASTY]	->  :time|duration (중 / 중세)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(대 / 대결 :mod (무 / 무예))
+(들 / 들 :mod (기 / 기사))
+
+
+# ::id snt0.E2016.835.25_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <운동> 경기 대전 방식의 하나.
+# ::note
+-- FRAMES ----------------------------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
+-- VERBALIZED ------------------------------------
+(대 / 대전 :mod (경 / 경기))
+(방 / 방식 :mod (대 / 대전))
+
+
+# ::id snt1.E2016.835.25_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 경기를 거듭할 때마다 진 편은 제외시키면서 이긴 편끼리 겨루어 최후에 남은 두 편으로 우승을 가린다.
+# ::note
+-- FRAMES ----------------------------------------
+지 : VERB
+	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
+	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
+	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
+	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
+	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
+제외 : VERBAL_NOUN
+	- exclude		(제 / 제외-01 :ARG0 agent :ARG1 thing_excluded :ARG2 excluded_from)
+이기 : VERB
+	- win		(이 / 이기-01 :ARG0 winner :ARG1 loser)
+편끼리 : DERIVED_NON-ENTRY -> (편 / 편끼리-00) ?
+겨루 : ** UNUSED_OR_NON-ENTRY **
+남 : VERB
+	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
+가리 : VERB
+	- obscure		(가 / 가리-01 :ARG0 agent,_causer :ARG1 entity_obscured)
+	- sort		(가 / 가리-02 :ARG0 sorter :ARG1 entity_sorted)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"두 편" [QT_COUNT]	->  :quant (두 / 두편)	OR	(c / concept* :quant 두 :unit|scale (편 / 편))
+"우승" [CV_PRIZE]	->  (우 / 우승)	OR	(a / award :wiki "우승" :name (이 / 이름 :op1 "우승"))
+-- VERBALIZED ------------------------------------
+(끼 / 끼리 :mod (편 / 편))
+
+
+# ::id snt0.E2016.835.25_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 중세 기사의 마상시합에서 유래한 것으로, 오늘날에는 스포츠나 오락경기 등에서 주로 사용된다.
+# ::note
+-- FRAMES ----------------------------------------
+유래하 : DERIVED_NON-ENTRY
+날 : VERBAL_NOUN
+	- fly		(날 / 날-01 :ARG0 agent :ARG1 path :ARG2 start_point :ARG3 end_point)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"기사" [CV_POSITION]	->  :mod (기 / 기사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (기 / 기사))
+"마상시합" [CV_SPORTS]	->  (마 / 마상시합)	OR	(s / sports* :wiki - :name (이 / 이름 :op1 "마상시합"))
+"오늘날" [DT_OTHERS]	->  :time|duration (오 / 오늘날)	OR	:time (d / date-entity)	OR	:duration 
+"중세" [DT_DYNASTY]	->  :time|duration (중 / 중세)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(경 / 경기 :mod (오 / 오락))
+(기 / 기사 :mod (중 / 중세))
+(날 / 날 :mod (오 / 오늘))
+(시 / 시합 :mod (마 / 마상))
+
+
+# ::id snt1.E2016.835.25_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 횟수를 거듭할 때마다 패자는 탈락해 나가고, 최후에 남는 두 사람 또는 두 팀으로 하여금 우승을 결정하게 하는 시합방식을 나타내는 이 용어는?
+# ::note
+-- FRAMES ----------------------------------------
+탈락 : VERBAL_NOUN
+	- fail		(탈 / 탈락-01 :ARG0 causer :ARG1 thing_failing)
+남 : VERB
+	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
+결정 : VERBAL_NOUN
+	- decide,_determine		(결 / 결정-01 :ARG0 decider :ARG1 thing_determined :ARG2 attribute)
+나타내 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"두 사람" [QT_MAN_COUNT]	->  :quant (두 / 두사람)	OR	(c / concept* :quant 두 :unit|scale (사 / 사람))
+"두 팀" [QT_COUNT]	->  :quant (두 / 두팀)	OR	(c / concept* :quant 두 :unit|scale (팀 / 팀))
+"우승" [CV_PRIZE]	->  (우 / 우승)	OR	(a / award :wiki "우승" :name (이 / 이름 :op1 "우승"))
+-- VERBALIZED ------------------------------------
+(방 / 방식 :mod (시 / 시합))
+
+
+# ::id snt0.E2016.835.26_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 러다이트(Luddite) 운동은 1811년과 1812년 사이에 일어난 대규모적인 기계부수기 운동이었고, 노팅엄셔·요크셔·랭커셔를 중심으로 수많은 역직기(力織機) 편기가 파괴되었다.
+# ::note
+-- FRAMES ----------------------------------------
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+대규모적 : DERIVED_NON-ENTRY -> (대 / 대규모적-00) ?
+기계부수 : DERIVED_NON-ENTRY
+부수 : VERB
+	- break		(부 / 부수-01 :ARG0 breaker :ARG1 thing_broken)
+수많 : VERB
+	- numerous		(수 / 수많-01 :ARG1 thing_being_numerous)
+파괴 : VERBAL_NOUN
+	- destroy		(파 / 파괴-01 :ARG0 agent,_causer :ARG1 thing_destroyed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1811년" [DT_YEAR]	->  :time|duration (1 / 1811년)	OR	:time (d / date-entity :year 1811)	OR	:duration (t / temporal-quantity :quant 1811 :unit (년 / 년))  
+"1812년" [DT_YEAR]	->  :time|duration (1 / 1812년)	OR	:time (d / date-entity :year 1812)	OR	:duration (t / temporal-quantity :quant 1812 :unit (년 / 년))  
+"力織機" [TMI_HW]	->  (力 / 力織機)	OR	(p / product? :wiki - :name (이 / 이름 :op1 "力織機"))
+"기계부수기 운동" [EV_ACTIVITY]	->  (기 / 기계부수기운동)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "기계부수기" :op2 "운동"))
+"노팅엄셔" [LCP_PROVINCE]	->  (노 / 노팅엄셔)	OR	(p / province :wiki "노팅엄셔주" :name (이 / 이름 :op1 "노팅엄셔"))
+"랭커셔" [LCP_PROVINCE]	->  (랭 / 랭커셔)	OR	(p / province :wiki "랭커셔주" :name (이 / 이름 :op1 "랭커셔"))
+"러다이트(Luddite) 운동" [EV_ACTIVITY]	->  (러 / 러다이트(Luddite)운동)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "러다이트(Luddite)" :op2 "운동"))
+"역직기" [TMI_HW]	->  (역 / 역직기)	OR	(p / product? :wiki "역직기" :name (이 / 이름 :op1 "역직기"))
+"요크셔" [LCP_PROVINCE]	->  (요 / 요크셔)	OR	(p / province :wiki "요크셔" :name (이 / 이름 :op1 "요크셔"))
+-- VERBALIZED ------------------------------------
+(적 / 적 :mod (대 / 대규모))
+
+
+# ::id snt0.E2016.835.26_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt <역사> 1811년에 영국의 중부와 북부의 섬유 공업 지대에서 일어난 노동자의 반(反)자본주의 운동.
+# ::note
+-- FRAMES ----------------------------------------
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+노동자 : DERIVED_NON-ENTRY -> (노 / 노동자-00) ?
+주의 : VERBAL_NOUN
+	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1811년" [DT_YEAR]	->  :time|duration (1 / 1811년)	OR	:time (d / date-entity :year 1811)	OR	:duration (t / temporal-quantity :quant 1811 :unit (년 / 년))  
+"노동자" [CV_POSITION]	->  :mod (노 / 노동자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (노 / 노동자))
+"북부" [TM_DIRECTION]	->  (북 / 북부)	OR	(: / :direction :wiki "북부?" :name (이 / 이름 :op1 "북부"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"자본주의" [TR_SOCIAL_SCIENCE]	->  (자 / 자본주의)	OR	(t / theory* :wiki "자본주의" :name (이 / 이름 :op1 "자본주의"))
+"중부" [TM_DIRECTION]	->  (중 / 중부)	OR	(: / :direction :wiki "중부?" :name (이 / 이름 :op1 "중부"))
+-- VERBALIZED ------------------------------------
+(공 / 공업 :mod (섬 / 섬유))
+(운 / 운동 :mod (주 / 주의))
+(자 / 자 :mod (노 / 노동))
+(주 / 주의 :mod (자 / 자본))
+(지 / 지대 :mod (공 / 공업))
+
+
+# ::id snt1.E2016.835.26_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 산업 혁명으로 일자리를 잃은 영국의 노동자들이 실업의 원인을 기계 때문이라고 여겨서 기계를 파괴하는 운동을 벌였다.
+# ::note
+-- FRAMES ----------------------------------------
+일 : VERBAL_NOUN
+	- rise		(일 / 일-01 :ARG1 thing_rising)
+잃 : VERB
+	- lose		(잃 / 잃-01 :ARG0 agent :ARG1 thing_lost)
+노동자 : DERIVED_NON-ENTRY -> (노 / 노동자-00) ?
+여기 : VERB
+	- consider		(여 / 여기-01 :ARG0 thing_considering :ARG thing_considered)
+파괴 : VERBAL_NOUN
+	- destroy		(파 / 파괴-01 :ARG0 agent,_causer :ARG1 thing_destroyed)
+벌이 : VERB
+	- perform		(벌 / 벌이-01 :ARG0 performer :ARG1 thing_performed)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"노동자" [CV_POSITION]	->  :mod (노 / 노동자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (노 / 노동자))
+"산업 혁명" [EV_WAR_REVOLUTION]	->  (산 / 산업혁명)	OR	(w / war|event :wiki "산업혁명" :name (이 / 이름 :op1 "산업" :op2 "혁명"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+-- VERBALIZED ------------------------------------
+(자 / 자 :mod (노 / 노동))
+(자 / 자리 :mod (일 / 일))
+(혁 / 혁명 :mod (산 / 산업))
+
+
+# ::id snt0.E2016.835.26_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 실업자가 증가하고 물가가 나날이 오르자 노동자들이 실업과 생활고의 원인을 기계의 탓으로 돌리면서 이 운동이 일어났다.
+# ::note
+-- FRAMES ----------------------------------------
+실업자 : DERIVED_NON-ENTRY -> (실 / 실업자-00) ?
+증가 : VERBAL_NOUN
+	- increase		(증 / 증가-01 :ARG0 agent :ARG1 thing_increasing :ARG2 start_point :ARG3 end_point)
+오르 : VERB
+	- rise		(오 / 오르-01 :ARG0 thing_causing_rise :ARG1 thing_rising :ARG2 start_point :ARG3 end_point)
+	- place		(오 / 오르-02 :ARG0 thing_placing :ARG1 thing_placed :ARG2 place_at)
+	- get		(오 / 오르-03 :ARG0 agent :ARG1 thing_gotten)
+	- enthusiastic		(오 / 오르-04 :ARG0 thing_enthusiastic :ARG1 heat :ARG2 enthusiastic_about)
+노동자 : DERIVED_NON-ENTRY -> (노 / 노동자-00) ?
+생활 : VERBAL_NOUN
+	- live		(생 / 생활-01 :ARG0 entity_being_alive :ARG2 location)
+돌리 : VERB
+	- attribute		(돌 / 돌리-01 :ARG0 attributor :ARG1 thing_attributed :ARG2 attributed_to)
+	- convert		(돌 / 돌리-02 :ARG0 agent :ARG1 thing_converted :ARG2 converted_to)
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"노동자" [CV_POSITION]	->  :mod (노 / 노동자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (노 / 노동자))
+"실업자" [CV_POSITION]	->  :mod (실 / 실업자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (실 / 실업자))
+-- VERBALIZED ------------------------------------
+(고 / 고 :mod (생 / 생활))
+(자 / 자 :mod (노 / 노동))
+(자 / 자 :mod (실 / 실업))
+
+
+# ::id snt1.E2016.835.26_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 1811~1817년 영국의 중부ㆍ북부의 직물공업지대에서 일어났던 기계 파괴운동으로 비밀결사의 지도자 이름에서 유래된 이 운동은?
+# ::note
+-- FRAMES ----------------------------------------
+일어나 : VERB
+	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
+파괴 : VERBAL_NOUN
+	- destroy		(파 / 파괴-01 :ARG0 agent,_causer :ARG1 thing_destroyed)
+지도 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (지 / 지도자-00) ?
+	- instruct		(지 / 지도-01 :ARG0 agent :ARG1 thing_instructed)
+유래되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1811~1817년" [DT_DURATION]	->  :time|duration (1 / 1811~1817년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1817))	OR :duration (t / temporal-quantity :quant 1817 :unit (년 / 년))  
+"기계 파괴운동" [EV_ACTIVITY]	->  (기 / 기계파괴운동)	OR	(e / event? :wiki - :name (이 / 이름 :op1 "기계" :op2 "파괴운동"))
+"북부" [TM_DIRECTION]	->  (북 / 북부)	OR	(: / :direction :wiki "북부?" :name (이 / 이름 :op1 "북부"))
+"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+"중부" [TM_DIRECTION]	->  (중 / 중부)	OR	(: / :direction :wiki "중부?" :name (이 / 이름 :op1 "중부"))
+"지도자" [CV_POSITION]	->  :mod (지 / 지도자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (지 / 지도자))
+-- VERBALIZED ------------------------------------
+(결 / 결사 :mod (비 / 비밀))
+(공 / 공업 :mod (직 / 직물))
+(운 / 운동 :mod (파 / 파괴))
+(자 / 자 :ARG0-of (지 / 지도))
+(지 / 지대 :mod (공 / 공업))
+(파 / 파괴 :mod (기 / 기계))
+
+
+# ::id snt0.E2016.835.27_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 앙시앵 레짐(Ancien Régime)은 1789년 프랑스 혁명 전의 절대 군주 정체를 가리키며, 구체제(舊體制)라고도 부른다.
+# ::note
+-- FRAMES ----------------------------------------
+정체 : VERBAL_NOUN
+	- stagnate		(정 / 정체-01 :ARG0 agent :ARG1 thing_stagnated)
+가리키 : VERB
+	- indicate		(가 / 가리키-01 :ARG0 indicator :ARG1 thing_indicated)
+구체제 : DERIVED_NON-ENTRY -> (구 / 구체제-00) ?
+부르 : VERB
+	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
+	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1789년" [DT_YEAR]	->  :time|duration (1 / 1789년)	OR	:time (d / date-entity :year 1789)	OR	:duration (t / temporal-quantity :quant 1789 :unit (년 / 년))  
+"Ancien Régime" [CV_POLICY]	->  (A / AncienRégime)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "Ancien" :op2 "Régime"))
+"舊體制" [CV_POLICY]	->  (舊 / 舊體制)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "舊體制"))
+"구체제" [CV_POLICY]	->  (구 / 구체제)	OR	(p / policy* :wiki "앙시앵_레짐" :name (이 / 이름 :op1 "구체제"))
+"군주" [CV_POSITION]	->  :mod (군 / 군주)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (군 / 군주))
+"앙시앵 레짐" [CV_POLICY]	->  (앙 / 앙시앵레짐)	OR	(p / policy* :wiki "앙시앵_레짐" :name (이 / 이름 :op1 "앙시앵" :op2 "레짐"))
+"프랑스 혁명 전" [DT_OTHERS]	->  :time|duration (프 / 프랑스혁명전)	OR	:time (d / date-entity)	OR	:duration 
+-- VERBALIZED ------------------------------------
+(군 / 군주 :mod (절 / 절대))
+(레 / 레짐 :mod (앙 / 앙시앵))
+(전 / 전 :mod (혁 / 혁명))
+(정 / 정체 :mod (군 / 군주))
+
+
+# ::id snt1.E2016.835.27_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 앙시앵 레짐 하에서 정부의 구성과 사회가 조직된 방식은 중세의 그것과 별다른 것이 없었다.
+# ::note
+-- FRAMES ----------------------------------------
+하 : VERBAL_NOUN
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+구성 : VERBAL_NOUN
+	- compose		(구 / 구성-01 :ARG0 agent :ARG1 thing_composed :ARG2 composed_of)
+조직 : VERBAL_NOUN
+	- organize		(조 / 조직-01 :ARG0 agent :ARG1 thing_organized :ARG2 organized_with)
+별다르 : VERB
+	- particular		(별 / 별다르-01 :ARG1 thing_being_particular)
+없 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"앙시앵 레짐" [CV_POLICY]	->  (앙 / 앙시앵레짐)	OR	(p / policy* :wiki "앙시앵_레짐" :name (이 / 이름 :op1 "앙시앵" :op2 "레짐"))
+"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
+"중세" [DT_DYNASTY]	->  :time|duration (중 / 중세)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+-- VERBALIZED ------------------------------------
+(레 / 레짐 :mod (앙 / 앙시앵))
+(하 / 하 :mod (레 / 레짐))
+
+
+# ::id snt2.E2016.835.27_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 앙시앵 레짐의 가장 큰 특징은 군주가 막강한 권력을 가진다는 것이다.
+# ::note
+-- FRAMES ----------------------------------------
+크 : VERB
+	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
+막강 : VERBAL_NOUN
+	- mighty		(막 / 막강-01 :ARG1 thing_being_mighty)
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"군주" [CV_POSITION]	->  :mod (군 / 군주)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (군 / 군주))
+"앙시앵 레짐" [CV_POLICY]	->  (앙 / 앙시앵레짐)	OR	(p / policy* :wiki "앙시앵_레짐" :name (이 / 이름 :op1 "앙시앵" :op2 "레짐"))
+-- VERBALIZED ------------------------------------
+(레 / 레짐 :mod (앙 / 앙시앵))
+
+
+# ::id snt0.E2016.835.27_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 프랑스 혁명은 이런 구체제(앙시앵 레짐)의 모순에서 발생하였다.
+# ::note
+-- FRAMES ----------------------------------------
+구체제 : DERIVED_NON-ENTRY -> (구 / 구체제-00) ?
+모순 : VERBAL_NOUN
+	- contradict		(모 / 모순-01 :ARG1 entity_contradicting :ARG2 entity_opposed_to)
+발생 : VERBAL_NOUN
+	- arise		(발 / 발생-01 :ARG0 causer :ARG1 thing_arising :ARG2 source)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"구체제" [CV_POLICY]	->  (구 / 구체제)	OR	(p / policy* :wiki "앙시앵_레짐" :name (이 / 이름 :op1 "구체제"))
+"앙시앵 레짐" [CV_POLICY]	->  (앙 / 앙시앵레짐)	OR	(p / policy* :wiki "앙시앵_레짐" :name (이 / 이름 :op1 "앙시앵" :op2 "레짐"))
+"프랑스 혁명" [EV_WAR_REVOLUTION]	->  (프 / 프랑스혁명)	OR	(w / war|event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스" :op2 "혁명"))
+-- VERBALIZED ------------------------------------
+(레 / 레짐 :mod (앙 / 앙시앵))
+
+
+# ::id snt1.E2016.835.27_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 구체제 하에서는 인구의 2% 정도밖에 안 되는 제1계급(추기경 등의 로마 가톨릭 고위 성직자)과 제2계급(귀족)은 면세 등의 혜택을 누리면서, 주요 권력과 부와 명예를 독점하였다.
+# ::note
+-- FRAMES ----------------------------------------
+구체제 : DERIVED_NON-ENTRY -> (구 / 구체제-00) ?
+하 : VERBAL_NOUN
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+성직자 : DERIVED_NON-ENTRY -> (성 / 성직자-00) ?
+누리 : VERB
+	- enjoy		(누 / 누리-01 :ARG0 enjoyer :ARG1 thing_enjoyed)
+주요 : VERBAL_NOUN
+	- principal		(주 / 주요-01 :ARG1 thing_being_principal)
+독점 : VERBAL_NOUN
+	- monopolize		(독 / 독점-01 :ARG0 agent :ARG1 thing_monopolized)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 2%)
+"구체제" [CV_POLICY]	->  (구 / 구체제)	OR	(p / policy* :wiki "앙시앵_레짐" :name (이 / 이름 :op1 "구체제"))
+"귀족" [CV_POSITION]	->  :mod (귀 / 귀족)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (귀 / 귀족))
+"로마 가톨릭" [OGG_RELIGION]	->  (로 / 로마가톨릭)	OR	(r / religious-group :wiki "로마_가톨릭교회" :name (이 / 이름 :op1 "로마" :op2 "가톨릭"))
+"성직자" [CV_OCCUPATION]	->  :mod (성 / 성직자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (성 / 성직자))
+"제1계급" [QT_ORDER]	->  :ord (제 / 제1계급)	OR	:ord (o / ordinal-entity :value 제1계급)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"제2계급" [QT_ORDER]	->  :ord (제 / 제2계급)	OR	:ord (o / ordinal-entity :value 제2계급)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"추기경" [CV_POSITION]	->  :mod (추 / 추기경)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (추 / 추기경))
+-- VERBALIZED ------------------------------------
+(고 / 고위 :mod (가 / 가톨릭))
+(권 / 권력 :mod (주 / 주요))
+(성 / 성직 :mod (고 / 고위))
+(자 / 자 :mod (성 / 성직))
+(하 / 하 :mod (체 / 체제))
+
+
+# ::id snt2.E2016.835.27_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 인구의 약 98%를 차지하던 제3계급(평민)은 무거운 세금을 부담해야 했다.
+# ::note
+-- FRAMES ----------------------------------------
+차지 : VERBAL_NOUN
+	- occupy		(차 / 차지-01 :ARG0 agent :ARG1 thing_occupied)
+무겁 : VERB
+	- heavy		(무 / 무겁-01 :ARG1 entity_being_heavy)
+부담 : VERBAL_NOUN
+	- bear		(부 / 부담-01 :ARG0 agent :ARG1 expense)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"약 98%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 약 98%)
+"제3계급" [QT_ORDER]	->  :ord (제 / 제3계급)	OR	:ord (o / ordinal-entity :value 제3계급)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"평민" [CV_POSITION]	->  :mod (평 / 평민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (평 / 평민))
+-- VERBALIZED ------------------------------------
+
+
+# ::id snt0.E2016.835.27_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 프랑스 혁명 이전 절대 군주가 소수의 성직자, 귀족 등과 결탁해 인구의 대부분을 차지하는 농민과 시민을 억압한 사회제도를 뜻하는 말이다.
+# ::note
+-- FRAMES ----------------------------------------
+이전 : VERBAL_NOUN
+	- move		(이 / 이전-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
+성직자 : DERIVED_NON-ENTRY -> (성 / 성직자-00) ?
+결탁하 : DERIVED_NON-ENTRY
+대부분 : DERIVED_NON-ENTRY -> (대 / 대부분-00) ?
+차지 : VERBAL_NOUN
+	- occupy		(차 / 차지-01 :ARG0 agent :ARG1 thing_occupied)
+억압 : VERBAL_NOUN
+	- oppress		(억 / 억압-01 :ARG0 thing_oppressing :ARG1 thing_oppressed)
+뜻하 : DERIVED_VERB_DETECTED
+	- mean		(뜻 / 뜻하-01 :ARG1 symbol :ARG2 thing_symbolized)
+말 : VERBAL_NOUN
+	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"군주" [CV_POSITION]	->  :mod (군 / 군주)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (군 / 군주))
+"귀족" [CV_POSITION]	->  :mod (귀 / 귀족)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (귀 / 귀족))
+"농민" [CV_OCCUPATION]	->  :mod (농 / 농민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (농 / 농민))
+"성직자" [CV_OCCUPATION]	->  :mod (성 / 성직자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (성 / 성직자))
+"시민" [CV_POSITION]	->  :mod (시 / 시민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (시 / 시민))
+"프랑스 혁명" [EV_WAR_REVOLUTION]	->  (프 / 프랑스혁명)	OR	(w / war|event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스" :op2 "혁명"))
+-- VERBALIZED ------------------------------------
+(이 / 이전 :mod (혁 / 혁명))
+(자 / 자 :mod (성 / 성직))
+(제 / 제도 :mod (사 / 사회))
+
+
+# ::id snt1.E2016.835.27_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::snt 왕권신수설에 바탕을 둔 절대왕정 체제를 가리키는 5음절의 이 용어는?
+# ::note
+-- FRAMES ----------------------------------------
+신수설 : DERIVED_NON-ENTRY -> (신 / 신수설-00) ?
+두 : VERB
+	- put		(두 / 두-01 :ARG0 agent :ARG1 theme :ARG2 location)
+가리키 : VERB
+	- indicate		(가 / 가리키-01 :ARG0 indicator :ARG1 thing_indicated)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"5음절" [QT_COUNT]	->  :quant (5 / 5음절)	OR	(c / concept* :quant 5 :unit|scale (음 / 음절))
+"왕권신수설" [TR_SOCIAL_SCIENCE]	->  (왕 / 왕권신수설)	OR	(t / theory* :wiki "왕권신수설" :name (이 / 이름 :op1 "왕권신수설"))
+-- VERBALIZED ------------------------------------
+(설 / 설 :mod (신 / 신수))
+(신 / 신수 :mod (왕 / 왕권))
+(왕 / 왕정 :mod (절 / 절대))
+(체 / 체제 :mod (왕 / 왕정))
+
+
+
+Process finished with exit code 0

@@ -1,30 +1,24 @@
-/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt0.E2017.Wiki.004 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 마르틴 루터
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"마르틴 루터" [PS_NAME]	->  (마 / 마르틴루터)	OR	(p / person :wiki "마르틴_루터" :name (이 / 이름 :op1 "마르틴" :op2 "루터"))
--- VERBALIZED ------------------------------------
+(p / person
+	:wiki "마르틴_루터"
+	:name (이 / 이름 :op1 "마르틴" :op2 "루터"))
 
-
-# ::id snt1.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt1.E2017.Wiki.004 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 본래 아우구스티노회 수사였던 루터는 로마 가톨릭교회의 여러 가르침과 전통을 거부하였다.
 # ::note
--- FRAMES ----------------------------------------
-수사 : VERBAL_NOUN
-	- investigate		(수 / 수사-01 :ARG0 examiner :ARG1 thing_examined)
-거부 : VERBAL_NOUN
-	- refuse		(거 / 거부-01 :ARG0 entity_refusing :ARG1 refused_action,_object :ARG2 anti-benefactive)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"로마 가톨릭교회" [OGG_RELIGION]	->  (로 / 로마가톨릭교회)	OR	(r / religious-group :wiki "로마_가톨릭교회" :name (이 / 이름 :op1 "로마" :op2 "가톨릭교회"))
-"루터" [PS_NAME]	->  (루 / 루터)	OR	(p / person :wiki "마르틴_루터" :name (이 / 이름 :op1 "루터"))
-"수사" [CV_POSITION]	->  :mod (수 / 수사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수사))
-"아우구스티노회" [OGG_RELIGION]	->  (아 / 아우구스티노회)	OR	(r / religious-group :wiki "아우구스티노_수도회" :name (이 / 이름 :op1 "아우구스티노회"))
--- VERBALIZED ------------------------------------
-
+(거 / 거부-01
+	:ARG0 (p / person :wiki "마르틴_루터" :name (이 / 이름 :op1 "루터")
+		:ARG0-of (h / have-org-role-91
+			:mod (본 / 본래)
+			:ARG1 (r / religious-group :wiki "아우구스티노_수도회" :name (이2 / 이름 :op1 "아우구스티노회"))
+			:ARG2 (수 / 수사)))
+	:ARG1 (a / and
+		:poss (r2 / religious-group :wiki "로마_가톨릭교회" :name (이3 / 이름 :op1 "로마" :op2 "가톨릭교회"))
+		:op1 (가 / 가르치-01)
+		:op2 (전 / 전통)
+		:quant (여 / 여러)))
 
 # ::id snt2.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 대사의 오용과 남용을 강하게 성토한 그는 1517년 95개 논제를 게시함으로써 도미니코회 수사이자 대사령 설교 담당자인 요한 테첼에 맞섰다.

@@ -1,44 +1,31 @@
 /usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt0.E2017.Wiki.006 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 라인 강
 # ::note
--- FRAMES ----------------------------------------
-list index out of range
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
--- VERBALIZED ------------------------------------
+(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
 
-
-# ::id snt1.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt1.E2017.Wiki.006 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 라인 강은 유럽의 강으로 길이가 1,230km에 이른다.
 # ::note
--- FRAMES ----------------------------------------
-이르 : VERB
-	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
-	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- early		(이 / 이르-03 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1,230km" [QT_LENGTH]	->  :quant (1 / 1,230km)	OR	(d / distance-quantity :quant 1 :unit|scale (, / ,230km))
-"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
-"유럽" [LCG_CONTINENT]	->  (유 / 유럽)	OR	(c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
--- VERBALIZED ------------------------------------
+(이 / 이르-00
+	:ARG1 (길 / 길이
+		:poss (r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강")
+			:location (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))))
+	:ARG2 (d / distance-quantity :quant 1230 :unit|scale (k / kilometer)))
 
-
-# ::id snt2.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt2.E2017.Wiki.006 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 여러 언어에서 라인 강이란 이름은 켈트어의 "레노스(Renos: 흐르는 것)"에서 유래했다.
 # ::note
--- FRAMES ----------------------------------------
-흐르 : VERB
-	- flow		(흐 / 흐르-01 :ARG0 substance(ie._water) :ARG1 path :ARG2 start_point :ARG3 end_point)
-유래하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"라인 강" [LCG_RIVER]	->  (라 / 라인강)	OR	(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
-"켈트어" [CV_LANGUAGE]	->  (켈 / 켈트어)	OR	(l / language :wiki "켈트어파" :name (이 / 이름 :op1 "켈트어"))
--- VERBALIZED ------------------------------------
-
+(유 / 유래
+	:ARG1 (이 / 이름 :op1 "라인" :op2 "강"
+		:name-of (r / river :wiki "라인강"))
+	:ARG2 (s / string-entity :value "레노스"
+		:ARG1-of (i / include-91
+			:ARG2 (l / language :wiki "켈트어파" :name (이2 / 이름 :op1 "켈트어")))
+		:ARG1-of (뜻 / 뜻하-01
+			:ARG2 (흐 / 흐르-01)))
+	:location (언 / 언어
+		:mod (여 / 여러)))
 
 # ::id snt3.E2017.Wiki.006 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 라인 강은 네덜란드와의 국경에서 이름이 바뀌기 때문에 북해로 흘러 들어가지 않는다고도 할 수 있는데, 관례적으로 그 이름이 바뀐 부분까지를 라인 강에 포함시킨다.

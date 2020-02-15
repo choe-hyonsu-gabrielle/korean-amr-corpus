@@ -222,406 +222,238 @@
             :ARG1-of (i / include-91
                 :ARG2 (s2 / string-entity :value "적반하장")))))
 
-# ::id snt0.E2016.790.05_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.05_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 반대로 림프구가 감소하는 것은 림프구 감소증(lymphocytopenia)이라 하며 이 현상은 에이즈의 원인이 되는 HIV(human immunodeficiency virus)에 감염되어 T-세포가 줄어들 때 잘 나타나는 증상이다.
 # ::note
--- FRAMES ----------------------------------------
-반대 : VERBAL_NOUN
-	- oppose		(반 / 반대-01 :ARG0 opposer :ARG1 opposed_to)
-감소 : VERBAL_NOUN
-	- reduce		(감 / 감소-01 :ARG0 agent :ARG1 thing_reduced :ARG2 start_point :ARG3 end_point)
-감소 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (감 / 감소증-00) ?
-	- reduce		(감 / 감소-01 :ARG0 agent :ARG1 thing_reduced :ARG2 start_point :ARG3 end_point)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-감염 : VERBAL_NOUN
-	- infect		(감 / 감염-01 :ARG0 causer_of_infection :ARG1 thing_infected :ARG2 germ,_disease)
-줄어들 : VERB
-	- decrease		(줄 / 줄어들-01 :ARG1 thing_decreasing :ARG2 start_point :ARG3 end_point)
-나타나 : VERB
-	- show		(나 / 나타나-01 :ARG0 shower :ARG1 thing_seen :ARG2 seer,_location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"HIV" [AM_OTHERS]	->  (H / HIV)	OR	(a / animal* :wiki "인간면역결핍_바이러스" :name (이 / 이름 :op1 "HIV"))
-"T-세포" [TM_CELL_TISSUE]	->  (T / T-세포)	OR	(T / T-세포 :part-of|poss)
-"human immunodeficiency virus" [AM_OTHERS]	->  (h / humanimmunodeficiencyvirus)	OR	(a / animal* :wiki - :name (이 / 이름 :op1 "human" :op2 "immunodeficiency" :op3 "virus"))
-"lymphocytopenia" [TMM_DISEASE]	->  (l / lymphocytopenia)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "lymphocytopenia"))
-"림프구 감소증" [TMM_DISEASE]	->  (림 / 림프구감소증)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "림프구" :op2 "감소증"))
-"림프구" [TM_CELL_TISSUE]	->  (림 / 림프구)	OR	(림 / 림프구 :part-of|poss)
-"에이즈" [TMM_DISEASE]	->  (에 / 에이즈)	OR	(d / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "에이즈"))
--- VERBALIZED ------------------------------------
-(감 / 감소 :mod (구 / 구))
-(구 / 구 :mod (림 / 림프))
-(구 / 구 :mod (림 / 림프))
-(증 / 증 :ARG0-of (감 / 감소))
+(a / and
+	:op1 (c / contrast-01
+		:ARG2 (하 / 하-03
+			:ARG1 (감 / 감소-01
+				:ARG1 (림 / 림프구))
+			:ARG2 (d / desease :wiki - :name (이 / 이름 :op1 "림프구" :op2 "감소증"))))
+	:op2 (나 / 나타나-01
+		:mod (잘 / 잘)
+		:ARG1 감
+		:condition (줄 / 줄어들-01
+			:ARG1 (t / T-세포)
+			:cause (감2 / 감염-01
+				:ARG2 (인 / 인간면역결핍-바이러스
+					:cause-of (d2 / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "에이즈")))))))
 
-
-# ::id snt0.E2016.790.05_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.05_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt AIDS(에이즈)는 면역결핍바이러스인 에이즈바이러스(HIV)에 감염돼 면역기능이 저하되는 질환이다.
 # ::note
--- FRAMES ----------------------------------------
-감염 : VERBAL_NOUN
-	- infect		(감 / 감염-01 :ARG0 causer_of_infection :ARG1 thing_infected :ARG2 germ,_disease)
-저하 : VERBAL_NOUN
-	- deteriorate		(저 / 저하-01 :ARG0 thing_deteriorating :ARG1 thing_deteriorated)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"AIDS" [TMM_DISEASE]	->  (A / AIDS)	OR	(d / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "AIDS"))
-"HIV" [AM_OTHERS]	->  (H / HIV)	OR	(a / animal* :wiki "인간면역결핍_바이러스" :name (이 / 이름 :op1 "HIV"))
-"에이즈" [TMM_DISEASE]	->  (에 / 에이즈)	OR	(d / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "에이즈"))
-"에이즈바이러스" [AM_OTHERS]	->  (에 / 에이즈바이러스)	OR	(a / animal* :wiki - :name (이 / 이름 :op1 "에이즈바이러스"))
--- VERBALIZED ------------------------------------
-(결 / 결핍 :mod (면 / 면역))
-(기 / 기능 :mod (면 / 면역))
-(바 / 바이러스 :mod (결 / 결핍))
-(바 / 바이러스 :mod (에 / 에이즈))
+(질 / 질환
+	:domain (d / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "AIDS"))
+	:mod (저 / 저하-01
+		:ARG1 (기 / 기능
+			:mod (면 / 면역))
+		:cause (감 / 감염-01
+			:ARG2 (인 / 인간면역결핍-바이러스))))
 
-
-# ::id snt1.E2016.790.05_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.790.05_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 우리말로는 "후천성면역결핍증(後天性免疫缺乏症)"이다.
 # ::note
--- FRAMES ----------------------------------------
-말 : VERBAL_NOUN
-	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
-후천성 : DERIVED_NON-ENTRY -> (후 / 후천성-00) ?
-결핍증 : DERIVED_NON-ENTRY -> (결 / 결핍증-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"後天性免疫缺乏症" [TMM_DISEASE]	->  (後 / 後天性免疫缺乏症)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "後天性免疫缺乏症"))
-"후천성면역결핍증" [TMM_DISEASE]	->  (후 / 후천성면역결핍증)	OR	(d / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "후천성면역결핍증"))
--- VERBALIZED ------------------------------------
-(결 / 결핍 :mod (면 / 면역))
-(말 / 말 :mod (우 / 우리))
-(성 / 성 :mod (후 / 후천))
-(증 / 증 :mod (결 / 결핍))
+(d / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "후천성면역결핍증")
+	:medium (우 / 우리말))
 
-
-# ::id snt2.E2016.790.05_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2016.790.05_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 항체 생산 세포인 B-림프구를 돕는 헬퍼 T-림프구가 특수한 계통의 세균의 침입을 받으면, 헬퍼 T-림프구의 기능이 약해지거나 그 수가 감소하여 B-림프구의 항체 생산 능력이 크게 떨어진다.
 # ::note
--- FRAMES ----------------------------------------
-생산 : VERBAL_NOUN
-	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
-돕 : VERB
-	- help		(돕 / 돕-01 :ARG0 helper :ARG1 benefactor,_project)
-특수 : VERBAL_NOUN
-	- special		(특 / 특수-01 :ARG1 thing_being_special)
-침입 : VERBAL_NOUN
-	- penetrate		(침 / 침입-01 :ARG0 agent :ARG1 place_or_thing_entered)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
-약하 : VERB
-	- vulnerable		(약 / 약하-01 :ARG1 thing_being_vulnerable :ARG2 stimulus)
-감소 : VERBAL_NOUN
-	- reduce		(감 / 감소-01 :ARG0 agent :ARG1 thing_reduced :ARG2 start_point :ARG3 end_point)
-생산 : VERBAL_NOUN
-	- produce		(생 / 생산-01 :ARG0 creator :ARG1 creation)
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-떨어지 : VERB
-	- fall		(떨 / 떨어지-01 :ARG0 causer :ARG1 thing_falling :ARG2 start_point :ARG3 end_point)
-	- run_out		(떨 / 떨어지-02 :ARG1 thing_running_out :ARG2 possessor)
-	- be_off		(떨 / 떨어지-03 :ARG1 theme :ARG2 be_off_from)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"B-림프구" [TM_CELL_TISSUE]	->  (B / B-림프구)	OR	(B / B-림프구 :part-of|poss)
-"B-림프구" [TM_CELL_TISSUE]	->  (B / B-림프구)	OR	(B / B-림프구 :part-of|poss)
-"세균" [AM_TYPE]	->  (세 / 세균)	OR	(a / animal* :wiki "세균" :name (이 / 이름 :op1 "세균"))
-"항체" [MT_CHEMICAL]	->  (항 / 항체)	OR	(m / material* :wiki "항체" :name (이 / 이름 :op1 "항체"))
-"항체" [MT_CHEMICAL]	->  (항 / 항체)	OR	(m / material* :wiki "항체" :name (이 / 이름 :op1 "항체"))
-"헬퍼 T-림프구" [TM_CELL_TISSUE]	->  (헬 / 헬퍼T-림프구)	OR	(헬 / 헬퍼 T-림프구 :part-of|poss)
-"헬퍼 T-림프구" [TM_CELL_TISSUE]	->  (헬 / 헬퍼T-림프구)	OR	(헬 / 헬퍼 T-림프구 :part-of|poss)
--- VERBALIZED ------------------------------------
-(구 / 구 :mod (림 / 림프))
-(구 / 구 :mod (림 / 림프))
-(구 / 구 :mod (림 / 림프))
-(구 / 구 :mod (림 / 림프))
-(능 / 능력 :mod (생 / 생산))
-(생 / 생산 :mod (항 / 항체))
-(생 / 생산 :mod (항 / 항체))
-(세 / 세포 :mod (생 / 생산))
+(떨 / 떨어지-02
+	:ARG1 (능 / 능력
+		:mod (생 / 생산-01
+			:ARG0 (b / B-림프구)
+			:ARG1 (항 / 항체)))
+	:ARG2 b
+	:manner (크 / 크-01)
+	:cause (o / or
+		:op1 (되 / 되-01
+			:ARG1 (기 / 기능
+				:poss (헬 / 헬퍼-T-림프구
+					:ARG0-of (돕 / 돕-01
+						:ARG1 b)))
+			:ARG2 (약 / 약하-01
+				:ARG1 기))
+		:op2 (감 / 감소-01
+			:ARG1 (수 / 수
+				:quant-of 헬)))
+	:condition (침 / 침입-01
+		:ARG0 (세 / 세균
+			:mod (계 / 계통
+				:ARG1-of (특 / 특수-01)))
+		:ARG1 헬))
 
-
-# ::id snt0.E2016.790.05_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.05_Q_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 후천성 면역 결핍증을 일으키는 에이즈 바이러스가 파괴하는 림프구로 맞는 것은?
 # ::note
--- FRAMES ----------------------------------------
-후천성 : DERIVED_NON-ENTRY -> (후 / 후천성-00) ?
-결핍증 : DERIVED_NON-ENTRY -> (결 / 결핍증-00) ?
-일으키 : VERB
-	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
-파괴 : VERBAL_NOUN
-	- destroy		(파 / 파괴-01 :ARG0 agent,_causer :ARG1 thing_destroyed)
-맞 : VERB
-	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
-	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
-	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
-	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"림프구" [TM_CELL_TISSUE]	->  (림 / 림프구)	OR	(림 / 림프구 :part-of|poss)
-"에이즈 바이러스" [AM_OTHERS]	->  (에 / 에이즈바이러스)	OR	(a / animal* :wiki - :name (이 / 이름 :op1 "에이즈" :op2 "바이러스"))
-"후천성 면역 결핍증" [TMM_DISEASE]	->  (후 / 후천성면역결핍증)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "후천성" :op2 "면역" :op3 "결핍증"))
--- VERBALIZED ------------------------------------
-(결 / 결핍 :mod (면 / 면역))
-(구 / 구 :mod (림 / 림프))
-(바 / 바이러스 :mod (에 / 에이즈))
-(성 / 성 :mod (후 / 후천))
-(증 / 증 :mod (결 / 결핍))
+(파 / 파괴-01
+	:ARG0 (인 / 인간면역결핍-바이러스
+		:cause-of (d / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "에이즈")))
+	:ARG1 (a / amr-unknown
+		:mod (림 / 림프구)))
 
-
-# ::id snt0.E2016.790.06_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.06_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 리골레토 - 만토바 공작의 어릿광대
 # ::note
--- FRAMES ----------------------------------------
-list index out of range
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"공작" [CV_POSITION]	->  :mod (공 / 공작)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (공 / 공작))
-"리골레토" [AFW_MUSIC]	->  (리 / 리골레토)	OR	(m / music :wiki "리골레토" :name (이 / 이름 :op1 "리골레토"))
-"만토바" [PS_NAME]	->  (만 / 만토바)	OR	(p / person :wiki "만토바" :name (이 / 이름 :op1 "만토바"))
-"어릿광대" [CV_OCCUPATION]	->  :mod (어 / 어릿광대)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (어 / 어릿광대))
--- VERBALIZED ------------------------------------
+(p / person :wiki - :name (이 / 이름 :op1 "리골레토")
+	:mod (어 / 어릿광대
+		:poss (p / person :wiki "만토바" :name (이 / 이름 :op1 "만토바" :op2 "공작"))))
 
-
-# ::id snt0.E2016.790.06_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.06_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 투란도트 공주와 혼인하려는 남자는 먼저 그 여자가 내는 세 가지 수수께끼를 풀어야 한다.
-# ::note
--- FRAMES ----------------------------------------
-혼인하 : DERIVED_NON-ENTRY
-내 : VERB
-	- send		(내 / 내-01 :ARG0 agent :ARG1 thing_sent :ARG2 sent_to)
-	- make		(내 / 내-02 :ARG0 causer :ARG1 thing_made)
-풀 : VERB
-	- solve		(풀 / 풀-01 :ARG0 solver :ARG1 the_problem)
-	- release		(풀 / 풀-02 :ARG0 releaser :ARG1 thing_released)
-	- warm_up		(풀 / 풀-03 :ARG0 agent :ARG1 body)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"공주" [CV_POSITION]	->  :mod (공 / 공주)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (공 / 공주))
-"세 가지" [QT_COUNT]	->  :quant (세 / 세가지)	OR	(c / concept* :quant 세 :unit|scale (가 / 가지))
-"투란도트" [PS_NAME]	->  (투 / 투란도트)	OR	(p / person :wiki "투란도트" :name (이 / 이름 :op1 "투란도트"))
--- VERBALIZED ------------------------------------
+# ::note 예제 문장
+(o / obligate-01
+	:ARG1 (남 / 남자
+		:ARG0-of (원 / 원하-01
+			:ARG1 (혼 / 혼인-00
+				:ARG1 남
+				:ARG2 (p / person :wiki "투란도트" :name (이 / 이름 :op1 "투란도트" :op2 "공주")))))
+	:ARG2 (풀 / 풀-01
+		:ARG0 남
+		:ARG1 (수 / 수수께끼 :quant 3
+			:ARG1-of (내 / 내-01
+				:ARG0 p)))
+	:mod (먼 / 먼저))
 
-
-# ::id snt0.E2016.790.06_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.06_Q_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 등장인물의 이름이 제목으로 쓰인 오페라가 아닌 것은?
 # ::note
--- FRAMES ----------------------------------------
-등장 : VERBAL_NOUN
-	- appear		(등 / 등장-01 :ARG1 entity_appearing :ARG2 location :ARG3 attribute_of_Arg1)
-쓰이 : REDUCED_VERB_DETECTED
-	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
-	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
-	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"오페라" [FD_ART]	->  (오 / 오페라)	OR	(s / study-field|group* :wiki "오페라" :name (이 / 이름 :op1 "오페라"))
--- VERBALIZED ------------------------------------
-(인 / 인물 :mod (등 / 등장))
+(a / amr-unknown
+	:domain (오 / 오페라
+		:polarity -
+		:mod (쓰 / 쓰-01
+			:ARG1 (이 / 이름
+				:name-of (인 / 인물
+					:ARG1-of (등 / 등장-01
+						:ARG2 오)))
+			:ARG2 (제 / 제목
+				:poss 오))))
 
-
-# ::id snt0.E2016.790.07_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.07_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 삼라만상 森羅萬象
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
+(삼 / 삼라만상)
 
-
-# ::id snt0.E2016.790.07_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.07_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 삼라(森羅)는 넓게 퍼져 있는 숲처럼 늘어선 모양을 가리킵니다.
 # ::note
--- FRAMES ----------------------------------------
-넓 : VERB
-	- wide		(넓 / 넓-01 :ARG0 causer :ARG1 thing_being_wide)
-퍼지 : VERB
-	- spread		(퍼 / 퍼지-01 :ARG1 thing_spreading :ARG2 thing_spread_through)
-	- resonate-CV		(퍼 / 퍼지-02 :ARG1 sound :ARG2 direction)
-늘어서 : ** UNUSED_OR_NON-ENTRY **
-가리키 : VERB
-	- indicate		(가 / 가리키-01 :ARG0 indicator :ARG1 thing_indicated)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
+(가 / 가리키-01
+	:ARG0 (삼 / 삼라)
+	:ARG1 (모 / 모양
+		:mod (늘 / 늘어서-00
+			:manner (같 / 같-01
+				:ARG2 (숲 / 숲
+					:ARG1-of (퍼 / 퍼지-01
+						:manner (넓 / 넓-01)))))))
 
-
-# ::id snt0.E2016.790.07_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.07_Q_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt '석 삼(三)'자가 사용된 사자성어가 아닌 것은?
 # ::note
--- FRAMES ----------------------------------------
-사용 : VERBAL_NOUN
-	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"三" [QT_COUNT]	->  :quant (三 / 三)	OR	(c / concept* :quant - :unit|scale (三 / 三))
-"삼" [QT_COUNT]	->  :quant (삼 / 삼)	OR	(c / concept* :quant - :unit|scale (삼 / 삼))
--- VERBALIZED ------------------------------------
+(a / amr-unknown
+	:domain (사 / 사자성어
+		:polarity -
+		:mod (사2 / 사용-01
+			:ARG1 (s / string-entity :value "三"))))
 
-
-# ::id snt0.E2016.790.08_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.08_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 《오만과 편견》(Pride and Prejudice)은 제인 오스틴이 쓴 소설이다.
 # ::note
--- FRAMES ----------------------------------------
-쓰 : VERB
-	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
-	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
-	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"Pride and Prejudice" [AFW_DOCUMENT]	->  (P / PrideandPrejudice)	OR	(p / publication? :wiki - :name (이 / 이름 :op1 "Pride" :op2 "and" :op3 "Prejudice"))
-"소설" [FD_ART]	->  (소 / 소설)	OR	(s / study-field|group* :wiki "소설" :name (이 / 이름 :op1 "소설"))
-"오만과 편견" [AFW_DOCUMENT]	->  (오 / 오만과편견)	OR	(p / publication? :wiki "오만과_편견" :name (이 / 이름 :op1 "오만과" :op2 "편견"))
-"제인 오스틴" [PS_NAME]	->  (제 / 제인오스틴)	OR	(p / person :wiki "제인_오스틴" :name (이 / 이름 :op1 "제인" :op2 "오스틴"))
--- VERBALIZED ------------------------------------
+(쓰 / 쓰-02
+	:ARG0 (p / person :wiki "제인_오스틴" :name (이 / 이름 :op1 "제인" :op2 "오스틴"))
+	:ARG1 (b / book :wiki "오만과_편견" :name (이2 / 이름 :op1 "오만과" :op2 "편견")
+		:mod (소 / 소설)))
 
-
-# ::id snt0.E2016.790.08_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.08_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt <문학> 영국의 소설가 오스틴이 지은 장편 소설.
 # ::note
--- FRAMES ----------------------------------------
-소설가 : DERIVED_NON-ENTRY -> (소 / 소설가-00) ?
-짓 : VERB
-	- construct		(짓 / 짓-01 :ARG0 agent :ARG1 construction)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"문학" [FD_ART]	->  (문 / 문학)	OR	(s / study-field|group* :wiki "문학" :name (이 / 이름 :op1 "문학"))
-"소설가" [CV_OCCUPATION]	->  :mod (소 / 소설가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (소 / 소설가))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"오스틴" [PS_NAME]	->  (오 / 오스틴)	OR	(p / person :wiki "오스틴?" :name (이 / 이름 :op1 "오스틴"))
-"장편 소설" [FD_ART]	->  (장 / 장편소설)	OR	(s / study-field|group* :wiki "장편소설" :name (이 / 이름 :op1 "장편" :op2 "소설"))
--- VERBALIZED ------------------------------------
-(가 / 가 :mod (소 / 소설))
-(소 / 소설 :mod (장 / 장편))
+(소 / 소설
+	:topic (문 / 문학)
+	:mod (장 / 장편)
+	:ARG1-of (짓 / 짓-01
+		:ARG0 (p / person :wiki "제인_오스틴" :name (이 / 이름 :op1 "오스틴")
+			:mod (소2 / 소설가)
+			:location (c / country :wiki "영국" :name (이2 / 이름 :op1 "영국")))))
 
-
-# ::id snt0.E2016.790.08_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.08_Q_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 브론테 자매가 집필한 작품이 아닌 것은?
 # ::note
--- FRAMES ----------------------------------------
-집필하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"브론테" [PS_NAME]	->  (브 / 브론테)	OR	(p / person :wiki "브론테?" :name (이 / 이름 :op1 "브론테"))
-"자매" [CV_RELATION]	->  :mod (자 / 자매)	OR	:ARG0-of (h / have-rel-role-91 :ARG1 :ARG2 (자 / 자매))
--- VERBALIZED ------------------------------------
+(a / amr-unknown
+	:domain (작 / 작품
+		:polarity -
+		:ARG1-of (집 / 집필-00
+			:ARG0 (f / family :wiki "브론테가" :name (이 / 이름 :op1 "브론테" :op1 "자매")))))
 
-
-# ::id snt0.E2016.790.09_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.09_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 추운 겨울철의 세 벗이라는 뜻으로, 추위에 잘 견디는 소나무ㆍ대나무ㆍ매화나무를 통틀어 이르는 말.
 # ::note
--- FRAMES ----------------------------------------
-춥 : VERB
-	- cold		(춥 / 춥-01 :ARG1 weather)
-벗 : VERBAL_NOUN
-	- take_off		(벗 / 벗-01 :ARG0 agent :ARG1 thing_taken_off)
-견디 : VERB
-	- endure		(견 / 견디-01 :ARG0 agent :ARG1 thing_endured_or_period_of_time)
-이르 : VERB
-	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
-	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- early		(이 / 이르-03 :ARG1 time)
-말 : VERBAL_NOUN
-	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"겨울철" [DT_SEASON]	->  :time|duration (겨 / 겨울철)	OR	:time (d / date-entity :season (겨 / 겨울))	OR	:duration 
-"대나무" [PT_TREE]	->  (대 / 대나무)	OR	(p / plant* :wiki "대나무" :name (이 / 이름 :op1 "대나무"))
-"매화나무" [PT_TREE]	->  (매 / 매화나무)	OR	(p / plant* :wiki "매실나무" :name (이 / 이름 :op1 "매화나무"))
-"세 벗" [QT_COUNT]	->  :quant (세 / 세벗)	OR	(c / concept* :quant 세 :unit|scale (벗 / 벗))
-"소나무" [PT_TREE]	->  (소 / 소나무)	OR	(p / plant* :wiki "소나무" :name (이 / 이름 :op1 "소나무"))
--- VERBALIZED ------------------------------------
-(철 / 철 :mod (겨 / 겨울))
+(말 / 말
+	:ARG1-of (뜻 / 뜻하-01
+		:ARG2 (벗 / 벗 :quant 3
+			:time (d / date-entity :season (겨 / 겨울)
+				:ARG1-of (춥 / 춥-01))))
+	:ARG1-of (이 / 이르-02
+		:attribute (a / and
+			:op1 (소 / 소나무)
+			:op2 (대 / 대나무)
+			:op3 (매 / 매화나무)
+			:ARG0-of (견 / 견디-01
+				:ARG1 (춥2 / 춥-01)))))
 
-
-# ::id snt0.E2016.790.09_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.09_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 추위에 강한 소나무, 대나무, 매화나무를 가리킴.
-# ::note
--- FRAMES ----------------------------------------
-강하 : VERB
-	- strong		(강 / 강하-01 :ARG1 entity_being_strong)
-가리키 : VERB
-	- indicate		(가 / 가리키-01 :ARG0 indicator :ARG1 thing_indicated)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"대나무" [PT_TREE]	->  (대 / 대나무)	OR	(p / plant* :wiki "대나무" :name (이 / 이름 :op1 "대나무"))
-"매화나무" [PT_TREE]	->  (매 / 매화나무)	OR	(p / plant* :wiki "매실나무" :name (이 / 이름 :op1 "매화나무"))
-"소나무" [PT_TREE]	->  (소 / 소나무)	OR	(p / plant* :wiki "소나무" :name (이 / 이름 :op1 "소나무"))
--- VERBALIZED ------------------------------------
-(나 / 나무 :mod (매 / 매화))
+# ::note :criterion 도입
+(가 / 가리키-01
+	:ARG1 (a / and
+		:op1 (소 / 소나무)
+		:op2 (대 / 대나무)
+		:op3 (매 / 매화나무)
+			:ARG1-of (강 / 강하-01
+				:criterion (춥2 / 춥-01))))
 
-
-# ::id snt0.E2016.790.09_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.09_Q_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt '세한삼우'에 속하는 나무가 아닌 것은?
-# ::note
--- FRAMES ----------------------------------------
-속하 : VERB
-	- belong_to		(속 / 속하-01 :ARG1 thing_belonging :ARG2 belong_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
+# ::note instance-of 도입할 경우 :mod 등을 중심으로 재검수
+(i / include-91
+	:polarity -
+	:ARG1 (a / amr-unknown
+		:instance-of (나 / 나무))
+	:ARG2 (세 / 세한삼우))
 
-
-# ::id snt0.E2016.790.10_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.10_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 세포이(sepoy)는 영국 지배 시기 인도에서 채용된 현지 용병을 부르는 명칭이었다.
 # ::note
--- FRAMES ----------------------------------------
-지배 : VERBAL_NOUN
-	- rule		(지 / 지배-01 :ARG0 thing_ruling :ARG1 thing_ruled)
-채용 : VERBAL_NOUN
-	- employ		(채 / 채용-01 :ARG0 agent :ARG1 thing_employed)
-부르 : VERB
-	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
-	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"용병" [CV_POSITION]	->  :mod (용 / 용병)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (용 / 용병))
-"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
--- VERBALIZED ------------------------------------
-(시 / 시기 :mod (지 / 지배))
-(용 / 용병 :mod (현 / 현지))
+(부 / 부르-02
+	:ARG1 (용 / 용병
+		:location (c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+		:ARG1-of (채 / 채용-01
+			:ARG0 (c2 / country :wiki "영국" :name (이2 / 이름 :op1 "영국"))
+			:time (지 / 지배-01
+				:ARG0 c2
+				:ARG1 c)
+			:location c))
+	:ARG2 (세 / 세포이))
 
-
-# ::id snt0.E2016.790.10_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.10_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt <역사> 1857년에 영국령(英國領) 인도에서 영국 동인도 회사의 용병 세포이가 일으킨 항쟁.
 # ::note
--- FRAMES ----------------------------------------
-일으키 : VERB
-	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1857년" [DT_YEAR]	->  :time|duration (1 / 1857년)	OR	:time (d / date-entity :year 1857)	OR	:duration (t / temporal-quantity :quant 1857 :unit (년 / 년))  
-"英國領" [LCP_COUNTRY]	->  (英 / 英國領)	OR	(c / country :wiki - :name (이 / 이름 :op1 "英國領"))
-"영국 동인도 회사" [OGG_ECONOMY]	->  (영 / 영국동인도회사)	OR	(c / company|organization :wiki "영국_동인도_회사" :name (이 / 이름 :op1 "영국" :op2 "동인도" :op3 "회사"))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"용병" [CV_POSITION]	->  :mod (용 / 용병)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (용 / 용병))
-"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
--- VERBALIZED ------------------------------------
-(세 / 세포이 :mod (용 / 용병))
+(항 / 항쟁
+	:mod (일 / 일으키-01
+		:ARG0 (세 / 세포이
+			:poss (c / company :wiki "영국_동인도_회사" :name (이 / 이름 :op1 "영국" :op2 "동인도" :op3 "회사"))
+			:instance-of (용 / 용병))
+		:location (c2 / country :wiki "인도_제국" :name (이2 / 이름 :op1 "영국령" :op2 "인도"))
+		:time (d / date-entity :year 1857)))
 
-
-# ::id snt0.E2016.790.10_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.10_Q_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 사건 이름이 지역명이 아닌 것은?
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(명 / 명 :mod (지 / 지역))
-(이 / 이름 :mod (사 / 사건))
-
+(a / amr-unknown
+	:domain (이 / 이름
+		:polarity -
+		:name-of (지 / 지역)
+		:domain (이2 / 이름
+			:name-of (사 / 사건))))
 
 # ::id snt0.E2016.790.11_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 각기병(脚氣病)은 비타민 B1(티아민) 결핍으로 인해 심부전과 말초 신경 장애를 초래하는 질환이다.

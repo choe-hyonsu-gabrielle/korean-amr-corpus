@@ -1,95 +1,57 @@
-# ::id snt0.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt0.E2017.NEWS.012 ::date 2019-02-15 ::annotator gabrielle
 # ::snt '조국 책임론'에 靑 선 긋기.
 # ::note
--- FRAMES ----------------------------------------
-책임론 : DERIVED_NON-ENTRY -> (책 / 책임론-00) ?
-서 : VERB
-	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
-	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
-	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
--- FORCE CONVERT ---------------------------------
-(책 / 책임지-01)
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(론 / 론 :mod (책 / 책임-00))
+(선 / 선-긋-00
+	:ARG0 (g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "靑"))
+	:ARG1 (책 / 책임론
+		:mod (p / person :wiki "조국_(법학자)" :name (이 / 이름 :op1 "조국"))))
 
-
-# ::id snt1.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt1.E2017.NEWS.012 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 거듭된 인사 검증 실패 논란에 조국 청와대 민정수석의 책임론이 불거지고 있다.
 # ::note
--- FRAMES ----------------------------------------
-실패 : VERBAL_NOUN
-	- fail		(실 / 실패-01 :ARG1 thing_failing :ARG2 task)
-책임론 : DERIVED_NON-ENTRY -> (책 / 책임론-00) ?
-불거지 : VERB
-	- arise		(불 / 불거지-01 :ARG1 thing_arising)
--- FORCE CONVERT ---------------------------------
-(책 / 책임지-01)
--- NE TYPES --------------------------------------
-"민정수석" [CV_POSITION]	->  :mod (민 / 민정수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (민 / 민정수석))
-"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
--- VERBALIZED ------------------------------------
-(검 / 검증 :mod (인 / 인사-00))
-(논 / 논란-00 :mod (실 / 실패-01))
-(론 / 론 :mod (책 / 책임-00))
-(수 / 수석 :mod (민 / 민정-00))
-(실 / 실패-01 :mod (검 / 검증-00))
+(불 / 불거지-01
+	:ARG1 (책 / 책임론
+		:mod (p / person :wiki "조국_(법학자)" :name (이 / 이름 :op1 "조국")
+			:ARG0-of (h / have-org-role-91
+				:ARG1 (g / government-organization :wiki "청와대" :name (이2 / 이름 :op1 "청와대"))
+				:ARG2 (민 / 민정수석))))
+	:cause (논 / 논란
+		:topic (거 / 거듭-01
+			:ARG1 (실 / 실패-01
+				:ARG2 (검 / 검증-00
+					:ARG1 (인 / 인사))))))
 
-
-# ::id snt2.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt2.E2017.NEWS.012 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 야당은 조 수석의 책임을 묻기 위해 국회 운영위원회 출석까지 요구하고 있다.
-# ::note
--- FRAMES ----------------------------------------
-묻 : VERB
-	- ask		(묻 / 묻-01 :ARG0 asker :ARG1 question :ARG2 hearer)
-	- bury		(묻 / 묻-02 :ARG0 agent :ARG1 thing_buried :ARG2 location)
-	- stick		(묻 / 묻-03 :ARG0 causal_agent :ARG1 thing_sticking :ARG2 stuck_to)
-위하 : VERB
-	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
-운영 : VERBAL_NOUN
-	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
-위원회 : DERIVED_NON-ENTRY -> (위 / 위원회-00) ?
-출석 : VERBAL_NOUN
-	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
-요구 : VERBAL_NOUN
-	- request		(요 / 요구-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
-(책 / 책임지-01)
--- NE TYPES --------------------------------------
-"국회 운영위원회" [OGG_POLITICS]	->  (국 / 국회운영위원회)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "국회" :op2 "운영위원회"))
-"수석" [CV_POSITION]	->  :mod (수 / 수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석))
-"조" [PS_NAME]	->  (조 / 조)	OR	(p / person :wiki "조?" :name (이 / 이름 :op1 "조"))
--- VERBALIZED ------------------------------------
-(운 / 운영-01 :mod (국 / 국회-00))
-(위 / 위원-00 :mod (운 / 운영-01))
-(회 / 회 :mod (위 / 위원-00))
+# ::note 예제 문장
+(요 / 요구-01
+	:ARG0 (야 / 야당)
+	:ARG1 (출 / 출석-01
+		:ARG0 (p / person :wiki "조국_(법학자)" :name (이 / 이름 :op1 "조")
+			:ARG0-of (h / have-org-role-91
+				:ARG2 (수 / 수석)))
+		:ARG1 (위 / 위원회
+			:ARG0-of (운 / 운영-01
+				:ARG1 (g / government-organization :wiki "대한민국_국회" :name (이2 / 이름 :op1 "국회")))))
+	:ARG2 p
+	:purpose (묻 / 묻-01
+		:ARG0 야
+		:ARG1 (책 / 책임
+			:poss p)
+		:ARG2 p))
 
-
-# ::id snt3.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt3.E2017.NEWS.012 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 하지만 청와대는 조 수석의 책임론을 불식시키기 위해 안간힘을 쓰고 있다.
-# ::note
--- FRAMES ----------------------------------------
-책임론 : DERIVED_NON-ENTRY -> (책 / 책임론-00) ?
-불식 : VERBAL_NOUN
-	- eradicate		(불 / 불식-01 :ARG0 remover :ARG1 thing_removed)
-위하 : VERB
-	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
-안 : VERBAL_NOUN
-	- embrace		(안 / 안-01 :ARGA causer :ARG0 thing_embracing :ARG1 thing_embraced)
-쓰 : VERB
-	- use		(쓰 / 쓰-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
-	- write		(쓰 / 쓰-02 :ARG0 agent :ARG1 thing_written)
-	- put_on		(쓰 / 쓰-03 :ARG0 agent :ARG1 thing_put_on)
--- FORCE CONVERT ---------------------------------
-(책 / 책임지-01)
--- NE TYPES --------------------------------------
-"수석" [CV_POSITION]	->  :mod (수 / 수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석))
-"조" [PS_NAME]	->  (조 / 조)	OR	(p / person :wiki "조?" :name (이 / 이름 :op1 "조"))
-"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
--- VERBALIZED ------------------------------------
-(간 / 간힘-00 :mod (안 / 안-01))
-(론 / 론 :mod (책 / 책임-00))
-
+# ::note 예제 문장
+(c / contrast-01
+	:ARG2 (안 / 안간힘을-쓰-00
+		:ARG0 (g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
+		:purpose (불 / 불식-01
+			:ARG0 g
+			:ARG1 (책 / 책임론
+				:mod (p / person :wiki "조국_(법학자)" :name (이2 / 이름 :op1 "조")
+					:ARG0-of (h / have-org-role-91
+						:ARG2 (수 / 수석)))))))
 
 # ::id snt4.E2017.NEWS.012 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 이낙연 총리를 시작으로 장관 후보자들의 상당수가 문재인 대통령이 후보 시절부터 밝혀온 '5대 비리 고위공직 원천 배제 원칙'에 해당하고 안경환 전 법무부 장관 후보자가 낙마하면서 야당은 '인사 파행'의 책임을 조 수석에 묻고 있다.
