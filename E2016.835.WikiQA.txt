@@ -1,167 +1,123 @@
 /usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
-# ::id snt0.E2016.835.01_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.01_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 로마 제국의 전성시대에 잇달아 군림한 5인의 명군(名君).
 # ::note
--- FRAMES ----------------------------------------
-잇달 : VERB
-	- continuous		(잇 / 잇달-01 :ARG1 thing_continuous)
-군림하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"5인" [QT_MAN_COUNT]	->  :quant (5 / 5인)	OR	(c / concept* :quant 5 :unit|scale (인 / 인))
-"로마 제국" [LCP_COUNTRY]	->  (로 / 로마제국)	OR	(c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마" :op2 "제국"))
--- VERBALIZED ------------------------------------
-(시 / 시대 :mod (전 / 전성))
+(명 / 명군
+    :quant 5
+    :mod (군 / 군림-00
+        :manner (잇 / 잇달-01)
+        :time (전 / 전성시대
+            :mod (c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마" :op2 "제국")))))
 
-
-# ::id snt1.E2016.835.01_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.835.01_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 네르바(재위 96∼98), 트라야누스(재위 98∼117), 하드리아누스(재위 117∼138), 안토니누스 피우스(재위 138∼161), 마르쿠스 아우렐리우스(재위 161∼180)의 5제(帝)를 말한다.
 # ::note
--- FRAMES ----------------------------------------
-말하 : DERIVED_VERB_DETECTED
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"117∼138" [DT_DURATION]	->  :time|duration (1 / 117∼138)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"138∼161" [DT_DURATION]	->  :time|duration (1 / 138∼161)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"161∼180" [DT_DURATION]	->  :time|duration (1 / 161∼180)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"5제" [QT_COUNT]	->  :quant (5 / 5제)	OR	(c / concept* :quant 5 :unit|scale (제 / 제))
-"96∼98" [DT_DURATION]	->  :time|duration (9 / 96∼98)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"98∼117" [DT_DURATION]	->  :time|duration (9 / 98∼117)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"네르바" [PS_NAME]	->  (네 / 네르바)	OR	(p / person :wiki "네르바" :name (이 / 이름 :op1 "네르바"))
-"마르쿠스 아우렐리우스" [PS_NAME]	->  (마 / 마르쿠스아우렐리우스)	OR	(p / person :wiki "마르쿠스_아우렐리우스" :name (이 / 이름 :op1 "마르쿠스" :op2 "아우렐리우스"))
-"안토니누스 피우스" [PS_NAME]	->  (안 / 안토니누스피우스)	OR	(p / person :wiki "안토니누스_피우스" :name (이 / 이름 :op1 "안토니누스" :op2 "피우스"))
-"트라야누스" [PS_NAME]	->  (트 / 트라야누스)	OR	(p / person :wiki "트라야누스" :name (이 / 이름 :op1 "트라야누스"))
-"하드리아누스" [PS_NAME]	->  (하 / 하드리아누스)	OR	(p / person :wiki "하드리아누스" :name (이 / 이름 :op1 "하드리아누스"))
--- VERBALIZED ------------------------------------
+(말 / 말하-01
+    :ARG1 (황 / 황제 :quant 5
+        :op1 (p / person :wiki "네르바" :name (이 / 이름 :op1 "네르바")
+            :ARG0-of (재 / 재위-00
+                :time (d / date-interval
+                    :op1 (d2 / date-entity :year 96)
+                    :op2 (d3 / date-entity :year 98))))
+        :op2 (p2 / person :wiki "트라야누스" :name (이2 / 이름 :op1 "트라야누스")
+            :ARG0-of (재2 / 재위-00
+                :time (d4 / date-interval
+                    :op1 (d5 / date-entity :year 98)
+                    :op2 (d6 / date-entity :year 117))))
+        :op3 (p3 / person :wiki "하드리아누스" :name (이3 / 이름 :op1 "하드리아누스")
+            :ARG0-of (재3 / 재위-00
+                :time (d7 / date-interval
+                    :op1 (d8 / date-entity :year 117)
+                    :op2 (d9 / date-entity :year 138))))
+        :op4 (p4 / person :wiki "안토니누스_피우스" :name (이4 / 이름 :op1 "안토니누스" :op2 "피우스")
+            :ARG0-of (재4 / 재위-00
+                :time (d10 / date-interval
+                    :op1 (d11 / date-entity :year 138)
+                    :op2 (d12 / date-entity :year 161))))
+        :op5 (p5 / person :wiki "마르쿠스_아우렐리우스" :name (이5 / 이름 :op1 "마르쿠스" :op2 "아우렐리우스")
+            :ARG0-of (재5 / 재위-00
+                :time (d13 / date-interval
+                    :op1 (d14 / date-entity :year 161)
+                    :op2 (d15 / date-entity :year 180))))))
 
-
-# ::id snt0.E2016.835.01_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.01_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 로마의 평화라고 이야기되는 시기의 다섯 명의 황제인 로마 제국 전성기에 로마를 다스렸던 네르바, 트라야누스, 하드리아누스, 안토니누스 피우스, 마르쿠스 아우렐리우스 등 5인의 황제를 지칭하는 용어이다.
 # ::note
--- FRAMES ----------------------------------------
-이야기 : VERBAL_NOUN
-	- talk		(이 / 이야기-01 :ARG0 talker :ARG1 subject :ARG2 hearer)
-전성기 : DERIVED_NON-ENTRY -> (전 / 전성기-00) ?
-다스리 : ** UNUSED_OR_NON-ENTRY **
-지칭 : VERBAL_NOUN
-	- refer_to		(지 / 지칭-01 :ARG0 agent :ARG1 thing_referring :ARG2 refer_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"5인" [QT_MAN_COUNT]	->  :quant (5 / 5인)	OR	(c / concept* :quant 5 :unit|scale (인 / 인))
-"네르바" [PS_NAME]	->  (네 / 네르바)	OR	(p / person :wiki "네르바" :name (이 / 이름 :op1 "네르바"))
-"다섯 명" [QT_MAN_COUNT]	->  :quant (다 / 다섯명)	OR	(c / concept* :quant 다섯 :unit|scale (명 / 명))
-"로마 제국" [LCP_COUNTRY]	->  (로 / 로마제국)	OR	(c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마" :op2 "제국"))
-"로마" [LCP_CAPITALCITY]	->  (로 / 로마)	OR	(c / city :wiki "로마" :name (이 / 이름 :op1 "로마"))
-"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
-"마르쿠스 아우렐리우스" [PS_NAME]	->  (마 / 마르쿠스아우렐리우스)	OR	(p / person :wiki "마르쿠스_아우렐리우스" :name (이 / 이름 :op1 "마르쿠스" :op2 "아우렐리우스"))
-"안토니누스 피우스" [PS_NAME]	->  (안 / 안토니누스피우스)	OR	(p / person :wiki "안토니누스_피우스" :name (이 / 이름 :op1 "안토니누스" :op2 "피우스"))
-"트라야누스" [PS_NAME]	->  (트 / 트라야누스)	OR	(p / person :wiki "트라야누스" :name (이 / 이름 :op1 "트라야누스"))
-"하드리아누스" [PS_NAME]	->  (하 / 하드리아누스)	OR	(p / person :wiki "하드리아누스" :name (이 / 이름 :op1 "하드리아누스"))
-"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
-"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
--- VERBALIZED ------------------------------------
-(기 / 기 :mod (전 / 전성))
-(전 / 전성 :mod (제 / 제국))
+(용 / 용어
+    :mod (지 / 지칭-01
+        :ARG2 (황 / 황제
+            :quant 5
+            :example (등 / 등
+                :op1 (p / person :wiki "네르바" :name (이 / 이름 :op1 "네르바"))
+                :op2 (p2 / person :wiki "트라야누스" :name (이2 / 이름 :op1 "트라야누스"))
+                :op3 (p3 / person :wiki "하드리아누스" :name (이3 / 이름 :op1 "하드리아누스"))
+                :op4 (p4 / person :wiki "안토니누스_피우스" :name (이4 / 이름 :op1 "안토니누스" :op2 "피우스"))
+                :op5 (p5 / person :wiki "마르쿠스_아우렐리우스" :name (이5 / 이름 :op1 "마르쿠스" :op2 "아우렐리우스")))
+            :ARG0-of (다 / 다스리-00
+                :ARG1 (c / country :wiki "로마_제국" :name (이6 / 이름 :op1 "로마" :op2 "제국"))
+                :time (전 / 전성기
+                    :ARG1-of (이7 / 이야기-01
+                        :attribute (평 / 평화
+                            :mod c)))))))
 
-
-# ::id snt0.E2016.835.01_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.01_Q_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 로마의 평화 시대를 이끈 5현제에 해당하는 사람은?
 # ::note
--- FRAMES ----------------------------------------
-이끌 : VERB
-	- lead		(이 / 이끌-01 :ARG0 thing_leading :ARG1 thing_led :ARG2 lead_to)
-해당 : VERBAL_NOUN
-	- correspond_to		(해 / 해당-01 :ARG1 topic,_theme :ARG2 compared_with)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"5현제" [QT_COUNT]	->  :quant (5 / 5현제)	OR	(c / concept* :quant 5 :unit|scale (현 / 현제))
-"로마" [LCP_COUNTRY]	->  (로 / 로마)	OR	(c / country :wiki "로마" :name (이 / 이름 :op1 "로마"))
--- VERBALIZED ------------------------------------
-(시 / 시대 :mod (평 / 평화))
+(a / amr-unknown
+    :ARG1-of (해 / 해당-01
+        :ARG2 (현 / 현제
+            :quant 5
+            :ARG0-of (이 / 이끌-01
+                :ARG1 (시 / 시대
+                    :mod (평 / 평화
+                        :mod (c / country :wiki "로마_제국" :name (이2 / 이름 :op1 "로마" :op2 "제국"))))))))
 
-
-# ::id snt0.E2016.835.02_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.02_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 회화에서의 원근법을 사용하여 그림을 그린 최초의 화가.
 # ::note
--- FRAMES ----------------------------------------
-원근법 : DERIVED_NON-ENTRY -> (원 / 원근법-00) ?
-사용 : VERBAL_NOUN
-	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
-그리 : VERB
-	- draw		(그 / 그리-01 :ARG0 agent :ARG1 thing_drawn)
-	- long_for		(그 / 그리-02 :ARG0 person_experiencing_emotion :ARG1 thing_longed_for)
-	- describe		(그 / 그리-03 :ARG0 describer :ARG1 thing_described)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"원근법" [TR_ART]	->  (원 / 원근법)	OR	(t / theory* :wiki "원근법" :name (이 / 이름 :op1 "원근법"))
-"화가" [CV_OCCUPATION]	->  :mod (화 / 화가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (화 / 화가))
-"회화" [FD_ART]	->  (회 / 회화)	OR	(s / study-field|group* :wiki "회화" :name (이 / 이름 :op1 "회화"))
--- VERBALIZED ------------------------------------
-(법 / 법 :mod (원 / 원근))
+(화 / 화가
+    :mod (그 / 그리-01
+        :ord (o / ordinal-entity :value 1)
+        :ARG1 (그2 / 그림)
+        :manner (사 / 사용-01
+            :ARG1 (원 / 원근법
+                :mod (회 / 회화)))))
 
-
-# ::id snt0.E2016.835.02_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.02_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 그의 뒤를 이어 원근법을 구체적으로 회화에 처음 도입한 사람은 30년도 채 못 살고 약물 중독으로 추정되는 이유로 요절한 피렌체의 화가 마사초(Masaccio, 1401~1428)다.
 # ::note
--- FRAMES ----------------------------------------
-잇 : VERB
-	- connect		(잇 / 잇-01 :ARG1 thing_connecting :ARG2 thing_connected :ARG3 connect_to)
-	- follow		(잇 / 잇-02 :ARG1 thing_following :ARG2 thing_followed :ARG3 follow_to)
-원근법 : DERIVED_NON-ENTRY -> (원 / 원근법-00) ?
-구체적 : DERIVED_NON-ENTRY -> (구 / 구체적-00) ?
-도입 : VERBAL_NOUN
-	- introduce		(도 / 도입-01 :ARG0 introducer :ARG1 entity_introduced :ARG2 introduced_from :ARG3 introduced_to)
-살 : VERB
-	- reside		(살 / 살-01 :ARG0 entity_residing :ARG2 location)
-	- be_alive		(살 / 살-02 :ARG0 agent :ARG1 entity_being_alive)
-추정 : VERBAL_NOUN
-	- estimate		(추 / 추정-01 :ARG0 agent :ARG thing_estimated)
-요절하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1401~1428" [DT_DURATION]	->  :time|duration (1 / 1401~1428)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"30년" [DT_DURATION]	->  :time|duration (3 / 30년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 30))	OR :duration (t / temporal-quantity :quant 30 :unit (년 / 년))  
-"Masaccio" [PS_NAME]	->  (M / Masaccio)	OR	(p / person :wiki - :name (이 / 이름 :op1 "Masaccio"))
-"마사초" [PS_NAME]	->  (마 / 마사초)	OR	(p / person :wiki "마사초" :name (이 / 이름 :op1 "마사초"))
-"약물 중독" [TMM_DISEASE]	->  (약 / 약물중독)	OR	(d / desease :wiki "약물_중독" :name (이 / 이름 :op1 "약물" :op2 "중독"))
-"원근법" [TR_ART]	->  (원 / 원근법)	OR	(t / theory* :wiki "원근법" :name (이 / 이름 :op1 "원근법"))
-"피렌체" [LCP_CITY]	->  (피 / 피렌체)	OR	(c / city :wiki "피렌체" :name (이 / 이름 :op1 "피렌체"))
-"화가" [CV_OCCUPATION]	->  :mod (화 / 화가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (화 / 화가))
-"회화" [FD_ART]	->  (회 / 회화)	OR	(s / study-field|group* :wiki "회화" :name (이 / 이름 :op1 "회화"))
--- VERBALIZED ------------------------------------
-(도 / 도입 :mod (처 / 처음))
-(법 / 법 :mod (원 / 원근))
-(적 / 적 :mod (구 / 구체))
-(중 / 중독 :mod (약 / 약물))
+(도 / 도입-01
+    :ARG0 (p / person :wiki "마사초" :name (이 / 이름 :op1 "마사초")
+        :mod (화 / 화가)
+        :location (c / city :wiki "피렌체" :name (이2 / 이름 :op1 "피렌체"))
+        :ARG1-of (요 / 요절-00
+            :time (살 / 살-02
+                :duration (이3 / 이하
+                    :op1 (t / temporal-quantity :quant 30 :unit (년 / 년))))
+            :cause (이4 / 이유
+                :mod (추 / 추정-01
+                    :ARG1 (중 / 중독-00
+                        :ARG1 p
+                        :ARG2 (약 / 약물))))))
+    :ARG1 (원 / 원근법)
+    :ARG3 (회 / 회화)
+    :manner (구 / 구체적)
+    :ord (o / ordinal-entity :value 1)
+    :mod (뒤 / 뒤를-잇-00
+        :ARG3 (그 / 그)))
 
-
-# ::id snt0.E2016.835.02_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.02_Q_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 르네상스 회화의 대표 양식인 원근법을 최초로 사용한 화가로 맞는 것은?
 # ::note
--- FRAMES ----------------------------------------
-대표 : VERBAL_NOUN
-	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
-원근법 : DERIVED_NON-ENTRY -> (원 / 원근법-00) ?
-사용 : VERBAL_NOUN
-	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
-맞 : VERB
-	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
-	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
-	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
-	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"르네상스" [EV_ACTIVITY]	->  (르 / 르네상스)	OR	(e / event? :wiki "르네상스" :name (이 / 이름 :op1 "르네상스"))
-"원근법" [TR_ART]	->  (원 / 원근법)	OR	(t / theory* :wiki "원근법" :name (이 / 이름 :op1 "원근법"))
-"화가" [CV_OCCUPATION]	->  :mod (화 / 화가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (화 / 화가))
-"회화" [FD_ART]	->  (회 / 회화)	OR	(s / study-field|group* :wiki "회화" :name (이 / 이름 :op1 "회화"))
--- VERBALIZED ------------------------------------
-(법 / 법 :mod (원 / 원근))
-(양 / 양식 :mod (대 / 대표))
-(회 / 회화 :mod (르 / 르네상스))
-
+(사 / 사용-01
+    :ARG0 (a / amr-unknown
+        :mod (화 / 화가))
+    :ARG1 (원 / 원근법
+        :mod (양 / 양식
+            :mod (대 / 대표-01
+                :ARG1 (회 / 회화
+                    :time (르 / 르네상스)))))
+    :ord (o / ordinal-entity :value 1))
 
 # ::id snt0.E2016.835.03_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 연합군 최초의 미국 전투비행단으로 제1차 세계대전에 참전한 미국 청년들의 실화를 다룬 이 영화는 영화배우 출신 영화감독 토니 빌의 <라파예트(Flyboys)>(2006)다.

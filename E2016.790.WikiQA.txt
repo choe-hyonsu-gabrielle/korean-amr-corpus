@@ -417,7 +417,7 @@
 (i / include-91
 	:polarity -
 	:ARG1 (a / amr-unknown
-		:instance-of (나 / 나무))
+		:mod (나 / 나무))
 	:ARG2 (세 / 세한삼우))
 
 # ::id snt0.E2016.790.10_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
@@ -441,7 +441,7 @@
 	:mod (일 / 일으키-01
 		:ARG0 (세 / 세포이
 			:poss (c / company :wiki "영국_동인도_회사" :name (이 / 이름 :op1 "영국" :op2 "동인도" :op3 "회사"))
-			:instance-of (용 / 용병))
+			:mod (용 / 용병))
 		:location (c2 / country :wiki "인도_제국" :name (이2 / 이름 :op1 "영국령" :op2 "인도"))
 		:time (d / date-entity :year 1857)))
 
@@ -455,28 +455,17 @@
 		:domain (이2 / 이름
 			:name-of (사 / 사건))))
 
-# ::id snt0.E2016.790.11_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.790.11_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 각기병(脚氣病)은 비타민 B1(티아민) 결핍으로 인해 심부전과 말초 신경 장애를 초래하는 질환이다.
 # ::note
--- FRAMES ----------------------------------------
-인하 : VERB
-	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
-	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
-초래 : VERBAL_NOUN
-	- bring_about		(초 / 초래-01 :ARG0 thing_bringing :ARG1 bring_about)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"脚氣病" [TMM_DISEASE]	->  (脚 / 脚氣病)	OR	(d / desease :wiki - :name (이 / 이름 :op1 "脚氣病"))
-"각기병" [TMM_DISEASE]	->  (각 / 각기병)	OR	(d / desease :wiki "각기병" :name (이 / 이름 :op1 "각기병"))
-"말초 신경 장애" [TMM_DISEASE]	->  (말 / 말초신경장애)	OR	(d / desease :wiki "말초신경증" :name (이 / 이름 :op1 "말초" :op2 "신경" :op3 "장애"))
-"비타민 B1" [MT_CHEMICAL]	->  (비 / 비타민B1)	OR	(m / material* :wiki "티아민" :name (이 / 이름 :op1 "비타민" :op2 "B1"))
-"심부전" [TMM_DISEASE]	->  (심 / 심부전)	OR	(d / desease :wiki "심부전" :name (이 / 이름 :op1 "심부전"))
-"티아민" [MT_CHEMICAL]	->  (티 / 티아민)	OR	(m / material* :wiki "티아민" :name (이 / 이름 :op1 "티아민"))
--- VERBALIZED ------------------------------------
-(병 / 병 :mod (각 / 각기))
-(신 / 신경 :mod (말 / 말초))
-(장 / 장애 :mod (신 / 신경))
-
+(질 / 질환
+	:domain (d / desease :wiki "각기병" :name (이 / 이름 :op1 "각기병"))
+	:mod (초 / 초래-01
+		:ARG0 (결 / 결핍-00
+			:ARG2 (비 / 비타민-B1))
+		:ARG1 (a / and
+			:op1 (d2 / desease :wiki "심부전" :name (이2 / 이름 :op1 "심부전"))
+			:op2 (d3 / desease :wiki "말초신경증" :name (이3 / 이름 :op1 "말초" :op2 "신경" :op3 "장애")))))
 
 # ::id snt1.E2016.790.11_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 심부전에 따라 다리의 부종이 신경 장애로 인해 하지의 저림이 일어나는 것부터 각기병이라고 한다.

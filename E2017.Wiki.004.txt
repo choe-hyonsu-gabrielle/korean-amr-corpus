@@ -20,108 +20,77 @@
 		:op2 (전 / 전통)
 		:quant (여 / 여러)))
 
-# ::id snt2.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt2.E2017.Wiki.004 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 대사의 오용과 남용을 강하게 성토한 그는 1517년 95개 논제를 게시함으로써 도미니코회 수사이자 대사령 설교 담당자인 요한 테첼에 맞섰다.
 # ::note
--- FRAMES ----------------------------------------
-남용 : VERBAL_NOUN
-	- abuse		(남 / 남용-01 :ARG0 agent :ARG1 entity_abused)
-강하 : VERB
-	- strong		(강 / 강하-01 :ARG1 entity_being_strong)
-성토 : VERBAL_NOUN
-	- denounce		(성 / 성토-01 :ARG0 denouncer :ARG1 thing_denounced)
-게시 : VERBAL_NOUN
-	- post		(게 / 게시-01 :ARG0 agent :ARG1 thing_posted :ARG2 posted_to)
-수사 : VERBAL_NOUN
-	- investigate		(수 / 수사-01 :ARG0 examiner :ARG1 thing_examined)
-담당 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (담 / 담당자-00) ?
-	- be_in_charge_of		(담 / 담당-01 :ARG0 agent :ARG1 thing_charged)
-맞서 : VERB
-	- oppose		(맞 / 맞서-01 :ARG0 opposer :ARG1 thing_opposed_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1517년" [DT_YEAR]	->  :time|duration (1 / 1517년)	OR	:time (d / date-entity :year 1517)	OR	:duration (t / temporal-quantity :quant 1517 :unit (년 / 년))  
-"95개" [QT_COUNT]	->  :quant (9 / 95개)	OR	(c / concept* :quant 95 :unit|scale (개 / 개))
-"대사령" [CV_LAW]	->  (대 / 대사령)	OR	(l / law :wiki "대사_(가톨릭)" :name (이 / 이름 :op1 "대사령"))
-"도미니코회" [OGG_RELIGION]	->  (도 / 도미니코회)	OR	(r / religious-group :wiki "도미니코_수도회" :name (이 / 이름 :op1 "도미니코회"))
-"설교 담당자" [CV_POSITION]	->  :mod (설 / 설교담당자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (설 / 설교 담당자))
-"수사" [CV_POSITION]	->  :mod (수 / 수사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수사))
-"요한 테첼" [PS_NAME]	->  (요 / 요한테첼)	OR	(p / person :wiki "요한_테첼" :name (이 / 이름 :op1 "요한" :op2 "테첼"))
--- VERBALIZED ------------------------------------
-(담 / 담당-01 :mod (설 / 설교-00))
-(설 / 설교 :mod (대 / 대사령-00))
-(자 / 자 :ARG0-of (담 / 담당-01))
+(맞 / 맞서-01
+	:ARG0 (그 / 그
+		:ARG0-of (성 / 성토-01
+			:ARG1 (a / and
+				:op1 (오 / 오용-00
+					:ARG1 (대 / 대사))
+				:op2 (남 / 남용-00
+					:ARG1 대))
+			:manner (강 / 강하-01)))
+	:ARG1 (p / person :wiki "요한_테첼" :name (이 / 이름 :op1 "요한" :op2 "테첼")
+		:ARG0-of (h / have-org-role-91
+			:ARG1 (r / religious-group :wiki "도미니코_수도회" :name (이2 / 이름 :op1 "도미니코회"))
+			:ARG2 (a2 / and
+				:op1 (수 / 수사)
+				:op2 (사 / 사람
+					:ARG0-of (담 / 담당-01
+						:ARG1 (설 / 설교-00
+							:ARG1 (대2 / 대사령)))))))
+	:manner (게 / 게시-01
+		:ARG0 p
+		:ARG1 (논 / 논제 :quant 95 :unit (개 / 개))
+		:time (d / date-entity :year 1517)))
 
-
-# ::id snt3.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt3.E2017.Wiki.004 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 1520년 그는 교황 레오 10세로부터 자신의 모든 주장을 철회하라는 요구를 받았으나 거부하였다.
-# ::note
--- FRAMES ----------------------------------------
-자신 : VERBAL_NOUN
-	- confident		(자 / 자신 :ARG0 thing_confident :ARG1 confident_in)
-주장 : VERBAL_NOUN
-	- claim		(주 / 주장-01 :ARG0 thing_claiming :ARG1 thing_claimed)
-철회 : VERBAL_NOUN
-	- withdraw		(철 / 철회-01 :ARG0 agent :ARG1 thing_withdrawn)
-요구 : VERBAL_NOUN
-	- request		(요 / 요구-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
-거부 : VERBAL_NOUN
-	- refuse		(거 / 거부-01 :ARG0 entity_refusing :ARG1 refused_action,_object :ARG2 anti-benefactive)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1520년" [DT_YEAR]	->  :time|duration (1 / 1520년)	OR	:time (d / date-entity :year 1520)	OR	:duration (t / temporal-quantity :quant 1520 :unit (년 / 년))  
-"교황" [CV_POSITION]	->  :mod (교 / 교황)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교황))
-"레오 10세" [PS_NAME]	->  (레 / 레오10세)	OR	(p / person :wiki "교황_레오_10세" :name (이 / 이름 :op1 "레오" :op2 "10세"))
--- VERBALIZED ------------------------------------
+# ::note 예제 문장
+(거 / 거부-01
+	:ARG0 (그 / 그)
+	:ARG1 (철 / 철회-01
+		:ARG0 그
+		:ARG1 (주 / 주장-01
+			:ARG0 그
+			:quant (모 / 모든)))
+	:ARG2 (p / person :wiki "교황_레오_10세" :name (이 / 이름 :op1 "레오" :op2 "10세")
+		:mod (교 / 교황))
+	:time (d / date-entity :year 1520)
+	:concession (요 / 요구-01
+		:ARG0 p
+		:ARG1 철
+		:ARG2 그))
 
-
-# ::id snt4.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt4.E2017.Wiki.004 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 1521년 보름스 회의에서 마찬가지로 신성 로마 제국의 카를 5세 황제로부터 같은 요구를 받았으나 거부함으로써 결국 교황에게 파문을 선고받았다.
 # ::note
--- FRAMES ----------------------------------------
-신성 : VERBAL_NOUN
-	- holy		(신 / 신성-01 :ARG0 thing_being_holy)
-같 : VERB
-	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
-요구 : VERBAL_NOUN
-	- request		(요 / 요구-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
-거부 : VERBAL_NOUN
-	- refuse		(거 / 거부-01 :ARG0 entity_refusing :ARG1 refused_action,_object :ARG2 anti-benefactive)
-선고 : VERBAL_NOUN
-	- sentence		(선 / 선고-01 :ARG0 judge,_court :ARG1 punishment :ARG2 criminal)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1521년" [DT_YEAR]	->  :time|duration (1 / 1521년)	OR	:time (d / date-entity :year 1521)	OR	:duration (t / temporal-quantity :quant 1521 :unit (년 / 년))  
-"교황" [CV_POSITION]	->  :mod (교 / 교황)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교황))
-"보름스 회의" [EV_OTHERS]	->  (보 / 보름스회의)	OR	(e / event? :wiki "보름스_의회" :name (이 / 이름 :op1 "보름스" :op2 "회의"))
-"신성 로마 제국" [LCP_COUNTRY]	->  (신 / 신성로마제국)	OR	(c / country :wiki "신성_로마_제국" :name (이 / 이름 :op1 "신성" :op2 "로마" :op3 "제국"))
-"카를 5세" [PS_NAME]	->  (카 / 카를5세)	OR	(p / person :wiki "카를_5세" :name (이 / 이름 :op1 "카를" :op2 "5세"))
-"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
--- VERBALIZED ------------------------------------
-(교 / 교황 :mod (결 / 결국-00))
+(선 / 선고-01
+	:ARG0 (교 / 교황)
+	:ARG1 (파 / 파문-00)
+	:mod (결 / 결국)
+	:cause (거 / 거부-01
+		:ARG1 (요 / 요구-01
+			:ARG0 (p / person :wiki "카를_5세" :name (이 / 이름 :op1 "카를" :op2 "5세")
+				:ARG0-of (h / have-org-role-91
+					:ARG1 (c / country :wiki "신성_로마_제국" :name (이2 / 이름 :op1 "신성" :op2 "로마" :op3 "제국"))
+					:ARG2 (황 / 황제)))
+			:ARG1-of (같 / 같-01))
+		:ARG2 p
+		:location (e / event :wiki "보름스_의회" :name (이3 / 이름 :op1 "보름스" :op2 "회의")
+			:time (d / date-entity :year 1521))
+		:mod (마 / 마찬가지)
+	:concession 요))
 
-
-# ::id snt5.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt5.E2017.Wiki.004 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 또한 황제로부터 삭권 박탈당했다.
 # ::note
--- FRAMES ----------------------------------------
-박탈 : VERBAL_NOUN
-	- deprive		(박 / 박탈-01 :ARG0 agent :ARG1 thing_deprived :ARG2 deprived_of)
-당하 : VERB
-	- suffer		(당 / 당하-01 :ARG1 entity_suffering :ARG2 thing_suffered :ARG3 source)
-	- reasonable		(당 / 당하-02 :ARG1 thing_being_reasonable)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"황제" [CV_POSITION]	->  :mod (황 / 황제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (황 / 황제))
--- VERBALIZED ------------------------------------
-(박 / 박탈-01 :mod (삭 / 삭권-00))
-
+(박 / 박탈-01
+	:ARG0 (황 / 황제)
+	:ARG2 (삭 / 삭권)
+	:mod (또 / 또한))
 
 # ::id snt6.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 마르틴 루터는 원래 로마 가톨릭교회의 사제였으나, 로마 가톨릭교회에 항거하여, 가톨릭교회의 교리를 논박하고, 성서가 지니고 있는 기독교 신앙에서의 권위와 그리스도에 대한 믿음과 하나님의 은혜를 통한 구원을 강조하였다.
