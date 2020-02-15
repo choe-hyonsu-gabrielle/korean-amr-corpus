@@ -92,135 +92,90 @@
 	:ARG2 (삭 / 삭권)
 	:mod (또 / 또한))
 
-# ::id snt6.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt6.E2017.Wiki.004 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 마르틴 루터는 원래 로마 가톨릭교회의 사제였으나, 로마 가톨릭교회에 항거하여, 가톨릭교회의 교리를 논박하고, 성서가 지니고 있는 기독교 신앙에서의 권위와 그리스도에 대한 믿음과 하나님의 은혜를 통한 구원을 강조하였다.
 # ::note
--- FRAMES ----------------------------------------
-항거하 : DERIVED_NON-ENTRY
-논박하 : DERIVED_NON-ENTRY
-지니 : VERB
-	- have		(지 / 지니-01 :ARG0 thing_having :ARG1 thing_had)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-통하 : VERB
-	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
-	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
-	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
-강조 : VERBAL_NOUN
-	- emphasize		(강 / 강조-01 :ARG0 emphasizer :ARG1 thing_emphasized :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"가톨릭교회" [OGG_RELIGION]	->  (가 / 가톨릭교회)	OR	(r / religious-group :wiki "로마_가톨릭교회" :name (이 / 이름 :op1 "가톨릭교회"))
-"그리스도" [PS_NAME]	->  (그 / 그리스도)	OR	(p / person :wiki "그리스도" :name (이 / 이름 :op1 "그리스도"))
-"기독교" [OGG_RELIGION]	->  (기 / 기독교)	OR	(r / religious-group :wiki "기독교" :name (이 / 이름 :op1 "기독교"))
-"로마 가톨릭교회" [OGG_RELIGION]	->  (로 / 로마가톨릭교회)	OR	(r / religious-group :wiki "로마_가톨릭교회" :name (이 / 이름 :op1 "로마" :op2 "가톨릭교회"))
-"로마 가톨릭교회" [OGG_RELIGION]	->  (로 / 로마가톨릭교회)	OR	(r / religious-group :wiki "로마_가톨릭교회" :name (이 / 이름 :op1 "로마" :op2 "가톨릭교회"))
-"마르틴 루터" [PS_NAME]	->  (마 / 마르틴루터)	OR	(p / person :wiki "마르틴_루터" :name (이 / 이름 :op1 "마르틴" :op2 "루터"))
-"사제" [CV_OCCUPATION]	->  :mod (사 / 사제)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사제))
-"하나님" [PS_NAME]	->  (하 / 하나님)	OR	(p / person :wiki "하나님" :name (이 / 이름 :op1 "하나님"))
--- VERBALIZED ------------------------------------
-(교 / 교회 :mod (가 / 가톨릭-00))
-(교 / 교회 :mod (가 / 가톨릭-00))
-(교 / 교회 :mod (가 / 가톨릭-00))
-(신 / 신앙 :mod (기 / 기독교-00))
+(a / and
+	:op1 (논 / 논박-00
+		:ARG0 (p / person :wiki "마르틴_루터" :name (이 / 이름 :op1 "마르틴" :op2 "루터")
+			:ARG0-of (h / have-org-role-91
+				:ARG1 (r / religious-group :wiki "로마_가톨릭교회" :name (이2 / 이름 :op1 "가톨릭교회"))
+				:ARG2 (사 / 사제)))
+		:ARG1 (교 / 교리
+			:poss r)
+		:manner (항 / 항거-00
+			:ARG0 p
+			:ARG1 r))
+	:op2 (강 / 강조-01
+		:ARG0 p
+		:ARG1 (구 / 구원-00
+			:manner (a / and
+				:op1 (권 / 권위
+					:poss (r2 / religious-group :wiki "기독교" :name (이2 / 이름 :op1 "기독교"))
+					:ARG1-of (지 / 지니-01
+						:ARG0 (p2 / publication :wiki "성경" :name (이3 / 이름 :op1 "성서"))))
+				:op2 (믿 / 믿-01
+					:ARG1 (p3 / person :wiki "그리스도" :name (이4 / 이름 :op1 "그리스도")))
+				:op3 (은 / 은혜
+					:mod (하 / 하나님))))))
 
-
-# ::id snt7.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt7.E2017.Wiki.004 ::date 2019-02-15 ::annotator gabrielle
 # ::snt (다섯 솔라) 그러나 루터는 스스로가 시작한 이 일을 ‘종교 개혁’으로 생각하지 않았는데, 그 이유는 종교 개혁이 하나님에게 이끌림을 받아, 할 수 없이 한 일이기 때문이라고 말하였기 때문이다.
 # ::note
--- FRAMES ----------------------------------------
-시작 : VERBAL_NOUN
-	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
-일 : VERBAL_NOUN
-	- rise		(일 / 일-01 :ARG1 thing_rising)
-개혁 : VERBAL_NOUN
-	- reform		(개 / 개혁-01 :ARG0 agent :ARG1 thing_changed)
-생각 : VERBAL_NOUN
-	- think		(생 / 생각-01 :ARG0 agent :ARG1 proposition)
-개혁 : VERBAL_NOUN
-	- reform		(개 / 개혁-01 :ARG0 agent :ARG1 thing_changed)
-이끌리 : REDUCED_VERB_DETECTED
-	- lead		(이 / 이끌-01 :ARG0 thing_leading :ARG1 thing_led :ARG2 lead_to)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-일 : VERBAL_NOUN
-	- rise		(일 / 일-01 :ARG1 thing_rising)
-말하 : DERIVED_VERB_DETECTED
-	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"다섯 솔라" [QT_COUNT]	->  :quant (다 / 다섯솔라)	OR	(c / concept* :quant 다섯 :unit|scale (솔 / 솔라))
-"루터" [PS_NAME]	->  (루 / 루터)	OR	(p / person :wiki "마르틴_루터" :name (이 / 이름 :op1 "루터"))
-"종교 개혁" [EV_OTHERS]	->  (종 / 종교개혁)	OR	(e / event? :wiki "종교_개혁" :name (이 / 이름 :op1 "종교" :op2 "개혁"))
-"종교 개혁" [EV_OTHERS]	->  (종 / 종교개혁)	OR	(e / event? :wiki "종교_개혁" :name (이 / 이름 :op1 "종교" :op2 "개혁"))
-"하나님" [PS_NAME]	->  (하 / 하나님)	OR	(p / person :wiki "하나님" :name (이 / 이름 :op1 "하나님"))
--- VERBALIZED ------------------------------------
-(개 / 개혁-01 :mod (종 / 종교-00))
-(개 / 개혁-01 :mod (종 / 종교-00))
+(c / contrast-01
+	:ARG2 (a / and
+		:op1 (생 / 생각-01
+			:polarity -
+			:ARG0 (p / person :wiki "마르틴_루터" :name (이 / 이름 :op1 "루터"))
+			:ARG1 (일 / 일
+				:mod (이2 / 이)
+				:ARG1-of (시 / 시작-01
+					:ARG0 p))
+			:attribute (개 / 개혁-01
+				:ARG1 (종 / 종교)))
+		:op2 (말 / 말하-01
+			:ARG0 p
+			:ARG1 (o / obligate-01
+				:ARG0 (이3 / 이끌-01
+					:ARG0 (하 / 하나님)
+					:ARG1 p)
+				:ARG1 p
+				:ARG2 개
+				:mod (할 / 할-수-없이)))))
 
-
-# ::id snt8.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt8.E2017.Wiki.004 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 그는 ‘복음주의자’로서 복음을 전파하기를 원했고, 자신이 설교자, 박사, 교수라고 불리기를 원했다.
 # ::note
--- FRAMES ----------------------------------------
-주의 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (주 / 주의자-00) ?
-	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
-전파 : VERBAL_NOUN
-	- propagate		(전 / 전파-01 :ARG0 agent :ARG1 thing_propagated)
-원하 : DERIVED_VERB_DETECTED
-	- want		(원 / 원하-01 :ARG0 wanter :ARG1 thing_wanted)
-자신 : VERBAL_NOUN
-	- confident		(자 / 자신 :ARG0 thing_confident :ARG1 confident_in)
-설교자 : DERIVED_NON-ENTRY -> (설 / 설교자-00) ?
-불리 : VERB
-	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
-원하 : DERIVED_VERB_DETECTED
-	- want		(원 / 원하-01 :ARG0 wanter :ARG1 thing_wanted)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"교수" [CV_OCCUPATION]	->  :mod (교 / 교수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (교 / 교수))
-"박사" [CV_POSITION]	->  :mod (박 / 박사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (박 / 박사))
-"복음주의자" [CV_POSITION]	->  :mod (복 / 복음주의자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (복 / 복음주의자))
-"설교자" [CV_POSITION]	->  :mod (설 / 설교자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (설 / 설교자))
--- VERBALIZED ------------------------------------
-(자 / 자 :ARG0-of (주 / 주의-01))
-(자 / 자 :mod (설 / 설교-00))
-(주 / 주의-01 :mod (복 / 복음-00))
+(a / and
+	:op1 (원 / 원하-01
+		:ARG0 (그 / 그)
+		:ARG1 (전 / 전파-01
+			:ARG0 그
+			:attribute (복 / 복음주의자)
+			:ARG1 (복2 / 복음)))
+	:op2 (원2 / 원하-01
+		:ARG0 그
+		:ARG1 (부 / 부르-02
+			:ARG1 그
+			:ARG2 (a2 / and
+				:op1 (사 / 사람
+					:ARG0-of (설 / 설교-00))
+				:op2 (박 / 박사)
+				:op3 (교 / 교수)))))
 
-
-# ::id snt9.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
+# ::id snt9.E2017.Wiki.004 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 그러나 그의 삶 가운데 그가 행했던 일들은 엄청난 결과를 가져왔다.
 # ::note
--- FRAMES ----------------------------------------
-행하 : VERB
-	- do		(행 / 행하-01 :ARG0 agent :ARG1 thing_done)
-일 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (일 / 일들-00) ?
-	- rise		(일 / 일-01 :ARG1 thing_rising)
-엄청나 : VERB
-	- exorbitant		(엄 / 엄청나-01 :ARG1 thing_exorbitant)
-가져오 : VERB
-	- bring		(가 / 가져오-01 :ARG0 bringer :ARG1 thing_brought :ARG2 brought_to :ARG3 brought_from)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(가 / 가운데 :mod (삶 / 삶-00))
-(들 / 들 :ARG0-of (일 / 일-01))
-
+(c / contrast-01
+	:ARG2 (c2 / cause-01
+		:ARG1 (일 / 일
+			:ARG1-of (행 / 행하-01
+				:ARG0 (그 / 그)
+				:time (가 / 가운데
+					:op1 (살 / 살아가-01
+						:ARG1 그))))
+		:ARG2 (결 / 결과
+			:ARG1-of (엄 / 엄청나-01))))
 
 # ::id snt10.E2017.Wiki.004 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 그로 인해 개신교가 태동했을 뿐 아니라, 성서 번역, 많은 저작 활동, 작곡과 설교를 통해 사회와 역사가 크게 변화되었기 때문이다.
