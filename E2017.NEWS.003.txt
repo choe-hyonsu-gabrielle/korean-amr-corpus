@@ -284,9 +284,7 @@
 (벌 / 벌이-01
     :ARG0 (등 / 등
         :op1 (경 / 경찰)
-        :op2 (g / government-organization
-            :wiki "국립과학수사연구원"
-            :name (이 / 이름 :op1 "국과수")))
+        :op2 (g / government-organization :wiki "국립과학수사연구원" :name (이 / 이름 :op1 "국과수")))
     :ARG1 (감 / 감식-00
         :mod (합 / 합동)
         :ord (o / ordinal-entity :value 2 :unit (차 / 차)))
@@ -326,9 +324,7 @@
         :manner (부 / 부르-01
             :ARG1 (사 / 사람
                 ARG0-of (h / have-org-role-91
-                    :ARG1 (c / company
-                        :wiki "한국전력공사"
-                        :name (이 / 이름 :op1 "한국전력공사"))))))
+                    :ARG1 (c / company :wiki "한국전력공사" :name (이 / 이름 :op1 "한국전력공사"))))))
     :mod (또 / 또)
     :time (조 / 조만간))
 
@@ -336,9 +332,9 @@
 # ::snt 경찰 관계자는 "목격자 3명의 진술과 최초 발화점인 '가' 구역 좌판 바닥에서 피복이 벗겨진 전선 여러 가닥을 확보했다"며 "CCTV 영상에서 화재 발생 시각에 사람이 드나든 흔적을 전혀 찾을 수 없어 전기적인 요인에 의한 자연 발화 가능성이 크다"고 했다.
 # ::note
 (하 / 하-02
-    :ARG0 (p / person
-        :ARG0-of (h / have-org-role-91
-            :ARG1 (경 / 경찰)))
+    :ARG0 (사 / 사람
+        :ARG1-of (관 / 관계-02
+            :ARG2 (경 / 경찰)))
     :ARG1 (a / and
         :op1 (확 / 확보-01
             :ARG1 (전 / 전선 :quant (여 / 여러) :unit (가 / 가닥)
@@ -351,7 +347,7 @@
                         :location-of (발 / 발화-00
                             :mod (최 / 최초)))))
             :ARG1 (진 / 진술-01
-                :ARG0 (사 / 사람 :quant 3 :unit (명 / 명)
+                :ARG0 (사2 / 사람 :quant 3 :unit (명 / 명)
                     :ARG0-of (목2 / 목격-01))))
         :op2 (가2 / 가능-01
             :ARG1 (발2 / 발화-00
