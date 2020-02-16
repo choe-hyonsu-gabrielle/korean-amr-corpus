@@ -3,9 +3,9 @@
 # ::note 12/18 검수
 (말 / 말하-01
     :ARG1 (울 / 울-00
-        :ARG0 (사 / 사람
-            :ARG2-of (연 / 연습-01
-                :topic (아 / 아이돌))
+        :ARG0 (학 / 학생
+            :ARG0-of (연 / 연습-01
+                :ARG1 (아 / 아이돌))
             :ARG1-of (i / include-91
                 :ARG2 (반 / 반
                     :ARG1-of (같 / 같-01))))
@@ -33,27 +33,18 @@
     :ARG0 (a / and
         :op1 (사 / 사람
             :ARG0-of (h / have-org-role-91
-                :ARG1 (s / school
-                    :wiki "청담고등학교_(서울)"
-                    :name (이 / 이름 :op1 "청담고")
+                :ARG1 (s / school :wiki "청담고등학교_(서울)" :name (이 / 이름 :op1 "청담고")
                     :location (c / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울"))
                     :ARG1-of (다 / 다니-01
-                        :ARG0 (p1 / person
-                            :wiki "정유라_(승마_선수)"
-                            :name (이3 / 이름 :op1 "정유라") 
+                        :ARG0 (p1 / person :wiki "정유라_(승마_선수)" :name (이3 / 이름 :op1 "정유라") 
                             :age (t / temporal-quantity :quant 21)
                             :ARG0-of (h2 / have-rel-role-91
-                                :ARG1 (p2 / person
-                                    :wiki "최순실"
-                                    :name (이4 / 이름 :op1 "최순실") 
+                                :ARG1 (p2 / person :wiki "최순실" :name (이4 / 이름 :op1 "최순실") 
                                     :age (t2 / temporal-quantity :quant 61))
                                 :ARG2 (딸 / 딸)))))
-                :ARG3 (가 / 가르치-01)))
-        :op2 (사2 / 사람
-            :ARG0-of (h3 / have-org-role-91
-                :ARG1 s
-                :ARG3 (공 / 공부-01)))
-        :mod (대 / 대부분))
+                :ARG2 (교 / 교사)))
+        :op2 (학 / 학생)
+        :quant (대 / 대부분))
     :ARG1 (a2 / and
         :op1 p1
         :op2 p2)
@@ -63,27 +54,23 @@
 # ::snt 특히 최 씨는 체육특기자 담당 교사에게 “잘라버리겠다” “애 아빠(정윤회)가 가만 안 둘 것”이라며 엄포도 놓았다.
 # ::note 보조사
 (협 / 협박-01
-    :ARG0 (p / person
-        :wiki "최순실"
-        :name (이 / 이름 :op1 "최"))
-    :ARG1 (사 / 사람
-        :ARG0-of (h / have-org-role-91
-            :ARG3 (가 / 가르치-01
-                :ARG2 (체 / 체육특기자))))
+    :ARG0 (p / person :wiki "최순실" :name (이 / 이름 :op1 "최"))
+    :ARG1 (교 / 교사
+        :ARG0 (담 / 담당-01
+            :ARG1 (체 / 체육특기자)))
     :manner (말 / 말하-01
         :ARG0 p
-        :ARG1 (해 / 해고-01
-            :ARG1 사)
-        :ARG1 (가1 / 가만두-01
-            :polarity -
-            :ARG0 (p2 / person
-                :wiki "정윤회"
-                :name (이2 / 이름 :op1 "정윤회")
-                :ARG0-of (h2 / have-rel-role-91
-                    :ARG1 (애 / 애)
-                    :ARG2 (아 / 아빠)))
-            :ARG1 사)
-        :ARG2 사)
+        :ARG1 (a / and
+            :op1 (해 / 해고-01
+                :ARG1 교)
+            :op2 (가 / 가만두-01
+                :polarity -
+                :ARG0 (p2 / person :wiki "정윤회" :name (이2 / 이름 :op1 "정윤회")
+                    :ARG0-of (h2 / have-rel-role-91
+                        :ARG1 (애 / 애)
+                        :ARG2 (아 / 아빠)))
+                :ARG1 교))
+        :ARG2 교)
     :mod (특 / 특히))
 
 # ::id snt4.E2017.NEWS.002 ::date 2019-09-04T20:06 ::annotator gabrielle
@@ -95,27 +82,17 @@
             :ARG2 (이 / 이)))
     :location (자 / 자료
         :topic (감 / 감사-00
-            :ARG1 (s / school
-                :wiki "청담고등학교_(서울)"
-                :name (이2 / 이름 :op1 "청담고"))
+            :ARG1 (s / school :wiki "청담고등학교_(서울)" :name (이2 / 이름 :op1 "청담고"))
             :ARG1-of (실 / 실시-01
                 :time (d / date-entity :month 11 :year (지 / 지난해))))
         :ARG1-of (제 / 제출-01
-            :ARG0 (g / government-organization
-                :wiki "서울특별시교육청"
-                :name (이3 / 이름 :op1 "서울시교육청"))
-            :ARG2 (p / person
-                :wiki "김병욱_(정치인)"
-                :name (이4 / 이름:op1 "김병욱")
+            :ARG0 (g / government-organization :wiki "서울특별시교육청" :name (이3 / 이름 :op1 "서울시교육청"))
+            :ARG2 (p / person :wiki "김병욱_(정치인)" :name (이4 / 이름:op1 "김병욱")
                 :ARG0-of (h / have-org-role-91
-                    :ARG1 (g2 / government-organization
-                        :wiki "대한민국_국회"
-                        :name (이5 / 이름 :op1 "국회"))
+                    :ARG1 (g2 / government-organization :wiki "대한민국_국회" :name (이5 / 이름 :op1 "국회"))
                     :ARG2 (의 / 의원))
                 :ARG0-of (h2 / have-org-role-91
-                    :ARG1 (p2 / political-party
-                        :wiki "더불어민주당"
-                        :name (이6 / 이름 :op1 "더불어민주당"))
+                    :ARG1 (p2 / political-party :wiki "더불어민주당" :name (이6 / 이름 :op1 "더불어민주당"))
                     :ARG2 의))
             :time (d2 / date-entity :day 19)))
     :manner (고 / 고스란히))
@@ -142,19 +119,17 @@
         :mod (담 / 담임
             :mod (학 / 학년
                 :ord (o / ordinal-entity :value 1))))
-    :ARG1 (multi-sentence
+    :ARG1 (m / multi-sentence
         :snt1 (들 / 들어주-00
             :ARG1 (고 / 고민
-                :poss (사 / 사람
-                    :ARG0-of (h / have-rel-role-91
-                        :ARG2 (친 / 친구))))
+                :poss (친 / 친구))
             :manner (잘 / 잘)
             :cause (천 / 천성
                 :ARG1-of (밝 / 밝-01)
                 :ARG1-of (활 / 활달하-01)))
         :snt2 (원 / 원만하-01
             :ARG1 (관 / 관계
-                :mod (교 / 교우))
+                :mod (교2 / 교우))
             :cause (따 / 따뜻하-01
                 :ARG1 (심 / 심성)))))
 
@@ -163,15 +138,11 @@
 # ::note 보조사
 (쓰 / 쓰-01
     :ARG1 (선 / 선망-00
-        :ARG0 (사 / 사람
-            :ARG0-of (h / have-rel-role-91
-                :ARG2 (급 / 급우)))
+        :ARG0 (급 / 급우)
         :concession (부 / 부족-01
-            :ARG1 (t / temporal-quantity
+            :ARG1 (시 / 시간
                 :duration-of (교 / 교류-01
-                    :ARG1 (사2 / 사람
-                        :ARG0-of (h2 / have-rel-role-91
-                            :ARG2 (친 / 친구)))))
+                    :ARG1 (친 / 친구)))
             :cause (훈 / 훈련-01)))
     :location (학 / 학생부
         :mod (학2 / 학년 :ord (o / ordinal-entity :value 2))))
@@ -350,28 +321,22 @@
 # ::snt 또 다른 동창생도 “아침에 왔다가 점심도 안 먹고 집에 갔다. 옆 친구와도 어울리지 않았다”고 전했다.
 # ::note 점심도 안 먹고 가다 처리
 (전 / 전하-01
-    :ARG0 (학 / 학생
-            :ARG0-of (h / have-rel-role-91
-                :ARG2 (동 / 동창))
-            :ARG1-of (다 / 다르-01
-                :mod (또 / 또))
-        :mod (또 / 또한))
+    :ARG0 (동 / 동창생
+        :ARG1-of (다 / 다르-01
+            :mod (또 / 또)))
     :ARG1 (m / multi-sentence
         :snt1 (a / and
             :op1 (오 / 오-01
                 :time (아 / 아침))
+            :op2 (먹 / 먹-01
+                :polarity -
+                :ARG1 (점 / 점심))
             :op2 (가 / 가-01
-                :ARG3 (집 / 집)
-                :manner (먹 / 먹-01
-                    :polarity -
-                    :ARG1 (점 / 점심))))
+                :ARG3 (집 / 집)))
         :snt2 (어 / 어울리-00
             :polarity -
-            :ARG1 (e / either
-                :op1 (사 / 사람
-                    :ARG0-of (h2 / have-rel-role-91 
-                        :ARG2 (친 / 친구
-                            :location (옆 / 옆))))))))
+            :ARG1 (친 / 친구
+                :location (옆 / 옆)))))
 
 # ::id snt16.E2017.NEWS.002 ::date 2019-09-06T01:45 ::annotator gabrielle
 # ::snt 청담고는 다른 학생들의 출석 인정엔 깐깐했지만 유독 정 씨에겐 관대했다.
@@ -465,17 +430,12 @@
 # ::snt 당시 같은 반이었던 한 동창생은 “예체능을 전공하는 다른 친구들이 늘 정유라만 조퇴시켜 줘 불만이 많았다”고 전했다.
 # ::note
 (전 / 전하-01
-    :ARG0 (사 / 사람
-        :quant 1
-        :ARG0-of (h / have-rel-role-91
-            :ARG2 (동 / 동창생))
+    :ARG0 (동 / 동창생
         :mod (반 / 반
             :ARG1-of (같 / 같-01
                 :time (당 / 당시))))
     :ARG1 (불 / 불만-01
-        :ARG1 (사2 / 사람
-            :ARG0-of (h2 / have-rel-role-91
-                :ARG2 (친 / 친구))
+        :ARG1 (친 / 친구
             :ARG0-of (전 / 전공-00
                 :ARG1 (예 / 예체능))
             :ARG1-of (다 / 다르-01))
@@ -503,13 +463,13 @@
 # ::snt 실제로 고 3년 당시 정 씨의 출석일수는 17일에 불과했다.
 # ::note
 (불 / 불과-01
-    :ARG0 (t / temporal-quantity
+    :ARG0 (t / temporal-quantity :unit (일 / 일)
         :duration-of (출 / 출석-01
             :ARG0 (p / person :wiki "정유라_(승마_선수)" :name (이 / 이름 :op1 "정"))
             :time (학 / 학년
                 :ord (o / ordinal-entity :value 3)
                 :mod (고 / 고등학교))))
-    :ARG1 (t2 / temporal-quantity :quant 17 :unit (일 / 일))
+    :ARG1 (t2 / temporal-quantity :quant 17 :unit (일2 / 일))
     :mod (실 / 실제))
 
 # ::id snt24.E2017.NEWS.002 ::date 2019-09-07T02:11 ::annotator gabrielle
@@ -517,18 +477,18 @@
 # ::note
 (확 / 확인-01
     :polarity -
-    :ARG1 (t / temporal-quantity
-        :duration-of (출 / 출석-01)
-        :mod (실 / 실제))
+    :ARG1 (t / temporal-quantity :unit (일 / 일)
+        :duration-of (출 / 출석-01
+            :mod (실 / 실제)))
     :manner (정 / 정확-01)
     :concession (기 / 기록-01
         :ARG1 (a / and
             :op1 (출2 / 출석-01
-                :duration (t2 / temporal-quantity :quant 126 :unit (일 / 일))
+                :duration (t2 / temporal-quantity :quant 126 :unit (일2 / 일))
                 :time (학 / 학년 :ord (o / ordinal-entity :value 1)
                     :mod (고 / 고등학교)))
             :op2 (출3 / 출석-01
-                :duration (t3 / temporal-quantity :quant 137 :unit (일2 / 일))
+                :duration (t3 / temporal-quantity :quant 137 :unit (일3 / 일))
                 :time (학2 / 학년 :ord (o2 / ordinal-entity :value 2)
                     :mod 고))
             :mod (각 / 각각)))
@@ -539,16 +499,17 @@
 # ::note
 (말 / 말하-01
     :ARG0 (사 / 사람
-        :ARG0-of (h / have-org-role-91
-            :ARG1 (g / government-organization :wiki "서울특별시교육청" :name (이 / 이름 :op1 "시" :op2 "교육청"))))
+        :ARG1-of (관 / 관계-02
+            :ARG1 (교 / 교육청
+                :poss (시 / 시))))
     :ARG1 (어 / 어렵-01
         :ARG1 (파 / 파악-01
-            :ARG1 (d / date-entity
+            :ARG1 (날 / 날짜
                 :time-of (출 / 출석-01
                     :mod (실 / 실제)))))
     :cause (기 / 기록-01
-        :ARG1 (출2 / 출석-01
-            :mod (그 / 그냥))
+        :ARG1 (출2 / 출석-01)
+        :mod (그 / 그냥)
         :ARG1-of (i / instead-of-91
             :ARG2 (기2 / 기록-01
                 :ARG1 (인 / 인정-01
