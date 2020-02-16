@@ -7,9 +7,7 @@
         :ARG0 (사 / 사람
             :ARG0-of (목 / 목격-01
                 :ARG1 (화 / 화재
-                    :location (m / market
-                        :wiki "소래포구_종합어시장"
-                        :name (이 / 이름 :op1 "소래포구" :op2 "어시장")))
+                    :location (m / market :wiki "소래포구_종합어시장" :name (이 / 이름 :op1 "소래포구" :op2 "어시장")))
             :quant 3)))
 
 # ::id snt1.E2017.NEWS.003 ::date 2019-09-08T00:49 ::annotator gabrielle
@@ -32,28 +30,20 @@
                         :mod (최 / 최초))))))
     :topic (사2 / 사고
         :mod 화
-        :location (m / market
-            :wiki "소래포구_종합어시장"
-            :name (이 / 이름 :op1 "소래포구" :op2 "어시장")
-            :location (c / city
-                :wiki "인천광역시"
-                :name (이2 / 이름 :op1 "인천")))
+        :location (m / market :wiki "소래포구_종합어시장" :name (이 / 이름 :op1 "소래포구" :op2 "어시장")
+            :location (c / city :wiki "인천광역시" :name (이2 / 이름 :op1 "인천")))
         :ARG0-of (내 / 내-01
             :ARG1 (피 / 피해
                 :ARG1-of (추 / 추산-01
                     :ARG0 (소2 / 소방서))
                 :mod (재 / 재산
-                    :mod (m2 / monetary-quantity
-                        :quant (여 / 여 :op1 600000000)
-                        :unit (원2 / 원)))))))
+                    :mod (m2 / monetary-quantity :quant (여 / 여 :op1 600000000) :unit (원2 / 원)))))))
 
 # ::id snt2.E2017.NEWS.003 ::date 2019-09-08T01:05 ::annotator gabrielle
 # ::snt 인천 남동 경찰서는 18일 발생한 인천시 남동구 논현동 소래포구 어시장 화재사고와 관련한 목격자 3명의 진술을 확보해 조사하고 있다고 19일 밝혔다.
 # ::note 주소 객체 --> 인천시, 남동구, 논현동 모두 분리
 (밝 / 밝히-01
-    :ARG0 (g / government-organization
-        :wiki "인천남동경찰서"
-        :name (이 / 이름 :op1 "인천" :op2 "남동" :op3 "경찰서"))
+    :ARG0 (g / government-organization :wiki "인천남동경찰서" :name (이 / 이름 :op1 "인천" :op2 "남동" :op3 "경찰서"))
     :ARG1 (조 / 조사-01
         :ARG0 g
         :manner (확 / 확보-01
@@ -64,9 +54,7 @@
                     :quant 3)
                 :topic (사2 / 사고
                     :mod (화 / 화재)
-                    :location (m / market
-                        :wiki "소래포구_종합어시장"
-                        :name (이2 / 이름 :op1 "소래포구" :op2 "어시장")
+                    :location (m / market :wiki "소래포구_종합어시장" :name (이2 / 이름 :op1 "소래포구" :op2 "어시장")
                         :location (c / city-district :wiki "논현동_(인천)" :name (이3 / 이름 :op1 "논현동")
                             :location (c2 / city :wiki "남동구" :name (이4 / 이름 :op1 "남동구")
                                 :location (c3 / city :wiki "인천광역시" :name (이5 / 이름 :op1 "인천시")))))
@@ -90,7 +78,7 @@
                 :time (께 / 께
                     :op1 (d / date-entity :day 18 :time 01:36))))
         :ARG2 (p / phone-number-entity :value 119)
-        :mod (처 / 처음)))
+        :ord (o / ordinal-entity :value 1))
 
 # ::id snt4.E2017.NEWS.003 ::date 2019-09-08T01:25 ::annotator gabrielle
 # ::snt 최초 목격자인 이 상인은 가건물 형태인 좌판 구역 뒤편의 건물 4층 횟집에서 영업을 마치고 가게 내부를 정리하다가 화재를 목격했다.
@@ -200,9 +188,7 @@
             :op1 (경 / 경찰)
             :op2 (요 / 요원
                 :ARG0-of (h / have-org-role-91
-                    :ARG1 (g / government-organization
-                        :wiki "국립과학수사연구원"
-                        :name (이 / 이름 :op1 "국립과학수사연구원")))))
+                    :ARG1 (g / government-organization :wiki "국립과학수사연구원" :name (이 / 이름 :op1 "국립과학수사연구원")))))
         :ARG1 (전 / 전선
             :quant (여 / 여러 :unit (개 / 개))
             :ARG1-of (끊 / 끊-01
@@ -392,9 +378,7 @@
         :op2 (t2 / temporal-quantity :quant 30 :unit (분 / 분)))
     :cause (나 / 나-01
         :ARG1 불
-        :ARG2 (m / market
-            :wiki "소래포구_종합어시장"
-            :name (이 / 이름 :op1 "소래포구" :op2 "어시장"))
+        :ARG2 (m / market :wiki "소래포구_종합어시장" :name (이 / 이름 :op1 "소래포구" :op2 "어시장"))
         :time (께 / 께
             :op1 (d / date-entity
                 :day (전 / 전날)
@@ -412,9 +396,7 @@
                 :op1 (횟 / 횟집
                     :mod (인 / 인근
                         :op1 (좌2 / 좌판)))))
-        :location (m / market
-            :wiki "소래포구_종합어시장"
-            :name (이 / 이름 :op1 "소래포구" :op2 "어시장")))
+        :location (m / market :wiki "소래포구_종합어시장" :name (이 / 이름 :op1 "소래포구" :op2 "어시장")))
     :ARG2 (불 / 불)
     :concession (피 / 피해
         :polarity -
