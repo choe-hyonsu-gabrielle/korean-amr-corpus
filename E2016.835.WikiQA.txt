@@ -119,250 +119,127 @@
                     :time (르 / 르네상스)))))
     :ord (o / ordinal-entity :value 1))
 
-# ::id snt0.E2016.835.03_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.03_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 연합군 최초의 미국 전투비행단으로 제1차 세계대전에 참전한 미국 청년들의 실화를 다룬 이 영화는 영화배우 출신 영화감독 토니 빌의 <라파예트(Flyboys)>(2006)다.
 # ::note
--- FRAMES ----------------------------------------
-연합 : VERBAL_NOUN
-	- combine		(연 / 연합-01 :ARG0 agent :ARG1 thing_combined :ARG2 end_product)
-전투 : VERBAL_NOUN
-	- combat		(전 / 전투-01 :ARG0 one_fighter :ARG1 other_fighter)
-비행 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (비 / 비행단-00) ?
-	- fly		(비 / 비행-01 :ARG0 thing_flying :ARG1 path :ARG2 start_point :ARG3 end_point)
-참전하 : DERIVED_NON-ENTRY
-청년들 : DERIVED_NON-ENTRY -> (청 / 청년들-00) ?
-다루 : VERB
-	- cover		(다 / 다루-01 :ARG0 agent :ARG1 thing_covered)
-	- treat		(다 / 다루-02 :ARG0 agent :ARG1 entity_treated :ARG2 attribute)
-배우 : VERBAL_NOUN
-	- learn		(배 / 배우-01 :ARG0 agent :ARG1 theme :ARG2 source)
-감독 : VERBAL_NOUN
-	- supervise		(감 / 감독-01 :ARG0 agent :ARG1 entity_supervised)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2006" [DT_YEAR]	->  :time|duration (2 / 2006)	OR	:time (d / date-entity)	OR	:duration 
-"Flyboys" [AFW_VIDEO]	->  (F / Flyboys)	OR	(b / broadcast-program|movie :wiki - :name (이 / 이름 :op1 "Flyboys"))
-"라파예트" [AFW_VIDEO]	->  (라 / 라파예트)	OR	(b / broadcast-program|movie :wiki "라파예트?" :name (이 / 이름 :op1 "라파예트"))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"연합군" [OGG_MILITARY]	->  (연 / 연합군)	OR	(m / military :wiki "연합국" :name (이 / 이름 :op1 "연합군"))
-"영화" [FD_ART]	->  (영 / 영화)	OR	(s / study-field|group* :wiki "영화" :name (이 / 이름 :op1 "영화"))
-"영화감독" [CV_OCCUPATION]	->  :mod (영 / 영화감독)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (영 / 영화감독))
-"영화배우" [CV_OCCUPATION]	->  :mod (영 / 영화배우)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (영 / 영화배우))
-"전투비행단" [OGG_MILITARY]	->  (전 / 전투비행단)	OR	(m / military :wiki - :name (이 / 이름 :op1 "전투비행단"))
-"제1차 세계대전" [EV_WAR_REVOLUTION]	->  (제 / 제1차세계대전)	OR	(w / war|event :wiki "제1차_세계_대전" :name (이 / 이름 :op1 "제1차" :op2 "세계대전"))
-"토니 빌" [PS_NAME]	->  (토 / 토니빌)	OR	(p / person :wiki - :name (이 / 이름 :op1 "토니" :op2 "빌"))
--- VERBALIZED ------------------------------------
-(감 / 감독 :mod (영 / 영화))
-(군 / 군 :mod (연 / 연합))
-(단 / 단 :ARG0-of (비 / 비행))
-(대 / 대전 :mod (세 / 세계))
-(들 / 들 :mod (청 / 청년))
-(배 / 배우 :mod (영 / 영화))
-(비 / 비행 :ARG1 (전 / 전투))
-(영 / 영화 :mod (출 / 출신))
-(최 / 최초 :mod (군 / 군))
-(출 / 출신 :mod (배 / 배우))
+(다 / 다루-01
+	:ARG0 (m / movie :wiki "라파예트_(영화)" :name (이 / 이름 :op1 "라파예트")
+		:time (d / date-entity :year 2006)
+		:ARG1-of (감 / 감독-01
+			:ARG0 (p / person :wiki - :name (이2 / 이름 :op1 "토니" :op2 "빌")
+				:mod (영 / 영화감독)
+				:mod (출 / 출신
+					:mod (영2 / 영화배우)))))
+	:ARG1 (실 / 실화
+		:mod (청 / 청년
+			:ARG1-of (i / include-91
+				:ARG2 (전 / 전투비행단
+					:ord (o / ordinal-entity :value 1)
+					:poss (c / coalition* :wiki "연합국" :name (이3 / 이름 :op1 "연합군"))))
+			:mod (c2 / country :wiki "미국" :name (이4 / 이름 :op1 "미국"))
+			:ARG0-of (참 / 참전-00
+				:ARG1 (w / war :wiki "제1차_세계_대전" :name (이5 / 이름 :op1 "제1차" :op2 "세계대전"))))))
 
-
-# ::id snt0.E2016.835.03_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.03_Q_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 제2차 세계대전을 배경으로 하는 영화가 아닌 것은?
 # ::note
--- FRAMES ----------------------------------------
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"영화" [FD_ART]	->  (영 / 영화)	OR	(s / study-field|group* :wiki "영화" :name (이 / 이름 :op1 "영화"))
-"제2차 세계대전" [EV_WAR_REVOLUTION]	->  (제 / 제2차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제2차" :op2 "세계대전"))
--- VERBALIZED ------------------------------------
-(대 / 대전 :mod (세 / 세계))
+(a / amr-unknown
+	:domain (영 / 영화
+		:polarity -
+		:mod (배 / 배경으로-하-00
+			:ARG2 (w / war :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제2차" :op2 "세계대전")))))
 
-
-# ::id snt0.E2016.835.04_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.04_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 저항권의 사상은 중세에도 있었지만 근대적 의미에서의 저항권은 근세 초기의 폭군방벌론(暴君放伐論)을 거쳐 17∼18세기에 이르러 대두된 자연법사상과 사회계약설, 특히 J.로크의 사상을 배경으로 하여 성립하였다.
 # ::note
--- FRAMES ----------------------------------------
-저항 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (저 / 저항권-00) ?
-	- resist		(저 / 저항-01 :ARG0 thing_resisting :ARG1 thing_resisted)
-있 : ** UNUSED_OR_NON-ENTRY **
-근대적 : DERIVED_NON-ENTRY -> (근 / 근대적-00) ?
-의미 : VERBAL_NOUN
-	- mean		(의 / 의미-01 :ARG1 symbol :ARG2 thing_symbolized)
-저항 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (저 / 저항권-00) ?
-	- resist		(저 / 저항-01 :ARG0 thing_resisting :ARG1 thing_resisted)
-방벌론 : DERIVED_NON-ENTRY -> (방 / 방벌론-00) ?
-거치 : VERB
-	- pass_through		(거 / 거치-01 :ARG1 thing :ARG2 theme)
-	- mount		(거 / 거치-02 :ARG0 agent :ARG1 thing_mounted :ARG2 where_mount)
-이르 : VERB
-	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
-	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- early		(이 / 이르-03 :ARG1 time)
-대두 : VERBAL_NOUN
-	- emerge		(대 / 대두-01 :ARG1 entity_emerging :ARG2 as_what)
-자연 : VERBAL_NOUN
-	- natural		(자 / 자연-01 :ARG1 thing_natural)
-계약 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (계 / 계약설-00) ?
-	- contract		(계 / 계약-01 :ARG0 agent :ARG1 reason,_purpose :ARG2 contracted_with)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-성립 : VERBAL_NOUN
-	- form		(성 / 성립-01 :ARG0 creator :ARG1 thing_cteated)
--- FORCE CONVERT ---------------------------------
-:mod (특 / 특히)
--- NE TYPES --------------------------------------
-"17∼18세기" [DT_DURATION]	->  :time|duration (1 / 17∼18세기)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"J.로크" [PS_NAME]	->  (J / J.로크)	OR	(p / person :wiki - :name (이 / 이름 :op1 "J.로크"))
-"暴君放伐論" [TR_SOCIAL_SCIENCE]	->  (暴 / 暴君放伐論)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "暴君放伐論"))
-"근대" [DT_OTHERS]	->  :time|duration (근 / 근대)	OR	:time (d / date-entity)	OR	:duration 
-"근세 초기" [DT_OTHERS]	->  :time|duration (근 / 근세초기)	OR	:time (d / date-entity)	OR	:duration 
-"사회계약설" [TR_SOCIAL_SCIENCE]	->  (사 / 사회계약설)	OR	(t / theory* :wiki "사회_계약" :name (이 / 이름 :op1 "사회계약설"))
-"자연법사상" [TR_SOCIAL_SCIENCE]	->  (자 / 자연법사상)	OR	(t / theory* :wiki "자연법" :name (이 / 이름 :op1 "자연법사상"))
-"저항권" [CV_LAW]	->  (저 / 저항권)	OR	(l / law :wiki "저항권" :name (이 / 이름 :op1 "저항권"))
-"저항권" [CV_LAW]	->  (저 / 저항권)	OR	(l / law :wiki "저항권" :name (이 / 이름 :op1 "저항권"))
-"중세" [DT_DYNASTY]	->  :time|duration (중 / 중세)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"폭군방벌론" [TR_SOCIAL_SCIENCE]	->  (폭 / 폭군방벌론)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "폭군방벌론"))
--- VERBALIZED ------------------------------------
-(계 / 계약 :mod (사 / 사회))
-(권 / 권 :ARG0-of (저 / 저항))
-(권 / 권 :ARG0-of (저 / 저항))
-(론 / 론 :mod (방 / 방벌))
-(방 / 방벌 :mod (폭 / 폭군))
-(법 / 법 :mod (자 / 자연))
-(사 / 사상 :mod (법 / 법))
-(설 / 설 :ARG0-of (계 / 계약))
-(적 / 적 :mod (근 / 근대))
-(초 / 초기 :mod (근 / 근세))
+(성 / 성립-01
+	:ARG1 (저 / 저항권
+		:mod (근 / 근대))
+	:manner (배 / 배경으로-하-00
+		:ARG1 저
+		:ARG2 (a / and
+			:op1 (사 / 사상
+				:mod (자 / 자연법))
+			:op2 (사2 / 사회계약설)
+			:op3 (사3 / 사상
+				:poss (p / person :wiki "존_로크" :name (이 / 이름 :op1 "J.로크"))
+				:mod (특 / 특히))
+			:ARG1-of (대 / 대두-01
+				:time (d / date-interval
+					:op1 (d2 / date-entity :century 17)
+					:op2 (d3 / date-entity :century 18))
+				:manner (거 / 거치-01
+					:ARG2 (폭 / 폭군방벌론
+						:time (초 / 초기
+							:mod (근2 / 근세)))))))
+	:concession (사4 / 사상
+		:mod (저2 / 저항권)
+		:time (중 / 중세)))
 
-
-# ::id snt1.E2016.835.04_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.835.04_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 미국의 독립전쟁과 프랑스혁명 등에 큰 영향을 끼쳤던 저항권은 19세기에 이르러 재판제도의 정비와 법실증주의(法實證主義)로 인하여 한때 자취를 감추었다.
 # ::note
--- FRAMES ----------------------------------------
-독립 : VERBAL_NOUN
-	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
-	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-영향 : VERBAL_NOUN
-	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
-끼치 : VERB
-	- render		(끼 / 끼치-01 :ARG0 causer :ARG1 influence :ARG2 receiver)
-저항 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (저 / 저항권-00) ?
-	- resist		(저 / 저항-01 :ARG0 thing_resisting :ARG1 thing_resisted)
-이르 : VERB
-	- arrive,_lead		(이 / 이르-01 :ARG1 entity_in_motion,_road :ARG2 start_point :ARG3 end_point)
-	- tell		(이 / 이르-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
-	- early		(이 / 이르-03 :ARG1 time)
-재판 : VERBAL_NOUN
-	- judge		(재 / 재판-01 :ARG0 thing_judging :ARG1 thing_judged)
-정비 : VERBAL_NOUN
-	- maintain		(정 / 정비-01 :ARG0 agent :ARG1 thing_maintained)
-주의 : VERBAL_NOUN
-	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
-인하 : VERB
-	- lower		(인 / 인하-01 :ARG0 agent :ARG1 thing_lowered)
-	- cause		(인 / 인하-02 :ARG1 thing_causing :ARG2 thing_caused)
-감추 : REDUCED_VERB_DETECTED
-	- wind,_dress		(감 / 감-01 :ARG0 roller :ARG1 thing_rolled :ARG2 location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"19세기" [DT_OTHERS]	->  :time|duration (1 / 19세기)	OR	:time (d / date-entity)	OR	:duration 
-"法實證主義" [TR_SOCIAL_SCIENCE]	->  (法 / 法實證主義)	OR	(t / theory* :wiki - :name (이 / 이름 :op1 "法實證主義"))
-"독립전쟁" [EV_WAR_REVOLUTION]	->  (독 / 독립전쟁)	OR	(w / war|event :wiki "독립_전쟁" :name (이 / 이름 :op1 "독립전쟁"))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"법실증주의" [TR_SOCIAL_SCIENCE]	->  (법 / 법실증주의)	OR	(t / theory* :wiki "법실증주의" :name (이 / 이름 :op1 "법실증주의"))
-"재판제도" [CV_POLICY]	->  (재 / 재판제도)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "재판제도"))
-"저항권" [CV_LAW]	->  (저 / 저항권)	OR	(l / law :wiki "저항권" :name (이 / 이름 :op1 "저항권"))
-"프랑스혁명" [EV_WAR_REVOLUTION]	->  (프 / 프랑스혁명)	OR	(w / war|event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스혁명"))
--- VERBALIZED ------------------------------------
-(권 / 권 :ARG0-of (저 / 저항))
-(실 / 실증 :mod (법 / 법))
-(자 / 자취 :mod (한 / 한때))
-(전 / 전쟁 :mod (독 / 독립))
-(제 / 제도 :mod (재 / 재판))
-(주 / 주의 :mod (실 / 실증))
+(자 / 자취를-감추-00
+	:ARG1 (저 / 저항권
+		:ARG0-of (영 / 영향-01
+			:ARG1 (등 / 등
+				:op1 (e / event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스혁명"))
+				:op2 (w / war :wiki "미국_독립_전쟁" :name (이2 / 이름 :op1 "독립전쟁"
+					:location (c / country :wiki "미국" :name (이3 / 이름 :op1 "미국")))))
+			:degree (크 / 크-01)))
+	:time (한 / 한때)
+	:time (d / date-entity :century 19)
+	:cause (a / and
+		:op1 (정 / 정비-01
+			:ARG1 (제 / 제도
+				:topic (재 / 재판-01)))
+		:op2 (법 / 법실증주의)))
 
-
-# ::id snt0.E2016.835.04_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.04_A_02 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 저항권은 17, 18세기 존 로크의 사상을 배경으로 성립되었다.
 # ::note
--- FRAMES ----------------------------------------
-저항 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (저 / 저항권-00) ?
-	- resist		(저 / 저항-01 :ARG0 thing_resisting :ARG1 thing_resisted)
-성립 : VERBAL_NOUN
-	- form		(성 / 성립-01 :ARG0 creator :ARG1 thing_cteated)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"17, 18세기" [DT_OTHERS]	->  :time|duration (1 / 17,18세기)	OR	:time (d / date-entity)	OR	:duration 
-"저항권" [CV_LAW]	->  (저 / 저항권)	OR	(l / law :wiki "저항권" :name (이 / 이름 :op1 "저항권"))
-"존 로크" [PS_NAME]	->  (존 / 존로크)	OR	(p / person :wiki "존_로크" :name (이 / 이름 :op1 "존" :op2 "로크"))
--- VERBALIZED ------------------------------------
-(권 / 권 :ARG0-of (저 / 저항))
+(성 / 성립-01
+	:ARG1 (저 / 저항권)
+	:manner (배 / 배경으로-하-00
+		:ARG1 저
+		:ARG2 (사 / 사상
+			:poss (p / person :wiki "존_로크" :name (이 / 이름 :op1 "J.로크"))))
+	:time (d / date-interval
+		:op1 (d2 / date-entity :century 17)
+		:op2 (d3 / date-entity :century 18)))
 
-
-# ::id snt0.E2016.835.04_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.04_Q_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 저항권을 인정해 영국의 명예혁명과 미국의 독립혁명에 영향을 준 사람은?
 # ::note
--- FRAMES ----------------------------------------
-저항 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (저 / 저항권-00) ?
-	- resist		(저 / 저항-01 :ARG0 thing_resisting :ARG1 thing_resisted)
-인정 : VERBAL_NOUN
-	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
-독립 : VERBAL_NOUN
-	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
-	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
-영향 : VERBAL_NOUN
-	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
-주 : VERB
-	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"독립혁명" [EV_WAR_REVOLUTION]	->  (독 / 독립혁명)	OR	(w / war|event :wiki "미국_독립_혁명" :name (이 / 이름 :op1 "독립혁명"))
-"명예혁명" [EV_WAR_REVOLUTION]	->  (명 / 명예혁명)	OR	(w / war|event :wiki "명예혁명" :name (이 / 이름 :op1 "명예혁명"))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"저항권" [CV_LAW]	->  (저 / 저항권)	OR	(l / law :wiki "저항권" :name (이 / 이름 :op1 "저항권"))
--- VERBALIZED ------------------------------------
-(권 / 권 :ARG0-of (저 / 저항))
-(혁 / 혁명 :mod (독 / 독립))
-(혁 / 혁명 :mod (명 / 명예))
+(영 / 영향-01
+	:ARG0 (a / amr-unknown
+		:ARG0-of (인 / 인정-01
+			:ARG1 (저 / 저항권)))
+	:ARG1 (a2 / and
+		:op1 (e / event :wiki "명예혁명" :name (이 / 이름 :op1 "명예혁명")
+			:location (c / country :wiki "영국" :name (이2 / 이름 :op1 "영국")))
+		:op2 (e2 / event :wiki "미국_독립_혁명" :name (이3 / 이름 :op1 "독립혁명")
+			:location (c2 / country :wiki "미국" :name (이4 / 이름 :op1 "미국")))))
 
-
-# ::id snt0.E2016.835.05_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.05_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 각국의 수뇌자로는 미국의 대통령 프랭클린 루스벨트, 소비에트 연방의 당 서기장 이오시프 스탈린, 영국의 총리 윈스턴 처칠이다.
 # ::note
--- FRAMES ----------------------------------------
-수뇌자 : DERIVED_NON-ENTRY -> (수 / 수뇌자-00) ?
-서기장 : DERIVED_NON-ENTRY -> (서 / 서기장-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"당 서기장" [CV_POSITION]	->  :mod (당 / 당서기장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (당 / 당 서기장))
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"소비에트 연방" [LCP_COUNTRY]	->  (소 / 소비에트연방)	OR	(c / country :wiki "소련" :name (이 / 이름 :op1 "소비에트" :op2 "연방"))
-"수뇌자" [CV_POSITION]	->  :mod (수 / 수뇌자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수뇌자))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"윈스턴 처칠" [PS_NAME]	->  (윈 / 윈스턴처칠)	OR	(p / person :wiki "윈스턴_처칠" :name (이 / 이름 :op1 "윈스턴" :op2 "처칠"))
-"이오시프 스탈린" [PS_NAME]	->  (이 / 이오시프스탈린)	OR	(p / person :wiki "이오시프_스탈린" :name (이 / 이름 :op1 "이오시프" :op2 "스탈린"))
-"총리" [CV_POSITION]	->  :mod (총 / 총리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총리))
-"프랭클린 루스벨트" [PS_NAME]	->  (프 / 프랭클린루스벨트)	OR	(p / person :wiki "프랭클린_D._루스벨트" :name (이 / 이름 :op1 "프랭클린" :op2 "루스벨트"))
--- VERBALIZED ------------------------------------
-(서 / 서기 :mod (당 / 당))
-(자 / 자 :mod (수 / 수뇌))
-(장 / 장 :mod (서 / 서기))
-
+(a / and
+	:domain (수 / 수뇌자
+		:mod (각 / 각국))
+	:op1 (p / person :wiki "프랭클린_D._루스벨트" :name (이 / 이름 :op1 "프랭클린" :op2 "루스벨트")
+		:ARG0-of (h / have-org-role-91
+			:ARG1 (c / country :wiki "미국" :name (이2 / 이름 :op1 "미국"))
+			:ARG2 (대 / 대통령)))
+	:op2 (p2 / person :wiki "이오시프_스탈린" :name (이3 / 이름 :op1 "이오시프" :op2 "스탈린")
+		:ARG0-of (h2 / have-org-role-91
+			:ARG1 (p3 / political-party :wiki "소련_공산당" :name (이4 / 이름 :op1 "당")
+				:location (c2 / country :wiki "소련" :name (이5 / 이름 :op1 "소비에트" :op2 "연방")))
+			:ARG2 (서 / 서기장)))
+	:op3 (p4 / person :wiki "윈스턴_처칠" :name (이6 / 이름 :op1 "윈스턴" :op2 "처칠")
+		:ARG0-of (h3 / have-org-role-91
+			:ARG1 (c3 / country :wiki "영국" :name (이7 / 이름 :op1 "영국"))
+			:ARG2 (총 / 총리))))
 
 # ::id snt0.E2016.835.05_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt <역사> 1945년 2월 크림 반도의 얄타에서 열린 연합국 수뇌 회담.
