@@ -1,6 +1,6 @@
 # ::id snt0.E2016.836.01_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 2010년 7월 31일 브라질 브라질리아에서 열린 유네스코 세계유산위원회(WHC)의 제34차 회의에서 경주 양동마을과 함께 세계문화유산 등재가 확정되었다.
-# ::note
+# ::note 세계문화유산 --> 세계유산 (wiki-enhanced)
 (확 / 확정-01
     :ARG1 (등 / 등재-01
         :ARG1 (함 / 함께
@@ -16,208 +16,151 @@
             :location (c4 / country :wiki "브라질" :name (이6 / 이름 :op1 "브라질")))
         :time (d / date-entity :year 2010 :month 7 :day 31)))
 
-# ::id snt0.E2016.836.01_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.836.01_A_02 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 양동마을(良洞마을)은 경상북도 경주시 강동면 북쪽 설창산에 둘러싸여 있는 유서 깊은 양반마을로 1984년 12월 20일 대한민국의 중요민속자료 제189호로 지정되었고, 2010년 7월 31일 브라질 브라질리아에서 열린 유네스코 세계유산위원회(WHC) 제34차 회의에서 안동 하회마을과 함께 유네스코세계문화유산으로 등재되었다.
-# ::note
--- FRAMES ----------------------------------------
-둘러싸이 : REDUCED_VERB_DETECTED
-	- surround		(둘 / 둘러싸-01 :ARG0 causal_agent :ARG1 thing_surrounded :ARG2 thing_surrounding)
-깊 : VERB
-	- deep		(깊 / 깊-01 :ARG1 entity_being_deep)
-중요 : VERBAL_NOUN
-	- important		(중 / 중요-01 :ARG1 thing_being_important :ARG2 important_to)
-지정 : VERBAL_NOUN
-	- establish		(지 / 지정-01 :ARG0 agent :ARG1 thing_set :ARG2 attribute)
-열리 : REDUCED_VERB_DETECTED
-	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
-	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
-등재 : VERBAL_NOUN
-	- register		(등 / 등재-01 :ARG0 entity_registering :ARG1 thing_registered :ARG2 register)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1984년 12월 20일" [DT_OTHERS]	->  :time|duration (1 / 1984년12월20일)	OR	:time (d / date-entity :year 1984 :month 12 :day 20)	OR	:duration (t / temporal-quantity :quant 1984 :unit (년 / 년))  (t / temporal-quantity :quant 12 :unit (월 / 월))  (t / temporal-quantity :quant 20 :unit (일 / 일))  
-"2010년 7월 31일" [DT_OTHERS]	->  :time|duration (2 / 2010년7월31일)	OR	:time (d / date-entity :year 2010 :month 7 :day 31)	OR	:duration (t / temporal-quantity :quant 2010 :unit (년 / 년))  (t / temporal-quantity :quant 7 :unit (월 / 월))  (t / temporal-quantity :quant 31 :unit (일 / 일))  
-"WHC" [OG_OTHERS]	->  (W / WHC)	OR	(o / organization? :wiki - :name (이 / 이름 :op1 "WHC"))
-"良洞마을" [LCP_COUNTY]	->  (良 / 良洞마을)	OR	(c / county :wiki - :name (이 / 이름 :op1 "良洞마을"))
-"강동면" [LCP_COUNTY]	->  (강 / 강동면)	OR	(c / county :wiki "강동면?" :name (이 / 이름 :op1 "강동면"))
-"경상북도" [LCP_PROVINCE]	->  (경 / 경상북도)	OR	(p / province :wiki "경상북도" :name (이 / 이름 :op1 "경상북도"))
-"경주시" [LCP_CITY]	->  (경 / 경주시)	OR	(c / city :wiki "경주시" :name (이 / 이름 :op1 "경주시"))
-"대한민국" [LCP_COUNTRY]	->  (대 / 대한민국)	OR	(c / country :wiki "대한민국" :name (이 / 이름 :op1 "대한민국"))
-"북쪽" [TM_DIRECTION]	->  (북 / 북쪽)	OR	(: / :direction :wiki "북쪽" :name (이 / 이름 :op1 "북쪽"))
-"브라질" [LCP_COUNTRY]	->  (브 / 브라질)	OR	(c / country :wiki "브라질" :name (이 / 이름 :op1 "브라질"))
-"브라질리아" [LCP_CAPITALCITY]	->  (브 / 브라질리아)	OR	(c / city :wiki "브라질리아" :name (이 / 이름 :op1 "브라질리아"))
-"설창산" [LCG_MOUNTAIN]	->  (설 / 설창산)	OR	(m / mountain :wiki - :name (이 / 이름 :op1 "설창산"))
-"세계유산위원회" [OG_OTHERS]	->  (세 / 세계유산위원회)	OR	(o / organization? :wiki "세계유산_위원회" :name (이 / 이름 :op1 "세계유산위원회"))
-"안동" [LCP_CITY]	->  (안 / 안동)	OR	(c / city :wiki "안동시" :name (이 / 이름 :op1 "안동"))
-"양동마을" [LCP_COUNTY]	->  (양 / 양동마을)	OR	(c / county :wiki "경주_양동마을" :name (이 / 이름 :op1 "양동마을"))
-"양반" [CV_POSITION]	->  :mod (양 / 양반)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (양 / 양반))
-"유네스코" [OG_OTHERS]	->  (유 / 유네스코)	OR	(o / organization? :wiki "유네스코" :name (이 / 이름 :op1 "유네스코"))
-"유네스코" [OG_OTHERS]	->  (유 / 유네스코)	OR	(o / organization? :wiki "유네스코" :name (이 / 이름 :op1 "유네스코"))
-"제189호" [QT_ORDER]	->  :ord (제 / 제189호)	OR	:ord (o / ordinal-entity :value 제189호)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"제34차" [QT_ORDER]	->  :ord (제 / 제34차)	OR	:ord (o / ordinal-entity :value 제34차)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"하회마을" [LCP_COUNTY]	->  (하 / 하회마을)	OR	(c / county :wiki "하회마을" :name (이 / 이름 :op1 "하회마을"))
--- VERBALIZED ------------------------------------
-(마 / 마을 :mod (양 / 양반))
-(문 / 문화 :mod (세 / 세계))
-(민 / 민속 :mod (중 / 중요))
-(유 / 유산 :mod (문 / 문화))
-(자 / 자료 :mod (민 / 민속))
+# ::note 예제 문장 (wiki-enhanced)
+(a / and
+    :op1 (지 / 지정-01
+        :ARG1 (c / county :wiki "경주_양동마을" :name (이 / 이름 :op1 "양동마을")
+            :mod (마 / 마을
+                :mod (양 / 양반)
+                :mod (유 / 유서가-깊-00))
+            :ARG1-of (둘 / 둘러싸-01
+                :ARG2 (m / mountain :wiki - :name (이2 / 이름 :op1 "설창산")
+                    :location (북 / 북쪽
+                        :location (c2 / county :wiki "강동면_(경주시)" :name (이3 / 이름 :op1 "강동면")
+                            :location (c3 / city :wiki "경주시" :name (이4 / 이름 :op1 "경주시")
+                                :location (p / province :wiki "경상북도" :name (이5 / 이름 :op1 "경상북도"))))))))
+        :ARG2 (중 / 중요민속자료
+            :ord (o / ordinal-entity :value 189)
+            :poss (c4 / country :wiki "대한민국" :name (이6 / 이름 :op1 "대한민국")))
+        :time (d / date-entity :year 1984 :month 12 :day 20))
+    :op2 (등 / 등재-01
+        :ARG1 (함 / 함께
+            :op1 c
+            :op2 (c5 / county :wiki "하회마을" :name (이7 / 이름 :op1 "하회마을")
+                :location (c6 / city :wiki "안동시" :name (이8 / 이름 :op1 "안동"))))
+        :ARG2 (세 / 세계문화유산
+            :mod (o2 / organization :wiki "유네스코" :name (이9 / 이름 :op1 "유네스코")))
+        :location (회 / 회의-00
+            :ARG0 (o3 / organization :wiki "세계유산_위원회" :name (이10 / 이름 :op1 "세계유산위원회")
+                :ARG1-of (i / include-91
+                    :ARG2 o2))
+            :ord (o4 / ordinal-entity :value 34)
+            :location (c7 / city :wiki "브라질리아" :name (이11 / 이름 :op1 "브라질리아")
+                :location (c8 / country :wiki "브라질" :name (이12 / 이름 :op1 "브라질")))
+            :time (d2 / date-entity :year 2010 :month 7 :day 31))))
 
-
-# ::id snt0.E2016.836.01_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.836.01_Q_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 유네스코가 지정한 세계문화유산이 아닌 것은?
 # ::note
--- FRAMES ----------------------------------------
-지정 : VERBAL_NOUN
-	- establish		(지 / 지정-01 :ARG0 agent :ARG1 thing_set :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"유네스코" [OG_OTHERS]	->  (유 / 유네스코)	OR	(o / organization? :wiki "유네스코" :name (이 / 이름 :op1 "유네스코"))
--- VERBALIZED ------------------------------------
-(문 / 문화 :mod (세 / 세계))
-(유 / 유산 :mod (문 / 문화))
+(지 / 지정-01
+    :polarity -
+    :ARG0 (o / organization :wiki "유네스코" :name (이 / 이름 :op1 "유네스코"))
+    :ARG1 (a / amr-unknown)
+    :ARG2 (세 / 세계문화유산))
 
-
-# ::id snt0.E2016.836.02_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.836.02_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 세계에서 유일한 금연국가이자 남자들의 복장 규제가 있는 나라.
-# ::note
--- FRAMES ----------------------------------------
-유일 : VERBAL_NOUN
-	- unique		(유 / 유일-01 :ARG1 thing_being_unique)
-남자들 : DERIVED_NON-ENTRY -> (남 / 남자들-00) ?
-규제 : VERBAL_NOUN
-	- restrict		(규 / 규제-01 :ARG0 agent,_limiter :ARG1 thing_limited)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(국 / 국가 :mod (금 / 금연))
-(규 / 규제 :mod (복 / 복장))
-(들 / 들 :mod (남 / 남자))
+# ::note attribute, criterion
+(나 / 나라
+    :ARG1-of (유 / 유일-01
+        :attribute (국 / 국가
+            :mod (금 / 금연-00))
+        :criterion (세 / 세계))
+    :ARG0-of (규 / 규제-01
+        :ARG1 (복 / 복장
+            :poss (남 / 남자))))
 
-
-# ::id snt0.E2016.836.02_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.836.02_Q_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 세계 최초로 금연국을 선포한 나라는?
 # ::note
--- FRAMES ----------------------------------------
-금연국 : DERIVED_NON-ENTRY -> (금 / 금연국-00) ?
-선포 : VERBAL_NOUN
-	- proclaim		(선 / 선포-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- VERBALIZED ------------------------------------
-(국 / 국 :mod (금 / 금연))
-(최 / 최초 :mod (세 / 세계))
+(선 / 선포-01
+    :ARG0 (a / amr-unknown)
+    :ARG1 (국 / 국가
+        :mod (금 / 금연-00))
+    :ord (o / ordinal-entity :value 1 :range (세 / 세계)))
 
-
-# ::id snt0.E2016.836.03_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.836.03_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 인천경제자유구역(仁川經濟自由區域)은 송도국제도시와 영종도, 청라국제도시를 잇는 3각축형 경제자유구역으로 형성하여 연면적 169.5㎢(41,884에이커)규모로 개발할 계획에 있다.
 # ::note
--- FRAMES ----------------------------------------
-잇 : VERB
-	- connect		(잇 / 잇-01 :ARG1 thing_connecting :ARG2 thing_connected :ARG3 connect_to)
-	- follow		(잇 / 잇-02 :ARG1 thing_following :ARG2 thing_followed :ARG3 follow_to)
-축형 : DERIVED_NON-ENTRY -> (축 / 축형-00) ?
-형성 : VERBAL_NOUN
-	- form		(형 / 형성-01 :ARG0 creator :ARG1 thing_created)
-연면적 : DERIVED_NON-ENTRY -> (연 / 연면적-00) ?
-개발 : VERBAL_NOUN
-	- develop		(개 / 개발-01 :ARG0 developer :ARG1 thing_developed)
-계획 : VERBAL_NOUN
-	- plan		(계 / 계획-01 :ARG0 agent :ARG1 thing_planned)
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"169.5㎢" [QT_SIZE]	->  :quant (1 / 169.5㎢)	OR	(a / area-quantity :quant 169.5 :unit|scale (㎢ / ㎢))
-"41,884에이커" [QT_SIZE]	->  :quant (4 / 41,884에이커)	OR	(a / area-quantity :quant 41 :unit|scale (, / ,884에이커))
-"仁川經濟自由區域" [LC_OTHERS]	->  (仁 / 仁川經濟自由區域)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "仁川經濟自由區域"))
-"경제자유구역" [LC_OTHERS]	->  (경 / 경제자유구역)	OR	(l / location? :wiki "경제자유구역" :name (이 / 이름 :op1 "경제자유구역"))
-"송도국제도시" [LCP_CITY]	->  (송 / 송도국제도시)	OR	(c / city :wiki "송도국제도시" :name (이 / 이름 :op1 "송도국제도시"))
-"영종도" [LCG_ISLAND]	->  (영 / 영종도)	OR	(i / island :wiki "영종도" :name (이 / 이름 :op1 "영종도"))
-"인천경제자유구역" [LC_OTHERS]	->  (인 / 인천경제자유구역)	OR	(l / location? :wiki "인천경제자유구역" :name (이 / 이름 :op1 "인천경제자유구역"))
-"청라국제도시" [LCP_CITY]	->  (청 / 청라국제도시)	OR	(c / city :wiki "청라국제도시" :name (이 / 이름 :op1 "청라국제도시"))
--- VERBALIZED ------------------------------------
-(구 / 구역 :mod (자 / 자유))
-(구 / 구역 :mod (자 / 자유))
-(자 / 자유 :mod (경 / 경제))
-(자 / 자유 :mod (경 / 경제))
-(축 / 축 :mod (각 / 각))
-(형 / 형 :mod (축 / 축))
+(계 / 계획-01
+    :ARG1 (개 / 개발-01
+        :ARG1 (c / city-district :wiki "인천경제자유구역" :name (이 / 이름 :op1 "인천경제자유구역")
+            :mod (규 / 규모
+                :mod (연 / 연면적)
+                :mod (a / area-quantity :quant 169.5 :unit (s / square-kilometer))))
+        :manner (형 / 형성-01
+            :ARG1 (경 / 경제자유구역
+                :mod (3 / 3각축형)
+                :mod (잇 / 잇-01
+                    :ARG2 (a2 / and
+                        :op1 (c2 / city :wiki "송도국제도시" :name (이2 / 이름 :op1 "송도국제도시"))
+                        :op2 (c3 / city :wiki "영종국제도시" :name (이3 / 이름 :op1 "영종도"))
+                        :op3 (c4 / city :wiki "청라국제도시" :name (이4 / 이름 :op1 "청라국제도시"))))))))
 
-
-# ::id snt0.E2016.836.03_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.836.03_A_02 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 국내에는 2003년 8월 영종도ㆍ송도ㆍ청라지구의 인천경제자유구역을 시작으로, 10월 부산ㆍ진해(강서구, 진해시)와 광양만권(광양, 순천, 여수, 하동군), 2008년 지정된 황해(당진, 아산, 평택), 새만금ㆍ군산(군산, 부안), 대구ㆍ경북(경산, 영천, 구미, 포항), 그리고 2013년 지정된 충북과 동해안 등 8개의 경제자유구역이 지정되어 있다.
 # ::note
--- FRAMES ----------------------------------------
-시작 : VERBAL_NOUN
-	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
-만권 : DERIVED_NON-ENTRY -> (만 / 만권-00) ?
-지정 : VERBAL_NOUN
-	- establish		(지 / 지정-01 :ARG0 agent :ARG1 thing_set :ARG2 attribute)
-지정 : VERBAL_NOUN
-	- establish		(지 / 지정-01 :ARG0 agent :ARG1 thing_set :ARG2 attribute)
-지정 : VERBAL_NOUN
-	- establish		(지 / 지정-01 :ARG0 agent :ARG1 thing_set :ARG2 attribute)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"10월" [DT_MONTH]	->  :time|duration (1 / 10월)	OR	:time (d / date-entity :month 10)	OR	:duration (t / temporal-quantity :quant 10 :unit (월 / 월))  
-"2003년 8월" [DT_OTHERS]	->  :time|duration (2 / 2003년8월)	OR	:time (d / date-entity :year 2003 :month 8)	OR	:duration (t / temporal-quantity :quant 2003 :unit (년 / 년))  (t / temporal-quantity :quant 8 :unit (월 / 월))  
-"2008년" [DT_YEAR]	->  :time|duration (2 / 2008년)	OR	:time (d / date-entity :year 2008)	OR	:duration (t / temporal-quantity :quant 2008 :unit (년 / 년))  
-"2013년" [DT_YEAR]	->  :time|duration (2 / 2013년)	OR	:time (d / date-entity :year 2013)	OR	:duration (t / temporal-quantity :quant 2013 :unit (년 / 년))  
-"8개" [QT_COUNT]	->  :quant (8 / 8개)	OR	(c / concept* :quant 8 :unit|scale (개 / 개))
-"강서구" [LCP_COUNTY]	->  (강 / 강서구)	OR	(c / county :wiki "강서구?" :name (이 / 이름 :op1 "강서구"))
-"경북" [LCP_PROVINCE]	->  (경 / 경북)	OR	(p / province :wiki "경상북도" :name (이 / 이름 :op1 "경북"))
-"경산" [LCP_CITY]	->  (경 / 경산)	OR	(c / city :wiki "경산?" :name (이 / 이름 :op1 "경산"))
-"경제자유구역" [LC_OTHERS]	->  (경 / 경제자유구역)	OR	(l / location? :wiki "경제자유구역" :name (이 / 이름 :op1 "경제자유구역"))
-"광양" [LCP_CITY]	->  (광 / 광양)	OR	(c / city :wiki "광양시" :name (이 / 이름 :op1 "광양"))
-"광양만" [LCG_BAY]	->  (광 / 광양만)	OR	(b / bay :wiki "광양만" :name (이 / 이름 :op1 "광양만"))
-"구미" [LCP_CITY]	->  (구 / 구미)	OR	(c / city :wiki "구미시" :name (이 / 이름 :op1 "구미"))
-"군산" [LCP_CITY]	->  (군 / 군산)	OR	(c / city :wiki "군산시" :name (이 / 이름 :op1 "군산"))
-"군산" [LCP_CITY]	->  (군 / 군산)	OR	(c / city :wiki "군산시" :name (이 / 이름 :op1 "군산"))
-"당진" [LCP_CITY]	->  (당 / 당진)	OR	(c / city :wiki "당진시" :name (이 / 이름 :op1 "당진"))
-"대구" [LCP_CITY]	->  (대 / 대구)	OR	(c / city :wiki "대구광역시" :name (이 / 이름 :op1 "대구"))
-"동해안" [LC_OTHERS]	->  (동 / 동해안)	OR	(l / location? :wiki "동해" :name (이 / 이름 :op1 "동해안"))
-"부산" [LCP_CITY]	->  (부 / 부산)	OR	(c / city :wiki "부산광역시" :name (이 / 이름 :op1 "부산"))
-"부안" [LCP_COUNTY]	->  (부 / 부안)	OR	(c / county :wiki "부안군" :name (이 / 이름 :op1 "부안"))
-"새만금" [LC_OTHERS]	->  (새 / 새만금)	OR	(l / location? :wiki "새만금_간척_사업" :name (이 / 이름 :op1 "새만금"))
-"송도" [LCP_COUNTY]	->  (송 / 송도)	OR	(c / county :wiki "송도?" :name (이 / 이름 :op1 "송도"))
-"순천" [LCP_CITY]	->  (순 / 순천)	OR	(c / city :wiki "순천?" :name (이 / 이름 :op1 "순천"))
-"아산" [LCP_CITY]	->  (아 / 아산)	OR	(c / city :wiki "아산시" :name (이 / 이름 :op1 "아산"))
-"여수" [LCP_CITY]	->  (여 / 여수)	OR	(c / city :wiki "여수시" :name (이 / 이름 :op1 "여수"))
-"영종도" [LCG_ISLAND]	->  (영 / 영종도)	OR	(i / island :wiki "영종도" :name (이 / 이름 :op1 "영종도"))
-"영천" [LCP_CITY]	->  (영 / 영천)	OR	(c / city :wiki "영천시" :name (이 / 이름 :op1 "영천"))
-"인천경제자유구역" [LC_OTHERS]	->  (인 / 인천경제자유구역)	OR	(l / location? :wiki "인천경제자유구역" :name (이 / 이름 :op1 "인천경제자유구역"))
-"진해" [LCP_CITY]	->  (진 / 진해)	OR	(c / city :wiki "진해?" :name (이 / 이름 :op1 "진해"))
-"진해시" [LCP_CITY]	->  (진 / 진해시)	OR	(c / city :wiki "진해구" :name (이 / 이름 :op1 "진해시"))
-"청라지구" [LC_OTHERS]	->  (청 / 청라지구)	OR	(l / location? :wiki "청라국제도시" :name (이 / 이름 :op1 "청라지구"))
-"충북" [LCP_PROVINCE]	->  (충 / 충북)	OR	(p / province :wiki "충청북도" :name (이 / 이름 :op1 "충북"))
-"평택" [LCP_CITY]	->  (평 / 평택)	OR	(c / city :wiki "평택?" :name (이 / 이름 :op1 "평택"))
-"포항" [LCP_CITY]	->  (포 / 포항)	OR	(c / city :wiki "포항시" :name (이 / 이름 :op1 "포항"))
-"하동군" [LCP_COUNTY]	->  (하 / 하동군)	OR	(c / county :wiki "하동군" :name (이 / 이름 :op1 "하동군"))
-"황해" [LCG_OCEAN]	->  (황 / 황해)	OR	(o / ocean :wiki "황해" :name (이 / 이름 :op1 "황해"))
--- VERBALIZED ------------------------------------
-(구 / 구역 :mod (자 / 자유))
-(구 / 구역 :mod (자 / 자유))
-(권 / 권 :mod (만 / 만))
-(자 / 자유 :mod (경 / 경제))
-(자 / 자유 :mod (경 / 경제))
+(지 / 지정-01
+    :ARG1 (등 / 등
+        :op1 (c / city-district :wiki "인천경제자유구역" :name (이 / 이름 :op1 "인천경제자유구역")
+            :time (d / date-entity :year 2003 :month 8)
+            :ARG2-of (i / include-91
+                :ARG1 (a / and
+                    :op1 (c2 / city :wiki "영종국제도시" :name (이2 / 이름 :op1 "영종도"))
+                    :op2 (c3 / city :wiki "송도국제도시" :name (이3 / 이름 :op1 "송도"))
+                    :op3 (c4 / city :wiki "청라국제도시" :name (이4 / 이름 :op1 "청라지구")))))
+        :op2 (c5 / city-district :wiki - :name (이5 / 이름 :op1 "부산ㆍ진해")
+            :time (d2 / date-entity :year 2003 :month 10)
+            :ARG2-of (i2 / include-91
+                :ARG1 (a2 / and
+                    :op1 (c6 / city :wiki "강서구_(부산광역시)" :name (이6 / 이름 :op1 "강서구"))
+                    :op2 (c7 / city :wiki "진해구" :name (이7 / 이름 :op1 "진해시")))))
+        :op3 (c8 / city-district :wiki - :name (이8 / 이름 :op1 "광양만권")
+            :time (d3 / date-entity :year 2003 :month 10)
+            :ARG2-of (i3 / include-91
+                :ARG1 (a3 / and
+                    :op1 (c9 / city :wiki "광양시" :name (이9 / 이름 :op1 "광양"))
+                    :op2 (c10 / city :wiki "순천시_(전라남도)" :name (이10 / 이름 :op1 "순천"))
+                    :op3 (c11 / city :wiki "여수시" :name (이11 / 이름 :op1 "여수"))
+                    :op4 (c12 / county :wiki "하동군" :name (이12 / 이름 :op1 "하동군")))))
+        :op4 (c13 / city-district :wiki - :name (이13 / 이름 :op1 "황해")
+            :time (d4 / date-entity :year 2008)
+            :ARG2-of (i4 / include-91
+                :ARG1 (a4 / and
+                    :op1 (c14 / city :wiki "당진시" :name (이14 / 이름 :op1 "당진"))
+                    :op2 (c15 / city :wiki "아산시" :name (이15 / 이름 :op1 "아산"))
+                    :op3 (c16 / city :wiki "평택시" :name (이16 / 이름 :op1 "평택")))))
+        :op5 (c17 / city-district :wiki - :name (이17 / 이름 :op1 "새만금ㆍ군산")
+            :time (d5 / date-entity :year 2008)
+            :ARG2-of (i5 / include-91
+                :ARG1 (a5 / and
+                    :op1 (c18 / city :wiki "군산시" :name (이18 / 이름 :op1 "군산"))
+                    :op2 (c19 / county :wiki "부안군" :name (이19 / 이름 :op1 "부안")))))
+        :op6 (c20 / city-district :wiki "대구경북경제자유구역" :name (이20 / 이름 :op1 "대구ㆍ경북")
+            :time (d6 / date-entity :year 2008)
+            :ARG2-of (i6 / include-91
+                :ARG1 (a6 / and
+                    :op1 (c21 / city :wiki "경산시" :name (이21 / 이름 :op1 "경산"))
+                    :op2 (c22 / city :wiki "영천시" :name (이22 / 이름 :op1 "영천"))
+                    :op3 (c23 / city :wiki "구미시" :name (이23 / 이름 :op1 "구미"))
+                    :op4 (c24 / city :wiki "포항시" :name (이24 / 이름 :op1 "포항")))))
+        :op7 (c25 / city-district :wiki - :name (이25 / 이름 :op1 "충북")
+            :time (d7 / date-entity :year 2013))
+        :op8 (c26 / city-district :wiki - :name (이26 / 이름 :op1 "동해안")
+            :time (d8 / date-entity :year 2013)))
+    :ARG2 (경 / 경제자유구역 :quant 8
+        :location (국 / 국내)))
 
-
-# ::id snt0.E2016.836.03_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.836.03_Q_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 우리나라에서 경제자유구역(FEZ)이 설치된 지역이 아닌 곳은?
 # ::note
--- FRAMES ----------------------------------------
-설치 : VERBAL_NOUN
-	- build		(설 / 설치-01 :ARG0 agent :ARG1 thing_built :ARG2 location)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"FEZ" [LC_OTHERS]	->  (F / FEZ)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "FEZ"))
-"경제자유구역" [LC_OTHERS]	->  (경 / 경제자유구역)	OR	(l / location? :wiki "경제자유구역" :name (이 / 이름 :op1 "경제자유구역"))
--- VERBALIZED ------------------------------------
-(구 / 구역 :mod (자 / 자유))
-(나 / 나라 :mod (우 / 우리))
-(자 / 자유 :mod (경 / 경제))
-
+(설 / 설치-01
+    :polarity -
+    :ARG1 (경 / 경제자유구역)
+    :ARG2 (a / amr-unknown
+        :location (우 / 우리나라)))
 
 # ::id snt0.E2016.836.04_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 세계적으로는 사하라 사막 · 아라비아 사막 등과 같은 아열대 고압대에 위치한 사막과 중앙 아시아의 타클라마칸 사막 · 고비 사막 등과 같은 대륙 내부의 사막이 연 강수량 250㎜ 미만의 소우 지역에 속한다.

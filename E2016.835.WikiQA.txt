@@ -241,101 +241,67 @@
 			:ARG1 (c3 / country :wiki "영국" :name (이7 / 이름 :op1 "영국"))
 			:ARG2 (총 / 총리))))
 
-# ::id snt0.E2016.835.05_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.05_A_02 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt <역사> 1945년 2월 크림 반도의 얄타에서 열린 연합국 수뇌 회담.
-# ::note
--- FRAMES ----------------------------------------
-열리 : REDUCED_VERB_DETECTED
-	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
-	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
-연합 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (연 / 연합국-00) ?
-	- combine		(연 / 연합-01 :ARG0 agent :ARG1 thing_combined :ARG2 end_product)
-회담 : VERBAL_NOUN
-	- converse		(회 / 회담-01 :ARG0 one_talker :ARG1 other_talker(s))
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1945년 2월" [DT_OTHERS]	->  :time|duration (1 / 1945년2월)	OR	:time (d / date-entity :year 1945 :month 2)	OR	:duration (t / temporal-quantity :quant 1945 :unit (년 / 년))  (t / temporal-quantity :quant 2 :unit (월 / 월))  
-"수뇌" [CV_POSITION]	->  :mod (수 / 수뇌)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수뇌))
-"얄타" [LCP_CITY]	->  (얄 / 얄타)	OR	(c / city :wiki "얄타" :name (이 / 이름 :op1 "얄타"))
-"연합국" [OGG_MILITARY]	->  (연 / 연합국)	OR	(m / military :wiki "연합국" :name (이 / 이름 :op1 "연합국"))
-"크림 반도" [LCG_BAY]	->  (크 / 크림반도)	OR	(b / bay :wiki "크림반도" :name (이 / 이름 :op1 "크림" :op2 "반도"))
--- VERBALIZED ------------------------------------
-(국 / 국 :ARG0-of (연 / 연합))
-(반 / 반도 :mod (크 / 크림))
-(회 / 회담 :mod (수 / 수뇌))
+# ::note :category 설정?
+(회 / 회담-01
+	:topic (역 / 역사)
+	:ARG0 (사 / 사람
+		:ARG0-of (h / have-org-role-91
+			:ARG1 (c / coalition* :wiki "연합국" :name (이 / 이름 :op1 "연합국"))
+			:ARG2 (수 / 수뇌)))
+	:location (c2 / city :wiki "얄타" :name (이2 / 이름 :op1 "얄타")
+		:location (p / peninsula :wiki "크림반도" :name (이3 / 이름 :op1 "크림" :op2 "반도")))
+	:time (d / date-entity :year 1945 :month 2))
 
-
-# ::id snt1.E2016.835.05_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.835.05_A_02 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 미국의 루스벨트, 영국의 처칠, 소련의 스탈린이 참석하여 패전국에 대한 처리, 국제연합의 창설, 소련의 대일(對日) 참전 따위에 관하여 협의하였으며 얄타 비밀 협정을 체결하였다.
 # ::note
--- FRAMES ----------------------------------------
-참석 : VERBAL_NOUN
-	- attend		(참 / 참석-01 :ARG0 agent :ARG1 thing_attended)
-패전국 : DERIVED_NON-ENTRY -> (패 / 패전국-00) ?
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-처리 : VERBAL_NOUN
-	- treat		(처 / 처리-01 :ARG0 agent :ARG1 thing_treated)
-창설 : VERBAL_NOUN
-	- establish		(창 / 창설-01 :ARG0 agent :ARG1 thing_established)
-관하 : VERB
-	- regarding		(관 / 관하-01 :ARG1 thing_under_consideration :ARG2 with_regard_to)
-협의 : VERBAL_NOUN
-	- discuss		(협 / 협의-01 :ARG0 discussant :ARG1 topic :ARG2 conversation_partner)
-체결 : VERBAL_NOUN
-	- enter_into		(체 / 체결-01 :ARG0 one_party :ARG1 treaty :ARG2 other_party)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"국제연합" [OGG_POLITICS]	->  (국 / 국제연합)	OR	(g / government-organization :wiki "유엔" :name (이 / 이름 :op1 "국제연합"))
-"루스벨트" [PS_NAME]	->  (루 / 루스벨트)	OR	(p / person :wiki "루스벨트?" :name (이 / 이름 :op1 "루스벨트"))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"소련" [LCP_COUNTRY]	->  (소 / 소련)	OR	(c / country :wiki "소련" :name (이 / 이름 :op1 "소련"))
-"소련" [LCP_COUNTRY]	->  (소 / 소련)	OR	(c / country :wiki "소련" :name (이 / 이름 :op1 "소련"))
-"스탈린" [PS_NAME]	->  (스 / 스탈린)	OR	(p / person :wiki "이오시프_스탈린" :name (이 / 이름 :op1 "스탈린"))
-"얄타" [LCP_CITY]	->  (얄 / 얄타)	OR	(c / city :wiki "얄타" :name (이 / 이름 :op1 "얄타"))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"처칠" [PS_NAME]	->  (처 / 처칠)	OR	(p / person :wiki "윈스턴_처칠" :name (이 / 이름 :op1 "처칠"))
--- VERBALIZED ------------------------------------
-(국 / 국 :mod (패 / 패전))
-(협 / 협정 :mod (비 / 비밀))
+(a / and
+	:op1 (참 / 참석-01
+		:ARG0 (a2 / and
+			:op1 (p / person :wiki "프랭클린_D._루스벨트" :name (이 / 이름 :op1 "루스벨트")
+				:mod (c / country :wiki "미국" :name (이2 / 이름 :op1 "미국")))
+			:op2 (p2 / person :wiki "윈스턴_처칠" :name (이3 / 이름 :op1 "처칠")
+				:mod (c2 / country :wiki "영국" :name (이4 / 이름 :op1 "영국")))
+			:op3 (p3 / person :wiki "이오시프_스탈린" :name (이5 / 이름 :op1 "스탈린")
+				:mod (c3 / country :wiki "소련" :name (이6 / 이름 :op1 "소련")))))
+	:op2 (협 / 협의-01
+		:ARG0 a2
+		:ARG1 (따 / 따위
+			:op1 (처 / 처리-01
+				:ARG1 (패 / 패전국))
+			:op2 (창 / 창설-01
+				:ARG1 (o / organization :wiki "유엔" :name (이7 / 이름 :op1 "국제연합")))
+			:op3 (참2 / 참전-00
+				:ARG0 c3
+				:ARG1 (w / war :wiki "소련-일본_전쟁" :name (이8 / 이름 :op1 "대일")))))
+	:op3 (체 / 체결-01
+		:ARG0 a2
+		:ARG1 (t / treaty :wiki - :name (이9 / 이름 :op1 "얄타" :op2 "비밀" :op1 "협정"))))
 
-
-# ::id snt0.E2016.835.05_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.05_Q_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 2차 세계 대전 중 개최된 얄타 회담에 참석한 지도자가 아닌 사람은?
 # ::note
--- FRAMES ----------------------------------------
-개최 : VERBAL_NOUN
-	- hold		(개 / 개최-01 :ARG0 holder :ARG1 thing_held)
-회담 : VERBAL_NOUN
-	- converse		(회 / 회담-01 :ARG0 one_talker :ARG1 other_talker(s))
-참석 : VERBAL_NOUN
-	- attend		(참 / 참석-01 :ARG0 agent :ARG1 thing_attended)
-지도 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (지 / 지도자-00) ?
-	- instruct		(지 / 지도-01 :ARG0 agent :ARG1 thing_instructed)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2차 세계 대전" [EV_WAR_REVOLUTION]	->  (2 / 2차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "2차" :op2 "세계" :op3 "대전"))
-"얄타 회담" [EV_OTHERS]	->  (얄 / 얄타회담)	OR	(e / event? :wiki "얄타_회담" :name (이 / 이름 :op1 "얄타" :op2 "회담"))
-"지도자" [CV_POSITION]	->  :mod (지 / 지도자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (지 / 지도자))
--- VERBALIZED ------------------------------------
-(대 / 대전 :mod (세 / 세계))
-(자 / 자 :ARG0-of (지 / 지도))
+(참 / 참석-01
+	:polarity -
+	:ARG0 (a / amr-unknown
+		:ARG0-of (h / have-org-role-91
+			:ARG2 (지 / 지도자)))
+	:ARG1 (e / event :wiki "얄타_회담" :name (이 / 이름 :op1 "얄타" :op2 "회담")
+		:ARG1-of (개 / 개최-01
+			:time (w / war :wiki "제2차_세계_대전" :name (이2 / 이름 :op1 "2차" :op2 "세계" :op3 "대전")))))
 
-
-# ::id snt0.E2016.835.06_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.06_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt <인명> 오스트리아 태생의 독일 정치가(1889~1945).
 # ::note
--- FRAMES ----------------------------------------
-정치가 : DERIVED_NON-ENTRY -> (정 / 정치가-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1889~1945" [DT_DURATION]	->  :time|duration (1 / 1889~1945)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
-"오스트리아" [LCP_COUNTRY]	->  (오 / 오스트리아)	OR	(c / country :wiki "오스트리아" :name (이 / 이름 :op1 "오스트리아"))
-"정치가" [CV_OCCUPATION]	->  :mod (정 / 정치가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (정 / 정치가))
--- VERBALIZED ------------------------------------
-(가 / 가 :mod (정 / 정치))
-
+(정 / 정치가
+	:topic (인 / 인명)
+	:ARG1-of (태 / 태어나-01
+		:location (c / country :wiki "독일" :name (이 / 이름 :op1 "독일")))
+	:time (d / date-inverval
+		:op1 (d2 / date-entity :year 1889)
+		:op2 (d3 / date-entity :year 1945)))
 
 # ::id snt1.E2016.835.06_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 1919년에 독일 노동당에 입당하여 1921년부터 나치스의 당수를 지냈으며 1933년에 독일 연방의 총리가 되고 다음 해 총통이 되었다.
