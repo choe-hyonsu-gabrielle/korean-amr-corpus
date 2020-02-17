@@ -303,176 +303,104 @@
 		:op1 (d2 / date-entity :year 1889)
 		:op2 (d3 / date-entity :year 1945)))
 
-# ::id snt1.E2016.835.06_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.835.06_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 1919년에 독일 노동당에 입당하여 1921년부터 나치스의 당수를 지냈으며 1933년에 독일 연방의 총리가 되고 다음 해 총통이 되었다.
 # ::note
--- FRAMES ----------------------------------------
-입당 : VERBAL_NOUN
-	- join		(입 / 입당-01 :ARG0 agent :ARG1 join_in)
-지내 : VERB
-	- get_along		(지 / 지내-01 :ARG0 agent :ARG1 got_along_with :ARG2 manner)
-	- serve		(지 / 지내-02 :ARG0 agent :ARG1 job,_position)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1919년" [DT_YEAR]	->  :time|duration (1 / 1919년)	OR	:time (d / date-entity :year 1919)	OR	:duration (t / temporal-quantity :quant 1919 :unit (년 / 년))  
-"1921년" [DT_YEAR]	->  :time|duration (1 / 1921년)	OR	:time (d / date-entity :year 1921)	OR	:duration (t / temporal-quantity :quant 1921 :unit (년 / 년))  
-"1933년" [DT_YEAR]	->  :time|duration (1 / 1933년)	OR	:time (d / date-entity :year 1933)	OR	:duration (t / temporal-quantity :quant 1933 :unit (년 / 년))  
-"나치스" [OGG_POLITICS]	->  (나 / 나치스)	OR	(g / government-organization :wiki "국가사회주의_독일_노동자당" :name (이 / 이름 :op1 "나치스"))
-"노동당" [OGG_POLITICS]	->  (노 / 노동당)	OR	(g / government-organization :wiki "노동당" :name (이 / 이름 :op1 "노동당"))
-"다음 해" [DT_YEAR]	->  :time|duration (다 / 다음해)	OR	:time (d / date-entity)	OR	:duration 
-"당수" [CV_POSITION]	->  :mod (당 / 당수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (당 / 당수))
-"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
-"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
-"총리" [CV_POSITION]	->  :mod (총 / 총리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총리))
-"총통" [CV_POSITION]	->  :mod (총 / 총통)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총통))
--- VERBALIZED ------------------------------------
-(당 / 당 :mod (노 / 노동))
-(총 / 총통 :mod (해 / 해))
-(해 / 해 :mod (다 / 다음))
+(a / and
+	:op1 (입 / 입당-01
+		:ARG1 (p / political-party :wiki "독일_노동자당" :name (이 / 이름 :op1 "독일" :op2 "노동당"))
+		:time (d / date-entity :year 1919))
+	:op2 (지 / 지내-02
+		:ARG1 (당 / 당수
+			:ARG2-of (h / have-org-role-91
+				:ARG1 (p2 / political-party :wiki "국가사회주의_독일_노동자당" :name (이2 / 이름 :op1 "나치스"))))
+		:time (이3 / 이후
+			:op1 (d2 / date-entity :year 1921)))
+	:op3 (되 / 되-01
+		:ARG2 (총 / 총리
+			:ARG2-of (h2 / have-org-role-91
+				:ARG1 (c / country :wiki "독일_연방" :name (이4 / 이름 :op1 "독일" :op2 "연방"))))
+		:time (d3 / date-entity :year 1933))
+	:op4 (총2 / 총통
+		:ARG2-of (h3 / have-org-role-91
+			:ARG1 c)))
 
-
-# ::id snt2.E2016.835.06_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2016.835.06_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt  반유대주의와 게르만 민족의 우월성을 내세워 제이차 세계 대전을 일으켰다.
-# ::note
--- FRAMES ----------------------------------------
-반유대 : DERIVED_NON-ENTRY -> (반 / 반유대-00) ?
-주의 : VERBAL_NOUN
-	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
-우월 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (우 / 우월성-00) ?
-	- superior		(우 / 우월-01 :ARG1 thing_superior :ARG2 superior_to)
-내세우 : VERB
-	- support		(내 / 내세우-01 :ARG0 supporter :ARG1 thing_supported :ARG2 supported_as)
-일으키 : VERB
-	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"게르만 민족" [CV_TRIBE]	->  (게 / 게르만민족)	OR	(e / ethnic-group|nationality :wiki "게르만족" :name (이 / 이름 :op1 "게르만" :op2 "민족"))
-"반유대주의" [TR_SOCIAL_SCIENCE]	->  (반 / 반유대주의)	OR	(t / theory* :wiki "반유대주의" :name (이 / 이름 :op1 "반유대주의"))
-"제이차 세계 대전" [EV_WAR_REVOLUTION]	->  (제 / 제이차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제이차" :op2 "세계" :op3 "대전"))
--- VERBALIZED ------------------------------------
-(대 / 대전 :mod (세 / 세계))
-(성 / 성 :ARG0-of (우 / 우월))
-(주 / 주의 :mod (유 / 유대))
+# ::note 우월성 분석
+(일 / 일으키-01
+	:ARG1 (w / war :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제이차" :op2 "세계" :op3 "대전"))
+	:manner (내 / 내세우-01
+		:ARG1 (a / and
+			:op1 (반 / 반유대주의)
+			:op2 (우 / 우월-01
+				:ARG1 (e / ethnic-group :wiki "게르만족" :name (이2 / 이름 :op1 "게르만" :op2 "민족"))))))
 
-
-# ::id snt0.E2016.835.06_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.06_A_02 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 독일의 정치가이며 독재자로 불린다.
 # ::note
--- FRAMES ----------------------------------------
-정치가 : DERIVED_NON-ENTRY -> (정 / 정치가-00) ?
-독재자 : DERIVED_NON-ENTRY -> (독 / 독재자-00) ?
-불리 : VERB
-	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
-"독재자" [CV_POSITION]	->  :mod (독 / 독재자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (독 / 독재자))
-"정치가" [CV_OCCUPATION]	->  :mod (정 / 정치가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (정 / 정치가))
--- VERBALIZED ------------------------------------
-(가 / 가 :mod (정 / 정치))
-(자 / 자 :mod (독 / 독재))
+(a / and
+	:op1 (정 / 정치가
+		:mod (c / country :wiki "독일" :name (이 / 이름 :op1 "독일")))
+	:op2 (부 / 부르-02
+		:ARG2 (사 / 사람
+			:ARG0-of (독 / 독재-00))))
 
-
-# ::id snt1.E2016.835.06_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.835.06_A_02 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 게르만 민족주의와 반유태주의를 내걸어 1933년 독일수상이 되었고 1934년 독일 국가원수가 되었으며 총통으로 불리었다.
-# ::note
--- FRAMES ----------------------------------------
-주의 : VERBAL_NOUN
-	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
-반유태 : DERIVED_NON-ENTRY -> (반 / 반유태-00) ?
-주의 : VERBAL_NOUN
-	- heed		(주 / 주의-01 :ARG0 agent :ARG1 entity_considered)
-내걸 : VERB
-	- hang_out		(내 / 내걸-01 :ARG0 agent :ARG1 thing_hung :ARG2 location)
-	- offer		(내 / 내걸-02 :ARG0 agent :ARG1 price :ARG2 purpose)
-수상 : VERBAL_NOUN
-	- receive_a_prize		(수 / 수상-01 :ARG0 receiver :ARG1 prize)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-불리 : VERB
-	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1933년" [DT_YEAR]	->  :time|duration (1 / 1933년)	OR	:time (d / date-entity :year 1933)	OR	:duration (t / temporal-quantity :quant 1933 :unit (년 / 년))  
-"1934년" [DT_YEAR]	->  :time|duration (1 / 1934년)	OR	:time (d / date-entity :year 1934)	OR	:duration (t / temporal-quantity :quant 1934 :unit (년 / 년))  
-"게르만" [CV_TRIBE]	->  (게 / 게르만)	OR	(e / ethnic-group|nationality :wiki "게르만족" :name (이 / 이름 :op1 "게르만"))
-"국가원수" [CV_POSITION]	->  :mod (국 / 국가원수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국가원수))
-"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
-"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
-"민족주의" [TR_SOCIAL_SCIENCE]	->  (민 / 민족주의)	OR	(t / theory* :wiki "민족주의" :name (이 / 이름 :op1 "민족주의"))
-"반유태주의" [TR_SOCIAL_SCIENCE]	->  (반 / 반유태주의)	OR	(t / theory* :wiki "반유대주의" :name (이 / 이름 :op1 "반유태주의"))
-"총통" [CV_POSITION]	->  :mod (총 / 총통)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총통))
--- VERBALIZED ------------------------------------
-(원 / 원수 :mod (국 / 국가))
-(주 / 주의 :mod (민 / 민족))
-(주 / 주의 :mod (유 / 유태))
+# ::note 위키에 의한 정규화 효과 반유태주의 --> 반유대주의
+(a / and
+	:op1 (되 / 되-01
+		:ARG2 (수 / 수상
+			:ARG2-of (h / have-org-role-91
+				:ARG1 (c / country :wiki "독일_연방" :name (이 / 이름 :op1 "독일"))))
+		:manner (내 / 내걸-00
+			:ARG1 (a2 / and
+				:op1 (반 / 반유태주의)
+				:op2 (민 / 민족주의
+					:mod (e / ethnic-group :wiki "게르만족" :name (이2 / 이름 :op1 "게르만")))))
+		:time (d / date-entity :year 1933))
+	:op2 (되2 / 되-01
+		:ARG2 (국 / 국가원수
+			:ARG2-of (h2 / have-org-role-91
+				:ARG1 c))
+		:time (d2 / date-entity :year 1934))
+	:op3 (부 / 부르-02
+		:ARG2 (총 / 총통)))
 
-
-# ::id snt2.E2016.835.06_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt2.E2016.835.06_A_02 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 제2차세계대전을 일으켰지만 패색이 짙어지자 자살하였다.
 # ::note
--- FRAMES ----------------------------------------
-일으키 : VERB
-	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
-짙 : VERB
-	- dark		(짙 / 짙-01 :ARG1 thing_dark)
-자살 : VERBAL_NOUN
-	- kill_oneself		(자 / 자살-01 :ARG0 thing_killing_oneself)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"제2차세계대전" [EV_WAR_REVOLUTION]	->  (제 / 제2차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제2차세계대전"))
--- VERBALIZED ------------------------------------
-(대 / 대전 :mod (세 / 세계))
+(a / and
+	:op1 (일 / 일으키-01
+		:ARG1 (w / war :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제2차세계대전")))
+	:op2 (자 / 자살-01
+		:time (짙 / 짙-01
+			:ARG1 (패 / 패색))))
 
-
-# ::id snt0.E2016.835.06_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.06_Q_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 나치당의 당수였던 이 사람은 1933년 독일 총리에 임명됐다.
 # ::note
--- FRAMES ----------------------------------------
-임명 : VERBAL_NOUN
-	- appoint		(임 / 임명-01 :ARG0 thing_appointing :ARG1 thing_appointed :ARG2 appoint_as)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1933년" [DT_YEAR]	->  :time|duration (1 / 1933년)	OR	:time (d / date-entity :year 1933)	OR	:duration (t / temporal-quantity :quant 1933 :unit (년 / 년))  
-"나치당" [OGG_POLITICS]	->  (나 / 나치당)	OR	(g / government-organization :wiki "국가사회주의_독일_노동자당" :name (이 / 이름 :op1 "나치당"))
-"당수" [CV_POSITION]	->  :mod (당 / 당수)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (당 / 당수))
-"독일" [LCP_COUNTRY]	->  (독 / 독일)	OR	(c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
-"총리" [CV_POSITION]	->  :mod (총 / 총리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총리))
--- VERBALIZED ------------------------------------
+(임 / 임명-01
+	:ARG1 (사 / 사람
+		:mod (이 / 이)
+		:ARG0-of (h / have-org-role-91
+			:ARG1 (p / political-party :wiki "국가사회주의_독일_노동자당" :name (이2 / 이름 :op1 "나치당"))
+			:ARG2 (당 / 당수)))
+	:ARG2 (총 / 총리
+		:ARG2-of (h2 / have-org-role-91
+			:ARG1 (c / country :wiki "독일_연방" :name (이3 / 이름 :op1 "독일"))))
+	:time (d / date-entity :year 1933))
 
-
-# ::id snt1.E2016.835.06_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.835.06_Q_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 이후 이탈리아의 무솔리니와 함께 제2차 세계대전을 일으킨 이 사람은?
 # ::note
--- FRAMES ----------------------------------------
-일으키 : VERB
-	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"무솔리니" [PS_NAME]	->  (무 / 무솔리니)	OR	(p / person :wiki "베니토_무솔리니" :name (이 / 이름 :op1 "무솔리니"))
-"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
-"제2차 세계대전" [EV_WAR_REVOLUTION]	->  (제 / 제2차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제2차" :op2 "세계대전"))
--- VERBALIZED ------------------------------------
-(대 / 대전 :mod (세 / 세계))
-
+(일 / 일으키-01
+	:ARG0 (a / amr-unknown)
+	:ARG1 (w / war :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제2차" :op2 "세계대전"))
+	:accompanier (p / person :wiki "베니토_무솔리니" :name (이2 / 이름 :op1 "무솔리니")
+		:mod (c / country :wiki "이탈리아" :name (이3 / 이름 :op1 "이탈리아")))
+	:time (이4 / 이후))
 
 # ::id snt0.E2016.835.07_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt 장미 전쟁 (薔薇戰爭, 영어: Wars of the Roses)은 붉은 장미를 표시로 삼은 랭커스터 왕가와 흰 장미를 표시로 삼은 요크 왕가 사이의 왕위 쟁탈전이었다.

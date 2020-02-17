@@ -1,6 +1,6 @@
 # ::id snt0.E2016.836.01_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 2010년 7월 31일 브라질 브라질리아에서 열린 유네스코 세계유산위원회(WHC)의 제34차 회의에서 경주 양동마을과 함께 세계문화유산 등재가 확정되었다.
-# ::note 세계문화유산 --> 세계유산 (wiki-enhanced)
+# ::note 세계문화유산 --> 세계유산 (wiki-enhanced) / 함께 accompanier
 (확 / 확정-01
     :ARG1 (등 / 등재-01
         :ARG1 (함 / 함께
