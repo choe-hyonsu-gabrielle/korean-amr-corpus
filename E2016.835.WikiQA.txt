@@ -402,128 +402,103 @@
 		:mod (c / country :wiki "이탈리아" :name (이3 / 이름 :op1 "이탈리아")))
 	:time (이4 / 이후))
 
-# ::id snt0.E2016.835.07_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.07_A_01 ::date 2019-02-18 ::annotator gabrielle ::preferred True
 # ::snt 장미 전쟁 (薔薇戰爭, 영어: Wars of the Roses)은 붉은 장미를 표시로 삼은 랭커스터 왕가와 흰 장미를 표시로 삼은 요크 왕가 사이의 왕위 쟁탈전이었다.
 # ::note
--- FRAMES ----------------------------------------
-붉 : VERB
-	- red		(붉 / 붉-01 :ARG1 thing_being_red)
-표시 : VERBAL_NOUN
-	- mark		(표 / 표시-01 :ARG0 agent :ARG1 thing_marked :ARG2 instrument)
-	- express		(표 / 표시-02 :ARG0 speaker :ARG1 thing_expressed)
-삼 : VERB
-	- consider		(삼 / 삼-01 :ARG0 thinker :ARG1 thing_under_consideration :ARG2 attribute)
-희 : VERB
-	- white		(희 / 희-01 :ARG1 thing_being_white)
-표시 : VERBAL_NOUN
-	- mark		(표 / 표시-01 :ARG0 agent :ARG1 thing_marked :ARG2 instrument)
-	- express		(표 / 표시-02 :ARG0 speaker :ARG1 thing_expressed)
-삼 : VERB
-	- consider		(삼 / 삼-01 :ARG0 thinker :ARG1 thing_under_consideration :ARG2 attribute)
-쟁탈전 : DERIVED_NON-ENTRY -> (쟁 / 쟁탈전-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"Wars of the Roses" [EV_WAR_REVOLUTION]	->  (W / WarsoftheRoses)	OR	(w / war|event :wiki - :name (이 / 이름 :op1 "Wars" :op2 "of" :op3 "the" :op4 "Roses"))
-"薔薇戰爭" [EV_WAR_REVOLUTION]	->  (薔 / 薔薇戰爭)	OR	(w / war|event :wiki - :name (이 / 이름 :op1 "薔薇戰爭"))
-"랭커스터 왕가" [OG_OTHERS]	->  (랭 / 랭커스터왕가)	OR	(o / organization? :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터" :op2 "왕가"))
-"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
-"요크 왕가" [OG_OTHERS]	->  (요 / 요크왕가)	OR	(o / organization? :wiki "요크가" :name (이 / 이름 :op1 "요크" :op2 "왕가"))
-"장미 전쟁" [EV_WAR_REVOLUTION]	->  (장 / 장미전쟁)	OR	(w / war|event :wiki "장미_전쟁" :name (이 / 이름 :op1 "장미" :op2 "전쟁"))
-"장미" [PT_FLOWER]	->  (장 / 장미)	OR	(p / plant* :wiki "장미" :name (이 / 이름 :op1 "장미"))
-"장미" [PT_FLOWER]	->  (장 / 장미)	OR	(p / plant* :wiki "장미" :name (이 / 이름 :op1 "장미"))
--- VERBALIZED ------------------------------------
-(사 / 사이 :mod (왕 / 왕가))
-(쟁 / 쟁탈 :mod (왕 / 왕위))
-(전 / 전 :mod (쟁 / 쟁탈))
-(전 / 전쟁 :mod (장 / 장미))
+(전 / 전쟁
+	:domain (w / war :wiki "장미_전쟁" :name (이 / 이름 :op1 "장미" :op2 "전쟁"))
+	:purpose (쟁 / 쟁탈-00
+		:ARG0 (a / and
+			:op1 (f / family :wiki "랭커스터가" :name (이2 / 이름 :op1 "랭커스터" :op2 "왕가")
+				:ARG0-of (삼 / 삼-01
+					:ARG1 (장 / 장미
+						:ARG1-of (붉 / 붉-01))
+					:ARG2 (표 / 표시)))
+			:op2 (f2 / family :wiki "요크가" :name (이3 / 이름 :op1 "요크" :op2 "왕가")
+				:ARG0-of (삼2 / 삼-01
+					:ARG1 (장2 / 장미
+						:ARG1-of (희 / 희-01))
+					:ARG2 (표2 / 표시))))
+		:ARG1 (왕 / 왕위)))
 
-
-# ::id snt1.E2016.835.07_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.835.07_A_01 ::date 2019-02-18 ::annotator gabrielle ::preferred True
 # ::snt 1455년부터 1485년까지 벌어졌다.
 # ::note
--- FRAMES ----------------------------------------
-벌어지 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1455년부터 1485년까지" [DT_DURATION]	->  :time|duration (1 / 1455년부터1485년까지)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1455))	OR :duration (t / temporal-quantity :quant 1455 :unit (년 / 년))  
--- VERBALIZED ------------------------------------
+(벌 / 벌이-01
+	:time (d / date-inverval
+		:op1 (d2 / date-entity :year 1455)
+		:op2 (d3 / date-entity :year 1485)))
 
-
-# ::id snt0.E2016.835.07_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.07_A_02 ::date 2019-02-18 ::annotator gabrielle ::preferred True
 # ::snt <역사> 1455년부터 1485년까지 영국의 랭커스터가와 요크가 사이에서 벌어졌던 왕위 쟁탈전.
 # ::note
--- FRAMES ----------------------------------------
-벌어지 : ** UNUSED_OR_NON-ENTRY **
-쟁탈전 : DERIVED_NON-ENTRY -> (쟁 / 쟁탈전-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1455년부터 1485년까지" [DT_DURATION]	->  :time|duration (1 / 1455년부터1485년까지)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1455))	OR :duration (t / temporal-quantity :quant 1455 :unit (년 / 년))  
-"랭커스터가" [OG_OTHERS]	->  (랭 / 랭커스터가)	OR	(o / organization? :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터가"))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"요크가" [OG_OTHERS]	->  (요 / 요크가)	OR	(o / organization? :wiki "요크가" :name (이 / 이름 :op1 "요크가"))
--- VERBALIZED ------------------------------------
-(쟁 / 쟁탈 :mod (왕 / 왕위))
-(전 / 전 :mod (쟁 / 쟁탈))
+(전 / 전쟁
+	:topic (역 / 역사)
+	:purpose (쟁 / 쟁탈-00
+		:ARG0 (a / and
+			:op1 (f / family :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터" :op2 "왕가"))
+			:op2 (f2 / family :wiki "요크가" :name (이2 / 이름 :op1 "요크" :op2 "왕가"))
+			:mod (c / country :wiki "영국" :name (이 / 이름 :op1 "영국")))
+		:ARG1 (왕 / 왕위))
+	:ARG1-of (벌 / 벌이-01
+		:ARG0 a
+		:time (d / date-inverval
+			:op1 (d2 / date-entity :year 1455)
+			:op2 (d3 / date-entity :year 1485))))
 
-
-# ::id snt0.E2016.835.07_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.07_Q_01 ::date 2019-02-18 ::annotator gabrielle ::preferred True
 # ::snt 1455~1485년까지 30년간 영국의 봉건 귀족인 랭커스터와 요크 두 가문 사이의 왕위 계승 문제를 둘러싸고 벌어진 이 전쟁은?
 # ::note
--- FRAMES ----------------------------------------
-문제 : VERBAL_NOUN
-	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
-둘러싸 : VERB
-	- surround		(둘 / 둘러싸-01 :ARG0 causal_agent :ARG1 thing_surrounded :ARG2 thing_surrounding)
-벌어지 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1455~1485년까지" [DT_DURATION]	->  :time|duration (1 / 1455~1485년까지)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1485))	OR :duration (t / temporal-quantity :quant 1485 :unit (년 / 년))  
-"30년간" [DT_DURATION]	->  :time|duration (3 / 30년간)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 30))	OR :duration (t / temporal-quantity :quant 30 :unit (년 / 년))  
-"귀족" [CV_POSITION]	->  :mod (귀 / 귀족)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (귀 / 귀족))
-"두 가문" [QT_COUNT]	->  :quant (두 / 두가문)	OR	(c / concept* :quant 두 :unit|scale (가 / 가문))
-"랭커스터" [OG_OTHERS]	->  (랭 / 랭커스터)	OR	(o / organization? :wiki "랭커스터?" :name (이 / 이름 :op1 "랭커스터"))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"요크" [OG_OTHERS]	->  (요 / 요크)	OR	(o / organization? :wiki "요크" :name (이 / 이름 :op1 "요크"))
--- VERBALIZED ------------------------------------
-(계 / 계승 :mod (왕 / 왕위))
-(귀 / 귀족 :mod (봉 / 봉건))
-(문 / 문제 :mod (계 / 계승))
-(사 / 사이 :mod (가 / 가문))
+(a / amr-unknown
+	:domain (전 / 전쟁
+		:mod (이 / 이)
+		:ARG1-of (벌 / 벌이-01
+			:duration (t / temporal-quantity :quant 30 :unit (년 / 년))
+			:time (d / date-inverval
+				:op1 (d2 / date-entity :year 1455)
+				:op2 (d3 / date-entity :year 1485))
+			:cause (문 / 문제-01
+				:ARG1 (계 / 계승-00
+					:ARG1 (왕 / 왕위))
+				:ARG2 (a2 / and
+					:op1 (f / family :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터" :op2 "왕가"))
+					:op2 (f2 / family :wiki "요크가" :name (이2 / 이름 :op1 "요크" :op2 "왕가"))
+					:mod (귀 / 귀족
+						:mod (봉 / 봉건
+							:mod (c / country :wiki "영국" :name (이3 / 이름 :op1 "영국")))))))))
 
-
-# ::id snt0.E2016.835.08_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.08_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 플로렌스(Florence)는 이탈리아의 도시 "피렌체"의 영어식 이름이다.
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"Florence" [LCP_CITY]	->  (F / Florence)	OR	(c / city :wiki "Florence?" :name (이 / 이름 :op1 "Florence"))
-"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
-"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
-"플로렌스" [LCP_CITY]	->  (플 / 플로렌스)	OR	(c / city :wiki "플로렌스?" :name (이 / 이름 :op1 "플로렌스"))
-"피렌체" [LCP_CITY]	->  (피 / 피렌체)	OR	(c / city :wiki "피렌체" :name (이 / 이름 :op1 "피렌체"))
--- VERBALIZED ------------------------------------
+(이 / 이름
+	:domain (s / string-entity :value "플로렌스")
+	:medium (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
+	:mod (c / city :wiki "피렌체" :name (이4 / 이름 :op1 "피렌체")
+		:location (c2 / country :wiki "이탈리아" :name (이4 / 이름 :op1 "이탈리아"))))
 
-
-# ::id snt0.E2016.835.08_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.08_A_02 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt <지명> ‘피렌체’의 영어 이름.
 # ::note
--- FRAMES ----------------------------------------
-지명 : VERBAL_NOUN
-	- appoint		(지 / 지명-01 :ARG0 thing_appointing :ARG1 thing_appointed :ARG2 appoint_as)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
-"피렌체" [LCP_CITY]	->  (피 / 피렌체)	OR	(c / city :wiki "피렌체" :name (이 / 이름 :op1 "피렌체"))
--- VERBALIZED ------------------------------------
+(이 / 이름
+	:topic (지 / 지명)
+	:medium (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
+	:mod (c / city :wiki "피렌체" :name (이2 / 이름 :op1 "피렌체")
+		:location (c2 / country :wiki "이탈리아" :name (이4 / 이름 :op1 "이탈리아"))))
 
-
-# ::id snt0.E2016.835.08_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.08_Q_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 르네상스의 중심 도시로 전체가 유네스코 세계문화유산으로 지정되어 있다.
 # ::note
+(a / and
+	:op1 
+	:op2 (지 / 지정-01
+		:ARG1 thing_set
+		:ARG2 attribute))
+
+
+
 -- FRAMES ----------------------------------------
 지정 : VERBAL_NOUN
-	- establish		(지 / 지정-01 :ARG0 agent :ARG1 thing_set :ARG2 attribute)
+	- establish		
 -- FORCE CONVERT ---------------------------------
 -- NE TYPES --------------------------------------
 "르네상스" [EV_ACTIVITY]	->  (르 / 르네상스)	OR	(e / event? :wiki "르네상스" :name (이 / 이름 :op1 "르네상스"))
