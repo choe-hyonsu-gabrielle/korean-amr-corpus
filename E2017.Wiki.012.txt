@@ -537,7 +537,7 @@
 (이 / 이루-01
 	:mod (주 / 주로)
 	:manner (중 / 중심
-		:op1 (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))))
+		:op1 (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))))
 
 # ::id snt16.E2017.Wiki.012 ::date 2019-12-18 ::annotator gabrielle
 # ::snt 유럽의 초기 식민지는 희귀한 자원과 노예의 확보를 위한 것이었다.
@@ -636,7 +636,7 @@
 (등 / 등장-01
 	:ARG1 (a / and
 		:op1 (c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-		:op2 (c / country :wiki "일본" :name (이 / 이름 :op1 "일본")))
+		:op2 (c2 / country :wiki "일본" :name (이2 / 이름 :op1 "일본")))
 	:ARG2 (대 / 대열
 		:mod (열 / 열강)
 		:mod (제 / 제국주의))

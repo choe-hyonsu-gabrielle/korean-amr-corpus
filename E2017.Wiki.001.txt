@@ -8,7 +8,7 @@
 # ::note
 (공 / 공화국
 	:domain (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
-	:location (c2 / continent :wiki "동아프리카" :name (이 / 이름 :op1 "동아프리카")))
+	:location (c2 / continent :wiki "동아프리카" :name (이2 / 이름 :op1 "동아프리카")))
 
 # ::id snt2.E2017.Wiki.001 ::date 2020-01-05 ::annotator gabrielle
 # ::snt 인도양에 면해 있으며 북동쪽으로 소말리아, 북쪽으로 에티오피아와 남수단, 서쪽으로 우간다, 남쪽으로 탄자니아와 국경을 맞닿고 있다.
@@ -79,7 +79,7 @@
 	:ARG2 (인 / 인구
 		:quant (전 / 전체))
 	:ARG3 (정 / 정도
-		:quant (p / percentage-entity :value 1%)))
+		:quant (p / percentage-entity :value 1)))
 
 # ::id snt6.E2017.Wiki.001 ::date 2019-01-05 ::annotator gabrielle
 # ::snt 동아프리카에서 발견된 화석에 따르면 조상이 2백만 년 전 이 지역에서 살았다고 한다.
@@ -337,7 +337,7 @@
 	:op2 (치 / 치르-02
 		:ARG1 (선 / 선거-00
 			:mod (다 / 다당))
-		:time (d / date-entity :year 1992))
+		:time (d2 / date-entity :year 1992))
 	:time (후 / 후
 		:op1 (그 / 그)))
 

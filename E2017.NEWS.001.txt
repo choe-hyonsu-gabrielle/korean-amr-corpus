@@ -9,7 +9,7 @@
             :mod (세 / 세금)))
     :op2 (시 / 시작-01
         :ARG1 (s / service* :wiki - :name (이 / 이름 :op1 "연말정산서비스"))
-        :time (d / date-entity :day 15)))
+        :time (d2 / date-entity :day 15)))
 
 # ::id snt1.E2017.NEWS.001 ::date 2019-09-01 ::annotator gabrielle
 # ::snt 지난해 소득분에 대한 연말정산 서비스가 15일부터 시작된다.
@@ -308,7 +308,7 @@
         :ARG1 (자 / 자료
             :topic (간 / 간소화-00
                 :ARG1 (연 / 연말정산))
-            :poss (가 / 가족
+            :poss (가2 / 가족
                 :ARG1-of (부 / 부양-00))))
     :condition (동 / 동의-01
             :ARG1 (제 / 제공-01
@@ -372,7 +372,7 @@
 (조 / 조회-00
     :polarity -
     :ARG1 (자 / 자료
-        :topic (의 / 의료비)))
+        :topic (의 / 의료비))
     :condition (알 / 알려주-01
         :polarity -
         :ARG1 (주 / 주민등록번호
@@ -380,7 +380,7 @@
                 :example (등 / 등
                     :op1 (신 / 신생아))))
         :ARG2 (기 / 기관
-            :mod (의2 / 의료)))
+            :mod (의2 / 의료))))
 
 # ::id snt18.E2017.NEWS.001 ::date 2019-09-03T12:43 ::annotator gabrielle
 # ::snt 이 경우 근로자가 해당 병원에서 직접 영수증을 발급받아 공제해야 한다.
@@ -472,7 +472,7 @@
         :medium (s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "간소화" :op3 "서비스"))
         :manner (접 / 접속-01
             :ARG1 (s2 / service* :wiki "홈택스" :name (이2 / 이름 :op1 "홈택스")
-                :mod (g / government-organization :wiki "대한민국_국세청 :name (이3 / 이름 :op1 "국세청"))))))
+                :mod (g / government-organization :wiki "대한민국_국세청" :name (이3 / 이름 :op1 "국세청"))))))
 
 # ::id snt24.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle
 # ::snt 연말정산 간소화 서비스에서 조회되지 않은 자료만 근로자가 별도로 수집해 공제 신고서에 입력하면 된다.
@@ -523,7 +523,7 @@
                     :manner (파 / 파악-01
                         :ARG1 (가3 / 가능-01
                             :ARG1 (받2 / 받-01
-                                :ARG0 (a / amr-unknown
+                                :ARG0 (a2 / amr-unknown
                                     :ARG1-of (i / include-91
                                         :ARG2 (부2 / 부부
                                             :mod (맞2 / 맞벌이))))
@@ -557,8 +557,8 @@
     :ARG1 (문 / 문의-01
         :ARG1 (궁 / 궁금하-01
             :time (이 / 이용-01
-                :ARG1 (s / service* :wiki - :name (이 / 이름 :op1 "연말정산" :op2 "서비스"))))
-        :ARG2 (g / government-organization :wiki "국세상담센터" :name (이2 / 이름 :op1 "국세" :op2 "상담센터")
+                :ARG1 (s / service* :wiki - :name (이2 / 이름 :op1 "연말정산" :op2 "서비스"))))
+        :ARG2 (g / government-organization :wiki "국세상담센터" :name (이3 / 이름 :op1 "국세" :op2 "상담센터")
             :mod (p / phone-number-entity :value 126))))
 
 # ::id snt29.E2017.NEWS.001 ::date 2019-09-04 ::annotator gabrielle

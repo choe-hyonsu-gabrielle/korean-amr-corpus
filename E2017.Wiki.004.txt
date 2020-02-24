@@ -109,13 +109,13 @@
 	:op2 (강 / 강조-01
 		:ARG0 p
 		:ARG1 (구 / 구원-00
-			:manner (a / and
+			:manner (a2 / and
 				:op1 (권 / 권위
-					:poss (r2 / religious-group :wiki "기독교" :name (이2 / 이름 :op1 "기독교"))
+					:poss (r2 / religious-group :wiki "기독교" :name (이3 / 이름 :op1 "기독교"))
 					:ARG1-of (지 / 지니-01
-						:ARG0 (p2 / publication :wiki "성경" :name (이3 / 이름 :op1 "성서"))))
+						:ARG0 (p2 / publication :wiki "성경" :name (이4 / 이름 :op1 "성서"))))
 				:op2 (믿 / 믿-01
-					:ARG1 (p3 / person :wiki "그리스도" :name (이4 / 이름 :op1 "그리스도")))
+					:ARG1 (p3 / person :wiki "그리스도" :name (이5 / 이름 :op1 "그리스도")))
 				:op3 (은 / 은혜
 					:mod (하 / 하나님))))))
 

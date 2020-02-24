@@ -437,7 +437,7 @@
 		:ARG0 (a / and
 			:op1 (f / family :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터" :op2 "왕가"))
 			:op2 (f2 / family :wiki "요크가" :name (이2 / 이름 :op1 "요크" :op2 "왕가"))
-			:mod (c / country :wiki "영국" :name (이 / 이름 :op1 "영국")))
+			:mod (c / country :wiki "영국" :name (이3 / 이름 :op1 "영국")))
 		:ARG1 (왕 / 왕위))
 	:ARG1-of (벌 / 벌이-01
 		:ARG0 a
@@ -460,11 +460,11 @@
 				:ARG1 (계 / 계승-00
 					:ARG1 (왕 / 왕위))
 				:ARG2 (a2 / and
-					:op1 (f / family :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터" :op2 "왕가"))
-					:op2 (f2 / family :wiki "요크가" :name (이2 / 이름 :op1 "요크" :op2 "왕가"))
+					:op1 (f / family :wiki "랭커스터가" :name (이2 / 이름 :op1 "랭커스터" :op2 "왕가"))
+					:op2 (f2 / family :wiki "요크가" :name (이3 / 이름 :op1 "요크" :op2 "왕가"))
 					:mod (귀 / 귀족
 						:mod (봉 / 봉건
-							:mod (c / country :wiki "영국" :name (이3 / 이름 :op1 "영국")))))))))
+							:mod (c / country :wiki "영국" :name (이4 / 이름 :op1 "영국")))))))))
 
 # ::id snt0.E2016.835.08_A_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 플로렌스(Florence)는 이탈리아의 도시 "피렌체"의 영어식 이름이다.
@@ -472,7 +472,7 @@
 (이 / 이름
 	:domain (s / string-entity :value "플로렌스")
 	:medium (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
-	:mod (c / city :wiki "피렌체" :name (이4 / 이름 :op1 "피렌체")
+	:mod (c / city :wiki "피렌체" :name (이3 / 이름 :op1 "피렌체")
 		:location (c2 / country :wiki "이탈리아" :name (이4 / 이름 :op1 "이탈리아"))))
 
 # ::id snt0.E2016.835.08_A_02 ::date 2019-02-17 ::annotator gabrielle ::preferred True
@@ -481,7 +481,7 @@
 (이 / 이름
 	:topic (지 / 지명)
 	:medium (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
-	:mod (c / city :wiki "피렌체" :name (이2 / 이름 :op1 "피렌체")
+	:mod (c / city :wiki "피렌체" :name (이3 / 이름 :op1 "피렌체")
 		:location (c2 / country :wiki "이탈리아" :name (이4 / 이름 :op1 "이탈리아"))))
 
 # ::id snt0.E2016.835.08_Q_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True

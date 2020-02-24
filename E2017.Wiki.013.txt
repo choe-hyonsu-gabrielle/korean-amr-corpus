@@ -39,7 +39,7 @@
             :ARG1 (가 / 가능-01
                 :ARG1 (발 / 발전-01
                     :mod (혁 / 혁명적)
-                    :ARG1 (전 / 전자기학
+                    :ARG1 (전2 / 전자기학
                         :time (a / and
                             :op1 (말 / 말
                                 :op1 (d / date-entity :century 19))
@@ -171,7 +171,7 @@
 			:time (현 / 현대)))
 	:op2 (하 / 하-01
 		:ARG0 (발 / 발명-00
-			:ARG0 (그 / 그)
+			:ARG0 (그2 / 그)
 			:ARG1-of (수 / 수많-01))
 		:ARG1 (역 / 역할-00
 			:ARG1-of (중 / 중요-01)
@@ -501,7 +501,7 @@
             :ARG2 p
             :degree (매 / 매우)))
     :frequency (자 / 자주)
-    :mod (이 / 이처럼))
+    :mod (이2 / 이처럼))
 
 # ::id snt22.E2017.Wiki.013 ::date 2019-12-19 ::annotator gabrielle
 # ::snt 테슬라의 형 다니엘은 열두 살에 불의의 사고로 죽었다.

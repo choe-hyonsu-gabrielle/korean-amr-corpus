@@ -128,7 +128,7 @@
                 :ARG1 (c / company :wiki "중앙일보" :wiki "JTBC" :name (이4 / 이름 :op1 "중앙일보·JTBC"))
                 :ARG2 (사 / 사장)
                 :time (전 / 전))
-            :mod (특 / 특사
+            :mod (특2 / 특사
                 :mod (대 / 대미))))
     :ARG2 (통 / 통일외교안보특보
         :poss (대2 / 대통령)))
@@ -173,9 +173,9 @@
         :ARG1-of (합 / 합격-00
             :mod (동 / 동시)
             :topic (행 / 행정고시)
-            :topic (입 / 입법고시)
+            :topic (입2 / 입법고시)
             :manner (생 / 생활-01
-                :ARG2 (직 / 직장)
+                :ARG2 (직 / 직장)
                 :time (이 / 이후
                     :op1 (졸 / 졸업-01
                         :ARG1 (s / school :wiki "덕수고등학교" :name (이2 / 이름 :op1 "덕수상고")))
@@ -226,40 +226,40 @@
 # ::note 거치다 거치하다 lemma issue
 (a / and
     :op2 (말 / 말하-01
-        :ARG1 (공 / 공감-01
-            :ARG0 (p / person :name (이 / 이름 :op1 "김")
-                :mod (후 / 후보))
-            :ARG1 (어 / 어렵-01
-                :poss (국 / 국민))
-            :concession (만 / 만나-01
-                :polarity -
-                :ARG0 p
-                :ARG1 (나 / 나)
-                :manner (개 / 개인)))
-        :ARG1 (판 / 판단-01
-            :ARG1 (사 / 사람
-                :ARG1-of (적 / 적합-01))
-            :cause (관 / 관료
-                :ARG1-of (유 / 유능-01)
-                :domain p
-                :mod (검 / 검증-00
-                    :ARG1 (가 / 가능-01
-                        :ARG1 (a2 / and
-                            :op1 (조 / 조정-01)
-                            :op2 (통 / 통찰-00
-                                :manner (거 / 거시))
-                            :topic (경 / 경제)))
-                    :manner (거2 / 거치-01
-                        :mod (특 / 특히)
-                        :ARG1 p
-                        :ARG2 (직 / 직위
-                            :ARG1-of (중 / 중요-01)
-                            :ARG2-of (h / have-org-role-91
-                                :ARG0 p
-                                :ARG1 (g / government-organization :wiki "대한민국_기획예산처" :name (이2 / 이름 "기획예산처")))
-                            :ARG2-of (h2 / have-org-role-91
-                                :ARG0 p
-                                :ARG1 (g2 / government-organization :wiki "대한민국_기획재정부" :name (이3 / 이름 "재정부"))))))))))
+        :ARG0 (나 / 나)
+        :ARG1 (a2 / and
+            :op1 (h / have-degree-91
+                :ARG1 (p / person :wiki - :name (이 / 이름 :op1 "김")
+                    :mod (후 / 후보자))
+                :ARG2 (공 / 공감-01
+                    :ARG1 (어 / 어렵-01
+                        :poss (국 / 국민)))
+                :ARG4 (누 / 누구)
+                :concession (만 / 만나-01
+                    :polarity -
+                    :ARG0 p
+                    :ARG1 나
+                    :manner (개 / 개인적)))
+            :op2 (판 / 판단-01
+                :ARG0 나
+                :ARG1 p
+                :attribute (적 / 적임자)
+                :cause (관 / 관료
+                    :mod (유 / 유능-01)
+                    :mod (검 / 검증-00
+                        :ARG1 (능 / 능력
+                            :mod (통 / 통찰-00
+                                :manner (거 / 거시적)
+                                :ARG1 (경 / 경제))
+                            :mod (조 / 조정-01
+                                :ARG1 경))
+                        :manner (거2 / 거치-01
+                            :ARG1 p
+                            :ARG2 (요 / 요직
+                                :mod (a3 / and
+                                    :op1 (g / government-organization :wiki "대한민국_기획예산처" :name (이2 / 이름 "기획예산처"))
+                                    :op2 (g2 / government-organization :wiki "대한민국_기획재정부" :name (이3 / 이름 "재정부"))))
+                            :mod (특 / 특히))))))
 
 # ::id snt10.E2017.NEWS.005 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 강경화 장관 후보자는 서울 출생으로 이화여고를 졸업, 매사추세츠대학 커뮤니케이션 박사 학위를 받았다.
@@ -323,7 +323,7 @@
                 :manner (a / and
                     :op1 (전 / 전문성)
                     :op2 (네 / 네트워크
-                        :mod (사 / 사람))
+                        :mod (사2 / 사람))
                     :ARG1-of (쌓 / 쌓-01
                         :ARG2 (무 / 무대
                             :mod (외4 / 외교
@@ -514,9 +514,9 @@
                             :ARG0 p2
                             :ARG1 (정 / 정책
                                 :mod (경3 / 경제)
-                                :mod (사3 / 사회))
+                                :mod (사4 / 사회))
                             :ARG3 (중 / 중심
-                                :op1 (사4 / 사람)
+                                :op1 (사5 / 사람)
                                 :op2 (중2 / 중소기업))
                             :manner (벗 / 벗어나-01
                                 :ARG1 (패 / 패러다임
@@ -563,7 +563,7 @@
             :ARG0 그
             :cause (결 / 결단-00
                 :mod (크2 / 크-01)
-                :ARG2-of (c / contrast-01
+                :ARG2-of (c2 / contrast-01
                     :ARG1 (고 / 고사-00
                         :ARG1 (요 / 요청-01
                             :ARG0 (정 / 정치권)
@@ -572,7 +572,7 @@
                             :time (그2 / 그동안)))))
             :topic (맡 / 맡-01
                 :ARG1 (공 / 공직)
-                :time (이2 / 이번)
+                :time (이3 / 이번)
                 :mod (처 / 처음)))))
 
 # ::id snt20.E2017.NEWS.005 ::date 2019-10-17 ::annotator gabrielle
@@ -659,7 +659,7 @@
                 :op2 (챙 / 챙기-01
                     :ARG0 사
                     :ARG1 a4
-                    :accompanier p))))))
+                    :accompanier p))))
 
 # ::id snt24.E2017.NEWS.005 ::date 2019-10-18 ::annotator gabrielle
 # ::snt 김광두 신임 부의장은 전남 나주 출생으로 광주제일고를 졸업, 하와이대 경제학 박사 학위를 받았다.
@@ -722,7 +722,7 @@
                         :poss p2
                         :ARG1-of (다 / 다르-01
                             :ARG2 p
-                            :degree (다 / 다소)))))
+                            :degree (다2 / 다소)))))
             :ARG2 (o / obligate-01
                 :ARG2 (손 / 손을-맞잡-00
                     :ARG0 (진 / 진보
@@ -752,7 +752,7 @@
                     :ARG0 (p / person :wiki - :name (이2 / 이름 :op1 "김")
                         :ARG0-of (h / have-org-role-91
                             :ARG2 (부2 / 부의장))
-                        :ARG1-of (경 / 경험-01
+                        :ARG1-of (경2 / 경험-01
                             :mod (두 / 두루)
                             :ARG2 (a3 / and
                                 :op1 (이3 / 이론)

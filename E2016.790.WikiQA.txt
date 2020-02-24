@@ -18,7 +18,7 @@
 # ::snt universal serial bus의 약어
 # ::note 축약-00을 사용하지 않음 - 한자형태소의 표상 문제
 (약 / 약어
-    :mod (s / string-entity :value "universal serial bus"))
+    :mod (s / string-entity :value "universal^serial^bus"))
 
 # ::id snt0.E2016.790.01_Q_01 ::date 2019-02-11 ::annotator gabrielle ::preferred True
 # ::snt 이동형 저장장치 USB 메모리에서 B에 해당하는 단어로 맞는 것은?
@@ -28,7 +28,7 @@
         :ARG1-of (해 / 해당-01
             :ARG2 (s / string-entity :value "B"
                 :ARG1-of (i / include-91
-                    :ARG2 (s2 / string-entity :value "USB 메모리"
+                    :ARG2 (s2 / string-entity :value "USB^메모리"
                         :ARG1-of (뜻 / 뜻하-01
                             :ARG2 (장 / 장치
                                 :purpose (저 / 저장-01)
@@ -238,7 +238,7 @@
 			:ARG1 (t / T-세포)
 			:cause (감2 / 감염-01
 				:ARG2 (인 / 인간면역결핍-바이러스
-					:cause-of (d2 / desease :wiki "후천면역결핍증후군" :name (이 / 이름 :op1 "에이즈")))))))
+					:cause-of (d2 / desease :wiki "후천면역결핍증후군" :name (이2 / 이름 :op1 "에이즈")))))))
 
 # ::id snt0.E2016.790.05_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt AIDS(에이즈)는 면역결핍바이러스인 에이즈바이러스(HIV)에 감염돼 면역기능이 저하되는 질환이다.
@@ -298,7 +298,7 @@
 # ::note
 (p / person :wiki - :name (이 / 이름 :op1 "리골레토")
 	:mod (어 / 어릿광대
-		:poss (p / person :wiki "만토바" :name (이 / 이름 :op1 "만토바" :op2 "공작"))))
+		:poss (p2 / person :wiki "만토바" :name (이2 / 이름 :op1 "만토바" :op2 "공작"))))
 
 # ::id snt0.E2016.790.06_A_02 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 투란도트 공주와 혼인하려는 남자는 먼저 그 여자가 내는 세 가지 수수께끼를 풀어야 한다.

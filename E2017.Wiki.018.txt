@@ -64,7 +64,7 @@
         :poss (c / city :wiki "잭슨빌" :name (이 / 이름 :op1 "잭슨빌")))
     :ARG2-of (i / include-91
         :ARG1 (a2 / area-quantity :quant 302.1 :unit (s2 / square-kilometer)
-            :domain (면 / 면적
+            :domain (면2 / 면적
                 :poss (물 / 물))
         :ARG3 (p / percentage-entity :value 13.34)))
 

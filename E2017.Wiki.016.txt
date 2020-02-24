@@ -31,9 +31,9 @@
             :ARG1-of (뜻 / 뜻하-01
                 :ARG2 (동 / 동맹
                     :mod (a2 / and
-                        :op1 (c2 / city :wiki "프라이부르크임브라이스가우" :name (이5 / 이름 :op1 "프라이부르크"))
-                        :op2 (c3 / city :wiki "베른" :name (이6 / 이름 :op1 "베른"))
-                        :op3 (c4 / city :wiki "제네바" :name (이7 / 이름 :op1 "제네바"))))))
+                        :op1 (c4 / city :wiki "프라이부르크임브라이스가우" :name (이5 / 이름 :op1 "프라이부르크"))
+                        :op2 (c5 / city :wiki "베른" :name (이6 / 이름 :op1 "베른"))
+                        :op3 (c6 / city :wiki "제네바" :name (이7 / 이름 :op1 "제네바"))))))
         :time (후 / 후)))
 
 # ::id snt3.E2017.Wiki.016 ::date 2019-12-10 ::annotator gabrielle
@@ -153,7 +153,7 @@
         :ARG0 (p2 / person :wiki "앙리_4세" :name (이2 / 이름 :op1 "앙리")
             :ARG0-of (h / have-org-role-91
                 :ARG1 (c / country-region :wiki "나바라_지방" :name (이3 / 이름 :op1 "나바라"))
-                :ARG2 (군 / 군주))))
+                :ARG2 (군 / 군주)))
         :ARG1 (왕 / 왕조
             :mod (f / family :wiki "부르봉가" :name (이4 / 이름 :op1 "부르봉"))))
     :op3 (오 / 오르-02
@@ -200,7 +200,7 @@
     :ARG3 (c / continent :wiki "북아메리카" :name (이 / 이름 :op1 "북아메리카")
         :mod (지 / 지역
             :mod (a / and
-                :op1 (c / city :wiki "뉴욕" :name (이2 / 이름 :op1 "뉴욕"))
+                :op1 (c2 / city :wiki "뉴욕" :name (이2 / 이름 :op1 "뉴욕"))
                 :op2 (s / state :wiki - :name (이3 / 이름 :op1 "캐롤라이나"))))))
 
 

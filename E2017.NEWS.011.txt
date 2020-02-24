@@ -52,22 +52,19 @@
 	:ARG1 (표 / 표현-01
 		:polarity -
 		:ARG0 (군 / 군)
-		:ARG1 (s / string-entity :value "북한 무인기"
+		:ARG1 (무 / 무인기
+			:poss (c2 / country :wiki "조선민주주의인민공화국" :name (이 / 이름 :op1 "북한")))
 			:domain (기 / 기체
 				:ARG0-of (비 / 비행-01)
 				:mod (소 / 소형)
-				:mod (이 / 이번)))
-		:manner (단 / 단정-00
-			:ARG0 군
-			:ARG1 기
-			:ARG2 (무 / 무인기
-				:poss (c2 / country :wiki "조선민주주의인민공화국" :name (이2 / 이름 :op1 "북한"))))
+				:mod (이2 / 이번)))
+		:manner (단 / 단정-00)
 		:cause (나 / 나오-01
 			:polarity -
 			:ARG0 (결 / 결과
 				:mod (분 / 분석-01
 					:ARG0 군)
-				:ord (최 / 최종))))
+				:ord (최 / 최종)))
 	:ARG2 (판 / 판단-01
 		:ARG0 군
 		:ARG1 (도 / 도발-00

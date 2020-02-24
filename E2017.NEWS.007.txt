@@ -137,7 +137,7 @@
 					:mod (가 / 가능-01
 						:ARG1 (상 / 상담-00))))
 			:op2 (복 / 복잡하-01
-				:ARG1 (사 / 사용-01
+				:ARG1 (사2 / 사용-01
 					:ARG1 콜)))
 		:ARG4 (회2 / 회사
 			:mod (금2 / 금융)
@@ -155,7 +155,7 @@
 			:op2 (p2 / product :wiki - :name (이2 / 이름 :op1 "보이는" :op2 "ARS"))
 			:ARG1-of (개 / 개발-01
 				:manner (강 / 강조-01
-					:ARG1 (강 / 강국
+					:ARG1 (강2 / 강국
 						:topic (i / IT)))))
 		:ARG2 (서 / 서비스
 			:purpose (상 / 상담-00)))
@@ -301,7 +301,7 @@
 					:op2 (c3 / company :wiki "우리은행" :name (이3 / 이름 :op1 "우리은행")))
 				:duration (t / temporal-quantity :quant 13 :unit (시 / 시간)))
 			:op2 (통2 / 통화-01
-				:ARG1 (a / and
+				:ARG1 (a2 / and
 					:op1 (c4 / company :wiki "국민은행" :name (이4 / 이름 :op1 "국민"))
 					:op2 (c5 / company :wiki "KEB하나은행" :name (이5 / 이름 :op1 "KEB하나은행")))
 				:duration (t2 / temporal-quantity :quant 14 :unit (시2 / 시간))))

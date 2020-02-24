@@ -35,7 +35,7 @@
 # ::note
 (설 / 설립-01
     :ARG0 (g / government-organization :wiki - :name (이 / 이름 :op1 "매사추세츠" :op2 "식민지" :op3 "일반의회"))
-    :ARG1 (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
+    :ARG1 (u / university :wiki "하버드_대학교" :name (이2 / 이름 :op1 "하버드" :op2 "대학교"))
     :time (d / date-entity :year 1636))
 
 # ::id snt4.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle
@@ -70,7 +70,7 @@
         :ARG2 (이 / 이름 :op1 "존" :op2 "하버드"
             :name-of (p / person :wiki "존_하버드"
                 :ARG0-of (h / have-org-role-91
-                    :ARG1 (r / religious-group :wiki "청교도" :name (이 / 이름 :op1 "청교도"))
+                    :ARG1 (r / religious-group :wiki "청교도" :name (이2 / 이름 :op1 "청교도"))
                     :ARG2 (성 / 성직자))
                 ::ARG1-of (젊 / 젊-01)))))
 
@@ -596,11 +596,11 @@
 # ::snt 메인 캠퍼스에서 찰스 강 건너편에 자리잡고 있는 올스턴 지역까지 도보로 갈 수 있다.
 # ::note
 (가 / 가능-01
-    :ARG1 (가 / 가-01
+    :ARG1 (가2 / 가-01
         :ARG2 (l / location :wiki - :name (이 / 이름 :op1 "메인" :op2 "캠퍼스"))
-        :ARG3 (c / city-district :wiki - :name (이 / 이름 :op1 "올스턴" :op2 "지역")
+        :ARG3 (c / city-district :wiki - :name (이2 / 이름 :op1 "올스턴" :op2 "지역")
             :location (건 / 건너편
-                :op1 (r / river :wiki "찰스강" :name (이 / 이름 :op1 "찰스" :op2 "강"))))
+                :op1 (r / river :wiki "찰스강" :name (이3 / 이름 :op1 "찰스" :op2 "강"))))
         :manner (도 / 도보)))
 
 # ::id snt28.E2017.Wiki.008 ::date 2019-00-00 ::annotator gabrielle

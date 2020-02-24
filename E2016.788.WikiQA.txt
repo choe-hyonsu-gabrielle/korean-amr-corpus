@@ -574,10 +574,10 @@
 # ::snt 우리나라 호미곶이 있는 이곳은 경상북도 동해안에 있다.
 # ::note
 (이 / 이곳
-    :location-of (c / cape* :wiki "호미곶" :name (이 / 이름 :op1 "호미곶")
+    :location-of (c / cape* :wiki "호미곶" :name (이2 / 이름 :op1 "호미곶")
         :mod (우 / 우리나라))
-    :location (s / sea :wiki "동해" :name (이 / 이름 :op1 "동해안")
-        :location (p / province :wiki "경상북도" :name (이 / 이름 :op1 "경상북도"))))
+    :location (s / sea :wiki "동해" :name (이3 / 이름 :op1 "동해안")
+        :location (p / province :wiki "경상북도" :name (이4 / 이름 :op1 "경상북도"))))
 
 # ::id snt1.E2016.788.11_Q_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 철강 산업의 메카로 불리며, 관광지로 영일만이 유명한 이 도시는 어디일까? 
@@ -586,7 +586,7 @@
     :domain (도 / 도시
         :mod (이 / 이)
         :mod (유 / 유명-01
-            :ARG1 (b / bay :wiki "영일만" :name (이1 / 이름 :op1 "영일만"))
+            :ARG1 (b / bay :wiki "영일만" :name (이2 / 이름 :op1 "영일만"))
             :ARG2 (지 / 지역
                 :ARG1-of (관 / 관광-00)))
         :ARG1-of (부 / 부르-02
@@ -952,14 +952,15 @@
     :domain (이 / 이것)
     :mod (열 / 열대)
     :ARG1-of (부 / 부르-02
-        :ARG2 (s / string-entity :value "악어 배")
+        :ARG2 (배 / 배
+            :part-of (악 / 악어))
         :cause (닮 / 닮-01
             :ARG1 이
             :ARG2 (모 / 모양
                 :ARG1-of (울 / 울퉁불퉁하-00)
                 :ARG1-of (닮2 / 닮-01
                     :ARG2 (등 / 등
-                        :part-of (악 / 악어)))))))
+                        :part-of (악2 / 악어)))))))
 
 # ::id snt1.E2016.788.15_Q_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 과육이 부드럽고 독특한 향기가 있어 소스를 만들거나 샐러드 등의 요리재료로 쓰이는 4음절의 이 과일은 무엇일까?
@@ -2429,7 +2430,7 @@
         :mod (학 / 학자
             :topic (물 / 물리학))
         :location (c / country :wiki "오스트리아" :name (이2 / 이름 :op1 "오스트리아")))
-    :ord (ordinal-entity :value 1)
+    :ord (o / ordinal-entity :value 1)
     :time (d / date-entity :year 1842))
 
 # ::id snt0.E2016.788.26_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True

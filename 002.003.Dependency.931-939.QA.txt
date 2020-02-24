@@ -49,7 +49,7 @@
         :op1 (수 / 수축-00
             :ARG1 (암 / 암석))
         :op2 (팽 / 팽창-00
-            :ARG1 (암 / 암석))
+            :ARG1 (암2 / 암석))
         :cause (다 / 다르-01
             :ARG1 (t / temperature-quantity))))
 
@@ -197,7 +197,7 @@
     :ARG2 (작2 / 작용
         :mod (풍2 / 풍화-00
             :manner (화 / 화학적)))
-    :condition (기 / 기후
+    :condition (기2 / 기후
         :ARG1-of (한 / 한랭-00)
         :ARG1-of (건 / 건조-00)))
 
@@ -317,10 +317,10 @@
     :instrument-of (학 / 학습-00
         :ARG0 (어 / 어린이))
     :ARG1-of (쓰 / 쓰-01
-        :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "박세무"))
+        :ARG0 (p / person :wiki - :name (이2 / 이름 :op1 "박세무"))
         :time (d / date-entity
             :era "중종"
-            :calendar (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선")))))
+            :calendar (c / country :wiki "조선" :name (이3 / 이름 :op1 "조선")))))
 
 # ::id snt1.931.005_A.02_ver ::date 2019-00-00 ::annotator gabrielle
 # ::snt 오륜(五倫)의 요의(要義)를 간결하게 서술하고, 중국과 조선의 역대 세계(世系)와 개략적인 역사를 덧붙였다.
@@ -331,12 +331,12 @@
             :mod (오 / 오륜))
         :manner (간 / 간결하-01))
     :op2 (덧 / 덧붙-01
-        :ARG1 (a / and
+        :ARG1 (a2 / and
             :op1 (세 / 세계
                 :mod (역 / 역대))
             :op2 (역2 / 역사
                 :mod (개 / 개략))
-            :mod (a2 / and
+            :mod (a3 / and
                 :op1 (c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
                 :op2 (c2 / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))))
 
@@ -495,7 +495,7 @@
     :op1 (기 / 기록-01
         :domain (책 / 책
             :mod (이 / 이))
-        :ARG0 (p / person :wiki - :name (이3 / 이름 :op1 "박세무")
+        :ARG0 (p / person :wiki - :name (이2 / 이름 :op1 "박세무")
             :mod (학 / 학자
                 :time (d / date-entity
                     :calendar (c / country :wiki "조선" :name (이3 / 이름 :op1 "조선")))))
@@ -522,7 +522,7 @@
     :ARG2 (교 / 교재)
     :location (서 / 서당)
     :time (시 / 시기
-        :mod (c / country :wiki "조선" :name (이 / 이름 :op1 "조선"))))
+        :mod (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))
 
 # ::id snt0.931.006_A.01_ver ::date 2019-11-06 ::annotator gabrielle
 # ::snt 한국을 비롯해 주변 4강(미국ㆍ중국ㆍ일본ㆍ러시아), 미주(캐나다ㆍ멕시코ㆍ칠레ㆍ페루), 오세아니아(호주ㆍ뉴질랜드ㆍ파푸아뉴기니), 동아시아 지역 등 21개국을 회원국으로 한다.
@@ -610,7 +610,7 @@
     :ARG1-of (가 / 가-01
         :ARG2 (우 / 우심실
             :part-of (심 / 심장))
-        :ARG3 (폐 / 폐)))
+        :ARG3 (폐2 / 폐)))
 
 # ::id snt1.931.008_A.01_ver ::date 2019-09-25 ::annotator gabrielle
 # ::snt 산소가 결핍된 유일한 동맥이다.
@@ -641,7 +641,7 @@
 # ::note
 (혈 / 혈관
     :ARG0-of (보 / 보내-01
-        :ARG1 (혈 / 혈액
+        :ARG1 (혈2 / 혈액
             :mod (정 / 정맥))
         :ARG2 (폐 / 폐)
         :source (심 / 심장)))
@@ -657,7 +657,7 @@
 # ::note
 (혈 / 혈관
     :ARG0-of (보 / 보내-01
-        :ARG1 (혈 / 혈액
+        :ARG1 (혈2 / 혈액
             :mod (정 / 정맥)
             :ARG0-of (돌 / 돌아오-01
                 :ARG2 (온 / 온몸)
@@ -759,9 +759,9 @@
             :op7 (p7 / picture :wiki - :name (이7 / 이름 :op1 "화조곡병"))
             :op8 (p8 / picture :wiki - :name (이8 / 이름 :op1 "담채산수"))
             :op9 (p9 / picture :wiki - :name (이9 / 이름 :op1 "화조수도"))
-            :op10 (p10 / picture :wiki - :name (이7 / 이름 :op1 "포대도"))
-            :op11 (p11 / picture :wiki - :name (이8 / 이름 :op1 "심양송객도"))
-            :op12 (p12 / picture :wiki - :name (이9 / 이름 :op1 "어옹도")))))
+            :op10 (p10 / picture :wiki - :name (이10 / 이름 :op1 "포대도"))
+            :op11 (p11 / picture :wiki - :name (이11 / 이름 :op1 "심양송객도"))
+            :op12 (p12 / picture :wiki - :name (이12 / 이름 :op1 "어옹도")))))
 
 # ::id snt0.931.009_A.03_ver ::date 2019-00-00 ::annotator gabrielle ::preferred Delayed
 # ::snt 대표작으로 30대 기념작인 서울대학교박물관 소장 『근역화휘(槿域畫彙)』에 포함되어 있는 「방황학산초추강도(仿黃鶴山樵秋江圖)」(1879년), 간송미술관 소장의 「삼인문년도(三人問年圖)」, 「산수도」, 「귀거래도 歸去來圖」, 「기명절지도」, 삼성미술관 리움 소장의 『홍백매십곡병(紅白梅十曲屛)』, 「호취도(豪鷲圖)」, 「고사세동도(高士洗桐圖)」등이 있다.
@@ -783,9 +783,9 @@
             :op7 (p7 / picture :wiki - :name (이7 / 이름 :op1 "화조곡병"))
             :op8 (p8 / picture :wiki - :name (이8 / 이름 :op1 "담채산수"))
             :op9 (p9 / picture :wiki - :name (이9 / 이름 :op1 "화조수도"))
-            :op10 (p10 / picture :wiki - :name (이7 / 이름 :op1 "포대도"))
-            :op11 (p11 / picture :wiki - :name (이8 / 이름 :op1 "심양송객도"))
-            :op12 (p12 / picture :wiki - :name (이9 / 이름 :op1 "어옹도")))))
+            :op10 (p10 / picture :wiki - :name (이10 / 이름 :op1 "포대도"))
+            :op11 (p11 / picture :wiki - :name (이11 / 이름 :op1 "심양송객도"))
+            :op12 (p12 / picture :wiki - :name (이12 / 이름 :op1 "어옹도")))))
 
 # ::id snt0.931.009_Q.01_ver ::date 2019-09-25 ::annotator gabrielle
 # ::snt 조선 시기 화가인 이 사람은 <홍백매십정병>, <군마도> 등을 그렸다.
@@ -794,10 +794,10 @@
     :ARG0 (사 / 사람
         :mod (이 / 이)
         :mod (화 / 화가
-            :time (c / country :wiki "조선" :name (이 / 이름 :op1 "조선"))))
+            :time (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))
     :ARG1 (등 / 등
-        :op1 (p / picture :wiki - :name (이2 / 이름 :op1 "홍백매십정병"))
-        :op2 (p2 / picture :wiki - :name (이3 / 이름 :op1 "군마도"))))
+        :op1 (p / picture :wiki - :name (이3 / 이름 :op1 "홍백매십정병"))
+        :op2 (p2 / picture :wiki - :name (이4 / 이름 :op1 "군마도"))))
 
 # ::id snt1.931.009_Q.01_ver ::date 2019-11-03 ::annotator gabrielle
 # ::snt 조선 시기 3대 화가로 불리는 이 사람은 누구일까?
@@ -898,7 +898,7 @@
                 :ARG1 (질 / 질소)))
         :cause (강 / 강하-01
             :ARG1 (작 / 작용-01
-                :mod (화 / 화학)))))
+                :mod (화2 / 화학)))))
 
 # ::id snt2.931.011_A.02_ver ::date 2019-09-25 ::annotator gabrielle
 # ::snt 냉매, 수지, 방부제, 불연성 가스, 충치예방제 따위를 만드는 데 쓴다.
@@ -968,7 +968,7 @@
         :domain (원 / 원소
             :mod (이 / 이)
             :mod (번 / 번호 :value 9
-                :mod (원 / 원자))))
+                :mod (원2 / 원자))))
     :ARG2 (예 / 예방-01
         :ARG1 (충 / 충치))
     :manner (첨 / 첨가-01
@@ -998,7 +998,7 @@
             :ARG1 (영 / 영토
                 :poss c
                 :ARG1-of (넓 / 넓-01)))
-        :op2 (교 / 교류-01
+        :op2 (교2 / 교류-01
             :ARG0 c
             :ARG2 (외 / 외국)
             :manner (원 / 원활-01))))
@@ -1181,10 +1181,10 @@
 (따 / 따오-01
     :ARG1 (a / amr-unknown
         :domain (이 / 이것))
-    :ARG2 (이 / 이름
+    :ARG2 (이2 / 이름
         :name-of (사 / 사람
             :ARG0-of (h / have-rel-role-91
-                :ARG1 (p / person :wiki "가이아" :name (이2 / 이름 :op1 "가이아"))
+                :ARG1 (p / person :wiki "가이아" :name (이3 / 이름 :op1 "가이아"))
                 :ARG2 (아 / 아들)))
         :ARG1-of (등 / 등장-01
             :ARG2 (그 / 그리스-신화))))
@@ -1292,7 +1292,7 @@
         :mod (뭐 / 뭐니-뭐니-해도)
         :ARG1-of (i / include-91
             :ARG2 (고 / 고사성어
-                :topic (p / person :wiki "제갈량" :name (이 / 이름 :op1 "제갈량"))))))
+                :topic (p / person :wiki "제갈량" :name (이2 / 이름 :op1 "제갈량"))))))
 
 # ::id snt0.931.016_A.05_ver ::date 2019-00-00 ::annotator gabrielle
 # ::snt 蜀漢(촉한)의 諸葛亮(제갈량)이 魏(위)나라를 치려고 出兵(출병)할 때 後主(후주) 劉禪(유선)에게 올린 글.
@@ -1386,7 +1386,10 @@
 # ::note
 (l / local-region :wiki "정동진" :name (이 / 이름 :op1 "정동진")
     :location (s / sea :wiki "동해" :name (이2 / 이름 :op1 "동해"))
-    :location (c / city-district :wiki - :name (이 / 이름 :op1 "강원도" :op2 "강릉시" :op3 "강동면" :op4 "정동진리"))
+    :location (c / city-district :wiki - :name (이3 / 이름 :op1 "정동진리")
+        :location (c2 / city-district :wiki "강동면_(강릉시)" :name (이4 / 이름 :op1 "강동면")
+            :location (c3 / city :wiki "강릉시" :name (이5 / 이름 :op1 "강릉시")
+                :location (p / province :wiki "강원도_(남)" :name (이6 / 이름 :op1 "강원도")))))
     :mod (명 / 명소
         :topic (해 / 해돋이)))
 
@@ -2505,7 +2508,7 @@
 (의 / 의미-01
     :ARG1 (이 / 이름
         :name-of (도 / 도시
-            :mod (이 / 이)))
+            :mod (이2 / 이)))
     :ARG2 (o / or
         :op1 (물 / 물
             :ARG1-of (맛 / 맛있-00))
@@ -2575,7 +2578,7 @@
                     :ARG1 (조 / 조약
                         :mod (확 / 확정-01
                             :ARG1 (결 / 결성-01
-                                ARG1 c))))))))
+                                :ARG1 c))))))))
 
 
 
@@ -4467,7 +4470,7 @@
 # ::note
 (일 / 일으키-01
     :ARG0 (a / amr-unknown)
-    :ARG1 (난)
+    :ARG1 (난 / 난)
     :location (p / province :wiki "평안도" :name (이 / 이름 :op1 "평안도"))
     :time (후 / 후기
         :op1 (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선")))

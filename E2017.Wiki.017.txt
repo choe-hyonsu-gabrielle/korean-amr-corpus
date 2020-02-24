@@ -36,7 +36,7 @@
                 :op1 75000000
                 :op2 200000000)
             :unit (명 / 명))
-        :location (c / continent :wiki "유라시아" :name (이 / 이름 :op1 "유라시아" :op2 "대륙"))))
+        :location (c2 / continent :wiki "유라시아" :name (이2 / 이름 :op1 "유라시아" :op2 "대륙"))))
 
 # ::id snt3.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle
 # ::snt 흑사병의 병원균이 무엇인지에 관해서는 많은 이설들이 제기되어 왔으나 2010년-2011년 남유럽인들을 대상으로 수행한 DNA 분석 결과 페스트의 병원균인 페스트균이 병원균임이 밝혀졌다.
@@ -100,10 +100,10 @@
         :ARG1-of (i / include-91
             :ARG2 (인2 / 인구
                 :quant (총 / 총)
-                :location (c / continent :wiki "유럽" :name (이1 / 이름 :op1 "유럽")))
+                :location (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")))
             :ARG3 (사 / 사이
                 :op1 (p / percentage-entity :value 30)
-                :op2 (p2 / percentage-entity :value 60))))))
+                :op2 (p2 / percentage-entity :value 60)))))
 
 # ::id snt7.E2017.Wiki.017 ::date 2019-12-03 ::annotator gabrielle
 # ::snt 흑사병으로 인해 줄어든 세계 인구가 흑사병 이전 수준까지 회복되는 데는 17세기까지 시간이 걸렸다.
@@ -137,18 +137,18 @@
 			:op1 (e / event :wiki "런던_대역병" :name (이3 / 이름 :op1 "런던" :op2 "대역병"))))
 	:op2 (가 / 가능-01
 		:ARG1 (하 / 하-03
-			:ARG1 (d2 / desease :wiki "페스트" :name (이4 / 이름 :op1 "흑사병"))
+			:ARG1 (d4 / desease :wiki "페스트" :name (이4 / 이름 :op1 "흑사병"))
 			:ARG2 (상 / 상황
-				:mod (유 / 유행-01
+				:mod (유2 / 유행-01
 					:mod (범 / 범))
-				:time (d4 / date-entity :century 14)
+				:time (d5 / date-entity :century 14)
 				:location c
 				:subevent-of (e2 / event :wiki "제2차_페스트_범유행" :name (이5 / 이름 :op1 "제2차" :op2 "페스트" :op3 "범유행")
 					:ARG1-of (계 / 계속-01
 						:location (c2 / continent :wiki "유라시아" :name (이6 / 이름 :op1 "유라시아" :op2 "대륙"))
-						:duration (d5 / date-interval
-							:op1 (d6 / date-entity :year 1345)
-							:op2 (d7 / date-entity :year 1840))))))
+						:duration (d6 / date-interval
+							:op1 (d7 / date-entity :year 1345)
+							:op2 (d8 / date-entity :year 1840))))))
 		:condition (확 / 확정-01
 			:ARG1 (페 / 페스트균)
 			:ARG2 (병 / 병원체 :poss d2))))
@@ -212,7 +212,7 @@
 (i / include-91
     :ARG1 (이 / 이)
     :ARG2 (인 / 인구
-        :location (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+        :location (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))
         :time (당 / 당시))
     :ARG3 (약 / 약 :op1 (p / percentage-entity :value 30)))
 
@@ -343,7 +343,8 @@
 			:quant (일 / 일부))
 		:ARG1 (o / obligate-01
 			:ARG2 (씻 / 씻-01
-				:ARG1 (죄 :poss e)
+				:ARG1 (죄 / 죄
+					:poss e)
 				:manner (고 / 고행-00))
 			:cause (심 / 심판-01
 				:ARG0 (하 / 하느님)
@@ -362,7 +363,7 @@
 				:ARG1 (피2 / 피부))
 			:cause (침 / 침전
 				:mod (혈 / 혈소)
-				:location (피 / 피부))))
+				:location (피3 / 피부))))
 	:time (d / date-entity :year 1883))
 
 # ::id snt21.E2017.Wiki.017 ::date 2019-12-04 ::annotator gabrielle
@@ -609,7 +610,7 @@
 # ::note
 (확 / 확산-01
 	:ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
-	:ARG2 (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽")
+	:ARG2 (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")
 		:mod (전 / 전))
 	:time (후 / 후
 		:mod (그 / 그)))
@@ -637,7 +638,7 @@
 	:ARG0 (사 / 사정
 		:ARG1-of (이 / 이러하-00))
 	:ARG1 (피 / 피해
-		:cause (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")))
+		:cause (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병")))
 	:degree (더 / 더욱))
 
 # ::id snt34.E2017.Wiki.017 ::date 2019-12-06 ::annotator gabrielle
@@ -656,7 +657,7 @@
 		:polarity -
 		:ARG1 (c2 / cause-01
 			:ARG0 (전2 / 전파-01
-				:ARG0 (c2 / country :wiki "몽골" :name (이2 / 이름 :op1 "몽골"))
+				:ARG0 (c3 / country :wiki "몽골" :name (이2 / 이름 :op1 "몽골"))
 				:ARG1 d)
 			:ARG1 (확 / 확산-01
 				:ARG1 d))))

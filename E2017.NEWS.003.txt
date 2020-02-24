@@ -292,7 +292,7 @@
         :mod (화 / 화재))
     :time (d / 이후
         :op1 (d2 / date-interval
-            :day (이 / 이날)
+            :day (이2 / 이날)
             :dayperiod (오 / 오전))))
 
 # ::id snt13.E2017.NEWS.003 ::date 2019-09-09T02:25 ::annotator gabrielle
@@ -323,7 +323,7 @@
                     :location (어 / 어시장))))
         :manner (부 / 부르-01
             :ARG1 (사 / 사람
-                ARG0-of (h / have-org-role-91
+                :ARG0-of (h / have-org-role-91
                     :ARG1 (c / company :wiki "한국전력공사" :name (이 / 이름 :op1 "한국전력공사"))))))
     :mod (또 / 또)
     :time (조 / 조만간))
@@ -353,16 +353,16 @@
             :ARG1 (발2 / 발화-00
                 :manner (자 / 자연-01)
                 :cause (요 / 요인
-                    :mod (전 / 전기)))
+                    :mod (전2 / 전기)))
             :cause (찾 / 찾-01
                 :polarity -
                 :ARG1 (흔 / 흔적
                     :mod (드 / 드나들-00
-                        :ARG0 (사2 / 사람)
-                        :time (발2 / 발생-01
+                        :ARG0 (사3 / 사람)
+                        :time (발3 / 발생-01
                             :ARG1 (화 / 화재))))
                 :location (영 / 영상
-                    :mod (C / CCTV))))))
+                    :mod (c / CCTV))))))
 
 # ::id snt16.E2017.NEWS.003 ::date 2019-09-09T03:23 ::annotator gabrielle
 # ::snt 앞서 전날 오전 1시 36분께 소래포구 어시장에서 불이 나 2시간 30분 만에 진화됐다.

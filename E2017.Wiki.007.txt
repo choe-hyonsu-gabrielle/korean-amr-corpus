@@ -48,7 +48,7 @@
 (달 / 달성-01
     :ARG0 (s / spaceship :wiki "아폴로_11호" :name (이 / 이름 :op1 "아폴로" :op2 "11호"))
     :ARG1 (목 / 목표
-        :mod (이 / 이)))
+        :mod (이2 / 이)))
 
 # ::id snt4.E2017.Wiki.007 ::date 2019-12-30 ::annotator gabrielle
 # ::snt 그 뒤로 아폴로 계획은 1970년대 초반까지 여섯 차례의 성공적인 달 착륙으로 이어졌다.

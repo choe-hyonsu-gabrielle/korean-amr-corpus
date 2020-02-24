@@ -89,13 +89,12 @@
             :ARG0 (g / government-organization :wiki "서울특별시교육청" :name (이3 / 이름 :op1 "서울시교육청"))
             :ARG2 (p / person :wiki "김병욱_(정치인)" :name (이4 / 이름:op1 "김병욱")
                 :ARG0-of (h / have-org-role-91
-                    :ARG1 (g2 / government-organization :wiki "대한민국_국회" :name (이5 / 이름 :op1 "국회"))
-                    :ARG2 (의 / 의원))
+                    :ARG1 (g2 / government-organization :wiki "대한민국_국회" :name (이5 / 이름 :op1 "국회")))
                 :ARG0-of (h2 / have-org-role-91
                     :ARG1 (p2 / political-party :wiki "더불어민주당" :name (이6 / 이름 :op1 "더불어민주당"))
-                    :ARG2 의))
+                    :ARG2 (의 / 의원))
             :time (d2 / date-entity :day 19)))
-    :manner (고 / 고스란히))
+        :manner (고 / 고스란히))
 
 # ::id snt5.E2017.NEWS.002 ::date 2019-09-04T21:05 ::annotator gabrielle
 # ::snt 감사자료에 따르면 담임들은 자신들이 작성하는 학교생활기록부에 정 씨에 대해 온통 칭찬만 적었다.
@@ -106,7 +105,7 @@
     :ARG1 (칭 / 칭찬-00)
     :ARG2 (학 / 학교생활기록부
         :ARG1-of (작 / 작성-01
-            :ARG0 담)))
+            :ARG0 담))
     :mod (따 / 따르-02
         :ARG2 (자 / 자료
             :topic (감 / 감사-00))))
@@ -254,7 +253,7 @@
                 :ARG1 (과 / 과학
                     :mod (학 / 학년 :ord (o / ordinal-entity :value 1))))))
     :ARG1 (추 / 추측-01
-        :ARG0 P
+        :ARG0 p
         :ARG1 (보 / 보-01
             :frequency (o2 / or
                 :op1 (r / rate-entity-91
@@ -365,15 +364,15 @@
         :ARG1 p
         :cause (당 / 당연-01
             :ARG1 (인 / 인정-01
-                :ARG1 (출 / 출석-01)
+                :ARG1 (출 / 출석-01))
             :time (이2 / 이후
                 :op1 (입 / 입학-01))
             :domain (p2 / person :wiki "정유라_(승마_선수)" :name (이3 / 이름 :op1 "정")))
         :concession (깐 / 깐깐하-00
             :ARG2 (출2 / 출결)
             :cause (많 / 많-01
-                :ARG1 (학 / 학생
-                    :mod (예 / 예체능계)))))))
+                :ARG1 (학2 / 학생
+                    :mod (예 / 예체능계))))))
 
 # ::id snt18.E2017.NEWS.002 ::date 2019-09-06T02:16 ::annotator gabrielle
 # ::snt 2학년 경제를 담당했던 송 모 교사도 “같은 반에 아이돌 연습생이 있었는데 정유라만 조퇴를 봐준다고 울면서 하소연을 하곤 했다”고 증언했다.
@@ -394,7 +393,7 @@
             :ARG1 (조 / 조퇴-00
                 :ARG0 (p2 / person :wiki "정유라_(승마_선수)" :name (이2 / 이름 :op1 "정유라"))))
         :manner (울 / 울-00
-            :ARG0 p2)))
+            :ARG0 p2))
 
 # ::id snt19.E2017.NEWS.002 ::date 2019-09-06T02:26 ::annotator gabrielle
 # ::snt 당시 담임인 황 교사는 이 연습생에겐 “학교에 빠지면 안 된다”며 단호했다고 한다.
@@ -412,7 +411,7 @@
                     :ARG2 (학 / 학교)))
             :ARG2 (학2 / 학생
                 :ARG0-of (연 / 연습-01))
-                :mod (이2 / 이)))))
+                :mod (이2 / 이))))
 
 # ::id snt20.E2017.NEWS.002 ::date 2019-09-07T01:56 ::annotator gabrielle
 # ::snt 결국 해당 학생은 같은 해 다른 학교로 전학을 갔다.
@@ -436,7 +435,7 @@
                 :time (당 / 당시))))
     :ARG1 (불 / 불만-01
         :ARG1 (친 / 친구
-            :ARG0-of (전 / 전공-00
+            :ARG0-of (전2 / 전공-00
                 :ARG1 (예 / 예체능))
             :ARG1-of (다 / 다르-01))
         :degree (많 / 많-01)
@@ -527,9 +526,9 @@
         :cause (등 / 등
             :op1 (참 / 참가-01
                 :ARG1 (대 / 대회)))
-        :concession (등 / 등교-00
+        :concession (등2 / 등교-00
             :polarity -)
-        :domain (인 / 인정-01
+        :domain (인2 / 인정-01
             :ARG1 (출3 / 출석-01))))
 
 # ::id snt27.E2017.NEWS.002 ::date 2019-09-07T02:28 ::annotator gabrielle

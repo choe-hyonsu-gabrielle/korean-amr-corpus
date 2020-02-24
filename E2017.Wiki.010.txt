@@ -24,7 +24,7 @@
                         :mod (재 / 재벌
                             :topic (석 / 석유)))))))
     :op2 (어 / 어깨를-나란히-하-00
-        :ARG1 (명 / 명성
+        :ARG1 (명2 / 명성
             :topic (학 / 학업)
             :poss u)
         :ARG2 (대2 / 대학
@@ -101,7 +101,7 @@
 (i / include-91
     :ARG1 (학 / 학생
         :mod (e / ethnic-group :wiki - :name (이 / 이름 :op1 "아시아계")))
-    :ARG2 (학 / 학부생)
+    :ARG2 (학2 / 학부생)
     :ARG3 (p / percentage-entity :value 16))
 
 # ::id snt7.E2017.Wiki.010 ::date 2019-00-00 ::annotator gabrielle

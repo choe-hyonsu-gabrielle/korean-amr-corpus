@@ -14,10 +14,10 @@
                 :ARG0-of (일 / 일하-01
                     :location (직 / 직장)))
             :poss (신 / 신세대))
-        :ARG1 (문 / 문화
+        :ARG1 (문2 / 문화
             :mod (사2 / 사람
                 :ARG0-of (일2 / 일하-01
-                    :location (직 / 직장)))
+                    :location (직2 / 직장)))
             :poss (구 / 구세대))))
 
 # ::id snt1.E2017.NEWS.004 ::date 2019-09-11T00:43 ::annotator gabrielle
@@ -56,7 +56,7 @@
     :ARG1 (사 / 사임-01
         :ARG1 (h / have-org-role-91
             :ARG1 (회 / 회사)))
-    :ARG2 (사 / 사람
+    :ARG2 (사2 / 사람
         :ARG0-of (h2 / have-org-role-91
             :ARG2 (팀 / 팀장)))
     :manner (말 / 말하-01
@@ -132,7 +132,7 @@
 # ::note
 (늘 / 늘-01
     :ARG1 (사 / 사임-01 
-        :ARG0 (사 / 사람
+        :ARG0 (사2 / 사람
             :ARG0-of (일 / 일하-01
                 :location (직 / 직장)
                 :duration (차 / 차
@@ -148,16 +148,14 @@
 (전 / 전하-01
     :ARG0 (설 / 설문조사-01 :name (이 / 이름 :op1 "신입사원" :op2 "채용실태" :op3 "조사")
         :ARG1-of (실 / 실시-01
-            :ARG0 (o / organization
-                :wiki "한국경영자총협회"
-                :name (이2 / 이름 :op1 "한국경영자총협회(경총)"))
+            :ARG0 (o / organization :wiki "한국경영자총협회" :name (이2 / 이름 :op1 "한국경영자총협회(경총)"))
             :beneficiary (기 / 기업 :quant 306 :unit (개 / 개)
-                :location (전 / 전국))
+                :location (전2 / 전국))
             :time (d / date-entity :month 6 :year (지 / 지난해))))
     :ARG1 (i / include-91
         :ARG1 (사 / 사람
             :ARG0-of (퇴 / 퇴사-00
-                :time (a / at-most
+                :time (이3 / 이내
                     :op1 (t / temporal-quantity :quant 1 :unit (년 / 년)))))
         :ARG2 (사2 / 사람
             :ARG0-of (입 / 입사-00
@@ -172,8 +170,8 @@
 (늘 / 늘-01
     :ARG2 (p / percentage-entity :value 23.6
         :time (d / date-entity :year 2012))
-    :ARG2 (p2 (percentage-entity :value 25.2
-        :time (d2 / date-entity :year 2014)))
+    :ARG2 (p2 / percentage-entity :value 25.2
+        :time (d2 / date-entity :year 2014))
     :manner (꾸 / 꾸준하-01))
 
 # ::id snt10.E2017.NEWS.004 ::date 2019-00-00 ::annotator gabrielle
@@ -243,7 +241,7 @@
 # ::id snt14.E2017.NEWS.004 ::date 2019-09-16T18:45 ::annotator gabrielle
 # ::snt 강 씨는 “회사생활 마지막 2주 동안은 ‘인수인계를 대충 한다’는 트집까지 잡혔다”며 “평소 사이좋던 팀원들이 얼굴색을 바꾸고 차갑게 대해 마음이 무거웠다”고 말했다.
 (말 / 말하-01
-    :ARG0 (p / person :name (이 / 이름 :op1 "강")
+    :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "강")
     :ARG1 (트 / 트집잡-00
         :ARG1 p
         :manner (말2 / 말하-01
@@ -251,10 +249,10 @@
                 :ARG0 p
                 :ARG1 (a / and
                     :op1 (인 / 인수-01
-                    :op2 (인 / 인계-00)))
+                    :op2 (인2 / 인계-00)))
                 :manner (대 / 대충))
             :ARG2 p)
-        duration (t / temporal-quantity :quant 2 :unit (주 / 주)
+        :duration (t / temporal-quantity :quant 2 :unit (주 / 주)
             :mod (마 / 마지막)
             :duration-of (생 / 생활-01
                 :ARG0 p
@@ -265,16 +263,14 @@
 # ::note
 (전 / 전하-01
     :ARG0 (조 / 조사-01
-        :ARG0 (o / organization
-            :wiki "한국경영자총협회"
-            :name (이 / 이름 :op1 "경총")))
+        :ARG0 (o / organization :wiki "한국경영자총협회" :name (이 / 이름 :op1 "경총")))
     :ARG1 (그 / 그만두-01
         :ARG0 (사 / 사람
             :ARG0-of (일 / 일하-01
                 :location (직 / 직장))
             :mod (새 / 새내기))
         :ARG1 (회 / 회사)
-        :time (이 / 이전
+        :time (이2 / 이전
             :op1 (t / temporal-quantity :quant 1 :unit (년 / 년)))
         :ARG1-of (c / cause-01
             :ARG0 (실 / 실패-01
@@ -298,7 +294,7 @@
             :ARG0 (복 / 복리후생))
         :ARG1-of (i / include-91
             :ARG3 (p / percentage-entity :value 20.0)))
-    :op2 (o / or
+    :op2 (o2 / or
         :op1 (불3 / 불만-01
             :ARG0 (지 / 지역
                 :ARG2 (근 / 근무-01)))
@@ -614,14 +610,10 @@
                 :time (초 / 초반
                     :op1 (고 / 고용-01))
                 :duration (o / or
-                    :op1 (t / temporal-quantity
-                        :unit (개 / 개월)
-                        :quant 6)
-                    :op2 (t2 / temporal-quantity
-                        :unit (년 / 년)
-                        :quant 1)))))
+                    :op1 (t / temporal-quantity :quant 6 :unit (개 / 개월))
+                    :op2 (t2 / temporal-quantity :quant 1 :unit (년 / 년))))))
     :ARG1 (필 / 필요-01
-        ARG1 (고2 / 고민-00
+        :ARG1 (고2 / 고민-00
             :ARG1 (가2 / 가능-01
                 :ARG1 (악 / 악용-00
                     :ARG2 (제 / 제도

@@ -79,6 +79,6 @@
         :ARG1 (이2 / 이름 :poss c)
         :ARG3 (이3 / 이름 :op1 "ABC"))
     :op2 (부 / 부르-02
-        :ARG1 (c / company :wiki - :name (이4 / 이름 :op1 "NBC" :op2 "레드"))
+        :ARG1 (c2 / company :wiki - :name (이4 / 이름 :op1 "NBC" :op2 "레드"))
         :ARG2 (이5 / 이름 :op1 "NBC"))
     :time (d / date-entity :year 1944))

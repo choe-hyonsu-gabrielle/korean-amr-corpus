@@ -218,7 +218,7 @@
 (계 / 계속-01
     :ARG1 (싸 / 싸우-01
         :ARG0 (우 / 우리)
-        :cause (말 / 말다툼하-00
+        :cause (말 / 말다툼하-00
             :ARG1-of (사 / 사소하-01)))
     :duration (이 / 이상
         :op1 (t / temporal-quantity :quant 1 :unit (달 / 달))))
@@ -291,7 +291,7 @@
                 :op1 학
                 :op2 (역 / 역
                     :mod (지 / 지하철)))))
-    :purpose (사 / 사람
+    :purpose (사2 / 사람
         :ARG0-of (공 / 공부-01)))
 
 # ::id 063350.01.krdict.nikl.ex.snt.002 ::date 2019-10-01 ::annotator gabrielle
@@ -443,7 +443,7 @@
 (밝 / 밝히-01
     :ARG0 (사 / 사람
         :ARG0-of (일 / 일하-01)
-        :ARG0-of (입2 / 입사-00
+        :ARG0-of (입 / 입사-00
             :manner (새 / 새롭-01)))
     :ARG1 (포 / 포부
         :ARG1-of (당 / 당차-01))
@@ -532,7 +532,7 @@
         :ARG1-of (새 / 새롭-01))
     :cause (나 / 나-01
         :ARG1 (자 / 자리)
-        :ARG2 (연 / 연구실
+        :ARG2 (연2 / 연구실
             :location (학 / 학교))))
 
 # ::id 071374.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle
@@ -752,7 +752,7 @@
         :mod (삐 / 삐거덕-00))
     :ARG2 (바 / 바닥
         :mod (마 / 마루)
-        :consist-of (나 / 나무))
+        :consist-of (나2 / 나무))
     :cause (낡 / 낡-01
         :ARG1 바)
     :time (밟 / 밟-00
@@ -988,11 +988,11 @@
 # ::note
 (방 / 방송-00
     :manner (중 / 중계-01)
-    :ARG0 (방 / 방송국
+    :ARG0 (방2 / 방송국
         :poss (우 / 우리))
     :ARG1 (특 / 특집물
-        :ARG1-of (방 / 방영-01
-            :ARG0 (방2 / 방송국
+        :ARG1-of (방3 / 방영-01
+            :ARG0 (방4 / 방송국
                 :mod "A")))
     :time (내 / 내일))
 
@@ -1170,7 +1170,7 @@
     :destination (장 / 장소
         :location-of (개 / 개표-01))
     :time (종 / 종료-01
-        :ARG1 (투 / 투표-01)))
+        :ARG1 (투2 / 투표-01)))
 
 # ::id 063019.01.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 김 감독은 이번 영화의 주인공을 섭외하려고 직접 배우를 찾아 나섰다.
@@ -1199,7 +1199,7 @@
                         :unit (년 / 년))))))
     :cause (요 / 요구-01
         :ARG0 (주 / 주민))
-    :mod (다 / 다시))
+    :mod (다2 / 다시))
 
 # ::id 068602.04.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle
 # ::snt 카메라는 우리가 움직이는 동선을 그대로 따라오며 우리를 찍었다.
@@ -1274,7 +1274,7 @@
             :ARG0-of (h / have-org-role-91
                 :ARG2 (과 / 과장)))
         :ARG1 (업 / 업무
-            :ARG1-of (과 / 과중하-00)))
+            :ARG1-of (과2 / 과중하-00)))
     :op2 (얻 / 얻-01
         :ARG0 p
         :ARG1 (휴 / 휴가)
@@ -1299,7 +1299,7 @@
     :ARG1 (팔 / 팔)
     :cause (오 / 오르내리-00
         :ARG1 (책 / 책)
-        :location ((책2 / 책장))
+        :location (책2 / 책장)
         :time (종 / 종일)))
 
 # ::id 028757.02.krdict.nikl.ex.snt.003 ::date 2019-00-00 ::annotator gabrielle
@@ -1384,7 +1384,7 @@
         :ARG1 (p2 / person :wiki - :name (이2 / 이름 :op1 "김")
             :ARG0-of (h2 / have-org-role-91
                 :ARG2 (대 / 대리))))
-    :time (이 / 이후
+    :time (이3 / 이후
         :op1 (꾸 / 꾸중-00
             :ARG0 (사 / 사람
                 :ARG0-of (h3 / have-org-role-91
@@ -1411,7 +1411,7 @@
         :ARG2-of (반 / 반영-01
             :ARG1 (의 / 의견
                 :poss (학 / 학생))))
-    :time (학 / 학기
+    :time (학2 / 학기
         :ord (이 / 이번)))
 
 # ::id 053779.01.krdict.nikl.ex.snt.001 ::date 2019-00-00 ::annotator gabrielle
@@ -1515,7 +1515,7 @@
 (축 / 축하-01
     :ARG0 (팬 / 팬
         :poss (팀 / 팀
-            :topic (축 / 축구)
+            :topic (축2 / 축구)
             :ARG0-of (승 / 승리-01
                 :location (결 / 결승전))))
     :ARG1 승

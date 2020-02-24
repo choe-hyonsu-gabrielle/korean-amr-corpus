@@ -99,7 +99,7 @@
 					:op1 (변 / 변화-01
 						:ARG0 (사 / 사업)
 						:ARG1 (환 / 환경))
-					:op2 (대 / 대책
+					:op2 (대2 / 대책
 						:mod (향 / 향후))))))
 		:op2 (마 / 마련-01
 			:ARG0 p
@@ -108,7 +108,7 @@
 				:ARG2-of (포 / 포함-01
 					:ARG1 (철 / 철거-01
 						:ARG1 (보 / 보)
-						:mod (전 / 전면))))
+						:mod (전2 / 전면))))
 			:condition (필 / 필요-01)))
 	:time (이2 / 이후
 		:op1 (시 / 시절
@@ -146,7 +146,7 @@
 			:mod (담 / 담합-00)
 			:topic (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업")))
 	:time (기 / 기소-01
-		:ARG0 (g / government-organization :wiki "대한민국_검찰청" :name (이 / 이름 :op1 "검찰"))
+		:ARG0 (g / government-organization :wiki "대한민국_검찰청" :name (이2 / 이름 :op1 "검찰"))
 		:ARG1 (a / and
 			:op1 (법 / 법인 :quant 11 :unit (개 / 개)
 				:mod (회 / 회사
@@ -266,16 +266,16 @@
 	:op2 (선2 / 선고-01 
 		:ARG1 (o / or
 			:op1 (징2 / 징역
-				:mod (사 / 사이
+				:mod (사2 / 사이
 					:op1 (t2 / temporal-quantity :quant 8 :unit (월 / 월))
 					:op2 (t3 / temporal-quantity :quant 2 :unit (년2 / 년))))
 			:op2 (집 / 집행유예
-				:mod (사2 / 사이
+				:mod (사3 / 사이
 					:op1 (t4 / temporal-quantity :quant 1 :unit (년3 / 년))
 					:op2 (t5 / temporal-quantity :quant 3 :unit (년4 / 년)))))
-		:ARG2 (사2 / 사람 :quant 18 :unit (명 / 명)
+		:ARG2 (사4 / 사람 :quant 18 :unit (명 / 명)
 			:ARG1-of (i / include-91
-				:ARG2 (사3 / 사람 :quant (나 / 나머지)
+				:ARG2 (사5 / 사람 :quant (나 / 나머지)
 					:ARG0-of (h2 / have-org-role-91
 						:ARG2 (임2 / 임원
 							:mod (o2 / or
@@ -321,7 +321,7 @@
 					:example (등 / 등
 						:op1 (담 / 담합-00
 							:ARG0 (업2 / 업계
-								ARG0-of (건 / 건설-01)))))))))
+								:ARG0-of (건 / 건설-01)))))))))
 
 # ::id snt14.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle
 # ::snt A사 건설사 임원은 "4대강 사업은 개별 건설사가 이윤을 목적으로 선택해 입찰한 것이 아니라 동원된 사업이었다"면서 "줄줄이 과태료와 손해배상, 형사처벌 등이 이어졌고 나아가 무엇보다 건설산업에 대한 국민적 불신을 키우게 된 계기가 됐다"고 토로했다.
@@ -334,7 +334,7 @@
 			:ARG2 (임 / 임원)))
 	:ARG1 (a / and
 		:op1 (사2 / 사업-01
-			:domain (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업))
+			:domain (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업"))
 			:ARG2-of (동 / 동원-01
 				:ARG1 (회2 / 회사
 					:ARG0-of (건2 / 건설-01)
@@ -431,7 +431,7 @@
 					:ARG1 (예 / 예상-01
 						:ARG1 (담 / 담합-00
 							:ARG0 (회2 / 회사
-								ARG0-of (건2 / 건설-01))))
+								:ARG0-of (건2 / 건설-01))))
 					:time (발 / 발주-01)))
 			:op2 (반 / 반복-01
 				:ARG1 (처 / 처벌-01
@@ -460,9 +460,9 @@
 						:ARG1 (정2 / 정책
 							:topic (강 / 강 :mod 4)))
 					:op2 (내 / 내정-01
-						:ARG0 정
+						:ARG0 g
 						:ARG1 (p / person :wiki "김상조_(1962년)" :name (이3 / 이름 :op1 "김상조"))
-						:ARG2 (공 / 공정위원장)))))))
+						:ARG2 (공2 / 공정위원장)))))))
 
 
 # ::id snt19.E2017.NEWS.006 ::date 2019-11-12 ::annotator gabrielle

@@ -4,7 +4,7 @@
 (선 / 선-긋-00
 	:ARG0 (g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "靑"))
 	:ARG1 (책 / 책임론
-		:mod (p / person :wiki "조국_(법학자)" :name (이 / 이름 :op1 "조국"))))
+		:mod (p / person :wiki "조국_(법학자)" :name (이2 / 이름 :op1 "조국"))))
 
 # ::id snt1.E2017.NEWS.012 ::date 2019-02-15 ::annotator gabrielle
 # ::snt 거듭된 인사 검증 실패 논란에 조국 청와대 민정수석의 책임론이 불거지고 있다.
