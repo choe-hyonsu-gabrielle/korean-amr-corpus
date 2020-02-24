@@ -1,4 +1,3 @@
-/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
 # ::id snt0.E2016.835.01_A_01 ::date 2019-02-15 ::annotator gabrielle ::preferred True
 # ::snt 로마 제국의 전성시대에 잇달아 군림한 5인의 명군(名君).
 # ::note
@@ -487,149 +486,81 @@
 
 # ::id snt0.E2016.835.08_Q_01 ::date 2019-02-17 ::annotator gabrielle ::preferred True
 # ::snt 르네상스의 중심 도시로 전체가 유네스코 세계문화유산으로 지정되어 있다.
-# ::note
+# ::note 도시 전체 / 전체 도시
 (a / and
-	:op1 
+	:op1 (도 / 도시
+		:mod (중 / 중심)
+		:mod (르 / 르네상스))
 	:op2 (지 / 지정-01
-		:ARG1 thing_set
-		:ARG2 attribute))
+		:ARG1 (도2 / 도시
+			:mod (전 / 전체))
+		:ARG2 (세 / 세계문화유산
+            :mod (o / organization :wiki "유네스코" :name (이 / 이름 :op1 "유네스코")))))
 
-
-
--- FRAMES ----------------------------------------
-지정 : VERBAL_NOUN
-	- establish		
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"르네상스" [EV_ACTIVITY]	->  (르 / 르네상스)	OR	(e / event? :wiki "르네상스" :name (이 / 이름 :op1 "르네상스"))
-"유네스코" [OG_OTHERS]	->  (유 / 유네스코)	OR	(o / organization? :wiki "유네스코" :name (이 / 이름 :op1 "유네스코"))
--- VERBALIZED ------------------------------------
-(도 / 도시 :mod (중 / 중심))
-(문 / 문화 :mod (세 / 세계))
-(유 / 유산 :mod (문 / 문화))
-
-
-# ::id snt1.E2016.835.08_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.835.08_Q_01 ::date 2019-02-23 ::annotator gabrielle ::preferred True
 # ::snt '꽃 같은 도시'라는 뜻으로 '플로렌스'라고도 불리는 이 도시는?
 # ::note
--- FRAMES ----------------------------------------
-같 : VERB
-	- equal		(같 / 같-01 :ARG1 focus_of_equation :ARG2 other_side_of_equation)
-불리 : VERB
-	- unfavorable		(불 / 불리-01 :ARG1 thing_being_unfavorable :ARG2 unfavorable_to)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"꽃" [PT_PART]	->  (꽃 / 꽃)	OR	(꽃 / 꽃 :part-of|poss)
-"플로렌스" [LCP_CITY]	->  (플 / 플로렌스)	OR	(c / city :wiki "플로렌스?" :name (이 / 이름 :op1 "플로렌스"))
--- VERBALIZED ------------------------------------
+(a / amr-unknown
+	:ARG1-of (부 / 부르-01
+		:ARG2 (s / string-entity :value "플로렌스"))
+	:mod (뜻 / 뜻하-01
+		:ARG2 (도 / 도시
+			:ARG1-of (같 / 같-01
+				:ARG2 (꽃 / 꽃)))))
 
-
-# ::id snt0.E2016.835.09_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.09_A_01 ::date 2019-02-23 ::annotator gabrielle ::preferred True
 # ::snt 콜로세움(Colosseum, 이탈리아어: Colosseo 콜로세오)은 고대 로마 시대의 건축물 가운데 하나로 로마 제국 시대에 만들어진 원형 경기장이다.
 # ::note
--- FRAMES ----------------------------------------
-고대 : VERBAL_NOUN
-	- long_for		(고 / 고대-01 :ARG0 wanter :ARG1 thing_wanted)
-건축물 : DERIVED_NON-ENTRY -> (건 / 건축물-00) ?
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-경기장 : DERIVED_NON-ENTRY -> (경 / 경기장-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"Colosseo" [AF_CULTURAL_ASSET]	->  (C / Colosseo)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "Colosseo"))
-"Colosseum" [AF_CULTURAL_ASSET]	->  (C / Colosseum)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "Colosseum"))
-"고대 로마 시대" [DT_DYNASTY]	->  :time|duration (고 / 고대로마시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"로마 제국 시대" [DT_DYNASTY]	->  :time|duration (로 / 로마제국시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"이탈리아어" [CV_LANGUAGE]	->  (이 / 이탈리아어)	OR	(l / language :wiki "이탈리아어" :name (이 / 이름 :op1 "이탈리아어"))
-"콜로세오" [AF_CULTURAL_ASSET]	->  (콜 / 콜로세오)	OR	(c / cultural-asset* :wiki "콜로세움" :name (이 / 이름 :op1 "콜로세오"))
-"콜로세움" [AF_CULTURAL_ASSET]	->  (콜 / 콜로세움)	OR	(c / cultural-asset* :wiki "콜로세움" :name (이 / 이름 :op1 "콜로세움"))
-"하나" [QT_COUNT]	->  :quant (하 / 하나)	OR	(c / concept* :quant - :unit|scale (하 / 하나))
--- VERBALIZED ------------------------------------
-(경 / 경기 :mod (원 / 원형))
-(물 / 물 :mod (건 / 건축))
-(시 / 시대 :mod (제 / 제국))
-(장 / 장 :mod (경 / 경기))
+(경 / 경기장
+	:domain (b / building :wiki "콜로세움" :name (이 / 이름 :op1 "콜로세움"))
+	:mod (원 / 원형)
+	:ARG1-of (만 / 만들-01
+		:time (시 / 시대
+			:mod (c / country :wiki "로마_제국" :name (이2 / 이름 :op1 "로마" :op2 "제국")))))
 
-
-# ::id snt1.E2016.835.09_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.835.09_A_01 ::date 2019-02-23 ::annotator gabrielle ::preferred True
 # ::snt 원래 이름은 플라비우스 원형 극장이었다.
 # ::note
--- FRAMES ----------------------------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"플라비우스 원형극장" [AF_CULTURAL_ASSET]	->  (플 / 플라비우스원형극장)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "플라비우스" :op2 "원형극장"))
--- VERBALIZED ------------------------------------
-(극 / 극장 :mod (원 / 원형))
-(이 / 이름 :mod (원 / 원래))
+(이 / 이름 :op1 "플라비우스" :op2 "원형극장"
+	:domain (이2 / 이름
+		:mod (원 / 원래)))
 
-
-# ::id snt0.E2016.835.09_A_02 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.09_A_02 ::date 2019-02-23 ::annotator gabrielle ::preferred True
 # ::snt 정식 명칭은 '플라비우스 원형경기장(Amphitheatrum Flavium)'이라고 한다.
 # ::note
--- FRAMES ----------------------------------------
-경기장 : DERIVED_NON-ENTRY -> (경 / 경기장-00) ?
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"Amphitheatrum Flavium" [AF_CULTURAL_ASSET]	->  (A / AmphitheatrumFlavium)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "Amphitheatrum" :op2 "Flavium"))
-"플라비우스 원형경기장" [AF_CULTURAL_ASSET]	->  (플 / 플라비우스원형경기장)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "플라비우스" :op2 "원형경기장"))
--- VERBALIZED ------------------------------------
-(경 / 경기 :mod (원 / 원형))
-(명 / 명칭 :mod (정 / 정식))
-(장 / 장 :mod (경 / 경기))
+(하 / 하-03
+	:ARG1 (명 / 명칭
+		:mod (정 / 정식))
+	:ARG2 (이 / 이름 :op1 "플라비우스" :op2 "원형경기장"))
 
-
-# ::id snt0.E2016.835.09_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.835.09_Q_01 ::date 2019-02-23 ::annotator gabrielle ::preferred True
 # ::snt 이탈리아 로마에 있는 로마 제정 시대의 건축물로 정식명칭은 '플라비우스 원형경기장'이다.
 # ::note
--- FRAMES ----------------------------------------
-있 : ** UNUSED_OR_NON-ENTRY **
-제정 : VERBAL_NOUN
-	- establish		(제 / 제정-01 :ARG0 agent :ARG1 thing_established)
-건축물 : DERIVED_NON-ENTRY -> (건 / 건축물-00) ?
-경기장 : DERIVED_NON-ENTRY -> (경 / 경기장-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"로마 제정 시대" [DT_DYNASTY]	->  :time|duration (로 / 로마제정시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"로마" [LCP_CAPITALCITY]	->  (로 / 로마)	OR	(c / city :wiki "로마" :name (이 / 이름 :op1 "로마"))
-"이탈리아" [LCP_COUNTRY]	->  (이 / 이탈리아)	OR	(c / country :wiki "이탈리아" :name (이 / 이름 :op1 "이탈리아"))
-"플라비우스 원형경기장" [AF_CULTURAL_ASSET]	->  (플 / 플라비우스원형경기장)	OR	(c / cultural-asset* :wiki - :name (이 / 이름 :op1 "플라비우스" :op2 "원형경기장"))
--- VERBALIZED ------------------------------------
-(경 / 경기 :mod (원 / 원형))
-(명 / 명칭 :mod (정 / 정식))
-(물 / 물 :mod (건 / 건축))
-(시 / 시대 :mod (제 / 제정))
-(장 / 장 :mod (경 / 경기))
+(a / and
+	:op1 (건 / 건물
+		:ARG1-of (건2 / 건축-00
+			:time (시 / 시대
+				:mod (제 / 제정)
+				:mod (c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마" :op2 "제국"))))
+		:location (c2 / city :wiki "로마" :name (이2 / 이름 :op1 "로마")
+			:location (c3 / country :wiki "이탈리아" :name (이3 / 이름 :op1 "이탈리아"))))
+	:op2 (이4 / 이름 :op1 "플라비우스" :op2 "원형경기장"
+		:domain (명 / 명칭
+			:mod (정 / 정식))))
 
-
-# ::id snt1.E2016.835.09_Q_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.835.09_Q_01 ::date 2019-02-23 ::annotator gabrielle ::preferred True
 # ::snt 검투사들의 시합이나 각종 공연이 펼쳐졌던 이 건축물은?
 # ::note
--- FRAMES ----------------------------------------
-검 : VERBAL_NOUN
-	- black		(검 / 검-01 :ARG1 thing_being_black)
-투사들 : DERIVED_NON-ENTRY -> (투 / 투사들-00) ?
-공연 : VERBAL_NOUN
-	- perform		(공 / 공연-01 :ARG0 agent :ARG1 performance)
-펼쳐지 : ** UNUSED_OR_NON-ENTRY **
-건축물 : DERIVED_NON-ENTRY -> (건 / 건축물-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"검투사" [CV_OCCUPATION]	->  :mod (검 / 검투사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (검 / 검투사))
--- VERBALIZED ------------------------------------
-(공 / 공연 :mod (각 / 각종))
-(들 / 들 :mod (투 / 투사))
-(물 / 물 :mod (건 / 건축))
-(투 / 투사 :mod (검 / 검))
-
+(a / amr-unknown
+	:mod (건 / 건물
+		:ARG1-of (건2 / 건축-00))
+	:mod (이 / 이)
+	:location-of (펼 / 펼치-01
+		:ARG1 (o / or
+			:op1 (시 / 시합-00
+				:ARG0 (검 / 검투사))
+			:op2 (공 / 공연
+				:mod (각 / 각종)))))
 
 # ::id snt0.E2016.835.10_A_01 ::date 2019-00-00 ::annotator gabrielle ::preferred True
 # ::snt <인명> 프랑스의 애국 소녀(1412~1431).

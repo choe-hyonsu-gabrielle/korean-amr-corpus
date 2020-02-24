@@ -258,8 +258,6 @@
     :ARG2-of (h / have-org-role-91
         :ARG1 (c / country :wiki "고려" :name (이2 / 이름 :op1 "고려"))))
 
-
-
 # ::id snt0.E2016.788.07_Q_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True
 # ::snt 역대 왕조 중 마지막 왕이 아닌 사람은?
 # ::note

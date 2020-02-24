@@ -1,4 +1,3 @@
-/usr/local/bin/python3.7 /Users/choe.hyonsu.gabrielle/PycharmProjects/KoreanAMR/json2amr.py
 # ::id snt0.E2017.Wiki.003 ::date 2019-02-01 ::annotator gabrielle
 # ::snt 소수 (수론)
 # ::note

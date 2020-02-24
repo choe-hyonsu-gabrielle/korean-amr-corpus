@@ -20,7 +20,6 @@
                     :location (직 / 직장)))
             :poss (구 / 구세대))))
 
-
 # ::id snt1.E2017.NEWS.004 ::date 2019-09-11T00:43 ::annotator gabrielle
 # ::snt 윤모(28) 씨는 1년여 동안 다니던 대기업에 지난달 사표를 냈다.
 # ::note 퇴사-00
