@@ -700,7 +700,7 @@
         :manner (고 / 고조-01
             :manner (점 / 점점))
         :destination (장2 / 장단
-            :ARG1-01 (빠 / 빠르-01
+            :ARG1 (빠 / 빠르-01
                 :degree (가 / 가장)))))
 
 # ::id snt1.E2016.788.12_Q_01 ::date 2019-02-09 ::annotator gabrielle ::preferred True

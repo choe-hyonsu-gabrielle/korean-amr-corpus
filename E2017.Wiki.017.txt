@@ -125,7 +125,7 @@
 # ::note 페스트균...?
 (a / and
 	:op1 (유 / 유행-01
-		:ARG (d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
+		:ARG1 (d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
 		:location (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))
 		:time (d2 / date-interval
 			:op1 (뒤 / 뒤
@@ -158,7 +158,7 @@
 # ::notes 영향을 미치다
 (영 / 영향-01
     :ARG0 (유 / 유행-01
-        :ARG (d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
+        :ARG1 (d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
         :time (d2 / date-entity :century 14))
     :ARG1 (역 / 역사
         :poss (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")))
@@ -199,7 +199,7 @@
 # ::snt 이 때의 흑사병은 중앙아시아나 인도에서 발원하여 전파된 것으로 추정되고 있다.
 # ::note 발원하다 없어짐
 (추 / 추정-01
-    :ARG (전 / 전파-01 
+    :ARG1 (전 / 전파-01 
         :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
         :source (o / or
             :op1 (c / continent :wiki "중앙아시아" :name (이2 / 이름 :op1 "중앙아시아"))
@@ -700,7 +700,7 @@
 # ::snt 14세기에는 중국에서도 흑사병이 번졌던 시기로 이로 인해 중국의 인구 중 약 30%가 사망한 것으로 추정된다.
 # ::note
 (추 / 추정-01
-	:ARG (사 / 사망-01
+	:ARG1 (사 / 사망-01
 		:ARG0 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")
 			:ARG1-of (번 / 번지-01
 				:ARG3 (c / country :wiki "중국" :name (이2 / 이름 :op1 "중국"))
