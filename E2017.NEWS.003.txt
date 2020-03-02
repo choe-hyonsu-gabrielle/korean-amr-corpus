@@ -235,7 +235,7 @@
 # ::note
 (찾 / 찾-01
     :ARG0 (경 / 경찰)
-    :ARG1 (b / be-located-at-01
+    :ARG1 (b / be-located-at-91
         :ARG1 (발 / 발화-00
             :mod (최 / 최초)))
     :mod (앞 / 앞서)
