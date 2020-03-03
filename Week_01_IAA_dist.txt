@@ -1,0 +1,375 @@
+/ ~~ Week 1. AMRs for evaluation of Inter-annotator Agreement (15 snts) ~~
+/ 다음의 가이드를 참고하여 작업해 주시기 바랍니다: 
+/ 작업자: (이름 기입)
+
+
+
+# ::id snt0.E2016.837.01_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 우리나라 근대 문학 작품집 가운데 가장 먼저 문화재로 등록된 것은?
+# ::note
+-- KPB FRAMES ----------------------------------------
+작품집 : DERIVED_NON-ENTRY -> (작 / 작품집-00) ?
+재 : VERBAL_NOUN
+	- measure		(재 / 재-01 :ARG0 measurer :ARG1 thing_measured :ARG2 instrument)
+등록 : VERBAL_NOUN
+	- register		(등 / 등록-01 :ARG0 entity_registering,_causer :ARG1 thing_registered :ARG2 register)
+-- ETRI FRAMES (MARKED with '-00') ------------------
+작품집 : DERIVED_NON-ENTRY -> (작 / 작품집-00) ?
+등록되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"근대" [DT_OTHERS]	->  :time|duration (근 / 근대)	OR	:time (d / date-entity)	OR	:duration 
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(근 / 근대 :mod (나 / 나라))
+(나 / 나라 :mod (우 / 우리))
+(문 / 문학 :mod (근 / 근대))
+(작 / 작품 :mod (문 / 문학))
+(재 / 재 :mod (문 / 문화))
+(집 / 집 :mod (작 / 작품))
+
+
+# ::id snt0.E2016.837.02_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt <역사> 백제 때에, 지방 행정 조직인 오방(五方)에 각각 속하여 행정을 맡아보던 으뜸 벼슬.
+# ::note
+-- KPB FRAMES ----------------------------------------
+조직 : VERBAL_NOUN
+	- organize		(조 / 조직-01 :ARG0 agent :ARG1 thing_organized :ARG2 organized_with)
+속하 : VERB
+	- belong_to		(속 / 속하-01 :ARG1 thing_belonging :ARG2 belong_to)
+맡아보 : ** UNUSED_OR_NON-ENTRY **
+-- ETRI FRAMES (MARKED with '-00') ------------------
+속하 : ** UNUSED_OR_NON-ENTRY **
+맡아보 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"五方" [QT_COUNT]	->  :quant (五 / 五方)	OR	(c / concept* :quant - :unit|scale (五 / 五方))
+"백제 때" [DT_DYNASTY]	->  :time|duration (백 / 백제때)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"오방" [QT_COUNT]	->  :quant (오 / 오방)	OR	(c / concept* :quant - :unit|scale (오 / 오방))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(벼 / 벼슬 :mod (으 / 으뜸))
+(조 / 조직 :mod (행 / 행정))
+(행 / 행정 :mod (지 / 지방))
+
+
+# ::id snt0.E2016.837.02_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 백제시대 지방행정구역인 방(方)의 최고 책임자.
+# ::note
+-- KPB FRAMES ----------------------------------------
+책임자 : DERIVED_NON-ENTRY -> (책 / 책임자-00) ?
+-- ETRI FRAMES (MARKED with '-00') ------------------
+책임자 : DERIVED_NON-ENTRY -> (책 / 책임자-00) ?
+-- FORCE CONVERT ---------------------------------
+(책 / 책임지-01)
+-- NE TYPES --------------------------------------
+"백제시대" [DT_DYNASTY]	->  :time|duration (백 / 백제시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"최고 책임자" [CV_POSITION]	->  :mod (최 / 최고책임자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (최 / 최고 책임자))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(구 / 구역 :mod (행 / 행정))
+(자 / 자 :mod (책 / 책임))
+(지 / 지방 :mod (시 / 시대))
+(책 / 책임 :mod (최 / 최고))
+(행 / 행정 :mod (지 / 지방))
+
+
+# ::id snt0.E2016.837.02_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 삼국시대 백제의 지방 장관으로 맞는 것은?
+# ::note
+-- KPB FRAMES ----------------------------------------
+맞 : VERB
+	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
+	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
+	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
+	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
+-- ETRI FRAMES (MARKED with '-00') ------------------
+맞 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"백제" [LCP_COUNTRY]	->  (백 / 백제)	OR	(c / country :wiki "백제" :name (이 / 이름 :op1 "백제"))
+"삼국시대" [DT_DYNASTY]	->  :time|duration (삼 / 삼국시대)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"지방 장관" [CV_POSITION]	->  :mod (지 / 지방장관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (지 / 지방 장관))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(시 / 시대 :mod (삼 / 삼국))
+(장 / 장관 :mod (지 / 지방))
+
+
+# ::id snt0.E2016.837.03_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 1932년에는 계면화학에 대한 공헌으로 노벨 화학상을 받았다.
+# ::note
+-- KPB FRAMES ----------------------------------------
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+공헌 : VERBAL_NOUN
+	- contribute		(공 / 공헌-01 :ARG0 agent :ARG1 contributed_to)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+-- ETRI FRAMES (MARKED with '-00') ------------------
+대하 : ** UNUSED_OR_NON-ENTRY **
+받 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1932년" [DT_YEAR]	->  :time|duration (1 / 1932년)	OR	:time (d / date-entity :year 1932)	OR	:duration (t / temporal-quantity :quant 1932 :unit (년 / 년))  
+"계면화학" [FD_SCIENCE]	->  (계 / 계면화학)	OR	(s / study-field|group* :wiki - :name (이 / 이름 :op1 "계면화학"))
+"노벨 화학상" [CV_PRIZE]	->  (노 / 노벨화학상)	OR	(a / award :wiki "노벨_화학상" :name (이 / 이름 :op1 "노벨" :op2 "화학상"))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(상 / 상 :mod (화 / 화학))
+(화 / 화학 :mod (계 / 계면))
+
+
+# ::id snt0.E2016.837.03_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt <인명> 미국의 화학자(1881~1957).
+# ::note
+-- KPB FRAMES ----------------------------------------
+화학자 : DERIVED_NON-ENTRY -> (화 / 화학자-00) ?
+-- ETRI FRAMES (MARKED with '-00') ------------------
+화학자 : DERIVED_NON-ENTRY -> (화 / 화학자-00) ?
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1881~1957" [DT_DURATION]	->  :time|duration (1 / 1881~1957)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"화학자" [CV_OCCUPATION]	->  :mod (화 / 화학자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (화 / 화학자))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(자 / 자 :mod (화 / 화학))
+
+
+# ::id snt1.E2016.837.03_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 텅스텐 전구, 열전자, 활성 수소에 관한 연구 및 물질의 화학적 설명을 시도한 표면 연구로 1932년에 노벨 화학상을 받았다.
+# ::note
+-- KPB FRAMES ----------------------------------------
+열 : VERBAL_NOUN
+	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
+	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
+관하 : VERB
+	- regarding		(관 / 관하-01 :ARG1 thing_under_consideration :ARG2 with_regard_to)
+연구 : VERBAL_NOUN
+	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
+화학적 : DERIVED_NON-ENTRY -> (화 / 화학적-00) ?
+설명 : VERBAL_NOUN
+	- explain		(설 / 설명-01 :ARG0 explainer :ARG1 thing_explained :ARG2 explained_to)
+시도 : VERBAL_NOUN
+	- try		(시 / 시도-01 :ARG0 agent :ARG1 thing_tried)
+연구 : VERBAL_NOUN
+	- research		(연 / 연구-01 :ARG0 agent :ARG1 subject)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+-- ETRI FRAMES (MARKED with '-00') ------------------
+관하 : ** UNUSED_OR_NON-ENTRY **
+화학적 : DERIVED_NON-ENTRY -> (화 / 화학적-00) ?
+시도하 : DERIVED_NON-ENTRY
+받 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1932년" [DT_YEAR]	->  :time|duration (1 / 1932년)	OR	:time (d / date-entity :year 1932)	OR	:duration (t / temporal-quantity :quant 1932 :unit (년 / 년))  
+"노벨 화학상" [CV_PRIZE]	->  (노 / 노벨화학상)	OR	(a / award :wiki "노벨_화학상" :name (이 / 이름 :op1 "노벨" :op2 "화학상"))
+"텅스텐" [MT_METAL]	->  (텅 / 텅스텐)	OR	(m / material* :wiki "텅스텐" :name (이 / 이름 :op1 "텅스텐"))
+"화학" [FD_SCIENCE]	->  (화 / 화학)	OR	(s / study-field|group* :wiki "화학" :name (이 / 이름 :op1 "화학"))
+"활성 수소" [MT_CHEMICAL]	->  (활 / 활성수소)	OR	(m / material* :wiki - :name (이 / 이름 :op1 "활성" :op2 "수소"))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(상 / 상 :mod (화 / 화학))
+(수 / 수소 :mod (활 / 활성))
+(연 / 연구 :mod (표 / 표면))
+(적 / 적 :mod (화 / 화학))
+(전 / 전구 :mod (텅 / 텅스텐))
+(전 / 전자 :mod (열 / 열))
+
+
+# ::id snt0.E2016.837.03_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 제너럴 일렉트릭에 근무하면서 계면화학의 발전에 기여한 공로로 1932년 노벨 화학상을 받은 사람은?
+# ::note
+-- KPB FRAMES ----------------------------------------
+근무 : VERBAL_NOUN
+	- work		(근 / 근무-01 :ARG0 agent :ARG2 location)
+발전 : VERBAL_NOUN
+	- develop		(발 / 발전-01 :ARG0 developer :ARG1 thing_developed :ARG2 secondary_predication)
+기여 : VERBAL_NOUN
+	- contribute		(기 / 기여-01 :ARG0 agent :ARG1 contributed_to)
+받 : VERB
+	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
+-- ETRI FRAMES (MARKED with '-00') ------------------
+근무하 : DERIVED_NON-ENTRY
+기여하 : DERIVED_NON-ENTRY
+받 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"1932년" [DT_YEAR]	->  :time|duration (1 / 1932년)	OR	:time (d / date-entity :year 1932)	OR	:duration (t / temporal-quantity :quant 1932 :unit (년 / 년))  
+"계면화학" [FD_SCIENCE]	->  (계 / 계면화학)	OR	(s / study-field|group* :wiki - :name (이 / 이름 :op1 "계면화학"))
+"노벨 화학상" [CV_PRIZE]	->  (노 / 노벨화학상)	OR	(a / award :wiki "노벨_화학상" :name (이 / 이름 :op1 "노벨" :op2 "화학상"))
+"제너럴 일렉트릭" [OGG_ECONOMY]	->  (제 / 제너럴일렉트릭)	OR	(c / company|organization :wiki "제너럴_일렉트릭" :name (이 / 이름 :op1 "제너럴" :op2 "일렉트릭"))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(상 / 상 :mod (화 / 화학))
+(화 / 화학 :mod (계 / 계면))
+
+
+# ::id snt0.E2016.837.04_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 보잉 B-29 슈퍼포트리스(영어: Boeing B-29 Superfortress)는 4발 엔진을 가진 프로펠러 전략폭격기이다.
+# ::note
+-- KPB FRAMES ----------------------------------------
+가지 : VERB
+	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
+폭격기 : DERIVED_NON-ENTRY -> (폭 / 폭격기-00) ?
+-- ETRI FRAMES (MARKED with '-00') ------------------
+가지 : ** UNUSED_OR_NON-ENTRY **
+폭격 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (폭 / 폭격기-00) ?
+	- bomb		(폭 / 폭격-00 :ARG0 행동주 :ARG1 대상)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"4발" [QT_COUNT]	->  :quant (4 / 4발)	OR	(c / concept* :quant 4 :unit|scale (발 / 발))
+"Boeing B-29 Superfortress" [AF_WEAPON]	->  (B / BoeingB-29Superfortress)	OR	(w / weapon* :wiki - :name (이 / 이름 :op1 "Boeing" :op2 "B-29" :op3 "Superfortress"))
+"보잉 B-29 슈퍼포트리스" [AF_WEAPON]	->  (보 / 보잉B-29슈퍼포트리스)	OR	(w / weapon* :wiki "보잉_B-29_슈퍼포트리스" :name (이 / 이름 :op1 "보잉" :op2 "B-29" :op3 "슈퍼포트리스"))
+"영어" [CV_LANGUAGE]	->  (영 / 영어)	OR	(l / language :wiki "영어" :name (이 / 이름 :op1 "영어"))
+"전략폭격기" [AF_WEAPON]	->  (전 / 전략폭격기)	OR	(w / weapon* :wiki - :name (이 / 이름 :op1 "전략폭격기"))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(기 / 기 :mod (폭 / 폭격))
+(전 / 전략 :mod (프 / 프로펠러))
+(폭 / 폭격 :mod (전 / 전략))
+
+
+# ::id snt1.E2016.837.04_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 제2차 세계대전에서는 미국 육군 항공대가 운용하였으며 한국전쟁에서는 미국 공군이 운용하였다.
+# ::note
+-- KPB FRAMES ----------------------------------------
+대 : VERBAL_NOUN
+	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
+	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
+운용 : VERBAL_NOUN
+	- use		(운 / 운용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+운용 : VERBAL_NOUN
+	- use		(운 / 운용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- ETRI FRAMES (MARKED with '-00') ------------------
+대전 : VERBAL_NOUN
+	- have_a_game		(대 / 대전-00 :ARG0 행동주 :ARG2 동반주)
+운용하 : DERIVED_NON-ENTRY
+운용하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"공군" [OGG_MILITARY]	->  (공 / 공군)	OR	(m / military :wiki "공군" :name (이 / 이름 :op1 "공군"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"육군 항공대" [OGG_MILITARY]	->  (육 / 육군항공대)	OR	(m / military :wiki "육군_항공대" :name (이 / 이름 :op1 "육군" :op2 "항공대"))
+"제2차 세계대전" [EV_WAR_REVOLUTION]	->  (제 / 제2차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "제2차" :op2 "세계대전"))
+"한국전쟁" [EV_WAR_REVOLUTION]	->  (한 / 한국전쟁)	OR	(w / war|event :wiki "한국_전쟁" :name (이 / 이름 :op1 "한국전쟁"))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(대 / 대 :mod (항 / 항공))
+(대 / 대전 :mod (세 / 세계))
+(항 / 항공 :mod (육 / 육군))
+
+
+# ::id snt0.E2016.837.04_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 2차 세계대전에서 사용된 미국의 전략폭격기이며 히로시마에 원자폭탄을 투하한 폭격기로 유명하다.
+# ::note
+-- KPB FRAMES ----------------------------------------
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+폭격기 : DERIVED_NON-ENTRY -> (폭 / 폭격기-00) ?
+투하하 : DERIVED_NON-ENTRY
+폭격기 : DERIVED_NON-ENTRY -> (폭 / 폭격기-00) ?
+유명 : VERBAL_NOUN
+	- famous_for		(유 / 유명-01 :ARG1 thing_famous :ARG2 famous_for)
+-- ETRI FRAMES (MARKED with '-00') ------------------
+대전 : VERBAL_NOUN
+	- have_a_game		(대 / 대전-00 :ARG0 행동주 :ARG2 동반주)
+사용되 : DERIVED_NON-ENTRY
+폭격 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (폭 / 폭격기-00) ?
+	- bomb		(폭 / 폭격-00 :ARG0 행동주 :ARG1 대상)
+투하 : VERBAL_NOUN
+	- drop		(투 / 투하-00 :ARG0 행동주 :ARG1 대상 :ARG2 착점)
+폭격 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (폭 / 폭격기-00) ?
+	- bomb		(폭 / 폭격-00 :ARG0 행동주 :ARG1 대상)
+유명하 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"2차 세계대전" [EV_WAR_REVOLUTION]	->  (2 / 2차세계대전)	OR	(w / war|event :wiki "제2차_세계_대전" :name (이 / 이름 :op1 "2차" :op2 "세계대전"))
+"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+"원자폭탄" [AF_WEAPON]	->  (원 / 원자폭탄)	OR	(w / weapon* :wiki "핵무기" :name (이 / 이름 :op1 "원자폭탄"))
+"전략폭격기" [AF_WEAPON]	->  (전 / 전략폭격기)	OR	(w / weapon* :wiki - :name (이 / 이름 :op1 "전략폭격기"))
+"폭격기" [AF_WEAPON]	->  (폭 / 폭격기)	OR	(w / weapon* :wiki "폭격기" :name (이 / 이름 :op1 "폭격기"))
+"히로시마" [LCP_CITY]	->  (히 / 히로시마)	OR	(c / city :wiki "히로시마시" :name (이 / 이름 :op1 "히로시마"))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(기 / 기 :mod (폭 / 폭격))
+(기 / 기 :mod (폭 / 폭격))
+(대 / 대전 :mod (세 / 세계))
+(폭 / 폭격 :mod (전 / 전략))
+(폭 / 폭탄 :mod (원 / 원자))
+
+
+# ::id snt0.E2016.837.04_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 제1차 세계대전 당시 사용된 무기가 아닌 것은?
+# ::note
+-- KPB FRAMES ----------------------------------------
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- ETRI FRAMES (MARKED with '-00') ------------------
+대전 : VERBAL_NOUN
+	- have_a_game		(대 / 대전-00 :ARG0 행동주 :ARG2 동반주)
+사용되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"제1차 세계대전" [EV_WAR_REVOLUTION]	->  (제 / 제1차세계대전)	OR	(w / war|event :wiki "제1차_세계_대전" :name (이 / 이름 :op1 "제1차" :op2 "세계대전"))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(당 / 당시 :mod (대 / 대전))
+(대 / 대전 :mod (세 / 세계))
+(사 / 사용 :mod (당 / 당시))
+
+
+# ::id snt0.E2016.837.05_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 브라질과 포르투갈 이외에도, 앙골라, 카보베르데, 기니비사우, 마카오, 모잠비크, 상투메 프린시페, 동티모르, 적도기니와 옛 포르투갈령 인도인 고아 주, 다만 디우, 다드라 나가르하벨리, 그리고 포르투갈 제국의 작은 부분이었던 말레이시아의 말라카와 동아프리카 탄자니아의 잔지바르에서도 사용된다.
+# ::note
+-- KPB FRAMES ----------------------------------------
+주 : VERBAL_NOUN
+	- give		(주 / 주-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
+작 : VERB
+	- small		(작 / 작-01 :ARG1 thing_being_small)
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- ETRI FRAMES (MARKED with '-00') ------------------
+작 : ** UNUSED_OR_NON-ENTRY **
+사용되 : DERIVED_NON-ENTRY
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"고아 주" [LCP_PROVINCE]	->  (고 / 고아주)	OR	(p / province :wiki "고아주" :name (이 / 이름 :op1 "고아" :op2 "주"))
+"기니비사우" [LCP_COUNTRY]	->  (기 / 기니비사우)	OR	(c / country :wiki "기니비사우" :name (이 / 이름 :op1 "기니비사우"))
+"다드라 나가르하벨리" [LCP_PROVINCE]	->  (다 / 다드라나가르하벨리)	OR	(p / province :wiki "다드라_나가르하벨리" :name (이 / 이름 :op1 "다드라" :op2 "나가르하벨리"))
+"다만 디우" [LCP_PROVINCE]	->  (다 / 다만디우)	OR	(p / province :wiki "다만_디우" :name (이 / 이름 :op1 "다만" :op2 "디우"))
+"동아프리카" [LCG_CONTINENT]	->  (동 / 동아프리카)	OR	(c / continent :wiki "동아프리카" :name (이 / 이름 :op1 "동아프리카"))
+"동티모르" [LCP_COUNTRY]	->  (동 / 동티모르)	OR	(c / country :wiki "동티모르" :name (이 / 이름 :op1 "동티모르"))
+"마카오" [LCP_PROVINCE]	->  (마 / 마카오)	OR	(p / province :wiki "마카오" :name (이 / 이름 :op1 "마카오"))
+"말라카" [LCP_CITY]	->  (말 / 말라카)	OR	(c / city :wiki "믈라카" :name (이 / 이름 :op1 "말라카"))
+"말레이시아" [LCP_COUNTRY]	->  (말 / 말레이시아)	OR	(c / country :wiki "말레이시아" :name (이 / 이름 :op1 "말레이시아"))
+"모잠비크" [LCP_COUNTRY]	->  (모 / 모잠비크)	OR	(c / country :wiki "모잠비크" :name (이 / 이름 :op1 "모잠비크"))
+"브라질" [LCP_COUNTRY]	->  (브 / 브라질)	OR	(c / country :wiki "브라질" :name (이 / 이름 :op1 "브라질"))
+"상투메 프린시페" [LCP_COUNTRY]	->  (상 / 상투메프린시페)	OR	(c / country :wiki "상투메_프린시페" :name (이 / 이름 :op1 "상투메" :op2 "프린시페"))
+"앙골라" [LCP_COUNTRY]	->  (앙 / 앙골라)	OR	(c / country :wiki "앙골라" :name (이 / 이름 :op1 "앙골라"))
+"인도" [LCP_COUNTRY]	->  (인 / 인도)	OR	(c / country :wiki "인도" :name (이 / 이름 :op1 "인도"))
+"잔지바르" [LCP_CITY]	->  (잔 / 잔지바르)	OR	(c / city :wiki "잔지바르" :name (이 / 이름 :op1 "잔지바르"))
+"적도기니" [LCP_COUNTRY]	->  (적 / 적도기니)	OR	(c / country :wiki "적도_기니" :name (이 / 이름 :op1 "적도기니"))
+"카보베르데" [LCP_COUNTRY]	->  (카 / 카보베르데)	OR	(c / country :wiki "카보베르데" :name (이 / 이름 :op1 "카보베르데"))
+"탄자니아" [LCP_COUNTRY]	->  (탄 / 탄자니아)	OR	(c / country :wiki "탄자니아" :name (이 / 이름 :op1 "탄자니아"))
+"포르투갈" [LCP_COUNTRY]	->  (포 / 포르투갈)	OR	(c / country :wiki "포르투갈" :name (이 / 이름 :op1 "포르투갈"))
+"포르투갈" [LCP_COUNTRY]	->  (포 / 포르투갈)	OR	(c / country :wiki "포르투갈" :name (이 / 이름 :op1 "포르투갈"))
+"포르투갈" [LCP_COUNTRY]	->  (포 / 포르투갈)	OR	(c / country :wiki "포르투갈" :name (이 / 이름 :op1 "포르투갈"))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+
+
+# ::id snt0.E2016.837.05_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 세네갈, 코트 디부아르
+# ::note
+-- KPB FRAMES ----------------------------------------
+-- ETRI FRAMES (MARKED with '-00') ------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"세네갈" [LCP_COUNTRY]	->  (세 / 세네갈)	OR	(c / country :wiki "세네갈" :name (이 / 이름 :op1 "세네갈"))
+"코트 디부아르" [LCP_COUNTRY]	->  (코 / 코트디부아르)	OR	(c / country :wiki "코트디부아르" :name (이 / 이름 :op1 "코트" :op2 "디부아르"))
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+
+
+# ::id snt0.E2016.837.05_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 사용 언어가 다른 나라는?
+# ::note
+-- KPB FRAMES ----------------------------------------
+사용 : VERBAL_NOUN
+	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
+-- ETRI FRAMES (MARKED with '-00') ------------------
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+-- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(언 / 언어 :mod (사 / 사용))
+
