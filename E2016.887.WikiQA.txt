@@ -1,206 +1,115 @@
-# ::id snt0.E2016.887.01_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.01_A_01 ::date 2020-03-04 ::annotator gabrielle ::preferred True
 # ::snt 옥쟁반에 담긴 맛있는 고기는 만 백성의 기름이라.
 # ::note
--- KPB FRAMES ----------------------------------------
-담기 : REDUCED_VERB_DETECTED
-	- include		(담 / 담-01 :ARG0 agent :ARG1 thing_included :ARG2 container)
-맛있 : ** UNUSED_OR_NON-ENTRY **
--- ETRI FRAMES (MARKED with '-00') ------------------
-담기 : ** UNUSED_OR_NON-ENTRY **
-맛있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"고기" [CV_FOOD]	->  (고 / 고기)	OR	(f / food-dish :wiki "고기" :name (이 / 이름 :op1 "고기"))
-"옥" [MT_ROCK]	->  (옥 / 옥)	OR	(m / material* :wiki "옥?" :name (이 / 이름 :op1 "옥"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(쟁 / 쟁반 :mod (옥 / 옥))
+(기 / 기름
+	:domain (고 / 고기
+		:ARG1-of (맛 / 맛있-00)
+		:ARG1-of (담 / 담-01
+			:ARG2 (쟁 / 쟁반
+				:consist-of (옥 / 옥))))
+	:poss (백 / 백성
+		:quant (만 / 만)))
 
-
-# ::id snt0.E2016.887.01_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.01_A_02 ::date 2020-03-04 ::annotator gabrielle ::preferred True
 # ::snt 상 위의 맛있는 안주는 만 백성의 기름이라
 # ::note
--- KPB FRAMES ----------------------------------------
-맛있 : ** UNUSED_OR_NON-ENTRY **
--- ETRI FRAMES (MARKED with '-00') ------------------
-맛있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"안주" [CV_FOOD]	->  (안 / 안주)	OR	(f / food-dish :wiki "안주?" :name (이 / 이름 :op1 "안주"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(위 / 위 :mod (상 / 상))
+(기 / 기름
+	:domain (안 / 안주
+		:ARG1-of (맛 / 맛있-00)
+		:location-of (위 / 위
+			:op1 (상 / 상)))
+	:poss (백 / 백성
+		:quant (만 / 만)))
 
-
-# ::id snt0.E2016.887.01_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.01_Q_01 ::date 2020-03-04 ::annotator gabrielle ::preferred True
 # ::snt 고전 소설 <춘향전>에서는 ‘아름다운 술은 일천 백성의 피요, 안주는 일반 백성의 이것이라.’라는 표현이 나온다.
 # ::note
--- KPB FRAMES ----------------------------------------
-아름답 : VERB
-	- beatiful		(아 / 아름답-01 :ARG1 thing_beautiful)
-표현 : VERBAL_NOUN
-	- express		(표 / 표현-01 :ARG0 speaker :ARG1 utterance :ARG2 hearer)
-나오 : VERB
-	- come_out		(나 / 나오-01 :ARG0 thing_coming_out :ARG2 start_point :ARG3 end_point)
-	- do-light_verb		(나 / 나오-02 :ARG0 agent :ARG1 deverbal_noun :ARG2 start_point :ARG3 end_point)
-	- spill_out-CV		(나 / 나오-03 :ARG1 thing_coming_out :ARG2 start_point :ARG3 end_point)
--- ETRI FRAMES (MARKED with '-00') ------------------
-고전 : VERBAL_NOUN
-	- struggle		(고 / 고전-00 :ARG0 행동주)
-아름답 : ** UNUSED_OR_NON-ENTRY **
-나오 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"고전 소설" [FD_ART]	->  (고 / 고전소설)	OR	(s / study-field|group* :wiki - :name (이 / 이름 :op1 "고전" :op2 "소설"))
-"술" [CV_DRINK]	->  (술 / 술)	OR	(f / food-drink* :wiki "술" :name (이 / 이름 :op1 "술"))
-"안주" [CV_FOOD]	->  (안 / 안주)	OR	(f / food-dish :wiki "안주?" :name (이 / 이름 :op1 "안주"))
-"일천" [QT_COUNT]	->  :quant (일 / 일천)	OR	(c / concept* :quant - :unit|scale (일 / 일천))
-"춘향전" [AFW_DOCUMENT]	->  (춘 / 춘향전)	OR	(p / publication? :wiki "춘향전" :name (이 / 이름 :op1 "춘향전"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(백 / 백성 :mod (일 / 일반))
-(소 / 소설 :mod (고 / 고전))
+(표 / 표현-01
+	:ARG1 (a / and
+		:op1 (피 / 피
+			:domain (술 / 술
+				:ARG1-of (아 / 아름답-01))
+			:poss (백 / 백성 :quant 1000))
+		:op2 (이 / 이것
+			:domain (안 / 안주)
+			:poss (백2 / 백성 :quant 10000)))
+	:location (p / publication :wiki "춘향전" :name (이2 / 이름 :op1 "춘향전")
+		:mod (소 / 소설
+			:mod (고 / 고전))))
 
-
-# ::id snt1.E2016.887.01_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.01_Q_01 ::date 2020-03-04 ::annotator gabrielle ::preferred True
 # ::snt 이때 이것은 무엇일까?
 # ::note
--- KPB FRAMES ----------------------------------------
--- ETRI FRAMES (MARKED with '-00') ------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(a / amr-unknown
+	:domain (이 / 이것)
+	:condition (이 / 이때))
 
-
-# ::id snt0.E2016.887.02_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.02_A_01 ::date 2020-03-04 ::annotator gabrielle ::preferred True
 # ::snt 프리드만 방정식은 아인슈타인 방정식의 단순한 해이다.
 # ::note
--- KPB FRAMES ----------------------------------------
-식 : VERBAL_NOUN
-	- cool		(식 / 식-01 :ARG0 thing_cooling)
-식 : VERBAL_NOUN
-	- cool		(식 / 식-01 :ARG0 thing_cooling)
-단순 : VERBAL_NOUN
-	- simple		(단 / 단순-01 :ARG1 thing_being_simple)
--- ETRI FRAMES (MARKED with '-00') ------------------
-단순하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"아인슈타인 방정식" [TR_SCIENCE]	->  (아 / 아인슈타인방정식)	OR	(t / theory* :wiki "아인슈타인_방정식" :name (이 / 이름 :op1 "아인슈타인" :op2 "방정식"))
-"프리드만 방정식" [TR_SCIENCE]	->  (프 / 프리드만방정식)	OR	(t / theory* :wiki "프리드만_방정식" :name (이 / 이름 :op1 "프리드만" :op2 "방정식"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(식 / 식 :mod (방 / 방정))
-(식 / 식 :mod (방 / 방정))
+(해 / 해
+	:domain (프 / 프리드만-방정식)
+	:ARG1-of (단 / 단순-01)
+	:poss (아 / 아인슈타인-방정식))
 
-
-# ::id snt0.E2016.887.02_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.02_A_02 ::date 2020-03-04 ::annotator gabrielle ::preferred True
 # ::snt 1922년, 알렉산드르 프리드만은 아인슈타인 방정식으로부터 프리드만 방정식을 도출해 내었다.
 # ::note
--- KPB FRAMES ----------------------------------------
-식 : VERBAL_NOUN
-	- cool		(식 / 식-01 :ARG0 thing_cooling)
-식 : VERBAL_NOUN
-	- cool		(식 / 식-01 :ARG0 thing_cooling)
-도출 : VERBAL_NOUN
-	- derive		(도 / 도출-01 :ARG0 factors :ARG1 thing_derived :ARG2 source)
--- ETRI FRAMES (MARKED with '-00') ------------------
-도출하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1922년" [DT_YEAR]	->  :time|duration (1 / 1922년)	OR	:time (d / date-entity :year 1922)	OR	:duration (t / temporal-quantity :quant 1922 :unit (년 / 년))  
-"아인슈타인 방정식" [TR_SCIENCE]	->  (아 / 아인슈타인방정식)	OR	(t / theory* :wiki "아인슈타인_방정식" :name (이 / 이름 :op1 "아인슈타인" :op2 "방정식"))
-"알렉산드르 프리드만" [PS_NAME]	->  (알 / 알렉산드르프리드만)	OR	(p / person :wiki "알렉산드르_프리드만" :name (이 / 이름 :op1 "알렉산드르" :op2 "프리드만"))
-"프리드만 방정식" [TR_SCIENCE]	->  (프 / 프리드만방정식)	OR	(t / theory* :wiki "프리드만_방정식" :name (이 / 이름 :op1 "프리드만" :op2 "방정식"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(식 / 식 :mod (방 / 방정))
-(식 / 식 :mod (방 / 방정))
+(도 / 도출-01
+	:ARG0 (p / person :wiki "알렉산드르_프리드만" :name (이 / 이름 :op1 "알렉산드르" :op2 "프리드만"))
+	:ARG1 (프 / 프리드만-방정식)
+	:ARG2 (아 / 아인슈타인-방정식)
+	:time (d / date-entity :year 1922))
 
-
-# ::id snt0.E2016.887.02_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.02_Q_01 ::date 2020-03-04 ::annotator gabrielle ::preferred True
 # ::snt 최초로 아인슈타인의 일반 상대성 이론을 우주에 적용해 일반적인 해를 찾은 사람은 누구일까?
 # ::note
--- KPB FRAMES ----------------------------------------
-상대 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (상 / 상대성-00) ?
-	- confront		(상 / 상대-01 :ARG0 agent :ARG1 confronted_with)
-적용 : VERBAL_NOUN
-	- apply		(적 / 적용-01 :ARG0 applier :ARG1 thing_applied :ARG2 applied_to)
-일반적 : DERIVED_NON-ENTRY -> (일 / 일반적-00) ?
-찾 : VERB
-	- find		(찾 / 찾-01 :ARG0 finder :ARG1 thing_found)
-	- draw		(찾 / 찾-02 :ARG0 drawer :ARG1 thing_drawn :ARG2 source)
--- ETRI FRAMES (MARKED with '-00') ------------------
-상대성 : DERIVED_NON-ENTRY -> (상 / 상대성-00) ?
-적용하 : DERIVED_NON-ENTRY
-일반적 : DERIVED_NON-ENTRY -> (일 / 일반적-00) ?
-찾 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"아인슈타인" [PS_NAME]	->  (아 / 아인슈타인)	OR	(p / person :wiki "알베르트_아인슈타인" :name (이 / 이름 :op1 "아인슈타인"))
-"일반 상대성 이론" [TR_SCIENCE]	->  (일 / 일반상대성이론)	OR	(t / theory* :wiki "일반_상대성이론" :name (이 / 이름 :op1 "일반" :op2 "상대성" :op3 "이론"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(상 / 상대 :mod (일 / 일반))
-(성 / 성 :ARG0-of (상 / 상대))
-(적 / 적 :mod (일 / 일반))
+(찾 / 찾-01
+	:ARG0 (a / amr-unknown)
+	:ARG1 (해 / 해
+		:mod (일 / 일반적))
+	:manner (적 / 적용-01
+		:ARG0 a
+		:ARG1 (일2 / 일반-상대성이론
+			:poss (p / person :wiki "알베르트_아인슈타인" :name (이 / 이름 :op1 "아인슈타인")))
+		:ARG2 (우 / 우주)))
 
-
-# ::id snt0.E2016.887.03_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.03_A_01 ::date 2020-03-04 ::annotator gabrielle ::preferred True
 # ::snt 토머스 제퍼슨(Thomas Jefferson, 1743년 4월 13일 ~ 1826년 7월 4일)은 미국의 정치인으로 3번째 미국 대통령(재임 1801년 ~1809년)이자 미국 독립 선언서의 기초자이다(1776년).
 # ::note
--- KPB FRAMES ----------------------------------------
-정치인 : DERIVED_NON-ENTRY -> (정 / 정치인-00) ?
-독립 : VERBAL_NOUN
-	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
-	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
-선언 : VERBAL_NOUN
-	- declare		(선 / 선언-01 :ARG0 announcer :ARG1 utterance :ARG2 hearer)
-서 : VERBAL_NOUN
-	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
-	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
-	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
-기초 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기초자-00) ?
-	- base		(기 / 기초-01 :ARG1 thing_based :ARG2 based_on)
--- ETRI FRAMES (MARKED with '-00') ------------------
-정치인 : DERIVED_NON-ENTRY -> (정 / 정치인-00) ?
-재임 : VERBAL_NOUN
-	- being_in_office		(재 / 재임-00 :ARG0 행동주 :ARG2 착점)
-	- recommission		(재 / 재임-00 :ARG0 행동주 :ARG2 자격)
-기초자 : DERIVED_NON-ENTRY -> (기 / 기초자-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1743년 4월 13일 ~ 1826년 7월 4일" [DT_DURATION]	->  :time|duration (1 / 1743년4월13일~1826년7월4일)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1743 :month 4 :day 13))	OR :duration (t / temporal-quantity :quant 1743 :unit (년 / 년))  (t / temporal-quantity :quant 4 :unit (월 / 월))  (t / temporal-quantity :quant 13 :unit (일 / 일))  
-"1776년" [DT_YEAR]	->  :time|duration (1 / 1776년)	OR	:time (d / date-entity :year 1776)	OR	:duration (t / temporal-quantity :quant 1776 :unit (년 / 년))  
-"1801년 ~1809년" [DT_DURATION]	->  :time|duration (1 / 1801년~1809년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1801))	OR :duration (t / temporal-quantity :quant 1801 :unit (년 / 년))  
-"3번째" [QT_ORDER]	->  :ord (3 / 3번째)	OR	:ord (o / ordinal-entity :value 3번째)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"Thomas Jefferson" [PS_NAME]	->  (T / ThomasJefferson)	OR	(p / person :wiki - :name (이 / 이름 :op1 "Thomas" :op2 "Jefferson"))
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"미국 독립 선언서" [AFW_DOCUMENT]	->  (미 / 미국독립선언서)	OR	(p / publication? :wiki "미국_독립선언" :name (이 / 이름 :op1 "미국" :op2 "독립" :op3 "선언서"))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"정치인" [CV_OCCUPATION]	->  :mod (정 / 정치인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (정 / 정치인))
-"토머스 제퍼슨" [PS_NAME]	->  (토 / 토머스제퍼슨)	OR	(p / person :wiki "토머스_제퍼슨" :name (이 / 이름 :op1 "토머스" :op2 "제퍼슨"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(서 / 서 :ARG1 (선 / 선언))
-(선 / 선언 :ARG1 (독 / 독립))
-(인 / 인 :mod (정 / 정치))
-(자 / 자 :ARG0-of (기 / 기초))
+(a / and
+	:op1 (h / have-org-role-91
+		:ARG0 (p / person :wiki "토머스_제퍼슨" :name (이 / 이름 :op1 "토머스" :op2 "제퍼슨")
+			:mod (정 / 정치인
+				:mod (c / country :wiki "미국" :name (이2 / 이름 :op1 "미국")))
+			:ARG1-of (살 / 살-02
+				:time (d / date-inverval
+					:op1 (d2 / date-entity :year 1743 :month 4 :day 13)
+					:op2 (d3 / date-entity :year 1826 :month 7 :day 4))))
+		:ARG1 c
+		:ARG2 (대 / 대통령
+			:ord (o / ordinal-entity :value 3))
+		:time (d4 / date-inverval
+			:op1 (d5 / date-entity :year 1801)
+			:op2 (d6 / date-entity :year 1809)))
+	:op2 (기 / 기초-01
+		:ARG1 (p2 / publication :wiki "미국_독립선언#독립선언문" :name (이3 / 이름 :op1 "미국" :op2 "독립" :op3 "선언서")
+			:time (d7 / date-entity :year 1776))
+		:ARG2 p))
 
-
-# ::id snt0.E2016.887.03_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.03_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt <인명> 미국의 정치가ㆍ제3대 대통령(1743~1826).
 # ::note
--- KPB FRAMES ----------------------------------------
-정치가 : DERIVED_NON-ENTRY -> (정 / 정치가-00) ?
--- ETRI FRAMES (MARKED with '-00') ------------------
-정치가 : DERIVED_NON-ENTRY -> (정 / 정치가-00) ?
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1743~1826" [DT_DURATION]	->  :time|duration (1 / 1743~1826)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"정치가" [CV_OCCUPATION]	->  :mod (정 / 정치가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (정 / 정치가))
-"제3대" [QT_ORDER]	->  :ord (제 / 제3대)	OR	:ord (o / ordinal-entity :value 제3대)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(가 / 가 :mod (정 / 정치))
+(a / and
+	:topic (인 / 인명)
+	:op1 (정 / 정치가
+		:mod (c / country :wiki "미국" :name (이 / 이름 :op1 "미국")))
+	:op2 (h / have-org-role-91
+		:ARG1 c
+		:ARG2 (대 / 대통령
+			:ord (o / ordinal-entity :value 3))))
 
-
-# ::id snt1.E2016.887.03_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.03_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 1776년에 독립 선언서를 기초하고, 초대 국무장관을 지냈다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -235,7 +144,7 @@
 (장 / 장관 :mod (국 / 국무))
 
 
-# ::id snt0.E2016.887.03_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.03_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 미국 독립 선언서를 기초했으며, 미국의 제3대 대통령이 된 사람은 누구일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -269,7 +178,7 @@
 (선 / 선언 :ARG1 (독 / 독립))
 
 
-# ::id snt0.E2016.887.04_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.04_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 가장조에 들어가는 올림표는 몇 개일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -294,7 +203,7 @@
 (장 / 장조 :mod (가 / 가))
 
 
-# ::id snt0.E2016.887.05_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.05_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 가장 빠른 시간대를 사용하는 국가는 어디일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -313,7 +222,7 @@
 (대 / 대 :mod (시 / 시간))
 
 
-# ::id snt0.E2016.887.06_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.06_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 1914년 6월 하와이 가훌루 '아후이마누' 지역에 대조선 국민군단이 창설되고, 8월 29일 대조선국민군단 사관학교 낙성식이 거행된다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -344,7 +253,7 @@
 (학 / 학교 :mod (사 / 사관))
 
 
-# ::id snt0.E2016.887.06_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.06_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 1914년 6월 10일 하와이 오아후(Oahu)섬 코올아우(Koolau)지방 카할루우(Kahaluu)의 아후이마누(Ahuimanu)농장에서 독립군사관을 양성할 목적으로 만든 군사교육단체.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -382,7 +291,7 @@
 (사 / 사관 :mod (군 / 군))
 
 
-# ::id snt0.E2016.887.06_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.06_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 미주 지역에서 만들어진 군사 조직은 무엇일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -401,7 +310,7 @@
 (조 / 조직 :mod (군 / 군사))
 
 
-# ::id snt0.E2016.887.07_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.07_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 주도는 바르셀로나이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -414,7 +323,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt0.E2016.887.07_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.07_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 에스파냐 카탈루냐 자치지방(autonomous community) 바르셀로나주(州)의 주도(州都).
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -430,7 +339,7 @@
 (지 / 지방 :mod (자 / 자치))
 
 
-# ::id snt0.E2016.887.07_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.07_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 주도가 바르셀로나이며 스페인으로부터 분리 독립을 요구하고 있는 자치 지방은 어디일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -454,7 +363,7 @@
 (지 / 지방 :mod (자 / 자치))
 
 
-# ::id snt0.E2016.887.08_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.08_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 전형적인 다포형식의 건물로 평가된다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -471,7 +380,7 @@
 (형 / 형식 :mod (다 / 다포))
 
 
-# ::id snt0.E2016.887.08_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.08_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이 건물은 전형적인 다포양식의 건물로 창건 연대를 알 수 있을 뿐만 아니라, 견실한 목조건축물의 수법을 보이고 있는 한국건축사상 중요한 건물의 하나였다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -520,7 +429,7 @@
 (중 / 중요 :mod (사 / 사상))
 
 
-# ::id snt0.E2016.887.08_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.08_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 우리나라 전통 건축물 중 다포 양식인 것은 무엇일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -538,7 +447,7 @@
 (전 / 전통 :mod (나 / 나라))
 
 
-# ::id snt0.E2016.887.09_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.09_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 영은 자신의 많은 업적 중에 가장 중요한 업적이 빛의 파동 이론을 수립했던 것이라 생각했다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -565,7 +474,7 @@
 (이 / 이론 :mod (파 / 파동))
 
 
-# ::id snt1.E2016.887.09_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.09_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 그 업적을 이루려면 존엄한 아이작 뉴턴의 광학, 빛은 입자라고 했던 1세기나 지난 견해를 이겨내야 했기 때문이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -601,7 +510,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt0.E2016.887.09_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.09_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 빛이 파동과 입자 중 어느 것인가에 대한 논란은 오래전부터 끊임없이 제기되었다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -617,7 +526,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt1.E2016.887.09_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.09_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 17세기에는 빛의 입자설과 파동설이 서로 첨예하게 대립하였으나 18세기 뉴튼의 지지에 힘입어 입자설이 우세하게 된다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -661,7 +570,7 @@
 (설 / 설 :mod (파 / 파동))
 
 
-# ::id snt2.E2016.887.09_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt2.E2016.887.09_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 그러나 19세기에 토마스 영(Tomas Young)의 ‘이중슬릿실험’을 통해 파동설이 우위를 점하게 되었으며, 맥스웰은 빛과 전자기파가 본질적으로 같다는 전자기파설을 주장하였다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -713,7 +622,7 @@
 (파 / 파 :mod (전 / 전자기))
 
 
-# ::id snt0.E2016.887.09_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.09_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 빛의 성질을 다르게 설명한 사람은 누구일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -729,7 +638,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt0.E2016.887.10_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.10_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 거문고의 줄을 팽팽하게 고쳐 맴.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -751,7 +660,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt0.E2016.887.10_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.10_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 해이해진 정치•경제•사회•군사적 제도 등을 기존 체제의 틀 속에서 다시 새롭게 개혁하는 것.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -780,7 +689,7 @@
 (체 / 체제 :mod (기 / 기존))
 
 
-# ::id snt1.E2016.887.10_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.10_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 원래의 의미는 가야금의 느슨해진 줄을 다시 팽팽하게 당겨 음을 조율한다는 뜻임.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -806,7 +715,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt0.E2016.887.10_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.10_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이것은 본래 거문고의 줄을 팽팽하게 고쳐 맨다는 뜻의 한자어로 사회적 정치적으로 묵은 제도를 고쳐 새롭게 하는 것을 의미한다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -854,7 +763,7 @@
 (적 / 적 :mod (정 / 정치))
 
 
-# ::id snt1.E2016.887.10_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.10_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 1894년 갑오개혁을 갑오 ‘이것’이라고도 하는데 이것은 무엇일까? 
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -877,7 +786,7 @@
 (개 / 개혁 :mod (갑 / 갑오))
 
 
-# ::id snt0.E2016.887.11_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.11_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 방공식별구역(防空識別區域, 영어: Air Defense Identification Zone, ADIZ)은 영공의 방위를 위해 영공 외곽 공해 상공에 설정되는 공중 구역이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -902,7 +811,7 @@
 (외 / 외곽 :mod (영 / 영공))
 
 
-# ::id snt1.E2016.887.11_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.11_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 자국 공군이 국가 안보를 위해 일방적으로 설정하여 선포한다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -927,7 +836,7 @@
 (적 / 적 :mod (일 / 일방))
 
 
-# ::id snt2.E2016.887.11_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt2.E2016.887.11_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 영공이 아니므로, 외국 군용기의 무단 비행이 금지되지는 않는다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -948,7 +857,7 @@
 (비 / 비행 :mod (무 / 무단))
 
 
-# ::id snt3.E2016.887.11_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt3.E2016.887.11_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 다만 자국 국가 안보에 위협이 되면 퇴각을 요청하거나 격추할 수 있다고 사전에 국제사회에 선포해 놓은 구역이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -982,7 +891,7 @@
 (안 / 안보 :mod (국 / 국가))
 
 
-# ::id snt0.E2016.887.11_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.11_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 국제법이 정하는 영토ㆍ영공과 달리 타국의 항공기에 대해 방위를 목적으로 각 나라가 독자적으로 설정한 지역이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1010,7 +919,7 @@
 (적 / 적 :mod (독 / 독자))
 
 
-# ::id snt1.E2016.887.11_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.11_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 일본은 방공식별권에 타국 비행기가 사전 통고 없이 진입할 경우 전투기를 자동 발진시키며, 중국은 일본의 방공식별권을 인정하지 않고 있다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1056,7 +965,7 @@
 (통 / 통고 :mod (사 / 사전))
 
 
-# ::id snt0.E2016.887.11_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.11_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이것은 영공의 방위를 위해 영공 외곽의 공해 상공에 설정된 공중 구역이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1075,7 +984,7 @@
 (외 / 외곽 :mod (영 / 영공))
 
 
-# ::id snt1.E2016.887.11_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.11_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 영공이 아니기 때문에 타국 군용기의 무단 비행이 금지되지는 않으나 국가 안보가 위협되면 퇴각을 요청하거나 격추할 것을 선포하기도 하는 이 구역은 무엇일까? 
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1111,7 +1020,7 @@
 (안 / 안보 :mod (국 / 국가))
 
 
-# ::id snt0.E2016.887.12_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.12_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt <지리> 북반구의 냉대 기후 지역에 나타나는 침엽수림.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1136,7 +1045,7 @@
 (지 / 지역 :mod (기 / 기후))
 
 
-# ::id snt1.E2016.887.12_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.12_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 원래는 시베리아에 발달한 침엽수림을 뜻하나, 넓게는 유라시아와 북아메리카 대륙의 북위 50~70도 지역에 분포하는 침엽수림을 이른다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1177,7 +1086,7 @@
 (림 / 림 :mod (침 / 침엽수))
 
 
-# ::id snt0.E2016.887.12_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.12_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 원래는 시베리아에서 툰드라의 남쪽에 접한 우랄산맥에서 오호츠크해에 이르는 침엽수 삼림 지대를 가리키는 말이었다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1211,7 +1120,7 @@
 (지 / 지대 :mod (삼 / 삼림))
 
 
-# ::id snt0.E2016.887.12_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.12_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이것은 고위도의 툰드라 지대와 저위도의 온대 기후 지역 사이에 나타나는 침엽수림 지대다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1237,7 +1146,7 @@
 (지 / 지역 :mod (기 / 기후))
 
 
-# ::id snt1.E2016.887.12_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.12_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 러시아어로 ‘나무로 우거진 숲’이라는 뜻을 가진 냉대림의 삼림은 무엇일까? 
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1257,7 +1166,7 @@
 (림 / 림 :mod (냉 / 냉대))
 
 
-# ::id snt0.E2016.887.13_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.13_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 라푸라푸(Lapu - Lapu 1491년 - 1542년)는 필리핀 막탄 섬(세부 섬의 동쪽 앞바다)의 영주이며, 이슬람 부족장이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1284,7 +1193,7 @@
 (장 / 장 :ARG0-of (부 / 부족))
 
 
-# ::id snt1.E2016.887.13_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.13_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 페르디난드 마젤란은 세계 일주 항해 도중에 필리핀에 내항하여 기독교로 개종하고 스페인에게 복종할 것을 요구했다.
 # ::note
 (요 / 요구-01
@@ -1306,7 +1215,7 @@
             :ARG1 (일 / 일주
                 :mod (세 / 세계)))))
 
-# ::id snt2.E2016.887.13_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt2.E2016.887.13_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 라푸라푸는 1521년 4월 27일 새벽에 그러한 부당한 요구에 저항하여 막탄 전투에서 마젤란의 군대를 격파한 후, 마젤란을 죽였다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1342,7 +1251,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt0.E2016.887.13_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.13_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 그러다가 1521년 4월 27일 마지막 섬인 막탄 섬에 갔다가, 스페인 왕의 권위에 복종하지 않는 추장 라푸라푸와의 막탄 전투에서 목숨을 잃었다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1381,7 +1290,7 @@
 (섬 / 섬 :mod (마 / 마지막))
 
 
-# ::id snt0.E2016.887.13_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.13_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이 사람은 필리핀 막탄 섬의 왕으로 1521년 허락 없이 상륙한 스페인 침략자들을 격퇴하고 지휘관 마젤란을 살해했다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1417,7 +1326,7 @@
 (자 / 자 :ARG0-of (침 / 침략))
 
 
-# ::id snt1.E2016.887.13_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.13_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이 사람은 누구일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1427,7 +1336,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt0.E2016.887.14_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.14_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 한국에서는 2000년에 전개되었던 낙천·낙선운동의 연장선상에서, 2006년 5월 31일의 지방선거를 계기로 후보자들이 내세운 공약이 구체성을 띠고 있으며 실현 가능한지, 곧 '갖춘 공약'인지의 여부를 평가하자는 매니페스토운동이 시민단체를 중심으로 전개되었다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1497,7 +1406,7 @@
 (자 / 자 :mod (후 / 후보))
 
 
-# ::id snt0.E2016.887.14_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.14_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 선거에서 후보들이 내놓은 공약의 실현 가능성을 따져보고 당선 후에도 공약을 지켜나가도록 한다는 의미를 담은 시민운동이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1543,7 +1452,7 @@
 (후 / 후 :mod (당 / 당선))
 
 
-# ::id snt0.E2016.887.14_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.14_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 참 공약 시민운동을 뜻하는 이 외래어는 선거에서 후보의 공약이 진짜 좋은 것인지 찬찬히 한번 따져보자는 뜻이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1581,7 +1490,7 @@
 (운 / 운동 :mod (시 / 시민))
 
 
-# ::id snt1.E2016.887.14_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.14_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이 운동은 무엇일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1593,7 +1502,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt0.E2016.887.15_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.15_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 여자의 최저음이고, 초등학생이거나 변성기 이전인 남자들은 알토가 가장 낮은 음이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1619,7 +1528,7 @@
 (학 / 학생 :mod (초 / 초등))
 
 
-# ::id snt0.E2016.887.15_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.15_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 여성의 가장 낮은 음역.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1632,7 +1541,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt0.E2016.887.15_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.15_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이것은 테너와 메조소프라노 사이에 있는 여성의 가장 낮은 음역으로 ‘높다’라는 라틴어에서 유래했다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1657,7 +1566,7 @@
 (소 / 소프라노 :mod (메 / 메조))
 
 
-# ::id snt1.E2016.887.15_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.15_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이 용어는 무엇일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1667,7 +1576,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt0.E2016.887.16_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.16_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이는 사실상 유대인이 팔레스타인에서 민족적 고향을 건설하겠다는 것을 지지한다는 내용의 서신이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1694,7 +1603,7 @@
 (적 / 적 :mod (민 / 민족))
 
 
-# ::id snt0.E2016.887.16_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.16_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt <역사> 1917년에 영국의 외상 밸푸어(Balfour, A. J.)가 유대인이 팔레스타인에 민족 국가를 건설하는 것을 지지한 선언.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1723,7 +1632,7 @@
 (인 / 인 :mod (유 / 유대))
 
 
-# ::id snt0.E2016.887.16_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.16_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이것은 1917년 영국의 외상이 팔레스타인 지역에 유대인 국가 건설을 약속하며 발표한 선언이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1752,7 +1661,7 @@
 (인 / 인 :mod (유 / 유대))
 
 
-# ::id snt1.E2016.887.16_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.16_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 이 선언은 무엇일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1764,7 +1673,7 @@
 -- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
 
 
-# ::id snt0.E2016.887.17_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.17_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 파노라마(panorama)와 유사하지만, 파노라마가 실제 환경에 가깝도록 무대 도처에 실물이나 모형을 배치해 전체와 부분의 관계를 명백히 하는 데 비해, 주위 환경이나 배경을 그림으로 하고, 모형 역시 축소 모형으로 배치한다는 점이 다르다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1818,7 +1727,7 @@
 (환 / 환경 :mod (주 / 주위))
 
 
-# ::id snt0.E2016.887.17_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.17_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 미니어처로 제작된 모형과 배경을 설치하여 역사적인 전투 장면과 같이 특정한 상황의 한 장면으로 구성하여 실제로 보는 것처럼 느끼도록 만든 것 또는 그러한 배치.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1870,7 +1779,7 @@
 (적 / 적 :mod (역 / 역사))
 
 
-# ::id snt0.E2016.887.17_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt0.E2016.887.17_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 파노라마와 유사한 이것은 배경 위에 미니어처와 같은 축소 모형을 설치해 하나의 장면을 만드는 것이다.
 # ::note
 -- KPB FRAMES ----------------------------------------
@@ -1899,7 +1808,7 @@
 (위 / 위 :mod (배 / 배경))
 
 
-# ::id snt1.E2016.887.17_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::id snt1.E2016.887.17_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 전시물의 입체감을 현장성에 충실하도록 표현해 하나의 사실 또는 주제의 시간 상황을 고정시켜 연출하는 이것은 무엇일까?
 # ::note
 -- KPB FRAMES ----------------------------------------
