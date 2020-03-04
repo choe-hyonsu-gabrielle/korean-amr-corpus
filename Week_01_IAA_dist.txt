@@ -1,5 +1,14 @@
 / ~~ Week 1. AMRs for evaluation of Inter-annotator Agreement (15 snts) ~~
+
 / 다음의 가이드를 참고하여 작업해 주시기 바랍니다: 
+/ 주석 방법: https://docs.google.com/presentation/d/12TYzN9cnikbf4gjgBQe4X2AtBSFVny5Ak6fIy63d9oY/edit?usp=sharing
+/ 한국어 가이드라인: https://github.com/choe-hyonsu-gabrielle/korean-amr-guidelines/blob/master/korean-amr-guidelines.md
+/ AMR Dictionary: https://amr.isi.edu/doc/amr-dict.html
+/ List of AMR NE types: https://amr.isi.edu/doc/ne-types.html
+/ List of AMR roles: https://amr.isi.edu/doc/roles.html
+/ List of AMR quantity types: https://amr.isi.edu/doc/quantity-types.html
+/ List of frame arguments in PropBank (AMR version): https://amr.isi.edu/doc/propbank-amr-frames-arg-descr.txt
+
 / 작업자: (이름 기입)
 
 
