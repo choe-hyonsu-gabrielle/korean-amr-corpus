@@ -55,10 +55,12 @@
 # ::note
 (벼 / 벼슬
 	:topic (역 / 역사)
+	:mod (으 / 으뜸)
 	:mod (c / country :wiki "백제" :name (이 / 이름 :op1 "백제"))
 	:mod (맡 / 맡아보-00
 		:ARG1 (행 / 행정)
 		:manner (속 / 속하-01
+			:manner (각 / 각각)
 			:ARG2 (방 / 방 :quant 5
 				:mod (조 / 조직
 					:purpose (행2 / 행정
