@@ -1,0 +1,197 @@
+# ::id snt0.E2016.837.01_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 우리나라 근대 문학 작품집 가운데 가장 먼저 문화재로 등록된 것은?
+# ::note
+(등 / 등록-01
+	:ARG1 (a / amr-unknown
+		:ARG1-of (i / include-91
+			:ARG2 (작 / 작품집
+				:topic (문 / 문학
+					:time (근 / 근대))
+				:poss (우 / 우리나라))))
+	:ARG2 (문2 / 문화재)
+	:ord (o / ordinal-entity :value 1))
+
+# ::id snt0.E2016.837.02_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt <역사> 백제 때에, 지방 행정 조직인 오방(五方)에 각각 속하여 행정을 맡아보던 으뜸 벼슬.
+# ::note
+(벼 / 벼슬
+	:topic (역 / 역사)
+	:mod (으 / 으뜸)
+	:mod (c / country :wiki "백제" :name (이 / 이름 :op1 "백제"))
+	:mod (맡 / 맡아보-00
+		:ARG1 (행 / 행정)
+		:manner (속 / 속하-01
+			:manner (각 / 각각)
+			:ARG2 (방 / 방 :quant 5
+				:mod (조 / 조직
+					:purpose (행2 / 행정
+						:mod (지 / 지방)))))))
+
+# ::id snt0.E2016.837.02_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 백제시대 지방행정구역인 방(方)의 최고 책임자.
+# ::note
+(사 / 사람
+	:ARG0-of (h / have-org-role-91
+		:ARG1 (방 / 방
+			:mod (구 / 구역
+				:mod (행 / 행정)
+				:location (지 / 지방)))
+		:ARG2 (책 / 책임자
+			:mod (최 / 최고))))
+
+# ::id snt0.E2016.837.02_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 삼국시대 백제의 지방 장관으로 맞는 것은?
+# ::note amr-choice 아닙니다
+(맞 / 맞-02
+	:ARG1 (장 / 장관
+		:mod (지 / 지방)
+		:ARG2-of (h / have-org-role-91
+			:ARG1 (c / country :wiki "백제" :name (이 / 이름 :op1 "백제")))
+		:time (삼 / 삼국시대)))
+
+# ::id snt0.E2016.837.03_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 1932년에는 계면화학에 대한 공헌으로 노벨 화학상을 받았다.
+# ::note
+(받 / 받-01
+	:ARG1 (a / award :wiki "노벨_화학상" :name (이 / 이름 :op1 "노벨" :op2 "화학상"))
+	:time (d / date-entity :year 1932)
+	:cause (공 / 공헌-01
+		:ARG1 (계 / 계면화학)))
+
+# ::id snt0.E2016.837.03_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt <인명> 미국의 화학자(1881~1957).
+# ::note
+(화 / 화학자
+	:topic (인 / 인명)
+	:mod (c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+	:time (d / date-inverval
+		:op1 (d2 / date-entity :year 1881)
+		:op2 (d3 / date-entity :year 1957)))
+
+# ::id snt1.E2016.837.03_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 텅스텐 전구, 열전자, 활성 수소에 관한 연구 및 물질의 화학적 설명을 시도한 표면 연구로 1932년에 노벨 화학상을 받았다.
+# ::note
+(받 / 받-01
+	:ARG1 (a / award :wiki "노벨_화학상" :name (이 / 이름 :op1 "노벨" :op2 "화학상"))
+	:time (d / date-entity :year 1932)
+	:cause (및 / 및
+		:op1 (연 / 연구-01
+			:ARG1 (a2 / and
+				:op1 (전 / 전구
+					:consist-of (텅 / 텅스텐))
+				:op2 (열 / 열전자)
+				:op3 (활 / 활성수소)))
+		:op2 (연2 / 연구-01
+			:ARG1 (표 / 표면)
+			:manner (시 / 시도-01
+				:ARG1 (설 / 설명-01
+					:ARG1 (물 / 물질)
+					:manner (화 / 화학적))))))
+
+# ::id snt0.E2016.837.03_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 제너럴 일렉트릭에 근무하면서 계면화학의 발전에 기여한 공로로 1932년 노벨 화학상을 받은 사람은?
+# ::note
+(받 / 받-01
+	:ARG0 (a / amr-unknown)
+	:ARG1 (a2 / award :wiki "노벨_화학상" :name (이 / 이름 :op1 "노벨" :op2 "화학상"))
+	:time (d / date-entity :year 1932)
+	:cause (공 / 공로
+		:mod (기 / 기여-01
+			:ARG0 a
+			:ARG1 (발 / 발전-01
+				:ARG0 a
+				:ARG1 (계 / 계면화학))
+			:manner (근 / 근무-01
+				:ARG0 a
+				:ARG2 (c / company :wiki "제너럴_일렉트릭" :name (이2 / 이름 :op1 "제너럴" :op2 "일렉트릭"))))))
+
+# ::id snt0.E2016.837.04_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 보잉 B-29 슈퍼포트리스(영어: Boeing B-29 Superfortress)는 4발 엔진을 가진 프로펠러 전략폭격기이다.
+# ::note :mod vs :ARG0-of
+(전 / 전략폭격기
+	:domain (a / aircraft-type :wiki "보잉_B-29_슈퍼포트리스" :name (이 / 이름 :op1 "보잉" :op2 "B-29" :op3 "슈퍼포트리스"))
+	:mod (프 / 프로펠러)
+	:ARG0-of (가 / 가지-01
+		:ARG1 (엔 / 엔진 :quant 4 :unit (발 / 발))))
+
+# ::id snt1.E2016.837.04_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 제2차 세계대전에서는 미국 육군 항공대가 운용하였으며 한국전쟁에서는 미국 공군이 운용하였다.
+# ::note
+(a / and
+	:op1 (운 / 운용-01
+		:ARG0 (m / military :wiki "미국_육군_항공대" :name (이 / 이름 :op1 "육군" :op2 "항공대"))
+		:time (w / war :wiki "제2차_세계_대전" :name (이2 / 이름 :op1 "제2차" :op2 "세계대전")))
+	:op2 (운2 / 운용-01
+		:ARG0 (m2 / military :wiki "미국_공군" :name (이3 / 이름 :op1 "공군"))
+		:time (w2 / war :wiki "한국_전쟁" :name (이4 / 이름 :op1 "한국전쟁"))))
+
+# ::id snt0.E2016.837.04_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 2차 세계대전에서 사용된 미국의 전략폭격기이며 히로시마에 원자폭탄을 투하한 폭격기로 유명하다.
+# ::note
+(a / and
+	:op1 (전 / 전략폭격기
+		:ARG1-of (사 / 사용-01
+			:ARG0 (c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+			:time (w / war :wiki "제2차_세계_대전" :name (이2 / 이름 :op1 "2차" :op2 "세계대전")))
+		:mod c)
+	:op2 (유 / 유명-01
+		:ARG1 전
+		:ARG2 (폭 / 폭격기
+			:ARG0-of (투 / 투하-00
+				:ARG1 (원 / 원자폭탄)
+				:ARG2 (c2 / city :wiki "히로시마시" :name (이3 / 이름 :op1 "히로시마"))))))
+
+# ::id snt0.E2016.837.04_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 제1차 세계대전 당시 사용된 무기가 아닌 것은?
+# ::note
+(사 / 사용-01
+	:polarity -
+	:ARG1 (a / amr-unknown)
+	:ARG2 (무 / 무기)
+	:time (당 / 당시
+		:op1 (w / war :wiki "제1차_세계_대전" :name (이 / 이름 :op1 "제1차" :op2 "세계대전"))))
+
+# ::id snt0.E2016.837.05_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 브라질과 포르투갈 이외에도, 앙골라, 카보베르데, 기니비사우, 마카오, 모잠비크, 상투메 프린시페, 동티모르, 적도기니와 옛 포르투갈령 인도인 고아 주, 다만 디우, 다드라 나가르하벨리, 그리고 포르투갈 제국의 작은 부분이었던 말레이시아의 말라카와 동아프리카 탄자니아의 잔지바르에서도 사용된다.
+# ::note
+(사 / 사용-01
+	:location (a / and
+		:op1 (c / country :wiki "브라질" :name (이 / 이름 :op1 "브라질"))
+		:op2 (c2 / country :wiki "포르투갈" :name (이2 / 이름 :op1 "포르투갈"))
+		:op3 (c3 / country :wiki "앙골라" :name (이3 / 이름 :op1 "앙골라"))
+		:op4 (c4 / country :wiki "카보베르데" :name (이4 / 이름 :op1 "카보베르데"))
+		:op5 (c5 / country :wiki "기니비사우" :name (이5 / 이름 :op1 "기니비사우"))
+		:op6 (c6 / country-region :wiki "마카오" :name (이6 / 이름 :op1 "마카오"))
+		:op7 (c7 / country :wiki "모잠비크" :name (이7 / 이름 :op1 "모잠비크"))
+		:op8 (c8 / country :wiki "상투메_프린시페" :name (이8 / 이름 :op1 "상투메" :op2 "프린시페"))
+		:op9 (c9 / country :wiki "동티모르" :name (이9 / 이름 :op1 "동티모르"))
+		:op10 (c10 / country :wiki "적도_기니" :name (이10 / 이름 :op1 "적도기니"))
+		:op11 (s / state :wiki "고아주" :name (이11 / 이름 :op1 "고아" :op2 "주")
+			:mod (c11 / country :wiki "포르투갈령_인도" :name (이12 / 이름 :op1 "포르투갈령" :op2 "인도")
+				:time (옛 / 옛)))
+		:op12 (c12 / country-region :wiki "다만_디우" :name (이13 / 이름 :op1 "다만" :op2 "디우"))
+		:op13 (c13 / country-region :wiki "다드라_나가르하벨리" :name (이14 / 이름 :op1 "다드라" :op2 "나가르하벨리"))
+		:op14 (c14 / city :wiki "믈라카" :name (이15 / 이름 :op1 "말라카")
+			:location (c15 / country :wiki "말레이시아" :name (이16 / 이름 :op1 "말레이시아"))
+			:ARG1-of (h / have-part-91
+				:ARG2 (c16 / country :wiki "포르투갈_제국" :name (이17 / 이름 :op1 "포르투갈" :op2 "제국")
+				:mod (작 / 작-01))))
+		:op15 (c17 / city :wiki "잔지바르" :name (이18 / 이름 :op1 "잔지바르")
+			:location (c18 / country :wiki "탄자니아" :name (이19 / 이름 :op1 "탄자니아")
+				:location (c19 / continent :wiki "동아프리카" :name (이20 / 이름 :op1 "동아프리카"))))))
+
+# ::id snt0.E2016.837.05_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 세네갈, 코트 디부아르
+# ::note
+(a / and
+	:op1 (c / country :wiki "세네갈" :name (이 / 이름 :op1 "세네갈"))
+	:op2 (c2 / country :wiki "코트디부아르" :name (이2 / 이름 :op1 "코트" :op2 "디부아르")))
+
+# ::id snt0.E2016.837.05_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
+# ::snt 사용 언어가 다른 나라는?
+# ::note
+(사 / 사용-01
+	:ARG0 (a / amr-unknown
+		:mod (나 / 나라))
+	:ARG1 (언 / 언어
+		:ARG1-of (다 / 다르-01)))
