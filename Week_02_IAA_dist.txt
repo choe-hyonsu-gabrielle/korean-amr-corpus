@@ -1,0 +1,554 @@
+/ ~~ Week 2. AMRs for evaluation of Inter-annotator Agreement (15 snts) ~~
+
+/ 다음의 가이드를 참고하여 작업해 주시기 바랍니다: 
+/ 주석 방법: https://docs.google.com/presentation/d/12TYzN9cnikbf4gjgBQe4X2AtBSFVny5Ak6fIy63d9oY/edit?usp=sharing
+/ 한국어 가이드라인: https://github.com/choe-hyonsu-YOUR_NAME/korean-amr-guidelines/blob/master/korean-amr-guidelines.md
+/ AMR Dictionary: https://amr.isi.edu/doc/amr-dict.html
+/ List of AMR NE types: https://amr.isi.edu/doc/ne-types.html
+/ List of AMR roles: https://amr.isi.edu/doc/roles.html
+/ List of AMR quantity types: https://amr.isi.edu/doc/quantity-types.html
+/ List of frame arguments in PropBank (AMR version): https://amr.isi.edu/doc/propbank-amr-frames-arg-descr.txt
+
+/ 작업자:
+
+
+
+
+# ::id snt4.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 이낙연 총리를 시작으로 장관 후보자들의 상당수가 문재인 대통령이 후보 시절부터 밝혀온 '5대 비리 고위공직 원천 배제 원칙'에 해당하고 안경환 전 법무부 장관 후보자가 낙마하면서 야당은 '인사 파행'의 책임을 조 수석에 묻고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+시작 : VERBAL_NOUN
+	- begin		(시 / 시작-01 :ARG0 agent :ARG1 event)
+후보자 : DERIVED_NON-ENTRY -> (후 / 후보자-00) ?
+상당 : VERBAL_NOUN
+	- considerable		(상 / 상당-01 :ARG1 thing_being_considerable)
+밝히 : VERB
+	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
+	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
+대 : VERBAL_NOUN
+	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
+	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
+배제 : VERBAL_NOUN
+	- exclude		(배 / 배제-01 :ARG0 agent :ARG1 thing_excluded :ARG2 excluded_from)
+해당 : VERBAL_NOUN
+	- correspond_to		(해 / 해당-01 :ARG1 topic,_theme :ARG2 compared_with)
+법무부 : DERIVED_NON-ENTRY -> (법 / 법무부-00) ?
+후보자 : DERIVED_NON-ENTRY -> (후 / 후보자-00) ?
+낙마하 : DERIVED_NON-ENTRY
+묻 : VERB
+	- ask		(묻 / 묻-01 :ARG0 asker :ARG1 question :ARG2 hearer)
+	- bury		(묻 / 묻-02 :ARG0 agent :ARG1 thing_buried :ARG2 location)
+	- stick		(묻 / 묻-03 :ARG0 causal_agent :ARG1 thing_sticking :ARG2 stuck_to)
+-- FORCE CONVERT ---------------------------------
+(책 / 책임지-01)
+-- NE TYPES --------------------------------------
+"5대" [QT_COUNT]	->  :quant (5 / 5대)	OR	(c / concept* :quant 5 :unit|scale (대 / 대))
+"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
+"문재인" [PS_NAME]	->  (문 / 문재인)	OR	(p / person :wiki "문재인" :name (이 / 이름 :op1 "문재인"))
+"법무부" [OGG_POLITICS]	->  (법 / 법무부)	OR	(g / government-organization :wiki "법무부?" :name (이 / 이름 :op1 "법무부"))
+"수석" [CV_POSITION]	->  :mod (수 / 수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석))
+"안경환" [PS_NAME]	->  (안 / 안경환)	OR	(p / person :wiki "안경환" :name (이 / 이름 :op1 "안경환"))
+"이낙연" [PS_NAME]	->  (이 / 이낙연)	OR	(p / person :wiki "이낙연" :name (이 / 이름 :op1 "이낙연"))
+"장관" [CV_POSITION]	->  :mod (장 / 장관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장관))
+"장관" [CV_POSITION]	->  :mod (장 / 장관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장관))
+"조" [PS_NAME]	->  (조 / 조)	OR	(p / person :wiki "조?" :name (이 / 이름 :op1 "조"))
+"총리" [CV_POSITION]	->  :mod (총 / 총리)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총리))
+"후보" [CV_POSITION]	->  :mod (후 / 후보)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후보))
+"후보자" [CV_POSITION]	->  :mod (후 / 후보자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후보자))
+"후보자" [CV_POSITION]	->  :mod (후 / 후보자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후보자))
+-- VERBALIZED ------------------------------------
+(고 / 고위 :mod (비 / 비리-00))
+(공 / 공직 :mod (고 / 고위-00))
+(배 / 배제-01 :mod (원 / 원천-00))
+(부 / 부 :mod (법 / 법무-00))
+(비 / 비리-00 :mod (대 / 대-01))
+(수 / 수-00 :mod (상 / 상당-01))
+(시 / 시절 :mod (후 / 후보-00))
+(원 / 원천 :mod (공 / 공직-00))
+(원 / 원칙-00 :mod (배 / 배제-01))
+(자 / 자 :mod (후 / 후보-00))
+(자 / 자 :mod (후 / 후보-00))
+(파 / 파행 :mod (인 / 인사-00))
+(후 / 후보 :mod (장 / 장관-00))
+(후 / 후보 :mod (장 / 장관-00))
+
+
+# ::id snt5.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 정우택 자유한국당 대표 권한대행 겸 원내대표는 "(조 수석이) 정상적으로 운영위 회의에 참석하고 청와대 인사 관련자를 출석시켜 정부 인사 시스템을 점검해야 한다"고 밝혔다.
+# ::note
+-- FRAMES ----------------------------------------
+대표 : VERBAL_NOUN
+	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
+대표 : VERBAL_NOUN
+	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
+정상적 : DERIVED_NON-ENTRY -> (정 / 정상적-00) ?
+운영 : VERBAL_NOUN
+	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
+참석 : VERBAL_NOUN
+	- attend		(참 / 참석-01 :ARG0 agent :ARG1 thing_attended)
+관련 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관련자-00) ?
+	- relate		(관 / 관련-01 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+점검 : VERBAL_NOUN
+	- inspect		(점 / 점검-01 :ARG0 agent :ARG1 entity_inspected)
+밝히 : VERB
+	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
+	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"대표 권한대행" [CV_POSITION]	->  :mod (대 / 대표권한대행)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대표 권한대행))
+"수석" [CV_POSITION]	->  :mod (수 / 수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석))
+"원내대표" [CV_POSITION]	->  :mod (원 / 원내대표)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (원 / 원내대표))
+"자유한국당" [OGG_ECONOMY]	->  (자 / 자유한국당)	OR	(c / company|organization :wiki "자유한국당" :name (이 / 이름 :op1 "자유한국당"))
+"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
+"정우택" [PS_NAME]	->  (정 / 정우택)	OR	(p / person :wiki "정우택?" :name (이 / 이름 :op1 "정우택"))
+"조" [PS_NAME]	->  (조 / 조)	OR	(p / person :wiki "조?" :name (이 / 이름 :op1 "조"))
+"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
+-- VERBALIZED ------------------------------------
+(관 / 관련-01 :mod (인 / 인사-00))
+(권 / 권한-00 :mod (대 / 대표-01))
+(대 / 대표-01 :mod (원 / 원내-00))
+(대 / 대행 :mod (권 / 권한-00))
+(시 / 시스템 :mod (인 / 인사-00))
+(위 / 위-00 :mod (운 / 운영-01))
+(인 / 인사 :mod (정 / 정부-00))
+(자 / 자 :ARG0-of (관 / 관련-01))
+(적 / 적 :mod (정 / 정상-00))
+(회 / 회의 :mod (위 / 위-00))
+
+
+# ::id snt6.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 김동철 국민의당 원내대표도 "안경환 낙마, 김상곤 논문표절 등 인사 참사가 끊이지 않고 있기 때문에 청와대 인사검증 시스템을 점검할 필요가 있다"며 "조 수석의 (운영위) 출석은 너무나 당연하다"고 조 수석의 운영위 출석을 요구했다.
+# ::note
+-- FRAMES ----------------------------------------
+대표 : VERBAL_NOUN
+	- represent		(대 / 대표-01 :ARG0 entity_taking_place_of_other :ARG1 entity_being_substituted_by_the_other)
+표절 : VERBAL_NOUN
+	- plagiarize		(표 / 표절-01 :ARG0 copyist :ARG1 original :ARG2 copy)
+끊이 : REDUCED_VERB_DETECTED
+	- cut_off		(끊 / 끊-01 :ARG0 cutter :ARG1 thing_cut)
+점검 : VERBAL_NOUN
+	- inspect		(점 / 점검-01 :ARG0 agent :ARG1 entity_inspected)
+필요 : VERBAL_NOUN
+	- necessary		(필 / 필요-01 :ARG1 thing_being_necessary :ARG2 necessary_to)
+있 : ** UNUSED_OR_NON-ENTRY **
+운영 : VERBAL_NOUN
+	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+당연하 : VERB
+	- natural		(당 / 당연하-01 :ARG1 proposition)
+운영 : VERBAL_NOUN
+	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+요구 : VERBAL_NOUN
+	- request		(요 / 요구-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"국민의당" [OGG_POLITICS]	->  (국 / 국민의당)	OR	(g / government-organization :wiki "국민의당" :name (이 / 이름 :op1 "국민의당"))
+"김동철" [PS_NAME]	->  (김 / 김동철)	OR	(p / person :wiki "김동철?" :name (이 / 이름 :op1 "김동철"))
+"김상곤" [PS_NAME]	->  (김 / 김상곤)	OR	(p / person :wiki "김상곤" :name (이 / 이름 :op1 "김상곤"))
+"수석" [CV_POSITION]	->  :mod (수 / 수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석))
+"수석" [CV_POSITION]	->  :mod (수 / 수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석))
+"안경환" [PS_NAME]	->  (안 / 안경환)	OR	(p / person :wiki "안경환" :name (이 / 이름 :op1 "안경환"))
+"원내대표" [CV_POSITION]	->  :mod (원 / 원내대표)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (원 / 원내대표))
+"조" [PS_NAME]	->  (조 / 조)	OR	(p / person :wiki "조?" :name (이 / 이름 :op1 "조"))
+"조" [PS_NAME]	->  (조 / 조)	OR	(p / person :wiki "조?" :name (이 / 이름 :op1 "조"))
+"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
+-- VERBALIZED ------------------------------------
+(검 / 검증 :mod (인 / 인사-00))
+(대 / 대표-01 :mod (원 / 원내-00))
+(시 / 시스템 :mod (검 / 검증-00))
+(원 / 원내 :mod (당 / 당-00))
+(위 / 위-00 :mod (운 / 운영-01))
+(위 / 위-00 :mod (운 / 운영-01))
+(참 / 참사 :mod (인 / 인사-00))
+(출 / 출석-01 :mod (위 / 위-00))
+(표 / 표절-01 :mod (논 / 논문-00))
+
+
+# ::id snt7.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 하지만 청와대는 민정수석의 운영위 출석은 전례가 없는 일이라고 선을 긋고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+운영 : VERBAL_NOUN
+	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+없 : ** UNUSED_OR_NON-ENTRY **
+일 : VERBAL_NOUN
+	- rise		(일 / 일-01 :ARG1 thing_rising)
+긋 : VERB
+	- mark		(긋 / 긋-01 :ARG0 agent :ARG1 limit,_line :ARG2 marked_on)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"민정수석" [CV_POSITION]	->  :mod (민 / 민정수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (민 / 민정수석))
+"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
+-- VERBALIZED ------------------------------------
+(수 / 수석 :mod (민 / 민정-00))
+(위 / 위-00 :mod (운 / 운영-01))
+(출 / 출석-01 :mod (위 / 위-00))
+
+
+# ::id snt8.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 청와대 관계자는 20일 "민정수석이 운영위에 참석하지 않는 게 관례"라고 잘라 말했다.
+# ::note
+-- FRAMES ----------------------------------------
+관계 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (관 / 관계자-00) ?
+	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
+	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
+운영 : VERBAL_NOUN
+	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
+참석 : VERBAL_NOUN
+	- attend		(참 / 참석-01 :ARG0 agent :ARG1 thing_attended)
+자르 : VERB
+	- cut		(자 / 자르-01 :ARG0 agent :ARG1 thing_cut)
+말하 : VERB
+	- say		(말 / 말하-01 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+	- say_definitely-CV		(말 / 말하-02 :ARG0 agent :ARG1 utterance :ARG2 hearer)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"20일" [DT_DAY]	->  :time|duration (2 / 20일)	OR	:time (d / date-entity :day 20)	OR	:duration (t / temporal-quantity :quant 20 :unit (일 / 일))  
+"민정수석" [CV_POSITION]	->  :mod (민 / 민정수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (민 / 민정수석))
+"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
+-- VERBALIZED ------------------------------------
+(수 / 수석 :mod (민 / 민정-00))
+(위 / 위-00 :mod (운 / 운영-01))
+(자 / 자 :ARG0-of (관 / 관계-01))
+
+
+# ::id snt9.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 결국 이날 열린 운영위 회의는 조 수석의 출석을 둘러싸고 여야 간 대치가 벌어지다 파행됐다.
+# ::note
+-- FRAMES ----------------------------------------
+이날열리 : DERIVED_NON-ENTRY
+열리 : REDUCED_VERB_DETECTED
+	- hold		(열 / 열-01 :ARG0 thing_holding :ARG1 thing_held)
+	- open		(열 / 열-02 :ARG0 thing_opening :ARG1 thing_opened)
+운영 : VERBAL_NOUN
+	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
+출석 : VERBAL_NOUN
+	- attend		(출 / 출석-01 :ARG0 thing_attending :ARG1 thing_attended)
+둘러싸 : VERB
+	- surround		(둘 / 둘러싸-01 :ARG0 causal_agent :ARG1 thing_surrounded :ARG2 thing_surrounding)
+대치 : VERBAL_NOUN
+	- confront		(대 / 대치-01 :ARG0 agent :ARG1 entity_confronted)
+벌어지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"수석" [CV_POSITION]	->  :mod (수 / 수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석))
+"조" [PS_NAME]	->  (조 / 조)	OR	(p / person :wiki "조?" :name (이 / 이름 :op1 "조"))
+-- VERBALIZED ------------------------------------
+(위 / 위-00 :mod (운 / 운영-01))
+(이 / 이날 :mod (결 / 결국-00))
+(회 / 회의 :mod (위 / 위-00))
+
+
+# ::id snt10.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 청와대는 아예 대통령 비서실장을 위원장으로 하는 인사추천위원회를 가동해 조 수석의 인사 책임론을 불식시키고 부담을 덜어주려는 모양새다.
+# ::note
+-- FRAMES ----------------------------------------
+비서실 : DERIVED_NON-ENTRY -> (비 / 비서실-00) ?
+위원장 : DERIVED_NON-ENTRY -> (위 / 위원장-00) ?
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+추천 : VERBAL_NOUN
+	- recommend		(추 / 추천-01 :ARG0 thing_recommending :ARG1 thing_recommended :ARG2 recommend_as :ARG3 recommend_for)
+위원회 : DERIVED_NON-ENTRY -> (위 / 위원회-00) ?
+가동 : VERBAL_NOUN
+	- operate		(가 / 가동-01 :ARG0 agent :ARG1 thing_operated)
+책임론 : DERIVED_NON-ENTRY -> (책 / 책임론-00) ?
+불식 : VERBAL_NOUN
+	- eradicate		(불 / 불식-01 :ARG0 remover :ARG1 thing_removed)
+부담 : VERBAL_NOUN
+	- bear		(부 / 부담-01 :ARG0 agent :ARG1 expense)
+덜 : VERB
+	- reduce		(덜 / 덜-01 :ARG0 causer :ARG1 thing_falling)
+모양새 : DERIVED_NON-ENTRY -> (모 / 모양새-00) ?
+-- FORCE CONVERT ---------------------------------
+(책 / 책임지-01)
+:ARG1-of (새 / 새롭-01)
+-- NE TYPES --------------------------------------
+"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
+"비서실장" [CV_POSITION]	->  :mod (비 / 비서실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (비 / 비서실장))
+"수석" [CV_POSITION]	->  :mod (수 / 수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석))
+"위원장" [CV_POSITION]	->  :mod (위 / 위원장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (위 / 위원장))
+"인사추천위원회" [OGG_POLITICS]	->  (인 / 인사추천위원회)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "인사추천위원회"))
+"조" [PS_NAME]	->  (조 / 조)	OR	(p / person :wiki "조?" :name (이 / 이름 :op1 "조"))
+"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
+-- VERBALIZED ------------------------------------
+(론 / 론 :mod (책 / 책임-00))
+(비 / 비서 :mod (대 / 대통령-00))
+(새 / 새 :mod (모 / 모양-00))
+(실 / 실 :mod (비 / 비서-00))
+(위 / 위원-00 :mod (추 / 추천-01))
+(장 / 장 :mod (위 / 위원-00))
+(책 / 책임 :mod (인 / 인사-00))
+(추 / 추천-01 :mod (인 / 인사-00))
+(회 / 회 :mod (위 / 위원-00))
+
+
+# ::id snt11.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 인사추천위는 연일 불거지는 인사실패에 안경환 전 법무부 장관 후보자가 결국 자진 사퇴를 택하자 체계적인 인사검증을 위해 도입된 인사시스템이다.
+# ::note
+-- FRAMES ----------------------------------------
+추천 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (추 / 추천위-00) ?
+	- recommend		(추 / 추천-01 :ARG0 thing_recommending :ARG1 thing_recommended :ARG2 recommend_as :ARG3 recommend_for)
+연일불거지 : DERIVED_NON-ENTRY
+불거지 : VERB
+	- arise		(불 / 불거지-01 :ARG1 thing_arising)
+실패 : VERBAL_NOUN
+	- fail		(실 / 실패-01 :ARG1 thing_failing :ARG2 task)
+법무부 : DERIVED_NON-ENTRY -> (법 / 법무부-00) ?
+후보자 : DERIVED_NON-ENTRY -> (후 / 후보자-00) ?
+사퇴 : VERBAL_NOUN
+	- resign		(사 / 사퇴-01 :ARG0 resigner :ARG1 position_resigned)
+택하 : VERB
+	- select		(택 / 택하-01 :ARG0 selector :ARG1 thing_selected :ARG2 selected_from :ARG3 selected_for)
+체계적 : DERIVED_NON-ENTRY -> (체 / 체계적-00) ?
+위하 : VERB
+	- in_order_to		(위 / 위하-01 :ARG0 thing :ARG1 thing_pursued)
+도입 : VERBAL_NOUN
+	- introduce		(도 / 도입-01 :ARG0 introducer :ARG1 entity_introduced :ARG2 introduced_from :ARG3 introduced_to)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"법무부" [OGG_POLITICS]	->  (법 / 법무부)	OR	(g / government-organization :wiki "법무부?" :name (이 / 이름 :op1 "법무부"))
+"안경환" [PS_NAME]	->  (안 / 안경환)	OR	(p / person :wiki "안경환" :name (이 / 이름 :op1 "안경환"))
+"인사추천위" [OGG_POLITICS]	->  (인 / 인사추천위)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "인사추천위"))
+"장관" [CV_POSITION]	->  :mod (장 / 장관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (장 / 장관))
+"후보자" [CV_POSITION]	->  :mod (후 / 후보자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (후 / 후보자))
+-- VERBALIZED ------------------------------------
+(검 / 검증 :mod (인 / 인사-00))
+(부 / 부 :mod (법 / 법무-00))
+(사 / 사퇴-01 :mod (자 / 자진-00))
+(시 / 시스템 :mod (인 / 인사-00))
+(실 / 실패-01 :mod (인 / 인사-00))
+(위 / 위 :ARG0-of (추 / 추천-01))
+(자 / 자 :mod (후 / 후보-00))
+(자 / 자진 :mod (결 / 결국-00))
+(적 / 적 :mod (체 / 체계-00))
+(추 / 추천-01 :mod (인 / 인사-00))
+(후 / 후보 :mod (장 / 장관-00))
+
+
+# ::id snt12.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 인사추천위는 비서실장을 위원장으로 하고 인사수석이 간사를 맡는다.
+# ::note
+-- FRAMES ----------------------------------------
+추천 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (추 / 추천위-00) ?
+	- recommend		(추 / 추천-01 :ARG0 thing_recommending :ARG1 thing_recommended :ARG2 recommend_as :ARG3 recommend_for)
+비서실 : DERIVED_NON-ENTRY -> (비 / 비서실-00) ?
+위원장 : DERIVED_NON-ENTRY -> (위 / 위원장-00) ?
+하 : VERB
+	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
+	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
+	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
+	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
+	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
+	- at		(하 / 하-06 :ARG1 time)
+맡 : VERB
+	- have_charge_of		(맡 / 맡-01 :ARGA causer :ARG0 agent :ARG1 thing_had_charge_of)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"간사" [CV_POSITION]	->  :mod (간 / 간사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (간 / 간사))
+"비서실장" [CV_POSITION]	->  :mod (비 / 비서실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (비 / 비서실장))
+"위원장" [CV_POSITION]	->  :mod (위 / 위원장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (위 / 위원장))
+"인사수석" [CV_POSITION]	->  :mod (인 / 인사수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (인 / 인사수석))
+"인사추천위" [OGG_POLITICS]	->  (인 / 인사추천위)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "인사추천위"))
+-- VERBALIZED ------------------------------------
+(수 / 수석 :mod (인 / 인사-00))
+(실 / 실 :mod (비 / 비서-00))
+(위 / 위 :ARG0-of (추 / 추천-01))
+(장 / 장 :mod (위 / 위원-00))
+(추 / 추천-01 :mod (인 / 인사-00))
+
+
+# ::id snt13.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 민정수석은 인사추천위원으로 참여하게 된다.
+# ::note
+-- FRAMES ----------------------------------------
+참여 : VERBAL_NOUN
+	- participate_in		(참 / 참여-01 :ARGA causer :ARG0 thing_participating :ARG1 participate_in)
+되 : VERB
+	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
+	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
+	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
+	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
+-- FORCE CONVERT ---------------------------------
+-- NE TYPES --------------------------------------
+"민정수석" [CV_POSITION]	->  :mod (민 / 민정수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (민 / 민정수석))
+"인사추천위원" [CV_POSITION]	->  :mod (인 / 인사추천위원)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (인 / 인사추천위원))
+-- VERBALIZED ------------------------------------
+(수 / 수석 :mod (민 / 민정-00))
+
+
+# ::id snt14.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 청와대 인선에 관해 조 수석 책임이 일정 부분 덜어지는 셈이다.
+# ::note
+-- FRAMES ----------------------------------------
+관하 : VERB
+	- regarding		(관 / 관하-01 :ARG1 thing_under_consideration :ARG2 with_regard_to)
+일정 : VERBAL_NOUN
+	- constant		(일 / 일정-01 :ARG1 thing_being_constant)
+부분덜어지 : DERIVED_NON-ENTRY
+덜어지 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+(책 / 책임지-01)
+-- NE TYPES --------------------------------------
+"수석" [CV_POSITION]	->  :mod (수 / 수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석))
+"조" [PS_NAME]	->  (조 / 조)	OR	(p / person :wiki "조?" :name (이 / 이름 :op1 "조"))
+"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
+-- VERBALIZED ------------------------------------
+(부 / 부분-00 :mod (일 / 일정-01))
+(책 / 책임 :mod (수 / 수석-00))
+
+
+# ::id snt15.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 청와대는 아예 지금까지 문제가 불거진 인사 검증 실패에 대해서도 '조국 책임론'과 선을 긋고 있다.
+# ::note
+-- FRAMES ----------------------------------------
+문제 : VERBAL_NOUN
+	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
+불거지 : VERB
+	- arise		(불 / 불거지-01 :ARG1 thing_arising)
+실패 : VERBAL_NOUN
+	- fail		(실 / 실패-01 :ARG1 thing_failing :ARG2 task)
+대하 : VERB
+	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
+책임론 : DERIVED_NON-ENTRY -> (책 / 책임론-00) ?
+긋 : VERB
+	- mark		(긋 / 긋-01 :ARG0 agent :ARG1 limit,_line :ARG2 marked_on)
+-- FORCE CONVERT ---------------------------------
+(책 / 책임지-01)
+-- NE TYPES --------------------------------------
+"청와대" [OGG_POLITICS]	->  (청 / 청와대)	OR	(g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
+-- VERBALIZED ------------------------------------
+(검 / 검증 :mod (인 / 인사-00))
+(론 / 론 :mod (책 / 책임-00))
+(실 / 실패-01 :mod (검 / 검증-00))
+
+
+# ::id snt16.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 임종석 대통령 비서실장은 이날 인사추천위 1차 회의 결과 브리핑에서 "(인사추천위 가동) 이전에도 이미 이전 정부의 인사위원회를 준용해 저희가 (인사를) 의논해왔고, 수석비서관들 회의는 비서실장이 주도해왔다"며 "그렇기 때문에 이전 검증에도 문제가 있다면 그 책임은 비서실장에 있다"고 밝혔다.
+# ::note
+-- FRAMES ----------------------------------------
+비서실 : DERIVED_NON-ENTRY -> (비 / 비서실-00) ?
+추천 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (추 / 추천위-00) ?
+	- recommend		(추 / 추천-01 :ARG0 thing_recommending :ARG1 thing_recommended :ARG2 recommend_as :ARG3 recommend_for)
+브리핑 : VERBAL_NOUN
+	- brief		(브 / 브리핑-01 :ARG0 giver :ARG1 information :ARG2 receiver)
+추천 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (추 / 추천위-00) ?
+	- recommend		(추 / 추천-01 :ARG0 thing_recommending :ARG1 thing_recommended :ARG2 recommend_as :ARG3 recommend_for)
+가동 : VERBAL_NOUN
+	- operate		(가 / 가동-01 :ARG0 agent :ARG1 thing_operated)
+이전 : VERBAL_NOUN
+	- move		(이 / 이전-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
+이전 : VERBAL_NOUN
+	- move		(이 / 이전-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
+위원회 : DERIVED_NON-ENTRY -> (위 / 위원회-00) ?
+준용하 : DERIVED_NON-ENTRY
+의논하 : DERIVED_NON-ENTRY
+비서관 : DERIVED_NON-ENTRY -> (비 / 비서관-00) ?
+비서실 : DERIVED_NON-ENTRY -> (비 / 비서실-00) ?
+주도 : VERBAL_NOUN
+	- lead		(주 / 주도-01 :ARG0 thing_leading :ARG1 thing_led)
+그렇 : VERB
+	- be_so		(그 / 그렇-01 :ARG1 entity_being_so)
+이전 : VERBAL_NOUN
+	- move		(이 / 이전-01 :ARG0 agent :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
+문제 : VERBAL_NOUN
+	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
+있 : ** UNUSED_OR_NON-ENTRY **
+비서실 : DERIVED_NON-ENTRY -> (비 / 비서실-00) ?
+있 : ** UNUSED_OR_NON-ENTRY **
+밝히 : VERB
+	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
+	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
+-- FORCE CONVERT ---------------------------------
+(책 / 책임지-01)
+-- NE TYPES --------------------------------------
+"1차" [QT_ORDER]	->  :ord (1 / 1차)	OR	:ord (o / ordinal-entity :value 1차)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
+"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
+"비서실장" [CV_POSITION]	->  :mod (비 / 비서실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (비 / 비서실장))
+"비서실장" [CV_POSITION]	->  :mod (비 / 비서실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (비 / 비서실장))
+"비서실장" [CV_POSITION]	->  :mod (비 / 비서실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (비 / 비서실장))
+"수석비서관" [CV_POSITION]	->  :mod (수 / 수석비서관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석비서관))
+"인사위원회" [OGG_POLITICS]	->  (인 / 인사위원회)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "인사위원회"))
+"인사추천위" [OGG_POLITICS]	->  (인 / 인사추천위)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "인사추천위"))
+"인사추천위" [OGG_POLITICS]	->  (인 / 인사추천위)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "인사추천위"))
+"임종석" [PS_NAME]	->  (임 / 임종석)	OR	(p / person :wiki "임종석" :name (이 / 이름 :op1 "임종석"))
+"정부" [OGG_POLITICS]	->  (정 / 정부)	OR	(g / government-organization :wiki "정부" :name (이 / 이름 :op1 "정부"))
+-- VERBALIZED ------------------------------------
+(검 / 검증-00 :mod (이 / 이전-01))
+(결 / 결과 :mod (회 / 회의-00))
+(관 / 관 :mod (비 / 비서-00))
+(브 / 브리핑-01 :mod (결 / 결과-00))
+(비 / 비서 :mod (대 / 대통령-00))
+(비 / 비서 :mod (수 / 수석-00))
+(실 / 실 :mod (비 / 비서-00))
+(실 / 실 :mod (비 / 비서-00))
+(실 / 실 :mod (비 / 비서-00))
+(위 / 위 :ARG0-of (추 / 추천-01))
+(위 / 위 :ARG0-of (추 / 추천-01))
+(위 / 위원 :mod (인 / 인사-00))
+(인 / 인사 :mod (이 / 이날-00))
+(정 / 정부-00 :mod (이 / 이전-01))
+(추 / 추천-01 :mod (인 / 인사-00))
+(추 / 추천-01 :mod (인 / 인사-00))
+(회 / 회 :mod (위 / 위원-00))
+
+
+# ::id snt17.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 인사 실패의 책임이 조 수석이 아닌 비서실장인 자신에게 있다는 것이다.
+# ::note
+-- FRAMES ----------------------------------------
+실패 : VERBAL_NOUN
+	- fail		(실 / 실패-01 :ARG1 thing_failing :ARG2 task)
+비서실 : DERIVED_NON-ENTRY -> (비 / 비서실-00) ?
+자신 : VERBAL_NOUN
+	- confident		(자 / 자신 :ARG0 thing_confident :ARG1 confident_in)
+있 : ** UNUSED_OR_NON-ENTRY **
+-- FORCE CONVERT ---------------------------------
+(책 / 책임지-01)
+-- NE TYPES --------------------------------------
+"비서실장" [CV_POSITION]	->  :mod (비 / 비서실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (비 / 비서실장))
+"수석" [CV_POSITION]	->  :mod (수 / 수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석))
+"조" [PS_NAME]	->  (조 / 조)	OR	(p / person :wiki "조?" :name (이 / 이름 :op1 "조"))
+-- VERBALIZED ------------------------------------
+(실 / 실 :mod (비 / 비서-00))
+(실 / 실패-01 :mod (인 / 인사-00))
+
+
+# ::id snt18.E2017.NEWS.012 ::date 2020-03-00 ::annotator YOUR_NAME
+# ::snt 임 실장의 이러한 발언은 야권에서 제기하는 조 수석에 책임을 묻는 것을 의식한 것으로 해석된다.
+# ::note
+-- FRAMES ----------------------------------------
+이러하 : ** UNUSED_OR_NON-ENTRY **
+발언 : VERBAL_NOUN
+	- utter		(발 / 발언-01 :ARG0 speaker :ARG1 utterance)
+제기 : VERBAL_NOUN
+	- bring_up		(제 / 제기-01 :ARG0 agent :ARG1 thing_brought_up :ARG2 bring_up_to)
+묻 : VERB
+	- ask		(묻 / 묻-01 :ARG0 asker :ARG1 question :ARG2 hearer)
+	- bury		(묻 / 묻-02 :ARG0 agent :ARG1 thing_buried :ARG2 location)
+	- stick		(묻 / 묻-03 :ARG0 causal_agent :ARG1 thing_sticking :ARG2 stuck_to)
+의식 : VERBAL_NOUN
+	- conscious_of		(의 / 의식-01 :ARG0 thing_being_conscious :ARG1 conscious_of)
+해석 : VERBAL_NOUN
+	- interpret		(해 / 해석-01 :ARG0 interpreter :ARG1 proposition)
+-- FORCE CONVERT ---------------------------------
+(책 / 책임지-01)
+-- NE TYPES --------------------------------------
+"수석" [CV_POSITION]	->  :mod (수 / 수석)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (수 / 수석))
+"실장" [CV_POSITION]	->  :mod (실 / 실장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (실 / 실장))
+"임" [PS_NAME]	->  (임 / 임)	OR	(p / person :wiki "임?" :name (이 / 이름 :op1 "임"))
+"조" [PS_NAME]	->  (조 / 조)	OR	(p / person :wiki "조?" :name (이 / 이름 :op1 "조"))
+-- VERBALIZED ------------------------------------
