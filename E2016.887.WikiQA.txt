@@ -109,259 +109,124 @@
 		:ARG2 (대 / 대통령
 			:ord (o / ordinal-entity :value 3))))
 
-# ::id snt1.E2016.887.03_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
+# ::id snt1.E2016.887.03_A_02 ::date 2020-03-12 ::annotator gabrielle ::preferred True
 # ::snt 1776년에 독립 선언서를 기초하고, 초대 국무장관을 지냈다.
 # ::note
--- KPB FRAMES ----------------------------------------
-독립 : VERBAL_NOUN
-	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
-	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
-선언 : VERBAL_NOUN
-	- declare		(선 / 선언-01 :ARG0 announcer :ARG1 utterance :ARG2 hearer)
-서 : VERBAL_NOUN
-	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
-	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
-	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
-기초 : VERBAL_NOUN
-	- base		(기 / 기초-01 :ARG1 thing_based :ARG2 based_on)
-초대 : VERBAL_NOUN
-	- invite		(초 / 초대-01 :ARG0 agent :ARG1 thing_invited :ARG2 invite_to)
-지내 : VERB
-	- get_along		(지 / 지내-01 :ARG0 agent :ARG1 got_along_with :ARG2 manner)
-	- serve		(지 / 지내-02 :ARG0 agent :ARG1 job,_position)
--- ETRI FRAMES (MARKED with '-00') ------------------
-기초하 : DERIVED_NON-ENTRY
-지내 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1776년" [DT_YEAR]	->  :time|duration (1 / 1776년)	OR	:time (d / date-entity :year 1776)	OR	:duration (t / temporal-quantity :quant 1776 :unit (년 / 년))  
-"국무장관" [CV_POSITION]	->  :mod (국 / 국무장관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (국 / 국무장관))
-"독립 선언서" [AFW_DOCUMENT]	->  (독 / 독립선언서)	OR	(p / publication? :wiki - :name (이 / 이름 :op1 "독립" :op2 "선언서"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(국 / 국무 :mod (초 / 초대))
-(서 / 서 :ARG1 (선 / 선언))
-(선 / 선언 :ARG1 (독 / 독립))
-(장 / 장관 :mod (국 / 국무))
+(a / and
+	:op1 (기 / 기초-01
+		:ARG1 (p / publication :wiki "미국_독립선언#독립선언문" :name (이 / 이름 :op1 "독립" :op2 "선언서")))
+	:op2 (h / have-org-role-91
+		:ARG2 (국 / 국무장관
+			:ord (o / ordinal-entity :value 1)))
+	:time (d / date-entity :year 1776))
 
-
-# ::id snt0.E2016.887.03_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.887.03_Q_01 ::date 2020-03-12 ::annotator gabrielle ::preferred True
 # ::snt 미국 독립 선언서를 기초했으며, 미국의 제3대 대통령이 된 사람은 누구일까?
 # ::note
--- KPB FRAMES ----------------------------------------
-독립 : VERBAL_NOUN
-	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
-	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
-선언 : VERBAL_NOUN
-	- declare		(선 / 선언-01 :ARG0 announcer :ARG1 utterance :ARG2 hearer)
-서 : VERBAL_NOUN
-	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
-	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
-	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
-기초 : VERBAL_NOUN
-	- base		(기 / 기초-01 :ARG1 thing_based :ARG2 based_on)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- ETRI FRAMES (MARKED with '-00') ------------------
-기초하 : DERIVED_NON-ENTRY
-되 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"대통령" [CV_POSITION]	->  :mod (대 / 대통령)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (대 / 대통령))
-"미국 독립 선언서" [AFW_DOCUMENT]	->  (미 / 미국독립선언서)	OR	(p / publication? :wiki "미국_독립선언" :name (이 / 이름 :op1 "미국" :op2 "독립" :op3 "선언서"))
-"미국" [LCP_COUNTRY]	->  (미 / 미국)	OR	(c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
-"제3대" [QT_ORDER]	->  :ord (제 / 제3대)	OR	:ord (o / ordinal-entity :value 제3대)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(서 / 서 :ARG1 (선 / 선언))
-(선 / 선언 :ARG1 (독 / 독립))
+(a / amr-unknown
+	:ARG2-of (기 / 기초-01
+		:ARG1 (p / publication :wiki "미국_독립선언#독립선언문" :name (이 / 이름 :op1 "미국" :op2 "독립" :op3 "선언서")))
+	:ARG0-of (h / have-org-role-91
+		:ARG1 (c / country :wiki "미국" :name (이2 / 이름 :op1 "미국"))
+		:ARG2 (대 / 대통령
+			:ord (o / ordinal-entity :value 3))))
 
-
-# ::id snt0.E2016.887.04_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.887.04_Q_01 ::date 2020-03-12 ::annotator gabrielle ::preferred True
 # ::snt 가장조에 들어가는 올림표는 몇 개일까?
 # ::note
--- KPB FRAMES ----------------------------------------
-가 : VERBAL_NOUN
-	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
-	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
-	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
-	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
-	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
-	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
-들어가 : VERB
-	- go_in		(들 / 들어가-01 :ARG0 thing_going_in :ARG2 start_point :ARG3 end_point)
-	- enter		(들 / 들어가-02 :ARG1 entity_entering :ARG2 place_or_thing_entered)
-	- begin		(들 / 들어가-03 :ARG0 beginner :ARG1 theme)
-	- flow_in-CV		(들 / 들어가-04 :ARG1 thing_flowing :ARG2 start_point :ARG3 end_point)
--- ETRI FRAMES (MARKED with '-00') ------------------
-들어가 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(장 / 장조 :mod (가 / 가))
+(들 / 들어가-02
+	:ARG1 (m / musical-note :wiki "올림표" :name (이 / 이름 :op1 "올림표")
+		:quant (a / amr-unknown) :unit (개 / 개))
+	:ARG2 (m2 / musical-key :wiki "가장조" :name (이2 / 이름 :op1 "가장조")))
 
-
-# ::id snt0.E2016.887.05_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.887.05_Q_01 ::date 2020-03-12 ::annotator gabrielle ::preferred True
 # ::snt 가장 빠른 시간대를 사용하는 국가는 어디일까?
 # ::note
--- KPB FRAMES ----------------------------------------
-빠르 : VERB
-	- quick		(빠 / 빠르-01 :ARG1 entity_being_quick)
-시간대 : DERIVED_NON-ENTRY -> (시 / 시간대-00) ?
-사용 : VERBAL_NOUN
-	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
--- ETRI FRAMES (MARKED with '-00') ------------------
-빠르 : ** UNUSED_OR_NON-ENTRY **
-시간대 : DERIVED_NON-ENTRY -> (시 / 시간대-00) ?
-사용하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(대 / 대 :mod (시 / 시간))
+(사 / 사용-01
+	:ARG0 (a / amr-unknown
+		:mod (국 / 국가))
+	:ARG1 (시 / 시간대
+		:ARG1-of (h / have-degree-91
+			:ARG2 (빠 / 빠르-01)
+			:ARG3 (가 / 가장))))
 
-
-# ::id snt0.E2016.887.06_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.887.06_A_01 ::date 2020-03-12 ::annotator gabrielle ::preferred True
 # ::snt 1914년 6월 하와이 가훌루 '아후이마누' 지역에 대조선 국민군단이 창설되고, 8월 29일 대조선국민군단 사관학교 낙성식이 거행된다.
 # ::note
--- KPB FRAMES ----------------------------------------
-창설 : VERBAL_NOUN
-	- establish		(창 / 창설-01 :ARG0 agent :ARG1 thing_established)
-낙성식 : DERIVED_NON-ENTRY -> (낙 / 낙성식-00) ?
-거행 : VERBAL_NOUN
-	- perform		(거 / 거행-01 :ARG0 agent :ARG1 thing_performed)
--- ETRI FRAMES (MARKED with '-00') ------------------
-창설되 : DERIVED_NON-ENTRY
-낙성식 : DERIVED_NON-ENTRY -> (낙 / 낙성식-00) ?
-거행되 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1914년 6월" [DT_OTHERS]	->  :time|duration (1 / 1914년6월)	OR	:time (d / date-entity :year 1914 :month 6)	OR	:duration (t / temporal-quantity :quant 1914 :unit (년 / 년))  (t / temporal-quantity :quant 6 :unit (월 / 월))  
-"8월 29일" [DT_OTHERS]	->  :time|duration (8 / 8월29일)	OR	:time (d / date-entity :month 8 :day 29)	OR	:duration (t / temporal-quantity :quant 8 :unit (월 / 월))  (t / temporal-quantity :quant 29 :unit (일 / 일))  
-"가훌루" [LCP_COUNTY]	->  (가 / 가훌루)	OR	(c / county :wiki - :name (이 / 이름 :op1 "가훌루"))
-"대조선 국민군단" [OGG_MILITARY]	->  (대 / 대조선국민군단)	OR	(m / military :wiki - :name (이 / 이름 :op1 "대조선" :op2 "국민군단"))
-"대조선국민군단 사관학교" [OGG_EDUCATION]	->  (대 / 대조선국민군단사관학교)	OR	(s / school|university :wiki - :name (이 / 이름 :op1 "대조선국민군단" :op2 "사관학교"))
-"아후이마누" [LC_OTHERS]	->  (아 / 아후이마누)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "아후이마누"))
-"하와이" [LCP_PROVINCE]	->  (하 / 하와이)	OR	(p / province :wiki "하와이주" :name (이 / 이름 :op1 "하와이"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(군 / 군단 :mod (국 / 국민))
-(군 / 군단 :mod (국 / 국민))
-(낙 / 낙성 :mod (학 / 학교))
-(사 / 사관 :mod (군 / 군단))
-(식 / 식 :mod (낙 / 낙성))
-(학 / 학교 :mod (사 / 사관))
+(a / and
+	:op1 (창 / 창설-01
+		:ARG1 (m / military :wiki - :name (이 / 이름 :op1 "대조선" :op2 "국민군단"))
+		:location (l / location :wiki - :name (이2 / 이름 :op1 "아후이마누")
+			:location (c / county :wiki - :name (이3 / 이름 :op1 "가훌루")
+				:location (s / state :wiki "하와이주" :name (이4 / 이름 :op1 "하와이"))))
+		:time (d / date-entity :year 1914 :month 6))
+	:op2 (거 / 거행-01
+		:ARG1 (낙 / 낙성식
+			:mod (s2 / school :wiki - :name (이5 / 이름 :op1 "대조선국민군단" :op2 "사관학교")))
+		:time (d2 / date-entity :month 8 :day 29)))
 
-
-# ::id snt0.E2016.887.06_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.887.06_A_02 ::date 2020-03-12 ::annotator gabrielle ::preferred True
 # ::snt 1914년 6월 10일 하와이 오아후(Oahu)섬 코올아우(Koolau)지방 카할루우(Kahaluu)의 아후이마누(Ahuimanu)농장에서 독립군사관을 양성할 목적으로 만든 군사교육단체.
 # ::note
--- KPB FRAMES ----------------------------------------
-독립 : VERBAL_NOUN
-	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
-	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
-양성 : VERBAL_NOUN
-	- train		(양 / 양성-01 :ARG0 thing_training :ARG1 thing_trained)
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-교육 : VERBAL_NOUN
-	- educate		(교 / 교육-01 :ARG0 teacher :ARG1 subject :ARG2 student)
--- ETRI FRAMES (MARKED with '-00') ------------------
-양성하 : DERIVED_NON-ENTRY
-만들 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1914년 6월 10일" [DT_OTHERS]	->  :time|duration (1 / 1914년6월10일)	OR	:time (d / date-entity :year 1914 :month 6 :day 10)	OR	:duration (t / temporal-quantity :quant 1914 :unit (년 / 년))  (t / temporal-quantity :quant 6 :unit (월 / 월))  (t / temporal-quantity :quant 10 :unit (일 / 일))  
-"Ahuimanu" [LC_OTHERS]	->  (A / Ahuimanu)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "Ahuimanu"))
-"Kahaluu" [LCP_COUNTY]	->  (K / Kahaluu)	OR	(c / county :wiki - :name (이 / 이름 :op1 "Kahaluu"))
-"Koolau" [LCP_COUNTY]	->  (K / Koolau)	OR	(c / county :wiki - :name (이 / 이름 :op1 "Koolau"))
-"Oahu" [LCG_ISLAND]	->  (O / Oahu)	OR	(i / island :wiki - :name (이 / 이름 :op1 "Oahu"))
-"독립군사관" [CV_OCCUPATION]	->  :mod (독 / 독립군사관)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (독 / 독립군사관))
-"아후이마누" [LC_OTHERS]	->  (아 / 아후이마누)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "아후이마누"))
-"오아후" [LCG_ISLAND]	->  (오 / 오아후)	OR	(i / island :wiki "오아후섬" :name (이 / 이름 :op1 "오아후"))
-"카할루우" [LCP_COUNTY]	->  (카 / 카할루우)	OR	(c / county :wiki - :name (이 / 이름 :op1 "카할루우"))
-"코올아우" [LCP_COUNTY]	->  (코 / 코올아우)	OR	(c / county :wiki - :name (이 / 이름 :op1 "코올아우"))
-"하와이" [LCP_PROVINCE]	->  (하 / 하와이)	OR	(p / province :wiki "하와이주" :name (이 / 이름 :op1 "하와이"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(교 / 교육 :mod (군 / 군사))
-(군 / 군 :mod (독 / 독립))
-(단 / 단체 :mod (교 / 교육))
-(사 / 사관 :mod (군 / 군))
+(단 / 단체
+	:purpose (교 / 교육-01
+		:mod (군 / 군사))
+	:ARG1-of (만 / 만들-01
+		:purpose (양 / 양성-01
+			:ARG1 (사 / 사관
+				:ARG2-of (h / have-org-role-91
+					:ARG1 (m / military :wiki "독립군_(조선)" :name (이 / 이름 :op1 "독립군")))))
+		:location (농 / 농장
+			:location (l / location :wiki - :name (이2 / 이름 :op1 "아후이마누")
+				:location (c / county :wiki - :name (이3 / 이름 :op1 "카할루우")
+					:location (i / island :wiki "오아후섬" :name (이4 / 이름 :op1 "오아후")
+						:location (s / state :wiki "하와이주" :name (이5 / 이름 :op1 "하와이"))))))
+		:time (d / date-entity :year 1914 :month 6 :day 10)))
 
-
-# ::id snt0.E2016.887.06_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.887.06_Q_01 ::date 2020-03-12 ::annotator gabrielle ::preferred True
 # ::snt 미주 지역에서 만들어진 군사 조직은 무엇일까?
 # ::note
--- KPB FRAMES ----------------------------------------
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-조직 : VERBAL_NOUN
-	- organize		(조 / 조직-01 :ARG0 agent :ARG1 thing_organized :ARG2 organized_with)
--- ETRI FRAMES (MARKED with '-00') ------------------
-만들 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"미주" [LCP_COUNTRY]	->  (미 / 미주)	OR	(c / country :wiki "아메리카" :name (이 / 이름 :op1 "미주"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(조 / 조직 :mod (군 / 군사))
+(만 / 만들-01
+	:ARG1 (a / amr-unknown
+		:mod (조 / 조직
+			:mod (군 / 군사)))
+	:location (c / continent :wiki "아메리카" :name (이 / 이름 :op1 "미주")))
 
-
-# ::id snt0.E2016.887.07_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.887.07_A_01 ::date 2020-03-12 ::annotator gabrielle ::preferred True
 # ::snt 주도는 바르셀로나이다.
 # ::note
--- KPB FRAMES ----------------------------------------
-주도 : VERBAL_NOUN
-	- lead		(주 / 주도-01 :ARG0 thing_leading :ARG1 thing_led)
--- ETRI FRAMES (MARKED with '-00') ------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"바르셀로나" [LCP_CITY]	->  (바 / 바르셀로나)	OR	(c / city :wiki "바르셀로나" :name (이 / 이름 :op1 "바르셀로나"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
+(h / have-org-role-91
+	:ARG0 (c / city :wiki "바르셀로나" :name (이 / 이름 :op1 "바르셀로나"))
+	:ARG2 (주 / 주도))
 
-
-# ::id snt0.E2016.887.07_A_02 ::date 2020-03-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.887.07_A_02 ::date 2020-03-12 ::annotator gabrielle ::preferred True
 # ::snt 에스파냐 카탈루냐 자치지방(autonomous community) 바르셀로나주(州)의 주도(州都).
 # ::note
--- KPB FRAMES ----------------------------------------
-주도 : VERBAL_NOUN
-	- lead		(주 / 주도-01 :ARG0 thing_leading :ARG1 thing_led)
--- ETRI FRAMES (MARKED with '-00') ------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"바르셀로나주" [LCP_PROVINCE]	->  (바 / 바르셀로나주)	OR	(p / province :wiki "바르셀로나주" :name (이 / 이름 :op1 "바르셀로나주"))
-"에스파냐" [LCP_COUNTRY]	->  (에 / 에스파냐)	OR	(c / country :wiki "스페인" :name (이 / 이름 :op1 "에스파냐"))
-"카탈루냐 자치지방" [LC_OTHERS]	->  (카 / 카탈루냐자치지방)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "카탈루냐" :op2 "자치지방"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(지 / 지방 :mod (자 / 자치))
+(h / have-org-role-91
+	:ARG1 (p / province :wiki "바르셀로나주" :name (이 / 이름 :op1 "바르셀로나주")
+		:location (c / country-region :wiki "카탈루냐" :name (이2 / 이름 :op1 "카탈루냐")
+			:mod (자 / 자치지방)
+			:location (c2 / country :wiki "스페인" :name (이3 / 이름 :op1 "에스파냐"))))
+	:ARG2 (주 / 주도))
 
-
-# ::id snt0.E2016.887.07_Q_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
+# ::id snt0.E2016.887.07_Q_01 ::date 2020-03-12 ::annotator gabrielle ::preferred True
 # ::snt 주도가 바르셀로나이며 스페인으로부터 분리 독립을 요구하고 있는 자치 지방은 어디일까?
 # ::note
--- KPB FRAMES ----------------------------------------
-주도 : VERBAL_NOUN
-	- lead		(주 / 주도-01 :ARG0 thing_leading :ARG1 thing_led)
-분리 : VERBAL_NOUN
-	- separate		(분 / 분리-01 :ARG0 agent :ARG1 thing_separated :ARG2 separated_from)
-독립 : VERBAL_NOUN
-	- become_independent		(독 / 독립-01 :ARG0 agent :ARG1 independent_of)
-	- separate		(독 / 독립-02 :ARG0 causer :ARG1 thing_separated :ARG2 separated_from)
-요구 : VERBAL_NOUN
-	- request		(요 / 요구-01 :ARG0 asker :ARG1 favor :ARG2 hearer)
--- ETRI FRAMES (MARKED with '-00') ------------------
-요구하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"바르셀로나" [LCP_CITY]	->  (바 / 바르셀로나)	OR	(c / city :wiki "바르셀로나" :name (이 / 이름 :op1 "바르셀로나"))
-"스페인" [LCP_COUNTRY]	->  (스 / 스페인)	OR	(c / country :wiki "스페인" :name (이 / 이름 :op1 "스페인"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(독 / 독립 :ARG1 (분 / 분리))
-(지 / 지방 :mod (자 / 자치))
-
+(a / and
+	:op1 (h / have-org-role-91
+		:ARG0 (c / city :wiki "바르셀로나" :name (이 / 이름 :op1 "바르셀로나"))
+		:ARG1 (a2 / amr-unknown
+			:mod (자 / 자치지방))
+		:ARG2 (주 / 주도))
+	:op2 (요 / 요구-01
+		:ARG0 a2
+		:ARG1 (독 / 독립-02
+			:ARG1 a2
+			:ARG2 (c2 / country :wiki "스페인" :name (이2 / 이름 :op1 "스페인"))
+			:manner (분 / 분리-01
+				:ARG1 a2
+				:ARG2 c2))
+		:ARG2 c2))
 
 # ::id snt0.E2016.887.08_A_01 ::date 2020-03-00 ::annotator gabrielle ::preferred True
 # ::snt 전형적인 다포형식의 건물로 평가된다.
