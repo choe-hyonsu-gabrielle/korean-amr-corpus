@@ -42,8 +42,8 @@
 # ::id snt0.E2016.837.02_Q_01 ::date 2020-03-08 ::annotator gabrielle ::preferred IAA
 # ::snt 삼국시대 백제의 지방 장관으로 맞는 것은?
 # ::note amr-choice 아닙니다
-(맞 / 맞-02
-	:ARG1 (장 / 장관
+(a / amr-unknown
+	:domain (장 / 장관
 		:mod (지 / 지방)
 		:ARG2-of (h / have-org-role-91
 			:ARG1 (c / country :wiki "백제" :name (이 / 이름 :op1 "백제")))
