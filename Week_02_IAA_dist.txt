@@ -68,7 +68,7 @@
 					:ARG0 (사 / 사람
 						:ARG0-of (관 / 관련-01
 							:ARG2 (인2 / 인사
-								:mod (g / government-organization :wiki "청와대" :name (이5 / 이름 :op1 "청와대")))))
+								:mod (g2 / government-organization :wiki "청와대" :name (이5 / 이름 :op1 "청와대")))))
 					:ARG1 회)))))
 
 # ::id snt6.E2017.NEWS.012 ::date 2020-03-15 ::annotator gabrielle
@@ -77,14 +77,14 @@
 (요 / 요구-01
 	:ARG0 (p / person :wiki "김동철_(1955년)" :name (이 / 이름 :op1 "김동철")
 		:ARG0-of (h / have-org-role-91
-			:ARG1 (p / political-party :wiki "국민의당" :name (이2 / 이름 :op1 "국민의당"))
+			:ARG1 (p2 / political-party :wiki "국민의당" :name (이2 / 이름 :op1 "국민의당"))
 			:ARG2 (원 / 원내대표)))
 	:ARG1 (출 / 출석-01
-		:ARG0 (p2 / person :wiki "조국_(법학자)" :name (이3 / 이름 :op1 "조")
+		:ARG0 (p3 / person :wiki "조국_(법학자)" :name (이3 / 이름 :op1 "조")
 			:ARG0-of (h2 / have-org-role-91
 				:ARG2 (수 / 수석)))
 		:ARG1 (g / government-organization :wiki "대한민국_국회_국회운영위원회" :name (이4 / 이름 :op1 "운영위")))
-	:ARG2 p2
+	:ARG2 p3
 	:manner (말 / 말하-01
 		:ARG0 p
 		:ARG1 (a / and
@@ -100,9 +100,9 @@
 						:mod (인2 / 인사)
 						:example (등 / 등
 							:op1 (낙 / 낙마-00
-								:ARG1 (p3 / person :wiki "안경환" :name (이6 / 이름 :op1 "안경환")))
+								:ARG1 (p4 / person :wiki "안경환" :name (이6 / 이름 :op1 "안경환")))
 							:op2 (표 / 표절-01
-								:ARG0 (p4 / person :wiki "김상곤" :name (이7 / 이름 :op1 "김상곤"))
+								:ARG0 (p5 / person :wiki "김상곤" :name (이7 / 이름 :op1 "김상곤"))
 								:ARG2 (논 / 논문))))))
 			:op2 (당 / 당연하-01
 				:ARG1 출
@@ -173,11 +173,11 @@
 		:manner (가 / 가동-01
 			:mod (아 / 아예)
 			:ARG0 g
-			:ARG1 (g2 / government-organization :wiki - :name (이 / 이름 :op1 "인사추천위원회")
+			:ARG1 (g2 / government-organization :wiki - :name (이3 / 이름 :op1 "인사추천위원회")
 				:ARG1-of (h3 / have-org-role-91
 					:ARG0 (사 / 사람
 						:ARG2-of (h4 / have-org-role-91
-							:ARG1 (g3 / government-organization :wiki "대한민국_대통령비서실" :name (이3 / 이름 :op1 "대통령" :op2 "비서실"))
+							:ARG1 (g3 / government-organization :wiki "대한민국_대통령비서실" :name (이4 / 이름 :op1 "대통령" :op2 "비서실"))
 							:ARG2 (비 / 비서실장)))
 					:ARG2 (위 / 위원장))))))
 
@@ -197,9 +197,9 @@
 			:ARG1-of (불 / 불거지-01
 				:time (연 / 연일)))
 		:op2 (사 / 사퇴-01
-			:ARG0 (p / person :wiki "안경환" :name (이 / 이름 :op1 "안경환")
+			:ARG0 (p / person :wiki "안경환" :name (이2 / 이름 :op1 "안경환")
 					:ARG0-of (h / have-org-role-91
-						:ARG1 (g / government-organization :wiki "대한민국_법무부" :name (이2 / 이름 :op1 "법무부"))
+						:ARG1 (g2 / government-organization :wiki "대한민국_법무부" :name (이3 / 이름 :op1 "법무부"))
 						:ARG2 (후 / 후보자
 							:mod (장 / 장관))
 						:time (전 / 전)))
@@ -288,7 +288,7 @@
 					:ARG1 g
 					:ARG2 비))
 			:ARG1 (회 / 회의-00
-				:ARG0 (비 / 비서관
+				:ARG0 (비2 / 비서관
 					:mod (수 / 수석))))
 		:op3 (책 / 책임지-01
 			:ARG1 p
