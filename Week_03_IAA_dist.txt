@@ -1,361 +1,205 @@
 # ::id snt0.E2016.888.01_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 보석(保釋)은 구속 중인 피고인을 석방하는 제도이다.
 # ::note
--- KPB FRAMES ----------------------------------------
-구속 : VERBAL_NOUN
-	- detain		(구 / 구속-01 :ARG0 police_etc :ARG1 criminal :ARG2 crime)
-피고인 : DERIVED_NON-ENTRY -> (피 / 피고인-00) ?
-석방 : VERBAL_NOUN
-	- release		(석 / 석방-01 :ARG0 releaser :ARG1 prisoner)
--- ETRI FRAMES (MARKED with '-00') ------------------
-피고인 : DERIVED_NON-ENTRY -> (피 / 피고인-00) ?
-석방하 : DERIVED_NON-ENTRY
-제도 : VERBAL_NOUN
-	- draft		(제 / 제도-00 :ARG0 행동주 :ARG1 대상)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"保釋" [CV_POLICY]	->  (保 / 保釋)	OR	(p / policy* :wiki - :name (이 / 이름 :op1 "保釋"))
-"보석" [CV_POLICY]	->  (보 / 보석)	OR	(p / policy* :wiki "보석" :name (이 / 이름 :op1 "보석"))
-"피고인" [CV_POSITION]	->  :mod (피 / 피고인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (피 / 피고인))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(인 / 인 :mod (피 / 피고))
-
+(제 / 제도
+	:domain (보 / 보석)
+	:mod (석 / 석방-01
+		:ARG1 (피 / 피고인
+			:ARG1-of (구 / 구속-01))))
 
 # ::id snt0.E2016.888.01_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt <법률> 보석 보증금을 받거나 보증인을 세우고 형사 피고인을 구류에서 풀어 주는 일.
 # ::note
--- KPB FRAMES ----------------------------------------
-보증 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (보 / 보증금-00) ?
-	- guarantee		(보 / 보증-01 :ARG0 entity_making_guarantee :ARG1 guarantee)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
-보증 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (보 / 보증인-00) ?
-	- guarantee		(보 / 보증-01 :ARG0 entity_making_guarantee :ARG1 guarantee)
-세우 : ** UNUSED_OR_NON-ENTRY **
-피고인 : DERIVED_NON-ENTRY -> (피 / 피고인-00) ?
-풀 : VERB
-	- solve		(풀 / 풀-01 :ARG0 solver :ARG1 the_problem)
-	- release		(풀 / 풀-02 :ARG0 releaser :ARG1 thing_released)
-	- warm_up		(풀 / 풀-03 :ARG0 agent :ARG1 body)
-일 : VERBAL_NOUN
-	- rise		(일 / 일-01 :ARG1 thing_rising)
--- ETRI FRAMES (MARKED with '-00') ------------------
-보증금 : DERIVED_NON-ENTRY -> (보 / 보증금-00) ?
-받 : ** UNUSED_OR_NON-ENTRY **
-보증인 : DERIVED_NON-ENTRY -> (보 / 보증인-00) ?
-세우 : ** UNUSED_OR_NON-ENTRY **
-피고인 : DERIVED_NON-ENTRY -> (피 / 피고인-00) ?
-풀 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"보석" [CV_POLICY]	->  (보 / 보석)	OR	(p / policy* :wiki "보석" :name (이 / 이름 :op1 "보석"))
-"보증금" [CV_LAW]	->  (보 / 보증금)	OR	(l / law :wiki "보증금" :name (이 / 이름 :op1 "보증금"))
-"보증인" [CV_POSITION]	->  :mod (보 / 보증인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (보 / 보증인))
-"피고인" [CV_POSITION]	->  :mod (피 / 피고인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (피 / 피고인))
-"형사" [CV_OCCUPATION]	->  :mod (형 / 형사)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (형 / 형사))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(금 / 금 :ARG0-of (보 / 보증))
-(보 / 보증 :mod (보 / 보석))
-(인 / 인 :ARG0-of (보 / 보증))
-(인 / 인 :mod (피 / 피고))
-(피 / 피고 :mod (형 / 형사))
-
+(일 / 일
+	:topic (법 / 법률)
+	:mod (풀 / 풀어주-00
+		:ARG1 (피 / 피고인
+			:mod (형 / 형사))
+		:source (구 / 구류)
+		:manner (o / or
+			:op1 (받 / 받-01
+				:ARG1 (금 / 금액
+					:purpose (보 / 보증-01
+						:ARG1 (보2 / 보석))))
+			:op2 (서 / 서-01
+				:ARG0 (사 / 사람
+					:ARG0-of (보3 / 보증-01))))))
 
 # ::id snt0.E2016.888.01_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 피고인에게 인정되는 것은 무엇일까?
 # ::note
--- KPB FRAMES ----------------------------------------
-피고인 : DERIVED_NON-ENTRY -> (피 / 피고인-00) ?
-인정 : VERBAL_NOUN
-	- admit		(인 / 인정-01 :ARG0 thing_admitting :ARG1 thing_admitted)
--- ETRI FRAMES (MARKED with '-00') ------------------
-피고인 : DERIVED_NON-ENTRY -> (피 / 피고인-00) ?
-인정되 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"피고인" [CV_POSITION]	->  :mod (피 / 피고인)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (피 / 피고인))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(인 / 인 :mod (피 / 피고))
-
+(인 / 인정-01
+	:ARG1 (a / amr-unknown)
+	:beneficiary (피 / 피고인))
 
 # ::id snt0.E2016.888.02_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 마그리트의 데페이즈망은 전혀 관계가 없는 일상적 사물을 전혀 예기치 않은 상황에서 만나게 하여 현실에서 미처 느끼지 못하던 신비로운 충격을 불러일으킨다.
 # ::note
--- KPB FRAMES ----------------------------------------
-관계 : VERBAL_NOUN
-	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
-	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-없 : ** UNUSED_OR_NON-ENTRY **
-일상적 : DERIVED_NON-ENTRY -> (일 / 일상적-00) ?
-예기 : VERBAL_NOUN
-	- anticipate		(예 / 예기-01 :ARG0 agent :ARG1 thing_anticipated)
-만나 : VERB
-	- meet		(만 / 만나-01 :ARG0 person/entity/obeject_meeting :ARG1 person/entity/obeject_being_met)
-느끼 : VERB
-	- feel		(느 / 느끼-01 :ARG0 feeler :ARG1 thing_felt)
-신비 : VERBAL_NOUN
-	- mysterious		(신 / 신비-01 :ARG1 thing_being_mysterious)
-불러일으키 : VERB
-	- create		(불 / 불러일으키-01 :ARG0 creator :ARG1 thing_created)
--- ETRI FRAMES (MARKED with '-00') ------------------
-없 : ** UNUSED_OR_NON-ENTRY **
-일상적 : DERIVED_NON-ENTRY -> (일 / 일상적-00) ?
-예기하 : DERIVED_NON-ENTRY
-만나 : ** UNUSED_OR_NON-ENTRY **
-느끼 : ** UNUSED_OR_NON-ENTRY **
-신비롭 : DERIVED_NON-ENTRY
-불러일으키 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"데페이즈망" [TR_ART]	->  (데 / 데페이즈망)	OR	(t / theory* :wiki "데페이즈망" :name (이 / 이름 :op1 "데페이즈망"))
-"마그리트" [PS_NAME]	->  (마 / 마그리트)	OR	(p / person :wiki "르네_마그리트" :name (이 / 이름 :op1 "마그리트"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(적 / 적 :mod (일 / 일상))
-
+(불 / 불러일으키-01
+	:ARG0 (데 / 데페이즈망
+		:mod (p / person :wiki "르네_마그리트" :name (이 / 이름 :op1 "마그리트")))
+	:ARG1 (충 / 충격
+		:ARG1-of (신 / 신비-01)
+		:ARG1-of (느 / 느끼-01
+			:polarity -
+			:location (현 / 현실)
+			:mod (미 / 미처)))
+	:manner (만 / 만나-01
+		:cause 데
+		:ARG1 (사 / 사물
+			:mod (일 / 일상)
+			:ARG1-of (관 / 관계-02
+				:polarity -
+				:mod (전 / 전혀)))
+		:time (상 / 상황
+			:ARG1-of (예 / 예기-01
+				:polarity -
+				:mod (전2 / 전혀)))))
 
 # ::id snt0.E2016.888.02_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 어떤 물건을 일상적인 환경에서 이질적인 환경으로 옮겨 그 물건으로부터 실용적인 성격을 배제하여 물체끼리의 기이한 만남을 현출시키는 기법이다.
 # ::note
--- KPB FRAMES ----------------------------------------
-일상적 : DERIVED_NON-ENTRY -> (일 / 일상적-00) ?
-이질적 : DERIVED_NON-ENTRY -> (이 / 이질적-00) ?
-옮기 : REDUCED_VERB_DETECTED
-	- move		(옮 / 옮-01 :ARG0 mover :ARG1 thing_moved :ARG2 start_point :ARG3 end_point)
-실용적 : DERIVED_NON-ENTRY -> (실 / 실용적-00) ?
-배제 : VERBAL_NOUN
-	- exclude		(배 / 배제-01 :ARG0 agent :ARG1 thing_excluded :ARG2 excluded_from)
-물체끼리 : DERIVED_NON-ENTRY -> (물 / 물체끼리-00) ?
-기이하 : ** UNUSED_OR_NON-ENTRY **
-현출시키 : DERIVED_NON-ENTRY
--- ETRI FRAMES (MARKED with '-00') ------------------
-일상적 : DERIVED_NON-ENTRY -> (일 / 일상적-00) ?
-이질적 : DERIVED_NON-ENTRY -> (이 / 이질적-00) ?
-옮기 : ** UNUSED_OR_NON-ENTRY **
-실용 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (실 / 실용적-00) ?
-	- put_((a_thing))_to_practical_use_		(실 / 실용-00 :ARG0 행동주 :ARG1 대상)
-배제하 : DERIVED_NON-ENTRY
-물체끼리 : DERIVED_NON-ENTRY -> (물 / 물체끼리-00) ?
-기이하 : ** UNUSED_OR_NON-ENTRY **
-현출시키 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(끼 / 끼리 :mod (물 / 물체))
-(적 / 적 :mod (실 / 실용))
-(적 / 적 :mod (이 / 이질))
-(적 / 적 :mod (일 / 일상))
-
+(기 / 기법
+	:mod (현 / 현출-00
+		:ARG1 (만 / 만나-01
+			:ARG0 (물 / 물체)
+			:ARG1 (물2 / 물체)
+			:ARG1-of (기2 / 기이-00))
+		:manner (배 / 배제-01
+			:ARG1 (성 / 성격
+				:mod (실 / 실용적))
+			:ARG2 (물3 / 물건
+				:mod (어 / 어떤))
+			:manner (옮 / 옮-01
+				:ARG1 물3
+				:ARG2 (환 / 환경
+					:mod (일 / 일상))
+				:ARG3 (환2 / 환경
+					:mod (이 / 이질적))))))
 
 # ::id snt0.E2016.888.02_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 낯익은 물체를 낯선 장소에 놓는 초현실주의 회화에서 사용하는 기법은 무엇일까?
 # ::note
--- KPB FRAMES ----------------------------------------
-낯익 : ** UNUSED_OR_NON-ENTRY **
-낯설 : ** UNUSED_OR_NON-ENTRY **
-놓 : VERB
-	- put		(놓 / 놓-01 :ARG0 putter :ARG1 thing_put :ARG2 where_put)
-	- about		(놓 / 놓-02 :ARG0 impersonal :ARG1 about_what)
-초현실주의 : DERIVED_NON-ENTRY -> (초 / 초현실주의-00) ?
-사용 : VERBAL_NOUN
-	- use		(사 / 사용-01 :ARG0 agent :ARG1 thing_used :ARG2 purpose)
--- ETRI FRAMES (MARKED with '-00') ------------------
-낯익 : ** UNUSED_OR_NON-ENTRY **
-낯설 : ** UNUSED_OR_NON-ENTRY **
-놓 : ** UNUSED_OR_NON-ENTRY **
-초현실주의 : DERIVED_NON-ENTRY -> (초 / 초현실주의-00) ?
-사용하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"초현실주의" [TR_ART]	->  (초 / 초현실주의)	OR	(t / theory* :wiki "초현실주의" :name (이 / 이름 :op1 "초현실주의"))
-"회화" [FD_ART]	->  (회 / 회화)	OR	(s / study-field|group* :wiki "회화" :name (이 / 이름 :op1 "회화"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(회 / 회화 :mod (현 / 현실주의))
-
+(a / amr-unknown
+	:domain (기 / 기법
+		:ARG1-of (사 / 사용-01
+			:ARG2 (회 / 회화
+				:mod (초 / 초현실주의)))
+		:mod (놓 / 놓-01
+			:ARG1 (물 / 물체
+				:ARG1-of (낯 / 낯익-00))
+			:ARG2 (장 / 장소
+				:ARG1-of (낯2 / 낯설-00)))))
 
 # ::id snt0.E2016.888.03_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 빛이 통과하는 속력이 가장 빠른 매질은 무엇일까?
 # ::note
--- KPB FRAMES ----------------------------------------
-통과 : VERBAL_NOUN
-	- pass_through		(통 / 통과-01 :ARG0 entity_passing_through :ARG1 point,_barrier)
-	- pass		(통 / 통과-02 :ARG0 agent :ARG1 law)
-빠르 : VERB
-	- quick		(빠 / 빠르-01 :ARG1 entity_being_quick)
--- ETRI FRAMES (MARKED with '-00') ------------------
-통과하 : DERIVED_NON-ENTRY
-빠르 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-
+(h / have-degree-91
+	:ARG1 (a / amr-unknown)
+	:ARG2 (빠 / 빠르-01
+		:ARG1 (속 / 속력
+			:mod (통 / 통과-01
+				:ARG1 (빛 / 빛))))
+	:ARG3 (가 / 가장)
+	:ARG4 (매 / 매질))
 
 # ::id snt0.E2016.888.04_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt <역사> 1337년부터 1453년까지 백여 년 동안 영국과 프랑스가 여러 차례 일으킨 전쟁.
 # ::note
--- KPB FRAMES ----------------------------------------
-차례일으키 : DERIVED_NON-ENTRY
-일으키 : VERB
-	- create		(일 / 일으키-01 :ARG0 creator :ARG1 thing_created :ARG2 patient)
--- ETRI FRAMES (MARKED with '-00') ------------------
-차례일으키 : DERIVED_NON-ENTRY
-일으키 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1337년부터 1453년까지 백여 년 동안" [DT_DURATION]	->  :time|duration (1 / 1337년부터1453년까지백여년동안)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 1337))	OR :duration (t / temporal-quantity :quant 1337 :unit (년 / 년))  
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-
+(전 / 전쟁
+	:topic (역 / 역사)
+	:ARG1-of (일 / 일으키-01
+		:ARG0 (a / and
+			:op1 (c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+			:op2 (c2 / country :wiki "프랑스" :name (이2 / 이름 :op1 "프랑스")))
+		:quant (여 / 여러-차례)
+		:duration (여2 / 여
+			:op1 (t / temporal-quantity :quant 100 :unit (년 / 년)))
+		:time (d / date-inverval
+			:op1 (d2 / date-entity :year 1337)
+			:op2 (d3 / date-entity :year 1453)))
 
 # ::id snt1.E2016.888.04_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 프랑스의 왕위 계승 문제와 양모(羊毛) 공업 지대인 플랑드르에서의 주도권 싸움이 원인이 되어 영국군이 프랑스에 침입함으로써 일어났는데, 잔 다르크 등의 활약으로 프랑스의 승리로 끝났다.
 # ::note
--- KPB FRAMES ----------------------------------------
-문제 : VERBAL_NOUN
-	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
-주도 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (주 / 주도권-00) ?
-	- lead		(주 / 주도-01 :ARG0 thing_leading :ARG1 thing_led)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-침입 : VERBAL_NOUN
-	- penetrate		(침 / 침입-01 :ARG0 agent :ARG1 place_or_thing_entered)
-일어나 : VERB
-	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
-활약 : VERBAL_NOUN
-	- act		(활 / 활약-01 :ARG0 agent :ARG1 role)
-승리 : VERBAL_NOUN
-	- win		(승 / 승리-01 :ARG0 winner :ARG1 loser)
-끝나 : VERB
-	- finish		(끝 / 끝나-01 :ARG0 agent :ARG1 thing_finishing)
-	- terminate		(끝 / 끝나-02 :ARG1 thing_closing)
--- ETRI FRAMES (MARKED with '-00') ------------------
-계승 : VERBAL_NOUN
-	- succeed		(계 / 계승-00 :ARG0 행동주 :ARG1 대상 :ARG2 착점)
-주도권 : DERIVED_NON-ENTRY -> (주 / 주도권-00) ?
-되 : ** UNUSED_OR_NON-ENTRY **
-침입하 : DERIVED_NON-ENTRY
-일어나 : ** UNUSED_OR_NON-ENTRY **
-끝나 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"羊毛" [CV_CLOTHING]	->  (羊 / 羊毛)	OR	(p / product|clothing* :wiki - :name (이 / 이름 :op1 "羊毛"))
-"양모" [CV_CLOTHING]	->  (양 / 양모)	OR	(p / product|clothing* :wiki "모섬유" :name (이 / 이름 :op1 "양모"))
-"영국군" [OGG_MILITARY]	->  (영 / 영국군)	OR	(m / military :wiki "영국군" :name (이 / 이름 :op1 "영국군"))
-"잔 다르크" [PS_NAME]	->  (잔 / 잔다르크)	OR	(p / person :wiki "잔_다르크" :name (이 / 이름 :op1 "잔" :op2 "다르크"))
-"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
-"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
-"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
-"플랑드르" [LC_OTHERS]	->  (플 / 플랑드르)	OR	(l / location? :wiki "플란데런" :name (이 / 이름 :op1 "플랑드르"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(계 / 계승 :mod (왕 / 왕위))
-(권 / 권 :ARG0-of (주 / 주도))
-(문 / 문제 :mod (계 / 계승))
-(지 / 지대 :mod (공 / 공업))
-
+(a / and
+	:op1 (c / cause-01
+		:ARG0 (침 / 침입-01
+			:ARG0 (m / military :wiki "영국군" :name (이 / 이름 :op1 "영국군"))
+			:ARG1 (c2 / country :wiki "프랑스" :name (이2 / 이름 :op1 "프랑스")))
+		:cause (싸 / 싸우-01
+			:purpose (a2 / and
+				:op1 (문 / 문제-01
+					:ARG1 (계 / 계승-00
+						:ARG1 (왕 / 왕위
+							:mod c2)))
+				:op2 (권 / 권한
+					:mod (주 / 주도-01
+						:ARG1 (l / location :wiki "플란데런" :name (이3 / 이름 :op1 "플랑드르")
+							:mod (공 / 공업지대
+								:mod (양 / 양모))))))))
+	:op2 (승 / 승리-01
+		:ARG0 c2
+		:ARG1 m
+		:cause (활 / 활약-01
+			:ARG0 (등 / 등
+				:op1 (p / person :wiki "잔_다르크" :name (이4 / 이름 :op1 "잔" :op2 "다르크"))))))
 
 # ::id snt0.E2016.888.04_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 프랑스의 왕위계승 문제와 플랑드르 지방의 양모(羊毛) 공업을 둘러싼 이해관계가 얽혀 영국군이 침입한 것이 발단되었다.
 # ::note
--- KPB FRAMES ----------------------------------------
-문제 : VERBAL_NOUN
-	- become_an_issue		(문 / 문제-01 :ARG1 thing_becoming_an_issue :ARG2 become_an_issue_with)
-둘러싸 : VERB
-	- surround		(둘 / 둘러싸-01 :ARG0 causal_agent :ARG1 thing_surrounded :ARG2 thing_surrounding)
-이해 : VERBAL_NOUN
-	- understand		(이 / 이해-01 :ARG0 understander :ARG1 thing_understood)
-관계 : VERBAL_NOUN
-	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
-	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-얽히 : REDUCED_VERB_DETECTED
-	- entwine		(얽 / 얽-01 :ARG0 agent :ARG1 thing_entwined)
-침입 : VERBAL_NOUN
-	- penetrate		(침 / 침입-01 :ARG0 agent :ARG1 place_or_thing_entered)
-발단되 : DERIVED_NON-ENTRY
--- ETRI FRAMES (MARKED with '-00') ------------------
-계승 : VERBAL_NOUN
-	- succeed		(계 / 계승-00 :ARG0 행동주 :ARG1 대상 :ARG2 착점)
-둘러싸 : ** UNUSED_OR_NON-ENTRY **
-얽히 : ** UNUSED_OR_NON-ENTRY **
-침입하 : DERIVED_NON-ENTRY
-발단되 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"羊毛" [CV_CLOTHING]	->  (羊 / 羊毛)	OR	(p / product|clothing* :wiki - :name (이 / 이름 :op1 "羊毛"))
-"양모" [CV_CLOTHING]	->  (양 / 양모)	OR	(p / product|clothing* :wiki "모섬유" :name (이 / 이름 :op1 "양모"))
-"영국군" [OGG_MILITARY]	->  (영 / 영국군)	OR	(m / military :wiki "영국군" :name (이 / 이름 :op1 "영국군"))
-"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
-"플랑드르" [LC_OTHERS]	->  (플 / 플랑드르)	OR	(l / location? :wiki "플란데런" :name (이 / 이름 :op1 "플랑드르"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(계 / 계승 :mod (왕 / 왕위))
-(관 / 관계 :ARG1 (이 / 이해))
-(문 / 문제 :mod (계 / 계승))
-
+(c / cause-01
+	:ARG0 (침 / 침입-01
+		:ARG0 (m / military :wiki "영국군" :name (이 / 이름 :op1 "영국군"))
+		:ARG1 (c2 / country :wiki "프랑스" :name (이2 / 이름 :op1 "프랑스"))
+		:cause (a / and
+			:op1 (문 / 문제-01
+				:ARG1 (계 / 계승-00
+					:ARG1 (왕 / 왕위
+						:mod c2)))
+			:op2 (얽 / 얽-01
+				:ARG1 (이3 / 이해관계
+					:mod (둘 / 둘러싸-01
+						:ARG1 (공 / 공업
+							:mod (양 / 양모)
+							:location (l / location :wiki "플란데런" :name (이4 / 이름 :op1 "플랑드르")))))))))
 
 # ::id snt0.E2016.888.04_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 모직물 공업이 번성한 이곳을 둘러싸고 영국과 프랑스의 경제적 이해관계가 얽혀 백년 전쟁이 일어났는데, 이곳은 어디일까?
 # ::note
--- KPB FRAMES ----------------------------------------
-모직물 : DERIVED_NON-ENTRY -> (모 / 모직물-00) ?
-번성하 : DERIVED_NON-ENTRY
-둘러싸 : VERB
-	- surround		(둘 / 둘러싸-01 :ARG0 causal_agent :ARG1 thing_surrounded :ARG2 thing_surrounding)
-경제적 : DERIVED_NON-ENTRY -> (경 / 경제적-00) ?
-이해 : VERBAL_NOUN
-	- understand		(이 / 이해-01 :ARG0 understander :ARG1 thing_understood)
-관계 : VERBAL_NOUN
-	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
-	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-얽히 : REDUCED_VERB_DETECTED
-	- entwine		(얽 / 얽-01 :ARG0 agent :ARG1 thing_entwined)
-일어나 : VERB
-	- happen		(일 / 일어나 :ARG1 thing_happening :ARG2 location)
--- ETRI FRAMES (MARKED with '-00') ------------------
-모직물 : DERIVED_NON-ENTRY -> (모 / 모직물-00) ?
-번성 : VERBAL_NOUN
-	- flourish		(번 / 번성-00 :ARG0 행동주)
-둘러싸 : ** UNUSED_OR_NON-ENTRY **
-경제적 : DERIVED_NON-ENTRY -> (경 / 경제적-00) ?
-얽히 : ** UNUSED_OR_NON-ENTRY **
-일어나 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"모직물" [CV_CLOTHING]	->  (모 / 모직물)	OR	(p / product|clothing* :wiki "모섬유" :name (이 / 이름 :op1 "모직물"))
-"백년 전쟁" [EV_WAR_REVOLUTION]	->  (백 / 백년전쟁)	OR	(w / war|event :wiki "백년_전쟁" :name (이 / 이름 :op1 "백년" :op2 "전쟁"))
-"영국" [LCP_COUNTRY]	->  (영 / 영국)	OR	(c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
-"프랑스" [LCP_COUNTRY]	->  (프 / 프랑스)	OR	(c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(관 / 관계 :ARG1 (이 / 이해))
-(물 / 물 :mod (모 / 모직))
-(적 / 적 :mod (경 / 경제))
-
+(w / war :wiki "백년_전쟁" :name (이 / 이름 :op1 "백년" :op2 "전쟁")
+	:location (a / amr-unknown
+		:mod (번 / 번성-00
+			:ARG1 (공 / 공업
+				:mod (모 / 모직물))))
+	:cause (얽 / 얽-01
+		:ARG1 (이2 / 이해관계
+			:mod (경 / 경제적)
+			:poss (a2 / and
+				:op1 (c / country :wiki "영국" :name (이3 / 이름 :op1 "영국"))
+				:op2 (c2 / country :wiki "프랑스" :name (이4 / 이름 :op1 "프랑스")))
+			:topic a)))
 
 # ::id snt0.E2016.888.05_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 을구 : 소유권 이외의 권리 (지상권, 지역권, 전세권, 저당권, 임차권)에 관한 변동 및 변경사항
 # ::note
--- KPB FRAMES ----------------------------------------
-list index out of range
--- ETRI FRAMES (MARKED with '-00') ------------------
-list index out of range
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"소유권" [CV_LAW]	->  (소 / 소유권)	OR	(l / law :wiki "소유권" :name (이 / 이름 :op1 "소유권"))
-"임차권" [CV_LAW]	->  (임 / 임차권)	OR	(l / law :wiki "임대차" :name (이 / 이름 :op1 "임차권"))
-"저당권" [CV_LAW]	->  (저 / 저당권)	OR	(l / law :wiki "저당권" :name (이 / 이름 :op1 "저당권"))
-"전세권" [CV_LAW]	->  (전 / 전세권)	OR	(l / law :wiki "전세권" :name (이 / 이름 :op1 "전세권"))
-"지상권" [CV_LAW]	->  (지 / 지상권)	OR	(l / law :wiki "지상권" :name (이 / 이름 :op1 "지상권"))
-"지역권" [CV_LAW]	->  (지 / 지역권)	OR	(l / law :wiki "지역권" :name (이 / 이름 :op1 "지역권"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(권 / 권 :ARG0-of (소 / 소유))
-(권 / 권 :mod (임 / 임차))
-(권 / 권 :mod (저 / 저당))
-(권 / 권 :mod (전 / 전세))
-(권 / 권 :mod (지 / 지상))
-(권 / 권 :mod (지 / 지역))
-(사 / 사항 :mod (변 / 변경))
-
+(c / consist-01
+	:ARG1 (구 / 구 :mod "을")
+	:ARG2 (사 / 사항
+		:mod (및 / 및
+			:op1 (변 / 변동-00)
+			:op2 (변2 / 변경-01))
+		:topic (권 / 권리
+			:ARG1-of (i / include-91
+				:ARG2 (a / and
+					:op1 (지 / 지상권)
+					:op2 (지2 / 지역권)
+					:op3 (전 / 전세권)
+					:op4 (저 / 저당권)
+					:op5 (임 / 임차권)))
+			:mod (이 / 이외
+				:op1 (권2 / 권리
+					:mod (소 / 소유-01))))))
 
 # ::id snt0.E2016.888.05_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 을구는 저당권(抵當權)이라든가 임차권(賃借權) 등 소유권 이외의 권리관계를 각각 기재하며, 다시 사항란과 순위번호란으로 나누어진다.
