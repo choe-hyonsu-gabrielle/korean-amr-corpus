@@ -1718,7 +1718,7 @@
         :poss (나2 / 나라))
     :location (기 / 기슭
         :mod (산 / 산)
-        :part-of (m / mountain-range :wiki "히말라야산맥" :name (이2 / 이름 :op1 "히말라야")))
+        :part-of (m / mountain :wiki "히말라야산맥" :name (이2 / 이름 :op1 "히말라야")))
     :location (사 / 사이
         :op1 (c / country :wiki "인도" :name (이3 / 이름 :op1 "인도"))
         :op2 (c2 / country :wiki "티베트" :name (이4 / 이름 :op1 "티베트"))))

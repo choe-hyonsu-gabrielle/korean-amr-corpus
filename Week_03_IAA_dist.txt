@@ -198,246 +198,156 @@
 					:op4 (저 / 저당권)
 					:op5 (임 / 임차권)))
 			:mod (이 / 이외
-				:op1 (권2 / 권리
-					:mod (소 / 소유-01))))))
+				:op1 (소 / 소유권)))))
 
 # ::id snt0.E2016.888.05_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 을구는 저당권(抵當權)이라든가 임차권(賃借權) 등 소유권 이외의 권리관계를 각각 기재하며, 다시 사항란과 순위번호란으로 나누어진다.
-# ::note
--- KPB FRAMES ----------------------------------------
-저당권 : DERIVED_NON-ENTRY -> (저 / 저당권-00) ?
-임차권 : DERIVED_NON-ENTRY -> (임 / 임차권-00) ?
-소유 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (소 / 소유권-00) ?
-	- have		(소 / 소유-01 :ARG0 owner :ARG1 possession)
-관계 : VERBAL_NOUN
-	- concern		(관 / 관계-01 :ARG0 agent :ARG2 thing_concerned)
-	- relate		(관 / 관계-02 :ARG0 agent :ARG1 thing_under_consideration :ARG2 related_to)
-기재 : VERBAL_NOUN
-	- list		(기 / 기재-01 :ARG0 lister :ARG1 item :ARG2 list)
-사항란 : DERIVED_NON-ENTRY -> (사 / 사항란-00) ?
-번호란 : DERIVED_NON-ENTRY -> (번 / 번호란-00) ?
-나누 : VERB
-	- divide		(나 / 나누-01 :ARG0 entity_causing_separation :ARG1 thing_being_divided :ARG2 divided_into)
--- ETRI FRAMES (MARKED with '-00') ------------------
-저당권 : DERIVED_NON-ENTRY -> (저 / 저당권-00) ?
-임차권 : DERIVED_NON-ENTRY -> (임 / 임차권-00) ?
-소유권 : DERIVED_NON-ENTRY -> (소 / 소유권-00) ?
-기재하 : DERIVED_NON-ENTRY
-사항란 : DERIVED_NON-ENTRY -> (사 / 사항란-00) ?
-번호란 : DERIVED_NON-ENTRY -> (번 / 번호란-00) ?
-나누 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"抵當權" [CV_LAW]	->  (抵 / 抵當權)	OR	(l / law :wiki - :name (이 / 이름 :op1 "抵當權"))
-"賃借權" [CV_LAW]	->  (賃 / 賃借權)	OR	(l / law :wiki - :name (이 / 이름 :op1 "賃借權"))
-"소유권" [CV_LAW]	->  (소 / 소유권)	OR	(l / law :wiki "소유권" :name (이 / 이름 :op1 "소유권"))
-"임차권" [CV_LAW]	->  (임 / 임차권)	OR	(l / law :wiki "임대차" :name (이 / 이름 :op1 "임차권"))
-"저당권" [CV_LAW]	->  (저 / 저당권)	OR	(l / law :wiki "저당권" :name (이 / 이름 :op1 "저당권"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(관 / 관계 :mod (권 / 권리))
-(권 / 권 :ARG0-of (소 / 소유))
-(권 / 권 :mod (임 / 임차))
-(권 / 권 :mod (저 / 저당))
-(란 / 란 :mod (번 / 번호))
-(란 / 란 :mod (사 / 사항))
-(번 / 번호 :mod (순 / 순위))
-
+# ::note 접사 분리 문제 (사항란, 순위번호란, 임차권, 저당권, 소유권 등)
+(a / and
+	:op1 (기 / 기재-01
+		:ARG1 (관 / 관계
+			:mod (권 / 권리)
+			:mod (이 / 이외
+				:op1 (소 / 소유권))
+			:example (등 / 등
+				:op1 (저 / 저당권)
+				:op2 (임 / 임차권)))
+		:ARG2 (구 / 구 :mod "을"))
+	:op2 (나 / 나누-01
+		:ARG1 구
+		:ARG2 (a2 / and
+			:op1 (사 / 사항란)
+			:op2 (번 / 번호순위란))))
 
 # ::id snt0.E2016.888.05_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 등기부 을구에 기재되어 있는 내용으로 옳은 것은 무엇일까?
 # ::note
--- KPB FRAMES ----------------------------------------
-기재 : VERBAL_NOUN
-	- list		(기 / 기재-01 :ARG0 lister :ARG1 item :ARG2 list)
-옳 : VERB
-	- right		(옳 / 옳-01 :ARG1 entity_being_right)
--- ETRI FRAMES (MARKED with '-00') ------------------
-기재되 : DERIVED_NON-ENTRY
-옳 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(을 / 을구 :mod (등 / 등기부))
-
+(기 / 기재-01
+	:ARG1 (a / amr-unknown)
+	:ARG2 (구 / 구 :mod "을"
+		:mod (등 / 등기부)))
 
 # ::id snt0.E2016.888.06_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 요동방향의 산계는 동북동·서남서 방향으로 특히 추가령곡 이북의 북부 지방에 잘 발달되어 있다.
 # ::note
--- KPB FRAMES ----------------------------------------
-서 : VERBAL_NOUN
-	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
-	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
-	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
-발달 : VERBAL_NOUN
-	- develop		(발 / 발달-01 :ARG1 theme)
--- ETRI FRAMES (MARKED with '-00') ------------------
-발달되 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
-:mod (특 / 특히)
--- NE TYPES --------------------------------------
-"동북동" [TM_DIRECTION]	->  (동 / 동북동)	OR	(: / :direction :wiki "방위" :name (이 / 이름 :op1 "동북동"))
-"북부" [TM_DIRECTION]	->  (북 / 북부)	OR	(: / :direction :wiki "북부?" :name (이 / 이름 :op1 "북부"))
-"산계" [LCG_MOUNTAIN]	->  (산 / 산계)	OR	(m / mountain :wiki "산계?" :name (이 / 이름 :op1 "산계"))
-"서남서" [TM_DIRECTION]	->  (서 / 서남서)	OR	(: / :direction :wiki "방위" :name (이 / 이름 :op1 "서남서"))
-"요동" [LCG_BAY]	->  (요 / 요동)	OR	(b / bay :wiki "랴오둥반도" :name (이 / 이름 :op1 "요동"))
-"이북" [TM_DIRECTION]	->  (이 / 이북)	OR	(: / :direction :wiki "이북?" :name (이 / 이름 :op1 "이북"))
-"추가령곡" [LC_OTHERS]	->  (추 / 추가령곡)	OR	(l / location? :wiki - :name (이 / 이름 :op1 "추가령곡"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(동 / 동 :mod (동 / 동북))
-(방 / 방향 :mod (서 / 서))
-(서 / 서 :mod (서 / 서남))
-(지 / 지방 :mod (북 / 북부))
-
+(발 / 발달-01
+	:ARG1 (산 / 산계
+		:direction (b / bay :wiki "랴오둥반도" :name (이 / 이름 :op1 "요동")))
+	:direction (a / and
+		:op1 (동 / 동북동)
+		:op2 (서 / 서남서))
+	:location (지 / 지방
+		:mod (북 / 북부)
+		:part-of (이2 / 이북
+			:op1 (v / valley :wiki "추가령구조곡" :name (이3 / 이름 :op1 "추가령곡")))
+		:mod (특 / 특히)))
 
 # ::id snt1.E2016.888.06_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 주로 습곡구조이며 장백산맥·강남산맥·적유령산맥·묘향산맥·언진산맥·멸악산맥·함경산맥 등의 산맥이 이에 속한다.
 # ::note
--- KPB FRAMES ----------------------------------------
-구조 : VERBAL_NOUN
-	- rescue		(구 / 구조-01 :ARG0 agent :ARG1 entity_rescued)
-속하 : VERB
-	- belong_to		(속 / 속하-01 :ARG1 thing_belonging :ARG2 belong_to)
--- ETRI FRAMES (MARKED with '-00') ------------------
-속하 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"강남산맥" [LCG_MOUNTAIN]	->  (강 / 강남산맥)	OR	(m / mountain :wiki "강남산맥" :name (이 / 이름 :op1 "강남산맥"))
-"멸악산맥" [LCG_MOUNTAIN]	->  (멸 / 멸악산맥)	OR	(m / mountain :wiki "멸악산맥" :name (이 / 이름 :op1 "멸악산맥"))
-"묘향산맥" [LCG_MOUNTAIN]	->  (묘 / 묘향산맥)	OR	(m / mountain :wiki "묘향산맥" :name (이 / 이름 :op1 "묘향산맥"))
-"언진산맥" [LCG_MOUNTAIN]	->  (언 / 언진산맥)	OR	(m / mountain :wiki - :name (이 / 이름 :op1 "언진산맥"))
-"장백산맥" [LCG_MOUNTAIN]	->  (장 / 장백산맥)	OR	(m / mountain :wiki "창바이산맥" :name (이 / 이름 :op1 "장백산맥"))
-"적유령산맥" [LCG_MOUNTAIN]	->  (적 / 적유령산맥)	OR	(m / mountain :wiki "적유령산맥" :name (이 / 이름 :op1 "적유령산맥"))
-"함경산맥" [LCG_MOUNTAIN]	->  (함 / 함경산맥)	OR	(m / mountain :wiki "함경산맥" :name (이 / 이름 :op1 "함경산맥"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(구 / 구조 :mod (습 / 습곡))
-
+(a / and
+	:op1 (구 / 구조
+		:mod (습 / 습곡)
+		:mod (주 / 주로))
+	:op2 (속 / 속하-01
+		:ARG1 (산 / 산맥
+			:example (등 / 등
+				:op1 (m / mountain :wiki "창바이산맥" :name (이 / 이름 :op1 "장백산맥"))
+				:op2 (m2 / mountain :wiki "강남산맥" :name (이2 / 이름 :op1 "강남산맥"))
+				:op3 (m3 / mountain :wiki "적유령산맥" :name (이3 / 이름 :op1 "적유령산맥"))
+				:op4 (m4 / mountain :wiki "묘향산맥" :name (이4 / 이름 :op1 "묘향산맥"))
+				:op5 (m5 / mountain :wiki - :name (이5 / 이름 :op1 "언진산맥"))
+				:op6 (m6 / mountain :wiki "멸악산맥" :name (이6 / 이름 :op1 "멸악산맥"))
+				:op7 (m7 / mountain :wiki "함경산맥" :name (이7 / 이름 :op1 "함경산맥"))))
+		:ARG2 (이8 / 이)))
 
 # ::id snt0.E2016.888.06_Q_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 우리나라의 산맥 중 방향이 다른 것은 무엇일까?
 # ::note
--- KPB FRAMES ----------------------------------------
--- ETRI FRAMES (MARKED with '-00') ------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(나 / 나라 :mod (우 / 우리))
-
+(다 / 다르-01
+	:ARG1 (방 / 방향
+		:direction-of (a / amr-unknown
+			:ARG1-of (i / include-91
+				:ARG2 (산 / 산맥
+					:location (우 / 우리나라))))))
 
 # ::id snt0.E2016.888.07_A_01 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 고종 때는 음서로 오위장을 지냈으며, 당시까지만 해도 판소리는 기생이나 광대가 아무 계통 없이 불러왔는데, 그는 이를 통일하여 《춘향가》, 《심청가》, 《박타령》, 《가루지기타령》, 《토끼타령》, 《적벽가》 등 여섯 마당으로 체계를 세우고 독특한 창의로 판소리 사설 문학을 이루었다.
 # ::note
--- KPB FRAMES ----------------------------------------
-오위장 : DERIVED_NON-ENTRY -> (오 / 오위장-00) ?
-지내 : VERB
-	- get_along		(지 / 지내-01 :ARG0 agent :ARG1 got_along_with :ARG2 manner)
-	- serve		(지 / 지내-02 :ARG0 agent :ARG1 job,_position)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
-광대 : VERBAL_NOUN
-	- immense		(광 / 광대-01 :ARG1 thing_being_immense)
-부르 : VERB
-	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
-	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
-통일 : VERBAL_NOUN
-	- unify		(통 / 통일-01 :ARG0 agent :ARG1 thing_unified :ARG2 result)
-세우 : ** UNUSED_OR_NON-ENTRY **
-독특 : VERBAL_NOUN
-	- peculiar		(독 / 독특-01 :ARG1 thing_being_peculiar)
-이루 : VERB
-	- establish		(이 / 이루-01 :ARG0 setter :ARG1 thing_set)
--- ETRI FRAMES (MARKED with '-00') ------------------
-오위장 : DERIVED_NON-ENTRY -> (오 / 오위장-00) ?
-지내 : ** UNUSED_OR_NON-ENTRY **
-하 : ** UNUSED_OR_NON-ENTRY **
-기생 : VERBAL_NOUN
-	- be_a_parasite_on		(기 / 기생-00 :ARG0 행동주 :ARG2 착점)
-부르 : ** UNUSED_OR_NON-ENTRY **
-통일하 : DERIVED_NON-ENTRY
-세우 : ** UNUSED_OR_NON-ENTRY **
-독특하 : DERIVED_NON-ENTRY
-이루 : REDUCED_VERB_DETECTED
-	- place[put]_sth_on_the_head		(이 / 이-00 :ARG0 행동주 :ARG1 대상 :ARG2 처소)
-	- roof_a_house_with_tile		(이 / 이-00 :ARG0 행동주 :ARG1 대상)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"가루지기타령" [AFW_MUSIC]	->  (가 / 가루지기타령)	OR	(m / music :wiki "가루지기타령" :name (이 / 이름 :op1 "가루지기타령"))
-"고종 때" [DT_DYNASTY]	->  :time|duration (고 / 고종때)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"광대" [CV_OCCUPATION]	->  :mod (광 / 광대)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (광 / 광대))
-"기생" [CV_OCCUPATION]	->  :mod (기 / 기생)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (기 / 기생))
-"박타령" [AFW_MUSIC]	->  (박 / 박타령)	OR	(m / music :wiki "흥보가" :name (이 / 이름 :op1 "박타령"))
-"심청가" [AFW_MUSIC]	->  (심 / 심청가)	OR	(m / music :wiki "심청가" :name (이 / 이름 :op1 "심청가"))
-"여섯 마당" [QT_COUNT]	->  :quant (여 / 여섯마당)	OR	(c / concept* :quant 여섯 :unit|scale (마 / 마당))
-"오위장" [CV_POSITION]	->  :mod (오 / 오위장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (오 / 오위장))
-"음서" [CV_POLICY]	->  (음 / 음서)	OR	(p / policy* :wiki "음서" :name (이 / 이름 :op1 "음서"))
-"적벽가" [AFW_MUSIC]	->  (적 / 적벽가)	OR	(m / music :wiki "적벽가" :name (이 / 이름 :op1 "적벽가"))
-"춘향가" [AFW_MUSIC]	->  (춘 / 춘향가)	OR	(m / music :wiki "춘향가" :name (이 / 이름 :op1 "춘향가"))
-"토끼타령" [AFW_MUSIC]	->  (토 / 토끼타령)	OR	(m / music :wiki "수궁가" :name (이 / 이름 :op1 "토끼타령"))
-"판소리 사설" [FD_ART]	->  (판 / 판소리사설)	OR	(s / study-field|group* :wiki - :name (이 / 이름 :op1 "판소리" :op2 "사설"))
-"판소리" [FD_ART]	->  (판 / 판소리)	OR	(s / study-field|group* :wiki "판소리" :name (이 / 이름 :op1 "판소리"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(문 / 문학 :mod (사 / 사설))
-(사 / 사설 :mod (판 / 판소리))
-(장 / 장 :mod (오 / 오위))
-
+(a / and
+	:op1 (h / have-org-role-91
+		:ARG0 (그 / 그)
+		:ARG2 (오 / 오위장)
+		:time (d / date-entity :era "고종")
+		:manner (음 / 음서))
+	:op2 (부 / 부르-01
+		:ARG0 (o / or
+			:op1 (기 / 기생)
+			:op2 (광 / 광대))
+		:ARG1 (판 / 판소리)
+		:time (이 / 이전
+			:op1 (당 / 당시))
+		:manner (계 / 계통
+			:polarity -
+			:mod (아 / 아무)))
+	:op3 (서 / 서-02
+		:ARG0 그
+		:ARG1 (체 / 체계
+			:mod (마 / 마당 :quant 6
+				:consist-of (등 / 등
+					:op1 (m / music :wiki "춘향가" :name (이2 / 이름 :op1 "춘향가"))
+					:op2 (m2 / music :wiki "심청가" :name (이3 / 이름 :op1 "심청가"))
+					:op3 (m3 / music :wiki "흥보가" :name (이4 / 이름 :op1 "박타령"))
+					:op4 (m4 / music :wiki "가루지기타령" :name (이5 / 이름 :op1 "가루지기타령"))
+					:op5 (m5 / music :wiki "수궁가" :name (이6 / 이름 :op1 "토끼타령"))
+					:op6 (m6 / music :wiki "적벽가" :name (이7 / 이름 :op1 "적벽가")))))
+		:manner (통 / 통일-01
+			:ARG0 그
+			:ARG1 부))
+	:op4 (이8 / 이루-01
+		:ARG0 그
+		:ARG1 (문 / 문학
+			:mod (사 / 사설
+				:mod (판2 / 판소리)))
+		:manner (창 / 창의-00
+			:ARG1-of (독 / 독특-01))))
 
 # ::id snt0.E2016.888.07_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt <인명> 조선 고종 때의 판소리 작가(1812~1884).
 # ::note
--- KPB FRAMES ----------------------------------------
--- ETRI FRAMES (MARKED with '-00') ------------------
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1812~1884" [DT_DURATION]	->  :time|duration (1 / 1812~1884)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"작가" [CV_OCCUPATION]	->  :mod (작 / 작가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (작 / 작가))
-"조선 고종 때" [DT_DYNASTY]	->  :time|duration (조 / 조선고종때)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"판소리" [FD_ART]	->  (판 / 판소리)	OR	(s / study-field|group* :wiki "판소리" :name (이 / 이름 :op1 "판소리"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(작 / 작가 :mod (판 / 판소리))
-
+(작 / 작가
+	:topic (인 / 인명)
+	:mod (판 / 판소리)
+	:time (d / date-entity
+		:era "고종"
+		:calendar (c / country :wiki "조선" :name (이 / 이름 :op1 "조선")))
+	:time (d2 / date-inverval
+		:op1 (d3 / date-entity :year 1812)
+		:op2 (d4 / date-entity :year 1884)))
 
 # ::id snt1.E2016.888.07_A_02 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 종래 계통 없이 불러오던 광대 소리를 통일하여 <춘향가>, <심청가>, <박타령>, <토끼 타령>, <적벽가>, <가루지기타령>의 여섯 마당으로 판소리 사설을 정리하였고, 판소리 이론의 정립에도 힘썼다.
 # ::note
--- KPB FRAMES ----------------------------------------
-부르 : VERB
-	- call		(부 / 부르-01 :ARG0 caller :ARG1 item_being_called)
-	- call		(부 / 부르-02 :ARG0 caller :ARG1 item_being_labelled :ARG2 attribute)
-광대 : VERBAL_NOUN
-	- immense		(광 / 광대-01 :ARG1 thing_being_immense)
-통일 : VERBAL_NOUN
-	- unify		(통 / 통일-01 :ARG0 agent :ARG1 thing_unified :ARG2 result)
-정리 : VERBAL_NOUN
-	- arrange		(정 / 정리-01 :ARG0 agent :ARG1 thing_arranged)
-	- liquidate		(정 / 정리-02 :ARG0 agent :ARG1 thing_liquidated)
-정립 : VERBAL_NOUN
-	- build		(정 / 정립-01 :ARG0 agent :ARG1 thing_built)
-힘쓰 : VERB
-	- strive		(힘 / 힘쓰-01 :ARG0 agent :ARG1 thing_tried)
--- ETRI FRAMES (MARKED with '-00') ------------------
-부르 : ** UNUSED_OR_NON-ENTRY **
-통일하 : DERIVED_NON-ENTRY
-정리하 : DERIVED_NON-ENTRY
-힘쓰 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"가루지기타령" [AFW_MUSIC]	->  (가 / 가루지기타령)	OR	(m / music :wiki "가루지기타령" :name (이 / 이름 :op1 "가루지기타령"))
-"광대 소리" [FD_ART]	->  (광 / 광대소리)	OR	(s / study-field|group* :wiki - :name (이 / 이름 :op1 "광대" :op2 "소리"))
-"박타령" [AFW_MUSIC]	->  (박 / 박타령)	OR	(m / music :wiki "흥보가" :name (이 / 이름 :op1 "박타령"))
-"심청가" [AFW_MUSIC]	->  (심 / 심청가)	OR	(m / music :wiki "심청가" :name (이 / 이름 :op1 "심청가"))
-"여섯 마당" [QT_COUNT]	->  :quant (여 / 여섯마당)	OR	(c / concept* :quant 여섯 :unit|scale (마 / 마당))
-"적벽가" [AFW_MUSIC]	->  (적 / 적벽가)	OR	(m / music :wiki "적벽가" :name (이 / 이름 :op1 "적벽가"))
-"춘향가" [AFW_MUSIC]	->  (춘 / 춘향가)	OR	(m / music :wiki "춘향가" :name (이 / 이름 :op1 "춘향가"))
-"토끼 타령" [AFW_MUSIC]	->  (토 / 토끼타령)	OR	(m / music :wiki - :name (이 / 이름 :op1 "토끼" :op2 "타령"))
-"판소리 사설" [FD_ART]	->  (판 / 판소리사설)	OR	(s / study-field|group* :wiki - :name (이 / 이름 :op1 "판소리" :op2 "사설"))
-"판소리" [FD_ART]	->  (판 / 판소리)	OR	(s / study-field|group* :wiki "판소리" :name (이 / 이름 :op1 "판소리"))
--- CANDIDATE TRIPLE (IT MIGHT BE NOT ADEQUATE) ---
-(계 / 계통 :mod (종 / 종래))
-(사 / 사설 :mod (판 / 판소리))
-(소 / 소리 :mod (광 / 광대))
-(이 / 이론 :mod (판 / 판소리))
-(타 / 타령 :mod (토 / 토끼))
+(a / and
+	:op1 (정 / 정리-01
+		:ARG1 (사 / 사설
+			:mod (판 / 판소리)
+			:mod (마 / 마당 :quant 6
+				:consist-of (등 / 등
+					:op1 (m / music :wiki "춘향가" :name (이 / 이름 :op1 "춘향가"))
+					:op2 (m2 / music :wiki "심청가" :name (이2 / 이름 :op1 "심청가"))
+					:op3 (m3 / music :wiki "흥보가" :name (이3 / 이름 :op1 "박타령"))
+					:op4 (m4 / music :wiki "가루지기타령" :name (이4 / 이름 :op1 "가루지기타령"))
+					:op5 (m5 / music :wiki "수궁가" :name (이5 / 이름 :op1 "토끼" :op2 "타령"))
+					:op6 (m6 / music :wiki "적벽가" :name (이6 / 이름 :op1 "적벽가")))))
+		:manner (통 / 통일-01
+			:ARG1 (소 / 소리
+				:mod (광 / 광대)
+				:ARG1-of (부 / 부르-01
+					:manner (계 / 계통
+						:polarity -
+						:mod (종 / 종래))))))
+	:op2 (힘 / 힘쓰-01
+		:ARG1 (정2 / 정립-01
+			:ARG1 (이7 / 이론
+				:topic (판2 / 판소리)))))
