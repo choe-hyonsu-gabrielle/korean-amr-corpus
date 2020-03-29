@@ -127,7 +127,7 @@
 		:ARG0 (침 / 침입-01
 			:ARG0 (m / military :wiki "영국군" :name (이 / 이름 :op1 "영국군"))
 			:ARG1 (c2 / country :wiki "프랑스" :name (이2 / 이름 :op1 "프랑스")))
-		:cause (싸 / 싸우-01
+		:ARG1 (싸 / 싸우-01
 			:purpose (a2 / and
 				:op1 (문 / 문제-01
 					:ARG1 (계 / 계승-00
