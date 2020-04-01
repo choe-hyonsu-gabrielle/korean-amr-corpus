@@ -786,61 +786,41 @@
 # ::id snt61.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 가장 먼저 둘러본 곳은 LG전자 부스였다.
 # ::note
--- KPB FRAMES ----------------------------------------
-둘러보 : VERB
-	- look_around		(둘 / 둘러보-01 :ARG0 looker :ARG1 thing_looked_around)
--- ETRI FRAMES (MARKED with '-00') ------------------
-둘러보 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"LG전자" [OGG_ECONOMY]	->  (L / LG전자)	OR	(c / company|organization :wiki "LG전자" :name (이 / 이름 :op1 "LG전자"))
-
+(둘 / 둘러보-01
+	:ARG1 (부 / 부스
+		:poss (c / company :wiki "LG전자" :name (이 / 이름 :op1 "LG전자")))
+	:ARG1-of (h / have-degree-91
+		:ARG2 (먼 / 먼저)
+		:ARG3 (가 / 가장)))
 
 # ::id snt62.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 그러나 두 공연 모두 대가를 받지 못했다.
 # ::note
--- KPB FRAMES ----------------------------------------
-공연 : VERBAL_NOUN
-	- perform		(공 / 공연-01 :ARG0 agent :ARG1 performance)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
--- ETRI FRAMES (MARKED with '-00') ------------------
-받 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"두 공연" [QT_COUNT]	->  :quant (두 / 두공연)	OR	(c / concept* :quant 두 :unit|scale (공 / 공연))
-
+(c / contrast-01
+	:ARG2 (받 / 받-01
+		:polarity -
+		:ARG0 (공 / 공연-01	:quant 2)
+		:ARG1 (대 / 대가)
+		:mod (모 / 모두)))
 
 # ::id snt63.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 가질 수 없는 것은 깨끗이 포기하는 것이 상책이에요.
 # ::note
--- KPB FRAMES ----------------------------------------
-가지 : VERB
-	- have		(가 / 가지-01 :ARG0 agent :ARG1 theme)
-없 : ** UNUSED_OR_NON-ENTRY **
-포기 : VERBAL_NOUN
-	- give_up		(포 / 포기-01 :ARGA causer :ARG0 agent :ARG1 thing_given_up)
--- ETRI FRAMES (MARKED with '-00') ------------------
-가지 : ** UNUSED_OR_NON-ENTRY **
-없 : ** UNUSED_OR_NON-ENTRY **
-포기하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(상 / 상책
+	:domain (포 / 포기-01
+		:ARG1 (가 / 가능-01
+			:polarity -
+			:ARG1 (가2 / 가지-01))
+		:manner (깨 / 깨끗하-01)))
 
 # ::id snt64.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt A씨는 생명에는 지장이 없는 것으로 전해진다.
 # ::note
--- KPB FRAMES ----------------------------------------
-없 : ** UNUSED_OR_NON-ENTRY **
-전하 : VERB
-	- report		(전 / 전하-01 :ARG0 agent :ARG1 thing_reported :ARG2 report_to)
--- ETRI FRAMES (MARKED with '-00') ------------------
-없 : ** UNUSED_OR_NON-ENTRY **
-전하 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(전 / 전하-01
+	:ARG1 (지 / 지장이-없-00
+		:ARG1 (p / person :wiki - :name (이 / 이름 :op1 "A"))
+		:ARG2 (생 / 생명
+			:poss p)))
 
 # ::id snt65.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 23일 서울 서대문구 연세대학교 노천극장에서 열린 2018학년도 입학식에서 신입생들이 학생명예선언을 하고 있다.
