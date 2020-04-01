@@ -772,34 +772,16 @@
 # ::id snt60.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt ‘존중하고 존경받는 대학’을 만들겠다는 총장의 비전은 말뿐이었냐”고 되물었다.
 # ::note
--- KPB FRAMES ----------------------------------------
-존중 : VERBAL_NOUN
-	- respect		(존 / 존중-01 :ARG0 agent :ARG1 entity_respected)
-존경 : VERBAL_NOUN
-	- respect		(존 / 존경-01 :ARG0 thing_respecting :ARG1 thing_respected)
-받 : VERB
-	- receive		(받 / 받-01 :ARG0 agent :ARG1 theme :ARG2 source)
-만들 : VERB
-	- make		(만 / 만들-01 :ARG0 agent :ARG1 thing_made)
-	- change		(만 / 만들-02 :ARG0 causer :ARG1 thing_changing :ARG2 changed_into)
-	- cause		(만 / 만들-03 :ARG0 causer :ARG1 action,_state)
-말 : VERBAL_NOUN
-	- stop		(말 / 말-01 :ARG0 agent :ARG1 action_or_thing_stopped)
-되묻 : REDUCED_VERB_DETECTED
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
--- ETRI FRAMES (MARKED with '-00') ------------------
-존중하 : DERIVED_NON-ENTRY
-존경받 : DERIVED_NON-ENTRY
-받 : ** UNUSED_OR_NON-ENTRY **
-만들 : ** UNUSED_OR_NON-ENTRY **
-되묻 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"총장" [CV_POSITION]	->  :mod (총 / 총장)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (총 / 총장))
-
+(되 / 되묻-00
+	:ARG1 (거 / 거짓
+		:polarity (a / amr-unknown)
+		:domain (비 / 비전
+			:poss (총 / 총장)
+			:mod (만 / 만들-01
+				:ARG0 총
+				:ARG1 (대 / 대학
+					:ARG0-of (존 / 존중-01)
+					:ARG1-of (존 / 존경-01))))))
 
 # ::id snt61.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 가장 먼저 둘러본 곳은 LG전자 부스였다.
