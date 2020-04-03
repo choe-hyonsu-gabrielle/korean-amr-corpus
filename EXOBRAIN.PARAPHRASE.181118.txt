@@ -261,7 +261,7 @@
 # ::id snt21.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 작게 얻고 크게 잃을 수 있으니 주의하는 것이 좋습니다.
 # ::note
-(권 / 권장-01
+(권 / 권하-01
 	:ARG1 (주 / 주의-01)
 	:cause (a / and
 		:op1 (얻 / 얻-01
@@ -806,7 +806,7 @@
 # ::id snt63.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 가질 수 없는 것은 깨끗이 포기하는 것이 상책이에요.
 # ::note
-(권 / 권장-01
+(권 / 권하-01
 	:ARG1 (포 / 포기-01
 		:ARG1 (가 / 가능-01
 			:polarity -
@@ -1289,7 +1289,7 @@
 # ::note
 (나 / 나타나-01
 	:domain (농 / 농도
-		:mod (미 / 미세먼지))
+		:poss (미 / 미세먼지))
 	:ARG1 (s / score-on-scale-91
 		:ARG1 "보통")
 	:location (권 / 권역
@@ -1298,7 +1298,7 @@
 # ::id snt101.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 경품이 걸린 이벤트 등에 응모를 해보도록 하세요.
 # ::note
-(권 / 권장-01
+(권 / 권하-01
 	:ARG1 (응 / 응모-00
 		:ARG1 (등 / 등
 			:op1 (이 / 이벤트
@@ -1397,7 +1397,7 @@
 # ::id snt108.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 다만 일도 좋지만 집안도 잘 챙기도록 하세요.
 # ::note
-(권 / 권장-01
+(권 / 권하-01
 	:ARG1 (챙 / 챙기-00
 		:ARG1 (집 / 집안)
 		:manner (잘 / 잘))
@@ -1441,7 +1441,7 @@
 (예 / 예보-00
 	:ARG0 (r / research-institute :wiki "국립환경과학원" :name (이 / 이름 :op1 "국립환경과학원"))
 	:ARG1 (농 / 농도
-		:mod (미 / 미세먼지)
+		:poss (미 / 미세먼지)
 		:location (p / province :wiki "충청북도" :name (이2 / 이름 :op1 "충북"))
 		:time (이3 / 이날))
 	:ARG2 (수 / 수준
@@ -1522,7 +1522,7 @@
 (c / correlate-91
 	:ARG1 (h / have-degree-91
 		:ARG2 (급 / 급하-01))
-	:ARG2 (권 / 권장-01
+	:ARG2 (권 / 권하-01
 		:ARG1 (돌 / 돌아가-01)))
 
 # ::id snt120.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
@@ -1666,7 +1666,8 @@
 	:ARG1 (좋 / 좋-01
 		:ARG1 (결 / 결과)
 		:condition (하 / 하-01
-			:postp-이든 (무 / 무엇)
+			:ARG1-of (r / regardless-91
+				:ARG2 (무 / 무엇))
 			:manner (함 / 함께))))
 
 # ::id snt131.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
@@ -1977,765 +1978,440 @@
 # ::id snt152.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 홀로그램은 초고화질의 3차원 영상을 전송하는 만큼 5G 없이는 실현 불가능한 서비스.
 # ::note
-(서 / 서비스
-	:mod (불 / 불가능-01 :ARG1 event_being_impossible))
-
-
-
--- KPB FRAMES ----------------------------------------
-초고 : DERIVED_NON-ENTRY -> (초 / 초고-00) ?
-전송 : VERBAL_NOUN
-	- transmit		(전 / 전송-01 :ARG0 thing_transmitting :ARG1 thing_transmitted :ARG2 transmit_to)
-실현 : VERBAL_NOUN
-	- materialize		(실 / 실현-01 :ARG0 agent :ARG1 thing_being_materialized)
-불가능 : VERBAL_NOUN
-	- impossible		(불 / 불가능-01 :ARG1 event_being_impossible)
--- ETRI FRAMES (MARKED with '-00') ------------------
-고 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (초 / 초고-00) ?
-	- boil		(고 / 고-00 :ARG0 행동주 :ARG1 대상)
-전송하 : DERIVED_NON-ENTRY
-불가능하 : DERIVED_NON-ENTRY
-서비스 : VERBAL_NOUN
-	- service		(서 / 서비스-00 :ARG0 행동주 :ARG1 대상 :ARG2 착점)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"3차원" [QT_OTHERS]	->  :quant (3 / 3차원)	OR	(c / concept* :quant 3 :unit|scale (차 / 차원))
-"5G" [TMI_SERVICE]	->  (5 / 5G)	OR	(s / service* :wiki "5세대_이동_통신" :name (이 / 이름 :op1 "5G"))
-
+(가 / 가능-01
+	:polarity -
+	:ARG1 (실 / 실현-01
+		:ARG1 (서 / 서비스
+			:topic (홀 / 홀로그램)))
+	:condition (5 / 5G :polarity -)
+	:cause (전 / 전송-01
+		:ARG1 (영 / 영상
+			:mod (차 / 차원 :mod "3"))))
 
 # ::id snt153.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 도시철도는 폭증한 승객들과 폭설로 한때 운행을 멈춰 시민들이 큰 불편을 겪었다.
 # ::note
--- KPB FRAMES ----------------------------------------
-폭증하 : DERIVED_NON-ENTRY
-승객들 : DERIVED_NON-ENTRY -> (승 / 승객들-00) ?
-멈추 : VERB
-	- stop		(멈 / 멈추-01 :ARG0 agent :ARG1 action_or_thing_stopped)
-시민들 : DERIVED_NON-ENTRY -> (시 / 시민들-00) ?
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-불편 : VERBAL_NOUN
-	- inconvenient		(불 / 불편-01 :ARG1 thing_being_inconvenient)
-겪 : VERB
-	- experience		(겪 / 겪-01 :ARG1 experiencer :ARG2 experienced)
--- ETRI FRAMES (MARKED with '-00') ------------------
-도시 : VERBAL_NOUN
-	- show_by_a_diagram		(도 / 도시-00 :ARG0 행동주 :ARG1 대상)
-폭증하 : DERIVED_NON-ENTRY
-승객들 : DERIVED_NON-ENTRY -> (승 / 승객들-00) ?
-운행 : VERBAL_NOUN
-	- run		(운 / 운행-00 :ARG0 행동주 :ARG1 대상)
-멈추 : ** UNUSED_OR_NON-ENTRY **
-시민들 : DERIVED_NON-ENTRY -> (시 / 시민들-00) ?
-크 : ** UNUSED_OR_NON-ENTRY **
-겪 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"도시철도" [AF_TRANSPORT]	->  (도 / 도시철도)	OR	(v / vehicle|ship|aircraft|... :wiki "도시_철도" :name (이 / 이름 :op1 "도시철도"))
-"승객" [CV_POSITION]	->  :mod (승 / 승객)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (승 / 승객))
-"시민" [CV_POSITION]	->  :mod (시 / 시민)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (시 / 시민))
-
+(불 / 불편-01
+	:ARG1 (시 / 시민)
+	:cause (멈 / 멈추-01
+		:ARG1 (운 / 운행-00
+			:ARG1 (도 / 도시철도))
+		:cause (a / and
+			:op1 (승 / 승객
+				:ARG1-of (폭 / 폭증-00))
+			:op2 (폭2 / 폭설)))
+	:ARG1-of (크 / 크-01))
 
 # ::id snt154.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 다른 사람과의 경쟁은 피해야 할 때입니다.
 # ::note
--- KPB FRAMES ----------------------------------------
-경쟁 : VERBAL_NOUN
-	- compete		(경 / 경쟁-01 :ARGA causer :ARG0 competitor :ARG1 opponent)
-피하 : VERB
-	- avoid		(피 / 피하-01 :ARG0 agent :ARG1 thing_avoided)
--- ETRI FRAMES (MARKED with '-00') ------------------
-피하 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(때 / 때
+	:time-of (o / obligate-01
+		:ARG2 (피 / 피하-01
+			:ARG1 (경 / 경쟁-01
+				:ARG1 (사 / 사람
+					:ARG1-of (다 / 다르-01))))))
 
 # ::id snt155.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 당시 여의도 광장 집회에는 약 110만 명의 군중이 모였다.
 # ::note
--- KPB FRAMES ----------------------------------------
-모이 : ** UNUSED_OR_NON-ENTRY **
--- ETRI FRAMES (MARKED with '-00') ------------------
-모이 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"약 110만 명" [QT_MAN_COUNT]	->  :quant (약 / 약110만명)	OR	(c / concept* :quant 약 110만 :unit|scale (명 / 명))
-"여의도 광장" [LC_TOUR]	->  (여 / 여의도광장)	OR	(l / location? :wiki "여의도공원" :name (이 / 이름 :op1 "여의도" :op2 "광장"))
-
+(모 / 모으-01
+	:ARG1 (군 / 군중 :quant (약 / 약 :op1 1100000) :unit (명 / 명))
+	:ARG2 (집 / 집회
+		:location (p / park :wiki "여의도공원" :name (이 / 이름 :op1 "여의도" :op2 "광장")))
+	:time (당 / 당시))
 
 # ::id snt156.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt LG디스플레이는 파주와 구미사업장에 있는 어린이집을 확대한다고 8일 밝혔다.
 # ::note
--- KPB FRAMES ----------------------------------------
-사업 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (사 / 사업장-00) ?
-	- do_business		(사 / 사업-01 :ARG0 agent)
-있 : ** UNUSED_OR_NON-ENTRY **
-확대 : VERBAL_NOUN
-	- expand		(확 / 확대-01 :ARG0 agent :ARG1 thing_grown :ARG2 start_point :ARG3 end_point)
-밝히 : VERB
-	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
-	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
--- ETRI FRAMES (MARKED with '-00') ------------------
-사업장 : DERIVED_NON-ENTRY -> (사 / 사업장-00) ?
-있 : ** UNUSED_OR_NON-ENTRY **
-집 : VERBAL_NOUN
-	- pick_up		(집 / 집-00 :ARG0 행동주 :ARG1 대상 :ARG2 착점,내용)
-확대하 : DERIVED_NON-ENTRY
-밝히 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"8일" [DT_DAY]	->  :time|duration (8 / 8일)	OR	:time (d / date-entity :day 8)	OR	:duration (t / temporal-quantity :quant 8 :unit (일 / 일))  
-"LG디스플레이" [OGG_ECONOMY]	->  (L / LG디스플레이)	OR	(c / company|organization :wiki "LG디스플레이" :name (이 / 이름 :op1 "LG디스플레이"))
-"구미" [LCP_CITY]	->  (구 / 구미)	OR	(c / city :wiki "구미시" :name (이 / 이름 :op1 "구미"))
-"사업" [CV_POSITION]	->  :mod (사 / 사업)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (사 / 사업))
-"파주" [LCP_CITY]	->  (파 / 파주)	OR	(c / city :wiki "파주시" :name (이 / 이름 :op1 "파주"))
-
+(밝 / 밝히-01
+	:ARG0 (c / company :wiki "LG디스플레이" :name (이 / 이름 :op1 "LG디스플레이"))
+	:ARG1 (확 / 확대-01
+		:ARG0 c
+		:ARG1 (어 / 어린이집
+			:location (사 / 사업장
+				:location (a / and
+					:op1 (c2 / city :wiki "파주시" :name (이2 / 이름 :op1 "파주"))
+					:op2 (c3 / city :wiki "구미시" :name (이3 / 이름 :op1 "구미"))))))
+	:time (d / date-entity :day 8))
 
 # ::id snt157.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 한국여성단체연합이 21일 성명을 내고 성폭력 파문이 커지는 이윤택 연출에 대한 처벌을 촉구했다.
 # ::note
--- KPB FRAMES ----------------------------------------
-연합 : VERBAL_NOUN
-	- combine		(연 / 연합-01 :ARG0 agent :ARG1 thing_combined :ARG2 end_product)
-내 : VERB
-	- send		(내 / 내-01 :ARG0 agent :ARG1 thing_sent :ARG2 sent_to)
-	- make		(내 / 내-02 :ARG0 causer :ARG1 thing_made)
-커지 : ** UNUSED_OR_NON-ENTRY **
-연출 : VERBAL_NOUN
-	- produce		(연 / 연출-01 :ARG0 thing_producing :ARG1 thing_produced)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-처벌 : VERBAL_NOUN
-	- punish		(처 / 처벌-01 :ARG0 agent :ARG1 thing_punished)
-촉구 : VERBAL_NOUN
-	- press		(촉 / 촉구-01 :ARG0 agent :ARG1 press_for :ARG2 thing_pressed)
--- ETRI FRAMES (MARKED with '-00') ------------------
-내 : ** UNUSED_OR_NON-ENTRY **
-파문 : VERBAL_NOUN
-	- expel		(파 / 파문-00 :ARG0 행동주 :ARG1 대상)
-커지 : ** UNUSED_OR_NON-ENTRY **
-대하 : ** UNUSED_OR_NON-ENTRY **
-촉구하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"21일" [DT_DAY]	->  :time|duration (2 / 21일)	OR	:time (d / date-entity :day 21)	OR	:duration (t / temporal-quantity :quant 21 :unit (일 / 일))  
-"성폭력" [CV_LAW]	->  (성 / 성폭력)	OR	(l / law :wiki "성폭력" :name (이 / 이름 :op1 "성폭력"))
-"이윤택" [PS_NAME]	->  (이 / 이윤택)	OR	(p / person :wiki "이윤택" :name (이 / 이름 :op1 "이윤택"))
-"한국여성단체연합" [OG_OTHERS]	->  (한 / 한국여성단체연합)	OR	(o / organization? :wiki "한국여성단체연합" :name (이 / 이름 :op1 "한국여성단체연합"))
-
+(a / and
+	:op1 (내 / 내-01
+		:ARG0 (o / organization :wiki "한국여성단체연합" :name (이 / 이름 :op1 "한국여성단체연합"))
+		:ARG1 (성 / 성명))
+	:op2 (촉 / 촉구-01
+		:ARG0 o
+		:ARG1 (처 / 처벌-01
+			:ARG1 (p / person :wiki "이윤택" :name (이2 / 이름 :op1 "이윤택")
+				:mod (연 / 연출)
+				:mod (되 / 되-01
+					:ARG2 (크 / 크-01
+						:ARG1 (파 / 파문
+							:topic (성 / 성폭력)))))))
+	:time (d / date-entity :day 21))
 
 # ::id snt158.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 재판부는 이영학의 범죄가 잔혹하며, 교화가능성이 없어 사형이 불가피하다고 밝혔습니다.의 보도입니다.
 # ::note
--- KPB FRAMES ----------------------------------------
-재판 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (재 / 재판부-00) ?
-	- judge		(재 / 재판-01 :ARG0 thing_judging :ARG1 thing_judged)
-잔혹 : VERBAL_NOUN
-	- cruel		(잔 / 잔혹-01 :ARG1 thing_cruel)
-가능 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (가 / 가능성-00) ?
-	- possible		(가 / 가능-01 :ARG1 event_being_possible)
-없 : ** UNUSED_OR_NON-ENTRY **
-불가피하 : VERB
-	- unavoidable		(불 / 불가피하-01 :ARG1 thing_being_unavoidable)
-밝히 : VERB
-	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
-	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
--- ETRI FRAMES (MARKED with '-00') ------------------
-재판부 : DERIVED_NON-ENTRY -> (재 / 재판부-00) ?
-잔혹하 : DERIVED_NON-ENTRY
-가능성 : DERIVED_NON-ENTRY -> (가 / 가능성-00) ?
-없 : ** UNUSED_OR_NON-ENTRY **
-사형 : VERBAL_NOUN
-	- execute		(사 / 사형-00 :ARG0 행동주 :ARG1 대상)
-불가피하 : ** UNUSED_OR_NON-ENTRY **
-밝히 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"사형" [CV_LAW]	->  (사 / 사형)	OR	(l / law :wiki "사형" :name (이 / 이름 :op1 "사형"))
-"이영학" [PS_NAME]	->  (이 / 이영학)	OR	(p / person :wiki "이영학" :name (이 / 이름 :op1 "이영학"))
-"재판부" [OGG_LAW]	->  (재 / 재판부)	OR	(g / government-organization :wiki - :name (이 / 이름 :op1 "재판부"))
-
+(m / multi-sentence
+	:snt1 (밝 / 밝히-01
+		:ARG0 (재 / 재판부)
+		:ARG1 (불 / 불가피하-01
+			:ARG1 (사 / 사형-00
+				:ARG1 (p / person :wiki "이영학" :name (이 / 이름 :op1 "이영학"))))
+		:cause (a / and
+			:op1 (잔 / 잔혹-01
+				:ARG1 (범 / 범죄
+					:mod p))
+			:op2 (가 / 가능성
+				:polarity -
+				:mod (교 / 교화-00
+					:ARG1 p))))
+	:snt2 (보 / 보도-01
+		:ARG0 (a2 / amr-unintelligible :value "의")
+		:ARG1 밝))
 
 # ::id snt159.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 그럴 수 없었어요"라고 적었다.
-# ::note
--- KPB FRAMES ----------------------------------------
-그렇 : VERB
-	- be_so		(그 / 그렇-01 :ARG1 entity_being_so)
-없 : ** UNUSED_OR_NON-ENTRY **
-적 : VERB
-	- write_down		(적 / 적-01 :ARG0 agent :ARG1 thing_written :ARG2 where_written)
-	- little		(적 / 적-02 :ARG1 thing_being_little)
--- ETRI FRAMES (MARKED with '-00') ------------------
-그렇 : ** UNUSED_OR_NON-ENTRY **
-없 : ** UNUSED_OR_NON-ENTRY **
-적 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+# ::note "
+(적 / 적-01
+	:ARG1 (가 / 가능-01
+		:polarity -
+		:ARG1 (그 / 그렇-01)))
 
 # ::id snt160.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 구는 지난달 1층 카페 운영자와 3층 입주작가를 새로 선정했다.
 # ::note
--- KPB FRAMES ----------------------------------------
-달 : VERBAL_NOUN
-	- give		(달 / 달-01 :ARG0 giver :ARG1 theme :ARG2 receiver)
-	- hang		(달 / 달-02 :ARG0 agent :ARG1 theme :ARG2 location)
-운영 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (운 / 운영자-00) ?
-	- operate		(운 / 운영-01 :ARG0 operator :ARG1 thing_operated)
-선정 : VERBAL_NOUN
-	- choose		(선 / 선정-01 :ARG0 picker :ARG1 thing_picked :ARG2 attribute)
--- ETRI FRAMES (MARKED with '-00') ------------------
-운영자 : DERIVED_NON-ENTRY -> (운 / 운영자-00) ?
-입주 : VERBAL_NOUN
-	- move_in		(입 / 입주-00 :ARG0 행동주 :ARG2 착점)
-선정하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"1층" [QT_ORDER]	->  :ord (1 / 1층)	OR	:ord (o / ordinal-entity :value 1층)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"3층" [QT_ORDER]	->  :ord (3 / 3층)	OR	:ord (o / ordinal-entity :value 3층)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"운영자" [CV_POSITION]	->  :mod (운 / 운영자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (운 / 운영자))
-"작가" [CV_OCCUPATION]	->  :mod (작 / 작가)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (작 / 작가))
-"지난달" [DT_MONTH]	->  :time|duration (지 / 지난달)	OR	:time (d / date-entity)	OR	:duration 
-
+(선 / 선정-01
+	:ARG0 (g / government-organization :wiki - :name (이 / 이름 :op1 "구"))
+	:ARG1 (a / and
+		:op1 (사 / 사람
+			:ARG0-of (운 / 운영-01
+				:ARG1 (카 / 카페
+					:location (층 / 층
+						:ord (o / ordinal-entity :value 1)))))
+		:op2 (작 / 작가
+			:ARG0-of (입 / 입주-00
+				:ARG2 (층2 / 층
+					:ord (o2 / ordinal-entity :value 3))))
+		:ARG1-of (새 / 새롭-01))
+	:time (지 / 지난달))
 
 # ::id snt161.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 아울러 이날 낮부터 제주도 전역에는 호우경보가 발효돼 있다.
 # ::note
--- KPB FRAMES ----------------------------------------
-낮 : VERBAL_NOUN
-	- low		(낮 / 낮-01 :ARG0 causer :ARG1 thing_being_low :ARG2 start_point :ARG3 end_point)
-발효 : VERBAL_NOUN
-	- come_into_effect		(발 / 발효-01 :ARG0 causer :ARG1 thing_coming_into_effect)
--- ETRI FRAMES (MARKED with '-00') ------------------
-전역 : VERBAL_NOUN
-	- discharge		(전 / 전역-00 :ARG0 행동주 :ARG2 착점)
-발효되 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"낮" [TI_DURATION]	->  :time|duration (낮 / 낮)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-"제주도" [LCP_PROVINCE]	->  (제 / 제주도)	OR	(p / province :wiki "제주도" :name (이 / 이름 :op1 "제주도"))
-
+(발 / 발효-01
+	:ARG1 (호 / 호우경보
+		:location (전 / 전역
+			:mod (i / island :wiki "제주도" :name (이 / 이름 :op1 "제주도"))))
+	:time (d / date-interval
+		:op1 (d2 / date-entity :day (이2 / 이날) :dayperiod (낮 / 낮)))
+	:mod (아 / 아울러))
 
 # ::id snt162.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt →현대중 군산조선소 조업 중단과 GM 군산공장 폐쇄가 지역경제에 미치는 영향은.
 # ::note
--- KPB FRAMES ----------------------------------------
-중단 : VERBAL_NOUN
-	- stop		(중 / 중단-01 :ARG0 agent :ARG1 thing_stopped)
-폐쇄 : VERBAL_NOUN
-	- close		(폐 / 폐쇄-01 :ARG0 agent :ARG1 thing_closing)
-미치 : VERB
-	- give		(미 / 미치-01 :ARG0 causer :ARG1 influence :ARG2 entity_given_to)
-영향 : VERBAL_NOUN
-	- influence		(영 / 영향-01 :ARG0 agent :ARG1 thing_influenced)
--- ETRI FRAMES (MARKED with '-00') ------------------
-미치 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"GM" [OGG_ECONOMY]	->  (G / GM)	OR	(c / company|organization :wiki "GM?" :name (이 / 이름 :op1 "GM"))
-"현대중" [OGG_SPORTS]	->  (현 / 현대중)	OR	(t / team|league|company :wiki - :name (이 / 이름 :op1 "현대중"))
-
+(미 / 미치-01
+	:ARG0 (a / and
+			:op1 (중 / 중단-01
+				:ARG0 (c / company :wiki "현대중공업" :name (이 / 이름 :op1 "현대중"))
+				:ARG1 (조 / 조업-00
+					:location (조2 / 조선소
+						:location (c2 / city :wiki "군산시" :name (이2 / 이름 :op1 "군산")))))
+			:op2 (폐 / 폐쇄-01
+				:ARG0 (c3 / company :wiki "한국지엠" :name (이3 / 이름 :op1 "GM"))
+				:ARG1 (공 / 공장
+					:location c2)))
+	:ARG1 (a2 / amr-unknown)
+	:ARG2 (경 / 경제
+			:mod (지 / 지역)))
 
 # ::id snt163.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 무난하게 하루가 지나가니 절로 하품이 나네요.
 # ::note
--- KPB FRAMES ----------------------------------------
-무난하 : VERB
-	- easy		(무 / 무난하-01 :ARG1 thing_being_easy)
-지나가 : VERB
-	- pass		(지 / 지나가-01 :ARG0 entity_passing :ARG1 thing_passed)
-나 : VERB
-	- happen		(나 / 나-01 :ARG1 thing_happening :ARG2 location)
--- ETRI FRAMES (MARKED with '-00') ------------------
-무난하 : ** UNUSED_OR_NON-ENTRY **
-지나가 : ** UNUSED_OR_NON-ENTRY **
-나 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"하루" [DT_DURATION]	->  :time|duration (하 / 하루)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-
+(나 / 나-01
+	:ARG1 (하 / 하품)
+	:cause (지 / 지나가-01
+		:ARG1 (하 / 하루)
+		:manner (무 / 무난하-01)))
 
 # ::id snt164.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 따라서 작은 일들에 연연해할 것이 아니라 큰 일부터 해결해가는 것이 좋습니다.
 # ::note
--- KPB FRAMES ----------------------------------------
-작 : VERB
-	- small		(작 / 작-01 :ARG1 thing_being_small)
-일 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (일 / 일들-00) ?
-	- rise		(일 / 일-01 :ARG1 thing_rising)
-연연해하 : ** UNUSED_OR_NON-ENTRY **
-크 : VERB
-	- great		(크 / 크-01 :ARG0 agent :ARG1 thing_being_great)
-일 : VERBAL_NOUN
-	- rise		(일 / 일-01 :ARG1 thing_rising)
-해결 : VERBAL_NOUN
-	- solve		(해 / 해결-01 :ARG0 solver :ARG1 the_problem)
-좋 : VERB
-	- good		(좋 / 좋-01 :ARG1 thing_being_good)
-	- like		(좋 / 좋-02 :ARG0 agent :ARG1 entity_liked)
-	- good		(좋 / 좋-03 :ARG1 thing_being_good :ARG2 good_for)
--- ETRI FRAMES (MARKED with '-00') ------------------
-작 : ** UNUSED_OR_NON-ENTRY **
-일들 : DERIVED_NON-ENTRY -> (일 / 일들-00) ?
-연연해하 : ** UNUSED_OR_NON-ENTRY **
-크 : ** UNUSED_OR_NON-ENTRY **
-해결하 : DERIVED_NON-ENTRY
-좋 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(c / cause-01
+	:ARG2 (권 / 권하-01
+		:ARG1 (a / and
+			:op1 (연 / 연연하-01
+				:polarity -
+				:ARG2 (일 / 일
+					:ARG1-of (작 / 작-01)))
+			:op2 (해 / 해결-01
+				:ARG1 (일2 / 일
+					:ARG1-of (크 / 크-01))
+				:manner (먼 / 먼저)))))
 
 # ::id snt165.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 새학기를 맞아 게시판에는 각종 동아리나 공연 홍보 포스터물들이 붙어 있는데요.
 # ::note
--- KPB FRAMES ----------------------------------------
-맞 : VERB
-	- conform		(맞 / 맞-01 :ARG1 entity_conforming :ARG2 entity_conforming_to)
-	- be_right		(맞 / 맞-02 :ARG1 entity_being_right)
-	- hit		(맞 / 맞-03 :ARG0 agent :ARG1 thing_hit :ARG2 instrument)
-	- confront		(맞 / 맞-04 :ARG1 entity_confronted :ARG2 confronted_with)
-게시 : VERBAL_NOUN
-	- post		(게 / 게시-01 :ARG0 agent :ARG1 thing_posted :ARG2 posted_to)
-공연 : VERBAL_NOUN
-	- perform		(공 / 공연-01 :ARG0 agent :ARG1 performance)
-홍보 : VERBAL_NOUN
-	- advertise		(홍 / 홍보-01 :ARG0 advertiser :ARG1 thing_advertised :ARG2 audience)
-포스터물들 : DERIVED_NON-ENTRY -> (포 / 포스터물들-00) ?
-붙 : VERB
-	- put,_adhere,_light,_name		(붙 / 붙-01 :ARG0 agent :ARG1 thing_put :ARG2 put_on)
-	- spread		(붙 / 붙-02 :ARG1 flame :ARG2 direction)
--- ETRI FRAMES (MARKED with '-00') ------------------
-맞 : ** UNUSED_OR_NON-ENTRY **
-포스터물들 : DERIVED_NON-ENTRY -> (포 / 포스터물들-00) ?
-붙 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
-:ARG1-of (새 / 새롭-01)
--- NE TYPES --------------------------------------
-
+(c / cause-01
+	:ARG1 (맞 / 맞-04
+		:ARG2 (학 / 학기
+			:mod (새 / 새롭-01)))
+	:ARG2 (붙 / 붙-01
+		:ARG1 (포 / 포스터
+			:purpose (홍 / 홍보-01
+				:ARG1 (o / or
+					:op1 (동 / 동아리)
+					:op2 (공 / 공연)
+					:mod (각 / 각종))))
+		:ARG2 (게 / 게시판)))
 
 # ::id snt166.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 항상 만나던 사람들이 아니라 처음 만나게 되는 사람들을 유심히 살펴보도록 하세요.
 # ::note
--- KPB FRAMES ----------------------------------------
-만나 : VERB
-	- meet		(만 / 만나-01 :ARG0 person/entity/obeject_meeting :ARG1 person/entity/obeject_being_met)
-사람들 : DERIVED_NON-ENTRY -> (사 / 사람들-00) ?
-처음만나 : DERIVED_NON-ENTRY
-만나 : VERB
-	- meet		(만 / 만나-01 :ARG0 person/entity/obeject_meeting :ARG1 person/entity/obeject_being_met)
-되 : VERB
-	- become		(되 / 되-01 :ARG1 thing_in_focus :ARG2 end_state)
-	- consist_of		(되 / 되-02 :ARG1 thing_in_focus :ARG2 attribute)
-	- amount_to		(되 / 되-03 :ARG1 thing_in_focus :ARG2 amount)
-	- do-light_verb		(되 / 되-04 :ARG1 thing_in_focus :ARG2 deverbal_noun)
-사람들 : DERIVED_NON-ENTRY -> (사 / 사람들-00) ?
-살펴보 : VERB
-	- search		(살 / 살펴보-01 :ARG0 searcher :ARG1 searched_for)
--- ETRI FRAMES (MARKED with '-00') ------------------
-만나 : ** UNUSED_OR_NON-ENTRY **
-사람들 : DERIVED_NON-ENTRY -> (사 / 사람들-00) ?
-처음만나 : DERIVED_NON-ENTRY
-만나 : ** UNUSED_OR_NON-ENTRY **
-되 : ** UNUSED_OR_NON-ENTRY **
-사람들 : DERIVED_NON-ENTRY -> (사 / 사람들-00) ?
-살펴보 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(권 / 권하-01
+	:ARG1 (살 / 살펴보-01
+		:ARG1 (사 / 사람
+			:mod (되 / 되-01
+				:ARG2 (만 / 만나-01
+					:ord (o / ordinal-entity :value 1)))
+			:ARG1-of (새 / 새롭-01)
+			:mod (사2 / 사람
+				:polarity -
+				:ARG1-of (만2 / 만나-01
+					:time (항 / 항상))))
+		:manner (유 / 유심히)))
 
 # ::id snt167.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 2위 애플은 5% 줄어든 7320만대를 판매했다.
 # ::note
--- KPB FRAMES ----------------------------------------
-줄어들 : VERB
-	- decrease		(줄 / 줄어들-01 :ARG1 thing_decreasing :ARG2 start_point :ARG3 end_point)
-판매 : VERBAL_NOUN
-	- sell		(판 / 판매-01 :ARG0 seller :ARG1 thing_sold :ARG2 buyer)
--- ETRI FRAMES (MARKED with '-00') ------------------
-줄어들 : ** UNUSED_OR_NON-ENTRY **
-판매하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2위" [QT_ORDER]	->  :ord (2 / 2위)	OR	:ord (o / ordinal-entity :value 2위)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"5%" [QT_PERCENTAGE]	->  :mod (p / percentage-entity :value 5%)
-"7320만대" [QT_COUNT]	->  :quant (7 / 7320만대)	OR	(c / concept* :quant 7320 :unit|scale (만 / 만대))
-"애플" [OGG_ECONOMY]	->  (애 / 애플)	OR	(c / company|organization :wiki "애플" :name (이 / 이름 :op1 "애플"))
-
+(판 / 판매-01
+	:ARG0 (c / company :wiki "애플" :name (이 / 이름 :op1 "애플")
+		:ord (o / ordinal-entity :value 2))
+	:ARG1 (제 / 제품 :quant 73200000 :unit (대 / 대)
+		:mod (줄 / 줄어들-01
+			:extent (p / percentage-entity :value 5%))))
 
 # ::id snt168.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 다만 중국 업체인 3위 화웨이(4390만대)와 4위 샤오미(2820만대)는 판매가 늘었다.
 # ::note
--- KPB FRAMES ----------------------------------------
-판매 : VERBAL_NOUN
-	- sell		(판 / 판매-01 :ARG0 seller :ARG1 thing_sold :ARG2 buyer)
-늘 : VERB
-	- increase		(늘 / 늘-01 :ARG0 causal_agent :ARG1 thing_increasing :ARG2 start_point :ARG3 end_point)
--- ETRI FRAMES (MARKED with '-00') ------------------
-늘 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2820만대" [QT_COUNT]	->  :quant (2 / 2820만대)	OR	(c / concept* :quant 2820 :unit|scale (만 / 만대))
-"3위" [QT_ORDER]	->  :ord (3 / 3위)	OR	:ord (o / ordinal-entity :value 3위)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"4390만대" [QT_COUNT]	->  :quant (4 / 4390만대)	OR	(c / concept* :quant 4390 :unit|scale (만 / 만대))
-"4위" [QT_ORDER]	->  :ord (4 / 4위)	OR	:ord (o / ordinal-entity :value 4위)	OR USE:	:value (v / value-interval :op1)  :range (temporal-quantity :quant :unit)
-"샤오미" [PS_NAME]	->  (샤 / 샤오미)	OR	(p / person :wiki "샤오미" :name (이 / 이름 :op1 "샤오미"))
-"중국" [LCP_COUNTRY]	->  (중 / 중국)	OR	(c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
-"화웨이" [OGG_ECONOMY]	->  (화 / 화웨이)	OR	(c / company|organization :wiki "화웨이" :name (이 / 이름 :op1 "화웨이"))
-
+(c / contrast-01
+	:ARG2 (a / and
+		:op1 (늘 / 늘-01
+			:ARG1 (판 / 판매-01
+				:ARG0 (c2 / company :wiki "화웨이" :name (이 / 이름 :op1 "화웨이")
+					:location (c3 / country :wiki "중국" :name (이2 / 이름 :op1 "중국"))
+					:ord (o / ordinal-entity :value 3)))
+			:ARG3 (제 / 제품 :quant 43900000 :unit (대 / 대)))
+		:op2 (늘2 / 늘-01
+			:ARG1 (판2 / 판매-01
+				:ARG0 (c4 / company :wiki "샤오미" :name (이3 / 이름 :op1 "샤오미")
+					:location c3
+					:ord (o2 / ordinal-entity :value 4)))
+			:ARG3 (제2 / 제품 :quant 28200000 :unit (대2 / 대)))))
 
 # ::id snt169.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 어렸을 때 피를 본 강아지들은 다음부터 발톱 깎는 것을 두려워한다.
 # ::note
--- KPB FRAMES ----------------------------------------
-어리 : VERB
-	- young		(어 / 어리-01 :ARG1 thing_being_young)
-	- be_fraught_with		(어 / 어리-02 :ARG1 substance :ARG2 container)
-보 : VERB
-	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
-	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
-	- according_to		(보 / 보-03 :ARG1 theme)
-	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
-	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
-	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
-	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
-강아지들 : DERIVED_NON-ENTRY -> (강 / 강아지들-00) ?
-발톱깎 : DERIVED_NON-ENTRY
-깎 : VERB
-	- reduce		(깎 / 깎-01 :ARG0 causer :ARG1 thing_falling)
-두려워하 : ** UNUSED_OR_NON-ENTRY **
--- ETRI FRAMES (MARKED with '-00') ------------------
-어리 : ** UNUSED_OR_NON-ENTRY **
-보 : ** UNUSED_OR_NON-ENTRY **
-강아지들 : DERIVED_NON-ENTRY -> (강 / 강아지들-00) ?
-다음 : VERBAL_NOUN
-	- drink_too_much		(다 / 다음-00 :ARG0 행동주 :ARG1 대상)
-발톱깎 : DERIVED_NON-ENTRY
-깎 : ** UNUSED_OR_NON-ENTRY **
-두려워하 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"강아지" [AM_MAMMALIA]	->  (강 / 강아지)	OR	(a / animal* :wiki "강아지" :name (이 / 이름 :op1 "강아지"))
-"발톱" [AM_PART]	->  (발 / 발톱)	OR	(발 / 발톱 :part-of|poss)
-
+(두 / 두렵-01
+	:ARG0 (깎 / 깎-01
+		:ARG1 (발 / 발톱
+			:part-of (강 / 강아지
+				:ARG0-of (보 / 보-01
+					:ARG1 (피 / 피
+					:time (어 / 어리-01
+						:ARG1 강))))))
+	:ARG1 강
+	:time (다 / 다음
+		:op1 보))
 
 # ::id snt170.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 애정운도 나쁘지는 않습니다.
 # ::note
--- KPB FRAMES ----------------------------------------
-나쁘 : VERB
-	- bad		(나 / 나쁘-01 :ARG1 thing_being_bad)
--- ETRI FRAMES (MARKED with '-00') ------------------
-나쁘 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(나 / 나쁘-01
+	:polarity -
+	:ARG1 (운 / 운
+		:topic (애 / 애정)))
 
 # ::id snt171.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 포항남부소방서는 6일 포항시 남구 오천읍 미 해병대 캠프무적에서 미군과 합동 소방훈련을 했다.
 # ::note
--- KPB FRAMES ----------------------------------------
-서 : VERBAL_NOUN
-	- stand		(서 / 서-01 :ARGA causer :ARG0 agent :ARG1 location)
-	- form		(서 / 서-02 :ARG0 agent :ARG1 thing_being_formed)
-	- park		(서 / 서-03 :ARG0 agent :ARG1 entity_parked :ARG2 parking_place)
-남 : VERBAL_NOUN
-	- leave		(남 / 남-01 :ARG0 leaver :ARG1 entity_left :ARG2 place_left)
-대 : VERBAL_NOUN
-	- provide		(대 / 대-01 :ARG0 provider :ARG1 thing_provided :ARG2 entity_provided_for)
-	- put_on		(대 / 대-02 :ARG0 putter :ARG1 thing_put_on :ARG2 where_put_on)
-훈련 : VERBAL_NOUN
-	- train		(훈 / 훈련-01 :ARG0 trainer :ARG1 skill :ARG2 trainee)
-하 : VERB
-	- do		(하 / 하-01 :ARG0 agent :ARG1 theme)
-	- say		(하 / 하-02 :ARG0 agent :ARG1 thing_said :ARG2 hearer)
-	- regard		(하 / 하-03 :ARG0 agent :ARG1 theme :ARG2 attribute)
-	- make		(하 / 하-04 :ARG0 impeller_to_action :ARG1 impelled_action)
-	- decide		(하 / 하-05 :ARG0 decider :ARG1 decision)
-	- at		(하 / 하-06 :ARG1 time)
--- ETRI FRAMES (MARKED with '-00') ------------------
-합동 : VERBAL_NOUN
-	- coalesce_into		(합 / 합동-00 :ARG0 행동주 :ARG2 동반주)
-하 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"6일" [DT_DAY]	->  :time|duration (6 / 6일)	OR	:time (d / date-entity :day 6)	OR	:duration (t / temporal-quantity :quant 6 :unit (일 / 일))  
-"남구" [LCP_COUNTY]	->  (남 / 남구)	OR	(c / county :wiki "남구?" :name (이 / 이름 :op1 "남구"))
-"미" [LCP_COUNTRY]	->  (미 / 미)	OR	(c / country :wiki "미" :name (이 / 이름 :op1 "미"))
-"미군" [OGG_MILITARY]	->  (미 / 미군)	OR	(m / military :wiki "미군" :name (이 / 이름 :op1 "미군"))
-"오천읍" [LCP_COUNTY]	->  (오 / 오천읍)	OR	(c / county :wiki "오천읍" :name (이 / 이름 :op1 "오천읍"))
-"포항남부소방서" [OGG_POLITICS]	->  (포 / 포항남부소방서)	OR	(g / government-organization :wiki "포항남부소방서" :name (이 / 이름 :op1 "포항남부소방서"))
-"포항시" [LCP_CITY]	->  (포 / 포항시)	OR	(c / city :wiki "포항시" :name (이 / 이름 :op1 "포항시"))
-"해병대" [OGG_MILITARY]	->  (해 / 해병대)	OR	(m / military :wiki "해병대" :name (이 / 이름 :op1 "해병대"))
-
+(훈 / 훈련-01
+	:ARG1 (소 / 소방)
+	:ARG2 (a / and
+		:op1 (g / government-organization :wiki "포항남부소방서" :name (이 / 이름 :op1 "포항남부소방서"))
+		:op2 (m / military :wiki "미군" :name (이2 / 이름 :op1 "미군")))
+	:manner (합 / 합동-00
+		:ARG0 g
+		:ARG2 m)
+	:time (d / date-entity :day 6)
+	:location (f / facility :wiki - :name (이3 / 이름 :op1 "캠프무적")
+		:poss (m2 / military :wiki "미국_해병대" :name (이4 / 이름 :op1 "미" :op2 "해병대"))
+		:location (c / city-district :wiki "오천읍" :name (이5 / 이름 :op1 "오천읍")
+			:location (c2 / city :wiki "남구_(포항시)" :name (이6 / 이름 :op1 "남구")
+				:location (c3 / city :wiki "포항시" :name (이7 / 이름 :op1 "포항시"))))))
 
 # ::id snt172.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 특히 KT의 5G 상용화 방안에 대해 높은 관심을 보였다.
 # ::note
--- KPB FRAMES ----------------------------------------
-상용화 : DERIVED_VERB_DETECTED
-	- commercialize		(상 / 상용화-01 :ARG0 causer,_agent :ARG1 thing_commercialized)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
-높 : VERB
-	- high		(높 / 높-01 :ARG0 causer :ARG1 thing_being_high :ARG2 start_point :ARG3 end_point)
-보이 : REDUCED_VERB_DETECTED
-	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
-	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
-	- according_to		(보 / 보-03 :ARG1 theme)
-	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
-	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
-	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
-	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
--- ETRI FRAMES (MARKED with '-00') ------------------
-상용화 : DERIVED_NON-ENTRY -> (상 / 상용화-00) ?
-대하 : ** UNUSED_OR_NON-ENTRY **
-높 : ** UNUSED_OR_NON-ENTRY **
-보이 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
-:mod (특 / 특히)
--- NE TYPES --------------------------------------
-"5G" [TR_SCIENCE]	->  (5 / 5G)	OR	(t / theory* :wiki "5세대_이동_통신" :name (이 / 이름 :op1 "5G"))
-"KT" [OGG_ECONOMY]	->  (K / KT)	OR	(c / company|organization :wiki "KT" :name (이 / 이름 :op1 "KT"))
-
+(보 / 보-00
+	:ARG1 (관 / 관심
+		:ARG1-of (높 / 높-01))
+	:ARG2 (방 / 방안
+		:mod (상 / 상용화-01
+			:ARG0 (c / company :wiki "KT" :name (이 / 이름 :op1 "KT"))
+			:ARG1 (5 / 5G)))
+	:mod (특 / 특히))
 
 # ::id snt173.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 노력하는 자만이 행운을 움켜쥘 수 있을 거예요.
 # ::note
--- KPB FRAMES ----------------------------------------
-노력 : VERBAL_NOUN
-	- endeavor		(노 / 노력-01 :ARG0 agent :ARG1 proposition)
-움켜쥐 : ** UNUSED_OR_NON-ENTRY **
-있 : ** UNUSED_OR_NON-ENTRY **
--- ETRI FRAMES (MARKED with '-00') ------------------
-노력하 : DERIVED_NON-ENTRY
-움켜쥐 : ** UNUSED_OR_NON-ENTRY **
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(움 / 움켜쥐-00
+	:ARG1 (행 / 행운)
+	:condition (노 / 노력-01))
 
 # ::id snt174.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 정말 부끄럽고 참담하다.
 # ::note
--- KPB FRAMES ----------------------------------------
-부끄럽 : VERB
-	- shameful		(부 / 부끄럽-01 :ARG0 causer :ARG1 person_feeling_shameful)
-참담하 : DERIVED_NON-ENTRY
--- ETRI FRAMES (MARKED with '-00') ------------------
-부끄럽 : ** UNUSED_OR_NON-ENTRY **
-참담하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(a / and
+	:op1 (부 / 부끄럽-01)
+	:op2 (참 / 참담하-00)
+	:degree (정 / 정말))
 
 # ::id snt175.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 경찰은 피해자가 더 있을 것으로 보고 여죄를 캐고 있다.
 # ::note
--- KPB FRAMES ----------------------------------------
-피해자 : DERIVED_NON-ENTRY -> (피 / 피해자-00) ?
-있 : ** UNUSED_OR_NON-ENTRY **
-보 : VERB
-	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
-	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
-	- according_to		(보 / 보-03 :ARG1 theme)
-	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
-	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
-	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
-	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
-캐 : ** UNUSED_OR_NON-ENTRY **
--- ETRI FRAMES (MARKED with '-00') ------------------
-피해자 : DERIVED_NON-ENTRY -> (피 / 피해자-00) ?
-있 : ** UNUSED_OR_NON-ENTRY **
-보 : ** UNUSED_OR_NON-ENTRY **
-캐 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"경찰" [OGG_POLITICS]	->  (경 / 경찰)	OR	(g / government-organization :wiki "경찰" :name (이 / 이름 :op1 "경찰"))
-"피해자" [CV_POSITION]	->  :mod (피 / 피해자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (피 / 피해자))
-
+(a / and
+	:op1 (보 / 보-02
+		:ARG0 (경 / 경찰)
+		:ARG1 (h / have-quant-91
+			:ARG1 (피 / 피해자)
+			:ARG3 (더 / 더)))
+	:op2 (캐 / 캐-00
+		:ARG0 경
+		:ARG1 (여 / 여죄)))
 
 # ::id snt176.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 당시 성추행 소문이 퍼지자 A 전 검사는 사표를 제출하고 대기업에 취업했다.
 # ::note
--- KPB FRAMES ----------------------------------------
-퍼지 : VERB
-	- spread		(퍼 / 퍼지-01 :ARG1 thing_spreading :ARG2 thing_spread_through)
-	- resonate-CV		(퍼 / 퍼지-02 :ARG1 sound :ARG2 direction)
-검사 : VERBAL_NOUN
-	- inspect		(검 / 검사-01 :ARG0 agent :ARG1 thing_inspected)
-제출 : VERBAL_NOUN
-	- submit		(제 / 제출-01 :ARG0 agent :ARG1 thing_given :ARG2 given_to)
-기업 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대기업-00) ?
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-취업 : VERBAL_NOUN
-	- work		(취 / 취업-01 :ARG0 thing_working :ARG1 work_at)
--- ETRI FRAMES (MARKED with '-00') ------------------
-퍼지 : ** UNUSED_OR_NON-ENTRY **
-제출하 : DERIVED_NON-ENTRY
-대기업 : DERIVED_NON-ENTRY -> (대 / 대기업-00) ?
-취업하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"성추행" [CV_LAW]	->  (성 / 성추행)	OR	(l / law :wiki "성폭력" :name (이 / 이름 :op1 "성추행"))
-
+(a / and
+	:op1 (제 / 제출-01
+		:ARG0 (p / person :wiki - :name (이 / 이름 :op1 "A")
+			:ARG0-of (h / have-org-role-91
+				:ARG2 (검 / 검사)
+				:time (전 / 전)))
+		:ARG1 (사 / 사표))
+	:op2 (취 / 취업-01
+		:ARG0 p
+		:ARG1 (대 / 대기업))
+	:cause (퍼 / 퍼지-01
+		:ARG1 (소 / 소문
+			:topic (성 / 성추행))
+		:time (당 / 당시)))
 
 # ::id snt177.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 20일 오전 전국 곳곳에서 미세먼지 농도가 '나쁨' 수준까지 치솟았다.
 # ::note
--- KPB FRAMES ----------------------------------------
-미세 : VERBAL_NOUN
-	- fine		(미 / 미세-01 :ARG1 thing_being_fine)
-나쁘 : VERB
-	- bad		(나 / 나쁘-01 :ARG1 thing_being_bad)
-치솟 : VERB
-	- go_up_to		(치 / 치솟-01 :ARG1 thing_going_up :ARG2 end_point)
--- ETRI FRAMES (MARKED with '-00') ------------------
-나쁘 : ** UNUSED_OR_NON-ENTRY **
-치솟 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"20일" [DT_DAY]	->  :time|duration (2 / 20일)	OR	:time (d / date-entity :day 20)	OR	:duration (t / temporal-quantity :quant 20 :unit (일 / 일))  
-"오전" [TI_DURATION]	->  :time|duration (오 / 오전)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-
+(치 / 치솟-01
+	:ARG1 (농 / 농도
+		:poss (미 / 미세먼지))
+	:ARG2 (수 / 수준
+		:op1 (s / score-on-scale-91
+			:ARG1 "나쁨"))
+	:location (전 / 전국)
+	:time (d / date-entity :day 20 :dayperiod (오 / 오전)))
 
 # ::id snt178.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 매사가 순조로우니 몸과 마음이 편안한 한 주에요.
 # ::note
--- KPB FRAMES ----------------------------------------
-순조롭 : DERIVED_VERB_DETECTED
-	- favorable		(순 / 순조롭-01 :ARG1 thing_being_favorable)
-편안하 : DERIVED_NON-ENTRY
--- ETRI FRAMES (MARKED with '-00') ------------------
-순조롭 : DERIVED_NON-ENTRY
-편안하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"매사" [PS_NAME]	->  (매 / 매사)	OR	(p / person :wiki - :name (이 / 이름 :op1 "매사"))
-"몸" [AM_PART]	->  (몸 / 몸)	OR	(몸 / 몸 :part-of|poss)
-"순조" [PS_NAME]	->  (순 / 순조)	OR	(p / person :wiki "조선_순조" :name (이 / 이름 :op1 "순조"))
-"한 주" [DT_DURATION]	->  :time|duration (한 / 한주)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity))	OR :duration 
-
+(t / temporal-quantity :value 1 :unit (주 / 주)
+	:duration-of (편 / 편안하-00
+		:ARG1 (a / and
+			:op1 (몸 / 몸)
+			:op2 (마 / 마음))
+		:cause (순 / 순조롭-01
+			:ARG1 (매 / 매사))))
 
 # ::id snt179.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 어디에서 누구를 만나든 그 사람이 당신의 인연일 수도 있다는 생각으로 상대를 대하십시오.
 # ::note
--- KPB FRAMES ----------------------------------------
-만나 : VERB
-	- meet		(만 / 만나-01 :ARG0 person/entity/obeject_meeting :ARG1 person/entity/obeject_being_met)
-있 : ** UNUSED_OR_NON-ENTRY **
-생각 : VERBAL_NOUN
-	- think		(생 / 생각-01 :ARG0 agent :ARG1 proposition)
-상대 : VERBAL_NOUN
-	- confront		(상 / 상대-01 :ARG0 agent :ARG1 confronted_with)
-대하 : VERB
-	- regarding		(대 / 대하-01 :ARG1 thing :ARG2 theme)
--- ETRI FRAMES (MARKED with '-00') ------------------
-만나 : ** UNUSED_OR_NON-ENTRY **
-있 : ** UNUSED_OR_NON-ENTRY **
-대하 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(대 / 대하-01
+	:mode imperative
+	:ARG1 (상 / 상대)
+	:manner (생 / 생각-01
+		:ARG0 (당 / 당신)
+		:ARG1 (가 / 가능-01
+			:ARG1 (인 / 인연
+				:domain (사 / 사람
+					:mod (그 / 그))
+				:poss 당)))
+	:ARG1-of (r / regardless-91
+		:ARG2 (만 / 만나-01
+			:ARG0 당
+			:ARG1 (누 / 누구)
+			:location (어 / 어디))))
 
 # ::id snt180.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 진실한 태도만이 사람들에게 통할 것입니다.
 # ::note
--- KPB FRAMES ----------------------------------------
-진실하 : DERIVED_NON-ENTRY
-사람들 : DERIVED_NON-ENTRY -> (사 / 사람들-00) ?
-통하 : VERB
-	- through		(통 / 통하-01 :ARG1 thing :ARG2 theme)
-	- lead_to		(통 / 통하-02 :ARG1 thing :ARG2 start_point :ARG3 end_point)
-	- make_sence		(통 / 통하-03 :ARG1 thing_making_sence)
--- ETRI FRAMES (MARKED with '-00') ------------------
-진실하 : DERIVED_NON-ENTRY
-사람들 : DERIVED_NON-ENTRY -> (사 / 사람들-00) ?
-통하 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(통 / 통하-03
+	:ARG1 (태 / 태도
+		:ARG1-of (진 / 진실하-00))
+	:beneficiary (사 / 사람))
 
 # ::id snt181.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 롯데관광개발은 평창동계올림픽 강원도 우수 지역 자원봉사자에게 크루즈 승선권을 전달했다고 22일 밝혔다.
 # ::note
--- KPB FRAMES ----------------------------------------
-개발 : VERBAL_NOUN
-	- develop		(개 / 개발-01 :ARG0 developer :ARG1 thing_developed)
-우수 : VERBAL_NOUN
-	- excellent		(우 / 우수-01 :ARG1 entity_being_excellent)
-봉사 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (봉 / 봉사자-00) ?
-	- serve		(봉 / 봉사-01 :ARG0 agent :ARG1 entity_served)
-승선권 : DERIVED_NON-ENTRY -> (승 / 승선권-00) ?
-전달하 : REDUCED_VERB_DETECTED
-	- transmit		(전 / 전달-01 :ARG0 sender :ARG1 thing_sent :ARG2 sent_to)
-밝히 : VERB
-	- reveal		(밝 / 밝히-01 :ARG0 revealer :ARG1 utterance,_truth_condition :ARG2 hearer)
-	- light		(밝 / 밝히-02 :ARG0 agent :ARG1 thing_lit)
--- ETRI FRAMES (MARKED with '-00') ------------------
-자원 : VERBAL_NOUN
-	- valunteer		(자 / 자원-00 :ARG0 행동주 :ARG1 대상,착점 :ARG2 내용)
-봉사자 : DERIVED_NON-ENTRY -> (봉 / 봉사자-00) ?
-승선 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (승 / 승선권-00) ?
-	- board_(a_ship)		(승 / 승선-00 :ARG0 행동주 :ARG2 착점)
-전달하 : ** UNUSED_OR_NON-ENTRY **
-밝히 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"22일" [DT_DAY]	->  :time|duration (2 / 22일)	OR	:time (d / date-entity :day 22)	OR	:duration (t / temporal-quantity :quant 22 :unit (일 / 일))  
-"강원도" [LCP_PROVINCE]	->  (강 / 강원도)	OR	(p / province :wiki "강원도" :name (이 / 이름 :op1 "강원도"))
-"롯데관광개발" [OGG_ECONOMY]	->  (롯 / 롯데관광개발)	OR	(c / company|organization :wiki "롯데관광개발" :name (이 / 이름 :op1 "롯데관광개발"))
-"승선권" [CV_LAW]	->  (승 / 승선권)	OR	(l / law :wiki "차표" :name (이 / 이름 :op1 "승선권"))
-"자원봉사자" [CV_POSITION]	->  :mod (자 / 자원봉사자)	OR	:ARG0-of (h / have-org-role-91 :ARG1 :ARG2 (자 / 자원봉사자))
-"크루즈" [AF_TRANSPORT]	->  (크 / 크루즈)	OR	(v / vehicle|ship|aircraft|... :wiki "크루즈?" :name (이 / 이름 :op1 "크루즈"))
-"평창동계올림픽" [EV_SPORTS]	->  (평 / 평창동계올림픽)	OR	(g / game :wiki "2018년_동계_올림픽" :name (이 / 이름 :op1 "평창동계올림픽"))
-
+(밝 / 밝히-01
+	:ARG0 (c / company :wiki "롯데관광개발" :name (이 / 이름 :op1 "롯데관광개발"))
+	:ARG1 (전 / 전달-01
+		:ARG0 c
+		:ARG1 (승 / 승선권
+			:mod (크 / 크루즈))
+		:ARG2 (사 / 사람
+			:ARG0-of (봉 / 봉사-01
+				:ARG1 (g / game :wiki "2018년_동계_올림픽" :name (이2 / 이름 :op1 "평창동계올림픽"))
+				:manner (자 / 자원-00
+					:ARG0 사 
+					:ARG2 봉))
+			:mod (지 / 지역)
+			:ARG1-of (우 / 우수-01)
+			:location (p / province :wiki "강원도_(남)" :name (이3 / 이름 :op1 "강원도"))))
+	:time (d / date-entity :day 22))
 
 # ::id snt182.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 이미 암호화폐 거래소 2곳에 블록체인·핀테크 기술을 공급했다.
 # ::note
--- KPB FRAMES ----------------------------------------
-거래 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (거 / 거래소-00) ?
-	- transact		(거 / 거래-01 :ARG0 agent :ARG1 thing_transacted)
-기술 : VERBAL_NOUN
-	- describe		(기 / 기술-01 :ARG0 describer :ARG1 thing_described)
-공급 : VERBAL_NOUN
-	- supply		(공 / 공급-01 :ARG0 agent :ARG1 thing_provided :ARG2 entity_provided_for_(beneficial))
--- ETRI FRAMES (MARKED with '-00') ------------------
-거래소 : DERIVED_NON-ENTRY -> (거 / 거래소-00) ?
-공급하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2곳" [QT_COUNT]	->  :quant (2 / 2곳)	OR	(c / concept* :quant 2 :unit|scale (곳 / 곳))
-"핀테크" [TMI_SERVICE]	->  (핀 / 핀테크)	OR	(s / service* :wiki "핀테크" :name (이 / 이름 :op1 "핀테크"))
-
+(공 / 공급-01
+	:ARG1 (기 / 기술
+		:topic (a / and
+			:op1 (블 / 블록체인)
+			:op2 (핀 / 핀테크)))
+	:ARG2 (거 / 거래소 :quant 2 :unit (곳 / 곳)
+		:location-of (거2 / 거래-01
+			:ARG1 (암 / 암호화폐)))
+	:mod (이 / 이미))
 
 # ::id snt183.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 너무 욕심내지 말고 순리대로 끌고 가세요.
 # ::note
--- KPB FRAMES ----------------------------------------
-욕심내 : ** UNUSED_OR_NON-ENTRY **
-끌 : VERB
-	- drag		(끌 / 끌-01 :ARG0 agent :ARG1 thing_dragged)
-가 : VERB
-	- go		(가 / 가-01 :ARG0 entity_going :ARG1 path :ARG2 start_point :ARG3 end_point)
-	- amount_to		(가 / 가-02 :ARG1 theme :ARG2 quantity)
-	- make-light_verb		(가 / 가-03 :ARG1 deverbal_noun)
-	- take-CV		(가 / 가-04 :ARG0 agent :ARG1 thing_taken :ARG2 start_point :ARG3 end_point)
-	- draw-CV		(가 / 가-05 :ARG0 agent :ARG1 thing_drawn :ARG2 start_point :ARG3 end_point)
-	- transport-CV		(가 / 가-06 :ARG0 agent,_causer :ARG1 thing_in_motion :ARG2 start_point :ARG3 end_point)
-	- loot-CV		(가 / 가-07 :ARG0 agent :ARG1 theme :ARG2 source)
--- ETRI FRAMES (MARKED with '-00') ------------------
-욕심내 : ** UNUSED_OR_NON-ENTRY **
-끌 : ** UNUSED_OR_NON-ENTRY **
-가 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(a / and
+	:op1 (욕 / 욕심내-00
+		:polarity -
+		:mode imperative
+		:degree (너 / 너무))
+	:op2 (끌 / 끌고가-00
+		:manner (순 / 순리)))
 
 # ::id snt184.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt SK텔레콤은 가상 아바타를 보면서 대화하는 실감 미디어 2종을 소개한다.
 # ::note
+
+
+
 -- KPB FRAMES ----------------------------------------
 보 : VERB
 	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
