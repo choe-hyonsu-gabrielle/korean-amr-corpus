@@ -1962,28 +1962,26 @@
 # ::id snt151.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 먼저 AI 카메라는 카메라로 사물을 비추면 자동으로 최적의 촬영 모드를 추천한다.
 # ::note
--- KPB FRAMES ----------------------------------------
-비추 : VERB
-	- compare		(비 / 비추-01 :ARG0 entity_making_comparison :ARG1 first_item_in_comparison :ARG2 second_item_in_comparison)
-촬영 : VERBAL_NOUN
-	- photogragh		(촬 / 촬영-01 :ARG0 agent :ARG1 thing_photographed)
-추천 : VERBAL_NOUN
-	- recommend		(추 / 추천-01 :ARG0 thing_recommending :ARG1 thing_recommended :ARG2 recommend_as :ARG3 recommend_for)
--- ETRI FRAMES (MARKED with '-00') ------------------
-비추 : REDUCED_VERB_DETECTED
-	- empty		(비 / 비-00 :ARG0 행동주 :ARG1 대상 :ARG2 기점)
-최적 : VERBAL_NOUN
-	- the_best		(최 / 최적-00 :ARG0 경험주 :ARG2 처소)
-추천하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"AI 카메라" [TMI_HW]	->  (A / AI카메라)	OR	(p / product? :wiki - :name (이 / 이름 :op1 "AI" :op2 "카메라"))
-"카메라" [TMI_HW]	->  (카 / 카메라)	OR	(p / product? :wiki "사진기" :name (이 / 이름 :op1 "카메라"))
-
+(추 / 추천-01
+	:ARG0 (카 / 카메라
+		:mod (A / AI))
+	:ARG1 (모 / 모드
+		:purpose (촬 / 촬영-01)
+		:mod (최 / 최적-00))
+	:condition (비 / 비치-01
+		:ARG1 (사 / 사물)
+		:ARG2 카)
+	:manner (자 / 자동)
+	:mod (먼 / 먼저))
 
 # ::id snt152.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 홀로그램은 초고화질의 3차원 영상을 전송하는 만큼 5G 없이는 실현 불가능한 서비스.
 # ::note
+(서 / 서비스
+	:mod (불 / 불가능-01 :ARG1 event_being_impossible))
+
+
+
 -- KPB FRAMES ----------------------------------------
 초고 : DERIVED_NON-ENTRY -> (초 / 초고-00) ?
 전송 : VERBAL_NOUN
