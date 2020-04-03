@@ -1108,7 +1108,7 @@
 			:manner (세 / 세부적)
 			:ARG1 (사 / 사업
 				:mod (구 / 구체적)
-				:exmaple (등 / 등
+				:example (등 / 등
 					:op1 (I / ICO))))))
 
 # ::id snt87.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
@@ -2409,139 +2409,81 @@
 # ::id snt184.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt SK텔레콤은 가상 아바타를 보면서 대화하는 실감 미디어 2종을 소개한다.
 # ::note
-
-
-
--- KPB FRAMES ----------------------------------------
-보 : VERB
-	- see		(보 / 보-01 :ARGA causer :ARG0 seer :ARG1 thing_seen)
-	- regard		(보 / 보-02 :ARG0 seer :ARG1 thing_regarded)
-	- according_to		(보 / 보-03 :ARG1 theme)
-	- get_to		(보 / 보-04 :ARG0 agent :ARG1 end_state)
-	- You_will_pay_for_this-CV		(보 / 보-05 :ARG0 agent :ARG1 theme)
-	- infer-CV		(보 / 보-06 :ARG0 agent :ARG1 belief :ARG2 source_of_belief)
-	- look_back-CV		(보 / 보-07 :ARG0 agent :ARG1 thing_looked_back)
-대화 : VERBAL_NOUN
-	- talk_with		(대 / 대화-01 :ARG0 talker :ARG1 subject :ARG2 hearer)
-소개 : VERBAL_NOUN
-	- introduce		(소 / 소개-01 :ARG0 agent :ARG1 entity_introduced :ARG2 entity_introduced_to)
--- ETRI FRAMES (MARKED with '-00') ------------------
-보 : ** UNUSED_OR_NON-ENTRY **
-대화하 : DERIVED_NON-ENTRY
-소개하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"2종" [QT_COUNT]	->  :quant (2 / 2종)	OR	(c / concept* :quant 2 :unit|scale (종 / 종))
-"SK텔레콤" [OGG_ECONOMY]	->  (S / SK텔레콤)	OR	(c / company|organization :wiki "SK텔레콤" :name (이 / 이름 :op1 "SK텔레콤"))
-"아바타" [AFW_VIDEO]	->  (아 / 아바타)	OR	(b / broadcast-program|movie :wiki "아바타" :name (이 / 이름 :op1 "아바타"))
-
+(소 / 소개-01
+	:ARG0 (c / company :wiki "SK텔레콤" :name (이 / 이름 :op1 "SK텔레콤"))
+	:ARG1 (실 / 실감-미디어 :quant 2 :unit (종 / 종)
+		:mod (대 / 대화-01
+			:ARG2 (아 / 아바타
+				:mod (가 / 가상))
+			:manner (보 / 보-01
+				:ARG1 아))))
 
 # ::id snt185.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 참사 3년 만에 목포신항에 거치한 세월호와 미수습자 수색 등 장면은 기획전으로 구성했다.
 # ::note
--- KPB FRAMES ----------------------------------------
-거치 : VERBAL_NOUN
-	- pass_through		(거 / 거치-01 :ARG1 thing :ARG2 theme)
-	- mount		(거 / 거치-02 :ARG0 agent :ARG1 thing_mounted :ARG2 where_mount)
-수색 : VERBAL_NOUN
-	- search		(수 / 수색-01 :ARG0 searcher :ARG1 thing_searched)
-기획 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (기 / 기획전-00) ?
-	- plan		(기 / 기획-01 :ARG0 agent :ARG1 thing_planned)
-구성 : VERBAL_NOUN
-	- compose		(구 / 구성-01 :ARG0 agent :ARG1 thing_composed :ARG2 composed_of)
--- ETRI FRAMES (MARKED with '-00') ------------------
-신 : VERBAL_NOUN
-	- put_on		(신 / 신-00 :ARG0 행동주 :ARG1 대상 :ARG2 착점)
-거치하 : DERIVED_NON-ENTRY
-기획전 : DERIVED_NON-ENTRY -> (기 / 기획전-00) ?
-구성하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"3년" [DT_DURATION]	->  :time|duration (3 / 3년)	OR USE:	:duration (d / date-inverval :op1 (d / date-entity :year 3))	OR :duration (t / temporal-quantity :quant 3 :unit (년 / 년))  
-"목포신항" [LC_OTHERS]	->  (목 / 목포신항)	OR	(l / location? :wiki "목포신항" :name (이 / 이름 :op1 "목포신항"))
-"세월호" [AF_TRANSPORT]	->  (세 / 세월호)	OR	(v / vehicle|ship|aircraft|... :wiki "세월호" :name (이 / 이름 :op1 "세월호"))
-
+(구 / 구성-01
+	:ARG1 (기 / 기획전)
+	:ARG2 (장 / 장면
+		:example (등 / 등
+			:op1 (s / ship :wiki "세월호" :name (이 / 이름 :op1 "세월호")
+				:ARG1-of (거 / 거치-02
+					:ARG2 (p / port :wiki "목포신항" :name (이2 / 이름 :op1 "목포신항"))
+					:time (이3 / 이후
+						:op1 (i / incident :wiki "세월호_침몰_사고" :name (이4 / 이름 :op1 "참사"))
+						:quant (t / temporal-quantity :quant 3 :unit (년 / 년))))))
+			:op2 (수 / 수색-01
+				:ARG1 (사 / 사람
+					:ARG1-of (수2 / 수습-00
+						:polarity -))))))
 
 # ::id snt186.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 이번에 추가된 전용서버는 PS4와 X박스원이다.
 # ::note
--- KPB FRAMES ----------------------------------------
-추가 : VERBAL_NOUN
-	- add		(추 / 추가-01 :ARG0 agent :ARG1 thing_added :ARG2 add_to)
--- ETRI FRAMES (MARKED with '-00') ------------------
-추가되 : DERIVED_NON-ENTRY
-전용 : VERBAL_NOUN
-	- redirect		(전 / 전용-00 :ARG0 행동주 :ARG1 대상 :ARG2 착점)
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-"PS4" [TMI_HW]	->  (P / PS4)	OR	(p / product? :wiki "플레이스테이션_4" :name (이 / 이름 :op1 "PS4"))
-"X박스원" [TMI_HW]	->  (X / X박스원)	OR	(p / product? :wiki - :name (이 / 이름 :op1 "X박스원"))
-
+(추 / 추가-01
+	:ARG1 (서 / 서버
+		:mod (전 / 전용)
+		:purpose (a / and
+			:op1 (p / product :wiki "플레이스테이션_4" :name (이 / 이름 :op1 "PS4"))
+			:op2 (p2 / product :wiki "엑스박스_원" :name (이2 / 이름 :op1 "X박스원"))))
+	:time (이3 / 이번))
 
 # ::id snt187.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 서두르면 스타일만 구길 수 있어요.
 # ::note
--- KPB FRAMES ----------------------------------------
-서두르 : VERB
-	- hurry		(서 / 서두르-01 :ARG0 agent :ARG1 action)
-구기 : ** UNUSED_OR_NON-ENTRY **
-있 : ** UNUSED_OR_NON-ENTRY **
--- ETRI FRAMES (MARKED with '-00') ------------------
-서두르 : ** UNUSED_OR_NON-ENTRY **
-구기 : ** UNUSED_OR_NON-ENTRY **
-있 : ** UNUSED_OR_NON-ENTRY **
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(가 / 가능-01
+	:ARG1 (구 / 구기-00
+		:ARG1 (스 / 스타일))
+	:condition (서 / 서두르-01))
 
 # ::id snt188.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 이후 A씨는 처벌이나 징계절차가 이뤄지지 않은 채 사표가 수리됐고, 대기업에 취업했습니다.
 # ::note
--- KPB FRAMES ----------------------------------------
-처벌 : VERBAL_NOUN
-	- punish		(처 / 처벌-01 :ARG0 agent :ARG1 thing_punished)
-징계 : VERBAL_NOUN
-	- punish		(징 / 징계-01 :ARG0 agent :ARG1 thing_punished)
-이루 : VERB
-	- establish		(이 / 이루-01 :ARG0 setter :ARG1 thing_set)
-지 : VERB
-	- bear		(지 / 지-01 :ARG0 agent :ARG1 theme :ARG2 back)
-	- do-light_verb		(지 / 지-02 :ARG0 agent :ARG1 deverbal_noun)
-	- set		(지 / 지-03 :ARG1 thing_setting :ARG2 direction)
-	- lose		(지 / 지-04 :ARG0 loser :ARG1 winner)
-	- be_in_debt		(지 / 지-05 :ARG0 recipient :ARG1 debt :ARG2 giver)
-수리 : VERBAL_NOUN
-	- repair		(수 / 수리-01 :ARG0 agent :ARG1 thing_repaired)
-기업 : DERIVED_VERB_DETECTED:ROOT-ONLY -> (대 / 대기업-00) ?
-	- carry_on_business		(기 / 기업-01 :ARG0 agent)
-취업 : VERBAL_NOUN
-	- work		(취 / 취업-01 :ARG0 thing_working :ARG1 work_at)
--- ETRI FRAMES (MARKED with '-00') ------------------
-이루 : REDUCED_VERB_DETECTED
-	- place[put]_sth_on_the_head		(이 / 이-00 :ARG0 행동주 :ARG1 대상 :ARG2 처소)
-	- roof_a_house_with_tile		(이 / 이-00 :ARG0 행동주 :ARG1 대상)
-지 : ** UNUSED_OR_NON-ENTRY **
-수리되 : DERIVED_NON-ENTRY
-대기업 : DERIVED_NON-ENTRY -> (대 / 대기업-00) ?
-취업하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(a / and
+	:op1 (수 / 수리-00
+		:ARG1 (사 / 사표
+			:poss (p / person :wiki - :name (이 / 이름 :op1 "A")))
+		:manner (이2 / 이루-01
+			:polarity -
+			:ARG1 (절 / 절차
+				:topic (o / or
+					:op1 (처 / 처벌-01
+						:ARG1 p)
+					:op2 (징 / 징계-01
+						:ARG1 p)))))
+	:op2 (취 / 취업-01
+		:ARG0 p
+		:ARG1 (대 / 대기업))
+	:time (이3 / 이후))
 
 # ::id snt189.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 가까운 사람을 소홀히 대접하지 마세요.
 # ::note
--- KPB FRAMES ----------------------------------------
-가깝 : VERB
-	- near		(가 / 가깝-01 :ARG1 thing_being_near :ARG2 which_from)
-대접 : VERBAL_NOUN
-	- treat		(대 / 대접-01 :ARG0 one_party :ARG1 other_party :ARG2 attribute)
--- ETRI FRAMES (MARKED with '-00') ------------------
-가깝 : ** UNUSED_OR_NON-ENTRY **
-대접하 : DERIVED_NON-ENTRY
--- FORCE CONVERT ---------------------------------
--- NE TYPES --------------------------------------
-
+(대 / 대접-01
+	:polarity -
+	:mode imperative
+	:ARG1 (사 / 사람
+		:ARG1-of (가 / 가깝-00))
+	:manner (소 / 소홀하-00))
 
 # ::id snt190.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 환경생태연구소는 바다거북에게 부착할 수 있는 통신기기도 개발하고 있다.
