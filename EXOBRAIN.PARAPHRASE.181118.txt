@@ -3287,7 +3287,6 @@
 		:op1 d
 		:op2 (d3 / date-entity :day 25)))
 
-
 # ::id snt251.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator YOUR_NAME ::preferred IAA
 # ::snt 피해를 주장하는 증언이 잇따라 제기되면서 논란은 더욱 가열되고 있다.
 # ::note
