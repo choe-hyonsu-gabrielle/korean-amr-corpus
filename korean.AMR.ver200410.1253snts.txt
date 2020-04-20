@@ -4452,7 +4452,7 @@
                               :medium (s2 / service* :wiki "홈택스" :name (이3 / 이름 :op1 "홈택스")
                                     :ARG1-of (h / hyperlink-91
                                           :ARG3 (u / url-entity :value "www.hometax.go.kr"))))))
-            :time (d / date-entity :day 15 :time "9:00"))
+            :time (d / date-entity :day 15 :time "09:00"))
       :time (d2 / date-entity :day 12))
 
 # ::id snt4.E2017.NEWS.001 ::date 2020-04-05 ::annotator gabrielle
@@ -8045,7 +8045,7 @@
       :mod (혹 / 혹시나-하고)
       :concession (b / be-temporally-at-91
             :ARG2 (d / date-entity
-                  :time "2:00"
+                  :time "02:00"
                   :weekday (토 / 토요일)
                   :timezone (c / country :wiki "미국" :name (이 / 이름 :op1 "미국")))))
 
@@ -8312,7 +8312,7 @@
                                     :ARG0-of (신 / 신호-00))
                               :ARG2 (t / temporal-quantity :quant 10 :unit (초 / 초))))
                   :concession (b / be-temporally-at-91
-                        :ARG2 (d / date-entity :time "6:30")))))
+                        :ARG2 (d / date-entity :time "06:30")))))
 
 # ::id snt18.E2017.NEWS.007 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 밤 시간대인 미국 은행을 포함해 10대 은행 중 8개 은행은 상담원이 전화를 받았다.
@@ -13188,7 +13188,7 @@
       :op2 (d / date-entity
             :time-of (발 / 발인)
             :day 8
-            :time "8:30"))
+            :time "08:30"))
 
 # ::id snt26.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 달콤커피가 프랜차이즈 커피업계 최초로 4차 산업혁명 핵심인 로봇기술 기반의 벤처기업 인증을 획득했다.

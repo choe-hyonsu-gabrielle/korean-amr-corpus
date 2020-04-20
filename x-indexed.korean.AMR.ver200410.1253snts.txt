@@ -6051,7 +6051,7 @@
                   :wiki -)
             :time (x15 / date-entity
                   :day 15
-                  :time "9:00"))
+                  :time "09:00"))
       :time (x16 / date-entity
             :day 12))
 
@@ -10465,7 +10465,7 @@
             :ARG1-of (x2 / 상담-00))
       :concession (x4 / be-temporally-at-91
             :ARG2 (x5 / date-entity
-                  :time "2:00"
+                  :time "02:00"
                   :timezone (x7 / country
                         :name (x8 / 이름
                               :op1 "미국")
@@ -10842,7 +10842,7 @@
                         :wiki "미쓰비시UFJ은행")
                   :concession (x27 / be-temporally-at-91
                         :ARG2 (x28 / date-entity
-                              :time "6:30"))
+                              :time "06:30"))
                   :manner (x20 / 말하-01
                         :ARG1 "모시모시")
                   :time (x21 / 만
@@ -17851,7 +17851,7 @@
       :op2 (x6 / date-entity
             :day 8
             :time-of (x7 / 발인)
-            :time "8:30"))
+            :time "08:30"))
 
 # ::id snt26.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 달콤커피가 프랜차이즈 커피업계 최초로 4차 산업혁명 핵심인 로봇기술 기반의 벤처기업 인증을 획득했다.
