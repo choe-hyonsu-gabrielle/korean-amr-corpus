@@ -533,6 +533,7 @@
 
 # ::id snt26.E2017.NEWS.007 ::date 2019-11-14 ::annotator gabrielle
 # ::snt 금융소비자연맹 강형구 금융 국장은 "금융회사 콜센터의 통화 대기 시간뿐 아니라 민원 상담에 대한 전화 요금을 모두 소비자에게 부담하는 것은 적절치 않다"고 말했다.
+# ::note
 (말 / 말하-01
 	:ARG0 (p / person :wiki - :name (이 / 이름 :op1 "강형구")
 		:ARG0-of (h / have-org-role-91
