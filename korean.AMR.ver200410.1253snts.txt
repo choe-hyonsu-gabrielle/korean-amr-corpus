@@ -1105,9 +1105,9 @@
             :name-of (사 / 사람
                   :ARG0-of (h / have-rel-role-91
                         :ARG1 (p / person :wiki "가이아" :name (이3 / 이름 :op1 "가이아"))
-                        :ARG2 (아 / 아들)))
-            :ARG1-of (등 / 등장-01
-                  :ARG2 (그 / 그리스-신화))))
+                        :ARG2 (아 / 아들))
+                  :ARG1-of (등 / 등장-01
+                        :ARG2 (그 / 그리스-신화)))))
 
 # ::id snt1.931.016_A.02_ver ::date 2020-04-05 ::annotator gabrielle
 # ::snt 우국(憂國)의 내용이 담긴 명문장으로 유명하다.
@@ -6683,7 +6683,7 @@
 
 # ::id snt2.E2017.NEWS.005 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 인사가 다소 지연되던 청와대 국가안보실장엔 정의용(71) 아시아정당 국제회의 공동 상임위원장이, 정책실장엔 장하성(64) 고려대 경영학과 교수가 임명됐다.
-# ::note
+# ::note wikified
 (a / and
       :op1 (임 / 임명-01
             :ARG1 (p / person :wiki "정의용" :name (이 / 이름 :op1 "정의용")
@@ -10878,21 +10878,18 @@
 # ::id snt17.E2017.Wiki.010 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 버락 오바마 대통령은 1993년부터 2004년까지 시카고대학교 법학대학원에서 강사로 재직하며 헌법학 강의를 했다.
 # ::note ARGM-PRD에 해당하는 논항을 :attribute로 처리
-(a / and
-      :op1 (재 / 재직-01
-            :ARG0 (p / person :wiki "버락_오바마" :name (이 / 이름 :op1 "버락" :op2 "오바마")
-                  :ARG0-of (h / have-org-role-91
-                        :ARG2 (대 / 대통령)))
-            :attribute (강 / 강사
-                  :ARG2-of (h2 / have-org-role-91
-                        :ARG0 p
-                        :ARG1 (u / university :wiki "시카고_대학교_법학대학원" :name (이2 / 이름 :op1 "시카고대학교" :op2 "법학대학원"))))
-            :duration (d / date-interval
-                  :op1 (d2 / date-entity :year 1993)
-                  :op2 (d3 / date-entity :year 2004)))
-      :op2 (강2 / 강의-00
+(h / have-org-role-91
+      :ARG0 (p / person :wiki "버락_오바마" :name (이 / 이름 :op1 "버락" :op2 "오바마")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG2 (대 / 대통령)))
+      :ARG1 (u / university :wiki "시카고_대학교_법학대학원" :name (이2 / 이름 :op1 "시카고대학교" :op2 "법학대학원"))
+      :ARG2 (강 / 강사)
+      :ARG3 (강2 / 강의-00
             :ARG0 p
-            :ARG1 (헌 / 헌법학)))
+            :ARG1 (헌 / 헌법학))
+      :time (d / date-interval
+            :op1 (d2 / date-entity :year 1993)
+            :op2 (d3 / date-entity :year 2004)))
 
 # ::id snt23.E2017.Wiki.010 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 세계경제포럼이 선정한 세계 최상위 26개 대학 중 하나이다.
