@@ -3995,7 +3995,7 @@
             :condition (x9 / 줄어들-01
                   :ARG1 (x10 / T-세포)
                   :cause (x11 / 감염-01
-                        :ARG2 (x12 / animal
+                        :ARG2 (x12 / pathogen*
                               :cause-of (x14 / desease
                                     :name (x15 / 이름
                                           :op1 "에이즈")
@@ -4017,7 +4017,7 @@
             :ARG1 (x4 / 기능
                   :mod (x5 / 면역))
             :cause (x6 / 감염-01
-                  :ARG2 (x7 / animal
+                  :ARG2 (x7 / pathogen*
                         :name (x8 / 이름
                               :op1 "에이즈바이러스")
                         :wiki "인간면역결핍_바이러스"))))
@@ -4062,7 +4062,7 @@
 # ::snt 후천성 면역 결핍증을 일으키는 에이즈 바이러스가 파괴하는 림프구로 맞는 것은?
 # ::note
 (x0 / 파괴-01
-      :ARG0 (x1 / animal
+      :ARG0 (x1 / pathogen*
             :cause-of (x3 / desease
                   :name (x4 / 이름
                         :op1 "후천성"
@@ -6911,7 +6911,7 @@
 # ::snt 반면 일반 교과 교사들은 정 씨를 ‘불성실한 학생’으로 기억했다.
 # ::note '기억하다'를 '여기다'로 처리
 (x0 / contrast-01
-      :ARG2 (x1 / 여기-01
+      :ARG2 (x1 / 기억-01
             :ARG0 (x2 / 교사
                   :mod (x3 / 교과
                         :mod (x4 / 일반)))
@@ -6919,7 +6919,7 @@
                   :name (x6 / 이름
                         :op1 "정")
                   :wiki "정유라_(승마_선수)")
-            :ARG1 (x7 / 학생
+            :attribute (x7 / 학생
                   :ARG1-of (x8 / 성실-01
                         :polarity -))))
 
@@ -10139,11 +10139,13 @@
                         :op1 "정부")
                   :wiki "대한민국_정부")
             :ARG1 (x4 / 구조
-                  :mod (x5 / 나눠맡-00
+                  :mod (x5 / 맡-01
                         :ARG0 (x6 / 회사
-                              :ARG0-of (x7 / 건설-01))))
-            :time (x8 / 단계
-                  :mod (x9 / 발주-01))))
+                              :ARG0-of (x7 / 건설-01))
+                        :manner (x8 / 나누-01
+                              :ARG0 x6)))
+            :time (x9 / 단계
+                  :mod (x10 / 발주-01))))
 
 # ::id snt17.E2017.NEWS.006 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 실제로 역대 최고 수준의 과징금이 부과된 호남고속철만 하더라도 17개 공구 중 13개 공구는 1사 1공구만 가능하고 해당 분야 시공능력을 갖춘 건설사 숫자도 제한적이다.
@@ -15614,9 +15616,9 @@
       :ARG1-of (x4 / 합성-00
             :manner (x5 / 인공))
       :domain (x1 / and
-            :op1 "140"
-            :op2 "150"
-            :op3 "190")
+            :op1 "14O"
+            :op2 "15O"
+            :op3 "19O")
       :mod (x2 / 동위))
 
 # ::id snt29.E2017.Wiki.015 ::date 2020-04-05 ::annotator gabrielle
@@ -16136,7 +16138,7 @@
                         :year 2011)))
       :op3 (x15 / 밝히-01
             :ARG1 (x16 / 병원균
-                  :domain (x17 / animal
+                  :domain (x17 / pathogen*
                         :name (x18 / 이름
                               :op1 "페스트균")
                         :wiki "페스트균"))))
@@ -16292,7 +16294,7 @@
                         :time (x21 / date-entity
                               :century 14)))
             :condition (x30 / 확정-01
-                  :ARG1 (x31 / animal
+                  :ARG1 (x31 / pathogen*
                         :name (x32 / 이름
                               :op1 "페스트균")
                         :wiki "페스트균")
@@ -16575,7 +16577,7 @@
 # ::note
 (x0 / and
       :op1 (x1 / cause-01
-            :ARG0 (x2 / animal
+            :ARG0 (x2 / pathogen*
                   :mod (x4 / 박테리아)
                   :name (x3 / 이름
                         :op1 "예르시니아"
@@ -24129,7 +24131,7 @@
                   :ARG2-of (x4 / have-org-role-91
                         :ARG2 (x5 / 실장))
                   :name (x3 / 이름
-                        :op1 "임종석")
+                        :op1 "임")
                   :wiki "임종석")
             :ARG1-of (x6 / 이렇-01))
       :attribute (x7 / 의식-01

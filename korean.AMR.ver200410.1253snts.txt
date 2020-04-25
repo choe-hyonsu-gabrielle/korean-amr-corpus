@@ -3165,7 +3165,7 @@
             :condition (줄 / 줄어들-01
                   :ARG1 (t / T-세포)
                   :cause (감2 / 감염-01
-                        :ARG2 (a2 / animal :wiki "인간면역결핍_바이러스" :name (이2 / 이름 :op1 "HIV")
+                        :ARG2 (p / pathogen* :wiki "인간면역결핍_바이러스" :name (이2 / 이름 :op1 "HIV")
                               :cause-of (d2 / desease :wiki "후천면역결핍증후군" :name (이3 / 이름 :op1 "에이즈")))))))
 
 # ::id snt0.E2016.790.05_A_02 ::date 2020-04-05 ::annotator gabrielle True
@@ -3177,7 +3177,7 @@
             :ARG1 (기 / 기능
                   :mod (면 / 면역))
             :cause (감 / 감염-01
-                  :ARG2 (a / animal :wiki "인간면역결핍_바이러스" :name (이2 / 이름 :op1 "에이즈바이러스")))))
+                  :ARG2 (p / pathogen* :wiki "인간면역결핍_바이러스" :name (이2 / 이름 :op1 "에이즈바이러스")))))
 
 # ::id snt1.E2016.790.05_A_02 ::date 2020-04-05 ::annotator gabrielle True
 # ::snt 우리말로는 "후천성면역결핍증(後天性免疫缺乏症)"이다.
@@ -3217,9 +3217,9 @@
 # ::snt 후천성 면역 결핍증을 일으키는 에이즈 바이러스가 파괴하는 림프구로 맞는 것은?
 # ::note
 (파 / 파괴-01
-      :ARG0 (a / animal :wiki "인간면역결핍_바이러스" :name (이 / 이름 :op1 "에이즈" :op2 "바이러스")
+      :ARG0 (p / pathogen* :wiki "인간면역결핍_바이러스" :name (이 / 이름 :op1 "에이즈" :op2 "바이러스")
             :cause-of (d / desease :wiki "후천면역결핍증후군" :name (이2 / 이름 :op1 "후천성" :op2 "면역" :op3 "결핍증")))
-      :ARG1 (a2 / amr-unknown
+      :ARG1 (a / amr-unknown
             :mod (림 / 림프구)))
 
 # ::id snt0.E2016.790.06_A_01 ::date 2020-04-05 ::annotator gabrielle True
@@ -5168,12 +5168,12 @@
 # ::snt 반면 일반 교과 교사들은 정 씨를 ‘불성실한 학생’으로 기억했다.
 # ::note '기억하다'를 '여기다'로 처리
 (c / contrast-01
-      :ARG2 (여 / 여기-01
+      :ARG2 (기 / 기억-01
             :ARG0 (교 / 교사
                   :mod (교2 / 교과
                         :mod (일 / 일반)))
             :ARG1 (p / person :wiki "정유라_(승마_선수)" :name (이 / 이름 :op1 "정"))
-            :ARG1 (학 / 학생
+            :attribute (학 / 학생
                   :ARG1-of (성 / 성실-01
                         :polarity -))))
 
@@ -7788,9 +7788,11 @@
       :ARG1 (만 / 만들-03
             :ARG0 (g / government-organization :wiki "대한민국_정부" :name (이 / 이름 :op1 "정부"))
             :ARG1 (구 / 구조
-                  :mod (나 / 나눠맡-00
+                  :mod (맡 / 맡-01
                         :ARG0 (회 / 회사
-                              :ARG0-of (건 / 건설-01))))
+                              :ARG0-of (건 / 건설-01))
+                        :manner (나 / 나누-01
+                              :ARG0 회)))
             :time (단 / 단계
                   :mod (발 / 발주-01))))
 
@@ -11732,9 +11734,9 @@
 # ::note
 (원 / 원소
       :domain (a / and
-            :op1 "140"
-            :op2 "150"
-            :op3 "190")
+            :op1 "14O"
+            :op2 "15O"
+            :op3 "19O")
       :mod (동 / 동위)
       :ARG1-of (방 / 방사-00)
       :ARG1-of (합 / 합성-00
@@ -12076,7 +12078,7 @@
                   :op2 (d4 / date-entity :year 2011)))
       :op3 (밝 / 밝히-01
             :ARG1 (병2 / 병원균
-                  :domain (a3 / animal :wiki "페스트균" :name (이4 / 이름 :op1 "페스트균")))))
+                  :domain (p / pathogen* :wiki "페스트균" :name (이4 / 이름 :op1 "페스트균")))))
 
 # ::id snt4.E2017.Wiki.017 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 흑사병은 중앙아시아의 건조한 평원지대에서 시작되어 비단길을 따라 서쪽으로 이동해 1343년경 크림 반도에 닿았다.
@@ -12171,7 +12173,7 @@
                                           :op1 (d7 / date-entity :year 1345)
                                           :op2 (d8 / date-entity :year 1840))))))
             :condition (확 / 확정-01
-                  :ARG1 (a2 / animal :wiki "페스트균" :name (이7 / 이름 :op1 "페스트균"))
+                  :ARG1 (p / pathogen* :wiki "페스트균" :name (이7 / 이름 :op1 "페스트균"))
                   :ARG2 (병 / 병원체 :poss d2))))
 
 # ::id snt9.E2017.Wiki.017 ::date 2020-04-05 ::annotator gabrielle
@@ -12376,7 +12378,7 @@
 # ::note
 (a / and
       :op1 (c / cause-01
-            :ARG0 (a2 / animal :wiki "페스트균" :name (이 / 이름 :op1 "예르시니아" :op2 "페스티스")
+            :ARG0 (p / pathogen* :wiki "페스트균" :name (이 / 이름 :op1 "예르시니아" :op2 "페스티스")
                   :mod (박 / 박테리아))
             :ARG1 (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병")))
       :op2 (옮 / 옮-01
@@ -12385,7 +12387,7 @@
                         :ARG1 (혈 / 혈액
                               :poss (쥐 / 쥐
                                     :ARG1-of (감 / 감염-01
-                                          :ARG2 a2)))))
+                                          :ARG2 p)))))
             :ARG1 d
             :ARG3 (사 / 사람)
             :manner (빨 / 빨-00
@@ -13554,7 +13556,7 @@
 
 # ::id snt53.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 정부도 소통과 협업의 모범사례로 평가하고 있다"고 말했다.
-# ::note "
+# ::note
 (말 / 말하-01
       :ARG0 (정 / 정부)
       :ARG1 (평 / 평가-01
@@ -14223,7 +14225,7 @@
 
 # ::id snt105.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 촬영 도중 여성에게 한 번은 시켜본다며 계속 어루만졌다"고 말했다.
-# ::note "
+# ::note
 (말 / 말하-01
       :ARG1 (어 / 어루만지-00
             :ARG1-of (계 / 계속-01)
@@ -14952,7 +14954,7 @@
 
 # ::id snt159.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 그럴 수 없었어요"라고 적었다.
-# ::note "
+# ::note
 (적 / 적-01
       :ARG1 (가 / 가능-01
             :polarity -
@@ -15597,7 +15599,7 @@
 
 # ::id snt208.shff.EXOBRAIN.PARAPHRASE.181118 ::date 2020-04-05 ::annotator gabrielle
 # ::snt 사실과 진실을 밝혀 법적 처벌을 받아야 한다면 기피하지 않겠다"고도 했다.
-# ::note "
+# ::note
 (하 / 하-02
       :ARG1 (기 / 기피-01
             :polarity -
@@ -18289,7 +18291,7 @@
 # ::note
 (해 / 해석-01
       :ARG1 (발 / 발언-01
-            :ARG0 (p / person :wiki "임종석" :name (이 / 이름 :op1 "임종석")
+            :ARG0 (p / person :wiki "임종석" :name (이 / 이름 :op1 "임")
                   :ARG2-of (h / have-org-role-91
                         :ARG2 (실 / 실장)))
             :ARG1-of (이2 / 이렇-01))
