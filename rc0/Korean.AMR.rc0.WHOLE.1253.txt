@@ -6937,13 +6937,13 @@
                                     :ARG0 p2
                                     :ARG1 (g / government-organization :wiki "대한민국_외교부" :name (이4 / 이름 :op1 "외교부"))
                                     :ARG2 (국 / 국장)
-                                    :mod (첫 / 첫)
+                                    :ord (o / ordinal-entity :value 1)
                                     :mod (출 / 출신
                                           :polarity -
                                           :op1 (외2 / 외무고시)))
                               :op2 (h4 / have-org-role-91
                                     :ARG0 p2
-                                    :ARG1 (o / organization :wiki "유엔" :name (이5 / 이름 :op1 "유엔"))
+                                    :ARG1 (o2 / organization :wiki "유엔" :name (이5 / 이름 :op1 "유엔"))
                                     :mod (최3 / 최고위))))))
       :attribute (판 / 판단-01
             :ARG0 p
@@ -6965,7 +6965,7 @@
                                                 :mod (국2 / 국제)))
                                     :manner (활 / 활동-01
                                           :ARG0 p2
-                                          :location o
+                                          :location o2
                                           :time (이6 / 이후
                                                 :op1 (d / date-entity :year 2006)))))))))
 
