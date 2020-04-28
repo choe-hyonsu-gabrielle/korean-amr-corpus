@@ -1,0 +1,3364 @@
+# ::id snt0.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 케냐
+# ::note
+(c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+
+# ::id snt1.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 케냐 공화국 또는 케냐(Kenya)는 동아프리카의 공화국이다.
+# ::note
+(공 / 공화국
+      :domain (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+      :location (c2 / continent :wiki "동아프리카" :name (이2 / 이름 :op1 "동아프리카")))
+
+# ::id snt2.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 인도양에 면해 있으며 북동쪽으로 소말리아, 북쪽으로 에티오피아와 남수단, 서쪽으로 우간다, 남쪽으로 탄자니아와 국경을 맞닿고 있다.
+# ::note
+(a / and
+      :op1 (면 / 면하-02
+            :ARG2 (o / ocean :wiki "인도양" :name (이 / 이름 :op1 "인도양")))
+      :op2 (맞 / 맞닿-00
+            :ARG1 (국 / 국경)
+            :ARG2 (a2 / and
+                  :op1 (c / country :wiki "소말리아" :name (이2 / 이름 :op1 "소말리아")
+                        :direction (북 / 북동쪽))
+                  :op2 (a3 / and
+                        :op1 (c2 / country :wiki "에티오피아" :name (이3 / 이름 :op1 "에티오피아"))
+                        :op2 (c3 / country :wiki "남수단" :name (이4 / 이름 :op1 "남수단"))
+                        :direction (북2 / 북쪽))
+                  :op3 (c4 / country :wiki "우간다" :name (이5 / 이름 :op1 "우간다")
+                        :direction (서 / 서쪽))
+                  :op4 (c5 / country :wiki "탄자니아" :name (이6 / 이름 :op1 "탄자니아")
+                        :direction (남 / 남쪽)))))
+
+# ::id snt3.E2017.Wiki.001 ::category EXWIKI :: split test
+# ::snt 수도는 나이로비이며 공용어는 영어와 스와힐리어이다.
+# ::note
+(a / and
+      :op1 (c / city :wiki "나이로비" :name (이 / 이름 :op1 "나이로비")
+            :domain (수 / 수도))
+      :op2 (a2 / and
+            :domain (공 / 공용어)
+            :op1 (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
+            :op2 (l2 / language :wiki "스와힐리어" :name (이3 / 이름 :op1 "스와힐리어"))))
+
+# ::id snt4.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 케냐의 주요 종족은 키쿠유족, 루히아족, 루오족, 칼렌진족, 캄바족, 키시족,메루족 등 여러 민족으로 구성되어 있어 각각 다른 언어를 사용한다.
+# ::note
+(a / and
+      :op1 (구 / 구성-01
+            :ARG1 (종 / 종족
+                  :mod (주 / 주요)
+                  :poss (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐")))
+            :ARG2 (민 / 민족
+                  :quant (여 / 여러)
+                  :example (등 / 등
+                        :op1 (e / ethnic-group :wiki "키쿠유족" :name (이2 / 이름 :op1 "키쿠유족"))
+                        :op2 (e2 / ethnic-group :wiki - :name (이3 / 이름 :op1 "루히아족"))
+                        :op3 (e3 / ethnic-group :wiki - :name (이4 / 이름 :op1 "루오족"))
+                        :op4 (e4 / ethnic-group :wiki - :name (이5 / 이름 :op1 "칼렌진족"))
+                        :op5 (e5 / ethnic-group :wiki - :name (이6 / 이름 :op1 "캄바족"))
+                        :op6 (e6 / ethnic-group :wiki - :name (이7 / 이름 :op1 "키시족"))
+                        :op7 (e7 / ethnic-group :wiki - :name (이8 / 이름 :op1 "메루족")))))
+      :op2 (사 / 사용-01
+            :ARG0 민
+            :ARG1 (언 / 언어
+                  :ARG1-of (다 / 다르-01
+                        :mod (각 / 각각)))))
+
+# ::id snt5.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 백인, 인도인, 아랍인 등 비아프리카계 민족은 전체 인구의 1% 정도를 차지한다.
+# ::note
+(i / include-91
+      :ARG1 (민 / 민족
+            :mod (e / ethnic-group :wiki - :name (이 / 이름 :op1 "아프리카계")
+                  :polarity -)
+            :example (등 / 등
+                  :op1 (e2 / ethnic-group :wiki "백인" :name (이2 / 이름 :op1 "백인"))
+                  :op2 (e3 / ethnic-group :wiki "인도인" :name (이3 / 이름 :op1 "인도인"))
+                  :op3 (e4 / ethnic-group :wiki "아랍인" :name (이4 / 이름 :op1 "아랍인"))))
+      :ARG2 (인 / 인구
+            :quant (전 / 전체))
+      :ARG3 (정 / 정도
+            :quant (p / percentage-entity :value 1)))
+
+# ::id snt6.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 동아프리카에서 발견된 화석에 따르면 조상이 2백만 년 전 이 지역에서 살았다고 한다.
+# ::note
+(살 / 살-02
+      :ARG1 (조 / 조상)
+      :location (지 / 지역
+            :mod (이 / 이))
+      :time (전 / 전
+            :op1 (t / temporal-quantity :quant 2000000 :unit (년 / 년)))
+      :ARG1-of (따 / 따르-02
+            :ARG2 (화 / 화석
+                  :ARG1-of (발 / 발견-01
+                        :location (c / continent :wiki "동아프리카" :name (이2 / 이름 :op1 "동아프리카"))))))
+
+# ::id snt7.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 투르카나 호 근처에서의 최근 발굴에 따르면 호모 하빌리스(Homo habilis), 호모 에렉투스(Homo erectus)와 같은 호미니드인(hominid)이 260만 년 전 이 나라 땅에 있었다.
+# ::note
+(e / ethnic-group :wiki - :name (이 / 이름 :op1 "호미니드인")
+      :ARG1-of (따 / 따르-02
+            :ARG2 (발 / 발굴-01
+                  :time (최 / 최근)
+                  :location (근 / 근처
+                        :op1 (l / lake :wiki "투르카나호" :name (이2 / 이름 :op1 "투르카나" :op2 "호")))))
+      :ARG1-of (같 / 같-01
+            :ARG2 (a / and
+                  :op1 (호 / 호모-하빌리스)
+                  :op2 (호2 / 호모-에렉투스)))
+      :location (땅 / 땅
+            :location (나 / 나라
+                  :mod (이3 / 이)))
+      :time (전 / 전
+            :op1 (t / temporal-quantity :quant 2600000 :unit (년 / 년))))
+
+# ::id snt8.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 케냐의 식민 시대 역사는 1885년 독일이 잔지바르(현 탄자니아의 잔지바르 섬) 술탄의 케냐 해안 영토에 보호령을 설치한 것으로 시작되었다.
+# ::note
+(시 / 시작-01
+      :ARG1 (역 / 역사
+            :topic (시2 / 시대
+                  :mod (식 / 식민))
+            :poss (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐")))
+      :cause (설 / 설치-01
+            :ARG0 (c2 / country :wiki "독일" :name (이2 / 이름 :op1 "독일"))
+            :ARG1 (보 / 보호령)
+            :ARG2 (영 / 영토
+                  :location (해 / 해안
+                        :location c)
+                  :poss (술 / 술탄
+                        :location (i / island :wiki "잔지바르" :name (이3 / 이름 :op1 "잔지바르")
+                              :ARG1-of (b / be-located-at-91
+                                    :ARG2 (c3 / country :wiki "탄자니아" :name (이4 / 이름 :op1 "탄자니아"))
+                                    :time (현 / 현)))))
+            :time (d / date-entity :year 1885)))
+
+# ::id snt9.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 그 후 1888년 영국 동아프리카 회사가 들어왔다.
+# ::note
+(들 / 들어오-01
+      :ARG0 (c / company :wiki - :name (이 / 이름 :op1 "영국" :op2 "동아프리카" :op3 "회사"))
+      :time (후 / 후
+            :mod (그 / 그))
+      :time (d / date-entity :year 1888))
+
+# ::id snt10.E2017.Wiki.001 ::category EXWIKI :: split dev
+# ::snt 독일이 해안 영토를 1890년에 영국에게 넘겨줘 두 열강 사이의 분쟁도 적지 않았다.
+# ::note
+(적 / 적-02
+      :polarity -
+      :ARG1 (분 / 분쟁-00
+            :mod (사 / 사이
+                  :op1 (열 / 열강 :quant 2)))
+      :cause (넘 / 넘겨주-01
+            :ARG0 (c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+            :ARG1 (영 / 영토
+                  :location (해 / 해안))
+            :ARG2 (c2 / country :wiki "영국" :name (이2 / 이름 :op1 "영국"))
+            :time (d / date-entity :year 1890)))
+
+# ::id snt11.E2017.Wiki.001 ::category EXWIKI :: split dev
+# ::snt 1952년 10월부터 1959년 12월까지 케냐는 영국의 지배에 대한 반란(마우마우 반란)으로 비상 사태하에 있었다.
+# ::note
+(사 / 사태
+      :mod (비 / 비상)
+      :domain (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+      :cause (e / event :wiki - :name (이2 / 이름 :op1 "마우마우" :op2 "반란")
+            :mod (반 / 반란-00
+                  :ARG0 c
+                  :ARG1 (지 / 지배-01
+                        :ARG0 (c2 / country :wiki "영국" :name (이3 / 이름 :op1 "영국"))
+                        :ARG1 c)))
+      :duration (d / date-interval
+            :op1 (d2 / date-entity :year 1952 :month 10)
+            :op2 (d3 / date-entity :year 1959 :month 12)))
+
+# ::id snt12.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 영국은 단계적으로 케냐의 독립을 허용할 수밖에 없었다.
+# ::note
+(o / obligate-01
+      :ARG2 (허 / 허용-01
+            :ARG0 (c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+            :ARG1 (독 / 독립-01
+                  :ARG0 (c2 / country :wiki "케냐" :name (이2 / 이름 :op1 "케냐"))
+                  :ARG1 c)
+            :manner (단 / 단계적)))
+
+# ::id snt13.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 그리하여 1957년 처음으로 아프리카인들이 피선거권을 가진 입법 회의 직접 선거를 치렀다.
+# ::note
+(a / and
+      :op2 (치 / 치르-02
+            :ARG1 (직 / 직접선거
+                  :mod (입 / 입법회의)
+                  :mod (가 / 가지-01
+                        :ARG0 (e / ethnic-group :wiki "아프리카인" :name (이 / 이름 :op1 "아프리카인"))
+                        :ARG1 (피 / 피선거권))
+                  :ord (o / ordinal-entity :value 1))
+            :time (d / date-entity :year 1957)))
+
+# ::id snt15.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 1963년 12월 12일 케냐는 독립을 선포했다.
+# ::note
+(선 / 선포-01
+      :ARG0 (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+      :ARG1 (독 / 독립-01
+            :ARG0 c)
+      :time (d / date-entity :year 1963 :month 12 :day 12))
+
+# ::id snt16.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 1년 후 케냐타는 케냐의 초대 대통령이 되었다.
+# ::note
+(되 / 되-01
+      :ARG1 (p / person :wiki "조모_케냐타" :name (이 / 이름 :op1 "케냐타"))
+      :ARG2 (h / have-org-role-91
+            :ARG1 (c / country :wiki "케냐" :name (이2 / 이름 :op1 "케냐"))
+            :ARG2 (대 / 대통령
+                  :ord (o / ordinal-entity :value 1)))
+      :time (후 / 후
+            :op1 (t / temporal-quantity :quant 1 :unit (년 / 년))))
+
+# ::id snt19.E2017.Wiki.001 ::category EXWIKI :: split train
+# ::snt 1982년 6월 개헌으로 케냐는 공식적으로 일당 체제가 되었다.
+# ::note
+(되 / 되-01
+      :ARG1 (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+      :ARG2 (체 / 체제
+            :mod (일 / 일당))
+      :mod (공 / 공식)
+      :cause (개 / 개헌-00
+            :time (d / date-entity :year 1982 :month 6)))
+
+# ::id snt20.E2017.Wiki.001 ::category EXWIKI :: split dev
+# ::snt 그 후 1991년 12월, 국민들의 요구로 일당 체제를 폐기하고 1992년 다당(多黨) 선거가 치러졌다.
+# ::note
+(a / and
+      :op1 (폐 / 폐기-00
+            :ARG1 (체 / 체제
+                  :mod (일 / 일당))
+            :cause (요 / 요구-01
+                  :ARG0 (국 / 국민))
+            :time (d / date-entity :year 1991 :month 12))
+      :op2 (치 / 치르-02
+            :ARG1 (선 / 선거-00
+                  :mod (다 / 다당))
+            :time (d2 / date-entity :year 1992))
+      :time (후 / 후
+            :op1 (그 / 그)))
+
+# ::id snt0.E2017.Wiki.002 ::category EXWIKI :: split train
+# ::snt 칭기즈 칸
+# ::note
+(p / person
+      :wiki "칭기즈_칸"
+      :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
+
+# ::id snt1.E2017.Wiki.002 ::category EXWIKI :: split train
+# ::snt 칭기즈 칸(1155/62/67년 4월 16일 ~ 1227년 8월 25일)은 세계 역사상 가장 넓은 대륙을 점유한 몽골 제국의 창업자이자 초대 카간이다.
+# ::note
+(p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸")
+      :ARG1-of (살 / 살-02
+            :time (d / date-interval
+                  :op1 (d2 / date-entity
+                        :year (o / or
+                              :op1 1155
+                              :op2 1162
+                              :op3 1167)
+                        :month 4
+                        :day 16)
+                  :op2 (d3 / date-entity :year 1227 :month 8 :day 25)))
+      :ARG0-of (h / have-org-role-91
+            :ARG1 (c / country :wiki "몽골_제국" :name (이2 / 이름 :op1 "몽골" :op2 "제국"))
+            :ARG2 (a / and
+                  :op1 (사 / 사람
+                        :ARG0-of (창 / 창업-00
+                              :ARG1 c))
+                  :op2 (카 / 카간
+                        :ord (o2 / ordinal-entity :value 1)))))
+
+# ::id snt2.E2017.Wiki.002 ::category EXWIKI :: split test
+# ::snt 원래 이름은 보르지긴 테무진이다.
+# ::note
+(이 / 이름 :op1 "보르지긴" :op2 "테무진"
+      :name-of (p / person :wiki "칭기즈_칸")
+      :domain (이2 / 이름
+            :mod (원 / 원래)))
+
+# ::id snt3.E2017.Wiki.002 ::category EXWIKI :: split train
+# ::snt 몽골의 여러 부족을 통합하고, 출신이 아닌 능력에 따라 대우하는 합리적 인사제도인 능력주의에 기반한 강한 군대를 이끌어 역사상 가장 성공한 군사, 정치지도자가 되었다.
+# ::note
+(되 / 되-01
+      :ARG2 (사 / 사람
+            :ARG0-of (지 / 지도-01
+                  :ARG1 (a / and
+                        :op1 (군 / 군사)
+                        :op2 (정 / 정치)))
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (성 / 성공-01)
+                  :ARG3 (가 / 가장)
+                  :ARG5 (역 / 역사)))
+      :cause (a2 / and
+            :op1 (통 / 통합-01
+                  :ARG1 (부 / 부족
+                        :quant (여 / 여러)
+                        :location (c / country :wiki "몽골" :name (이2 / 이름 :op1 "몽골"))))
+            :op2 (이 / 이끌-01
+                  :ARG1 (군2 / 군대
+                        :ARG1-of (강 / 강하-01)
+                        :ARG1-of (기 / 기반-00
+                              :ARG2 (능2 / 능력주의
+                                    :mod (제 / 제도
+                                          :topic (인 / 인사)
+                                          :mod (합 / 합리적)
+                                          :mod (대 / 대우-00
+                                                :ARG2 (능 / 능력
+                                                      :mod (출 / 출신 :polarity -))))))))))
+
+# ::id snt4.E2017.Wiki.002 ::category EXWIKI :: split dev
+# ::snt 세계에서 가장 뛰어난 정복왕 중 한 사람이다.
+# ::note
+(i / include-91
+      :ARG2 (정 / 정복왕
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (뛰 / 뛰어나-01)
+                  :ARG3 (가 / 가장)
+                  :ARG5 (정2 / 정복왕
+                        :part-of (세 / 세계)))))
+
+# ::id snt5.E2017.Wiki.002 ::category EXWIKI :: split train
+# ::snt 중국사에는 원(元) 태조(太祖)로 기록된다.
+# ::note
+(기 / 기록-01
+      :attribute (태 / 태조
+            :ARG2-of (h / have-org-role-91
+                  :ARG1 (c / country :wiki "원나라" :name (이 / 이름 :op1 "원"))))
+      :location (중 / 중국사))
+
+# ::id snt6.E2017.Wiki.002 ::category EXWIKI :: split train
+# ::snt 오늘날 그의 이름은 몽골 칭기즈 칸 국제공항으로 남아 있다.
+# ::note
+(남 / 남-01
+      :ARG1 (이 / 이름
+            :name-of (그 / 그))
+      :ARG2 (이2 / 이름 :op1 "칭기즈" :op2 "칸" :op3 "국제공항"
+            :name-of (a / airport :wiki "칭기즈_칸_국제공항"))
+      :time (오 / 오늘날))
+
+# ::id snt7.E2017.Wiki.002 ::category EXWIKI :: split train
+# ::snt 칭기즈 칸의 정확한 출생연도에 대해서는 1155년, 1161년, 1162년, 1167년 등 몇 가지 설이 존재하나, 정설로 인정되고 있는 것은 아직 없다.
+# ::note
+(c / contrast-01
+      :ARG1 (존 / 존재-01
+            :ARG1 (설 / 설 :quant (몇 / 몇) :unit (가 / 가지)
+                  :example (등 / 등
+                        :op1 (d / date-entity :year 1155)
+                        :op2 (d2 / date-entity :year 1161)
+                        :op3 (d3 / date-entity :year 1162)
+                        :op4 (d4 / date-entity :year 1167))
+                  :topic (연 / 연도
+                        :ARG1-of (정 / 정확-01)
+                        :time-of (출 / 출생-01
+                              :ARG1 (p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))))))
+      :ARG2 (정2 / 정설
+            :polarity -
+            :ARG1-of (인 / 인정-01)
+            :mod (아 / 아직)))
+
+# ::id snt8.E2017.Wiki.002 ::category EXWIKI :: split train
+# ::snt 현재 몽골에서 기념하는 칭기즈 칸의 탄신일은 1162년 11월 14일이다.
+# ::note
+(d / date-entity :year 1162 :month 11 :day 14
+      :domain (탄 / 탄신일
+            :poss (p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
+            :ARG1-of (기 / 기념-01
+                  :ARG0 (c / country :wiki "몽골" :name (이2 / 이름 :op1 "몽골")))))
+
+# ::id snt9.E2017.Wiki.002 ::category EXWIKI :: split train
+# ::snt 테무진의 유년시절에 대한 기록은 자세하지 않다.
+# ::note
+(자 / 자세하-01
+      :polarity -
+      :ARG1 (기 / 기록-01
+            :ARG1 (시 / 시절
+                  :mod (유 / 유년)
+                  :poss (p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "테무진")))))
+
+# ::id snt10.E2017.Wiki.002 ::category EXWIKI :: split train
+# ::snt 칭기즈 칸은 그의 아버지 예수게이가 타타르족과의 전투를 승리로 끝낸 직후에 태어났다.
+# ::note
+(태 / 태어나-01
+      :ARG1 (p / person :wiki "칭기즈_칸" :name (이 / 이름 :op1 "칭기즈" :op2 "칸"))
+      :time (직 / 직후
+            :mod (승 / 승리-01
+                  :ARG0 (p2 / person :wiki "예수게이" :name (이2 / 이름 :op1 "예수게이")
+                        :ARG0-of (h / have-rel-role-91
+                              :ARG1 p
+                              :ARG2 (아 / 아버지)))
+                  :ARG1 (e / ethnic-group :wiki "타타르인" :name (이3 / 이름 :op1 "타타르족")
+                  :location (전 / 전투-01
+                        :ARG0 p2
+                        :ARG1 e)))))
+
+# ::id snt14.E2017.Wiki.002 ::category EXWIKI :: split dev
+# ::snt 그러나 그의 유년시대는 결코 행복한 것이 아니었다.
+# ::note
+(c / contrast-01
+      :ARG2 (행 / 행복-01
+            :polarity -
+            :ARG1 (시 / 시대
+                  :mod (유 / 유년)
+                  :poss (그 / 그))
+            :mod (결 / 결코)))
+
+# ::id snt21.E2017.Wiki.002 ::category EXWIKI :: split train
+# ::snt 이러한 이유로 메르키트족은 테무진의 아내인 보르테를 납치했다.
+# ::note
+(납 / 납치-01
+      :ARG0 (e / ethnic-group :wiki "메르키트_연맹" :name (이 / 이름 :op1 "메르키트족"))
+      :ARG1 (p / person :wiki "보르테_카툰" :name (이2 / 이름 :op1 "보르테")
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (p2 / person :wiki "칭기즈_칸" :name (이3 / 이름 :op1 "테무진"))
+                  :ARG2 (아 / 아내)))
+      :cause (이4 / 이유
+            :ARG1-of (이5 / 이렇-01)))
+
+# ::id snt0.E2017.Wiki.003 ::category EXWIKI :: split dev
+# ::snt 소수 (수론)
+# ::note
+(소 / 소수
+      :topic (수 / 수론))
+
+# ::id snt1.E2017.Wiki.003 ::category EXWIKI :: split dev
+# ::snt 소수(素數, 발음: 소쑤)는 양의 약수가 1과 자기 자신 뿐인 1보다 큰 자연수로 정의된다.
+# ::note
+(정 / 정의-00
+      :ARG1 (소 / 소수)
+      :ARG2 (자 / 자연수
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (크 / 크-01
+                        :ARG1 자)
+                  :ARG4 "1")
+            :mod (a / and
+                  :domain (약 / 약수
+                        :mod (양 / 양))
+                  :op1 "1"
+                  :op2 (자2 / 자신
+                        :mod (자3 / 자기)))))
+
+# ::id snt2.E2017.Wiki.003 ::category EXWIKI :: split train
+# ::snt 정수론에서 매우 중요한 역할을 담당한다.
+# ::note
+(담 / 담당-01
+      :ARG1 (역 / 역할
+            :ARG1-of (중 / 중요-01
+                  :ARG2 (정 / 정수론))))
+
+# ::id snt3.E2017.Wiki.003 ::category EXWIKI :: split train
+# ::snt 현재에 와서는 암호 분야에서의 사용으로 그 중요성이 부각되고 있다.
+# ::note
+(부 / 부각-01
+      :ARG1 (사 / 사용-01
+            :ARG2 (분 / 분야
+                  :topic (암 / 암호)))
+      :ARG2 (중 / 중요-01
+            :ARG1 사)
+      :time (현 / 현재))
+
+# ::id snt0.E2017.Wiki.004 ::category EXWIKI :: split train
+# ::snt 마르틴 루터
+# ::note
+(p / person
+      :wiki "마르틴_루터"
+      :name (이 / 이름 :op1 "마르틴" :op2 "루터"))
+
+# ::id snt1.E2017.Wiki.004 ::category EXWIKI :: split train
+# ::snt 본래 아우구스티노회 수사였던 루터는 로마 가톨릭교회의 여러 가르침과 전통을 거부하였다.
+# ::note
+(거 / 거부-01
+      :ARG0 (p / person :wiki "마르틴_루터" :name (이 / 이름 :op1 "루터")
+            :ARG0-of (h / have-org-role-91
+                  :mod (본 / 본래)
+                  :ARG1 (r / religious-group :wiki "아우구스티노_수도회" :name (이2 / 이름 :op1 "아우구스티노회"))
+                  :ARG2 (수 / 수사)))
+      :ARG1 (a / and
+            :poss (r2 / religious-group :wiki "로마_가톨릭교회" :name (이3 / 이름 :op1 "로마" :op2 "가톨릭교회"))
+            :op1 (가 / 가르치-01)
+            :op2 (전 / 전통)
+            :quant (여 / 여러)))
+
+# ::id snt2.E2017.Wiki.004 ::category EXWIKI :: split test
+# ::snt 대사의 오용과 남용을 강하게 성토한 그는 1517년 95개 논제를 게시함으로써 도미니코회 수사이자 대사령 설교 담당자인 요한 테첼에 맞섰다.
+# ::note
+(맞 / 맞서-01
+      :ARG0 (그 / 그
+            :ARG0-of (성 / 성토-01
+                  :ARG1 (a / and
+                        :op1 (오 / 오용-00
+                              :ARG1 (대 / 대사))
+                        :op2 (남 / 남용-00
+                              :ARG1 대))
+                  :manner (강 / 강하-01)))
+      :ARG1 (p / person :wiki "요한_테첼" :name (이 / 이름 :op1 "요한" :op2 "테첼")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (r / religious-group :wiki "도미니코_수도회" :name (이2 / 이름 :op1 "도미니코회"))
+                  :ARG2 (a2 / and
+                        :op1 (수 / 수사)
+                        :op2 (사 / 사람
+                              :ARG0-of (담 / 담당-01
+                                    :ARG1 (설 / 설교-00
+                                          :ARG1 (대2 / 대사령)))))))
+      :manner (게 / 게시-01
+            :ARG0 p
+            :ARG1 (논 / 논제 :quant 95 :unit (개 / 개))
+            :time (d / date-entity :year 1517)))
+
+# ::id snt3.E2017.Wiki.004 ::category EXWIKI :: split train
+# ::snt 1520년 그는 교황 레오 10세로부터 자신의 모든 주장을 철회하라는 요구를 받았으나 거부하였다.
+# ::note
+(거 / 거부-01
+      :ARG0 (그 / 그)
+      :ARG1 (철 / 철회-01
+            :ARG0 그
+            :ARG1 (주 / 주장-01
+                  :ARG0 그
+                  :quant (모 / 모든)))
+      :ARG2 (p / person :wiki "교황_레오_10세" :name (이 / 이름 :op1 "레오" :op2 "10세")
+            :mod (교 / 교황))
+      :time (d / date-entity :year 1520)
+      :concession (요 / 요구-01
+            :ARG0 p
+            :ARG1 철
+            :ARG2 그))
+
+# ::id snt4.E2017.Wiki.004 ::category EXWIKI :: split train
+# ::snt 1521년 보름스 회의에서 마찬가지로 신성 로마 제국의 카를 5세 황제로부터 같은 요구를 받았으나 거부함으로써 결국 교황에게 파문을 선고받았다.
+# ::note
+(선 / 선고-01
+      :ARG0 (교 / 교황)
+      :ARG1 (파 / 파문-00)
+      :mod (결 / 결국)
+      :cause (거 / 거부-01
+            :ARG1 (요 / 요구-01
+                  :ARG0 (p / person :wiki "카를_5세" :name (이 / 이름 :op1 "카를" :op2 "5세")
+                        :ARG0-of (h / have-org-role-91
+                              :ARG1 (c / country :wiki "신성_로마_제국" :name (이2 / 이름 :op1 "신성" :op2 "로마" :op3 "제국"))
+                              :ARG2 (황 / 황제)))
+                  :ARG1-of (같 / 같-01))
+            :ARG2 p
+            :location (e / event :wiki "보름스_의회" :name (이3 / 이름 :op1 "보름스" :op2 "회의")
+                  :time (d / date-entity :year 1521))
+            :mod (마 / 마찬가지)
+      :concession 요))
+
+# ::id snt5.E2017.Wiki.004 ::category EXWIKI :: split train
+# ::snt 또한 황제로부터 삭권 박탈당했다.
+# ::note
+(박 / 박탈-01
+      :ARG0 (황 / 황제)
+      :ARG2 (삭 / 삭권)
+      :mod (또 / 또한))
+
+# ::id snt6.E2017.Wiki.004 ::category EXWIKI :: split train
+# ::snt 마르틴 루터는 원래 로마 가톨릭교회의 사제였으나, 로마 가톨릭교회에 항거하여, 가톨릭교회의 교리를 논박하고, 성서가 지니고 있는 기독교 신앙에서의 권위와 그리스도에 대한 믿음과 하나님의 은혜를 통한 구원을 강조하였다.
+# ::note
+(a / and
+      :op1 (논 / 논박-00
+            :ARG0 (p / person :wiki "마르틴_루터" :name (이 / 이름 :op1 "마르틴" :op2 "루터")
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (r / religious-group :wiki "로마_가톨릭교회" :name (이2 / 이름 :op1 "가톨릭교회"))
+                        :ARG2 (사 / 사제)))
+            :ARG1 (교 / 교리
+                  :poss r)
+            :manner (항 / 항거-00
+                  :ARG0 p
+                  :ARG1 r))
+      :op2 (강 / 강조-01
+            :ARG0 p
+            :ARG1 (구 / 구원-00
+                  :manner (a2 / and
+                        :op1 (권 / 권위
+                              :poss (r2 / religious-group :wiki "기독교" :name (이3 / 이름 :op1 "기독교"))
+                              :ARG1-of (지 / 지니-01
+                                    :ARG0 (p2 / publication :wiki "성경" :name (이4 / 이름 :op1 "성서"))))
+                        :op2 (믿 / 믿-01
+                              :ARG1 (p3 / person :wiki "그리스도" :name (이5 / 이름 :op1 "그리스도")))
+                        :op3 (은 / 은혜
+                              :mod (하 / 하나님))))))
+
+# ::id snt7.E2017.Wiki.004 ::category EXWIKI :: split train
+# ::snt (다섯 솔라) 그러나 루터는 스스로가 시작한 이 일을 ‘종교 개혁’으로 생각하지 않았는데, 그 이유는 종교 개혁이 하나님에게 이끌림을 받아, 할 수 없이 한 일이기 때문이라고 말하였기 때문이다.
+# ::note
+(c / contrast-01
+      :ARG2 (a / and
+            :op1 (생 / 생각-01
+                  :polarity -
+                  :ARG0 (p / person :wiki "마르틴_루터" :name (이 / 이름 :op1 "루터"))
+                  :ARG1 (일 / 일
+                        :mod (이2 / 이)
+                        :ARG1-of (시 / 시작-01
+                              :ARG0 p))
+                  :attribute (개 / 개혁-01
+                        :ARG1 (종 / 종교)))
+            :op2 (말 / 말하-01
+                  :ARG0 p
+                  :ARG1 (o / obligate-01
+                        :ARG0 (이3 / 이끌-01
+                              :ARG0 (하 / 하나님)
+                              :ARG1 p)
+                        :ARG1 p
+                        :ARG2 개
+                        :mod (할 / 할-수-없이)))))
+
+# ::id snt8.E2017.Wiki.004 ::category EXWIKI :: split dev
+# ::snt 그는 ‘복음주의자’로서 복음을 전파하기를 원했고, 자신이 설교자, 박사, 교수라고 불리기를 원했다.
+# ::note
+(a / and
+      :op1 (원 / 원하-01
+            :ARG0 (그 / 그)
+            :ARG1 (전 / 전파-01
+                  :ARG0 그
+                  :attribute (복 / 복음주의자)
+                  :ARG1 (복2 / 복음)))
+      :op2 (원2 / 원하-01
+            :ARG0 그
+            :ARG1 (부 / 부르-02
+                  :ARG1 그
+                  :ARG2 (a2 / and
+                        :op1 (사 / 사람
+                              :ARG0-of (설 / 설교-00))
+                        :op2 (박 / 박사)
+                        :op3 (교 / 교수)))))
+
+# ::id snt9.E2017.Wiki.004 ::category EXWIKI :: split train
+# ::snt 그러나 그의 삶 가운데 그가 행했던 일들은 엄청난 결과를 가져왔다.
+# ::note
+(c / contrast-01
+      :ARG2 (c2 / cause-01
+            :ARG1 (일 / 일
+                  :ARG1-of (행 / 행하-01
+                        :ARG0 (그 / 그)
+                        :time (가 / 가운데
+                              :op1 (살 / 살아가-01
+                                    :ARG1 그))))
+            :ARG2 (결 / 결과
+                  :ARG1-of (엄 / 엄청나-01))))
+
+# ::id snt0.E2017.Wiki.005 ::category EXWIKI :: split train
+# ::snt 힘 (물리)
+# ::note
+(힘 / 힘
+      :topic (물 / 물리))
+
+# ::id snt1.E2017.Wiki.005 ::category EXWIKI :: split train
+# ::snt 물리학에서 힘은 물체의 운동, 방향 또는 구조를 변화시키는 원인이다.
+# ::note
+(원 / 원인
+      :domain (힘 / 힘
+            :topic (물 / 물리학))
+      :mod (변 / 변화-01
+            :ARG1 (o / or
+                  :op1 (운 / 운동-00)
+                  :op2 (방 / 방향)
+                  :op3 (구 / 구조)
+                  :poss (물2 / 물체))))
+
+# ::id snt0.E2017.Wiki.006 ::category EXWIKI :: split test
+# ::snt 라인 강
+# ::note
+(r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
+
+# ::id snt1.E2017.Wiki.006 ::category EXWIKI :: split train
+# ::snt 라인 강은 유럽의 강으로 길이가 1,230km에 이른다.
+# ::note
+(이 / 이르-00
+      :ARG1 (길 / 길이
+            :poss (r / river :wiki "라인강" :name (이2 / 이름 :op1 "라인" :op2 "강")
+                  :location (c / continent :wiki "유럽" :name (이3 / 이름 :op1 "유럽"))))
+      :ARG2 (d / distance-quantity :quant 1230 :unit (k / kilometer)))
+
+# ::id snt2.E2017.Wiki.006 ::category EXWIKI :: split dev
+# ::snt 여러 언어에서 라인 강이란 이름은 켈트어의 "레노스(Renos: 흐르는 것)"에서 유래했다.
+# ::note
+(유 / 유래
+      :ARG1 (이 / 이름 :op1 "라인" :op2 "강"
+            :name-of (r / river :wiki "라인강"))
+      :ARG2 (s / string-entity :value "레노스"
+            :ARG1-of (i / include-91
+                  :ARG2 (l / language :wiki "켈트어파" :name (이2 / 이름 :op1 "켈트어")))
+            :ARG1-of (뜻 / 뜻하-01
+                  :ARG2 (흐 / 흐르-01)))
+      :location (언 / 언어
+            :mod (여 / 여러)))
+
+# ::id snt0.E2017.Wiki.007 ::category EXWIKI :: split test
+# ::snt 아폴로 계획
+# ::note
+(p / project* :wiki "아폴로_계획" :name (이 / 이름 :op1 "아폴로" :op2 "계획"))
+
+# ::id snt1.E2017.Wiki.007 ::category EXWIKI :: split train
+# ::snt 아폴로 계획(-計劃)은 1961년부터 1972년까지 미국항공우주국에 의해 이루어진 일련의 유인 우주 비행 탐사 계획이다.
+# ::note
+(계 / 계획
+      :domain (p / project* :wiki "아폴로_계획" :name (이 / 이름 :op1 "아폴로" :op2 "계획"))
+      :purpose (탐 / 탐사-00
+            :manner (비 / 비행-01
+                  :ARG1 (우 / 우주)
+                  :mod (유 / 유인)))
+      :mod (일 / 일련)
+      :ARG1-of (이2 / 이루-01
+            :ARG0 (r / research-institute :wiki "미국_항공우주국" :name (이3 / 이름 :op1 "미국항공우주국"))
+            :duration (d / date-interval
+                  :op1 (d2 / date-entity :year 1961)
+                  :op2 (d3 / date-entity :year 1972))))
+
+# ::id snt2.E2017.Wiki.007 ::category EXWIKI :: split train
+# ::snt 아폴로 계획의 목표는 1960년대 존 F. 케네디 대통령의 연설에서 언급되었던 "인간을 달에 착륙시킨 후 무사히 지구로 귀환시키는" 것으로 요약할 수 있다.
+# ::note
+(가 / 가능-01
+      :ARG1 (요 / 요약-00
+            :ARG1 (목 / 목표
+                  :topic (p / project* :wiki "아폴로_계획" :name (이 / 이름 :op1 "아폴로" :op2 "계획")))
+            :ARG2 (a / and
+                  :op1 (착 / 착륙-01
+                        :ARG1 (인 / 인간)
+                        :ARG2 (m / moon :wiki "달" :name (이2 / 이름 :op1 "달")))
+                  :op2 (귀 / 귀환-01
+                        :ARG1 인
+                        :ARG2 m
+                        :ARG3 (p2 / planet :wiki "지구" :name (이3 / 이름 :op1 "지구"))
+                        :manner (무 / 무사하-00))
+                  :ARG1-of (언 / 언급-01
+                        :location (연 / 연설-01
+                              :ARG0 (p3 / person :wiki "존_F._케네디" :name (이4 / 이름 :op1 "존" :op2 "F." :op3 "케네디")
+                                    :ARG0-of (h / have-org-role-91
+                                          :ARG2 (대 / 대통령)))
+                              :time (d / date-entity :decade 1960))))))
+
+# ::id snt3.E2017.Wiki.007 ::category EXWIKI :: split train
+# ::snt 이 목표는 1969년 아폴로 11호에 의해 달성되었다.
+# ::note
+(달 / 달성-01
+      :ARG0 (s / spaceship :wiki "아폴로_11호" :name (이 / 이름 :op1 "아폴로" :op2 "11호"))
+      :ARG1 (목 / 목표
+            :mod (이2 / 이)))
+
+# ::id snt4.E2017.Wiki.007 ::category EXWIKI :: split train
+# ::snt 그 뒤로 아폴로 계획은 1970년대 초반까지 여섯 차례의 성공적인 달 착륙으로 이어졌다.
+# ::note
+(잇 / 잇-02
+      :domain (p / project* :wiki "아폴로_계획" :name (이 / 이름 :op1 "아폴로" :op2 "계획"))
+      :ARG1 (성 / 성공-01
+            :ARG1 (착 / 착륙-01
+                  :ARG2 (m / moon :wiki "달" :name (이2 / 이름 :op1 "달")))
+            :quant 6
+            :unit (차 / 차례))
+      :duration (d / date-interval
+            :op2 (초 / 초반
+                  :op1 (d2 / date-entity :decade 1970))))
+
+# ::id snt5.E2017.Wiki.007 ::category EXWIKI :: split train
+# ::snt 후에 스카이랩 계획이나 미국과 소련의 공동 실험인 아폴로-소유즈 시험 계획에서도 아폴로 계획 당시에 만들어진 장비를 사용하였으며, 이들 탐사도 아폴로 계획의 일부로 다뤄지기도 한다.
+# ::note
+(a / and
+      :op1 (사 / 사용-01
+            :ARG1 (장 / 장비
+                  :ARG1-of (만 / 만들-01
+                        :time (당 / 당시
+                              :mod (p / project* :wiki "아폴로_계획" :name (이 / 이름 :op1 "아폴로" :op2 "계획")))))
+            :ARG2 (a2 / and
+                  :op1 (p2 / project* :wiki "스카이랩" :name (이2 / 이름 :op1 "스카이랩" :op2 "계획"))
+                  :op2 (p3 / project* :wiki "아폴로-소유스_시험_계획" :name (이3 / 이름 :op1 "아폴로-소유즈" :op2 "시험" :op3 "계획")
+                        :mod (실 / 실험-01
+                              :mod (공 / 공동)
+                              :ARG0 (a3 / and
+                                    :op1 (c / country :wiki "미국" :name (이4 / 이름 :op1 "미국"))
+                                    :op2 (c2 / country :wiki "소련" :name (이5 / 이름 :op1 "소련"))))))
+            :time (후 / 후))
+      :op2 (다 / 다루-02
+            :ARG1 a2
+            :ARG2 (i / include-91
+                  :ARG1 a
+                  :ARG2 p)))
+
+# ::id snt6.E2017.Wiki.007 ::category EXWIKI :: split test
+# ::snt 여러 번의 성공도 있었지만, 두 차례의 큰 사고도 있었다.
+# ::note
+(c / contrast-01
+      :ARG1 (성 / 성공-01
+            :quant (여 / 여러번))
+      :ARG2 (사 / 사고 :quant 2 :unit (차 / 차례)
+            :ARG1-of (크 / 크-01)))
+
+# ::id snt7.E2017.Wiki.007 ::category EXWIKI :: split train
+# ::snt 1967년 1월 27일에는 지상 훈련 중이던 아폴로 1호가 화재로 인해 사령선이 전소되고 세 명의 우주비행사가 사망하였다.
+# ::note
+(사 / 사망-01
+      :ARG0 (전 / 전소-00
+            :ARG1 (s / spaceship :wiki "아폴로_1호" :name (이 / 이름 :op1 "아폴로" :op2 "1호"))
+            :cause (화 / 화재)
+            :time (훈 / 훈련-01
+                  :location (지 / 지상)))
+      :ARG1 (우 / 우주비행사 :quant 3 :unit (명 / 명)
+            :ARG0-of 훈)
+      :time (d / date-entity :year 1967 :month 1 :day 27))
+
+# ::id snt8.E2017.Wiki.007 ::category EXWIKI :: split train
+# ::snt 1970년 4월 13일에는 달로 가고 있던 아폴로 13호가 장비의 고장으로 달 궤도만을 선회하고는 간신히 지구로 귀환했다.
+# ::note
+(a / and
+      :op1 (선 / 선회-01
+            :ARG0 (s / spaceship :wiki "아폴로_13호" :name (이 / 이름 :op1 "아폴로" :op2 "13호")
+                  :ARG0-of (가 / 가-01
+                        :ARG3 (m / moon :wiki "달" :name (이2 / 이름 :op1 "달"))))
+            :ARG1 (궤 / 궤도
+                  :poss m)
+            :ARG2 (p / planet :wiki "지구" :name (이3 / 이름 :op1 "지구"))
+            :cause (고 / 고장나-01
+                  :ARG1 (장 / 장비)))
+      :op2 (귀 / 귀환-01
+            :ARG1 s
+            :ARG2 m
+            :ARG3 p
+            :manner (간 / 간신하-00))
+      :time (d / date-entity :year 1970 :month 4 :day 13))
+
+# ::id snt9.E2017.Wiki.007 ::category EXWIKI :: split train
+# ::snt 아폴로 계획은 드와이트 아이젠하워의 재임시절 추진되었던 유인 우주 비행 계획인 머큐리 계획을 기반으로 한 것이었다.
+# ::note
+(기 / 기반-00
+      :ARG1 (p / project* :wiki "아폴로_계획" :name (이 / 이름 :op1 "아폴로" :op2 "계획"))
+      :ARG2 (p2 / project* :wiki "머큐리_계획" :name (이2 / 이름 :op1 "머큐리" :op2 "계획")
+            :mod (계 / 계획-01
+                  :mod (비 / 비행-01
+                        :ARG0 (사 / 사람)
+                        :ARG1 (우 / 우주)))
+            :ARG1-of (추 / 추진-01
+                  :time (재 / 재임-00
+                        :ARG0 (p3 / person :wiki "드와이트_D._아이젠하워" :name (이3 / 이름 :op1 "드와이트" :op2 "아이젠하워"))))))
+
+# ::id snt0.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 하버드 대학교
+# ::note
+(u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
+
+# ::id snt1.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 하버드 대학교(Harvard University)는 미국의 아이비 리그 사립대학교이다.
+# ::note
+(대 / 대학교
+      :domain (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
+      :mod (사 / 사립)
+      :ARG1-of (i / include-91
+            :ARG2 (u2 / university :wiki "아이비_리그" :name (이2 / 이름 :op1 "아이비" :op2 "리그")))
+      :location (c / country :wiki "미국" :name (이3 / 이름 :op1 "미국")))
+
+# ::id snt2.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 하버드 대학교는 오랜 역사와 큰 영향력, 그리고 많은 재산으로 세계의 일류 대학 중 하나가 되었다.
+# ::note
+(되 / 되-01
+      :ARG1 (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
+      :ARG2 (대 / 대학
+            :mod (일 / 일류)
+            :mod (세 / 세계))
+      :manner (a / and
+            :op1 (역 / 역사
+                  :ARG1-of (오 / 오래-01))
+            :op2 (힘 / 힘
+                  :mod (영 / 영향-01)
+                  :ARG1-of (크 / 크-01))
+            :op3 (재 / 재산
+                  :ARG1-of (많 / 많-01))))
+
+# ::id snt3.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 하버드 대학교는 1636년에 매사추세츠 식민지 일반의회가 설립하였다.
+# ::note
+(설 / 설립-01
+      :ARG0 (g / government-organization :wiki - :name (이 / 이름 :op1 "매사추세츠" :op2 "식민지" :op3 "일반의회"))
+      :ARG1 (u / university :wiki "하버드_대학교" :name (이2 / 이름 :op1 "하버드" :op2 "대학교"))
+      :time (d / date-entity :year 1636))
+
+# ::id snt5.E2017.Wiki.008 ::category EXWIKI :: split dev
+# ::snt 젊은 청교도 성직자 존 하버드의 성을 따서 지은 것이다.
+# ::note
+(짓 / 짓-01
+      :manner (따 / 따-01
+            :ARG2 (이 / 이름 :op1 "존" :op2 "하버드"
+                  :name-of (p / person :wiki "존_하버드"
+                        :ARG0-of (h / have-org-role-91
+                              :ARG1 (r / religious-group :wiki "청교도" :name (이2 / 이름 :op1 "청교도"))
+                              :ARG2 (성 / 성직자))
+                        :ARG1-of (젊 / 젊-01)))))
+
+# ::id snt6.E2017.Wiki.008 ::category EXWIKI :: split dev
+# ::snt 그는 유언을 남겨서 4백여권의 책과 재산의 절반인 현금 779파운드를 학교에 기부하였다.
+# ::note
+(기 / 기부-01
+      :ARG0 (그 / 그)
+      :ARG1 (a / and
+            :op1 (책 / 책
+                  :quant (약 / 약 :op1 400) :unit (권 / 권))
+            :op2 (m / monetary-quantity :quant 779 :unit (파 / 파운드)
+                  :mod (현 / 현금)
+                  :ARG1-of (i / include-91
+                        :ARG2 (재 / 재산
+                              :poss 그)
+                        :ARG3 (절 / 절반))))
+      :ARG2 (학 / 학교)
+      :manner (남 / 남-01
+            :ARG0 그
+            :ARG1 (유 / 유산)))
+
+# ::id snt7.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 훗날에 여러 학과와 전문대학원들이 통합되면서 하버드 대학교가 되었다.
+# ::note
+(되 / 되-01
+      :manner (통 / 통합-01
+            :ARG1 (학 / 학과
+                  :quant (여 / 여러))
+            :ARG2 (대 / 대학원
+                  :mod (전 / 전문)))
+      :ARG2 (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
+      :time (훗 / 훗날))
+
+# ::id snt8.E2017.Wiki.008 ::category EXWIKI :: split dev
+# ::snt 지금도 학부는 하버드 칼리지라고 부른다.
+# ::note
+(부 / 부르-02
+      :ARG1 (학 / 학부)
+      :ARG2 (이 / 이름 :op1 "하버드" :op2 "칼리지"
+            :name-of (s / school :wiki -))
+      :time (지 / 지금))
+
+# ::id snt9.E2017.Wiki.008 ::category EXWIKI :: split test
+# ::snt 찰스 윌리엄 엘리엇은 40년간 하버드 총장으로 일하면서 하버드 대학교를 근대 연구 대학으로 변모시켰다.
+# ::note
+(변 / 변모-01
+      :ARG0 (p / person :wiki "찰스_윌리엄_엘리엇" :name (이 / 이름 :op1 "찰스" :op2 "윌리엄" :op3 "엘리엇")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (u / university :wiki "하버드_대학교" :name (이2 / 이름 :op1 "하버드" :op2 "대학교"))
+                  :ARG2 (총 / 총장)
+                  :duration (t / temporal-quantity :quant 40 :unit (년 / 년))))
+      :ARG1 u
+      :ARG3 (대 / 대학
+            :ARG0-of (연 / 연구-01)
+            :mod (근 / 근대)))
+
+# ::id snt10.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 엘리엇의 개혁은 선택 과목, 소규모 강의 등에 관한 변화도 포함하고 있었다.
+# ::note
+(i / include-91
+      :ARG1 (개 / 개혁-01
+            :ARG0 (p / person :wiki "찰스_윌리엄_엘리엇" :name (이 / 이름 :op1 "엘리엇")))
+      :ARG2 (변 / 변화-01
+            :ARG1 (등 / 등
+                  :op1 (선 / 선택-01
+                        :ARG1 (과 / 과목))
+                  :op2 (강 / 강의
+                        :mod (소 / 소규모)))))
+
+# ::id snt11.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 하버드 모델은 미국 교육에 영향을 끼쳤다.
+# ::note
+(영 / 영향-01
+      :ARG0 (모 / 모델
+            :mod (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드")))
+      :ARG1 (교 / 교육-01
+            :location (c / country :wiki "미국" :name (이2 / 이름 :op1 "미국"))))
+
+# ::id snt12.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 하버드 대학교는 현재까지 졸업생과 교수를 포함해서 세계에서 가장 많은 157명의 노벨상 수상자를 배출했다.
+# ::note
+(배 / 배출-01
+      :ARG0 (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
+      :ARG1 (사 / 사람 :quant 157 :unit (명 / 명)
+            :ARG0-of (수 / 수상-01
+                  :ARG1 (a / award :wiki "노벨상" :name (이2 / 이름 :op1 "노벨상")))
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (많 / 많-01)
+                  :ARG3 (가 / 가장)
+                  :ARG5 (세 / 세계))
+            :ARG1-of (i / include-91
+                  :ARG2 (a2 / and
+                        :op1 (학 / 학생
+                              :ARG0-of (졸 / 졸업-01
+                                    :ARG1 u))
+                        :op2 (교 / 교수))))
+      :time (현 / 현재))
+
+# ::id snt15.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 하버드 대학교의 학부는 4년제 과정이다.
+# ::note
+(과 / 과정
+      :duration (t / temporal-quantity :value 4 :unit (년 / 년))
+      :domain (학 / 학부
+            :poss (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))))
+
+# ::id snt16.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 학부 학생들은 의학, 법학, 경영학 등의 전문 분야는 공부할 수 없으며 자연과학, 응용과학, 사회과학, 인문학 등을 공부한다.
+# ::note
+(a / and
+      :op1 (가 / 가능-01
+            :polarity -
+            :ARG1 (공 / 공부-01
+                  :ARG0 (학 / 학생
+                        :ARG1-of (i / include-91
+                              :ARG2 (학2 / 학부)))
+                  :ARG1 (분 / 분야
+                        :mod (전 / 전문)
+                        :example (등 / 등
+                              :op1 (의 / 의학)
+                              :op2 (법 / 법학)
+                              :op3 (경 / 경영학)))))
+      :op2 (공2 / 공부-01
+            :ARG0 학
+            :ARG1 (등2 / 등
+                  :op1 (자 / 자연과학)
+                  :op2 (응 / 응용과학)
+                  :op3 (사 / 사회과학)
+                  :op4 (인 / 인문학))))
+
+# ::id snt17.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 전문대학원 과정에 메디컬 스쿨, 로스쿨, 비즈니스 스쿨과 케네디 스쿨 등을 두고 있다.
+# ::note
+(i / include-91
+      :ARG1 (등 / 등
+            :op1 (대 / 대학원
+                  :topic (의 / 의학))
+            :op2 (대2 / 대학원
+                  :topic (법 / 법학))
+            :op3 (대3 / 대학원
+                  :topic (경 / 경영학))
+            :op4 (u / university :wiki - :name (이 / 이름 :op1 "케네디" :op2 "스쿨")))
+      :ARG2 (과 / 과정
+            :poss (대4 / 대학원
+                  :mod (전 / 전문))))
+
+# ::id snt22.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 1650년에 하버드 칼리지의 헌장(charter)이 수립되었다.
+# ::note
+(수 / 수립-01
+      :ARG1 (헌 / 헌장
+            :topic (u / university :wiki - :name (이 / 이름 :op1 "하버드" :op2 "칼리지")))
+      :time (d / date-entity :year 1650))
+
+# ::id snt23.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 초기 하버드 대학교는 많은 청교도 목사를 양성했다.
+# ::note
+(양 / 양성-01
+      :ARG0 (u / university :wiki "하버드_대학교" :name (이 / 이름 :op1 "하버드" :op2 "대학교"))
+      :ARG1 (사 / 사람
+            :ARG1-of (많 / 많-01)
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (r / religious-group :wiki "청교도" :name (이2 / 이름 :op1 "청교도"))
+                  :ARG2 (목 / 목사)))
+      :time (초 / 초기))
+
+# ::id snt24.E2017.Wiki.008 ::category EXWIKI :: split test
+# ::snt 1782년에 메디컬 스쿨(Harvard Medical School), 1816년에 신학대학원(Harvard Divinity School), 1817년에 로스쿨(Harvard Law School), 1867년에 치의학대학원(Harvard School of Dental Medicine), 1908년에 비즈니스 스쿨(Harvard Business School), 1920년에 교육대학원(Harvard Graduate School of Education), 1922년에 공공보건대학원(Harvard School of Public Health), 그리고 1936년에 케네디 스쿨(Harvard Kennedy School)을 설립하면서 차츰 현대적인 종합대학이 됐다.
+# ::note
+(되 / 되-01
+      :ARG2 (대 / 대학
+            :mod (종 / 종합-00)
+            :mod (현 / 현대))
+      :manner (차 / 차츰)
+      :manner (a / and
+            :op1 (설 / 설립-01
+                  :ARG1 (대2 / 대학원
+                        :topic (의 / 의학))
+                  :time (d / date-entity :year 1782))
+            :op2 (설2 / 설립-01
+                  :ARG1 (대3 / 대학원
+                        :topic (신 / 신학))
+                  :time (d2 / date-entity :year 1816))
+            :op3 (설3 / 설립-01
+                  :ARG1 (대4 / 대학원
+                        :topic (법 / 법학))
+                  :time (d3 / date-entity :year 1817))
+            :op4 (설4 / 설립-01
+                  :ARG1 (대5 / 대학원
+                        :topic (치 / 치의학))
+                  :time (d4 / date-entity :year 1867))
+            :op5 (설5 / 설립-01
+                  :ARG1 (대6 / 대학원
+                        :topic (경 / 경영학))
+                  :time (d5 / date-entity :year 1908))
+            :op6 (설6 / 설립-01
+                  :ARG1 (대7 / 대학원
+                        :topic (교 / 교육학))
+                  :time (d6 / date-entity :year 1920))
+            :op7 (설7 / 설립-01
+                  :ARG1 (대8 / 대학원
+                        :topic (공 / 공공보건학))
+                  :time (d7 / date-entity :year 1922))
+            :op8 (설8 / 설립-01
+                  :ARG1 (u / university :wiki - :name (이 / 이름 :op1 "케네디" :op2 "스쿨"))
+                  :time (d8 / date-entity :year 1936))))
+
+# ::id snt25.E2017.Wiki.008 ::category EXWIKI :: split train
+# ::snt 하버드 대학교의 메인 캠퍼스(main campus)는 중앙 케임브리지 시에 있는 하버드 야드(Harvard Yard) 중심에 있으며 그 인근에 있는 하버드 스퀘어(Harvard Square)까지 연장되어 있다.
+# ::note
+(a / and
+      :op1 (f / facility :wiki - :name (이 / 이름 :op1 "메인" :op2 "캠퍼스")
+            :part-of (u / university :wiki "하버드_대학교" :name (이2 / 이름 :op1 "하버드" :op2 "대학교"))
+            :location (중 / 중심
+                  :op1 (l / location :wiki - :name (이3 / 이름 :op1 "하버드" :op2 "야드")
+                        :location (c / city :wiki "케임브리지_(매사추세츠주)" :name (이4 / 이름 :op1 "케임브리지" :op2 "시")
+                              :mod (중2 / 중앙)))))
+      :op2 (연 / 연장-01
+            :ARG1 f
+            :ARG3 (l2 / location :wiki - :name (이5 / 이름 :op1 "하버드" :op2 "스퀘어")
+                  :location (인 / 인근
+                        :op1 중))))
+
+# ::id snt27.E2017.Wiki.008 ::category EXWIKI :: split test
+# ::snt 메인 캠퍼스에서 찰스 강 건너편에 자리잡고 있는 올스턴 지역까지 도보로 갈 수 있다.
+# ::note
+(가 / 가능-01
+      :ARG1 (가2 / 가-01
+            :ARG2 (l / location :wiki - :name (이 / 이름 :op1 "메인" :op2 "캠퍼스"))
+            :ARG3 (c / city-district :wiki - :name (이2 / 이름 :op1 "올스턴" :op2 "지역")
+                  :location (건 / 건너편
+                        :op1 (r / river :wiki "찰스강" :name (이3 / 이름 :op1 "찰스" :op2 "강"))))
+            :manner (도 / 도보)))
+
+# ::id snt29.E2017.Wiki.008 ::category EXWIKI :: split dev
+# ::snt 하버드 로스쿨은 하버드 야드 북쪽에 위치해 있다.
+# ::note
+(u / university :wiki "하버드_법학대학원" :name (이 / 이름 :op1 "하버드" :op2 "로스쿨")
+      :location (북 / 북쪽
+            :direction-of (l / location :wiki - :name (이2 / 이름 :op1 "하버드" :op2 "야드"))))
+
+# ::id snt0.E2017.Wiki.009 ::category EXWIKI :: split train
+# ::snt 원나라
+# ::note
+(c / country :wiki "원나라" :name (이 / 이름 :op1 "원나라"))
+
+# ::id snt1.E2017.Wiki.009 ::category EXWIKI :: split train
+# ::snt 대원 몽골제국은 13세기 몽골 제국이 세운 대제국이다.
+# ::note
+(대 / 대제국
+      :domain (c / country :wiki "원나라" :name (이 / 이름 :op1 "대원" :op2 "몽골제국"))
+      :ARG1-of (서 / 서-02
+            :ARG0 (c2 / country :wiki "몽골_제국" :name (이2 / 이름 :op1 "몽골" :op2 "제국"))
+            :time (d / date-entity :century 13)))
+
+# ::id snt2.E2017.Wiki.009 ::category EXWIKI :: split train
+# ::snt 일반적으로 13세기 중반부터 14세기 중반까지 몽골 제국이 중원을 지배하고 통치한 시기를 말한다.
+# ::note
+(말 / 말하-01
+      :mod (일 / 일반적)
+      :attribute (시 / 시기
+            :mod (a / and
+                  :op1 (지 / 지배-01
+                        :ARG0 (c / country :wiki "몽골_제국" :name (이 / 이름 :op1 "몽골" :op2 "제국"))
+                        :ARG1 (중 / 중원))
+                  :op2 (통 / 통치-01
+                        :ARG0 c
+                        :ARG1 중)
+                  :time (d / date-interval
+                        :op1 (중2 / 중반
+                              :op1 (d2 / date-entity :century 13))
+                        :op2 (중3 / 중반
+                              :op1 (d3 / date-entity :century 14))))))
+
+# ::id snt3.E2017.Wiki.009 ::category EXWIKI :: split train
+# ::snt 몽골족의 정복 황조 원나라는 중국 대륙과 몽골 고원을 중심으로 한 영역을 지배하다가 명나라를 건국하는 주원장(朱元璋)에게 쫓겨 북쪽으로 이전한 뒤("북원"), 유목민 국가로 1635년까지 존속한 국가다.
+# ::note
+(a / and
+      :op1 (지 / 지배-01
+            :ARG0 (c / country :wiki "원나라" :name (이 / 이름 :op1 "원나라")
+                  :mod (황 / 황조
+                        :mod (정 / 정복-00
+                              :ARG1 (e / ethnic-group :wiki "몽골족" :name (이2 / 이름 :op1 "몽골족")))))
+            :ARG1 (a2 / and
+                  :op1 (대 / 대륙
+                        :mod (c2 / country :wiki "중국" :name (이3 / 이름 :op1 "중국")))
+                  :op2 (p / plateau* :wiki "몽골고원" :name (이4 / 이름 :op1 "몽골" :op2 "고원"))))
+      :op2 (이5 / 이전-01
+            :ARG1 c
+            :ARG3 (c3 / country :wiki "북원" :name (이6 / 이름 :op1 "북원"))
+            :direction (북 / 북쪽)
+            :cause (쫓 / 쫓-00
+                  :ARG0 (p2 / person :wiki "홍무제" :name (이7 / 이름 :op1 "주원장")
+                        :ARG0-of (건 / 건국-00
+                              :ARG1 (c4 / country :wiki "명나라" :name (이8 / 이름 :op1 "명나라"))))))
+      :op3 (존 / 존속-00
+            :ARG1 c
+            :attribute (국 / 국가
+                  :mod (유 / 유목민))
+            :time (d / date-interval
+                  :op2 (d2 / date-entity :year 1635))))
+
+# ::id snt4.E2017.Wiki.009 ::category EXWIKI :: split train
+# ::snt 원은 송나라를 멸망시킨 이민족의 정복 국가이며, 중국 대륙을 자체 병탄·병합하였다.
+# ::note
+(a / and
+      :op1 (국 / 국가
+            :domain (c / country :wiki "원나라" :name (이 / 이름 :op1 "원"))
+            :mod (정 / 정복-00
+                  :ARG0 (이2 / 이민족
+                        :cause-of (멸 / 멸망-00
+                              :ARG1 (c2 / country :wiki "송나라" :name (이3 / 이름 :op1 "송나라"))))))
+      :op2 (a2 / and
+            :op1 (병 / 병탄-00
+                  :ARG0 c
+                  :ARG1 (대 / 대륙
+                        :mod (c3 / country :wiki "중국" :name (이4 / 이름 :op1 "중국")))
+                  :manner (자 / 자체))
+            :op2 (병2 / 병합-01
+                  :ARG0 c
+                  :ARG1 대
+                  :manner (자2 / 자체))))
+
+# ::id snt5.E2017.Wiki.009 ::category EXWIKI :: split test
+# ::snt 이후 주원장의 명나라에 의해 북쪽으로 쫓겨나 쇠퇴하게 된다.
+# ::note
+(쇠 / 쇠퇴-00
+      :cause (쫓 / 쫓겨나-00
+            :direction (북 / 북쪽)
+            :cause (c / country :wiki "명나라" :name (이 / 이름 :op1 "명나라")
+                  :poss (p / person :wiki "홍무제" :name (이2 / 이름 :op1 "주원장"))))
+      :time (이3 / 이후))
+
+# ::id snt12.E2017.Wiki.009 ::category EXWIKI :: split train
+# ::snt 그러면서도 중국화된 명칭과 제도를 사용하였다.
+# ::note
+(c / contrast-01
+      :ARG2 (사 / 사용-01
+            :ARG1 (a / and
+                  :ARG1-of (중 / 중국화-00)
+                  :op1 (명 / 명칭)
+                  :op2 (제 / 제도))))
+
+# ::id snt0.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 시카고 대학교
+# ::note
+(u / university :wiki "시카고_대학교" :name (이 / 이름 :op1 "시카고" :op2 "대학교"))
+
+# ::id snt1.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 시카고 대학교는 미국 일리노이 주 시카고에 있는 석유 재벌 존 D. 록펠러의 기부금으로 1890년에 설립된 명문의 연구 중심 사립 대학이며, 그 학업적 명성은 컬럼비아와 프린스턴 등의 아이비리그의 상위권 대학들과 어깨를 나란히 한다.
+# ::note
+(a / and
+      :op1 (대 / 대학
+            :domain (u / university :wiki "시카고_대학교" :name (이 / 이름 :op1 "시카고" :op2 "대학교"))
+            :mod (사 / 사립)
+            :mod (중 / 중심
+                  :mod (연 / 연구-01))
+            :mod (명 / 명문)
+            :location (c / city :wiki "시카고" :name (이2 / 이름 :op1 "시카고")
+                  :location (p / province :wiki "일리노이주" :name (이3 / 이름 :op1 "일리노이" :op2 "주")
+                        :location (c2 / country :wiki "미국" :name (이4 / 이름 :op1 "미국"))))
+            :ARG1-of (설 / 설립-01
+                  :time (d / date-entity :year 1890)
+                  :manner (금 / 금액
+                        :ARG1-of (기 / 기부-01
+                              :ARG0 (p2 / person :wiki "존_D._록펠러" :name (이5 / 이름 :op1 "존" :op2 "D." :op3 "록펠러")
+                                    :mod (재 / 재벌
+                                          :topic (석 / 석유)))))))
+      :op2 (어 / 어깨를-나란히-하-00
+            :ARG1 (명2 / 명성
+                  :topic (학 / 학업)
+                  :poss u)
+            :ARG2 (대2 / 대학
+                  :mod (상 / 상위권)
+                  :ARG1-of (i / include-91
+                        :ARG2 (u2 / university :wiki "아이비_리그" :name (이6 / 이름 :op1 "아이비" :op2 "리그")))
+                  :example (등 / 등
+                        :op1 (u3 / university :wiki "컬럼비아_대학교" :name (이7 / 이름 :op1 "컬럼비아"))
+                        :op2 (u4 / university :wiki "프린스턴_대학교" :name (이8 / 이름 :op1 "프린스턴"))))))
+
+# ::id snt2.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 특히 '시카고 학파'라고도 널리 알려진 만큼 경제학 분야는 명문대학들 중에서도 전 세계 1위로 평가받는다.
+# ::note
+(h / have-degree-91
+      :ARG1 (분 / 분야
+            :topic (경 / 경제학))
+      :ARG2 (평 / 평가-01
+            :ARG1 분)
+      :ARG3 (순 / 순위
+            :ord (o / ordinal-entity :value 1))
+      :ARG5 (대 / 대학
+            :mod (명 / 명문)
+            :location (세 / 세계
+                  :mod (전 / 전)))
+      :conj-ㄴ-만큼 (알 / 알-01
+            :ARG1 (s / school :wiki "시카고_학파_(경제학)" :name (이 / 이름 :op1 "시카고" :op2 "학파"))
+            :manner (널 / 널리)))
+
+# ::id snt3.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 1891년 윌리엄 레이니 하퍼(William Rainey Harper)가 초대 총장으로 취임하여 1892년에 운영을 시작했다.
+# ::note
+(a / and
+      :op1 (취 / 취임-01
+            :ARG0 (p / person :wiki "윌리암_레이니_하퍼" :name (이 / 이름 :op1 "윌리엄" :op2 "레이니" :op3 "하퍼"))
+            :ARG1 (총 / 총장
+                  :ord (o / ordinal-entity :value 1))
+            :time (d / date-entity :year 1891))
+      :op2 (시 / 시작-01
+            :ARG1 (운 / 운영-01)
+            :time (d2 / date-entity :year 1892)))
+
+# ::id snt4.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 1890년 석유 재벌 존 D. 록펠러의 기부금으로 개교하였다.
+# ::note
+(개 / 개교-00
+      :manner (금 / 금액
+            :ARG1-of (기 / 기부-01
+                  :ARG0 (p / person :wiki "존_D._록펠러" :name (이 / 이름 :op1 "존" :op2 "D." :op3 "록펠러")
+                        :mod (재 / 재벌
+                              :topic (석 / 석유)))))
+      :time (d / date-entity :year 1890))
+
+# ::id snt5.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 학생들은 대도시 시카고로부터 각종 인턴십이나 일할 수 있는 기회 또는 문화생활의 혜택을 받고 있다.
+# ::note
+(받 / 받-01
+      :ARG0 (학 / 학생)
+      :ARG1 (o / or
+            :op1 (인 / 인턴십
+                  :mod (각 / 각종))
+            :op2 (기 / 기회
+                  :mod (가 / 가능-01
+                        :ARG1 (일 / 일하-01
+                              :ARG0 학)))
+            :op3 (혜 / 혜택
+                  :mod (생 / 생활-01
+                        :mod (문 / 문화))))
+      :ARG2 (c / city :wiki "시카고" :name (이 / 이름 :op1 "시카고")
+            :mod (대 / 대도시)))
+
+# ::id snt6.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 학부생 16% 정도가 아시아계 학생이다.
+# ::note
+(i / include-91
+      :ARG1 (학 / 학생
+            :mod (e / ethnic-group :wiki - :name (이 / 이름 :op1 "아시아계")))
+      :ARG2 (학2 / 학부생)
+      :ARG3 (p / percentage-entity :value 16))
+
+# ::id snt13.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 특히 경제학과 물리학은 시카고가 주력으로 내세우는 학과이다.
+# ::note
+(내 / 내세우-01
+      :mod (특 / 특히)
+      :ARG0 (u / university :wiki "시카고_대학교" :name (이 / 이름 :op1 "시카고"))
+      :ARG1 (a / and
+            :op1 (학 / 학과
+                  :topic (경 / 경제학)
+            :op2 (학2 / 학과
+                  :topic (물 / 물리학))))
+      :ARG2 (주 / 주력))
+
+# ::id snt16.E2017.Wiki.010 ::category EXWIKI :: split test
+# ::snt 전문대학원 중에는 의학대학원(Pritzker School of Medicine, University of Chicago), 법학대학원(University of Chicago Law School), 경영대학원(University of Chicago Booth School of Business) 등이 유명하다.
+# ::note
+(h / have-degree-91
+      :ARG1 (등 / 등
+            :op1 (대 / 대학원
+                  :topic (의 / 의학))
+            :op2 (대2 / 대학원
+                  :topic (법 / 법학))
+            :op3 (대3 / 대학원
+                  :topic (경 / 경영학)))
+      :ARG2 (유 / 유명-01
+            :ARG1 등)
+      :ARG5 (대4 / 대학원
+            :mod (전 / 전문)))
+
+# ::id snt17.E2017.Wiki.010 ::category EXWIKI :: split dev
+# ::snt 버락 오바마 대통령은 1993년부터 2004년까지 시카고대학교 법학대학원에서 강사로 재직하며 헌법학 강의를 했다.
+# ::note
+(h / have-org-role-91
+      :ARG0 (p / person :wiki "버락_오바마" :name (이 / 이름 :op1 "버락" :op2 "오바마")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG2 (대 / 대통령)))
+      :ARG1 (u / university :wiki "시카고_대학교_법학대학원" :name (이2 / 이름 :op1 "시카고대학교" :op2 "법학대학원"))
+      :ARG2 (강 / 강사)
+      :ARG3 (강2 / 강의-00
+            :ARG0 p
+            :ARG1 (헌 / 헌법학))
+      :time (d / date-interval
+            :op1 (d2 / date-entity :year 1993)
+            :op2 (d3 / date-entity :year 2004)))
+
+# ::id snt23.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 세계경제포럼이 선정한 세계 최상위 26개 대학 중 하나이다.
+# ::note
+(i / include-91
+      :ARG2 (대 / 대학 :quant 26 :unit (개 / 개)
+            :mod (최 / 최상위
+                  :mod (세 / 세계))
+            :ARG2-of (선 / 선정-01
+                  :ARG0 (o / organization :wiki "세계_경제_포럼" :name (이 / 이름 :op1 "세계경제포럼")))))
+
+# ::id snt24.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 시카고대는 수많은 유명 인물들을 배출했다.
+# ::note
+(배 / 배출-01
+      :ARG0 (u / university :wiki "시카고_대학교" :name (이 / 이름 :op1 "시카고대"))
+      :ARG1 (인 / 인물
+            :ARG1-of (유 / 유명-01)
+            :ARG1-of (수 / 수많-01)))
+
+# ::id snt25.E2017.Wiki.010 ::category EXWIKI :: split dev
+# ::snt 정치 분야에는 볼리비아 제74대 대통령 곤살로 산체스 데 로사다, 전 엘살바도르 대통령 알바로 마가냐 등이 있다.
+# ::note
+(등 / 등
+      :domain (분 / 분야
+            :mod (정 / 정치))
+      :op1 (p / person :wiki "곤살로_산체스_데_로사다" :name (이 / 이름 :op1 "곤살로" :op2 "산체스" :op3 "데" :op4 "로사다")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / country :wiki "볼리비아" :name (이2 / 이름 :op1 "볼리비아"))
+                  :ARG2 (대 / 대통령
+                        :ord (o / ordinal-entity :value 74))))
+      :op2 (p2 / person :wiki "알바로_마가냐" :name (이3 / 이름 :op1 "알바로" :op2 "마가냐")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 (c2 / country :wiki "엘살바도르" :name (이4 / 이름 :op1 "엘살바도르"))
+                  :ARG2 (대2 / 대통령)
+                  :time (전 / 전))))
+
+# ::id snt26.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 재계에는 전 세계은행 총재 폴 월포위츠, 마이크로소프트 CEO 사티아 나델라, 질레트 회장 제임스 킬츠, 전 IBM 회장 존 오펠, 패러마운트 픽처스 회장 셰리 랜싱, 전 모건 스탠리 회장 필립 J. 퍼셀 등이 있다.
+# ::note
+(등 / 등
+      :domain (재 / 재계)
+      :op1 (p / person :wiki "폴_월포위츠" :name (이 / 이름 :op1 "폴" :op2 "월포위츠")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (o / organization :wiki "세계은행" :name (이2 / 이름 :op1 "세계은행"))
+                  :ARG2 (총 / 총재)
+                  :time (전 / 전)))
+      :op2 (p2 / person :wiki "사티아_나델라" :name (이3 / 이름 :op1 "사티아" :op2 "나델라")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 (c / company :wiki "마이크로소프트" :name (이4 / 이름 :op1 "마이크로소프트"))
+                  :ARG2 (최 / 최고경영자)))
+      :op3 (p3 / person :wiki - :name (이5 / 이름 :op1 "제임스" :op2 "킬츠")
+            :ARG0-of (h3 / have-org-role-91
+                  :ARG1 (c2 / company :wiki "질레트" :name (이6 / 이름 :op1 "질레트"))
+                  :ARG2 (회 / 회장)))
+      :op4 (p4 / person :wiki - :name (이7 / 이름 :op1 "존" :op2 "오펠")
+            :ARG0-of (h4 / have-org-role-91
+                  :ARG1 (c3 / company :wiki "IBM" :name (이8 / 이름 :op1 "IBM"))
+                  :ARG2 (회2 / 회장)
+                  :time (전2 / 전)))
+      :op5 (p5 / person :wiki - :name (이9 / 이름 :op1 "셰리" :op2 "랜싱")
+            :ARG0-of (h5 / have-org-role-91
+                  :ARG1 (c4 / company :wiki "파라마운트_픽쳐스" :name (이10 / 이름 :op1 "패러마운트" :op2 "픽처스"))
+                  :ARG2 (회3 / 회장)))
+      :op6 (p6 / person :wiki - :name (이11 / 이름 :op1 "필립" :op2 "J." :op3 "퍼셀")
+            :ARG0-of (h6 / have-org-role-91
+                  :ARG1 (c5 / company :wiki "모건_스탠리" :name (이12 / 이름 :op1 "모건" :op2 "스탠리"))
+                  :ARG2 (회4 / 회장)
+                  :time (전3 / 전))))
+
+# ::id snt29.E2017.Wiki.010 ::category EXWIKI :: split dev
+# ::snt 천문학 분야에서는 퓰리처상을 수상한 칼 세이건, 천문학자 에드윈 허블 등이 있다.
+# ::note
+(등 / 등
+      :domain (분 / 분야
+            :mod (천 / 천문학))
+      :op1 (p / person :wiki "칼_세이건" :name (이 / 이름 :op1 "칼" :op2 "세이건")
+            :ARG0-of (수 / 수상-01
+                  :ARG1 (a / award :wiki "퓰리처상" :name (이2 / 이름 :op1 "퓰리처상"))))
+      :op2 (p2 / person :wiki "에드윈_허블" :name (이3 / 이름 :op1 "에드윈" :op2 "허블")
+            :mod (학 / 학자
+                  :topic (천2 / 천문학))))
+
+# ::id snt30.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 문학/예술계에는 퓰리처상 수상 소설가 솔 벨로, 휴고상 수상 소설가 커트 보네거트, 비평가 및 소설가 수전 손택, 캐나다의 소설가 스티븐 리콕 등이 있다.
+# ::note
+(등 / 등
+      :domain (a / and
+            :op1 (문 / 문학)
+            :op2 (예 / 예술계))
+      :op1 (p / person :wiki "솔_벨로" :name (이 / 이름 :op1 "솔" :op2 "벨로")
+            :mod (소 / 소설가)
+            :ARG0-of (수 / 수상-01
+                  :ARG1 (a2 / award :wiki "퓰리처상" :name (이2 / 이름 :op1 "퓰리처상"))))
+      :op2 (p2 / person :wiki "커트_보니것" :name (이3 / 이름 :op1 "커트" :op2 "보네거트")
+            :mod (소2 / 소설가)
+            :ARG0-of (수2 / 수상-01
+                  :ARG1 (a3 / award :wiki "휴고상" :name (이4 / 이름 :op1 "휴고상"))))
+      :op3 (p3 / person :wiki "수전_손택" :name (이5 / 이름 :op1 "수전" :op2 "손택")
+            :mod (및 / 및
+                  :op1 (사 / 사람
+                        :ARG0-of (비 / 비평-00))
+                  :op2 (소3 / 소설가)))
+      :op4 (p4 / person :wiki "스티븐_리콕" :name (이6 / 이름 :op1 "스티븐" :op2 "리콕")
+            :mod (소4 / 소설가)
+            :location (c / country :wiki "캐나다" :name (이7 / 이름 :op1 "캐나다"))))
+
+# ::id snt31.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 음악가로는 아카데미상을 수상한 필립 글래스, 배우로는 《마이 걸》로 잘 알려진 애나 클럼스키 등이 있다.
+# ::note
+(등 / 등
+      :op1 (p / person :wiki "필립_글래스" :name (이 / 이름 :op1 "필립" :op2 "글래스")
+            :domain (음 / 음악가)
+            :ARG0-of (수 / 수상-01
+                  :ARG1 (a / award :wiki "아카데미상" :name (이2 / 이름 :op1 "아카데미상"))))
+      :op2 (p2 / person :wiki "애나_클럼스키" :name (이3 / 이름 :op1 "애나" :op2 "클럼스키")
+            :domain (배 / 배우)
+            :ARG1-of (알 / 알-01
+                  :ARGA (s / show :wiki "마이_걸_(영화)" :name (이4 / 이름 :op1 "마이" :op2 "걸"))
+                  :degree (잘 / 잘))))
+
+# ::id snt32.E2017.Wiki.010 ::category EXWIKI :: split train
+# ::snt 한인 동문으로는 외교관 윤치창, SK그룹 설립자 최종건, 전 SK그룹 회장 최종현, 현 SK그룹 회장 최태원, LG전자 부회장 구본준, 조선일보 뉴미디어실 부실장 겸 전략기획마케팅팀장 방정오 등이 있다.
+# ::note
+(등 / 등
+      :domain (동 / 동문
+            :mod (n / nationality :wiki "한국인" :name (이 / 이름 :op1 "한인")))
+      :op1 (p / person :wiki "윤치창" :name (이2 / 이름 :op1 "윤치창")
+            :ARG0-of (h / have-org-role-91
+                  :ARG2 (외 / 외교관)))
+      :op2 (p2 / person :wiki "최종건" :name (이3 / 이름 :op1 "최종건")
+            :ARG0-of (설 / 설립-01
+                  :ARG1 (c / company :wiki "SK그룹" :name (이4 / 이름 :op1 "SK그룹"))))
+      :op3 (p3 / person :wiki "최종현" :name (이5 / 이름 :op1 "최종현")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 c
+                  :ARG2 (회 / 회장)
+                  :time (전 / 전)))
+      :op4 (p4 / person :wiki "최태원_(기업인)" :name (이6 / 이름 :op1 "최태원")
+            :ARG0-of (h3 / have-org-role-91
+                  :ARG1 c
+                  :ARG2 (회2 / 회장)
+                  :time (현 / 현)))
+      :op5 (p5 / person :wiki "구본준" :name (이7 / 이름 :op1 "구본준")
+            :ARG0-of (h4 / have-org-role-91
+                  :ARG1 (c2 / company :wiki "LG전자" :name (이8 / 이름 :op1 "LG전자"))
+                  :ARG2 (부 / 부회장)))
+      :op6 (p6 / person :wiki "방정오" :name (이9 / 이름 :op1 "방정오")
+            :ARG0-of (h5 / have-org-role-91
+                  :ARG1 (c3 / company :wiki "조선일보" :name (이10 / 이름 :op1 "조선일보"))
+                  :ARG2 (겸 / 겸
+                        :op1 (부2 / 부실장
+                              :topic (뉴 / 뉴미디어))
+                        :op2 (팀 / 팀장
+                              :topic (a / and
+                                    :op1 (기 / 기획-01
+                                          :ARG1 (전2 / 전략))
+                                    :op2 (마 / 마케팅)))))))
+
+# ::id snt0.E2017.Wiki.011 ::category EXWIKI :: split train
+# ::snt 엽록체
+# ::note
+(엽 / 엽록체)
+
+# ::id snt1.E2017.Wiki.011 ::category EXWIKI :: split train
+# ::snt 엽록체(葉綠體)는 진핵생물에서 광합성을 하는 세포 소기관이다.
+# ::note
+(소 / 소기관
+      :domain (엽 / 엽록체)
+      :part-of (세 / 세포
+            :part-of (진 / 진핵생물))
+      :ARG1-of (광 / 광합성-00))
+
+# ::id snt2.E2017.Wiki.011 ::category EXWIKI :: split test
+# ::snt 엽록체는 엽록소가 있어 세포를 관찰했을 때 뚜렷한 녹색이 나타나는 것을 쉽게 확인할 수 있다.
+# ::note
+(가 / 가능-01
+      :ARG1 (확 / 확인-01
+            :ARG1 (나 / 나타나-01
+                  :ARG1 (녹 / 녹색
+                        :ARG1-of (뚜 / 뚜렷하-01))
+                  :ARG2 (세 / 세포
+                        :ARG1-of (관 / 관찰-01)))
+            :ARG1-of (쉽 / 쉽-01))
+      :cause (엽 / 엽록소
+            :location (엽2 / 엽록체)))
+
+# ::id snt3.E2017.Wiki.011 ::category EXWIKI :: split train
+# ::snt (독자적인 DNA와 리보솜을 가지고 있으며, 현재의 남조균류와 공통 조상을 가졌을 것으로 추측된다.)
+# ::note
+(a / and
+      :op1 (가 / 가지-01
+            :ARG1 (a2 / and
+                  :op1 (D / DNA)
+                  :op2 (리 / 리보솜)
+                  :mod (독 / 독자적)))
+      :op2 (추 / 추측-01
+            :ARG1 (가2 / 가지-01
+                  :ARG1 (조 / 조상
+                        :ARG1-of (공 / 공통-01
+                              :ARG2 (남 / 남조균류
+                                    :time (현 / 현재)))))))
+
+# ::id snt5.E2017.Wiki.011 ::category EXWIKI :: split train
+# ::snt 유관속 식물의 엽록체는 비광합성 세포에서 색소체로서 존재한다.
+# ::note
+(엽 / 엽록체
+      :part-of (식 / 식물
+            :ARG1-of (i / include-91
+                  :ARG2 (유 / 유관속)))
+      :location (세 / 세포
+            :ARG1-of (광 / 광합성-00
+                  :polarity -))
+      :attribute (색 / 색소체))
+
+# ::id snt0.E2017.Wiki.012 ::category EXWIKI :: split train
+# ::snt 제국주의
+# ::note
+(제 / 제국주의)
+
+# ::id snt15.E2017.Wiki.012 ::category EXWIKI :: split train
+# ::snt 주로 유럽중심으로 이루어져왔다.
+# ::note
+(이 / 이루-01
+      :mod (주 / 주로)
+      :manner (중 / 중심
+            :op1 (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))))
+
+# ::id snt16.E2017.Wiki.012 ::category EXWIKI :: split test
+# ::snt 유럽의 초기 식민지는 희귀한 자원과 노예의 확보를 위한 것이었다.
+# ::note
+(식 / 식민지
+      :time (초 / 초기)
+      :poss (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+      :purpose (확 / 확보-01
+            :ARG1 (a / and
+                  :op1 (자 / 자원
+                        :ARG1-of (희 / 희귀-00))
+                  :op2 (노 / 노예))))
+
+# ::id snt17.E2017.Wiki.012 ::category EXWIKI :: split train
+# ::snt 이후 산업혁명은 대량생산을 위해 보다 많은 자원과 노동력을 필요로 하였고 동시에 생산된 제품을 판매할 판매처가 필요했다.
+# ::note
+(a / and
+      :domain (e / event :wiki "산업혁명" :name (이 / 이름 :op1 "산업혁명"))
+      :op1 (필 / 필요-01
+            :ARG1 (a2 / and
+                  :op1 (능 / 능력
+                        :mod (노 / 노동-00))
+                  :op2 (자 / 자원
+                        :ARG1-of (h / have-degree-91
+                              :ARG2 (많 / 많-01)
+                              :ARG3 (보 / 보다)))
+                  :purpose (대 / 대량생산))
+            :ARG2 e)
+      :op2 (필2 / 필요-01
+            :ARG1 (장 / 장소
+                  :location-of (판 / 판매-01)
+                  :purpose (판2 / 판매-01
+                        :ARG1 (제 / 제품
+                              :ARG1-of (생 / 생산-01))))
+            :ARG2 e
+            :mod (동 / 동시))
+    :time (이2 / 이후))
+
+# ::id snt18.E2017.Wiki.012 ::category EXWIKI :: split train
+# ::snt 당시의 대표적인 식민무역은 영국의 경우 인도의 값싼 노동력과 면화로 면직물을 만들고 이것을 다시 인도에서 아편과 바꾼 후 중국에서 은과 교환하는 것이었다.
+# ::note
+(a / and
+      :domain (식 / 식민무역
+            :poss (c / country :wiki "영국" :name (이 / 이름 :op1 "영국"))
+            :ARG0-of (대 / 대표-01
+                  :ARG1 (당 / 당시)))
+      :op1 (만 / 만들-01
+            :ARG0 c
+            :ARG1 (직 / 직물
+                  :consist-of (면 / 면))
+            :instrument (면2 / 면화)
+            :manner (능 / 능력
+                  :mod (노 / 노동-00)
+                  :ARG1-of (값 / 값싸-01)
+                  :poss (c2 / country :wiki "인도" :name (이2 / 이름 :op1 "인도"))))
+      :op2 (바 / 바꾸-02
+            :ARG0 c
+            :ARG1 직
+            :ARG2 c2
+            :ARG3 (아 / 아편)
+            :location c2)
+      :op3 (교 / 교환-01
+            :ARG0 c
+            :ARG1 아
+            :ARG0 (c3 / country :wiki "중국" :name (이3 / 이름 :op1 "중국"))
+            :ARG3 (은 / 은)
+            :location c3))
+
+# ::id snt19.E2017.Wiki.012 ::category EXWIKI :: split train
+# ::snt 이는 나중에 아편 전쟁이 일어나는 원인이 되었다.
+# ::note
+(c / cause-01
+      :ARG0 (이 / 이)
+      :ARG1 (w / war :wiki "아편_전쟁" :name (이2 / 이름 :op1 "아편" :op2 "전쟁"))
+      :time (나 / 나중))
+
+# ::id snt20.E2017.Wiki.012 ::category EXWIKI :: split train
+# ::snt 이를 위해 제국주의 국가는 식민지에 척식회사를 설립하였는데 영국의 동인도회사나 일본의 동양척식주식회사 등이 그것이다.
+# ::note
+(설 / 설립-01
+      :ARG0 (국 / 국가
+            :mod (제 / 제국주의))
+      :ARG1 (회 / 회사
+            :purpose (척 / 척식-00)
+            :example (등 / 등
+                  :op1 (c / company :wiki "영국_동인도_회사" :name (이 / 이름 :op1 "동인도회사")
+                        :location (c2 / country :wiki "영국" :name (이2 / 이름 :op1 "영국")))
+                  :op2 (c3 / company :wiki "동양척식주식회사" :name (이3 / 이름 :op1 "동양척식주식회사")
+                        :location (c4 / country :wiki "일본" :name (이4 / 이름 :op1 "일본")))))
+      :location (식 / 식민지)
+      :purpose (이5 / 이))
+
+# ::id snt21.E2017.Wiki.012 ::category EXWIKI :: split train
+# ::snt 후발주자로 미국과 일본이 제국주의 열강대열에 등장했다.
+# ::note
+(등 / 등장-01
+      :ARG1 (a / and
+            :op1 (c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+            :op2 (c2 / country :wiki "일본" :name (이2 / 이름 :op1 "일본")))
+      :ARG2 (대 / 대열
+            :mod (열 / 열강)
+            :mod (제 / 제국주의))
+      :ARG3 (주 / 주자
+            :ARG1 (후 / 후발-00)))
+
+# ::id snt0.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 니콜라 테슬라
+# ::note
+(p / person
+      :wiki "니콜라_테슬라"
+      :name (이 / 이름 :op1 "니콜라" :op2 "테슬라"))
+
+# ::id snt1.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 니콜라 테슬라(세르비아인, 1856년 7월 10일 ~ 1943년 1월 7일 경)는 오스트리아 헝가리 제국 출신 미국의 발명가, 물리학자, 기계공학자이자 전기공학자이다.
+# ::note
+(a / and
+      :domain (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "니콜라" :op2 "테슬라")
+            :ARG1-of (태 / 태어나-01
+                  :time (d / date-entity :year 1856 :month 7 :day 10)
+                  :location (c / country :wiki "오스트리아-헝가리_제국" :name (이2 / 이름 :op1 "오스트리아" :op2 "헝가리" :op3 "제국")))
+            :ARG1-of (죽 / 죽-01
+                  :time (경 / 경
+                        :mod (d2 / date-entity :year 1943 :month 1 :day 7))))
+      :op1 (사 / 사람
+            :ARG0-of (발 / 발명-00))
+      :op2 (학 / 학자
+            :topic (물 / 물리학))
+      :op3 (학2 / 학자
+            :topic (전 / 전기공학))
+      :location (c2 / country :wiki "미국" :name (이3 / 이름 :op1 "미국")))
+
+# ::id snt2.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 그는 상업 전기에 중요한 기여를 했으며, 19세기 말과 20세기 초 전자기학의 혁명적인 발전을 가능케 한 인물로 잘 알려져 있다.
+# ::note
+(알 / 알-01
+      :degree (잘 / 잘)
+      :ARG1 (그 / 그)
+      :attribute (인 / 인물
+            :ARG0-of (기 / 기여-01
+                  :ARG1-of (중 / 중요-01
+                        :ARG2 (전 / 전기
+                              :purpose (상 / 상업))))
+            :ARG0-of (하 / 하-04
+                  :ARG1 (가 / 가능-01
+                        :ARG1 (발 / 발전-01
+                              :mod (혁 / 혁명적)
+                              :ARG1 (전2 / 전자기학
+                                    :time (a / and
+                                          :op1 (말 / 말
+                                                :op1 (d / date-entity :century 19))
+                                          :op2 (초 / 초
+                                                :op1 (d2 / date-entity :century 20)))))))))
+
+# ::id snt4.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 그의 이러한 연구는 2차 산업 혁명을 선도하는 역할을 하였다.
+# ::note
+(선 / 선도-01
+      :ARG0 (연 / 연구-01
+            :ARG0 (그 / 그)
+            :ARG1-of (이 / 이렇-01))
+      :ARG1 (e / event :wiki "제2차_산업혁명" :name (이2 / 이름 :op1 "2차" :op2 "산업" :op3 "혁명")
+            :ord (o / ordinal-entity :value 2)))
+
+# ::id snt7.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 그는 현대 전기 공학을 개척했으며 수많은 그의 발명은 선도자로서 중요한 역할을 하였다.
+# ::note
+(a / and
+      :op1 (개 / 개척-01
+            :ARG0 (그 / 그)
+            :ARG1 (전 / 전기공학
+                  :time (현 / 현대)))
+      :op2 (하 / 하-01
+            :ARG0 (발 / 발명-00
+                  :ARG0 (그2 / 그)
+                  :ARG1-of (수 / 수많-01))
+            :ARG1 (역 / 역할-00
+                  :ARG1-of (중 / 중요-01)
+                  :mod (선 / 선도-01))))
+
+# ::id snt9.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 자기장의 국제 단위인 테슬라는 니콜라 테슬라의 이름을 딴 것이다.
+# ::note
+(따 / 따-01
+      :ARG1 (단 / 단위 :op1 "테슬라"
+            :mod (국 / 국제)
+            :poss (자 / 자기장))
+      :ARG2 (이 / 이름 :op1 "니콜라" :op2 "테슬라"
+            :name-of (p / person :wiki "니콜라_테슬라")))
+
+# ::id snt10.E2017.Wiki.013 ::category EXWIKI :: split test
+# ::snt 테슬라의 부친은 정교회 사제였다.
+# ::note
+(h / have-org-role-91
+      :ARG0 (사 / 사람
+            :ARG0-of (h2 / have-rel-role-91
+                  :ARG1 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
+                  :ARG2 (부 / 부친)))
+      :ARG1 (r / religious-group :wiki "동방_정교회" :name (이2 / 이름 :op1 "정교회"))
+      :ARG2 (사2 / 사제))
+
+# ::id snt11.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 테슬라는 어릴 때부터 시를 즐겨 썼으며 나중에 미국으로 이민을 갈 때 시들 중 일부를 가져가기도 했다.
+# ::note
+(a / and
+      :op1 (즐 / 즐기-00
+            :ARG0 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
+            :ARG1 (쓰 / 쓰-02
+                  :ARG0 p
+                  :ARG1 (시 / 시))
+            :time (이2 / 이후
+                  :op1 (어 / 어리-01
+                        :ARG1 p)))
+      :op2 (가 / 가져가-00
+            :ARG0 p
+            :ARG1 (일 / 일부
+                  :ARG1-of (i / include-91
+                        :ARG2 시))
+            :ARG2 (c / country :wiki "미국" :name (이3 / 이름 :op1 "미국"))
+            :time (이4 / 이민-01
+                  :ARG0 p
+                  :ARG1 c)
+            :time (나 / 나중)))
+
+# ::id snt13.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 테슬라는 평생 동안 특별한 일이 있을 때마다 시 쓰기를 계속했다.
+# ::note
+(계 / 계속-01
+      :ARG0 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
+      :ARG1 (쓰 / 쓰-02
+            :ARG0 p
+            :ARG1 (시 / 시)
+            :time (일 / 일
+                  :ARG1-of (특 / 특별-01)))
+      :duration (평 / 평생))
+
+# ::id snt14.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 테슬라는 아주 어렸을 때부터 발명을 하기 시작했다.
+# ::note
+(시 / 시작-01
+      :ARG0 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
+      :ARG1 (발 / 발명-00)
+      :time (어 / 어리-01
+            :ARG1 p
+            :degree (아 / 아주)))
+
+# ::id snt15.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 그가 가장 처음으로 발명한 것은 다섯 살 때 만든 작은 수차였다.
+# ::note
+(수 / 수차
+      :ARG1-of (작 / 작-01)
+      :ARG1-of (만 / 만들-01
+            :ARG0 (그 / 그
+                  :age (t / temporal-quantity :quant 5 :unit (살 / 살))))
+      :ARG1-of (발 / 발명-00
+            :ARG0 그
+            :ord (o / ordinal-entity :value 1)))
+
+# ::id snt16.E2017.Wiki.013 ::category EXWIKI :: split dev
+# ::snt 이는 오랜 시간이 흐른 후 독특한 터빈을 고안할 때 이용되었다고 알려져 있다.
+# ::note
+(알 / 알-01
+      :ARG1 (이 / 이용-01
+            :ARG1 (이2 / 이)
+            :ARG2 (고 / 고안-01
+                  :ARG1 (터 / 터빈
+                        :ARG1-of (독 / 독특-01))
+                  :time (후 / 후
+                        :op1 (시 / 시간
+                              :ARG1-of (오 / 오래-01))))))
+
+# ::id snt21.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 이처럼 테슬라는 매우 위험한 상황에 자주 놓였었다.
+# ::note
+(놓 / 놓-01
+      :ARG1 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
+      :ARG2 (상 / 상황
+            :ARG1-of (위 / 위험
+                  :ARG2 p
+                  :degree (매 / 매우)))
+      :frequency (자 / 자주)
+      :mod (이2 / 이처럼))
+
+# ::id snt22.E2017.Wiki.013 ::category EXWIKI :: split dev
+# ::snt 테슬라의 형 다니엘은 열두 살에 불의의 사고로 죽었다.
+# ::note
+(죽 / 죽-01
+      :ARG1 (p / person :wiki - :name (이 / 이름 :op1 "다니엘")
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (p2 / person :wiki "니콜라_테슬라" :name (이2 / 이름 :op1 "테슬라"))
+                  :ARG2 (형 / 형)))
+      :cause (사 / 사고
+            :mod (불 / 불의))
+      :time (a / age-01
+            :ARG1 p
+            :ARG2 (t / temporal-quantity :quant 12 :unit (살 / 살))))
+
+# ::id snt23.E2017.Wiki.013 ::category EXWIKI :: split dev
+# ::snt 테슬라의 자서전에 따르면, 아버지의 친구가 선물해 준 말 때문에 다쳐 죽었다고 한다.
+# ::note
+(말 / 말하-01
+      :ARG0 (자 / 자서전
+            :poss (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라")))
+      :ARG1 (죽 / 죽-01
+            :cause (다 / 다치-01
+                  :cause (말2 / 말
+                        :ARG1-of (선 / 선물-01
+                              :ARG0 (사 / 사람
+                                    :ARG0-of (h / have-rel-role-91
+                                          :ARG1 (사2 / 사람
+                                                :ARG0-of (h2 / have-rel-role-91
+                                                      :ARG1 p
+                                                      :ARG2 (아 / 아버지)))
+                                          :ARG2 (친 / 친구))))))))
+
+# ::id snt25.E2017.Wiki.013 ::category EXWIKI :: split train
+# ::snt 테슬라는 어렸을 때부터 상당히 유별난 성격을 가지고 있었다.
+# ::note
+(가 / 가지-01
+      :ARG0 (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라"))
+      :ARG1 (성 / 성격
+            :ARG1-of (유 / 유별나-01
+                  :ARG1-of (상 / 상당-01)))
+      :time (이2 / 이후
+            :op1 (어 / 어리-01
+                  :ARG1 p)))
+
+# ::id snt0.E2017.Wiki.014 ::category EXWIKI :: split dev
+# ::snt 계산 복잡도 이론
+# ::note
+(계 / 계산복잡도이론)
+
+# ::id snt1.E2017.Wiki.014 ::category EXWIKI :: split train
+# ::snt 계산 복잡도 이론은 컴퓨터 과학에서 계산 이론의 분야로, 계산 문제를 푸는 알고리듬을 복잡도에 따라 분류하여 문제의 모임을 구성하는 방법을 연구한다.
+# ::note
+(a / and
+      :op1 (분 / 분야
+            :domain (계 / 계산복잡도이론)
+            :topic (계2 / 계산이론
+                  :topic (컴 / 컴퓨터과학)))
+      :op2 (연 / 연구-01
+            :ARG1 (방 / 방법
+                  :mod (구 / 구성-01
+                        :ARG1 (모 / 모임
+                              :consist-of (문 / 문제))
+                        :manner (분2 / 분류-01
+                              :ARG1 (알 / 알고리듬
+                                    :instrument-of (풀 / 풀-01
+                                          :ARG1 (문2 / 문제
+                                                :topic (계3 / 계산-01))))
+                              :manner (따 / 따르-02
+                                    :ARG2 (복 / 복잡도)))))))
+
+# ::id snt2.E2017.Wiki.014 ::category EXWIKI :: split train
+# ::snt 이 때 알고리듬의 수행은 실제 컴퓨터가 할 수 있지만, 평가하는 데에는 튜링 기계와 관련이 있는 정량화된 방법을 사용한다.
+# ::note
+(c / contrast-01
+      :ARG1 (가 / 가능-01
+            :ARG1 (수 / 수행-01
+                  :mod (실 / 실제)
+                  :ARG0 (컴 / 컴퓨터)
+                  :ARG1 (알 / 알고리듬))
+            :mod (때 / 때
+                  :mod (이 / 이)))
+      :ARG2 (사 / 사용-01
+            :ARG1 (방 / 방법
+                  :ARG1-of (정 / 정량화-00)
+                  :ARG1-of (관 / 관련-01
+                        :ARG2 (튜 / 튜링기계)))
+            :ARG2 (평 / 평가-01
+                  :ARG1 알)))
+
+# ::id snt3.E2017.Wiki.014 ::category EXWIKI :: split train
+# ::snt 복잡도의 기준은 알고리듬이 소모하는 소요 시간과 메모리 사용량 등의 자원이다.
+# ::note
+(자 / 자원
+      :domain (기 / 기준
+            :topic (복 / 복잡도))
+      :example (등 / 등
+            :op1 (시 / 시간
+                  :ARG1-of (소 / 소요-01
+                        :ARG0 (알 / 알고리듬)))
+            :op2 (양 / 양
+                  :mod (사 / 사용-01
+                        :ARG1 (메 / 메모리)))))
+
+# ::id snt4.E2017.Wiki.014 ::category EXWIKI :: split train
+# ::snt 전자를 시간 복잡도, 후자를 공간 복잡도라 한다.
+# ::note
+(a / and
+      :op1 (하 / 하-03
+            :ARG1 (전 / 전자)
+            :ARG2 (시 / 시간복잡도))
+      :op2 (하2 / 하-03
+            :ARG1 (후 / 후자)
+            :ARG2 (공 / 공간복잡도)))
+
+# ::id snt5.E2017.Wiki.014 ::category EXWIKI :: split train
+# ::snt 일반적으로 이와 같은 시공간 등의 자원은 입력의 크기에 의존하는 것으로 취급한다.
+# ::note
+(취 / 취급-02
+      :mod (일 / 일반적)
+      :ARG1 (자 / 자원
+            :example (등 / 등
+                  :op1 (시 / 시공간))
+            :ARG1-of (같 / 같-01
+                  :ARG2 (이 / 이)))
+      :ARG2 (의 / 의존-01
+            :ARG0 자
+            :ARG1 (크 / 크기
+                  :poss (입 / 입력-00))))
+
+# ::id snt0.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 산소
+# ::note
+(산 / 산소)
+
+# ::id snt1.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 산소(酸素)는 화학 원소의 하나로, 원소 기호는 O이고 원자 번호는 8이다.
+# ::note
+(a / and
+      :op1 (산 / 산소
+            :ARG1-of (i / include-91
+                  :ARG2 (원 / 원소
+                        :mod (화 / 화학))))
+      :op2 (기 / 기호 :mod "O"
+            :domain 산
+            :mod (원2 / 원소))
+      :op3 (번 / 번호 :mod 8
+            :domain 산
+            :mod (원3 / 원소)))
+
+# ::id snt2.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 일반적으로 산소원자 두 개가 결합하여 무색, 무미, 무취인 기체 상태로 존재한다.
+# ::note
+(a / and
+      :op1 (결 / 결합-00
+            :ARG1 (원 / 원자 :quant 2 :unit (개 / 개)
+                  :mod (산 / 산소))
+            :mod (일 / 일반))
+      :op2 (존 / 존재-01
+            :manner (상 / 상태
+                  :mod (기 / 기체
+                        :mod (색 / 색 :polarity -)
+                        :mod (맛 / 맛 :polarity -)
+                        :mod (냄 / 냄새 :polarity -)))))
+
+# ::id snt3.E2017.Wiki.015 ::category EXWIKI :: split dev
+# ::snt 공기의 주성분 중 하나로, 지구뿐 아니라 우주 전체에 걸쳐 다른 원소와 공유 결합된 상태로 널리 퍼져 있다.
+# ::note
+(a / and
+      :op1 (성 / 성분
+            :mod (주 / 주)
+            :consist-of-of (공 / 공기))
+      :op2 (퍼 / 퍼지-01
+            :extent (널 / 널리)
+            :ARG1 성
+            :ARG2 (전 / 전체
+                  :mod (우 / 우주)
+                  :mod (아 / 아니-02
+                        :ARG1 (지 / 지구)))
+            :manner (상 / 상태
+                  :mod (결 / 결합-00
+                        :mod (공2 / 공유)
+                        :ARG2 (원 / 원소
+                              :ARG2-of (다 / 다르-01))))))
+
+# ::id snt7.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 사람에게도 생명활동에 꼭 필요한 물질로써, 산소가 결핍되면 5분이 지나 뇌사 상태에 빠지고 8분 뒤면 사망한다.
+# ::note
+(a / and
+      :op1 (물 / 물질
+            :ARG1-of (필 / 필요-01
+                  :ARG2 (생 / 생명활동
+                        :mod (사 / 사람))
+                  :mod (꼭 / 꼭)))
+      :op2 (a2 / and
+            :condition (결 / 결핍-00
+                  :ARG1 (산 / 산소))
+            :op1 (뇌 / 뇌사-00
+                  :time (이 / 이후
+                        :op1 (t / temporal-quantity :quant 5 :unit (분 / 분))))
+            :op2 (사2 / 사망-01
+                  :time (뒤 / 뒤
+                        :op1 (t2 / temporal-quantity :quant 8 :unit (분2 / 분))))))
+
+# ::id snt8.E2017.Wiki.015 ::category EXWIKI :: split test
+# ::snt 사람을 비롯한 동물군의 체내에서 산소를 운반하는 것은 적혈구의 주요 역할이다.
+# ::note
+(역 / 역할
+      :ARG1-of (주 / 주요-01)
+      :poss (적 / 적혈구)
+      :domain (운 / 운반-01
+            :ARG0 적
+            :ARG1 (산 / 산소)
+            :location (체 / 체내
+                  :part-of (동 / 동물군
+                        :ARG1-of (비 / 비롯하-01
+                              :ARG2 (사 / 사람))))))
+
+# ::id snt9.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 산소는 1774년 영국의 조지프 프리스틀리가 발견한 원소이다.
+# ::note
+(발 / 발견-01
+      :ARG0 (p / person :wiki "조지프_프리스틀리" :name (이 / 이름 :op1 "조지프" :op2 "프리스틀리")
+            :location (c / country :wiki "영국" :name (이2 / 이름 :op1 "영국")))
+      :ARG1 (산 / 산소)
+      :time (d / date-entity :year 1774))
+
+# ::id snt10.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 프리스틀리는 산화 수은(II)를 가열하는 도중 발생하는 기체가 촛불이 훨씬 더 잘 타도록 하는 성질이 있음을 발견하였다.
+# ::note
+(발 / 발견-01
+      :ARG0 (p / person :wiki "조지프_프리스틀리" :name (이 / 이름 :op1 "프리스틀리"))
+      :ARG1 (성 / 성질
+            :mod (타 / 타-03
+                  :ARG1 (촛 / 촛불)
+                  :manner (잘 / 잘
+                        :degree (더 / 더))
+                  :cause (기 / 기체
+                        :ARG1-of (발2 / 발생-01
+                              :time (도 / 도중
+                                    :op1 (가 / 가열-01
+                                          :ARG1 (수 / 수은
+                                                :mod (산 / 산화)))))))))
+
+# ::id snt11.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 또한 프리스틀리는 이 기체가 호흡과 관련되어 있다는 것을 발견하였다.
+# ::note
+(a / and
+      :op2 (발 / 발견-01
+            :mod (또 / 또한)
+            :ARG0 (p / person :wiki "조지프_프리스틀리" :name (이 / 이름 :op1 "프리스틀리"))
+            :ARG1 (관 / 관련-01
+                  :ARG1 (기 / 기체
+                        :mod (이2 / 이))
+                  :ARG2 (호 / 호흡-00))))
+
+# ::id snt12.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 그는 이 기체의 이름을 ‘탈 플로지스톤 공기’라 불렀다.
+# ::note
+(부 / 부르-02
+      :ARG0 (그 / 그)
+      :ARG1 (기 / 기체
+            :mod (이 / 이))
+      :ARG2 (공 / 공기
+            :mod (플 / 플로지스톤
+                  :mod (탈 / 탈))))
+
+# ::id snt13.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 한편 스웨덴의 칼 빌헬름 셸레는 산소를 독자적으로 발견하였으나, 산소의 발견을 먼저 발표한 것은 프리스틀리였다.
+# ::note
+(c / contrast-01
+      :ARG1 (발 / 발견-01
+            :ARG0 (p / person :wiki "칼_빌헬름_셸레" :name (이 / 이름 :op1 "칼" :op2 "빌헬름" :op3 "셸레")
+                  :location (c2 / country :wiki "스웨덴" :name (이2 / 이름 :op1 "스웨덴")))
+            :ARG1 (산 / 산소)
+            :manner (독 / 독자적)
+            :mod (한 / 한편))
+      :ARG2 (발2 / 발표-01
+            :ARG0 (p2 / person :wiki "조지프_프리스틀리" :name (이3 / 이름 :op1 "프리스틀리"))
+            :ARG1 (발3 / 발견-01
+                  :ARG1 (산2 / 산소))
+            :time (먼 / 먼저)))
+
+# ::id snt14.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 그 뒤 앙투안 라부아지에는 이 기체의 이름을 ‘산소’로 정하였다.
+# ::note
+(정 / 정하-01
+      :ARG0 (p / person :wiki "앙투안_라부아지에" :name (이 / 이름 :op1 "앙투안" :op2 "라부아지에"))
+      :ARG1 (이2 / 이름 :op1 "산소"
+            :name-of (기 / 기체
+                  :mod (이3 / 이)))
+      :time (뒤 / 뒤
+            :mod (그 / 그)))
+
+# ::id snt16.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 플로지스톤설은 1667년 독일의 화학자 J. J. 베허가 처음 말했다.
+# ::note
+(말 / 말하-01
+      :mod (처 / 처음)
+      :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "J." :op2 "J." :op3 "베허")
+            :location (c / country :wiki "독일" :name (이2 / 이름 :op1 "독일"))
+            :mod (화 / 화학자))
+      :ARG1 (학 / 학설
+            :topic (플 / 플로지스톤))
+      :time (d / date-entity :year 1667))
+
+# ::id snt18.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 1783년 라부아지에가 플로지스톤이 존재하지 않음을 확인하였다.
+# ::note
+(확 / 확인-01
+      :ARG0 (p / person :wiki "앙투안_라부아지에" :name (이 / 이름 :op1 "라부아지에"))
+      :ARG1 (존 / 존재-01
+            :polarity -
+            :ARG1 (플 / 플로지스톤))
+      :time (d / date-entity :year 1783))
+
+# ::id snt25.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 대기 중의 산소는 대부분 이원자 분자 상태로 존재한다.
+# ::note
+(존 / 존재-01
+      :ARG1 (산 / 산소
+            :mod (상 / 상태
+                  :mod (분 / 분자
+                        :mod (이 / 이원자))
+                  :mod (대 / 대부분)))
+      :ARG2 (중 / 중
+            :op1 (대2 / 대기)))
+
+# ::id snt27.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt 14O, 15O, 19O는 인공적으로 합성되는 방사성 동위 원소이다.
+# ::note
+(원 / 원소
+      :domain (a / and
+            :op1 "14O"
+            :op2 "15O"
+            :op3 "19O")
+      :mod (동 / 동위)
+      :ARG1-of (방 / 방사-00)
+      :ARG1-of (합 / 합성-00
+            :manner (인 / 인공)))
+
+# ::id snt29.E2017.Wiki.015 ::category EXWIKI :: split test
+# ::snt O4는 자성을 띠지 않고 옅은 푸른 빛깔을 띤다.
+# ::note
+(a / and
+      :op1 (띠 / 띠-01
+            :ARG0 (O / O4)
+            :ARG1 (자 / 자성))
+      :op2 (띠2 / 띠-01
+            :ARG0 O
+            :ARG1 (빛 / 빛깔
+                  :ARG1-of (푸 / 푸르-01))))
+
+# ::id snt30.E2017.Wiki.015 ::category EXWIKI :: split train
+# ::snt O4 분자는 쉽게 해리되어 O2 두 분자를 생성한다.
+# ::note
+(생 / 생성-01
+      :ARG0 (분 / 분자 :mod "O4")
+      :ARG1 (분2 / 분자 :mod "O2" :quant 2)
+      :manner (해 / 해리-00
+            :ARG1 분
+            :manner (쉽 / 쉽-01)))
+
+# ::id snt32.E2017.Wiki.015 ::category EXWIKI :: split dev
+# ::snt 그러나 지표 가까이에 존재하는 오존은 강한 산화력을 가지며 건강에 해로워 대기 오염물질로 취급한다.
+# ::note
+(a / and
+      :op1 (가 / 가지-01
+            :ARG0 (오 / 오존
+                  :location (가2 / 가까이
+                        :op1 (지 / 지표)))
+            :ARG1 (산 / 산화력
+                  :ARG1-of (강 / 강하-01)))
+      :op2 (취 / 취급-02
+            :ARG1 오
+            :ARG2 (물 / 물질
+                  :ARG0-of (오2 / 오염-01
+                        :ARG1 (대 / 대기)))
+            :cause (해 / 해롭-00
+                  :ARG1 오
+                  :ARG2 (건 / 건강))))
+
+# ::id snt0.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 위그노
+# ::note
+(r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노"))
+
+# ::id snt1.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 위그노는 프랑스의 개신교 신자들을 가리키는 말이다.
+# ::note
+(가 / 가리키-01
+      :ARG0 "위그노"
+      :ARG1 (신 / 신자
+            :mod (개 / 개신교)
+            :location (c / country :wiki "프랑스" :name (이2 / 이름 :op1 "프랑스"))))
+
+# ::id snt2.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 칼뱅주의를 추종한 프랑스 개신교 신자들은 스위스 주네브에서 세력을 규합하는데, 후에 이들을 프라이부르크, 베른, 제네바의 동맹이라는 뜻으로 위그노라고 불렀다.
+# ::note
+(a / and
+      :op1 (규 / 규합-01
+            :ARG0 (신 / 신자
+                  :mod (개 / 개신교)
+                  :location (c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스"))
+                  :ARG0-of (추 / 추종-00
+                        :ARG1 (칼 / 칼뱅주의)))
+            :ARG1 (세 / 세력)
+            :location (c2 / city :wiki "제네바" :name (이2 / 이름 :op1 "주네브")
+                  :location (c3 / country :wiki "스위스" :name (이3 / 이름 :op1 "스위스"))))
+      :op2 (부 / 부르-02
+            :ARG1 신
+            :ARG2 (r / religious-group :wiki "위그노" :name (이4 / 이름 :op1 "위그노")
+                  :ARG1-of (뜻 / 뜻하-01
+                        :ARG2 (동 / 동맹
+                              :mod (a2 / and
+                                    :op1 (c4 / city :wiki "프라이부르크임브라이스가우" :name (이5 / 이름 :op1 "프라이부르크"))
+                                    :op2 (c5 / city :wiki "베른" :name (이6 / 이름 :op1 "베른"))
+                                    :op3 (c6 / city :wiki "제네바" :name (이7 / 이름 :op1 "제네바"))))))
+            :time (후 / 후)))
+
+# ::id snt3.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 프랑수아 1세는 그의 통치 기간에 위그노의 수가 늘어나도록, 그들을 관대하게 다루었다.
+# ::note
+(다 / 다루-02
+      :ARG0 (p / person :wiki "프랑수아_1세_(프랑스)" :name (이 / 이름 :op1 "프랑수아" :op2 "1세"))
+      :ARG1 (r / religious-group :wiki "위그노" :name (이2 / 이름 :op1 "위그노"))
+      :manner (관 / 관대하-01
+            :ARG1 p
+            :ARG2 r)
+      :purpose (늘 / 늘어나-01
+            :ARG1 (수 / 수
+                  :quant-of r))
+      :time (통 / 통치-01
+            :ARG0 p))
+
+# ::id snt4.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 프랑스의 로마 가톨릭 교도들이 이끄는 기즈 가족과 프랑수아 2세는 위그노들에게 대항하였다.
+# ::note
+(대 / 대항-01
+      :ARG0 (a / and
+            :ARG1-of (이 / 이끌-01
+                  :ARG0 (교 / 교도
+                        :mod (로 / 로마-가톨릭)
+                        :location (c / country :wiki "프랑스" :name (이2 / 이름 :op1 "프랑스"))))
+            :op1 (f / family :wiki - :name (이3 / 이름 :op1 "기즈"))
+            :op2 (p / person :wiki "프랑수아_2세" :name (이4 / 이름 :op1 "프랑수아" :op2 "2세")))
+      :ARG1 (r / religious-group :wiki "위그노" :name (이5 / 이름 :op1 "위그노")))
+
+# ::id snt5.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 1562년 위그노 전쟁, 1572년 성 바르톨로메오 축일 학살 등으로 로마 가톨릭 교도들과 갈등을 겪었으며, 교리적으로도 혼란을 겪었다.
+# ::note
+(o / or
+      :op1 (갈 / 갈등-00
+                  :ARG1 (교 / 교도
+                        :mod (로 / 로마-가톨릭)))
+      :op2 (혼 / 혼란-01
+            :mod (교2 / 교리))
+      :cause (등 / 등
+            :op1 (w / war :wiki "위그노_전쟁" :name (이 / 이름 :op1 "위그노" :op2 "전쟁")
+                  :time (d / date-entity :year 1562))
+            :op2 (e / event :wiki "성_바르톨로메오_축일의_학살" :name (이2 / 이름 :op1 "성" :op2 "바르톨로메오" :op3 "축일" :op4 "학살")
+                  :time (d2 / date-entity :year 1572))))
+
+# ::id snt6.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 부의 정당한 축적을 인정한 칼뱅주의의 특징상 주로 상공업자 중에서 신도가 많았다.
+# ::note
+(많 / 많-01
+      :ARG1 (신 / 신도
+            :ARG1-of (i / include-91
+                  :ARG2 (사 / 사람
+                        :ARG0 (종 / 종사-01
+                              :ARG1 (상 / 상공업)))))
+      :mod (주 / 주로)
+      :cause (특 / 특징
+            :mod (칼 / 칼뱅주의
+                  :ARG0-of (인 / 인정-01
+                        :ARG1 (축 / 축적-01
+                              :ARG1 (부 / 부)
+                              :manner (정 / 정당하-01))))))
+
+# ::id snt7.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 프랑수아 2세가 1560년 사망하자, 샤를 9세와 황태후 카트린 드 메디시스가 정부를 지배하였다.
+# ::note
+(지 / 지배-01
+      :ARG0 (a / and
+            :op1 (p / person :wiki "샤를_9세" :name (이 / 이름 :op1 "샤를" :op2 "9세"))
+            :op2 (p2 / person :wiki "카트린_드_메디시스" :name (이2 / 이름 :op1 "카트린" :op2 "드" :op3 "메디시스")
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG2 (황 / 황태후))))
+      :ARG1 (정 / 정부)
+      :time (사 / 사망-01
+            :ARG1 (p3 / person :wiki "프랑수아_2세" :name (이3 / 이름 :op1 "프랑수아" :op2 "2세"))
+            :time (d / date-entity :year 1560)))
+
+# ::id snt8.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 카트린은 기즈 공에 대항하는 위그노들의 균형을 촉진시켰다.
+# ::note
+(촉 / 촉진-01
+      :ARG0 (p / person :wiki "카트린_드_메디시스" :name (이 / 이름 :op1 "카트린"))
+      :ARG1 (균 / 균형
+            :mod (r / religious-group :wiki "위그노" :name (이2 / 이름 :op1 "위그노")
+                  :ARG0-of (대 / 대항-01
+                        :ARG1 (p2 / person :wiki "프랑수아_드_기즈_공작" :name (이3 / 이름 :op1 "기즈" :op2 "공"))))))
+
+# ::id snt9.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 그러나 두 교파 간의 기분은 내란이 일어나는 고통스러운 원인을 가져왔다.
+# ::note
+(c / contrast-01
+      :ARG2 (일 / 일어나-01
+            :ARG1 (내 / 내란
+                  :mod (고 / 고통-00))
+            :cause (기 / 기분
+                  :poss (교 / 교파 :quant 2))))
+
+# ::id snt10.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 성 바르톨로메오 축일에 프랑스 전국에서 가톨릭 교도들이 수천명의 위그노들을 학살하였다.
+# ::note
+(학 / 학살-01
+      :ARG0 (교 / 교도
+            :mod (가 / 가톨릭))
+      :ARG1 (r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노")
+            :quant (수 / 수천 :op1 1000) :unit (명 / 명))
+      :location (전 / 전국
+            :mod (프 / 프랑스))
+      :time (축 / 축일
+            :mod (p / person :wiki "바르톨로메오" :name (이2 / 이름 :op1 "성" :op2 "바르톨로메오"))))
+
+# ::id snt11.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 앙리 3세가 암살되고, 나바라의 군주 앙리(엔리케)가 부르봉 왕조를 열고, 앙리 4세로서 왕위에 올랐다.
+# ::note
+(a / and
+      :op1 (암 / 암살-00
+            :ARG1 (p / person :wiki "앙리_3세" :name (이 / 이름 :op1 "앙리" :op2 "3세")))
+      :op2 (열 / 열-02
+            :ARG0 (p2 / person :wiki "앙리_4세" :name (이2 / 이름 :op1 "앙리")
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (c / country-region :wiki "나바라_지방" :name (이3 / 이름 :op1 "나바라"))
+                        :ARG2 (군 / 군주)))
+            :ARG1 (왕 / 왕조
+                  :mod (f / family :wiki "부르봉가" :name (이4 / 이름 :op1 "부르봉"))))
+      :op3 (오 / 오르-02
+            :ARG1 p2
+            :ARG2 (왕2 / 왕위)))
+
+# ::id snt12.E2017.Wiki.016 ::category EXWIKI :: split test
+# ::snt 개신교 신자들에 대한 차별을 금지하는 낭트 칙령을 세워 위그노들에게도 신앙의 자유를 주었다.
+# ::note
+(주 / 주-01
+      :ARG1 (자 / 자유롭-01
+            :topic (신 / 신앙))
+      :ARG2 (r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노"))
+      :manner (서 / 서-02
+            :ARG1 (l / law :wiki "낭트_칙령" :name (이2 / 이름 :op1 "낭트" :op2 "칙령")
+                  :ARG0-of (금 / 금지-01
+                        :ARG1 (차 / 차별-01
+                              :ARG1 (신2 / 신자
+                                    :mod (개 / 개신교)))))))
+
+# ::id snt13.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 루이 14세가 가톨릭을 프랑스의 국교로 삼기 위하여 낭트 칙령을 폐기하자, 수많은 위그노들이 네덜란드, 영국, 프로이센 등지로 망명하였다.
+# ::note
+(망 / 망명-00
+      :ARG0 (r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노")
+            :ARG1-of (수 / 수많-01))
+      :goal (등 / 등지
+            :op1 (c / country :wiki "네덜란드" :name (이2 / 이름 :op1 "네덜란드"))
+            :op2 (c2 / country :wiki "영국" :name (이3 / 이름 :op1 "영국"))
+            :op3 (c3 / country :wiki "프로이센" :name (이4 / 이름 :op1 "프로이센")))
+      :cause (폐 / 폐기-00
+            :ARG0 (p / person :wiki "루이_14세" :name (이5 / 이름 :op1 "루이" :op2 "14세"))
+            :ARG1 (l / law :wiki "낭트_칙령" :name (이6 / 이름 :op1 "낭트" :op2 "칙령"))
+            :purpose (삼 / 삼-01
+                  :ARG1 (가 / 가톨릭)
+                  :ARG2 (국 / 국교
+                        :poss (c4 / country :wiki "프랑스" :name (이7 / 이름 :op1 "프랑스"))))))
+
+# ::id snt14.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 일부는 북아메리카 (현재의 뉴욕과 캐롤라이나지역)으로 건너가기도 했다.
+# ::note
+(건 / 건너가-01
+      :ARG0 (일 / 일부)
+      :ARG3 (c / continent :wiki "북아메리카" :name (이 / 이름 :op1 "북아메리카")
+            :mod (지 / 지역
+                  :mod (a / and
+                        :op1 (c2 / city :wiki "뉴욕" :name (이2 / 이름 :op1 "뉴욕"))
+                        :op2 (s / state :wiki - :name (이3 / 이름 :op1 "캐롤라이나"))))))
+
+# ::id snt15.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 상공업은 물론, 여러가지 기술을 지니었던 그들이 망명하자, 프랑스의 경제는 몰락하고 말았다.
+# ::note
+(몰 / 몰락-00
+      :ARG1 (경 / 경제
+            :poss (c / country :wiki "프랑스" :name (이 / 이름 :op1 "프랑스")))
+      :cause (망 / 망명-00
+            :ARG0 (그 / 그들
+                  :ARG0-of (지 / 지니-01
+                        :ARG1 (기 / 기술
+                              :quant (여 / 여러)
+                              :example (상 / 상공업))))))
+
+# ::id snt16.E2017.Wiki.016 ::category EXWIKI :: split dev
+# ::snt 이것이 후에 프랑스 대혁명이 일어나는 원인을 가져왔다.
+# ::note
+(일 / 일어나-01
+      :cause (이2 / 이것)
+      :ARG1 (e / event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스" :op2 "대혁명"))
+      :time (후 / 후))
+
+# ::id snt17.E2017.Wiki.016 ::category EXWIKI :: split train
+# ::snt 1802년 이후 위그노 곧 개신교 신자에 대한 종교의 자유가 인정되었다.
+# ::note
+(인 / 인정-01
+      :ARG1 (자 / 자유롭-01
+            :topic (종 / 종교)
+            :ARG1 (r / religious-group :wiki "위그노" :name (이 / 이름 :op1 "위그노")
+                  :mod (신 / 신자
+                        :mod (개 / 개신교))))
+      :time (이2 / 이후
+            :op1 (d / date-entity :year 1802)))
+
+# ::id snt0.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 흑사병
+# ::note
+(d / desease
+      :wiki "흑사병"
+      :name (이 / 이름 :op1 "흑사병"))
+
+# ::id snt1.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 흑사병(黑死病, Black Death)은 인류 역사에 기록된 최악의 범유행 사건 중 하나이다.
+# ::note
+(사 / 사건
+      :mod (유 / 유행-01
+            :extent (범 / 범))
+      :degree (최 / 최악)
+      :mod (기 / 기록-01
+            :location (역 / 역사
+                  :mod (인 / 인류)))
+      :domain (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")))
+
+# ::id snt2.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 유럽 지역에서는 1346년–1353년 사이에 범유행이 절정에 달했으며, 이 범유행으로 유라시아 대륙에서 최저 7500만, 최고 2억 명에 달하는 사람들이 죽었다.
+# ::note
+(a / and
+      :op1 (달 / 달하-01
+            :ARG1 (유 / 유행-01
+                  :extent (범 / 범))
+            :ARG2 (절 / 절정)
+            :location (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+            :time (d / date-interval
+                  :op1 (d2 / date-entity :year 1346)
+                  :op2 (d3 / date-entity :year 1353)))
+      :op2 (죽 / 죽-01
+            :ARG0 유
+            :ARG1 (사 / 사람
+                  :quant (사2 / 사이
+                        :op1 75000000
+                        :op2 200000000)
+                  :unit (명 / 명))
+            :location (c2 / continent :wiki "유라시아" :name (이2 / 이름 :op1 "유라시아" :op2 "대륙"))))
+
+# ::id snt3.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 흑사병의 병원균이 무엇인지에 관해서는 많은 이설들이 제기되어 왔으나 2010년-2011년 남유럽인들을 대상으로 수행한 DNA 분석 결과 페스트의 병원균인 페스트균이 병원균임이 밝혀졌다.
+# ::note
+(a / and
+      :op1 (제 / 제기-01
+            :ARG1 (이 / 이설
+                  :ARG1-of (많 / 많-01))
+            :ARG2 (a2 / amr-unknown
+                  :domain (병 / 병원균
+                        :poss (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병")))))
+      :op2 (분 / 분석-01
+            :ARG1 (D / DNA :poss (e / ethnic-group :wiki - :name (이3 / 이름 :op1 "남유럽인")))
+            :time (d2 / date-interval
+                  :op1 (d3 / date-entity :year 2010)
+                  :op2 (d4 / date-entity :year 2011)))
+      :op3 (밝 / 밝히-01
+            :ARG1 (병2 / 병원균
+                  :domain (p / pathogen* :wiki "페스트균" :name (이4 / 이름 :op1 "페스트균")))))
+
+# ::id snt4.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 흑사병은 중앙아시아의 건조한 평원지대에서 시작되어 비단길을 따라 서쪽으로 이동해 1343년경 크림 반도에 닿았다.
+# ::note
+(a / and
+      :op1 (이 / 이동-02
+            :ARG1 (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병"))
+            :ARG2 (지 / 지대
+                  :mod (평 / 평원)
+                  :ARG1-of (건 / 건조-00)
+                  :location (c / continent :wiki "중앙아시아" :name (이3 / 이름 :op1 "중앙아시아")))
+            :path (r / road :wiki "비단길" :name (이4 / 이름 :op1 "비단길"))
+            :direction (서 / 서쪽))
+      :op2 (닿 / 닿-01
+            :ARG1 d
+            :ARG2 (p / peninsula :wiki "크림반도" :name (이5 / 이름 :op1 "크림" :op2 "반도"))
+            :time (d2 / date-entity :year 1343)))
+
+# ::id snt5.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 거기서부터 화물선에 들끓던 검은쥐들에 기생하던 동양쥐벼룩을 기주로 하여 지중해 해운망을 따라 유럽 전역으로 퍼져나갔다.
+# ::note
+(퍼 / 퍼지-01
+      :ARG2 (전 / 전역
+            :mod (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽")))
+      :path (해 / 해운망
+            :location (o / ocean :wiki "지중해" :name (이2 / 이름 :op1 "지중해")))
+      :manner (하 / 하-03
+            :ARG1 (동 / 동양쥐벼룩
+                  :ARG0-of (기 / 기생-00
+                        :ARG1 (검 / 검은쥐
+                              :ARG1-of (들 / 들끓-00
+                                    :ARG2 (화 / 화물선)))))
+            :ARG2 (기2 / 기주))
+      :source (거 / 거기))
+
+# ::id snt6.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 이때 흑사병은 유럽의 총 인구의 30-60%를 죽였다.
+# ::note
+(죽 / 죽-01
+      :ARG0 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+      :ARG1 (인 / 인구
+            :ARG1-of (i / include-91
+                  :ARG2 (인2 / 인구
+                        :quant (총 / 총)
+                        :location (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")))
+                  :ARG3 (사 / 사이
+                        :op1 (p / percentage-entity :value 30)
+                        :op2 (p2 / percentage-entity :value 60)))))
+
+# ::id snt7.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 흑사병으로 인해 줄어든 세계 인구가 흑사병 이전 수준까지 회복되는 데는 17세기까지 시간이 걸렸다.
+# ::note
+(걸 / 걸리-01
+      :ARG1 (d / date-interval
+            :op2 (d2 / date-entity :century 17))
+      :ARG2 (회 / 회복-01
+            :ARG1 (인 / 인구
+                  :mod (세 / 세계)
+                  :ARG1-of (줄 / 줄어들-01
+                        :cause (d3 / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))))
+            :goal (수 / 수준
+                  :mod (이2 / 이전
+                        :op1 d3))))
+
+# ::id snt8.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 그 뒤로도 19세기까지 유럽에서는 페스트가 산발적으로 유행했는데(런던 대역병 등), 흑사병의 병원체를 페스트균으로 확정한다면 흑사병이란 1345년에서 1840년까지 유라시아 대륙에서 계속된 제2차 페스트 범유행의 일부로서 14세기 유럽의 범유행 상황을 가리키는 말이라고 할 수 있다.
+# ::note
+(a / and
+      :op1 (유 / 유행-01
+            :ARG1 (d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
+            :location (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))
+            :time (d2 / date-interval
+                  :op1 (뒤 / 뒤
+                        :op1 (그 / 그))
+                  :op2 (d3 / date-entity :century 19))
+            :manner (산 / 산발-00
+                  :ARG1 d)
+            :example (등 / 등
+                  :op1 (e / event :wiki "런던_대역병" :name (이3 / 이름 :op1 "런던" :op2 "대역병"))))
+      :op2 (가 / 가능-01
+            :ARG1 (하 / 하-03
+                  :ARG1 (d4 / desease :wiki "페스트" :name (이4 / 이름 :op1 "흑사병"))
+                  :ARG2 (상 / 상황
+                        :mod (유2 / 유행-01
+                              :mod (범 / 범))
+                        :time (d5 / date-entity :century 14)
+                        :location c
+                        :subevent-of (e2 / event :wiki "제2차_페스트_범유행" :name (이5 / 이름 :op1 "제2차" :op2 "페스트" :op3 "범유행")
+                              :ARG1-of (계 / 계속-01
+                                    :location (c2 / continent :wiki "유라시아" :name (이6 / 이름 :op1 "유라시아" :op2 "대륙"))
+                                    :duration (d6 / date-interval
+                                          :op1 (d7 / date-entity :year 1345)
+                                          :op2 (d8 / date-entity :year 1840))))))
+            :condition (확 / 확정-01
+                  :ARG1 (p / pathogen* :wiki "페스트균" :name (이7 / 이름 :op1 "페스트균"))
+                  :ARG2 (병 / 병원체 :poss d2))))
+
+# ::id snt9.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 14세기의 페스트 유행은 유럽사에 있어 종교사, 사회사, 경제사적으로 지대한 영향을 미쳤다.
+# ::note
+(영 / 영향-01
+      :ARG0 (유 / 유행-01
+            :ARG1 (d / desease :wiki "페스트" :name (이 / 이름 :op1 "페스트"))
+            :time (d2 / date-entity :century 14))
+      :ARG1 (역 / 역사
+            :poss (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")))
+      :topic (a / and
+            :op1 (역2 / 역사
+                  :topic (종 / 종교))
+            :op2 (역3 / 역사
+                  :topic (사 / 사회))
+            :op3 (역4 / 역사
+                  :topic (경 / 경제)))
+      :ARG1-of (지 / 지대하-00))
+
+# ::id snt10.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 유럽에서는 1347년 처음 창궐한 이래 많은 희생자가 발생하여 공포의 대상이었다.
+# ::note
+(대 / 대상
+      :mod (공 / 공포)
+      :location (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+      :cause (희 / 희생-01
+            :ARG1 (사 / 사람
+                  :ARG1-of (많 / 많-01))
+            :time (이2 / 이래
+                  :op1 (창 / 창궐-01
+                        :mod (처 / 처음)
+                        :time (d / date-entity :year 1347)))))
+
+# ::id snt11.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 1340년대 흑사병으로 약 2천5백만 명이 희생되었다.
+# ::note
+(희 / 희생-01
+      :ARG0 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+      :ARG1 (사 / 사람 :quant (약 / 약 :op1 25000000) :unit (명 / 명))
+      :time (d2 / date-interval
+            :op1 (d3 / date-entity :year 1340)
+            :op2 (d4 / date-entity :year 1350)))
+
+# ::id snt12.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 이 때의 흑사병은 중앙아시아나 인도에서 발원하여 전파된 것으로 추정되고 있다.
+# ::note
+(추 / 추정-01
+      :ARG1 (전 / 전파-01
+            :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+            :source (o / or
+                  :op1 (c / continent :wiki "중앙아시아" :name (이2 / 이름 :op1 "중앙아시아"))
+                  :op2 (c2 / country :wiki "인도" :name (이3 / 이름 :op1 "인도")))
+            :time (이4 / 이때)))
+
+# ::id snt13.E2017.Wiki.017 ::category EXWIKI :: split dev
+# ::snt 이는 당시 유럽의 인구의 약 30%에 달하는 숫자이다.
+# ::note
+(i / include-91
+      :ARG1 (이 / 이)
+      :ARG2 (인 / 인구
+            :location (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))
+            :time (당 / 당시))
+      :ARG3 (약 / 약 :op1 (p / percentage-entity :value 30)))
+
+# ::id snt14.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 14세기 중세 유럽에 퍼져나간 흑사병은 "대흑사병"이라 불린다.
+# ::note
+(부 / 부르-02
+      :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")
+            :ARG1-of (퍼 / 퍼지-01
+                  :ARG2 (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")
+                        :mod (중 / 중세))
+                  :time (d2 / date-entity :century 14)))
+      :ARG2 (이3 / 이름 :op1 "대흑사병"))
+
+# ::id snt15.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 14세기 유럽의 흑사병은 사회 구조를 붕괴시킬 정도로 유럽 사회에 큰 영향을 주었다.
+# ::note
+(h / have-degree-91
+      :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")
+            :location (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))
+            :time (d2 / date-entity :century 14))
+      :ARG2 (영 / 영향-01
+            :ARG0 d
+            :ARG1 (사 / 사회
+                  :location c))
+      :ARG3 (크 / 크-01
+            :ARG1 영)
+      :ARG6 (붕 / 붕괴-01
+            :ARG0 d
+            :ARG1 (구 / 구조
+                  :poss 사)))
+
+# ::id snt17.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 물론 사회학적으로 비평했을 때 흑사병 기간동안 일어난 학살들은 마녀사냥처럼 흑사병으로 인한 사회적 혼란을 사회적 소수자들에게 전가한 희생양적인 폭력이었다.
+# ::note
+(폭 / 폭력
+      :mod (물 / 물론)
+      :topic (비 / 비평
+            :topic (사 / 사회학))
+      :domain (학 / 학살-01
+            :time (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")))
+      :mod (희 / 희생양)
+      :mod (전 / 전가-01
+            :ARG1 (혼 / 혼란-01
+                  :ARG1 (사2 / 사회)
+                  :cause d)
+            :ARG2 (소 / 소수자
+                  :mod (사3 / 사회)))
+      :ARG1-of (같 / 같-01
+            :ARG2 (마 / 마녀사냥)))
+
+# ::id snt18.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 한편, 흑사병의 창궐은 삶에 대한 태도도 바꾸어 "지금 이 순간을 즐기자"는 신조를 낳았고, 이는 보카치오의 《데카메론》 등에 반영되었다.
+# ::note
+(c / contrast-01
+      :ARG2 (a / and
+            :op1 (바 / 바꾸-01
+                  :ARG0 (창 / 창궐-01
+                        :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")))
+                  :ARG1 (태 / 태도
+                        :topic (살 / 살아가-01))
+                  :ARG3 (신 / 신조
+                        :mod (즐 / 즐기-00
+                              :ARG1 (순 / 순간
+                                    :mod (이2 / 이)
+                                    :time (지 / 지금)))))
+            :op2 (반 / 반영-01
+                  :ARG1 신
+                  :ARG2 (등 / 등
+                        :op1 (b / book :wiki "데카메론" :name (이3 / 이름 :op1 "데카메론")
+                              :ARG1-of (쓰 / 쓰-02
+                                    :ARG0 (p / person :wiki "조반니_보카치오" :name (이4 / 이름 :op1 "보카치오"))))))))
+
+# ::id snt19.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 흑사병은 유럽인들의 종교적인 사고에도 영향을 주어, 일부 사람들은 하느님이 흑사병으로 심판하니 고행을 함으로써 죄를 씻어야 한다는 주장을 하고 다니기도 했다.
+# ::note
+(a / and
+      :op1 (영 / 영향-01
+            :ARG0 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+            :ARG1 (사 / 사고-00
+                  :ARG0 (e / ethnic-group :wiki "유럽인" :name (이2 / 이름 :op1 "유럽인"))
+                  :ARG1 (종 / 종교)))
+      :op2 (주 / 주장-01
+            :ARG0 (사2 / 사람
+                  :quant (일 / 일부))
+            :ARG1 (o / obligate-01
+                  :ARG2 (씻 / 씻-01
+                        :ARG1 (죄 / 죄
+                              :poss e)
+                        :manner (고 / 고행-00))
+                  :cause (심 / 심판-01
+                        :ARG0 (하 / 하느님)
+                        :manner d
+                        :ARG1 e))))
+
+# ::id snt20.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 흑사병이라는 이름은 1883년에 붙여졌는데, 피부의 혈소 침전에 의해 피부가 검게 변하는 증상 때문에 붙여진 이름이다.
+# ::note
+(붙 / 붙-01
+      :ARG1 (이 / 이름 :op1 "흑사병")
+      :cause (증 / 증상
+            :mod (변 / 변하-01
+                  :ARG1 (피 / 피부)
+                  :ARG3 (검 / 검-01
+                        :ARG1 (피2 / 피부))
+                  :cause (침 / 침전
+                        :mod (혈 / 혈소)
+                        :location (피3 / 피부))))
+      :time (d / date-entity :year 1883))
+
+# ::id snt21.E2017.Wiki.017 ::category EXWIKI :: split dev
+# ::snt 증상이 더욱 진행되면 검게 변색된 부위에 괴저가 발생하고, 죽음에 이르게 된다.
+# ::note
+(a / and
+      :op1 (발 / 발생-01
+            :ARG1 (d / desease :wiki "괴저" :name (이 / 이름 :op1 "괴저"))
+            :ARG2 (부 / 부위
+                  :ARG1-of (변 / 변색-00))
+            :condition (진 / 진행-01
+                  :ARG1 (증 / 증상)
+                  :extent (더 / 더욱)))
+      :op2 (되 / 되-01
+            :ARG2 (죽 / 죽-01)))
+
+# ::id snt22.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 흑사병은 임상병리학에서 서혜 임파선종 중 가장 위험한 종류로 다루어진다.
+# ::note
+(다 / 다루-02
+      :ARG0 (임 / 임상병리학)
+      :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+      :ARG2 (종 / 종류
+            :ARG1-of (위 / 위험-01
+                  :degree (가 / 가장))
+            :ARG1-of (i / include-91
+                  :ARG2 (임2 / 임파선종
+                        :mod (서 / 서혜)))))
+
+# ::id snt23.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 흑사병은 박테리아의 일종인 예르시니아 페스티스가 원인균으로 이에 감염된 쥐의 혈액을 먹은 벼룩이 사람의 피를 빨면서 병을 옮기게 된다.
+# ::note
+(a / and
+      :op1 (c / cause-01
+            :ARG0 (p / pathogen* :wiki "페스트균" :name (이 / 이름 :op1 "예르시니아" :op2 "페스티스")
+                  :mod (박 / 박테리아))
+            :ARG1 (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병")))
+      :op2 (옮 / 옮-01
+            :ARG0 (벼 / 벼룩
+                  :ARG0-of (먹 / 먹-01
+                        :ARG1 (혈 / 혈액
+                              :poss (쥐 / 쥐
+                                    :ARG1-of (감 / 감염-01
+                                          :ARG2 p)))))
+            :ARG1 d
+            :ARG3 (사 / 사람)
+            :manner (빨 / 빨-00
+                  :ARG0 벼
+                  :ARG1 (피 / 피
+                        :poss 사))))
+
+# ::id snt24.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 흑사병이 쥐와 사람이 함께 걸리는 전염병이기는 하나, 장거리 여행을 하는 것은 쥐가 아닌 사람이라는 주장이다.
+# ::note
+(주 / 주장-01
+      :ARG1 (c / contrast-01
+            :ARG1 (병 / 병
+                  :domain (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+                  :ARG1-of (전 / 전염-01)
+                  :ARG2-of (걸 / 걸리-02
+                        :ARG1 (a / and
+                              :op1 (쥐 / 쥐)
+                              :op2 (사 / 사람))
+                        :manner (함 / 함께)))
+            :ARG2 (여 / 여행-01
+                  :ARG0 (사2 / 사람)
+                  :path (장 / 장거리)
+                  :ARG1-of (i / instead-of-91
+                        :ARG2 (여2 / 여행-01
+                              :ARG0 (쥐2 / 쥐)
+                              :path (장2 / 장거리))))))
+
+# ::id snt25.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 14세기에 유럽에 전파된 대흑사병의 전염 경로는 정확히 밝혀지지는 않았지만 몇 가지 가설이 널리 받아들여지고 있다.
+# ::note
+(c / contrast-01
+      :ARG1 (밝 / 밝히-01
+            :polarity -
+            :manner (정 / 정확-01)
+            :ARG1 (경 / 경로
+                  :path-of (전 / 전염-01
+                        :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "대흑사병")
+                              :ARG1-of (전2 / 전파-01
+                                    :goal (c2 / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))
+                                    :time (d2 / date-entity :century 14))))))
+      :ARG2 (받 / 받아들이-01
+            :ARG1 (가 / 가설 :quant (몇 / 몇) :unit (가2 / 가지))
+            :manner (널 / 널리)))
+
+# ::id snt26.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 가장 유력한 가설은 중앙아시아의 스텝 지역을 통해 전파되었다는 것이며, 그 외에도 인도에서 기원하였다는 설 등이 있다.
+# ::note
+(a / and
+      :domain (가 / 가설
+            :ARG1-of (유 / 유력-01
+                  :degree (가2 / 가장)))
+      :op1 (전 / 전파-01
+            :path (지 / 지역
+                  :mod (스 / 스텝)
+                  :location (c / continent :wiki "중앙아시아" :name (이 / 이름 :op1 "중앙아시아"))))
+      :op2 (등 / 등
+            :op1 (설 / 설
+                  :mod (기 / 기원-00
+                        :ARG2 (c2 / country :wiki "인도" :name (이2 / 이름 :op1 "인도"))))
+            :mod (외 / 외
+                  :mod (그 / 그))))
+
+# ::id snt27.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 역사학자 마이클 W 돌스는 유스티니아누스 시대의 비잔틴 제국의 흑사병 유행에 주목하면서 흑사병의 전염 경로를 북아프리카에서 중앙아시아를 거쳐 유럽에 전파되었다고 추정하고 있다.
+# ::note
+(a / and
+      :op1 (주 / 주목-01
+            :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "마이클" :op2 "W" :op3 "돌스")
+                  :mod (학 / 학자
+                        :topic (역 / 역사학)))
+            :ARG1 (유 / 유행-01
+                  :ARG1 (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병"))
+                  :time (시 / 시대
+                        :mod (p2 / person :wiki "유스티니아누스_1세" :name (이3 / 이름 :op1 "유스티니아누스")))
+                  :location (c / country :wiki "비잔티움_제국" :name (이4 / 이름 :op1 "비잔틴" :op2 "제국"))))
+      :op2 (추 / 추정-01
+            :ARG0 p
+            :ARG1 (경 / 경로
+                  :path-of (전 / 전염-01
+                        :ARG1 d))
+            :attribute (전2 / 전파-01
+                  :ARG1 d
+                  :source (c2 / continent :wiki "북아프리카" :name (이5 / 이름 :op1 "북아프리카"))
+                  :path (c3 / continent :wiki "중앙아시아" :name (이6 / 이름 :op1 "중앙아시아"))
+                  :destination (c4 / continent :wiki "유럽" :name (이7 / 이름 :op1 "유럽")))))
+
+# ::id snt28.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 이러저러한 가설에도 불구하고 흑사병이 유럽에 들어온 데에는 비단길과 몽골 제국이 관련되어 있는 것만은 분명하다.
+# ::note
+(분 / 분명-01
+      :ARG1 (관 / 관련-01
+            :ARG1 (들 / 들어오-01
+                  :ARG0 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+                  :ARG3 (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")))
+            :ARG2 (a / and
+                  :op1 (r / road :wiki "비단길" :name (이3 / 이름 :op1 "비단길"))
+                  :op2 (c2 / country :wiki "몽골_제국" :name (이4 / 이름 :op1 "몽골" :op2 "제국"))))
+      :concession (가 / 가설
+            :ARG1-of (이5 / 이러저러하-00)))
+
+# ::id snt31.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 그 후 흑사병은 전 유럽으로 확산되었다.
+# ::note
+(확 / 확산-01
+      :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+      :ARG2 (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽")
+            :mod (전 / 전))
+      :time (후 / 후
+            :mod (그 / 그)))
+
+# ::id snt32.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 14세기 초 유럽의 기후는 중세온난기가 끝나고 연 평균 기온이 하락하기 시작하였다.
+# ::note
+(시 / 시작-01
+      :domain (기 / 기후
+            :poss (c / continent :wiki "유럽" :name (이 / 이름 :op1 "유럽"))
+            :time (초 / 초
+                  :op1 (d / date-entity :century 14)))
+      :ARG1 (하 / 하락-01
+            :ARG1 (기2 / 기온
+                  :mod (평 / 평균
+                        :range (연 / 연))))
+      :time (이2 / 이후
+            :op1 (온 / 온난기
+                  :mod (중 / 중세))))
+
+# ::id snt33.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 이러한 사정으로 인해 흑사병에 의한 피해는 더욱 악화되었다.
+# ::note
+(악 / 악화-01
+      :ARG0 (사 / 사정
+            :ARG1-of (이 / 이러하-00))
+      :ARG1 (피 / 피해
+            :cause (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병")))
+      :degree (더 / 더욱))
+
+# ::id snt34.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 몽골에 의한 전파가 흑사병 확산의 유일한 원인은 아닐지라도 전쟁과 기아, 그리고 기후의 변화 등이 흑사병 창궐의 주된 원인이 되었다.
+# ::note
+(c / cause-01
+      :ARG0 (등 / 등
+            :mod (주 / 주)
+            :op1 (전 / 전쟁)
+            :op2 (기 / 기아)
+            :op3 (변 / 변화-01
+                  :ARG1 (기2 / 기후)))
+      :ARG1 (창 / 창궐-01
+            :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")))
+      :concession (유 / 유일-01
+            :polarity -
+            :ARG1 (c2 / cause-01
+                  :ARG0 (전2 / 전파-01
+                        :ARG0 (c3 / country :wiki "몽골" :name (이2 / 이름 :op1 "몽골"))
+                        :ARG1 d)
+                  :ARG1 (확 / 확산-01
+                        :ARG1 d))))
+
+# ::id snt35.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 13세기 몽골의 중국 점령 시기에 농업과 상업은 심하게 붕괴되었고 기아가 만연했다.
+# ::note
+(a / and
+      :op1 (붕 / 붕괴-01
+            :ARG1 (a2 / and
+                  :op1 (농 / 농업)
+                  :op2 (상 / 상업))
+            :ARG1-of (심 / 심하-01))
+      :op2 (만 / 만연-01
+            :ARG1 (기 / 기아)
+            :time (점 / 점령-01
+                  :ARG0 (c / country :wiki "몽골" :name (이 / 이름 :op1 "몽골"))
+                  :ARG1 (c2 / country :wiki "중국" :name (이2 / 이름 :op1 "중국"))
+                  :time (d / date-entity :century 13))))
+
+# ::id snt36.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 이로 인해 13세기 후반에 중국의 인구는 대략 1억 2천만명에서 6천만명으로 급감하였다.
+# ::note
+(급 / 급감-00
+      :cause (이 / 이)
+      :ARG1 (인 / 인구
+            :location (c / country :wiki "중국" :name (이2 / 이름 :op1 "중국")))
+      :ARG2 (대 / 대략
+            :op1 (h / have-quant-91
+                  :ARG2 120000000
+                  :unit (명 / 명)))
+      :ARG3 (대2 / 대략
+            :op1 (h2 / have-quant-91
+                  :ARG2 60000000
+                  :unit (명2 / 명)))
+      :time (후 / 후반
+            :op1 (d / date-entity :century 13)))
+
+# ::id snt37.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 14세기에는 중국에서도 흑사병이 번졌던 시기로 이로 인해 중국의 인구 중 약 30%가 사망한 것으로 추정된다.
+# ::note
+(추 / 추정-01
+      :ARG1 (사 / 사망-01
+            :ARG0 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")
+                  :ARG1-of (번 / 번지-01
+                        :ARG3 (c / country :wiki "중국" :name (이2 / 이름 :op1 "중국"))
+                        :time (d2 / date-entity :century 14)))
+            :ARG1 (사2 / 사람
+                  :ARG1-of (i / include-91
+                        :ARG2 (인 / 인구
+                              :poss c)
+                        :ARG3 (약 / 약
+                              :op1 (p / percentage-entity :value 30))))))
+
+# ::id snt38.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 흑사병이 중앙아시아에서부터 번지기 시작했다는 가설은 중국의 기록에 의해서도 뒷받침되고 있다.
+# ::note
+(뒷 / 뒷받침-01
+      :ARG0 (기 / 기록-01
+            :ARG0 (c / country :wiki "중국" :name (이 / 이름 :op1 "중국")))
+      :ARG1 (가 / 가설
+            :mod (시 / 시작-01
+                  :ARG1 (번 / 번지-01
+                        :ARG1 (d / desease :wiki "흑사병" :name (이2 / 이름 :op1 "흑사병"))
+                        :ARG2 (c2 / continent :wiki "중앙아시아" :name (이3 / 이름 :op1 "중앙아시아"))))))
+
+# ::id snt39.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 1330년대 초 중국에서도 흑사병이 돌기 시작했으며 1334년 허베이에서 흑사병이 번졌으며, 유럽에서도 흑사병의 위세가 한창이던 1348년 – 1354년 동안 중국 각지에서도 흑사병 확산이 있었다.
+# ::note
+(a / and
+      :op1 (시 / 시작-01
+            :ARG1 (돌 / 돌-00
+                  :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+                  :location (c / country :wiki "중국" :name (이2 / 이름 :op1 "중국")))
+            :time (초 / 초
+                  :op1 (d2 / date-entity :decade 1330)))
+      :op2 (번 / 번지-01
+            :ARG1 d
+            :ARG3 (p / province :wiki "허베이성" :name (이3 / 이름 :op1 "허베이"))
+            :time (d3 / date-entity :year 1334))
+      :op3 (확 / 확산-01
+            :ARG1 d
+            :location (각 / 각지
+                  :part-of c)
+            :time (d4 / date-interval
+                  :op1 (d5 / date-entity :year 1348)
+                  :op2 (d6 / date-entity :year 1354)
+                  :mod (한 / 한창
+                        :domain (위 / 위세
+                              :mod d)
+                        :location (c2 / continent :wiki "유럽" :name (이4 / 이름 :op1 "유럽"))))))
+
+# ::id snt40.E2017.Wiki.017 ::category EXWIKI :: split dev
+# ::snt 당시 흑사병이 심했던 지역으로는 허베이 이외에 장시 성, 산시 성, 후난 성, 광둥 성, 광시, 허난 성, 쓰이위엔 등이었다.
+# ::note
+(심 / 심하-01
+      :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+      :time (당 / 당시)
+      :location (등 / 등
+            :op1 (p / province :wiki "허베이성" :name (이2 / 이름 :op1 "허베이"))
+            :op2 (p2 / province :wiki "장시성" :name (이3 / 이름 :op1 "장시" :op2 "성"))
+            :op3 (p3 / province :wiki "산시성_(산서성)" :name (이4 / 이름 :op1 "산시" :op2 "성"))
+            :op4 (p4 / province :wiki "후난성" :name (이5 / 이름 :op1 "후난" :op2 "성"))
+            :op5 (p5 / province :wiki "광둥성" :name (이6 / 이름 :op1 "광둥" :op2 "성"))
+            :op6 (p6 / province :wiki "광시_좡족_자치구" :name (이7 / 이름 :op1 "광시"))
+            :op7 (p7 / province :wiki "허난성" :name (이8 / 이름 :op1 "허난" :op2 "성"))
+            :op8 (p8 / province :wiki - :name (이9 / 이름 :op1 "쓰이위엔"))))
+
+# ::id snt41.E2017.Wiki.017 ::category EXWIKI :: split train
+# ::snt 이 시기 중국의 역사 역시 몽골족이 세운 원나라 시대였으며 몽골과 비단길을 오가던 상인들에 의해 흑사병이 전파된 것으로 추정된다.
+# ::note
+(a / and
+      :op1 (시 / 시대
+            :domain (역 / 역사
+                  :mod (c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+                  :time (시2 / 시기
+                        :mod (이2 / 이)))
+            :mod (역2 / 역시)
+            :mod (c2 / country :wiki "원나라" :name (이3 / 이름 :op1 "원나라")
+                  :ARG1-of (서 / 서-02
+                        :ARG0 (e / ethnic-group :wiki "몽골족" :name (이4 / 이름 :op1 "몽골족")))))
+      :op2 (추 / 추정-01
+            :ARG1 (전 / 전파-01
+                  :ARG0 (상 / 상인
+                        :ARG1-of (오 / 오가-01
+                              :ARG2 (a2 / and
+                                    :op1 (c3 / country :wiki "몽골" :name (이5 / 이름 :op1 "몽골"))
+                                    :op2 (r / road :wiki "비단길" :name (이6 / 이름 :op1 "비단길")))))
+                  :ARG1 (d / desease :wiki "흑사병" :name (이7 / 이름 :op1 "흑사병")))))
+
+# ::id snt42.E2017.Wiki.017 ::category EXWIKI :: split dev
+# ::snt 1347년에 처음 발생한 트라브존과 콘스탄티노플의 흑사병 역시 이러한 가설을 뒷받침하고 있다.
+# ::note
+(뒷 / 뒷받침-01
+      :ARG0 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")
+            :ord (o / ordinal-entity :value 1)
+            :ARG1-of (발 / 발생-01
+                  :time (d2 / date-entity :year 1347)
+                  :location (a / and
+                        :op1 (c / city :wiki "트라브존" :name (이2 / 이름 :op1 "트라브존"))
+                        :op2 (c2 / city :wiki "콘스탄티노폴리스" :name (이3 / 이름 :op1 "콘스탄티노플")))))
+      :mod (역 / 역시)
+      :ARG1 (가 / 가설
+            :ARG1-of (이4 / 이러하-00)))
+
+# ::id snt0.E2017.Wiki.018 ::category EXWIKI :: split train
+# ::snt 잭슨빌 (플로리다 주)
+# ::note
+(c / city :wiki "잭슨빌" :name (이 / 이름 :op1 "잭슨빌")
+      :location (p / province :wiki "플로리다주" :name (이2 / 이름 :op1 "플로리다" :op2 "주")))
+
+# ::id snt1.E2017.Wiki.018 ::category EXWIKI :: split test
+# ::snt 잭슨빌은 미국 플로리다 주에서 인구가 가장 많은 도시이다.
+# ::note
+(h / have-quant-91
+      :ARG1 (인 / 인구
+            :poss (c / city :wiki "잭슨빌" :name (이 / 이름 :op1 "잭슨빌")))
+      :ARG2 (많 / 많-01)
+      :ARG3 (가 / 가장)
+      :ARG5 (p / province :wiki "플로리다주" :name (이2 / 이름 :op1 "플로리다" :op2 "주")
+            :location (c2 / country :wiki "미국" :name (이3 / 이름 :op1 "미국"))))
+
+# ::id snt2.E2017.Wiki.018 ::category EXWIKI :: split train
+# ::snt 미국 전체로는 열셋째로 인구가 많다.
+# ::note
+(h / have-quant-91
+      :ARG1 (인 / 인구)
+      :ARG2 (많 / 많-01)
+      :ARG3 (o / ordinal-entity :value 13)
+      :ARG5 (전 / 전체
+            :mod (c / country :wiki "미국" :name (이3 / 이름 :op1 "미국"))))
+
+# ::id snt3.E2017.Wiki.018 ::category EXWIKI :: split dev
+# ::snt 듀발 군의 군청 소재지이며, 인구는 2010년 조사 기준 821,784명이다.
+# ::note
+(a / and
+      :op1 (소 / 소재-01
+            :ARG1 (군 / 군청
+                  :poss (c / county :wiki - :name (이 / 이름 :op1 "듀발" :op2 "군"))))
+      :op2 (인 / 인구 :quant 821784 :unit (명 / 명)
+            :mod (기 / 기준
+                  :op1 (조 / 조사-01
+                        :time (d / date-entity :year 2010)))))
+
+# ::id snt4.E2017.Wiki.018 ::category EXWIKI :: split train
+# ::snt 경상남도 창원시와 자매도시를 맺고 있기도 하다.
+# ::note
+(맺 / 맺-01
+      :ARG1 (자 / 자매도시)
+      :ARG2 (c / city :wiki "창원시" :name (이 / 이름 :op1 "창원시")
+            :location (p / province :wiki "경상남도" :name (이2 / 이름 :op1 "경상남도"))))
+
+# ::id snt5.E2017.Wiki.018 ::category EXWIKI :: split train
+# ::snt 잭슨빌을 연고로 하는 프로스포츠 팀으로 NFL 풋볼의 잭슨빌 재규어스가 있다.
+# ::note
+(t / team :wiki "잭슨빌_재규어스" :name (이 / 이름 :op1 "잭슨빌" :op2 "재규어스")
+      :topic (팀 / 팀
+            :topic (스 / 스포츠
+                  :mod (프 / 프로))
+            :location (c / city :wiki "잭슨빌" :name (이2 / 이름 :op1 "잭슨빌")))
+      :ARG1-of (i / include-91
+            :ARG2 (g / game :wiki - :name (이3 / 이름 :op1 "NFL" :op2 "풋볼"))))
+
+# ::id snt6.E2017.Wiki.018 ::category EXWIKI :: split train
+# ::snt 잭슨빌의 면적은 2,264.5 km²이며, 이 중 13.34%인 302.1 km²가 물이다.
+# ::note
+(a / area-quantity :quant 2264.5 :unit (s / square-kilometer)
+      :domain (면 / 면적
+            :poss (c / city :wiki "잭슨빌" :name (이 / 이름 :op1 "잭슨빌")))
+      :ARG2-of (i / include-91
+            :ARG1 (a2 / area-quantity :quant 302.1 :unit (s2 / square-kilometer)
+                  :domain (면2 / 면적
+                        :poss (물 / 물))
+            :ARG3 (p / percentage-entity :value 13.34))))
+
+# ::id snt7.E2017.Wiki.018 ::category EXWIKI :: split train
+# ::snt 잭슨빌은 온난 습윤 기후에 속하며, 겨울에는 포근하면서 여름에는 더운 편이다.
+# ::note
+(a / and
+      :op1 (속 / 속하-01
+            :ARG1 (c / city :wiki "잭슨빌" :name (이 / 이름 :op1 "잭슨빌"))
+            :ARG2 (기 / 기후
+                  :mod (온 / 온난)
+                  :mod (습 / 습윤)))
+      :op2 (a2 / and
+            :op1 (포 / 포근하-00
+                  :ARG1 c
+                  :time (d / date-entity :season (겨 / 겨울)))
+            :op2 (덥 / 덥-01
+                  :ARG1 c
+                  :time (d2 / date-entity :season (여 / 여름)))))
+
+# ::id snt8.E2017.Wiki.018 ::category EXWIKI :: split test
+# ::snt 최고 기온 기록은 1942년 7월 21일의 43°C이며, 최저 기온 기록은 1985년 1월 21일에 기록된 -14°C이다.
+# ::note
+(a / and
+      :op1 (t / temperature-quantity :quant 43 :scale (c / celsius)
+            :time (d / date-entity :year 1942 :month 7 :day 21)
+            :domain (기 / 기록-01
+                  :ARG1 (기2 / 기온
+                        :degree (최 / 최고))))
+      :op2 (t2 / temperature-quantity :quant -14 :scale (c2 / celsius)
+            :time (d2 / date-entity :year 1985 :month 1 :day 21)
+            :domain (기3 / 기록-01
+                  :ARG1 (기4 / 기온
+                        :degree (최2 / 최저)))))
+
+# ::id snt0.E2017.Wiki.019 ::category EXWIKI :: split train
+# ::snt ABC (미국의 방송사)
+# ::note
+(c / company
+      :wiki "ABC_(미국의_방송사)"
+      :name (이 / 이름 :op1 "ABC")
+      :ARG1-of (i / include-91
+            :ARG2 (회 / 회사
+                  :ARG0 (방 / 방송-00)
+                  :location (c2 / country :wiki "미국" :name (이2 / 이름 :op1 "미국")))))
+
+# ::id snt1.E2017.Wiki.019 ::category EXWIKI :: split test
+# ::snt 미국방송회사(美國放送協會)는 미국의 텔레비전, 라디오 방송을 운영하는 방송사이다.
+# ::note
+(운 / 운영-01
+      :ARG0 (c / company :wiki "ABC_(미국의_방송사)" :name (이 / 이름 :op1 "미국방송회사"))
+      :ARG1 (방 / 방송-00
+            :medium (a / and
+                  :op1 (텔 / 텔레비전)
+                  :op2 (라 / 라디오)))
+      :location (c2 / country :wiki "미국" :name (이2 / 이름 :op1 "미국")))
+
+# ::id snt2.E2017.Wiki.019 ::category EXWIKI :: split train
+# ::snt 1948년 4월 19일에 텔레비전 방송을 시작하였다.
+# ::note
+(시 / 시작-01
+      :ARG1 (방 / 방송-00
+            :medium (텔 / 텔레비전))
+      :time (d / date-entity :year 1948 :month 4 :day 19))
+
+# ::id snt3.E2017.Wiki.019 ::category EXWIKI :: split train
+# ::snt 현재 월트 디즈니 컴퍼니가 소유하고 있으며, 디즈니-ABC 텔레비전 그룹에 속해있다.
+# ::note
+(a / and
+      :op1 (소 / 소유-01
+            :ARG0 (c / company :wiki "월트_디즈니_컴퍼니" :name (이 / 이름 :op1 "월트" :op2 "디즈니" :op3 "컴퍼니"))
+            :time (현 / 현재))
+      :op2 (i / include-91
+            :ARG2 (c2 / company :wiki - :name (이2 / 이름 :op1 "디즈니-ABC" :op2 "텔레비전" :op3 "그룹"))))
+
+# ::id snt4.E2017.Wiki.019 ::category EXWIKI :: split test
+# ::snt 1939년 미국연방통신위원회는 NBC의 독점적인 시장지배를 인지하고 NBC의 두 네트워크를 NBC 레드 네트워크와 NBC 블루 네트워크 두 회사로 분리시키기로 결정했다.
+# ::note
+(결 / 결정-01
+      :ARG0 (g / government-organization :wiki "연방_통신_위원회" :name (이 / 이름 :op1 "연방통신위원회")
+            :location (c / country :wiki "미국" :name (이2 / 이름 :op1 "미국")))
+      :ARG1 (분 / 분리-01
+            :ARG0 g
+            :ARG1 (회 / 회사 :quant 2
+                  :mod (a / and
+                        :op1 (c2 / company :wiki - :name (이3 / 이름 :op1 "NBC" :op2 "레드" :op3 "네트워크"))
+                        :op2 (c3 / company :wiki - :name (이4 / 이름 :op1 "NBC" :op2 "블루" :op3 "네트워크"))))
+            :ARG2 (네 / 네트워크 :quant 2
+                  :poss (c4 / company :wiki "NBC" :name (이5 / 이름 :op1 "NBC"))))
+      :cause (인 / 인지-00
+            :ARG0 g
+            :ARG1 (지 / 지배-01
+                  :ARG0 c
+                  :ARG1 (시 / 시장)
+                  :manner (독 / 독점-01)))
+      :time (d / date-entity :year 1939))
+
+# ::id snt5.E2017.Wiki.019 ::category EXWIKI :: split train
+# ::snt 1942년 NBC 레드와 NBC 블루는 완전히 다른 회사로 분리되었다.
+# ::note
+(분 / 분리-01
+      :ARG1 (a / and
+            :op1 (c / company :wiki - :name (이 / 이름 :op1 "NBC" :op2 "레드"))
+            :op2 (c2 / company :wiki - :name (이2 / 이름 :op1 "NBC" :op2 "블루")))
+      :manner (완 / 완전-01)
+      :time (d / date-entity :year 1942))
+
+# ::id snt6.E2017.Wiki.019 ::category EXWIKI :: split train
+# ::snt 1944년 NBC 블루는 ABC (American Broadcasting Company)로 사명을 바꾸었고, NBC 레드는 NBC로 불리게 되었다.
+# ::note
+(a / and
+      :op1 (바 / 바꾸-01
+            :ARG0 (c / company :wiki - :name (이 / 이름 :op1 "NBC" :op2 "블루"))
+            :ARG1 (이2 / 이름 :poss c)
+            :ARG3 (이3 / 이름 :op1 "ABC"))
+      :op2 (부 / 부르-02
+            :ARG1 (c2 / company :wiki - :name (이4 / 이름 :op1 "NBC" :op2 "레드"))
+            :ARG2 (이5 / 이름 :op1 "NBC"))
+      :time (d / date-entity :year 1944))
+

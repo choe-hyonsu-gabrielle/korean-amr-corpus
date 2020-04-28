@@ -1,0 +1,412 @@
+# ::id lpp_1943.2 ::category TLPPRL :: split train
+# ::snt 내가 여섯 살 적에, 한번은 <<체험한 이야기>>라고 하는, 원시림에 관한 책에서 훌륭한 그림을 하나 본적이 있다.
+# ::note
+(보 / 보-01
+      :ARG0 (나 / 나)
+      :ARG1 (그 / 그림
+                  :ARG1-of (훌 / 훌륭하-01)
+                  :location (b / book :wiki - :name (이 / 이름 :op1 "체험한" :op2 "이야기")
+                        :topic (원 / 원시림)))
+      :mod (한 / 한번)
+      :time (a / age-01
+                  :ARG1 나
+                  :ARG2 (t / temporal-quantity :quant 6 :unit (살 / 살))))
+
+# ::id lpp_1943.3 ::category TLPPRL :: split train
+# ::snt 그것은 보아라는 구렁이가 맹수를 집어 삼키는 그림이었는데,
+# ::note
+(a / and
+      :op1 (그 / 그림
+                  :domain (그2 / 그것)
+                  :topic (구 / 구렁이
+                        :mod (보 / 보아)
+                        :ARG0-of (집 / 집어삼키-00
+                                    :ARG1 (맹 / 맹수)))))
+
+# ::id lpp_1943.4 ::category TLPPRL :: split train
+# ::snt 그것을 옮겨 그리면 아래의 그림과 같다.
+# ::note
+(그 / 그리-01
+      :domain (그2 / 그림
+                  :location (아 / 아래))
+      :ARG1 (그3 / 그것)
+      :manner (옮 / 옮-01
+                  :ARG1 그3
+                  :ARG3 아))
+
+# ::id lpp_1943.5 ::category TLPPRL :: split train
+# ::snt 그책에 그런 말이 있었다. '보아구렁이는 먹이를 씹지 않고 통째로 집어삼킨다.
+# ::note
+(말 / 말하-01
+      :ARG0 (책 / 책
+                  :mod (그 / 그))
+      :ARG1 (집 / 집어삼키-00
+                  :ARG0 (구 / 구렁이
+                        :mod (보 / 보아))
+                  :ARG1 (먹 / 먹이)
+                  :manner (씹 / 씹-00
+                        :polarity -
+                        :ARG0 구
+                        :ARG1 먹)
+                  :manner (통 / 통째로)))
+
+# ::id lpp_1943.6 ::category TLPPRL :: split train
+# ::snt 그리고 나서는 꼼짝도 못하고 먹이가 소화되는 여섯 달 동안은 잠을 잔다'고 하는.
+# ::note
+(a / and
+      :op1 (가 / 가능-01
+                  :polarity -
+                  :ARG1 (움 / 움직이-01)
+                  :time (이 / 이후
+                        :op1 (그 / 그렇-01)))
+      :op2 (자 / 자-00
+                  :ARG2 (잠 / 잠)
+                  :duration (t / temporal-quantity :quant 6
+                        :unit (달 / 달))
+                  :purpose (소 / 소화-01
+                        :ARG1 (먹 / 먹이))))
+
+# ::id lpp_1943.7 ::category TLPPRL :: split train
+# ::snt 그래서 나는 밀림에서 일어나는 일을 여러 가지로 곰곰이 생각해 보고서,
+# ::note
+(a / and
+      :op2 (생 / 생각-01
+                  :ARG0 (나 / 나)
+                  :ARG1 (일 / 일 :quant (여 / 여러)
+                        :ARG1-of (일2 / 일어나-01
+                                    :ARG2 (밀 / 밀림)))
+                  :manner (곰 / 곰곰이)))
+
+# ::id lpp_1943.8 ::category TLPPRL :: split test
+# ::snt 색연필을 가지고 첫 번째 그림을 그려 보았다.
+# ::note
+(그 / 그리-01
+      :ARG1 (그2 / 그림 :ord (o / ordinal-entity :value 1))
+      :instrument (색 / 색연필))
+
+# ::id lpp_1943.9 ::category TLPPRL :: split train
+# ::snt 나의 첫 번째 그림,
+# ::note
+(그 / 그림 :ord (o / ordinal-entity :value 1)
+      :poss (나 / 나))
+
+# ::id lpp_1943.10 ::category TLPPRL :: split train
+# ::snt 그것은 이러했다. 나는 이 그림을 어른들에게 보이며 내 그림이 무서우냐고 물어보았다.
+# ::note
+(m / multi-sentence
+      :snt1 (이 / 이렇-01
+                  :ARG1 (그 / 그것))
+      :snt2 (묻 / 묻-01
+                  :ARG0 (나 / 나)
+                  :ARG1 (무 / 무섭-01
+                        :polarity (a2 / amr-unknown))
+                        :ARG0 (그2 / 그림
+                              :poss (나2 / 나)))
+                  :ARG2 (어 / 어른)
+                  :manner (보 / 보-01
+                        :ARGA 나
+                        :ARG1 어
+                        :ARG1 그2))
+
+# ::id lpp_1943.11 ::category TLPPRL :: split train
+# ::snt 어른들은,
+# ::note
+(어 / 어른)
+
+# ::id lpp_1943.12 ::category TLPPRL :: split train
+# ::snt '모자가 왜 무섭겠느냐'고 대답했다.
+# ::note
+(대 / 대답-01
+      :ARG1 (무 / 무섭-01
+            :ARG0 (모 / 모자)
+            :ARG1-of (c / cause-01
+                  :ARG0 (a / amr-unknown))))
+
+# ::id lpp_1943.13 ::category TLPPRL :: split dev
+# ::snt 내 그림은 모자가 아니고,
+# ::note
+(a / and
+      :op1 (모 / 모자
+            :polarity -
+            :domain (그 / 그림
+                  :poss (나 / 나))))
+
+# ::id lpp_1943.14 ::category TLPPRL :: split test
+# ::snt 보아구렁이가 코끼리를 삭이고 있는 것이었다.
+# ::note
+(삭 / 삭-00
+      :ARG0 (구 / 구렁이
+            :mod (보 / 보아))
+      :ARG1 (코 / 코끼리))
+
+# ::id lpp_1943.15 ::category TLPPRL :: split train
+# ::snt 그래서 어른들이 알아 볼 수 있도록 보아 구렁이의 속을 그렸다.
+# ::note
+(c / cause-01
+      :ARG1 (그 / 그리-01
+            :ARG1 (속 / 속
+                  :op1 (구 / 구렁이
+                              :mod (보 / 보아)))
+            :purpose (가 / 가능-01
+                  :ARG1 (알 / 알아보-01
+                        :ARG0 (어 / 어른)
+                              :ARG1 속))))
+
+# ::id lpp_1943.16 ::category TLPPRL :: split train
+# ::snt 어른들은 언제나 설명을 들려주어야 한다.
+# ::note
+(필 / 필요-01
+      :ARG1 (설 / 설명-01)
+      :ARG2 (어 / 어른)
+      :time (언 / 언제나))
+
+# ::id lpp_1943.17 ::category TLPPRL :: split train
+# ::snt 내 두 번째 그림은 아래와 같았다. 어른들은 나보고 속이 보이고 안 보이고 하는 보아구렁이 그림 따위는 집어치우고, 차라리 지리, 역사, 산수, 문법에 취미를 붙이는 것이 좋을 거라고들 했다.
+# ::note
+(a / and
+      :op1 (그 / 그림 :ord (o / ordinal-entity :value 2)
+            :poss (나 / 나)
+            :location (아 / 아래))
+      :op2 (조 / 조언-01
+            :ARG0 (어 / 어른)
+            :beneficiary 나
+            :ARG1 (a2 / and
+                  :op1 (집 / 집어치우-00
+                        :ARG0 나
+                        :ARG1 (따 / 따위
+                              :op1 (그2 / 그림
+                                    :topic (구 / 구렁이
+                                          :mod (보 / 보아))
+                                    :mod (o2 / or
+                                          :op1 (보2 / 보-01
+                                                :ARG1 (속 / 속
+                                                      :part-of 구))
+                                          :op2 (보3 / 보-01
+                                                :polarity -
+                                                :ARG1 속))))))
+                  :op2 (가 / 가지-01
+                        :ARG0 나
+                        :ARG1 (취 / 취미
+                              :topic (a3 / and
+                                    :op1 (지 / 지리)
+                                    :op2 (역 / 역사)
+                                    :op3 (산 / 산수)
+                                    :op4 (문 / 문법)))
+                        :ARG1-of (i / instead-of-91
+                              :ARG2 따)
+                        :mod (차 / 차라리))))
+
+# ::id lpp_1943.18 ::category TLPPRL :: split train
+# ::snt 그리하여 나는 여섯 살 적에 훌륭한 화가로서의 장래를 버리게 되었다.
+# ::note
+(c / cause-01
+      :ARG1 (버 / 버리-01
+            :ARG0 (나 / 나)
+            :ARG1 (장 / 장래
+                  :mod (화 / 화가
+                        :ARG1-of (훌 / 훌륭하-01)))
+            :time (a / age-01
+                  :ARG1 나
+                  :ARG2 (t / temporal-quantity :quant 6 :unit (살 / 살)))))
+
+# ::id lpp_1943.19 ::category TLPPRL :: split train
+# ::snt 나는 첫 번째 그림과 두 번째 그림이 성공을 거두지 못한 것으로 낙심을 하였다.
+# ::note
+(낙 / 낙심-00
+      :ARG0 (성 / 성공-01
+            :polarity -
+            :ARG1 (a / and
+                  :op1 (그 / 그림 :ord (o / ordinal-entity :value 1))
+                  :op2 (그2 / 그림 :ord (o2 / ordinal-entity :value 2))))
+      :ARG1 (나 / 나))
+
+# ::id lpp_1943.20 ::category TLPPRL :: split train
+# ::snt 어른들은 혼자서는 아무것도 이해하지 못한다. 그러니 언제나 그 어른들에게 설명을 해 준다는 것은 어린이들로서는 힘이 드는 노릇이다.
+# ::note
+(m / multi-sentence
+      :snt1 (이 / 이해-01
+            :polarity -
+            :ARG0 (어 / 어른)
+            :ARG1 (아 / 아무것)
+            :manner (혼 / 혼자))
+      :snt2 (힘 / 힘들-01
+            :ARG1 (설 / 설명-01
+                  :ARG0 (어2 / 어린이)
+                  :ARG2 (어3 / 어른)
+                  :time (언 / 언제나))))
+
+# ::id lpp_1943.21 ::category TLPPRL :: split train
+# ::snt 그러므로 나는 다른 직업을 골라잡을 수밖에 없어, 비행기 조종하는 것을 배웠다.
+# ::note
+(c / cause-01
+      :ARG1 (a / and
+            :op1 (o / obligate-01
+                  :ARG1 (고 / 고르-01
+                        :ARG0 (나 / 나)
+                        :ARG1 (직 / 직업
+                              :ARG1-of (다 / 다르-01)))))
+            :op2 (배 / 배우-01
+                  :ARG0 나
+                  :ARG1 (조 / 조종-01
+                        :ARG1 (비 / 비행기))))
+
+# ::id lpp_1943.22 ::category TLPPRL :: split train
+# ::snt 나는 전 세계를 닥치는 대로 날아다녔다. 지리가 나에게 많은 도움이 된 것은 사실이다.
+# ::note
+(m / multi-sentence
+      :snt1 (날 / 날아다니-00
+            :ARG0 (나 / 나)
+            :location (세 / 세계
+                  :mod (전 / 전))
+            :mod (닥 / 닥치는-대로))
+      :snt2 (돕 / 돕-01
+            :ARG0 (지 / 지리)
+            :ARG1 나
+            :degree (많 / 많-01)))
+
+# ::id lpp_1943.23 ::category TLPPRL :: split train
+# ::snt 한 번 척 보아도 중국과 애리조나를 구별할 수 있었으니까.
+# ::note
+(가 / 가능-01
+      :ARG1 (구 / 구별-01
+            :ARG1 (c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
+            :ARG2 (s / state :wiki "애리조나주" :name (이2 / 이름 :op1 "애리조나")))
+      :manner (보 / 보-01
+            :mod (한 / 한번)
+            :mod (척 / 척)))
+
+# ::id lpp_1943.24 ::category TLPPRL :: split train
+# ::snt 그것은 밤에 길을 잘못 들었을 적에 매우 유익한 것이었다.
+# ::note
+(유 / 유익-01
+      :degree (매 / 매우)
+      :ARG1 (그 / 그것)
+      :condition (들 / 들-02
+            :ARG2 (길 / 길
+                  :ARG1-of (잘 / 잘못-02))
+            :time (d / date-entity :dayperiod (밤 / 밤))))
+
+# ::id lpp_1943.25 ::category TLPPRL :: split dev
+# ::snt 이렇게 해서 나는 수많은, 성실한 사람들과 많은 접촉을 가지게 되었다.
+# ::note
+(접 / 접촉-01
+      :ARG0 (나 / 나)
+      :ARG1 (사 / 사람
+            :ARG1-of (수 / 수많-01)
+            :ARG1-of (성 / 성실-01))
+      :ARG1-of (많 / 많-01)
+      :manner (하 / 하-01
+            :mod (이 / 이렇-01)))
+
+# ::id lpp_1943.26 ::category TLPPRL :: split train
+# ::snt 그리고 오랜 세월을 어른들 집에서 살며
+# ::note
+(a / and
+      :op2 (살 / 살-01
+            :ARG2 (집 / 집
+                  :poss (어 / 어른))
+            :duration (세 / 세월
+                  :ARG1-of (오 / 오래-01))))
+
+# ::id lpp_1943.27 ::category TLPPRL :: split train
+# ::snt 아주 가까이서 그들을 보았다.
+# ::note
+(보 / 보-01
+      :ARG1 (그 / 그들)
+      :location (곳 / 곳
+            :ARG1-of (가 / 가깝-01
+                  :degree (아 / 아주)
+                  :ARG2 그)))
+
+# ::id lpp_1943.28 ::category TLPPRL :: split train
+# ::snt 그렇다고 해서 그들이 더 낫다고 생각되지는 않았다.
+# ::note
+(c / contrast-01
+      :ARG2 (생 / 생각-01
+            :polarity -
+            :ARG1 (낫 / 낫-02
+                  :ARG1 (그 / 그들)
+                  :degree (더 / 더))))
+
+# ::id lpp_1943.29 ::category TLPPRL :: split dev
+# ::snt 좀 총명해 보이는 어른을 만나면 늘 간직하고 있던 내 첫 번째 그림으로 시험을 해 보았다.
+# ::note
+(시 / 시도-01
+      :ARG1 (시2 / 시험-01
+            :ARG1 (어 / 어른
+                  :ARG1-of (보 / 보-02
+                        :ARG1 (총 / 총명하-00)))
+            :instrument (그 / 그림 :ord (o / ordinal-entity :value 1)
+                  :poss (나 / 나)
+                  :ARG1-of (간 / 간직-01
+                        :time (늘 / 늘))))
+      :condition (만 / 만나-01
+            :ARG1 어))
+
+# ::id lpp_1943.30 ::category TLPPRL :: split train
+# ::snt 정말 무엇을 좀 알아보나 하고 알고 싶었기 때문이었다.
+# ::note
+(c / cause-01
+      :ARG0 (원 / 원하-01
+            :ARG1 (알 / 알-01
+                  :ARG1 (t / truth-value
+                        :polarity-of (알2 / 알아보-01
+                              :ARG1 (무 / 무엇)
+                              :mod (좀 / 좀))))))
+
+# ::id lpp_1943.31 ::category TLPPRL :: split train
+# ::snt 그러나 그 대답은 언제나 내게 모자라는 것이었다.
+# ::note
+(c / contrast-01
+      :ARG2 (모 / 모자라-01
+            :ARG1 (대 / 대답-01
+                  :mod (그 / 그))
+            :ARG2 (나 / 나)
+            :time (언 / 언제나)))
+
+# ::id lpp_1943.32 ::category TLPPRL :: split train
+# ::snt 그럴 때에는 보아구렁이니, 원시림이나, 별이니 하는 이야기는 그만두고,
+# ::note
+(그 / 그만두-01
+      :ARG1 (이 / 이야기-01
+            :ARG1 (o / or
+                  :op1 (구 / 구렁이
+                        :mod (보 / 보아))
+                  :op2 (원 / 원시림)
+                  :op3 (별 / 별)))
+      :time (때 / 때
+            :op1 (그2 / 그러-01)))
+
+# ::id lpp_1943.33 ::category TLPPRL :: split test
+# ::snt 그 어른이 알아들을 수 있게
+# ::note
+(h / have-purpose-91
+      :ARG2 (가 / 가능-01
+            :ARG1 (알 / 알아듣-01
+                  :ARG0 (어 / 어른
+                        :mod (그 / 그)))))
+
+# ::id lpp_1943.34 ::category TLPPRL :: split train
+# ::snt 브리지니, 골프니, 정치니, 넥타이니 하는 이야기를 꺼냈다.
+# ::note
+(이 / 이야기-01
+      :ARG1 (a / and
+            :op1 (브 / 브리지)
+            :op2 (골 / 골프)
+            :op3 (정 / 정치)
+            :op4 (넥 / 넥타이)))
+
+# ::id lpp_1943.35 ::category TLPPRL :: split train
+# ::snt 그러면 그 어른은 나같이 똑똑한 사람을 알 게 된 것을 몹시 좋아했다.
+# ::note
+(a / and
+      :op2 (좋 / 좋-02
+            :degree (몹 / 몹시)
+            :ARG0 (어 / 어른
+                  :mod (그 / 그))
+            :ARG1 (알 / 알-01
+                  :ARG0 어
+                  :ARG1 (사 / 사람
+                        :ARG1-of (똑 / 똑똑하-01)
+                        :ARG1-of (같 / 같-01
+                              :ARG2 (나 / 나))))))

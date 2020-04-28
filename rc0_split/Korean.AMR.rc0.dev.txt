@@ -1,0 +1,1847 @@
+# ::id snt6.931.002_A.01_ver ::category EXWKQA :: split dev
+# ::snt 생물체의 작용.
+# ::note
+(작 / 작용-01
+      :ARG1 (생 / 생물체))
+
+# ::id snt0.931.004_Q.01_ver ::category EXWKQA :: split dev
+# ::snt BTB용액은 대표적인 산, 염기 지시약이다.
+# ::note
+(지 / 지시약
+      :domain (B / BTB용액)
+      :mod (산 / 산)
+      :mod (염 / 염기)
+      :mod (대 / 대표-01))
+
+# ::id snt0.931.007_Q.01_ver ::category EXWKQA :: split dev
+# ::snt 여러 번을 강조해 이르는 말로 '골백번'이라는 표현이 있다.
+# ::note
+(표 / 표현
+      :mod "골백번"
+      :domain (이 / 이르-02
+            :manner (강 / 강조-01)
+            :frequency (여 / 여러)))
+
+# ::id snt1.931.008_A.01_ver ::category EXWKQA :: split dev
+# ::snt 산소가 결핍된 유일한 동맥이다.
+# ::note
+(동 / 동맥
+      :ARG1-of (유 / 유일-01)
+      :ARG1-of (결 / 결핍-00
+            :ARG2 (산 / 산소)))
+
+# ::id snt0.931.008_A.05_ver ::category EXWKQA :: split dev
+# ::snt 온몸에서 심장으로 돌아온 정맥혈을 폐로 보내는 혈관.
+# ::note
+(혈 / 혈관
+      :ARG0-of (보 / 보내-01
+            :ARG1 (혈2 / 혈액
+                  :location (정 / 정맥)
+                  :ARG0-of (돌 / 돌아오-01
+                        :ARG2 (온 / 온몸)
+                        :ARG3 (심 / 심장)))
+            :ARG2 (폐 / 폐)))
+
+# ::id snt0.931.009_A.01_ver ::category EXWKQA :: split dev
+# ::snt <인명> 조선 후기의 화가(1843~1897).
+# ::note
+(화 / 화가
+      :topic (이 / 이름
+            :poss (사 / 사람))
+      :ARG0-of (살 / 살-02
+            :time (d / date-interval
+                  :op1 (d2 / date-entity :year 1843)
+                  :op2 (d3 / date-entity :year 1897)))
+      :time (후 / 후기
+            :mod (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))
+
+# ::id snt3.931.009_A.01_ver ::category EXWKQA :: split dev
+# ::snt 조선 후기 남화를 대표하는 화가로, 안견ㆍ김홍도와 더불어 조선 화단(畫壇)의 3대 거장으로 불린다.
+# ::note
+(a / and
+      :op1 (화 / 화가
+            :ARG0-of (대 / 대표-01
+                  :ARG1 (남 / 남화
+                        :time (후 / 후기
+                              :mod (c / country :wiki "조선" :name (이 / 이름 :op1 "조선"))))))
+      :op2 (부 / 부르-02
+            :ARG2 (거 / 거장
+                  :mod 3
+                  :topic (화2 / 화단
+                        :mod c
+                  :ARG2-of (i / include-91
+                        :ARG1 (a2 / and
+                              :op1 (p / person :wiki "안견" :name (이2 / 이름 :op1 "안견"))
+                              :op2 (p2 / person :wiki "김홍도" :name (이3 / 이름 :op1 "김홍도"))))))))
+
+# ::id snt0.931.009_Q.01_ver ::category EXWKQA :: split dev
+# ::snt 조선 시기 화가인 이 사람은 <홍백매십정병>, <군마도> 등을 그렸다.
+# ::note
+(그 / 그리-01
+      :ARG0 (사 / 사람
+            :mod (이 / 이)
+            :mod (화 / 화가
+                  :time (c / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))
+      :ARG1 (등 / 등
+            :op1 (p / picture :wiki - :name (이3 / 이름 :op1 "홍백매십정병"))
+            :op2 (p2 / picture :wiki - :name (이4 / 이름 :op1 "군마도"))))
+
+# ::id snt2.931.011_A.02_ver ::category EXWKQA :: split dev
+# ::snt 냉매, 수지, 방부제, 불연성 가스, 충치예방제 따위를 만드는 데 쓴다.
+# ::note
+(쓰 / 쓰-01
+      :ARG2 (만 / 만들-01
+            :ARG1 (따 / 따위
+                  :op1 (냉 / 냉매)
+                  :op2 (수 / 수지)
+                  :op3 (방 / 방부제)
+                  :op4 (가 / 가스
+                        :mod (불 / 불연성))
+                  :op5 (약 / 약
+                        :purpose (예 / 예방-01
+                              :ARG1 (충 / 충치))))))
+
+# ::id snt4.931.016_A.04_ver ::category EXWKQA :: split dev
+# ::snt 제갈량과 관계된 고사성어 가운데 가장 유명한 것은 뭐니 뭐니 해도 바로 이것이죠.
+# ::note
+(유 / 유명-01
+      :degree (가 / 가장)
+      :ARG1 (이 / 이것
+            :mod (바 / 바로)
+            :mod (뭐 / 뭐니-뭐니-해도)
+            :ARG1-of (i / include-91
+                  :ARG2 (고 / 고사성어
+                        :topic (p / person :wiki "제갈량" :name (이2 / 이름 :op1 "제갈량"))))))
+
+# ::id snt1.931.025_A.01_ver ::category EXWKQA :: split dev
+# ::snt 1907년 1월 1일 쓰시마 섬 감옥에서 순국하였다.
+# ::note
+(순 / 순국-00
+      :location (감 / 감옥
+            :location (i / island :wiki "쓰시마섬" :name (이 / 이름 :op1 "쓰시마" :op2 "섬")))
+      :time (d / date-entity
+            :year 1907
+            :month 1
+            :day 1))
+
+# ::id snt0.E2016.788.02_A_01 ::category EXWKQA :: split dev
+# ::snt 해리(海里)는 길이의 단위이다.
+# ::note
+(단 / 단위
+    :domain (해 / 해리)
+    :poss (길 / 길이))
+
+# ::id snt0.E2016.788.02_Q_01 ::category EXWKQA :: split dev
+# ::snt 길이의 단위로 맞는 것은?
+# ::note
+(a / amr-unknown
+      :domain (단 / 단위
+        :poss (길 / 길이)))
+
+# ::id snt0.E2016.788.08_Q_01 ::category EXWKQA :: split dev
+# ::snt 2음절의 이것은 눈이나 얼음 위에서 사람을 태우거나 물건 등을 싣고 끄는 기구이다.
+# ::note
+(기 / 기구
+      :domain (이 / 이것
+            :mod (음 / 음절 :mod 2))
+      :mod (끌 / 끌-01
+            :manner (o / or
+                  :op1 (타 / 타-01
+                        :ARG0 (사 / 사람))
+                  :op2 (싣 / 싣-01
+                        :ARG1 (등 / 등
+                              :op1 (물 / 물건))))
+            :location (위 / 위
+                  :op1 (o2 / or
+                        :op1 (눈 / 눈)
+                        :op2 (얼 / 얼음)))))
+
+# ::id snt1.E2016.788.09_A_01 ::category EXWKQA :: split dev
+# ::snt 가장 큰 특징은 흑색 내지 보라색 혀를 가지고 있다는 것이고 북방계 스피츠에 속하는 오래된 품종이다.
+# ::note
+(a / and
+      :op1 (가 / 가지-01
+            :domain (특 / 특징
+                  :mod (크 / 크-01
+                        :degree (가2 / 가장)))
+            :ARG1 (혀 / 혀
+                  :mod (o / or
+                        :op1 (흑 / 흑색)
+                        :op2 (보 / 보라색))))
+      :op2 (품 / 품종
+            :mod (오 / 오래되-01)
+            :ARG1-of (i / include-91
+                  :ARG2 (스 / 스피츠
+                        :mod (북 / 북방계)))))
+
+# ::id snt0.E2016.788.11_A_01 ::category EXWKQA :: split dev
+# ::snt 호미곶(虎尾串) 또는 동외곶(冬外串) 또는 장기곶(長鬐串)은 포항시의 동북쪽 끝에 있는 곶이다.
+# ::note
+(곶 / 곶
+      :domain (o / or
+            :op1 (c / cape* :wiki "호미곶" :name (이 / 이름 :op1 "호미곶"))
+            :op2 (c2 / cape* :wiki "호미곶" :name (이2 / 이름 :op1 "동외곶"))
+            :op3 (c3 / cape* :wiki "호미곶" :name (이3 / 이름 :op1 "장기곶")))
+      :location (끝 / 끝
+            :op1 (c4 / city :wiki "포항시" :name (이4 / 이름 :op1 "포항시"))
+            :direction (동 / 동북쪽)))
+
+# ::id snt1.E2016.788.12_A_01 ::category EXWKQA :: split dev
+# ::snt 장구 반주가 따르며 무속 음악과 시나위에 기교가 확대되어 19세기 무렵에 만들어졌다.
+# ::note
+(a / and
+      :op1 (따 / 따르-01
+            :ARG0 (반 / 반주-01
+                  :instrument (장 / 장구)))
+      :op2 (만 / 만들-01
+            :manner (확 / 확대-01
+                  :ARG1 (기 / 기교
+                        :mod (a2 / and
+                              :op1 (음 / 음악
+                                    :mod (무 / 무속))
+                              :op2 (시 / 시나위))))
+            :time (무2 / 무렵
+                  :op1 (d / date-entity :century 19))))
+
+# ::id snt1.E2016.788.13_A_01 ::category EXWKQA :: split dev
+# ::snt 24박 1장단의 가장 느린 속도로, 정악(正樂)에서 사용하는 여민락만에 해당한다.
+# ::note
+(a / and
+      :op1 (속 / 속도
+            :ARG1-of (느 / 느리-01
+                  :degree (가 / 가장))
+            :mod (r / ratio-of
+                  :op1 (박 / 박 :quant 24)
+                  :op2 (장 / 장단 :quant 1)))
+      :op2 (해 / 해당-01
+            :ARG2 (m / music :wiki "여민락" :name (이 / 이름 :op1 "여민락만")
+                  :ARG1-of (사 / 사용-01
+                        :ARG2 (정 / 정악)))))
+
+# ::id snt0.E2016.788.15_A_01 ::category EXWKQA :: split dev
+# ::snt 악어의 등처럼 울퉁불퉁한 껍질 때문에 악어배라고도 한다.
+# ::note
+(하 / 하-03
+      :ARG2 (악 / 악어배)
+      :cause (껍 / 껍질
+            :ARG1-of (울 / 울퉁불퉁하-00)
+            :ARG1-of (닮 / 닮-01
+                  :ARG2 (등 / 등
+                        :part-of (악2 / 악어)))))
+
+# ::id snt0.E2016.788.15_Q_01 ::category EXWKQA :: split dev
+# ::snt 이것은 악어의 등처럼 울퉁불퉁한 모양을 닮아 '악어 배'라고 불리는 열대과일이다.
+# ::note
+(과 / 과일
+      :domain (이 / 이것)
+      :mod (열 / 열대)
+      :ARG1-of (부 / 부르-02
+            :ARG2 (악 / 악어배)
+            :cause (닮 / 닮-01
+                  :ARG1 이
+                  :ARG2 (모 / 모양
+                        :ARG1-of (울 / 울퉁불퉁하-00)
+                        :ARG1-of (닮2 / 닮-01
+                              :ARG2 (등 / 등
+                                    :part-of (악2 / 악어)))))))
+
+# ::id snt0.E2016.789.04_Q_01 ::category EXWKQA :: split dev
+# ::snt 변온동물로 맞는 것은?
+# ::note
+(맞 / 맞-01
+      :ARG1 (a / amr-unknown)
+      :ARG2 (변 / 변온동물))
+
+# ::id snt0.E2016.789.07_Q_01 ::category EXWKQA :: split dev
+# ::snt 특정 날짜에 발생하는 컴퓨터 악성코드의 이름이 아닌 것은?
+# ::note
+(a / amr-unknown
+      :domain (이 / 이름
+            :polarity -
+            :name-of (악 / 악성코드
+                  :mod (컴 / 컴퓨터)
+                  :ARG1-of (발 / 발생-01
+                        :time (날 / 날짜
+                              :ARG1-of (특 / 특정-01))))))
+
+# ::id snt0.E2016.789.08_A_01 ::category EXWKQA :: split dev
+# ::snt [같은 말] 영애(윗사람의 딸을 높여 이르는 말).
+# ::note
+(같 / 같-01
+      :ARG1 (s / string-entity :value "영애"
+            :ARG1-of (이 / 이르-02
+                  :manner (높 / 높-00)
+                  :attribute (사 / 사람)
+                        :ARG2-of (h / have-rel-role-91
+                              :ARG1 (윗 / 윗사람)
+                              :ARG2 (딸 / 딸)))))
+
+# ::id snt1.E2016.790.02_A_01 ::category EXWKQA :: split dev
+# ::snt 미국은 4번으로 그 횟수가 가장 많고, 프랑스는 3번, 이탈리아, 일본, 오스트리아, 노르웨이를 포함한 몇몇 나라들은 2번씩 개최하였다.
+# ::note
+(a / and
+      :op1 (h / have-quant-91
+            :ARG1 (개 / 개최-01
+                  :ARG0 (c / country :wiki "미국" :name (이 / 이름 :op1 "미국")))
+            :ARG2 4
+            :ARG5 (국 / 국가
+                  :ARG1-of (i / include-91
+                        :ARG2 (세 / 세계)))
+            :ARG1-of (많 / 많-01
+                  :degree (가 / 가장)))
+      :op2 (h2 / have-degree-91
+            :ARG1 (개2 / 개최-01
+                  :ARG0 (c2 / country :wiki "프랑스" :name (이2 / 이름 :op1 "프랑스")))
+            :ARG2 3)
+      :op3 (h3 / have-degree-91
+            :ARG1 (개3 / 개최-01
+                  :ARG0 (나 / 나라
+                        :quant (몇 / 몇몇)
+                        :ARG2-of (i2 / include-91
+                              :ARG1 (a2 / and
+                                    :op1 (c3 / country :wiki "이탈리아" :name (이3 / 이름 :op1 "이탈리아"))
+                                    :op2 (c4 / country :wiki "일본" :name (이4 / 이름 :op1 "일본"))
+                                    :op3 (c5 / country :wiki "오스트리아" :name (이5 / 이름 :op1 "오스트리아"))
+                                    :op4 (c6 / country :wiki "노르웨이" :name (이6 / 이름 :op1 "노르웨이"))))))
+            :ARG2 2))
+
+# ::id snt0.E2016.790.08_A_02 ::category EXWKQA :: split dev
+# ::snt <문학> 영국의 소설가 오스틴이 지은 장편 소설.
+# ::note
+(소 / 소설
+      :topic (문 / 문학)
+      :mod (장 / 장편)
+      :ARG1-of (짓 / 짓-01
+            :ARG0 (p / person :wiki "제인_오스틴" :name (이 / 이름 :op1 "오스틴")
+                  :mod (소2 / 소설가)
+                  :location (c / country :wiki "영국" :name (이2 / 이름 :op1 "영국")))))
+
+# ::id snt0.E2016.835.04_A_01 ::category EXWKQA :: split dev
+# ::snt 저항권의 사상은 중세에도 있었지만 근대적 의미에서의 저항권은 근세 초기의 폭군방벌론(暴君放伐論)을 거쳐 17∼18세기에 이르러 대두된 자연법사상과 사회계약설, 특히 J.로크의 사상을 배경으로 하여 성립하였다.
+# ::note
+(성 / 성립-01
+      :ARG1 (저 / 저항권
+            :mod (근 / 근대))
+      :manner (배 / 배경으로-하-00
+            :ARG1 저
+            :ARG2 (a / and
+                  :op1 (사 / 사상
+                        :mod (자 / 자연법))
+                  :op2 (사2 / 사회계약설)
+                  :op3 (사3 / 사상
+                        :poss (p / person :wiki "존_로크" :name (이 / 이름 :op1 "J.로크"))
+                        :mod (특 / 특히))
+                  :ARG1-of (대 / 대두-01
+                        :time (d / date-interval
+                              :op1 (d2 / date-entity :century 17)
+                              :op2 (d3 / date-entity :century 18))
+                        :manner (거 / 거치-01
+                              :ARG2 (폭 / 폭군방벌론
+                                    :time (초 / 초기
+                                          :mod (근2 / 근세)))))))
+      :concession (사4 / 사상
+            :mod (저2 / 저항권)
+            :time (중 / 중세)))
+
+# ::id snt0.E2016.835.07_Q_01 ::category EXWKQA :: split dev
+# ::snt 1455~1485년까지 30년간 영국의 봉건 귀족인 랭커스터와 요크 두 가문 사이의 왕위 계승 문제를 둘러싸고 벌어진 이 전쟁은?
+# ::note
+(a / amr-unknown
+      :domain (전 / 전쟁
+            :mod (이 / 이)
+            :ARG1-of (벌 / 벌이-01
+                  :duration (t / temporal-quantity :quant 30 :unit (년 / 년))
+                  :time (d / date-interval
+                        :op1 (d2 / date-entity :year 1455)
+                        :op2 (d3 / date-entity :year 1485))
+                  :cause (문 / 문제-01
+                        :ARG1 (계 / 계승-00
+                              :ARG1 (왕 / 왕위))
+                        :ARG2 (a2 / and
+                              :op1 (f / family :wiki "랭커스터가" :name (이2 / 이름 :op1 "랭커스터" :op2 "왕가"))
+                              :op2 (f2 / family :wiki "요크가" :name (이3 / 이름 :op1 "요크" :op2 "왕가"))
+                              :mod (귀 / 귀족
+                                    :mod (봉 / 봉건
+                                          :mod (c / country :wiki "영국" :name (이4 / 이름 :op1 "영국")))))))))
+
+# ::id snt0.E2016.835.08_A_01 ::category EXWKQA :: split dev
+# ::snt 플로렌스(Florence)는 이탈리아의 도시 "피렌체"의 영어식 이름이다.
+# ::note
+(이 / 이름
+      :domain (s / string-entity :value "플로렌스")
+      :medium (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
+      :mod (c / city :wiki "피렌체" :name (이3 / 이름 :op1 "피렌체")
+            :location (c2 / country :wiki "이탈리아" :name (이4 / 이름 :op1 "이탈리아"))))
+
+# ::id snt1.E2016.887.01_Q_01 ::category EXWKQA :: split dev
+# ::snt 이때 이것은 무엇일까?
+# ::note
+(a / amr-unknown
+      :domain (이 / 이것)
+      :condition (이2 / 이때))
+
+# ::id snt0.E2016.887.03_A_02 ::category EXWKQA :: split dev
+# ::snt <인명> 미국의 정치가ㆍ제3대 대통령(1743~1826).
+# ::note
+(a / and
+      :topic (인 / 인명)
+      :op1 (정 / 정치가
+            :mod (c / country :wiki "미국" :name (이 / 이름 :op1 "미국")))
+      :op2 (h / have-org-role-91
+            :ARG1 c
+            :ARG2 (대 / 대통령
+                  :ord (o / ordinal-entity :value 3))))
+
+# ::id snt0.E2016.887.07_A_01 ::category EXWKQA :: split dev
+# ::snt 주도는 바르셀로나이다.
+# ::note
+(h / have-org-role-91
+      :ARG0 (c / city :wiki "바르셀로나" :name (이 / 이름 :op1 "바르셀로나"))
+      :ARG2 (주 / 주도))
+
+# ::id snt7.E2017.NEWS.002 ::category EXNEWS :: split dev
+# ::snt 2학년 학생부에도 “훈련 등으로 친구들과 교류 시간은 부족하지만 급우들 사이에서 선망의 대상”이라고 쓰여있다.
+# ::note
+(쓰 / 쓰-01
+      :ARG1 (선 / 선망-00
+            :ARG0 (급 / 급우)
+            :concession (부 / 부족-01
+                  :ARG1 (시 / 시간
+                        :duration-of (교 / 교류-01
+                              :ARG1 (친 / 친구)))
+                  :cause (훈 / 훈련-01)))
+      :location (학 / 학생부
+            :mod (학2 / 학년 :ord (o / ordinal-entity :value 2))))
+
+# ::id snt13.E2017.NEWS.003 ::category EXNEWS :: split dev
+# ::snt 경찰은 어시장 상인들이 사고 원인으로 지목한 '가' 구역 내 변압기에 대해서도 정밀 감식을 벌일 계획이다.
+# ::note
+(계 / 계획-01
+      :ARG0 (경 / 경찰)
+      :ARG1 (벌 / 벌이-01
+            :ARG1 (감 / 감식-00
+                  :manner (정 / 정밀-00))
+            :topic (변 / 변압기
+                  :location (구 / 구역
+                              :mod "가"
+                              :ARG1-of (지 / 지목-01
+                                    :ARG0 (상 / 상인
+                                          :mod (어 / 어시장))
+                                    :ARG2 (원 / 원인
+                                          :mod (사 / 사고)))))))
+
+# ::id snt18.E2017.NEWS.003 ::category EXNEWS :: split dev
+# ::snt 소방당국은 현재까지 파악된 재산피해 추정액이 6억5천만원이라고 밝혔다.
+# ::note
+(밝 / 밝히-01
+      :ARG0 (당 / 당국
+            :mod (소 / 소방))
+      :ARG1 (m / monetary-quantity :quant 650000000
+            :domain (금 / 금액
+                  :ARG1-of (추 / 추정-01
+                        :ARG0 당
+                        :topic (피 / 피해
+                              :mod (재 / 재산)))
+                  :ARG1-of (파 / 파악-01
+                        :ARG0 당
+                        :time (현 / 현재)))))
+
+# ::id snt17.E2017.NEWS.004 ::category EXNEWS :: split dev
+# ::snt 취업난이 심각해지다 보니 일단 합격한 회사에 다니면서 다른 회사 신입사원 공채에 재도전하는 것도 흔한 풍경이다.
+# ::note
+(흔 / 흔하-00
+      :ARG1 (재 / 재도전-00
+            :ARG1 (채 / 채용-01
+                  :mod (공 / 공개-01)
+                  :ARG0 (회 / 회사
+                        :ARG1-of (다 / 다르-01))
+                  :ARG1 (사 / 사원
+                        :mod (신 / 신입)))
+            :manner (다2 / 다니-01
+                  :ARG1 (회2 / 회사
+                        :ARG1-of (합 / 합격-00))
+                  :mod (일2 / 일단)))
+      :cause (심 / 심각하-01
+            :ARG1 (어 / 어렵-01
+                  :ARG1 (취 / 취업-01))))
+
+# ::id snt1.E2017.NEWS.005 ::category EXNEWS :: split dev
+# ::snt 문재인 대통령은 21일 '경제 사령탑'인 경제부총리 겸 기획재정부 장관 후보자에 김동연(60) 아주대 총장, 외교부 장관 후보자에 여성인 강경화(62) 유엔 사무총장 정책특보를 각각 내정했다.
+# ::note
+(a / and
+      :op1 (내 / 내정-01
+            :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문재인")
+                  :ARG0-of (h / have-org-role-91
+                        :ARG2 (대 / 대통령)))
+            :ARG1 (p2 / person :wiki "김동연" :name (이2 / 이름 :op1 "김동연")
+                  :age (t / temporal-quantity :value 60)
+                  :ARG0-of (h2 / have-org-role-91
+                        :ARG1 (u / university :wiki "아주대학교" :name (이3 / 이름 :op1 "아주대"))
+                        :ARG2 (총 / 총장)))
+            :ARG2 (a2 / and
+                  :mod (사 / 사령탑
+                        :mod (경 / 경제))
+                  :op1 (경2 / 경제부총리)
+                  :op2 (장 / 장관 :wiki "대한민국의_기획재정부_장관"
+                        :ARG2-of (h3 / have-org-role-91
+                              :ARG1 (g / government-organization :wiki "대한민국_기획재정부" :name (이4 / 이름 :op1 "기획재정부")))))
+            :time (d / date-entity :day 21))
+      :op2 (내2 / 내정-01
+            :ARG0 p
+            :ARG1 (p3 / person :wiki "강경화" :name (이5 / 이름 :op1 "강경화")
+                  :age (t2 / temporal-quantity :value 62)
+                  :mod (여 / 여성)
+                  :ARG0-of (h4 / have-org-role-91
+                        :ARG1 (o / organization :wiki "유엔" :name (이6 / 이름 :op1 "유엔"))
+                        :ARG2 (정 / 정책특보
+                              :poss (사2 / 사무총장))))
+            :ARG2 (장2 / 장관
+                  :ARG2-of (h5 / have-org-role-91
+                        :ARG1 (g2 / government-organization :wiki "대한민국_외교부" :name (이7 / 이름 :op1 "외교부"))))
+            :time (d2 / date-entity :day 21))
+      :mod (각 / 각각))
+
+# ::id snt4.E2017.NEWS.005 ::category EXNEWS :: split dev
+# ::snt 외교안보실장 하마평에 올랐던 문정인(66) 연세대 명예특임 교수와, 대미 특사인 홍석현(68) 전 중앙일보·JTBC 사장은 대통령의 통일외교안보특보를 맡게 됐다.
+# ::note
+(h / have-org-role-91
+      :ARG0 (a / and
+            :op1 (p / person :wiki "문정인_(대학_교수)" :name (이 / 이름 :op1 "문정인")
+                  :age (t / temporal-quantity :value 66)
+                  :ARG0-of (h2 / have-org-role-91
+                        :ARG1 (u / university :wiki "연세대학교" :name (이2 / 이름 :op1 "연세대"))
+                        :ARG2 (교 / 교수
+                              :ARG2-of (특 / 특임-00)
+                              :mod (명 / 명예)))
+                  :ARG0-of (오 / 오르-03
+                        :ARG1 (하 / 하마평
+                              :topic (h3 / have-org-role-91
+                                    :ARG2 (외 / 외교안보실장)))))
+            :op2 (p2 / person :wiki "홍석현" :name (이3 / 이름 :op1 "홍석현")
+                  :age (t2 / temporal-quantity :value 68)
+                  :ARG0-of (h4 / have-org-role-91
+                        :ARG1 (c / company :wiki "중앙일보" :wiki "JTBC" :name (이4 / 이름 :op1 "중앙일보·JTBC"))
+                        :ARG2 (사 / 사장)
+                        :time (전 / 전))
+                  :mod (특2 / 특사
+                        :mod (대 / 대미))))
+      :ARG2 (통 / 통일외교안보특보
+            :poss (대2 / 대통령)))
+
+# ::id snt5.E2017.NEWS.005 ::category EXNEWS :: split dev
+# ::snt 국민경제자문회의 부의장엔 김광두(70) 서강대 경제학과 석좌교수가 인선됐다.
+# ::note
+(h / have-org-role-91
+      :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "김광두")
+            :age (t / temporal-quantity :value 70)
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 (u / university :wiki "서강대학교" :name (이2 / 이름 :op1 "서강대"))
+                  :ARG2 (교 / 교수
+                        :mod (석 / 석좌)
+                        :topic (경 / 경제학과))))
+      :ARG1 (g / government-organization :wiki "대한민국_국민경제자문회의" :name (이3 / 이름 :op1 "국민경제자문회의"))
+      :ARG2 (부 / 부의장))
+
+# ::id snt20.E2017.NEWS.005 ::category EXNEWS :: split dev
+# ::snt 문정인 신임 특보는 제주가 고향으로, 오현고를 졸업하고 메릴랜드대에서 정치학 박사 학위를 받았다.
+# ::note
+(a / and
+      :op1 (출 / 출생-01
+            :ARG1 (p / person :wiki "문정인_(대학_교수)" :name (이 / 이름 :op1 "문정인")
+                  :ARG0-of (h / have-org-role-91
+                        :ARG2 (특 / 특보))
+                  :ARG1-of (신 / 신임-00))
+            :location (c / city :wiki "제주시" :name (이2 / 이름 :op1 "제주")))
+      :op2 (졸 / 졸업-01
+            :ARG0 p
+            :ARG1 (s / school :wiki "오현고등학교" :name (이3 / 이름 :op1 "오현고")))
+      :op3 (받 / 받-01
+            :ARG0 p
+            :ARG1 (학 / 학위
+                  :mod (박 / 박사)
+                  :topic (정 / 정치학))
+            :ARG2 (u / university :wiki "메릴랜드_대학교" :name (이4 / 이름 :op1 "메릴랜드대"))))
+
+# ::id snt1.E2017.NEWS.006 ::category EXNEWS :: split dev
+# ::snt "지난 정권에서도 4대강 건설공사 후폭풍으로 대대적인 담합 비리 조사, 과징금 추징, 입찰 참가 제한 등 2중·3중의 필벌(必罰)을 받았는데…. 이번에 확실히 털어내고 업계 발전 방향의 계기가 됐으면 합니다."
+# ::note
+(말 / 말하-01
+      :ARG1 (a / and
+            :op1 (받 / 받-01
+                  :ARG1 (필 / 필벌-00
+                        :mod (중 / 중
+                              :op1 2
+                              :op2 3)
+                        :example (등 / 등
+                              :op1 (조 / 조사-01
+                                    :ARG1 (비 / 비리
+                                          :mod (담 / 담합-00))
+                                    :ARG1-of (대 / 대대적-00))
+                              :op2 (추 / 추징-00
+                                    :ARG1 (과 / 과징금))
+                              :op3 (제 / 제한-01
+                                    :ARG2 (참 / 참가-01
+                                          :ARG1 (입 / 입찰-01)))))
+                  :time (정 / 정권
+                        :ARG1-of (지 / 지나-01))
+                  :cause (후 / 후폭풍
+                        :mod (공 / 공사
+                              :mod (건 / 건설-01
+                                    :ARG1 (강 / 강 :mod 4)))))
+            :op2 (a2 / and
+                  :op1 (털 / 털어내-00
+                        :manner (확 / 확실하-01)
+                        :time (이 / 이번))
+                  :op2 (바 / 바라-01
+                  :ARG1 (되 / 되-01
+                        :ARG2 (계 / 계기
+                              :mod (방 / 방향
+                                    :mod (발 / 발전-01
+                                          :ARG1 (업 / 업계)))))))))
+
+# ::id snt3.E2017.NEWS.006 ::category EXNEWS :: split dev
+# ::snt 문 대통령은 후보 시절부터 "민관 전문가가 참여해 사업 전후 환경 변화와 향후 대책까지 담은 과학적 조사를 진행하고 필요하다면 보 전면 철거를 포함한 개선안을 마련하겠다"고 약속했다.
+# ::note
+(약 / 약속-01
+      :ARG0 (p / person :wiki "문재인" :name (이 / 이름 :op1 "문")
+                  :ARG0-of (h / have-org-role-91
+                        :ARG2 (대 / 대통령)))
+      :ARG1 (a / and
+            :op1 (진 / 진행-01
+                  :ARG1 (조 / 조사-01
+                        :mod (과 / 과학)
+                        :ARG1-of (참 / 참여-01
+                              :ARG0 (전 / 전문가
+                                    :mod (민 / 민간)))
+                        :ARG2-of (담 / 담-01
+                              :ARG1 (a2 / and
+                              :op1 (변 / 변화-01
+                                    :ARG0 (사 / 사업)
+                                    :ARG1 (환 / 환경))
+                              :op2 (대2 / 대책
+                                    :mod (향 / 향후))))))
+            :op2 (마 / 마련-01
+                  :ARG0 p
+                  :ARG1 (안 / 안건
+                        :purpose (개 / 개선-01)
+                        :ARG2-of (포 / 포함-01
+                              :ARG1 (철 / 철거-01
+                                    :ARG1 (보 / 보)
+                                    :mod (전2 / 전면))))
+                  :condition (필 / 필요-01)))
+      :time (이2 / 이후
+            :op1 (시 / 시절
+                  :mod (후 / 후보))))
+
+# ::id snt4.E2017.NEWS.006 ::category EXNEWS :: split dev
+# ::snt 특히 "4대강 사업이 정책 판단의 잘못이었는지, 부정부패가 있었는지 명확하게 규명하고 불법이 드러나면 법적 책임을 묻고 손해배상도 시키겠다"고 강조했다.
+# ::note
+(강 / 강조-01
+      :mod (특 / 특히)
+      :ARG1 (a / and
+            :op1 (규 / 규명-01
+                  :manner (명 / 명확하-01)
+                  :topic (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업"))
+                  :ARG1 (a2 / and
+                        :op1 (잘 / 잘못-01
+                              :mod (판 / 판단-01
+                                    :ARG1 (정 / 정책)))
+                        :op2 (부 / 부정부패-00)))
+            :op2 (a3 / and
+                  :op1 (묻 / 묻-01
+                        :ARG1 (책 / 책임지-01
+                              :mod (법 / 법)))
+                  :op2 (배 / 배상-00
+                        :ARG1 (손 / 손해))
+                  :condition (드 / 드러나-01
+                        :ARG1 (불 / 불법)))))
+
+# ::id snt10.E2017.NEWS.006 ::category EXNEWS :: split dev
+# ::snt 벌금 7500만 원은 건설산업기본법에 따라 담합 행위를 한 기업에 내릴 수 있는 최고 형량이다.
+# ::note
+(형 / 형량
+      :domain (m / monetary-quantity :quant 75000000 :unit (원 / 원)
+            :mod (벌 / 벌금))
+      :mod (최 / 최고)
+      :mod (가 / 가능-01
+            :ARG1 (내 / 내리-03
+                  :ARG2 (기 / 기업-01
+                        :ARG0-of (하 / 하-01
+                              :ARG1 (행 / 행위-00
+                                    :mod (담 / 담합-00))))
+                  :manner (따 / 따르-02
+                        :ARG2 (l / law :wiki - :name (이 / 이름 :op1 "건설산업기본법"))))))
+
+# ::id snt12.E2017.NEWS.006 ::category EXNEWS :: split dev
+# ::snt 2015년 특별 사면 때 입찰 담합으로 부정당업체 제재를 받은 70여 개 업체를 비롯해 2000여 개 건설 업체가 각종 제재에서 사면 혜택을 받았다.
+# ::note
+(사 / 사면-00
+      :ARG1 (업 / 업체 :quant (여 / 여 :op1 2000) :unit (개 / 개)
+            :ARG0-of (건 / 건설-01)
+            :ARG1-of (비 / 비롯하-01
+                  :ARG2 (업2 / 업체 :quant (여2 / 여 :op1 70) :unit (개2 / 개)
+                        :ARG1-of (제 / 제재-01
+                              :attribute (업3 / 업체
+                                    :ARG1-of (정 / 정당-01 :polarity -))
+                              :cause (담 / 담합-00
+                                    :purpose (입 / 입찰-01))))))
+      :ARG2 (제2 / 제재-01
+            :mod (각 / 각종))
+      :time (사2 / 사면-00
+            :ARG1-of (특 / 특별-01)
+            :time (d / date-entity :year 2015)))
+
+# ::id snt13.E2017.NEWS.006 ::category EXNEWS :: split dev
+# ::snt 업계에선 단기적 성과에 집착한 정부의 무리한 4대강 살리기 사업 추진이 건설업계의 담합 등 비리 사건을 일으키는 빌미를 제공했다는 점도 정상참작된 것으로 보고 있다.
+# ::note
+(보 / 보-02
+      :ARG0 (업 / 업계)
+      :ARG1 (정 / 정상참작-00
+            :ARG1 (제 / 제공-01
+                  :ARG0 (추 / 추진-01
+                        :ARG0 (g / government-organization :wiki "대한민국_정부" :name (이 / 이름 :op1 "정부")
+                              :ARG0-of (집 / 집착-00
+                                    :ARG1 (성 / 성과
+                                          :mod (단 / 단기))))
+                        :ARG1 (p / project* :wiki "4대강_정비_사업" :name (이2 / 이름 :op1 "4대강" :op2 "살리기" :op3 "사업"))
+                        :manner (무 / 무리하-00))
+                  :ARG1 (빌 / 빌미)
+                  :ARG2 (일 / 일으키-01
+                        :ARG1 (사 / 사건
+                              :mod (비 / 비리)
+                              :example (등 / 등
+                                    :op1 (담 / 담합-00
+                                          :ARG0 (업2 / 업계
+                                                :ARG0-of (건 / 건설-01)))))))))
+
+# ::id snt17.E2017.NEWS.006 ::category EXNEWS :: split dev
+# ::snt 실제로 역대 최고 수준의 과징금이 부과된 호남고속철만 하더라도 17개 공구 중 13개 공구는 1사 1공구만 가능하고 해당 분야 시공능력을 갖춘 건설사 숫자도 제한적이다.
+# ::note
+(a / and
+      :mod (실 / 실제)
+      :domain (p / project* :wiki - :name (이 / 이름 :op1 "호남고속철")
+            :mod (부 / 부과-01
+                  :ARG1 (과 / 과징금
+                        :mod (수 / 수준
+                              :mod (최 / 최고
+                                    :mod (역 / 역대))))))
+      :op1 (가 / 가능-01
+            :domain (공 / 공구 :quant 13 :unit (개 / 개)
+                  :ARG1-of (i / include-91
+                        :ARG2 (공2 / 공구 :quant 17 :unit (개2 / 개))))
+            :ARG1 (입 / 입찰-01
+                  :ARG0 (회 / 회사 :quant 1 :unit (개3 / 개))
+                  :ARG1 (공3 / 공구 :quant 1 :unit (개4 / 개))))
+      :op2 (제 / 제한적
+            :ARG1 (숫 / 숫자
+                  :quant-of (회2 / 회사
+                        :ARG0-of (건 / 건설-01)
+                        :ARG0-of (갖 / 갖추-01
+                              :ARG1 (능 / 능력
+                                    :mod (시 / 시공-00)
+                                    :topic (분 / 분야
+                                          :ARG1-of (해 / 해당-01))))))))
+
+# ::id snt1.E2017.NEWS.007 ::category EXNEWS :: split dev
+# ::snt 30대 직장인 A 씨는 이달 초 연휴 때 신용카드 콜센터에 전화했다가 분통이 터졌다.
+# ::note
+(분 / 분통터지-00
+      :ARG1 (사 / 사람 :mod "A"
+            :mod (직 / 직장)
+            :age (사2 / 사이
+                  :op1 30
+                  :op2 39))
+      :time (전 / 전화-01
+            :ARG0 사
+            :ARG1 (콜 / 콜센터
+                  :poss (회 / 회사
+                        :topic (신 / 신용카드)))
+            :time (연 / 연휴
+                  :mod (초 / 초
+                        :mod (이 / 이달)))))
+
+# ::id snt5.E2017.NEWS.007 ::category EXNEWS :: split dev
+# ::snt 미국 시각으론 토요일 오전 2시쯤 되는 때였지만 혹시나 하고 걸어 보았는데 상담원이 받았다.
+# ::note
+(전 / 전화-01
+      :ARG1 (사 / 사람
+            :ARG1-of (상 / 상담-00))
+      :mod (혹 / 혹시나-하고)
+      :concession (b / be-temporally-at-91
+            :ARG2 (d / date-entity
+                  :time "02:00"
+                  :weekday (토 / 토요일)
+                  :timezone (c / country :wiki "미국" :name (이 / 이름 :op1 "미국")))))
+
+# ::id snt9.E2017.NEWS.007 ::category EXNEWS :: split dev
+# ::snt 본지가 한국의 4대 시중 은행(국민·신한·우리·KEB하나은행), 9개 카드사, 3대 생명보험사, 5대 손해보험사 등의 콜센터를 조사한 결과 24시간·365일 일반 상담(분실 신고 등 금융 사고와 관련된 상담 제외)이 가능한 금융사는 없었다.
+# ::note
+(a / and
+      :op1 (조 / 조사-01
+            :ARG0 (본 / 본지)
+            :ARG1 (콜 / 콜센터
+                  :poss (등 / 등
+                        :op1 (은 / 은행 :mod 4
+                              :mod (시 / 시중)
+                              :ARG2-of (i / include-91
+                                    :ARG1 (a2 / and
+                                          :op1 (c / company :wiki "국민은행" :name (이 / 이름 :op1 "국민"))
+                                          :op2 (c2 / company :wiki "신한은행" :name (이2 / 이름 :op1 "신한"))
+                                          :op3 (c3 / company :wiki "우리은행" :name (이3 / 이름 :op1 "우리"))
+                                          :op4 (c4 / company :wiki "KEB하나은행" :name (이4 / 이름 :op1 "KEB하나은행")))))
+                        :op2 (회 / 회사 :quant 9 :unit (개 / 개)
+                              :topic (카 / 카드))
+                        :op3 (회2 / 회사 :mod 3
+                              :topic (보 / 보험
+                                    :mod (생 / 생명)))
+                        :op4 (회3 / 회사 :mod 5
+                              :topic (보2 / 보험
+                                    :mod (손 / 손해))))
+                  :location (c5 / country :wiki "대한민국" :name (이5 / 이름 :op1 "한국"))))
+      :op2 (회4 / 회사
+            :topic (금 / 금융)
+            :polarity -
+            :mod (가 / 가능-01
+                  :ARG1 (상 / 상담-00
+                        :mod (일 / 일반)
+                        :ARG2-of (제 / 제외-01
+                              :ARG1 (상2 / 상담-00
+                                    :ARG1-of (관 / 관련-01
+                                          :ARG2 (사 / 사고
+                                                :topic (금2 / 금융)
+                                                :example (등2 / 등
+                                                      :op1 (신 / 신고-01
+                                                            :ARG1 (분 / 분실-01))))))))
+                  :duration (t / temporal-quantity :quant 24 :unit (시2 / 시간))
+                  :duration (t2 / temporal-quantity :quant 365 :unit (일2 / 일)))))
+
+# ::id snt3.E2017.NEWS.008 ::category EXNEWS :: split dev
+# ::snt '과열'을 우려하는 시각도 있지만, 2008년 글로벌 금융 위기 후 장기 침체에 허덕이던 부동산 시장이 이제 완전히 회복세로 돌아섰다는 전망이 퍼지고 있다.
+# ::note
+(c / contrast-01
+      :ARG1 (시 / 시각
+            :mod (우 / 우려-01
+                  :ARG1 (과 / 과열-01)))
+      :ARG2 (퍼 / 퍼지-01
+            :ARG1 (전 / 전망-01
+                  :ARG1 (돌 / 돌아서-01
+                        :manner (완 / 완전-01)
+                        :ARG3 (회 / 회복-01
+                              :ARG0 (시2 / 시장
+                                    :mod (부 / 부동산)
+                                    :ARG1-of (허 / 허덕이-01
+                                          :ARG0 (침 / 침체-01
+                                                :duration (장 / 장기))
+                                                :time (후 / 후
+                                                      :op1 (e / event
+                                                            :wiki "2007-2008년_세계_금융_위기"
+                                                            :name (이 / 이름 :op1 "2008년" :op2 "글로벌" :op3 "금융" :op4 "위기"))))))))))
+
+# ::id snt4.E2017.NEWS.008 ::category EXNEWS :: split dev
+# ::snt 26일 부동산 정보 업체 부동산114는 "이번 주 서울 아파트 평균 매매 가격이 1주일 전보다 0.3% 올라 작년 10월 이후 가장 높은 상승률을 기록했다"고 밝혔다.
+# ::note
+(밝 / 밝히-01
+      :ARG0 (c / company :wiki "부동산114" :name (이 / 이름 :op1 "부동산114")
+            :mod (업 / 업체
+                  :topic (정 / 정보
+                        :topic (부 / 부동산))))
+      :ARG1 (h / have-quant-91
+                  :ARG1 (오 / 오르-01
+                        :ARG1 (가 / 가격
+                              :mod (매 / 매매-00
+                                    :ARG1 (아 / 아파트
+                                          :location (c2 / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울"))))
+                              :mod (평 / 평균))
+                        :time (주 / 주
+                              :mod (이3 / 이번)))
+                  :ARG2 (p / percentage-entity :value 0.3)
+                  :ARG4 (전 / 전
+                        :op1 (t / temporal-quantity :quant 1 :unit (주2 / 주일)))
+                  :ARG6 (기 / 기록-01
+                        :ARG1 (상 / 상승-01
+                              :ARG1 가
+                              :ARG1-of (h2 / have-degree-91
+                                    :ARG2 (높 / 높-01)
+                                    :ARG3 (가2 / 가장)
+                                    :ARG4 (이4 / 이후
+                                          :op1 (d / date-entity
+                                                :year (작 / 작년)
+                                                :month 10))))))
+      :time (d2 / date-entity :day 26))
+
+# ::id snt19.E2017.NEWS.008 ::category EXNEWS :: split dev
+# ::snt 2008년부터 2016년까지 서울 아파트 3.3㎡당 평균 매매가는 1748만 원에서 1916만 원으로 9.6% 오른 반면, 같은 기간 우리나라 GDP(국내총생산)는 1조 17억 달러에서 1조 4110억 달러로 41% 성장했다.
+# ::note
+(c / contrast-01
+      :ARG1 (오 / 오르-01
+            :ARG1 (매 / 매매가
+                  :mod (평 / 평균)
+                  :ARG1-of (r / rate-entity-91
+                        :ARG2 (a / area-quantity :quant 3.3 :unit (s / square-meter)))
+                  :poss (아 / 아파트
+                        :location (c2 / city :wiki "서울특별시" :name (이 / 이름 :op1 "서울"))))
+            :ARG2 (평2 / 평균
+                  :op1 (m / monetary-quantity :quant 17480000 :unit (원 / 원)))
+            :ARG3 (평3 / 평균
+                  :op1 (m2 / monetary-quantity :quant 19160000 :unit (원2 / 원)))
+            :ARG1-of (h / have-quant-91
+                  :ARG2 (p / percentage-entity :value 9.6))
+            :time (d / date-interval
+                  :op1 (d2 / date-entity :year 2008)
+                  :op2 (d3 / date-entity :year 2016)))
+      :ARG2 (성 / 성장-01
+            :ARG1 (국 / 국내총생산
+                  :poss (c3 / country :wiki "대한민국" :name (이2 / 이름 :op1 "우리나라")))
+            :ARG2 (m3 / monetary-quantity :quant 1001700000000 :unit (달 / 달러))
+            :ARG3 (m4 / monetary-quantity :quant 1411000000000 :unit (달2 / 달러))
+            :ARG1-of (h2 / have-quant-91
+                  :ARG2 (p2 / percentage-entity :value 41))
+            :time d))
+
+# ::id snt0.E2017.NEWS.010 ::category EXNEWS :: split dev
+# ::snt 30분 지나면 포기하는데… 77분 집념, 멈춘 심장 깨우다.
+# ::note
+(c / contrast-01
+      :ARG1 (포 / 포기-01
+            :time (이 / 이후
+                  :op1 (t / temporal-quantity :quant 30 :unit (분 / 분))))
+      :ARG2 (깨 / 깨-01
+            :ARG0 (집 / 집념
+                  :duration (t2 / temporal-quantity :quant 77 :unit (분2 / 분)))
+            :ARG1 (심 / 심장
+                  :ARG1-of (멈 / 멈추-01))))
+
+# ::id snt19.E2017.NEWS.010 ::category EXNEWS :: split dev
+# ::snt 응급실에서 뛰어가도 5분은 걸리는 거리였다.
+# ::note
+(걸 / 걸리-01
+      :ARG1 (이 / 이상
+            :op1 (t / temporal-quantity :quant 5 :unit (분 / 분)))
+      :ARG2 (뛰 / 뛰어가-01
+            :ARG2 (응 / 응급실)))
+
+# ::id snt21.E2017.NEWS.010 ::category EXNEWS :: split dev
+# ::snt 오후 3시 30분 심도자실로 임 씨를 옮겨 ECMO 부착 시술에 들어갔다.
+# ::note
+(a / and
+      :op1 (옮 / 옮-01
+            :ARG1 (p / person :wiki - :name (이 / 이름 :op1 "임"))
+            :ARG3 (심 / 심도자실)
+            :time (d / date-entity :time "15:30"))
+      :op2 (들 / 들어가-03
+            :ARG1 (시 / 시술-00
+                  :ARG1 (부 / 부착-00
+                        :ARG1 (체 / 체외심폐순환기)))))
+
+# ::id snt10.E2017.Wiki.001 ::category EXWIKI :: split dev
+# ::snt 독일이 해안 영토를 1890년에 영국에게 넘겨줘 두 열강 사이의 분쟁도 적지 않았다.
+# ::note
+(적 / 적-02
+      :polarity -
+      :ARG1 (분 / 분쟁-00
+            :mod (사 / 사이
+                  :op1 (열 / 열강 :quant 2)))
+      :cause (넘 / 넘겨주-01
+            :ARG0 (c / country :wiki "독일" :name (이 / 이름 :op1 "독일"))
+            :ARG1 (영 / 영토
+                  :location (해 / 해안))
+            :ARG2 (c2 / country :wiki "영국" :name (이2 / 이름 :op1 "영국"))
+            :time (d / date-entity :year 1890)))
+
+# ::id snt11.E2017.Wiki.001 ::category EXWIKI :: split dev
+# ::snt 1952년 10월부터 1959년 12월까지 케냐는 영국의 지배에 대한 반란(마우마우 반란)으로 비상 사태하에 있었다.
+# ::note
+(사 / 사태
+      :mod (비 / 비상)
+      :domain (c / country :wiki "케냐" :name (이 / 이름 :op1 "케냐"))
+      :cause (e / event :wiki - :name (이2 / 이름 :op1 "마우마우" :op2 "반란")
+            :mod (반 / 반란-00
+                  :ARG0 c
+                  :ARG1 (지 / 지배-01
+                        :ARG0 (c2 / country :wiki "영국" :name (이3 / 이름 :op1 "영국"))
+                        :ARG1 c)))
+      :duration (d / date-interval
+            :op1 (d2 / date-entity :year 1952 :month 10)
+            :op2 (d3 / date-entity :year 1959 :month 12)))
+
+# ::id snt20.E2017.Wiki.001 ::category EXWIKI :: split dev
+# ::snt 그 후 1991년 12월, 국민들의 요구로 일당 체제를 폐기하고 1992년 다당(多黨) 선거가 치러졌다.
+# ::note
+(a / and
+      :op1 (폐 / 폐기-00
+            :ARG1 (체 / 체제
+                  :mod (일 / 일당))
+            :cause (요 / 요구-01
+                  :ARG0 (국 / 국민))
+            :time (d / date-entity :year 1991 :month 12))
+      :op2 (치 / 치르-02
+            :ARG1 (선 / 선거-00
+                  :mod (다 / 다당))
+            :time (d2 / date-entity :year 1992))
+      :time (후 / 후
+            :op1 (그 / 그)))
+
+# ::id snt4.E2017.Wiki.002 ::category EXWIKI :: split dev
+# ::snt 세계에서 가장 뛰어난 정복왕 중 한 사람이다.
+# ::note
+(i / include-91
+      :ARG2 (정 / 정복왕
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (뛰 / 뛰어나-01)
+                  :ARG3 (가 / 가장)
+                  :ARG5 (정2 / 정복왕
+                        :part-of (세 / 세계)))))
+
+# ::id snt14.E2017.Wiki.002 ::category EXWIKI :: split dev
+# ::snt 그러나 그의 유년시대는 결코 행복한 것이 아니었다.
+# ::note
+(c / contrast-01
+      :ARG2 (행 / 행복-01
+            :polarity -
+            :ARG1 (시 / 시대
+                  :mod (유 / 유년)
+                  :poss (그 / 그))
+            :mod (결 / 결코)))
+
+# ::id snt0.E2017.Wiki.003 ::category EXWIKI :: split dev
+# ::snt 소수 (수론)
+# ::note
+(소 / 소수
+      :topic (수 / 수론))
+
+# ::id snt1.E2017.Wiki.003 ::category EXWIKI :: split dev
+# ::snt 소수(素數, 발음: 소쑤)는 양의 약수가 1과 자기 자신 뿐인 1보다 큰 자연수로 정의된다.
+# ::note
+(정 / 정의-00
+      :ARG1 (소 / 소수)
+      :ARG2 (자 / 자연수
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (크 / 크-01
+                        :ARG1 자)
+                  :ARG4 "1")
+            :mod (a / and
+                  :domain (약 / 약수
+                        :mod (양 / 양))
+                  :op1 "1"
+                  :op2 (자2 / 자신
+                        :mod (자3 / 자기)))))
+
+# ::id snt8.E2017.Wiki.004 ::category EXWIKI :: split dev
+# ::snt 그는 ‘복음주의자’로서 복음을 전파하기를 원했고, 자신이 설교자, 박사, 교수라고 불리기를 원했다.
+# ::note
+(a / and
+      :op1 (원 / 원하-01
+            :ARG0 (그 / 그)
+            :ARG1 (전 / 전파-01
+                  :ARG0 그
+                  :attribute (복 / 복음주의자)
+                  :ARG1 (복2 / 복음)))
+      :op2 (원2 / 원하-01
+            :ARG0 그
+            :ARG1 (부 / 부르-02
+                  :ARG1 그
+                  :ARG2 (a2 / and
+                        :op1 (사 / 사람
+                              :ARG0-of (설 / 설교-00))
+                        :op2 (박 / 박사)
+                        :op3 (교 / 교수)))))
+
+# ::id snt2.E2017.Wiki.006 ::category EXWIKI :: split dev
+# ::snt 여러 언어에서 라인 강이란 이름은 켈트어의 "레노스(Renos: 흐르는 것)"에서 유래했다.
+# ::note
+(유 / 유래
+      :ARG1 (이 / 이름 :op1 "라인" :op2 "강"
+            :name-of (r / river :wiki "라인강"))
+      :ARG2 (s / string-entity :value "레노스"
+            :ARG1-of (i / include-91
+                  :ARG2 (l / language :wiki "켈트어파" :name (이2 / 이름 :op1 "켈트어")))
+            :ARG1-of (뜻 / 뜻하-01
+                  :ARG2 (흐 / 흐르-01)))
+      :location (언 / 언어
+            :mod (여 / 여러)))
+
+# ::id snt5.E2017.Wiki.008 ::category EXWIKI :: split dev
+# ::snt 젊은 청교도 성직자 존 하버드의 성을 따서 지은 것이다.
+# ::note
+(짓 / 짓-01
+      :manner (따 / 따-01
+            :ARG2 (이 / 이름 :op1 "존" :op2 "하버드"
+                  :name-of (p / person :wiki "존_하버드"
+                        :ARG0-of (h / have-org-role-91
+                              :ARG1 (r / religious-group :wiki "청교도" :name (이2 / 이름 :op1 "청교도"))
+                              :ARG2 (성 / 성직자))
+                        :ARG1-of (젊 / 젊-01)))))
+
+# ::id snt6.E2017.Wiki.008 ::category EXWIKI :: split dev
+# ::snt 그는 유언을 남겨서 4백여권의 책과 재산의 절반인 현금 779파운드를 학교에 기부하였다.
+# ::note
+(기 / 기부-01
+      :ARG0 (그 / 그)
+      :ARG1 (a / and
+            :op1 (책 / 책
+                  :quant (약 / 약 :op1 400) :unit (권 / 권))
+            :op2 (m / monetary-quantity :quant 779 :unit (파 / 파운드)
+                  :mod (현 / 현금)
+                  :ARG1-of (i / include-91
+                        :ARG2 (재 / 재산
+                              :poss 그)
+                        :ARG3 (절 / 절반))))
+      :ARG2 (학 / 학교)
+      :manner (남 / 남-01
+            :ARG0 그
+            :ARG1 (유 / 유산)))
+
+# ::id snt8.E2017.Wiki.008 ::category EXWIKI :: split dev
+# ::snt 지금도 학부는 하버드 칼리지라고 부른다.
+# ::note
+(부 / 부르-02
+      :ARG1 (학 / 학부)
+      :ARG2 (이 / 이름 :op1 "하버드" :op2 "칼리지"
+            :name-of (s / school :wiki -))
+      :time (지 / 지금))
+
+# ::id snt29.E2017.Wiki.008 ::category EXWIKI :: split dev
+# ::snt 하버드 로스쿨은 하버드 야드 북쪽에 위치해 있다.
+# ::note
+(u / university :wiki "하버드_법학대학원" :name (이 / 이름 :op1 "하버드" :op2 "로스쿨")
+      :location (북 / 북쪽
+            :direction-of (l / location :wiki - :name (이2 / 이름 :op1 "하버드" :op2 "야드"))))
+
+# ::id snt17.E2017.Wiki.010 ::category EXWIKI :: split dev
+# ::snt 버락 오바마 대통령은 1993년부터 2004년까지 시카고대학교 법학대학원에서 강사로 재직하며 헌법학 강의를 했다.
+# ::note
+(h / have-org-role-91
+      :ARG0 (p / person :wiki "버락_오바마" :name (이 / 이름 :op1 "버락" :op2 "오바마")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG2 (대 / 대통령)))
+      :ARG1 (u / university :wiki "시카고_대학교_법학대학원" :name (이2 / 이름 :op1 "시카고대학교" :op2 "법학대학원"))
+      :ARG2 (강 / 강사)
+      :ARG3 (강2 / 강의-00
+            :ARG0 p
+            :ARG1 (헌 / 헌법학))
+      :time (d / date-interval
+            :op1 (d2 / date-entity :year 1993)
+            :op2 (d3 / date-entity :year 2004)))
+
+# ::id snt25.E2017.Wiki.010 ::category EXWIKI :: split dev
+# ::snt 정치 분야에는 볼리비아 제74대 대통령 곤살로 산체스 데 로사다, 전 엘살바도르 대통령 알바로 마가냐 등이 있다.
+# ::note
+(등 / 등
+      :domain (분 / 분야
+            :mod (정 / 정치))
+      :op1 (p / person :wiki "곤살로_산체스_데_로사다" :name (이 / 이름 :op1 "곤살로" :op2 "산체스" :op3 "데" :op4 "로사다")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (c / country :wiki "볼리비아" :name (이2 / 이름 :op1 "볼리비아"))
+                  :ARG2 (대 / 대통령
+                        :ord (o / ordinal-entity :value 74))))
+      :op2 (p2 / person :wiki "알바로_마가냐" :name (이3 / 이름 :op1 "알바로" :op2 "마가냐")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG1 (c2 / country :wiki "엘살바도르" :name (이4 / 이름 :op1 "엘살바도르"))
+                  :ARG2 (대2 / 대통령)
+                  :time (전 / 전))))
+
+# ::id snt29.E2017.Wiki.010 ::category EXWIKI :: split dev
+# ::snt 천문학 분야에서는 퓰리처상을 수상한 칼 세이건, 천문학자 에드윈 허블 등이 있다.
+# ::note
+(등 / 등
+      :domain (분 / 분야
+            :mod (천 / 천문학))
+      :op1 (p / person :wiki "칼_세이건" :name (이 / 이름 :op1 "칼" :op2 "세이건")
+            :ARG0-of (수 / 수상-01
+                  :ARG1 (a / award :wiki "퓰리처상" :name (이2 / 이름 :op1 "퓰리처상"))))
+      :op2 (p2 / person :wiki "에드윈_허블" :name (이3 / 이름 :op1 "에드윈" :op2 "허블")
+            :mod (학 / 학자
+                  :topic (천2 / 천문학))))
+
+# ::id snt16.E2017.Wiki.013 ::category EXWIKI :: split dev
+# ::snt 이는 오랜 시간이 흐른 후 독특한 터빈을 고안할 때 이용되었다고 알려져 있다.
+# ::note
+(알 / 알-01
+      :ARG1 (이 / 이용-01
+            :ARG1 (이2 / 이)
+            :ARG2 (고 / 고안-01
+                  :ARG1 (터 / 터빈
+                        :ARG1-of (독 / 독특-01))
+                  :time (후 / 후
+                        :op1 (시 / 시간
+                              :ARG1-of (오 / 오래-01))))))
+
+# ::id snt22.E2017.Wiki.013 ::category EXWIKI :: split dev
+# ::snt 테슬라의 형 다니엘은 열두 살에 불의의 사고로 죽었다.
+# ::note
+(죽 / 죽-01
+      :ARG1 (p / person :wiki - :name (이 / 이름 :op1 "다니엘")
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (p2 / person :wiki "니콜라_테슬라" :name (이2 / 이름 :op1 "테슬라"))
+                  :ARG2 (형 / 형)))
+      :cause (사 / 사고
+            :mod (불 / 불의))
+      :time (a / age-01
+            :ARG1 p
+            :ARG2 (t / temporal-quantity :quant 12 :unit (살 / 살))))
+
+# ::id snt23.E2017.Wiki.013 ::category EXWIKI :: split dev
+# ::snt 테슬라의 자서전에 따르면, 아버지의 친구가 선물해 준 말 때문에 다쳐 죽었다고 한다.
+# ::note
+(말 / 말하-01
+      :ARG0 (자 / 자서전
+            :poss (p / person :wiki "니콜라_테슬라" :name (이 / 이름 :op1 "테슬라")))
+      :ARG1 (죽 / 죽-01
+            :cause (다 / 다치-01
+                  :cause (말2 / 말
+                        :ARG1-of (선 / 선물-01
+                              :ARG0 (사 / 사람
+                                    :ARG0-of (h / have-rel-role-91
+                                          :ARG1 (사2 / 사람
+                                                :ARG0-of (h2 / have-rel-role-91
+                                                      :ARG1 p
+                                                      :ARG2 (아 / 아버지)))
+                                          :ARG2 (친 / 친구))))))))
+
+# ::id snt0.E2017.Wiki.014 ::category EXWIKI :: split dev
+# ::snt 계산 복잡도 이론
+# ::note
+(계 / 계산복잡도이론)
+
+# ::id snt3.E2017.Wiki.015 ::category EXWIKI :: split dev
+# ::snt 공기의 주성분 중 하나로, 지구뿐 아니라 우주 전체에 걸쳐 다른 원소와 공유 결합된 상태로 널리 퍼져 있다.
+# ::note
+(a / and
+      :op1 (성 / 성분
+            :mod (주 / 주)
+            :consist-of-of (공 / 공기))
+      :op2 (퍼 / 퍼지-01
+            :extent (널 / 널리)
+            :ARG1 성
+            :ARG2 (전 / 전체
+                  :mod (우 / 우주)
+                  :mod (아 / 아니-02
+                        :ARG1 (지 / 지구)))
+            :manner (상 / 상태
+                  :mod (결 / 결합-00
+                        :mod (공2 / 공유)
+                        :ARG2 (원 / 원소
+                              :ARG2-of (다 / 다르-01))))))
+
+# ::id snt32.E2017.Wiki.015 ::category EXWIKI :: split dev
+# ::snt 그러나 지표 가까이에 존재하는 오존은 강한 산화력을 가지며 건강에 해로워 대기 오염물질로 취급한다.
+# ::note
+(a / and
+      :op1 (가 / 가지-01
+            :ARG0 (오 / 오존
+                  :location (가2 / 가까이
+                        :op1 (지 / 지표)))
+            :ARG1 (산 / 산화력
+                  :ARG1-of (강 / 강하-01)))
+      :op2 (취 / 취급-02
+            :ARG1 오
+            :ARG2 (물 / 물질
+                  :ARG0-of (오2 / 오염-01
+                        :ARG1 (대 / 대기)))
+            :cause (해 / 해롭-00
+                  :ARG1 오
+                  :ARG2 (건 / 건강))))
+
+# ::id snt16.E2017.Wiki.016 ::category EXWIKI :: split dev
+# ::snt 이것이 후에 프랑스 대혁명이 일어나는 원인을 가져왔다.
+# ::note
+(일 / 일어나-01
+      :cause (이2 / 이것)
+      :ARG1 (e / event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스" :op2 "대혁명"))
+      :time (후 / 후))
+
+# ::id snt13.E2017.Wiki.017 ::category EXWIKI :: split dev
+# ::snt 이는 당시 유럽의 인구의 약 30%에 달하는 숫자이다.
+# ::note
+(i / include-91
+      :ARG1 (이 / 이)
+      :ARG2 (인 / 인구
+            :location (c / continent :wiki "유럽" :name (이2 / 이름 :op1 "유럽"))
+            :time (당 / 당시))
+      :ARG3 (약 / 약 :op1 (p / percentage-entity :value 30)))
+
+# ::id snt21.E2017.Wiki.017 ::category EXWIKI :: split dev
+# ::snt 증상이 더욱 진행되면 검게 변색된 부위에 괴저가 발생하고, 죽음에 이르게 된다.
+# ::note
+(a / and
+      :op1 (발 / 발생-01
+            :ARG1 (d / desease :wiki "괴저" :name (이 / 이름 :op1 "괴저"))
+            :ARG2 (부 / 부위
+                  :ARG1-of (변 / 변색-00))
+            :condition (진 / 진행-01
+                  :ARG1 (증 / 증상)
+                  :extent (더 / 더욱)))
+      :op2 (되 / 되-01
+            :ARG2 (죽 / 죽-01)))
+
+# ::id snt40.E2017.Wiki.017 ::category EXWIKI :: split dev
+# ::snt 당시 흑사병이 심했던 지역으로는 허베이 이외에 장시 성, 산시 성, 후난 성, 광둥 성, 광시, 허난 성, 쓰이위엔 등이었다.
+# ::note
+(심 / 심하-01
+      :ARG1 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병"))
+      :time (당 / 당시)
+      :location (등 / 등
+            :op1 (p / province :wiki "허베이성" :name (이2 / 이름 :op1 "허베이"))
+            :op2 (p2 / province :wiki "장시성" :name (이3 / 이름 :op1 "장시" :op2 "성"))
+            :op3 (p3 / province :wiki "산시성_(산서성)" :name (이4 / 이름 :op1 "산시" :op2 "성"))
+            :op4 (p4 / province :wiki "후난성" :name (이5 / 이름 :op1 "후난" :op2 "성"))
+            :op5 (p5 / province :wiki "광둥성" :name (이6 / 이름 :op1 "광둥" :op2 "성"))
+            :op6 (p6 / province :wiki "광시_좡족_자치구" :name (이7 / 이름 :op1 "광시"))
+            :op7 (p7 / province :wiki "허난성" :name (이8 / 이름 :op1 "허난" :op2 "성"))
+            :op8 (p8 / province :wiki - :name (이9 / 이름 :op1 "쓰이위엔"))))
+
+# ::id snt42.E2017.Wiki.017 ::category EXWIKI :: split dev
+# ::snt 1347년에 처음 발생한 트라브존과 콘스탄티노플의 흑사병 역시 이러한 가설을 뒷받침하고 있다.
+# ::note
+(뒷 / 뒷받침-01
+      :ARG0 (d / desease :wiki "흑사병" :name (이 / 이름 :op1 "흑사병")
+            :ord (o / ordinal-entity :value 1)
+            :ARG1-of (발 / 발생-01
+                  :time (d2 / date-entity :year 1347)
+                  :location (a / and
+                        :op1 (c / city :wiki "트라브존" :name (이2 / 이름 :op1 "트라브존"))
+                        :op2 (c2 / city :wiki "콘스탄티노폴리스" :name (이3 / 이름 :op1 "콘스탄티노플")))))
+      :mod (역 / 역시)
+      :ARG1 (가 / 가설
+            :ARG1-of (이4 / 이러하-00)))
+
+# ::id snt3.E2017.Wiki.018 ::category EXWIKI :: split dev
+# ::snt 듀발 군의 군청 소재지이며, 인구는 2010년 조사 기준 821,784명이다.
+# ::note
+(a / and
+      :op1 (소 / 소재-01
+            :ARG1 (군 / 군청
+                  :poss (c / county :wiki - :name (이 / 이름 :op1 "듀발" :op2 "군"))))
+      :op2 (인 / 인구 :quant 821784 :unit (명 / 명)
+            :mod (기 / 기준
+                  :op1 (조 / 조사-01
+                        :time (d / date-entity :year 2010)))))
+
+# ::id snt1.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 김씨는 지난해 대통령선거의 더불어민주당 경선 때 안 지사 캠프에서 일했다.
+# ::note
+(일 / 일하-01
+      :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "김"))
+      :location (캠 / 캠프
+            :mod (p2 / person :wiki - :name (이2 / 이름 :op1 "안")
+                  :ARG0-of (h / have-org-role-91
+                        :ARG2 (지 / 지사))))
+      :time (경 / 경선
+            :mod (p3 / political-party :wiki "더불어민주당" :name (이3 / 이름 :op1 "더불어민주당"))
+            :mod (선 / 선거
+                  :mod (대 / 대통령))
+            :time (지2 / 지난해)))
+
+# ::id snt12.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 하지만 저희도 이겨낼 수 없는 신종 파나마병이 발병했어요.
+# ::note
+(c / contrast-01
+      :ARG2 (발 / 발병-01
+            :ARG1 (d / desease :wiki "파나마병" :name (이 / 이름 :op1 "파나마병")
+                  :mod (신 / 신종)
+                  :mod (가 / 가능-01
+                        :polarity -
+                        :ARG1 (이2 / 이기-01
+                              :ARG0 (우 / 우리)
+                              :ARG1 d)))))
+
+# ::id snt18.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 1953년 부산에서 극작가 이보라와 결혼했다.
+# ::note
+(결 / 결혼-01
+      :ARG1 (p / person :wiki - :name (이 / 이름 :op1 "이보라")
+            :mod (작 / 작가
+                  :topic (극 / 극)))
+      :time (d / date-entity :year 1953)
+      :location (c / city :wiki "부산광역시" :name (이2 / 이름 :op1 "부산")))
+
+# ::id snt36.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 이 기술은 평창올림픽에서 시범서비스로 직접 적용되기도 했다.
+# ::note
+(적 / 적용-01
+      :ARG1 (기 / 기술
+            :mod (이 / 이))
+      :ARG2 (서 / 서비스
+            :purpose (시 / 시범))
+      :manner (직 / 직접)
+      :time (g / game :wiki "2018년_동계_올림픽" :name (이2 / 이름 :op1 "평창올림픽")))
+
+# ::id snt58.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 그 결과 10만명 이상이 Hdac 홈페이지에 방문한 것으로 집계됐다.
+# ::note
+(집 / 집계-01
+      :ARG1 (방 / 방문-01
+            :ARG0 (사 / 사람 :quant (이 / 이상 :op1 100000) :unit (명 / 명))
+            :ARG1 (홈 / 홈페이지
+                  :poss (c / company :wiki - :name (이2 / 이름 :op1 "Hdac")))
+            :cause (결 / 결과
+                  :mod (그 / 그))))
+
+# ::id snt62.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 그러나 두 공연 모두 대가를 받지 못했다.
+# ::note
+(c / contrast-01
+      :ARG2 (받 / 받-01
+            :polarity -
+            :ARG0 (공 / 공연-01      :quant 2)
+            :ARG1 (대 / 대가)
+            :mod (모 / 모두)))
+
+# ::id snt66.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 비례 원리는 재능과 운의 불균등 분포라는 구조적 조건에 대체로 눈을 감는다.
+# ::note
+(눈 / 눈감-00
+      :ARG1 (원 / 원리
+            :mod (비 / 비례))
+      :ARG2 (조 / 조건
+            :mod (구 / 구조적)
+            :example (분 / 분포
+                  :mod (불 / 불균등-00
+                        :ARG1 (a / and
+                              :op1 (재 / 재능)
+                              :op2 (운 / 운)))))
+      :mod (대 / 대체로))
+
+# ::id snt75.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 혼자 궁상을 떨거나 고독을 씹지 마세요.
+# ::note
+(o / or
+      :polarity -
+      :mode imperative
+      :op1 (궁 / 궁상떨-00)
+      :op2 (고 / 고독을-씹-00)
+      :manner (혼 / 혼자))
+
+# ::id snt107.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 경기도는 24일 오후 2시를 기해 동부권 7개 시·군에 내려진 초미세먼지 주의보를 해제했다.
+# ::note
+(해 / 해제-01
+      :ARG0 (g / government-organization :wiki "경기도" :name (이 / 이름 :op1 "경기도"))
+      :ARG1 (주 / 주의보
+            :topic (초 / 초미세먼지)
+            :ARG1-of (내 / 내리-03
+                  :ARG0 g
+                  :ARG2 (a / and :quant 7 :unit (개 / 개)
+                        :op1 (시 / 시)
+                        :op2 (군 / 군)
+                        :mod (동 / 동부권
+                              :part-of (p / province :wiki "경기도" :name (이2 / 이름 :op1 "경기도"))))
+                  :ARG1-of (기 / 기하-01
+                        :ARG0 g
+                        :ARG2 (d / date-entity :day 24 :time "14:00")))))
+
+# ::id snt119.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 급할수록 돌아가도록 하세요.
+# ::note
+(c / correlate-91
+      :ARG1 (h / have-degree-91
+            :ARG2 (급 / 급하-01))
+      :ARG2 (권 / 권하-01
+            :ARG1 (돌 / 돌아가-01)))
+
+# ::id snt129.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 일요일인 25일 낮부터 차차 맑아질 것으로 기상지청은 내다봤다.
+# ::note
+(내 / 내다보-01
+      :ARG0 (g / government-organization :wiki - :name (이 / 이름 :op1 "기상지청"))
+      :ARG1 (되 / 되-01
+            :ARG2 (맑 / 맑-00)
+            :mod (차 / 차차)
+            :time (이2 / 이후
+                  :op1 (d / date-entity
+                        :day 25
+                        :weekday (일 / 일요일)
+                        :dayperiod (낮 / 낮)))))
+
+# ::id snt131.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 애정운은 의외로 좋습니다.
+# ::note
+(좋 / 좋-01
+      :ARG1 (운 / 운
+            :topic (애 / 애정))
+      :mod (의 / 의외로))
+
+# ::id snt145.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 국내 정보통신기술 기업들이 26일 스페인 바르셀로나에서 개막하는 MWC2018에서 5G 이슈 선점에 나선다.
+# ::note
+(나 / 나서-02
+      :ARG0 (기 / 기업
+            :topic (정 / 정보통신기술)
+            :location (국 / 국내))
+      :ARG1 (선 / 선점-00
+            :ARG1 (이 / 이슈
+                  :topic (5 / 5G)))
+      :location (e / event :wiki "모바일_월드_콩그레스" :name (이2 / 이름 :op1 "MWC")
+            :time (d / date-entity :year 2018)
+            :ARG1-of (개 / 개막-01
+                  :location (c / city :wiki "바르셀로나" :name (이3 / 이름 :op1 "바르셀로나")
+                        :location (c2 / country :wiki "스페인" :name (이4 / 이름 :op1 "스페인")))
+                  :time (d2 / date-entity :day 26))))
+
+# ::id snt155.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 당시 여의도 광장 집회에는 약 110만 명의 군중이 모였다.
+# ::note
+(모 / 모으-01
+      :ARG1 (군 / 군중 :quant (약 / 약 :op1 1100000) :unit (명 / 명))
+      :ARG2 (집 / 집회
+            :location (p / park :wiki "여의도공원" :name (이 / 이름 :op1 "여의도" :op2 "광장")))
+      :time (당 / 당시))
+
+# ::id snt170.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 애정운도 나쁘지는 않습니다.
+# ::note
+(나 / 나쁘-01
+      :polarity -
+      :ARG1 (운 / 운
+            :topic (애 / 애정)))
+
+# ::id snt173.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 노력하는 자만이 행운을 움켜쥘 수 있을 거예요.
+# ::note
+(움 / 움켜쥐-00
+      :ARG1 (행 / 행운)
+      :condition (노 / 노력-01))
+
+# ::id snt186.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 이번에 추가된 전용서버는 PS4와 X박스원이다.
+# ::note
+(추 / 추가-01
+      :ARG1 (서 / 서버
+            :mod (전 / 전용)
+            :purpose (a / and
+                  :op1 (p / product :wiki "플레이스테이션_4" :name (이 / 이름 :op1 "PS4"))
+                  :op2 (p2 / product :wiki "엑스박스_원" :name (이2 / 이름 :op1 "X박스원"))))
+      :time (이3 / 이번))
+
+# ::id snt204.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 그래서 법적 절차가 필요하다.
+# ::note
+(c / cause-01
+      :ARG1 (필 / 필요-01
+            :ARG1 (절 / 절차
+                  :mod (법 / 법적))))
+
+# ::id snt224.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 써야 할 때는 확실히 쓰도록 하세요.
+# ::note
+(권 / 권하-01
+      :ARG1 (쓰 / 쓰-01
+            :manner (확 / 확실하-01))
+      :condition (o / obligate-01
+            :ARG2 (쓰2 / 쓰-01)))
+
+# ::id snt248.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 1996년 출시된 원작과 달리 LTE를 지원하고, 133.5*49.3*14.9mm의 크기로 휴대가 간편해졌다.
+# ::note
+(a / and
+      :op1 (지 / 지원-02
+            :ARG1 (L / LTE)
+            :mod (다 / 다르-01
+                  :ARG2 (원 / 원작
+                        :ARG1-of (출 / 출시-01
+                              :time (d / date-entity :year 1996)))))
+      :op2 (간 / 간편하-01
+            :ARG1 (휴 / 휴대-01)
+            :cause (크 / 크기
+                  :mod (p / product-of
+                        :op1 (d2 / distance-quantity :quant 133.5 :unit (m / millimeter))
+                        :op2 (d3 / distance-quantity :quant 49.3 :unit (m2 / millimeter))
+                        :op3 (d4 / distance-quantity :quant 14.9 :unit (m3 / millimeter))))))
+
+# ::id snt249.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 아이들은 졸업공연 연습에 몰두하고 있었다.
+# ::note
+(몰 / 몰두-00
+      :ARG0 (아 / 아이)
+      :ARG1 (연 / 연습-01
+            :ARG0 아
+            :ARG1 (공 / 공연-01
+                  :topic (졸 / 졸업-01))))
+
+# ::id snt252.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::snt 행사에는 개인 판매장터뿐 아니라 재사용을 실천하는 사회적기업, 비영리단체 등도 참여한다.
+# ::note
+(참 / 참여-01
+      :ARG0 (등 / 등
+            :op1 (비 / 비영리단체)
+            :op2 (사 / 사회적기업)
+            :ARG0-of (실 / 실천-01
+                  :ARG1 (재 / 재사용-00))
+            :mod (아 / 아니-02
+                  :ARG1 (판 / 판매장터
+                        :poss (개 / 개인))))
+      :ARG1 (행 / 행사))
+
+# ::id 081227.01.krdict.nikl.ex.snt.002 ::category KBDICT :: split dev
+# ::snt 지수는 바나나를 초콜릿으로 얇게 코팅한 디저트를 좋아한다.
+# ::note
+(좋 / 좋-01
+      :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "지수"))
+      :ARG1 (디 / 디저트
+            :mod (코 / 코팅-00
+                  :ARG1 (바 / 바나나)
+                  :ARG2 (초 / 초콜릿)
+                  :manner (얇 / 얇-01))))
+
+# ::id 088545.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split dev
+# ::snt 해바라기의 꽃대가 바람에 휘청휘청한다.
+# ::note
+(휘 / 휘청휘청하-00
+      :ARG1 (꽃 / 꽃대
+            :part-of (해 / 해바라기))
+      :cause (바 / 바람))
+
+# ::id 015640.04.krdict.nikl.ex.snt.002 ::category KBDICT :: split dev
+# ::snt 여름에는 짙은 색의 속옷을 입으면 속옷이 비치기 쉽다.
+# ::note
+(가 / 가능-01
+      :condition (입 / 입-01
+            :time (여 / 여름)
+            :ARG1 (속 / 속옷
+                  :mod (색 / 색
+                        :ARG1-of (짙 / 짙-01))))
+      :ARG1 (비 / 비치-01
+            :ARG1 속))
+
+# ::id 069321.01.krdict.nikl.ex.snt.002 ::category KBDICT :: split dev
+# ::snt 우리 학교에서는 학생들을 위해 학교와 지하철역을 오가는 셔틀버스를 운행하고 있다.
+# ::note
+(운 / 운행-00
+      :ARG0 (학 / 학교
+            :poss (우 / 우리))
+      :ARG1 (셔 / 셔틀버스
+            :ARG1-of (오 / 오가-01
+                  :ARG2 (사 / 사이
+                        :op1 학
+                        :op2 (역 / 역
+                              :mod (지 / 지하철)))))
+      :purpose (사2 / 사람
+            :ARG0-of (공 / 공부-01)))
+
+# ::id 063350.01.krdict.nikl.ex.snt.002 ::category KBDICT :: split dev
+# ::snt 그는 오늘따라 여자 친구를 보고 새삼스럽게 가슴이 두근거렸다.
+# ::note
+(설 / 설레-00
+      :ARG1 (그 / 그)
+      :cause (보 / 보-01
+            :ARG0 그
+            :ARG1 (여 / 여자친구))
+      :postp-따라 (오 / 오늘))
+
+# ::id 062210.13.krdict.nikl.ex.snt.001 ::category KBDICT :: split dev
+# ::snt 학교 연구실에 자리가 나서 새 연구원이 뽑혀 들어왔다.
+# ::note
+(채 / 채용-01
+      :ARG1 (사 / 사람
+            :ARG0-of (연 / 연구-01)
+            :ARG1-of (새 / 새롭-01))
+      :cause (나 / 나-01
+            :ARG1 (자 / 자리)
+            :ARG2 (연2 / 연구실
+                  :location (학 / 학교))))
+
+# ::id 091198.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split dev
+# ::snt 나이가 드니 살이 탄력이 없어져서 물렁거렸다.
+# ::note
+(물 / 물렁거리-00
+      :ARG1 (살 / 살
+            :mod (탄 / 탄력 :polarity -))
+      :cause (들 / 들-04
+            :ARG2 (나 / 나이)))
+
+# ::id 065200.02.krdict.nikl.ex.snt.001 ::category KBDICT :: split dev
+# ::snt 지수와 나는 서로의 비밀을 모두 알 정도로 가까운 사이이다.
+# ::note
+(사 / 사이
+      :ARG1-of (가 / 가깝-00)
+      :domain (a / and
+            :op1 (p / person :wiki - :name (이 / 이름 :op1 "지수"))
+            :op2 (나 / 나))
+      :ARG2-of (h / have-degree-91
+            :ARG1 a
+            :ARG6 (알 / 알-01
+                  :ARG0 a
+                  :ARG1 (비 / 비밀
+                        :poss a
+                        :quant (모 / 모두)))))
+
+# ::id 088578.01.krdict.nikl.ex.snt.003 ::category KBDICT :: split dev
+# ::snt 나무로 된 마룻바닥이 낡아서 밟을 때마다 삐거덕대는 소리를 냈다.
+# ::note
+(나 / 나-01
+      :ARG1 (소 / 소리
+            :mod (삐 / 삐거덕-00))
+      :ARG2 (바 / 바닥
+            :mod (마 / 마루)
+            :consist-of (나2 / 나무))
+      :cause (낡 / 낡-01
+            :ARG1 바)
+      :time (밟 / 밟-00
+            :ARG1 바))
+
+# ::id 077646.01.krdict.nikl.ex.snt.002 ::category KBDICT :: split dev
+# ::snt 이 은행은 고객의 재직이나 소득만 증빙될 수 있으면 언제든지 소액 대출을 할 수 있다.
+# ::note
+(가 / 가능-01
+      :domain (은 / 은행
+            :mod (이 / 이))
+      :ARG1 (대 / 대출-01
+            :ARG1 (소 / 소액)
+            :time (언 / 언제든지))
+      :condition (가2 / 가능-01
+            :ARG1 (증 / 증빙-00
+                  :ARG1 (o / or
+                        :op1 (재 / 재직-01
+                              :ARG0 (고 / 고객))
+                        :op2 (소2 / 소득
+                              :poss 고)))))
+
+# ::id 056547.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split dev
+# ::snt 아이는 작은 입을 벌려 엄마가 떠 주는 수프를 받아먹고 있다.
+# ::note
+(받 / 받아먹-00
+      :ARG0 (아 / 아이)
+      :ARG1 (수 / 수프
+            :ARG1-of (떠 / 떠주-00
+                  :ARG0 (사 / 사람
+                        :ARG0-of (h / have-rel-role-91
+                              :ARG1 아
+                              :ARG2 (엄 / 엄마)))))
+      :manner (벌 / 벌리-01
+            :ARG0 아
+            :ARG1 (입 / 입 :part-of 아)))
+
+# ::id snt0.E2016.837.02_A_02 ::category EXWKQA :: split dev
+# ::snt 백제시대 지방행정구역인 방(方)의 최고 책임자.
+# ::note
+(사 / 사람
+      :ARG0-of (h / have-org-role-91
+            :ARG1 (방 / 방
+                  :mod (구 / 구역
+                        :mod (행 / 행정)
+                        :location (지 / 지방)))
+            :ARG2 (책 / 책임자
+                  :mod (최 / 최고))))
+
+# ::id snt0.E2016.837.03_A_02 ::category EXWKQA :: split dev
+# ::snt <인명> 미국의 화학자(1881~1957).
+# ::note
+(화 / 화학자
+      :topic (인 / 인명)
+      :mod (c / country :wiki "미국" :name (이 / 이름 :op1 "미국"))
+      :time (d / date-interval
+            :op1 (d2 / date-entity :year 1881)
+            :op2 (d3 / date-entity :year 1957)))
+
+# ::id snt7.E2017.NEWS.012 ::category EXNEWS :: split dev
+# ::snt 하지만 청와대는 민정수석의 운영위 출석은 전례가 없는 일이라고 선을 긋고 있다.
+# ::note
+(선 / 선을-긋-00
+      :ARG0 (g / government-organization :wiki "청와대" :name (이 / 이름 :op1 "청와대"))
+      :manner (말 / 말하-01
+            :ARG0 g
+            :ARG1 (전 / 전례
+                  :polarity -
+                  :domain (출 / 출석-01
+                        :ARG0 (민 / 민정수석)
+                        :ARG1 (g2 / government-organization :wiki "대한민국_국회_국회운영위원회" :name (이2 / 이름 :op1 "운영위"))))))
+
+# ::id snt9.E2017.NEWS.012 ::category EXNEWS :: split dev
+# ::snt 결국 이날 열린 운영위 회의는 조 수석의 출석을 둘러싸고 여야 간 대치가 벌어지다 파행됐다.
+# ::note
+(파 / 파행-00
+      :mod (결 / 결국)
+      :ARG1 (회 / 회의-00
+            :ARG0 (g / government-organization :wiki "대한민국_국회_국회운영위원회" :name (이 / 이름 :op1 "운영위"))
+            :time (이2 / 이날))
+      :time (이3 / 이후
+            :op1 (대 / 대치-01
+                  :ARG0 (여 / 여당)
+                  :ARG1 (야 / 야당)
+                  :topic (출 / 출석-01
+                        :ARG0 (p / person :wiki "조국_(법학자)" :name (이4 / 이름 :op1 "조")
+                              :ARG0-of (h / have-org-role-91
+                                    :ARG2 (수 / 수석)))
+                        :ARG1 회))))
+
+# ::id snt18.E2017.NEWS.012 ::category EXNEWS :: split dev
+# ::snt 임 실장의 이러한 발언은 야권에서 제기하는 조 수석에 책임을 묻는 것을 의식한 것으로 해석된다.
+# ::note
+(해 / 해석-01
+      :ARG1 (발 / 발언-01
+            :ARG0 (p / person :wiki "임종석" :name (이 / 이름 :op1 "임")
+                  :ARG2-of (h / have-org-role-91
+                        :ARG2 (실 / 실장)))
+            :ARG1-of (이2 / 이렇-01))
+      :attribute (의 / 의식-01
+            :ARG1 (묻 / 묻-01
+                  :ARG1 (책 / 책임지-01
+                        :ARG1 (p2 / person :wiki "조국_(법학자)" :name (이3 / 이름 :op1 "조")
+                              :ARG0-of (h2 / have-org-role-91
+                                    :ARG2 (수 / 수석))))
+                  :ARG2 p2
+                  :ARG1-of (제 / 제기-01
+                        :ARG0 (야 / 야권)))))
+
+# ::id snt0.E2016.888.01_Q_01 ::category EXWKQA :: split dev
+# ::snt 피고인에게 인정되는 것은 무엇일까?
+# ::note
+(인 / 인정-01
+      :ARG1 (a / amr-unknown)
+      :beneficiary (피 / 피고인))
+
+# ::id snt1.E2016.888.06_A_01 ::category EXWKQA :: split dev
+# ::snt 주로 습곡구조이며 장백산맥·강남산맥·적유령산맥·묘향산맥·언진산맥·멸악산맥·함경산맥 등의 산맥이 이에 속한다.
+# ::note
+(a / and
+      :op1 (구 / 구조
+            :mod (습 / 습곡)
+            :mod (주 / 주로))
+      :op2 (속 / 속하-01
+            :ARG1 (산 / 산맥
+                  :example (등 / 등
+                        :op1 (m / mountain :wiki "창바이산맥" :name (이 / 이름 :op1 "장백산맥"))
+                        :op2 (m2 / mountain :wiki "강남산맥" :name (이2 / 이름 :op1 "강남산맥"))
+                        :op3 (m3 / mountain :wiki "적유령산맥" :name (이3 / 이름 :op1 "적유령산맥"))
+                        :op4 (m4 / mountain :wiki "묘향산맥" :name (이4 / 이름 :op1 "묘향산맥"))
+                        :op5 (m5 / mountain :wiki - :name (이5 / 이름 :op1 "언진산맥"))
+                        :op6 (m6 / mountain :wiki "멸악산맥" :name (이6 / 이름 :op1 "멸악산맥"))
+                        :op7 (m7 / mountain :wiki "함경산맥" :name (이7 / 이름 :op1 "함경산맥"))))
+            :ARG2 (이8 / 이)))
+
+# ::id lpp_1943.13 ::category TLPPRL :: split dev
+# ::snt 내 그림은 모자가 아니고,
+# ::note
+(a / and
+      :op1 (모 / 모자
+            :polarity -
+            :domain (그 / 그림
+                  :poss (나 / 나))))
+
+# ::id lpp_1943.25 ::category TLPPRL :: split dev
+# ::snt 이렇게 해서 나는 수많은, 성실한 사람들과 많은 접촉을 가지게 되었다.
+# ::note
+(접 / 접촉-01
+      :ARG0 (나 / 나)
+      :ARG1 (사 / 사람
+            :ARG1-of (수 / 수많-01)
+            :ARG1-of (성 / 성실-01))
+      :ARG1-of (많 / 많-01)
+      :manner (하 / 하-01
+            :mod (이 / 이렇-01)))
+
+# ::id lpp_1943.29 ::category TLPPRL :: split dev
+# ::snt 좀 총명해 보이는 어른을 만나면 늘 간직하고 있던 내 첫 번째 그림으로 시험을 해 보았다.
+# ::note
+(시 / 시도-01
+      :ARG1 (시2 / 시험-01
+            :ARG1 (어 / 어른
+                  :ARG1-of (보 / 보-02
+                        :ARG1 (총 / 총명하-00)))
+            :instrument (그 / 그림 :ord (o / ordinal-entity :value 1)
+                  :poss (나 / 나)
+                  :ARG1-of (간 / 간직-01
+                        :time (늘 / 늘))))
+      :condition (만 / 만나-01
+            :ARG1 어))
+
