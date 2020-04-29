@@ -9140,8 +9140,7 @@
 # ::snt 10여 분 뒤 현장에 도착한 119구급대에 따르면 "당시 임 씨의 맥박은 거의 멈춘 상태였다"고 한다.
 # ::note
 (하 / 하-02
-      :ARG0 (구 / 구급대
-            :mod (1 / 119)
+      :ARG0 (g / government-organization :wiki "대한민국의_소방#소방관서" :name (이 / 이름 :op1 "119구급대")
             :ARG1-of (도 / 도착-01
                   :ARG3 (현 / 현장)
                   :time (뒤 / 뒤
@@ -9149,7 +9148,7 @@
                               :op1 (t / temporal-quantity :quant 10 :unit (분 / 분))))))
       :ARG1 (h / have-degree-91
             :ARG1 (맥 / 맥박
-                  :poss (p / person :wiki - :name (이 / 이름 :op1 "임")))
+                  :poss (p / person :wiki - :name (이2 / 이름 :op1 "임")))
             :ARG2 (멈 / 멈추-01
                   :ARG1 맥)
             :ARG3 (거 / 거의)))
