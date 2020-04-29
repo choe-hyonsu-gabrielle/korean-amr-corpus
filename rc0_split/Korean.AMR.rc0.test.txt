@@ -382,7 +382,7 @@
                   :ARG0-of (이 / 이끌-01
                         :ARG1 (시 / 시대
                               :mod (평 / 평화
-                                    :mod (c / country :wiki "로마_제국" :name (이2 / 이름 :op1 "로마" :op2 "제국"))))))))
+                                    :mod (c / country :wiki "로마_제국" :name (이2 / 이름 :op1 "로마"))))))))
 
 # ::id snt0.E2016.835.02_A_02 ::category EXWKQA :: split test
 # ::snt 그의 뒤를 이어 원근법을 구체적으로 회화에 처음 도입한 사람은 30년도 채 못 살고 약물 중독으로 추정되는 이유로 요절한 피렌체의 화가 마사초(Masaccio, 1401~1428)다.
@@ -452,8 +452,7 @@
 (이 / 이름
       :topic (지 / 지명)
       :medium (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
-      :mod (c / city :wiki "피렌체" :name (이3 / 이름 :op1 "피렌체")
-            :location (c2 / country :wiki "이탈리아" :name (이4 / 이름 :op1 "이탈리아"))))
+      :mod (c / city :wiki "피렌체" :name (이3 / 이름 :op1 "피렌체")))
 
 # ::id snt0.E2016.836.01_A_02 ::category EXWKQA :: split test
 # ::snt 양동마을(良洞마을)은 경상북도 경주시 강동면 북쪽 설창산에 둘러싸여 있는 유서 깊은 양반마을로 1984년 12월 20일 대한민국의 중요민속자료 제189호로 지정되었고, 2010년 7월 31일 브라질 브라질리아에서 열린 유네스코 세계유산위원회(WHC) 제34차 회의에서 안동 하회마을과 함께 유네스코세계문화유산으로 등재되었다.

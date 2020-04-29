@@ -358,8 +358,8 @@
                         :ARG1 (계 / 계승-00
                               :ARG1 (왕 / 왕위))
                         :ARG2 (a2 / and
-                              :op1 (f / family :wiki "랭커스터가" :name (이2 / 이름 :op1 "랭커스터" :op2 "왕가"))
-                              :op2 (f2 / family :wiki "요크가" :name (이3 / 이름 :op1 "요크" :op2 "왕가"))
+                              :op1 (f / family :wiki "랭커스터가" :name (이2 / 이름 :op1 "랭커스터"))
+                              :op2 (f2 / family :wiki "요크가" :name (이3 / 이름 :op1 "요크"))
                               :mod (귀 / 귀족
                                     :mod (봉 / 봉건
                                           :mod (c / country :wiki "영국" :name (이4 / 이름 :op1 "영국")))))))))

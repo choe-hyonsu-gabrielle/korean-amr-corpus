@@ -2688,7 +2688,7 @@
             :ARG0 (세 / 세포이
                   :poss (c / company :wiki "영국_동인도_회사" :name (이 / 이름 :op1 "영국" :op2 "동인도" :op3 "회사"))
                   :mod (용 / 용병))
-            :location (c2 / country :wiki "인도_제국" :name (이2 / 이름 :op1 "영국령" :op2 "인도"))
+            :location (c2 / country :wiki "인도_제국" :name (이2 / 이름 :op1 "영국령(英國領)" :op2 "인도"))
             :time (d / date-entity :year 1857)))
 
 # ::id snt0.E2016.790.11_A_01 ::category EXWKQA :: split train
@@ -2847,7 +2847,7 @@
       :manner (배 / 배경으로-하-00
             :ARG1 저
             :ARG2 (사 / 사상
-                  :poss (p / person :wiki "존_로크" :name (이 / 이름 :op1 "J.로크"))))
+                  :poss (p / person :wiki "존_로크" :name (이 / 이름 :op1 "존" :op2 "로크"))))
       :time (d / date-interval
             :op1 (d2 / date-entity :century 17)
             :op2 (d3 / date-entity :century 18)))
@@ -2902,7 +2902,7 @@
                         :ARG1 (w / war :wiki "소련-일본_전쟁" :name (이8 / 이름 :op1 "대일")))))
       :op3 (체 / 체결-01
             :ARG0 a2
-            :ARG1 (t / treaty :wiki - :name (이9 / 이름 :op1 "얄타" :op2 "비밀" :op1 "협정"))))
+            :ARG1 (t / treaty :wiki - :name (이9 / 이름 :op1 "얄타" :op2 "비밀" :op3 "협정"))))
 
 # ::id snt0.E2016.835.05_Q_01 ::category EXWKQA :: split train
 # ::snt 2차 세계 대전 중 개최된 얄타 회담에 참석한 지도자가 아닌 사람은?
@@ -3041,8 +3041,8 @@
       :topic (역 / 역사)
       :purpose (쟁 / 쟁탈-00
             :ARG0 (a / and
-                  :op1 (f / family :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터" :op2 "왕가"))
-                  :op2 (f2 / family :wiki "요크가" :name (이2 / 이름 :op1 "요크" :op2 "왕가"))
+                  :op1 (f / family :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터가"))
+                  :op2 (f2 / family :wiki "요크가" :name (이2 / 이름 :op1 "요크가"))
                   :mod (c / country :wiki "영국" :name (이3 / 이름 :op1 "영국")))
             :ARG1 (왕 / 왕위))
       :ARG1-of (벌 / 벌이-01
@@ -3108,7 +3108,7 @@
             :ARG1-of (건2 / 건축-00
                   :time (시 / 시대
                         :mod (제 / 제정)
-                        :mod (c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마" :op2 "제국"))))
+                        :mod (c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마"))))
             :location (c2 / city :wiki "로마" :name (이2 / 이름 :op1 "로마")
                   :location (c3 / country :wiki "이탈리아" :name (이3 / 이름 :op1 "이탈리아"))))
       :op2 (이4 / 이름 :op1 "플라비우스" :op2 "원형경기장"
@@ -5446,7 +5446,7 @@
             :ARG1 (p2 / person :wiki "장하성" :name (이4 / 이름 :op1 "장하성")
                   :age (t2 / temporal-quantity :value 64)
                   :ARG0-of (h3 / have-org-role-91
-                        :ARG1 (u / university :wiki "고려대학교" :name (이5 / 이름 :op1 "고려대학교"))
+                        :ARG1 (u / university :wiki "고려대학교" :name (이5 / 이름 :op1 "고려대"))
                         :ARG2 (교 / 교수
                               :topic (경 / 경영학))))
             :ARG2 (정 / 정책실장 :wiki "대한민국의_대통령비서실_정책실장"
@@ -6012,7 +6012,7 @@
             :ARG1 (처 / 처벌-01
                   :mod (다 / 다)
                   :topic (담 / 담합-00
-                        :topic (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업")))))
+                        :topic (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강")))))
       :ARG1 (주2 / 주장-01
             :ARG1 (a / and
                   :op1 (털 / 털어내-00)
@@ -7203,7 +7203,7 @@
       :ARG1 (타 / 타격-01
             :ARG1 (기 / 기지
                   :poss (m / military :wiki "미군" :name (이 / 이름 :op1 "미군"))
-                  :location (c / country :wiki "일본" :name (이2 / 이름 :op1 "일본"))))
+                  :location (c / country :wiki "일본" :name (이2 / 이름 :op1 "일"))))
       :cause (가2 / 가능-01
             :ARG1 (비 / 비행-01
                   :extent (이3 / 이상
@@ -8481,7 +8481,7 @@
             :ARG2 (대2 / 대학
                   :mod (상 / 상위권)
                   :ARG1-of (i / include-91
-                        :ARG2 (u2 / university :wiki "아이비_리그" :name (이6 / 이름 :op1 "아이비" :op2 "리그")))
+                        :ARG2 (u2 / university :wiki "아이비_리그" :name (이6 / 이름 :op1 "아이비리그")))
                   :example (등 / 등
                         :op1 (u3 / university :wiki "컬럼비아_대학교" :name (이7 / 이름 :op1 "컬럼비아"))
                         :op2 (u4 / university :wiki "프린스턴_대학교" :name (이8 / 이름 :op1 "프린스턴"))))))

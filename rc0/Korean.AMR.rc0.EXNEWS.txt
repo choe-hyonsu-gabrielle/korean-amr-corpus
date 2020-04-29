@@ -2323,7 +2323,7 @@
             :ARG1 (p2 / person :wiki "장하성" :name (이4 / 이름 :op1 "장하성")
                   :age (t2 / temporal-quantity :value 64)
                   :ARG0-of (h3 / have-org-role-91
-                        :ARG1 (u / university :wiki "고려대학교" :name (이5 / 이름 :op1 "고려대학교"))
+                        :ARG1 (u / university :wiki "고려대학교" :name (이5 / 이름 :op1 "고려대"))
                         :ARG2 (교 / 교수
                               :topic (경 / 경영학))))
             :ARG2 (정 / 정책실장 :wiki "대한민국의_대통령비서실_정책실장"
@@ -3034,7 +3034,7 @@
             :ARG1 (처 / 처벌-01
                   :mod (다 / 다)
                   :topic (담 / 담합-00
-                        :topic (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강" :op2 "사업")))))
+                        :topic (p / project* :wiki "4대강_정비_사업" :name (이 / 이름 :op1 "4대강")))))
       :ARG1 (주2 / 주장-01
             :ARG1 (a / and
                   :op1 (털 / 털어내-00)
@@ -4702,7 +4702,7 @@
       :ARG1 (타 / 타격-01
             :ARG1 (기 / 기지
                   :poss (m / military :wiki "미군" :name (이 / 이름 :op1 "미군"))
-                  :location (c / country :wiki "일본" :name (이2 / 이름 :op1 "일본"))))
+                  :location (c / country :wiki "일본" :name (이2 / 이름 :op1 "일"))))
       :cause (가2 / 가능-01
             :ARG1 (비 / 비행-01
                   :extent (이3 / 이상

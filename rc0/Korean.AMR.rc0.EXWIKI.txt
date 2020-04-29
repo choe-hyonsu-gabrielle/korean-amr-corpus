@@ -1263,7 +1263,7 @@
             :ARG2 (대2 / 대학
                   :mod (상 / 상위권)
                   :ARG1-of (i / include-91
-                        :ARG2 (u2 / university :wiki "아이비_리그" :name (이6 / 이름 :op1 "아이비" :op2 "리그")))
+                        :ARG2 (u2 / university :wiki "아이비_리그" :name (이6 / 이름 :op1 "아이비리그")))
                   :example (등 / 등
                         :op1 (u3 / university :wiki "컬럼비아_대학교" :name (이7 / 이름 :op1 "컬럼비아"))
                         :op2 (u4 / university :wiki "프린스턴_대학교" :name (이8 / 이름 :op1 "프린스턴"))))))

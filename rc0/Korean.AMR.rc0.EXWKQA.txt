@@ -3371,7 +3371,7 @@
             :ARG0 (세 / 세포이
                   :poss (c / company :wiki "영국_동인도_회사" :name (이 / 이름 :op1 "영국" :op2 "동인도" :op3 "회사"))
                   :mod (용 / 용병))
-            :location (c2 / country :wiki "인도_제국" :name (이2 / 이름 :op1 "영국령" :op2 "인도"))
+            :location (c2 / country :wiki "인도_제국" :name (이2 / 이름 :op1 "영국령(英國領)" :op2 "인도"))
             :time (d / date-entity :year 1857)))
 
 # ::id snt0.E2016.790.10_Q_01 ::category EXWKQA :: split test
@@ -3466,7 +3466,7 @@
                   :ARG0-of (이 / 이끌-01
                         :ARG1 (시 / 시대
                               :mod (평 / 평화
-                                    :mod (c / country :wiki "로마_제국" :name (이2 / 이름 :op1 "로마" :op2 "제국"))))))))
+                                    :mod (c / country :wiki "로마_제국" :name (이2 / 이름 :op1 "로마"))))))))
 
 # ::id snt0.E2016.835.02_A_01 ::category EXWKQA :: split train
 # ::snt 회화에서의 원근법을 사용하여 그림을 그린 최초의 화가.
@@ -3601,7 +3601,7 @@
       :manner (배 / 배경으로-하-00
             :ARG1 저
             :ARG2 (사 / 사상
-                  :poss (p / person :wiki "존_로크" :name (이 / 이름 :op1 "J.로크"))))
+                  :poss (p / person :wiki "존_로크" :name (이 / 이름 :op1 "존" :op2 "로크"))))
       :time (d / date-interval
             :op1 (d2 / date-entity :century 17)
             :op2 (d3 / date-entity :century 18)))
@@ -3676,7 +3676,7 @@
                         :ARG1 (w / war :wiki "소련-일본_전쟁" :name (이8 / 이름 :op1 "대일")))))
       :op3 (체 / 체결-01
             :ARG0 a2
-            :ARG1 (t / treaty :wiki - :name (이9 / 이름 :op1 "얄타" :op2 "비밀" :op1 "협정"))))
+            :ARG1 (t / treaty :wiki - :name (이9 / 이름 :op1 "얄타" :op2 "비밀" :op3 "협정"))))
 
 # ::id snt0.E2016.835.05_Q_01 ::category EXWKQA :: split train
 # ::snt 2차 세계 대전 중 개최된 얄타 회담에 참석한 지도자가 아닌 사람은?
@@ -3834,8 +3834,8 @@
       :topic (역 / 역사)
       :purpose (쟁 / 쟁탈-00
             :ARG0 (a / and
-                  :op1 (f / family :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터" :op2 "왕가"))
-                  :op2 (f2 / family :wiki "요크가" :name (이2 / 이름 :op1 "요크" :op2 "왕가"))
+                  :op1 (f / family :wiki "랭커스터가" :name (이 / 이름 :op1 "랭커스터가"))
+                  :op2 (f2 / family :wiki "요크가" :name (이2 / 이름 :op1 "요크가"))
                   :mod (c / country :wiki "영국" :name (이3 / 이름 :op1 "영국")))
             :ARG1 (왕 / 왕위))
       :ARG1-of (벌 / 벌이-01
@@ -3859,8 +3859,8 @@
                         :ARG1 (계 / 계승-00
                               :ARG1 (왕 / 왕위))
                         :ARG2 (a2 / and
-                              :op1 (f / family :wiki "랭커스터가" :name (이2 / 이름 :op1 "랭커스터" :op2 "왕가"))
-                              :op2 (f2 / family :wiki "요크가" :name (이3 / 이름 :op1 "요크" :op2 "왕가"))
+                              :op1 (f / family :wiki "랭커스터가" :name (이2 / 이름 :op1 "랭커스터"))
+                              :op2 (f2 / family :wiki "요크가" :name (이3 / 이름 :op1 "요크"))
                               :mod (귀 / 귀족
                                     :mod (봉 / 봉건
                                           :mod (c / country :wiki "영국" :name (이4 / 이름 :op1 "영국")))))))))
@@ -3880,8 +3880,7 @@
 (이 / 이름
       :topic (지 / 지명)
       :medium (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
-      :mod (c / city :wiki "피렌체" :name (이3 / 이름 :op1 "피렌체")
-            :location (c2 / country :wiki "이탈리아" :name (이4 / 이름 :op1 "이탈리아"))))
+      :mod (c / city :wiki "피렌체" :name (이3 / 이름 :op1 "피렌체")))
 
 # ::id snt0.E2016.835.08_Q_01 ::category EXWKQA :: split train
 # ::snt 르네상스의 중심 도시로 전체가 유네스코 세계문화유산으로 지정되어 있다.
@@ -3940,7 +3939,7 @@
             :ARG1-of (건2 / 건축-00
                   :time (시 / 시대
                         :mod (제 / 제정)
-                        :mod (c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마" :op2 "제국"))))
+                        :mod (c / country :wiki "로마_제국" :name (이 / 이름 :op1 "로마"))))
             :location (c2 / city :wiki "로마" :name (이2 / 이름 :op1 "로마")
                   :location (c3 / country :wiki "이탈리아" :name (이3 / 이름 :op1 "이탈리아"))))
       :op2 (이4 / 이름 :op1 "플라비우스" :op2 "원형경기장"
