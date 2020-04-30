@@ -1780,7 +1780,7 @@
             :ARG2 (국 / 국왕
                   :ord (a2 / and
                         :op1 (o / ordinal-entity :value 34)
-                        :op2 (마 / 마지막))))
+                        :op2 (o2 / ordinal-entity :value -1))))
       :op2 (h2 / have-rel-role-91
             :ARG0 p
             :ARG1 (p2 / person :wiki "양양공" :name (이3 / 이름 :op1 "양양공")
@@ -1789,14 +1789,14 @@
                               :ARG0-of (h4 / have-org-role-91
                                     :ARG1 c
                                     :ARG2 (국2 / 국왕
-                                          :ord (o2 / ordinal-entity :value 20))))
+                                          :ord (o3 / ordinal-entity :value 20))))
                         :ARG2 (아 / 아들
-                              :ord (o3 / ordinal-entity :value 2))))
+                              :ord (o4 / ordinal-entity :value 2))))
             :ARG2 (손 / 손
-                  :ord (o4 / ordinal-entity :value 7)))
+                  :ord (o5 / ordinal-entity :value 7)))
       :op3 (h5 / have-rel-role-91
             :ARG0 p
-            :ARG1 (p4 / person :wiki "국대비_왕씨" :name (이5 / 이름 :op1 "왕")
+            :ARG1 (p4 / person :wiki "국대비_왕씨" :name (이5 / 이름 :op1 "국대비" :op2 "왕씨")
                   :ARG0-of (h6 / have-rel-role-91
                         :ARG1 (p5 / person :wiki "강양공" :name (이6 / 이름 :op1 "강양공")
                               :ARG0-of (h7 / have-rel-role-91
@@ -1806,7 +1806,7 @@
                                     :ARG2 (서 / 서장자)))
                         :ARG2 (손2 / 손녀)))
             :ARG2 (아2 / 아들
-                  :ord (o5 / ordinal-entity :value 2))))
+                  :ord (o6 / ordinal-entity :value 2))))
 
 # ::id snt0.E2016.788.07_A_02 ::category EXWKQA :: split train
 # ::snt <인명> 고려 제34대 마지막 왕(1345~1394).
@@ -1818,7 +1818,7 @@
             :op2 (d3 / date-entity :year 1394))
       :ord (a / and
             :op1 (o / ordinal-entity :value 34)
-            :op2 (마 / 마지막))
+            :op2 (o2 / ordinal-entity :value -1))
       :ARG2-of (h / have-org-role-91
             :ARG1 (c / country :wiki "고려" :name (이2 / 이름 :op1 "고려"))))
 
@@ -1831,7 +1831,7 @@
             :ARG1 (왕 / 왕조
                   :mod (역 / 역대))
             :ARG2 (왕2 / 왕
-                  :ord (마 / 마지막))))
+                  :ord (o / ordinal-entity :value -1))))
 
 # ::id snt0.E2016.788.08_A_01 ::category EXWKQA :: split train
 # ::snt 썰매는 얼음이나 눈 위를 잘 달릴 수 있도록 바퀴 대신 평행한 가로대를 단 탈 것이다.
@@ -5692,7 +5692,7 @@
             :ARG0 상
             :ARG1 (내 / 내부
                   :op1 (횟 / 횟집
-                        :mod (층 / 층 :ord (o / ordinal-entity :value 3)
+                        :mod (층 / 층 :ord (o / ordinal-entity :value 4)
                               :mod (건 / 건물
                                     :location (뒤 / 뒤편
                                           :op1 (구 / 구역
@@ -7850,7 +7850,7 @@
                   :ARG2 (삼 / 삼-01
                         :ARG0 (업 / 업계)
                         :ARG1 (기 / 기회
-                              :mod (이 / 이번))
+                              :time (이 / 이번))
                         :ARG2 (계 / 계기
                               :mod (회3 / 회복-01
                                     :ARG0 업
@@ -7897,7 +7897,7 @@
                                                 :manner (관 / 관행)
                                                 :duration (그 / 그동안)))))
                         :time (기 / 기회
-                              :mod (이4 / 이번))))
+                              :time (이4 / 이번))))
             :op2 (필 / 필요-01
                   :ARG1 (마 / 마련-01
                         :manner (개 / 개선-01
@@ -8594,7 +8594,7 @@
                                           :location (c2 / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울"))))
                               :mod (평 / 평균))
                         :time (주 / 주
-                              :mod (이3 / 이번)))
+                              :time (이3 / 이번)))
                   :ARG2 (p / percentage-entity :value 0.3)
                   :ARG4 (전 / 전
                         :op1 (t / temporal-quantity :quant 1 :unit (주2 / 주일)))
@@ -9185,7 +9185,7 @@
 (이 / 이어가-01
       :ARG0 (의 / 의료진)
       :ARG1 (심 / 심폐소생술)
-      :mod (이2 / 이번)
+      :time (이2 / 이번)
       :time (도 / 도착-01
             :ARG1 (구 / 구급차)
             :ARG3 (응 / 응급실
@@ -9436,14 +9436,14 @@
                   :domain (기 / 기체
                         :ARG0-of (비 / 비행-01)
                         :mod (소 / 소형)
-                        :mod (이2 / 이번)))
+                        :time (이2 / 이번)))
             :manner (단 / 단정-00)
             :cause (나 / 나오-01
                   :polarity -
                   :ARG0 (결 / 결과
                         :mod (분 / 분석-01
                               :ARG0 군)
-                        :ord (최 / 최종)))
+                        :mod (최 / 최종)))
       :ARG2 (판 / 판단-01
             :ARG0 군
             :ARG1 (도 / 도발-00
@@ -13498,7 +13498,7 @@
 # ::note
 (이 / 이루-01
       :ARG1 (압 / 압수수색-00
-            :ord (이2 / 이번)
+            :time (이2 / 이번)
             :cause (a / and
                   :op1 (확 / 확인-01
                         :ARG0 (g / government-organization :wiki "대한민국_공정거래위원회" :name (이3 / 이름 :op1 "공정거래위원회"))
@@ -13801,7 +13801,7 @@
 # ::note
 (마 / 마련-01
       :ARG1 (공 / 공모전
-            :ord (이 / 이번))
+            :time (이 / 이번))
       :purpose (a / and
             :op1 (추 / 추모-00
                   :ARG1 (희 / 희생자
@@ -15524,7 +15524,7 @@
                   :location (전 / 전국)
                   :quant 243
                   :unit (개 / 개))
-            :ord (이2 / 이번)))
+            :time (이2 / 이번)))
 
 # ::id snt203.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
 # ::snt 상품으로 1년 무료통화권, 갤럭시S9을 증정한다.
@@ -17146,7 +17146,7 @@
       :ARG0 (p / person :wiki - :name (이 / 이름 :op1 "유민")
             :ARG0-of (h / have-rel-role-91
                   :ARG2 (딸 / 딸
-                        :ord (막 / 막내)
+                        :mod (막 / 막내)
                         :poss (부 / 부잣집)))))
 
 # ::id 058275.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split train
@@ -17368,7 +17368,7 @@
             :ARG0 p
             :ARG1 (주 / 주인공
                   :poss (영 / 영화
-                        :ord (이2 / 이번)))))
+                        :time (이2 / 이번)))))
 
 # ::id 077198.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split train
 # ::snt 몇 년 동안 운행이 중지되었던 버스가 주민들의 요구로 다시 다니게 되었다.
@@ -17596,7 +17596,7 @@
                   :ARG1 (의 / 의견
                         :poss (학 / 학생))))
       :time (학2 / 학기
-            :ord (이 / 이번)))
+            :time (이 / 이번)))
 
 # ::id 053779.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
 # ::snt 남편은 육아와 가사 노동을 나에게만 떠맡기고 모른 척했다.

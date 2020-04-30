@@ -853,7 +853,7 @@
                                           :location (c2 / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울"))))
                               :mod (평 / 평균))
                         :time (주 / 주
-                              :mod (이3 / 이번)))
+                              :time (이3 / 이번)))
                   :ARG2 (p / percentage-entity :value 0.3)
                   :ARG4 (전 / 전
                         :op1 (t / temporal-quantity :quant 1 :unit (주2 / 주일)))

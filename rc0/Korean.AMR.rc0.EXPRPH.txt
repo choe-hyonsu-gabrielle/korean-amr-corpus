@@ -627,7 +627,7 @@
 # ::note
 (이 / 이루-01
       :ARG1 (압 / 압수수색-00
-            :ord (이2 / 이번)
+            :time (이2 / 이번)
             :cause (a / and
                   :op1 (확 / 확인-01
                         :ARG0 (g / government-organization :wiki "대한민국_공정거래위원회" :name (이3 / 이름 :op1 "공정거래위원회"))
@@ -930,7 +930,7 @@
 # ::note
 (마 / 마련-01
       :ARG1 (공 / 공모전
-            :ord (이 / 이번))
+            :time (이 / 이번))
       :purpose (a / and
             :op1 (추 / 추모-00
                   :ARG1 (희 / 희생자
@@ -2653,7 +2653,7 @@
                   :location (전 / 전국)
                   :quant 243
                   :unit (개 / 개))
-            :ord (이2 / 이번)))
+            :time (이2 / 이번)))
 
 # ::id snt203.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
 # ::snt 상품으로 1년 무료통화권, 갤럭시S9을 증정한다.

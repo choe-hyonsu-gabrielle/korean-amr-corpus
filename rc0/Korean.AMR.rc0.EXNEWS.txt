@@ -1315,7 +1315,7 @@
             :ARG0 상
             :ARG1 (내 / 내부
                   :op1 (횟 / 횟집
-                        :mod (층 / 층 :ord (o / ordinal-entity :value 3)
+                        :mod (층 / 층 :ord (o / ordinal-entity :value 4)
                               :mod (건 / 건물
                                     :location (뒤 / 뒤편
                                           :op1 (구 / 구역
@@ -3473,7 +3473,7 @@
                   :ARG2 (삼 / 삼-01
                         :ARG0 (업 / 업계)
                         :ARG1 (기 / 기회
-                              :mod (이 / 이번))
+                              :time (이 / 이번))
                         :ARG2 (계 / 계기
                               :mod (회3 / 회복-01
                                     :ARG0 업
@@ -3520,7 +3520,7 @@
                                                 :manner (관 / 관행)
                                                 :duration (그 / 그동안)))))
                         :time (기 / 기회
-                              :mod (이4 / 이번))))
+                              :time (이4 / 이번))))
             :op2 (필 / 필요-01
                   :ARG1 (마 / 마련-01
                         :manner (개 / 개선-01
@@ -4217,7 +4217,7 @@
                                           :location (c2 / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울"))))
                               :mod (평 / 평균))
                         :time (주 / 주
-                              :mod (이3 / 이번)))
+                              :time (이3 / 이번)))
                   :ARG2 (p / percentage-entity :value 0.3)
                   :ARG4 (전 / 전
                         :op1 (t / temporal-quantity :quant 1 :unit (주2 / 주일)))
@@ -4808,7 +4808,7 @@
 (이 / 이어가-01
       :ARG0 (의 / 의료진)
       :ARG1 (심 / 심폐소생술)
-      :mod (이2 / 이번)
+      :time (이2 / 이번)
       :time (도 / 도착-01
             :ARG1 (구 / 구급차)
             :ARG3 (응 / 응급실
@@ -5059,14 +5059,14 @@
                   :domain (기 / 기체
                         :ARG0-of (비 / 비행-01)
                         :mod (소 / 소형)
-                        :mod (이2 / 이번)))
+                        :time (이2 / 이번)))
             :manner (단 / 단정-00)
             :cause (나 / 나오-01
                   :polarity -
                   :ARG0 (결 / 결과
                         :mod (분 / 분석-01
                               :ARG0 군)
-                        :ord (최 / 최종)))
+                        :mod (최 / 최종)))
       :ARG2 (판 / 판단-01
             :ARG0 군
             :ARG1 (도 / 도발-00

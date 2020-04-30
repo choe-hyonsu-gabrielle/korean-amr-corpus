@@ -1780,7 +1780,7 @@
             :ARG2 (국 / 국왕
                   :ord (a2 / and
                         :op1 (o / ordinal-entity :value 34)
-                        :op2 (마 / 마지막))))
+                        :op2 (o2 / ordinal-entity :value -1))))
       :op2 (h2 / have-rel-role-91
             :ARG0 p
             :ARG1 (p2 / person :wiki "양양공" :name (이3 / 이름 :op1 "양양공")
@@ -1789,14 +1789,14 @@
                               :ARG0-of (h4 / have-org-role-91
                                     :ARG1 c
                                     :ARG2 (국2 / 국왕
-                                          :ord (o2 / ordinal-entity :value 20))))
+                                          :ord (o3 / ordinal-entity :value 20))))
                         :ARG2 (아 / 아들
-                              :ord (o3 / ordinal-entity :value 2))))
+                              :ord (o4 / ordinal-entity :value 2))))
             :ARG2 (손 / 손
-                  :ord (o4 / ordinal-entity :value 7)))
+                  :ord (o5 / ordinal-entity :value 7)))
       :op3 (h5 / have-rel-role-91
             :ARG0 p
-            :ARG1 (p4 / person :wiki "국대비_왕씨" :name (이5 / 이름 :op1 "왕")
+            :ARG1 (p4 / person :wiki "국대비_왕씨" :name (이5 / 이름 :op1 "국대비" :op2 "왕씨")
                   :ARG0-of (h6 / have-rel-role-91
                         :ARG1 (p5 / person :wiki "강양공" :name (이6 / 이름 :op1 "강양공")
                               :ARG0-of (h7 / have-rel-role-91
@@ -1806,7 +1806,7 @@
                                     :ARG2 (서 / 서장자)))
                         :ARG2 (손2 / 손녀)))
             :ARG2 (아2 / 아들
-                  :ord (o5 / ordinal-entity :value 2))))
+                  :ord (o6 / ordinal-entity :value 2))))
 
 # ::id snt0.E2016.788.07_A_02 ::category EXWKQA :: split train
 # ::snt <인명> 고려 제34대 마지막 왕(1345~1394).
@@ -1818,7 +1818,7 @@
             :op2 (d3 / date-entity :year 1394))
       :ord (a / and
             :op1 (o / ordinal-entity :value 34)
-            :op2 (마 / 마지막))
+            :op2 (o2 / ordinal-entity :value -1))
       :ARG2-of (h / have-org-role-91
             :ARG1 (c / country :wiki "고려" :name (이2 / 이름 :op1 "고려"))))
 
@@ -1831,7 +1831,7 @@
             :ARG1 (왕 / 왕조
                   :mod (역 / 역대))
             :ARG2 (왕2 / 왕
-                  :ord (마 / 마지막))))
+                  :ord (o / ordinal-entity :value -1))))
 
 # ::id snt0.E2016.788.08_A_01 ::category EXWKQA :: split train
 # ::snt 썰매는 얼음이나 눈 위를 잘 달릴 수 있도록 바퀴 대신 평행한 가로대를 단 탈 것이다.
