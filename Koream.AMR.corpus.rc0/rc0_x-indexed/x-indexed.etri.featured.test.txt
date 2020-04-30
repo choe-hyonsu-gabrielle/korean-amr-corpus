@@ -1,0 +1,3067 @@
+# ::id snt0.931.002_A.03_ver ::category EXWKQA :: split test
+# ::snt 보통 온도에 의한 암석조직의 수축 ·팽창, 바람 ·하천 ·빙하의 침식작용, 생물체의 작용 등에 의해 일어난다.
+# ::tokens ["보통", "온도", "에", "의하", "ㄴ", "암석", "조직", "의", "수축", "·", "팽창", ",", "바람", "·", "하천", "·", "빙하", "의", "침식", "작용", ",", "생물", "체", "의", "작용", "등", "에", "의하", "어", "일어나", "ㄴ다", "."]
+# ::pos_tags ["NNG", "NNG", "JKB", "VV", "ETM", "NNG", "NNG", "JKG", "NNG", "SP", "NNG", "SP", "NNG", "SP", "NNG", "SP", "NNG", "JKG", "NNG", "NNG", "SP", "NNG", "XSN", "JKG", "NNG", "NNB", "JKB", "VV", "EC", "VV", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / cause-01
+      :ARG0 (x2 / 등
+            :op1 (x3 / or
+                  :op1 (x4 / 수축-00
+                        :ARG1 (x5 / 조직
+                              :part-of (x6 / 암석)))
+                  :op2 (x7 / 팽창-00
+                        :ARG1 x5))
+            :op2 (x8 / 작용-01
+                  :mod (x9 / 침식-00
+                        :ARG0 (x10 / or
+                              :op1 (x11 / 바람)
+                              :op2 (x12 / 하천)
+                              :op3 (x13 / 빙하))))
+            :op3 (x14 / 작용-01
+                  :ARG1 (x15 / 생물체)))
+      :mod (x1 / 보통))
+
+# ::id snt1.931.005_A.02_ver ::category EXWKQA :: split test
+# ::snt 오륜(五倫)의 요의(要義)를 간결하게 서술하고, 중국과 조선의 역대 세계(世系)와 개략적인 역사를 덧붙였다.
+# ::tokens ["오륜", "(", "五倫", ")", "의", "요의", "(", "要義", ")", "를", "간결하", "게", "서술", "하", "고", ",", "중국", "과", "조선", "의", "역대", "세계", "(", "世系", ")", "와", "개략", "적", "이", "ㄴ", "역사", "를", "덧붙이", "었", "다", "."]
+# ::pos_tags ["NNG", "SS", "SH", "SS", "JKG", "NNG", "SS", "SH", "SS", "JKO", "VA", "EC", "NNG", "XSV", "EC", "SP", "NNP", "JC", "NNP", "JKG", "NNG", "NNG", "SS", "SH", "SS", "JKB", "NNG", "XSN", "VCP", "ETM", "NNG", "JKO", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "LCP_COUNTRY", "O", "LCP_COUNTRY", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 서술-01
+            :ARG1 (x2 / 요의
+                  :mod (x3 / 오륜))
+            :manner (x4 / 간결하-01))
+      :op2 (x5 / 덧붙-01
+            :ARG1 (x6 / and
+                  :mod (x11 / and
+                        :op1 (x12 / country
+                              :name (x13 / 이름
+                                    :op1 "중국")
+                              :wiki "중국")
+                        :op2 (x14 / country
+                              :name (x15 / 이름
+                                    :op1 "조선")
+                              :wiki "조선"))
+                  :op1 (x7 / 세계
+                        :mod (x8 / 역대))
+                  :op2 (x9 / 역사
+                        :ARG1-of (x10 / 개략-00)))))
+
+# ::id snt0.931.005_A.05_ver ::category EXWKQA :: split test
+# ::snt 조선 중종 때 학자 박세무(朴世茂)가 저술하여 1670년(현종 11)에 간행하였다.
+# ::tokens ["조선", "중종", "때", "학자", "박세무", "(", "朴世茂", ")", "가", "저술", "하", "어", "1670", "년", "(", "현종", "11", ")", "에", "간행", "하", "었", "다", "."]
+# ::pos_tags ["NNP", "NNP", "NNG", "NNG", "NNP", "SS", "SH", "SS", "JKS", "NNG", "XSV", "EC", "SN", "NNB", "SS", "NNP", "SN", "SS", "JKB", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["DT_DYNASTY", "DT_DYNASTY", "DT_DYNASTY", "CV_OCCUPATION", "PS_NAME", "O", "PS_NAME", "O", "O", "O", "O", "O", "DT_YEAR", "DT_YEAR", "O", "DT_DYNASTY", "DT_DYNASTY", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 저술-01
+            :ARG0 (x2 / person
+                  :mod (x4 / 학자
+                        :time (x5 / date-entity
+                              :calendar (x6 / country
+                                    :name (x7 / 이름
+                                          :op1 "조선")
+                                    :wiki "조선")
+                              :era "중종"))
+                  :name (x3 / 이름
+                        :op1 "박세무")
+                  :wiki -))
+      :op2 (x8 / 간행-00
+            :ARG0 x2
+            :time (x9 / date-entity
+                  :year 1670)))
+
+# ::id snt2.931.005_A.05_ver ::category EXWKQA :: split test
+# ::snt 우선 부자유친(父子有親)·군신유의(君臣有義)·부부유별(夫婦有別)·장유유서(長幼有序)·붕우유신(朋友有信)의 오륜(五倫)을 설명하였다.
+# ::tokens ["우선", "부자", "유친", "(", "父子有親", ")", "·", "군신", "유의", "(", "君臣有義", ")", "·", "부부", "유별", "(", "夫婦有別", ")", "·", "장유", "유서", "(", "長幼有序", ")", "·", "붕우", "유신", "(", "朋友有信", ")", "의", "오륜", "(", "五倫", ")", "을", "설명", "하", "었", "다", "."]
+# ::pos_tags ["MAG", "NNG", "NNG", "SS", "SH", "SS", "SP", "NNG", "NNG", "SS", "SH", "SS", "SP", "NNG", "NNG", "SS", "SH", "SS", "SP", "NNG", "NNG", "SS", "SH", "SS", "SP", "NNG", "NNG", "SS", "SH", "SS", "JKG", "NNG", "SS", "SH", "SS", "JKO", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CV_RELATION", "O", "O", "O", "O", "O", "PS_NAME", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 설명-01
+      :ARG1 (x2 / 오륜
+            :ARG2-of (x3 / include-91
+                  :ARG1 (x4 / 부자유친)
+                  :ARG1 (x5 / 군신유의)
+                  :ARG1 (x6 / 부부유별)
+                  :ARG1 (x7 / 장유유서)
+                  :ARG1 (x8 / 붕우유신)))
+      :mod (x1 / 우선))
+
+# ::id snt0.931.006_A.01_ver ::category EXWKQA :: split test
+# ::snt 한국을 비롯해 주변 4강(미국ㆍ중국ㆍ일본ㆍ러시아), 미주(캐나다ㆍ멕시코ㆍ칠레ㆍ페루), 오세아니아(호주ㆍ뉴질랜드ㆍ파푸아뉴기니), 동아시아 지역 등 21개국을 회원국으로 한다.
+# ::tokens ["한국", "을", "비롯하", "어", "주변", "4", "강", "(", "미국", "ㆍ", "중국", "ㆍ", "일본", "ㆍ", "러시아", ")", ",", "미주", "(", "캐나다", "ㆍ", "멕시코", "ㆍ", "칠레", "ㆍ", "페루", ")", ",", "오세아니아", "(", "호주", "ㆍ", "뉴질랜드", "ㆍ", "파푸아", "뉴기니", ")", ",", "동아시아", "지역", "등", "21", "개국", "을", "회원", "국", "으로", "하", "ㄴ다", "."]
+# ::pos_tags ["NNP", "JKO", "VV", "EC", "NNG", "SN", "NNG", "SS", "NNP", "SP", "NNP", "SP", "NNP", "SP", "NNP", "SS", "SP", "NNP", "SS", "NNP", "SP", "NNP", "SP", "NNP", "SP", "NNP", "SS", "SP", "NNP", "SS", "NNP", "SP", "NNP", "SP", "NNG", "NNP", "SS", "SP", "NNP", "NNG", "NNB", "SN", "NNB", "JKO", "NNG", "XSN", "JKB", "VV", "EF", "SF"]
+# ::ner_tags ["LCP_COUNTRY", "O", "O", "O", "O", "QT_COUNT", "QT_COUNT", "O", "LCP_COUNTRY", "O", "LCP_COUNTRY", "O", "LCP_COUNTRY", "O", "LCP_COUNTRY", "O", "O", "LCG_CONTINENT", "O", "LCP_COUNTRY", "O", "LCP_COUNTRY", "O", "LCP_COUNTRY", "O", "LCP_COUNTRY", "O", "O", "LCG_CONTINENT", "O", "LCP_COUNTRY", "O", "LCP_COUNTRY", "O", "LCP_COUNTRY", "LCP_COUNTRY", "O", "O", "LCG_CONTINENT", "O", "O", "QT_COUNT", "QT_COUNT", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / have-org-role-91
+      :ARG0 (x1 / 국가
+            :ARG1-of (x3 / 비롯하-01
+                  :ARG2 (x4 / country
+                        :name (x5 / 이름
+                              :op1 "한국")
+                        :wiki "대한민국"))
+            :ARG2-of (x6 / include-91
+                  :ARG1 (x7 / 등
+                        :op1 (x8 / 강
+                              :example (x10 / country
+                                    :name (x11 / 이름
+                                          :op1 "미국")
+                                    :wiki "미국")
+                              :example (x12 / country
+                                    :name (x13 / 이름
+                                          :op1 "중국")
+                                    :wiki "중화인민공화국")
+                              :example (x14 / country
+                                    :name (x15 / 이름
+                                          :op1 "일본")
+                                    :wiki "일본")
+                              :example (x16 / country
+                                    :name (x17 / 이름
+                                          :op1 "러시아")
+                                    :wiki "러시아")
+                              :mod 4
+                              :mod (x9 / 주변))
+                        :op2 (x18 / continent
+                              :example (x20 / country
+                                    :name (x21 / 이름
+                                          :op1 "캐나다")
+                                    :wiki "캐나다")
+                              :example (x22 / country
+                                    :name (x23 / 이름
+                                          :op1 "멕시코")
+                                    :wiki "멕시코")
+                              :example (x24 / country
+                                    :name (x25 / 이름
+                                          :op1 "칠레")
+                                    :wiki "칠레")
+                              :example (x26 / country
+                                    :name (x27 / 이름
+                                          :op1 "페루")
+                                    :wiki "페루")
+                              :name (x19 / 이름
+                                    :op1 "미주")
+                              :wiki "아메리카")
+                        :op3 (x28 / continent
+                              :example (x30 / country
+                                    :name (x31 / 이름
+                                          :op1 "호주")
+                                    :wiki "오스트레일리아")
+                              :example (x32 / country
+                                    :name (x33 / 이름
+                                          :op1 "뉴질랜드")
+                                    :wiki "뉴질랜드")
+                              :example (x34 / country
+                                    :name (x35 / 이름
+                                          :op1 "파푸아뉴기니")
+                                    :wiki "파푸아뉴기니")
+                              :name (x29 / 이름
+                                    :op1 "오세아니아")
+                              :wiki "오세아니아")
+                        :op4 (x36 / world-region
+                              :name (x37 / 이름
+                                    :op1 "동아시아"
+                                    :op2 "지역")
+                              :wiki "동아시아")))
+            :quant 21
+            :unit (x2 / 개))
+      :ARG2 (x38 / 국가
+            :mod (x39 / 회원)))
+
+# ::id snt0.931.008_A.04_ver ::category EXWKQA :: split test
+# ::snt 심장에서 폐로 정맥혈을 보내는 혈관.
+# ::tokens ["심장", "에서", "폐", "로", "정맥", "혈", "을", "보내", "는", "혈관", "."]
+# ::pos_tags ["NNG", "JKB", "NNG", "JKB", "NNG", "NNG", "JKO", "VV", "ETM", "NNG", "SF"]
+# ::ner_tags ["TM_CELL_TISSUE", "O", "TM_CELL_TISSUE", "O", "TM_CELL_TISSUE", "O", "O", "O", "O", "TM_CELL_TISSUE", "O"]
+# ::note
+(x0 / 혈관
+      :ARG0-of (x1 / 보내-01
+            :ARG1 (x2 / 혈액
+                  :location (x3 / 정맥))
+            :ARG2 (x4 / 폐)
+            :source (x5 / 심장)))
+
+# ::id snt1.931.011_A.01_ver ::category EXWKQA :: split test
+# ::snt 불소(弗素←일본어: 弗素 훗소)라고도 한다.
+# ::tokens ["불소", "(", "弗素", "←", "일본어", ":", "弗素", "훗소", ")", "라고", "도", "하", "ㄴ다", "."]
+# ::pos_tags ["NNG", "SS", "SH", "SW", "NNP", "SP", "SH", "NNG", "SS", "JKQ", "JX", "VV", "EF", "SF"]
+# ::ner_tags ["MT_ELEMENT", "O", "MT_ELEMENT", "O", "CV_LANGUAGE", "O", "MT_ELEMENT", "MT_ELEMENT", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 하-00
+      :ARG2 (x1 / 불소))
+
+# ::id snt2.931.011_A.01_ver ::category EXWKQA :: split test
+# ::snt 플루오린은 특히 치아에 얇은 막을 입혀주어 충치를 예방하고 치아의 재석회화(再石灰化)를 촉진하여 충치를 예방하는 효과가 커 치약에 널리 사용된다.
+# ::tokens ["플루오린", "은", "특히", "치아", "에", "얇", "은", "막", "을", "입히", "어", "주", "어", "충치", "를", "예방", "하", "고", "치아", "의", "재석", "회화", "(", "再石灰化", ")", "를", "촉진", "하", "어", "충치", "를", "예방", "하", "는", "효과", "가", "크", "어", "치약", "에", "널리", "사용", "되", "ㄴ다", "."]
+# ::pos_tags ["NNG", "JX", "MAG", "NNG", "JKB", "VA", "ETM", "NNG", "JKO", "VV", "EC", "VX", "EC", "NNG", "JKO", "NNG", "XSV", "EC", "NNG", "JKG", "NNG", "NNG", "SS", "SH", "SS", "JKO", "NNG", "XSV", "EC", "NNG", "JKO", "NNG", "XSV", "ETM", "NNG", "JKS", "VA", "EC", "NNG", "JKB", "MAG", "NNG", "XSV", "EF", "SF"]
+# ::ner_tags ["MT_ELEMENT", "O", "O", "TM_CELL_TISSUE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TMM_DISEASE", "O", "O", "O", "O", "TM_CELL_TISSUE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TMM_DISEASE", "O", "O", "O", "O", "O", "O", "O", "O", "TMM_DRUG", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 사용-01
+      :ARG1 (x2 / 플루오린)
+      :ARG2 (x3 / 치약)
+      :cause (x4 / 크-01
+            :ARG1 (x5 / 효과
+                  :mod (x6 / 예방-01
+                        :ARG1 (x7 / 충치)
+                        :manner (x8 / and
+                              :op1 (x9 / 촉진-01
+                                    :ARG0 x2
+                                    :ARG1 (x10 / 재석회화-00
+                                          :ARG1 (x11 / 치아)))
+                              :op2 (x12 / 입-01
+                                    :ARG0 (x13 / 치아)
+                                    :ARG1 (x14 / 막
+                                          :ARG1-of (x15 / 얇-01))
+                                    :ARGA x2)))))
+      :extent (x1 / 널리))
+
+# ::id snt3.931.011_A.02_ver ::category EXWKQA :: split test
+# ::snt 원자 기호는 F, 원자 번호는 9, 원자량은 18.9984.
+# ::tokens ["원자", "기호", "는", "F", ",", "원자", "번호", "는", "9", ",", "원자", "량", "은", "18.9984", "."]
+# ::pos_tags ["NNG", "NNG", "JX", "SL", "SP", "NNG", "NNG", "JX", "SN", "SP", "NNG", "NNG", "JX", "SN", "SF"]
+# ::ner_tags ["O", "O", "O", "MT_ELEMENT", "O", "O", "O", "O", "QT_ORDER", "O", "O", "O", "O", "QT_OTHERS", "O"]
+# ::note
+(x0 / and
+      :domain (x1 / 원자)
+      :op1 (x2 / 기호
+            :value "F")
+      :op2 (x3 / 번호
+            :value 9)
+      :op3 (x4 / 원자량
+            :value 18.9984))
+
+# ::id snt0.931.014_Q.01_ver ::category EXWKQA :: split test
+# ::snt 뮤지컬 <애니>는 2006년 국내에서 초연한 이후 꾸준한 사랑을 받고 있다.
+# ::tokens ["뮤지컬", "<", "애니", ">", "는", "2006", "년", "국내", "에서", "초연", "하", "ㄴ", "이후", "꾸준하", "ㄴ", "사랑", "을", "받", "고", "있", "다", "."]
+# ::pos_tags ["NNG", "SS", "NNP", "SS", "JX", "SN", "NNB", "NNG", "JKB", "NNG", "XSA", "ETM", "NNG", "VA", "ETM", "NNG", "JKO", "VV", "EC", "VX", "EF", "SF"]
+# ::ner_tags ["FD_ART", "O", "AFW_PERFORMANCE", "O", "O", "DT_YEAR", "DT_YEAR", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 사랑-01
+      :ARG1-of (x1 / 꾸준하-01)
+      :ARG1 (x2 / show
+            :mod (x4 / 뮤지컬)
+            :name (x3 / 이름
+                  :op1 "애니")
+            :wiki "애니")
+      :time (x5 / 이후
+            :op1 (x6 / 초연-00
+                  :ARG1 x2
+                  :location (x7 / 국내))))
+
+# ::id snt3.931.016_A.04_ver ::category EXWKQA :: split test
+# ::snt 드디어 우리 팀은 올림픽 경기에 출사표를 던졌다.
+# ::tokens ["드디어", "우리", "팀", "은", "올림픽", "경기", "에", "출사", "표", "를", "던지", "었", "다", "."]
+# ::pos_tags ["MAG", "NP", "NNG", "JX", "NNG", "NNG", "JKB", "NNG", "NNG", "JKO", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "EV_SPORTS", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 출사표를-던지-00
+      :ARG0 (x1 / 팀
+            :poss (x2 / 우리))
+      :ARG1 (x3 / 경기
+            :subevent-of (x4 / game
+                  :name (x5 / 이름
+                        :op1 "올림픽")
+                  :wiki "올림픽"))
+      :mod (x6 / 드디어))
+
+# ::id snt1.E2016.788.02_A_02 ::category EXWKQA :: split test
+# ::snt 바다 위나 공중에서 긴 거리를 나타낼 때 쓴다.
+# ::tokens ["바다", "위", "나", "공중", "에서", "길", "ㄴ", "거리", "를", "나타내", "ㄹ", "때", "쓰", "ㄴ다", "."]
+# ::pos_tags ["NNG", "NNG", "JC", "NNG", "JKB", "VA", "ETM", "NNG", "JKO", "VV", "ETM", "NNG", "VV", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 쓰-01
+      :ARG2 (x1 / 나타나-01
+            :ARG1 (x2 / 거리
+                  :ARG1-of (x3 / 길-01)
+                  :location (x4 / or
+                        :op1 (x5 / 위
+                              :op1 (x6 / 바다))
+                        :op2 (x7 / 공중)))))
+
+# ::id snt0.E2016.788.05_Q_01 ::category EXWKQA :: split test
+# ::snt 활로 연주하는 악기가 아닌 것은?
+# ::tokens ["활", "로", "연주", "하", "는", "악기", "가", "아니", "ㄴ", "것", "은", "?"]
+# ::pos_tags ["NNG", "JKB", "NNG", "XSV", "ETM", "NNG", "JKC", "VCN", "ETM", "NNB", "JX", "SF"]
+# ::ner_tags ["AF_WEAPON", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / amr-unknown
+      :domain (x1 / 악기
+            :mod (x2 / 연주-00
+                  :instrument (x3 / 활))
+            :polarity -))
+
+# ::id snt2.E2016.788.12_A_02 ::category EXWKQA :: split test
+# ::snt 느린 장단에서 빠른 장단으로 배열된 3~6개 장단 구성의 악장으로 구분되며 반드시 장구 반주가 따른다.
+# ::tokens ["느리", "ㄴ", "장단", "에서", "빠르", "ㄴ", "장단", "으로", "배열", "되", "ㄴ", "3", "~", "6", "개", "장단", "구성", "의", "악장", "으로", "구분", "되", "며", "반드시", "장구", "반주", "가", "따르", "ㄴ다", "."]
+# ::pos_tags ["VA", "ETM", "NNG", "JKB", "VA", "ETM", "NNG", "JKB", "NNG", "XSV", "ETM", "SN", "SO", "SN", "NNB", "NNG", "NNG", "JKG", "NNG", "JKB", "NNG", "XSV", "EC", "MAG", "NNG", "NNG", "JKS", "VV", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "QT_COUNT", "QT_COUNT", "QT_COUNT", "QT_COUNT", "O", "O", "O", "O", "O", "O", "O", "O", "O", "AF_MUSICAL_INSTRUMENT", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 구분-01
+            :ARG2 (x2 / 악장
+                  :mod (x3 / 구성-01
+                        :ARG2 (x4 / 장단
+                              :ARG1-of (x7 / 배열-01
+                                    :manner (x8 / 순
+                                          :op1 (x9 / 장단
+                                                :ARG1-of (x10 / 느리-01))
+                                          :op2 (x11 / 장단
+                                                :ARG1-of (x12 / 빠르-01))))
+                              :quant (x5 / 약
+                                    :op1 3
+                                    :op2 6)
+                              :unit (x6 / 개)))))
+      :op2 (x13 / 따르-01
+            :ARG0 (x14 / 반주-00
+                  :instrument (x15 / 장구))
+            :mod (x16 / 반드시)))
+
+# ::id snt0.E2016.788.13_A_01 ::category EXWKQA :: split test
+# ::snt <음악> 민속 음악에서 쓰는 판소리 및 산조장단의 하나.
+# ::tokens ["<", "음악", ">", "민속", "음악", "에서", "쓰", "는", "판", "소리", "및", "산조", "장단", "의", "하나", "."]
+# ::pos_tags ["SS", "NNG", "SS", "NNG", "NNG", "JKB", "VV", "ETM", "NNG", "NNG", "MAJ", "NNG", "NNG", "JKG", "NR", "SF"]
+# ::ner_tags ["O", "FD_ART", "O", "FD_ART", "FD_ART", "O", "O", "O", "FD_ART", "FD_ART", "O", "FD_ART", "O", "O", "QT_COUNT", "O"]
+# ::note
+(x0 / 장단
+      :ARG1-of (x5 / 쓰-01
+            :ARG2 (x6 / 음악
+                  :mod (x7 / 민속)))
+      :mod (x2 / 및
+            :op1 (x3 / 판소리)
+            :op2 (x4 / 산조))
+      :topic (x1 / 음악))
+
+# ::id snt1.E2016.788.15_Q_01 ::category EXWKQA :: split test
+# ::snt 과육이 부드럽고 독특한 향기가 있어 소스를 만들거나 샐러드 등의 요리재료로 쓰이는 4음절의 이 과일은 무엇일까?
+# ::tokens ["과육", "이", "부드럽", "고", "독특", "하", "ㄴ", "향기", "가", "있", "어", "소스", "를", "만들", "거나", "샐러드", "등", "의", "요리", "재료", "로", "쓰이", "는", "4", "음절", "의", "이", "과일", "은", "무엇", "이", "ㄹ까", "?"]
+# ::pos_tags ["NNG", "JKS", "VA", "EC", "NNG", "XSA", "ETM", "NNG", "JKS", "VA", "EC", "NNG", "JKO", "VV", "EC", "NNG", "NNB", "JKG", "NNG", "NNG", "JKB", "VV", "ETM", "SN", "NNG", "JKG", "MM", "NNG", "JX", "NP", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CV_FOOD", "O", "O", "O", "O", "O", "O", "O", "QT_COUNT", "QT_COUNT", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / amr-unknown
+      :domain (x1 / 과일
+            :ARG1-of (x4 / 쓰-01
+                  :ARG2 (x5 / 재료
+                        :example (x7 / 등
+                              :op1 (x8 / 샐러드)
+                              :op2 (x9 / 만들-01
+                                    :ARG1 (x10 / 소스)))
+                        :mod (x6 / 요리-00))
+                  :cause (x11 / and
+                        :op1 (x12 / 부드럽-00
+                              :ARG1 (x13 / 과육
+                                    :part-of x1))
+                        :op2 (x14 / 향기
+                              :ARG1-of (x15 / 독특-01)
+                              :poss x1)))
+            :mod (x2 / 이)
+            :mod (x3 / 음절
+                  :mod 4)))
+
+# ::id snt0.E2016.789.04_A_02 ::category EXWKQA :: split test
+# ::snt 변온동물에서도 체온조절하는 것을 볼 수 있는데 예를 들면, 꿀벌은 저온에서는 집단이 되어 열의 발산을 방지함과 동시에 근육운동에 의하여 발열한다.
+# ::tokens ["변온", "동물", "에서", "도", "체온", "조절", "하", "는", "것", "을", "보", "ㄹ", "수", "있", "는데", "예", "를", "들", "면", ",", "꿀벌", "은", "저온", "에서", "는", "집단", "이", "되", "어", "열", "의", "발산", "을", "방지", "하", "ㅁ", "과", "동시", "에", "근육", "운동", "에", "의하", "어", "발열", "하", "ㄴ다", "."]
+# ::pos_tags ["NNG", "NNG", "JKB", "JX", "NNG", "NNG", "XSV", "ETM", "NNB", "JKO", "VV", "ETM", "NNB", "VA", "EC", "NNG", "JKO", "VV", "EC", "SP", "NNG", "JX", "NNG", "JKB", "JX", "NNG", "JKC", "VV", "EC", "NNG", "JKG", "NNG", "JKO", "NNG", "XSV", "ETN", "JKB", "NNG", "JKB", "NNG", "NNG", "JKB", "VV", "EC", "NNG", "XSV", "EF", "SF"]
+# ::ner_tags ["AM_TYPE", "AM_TYPE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "AM_INSECT", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TM_CELL_TISSUE", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 가능-01
+      :ARG1 (x1 / 보-01
+            :ARG1 (x2 / 조절-01
+                  :ARG0 (x3 / 변온동물)
+                  :ARG1 (x4 / 체온
+                        :poss x3)
+                  :example (x5 / and
+                        :op1 (x6 / 방지-01
+                              :ARG0 (x7 / 꿀벌)
+                              :ARG1 (x8 / 발산-00
+                                    :ARG1 (x9 / 열))
+                              :manner (x10 / 되-01
+                                    :ARG1 x7
+                                    :ARG2 (x11 / 집단)
+                                    :condition (x12 / 저온)))
+                        :op2 (x13 / 발열-00
+                              :ARG0 x7
+                              :manner (x14 / 운동-00
+                                    :ARG0 (x15 / 근육
+                                          :poss x7)))))))
+
+# ::id snt0.E2016.789.14_A_01 ::category EXWKQA :: split test
+# ::snt 소금에 약간 절여서 통으로 말린 조기.
+# ::tokens ["소금", "에", "약간", "절이", "어서", "통", "으로", "말리", "ㄴ", "조기", "."]
+# ::pos_tags ["NNG", "JKB", "MAG", "VV", "EC", "MAG", "JKB", "VV", "ETM", "NNG", "SF"]
+# ::ner_tags ["CV_FOOD", "O", "O", "O", "O", "O", "O", "O", "O", "AM_FISH", "O"]
+# ::note
+(x0 / 조기
+      :ARG1-of (x1 / 마르-01
+            :manner (x2 / 통)
+            :manner (x3 / 절-00
+                  :ARG1 x0
+                  :ARG2 (x4 / 소금)
+                  :degree (x5 / 약간))))
+
+# ::id snt0.E2016.789.14_A_02 ::category EXWKQA :: split test
+# ::snt 조기를 소금에 절여 말린 것.
+# ::tokens ["조기", "를", "소금", "에", "절이", "어", "말리", "ㄴ", "것", "."]
+# ::pos_tags ["NNG", "JKO", "NNG", "JKB", "VV", "EC", "VV", "ETM", "NNB", "SF"]
+# ::ner_tags ["AM_FISH", "O", "CV_FOOD", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 것
+      :ARG1-of (x1 / 마르-01
+            :manner (x2 / 절-00
+                  :ARG1 (x3 / 조기)
+                  :ARG2 (x4 / 소금))))
+
+# ::id snt0.E2016.790.03_A_01 ::category EXWKQA :: split test
+# ::snt 노을 또는 놀은 새벽이나 아침, 저녁에 태양 광선이 대기를 통과하는 거리가 길어져서 태양 광선 중 파장이 짧은 파란색은 대기 중에서 산란되고, 파장이 긴 빨간색은 산란되지 않아 하늘이 빨간색으로 보이는 현상이다.
+# ::tokens ["노을", "또는", "놀", "은", "새벽", "이나", "아침", ",", "저녁", "에", "태양", "광선", "이", "대기", "를", "통과", "하", "는", "거리", "가", "길어지", "어서", "태양", "광선", "중", "파장", "이", "짧", "은", "파란", "색", "은", "대기", "중", "에서", "산란되", "고", ",", "파장", "이", "길", "ㄴ", "빨간", "색", "은", "산란되", "지", "않", "아", "하늘", "이", "빨간", "색", "으로", "보이", "는", "현상", "이", "다", "."]
+# ::pos_tags ["NNG", "MAJ", "NNG", "JX", "NNG", "JC", "NNG", "SP", "NNG", "JKB", "NNG", "NNG", "JKS", "NNG", "JKO", "NNG", "XSV", "ETM", "NNG", "JKS", "VV", "EC", "NNG", "NNG", "NNB", "NNG", "JKS", "VA", "ETM", "NNG", "XSN", "JX", "NNG", "NNB", "JKB", "VV", "EC", "SP", "NNG", "JKS", "VA", "ETM", "NNG", "NNG", "JX", "VV", "EC", "VX", "EC", "NNG", "JKS", "NNG", "NNG", "JKB", "VV", "ETM", "NNG", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "TI_DURATION", "O", "TI_DURATION", "O", "TI_DURATION", "O", "LC_SPACE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "LC_SPACE", "O", "O", "O", "O", "O", "O", "TM_COLOR", "TM_COLOR", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TM_COLOR", "TM_COLOR", "O", "O", "O", "O", "O", "O", "O", "TM_COLOR", "TM_COLOR", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 현상
+      :domain (x1 / or
+            :op1 (x2 / 노을)
+            :op2 (x3 / 놀))
+      :mod (x4 / 보-01
+            :ARG1 (x5 / 하늘)
+            :attribute (x6 / 빨간색)
+            :cause (x7 / and
+                  :cause (x21 / 되-01
+                        :ARG1 (x22 / 거리
+                              :mod (x23 / 통과-01
+                                    :ARG0 (x13 / 광선
+                                          :mod (x14 / 태양))
+                                    :ARG1 (x15 / 대기)
+                                    :time (x24 / or
+                                          :op1 (x25 / date-entity
+                                                :dayperiod (x26 / 새벽))
+                                          :op2 (x27 / date-entity
+                                                :dayperiod (x28 / 아침))
+                                          :op3 (x29 / date-entity
+                                                :dayperiod (x30 / 저녁)))))
+                        :ARG2 (x31 / 길-01
+                              :ARG1 x22))
+                  :op1 (x8 / 산란-00
+                        :ARG1 (x9 / 파란색
+                              :ARG1-of (x12 / include-91
+                                    :ARG2 x13)
+                              :mod (x10 / 짧-01
+                                    :ARG1 (x11 / 파장)))
+                        :location x15)
+                  :op2 (x16 / 산란-00
+                        :ARG1 (x17 / 빨간색
+                              :ARG1-of (x20 / include-91
+                                    :ARG2 x13)
+                              :mod (x18 / 길-01
+                                    :ARG1 (x19 / 파장)))
+                        :polarity -))))
+
+# ::id snt0.E2016.790.03_A_02 ::category EXWKQA :: split test
+# ::snt 이는 파장이 짧은 푸른색이 산란되어 버리는 반면에 파장이 긴 붉은색의 빛이 산란되지 않고 관측자에게 도달하기 때문이다.
+# ::tokens ["이", "는", "파장", "이", "짧", "은", "푸른색", "이", "산란", "되", "어", "버리", "는", "반면", "에", "파장", "이", "길", "ㄴ", "붉은색", "의", "빛", "이", "산란되", "지", "않", "고", "관측", "자", "에게", "도달하", "기", "때문", "이", "다", "."]
+# ::pos_tags ["NP", "JX", "NNG", "JKS", "VA", "ETM", "NNG", "JKS", "NNG", "XSV", "EC", "VX", "ETM", "NNG", "JKB", "NNG", "JKS", "VA", "ETM", "NNG", "JKG", "NNG", "JKS", "VV", "EC", "VX", "EC", "NNG", "XSN", "JKB", "VV", "ETN", "NNB", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "TM_COLOR", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TM_COLOR", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / cause-01
+      :ARG1 (x1 / contrast-01
+            :ARG1 (x2 / 산란-00
+                  :ARG1 (x3 / 푸른색
+                        :mod (x4 / 짧-01
+                              :ARG1 (x5 / 파장))))
+            :ARG2 (x6 / 도달-01
+                  :ARG1 (x7 / 빛
+                        :mod (x8 / 붉은색)
+                        :mod (x9 / 길-01
+                              :ARG1 (x10 / 파장)))
+                  :ARG2 (x12 / 사람
+                        :ARG0-of (x13 / 관측-01))
+                  :manner (x11 / 산란-00
+                        :ARG1 x7
+                        :polarity -))))
+
+# ::id snt0.E2016.790.07_A_01 ::category EXWKQA :: split test
+# ::snt 삼라만상 森羅萬象
+# ::tokens ["삼라", "만상", "森羅萬象"]
+# ::pos_tags ["NNG", "NNG", "SH"]
+# ::ner_tags ["O", "O", "O"]
+# ::note
+(x0 / 삼라만상)
+
+# ::id snt0.E2016.790.09_A_01 ::category EXWKQA :: split test
+# ::snt 추운 겨울철의 세 벗이라는 뜻으로, 추위에 잘 견디는 소나무ㆍ대나무ㆍ매화나무를 통틀어 이르는 말.
+# ::tokens ["춥", "ㄴ", "겨울", "철", "의", "세", "벗", "이", "라는", "뜻", "으로", ",", "추위", "에", "잘", "견디", "는", "소", "나무", "ㆍ", "대", "나무", "ㆍ", "매화나무", "를", "통틀어", "이르", "는", "말", "."]
+# ::pos_tags ["VA", "ETM", "NNG", "NNG", "JKG", "MM", "NNG", "VCP", "ETM", "NNG", "JKB", "SP", "NNG", "JKB", "MAG", "VV", "ETM", "NNG", "NNG", "SP", "NNG", "NNG", "SP", "NNG", "JKO", "MAG", "VV", "ETM", "NNG", "SF"]
+# ::ner_tags ["O", "O", "DT_SEASON", "DT_SEASON", "O", "QT_COUNT", "QT_COUNT", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "PT_TREE", "PT_TREE", "O", "PT_TREE", "PT_TREE", "O", "PT_TREE", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 말
+      :ARG1-of (x1 / 뜻하-01
+            :ARG2 (x2 / 벗
+                  :quant 3
+                  :time (x3 / date-entity
+                        :ARG1-of (x5 / 춥-01)
+                        :season (x4 / 겨울))))
+      :ARG1-of (x6 / 이르-02
+            :attribute (x7 / and
+                  :ARG0-of (x11 / 견디-01
+                        :ARG1 (x12 / 춥-01))
+                  :op1 (x8 / 소나무)
+                  :op2 (x9 / 대나무)
+                  :op3 (x10 / 매화나무))))
+
+# ::id snt0.E2016.790.10_Q_01 ::category EXWKQA :: split test
+# ::snt 사건 이름이 지역명이 아닌 것은?
+# ::tokens ["사건", "이름", "이", "지역", "명", "이", "아니", "ㄴ", "것", "은", "?"]
+# ::pos_tags ["NNG", "NNG", "JKS", "NNG", "NNG", "JKC", "VCN", "ETM", "NNB", "JX", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / amr-unknown
+      :domain (x1 / 이름
+            :domain (x3 / 이름
+                  :name-of (x4 / 사건))
+            :name-of (x2 / 지역)
+            :polarity -))
+
+# ::id snt0.E2016.835.01_Q_01 ::category EXWKQA :: split test
+# ::snt 로마의 평화 시대를 이끈 5현제에 해당하는 사람은?
+# ::tokens ["로마", "의", "평화", "시대", "를", "이끌", "ㄴ", "5", "현제", "에", "해당", "하", "는", "사람", "은", "?"]
+# ::pos_tags ["NNP", "JKG", "NNG", "NNG", "JKO", "VV", "ETM", "SN", "NNG", "JKB", "NNG", "XSV", "ETM", "NNG", "JX", "SF"]
+# ::ner_tags ["LCP_COUNTRY", "O", "O", "O", "O", "O", "O", "QT_COUNT", "QT_COUNT", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / amr-unknown
+      :ARG1-of (x1 / 해당-01
+            :ARG2 (x2 / 현제
+                  :ARG0-of (x3 / 이끌-01
+                        :ARG1 (x4 / 시대
+                              :mod (x5 / 평화
+                                    :mod (x6 / country
+                                          :name (x7 / 이름
+                                                :op1 "로마")
+                                          :wiki "로마_제국"))))
+                  :quant 5)))
+
+# ::id snt0.E2016.835.02_A_02 ::category EXWKQA :: split test
+# ::snt 그의 뒤를 이어 원근법을 구체적으로 회화에 처음 도입한 사람은 30년도 채 못 살고 약물 중독으로 추정되는 이유로 요절한 피렌체의 화가 마사초(Masaccio, 1401~1428)다.
+# ::tokens ["그", "의", "뒤", "를", "잇", "어", "원근", "법", "을", "구체", "적", "으로", "회화", "에", "처음", "도입", "하", "ㄴ", "사람", "은", "30", "년", "도", "채", "못", "살", "고", "약물", "중독", "으로", "추정", "되", "는", "이유", "로", "요절", "하", "ㄴ", "피렌체", "의", "화", "가", "마사초", "(", "Masaccio", ",", "1401", "~", "1428", ")", "다", "."]
+# ::pos_tags ["NP", "JKG", "NNG", "JKO", "VV", "EC", "NNG", "XSN", "JKO", "NNG", "XSN", "JKB", "NNG", "JKB", "NNG", "NNG", "XSV", "ETM", "NNG", "JX", "SN", "NNB", "JX", "MAG", "MAG", "VV", "EC", "NNG", "NNG", "JKB", "NNG", "XSV", "ETM", "NNG", "JKB", "NNG", "XSV", "ETM", "NNP", "JKG", "NNG", "JKS", "NNP", "SS", "SL", "SP", "SN", "SO", "SN", "SS", "VCP", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "TR_ART", "TR_ART", "O", "O", "O", "O", "FD_ART", "O", "O", "O", "O", "O", "O", "O", "DT_DURATION", "DT_DURATION", "O", "O", "O", "O", "O", "TMM_DISEASE", "TMM_DISEASE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "LCP_CITY", "O", "CV_OCCUPATION", "CV_OCCUPATION", "PS_NAME", "O", "PS_NAME", "O", "DT_DURATION", "DT_DURATION", "DT_DURATION", "O", "O", "O"]
+# ::note
+(x0 / 도입-01
+      :ARG0 (x1 / person
+            :ARG1-of (x6 / 요절-00
+                  :cause (x11 / 이유
+                        :mod (x12 / 추정-01
+                              :ARG1 (x13 / 중독-00
+                                    :ARG1 x1
+                                    :ARG2 (x14 / 약물))))
+                  :time (x7 / 살-02
+                        :duration (x8 / 이하
+                              :op1 (x9 / temporal-quantity
+                                    :quant 30
+                                    :unit (x10 / 년)))))
+            :location (x4 / city
+                  :name (x5 / 이름
+                        :op1 "피렌체")
+                  :wiki "피렌체")
+            :mod (x3 / 화가)
+            :name (x2 / 이름
+                  :op1 "마사초")
+            :wiki "마사초")
+      :ARG1 (x15 / 원근법)
+      :ARG3 (x16 / 회화)
+      :manner (x17 / 구체적)
+      :mod (x19 / 뒤를-잇-00
+            :ARG3 (x20 / 그))
+      :ord (x18 / ordinal-entity
+            :value 1))
+
+# ::id snt0.E2016.835.05_A_01 ::category EXWKQA :: split test
+# ::snt 각국의 수뇌자로는 미국의 대통령 프랭클린 루스벨트, 소비에트 연방의 당 서기장 이오시프 스탈린, 영국의 총리 윈스턴 처칠이다.
+# ::tokens ["각국", "의", "수뇌", "자", "로", "는", "미국", "의", "대통령", "프랭클린", "루스벨트", ",", "소비에트", "연방", "의", "당", "서기", "장", "이오시프", "스탈린", ",", "영국", "의", "총리", "윈스턴", "처칠", "이", "다", "."]
+# ::pos_tags ["NNG", "JKG", "NNG", "XSN", "JKB", "JX", "NNP", "JKG", "NNG", "NNP", "NNP", "SP", "NNP", "NNG", "JKG", "NNG", "NNG", "XSN", "NNG", "NNP", "SP", "NNP", "JKG", "NNG", "NNP", "NNP", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "CV_POSITION", "CV_POSITION", "O", "O", "LCP_COUNTRY", "O", "CV_POSITION", "PS_NAME", "PS_NAME", "O", "LCP_COUNTRY", "LCP_COUNTRY", "O", "CV_POSITION", "CV_POSITION", "CV_POSITION", "PS_NAME", "PS_NAME", "O", "LCP_COUNTRY", "O", "CV_POSITION", "PS_NAME", "PS_NAME", "O", "O", "O"]
+# ::note
+(x0 / and
+      :domain (x1 / 수뇌자
+            :mod (x2 / 각국))
+      :op1 (x3 / person
+            :ARG0-of (x5 / have-org-role-91
+                  :ARG1 (x6 / country
+                        :name (x7 / 이름
+                              :op1 "미국")
+                        :wiki "미국")
+                  :ARG2 (x8 / 대통령))
+            :name (x4 / 이름
+                  :op1 "프랭클린"
+                  :op2 "루스벨트")
+            :wiki "프랭클린_D._루스벨트")
+      :op2 (x9 / person
+            :ARG0-of (x11 / have-org-role-91
+                  :ARG1 (x12 / political-party
+                        :location (x14 / country
+                              :name (x15 / 이름
+                                    :op1 "소비에트"
+                                    :op2 "연방")
+                              :wiki "소련")
+                        :name (x13 / 이름
+                              :op1 "당")
+                        :wiki "소련_공산당")
+                  :ARG2 (x16 / 서기장))
+            :name (x10 / 이름
+                  :op1 "이오시프"
+                  :op2 "스탈린")
+            :wiki "이오시프_스탈린")
+      :op3 (x17 / person
+            :ARG0-of (x19 / have-org-role-91
+                  :ARG1 (x20 / country
+                        :name (x21 / 이름
+                              :op1 "영국")
+                        :wiki "영국")
+                  :ARG2 (x22 / 총리))
+            :name (x18 / 이름
+                  :op1 "윈스턴"
+                  :op2 "처칠")
+            :wiki "윈스턴_처칠"))
+
+# ::id snt0.E2016.835.07_A_01 ::category EXWKQA :: split test
+# ::snt 장미 전쟁 (薔薇戰爭, 영어: Wars of the Roses)은 붉은 장미를 표시로 삼은 랭커스터 왕가와 흰 장미를 표시로 삼은 요크 왕가 사이의 왕위 쟁탈전이었다.
+# ::tokens ["장미", "전쟁", "(", "薔薇戰爭", ",", "영어", ":", "Wars", "of", "the", "Roses", ")", "은", "붉", "은", "장미", "를", "표시", "로", "삼", "은", "랭커스터", "왕가", "와", "희", "ㄴ", "장미", "를", "표시", "로", "삼", "은", "요크", "왕가", "사이", "의", "왕위", "쟁탈", "전", "이", "었", "다", "."]
+# ::pos_tags ["NNG", "NNG", "SS", "SH", "SP", "NNP", "SP", "SL", "SL", "SL", "SL", "SS", "JX", "VA", "ETM", "NNG", "JKO", "NNG", "JKB", "VV", "ETM", "NNP", "NNG", "JC", "VA", "ETM", "NNG", "JKO", "NNG", "JKB", "VV", "ETM", "NNG", "NNG", "NNG", "JKG", "NNG", "NNG", "XSN", "VCP", "EP", "EF", "SF"]
+# ::ner_tags ["EV_WAR_REVOLUTION", "EV_WAR_REVOLUTION", "O", "EV_WAR_REVOLUTION", "O", "CV_LANGUAGE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "PT_FLOWER", "O", "O", "O", "O", "O", "OG_OTHERS", "O", "O", "O", "O", "PT_FLOWER", "O", "O", "O", "O", "O", "OG_OTHERS", "OG_OTHERS", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 전쟁
+      :domain (x1 / war
+            :name (x2 / 이름
+                  :op1 "장미"
+                  :op2 "전쟁")
+            :wiki "장미_전쟁")
+      :purpose (x3 / 쟁탈-00
+            :ARG0 (x4 / and
+                  :op1 (x5 / family
+                        :ARG0-of (x7 / 삼-01
+                              :ARG1 (x8 / 장미
+                                    :ARG1-of (x9 / 붉-01))
+                              :ARG2 (x10 / 표시))
+                        :name (x6 / 이름
+                              :op1 "랭커스터"
+                              :op2 "왕가")
+                        :wiki "랭커스터가")
+                  :op2 (x11 / family
+                        :ARG0-of (x13 / 삼-01
+                              :ARG1 (x14 / 장미
+                                    :ARG1-of (x15 / 희-01))
+                              :ARG2 (x16 / 표시))
+                        :name (x12 / 이름
+                              :op1 "요크"
+                              :op2 "왕가")
+                        :wiki "요크가"))
+            :ARG1 (x17 / 왕위)))
+
+# ::id snt0.E2016.835.08_A_02 ::category EXWKQA :: split test
+# ::snt <지명> ‘피렌체’의 영어 이름.
+# ::tokens ["<", "지명", ">", "‘", "피렌체", "’", "의", "영어", "이름", "."]
+# ::pos_tags ["SS", "NNP", "SS", "SS", "NNP", "SS", "JKG", "NNG", "NNG", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "LCP_CITY", "O", "O", "CV_LANGUAGE", "O", "O"]
+# ::note
+(x0 / 이름
+      :medium (x2 / language
+            :name (x3 / 이름
+                  :op1 "영어")
+            :wiki "영어")
+      :mod (x4 / city
+            :name (x5 / 이름
+                  :op1 "피렌체")
+            :wiki "피렌체")
+      :topic (x1 / 지명))
+
+# ::id snt0.E2016.836.01_A_02 ::category EXWKQA :: split test
+# ::snt 양동마을(良洞마을)은 경상북도 경주시 강동면 북쪽 설창산에 둘러싸여 있는 유서 깊은 양반마을로 1984년 12월 20일 대한민국의 중요민속자료 제189호로 지정되었고, 2010년 7월 31일 브라질 브라질리아에서 열린 유네스코 세계유산위원회(WHC) 제34차 회의에서 안동 하회마을과 함께 유네스코세계문화유산으로 등재되었다.
+# ::tokens ["양동", "마을", "(", "良洞", "마을", ")", "은", "경상북도", "경주", "시", "강동면", "북쪽", "설창", "산", "에", "둘러싸이", "어", "있", "는", "유서", "깊", "은", "양반", "마을", "로", "1984", "년", "12", "월", "20", "일", "대한민국", "의", "중요", "민속", "자료", "제", "189", "호", "로", "지정", "되", "었", "고", ",", "2010", "년", "7", "월", "31", "일", "브라질", "브라질리아", "에서", "열리", "ㄴ", "유네스코", "세계유산위원회", "(", "WHC", ")", "제", "34", "차", "회의", "에서", "안동", "하회마을", "과", "함께", "유네스코", "세계", "문화", "유산", "으로", "등재", "되", "었", "다", "."]
+# ::pos_tags ["NNG", "NNG", "SS", "SH", "NNG", "SS", "JX", "NNP", "NNP", "NNG", "NNP", "NNG", "NNG", "NNG", "JKB", "VV", "EC", "VX", "ETM", "NNG", "VA", "ETM", "NNG", "NNG", "JKB", "SN", "NNB", "SN", "NNB", "SN", "NNB", "NNP", "JKG", "NNG", "NNG", "NNG", "XPN", "SN", "NNB", "JKB", "NNG", "XSV", "EP", "EC", "SP", "SN", "NNB", "SN", "NNB", "SN", "NNB", "NNP", "NNP", "JKB", "VV", "ETM", "NNP", "NNP", "SS", "SL", "SS", "XPN", "SN", "NNB", "NNG", "JKB", "NNP", "NNP", "JC", "MAG", "NNP", "NNG", "NNG", "NNG", "JKB", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["LCP_COUNTY", "LCP_COUNTY", "O", "LCP_COUNTY", "LCP_COUNTY", "O", "O", "LCP_PROVINCE", "LCP_CITY", "LCP_CITY", "LCP_COUNTY", "TM_DIRECTION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CV_POSITION", "O", "O", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "LCP_COUNTRY", "O", "O", "O", "O", "QT_ORDER", "QT_ORDER", "QT_ORDER", "O", "O", "O", "O", "O", "O", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "LCP_COUNTRY", "LCP_CAPITALCITY", "O", "O", "O", "OG_OTHERS", "OG_OTHERS", "O", "OGG_MEDICINE", "O", "QT_ORDER", "QT_ORDER", "QT_ORDER", "O", "O", "LCP_CITY", "LCP_COUNTY", "O", "O", "OG_OTHERS", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 지정-01
+            :ARG1 (x2 / county
+                  :ARG1-of (x7 / 둘러싸-01
+                        :ARG2 (x8 / mountain
+                              :location (x10 / 북쪽
+                                    :location (x11 / county
+                                          :location (x13 / city
+                                                :location (x15 / province
+                                                      :name (x16 / 이름
+                                                            :op1 "경상북도")
+                                                      :wiki "경상북도")
+                                                :name (x14 / 이름
+                                                      :op1 "경주시")
+                                                :wiki "경주시")
+                                          :name (x12 / 이름
+                                                :op1 "강동면")
+                                          :wiki "강동면_(경주시)"))
+                              :name (x9 / 이름
+                                    :op1 "설창산")
+                              :wiki -))
+                  :mod (x4 / 마을
+                        :mod (x5 / 양반)
+                        :mod (x6 / 유서가-깊-00))
+                  :name (x3 / 이름
+                        :op1 "양동마을")
+                  :wiki "경주_양동마을")
+            :ARG2 (x17 / 중요민속자료
+                  :ord (x18 / ordinal-entity
+                        :value 189)
+                  :poss (x19 / country
+                        :name (x20 / 이름
+                              :op1 "대한민국")
+                        :wiki "대한민국"))
+            :time (x21 / date-entity
+                  :day 20
+                  :month 12
+                  :year 1984))
+      :op2 (x22 / 등재-01
+            :ARG1 (x23 / 함께
+                  :op1 x2
+                  :op2 (x24 / county
+                        :location (x26 / city
+                              :name (x27 / 이름
+                                    :op1 "안동")
+                              :wiki "안동시")
+                        :name (x25 / 이름
+                              :op1 "하회마을")
+                        :wiki "하회마을"))
+            :ARG2 (x28 / 세계문화유산
+                  :mod (x29 / organization
+                        :name (x30 / 이름
+                              :op1 "유네스코")
+                        :wiki "유네스코"))
+            :location (x31 / 회의-00
+                  :ARG0 (x32 / organization
+                        :ARG1-of (x34 / include-91
+                              :ARG2 x29)
+                        :name (x33 / 이름
+                              :op1 "세계유산위원회")
+                        :wiki "세계유산_위원회")
+                  :location (x36 / city
+                        :location (x38 / country
+                              :name (x39 / 이름
+                                    :op1 "브라질")
+                              :wiki "브라질")
+                        :name (x37 / 이름
+                              :op1 "브라질리아")
+                        :wiki "브라질리아")
+                  :ord (x35 / ordinal-entity
+                        :value 34)
+                  :time (x40 / date-entity
+                        :day 31
+                        :month 7
+                        :year 2010))))
+
+# ::id snt0.E2016.887.03_A_01 ::category EXWKQA :: split test
+# ::snt 토머스 제퍼슨(Thomas Jefferson, 1743년 4월 13일 ~ 1826년 7월 4일)은 미국의 정치인으로 3번째 미국 대통령(재임 1801년 ~1809년)이자 미국 독립 선언서의 기초자이다(1776년).
+# ::tokens ["토머스", "제퍼슨", "(", "Thomas", "Jefferson", ",", "1743", "년", "4", "월", "13", "일", "~", "1826", "년", "7", "월", "4", "일", ")", "은", "미국", "의", "정치", "인", "으로", "3", "번째", "미국", "대통령", "(", "재임", "1801", "년", "~", "1809", "년", ")", "이", "자", "미국", "독립", "선언", "서", "의", "기초", "자", "이", "다", "(", "1776", "년", ")", "."]
+# ::pos_tags ["NNP", "NNP", "SS", "SL", "SL", "SP", "SN", "NNB", "SN", "NNB", "SN", "NNB", "SO", "SN", "NNB", "SN", "NNB", "SN", "NNB", "SS", "JX", "NNP", "JKG", "NNG", "XSN", "JKB", "SN", "NNB", "NNP", "NNG", "SS", "NNG", "SN", "NNB", "SO", "SN", "NNB", "SS", "VCP", "EC", "NNP", "NNG", "NNG", "NNG", "JKG", "NNG", "XSN", "VCP", "EF", "SS", "SN", "NNB", "SS", "SF"]
+# ::ner_tags ["PS_NAME", "PS_NAME", "O", "O", "O", "O", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "O", "O", "LCP_COUNTRY", "O", "CV_OCCUPATION", "CV_OCCUPATION", "O", "QT_ORDER", "QT_ORDER", "LCP_COUNTRY", "CV_POSITION", "O", "O", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "O", "O", "O", "EV_OTHERS", "EV_OTHERS", "EV_OTHERS", "EV_OTHERS", "O", "O", "O", "O", "O", "O", "DT_YEAR", "DT_YEAR", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / have-org-role-91
+            :ARG0 (x2 / person
+                  :ARG1-of (x7 / 살-02
+                        :time (x8 / date-interval
+                              :op1 (x9 / date-entity
+                                    :day 13
+                                    :month 4
+                                    :year 1743)
+                              :op2 (x10 / date-entity
+                                    :day 4
+                                    :month 7
+                                    :year 1826)))
+                  :mod (x4 / 정치인
+                        :mod (x5 / country
+                              :name (x6 / 이름
+                                    :op1 "미국")
+                              :wiki "미국"))
+                  :name (x3 / 이름
+                        :op1 "토머스"
+                        :op2 "제퍼슨")
+                  :wiki "토머스_제퍼슨")
+            :ARG1 x5
+            :ARG2 (x11 / 대통령
+                  :ord (x12 / ordinal-entity
+                        :value 3))
+            :time (x13 / date-interval
+                  :op1 (x14 / date-entity
+                        :year 1801)
+                  :op2 (x15 / date-entity
+                        :year 1809)))
+      :op2 (x16 / 기초-01
+            :ARG1 (x17 / publication
+                  :name (x18 / 이름
+                        :op1 "미국"
+                        :op2 "독립"
+                        :op3 "선언서")
+                  :time (x19 / date-entity
+                        :year 1776)
+                  :wiki "미국_독립선언#독립선언문")
+            :ARG2 x2))
+
+# ::id snt0.E2017.NEWS.001 ::category EXNEWS :: split test
+# ::snt '13월의 보너스냐 세금폭탄이냐' 연말정산서비스 15일 시작.
+# ::tokens ["'", "13", "월", "의", "보너스", "냐", "세금", "폭탄", "이", "냐", "'", "연말", "정산", "서비스", "15", "일", "시작", "."]
+# ::pos_tags ["SS", "SN", "NNB", "JKG", "NNG", "XSN", "NNG", "NNG", "VCP", "EF", "SS", "NNG", "NNG", "NNG", "SN", "NNB", "NNG", "SF"]
+# ::ner_tags ["O", "DT_MONTH", "DT_MONTH", "O", "O", "O", "O", "O", "O", "O", "O", "TMI_SERVICE", "TMI_SERVICE", "TMI_SERVICE", "DT_DAY", "DT_DAY", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / amr-choice
+            :op1 (x2 / 보너스
+                  :time (x3 / date-entity
+                        :month 13))
+            :op2 (x4 / 폭탄
+                  :mod (x5 / 세금)))
+      :op2 (x6 / 시작-01
+            :ARG1 (x7 / service*
+                  :name (x8 / 이름
+                        :op1 "연말정산서비스")
+                  :wiki -)
+            :time (x9 / date-entity
+                  :day 15)))
+
+# ::id snt5.E2017.NEWS.001 ::category EXNEWS :: split test
+# ::snt 반면 120%를 선택하면 월급에서 세금을 미리 많이 떼 연말정산 때 많이 돌려받을 수 있다.
+# ::tokens ["반면", "120", "%", "를", "선택", "하", "면", "월급", "에서", "세금", "을", "미리", "많이", "떼", "어", "연말", "정산", "때", "많이", "돌려받", "을", "수", "있", "다", "."]
+# ::pos_tags ["NNG", "SN", "SW", "JKO", "NNG", "XSV", "EC", "NNG", "JKB", "NNG", "JKO", "MAG", "MAG", "VV", "EC", "NNG", "NNG", "NNG", "MAG", "VV", "ETM", "NNB", "VA", "EF", "SF"]
+# ::ner_tags ["O", "QT_PERCENTAGE", "QT_PERCENTAGE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "DT_DURATION", "DT_DURATION", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / contrast-01
+      :ARG2 (x1 / 가능-01
+            :ARG1 (x2 / 돌려받-01
+                  :ARG1 (x3 / 세금
+                        :ARG1-of (x4 / 많-01))
+                  :cause (x6 / 떼-01
+                        :ARG1 (x7 / 월급
+                              :ARG1-of (x8 / 많-01))
+                        :ARG2 x3
+                        :manner (x9 / 미리))
+                  :time (x5 / 연말정산))
+            :condition (x10 / 선택-01
+                  :ARG1 (x11 / percentage-entity
+                        :value 120))))
+
+# ::id snt8.E2017.NEWS.001 ::category EXNEWS :: split test
+# ::snt 다만 보청기나 휠체어 같은 장애인 보장구 구입비, 시력 보정용 안경·콘택트렌즈 구입비, 교복·체육복 구입비, 취학 전 아동 학원비, 일부 기부금은 조회되지 않을 수 있다.
+# ::tokens ["다만", "보청", "기", "나", "휠체어", "같", "은", "장애", "인", "보장", "구", "구입", "비", ",", "시력", "보정", "용", "안경", "·", "콘택트", "렌즈", "구입", "비", ",", "교복", "·", "체육", "복", "구입", "비", ",", "취학", "전", "아동", "학원", "비", ",", "일부", "기부", "금", "은", "조회", "되", "지", "않", "을", "수", "있", "다", "."]
+# ::pos_tags ["MAG", "NNG", "XSN", "JC", "NNG", "VA", "ETM", "NNG", "XSN", "NNG", "XSN", "NNG", "XSN", "SP", "NNG", "NNG", "XSN", "NNG", "SP", "NNG", "NNG", "NNG", "XSN", "SP", "NNG", "SP", "NNG", "XSN", "NNG", "XSN", "SP", "NNG", "NNG", "NNG", "NNG", "XSN", "SP", "NNG", "NNG", "XSN", "JX", "NNG", "XSV", "EC", "VX", "ETM", "NNB", "VA", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "AF_TRANSPORT", "O", "O", "CV_POSITION", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "AF_WARES", "AF_WARES", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / contrast-01
+      :ARG2 (x1 / 가능-01
+            :ARG1 (x2 / 조회-00
+                  :ARG1 (x3 / and
+                        :op1 (x4 / 비용
+                              :purpose (x5 / 구입-01
+                                    :ARG1 (x6 / 보장구
+                                          :example (x8 / and
+                                                :op1 (x9 / 보청기)
+                                                :op2 (x10 / 휠체어))
+                                          :poss (x7 / 장애인))))
+                        :op2 (x11 / 비용
+                              :purpose (x12 / 구입-01
+                                    :ARG1 (x13 / and
+                                          :op1 (x14 / 콘택트렌즈)
+                                          :op2 (x15 / 안경)
+                                          :purpose (x16 / 보정-00
+                                                :ARG1 (x17 / 시력)))))
+                        :op3 (x18 / 비용
+                              :purpose (x19 / 구입-01
+                                    :ARG1 (x20 / and
+                                          :op1 (x21 / 교복)
+                                          :op2 (x22 / 체육복))))
+                        :op4 (x23 / 학원비
+                              :purpose (x24 / 아동
+                                    :mod (x25 / 전
+                                          :op1 (x26 / 취학-00))))
+                        :op5 (x27 / 금액
+                              :ARG1-of (x28 / 기부-01)
+                              :quant (x29 / 일부)))
+                  :polarity -)))
+
+# ::id snt15.E2017.NEWS.001 ::category EXNEWS :: split test
+# ::snt 의료비 중 배우자 난임 시술비는 사생활 보호를 위해 의료비와 별도로 구분되지 않는다.
+# ::tokens ["의료", "비", "중", "배우", "자", "난임", "시술", "비", "는", "사", "생활", "보호", "를", "위하", "어", "의료", "비", "와", "별도", "로", "구분", "되", "지", "않", "는다", "."]
+# ::pos_tags ["NNG", "XSN", "NNB", "NNG", "XSN", "NNG", "NNG", "XSN", "JX", "NNG", "NNG", "NNG", "JKO", "VV", "EC", "NNG", "XSN", "JKB", "NNG", "JKB", "NNG", "XSV", "EC", "VX", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "CV_RELATION", "CV_RELATION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 구분-01
+      :ARG1 (x1 / 의료비)
+      :ARG2 (x2 / 비용
+            :ARG1-of (x6 / include-91
+                  :ARG2 x1)
+            :purpose (x3 / 시술-01)
+            :topic (x4 / 난임
+                  :poss (x5 / 배우자)))
+      :manner (x7 / 별도)
+      :polarity -
+      :purpose (x8 / 보호-01
+            :ARG1 (x9 / 사생활)))
+
+# ::id snt25.E2017.NEWS.001 ::category EXNEWS :: split test
+# ::snt 편리한 연말정산 서비스에서는 예상세액을 간편하게 계산할 수 있는 서비스도 제공한다.
+# ::tokens ["편리", "하", "ㄴ", "연말", "정산", "서비스", "에서", "는", "예상", "세", "액", "을", "간편하", "게", "계산", "하", "ㄹ", "수", "있", "는", "서비스", "도", "제공", "하", "ㄴ다", "."]
+# ::pos_tags ["NNG", "XSA", "ETM", "NNG", "NNG", "NNG", "JKB", "JX", "NNG", "XSN", "XSN", "JKO", "VA", "EC", "NNG", "XSV", "ETM", "NNB", "VA", "ETM", "NNG", "JX", "NNG", "XSV", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "DT_DURATION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op2 (x1 / 제공-01
+            :ARG0 (x2 / service*
+                  :name (x3 / 이름
+                        :op1 "편리한"
+                        :op2 "연말정산"
+                        :op3 "서비스")
+                  :wiki -)
+            :ARG1 (x4 / 서비스
+                  :mod (x5 / 가능-01
+                        :ARG1 (x6 / 계산-01
+                              :ARG1 (x7 / 세액
+                                    :ARG1-of (x8 / 예상-01))
+                              :manner (x9 / 간편하-01))))))
+
+# ::id snt1.E2017.NEWS.002 ::category EXNEWS :: split test
+# ::snt “돈 자랑 많이 하고 불손하고 오만했다.”
+# ::tokens ["“", "돈", "자랑", "많이", "하", "고", "불손", "하", "고", "오만", "하", "었", "다", ".", "”"]
+# ::pos_tags ["SS", "NNG", "NNG", "MAG", "VV", "EC", "NNG", "XSA", "EC", "NNG", "XSA", "EP", "EF", "SF", "SS"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 말하-01
+      :ARG1 (x1 / and
+            :op1 (x2 / 자랑-01
+                  :ARG1 (x3 / 돈)
+                  :degree (x4 / 많-01))
+            :op2 (x5 / 불손-00)
+            :op3 (x6 / 오만-00)))
+
+# ::id snt18.E2017.NEWS.002 ::category EXNEWS :: split test
+# ::snt 2학년 경제를 담당했던 송 모 교사도 “같은 반에 아이돌 연습생이 있었는데 정유라만 조퇴를 봐준다고 울면서 하소연을 하곤 했다”고 증언했다.
+# ::tokens ["2", "학년", "경제", "를", "담당", "하", "었", "던", "송", "모", "교사", "도", "“", "같", "은", "반", "에", "아이돌", "연습", "생", "이", "있", "었", "는데", "정유라", "만", "조퇴", "를", "봐주", "ㄴ다고", "울", "면서", "하소", "연", "을", "하", "곤", "하", "었", "다", "”", "고", "증언", "하", "었", "다", "."]
+# ::pos_tags ["SN", "NNG", "NNG", "JKO", "NNG", "XSV", "EP", "ETM", "NNP", "NP", "NNG", "JX", "SS", "VA", "ETM", "NNG", "JKB", "NNG", "NNG", "XSN", "JKS", "VA", "EP", "EC", "NNP", "JX", "NNG", "JKO", "VV", "EC", "VV", "EC", "NNG", "XSN", "JKO", "VV", "EC", "VX", "EP", "EF", "SS", "JKQ", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["QT_ORDER", "QT_ORDER", "O", "O", "O", "O", "O", "O", "PS_NAME", "O", "CV_OCCUPATION", "O", "O", "O", "O", "O", "O", "O", "CV_POSITION", "CV_POSITION", "O", "O", "O", "O", "PS_NAME", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 증언-01
+      :ARG0 (x1 / person
+            :ARG0-of (x3 / have-org-role-91
+                  :ARG3 (x4 / 담당-01
+                        :ARG1 (x5 / 경제
+                              :mod (x6 / 학년
+                                    :ord (x7 / ordinal-entity
+                                          :value 2)))))
+            :name (x2 / 이름
+                  :op1 "송")
+            :wiki -)
+      :ARG1 (x8 / 하소연-01
+            :ARG0 (x9 / 학생
+                  :ARG0-of (x10 / 연습-01
+                        :ARG1 (x11 / 아이돌))
+                  :location (x12 / 반
+                        :ARG1-of (x13 / 같-01)))
+            :cause (x14 / 봐주-00
+                  :ARG1 (x15 / 조퇴-00
+                        :ARG0 (x16 / person
+                              :name (x17 / 이름
+                                    :op1 "정유라")
+                              :wiki "정유라_(승마_선수)")))
+            :manner (x18 / 울-00
+                  :ARG0 x16)))
+
+# ::id snt3.E2017.NEWS.003 ::category EXNEWS :: split test
+# ::snt 이 가운데 한 명은 18일 오전 1시 36분께 불이 번진 것을 보고 처음 119에 신고한 어시장 상인이다.
+# ::tokens ["이", "가운데", "한", "명", "은", "18", "일", "오전", "1", "시", "36", "분", "께", "불", "이", "번지", "ㄴ", "것", "을", "보", "고", "처음", "119", "에", "신고", "하", "ㄴ", "어", "시장", "상인", "이", "다", "."]
+# ::pos_tags ["MM", "NNG", "MM", "NNB", "JX", "SN", "NNB", "NNG", "SN", "NNB", "SN", "NNB", "XSN", "NNG", "JKS", "VV", "ETM", "NNB", "JKO", "VV", "EC", "NNG", "SN", "JKB", "NNG", "XSV", "ETM", "NNG", "NNG", "NNG", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "QT_MAN_COUNT", "QT_MAN_COUNT", "O", "DT_DAY", "DT_DAY", "TI_OTHERS", "TI_OTHERS", "TI_OTHERS", "TI_OTHERS", "TI_OTHERS", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "QT_PHONE", "O", "O", "O", "O", "O", "O", "CV_OCCUPATION", "O", "O", "O"]
+# ::note
+(x0 / 상인
+      :ARG0-of (x5 / 신고-01
+            :ARG1 (x6 / 보-01
+                  :ARG0 x0
+                  :ARG1 (x7 / 번지-01
+                        :ARG1 (x8 / 불)
+                        :time (x9 / 께
+                              :op1 (x10 / date-entity
+                                    :day 18
+                                    :time "01:36"))))
+            :ARG2 (x11 / phone-number-entity
+                  :value 119)
+            :ord (x12 / ordinal-entity
+                  :value 1))
+      :domain (x2 / 사람
+            :mod (x3 / 가운데
+                  :op1 (x4 / 이))
+            :quant 1)
+      :mod (x1 / 어시장))
+
+# ::id snt16.E2017.NEWS.003 ::category EXNEWS :: split test
+# ::snt 앞서 전날 오전 1시 36분께 소래포구 어시장에서 불이 나 2시간 30분 만에 진화됐다.
+# ::tokens ["앞서", "전날", "오전", "1", "시", "36", "분", "께", "소래포구", "어", "시장", "에서", "불", "이", "나", "아", "2", "시간", "30", "분", "만", "에", "진화", "되", "었", "다", "."]
+# ::pos_tags ["MAG", "NNG", "NNG", "SN", "NNB", "SN", "NNB", "XSN", "NNP", "NNG", "NNG", "JKB", "NNG", "JKS", "VV", "EC", "SN", "NNB", "SN", "NNB", "NNB", "JKB", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "DT_DAY", "TI_OTHERS", "TI_OTHERS", "TI_OTHERS", "TI_OTHERS", "TI_OTHERS", "O", "LCP_COUNTY", "LCP_CITY", "O", "O", "O", "O", "O", "O", "TI_DURATION", "TI_DURATION", "TI_DURATION", "TI_DURATION", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 진화-00
+      :ARG1 (x1 / 불)
+      :cause (x7 / 나-01
+            :ARG1 x1
+            :ARG2 (x8 / market
+                  :name (x9 / 이름
+                        :op1 "소래포구"
+                        :op2 "어시장")
+                  :wiki "소래포구_종합어시장")
+            :time (x10 / 께
+                  :mod (x13 / 앞서)
+                  :op1 (x11 / date-entity
+                        :day (x12 / 전날)
+                        :time "13:36")))
+      :duration (x2 / sum-of
+            :op1 (x3 / temporal-quantity
+                  :quant 2
+                  :unit (x4 / 시간))
+            :op2 (x5 / temporal-quantity
+                  :quant 30
+                  :unit (x6 / 분))))
+
+# ::id snt3.E2017.NEWS.004 ::category EXNEWS :: split test
+# ::snt 팀장에게 “대학원에서 공부를 더 하고 싶다”며 회사를 그만두겠다고 했다.
+# ::tokens ["팀장", "에게", "“", "대학", "원", "에서", "공부", "를", "더", "하", "고", "싶", "다", "”", "며", "회사", "를", "그만두", "겠", "다고", "하", "었", "다", "."]
+# ::pos_tags ["NNG", "JKB", "SS", "NNG", "XSN", "JKB", "NNG", "JKO", "MAG", "VV", "EC", "VX", "EF", "SS", "EC", "NNG", "JKO", "VV", "EP", "EC", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 하-02
+      :ARG1 (x1 / 사임-01
+            :ARG1 (x2 / have-org-role-91
+                  :ARG1 (x3 / 회사)))
+      :ARG2 (x4 / 사람
+            :ARG0-of (x5 / have-org-role-91
+                  :ARG2 (x6 / 팀장)))
+      :manner (x7 / 말하-01
+            :ARG1 (x8 / 원하-01
+                  :ARG1 (x9 / 공부-01
+                        :location (x11 / 대학원)
+                        :mod (x10 / 더)))))
+
+# ::id snt4.E2017.NEWS.004 ::category EXNEWS :: split test
+# ::snt 그러나 팀장은 “나중에 다른 곳에 취업해 ‘뒤통수 쳤다’는 얘기가 들리지 않게 하라”고 했다.
+# ::tokens ["그러나", "팀장", "은", "“", "나중", "에", "다른", "곳", "에", "취업", "하", "어", "‘", "뒤", "통수", "치", "었", "다", "’", "는", "얘기", "가", "들리", "지", "않", "게", "하", "라", "”", "고", "하", "었", "다", "."]
+# ::pos_tags ["MAJ", "NNG", "JX", "SS", "NNG", "JKB", "MM", "NNG", "JKB", "NNG", "XSV", "EC", "SS", "NNG", "NNG", "VV", "EP", "EF", "SS", "JX", "NNG", "JKS", "VV", "EC", "VX", "EC", "VX", "EF", "SS", "JKQ", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / contrast-01
+      :ARG2 (x1 / 하-02
+            :ARG0 (x2 / 사람
+                  :ARG0-of (x3 / have-org-role-91
+                        :ARG2 (x4 / 팀장)))
+            :ARG1 (x5 / 하-04
+                  :ARG1 (x6 / 이야기-01
+                        :ARG1 (x7 / 배신-00)
+                        :cause (x8 / 취업-01
+                              :ARG1 (x9 / 곳
+                                    :ARG1-of (x10 / 다르-01)))
+                        :polarity -)
+                  :mode imperative)))
+
+# ::id snt24.E2017.NEWS.004 ::category EXNEWS :: split test
+# ::snt 실제 경총 조사 결과 기업들의 대졸 신입사원에 대한 업무 수행 만족도는 2010년 조사 이후 계속해서 내려가는 추세다.
+# ::tokens ["실제", "경총", "조사", "결과", "기업", "들", "의", "대졸", "신입", "사원", "에", "대하", "ㄴ", "업무", "수행", "만족", "도", "는", "2010", "년", "조사", "이후", "계속", "하", "어서", "내려가", "는", "추세", "이", "다", "."]
+# ::pos_tags ["NNG", "NNP", "NNG", "NNG", "NNG", "XSN", "JKG", "NNG", "NNG", "NNG", "JKB", "VV", "ETM", "NNG", "NNG", "NNG", "NNG", "JX", "SN", "NNB", "NNG", "NNG", "NNG", "XSV", "EC", "VV", "ETM", "NNG", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "OGG_POLITICS", "O", "O", "O", "O", "O", "O", "CV_POSITION", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "DT_YEAR", "DT_YEAR", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 전하-01
+      :ARG0 (x1 / 조사-01
+            :ARG0 (x3 / organization
+                  :name (x4 / 이름
+                        :op1 "경총")
+                  :wiki "한국경영자총협회")
+            :mod (x2 / 실제))
+      :ARG1 (x5 / 추세
+            :mod (x6 / 내려가-01
+                  :ARG0 (x7 / have-degree-91
+                        :ARG0 (x8 / 기업)
+                        :ARG1 (x9 / 만족-01
+                              :ARG0 (x10 / 수행-01
+                                    :ARG0 (x11 / 사원
+                                          :mod (x12 / 신입)
+                                          :mod (x13 / 대졸))
+                                    :ARG1 (x14 / 업무))
+                              :ARG1 x8))
+                  :manner (x15 / 계속-01)
+                  :time (x16 / 이후
+                        :op1 (x17 / 조사-01
+                              :time (x18 / date-entity
+                                    :year 2010))))))
+
+# ::id snt0.E2017.NEWS.005 ::category EXNEWS :: split test
+# ::snt 文 대통령, 경제부총리 김동연·외교부 장관 여성 강경화 내정.
+# ::tokens ["文", "대통령", ",", "경제", "부", "총리", "김동연", "·", "외교", "부", "장관", "여성", "강경화", "내정", "."]
+# ::pos_tags ["SH", "NNG", "SP", "NNG", "XPN", "NNG", "NNP", "SP", "NNG", "XSN", "NNG", "NNG", "NNP", "NNG", "SF"]
+# ::ner_tags ["PS_NAME", "CV_POSITION", "O", "CV_POSITION", "CV_POSITION", "CV_POSITION", "PS_NAME", "O", "OGG_POLITICS", "OGG_POLITICS", "CV_POSITION", "O", "PS_NAME", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 내정-01
+            :ARG0 (x2 / person
+                  :ARG0-of (x4 / have-org-role-91
+                        :ARG2 (x5 / 대통령))
+                  :name (x3 / 이름
+                        :op1 "文")
+                  :wiki "문재인")
+            :ARG1 (x6 / person
+                  :name (x7 / 이름
+                        :op1 "김동연")
+                  :wiki "김동연")
+            :ARG2 (x8 / 경제부총리))
+      :op2 (x9 / 내정-01
+            :ARG0 x2
+            :ARG1 (x10 / person
+                  :mod (x12 / 여성)
+                  :name (x11 / 이름
+                        :op1 "강경화")
+                  :wiki "강경화")
+            :ARG2 (x13 / 장관
+                  :ARG2-of (x14 / have-org-role-91
+                        :ARG1 (x15 / government-organization
+                              :name (x16 / 이름
+                                    :op1 "외교부")
+                              :wiki "대한민국_외교부")))))
+
+# ::id snt3.E2017.NEWS.005 ::category EXNEWS :: split test
+# ::snt 문 대통령은 이날 청와대 춘추관 브리핑룸에서 "새 정부의 경제-외교안보 분야 인사를 직접 국민에게 말씀드리겠다"며 직접 이 같은 인사를 발표했다.
+# ::tokens ["문", "대통령", "은", "이날", "청와대", "춘추", "관", "브리핑", "룸", "에서", "\"", "새", "정부", "의", "경제", "-", "외교", "안보", "분야", "인사", "를", "직접", "국민", "에게", "말씀", "드리", "겠", "다", "\"", "며", "직접", "이", "같", "은", "인사", "를", "발표", "하", "었", "다", "."]
+# ::pos_tags ["NNP", "NNG", "JX", "NNG", "NNP", "NNG", "XSN", "NNG", "NNG", "JKB", "SS", "MM", "NNG", "JKG", "NNG", "SS", "NNG", "NNG", "NNG", "NNG", "JKO", "MAG", "NNG", "JKB", "NNG", "XSV", "EP", "EF", "SS", "EC", "MAG", "MM", "VA", "ETM", "NNG", "JKO", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["PS_NAME", "CV_POSITION", "O", "O", "OGG_POLITICS", "OGG_POLITICS", "OGG_POLITICS", "O", "O", "O", "O", "O", "OGG_POLITICS", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 발표-01
+      :ARG0 (x1 / person
+            :ARG0-of (x3 / have-org-role-91
+                  :ARG2 (x4 / 대통령))
+            :name (x2 / 이름
+                  :op1 "문")
+            :wiki "문재인")
+      :ARG1 (x5 / 인사
+            :ARG1-of (x6 / 같-01
+                  :ARG2 (x7 / 이)))
+      :location (x19 / 브리핑룸
+            :part-of (x20 / building
+                  :name (x21 / 이름
+                        :op1 "춘추관")
+                  :part-of (x22 / government-organization
+                        :name (x23 / 이름
+                              :op1 "청와대")
+                        :wiki "청와대")
+                  :wiki -))
+      :manner (x9 / 말하-01
+            :ARG0 x1
+            :ARG1 (x10 / 말씀-01
+                  :ARG0 x1
+                  :ARG1 (x11 / 인사
+                        :domain (x12 / and
+                              :op1 (x13 / 경제)
+                              :op2 (x14 / 외교안보))
+                        :poss (x15 / 정부
+                              :ARG1-of (x16 / 새롭-01)))
+                  :ARG2 (x17 / 국민)
+                  :manner (x18 / 직접)))
+      :time (x8 / 이날))
+
+# ::id snt17.E2017.NEWS.005 ::category EXNEWS :: split test
+# ::snt 장하성 신임 실장은 광주 출생으로, 경기고를 졸업해 펜실베니아대 경영학 박사학위를 받았다.
+# ::tokens ["장하성", "신임", "실장", "은", "광주", "출생", "으로", ",", "경기고", "를", "졸업", "하", "어", "펜실베니아", "대", "경영", "학", "박사", "학위", "를", "받", "았", "다", "."]
+# ::pos_tags ["NNP", "NNG", "NNG", "JX", "NNP", "NNG", "JKB", "SP", "NNP", "JKO", "NNG", "XSV", "EC", "NNP", "NNG", "NNG", "XSN", "NNG", "NNG", "JKO", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["PS_NAME", "CV_POSITION", "CV_POSITION", "O", "LCP_CITY", "O", "O", "O", "OGG_EDUCATION", "O", "O", "O", "O", "OGG_EDUCATION", "OGG_EDUCATION", "FD_SOCIAL_SCIENCE", "FD_SOCIAL_SCIENCE", "CV_POSITION", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 출생-01
+            :ARG1 (x2 / person
+                  :ARG0-of (x4 / have-org-role-91
+                        :ARG2 (x5 / 실장))
+                  :ARG1-of (x6 / 신임-00)
+                  :name (x3 / 이름
+                        :op1 "장하성")
+                  :wiki "장하성")
+            :location (x7 / city
+                  :name (x8 / 이름
+                        :op1 "광주")
+                  :wiki "광주광역시"))
+      :op2 (x9 / 졸업-01
+            :ARG0 x2
+            :ARG1 (x10 / school
+                  :name (x11 / 이름
+                        :op1 "경기고")
+                  :wiki "경기고등학교"))
+      :op3 (x12 / 받-01
+            :ARG0 x2
+            :ARG1 (x13 / 학위
+                  :mod (x14 / 박사)
+                  :topic (x15 / 경영학))
+            :ARG2 (x16 / university
+                  :name (x17 / 이름
+                        :op1 "펜실베니아대")
+                  :wiki "펜실베이니아_대학교")))
+
+# ::id snt26.E2017.NEWS.005 ::category EXNEWS :: split test
+# ::snt 그러면서 "경제가 갈 길이 성장 분배 이분법이 아니라 선순환이 있다. 이론과 실무를 두루 경험한 김 부의장이 중책을 맡은 만큼 헌법 취지대로 활성화해 고단한 국민 삶을 개선하는데 실질적 역할을 해줄 것을 기대한다"고 부연했다.
+# ::tokens ["그러", "면서", "\"", "경제", "가", "가", "ㄹ", "길", "이", "성장", "분배", "이분", "법", "이", "아니", "라", "선", "순환", "이", "있", "다", ".", "이론", "과", "실무", "를", "두루", "경험", "하", "ㄴ", "김", "부", "의장", "이", "중책", "을", "맡", "은", "만큼", "헌법", "취지", "대로", "활성", "화", "하", "어", "고단하", "ㄴ", "국민", "삶", "을", "개선", "하", "는데", "실질", "적", "역할", "을", "하", "어", "주", "ㄹ", "것", "을", "기대", "하", "ㄴ다", "\"", "고", "부연", "하", "었", "다", "."]
+# ::pos_tags ["VV", "EC", "SS", "NNG", "JKS", "VV", "ETM", "NNG", "JKS", "NNG", "NNG", "NNG", "NNG", "JKC", "VCN", "EC", "XPN", "NNG", "JKS", "VA", "EF", "SF", "NNG", "JC", "NNG", "JKO", "MAG", "NNG", "XSV", "ETM", "NNP", "XPN", "NNG", "JKS", "NNG", "JKO", "VV", "ETM", "NNB", "NNG", "NNG", "JX", "NNG", "XSN", "XSV", "EC", "VA", "ETM", "NNG", "NNG", "JKO", "NNG", "XSV", "EC", "NNG", "XSN", "NNG", "JKO", "VV", "EC", "VX", "ETM", "NNB", "JKO", "NNG", "XSV", "EF", "SS", "JKQ", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "PS_NAME", "CV_POSITION", "CV_POSITION", "O", "O", "O", "O", "O", "O", "CV_LAW", "O", "O", "O", "O", "O", "O", "O", "O", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op2 (x1 / 부연-00
+            :ARG1 (x2 / and
+                  :op1 (x3 / 선순환-00
+                        :domain (x4 / 길
+                              :ARG1-of (x5 / 가-01
+                                    :ARG0 (x6 / 경제)))
+                        :mod (x7 / 이분법
+                              :op1 (x8 / 성장-01)
+                              :op2 (x9 / 분배-01)
+                              :polarity -))
+                  :op2 (x10 / 기대-01
+                        :ARG1 (x11 / 하-01
+                              :ARG0 (x12 / person
+                                    :ARG0-of (x14 / have-org-role-91
+                                          :ARG2 (x15 / 부의장))
+                                    :ARG1-of (x16 / 경험-01
+                                          :ARG2 (x18 / and
+                                                :op1 (x19 / 이론)
+                                                :op2 (x20 / 실무))
+                                          :mod (x17 / 두루))
+                                    :name (x13 / 이름
+                                          :op1 "김")
+                                    :wiki -)
+                              :ARG1 (x21 / 역할
+                                    :mod (x22 / 실질))
+                              :purpose (x23 / 개선-01
+                                    :ARG1 (x24 / 살아가-01
+                                          :ARG0 (x25 / 국민)
+                                          :ARG1-of (x26 / 고단하-00))
+                                    :manner (x27 / 활성화-01
+                                          :manner (x28 / 취지
+                                                :mod (x29 / 헌법)))))
+                        :cause (x30 / 맡-01
+                              :ARG0 x12
+                              :ARG1 (x31 / 중책))))))
+
+# ::id snt11.E2017.NEWS.006 ::category EXNEWS :: split test
+# ::snt 건설사 협의체 운영위원을 맡은 건설사 임원에게는 징역 2년의 실형이 선고됐으며 나머지 전현직 임원 가운데 18명은 징역 8월에서 2년에 집행유예 1∼3년이 선고됐다.
+# ::tokens ["건설", "사", "협의", "체", "운영", "위원", "을", "맡", "은", "건설", "사", "임원", "에게", "는", "징역", "2", "년", "의", "실형", "이", "선고", "되", "었", "으며", "나머지", "전", "현직", "임원", "가운데", "18", "명", "은", "징역", "8", "월", "에서", "2", "년", "에", "집행", "유예", "1", "∼", "3", "년", "이", "선고", "되", "었", "다", "."]
+# ::pos_tags ["NNG", "XSN", "NNG", "XSN", "NNG", "NNG", "JKO", "VV", "ETM", "NNG", "XSN", "NNG", "JKB", "JX", "NNG", "SN", "NNB", "JKG", "NNG", "JKS", "NNG", "XSV", "EP", "EC", "NNG", "NNG", "NNG", "NNG", "NNG", "SN", "NNB", "JX", "NNG", "SN", "NNB", "JKB", "SN", "NNB", "JKB", "NNG", "NNG", "SN", "SO", "SN", "NNB", "JKS", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "O", "OGG_ECONOMY", "OGG_ECONOMY", "CV_POSITION", "CV_POSITION", "O", "O", "O", "O", "O", "CV_POSITION", "O", "O", "CV_LAW", "CV_LAW", "CV_LAW", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CV_POSITION", "O", "QT_MAN_COUNT", "QT_MAN_COUNT", "O", "CV_LAW", "CV_LAW", "CV_LAW", "O", "DT_DURATION", "DT_DURATION", "O", "CV_LAW", "CV_LAW", "DT_DURATION", "DT_DURATION", "DT_DURATION", "DT_DURATION", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 선고-01
+            :ARG1 (x2 / 실형
+                  :mod (x3 / 징역
+                        :mod (x4 / temporal-quantity
+                              :quant 2
+                              :unit (x5 / 년))))
+            :ARG2 (x6 / 사람
+                  :ARG0-of (x7 / have-org-role-91
+                        :ARG1 (x8 / 회사
+                              :ARG0-of (x9 / 건설-01))
+                        :ARG2 (x10 / 임원)
+                        :ARG3 (x11 / 위원
+                              :ARG0-of (x12 / 운영-01
+                                    :ARG1 (x13 / 조직체
+                                          :poss x8
+                                          :purpose (x14 / 협의-01)))))))
+      :op2 (x15 / 선고-01
+            :ARG1 (x16 / or
+                  :op1 (x17 / 징역
+                        :mod (x18 / 사이
+                              :op1 (x19 / temporal-quantity
+                                    :quant 8
+                                    :unit (x20 / 월))
+                              :op2 (x21 / temporal-quantity
+                                    :quant 2
+                                    :unit (x22 / 년))))
+                  :op2 (x23 / 집행유예
+                        :mod (x24 / 사이
+                              :op1 (x25 / temporal-quantity
+                                    :quant 1
+                                    :unit (x26 / 년))
+                              :op2 (x27 / temporal-quantity
+                                    :quant 3
+                                    :unit (x28 / 년)))))
+            :ARG2 (x29 / 사람
+                  :ARG1-of (x31 / include-91
+                        :ARG2 (x32 / 사람
+                              :ARG0-of (x34 / have-org-role-91
+                                    :ARG2 (x35 / 임원
+                                          :mod (x36 / or
+                                                :op1 (x37 / 전직)
+                                                :op2 (x38 / 현직))))
+                              :quant (x33 / 나머지)))
+                  :quant 18
+                  :unit (x30 / 명))))
+
+# ::id snt11.E2017.NEWS.007 ::category EXNEWS :: split test
+# ::snt 글로벌 은행들과 비교했더니 한국 은행들의 상담 시간은 매우 짧았다.
+# ::tokens ["글로벌", "은행", "들", "과", "비교", "하", "었", "더니", "한국", "은행", "들", "의", "상담", "시간", "은", "매우", "짧", "았", "다", "."]
+# ::pos_tags ["NNG", "NNG", "XSN", "JC", "NNG", "XSV", "EP", "EC", "NNP", "NNG", "XSN", "JKG", "NNG", "NNG", "JX", "MAG", "VA", "EP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "OGG_ECONOMY", "OGG_ECONOMY", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 비교-01
+            :ARG1 (x2 / 은행
+                  :location (x3 / country
+                        :name (x4 / 이름
+                              :op1 "한국")
+                        :wiki "대한민국"))
+            :ARG2 (x5 / 은행
+                  :mod (x6 / 글로벌)))
+      :op2 (x7 / have-degree-91
+            :ARG1 x2
+            :ARG2 (x8 / 짧-01
+                  :ARG1 (x9 / 시간
+                        :duration-of (x10 / 상담-00)))
+            :ARG3 (x11 / 매우)
+            :ARG4 x5))
+
+# ::id snt16.E2017.NEWS.007 ::category EXNEWS :: split test
+# ::snt 25일 오전 6~7시에 걸쳐 한국과 해외 금융회사의 콜센터에 실제로 전화를 걸어 보았더니 한국의 4대 은행은 모두 연결이 안 됐다.
+# ::tokens ["25", "일", "오전", "6", "~", "7", "시", "에", "걸치", "어", "한국", "과", "해외", "금융", "회사", "의", "콜", "센터", "에", "실제로", "전화", "를", "걸", "어", "보", "았", "더니", "한국", "의", "4", "대", "은행", "은", "모두", "연결", "이", "안", "되", "었", "다", "."]
+# ::pos_tags ["SN", "NNB", "NNG", "SN", "SO", "SN", "NNB", "JKB", "VV", "EC", "NNP", "JC", "NNG", "NNG", "NNG", "JKG", "NNG", "NNG", "JKB", "MAG", "NNG", "JKO", "VV", "EC", "VX", "EP", "EC", "NNP", "JKG", "SN", "NNB", "NNG", "JX", "MAG", "NNG", "JKS", "MAG", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["DT_DAY", "DT_DAY", "TI_DURATION", "TI_DURATION", "TI_DURATION", "TI_DURATION", "TI_DURATION", "O", "O", "O", "LCP_COUNTRY", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "LCP_COUNTRY", "O", "QT_ORDER", "QT_ORDER", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 전화-01
+            :ARG1 (x2 / 콜센터
+                  :poss (x3 / 회사
+                        :location (x5 / or
+                              :op1 (x6 / country
+                                    :name (x7 / 이름
+                                          :op1 "한국")
+                                    :wiki "대한민국")
+                              :op2 (x8 / 해외))
+                        :topic (x4 / 금융)))
+            :time (x9 / date-interval
+                  :op1 (x10 / date-entity
+                        :day 25
+                        :time "06:00")
+                  :op1 (x11 / date-entity
+                        :day 25
+                        :time "07:00")))
+      :op2 (x12 / 연결-01
+            :ARG1 (x14 / 은행
+                  :lox6ation x6
+                  :mod 4)
+            :mod (x13 / 모두)
+            :polarity -))
+
+# ::id snt10.E2017.NEWS.008 ::category EXNEWS :: split test
+# ::snt 서울 강남구 삼성동 홍실아파트 전용 108㎡는 며칠 전 16억 9000만 원(8층)에 계약됐다.
+# ::tokens ["서울", "강남구", "삼성동", "홍실", "아파트", "전용", "108", "㎡", "는", "며칠", "전", "16", "억", "9000", "만", "원", "(", "8", "층", ")", "에", "계약", "되", "었", "다", "."]
+# ::pos_tags ["NNP", "NNP", "NNP", "NNG", "NNG", "NNG", "SN", "SW", "JX", "NNG", "NNG", "SN", "NR", "SN", "NR", "NNB", "SS", "SN", "NNG", "SS", "JKB", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["LCP_CAPITALCITY", "LCP_COUNTY", "LCP_COUNTY", "AF_BUILDING", "AF_BUILDING", "O", "QT_SIZE", "QT_SIZE", "O", "O", "O", "QT_PRICE", "QT_PRICE", "QT_PRICE", "QT_PRICE", "QT_PRICE", "O", "QT_ORDER", "QT_ORDER", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 계약-01
+      :ARG1 (x1 / have-mod-91
+            :ARG1-of (x15 / cost-01
+                  :ARG2 (x16 / monetary-quantity
+                        :quant 1690000000
+                        :unit (x17 / 원)))
+            :ARG2 (x2 / building
+                  :location (x4 / city-district
+                        :location (x6 / city
+                              :location (x8 / city
+                                    :name (x9 / 이름
+                                          :op1 "서울")
+                                    :wiki "서울특별시")
+                              :name (x7 / 이름
+                                    :op1 "강남구")
+                              :wiki "강남구")
+                        :name (x5 / 이름
+                              :op1 "삼성동")
+                        :wiki "삼성동_(강남구)")
+                  :name (x3 / 이름
+                        :op1 "홍실아파트")
+                  :wiki -)
+            :ARG2 (x10 / 전용면적
+                  :mod (x11 / area-quantity
+                        :quant 108
+                        :unit (x12 / square-meter)))
+            :ARG2 (x13 / 층
+                  :ord (x14 / ordinal-entity
+                        :value 8)))
+      :time (x18 / 전
+            :op1 (x19 / 며칠)))
+
+# ::id snt22.E2017.NEWS.008 ::category EXNEWS :: split test
+# ::snt 이남수 신한금융투자 부동산팀장은 "하반기엔 금리 인상 가능성이 있는 데다가 주택 시장에 투기 수요가 몰리면 정부가 보유세 인상이나 가계 대출 관리 등 규제를 강화할 수 있다"며 "분위기에 휩쓸려 섣불리 투자했다가 '낭패'를 볼 수 있다는 걸 명심해야 한다"고 말했다.
+# ::tokens ["이남수", "신한", "금융", "투자", "부동", "산", "팀장", "은", "\"", "하", "반기", "에", "ㄴ", "금리", "인상", "가능", "성", "이", "있", "는", "데", "다가", "주택", "시장", "에", "투기", "수요", "가", "몰리", "면", "정부", "가", "보유", "세", "인상", "이나", "가계", "대출", "관리", "등", "규제", "를", "강화", "하", "ㄹ", "수", "있", "다", "\"", "며", "\"", "분위기", "에", "휩쓸리", "어", "섣불리", "투자", "하", "었", "다가", "'", "낭패", "'", "를", "보", "ㄹ", "수", "있", "다는", "것", "ㄹ", "명심", "하", "어야", "하", "ㄴ다", "\"", "고", "말", "하", "었", "다", "."]
+# ::pos_tags ["NNP", "NNG", "NNG", "NNG", "NNG", "NNG", "NNG", "JX", "SS", "NNG", "NNG", "JKB", "JX", "NNG", "NNG", "NNG", "XSN", "JKS", "VA", "ETM", "NNB", "JX", "NNG", "NNG", "JKB", "NNG", "NNG", "JKS", "VV", "EC", "NNG", "JKS", "NNG", "XSN", "NNG", "JC", "NNG", "NNG", "NNG", "NNB", "NNG", "JKO", "NNG", "XSV", "ETM", "NNB", "VA", "EF", "SS", "EC", "SS", "NNG", "JKB", "VV", "EC", "MAG", "NNG", "XSV", "EP", "EC", "SS", "NNG", "SS", "JKO", "VV", "ETM", "NNB", "VA", "ETM", "NNB", "JKO", "NNG", "XSV", "EC", "VX", "EF", "SS", "JKQ", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["PS_NAME", "OGG_ECONOMY", "OGG_ECONOMY", "OGG_ECONOMY", "CV_POSITION", "CV_POSITION", "CV_POSITION", "O", "O", "DT_DURATION", "DT_DURATION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "OGG_POLITICS", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 말하-01
+      :ARG0 (x1 / person
+            :ARG0-of (x3 / have-org-role-91
+                  :ARG1 (x4 / company
+                        :name (x5 / 이름
+                              :op1 "신한금융투자")
+                        :wiki "신한금융투자")
+                  :ARG2 (x6 / 팀장
+                        :topic (x7 / 부동산)))
+            :name (x2 / 이름
+                  :op1 "이남수")
+            :wiki -)
+      :ARG1 (x8 / and
+            :op1 (x9 / 가능-01
+                  :ARG1 (x10 / and
+                        :op1 (x11 / 인상-01
+                              :ARG1 (x12 / 금리))
+                        :op2 (x13 / 강화-01
+                              :ARG0 (x14 / 정부)
+                              :ARG1 (x15 / 규제-01
+                                    :ARG0 x14
+                                    :example (x16 / 등
+                                          :op1 (x17 / 인상-01
+                                                :ARG1 (x18 / 보유세))
+                                          :op2 (x19 / 관리-01
+                                                :ARG1 (x20 / 가계대출))))
+                              :condition (x21 / 몰-02
+                                    :ARG1 (x22 / 수요
+                                          :purpose (x23 / 투기))
+                                    :ARG2 (x24 / 시장
+                                          :mod (x25 / 주택)))))
+                  :time (x26 / 하반기))
+            :op2 (x27 / obligate-01
+                  :ARG2 (x28 / 명심-00
+                        :ARG1 (x29 / 가능-01
+                              :ARG1 (x30 / 낭패-00
+                                    :cause (x31 / 투자-01
+                                          :cause (x32 / 분위기)
+                                          :manner (x33 / 섣불리))))))))
+
+# ::id snt12.E2017.NEWS.009 ::category EXNEWS :: split test
+# ::snt 북극성-2도 최정점 고도 560여㎞로 500㎞를 비행했다.
+# ::tokens ["북극", "성", "-", "2", "도", "최정점", "고도", "560", "여", "㎞", "로", "500", "㎞", "를", "비행", "하", "었", "다", "."]
+# ::pos_tags ["NNG", "NNG", "SS", "SN", "JX", "NNP", "NNG", "SN", "XSN", "SW", "JKB", "SN", "SW", "JKO", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["QT_SPORTS", "QT_SPORTS", "QT_SPORTS", "QT_SPORTS", "O", "PS_NAME", "O", "QT_LENGTH", "QT_LENGTH", "QT_LENGTH", "O", "QT_LENGTH", "QT_LENGTH", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op2 (x1 / 비행-01
+            :ARG0 (x2 / weapon*
+                  :name (x3 / 이름
+                        :op1 "북극성-2")
+                  :wiki "북극성_2호")
+            :ARG1 (x4 / 고도
+                  :mod (x5 / 최정점)
+                  :mod (x6 / 약
+                        :op1 (x7 / distance-quantity
+                              :quant 560
+                              :unit (x8 / kilometer))))
+            :extent (x9 / distance-quantity
+                  :quant 500
+                  :unit (x10 / kilometer))))
+
+# ::id snt21.E2017.NEWS.009 ::category EXNEWS :: split test
+# ::snt A2는 오키나와 등 미국의 전진기지나 항모강습단을 공격할 수 있는 능력을 확보해 미군 전력이 서태평양 해역으로 접근하는 것을 지연시키는 전략이다.
+# ::tokens ["A", "2", "는", "오키나와", "등", "미국", "의", "전진", "기지", "나", "항모", "강습단", "을", "공격", "하", "ㄹ", "수", "있", "는", "능력", "을", "확보", "하", "어", "미군", "전력", "이", "서", "태평", "양", "해역", "으로", "접근", "하", "는", "것", "을", "지연", "시키", "는", "전략", "이", "다", "."]
+# ::pos_tags ["SL", "SN", "JX", "NNP", "NNB", "NNP", "JKG", "NNG", "NNG", "JC", "NNG", "NNG", "JKO", "NNG", "XSV", "ETM", "NNB", "VA", "ETM", "NNG", "JKO", "NNG", "XSV", "EC", "NNG", "NNG", "JKS", "NNG", "NNG", "NNG", "NNG", "JKB", "NNG", "XSV", "ETM", "NNB", "JKO", "NNG", "XSV", "ETM", "NNG", "VCP", "EF", "SF"]
+# ::ner_tags ["QT_OTHERS", "QT_OTHERS", "O", "LCP_CITY", "O", "LCP_COUNTRY", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "OGG_MILITARY", "O", "O", "LCG_OCEAN", "LCG_OCEAN", "LCG_OCEAN", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 전략
+      :domain (x1 / military-plan*
+            :name (x2 / 이름
+                  :op1 "A2")
+            :wiki -)
+      :mod (x3 / 지연-01
+            :ARG1 (x4 / 접근-01
+                  :ARG0 (x5 / 전력
+                        :poss (x6 / military
+                              :name (x7 / 이름
+                                    :op1 "미군")
+                              :wiki "미군"))
+                  :ARG2 (x8 / 해역
+                        :location (x9 / ocean
+                              :name (x10 / 이름
+                                    :op1 "서태평양")
+                              :wiki -)))
+            :manner (x11 / 확보-01
+                  :ARG1 (x12 / 능력
+                        :mod (x13 / 공격-01
+                              :ARG1 (x14 / or
+                                    :op1 (x15 / 전진기지
+                                          :location (x16 / 등
+                                                :op1 (x17 / city
+                                                      :name (x18 / 이름
+                                                            :op1 "오키나와")
+                                                      :wiki "오키나와섬"))
+                                          :poss (x19 / country
+                                                :name (x20 / 이름
+                                                      :op1 "미국")
+                                                :wiki "미국"))
+                                    :op2 (x21 / 항모강습단
+                                          :poss x19)))))))
+
+# ::id snt5.E2017.NEWS.010 ::category EXNEWS :: split test
+# ::snt 10여 분 뒤 현장에 도착한 119구급대에 따르면 "당시 임 씨의 맥박은 거의 멈춘 상태였다"고 한다.
+# ::tokens ["10", "여", "분", "뒤", "현장", "에", "도착", "하", "ㄴ", "119", "구급", "대", "에", "따르", "면", "\"", "당시", "임", "씨", "의", "맥박", "은", "거의", "멈추", "ㄴ", "상태", "이", "었", "다", "\"", "고", "하", "ㄴ다", "."]
+# ::pos_tags ["SN", "XSN", "NNB", "NNG", "NNG", "JKB", "NNG", "XSV", "ETM", "SN", "NNG", "XSN", "JKB", "VV", "EC", "SS", "NNG", "NNP", "NNB", "JKG", "NNG", "JX", "MAG", "VV", "ETM", "NNG", "VCP", "EP", "EF", "SS", "JKQ", "VV", "EF", "SF"]
+# ::ner_tags ["TI_OTHERS", "TI_OTHERS", "TI_OTHERS", "TI_OTHERS", "O", "O", "O", "O", "O", "OGG_POLITICS", "OGG_POLITICS", "OGG_POLITICS", "O", "O", "O", "O", "O", "PS_NAME", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 하-02
+      :ARG0 (x1 / government-organization
+            :ARG1-of (x3 / 도착-01
+                  :ARG3 (x4 / 현장)
+                  :time (x5 / 뒤
+                        :op1 (x6 / 약
+                              :op1 (x7 / temporal-quantity
+                                    :quant 10
+                                    :unit (x8 / 분)))))
+            :name (x2 / 이름
+                  :op1 "119구급대")
+            :wiki "대한민국의_소방#소방관서")
+      :ARG1 (x9 / have-degree-91
+            :ARG1 (x10 / 맥박
+                  :poss (x11 / person
+                        :name (x12 / 이름
+                              :op1 "임")
+                        :wiki -))
+            :ARG2 (x13 / 멈추-01
+                  :ARG1 x10)
+            :ARG3 (x14 / 거의)))
+
+# ::id snt23.E2017.NEWS.010 ::category EXNEWS :: split test
+# ::snt 오후 4시.
+# ::tokens ["오후", "4", "시", "."]
+# ::pos_tags ["NNG", "SN", "NNB", "SF"]
+# ::ner_tags ["TI_HOUR", "TI_HOUR", "TI_HOUR", "O"]
+# ::note
+(x0 / date-entity
+      :time "16:00")
+
+# ::id snt31.E2017.NEWS.010 ::category EXNEWS :: split test
+# ::snt 위 교수는 "의료진 모두 하나가 돼서 환자 한 사람이 아닌 가족 전부를 감동시킨 '예술 작품'을 만들어낸 기분"이라고 했다.
+# ::tokens ["위", "교수", "는", "\"", "의료", "진", "모두", "하나", "가", "되", "어서", "환자", "한", "사람", "이", "아니", "ㄴ", "가족", "전부", "를", "감동", "시키", "ㄴ", "'", "예술", "작품", "'", "을", "만들", "어", "내", "ㄴ", "기분", "\"", "이라고", "하", "었", "다", "."]
+# ::pos_tags ["NNG", "NNG", "JX", "SS", "NNG", "XSN", "MAG", "NNG", "JKC", "VV", "EC", "NNG", "MM", "NNG", "JKC", "VCN", "ETM", "NNG", "NNG", "JKO", "NNG", "XSV", "ETM", "SS", "NNG", "NNG", "SS", "JKO", "VV", "EC", "VX", "ETM", "NNG", "SS", "JKQ", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "CV_OCCUPATION", "O", "O", "CV_POSITION", "CV_POSITION", "O", "QT_COUNT", "O", "O", "O", "CV_POSITION", "QT_MAN_COUNT", "QT_MAN_COUNT", "O", "O", "O", "CV_RELATION", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 하-02
+      :ARG0 (x1 / person
+            :ARG0-of (x3 / have-org-role-91
+                  :ARG2 (x4 / 교수))
+            :name (x2 / 이름
+                  :op1 "위")
+            :wiki -)
+      :ARG1 (x5 / 기분
+            :mod (x6 / 만들-01
+                  :ARG1 (x7 / 작품
+                        :ARG0-of (x9 / 감동-01
+                              :ARG1 (x10 / 가족
+                                    :mod (x12 / 아니-02
+                                          :ARG1 (x13 / 환자
+                                                :quant 1
+                                                :unit (x14 / 사람)))
+                                    :quant (x11 / 전부)))
+                        :mod (x8 / 예술))
+                  :manner (x15 / 하나되-00
+                        :ARG1 (x16 / 의료진
+                              :quant (x17 / 모두))))))
+
+# ::id snt3.E2017.Wiki.001 ::category EXWIKI :: split test
+# ::snt 수도는 나이로비이며 공용어는 영어와 스와힐리어이다.
+# ::tokens ["수도", "는", "나이로비", "이", "며", "공용", "어", "는", "영어", "와", "스와힐리", "어", "이", "다", "."]
+# ::pos_tags ["NNG", "JX", "NNG", "VCP", "EC", "NNG", "XSN", "JX", "NNP", "JC", "NNG", "XSN", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "LCP_CAPITALCITY", "O", "O", "O", "O", "O", "CV_LANGUAGE", "O", "CV_LANGUAGE", "CV_LANGUAGE", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / city
+            :domain (x3 / 수도)
+            :name (x2 / 이름
+                  :op1 "나이로비")
+            :wiki "나이로비")
+      :op2 (x4 / and
+            :domain (x5 / 공용어)
+            :op1 (x6 / language
+                  :name (x7 / 이름
+                        :op1 "영어")
+                  :wiki "영어")
+            :op2 (x8 / language
+                  :name (x9 / 이름
+                        :op1 "스와힐리어")
+                  :wiki "스와힐리어")))
+
+# ::id snt2.E2017.Wiki.002 ::category EXWIKI :: split test
+# ::snt 원래 이름은 보르지긴 테무진이다.
+# ::tokens ["원래", "이름", "은", "보르지긴", "테무진", "이", "다", "."]
+# ::pos_tags ["NNG", "NNG", "JX", "NNP", "NNP", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "PS_NAME", "PS_NAME", "O", "O", "O"]
+# ::note
+(x0 / 이름
+      :domain (x2 / 이름
+            :mod (x3 / 원래))
+      :name-of (x1 / person
+            :wiki "칭기즈_칸")
+      :op1 "보르지긴"
+      :op2 "테무진")
+
+# ::id snt2.E2017.Wiki.004 ::category EXWIKI :: split test
+# ::snt 대사의 오용과 남용을 강하게 성토한 그는 1517년 95개 논제를 게시함으로써 도미니코회 수사이자 대사령 설교 담당자인 요한 테첼에 맞섰다.
+# ::tokens ["대사", "의", "오용", "과", "남용", "을", "강하", "게", "성토", "하", "ㄴ", "그", "는", "1517", "년", "95", "개", "논제", "를", "게시", "하", "ㅁ", "으로써", "도미니코", "회", "수사", "이", "자", "대사", "령", "설교", "담당", "자", "이", "ㄴ", "요한", "테첼", "에", "맞서", "었", "다", "."]
+# ::pos_tags ["NNG", "JKG", "NNG", "JC", "NNG", "JKO", "VA", "EC", "NNG", "XSV", "ETM", "NP", "JX", "SN", "NNB", "SN", "NNB", "NNG", "JKO", "NNG", "XSV", "ETN", "JKB", "NNP", "XSN", "NNG", "VCP", "EC", "NNG", "XSN", "NNG", "NNG", "XSN", "VCP", "ETM", "NNP", "NNP", "JKB", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "DT_YEAR", "DT_YEAR", "QT_COUNT", "QT_COUNT", "O", "O", "O", "O", "O", "O", "OGG_RELIGION", "OGG_RELIGION", "O", "O", "O", "CV_POSITION", "O", "CV_POSITION", "CV_POSITION", "CV_POSITION", "O", "PS_NAME", "PS_NAME", "PS_NAME", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 맞서-01
+      :ARG0 (x1 / 그
+            :ARG0-of (x2 / 성토-01
+                  :ARG1 (x3 / and
+                        :op1 (x4 / 오용-00
+                              :ARG1 (x5 / 대사))
+                        :op2 (x6 / 남용-00
+                              :ARG1 x5))
+                  :manner (x7 / 강하-01)))
+      :ARG1 (x8 / person
+            :ARG0-of (x10 / have-org-role-91
+                  :ARG1 (x11 / religious-group
+                        :name (x12 / 이름
+                              :op1 "도미니코회")
+                        :wiki "도미니코_수도회")
+                  :ARG2 (x13 / and
+                        :op1 (x14 / 수사)
+                        :op2 (x15 / 사람
+                              :ARG0-of (x16 / 담당-01
+                                    :ARG1 (x17 / 설교-00
+                                          :ARG1 (x18 / 대사령))))))
+            :name (x9 / 이름
+                  :op1 "요한"
+                  :op2 "테첼")
+            :wiki "요한_테첼")
+      :manner (x19 / 게시-01
+            :ARG0 x8
+            :ARG1 (x20 / 논제
+                  :quant 95
+                  :unit (x21 / 개))
+            :time (x22 / date-entity
+                  :year 1517)))
+
+# ::id snt0.E2017.Wiki.006 ::category EXWIKI :: split test
+# ::snt 라인 강
+# ::tokens ["라인", "강"]
+# ::pos_tags ["NNP", "NNG"]
+# ::ner_tags ["LCG_RIVER", "LCG_RIVER"]
+# ::note
+(x0 / river
+      :name (x1 / 이름
+            :op1 "라인"
+            :op2 "강")
+      :wiki "라인강")
+
+# ::id snt0.E2017.Wiki.007 ::category EXWIKI :: split test
+# ::snt 아폴로 계획
+# ::tokens ["아폴로", "계획"]
+# ::pos_tags ["NNG", "NNG"]
+# ::ner_tags ["CV_POLICY", "CV_POLICY"]
+# ::note
+(x0 / project*
+      :name (x1 / 이름
+            :op1 "아폴로"
+            :op2 "계획")
+      :wiki "아폴로_계획")
+
+# ::id snt6.E2017.Wiki.007 ::category EXWIKI :: split test
+# ::snt 여러 번의 성공도 있었지만, 두 차례의 큰 사고도 있었다.
+# ::tokens ["여러", "번", "의", "성공", "도", "있", "었", "지만", ",", "두", "차례", "의", "크", "ㄴ", "사고", "도", "있", "었", "다", "."]
+# ::pos_tags ["MM", "NNB", "JKG", "NNG", "JX", "VA", "EP", "EC", "SP", "MM", "NNG", "JKG", "VA", "ETM", "NNG", "JX", "VA", "EP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "QT_COUNT", "QT_COUNT", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / contrast-01
+      :ARG1 (x1 / 성공-01
+            :quant (x2 / 여러번))
+      :ARG2 (x3 / 사고
+            :ARG1-of (x5 / 크-01)
+            :quant 2
+            :unit (x4 / 차례)))
+
+# ::id snt9.E2017.Wiki.008 ::category EXWIKI :: split test
+# ::snt 찰스 윌리엄 엘리엇은 40년간 하버드 총장으로 일하면서 하버드 대학교를 근대 연구 대학으로 변모시켰다.
+# ::tokens ["찰스", "윌리엄", "엘리엇", "은", "40", "년", "간", "하버드", "총장", "으로", "일", "하", "면서", "하버드", "대", "학교", "를", "근대", "연구", "대학", "으로", "변모", "시키", "었", "다", "."]
+# ::pos_tags ["NNP", "NNP", "NNP", "JX", "SN", "NNB", "XSN", "NNP", "NNG", "JKB", "NNG", "XSV", "EC", "NNP", "XPN", "NNG", "JKO", "NNG", "NNG", "NNG", "JKB", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["PS_NAME", "PS_NAME", "PS_NAME", "O", "DT_DURATION", "DT_DURATION", "DT_DURATION", "OGG_EDUCATION", "CV_POSITION", "O", "O", "O", "O", "OGG_EDUCATION", "OGG_EDUCATION", "OGG_EDUCATION", "O", "DT_OTHERS", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 변모-01
+      :ARG0 (x1 / person
+            :ARG0-of (x3 / have-org-role-91
+                  :ARG1 (x4 / university
+                        :name (x5 / 이름
+                              :op1 "하버드"
+                              :op2 "대학교")
+                        :wiki "하버드_대학교")
+                  :ARG2 (x6 / 총장)
+                  :duration (x7 / temporal-quantity
+                        :quant 40
+                        :unit (x8 / 년)))
+            :name (x2 / 이름
+                  :op1 "찰스"
+                  :op2 "윌리엄"
+                  :op3 "엘리엇")
+            :wiki "찰스_윌리엄_엘리엇")
+      :ARG1 x4
+      :ARG3 (x9 / 대학
+            :ARG0-of (x10 / 연구-01)
+            :mod (x11 / 근대)))
+
+# ::id snt24.E2017.Wiki.008 ::category EXWIKI :: split test
+# ::snt 1782년에 메디컬 스쿨(Harvard Medical School), 1816년에 신학대학원(Harvard Divinity School), 1817년에 로스쿨(Harvard Law School), 1867년에 치의학대학원(Harvard School of Dental Medicine), 1908년에 비즈니스 스쿨(Harvard Business School), 1920년에 교육대학원(Harvard Graduate School of Education), 1922년에 공공보건대학원(Harvard School of Public Health), 그리고 1936년에 케네디 스쿨(Harvard Kennedy School)을 설립하면서 차츰 현대적인 종합대학이 됐다.
+# ::tokens ["1782", "년", "에", "메디컬", "스쿨", "(", "Harvard", "Medical", "School", ")", ",", "1816", "년", "에", "신학", "대학", "원", "(", "Harvard", "Divinity", "School", ")", ",", "1817", "년", "에", "로스쿨", "(", "Harvard", "Law", "School", ")", ",", "1867", "년", "에", "치", "의학", "대학", "원", "(", "Harvard", "School", "of", "Dental", "Medicine", ")", ",", "1908", "년", "에", "비즈니스", "스쿨", "(", "Harvard", "Business", "School", ")", ",", "1920", "년", "에", "교육", "대학", "원", "(", "Harvard", "Graduate", "School", "of", "Education", ")", ",", "1922", "년", "에", "공공", "보건", "대학", "원", "(", "Harvard", "School", "of", "Public", "Health", ")", ",", "그리고", "1936", "년", "에", "케네디", "스쿨", "(", "Harvard", "Kennedy", "School", ")", "을", "설립", "하", "면서", "차츰", "현대", "적", "이", "ㄴ", "종합", "대학", "이", "되", "었", "다", "."]
+# ::pos_tags ["SN", "NNB", "JKB", "NNG", "NNG", "SS", "SL", "SL", "SL", "SS", "SP", "SN", "NNB", "JKB", "NNG", "NNG", "XSN", "SS", "SL", "SL", "SL", "SS", "SP", "SN", "NNB", "JKB", "NNG", "SS", "SL", "SL", "SL", "SS", "SP", "SN", "NNB", "JKB", "XPN", "NNG", "NNG", "XSN", "SS", "SL", "SL", "SL", "SL", "SL", "SS", "SP", "SN", "NNB", "JKB", "NNG", "NNG", "SS", "SL", "SL", "SL", "SS", "SP", "SN", "NNB", "JKB", "NNG", "NNG", "XSN", "SS", "SL", "SL", "SL", "SL", "SL", "SS", "SP", "SN", "NNB", "JKB", "NNG", "NNG", "NNG", "XSN", "SS", "SL", "SL", "SL", "SL", "SL", "SS", "SP", "MAJ", "SN", "NNB", "JKB", "NNP", "NNG", "SS", "SL", "SL", "SL", "SS", "JKO", "NNG", "XSV", "EC", "MAG", "NNG", "XSN", "VCP", "ETM", "NNG", "NNG", "JKC", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["DT_YEAR", "DT_YEAR", "O", "O", "O", "O", "OGG_EDUCATION", "OGG_EDUCATION", "OGG_EDUCATION", "O", "O", "DT_YEAR", "DT_YEAR", "O", "FD_OTHERS", "O", "O", "O", "OGG_EDUCATION", "OGG_EDUCATION", "OGG_EDUCATION", "O", "O", "DT_YEAR", "DT_YEAR", "O", "OGG_EDUCATION", "O", "OGG_EDUCATION", "OGG_EDUCATION", "OGG_EDUCATION", "O", "O", "DT_YEAR", "DT_YEAR", "O", "OGG_EDUCATION", "OGG_EDUCATION", "OGG_EDUCATION", "OGG_EDUCATION", "O", "O", "O", "O", "O", "O", "O", "O", "DT_YEAR", "DT_YEAR", "O", "O", "O", "O", "O", "O", "O", "O", "O", "DT_YEAR", "DT_YEAR", "O", "OGG_EDUCATION", "OGG_EDUCATION", "OGG_EDUCATION", "O", "OGG_EDUCATION", "O", "O", "O", "O", "O", "O", "DT_YEAR", "DT_YEAR", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "DT_YEAR", "DT_YEAR", "O", "PS_NAME", "PS_NAME", "O", "OGG_EDUCATION", "OGG_EDUCATION", "OGG_EDUCATION", "O", "O", "O", "O", "O", "O", "DT_OTHERS", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 되-01
+      :ARG2 (x1 / 대학
+            :mod (x2 / 종합-00)
+            :mod (x3 / 현대))
+      :manner (x4 / 차츰)
+      :manner (x5 / and
+            :op1 (x6 / 설립-01
+                  :ARG1 (x7 / 대학원
+                        :topic (x8 / 의학))
+                  :time (x9 / date-entity
+                        :year 1782))
+            :op2 (x10 / 설립-01
+                  :ARG1 (x11 / 대학원
+                        :topic (x12 / 신학))
+                  :time (x13 / date-entity
+                        :year 1816))
+            :op3 (x14 / 설립-01
+                  :ARG1 (x15 / 대학원
+                        :topic (x16 / 법학))
+                  :time (x17 / date-entity
+                        :year 1817))
+            :op4 (x18 / 설립-01
+                  :ARG1 (x19 / 대학원
+                        :topic (x20 / 치의학))
+                  :time (x21 / date-entity
+                        :year 1867))
+            :op5 (x22 / 설립-01
+                  :ARG1 (x23 / 대학원
+                        :topic (x24 / 경영학))
+                  :time (x25 / date-entity
+                        :year 1908))
+            :op6 (x26 / 설립-01
+                  :ARG1 (x27 / 대학원
+                        :topic (x28 / 교육학))
+                  :time (x29 / date-entity
+                        :year 1920))
+            :op7 (x30 / 설립-01
+                  :ARG1 (x31 / 대학원
+                        :topic (x32 / 공공보건학))
+                  :time (x33 / date-entity
+                        :year 1922))
+            :op8 (x34 / 설립-01
+                  :ARG1 (x35 / university
+                        :name (x36 / 이름
+                              :op1 "케네디"
+                              :op2 "스쿨")
+                        :wiki -)
+                  :time (x37 / date-entity
+                        :year 1936))))
+
+# ::id snt27.E2017.Wiki.008 ::category EXWIKI :: split test
+# ::snt 메인 캠퍼스에서 찰스 강 건너편에 자리잡고 있는 올스턴 지역까지 도보로 갈 수 있다.
+# ::tokens ["메인", "캠퍼스", "에서", "찰스", "강", "건너", "편", "에", "자리", "잡", "고", "있", "는", "올스턴", "지역", "까지", "도보", "로", "가", "ㄹ", "수", "있", "다", "."]
+# ::pos_tags ["NNG", "NNG", "JKB", "NNP", "NNG", "NNG", "NNG", "JKB", "NNG", "VV", "EC", "VX", "ETM", "NNP", "NNG", "JX", "NNG", "JKB", "VV", "ETM", "NNB", "VA", "EF", "SF"]
+# ::ner_tags ["OGG_EDUCATION", "OGG_EDUCATION", "O", "LCG_RIVER", "LCG_RIVER", "O", "O", "O", "O", "O", "O", "O", "O", "LCP_CITY", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 가능-01
+      :ARG1 (x1 / 가-01
+            :ARG2 (x2 / location
+                  :name (x3 / 이름
+                        :op1 "메인"
+                        :op2 "캠퍼스")
+                  :wiki -)
+            :ARG3 (x4 / city-district
+                  :location (x6 / 건너편
+                        :op1 (x7 / river
+                              :name (x8 / 이름
+                                    :op1 "찰스"
+                                    :op2 "강")
+                              :wiki "찰스강"))
+                  :name (x5 / 이름
+                        :op1 "올스턴"
+                        :op2 "지역")
+                  :wiki -)
+            :manner (x9 / 도보)))
+
+# ::id snt5.E2017.Wiki.009 ::category EXWIKI :: split test
+# ::snt 이후 주원장의 명나라에 의해 북쪽으로 쫓겨나 쇠퇴하게 된다.
+# ::tokens ["이후", "주원장", "의", "명나라", "에", "의하", "어", "북쪽", "으로", "쫓겨나", "아", "쇠퇴", "하", "게", "되", "ㄴ다", "."]
+# ::pos_tags ["NNG", "NNP", "JKG", "NNP", "JKB", "VV", "EC", "NNG", "JKB", "VV", "EC", "NNG", "XSV", "EC", "VV", "EF", "SF"]
+# ::ner_tags ["O", "PS_NAME", "O", "LCP_COUNTRY", "O", "O", "O", "TM_DIRECTION", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 쇠퇴-00
+      :cause (x1 / 쫓겨나-00
+            :cause (x3 / country
+                  :name (x4 / 이름
+                        :op1 "명나라")
+                  :poss (x5 / person
+                        :name (x6 / 이름
+                              :op1 "주원장")
+                        :wiki "홍무제")
+                  :wiki "명나라")
+            :direction (x2 / 북쪽))
+      :time (x7 / 이후))
+
+# ::id snt16.E2017.Wiki.010 ::category EXWIKI :: split test
+# ::snt 전문대학원 중에는 의학대학원(Pritzker School of Medicine, University of Chicago), 법학대학원(University of Chicago Law School), 경영대학원(University of Chicago Booth School of Business) 등이 유명하다.
+# ::tokens ["전문", "대학", "원", "중", "에", "는", "의학", "대학", "원", "(", "Pritzker", "School", "of", "Medicine", ",", "University", "of", "Chicago", ")", ",", "법학", "대학", "원", "(", "University", "of", "Chicago", "Law", "School", ")", ",", "경영", "대학", "원", "(", "University", "of", "Chicago", "Booth", "School", "of", "Business", ")", "등", "이", "유명", "하", "다", "."]
+# ::pos_tags ["NNG", "NNG", "XSN", "NNB", "JKB", "JX", "NNG", "NNG", "XSN", "SS", "SL", "SL", "SL", "SL", "SP", "SL", "SL", "SL", "SS", "SP", "NNG", "NNG", "XSN", "SS", "SL", "SL", "SL", "SL", "SL", "SS", "SP", "NNG", "NNG", "XSN", "SS", "SL", "SL", "SL", "SL", "SL", "SL", "SL", "SS", "NNB", "JKS", "NNG", "XSA", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "OGG_EDUCATION", "OGG_EDUCATION", "OGG_EDUCATION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "OGG_EDUCATION", "OGG_EDUCATION", "OGG_EDUCATION", "O", "O", "O", "O", "O", "O", "O", "O", "OGG_EDUCATION", "OGG_EDUCATION", "OGG_EDUCATION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / have-degree-91
+      :ARG1 (x1 / 등
+            :op1 (x2 / 대학원
+                  :topic (x3 / 의학))
+            :op2 (x4 / 대학원
+                  :topic (x5 / 법학))
+            :op3 (x6 / 대학원
+                  :topic (x7 / 경영학)))
+      :ARG2 (x8 / 유명-01
+            :ARG1 x1)
+      :ARG5 (x9 / 대학원
+            :mod (x10 / 전문)))
+
+# ::id snt2.E2017.Wiki.011 ::category EXWIKI :: split test
+# ::snt 엽록체는 엽록소가 있어 세포를 관찰했을 때 뚜렷한 녹색이 나타나는 것을 쉽게 확인할 수 있다.
+# ::tokens ["엽록", "체", "는", "엽록", "소", "가", "있", "어", "세포", "를", "관찰", "하", "었", "을", "때", "뚜렷하", "ㄴ", "녹색", "이", "나타나", "는", "것", "을", "쉽", "게", "확인", "하", "ㄹ", "수", "있", "다", "."]
+# ::pos_tags ["NNG", "XSN", "JX", "NNG", "NNG", "JKS", "VA", "EC", "NNG", "JKO", "NNG", "XSV", "EP", "ETM", "NNG", "VA", "ETM", "NNG", "JKS", "VV", "ETM", "NNB", "JKO", "VA", "EC", "NNG", "XSV", "ETM", "NNB", "VA", "EF", "SF"]
+# ::ner_tags ["TM_CELL_TISSUE", "TM_CELL_TISSUE", "O", "TM_CELL_TISSUE", "TM_CELL_TISSUE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TM_COLOR", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 가능-01
+      :ARG1 (x1 / 확인-01
+            :ARG1 (x2 / 나타나-01
+                  :ARG1 (x3 / 녹색
+                        :ARG1-of (x4 / 뚜렷하-01))
+                  :ARG2 (x5 / 세포
+                        :ARG1-of (x6 / 관찰-01)))
+            :ARG1-of (x7 / 쉽-01))
+      :cause (x8 / 엽록소
+            :location (x9 / 엽록체)))
+
+# ::id snt16.E2017.Wiki.012 ::category EXWIKI :: split test
+# ::snt 유럽의 초기 식민지는 희귀한 자원과 노예의 확보를 위한 것이었다.
+# ::tokens ["유럽", "의", "초기", "식민", "지", "는", "희귀하", "ㄴ", "자원", "과", "노예", "의", "확보", "를", "위하", "ㄴ", "것", "이", "었", "다", "."]
+# ::pos_tags ["NNP", "JKG", "NNG", "NNG", "XSN", "JX", "VA", "ETM", "NNG", "JC", "NNG", "JKG", "NNG", "JKO", "VV", "ETM", "NNB", "VCP", "EP", "EF", "SF"]
+# ::ner_tags ["LCG_CONTINENT", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 식민지
+      :poss (x2 / continent
+            :name (x3 / 이름
+                  :op1 "유럽")
+            :wiki "유럽")
+      :purpose (x4 / 확보-01
+            :ARG1 (x5 / and
+                  :op1 (x6 / 자원
+                        :ARG1-of (x7 / 희귀-00))
+                  :op2 (x8 / 노예)))
+      :time (x1 / 초기))
+
+# ::id snt10.E2017.Wiki.013 ::category EXWIKI :: split test
+# ::snt 테슬라의 부친은 정교회 사제였다.
+# ::tokens ["테슬라", "의", "부친", "은", "정교", "회", "사제", "이", "었", "다", "."]
+# ::pos_tags ["NNP", "JKG", "NNG", "JX", "NNG", "XSN", "NNG", "VCP", "EP", "EF", "SF"]
+# ::ner_tags ["PS_NAME", "O", "CV_RELATION", "O", "OGG_RELIGION", "OGG_RELIGION", "CV_OCCUPATION", "O", "O", "O", "O"]
+# ::note
+(x0 / have-org-role-91
+      :ARG0 (x1 / 사람
+            :ARG0-of (x2 / have-rel-role-91
+                  :ARG1 (x3 / person
+                        :name (x4 / 이름
+                              :op1 "테슬라")
+                        :wiki "니콜라_테슬라")
+                  :ARG2 (x5 / 부친)))
+      :ARG1 (x6 / religious-group
+            :name (x7 / 이름
+                  :op1 "정교회")
+            :wiki "동방_정교회")
+      :ARG2 (x8 / 사제))
+
+# ::id snt8.E2017.Wiki.015 ::category EXWIKI :: split test
+# ::snt 사람을 비롯한 동물군의 체내에서 산소를 운반하는 것은 적혈구의 주요 역할이다.
+# ::tokens ["사람", "을", "비롯하", "ㄴ", "동물", "군", "의", "체내", "에서", "산소", "를", "운반", "하", "는", "것", "은", "적", "혈구", "의", "주요", "역할", "이", "다", "."]
+# ::pos_tags ["NNG", "JKO", "VV", "ETM", "NNG", "NNG", "JKG", "NNG", "JKB", "NNG", "JKO", "NNG", "XSV", "ETM", "NNB", "JX", "NNG", "NNG", "JKG", "NNG", "NNG", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "MT_ELEMENT", "O", "O", "O", "O", "O", "O", "TM_CELL_TISSUE", "TM_CELL_TISSUE", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 역할
+      :ARG1-of (x1 / 주요-01)
+      :domain (x3 / 운반-01
+            :ARG0 (x2 / 적혈구)
+            :ARG1 (x4 / 산소)
+            :location (x5 / 체내
+                  :part-of (x6 / 동물군
+                        :ARG1-of (x7 / 비롯하-01
+                              :ARG2 (x8 / 사람)))))
+      :poss x2)
+
+# ::id snt29.E2017.Wiki.015 ::category EXWIKI :: split test
+# ::snt O4는 자성을 띠지 않고 옅은 푸른 빛깔을 띤다.
+# ::tokens ["O", "4", "는", "자성", "을", "띠", "지", "않", "고", "옅", "은", "푸르", "ㄴ", "빛깔", "을", "띠", "ㄴ다", "."]
+# ::pos_tags ["SL", "SN", "JX", "NNG", "JKO", "VV", "EC", "VX", "EC", "VA", "ETM", "VA", "ETM", "NNG", "JKO", "VV", "EF", "SF"]
+# ::ner_tags ["MT_CHEMICAL", "MT_CHEMICAL", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 띠-01
+            :ARG0 (x2 / O4)
+            :ARG1 (x3 / 자성))
+      :op2 (x4 / 띠-01
+            :ARG0 x2
+            :ARG1 (x5 / 빛깔
+                  :ARG1-of (x6 / 푸르-01))))
+
+# ::id snt12.E2017.Wiki.016 ::category EXWIKI :: split test
+# ::snt 개신교 신자들에 대한 차별을 금지하는 낭트 칙령을 세워 위그노들에게도 신앙의 자유를 주었다.
+# ::tokens ["개신", "교", "신자", "들", "에", "대하", "ㄴ", "차별", "을", "금지", "하", "는", "낭트", "칙령", "을", "세우", "어", "위그노", "들", "에게", "도", "신앙", "의", "자유", "를", "주", "었", "다", "."]
+# ::pos_tags ["NNG", "NNG", "NNG", "XSN", "JKB", "VV", "ETM", "NNG", "JKO", "NNG", "XSV", "ETM", "NNP", "NNG", "JKO", "VV", "EC", "NNG", "XSN", "JKB", "JX", "NNG", "JKG", "NNG", "JKO", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["OGG_RELIGION", "OGG_RELIGION", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "CV_LAW", "CV_LAW", "O", "O", "O", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 주-01
+      :ARG1 (x1 / 자유롭-01
+            :topic (x2 / 신앙))
+      :ARG2 (x3 / religious-group
+            :name (x4 / 이름
+                  :op1 "위그노")
+            :wiki "위그노")
+      :manner (x5 / 서-02
+            :ARG1 (x6 / law
+                  :ARG0-of (x8 / 금지-01
+                        :ARG1 (x9 / 차별-01
+                              :ARG1 (x10 / 신자
+                                    :mod (x11 / 개신교))))
+                  :name (x7 / 이름
+                        :op1 "낭트"
+                        :op2 "칙령")
+                  :wiki "낭트_칙령")))
+
+# ::id snt8.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 그 뒤로도 19세기까지 유럽에서는 페스트가 산발적으로 유행했는데(런던 대역병 등), 흑사병의 병원체를 페스트균으로 확정한다면 흑사병이란 1345년에서 1840년까지 유라시아 대륙에서 계속된 제2차 페스트 범유행의 일부로서 14세기 유럽의 범유행 상황을 가리키는 말이라고 할 수 있다.
+# ::tokens ["그", "뒤", "로", "도", "19", "세기", "까지", "유럽", "에서", "는", "페스트", "가", "산발", "적", "으로", "유행", "하", "었", "는데", "(", "런던", "대역", "병", "등", ")", ",", "흑사", "병", "의", "병원", "체", "를", "페스트", "균", "으로", "확정", "하", "ㄴ다", "면", "흑사", "병", "이란", "1345", "년", "에서", "1840", "년", "까지", "유라시아", "대륙", "에서", "계속", "되", "ㄴ", "제", "2", "차", "페스트", "범", "유행", "의", "일부", "로서", "14", "세기", "유럽", "의", "범", "유행", "상황", "을", "가리키", "는", "말", "이", "라고", "하", "ㄹ", "수", "있", "다", "."]
+# ::pos_tags ["MM", "NNG", "JKB", "JX", "SN", "NNG", "JX", "NNP", "JKB", "JX", "NNG", "JKS", "NNG", "NNG", "JKB", "NNG", "XSV", "EP", "EF", "SS", "NNP", "NNG", "NNG", "NNB", "SS", "SP", "NNG", "NNG", "JKG", "NNG", "XSN", "JKO", "NNG", "NNG", "JKB", "NNG", "XSV", "EF", "EC", "NNG", "NNG", "JX", "SN", "NNB", "JKB", "SN", "NNB", "JX", "NNP", "NNG", "JKB", "NNG", "XSV", "ETM", "XPN", "SN", "NNB", "NNG", "XPN", "NNG", "JKG", "NNG", "JKB", "SN", "NNG", "NNP", "JKG", "XPN", "NNG", "NNG", "JKO", "VV", "ETM", "NNG", "VCP", "EC", "VV", "ETM", "NNB", "VA", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "LCG_CONTINENT", "O", "O", "TMM_DISEASE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "LCP_CAPITALCITY", "O", "O", "O", "O", "O", "TMM_DISEASE", "TMM_DISEASE", "O", "O", "O", "O", "TMM_DISEASE", "TMM_DISEASE", "O", "O", "O", "O", "O", "TMM_DISEASE", "TMM_DISEASE", "O", "DT_YEAR", "DT_YEAR", "O", "DT_YEAR", "DT_YEAR", "O", "LCG_CONTINENT", "O", "O", "O", "O", "O", "QT_ORDER", "QT_ORDER", "QT_ORDER", "TMM_DISEASE", "O", "O", "O", "O", "O", "DT_OTHERS", "DT_OTHERS", "LCG_CONTINENT", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 유행-01
+            :ARG1 (x2 / desease
+                  :name (x3 / 이름
+                        :op1 "페스트")
+                  :wiki "페스트")
+            :example (x11 / 등
+                  :op1 (x12 / event
+                        :name (x13 / 이름
+                              :op1 "런던"
+                              :op2 "대역병")
+                        :wiki "런던_대역병"))
+            :location (x4 / continent
+                  :name (x5 / 이름
+                        :op1 "유럽")
+                  :wiki "유럽")
+            :manner (x10 / 산발-00
+                  :ARG1 x2)
+            :time (x6 / date-interval
+                  :op1 (x7 / 뒤
+                        :op1 (x8 / 그))
+                  :op2 (x9 / date-entity
+                        :century 19)))
+      :op2 (x14 / 가능-01
+            :ARG1 (x15 / 하-03
+                  :ARG1 (x16 / desease
+                        :name (x17 / 이름
+                              :op1 "흑사병")
+                        :wiki "페스트")
+                  :ARG2 (x18 / 상황
+                        :lox4ation x4
+                        :mod (x19 / 유행-01
+                              :mod (x20 / 범))
+                        :subevent-of (x22 / event
+                              :ARG1-of (x24 / 계속-01
+                                    :duration (x27 / date-interval
+                                          :op1 (x28 / date-entity
+                                                :year 1345)
+                                          :op2 (x29 / date-entity
+                                                :year 1840))
+                                    :location (x25 / continent
+                                          :name (x26 / 이름
+                                                :op1 "유라시아"
+                                                :op2 "대륙")
+                                          :wiki "유라시아"))
+                              :name (x23 / 이름
+                                    :op1 "제2차"
+                                    :op2 "페스트"
+                                    :op3 "범유행")
+                              :wiki "제2차_페스트_범유행")
+                        :time (x21 / date-entity
+                              :century 14)))
+            :condition (x30 / 확정-01
+                  :ARG1 (x31 / pathogen*
+                        :name (x32 / 이름
+                              :op1 "페스트균")
+                        :wiki "페스트균")
+                  :ARG2 (x33 / 병원체
+                        :poss x6))))
+
+# ::id snt11.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 1340년대 흑사병으로 약 2천5백만 명이 희생되었다.
+# ::tokens ["1340", "년대", "흑사", "병", "으로", "약", "2", "천", "5", "백만", "명", "이", "희생", "되", "었", "다", "."]
+# ::pos_tags ["SN", "NNB", "NNG", "NNG", "JKB", "MM", "SN", "NR", "SN", "NR", "NNB", "JKS", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["DT_YEAR", "DT_YEAR", "TMM_DISEASE", "TMM_DISEASE", "O", "QT_MAN_COUNT", "QT_MAN_COUNT", "QT_MAN_COUNT", "QT_MAN_COUNT", "QT_MAN_COUNT", "QT_MAN_COUNT", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 희생-01
+      :ARG0 (x1 / desease
+            :name (x2 / 이름
+                  :op1 "흑사병")
+            :wiki "흑사병")
+      :ARG1 (x3 / 사람
+            :quant (x4 / 약
+                  :op1 25000000)
+            :unit (x5 / 명))
+      :time (x6 / date-interval
+            :op1 (x7 / date-entity
+                  :year 1340)
+            :op2 (x8 / date-entity
+                  :year 1350)))
+
+# ::id snt12.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 이 때의 흑사병은 중앙아시아나 인도에서 발원하여 전파된 것으로 추정되고 있다.
+# ::tokens ["이", "때", "의", "흑사", "병", "은", "중앙아시아", "나", "인도", "에서", "발원", "하", "어", "전파", "되", "ㄴ", "것", "으로", "추정", "되", "고", "있", "다", "."]
+# ::pos_tags ["MM", "NNG", "JKG", "NNG", "NNG", "JX", "NNP", "JC", "NNP", "JKB", "NNG", "XSV", "EC", "NNG", "XSV", "ETM", "NNB", "JKB", "NNG", "XSV", "EC", "VX", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "TMM_DISEASE", "TMM_DISEASE", "O", "LCG_CONTINENT", "O", "LCP_COUNTRY", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 추정-01
+      :ARG1 (x1 / 전파-01
+            :ARG1 (x2 / desease
+                  :name (x3 / 이름
+                        :op1 "흑사병")
+                  :wiki "흑사병")
+            :source (x4 / or
+                  :op1 (x5 / continent
+                        :name (x6 / 이름
+                              :op1 "중앙아시아")
+                        :wiki "중앙아시아")
+                  :op2 (x7 / country
+                        :name (x8 / 이름
+                              :op1 "인도")
+                        :wiki "인도"))
+            :time (x9 / 이때)))
+
+# ::id snt20.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 흑사병이라는 이름은 1883년에 붙여졌는데, 피부의 혈소 침전에 의해 피부가 검게 변하는 증상 때문에 붙여진 이름이다.
+# ::tokens ["흑사", "병", "이", "라는", "이름", "은", "1883", "년", "에", "붙이", "어", "지", "었", "는데", ",", "피부", "의", "혈소", "침전", "에", "의하", "어", "피부", "가", "검", "게", "변하", "는", "증상", "때문", "에", "붙이", "어", "지", "ㄴ", "이름", "이", "다", "."]
+# ::pos_tags ["NNG", "NNG", "VCP", "ETM", "NNG", "JX", "SN", "NNB", "JKB", "VV", "EC", "VX", "EP", "EC", "SP", "NNG", "JKG", "NNG", "NNG", "JKB", "VV", "EC", "NNG", "JKS", "VA", "EC", "VV", "ETM", "NNG", "NNB", "JKB", "VV", "EC", "VX", "ETM", "NNG", "VCP", "EF", "SF"]
+# ::ner_tags ["TMM_DISEASE", "TMM_DISEASE", "O", "O", "O", "O", "DT_YEAR", "DT_YEAR", "O", "O", "O", "O", "O", "O", "O", "TM_CELL_TISSUE", "O", "O", "O", "O", "O", "O", "TM_CELL_TISSUE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 붙-01
+      :ARG1 (x1 / 이름
+            :op1 "흑사병")
+      :cause (x2 / 증상
+            :mod (x3 / 변하-01
+                  :ARG1 (x4 / 피부)
+                  :ARG3 (x5 / 검-01
+                        :ARG1 (x6 / 피부))
+                  :cause (x7 / 침전
+                        :location (x9 / 피부)
+                        :mod (x8 / 혈소))))
+      :time (x10 / date-entity
+            :year 1883))
+
+# ::id snt34.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 몽골에 의한 전파가 흑사병 확산의 유일한 원인은 아닐지라도 전쟁과 기아, 그리고 기후의 변화 등이 흑사병 창궐의 주된 원인이 되었다.
+# ::tokens ["몽골", "에", "의하", "ㄴ", "전파", "가", "흑사", "병", "확산", "의", "유일", "하", "ㄴ", "원인", "은", "아니", "ㄹ지라도", "전쟁", "과", "기아", ",", "그리고", "기후", "의", "변화", "등", "이", "흑사", "병", "창궐", "의", "주되", "ㄴ", "원인", "이", "되", "었", "다", "."]
+# ::pos_tags ["NNP", "JKB", "VV", "ETM", "NNG", "JKS", "NNG", "NNG", "NNG", "JKG", "NNG", "XSA", "ETM", "NNG", "JX", "VCN", "EC", "NNG", "JC", "NNP", "SP", "MAJ", "NNG", "JKG", "NNG", "NNB", "JKS", "NNG", "NNG", "NNG", "JKG", "VV", "ETM", "NNG", "JKC", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["LCP_COUNTRY", "O", "O", "O", "O", "O", "TMM_DISEASE", "TMM_DISEASE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "TMM_DISEASE", "O", "O", "O", "O", "O", "O", "O", "TMM_DISEASE", "TMM_DISEASE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / cause-01
+      :ARG0 (x1 / 등
+            :mod (x2 / 주)
+            :op1 (x3 / 전쟁)
+            :op2 (x4 / 기아)
+            :op3 (x5 / 변화-01
+                  :ARG1 (x6 / 기후)))
+      :ARG1 (x7 / 창궐-01
+            :ARG1 (x8 / desease
+                  :name (x9 / 이름
+                        :op1 "흑사병")
+                  :wiki "흑사병"))
+      :concession (x10 / 유일-01
+            :ARG1 (x11 / cause-01
+                  :ARG0 (x12 / 전파-01
+                        :ARG0 (x13 / country
+                              :name (x14 / 이름
+                                    :op1 "몽골")
+                              :wiki "몽골")
+                        :ARG1 x8)
+                  :ARG1 (x15 / 확산-01
+                        :ARG1 x8))
+            :polarity -))
+
+# ::id snt35.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 13세기 몽골의 중국 점령 시기에 농업과 상업은 심하게 붕괴되었고 기아가 만연했다.
+# ::tokens ["13", "세기", "몽골", "의", "중국", "점령", "시기", "에", "농업", "과", "상업", "은", "심하", "게", "붕괴", "되", "었", "고", "기아", "가", "만연", "하", "었", "다", "."]
+# ::pos_tags ["SN", "NNG", "NNP", "JKG", "NNP", "NNG", "NNG", "JKB", "NNG", "JC", "NNG", "JX", "VA", "EC", "NNG", "XSV", "EP", "EC", "NNP", "JKS", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["DT_OTHERS", "DT_OTHERS", "LCP_COUNTRY", "O", "LCP_COUNTRY", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "OGG_SPORTS", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 붕괴-01
+            :ARG1 (x2 / and
+                  :op1 (x3 / 농업)
+                  :op2 (x4 / 상업))
+            :ARG1-of (x5 / 심하-01))
+      :op2 (x6 / 만연-01
+            :ARG1 (x7 / 기아)
+            :time (x8 / 점령-01
+                  :ARG0 (x9 / country
+                        :name (x10 / 이름
+                              :op1 "몽골")
+                        :wiki "몽골")
+                  :ARG1 (x11 / country
+                        :name (x12 / 이름
+                              :op1 "중국")
+                        :wiki "중국")
+                  :time (x13 / date-entity
+                        :century 13))))
+
+# ::id snt37.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::snt 14세기에는 중국에서도 흑사병이 번졌던 시기로 이로 인해 중국의 인구 중 약 30%가 사망한 것으로 추정된다.
+# ::tokens ["14", "세기", "에", "는", "중국", "에서", "도", "흑사", "병", "이", "번지", "었", "던", "시기", "로", "이", "로", "인하", "어", "중국", "의", "인구", "중", "약", "30", "%", "가", "사망", "하", "ㄴ", "것", "으로", "추정", "되", "ㄴ다", "."]
+# ::pos_tags ["SN", "NNG", "JKB", "JX", "NNP", "JKB", "JX", "NNG", "NNG", "JKS", "VV", "EP", "ETM", "NNG", "JKB", "NP", "JKB", "VV", "EC", "NNP", "JKG", "NNG", "NNB", "MM", "SN", "SW", "JKS", "NNG", "XSV", "ETM", "NNB", "JKB", "NNG", "XSV", "EF", "SF"]
+# ::ner_tags ["DT_OTHERS", "DT_OTHERS", "O", "O", "LCP_COUNTRY", "O", "O", "TMM_DISEASE", "TMM_DISEASE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "LCP_COUNTRY", "O", "O", "O", "QT_PERCENTAGE", "QT_PERCENTAGE", "QT_PERCENTAGE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 추정-01
+      :ARG1 (x1 / 사망-01
+            :ARG0 (x2 / desease
+                  :ARG1-of (x4 / 번지-01
+                        :ARG3 (x5 / country
+                              :name (x6 / 이름
+                                    :op1 "중국")
+                              :wiki "중국")
+                        :time (x7 / date-entity
+                              :century 14))
+                  :name (x3 / 이름
+                        :op1 "흑사병")
+                  :wiki "흑사병")
+            :ARG1 (x8 / 사람
+                  :ARG1-of (x9 / include-91
+                        :ARG2 (x10 / 인구
+                              :poss x5)
+                        :ARG3 (x11 / 약
+                              :op1 (x12 / percentage-entity
+                                    :value 30))))))
+
+# ::id snt1.E2017.Wiki.018 ::category EXWIKI :: split test
+# ::snt 잭슨빌은 미국 플로리다 주에서 인구가 가장 많은 도시이다.
+# ::tokens ["잭슨빌", "은", "미국", "플로리다", "주", "에서", "인구", "가", "가장", "많", "은", "도시", "이", "다", "."]
+# ::pos_tags ["NNG", "JX", "NNP", "NNP", "NNG", "JKB", "NNG", "JKS", "MAG", "VA", "ETM", "NNG", "VCP", "EF", "SF"]
+# ::ner_tags ["PS_NAME", "O", "LCP_COUNTRY", "LCP_PROVINCE", "LCP_PROVINCE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / have-quant-91
+      :ARG1 (x1 / 인구
+            :poss (x2 / city
+                  :name (x3 / 이름
+                        :op1 "잭슨빌")
+                  :wiki "잭슨빌"))
+      :ARG2 (x4 / 많-01)
+      :ARG3 (x5 / 가장)
+      :ARG5 (x6 / province
+            :location (x8 / country
+                  :name (x9 / 이름
+                        :op1 "미국")
+                  :wiki "미국")
+            :name (x7 / 이름
+                  :op1 "플로리다"
+                  :op2 "주")
+            :wiki "플로리다주"))
+
+# ::id snt8.E2017.Wiki.018 ::category EXWIKI :: split test
+# ::snt 최고 기온 기록은 1942년 7월 21일의 43°C이며, 최저 기온 기록은 1985년 1월 21일에 기록된 -14°C이다.
+# ::tokens ["최고", "기온", "기록", "은", "1942", "년", "7", "월", "21", "일", "의", "43", "°", "C", "이", "며", ",", "최저", "기온", "기록", "은", "1985", "년", "1", "월", "21", "일", "에", "기록", "되", "ㄴ", "-", "14", "°", "C", "이", "다", "."]
+# ::pos_tags ["NNG", "NNG", "NNG", "JX", "SN", "NNB", "SN", "NNB", "SN", "NNB", "JKG", "SN", "SW", "SL", "VCP", "EC", "SP", "NNG", "NNG", "NNG", "JX", "SN", "NNB", "SN", "NNB", "SN", "NNB", "JKB", "NNG", "XSV", "ETM", "SS", "SN", "SW", "SL", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "O", "QT_OTHERS", "QT_OTHERS", "QT_OTHERS", "O", "O", "O", "O", "O", "O", "O", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "O", "O", "O", "O", "QT_OTHERS", "QT_OTHERS", "QT_OTHERS", "QT_OTHERS", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / temperature-quantity
+            :domain (x4 / 기록-01
+                  :ARG1 (x5 / 기온
+                        :degree (x6 / 최고)))
+            :quant 43
+            :scale (x2 / celsius)
+            :time (x3 / date-entity
+                  :day 21
+                  :month 7
+                  :year 1942))
+      :op2 (x7 / temperature-quantity
+            :domain (x10 / 기록-01
+                  :ARG1 (x11 / 기온
+                        :degree (x12 / 최저)))
+            :quant -14
+            :scale (x8 / celsius)
+            :time (x9 / date-entity
+                  :day 21
+                  :month 1
+                  :year 1985)))
+
+# ::id snt1.E2017.Wiki.019 ::category EXWIKI :: split test
+# ::snt 미국방송회사(美國放送協會)는 미국의 텔레비전, 라디오 방송을 운영하는 방송사이다.
+# ::tokens ["미국", "방송", "회사", "(", "美國放送協會", ")", "는", "미국", "의", "텔레비전", ",", "라디오", "방송", "을", "운영", "하", "는", "방송", "사", "이", "다", "."]
+# ::pos_tags ["NNP", "NNG", "NNG", "SS", "SH", "SS", "JX", "NNP", "JKG", "NNG", "SP", "NNG", "NNG", "JKO", "NNG", "XSV", "ETM", "NNG", "XSN", "VCP", "EF", "SF"]
+# ::ner_tags ["OGG_MEDIA", "OGG_MEDIA", "OGG_MEDIA", "O", "OGG_MEDIA", "O", "O", "LCP_COUNTRY", "O", "TMI_HW", "O", "TMI_HW", "O", "O", "O", "O", "O", "OGG_MEDIA", "OGG_MEDIA", "O", "O", "O"]
+# ::note
+(x0 / 운영-01
+      :ARG0 (x1 / company
+            :name (x2 / 이름
+                  :op1 "미국방송회사")
+            :wiki "ABC_(미국의_방송사)")
+      :ARG1 (x3 / 방송-00
+            :medium (x4 / and
+                  :op1 (x5 / 텔레비전)
+                  :op2 (x6 / 라디오)))
+      :location (x7 / country
+            :name (x8 / 이름
+                  :op1 "미국")
+            :wiki "미국"))
+
+# ::id snt4.E2017.Wiki.019 ::category EXWIKI :: split test
+# ::snt 1939년 미국연방통신위원회는 NBC의 독점적인 시장지배를 인지하고 NBC의 두 네트워크를 NBC 레드 네트워크와 NBC 블루 네트워크 두 회사로 분리시키기로 결정했다.
+# ::tokens ["1939", "년", "미국", "연방", "통신위원회", "는", "NBC", "의", "독점", "적", "이", "ㄴ", "시장", "지배", "를", "인지", "하", "고", "NBC", "의", "두", "네트워크", "를", "NBC", "레드", "네트워크", "와", "NBC", "블루", "네트워크", "두", "회사", "로", "분리", "시키", "기", "로", "결정", "하", "었", "다", "."]
+# ::pos_tags ["SN", "NNB", "NNP", "NNG", "NNP", "JX", "SL", "JKG", "NNG", "NNG", "VCP", "ETM", "NNG", "NNG", "JKO", "NNG", "XSV", "EC", "SL", "JKG", "MM", "NNG", "JKO", "SL", "NNP", "NNG", "JC", "SL", "NNG", "NNG", "MM", "NNG", "JKB", "NNG", "XSV", "ETN", "JKB", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["DT_YEAR", "DT_YEAR", "OGG_ECONOMY", "OGG_ECONOMY", "OGG_ECONOMY", "O", "OGG_MEDIA", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "OGG_MEDIA", "O", "QT_COUNT", "QT_COUNT", "O", "OGG_MEDIA", "OGG_MEDIA", "OGG_MEDIA", "O", "OGG_MEDIA", "OGG_MEDIA", "OGG_MEDIA", "QT_COUNT", "QT_COUNT", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 결정-01
+      :ARG0 (x1 / government-organization
+            :location (x3 / country
+                  :name (x4 / 이름
+                        :op1 "미국")
+                  :wiki "미국")
+            :name (x2 / 이름
+                  :op1 "연방통신위원회")
+            :wiki "연방_통신_위원회")
+      :ARG1 (x5 / 분리-01
+            :ARG0 x1
+            :ARG1 (x6 / 회사
+                  :mod (x7 / and
+                        :op1 (x8 / company
+                              :name (x9 / 이름
+                                    :op1 "NBC"
+                                    :op2 "레드"
+                                    :op3 "네트워크")
+                              :wiki -)
+                        :op2 (x10 / company
+                              :name (x11 / 이름
+                                    :op1 "NBC"
+                                    :op2 "블루"
+                                    :op3 "네트워크")
+                              :wiki -))
+                  :quant 2)
+            :ARG2 (x12 / 네트워크
+                  :poss (x13 / company
+                        :name (x14 / 이름
+                              :op1 "NBC")
+                        :wiki "NBC")
+                  :quant 2))
+      :cause (x15 / 인지-00
+            :ARG0 x1
+            :ARG1 (x16 / 지배-01
+                  :ARG0 x3
+                  :ARG1 (x17 / 시장)
+                  :manner (x18 / 독점-01)))
+      :time (x19 / date-entity
+            :year 1939))
+
+# ::id snt26.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 달콤커피가 프랜차이즈 커피업계 최초로 4차 산업혁명 핵심인 로봇기술 기반의 벤처기업 인증을 획득했다.
+# ::tokens ["달콤", "커피", "가", "프랜차이즈", "커피", "업계", "최초", "로", "4", "차", "산업", "혁명", "핵심", "이", "ㄴ", "로봇", "기술", "기반", "의", "벤처", "기업", "인증", "을", "획득", "하", "었", "다", "."]
+# ::pos_tags ["NNG", "NNG", "JKS", "NNG", "NNG", "NNG", "NNG", "JKB", "SN", "NNB", "NNG", "NNG", "NNG", "VCP", "ETM", "NNG", "NNG", "NNG", "JKG", "NNG", "NNG", "NNG", "JKO", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["CV_DRINK", "CV_DRINK", "O", "O", "CV_DRINK", "O", "O", "O", "QT_ORDER", "QT_ORDER", "EV_WAR_REVOLUTION", "EV_WAR_REVOLUTION", "O", "O", "O", "TMI_HW", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 획득-01
+      :ARG0 (x1 / company
+            :name (x2 / 이름
+                  :op1 "달콤커피")
+            :wiki "달콤커피")
+      :ARG1 (x3 / 인증-01
+            :ARG2 (x4 / 기업
+                  :mod (x5 / 벤처)
+                  :mod (x6 / 기반-00
+                        :ARG2 (x7 / 기술
+                              :mod (x9 / 핵심
+                                    :mod (x10 / event
+                                          :name (x11 / 이름
+                                                :op1 "4차"
+                                                :op2 "산업혁명")
+                                          :wiki "제4차_산업혁명"))
+                              :topic (x8 / 로봇)))))
+      :ARG2-of (x12 / have-degree-91
+            :ARG3 (x13 / ordinal-entity
+                  :value 1)
+            :ARG4 (x14 / 업계
+                  :mod (x15 / 커피)
+                  :mod (x16 / 프랜차이즈))))
+
+# ::id snt33.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 경남메세나협회는 올해 기업과 예술단체 170개 팀 이상 결연 목표를 세웠다고 21일 밝혔다.
+# ::tokens ["경남메세나협회", "는", "올해", "기업", "과", "예술", "단체", "170", "개", "팀", "이상", "결연", "목표", "를", "세우", "었", "다고", "21", "일", "밝히", "었", "다", "."]
+# ::pos_tags ["NNP", "JX", "NNG", "NNG", "JC", "NNG", "NNG", "SN", "NNB", "NNG", "NNG", "NNG", "NNG", "JKO", "VV", "EP", "EC", "SN", "NNB", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["OG_OTHERS", "O", "DT_YEAR", "O", "O", "O", "O", "QT_COUNT", "QT_COUNT", "O", "O", "O", "O", "O", "O", "O", "O", "DT_DAY", "DT_DAY", "O", "O", "O", "O"]
+# ::note
+(x0 / 밝히-01
+      :ARG0 (x1 / organization
+            :name (x2 / 이름
+                  :op1 "경남메세나협회")
+            :wiki -)
+      :ARG1 (x3 / 목표-00
+            :ARG1 (x4 / 결연-01
+                  :ARG1 (x5 / 팀
+                        :consist-of (x8 / and
+                              :op1 (x9 / 기업)
+                              :op2 (x10 / 단체
+                                    :topic (x11 / 예술)))
+                        :quant (x6 / 이상
+                              :op1 170)
+                        :unit (x7 / 개)))))
+
+# ::id snt51.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 오늘은 당신이 이성적으로 좋은 판단을 내리기 힘든 때입니다.
+# ::tokens ["오늘", "은", "당신", "이", "이성", "적", "으로", "좋", "은", "판단", "을", "내리", "기", "힘들", "ㄴ", "때", "이", "ㅂ니다", "."]
+# ::pos_tags ["NNG", "JX", "NP", "JKS", "NNG", "XSN", "JKB", "VA", "ETM", "NNG", "JKO", "VV", "ETN", "VA", "ETM", "NNG", "VCP", "EF", "SF"]
+# ::ner_tags ["DT_DAY", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 힘들-01
+      :ARG1 (x1 / 판단-01
+            :ARG0 (x2 / 당신)
+            :ARG1 (x3 / 좋-03)
+            :manner (x4 / 이성))
+      :time (x5 / 오늘))
+
+# ::id snt56.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 개인 취향에 따른 옷 바꾸기 기능도 제공된다.
+# ::tokens ["개인", "취향", "에", "따르", "ㄴ", "옷", "바꾸", "기", "기능", "도", "제공", "되", "ㄴ다", "."]
+# ::pos_tags ["NNG", "NNG", "JKB", "VV", "ETM", "NNG", "VV", "ETN", "NNG", "JX", "NNG", "XSV", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 제공-01
+      :ARG1 (x1 / 기능
+            :mod (x2 / 바꾸-01
+                  :ARG1 (x3 / 옷)
+                  :ARG2-of (x4 / 따르-02
+                        :ARG1 (x5 / 취향
+                              :poss (x6 / 개인))))))
+
+# ::id snt69.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 강남구가 85만 명으로 가장 많았고, 송파 77만 명ㆍ서초 62만 명 등이 뒤따랐다.
+# ::tokens ["강남구", "가", "85", "만", "명", "으로", "가장", "많", "았", "고", ",", "송파", "77", "만", "명", "ㆍ", "서초", "62", "만", "명", "등", "이", "뒤따르", "았", "다", "."]
+# ::pos_tags ["NNP", "JKS", "SN", "NR", "NNB", "JKB", "MAG", "VA", "EP", "EC", "SP", "NNG", "SN", "NR", "NNB", "SP", "NNP", "SN", "NR", "NNB", "NNB", "JKS", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["LCP_COUNTY", "O", "QT_MAN_COUNT", "QT_MAN_COUNT", "QT_MAN_COUNT", "O", "O", "O", "O", "O", "O", "LCP_COUNTY", "QT_MAN_COUNT", "QT_MAN_COUNT", "QT_MAN_COUNT", "O", "LCP_COUNTY", "QT_MAN_COUNT", "QT_MAN_COUNT", "QT_MAN_COUNT", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / have-degree-91
+            :ARG1 (x2 / 사람
+                  :mod (x4 / city
+                        :name (x5 / 이름
+                              :op1 "강남구")
+                        :wiki "강남구")
+                  :quant 850000
+                  :unit (x3 / 명))
+            :ARG2 (x6 / 많-01
+                  :ARG1 x2)
+            :ARG3 (x7 / 가장))
+      :op2 (x8 / 뒤따르-00
+            :ARG1 (x9 / 등
+                  :op1 (x10 / 사람
+                        :mod (x12 / city
+                              :name (x13 / 이름
+                                    :op1 "서초")
+                              :wiki "서초구")
+                        :quant 770000
+                        :unit (x11 / 명))
+                  :op2 (x14 / 사람
+                        :mod (x16 / city
+                              :name (x17 / 이름
+                                    :op1 "송파")
+                              :wiki "송파구")
+                        :quant 620000
+                        :unit (x15 / 명)))
+            :ARG2 x1))
+
+# ::id snt79.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 그동안 당신이 공을 들인 만큼 수익이 발생하게 됩니다.
+# ::tokens ["그", "동안", "당신", "이", "공", "을", "들이", "ㄴ", "만큼", "수익", "이", "발생", "하", "게", "되", "ㅂ니다", "."]
+# ::pos_tags ["NNG", "NNG", "NP", "JKS", "NNG", "JKO", "VV", "ETM", "NNB", "NNG", "JKS", "NNG", "XSV", "EC", "VV", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 되-01
+      :ARG2 (x1 / 발생-01
+            :ARG1 (x2 / 수익)
+            :extent (x3 / 만큼
+                  :op1 (x4 / 공들이-00
+                        :ARG0 (x5 / 당신)
+                        :time (x6 / 그동안)))))
+
+# ::id snt83.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 광명시는 6월 24일까지 전시를 선보인다.
+# ::tokens ["광명", "시", "는", "6", "월", "24", "일", "까지", "전시", "를", "선보이", "ㄴ다", "."]
+# ::pos_tags ["NNP", "NNG", "JX", "SN", "NNB", "SN", "NNB", "JX", "NNG", "JKO", "VV", "EF", "SF"]
+# ::ner_tags ["LCP_CITY", "LCP_CITY", "O", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "DT_OTHERS", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 선보이-01
+      :ARG0 (x1 / government-organization
+            :name (x2 / 이름
+                  :op1 "광명시")
+            :wiki "광명시")
+      :ARG1 (x3 / 전시)
+      :time (x4 / date-interval
+            :op2 (x5 / date-entity
+                  :day 24
+                  :month 6)))
+
+# ::id snt84.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 경남메세나협회는 2007년 창립했다.
+# ::tokens ["경남메세나협회", "는", "2007", "년", "창립", "하", "었", "다", "."]
+# ::pos_tags ["NNP", "JX", "SN", "NNB", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["OG_OTHERS", "O", "DT_YEAR", "DT_YEAR", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 창립-00
+      :ARG1 (x1 / organization
+            :name (x2 / 이름
+                  :op1 "경남메세나협회")
+            :wiki -)
+      :time (x3 / date-entity
+            :year 2007))
+
+# ::id snt87.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 전승호 본부장은 서울대학교 제약학 석사를 마치고 현재 대웅제약 글로벌사업본부장을 맡고 있다.
+# ::tokens ["전승호", "본부", "장", "은", "서울대학교", "제약", "학", "석사", "를", "마치", "고", "현재", "대웅제약", "글로벌", "사업", "본부", "장", "을", "맡", "고", "있", "다", "."]
+# ::pos_tags ["NNP", "NNG", "XSN", "JX", "NNP", "NNG", "XSN", "NNG", "JKO", "VV", "EC", "MAG", "NNP", "NNG", "NNG", "NNG", "XSN", "JKO", "VV", "EC", "VX", "EF", "SF"]
+# ::ner_tags ["PS_NAME", "CV_POSITION", "CV_POSITION", "O", "OGG_EDUCATION", "FD_SOCIAL_SCIENCE", "FD_SOCIAL_SCIENCE", "CV_POSITION", "O", "O", "O", "O", "OGG_ECONOMY", "CV_POSITION", "CV_POSITION", "CV_POSITION", "CV_POSITION", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 마치-01
+            :ARG0 (x2 / person
+                  :name (x3 / 이름
+                        :op1 "전승호")
+                  :wiki -)
+            :ARG1 (x4 / 석사
+                  :topic (x5 / 제약학))
+            :location (x6 / university
+                  :name (x7 / 이름
+                        :op1 "서울대학교")
+                  :wiki "서울대학교"))
+      :op2 (x8 / have-org-role-91
+            :ARG0 x2
+            :ARG1 (x9 / company
+                  :name (x10 / 이름
+                        :op1 "대웅제약")
+                  :wiki "대웅제약")
+            :ARG2 (x11 / 글로벌사업본부장)
+            :time (x12 / 현재)))
+
+# ::id snt93.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 먼저 인터넷 웹서핑과 애플리케이션 스토어를 차단했다.
+# ::tokens ["먼저", "인터넷", "웹서핑", "과", "애플리케이션", "스토어", "를", "차단", "하", "었", "다", "."]
+# ::pos_tags ["MAG", "NNG", "NNG", "JC", "NNG", "NNG", "JKO", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "TMI_SERVICE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 차단-01
+      :ARG1 (x1 / and
+            :op1 (x2 / 웹서핑
+                  :medium (x3 / 인터넷))
+            :op2 (x4 / 스토어
+                  :mod (x5 / 애플리케이션)))
+      :mod (x6 / 먼저))
+
+# ::id snt97.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 행동하면 새로운 기회를 얻을 수 있을 것입니다.
+# ::tokens ["행동", "하", "면", "새롭", "ㄴ", "기회", "를", "얻", "을", "수", "있", "을", "것", "이", "ㅂ니다", "."]
+# ::pos_tags ["NNG", "XSV", "EC", "VA", "ETM", "NNG", "JKO", "VV", "ETM", "NNB", "VA", "ETM", "NNB", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 가능-01
+      :ARG1 (x1 / 얻-01
+            :ARG1 (x2 / 기회
+                  :ARG1-of (x3 / 새롭-01)))
+      :condition (x4 / 행동-01))
+
+# ::id snt112.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 국립환경과학원은 이날 충북지역 미세먼지 농도를 '보통' 수준으로 예보했다.
+# ::tokens ["국립", "환경", "과학", "원", "은", "이날", "충북", "지역", "미세", "먼지", "농도", "를", "'", "보통", "'", "수준", "으로", "예보", "하", "었", "다", "."]
+# ::pos_tags ["NNG", "NNG", "NNG", "XSN", "JX", "NNG", "NNP", "NNG", "NNG", "NNG", "NNG", "JKO", "SS", "NNG", "SS", "NNG", "JKB", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["OGG_SCIENCE", "OGG_SCIENCE", "OGG_SCIENCE", "OGG_SCIENCE", "O", "O", "LCP_PROVINCE", "LCP_PROVINCE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 예보-00
+      :ARG0 (x1 / research-institute
+            :name (x2 / 이름
+                  :op1 "국립환경과학원")
+            :wiki "국립환경과학원")
+      :ARG1 (x3 / 농도
+            :location (x5 / province
+                  :name (x6 / 이름
+                        :op1 "충북")
+                  :wiki "충청북도")
+            :poss (x4 / 미세먼지)
+            :time (x7 / 이날))
+      :ARG2 (x8 / 수준
+            :op1 (x9 / score-on-scale-91
+                  :ARG1 "보통")))
+
+# ::id snt113.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 뉴욕타임스(NYT)는 그레이엄 목사가 전립선암과 파킨슨병 등을 앓아왔다고 전했다.
+# ::tokens ["뉴욕타임스", "(", "NYT", ")", "는", "그레이엄", "목사", "가", "전립선", "암", "과", "파킨슨", "병", "등", "을", "앓", "아", "오", "았", "다고", "전하", "었", "다", "."]
+# ::pos_tags ["NNP", "SS", "SL", "SS", "JX", "NNP", "NNG", "JKS", "NNG", "NNG", "JKB", "NNG", "NNG", "NNB", "JKO", "VV", "EC", "VX", "EP", "EC", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["OGG_MEDIA", "O", "OGG_MEDIA", "O", "O", "PS_NAME", "CV_OCCUPATION", "O", "TMM_DISEASE", "TMM_DISEASE", "O", "TMM_DISEASE", "TMM_DISEASE", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 전하-01
+      :ARG0 (x1 / company
+            :name (x2 / 이름
+                  :op1 "뉴욕타임스")
+            :wiki "뉴욕_타임스")
+      :ARG1 (x3 / 앓-01
+            :ARG0 (x4 / person
+                  :ARG0-of (x6 / have-org-role-91
+                        :ARG2 (x7 / 목사))
+                  :name (x5 / 이름
+                        :op1 "그레이엄")
+                  :wiki -)
+            :ARG1 (x8 / 등
+                  :op1 (x9 / desease
+                        :name (x10 / 이름
+                              :op1 "전립선암")
+                        :wiki "전립선암")
+                  :op2 (x11 / desease
+                        :name (x12 / 이름
+                              :op1 "파킨슨병")
+                        :wiki "파킨슨병"))))
+
+# ::id snt133.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 벽초는 해방 직후인 1948년 북으로 가 조선민주주의인민공화국 수립에 참여해 초대 부수상을 지냈다.
+# ::tokens ["벽초", "는", "해방", "직후", "이", "ㄴ", "1948", "년", "북", "으로", "가", "아", "조선민주주의인민공화국", "수립", "에", "참여", "하", "어", "초대", "부", "수상", "을", "지내", "었", "다", "."]
+# ::pos_tags ["NNG", "JX", "NNG", "NNG", "VCP", "ETM", "SN", "NNB", "NNG", "JKB", "VV", "EC", "NNP", "NNG", "JKB", "NNG", "XSV", "EC", "NNG", "XPN", "NNG", "JKO", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["PS_NAME", "O", "O", "O", "O", "O", "DT_YEAR", "DT_YEAR", "TM_DIRECTION", "O", "O", "O", "LCP_COUNTRY", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 가-01
+            :ARG0 (x2 / person
+                  :name (x3 / 이름
+                        :op1 "벽초")
+                  :wiki "홍명희")
+            :ARG3 (x4 / country
+                  :name (x5 / 이름
+                        :op1 "조선민주주의인민공화국")
+                  :wiki "조선민주주의인민공화국")
+            :time (x6 / date-entity
+                  :mod (x7 / 직후
+                        :op1 (x8 / event
+                              :name (x9 / 이름
+                                    :op1 "해방")
+                              :wiki "광복절"))
+                  :year 1948))
+      :op2 (x10 / 참여-01
+            :ARG0 x2
+            :ARG1 (x11 / 수립-01
+                  :ARG1 x4))
+      :op3 (x12 / have-org-role-91
+            :ARG0 x2
+            :ARG1 x4
+            :ARG2 (x13 / 부수상
+                  :ord (x14 / ordinal-entity
+                        :value 1))))
+
+# ::id snt140.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 연애운은 좋은 편입니다.
+# ::tokens ["연애운", "은", "좋", "은", "편", "이", "ㅂ니다", "."]
+# ::pos_tags ["NNG", "JX", "VA", "ETM", "NNB", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 좋-01
+      :ARG1 (x1 / 운
+            :topic (x2 / 연애)))
+
+# ::id snt181.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 롯데관광개발은 평창동계올림픽 강원도 우수 지역 자원봉사자에게 크루즈 승선권을 전달했다고 22일 밝혔다.
+# ::tokens ["롯데", "관광", "개발", "은", "평창", "동계", "올림픽", "강원도", "우수", "지역", "자원", "봉사", "자", "에게", "크루즈", "승선", "권", "을", "전달하", "었", "다고", "22", "일", "밝히", "었", "다", "."]
+# ::pos_tags ["NNP", "NNG", "NNG", "JX", "NNP", "NNG", "NNG", "NNP", "NNG", "NNG", "NNG", "NNG", "XSN", "JKB", "NNP", "NNG", "XSN", "JKO", "VV", "EP", "EC", "SN", "NNB", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["OGG_ECONOMY", "OGG_ECONOMY", "OGG_ECONOMY", "O", "EV_SPORTS", "EV_SPORTS", "EV_SPORTS", "LCP_PROVINCE", "O", "O", "CV_POSITION", "CV_POSITION", "CV_POSITION", "O", "AF_TRANSPORT", "CV_LAW", "CV_LAW", "O", "O", "O", "O", "DT_DAY", "DT_DAY", "O", "O", "O", "O"]
+# ::note
+(x0 / 밝히-01
+      :ARG0 (x1 / company
+            :name (x2 / 이름
+                  :op1 "롯데관광개발")
+            :wiki "롯데관광개발")
+      :ARG1 (x3 / 전달-01
+            :ARG0 x1
+            :ARG1 (x4 / 승선권
+                  :mod (x5 / 크루즈))
+            :ARG2 (x6 / 사람
+                  :ARG0-of (x7 / 봉사-01
+                        :ARG1 (x8 / game
+                              :name (x9 / 이름
+                                    :op1 "평창동계올림픽")
+                              :wiki "2018년_동계_올림픽")
+                        :manner (x10 / 자원-00
+                              :ARG0 x6
+                              :ARG2 x7))
+                  :ARG1-of (x12 / 우수-01)
+                  :location (x13 / province
+                        :name (x14 / 이름
+                              :op1 "강원도")
+                        :wiki "강원도_(남)")
+                  :mod (x11 / 지역)))
+      :time (x15 / date-entity
+            :day 22))
+
+# ::id snt185.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 참사 3년 만에 목포신항에 거치한 세월호와 미수습자 수색 등 장면은 기획전으로 구성했다.
+# ::tokens ["참사", "3", "년", "만", "에", "목포", "신", "항", "에", "거치", "하", "ㄴ", "세월", "호", "와", "미수습자", "수색", "등", "장면", "은", "기획", "전", "으로", "구성", "하", "었", "다", "."]
+# ::pos_tags ["NNG", "SN", "NNB", "NNB", "JKB", "NNP", "NNG", "NNG", "JKB", "NNG", "XSV", "ETM", "NNG", "NNB", "JC", "NNG", "NNG", "NNB", "NNG", "JX", "NNG", "XSN", "JKB", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "DT_DURATION", "DT_DURATION", "O", "O", "LC_OTHERS", "LC_OTHERS", "LC_OTHERS", "O", "O", "O", "O", "AF_TRANSPORT", "AF_TRANSPORT", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 구성-01
+      :ARG1 (x1 / 기획전)
+      :ARG2 (x2 / 장면
+            :example (x3 / 등
+                  :op1 (x4 / ship
+                        :ARG1-of (x6 / 거치-02
+                              :ARG2 (x7 / port
+                                    :name (x8 / 이름
+                                          :op1 "목포신항")
+                                    :wiki "목포신항")
+                              :time (x9 / 이후
+                                    :op1 (x10 / incident
+                                          :name (x11 / 이름
+                                                :op1 "참사")
+                                          :wiki "세월호_침몰_사고")
+                                    :quant (x12 / temporal-quantity
+                                          :quant 3
+                                          :unit (x13 / 년))))
+                        :name (x5 / 이름
+                              :op1 "세월호")
+                        :wiki "세월호"))
+            :op2 (x14 / 수색-01
+                  :ARG1 (x15 / 사람
+                        :ARG1-of (x16 / 수습-00
+                              :polarity -)))))
+
+# ::id snt188.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 이후 A씨는 처벌이나 징계절차가 이뤄지지 않은 채 사표가 수리됐고, 대기업에 취업했습니다.
+# ::tokens ["이후", "A", "씨", "는", "처벌", "이나", "징계", "절차", "가", "이루", "어", "지", "지", "않", "은", "채", "사표", "가", "수리", "되", "었", "고", ",", "대", "기업", "에", "취업", "하", "었", "습니다", "."]
+# ::pos_tags ["NNG", "SL", "NNB", "JX", "NNG", "JC", "NNG", "NNG", "JKS", "VV", "EC", "VV", "EC", "VX", "ETM", "NNB", "NNG", "JKS", "NNG", "XSV", "EP", "EC", "SP", "XPN", "NNG", "JKB", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 수리-00
+            :ARG1 (x2 / 사표
+                  :poss (x3 / person
+                        :name (x4 / 이름
+                              :op1 "A")
+                        :wiki -))
+            :manner (x5 / 이루-01
+                  :ARG1 (x6 / 절차
+                        :topic (x7 / or
+                              :op1 (x8 / 처벌-01
+                                    :ARG1 x3)
+                              :op2 (x9 / 징계-01
+                                    :ARG1 x3)))
+                  :polarity -))
+      :op2 (x10 / 취업-01
+            :ARG0 x3
+            :ARG1 (x11 / 대기업))
+      :time (x12 / 이후))
+
+# ::id snt226.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 지난해 같은 기간보다 41.6%나 상승했다.
+# ::tokens ["지난", "해", "같", "은", "기간", "보다", "41.6", "%", "나", "상승", "하", "었", "다", "."]
+# ::pos_tags ["NNG", "NNG", "VA", "ETM", "NNG", "JKB", "SN", "SW", "JX", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["DT_YEAR", "DT_YEAR", "O", "O", "O", "O", "QT_PERCENTAGE", "QT_PERCENTAGE", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / have-quant-91
+      :ARG1 (x1 / 상승-01)
+      :ARG2 (x2 / percentage-entity
+            :value 41.6)
+      :ARG4 (x3 / 기간
+            :ARG1-of (x4 / 같-01)
+            :time (x5 / 지난해)))
+
+# ::id snt233.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 인권고등판무관사무소는 미국 반대에 부딪혀 허울뿐인 부서로 남았다.
+# ::tokens ["인권", "고등", "판무", "관", "사무", "소", "는", "미국", "반대", "에", "부딪히", "어", "허울", "뿐", "이", "ㄴ", "부서", "로", "남", "았", "다", "."]
+# ::pos_tags ["NNG", "NNG", "NNG", "XSN", "NNG", "XSN", "JX", "NNP", "NNG", "JKB", "VV", "EC", "NNG", "JX", "VCP", "ETM", "NNG", "JKB", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["CV_POSITION", "CV_POSITION", "CV_POSITION", "CV_POSITION", "O", "O", "O", "LCP_COUNTRY", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 남-00
+      :ARG1 (x1 / organization
+            :name (x2 / 이름
+                  :op1 "인권고등판무관사무소")
+            :wiki "유엔_인권_고등판무관_사무소")
+      :ARG2 (x3 / 부서
+            :mod (x4 / 허울))
+      :cause (x5 / 반대-01
+            :ARG0 (x6 / country
+                  :name (x7 / 이름
+                        :op1 "미국")
+                  :wiki "미국")))
+
+# ::id snt238.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 주위의 조언을 잘 새겨들어야 하는 시기입니다.
+# ::tokens ["주위", "의", "조언", "을", "잘", "새겨듣", "어야", "하", "는", "시기", "이", "ㅂ니다", "."]
+# ::pos_tags ["NNG", "JKG", "NNG", "JKO", "MAG", "VV", "EC", "VX", "ETM", "NNG", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 시기
+      :time-of (x1 / obligate-01
+            :ARG2 (x2 / 새겨듣-00
+                  :ARG1 (x3 / 조언-01
+                        :ARG0 (x4 / 주위))
+                  :manner (x5 / 잘))))
+
+# ::id snt247.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::snt 전남 장흥군 안양면 이장자치회와 지역사회보장협의체는 우리 동네 돌봄천사 '1마을 1나눔 사업'을 시작한다.
+# ::tokens ["전남", "장흥군", "안양면", "이장", "자", "치회", "와", "지역", "사회", "보장", "협의", "체", "는", "우리", "동네", "돌봄천사", "'", "1", "마을", "1", "나누", "ㅁ", "사업", "'", "을", "시작", "하", "ㄴ다", "."]
+# ::pos_tags ["NNP", "NNP", "NNP", "NNG", "XSN", "NNG", "JC", "NNG", "NNG", "NNG", "NNG", "XSN", "JX", "NP", "NNG", "NNG", "SS", "SN", "NNG", "SN", "VV", "ETN", "NNG", "SS", "JKO", "NNG", "XSV", "EF", "SF"]
+# ::ner_tags ["LCP_PROVINCE", "LCP_COUNTY", "LCP_COUNTY", "CV_POSITION", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "AFW_VIDEO", "AFW_VIDEO", "AFW_VIDEO", "O", "QT_COUNT", "QT_COUNT", "QT_COUNT", "O", "O", "CV_POSITION", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 시작-01
+      :ARG0 (x1 / and
+            :op1 (x2 / organization
+                  :location (x4 / city-district
+                        :location (x6 / county
+                              :location (x8 / province
+                                    :name (x9 / 이름
+                                          :op1 "전남")
+                                    :wiki "전라남도")
+                              :name (x7 / 이름
+                                    :op1 "장흥군")
+                              :wiki "장흥군")
+                        :name (x5 / 이름
+                              :op1 "안양면")
+                        :wiki "안양면")
+                  :name (x3 / 이름
+                        :op1 "이장자치회")
+                  :wiki -)
+            :op2 (x10 / organization
+                  :name (x11 / 이름
+                        :op1 "지역사회보장협의체")
+                  :wiki -))
+      :ARG1 (x12 / project*
+            :name (x13 / 이름
+                  :op1 "우리"
+                  :op2 "동네"
+                  :op3 "돌봄천사"
+                  :op4 "'1마을"
+                  :op5 "1나눔"
+                  :op6 "사업'")
+            :wiki -))
+
+# ::id 081639.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::snt 민준은 자신이 투표한 후보자가 대통령이 되기를 바랐다.
+# ::tokens ["민준", "은", "자신", "이", "투표", "하", "ㄴ", "후보", "자", "가", "대통령", "이", "되", "기", "를", "바라", "았", "다", "."]
+# ::pos_tags ["NNP", "JX", "NNG", "JKS", "NNG", "XSV", "ETM", "NNG", "XSN", "JKS", "NNG", "JKC", "VV", "ETN", "JKO", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["PS_NAME", "O", "O", "O", "O", "O", "O", "CV_POSITION", "CV_POSITION", "O", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 바라-01
+      :ARG0 (x1 / person
+            :name (x2 / 이름
+                  :op1 "민준")
+            :wiki -)
+      :ARG1 (x3 / 선출-01
+            :ARG1 (x4 / 사람
+                  :ARG1-of (x6 / 투표-01
+                        :ARG0 x1)
+                  :mod (x5 / 후보))
+            :ARG2 (x7 / 대통령)))
+
+# ::id 017179.01.krdict.nikl.ex.snt.003 ::category KBDICT :: split test
+# ::snt 사실 나는 그가 나에게 무엇을 이야기했는지 잘 기억이 나지 않는다.
+# ::tokens ["사실", "나", "는", "그", "가", "나", "에게", "무엇", "을", "이야기", "하", "었", "는지", "잘", "기억", "이", "나", "지", "않", "는다", "."]
+# ::pos_tags ["MAG", "NP", "JX", "NP", "JKS", "NP", "JKB", "NP", "JKO", "NNG", "XSV", "EP", "EC", "MAG", "NNG", "JKS", "VV", "EC", "VX", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 기억-01
+      :ARG0 (x1 / 나)
+      :ARG1 (x2 / 이야기-01
+            :ARG0 (x3 / 그)
+            :ARG1 (x4 / 무엇)
+            :ARG2 x1)
+      :degree (x5 / 잘)
+      :polarity -)
+
+# ::id 088143.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::snt 선생님은 지난 시간에 나눠 준 설문지를 회수해 가셨다.
+# ::tokens ["선생", "님", "은", "지나", "ㄴ", "시간", "에", "나누", "어", "주", "ㄴ", "설문", "지", "를", "회수", "하", "어", "가", "시", "었", "다", "."]
+# ::pos_tags ["NNG", "XSN", "JX", "VV", "ETM", "NNG", "JKB", "VV", "EC", "VX", "ETM", "NNG", "XSN", "JKO", "NNG", "XSV", "EC", "VX", "EP", "EP", "EF", "SF"]
+# ::ner_tags ["CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 회수-01
+      :ARG0 (x1 / 선생님)
+      :ARG1 (x2 / 종이
+            :ARG1-of (x4 / 나눠주-00
+                  :ARG0 x1
+                  :time (x5 / 시간
+                        :ARG0-of (x6 / 지나-01)))
+            :instrument-of (x3 / 설문-00)))
+
+# ::id 031440.01.krdict.nikl.ex.snt.002 ::category KBDICT :: split test
+# ::snt 지수는 항상 꿈을 현실과 결부시키는 버릇이 있었다.
+# ::tokens ["지수", "는", "항상", "꿈", "을", "현실", "과", "결부", "시키", "는", "버릇", "이", "있", "었", "다", "."]
+# ::pos_tags ["NNG", "JX", "MAG", "NNG", "JKO", "NNG", "JC", "NNG", "XSV", "ETM", "NNG", "JKS", "VA", "EP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 버릇
+      :mod (x3 / 결부-00
+            :ARG0 (x1 / person
+                  :name (x2 / 이름
+                        :op1 "지수")
+                  :wiki -)
+            :ARG1 (x4 / 꿈)
+            :ARG2 (x5 / 현실)
+            :frequency (x6 / 항상))
+      :poss x1)
+
+# ::id 074286.01.krdict.nikl.ex.snt.002 ::category KBDICT :: split test
+# ::snt 김 사장은 그간의 업적으로 보아 재임용하는 것이 회사를 위해 좋다.
+# ::tokens ["김", "사장", "은", "그간", "의", "업적", "으로", "보", "아", "재임용", "하", "는", "것", "이", "회사", "를", "위하", "어", "좋", "다", "."]
+# ::pos_tags ["NNP", "NNG", "JX", "NNG", "JKG", "NNG", "JKB", "VV", "EC", "NNG", "XSV", "ETM", "NNB", "JKS", "NNG", "JKO", "VV", "EC", "VA", "EF", "SF"]
+# ::ner_tags ["PS_NAME", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 좋-03
+      :ARG1 (x1 / 재임용-00
+            :ARG1 (x2 / person
+                  :ARG0-of (x4 / have-org-role-91
+                        :ARG1 (x5 / 회사)
+                        :ARG2 (x6 / 사장))
+                  :name (x3 / 이름
+                        :op1 "김")
+                  :wiki -))
+      :ARG2 x5
+      :condition (x7 / 보-03
+            :ARG1 (x8 / 업적
+                  :duration (x9 / 그간))))
+
+# ::id 085402.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::snt 독재자에게 지배당하는 국민들은 그의 뜻에 따라 생각하고 움직여야 했다.
+# ::tokens ["독재", "자", "에게", "지배", "당하", "는", "국민", "들", "은", "그", "의", "뜻", "에", "따르", "아", "생각", "하", "고", "움직이", "어야", "하", "었", "다", "."]
+# ::pos_tags ["NNG", "XSN", "JKB", "NNG", "XSV", "ETM", "NNG", "XSN", "JX", "NP", "JKG", "NNG", "JKB", "VV", "EC", "NNG", "XSV", "EC", "VV", "EC", "VX", "EP", "EF", "SF"]
+# ::ner_tags ["CV_POSITION", "CV_POSITION", "O", "O", "O", "O", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / obligate-01
+      :ARG1 (x1 / 국민
+            :ARG1-of (x2 / 지배-01
+                  :ARG0 (x3 / 독재자)))
+      :ARG2 (x4 / and
+            :manner (x5 / 따르-01
+                  :ARG1 (x6 / 뜻
+                        :poss x3))
+            :op1 (x7 / 생각-01)
+            :op2 (x8 / 움직이-01)))
+
+# ::id 015063.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::snt 공직자들은 본인과 가족들의 재산을 공공 기관에 등록해야 한다.
+# ::tokens ["공직", "자", "들", "은", "본인", "과", "가족", "들", "의", "재산", "을", "공공", "기관", "에", "등록", "하", "어야", "하", "ㄴ다", "."]
+# ::pos_tags ["NNG", "XSN", "XSN", "JX", "NNG", "JC", "NNG", "XSN", "JKG", "NNG", "JKO", "NNG", "NNG", "JKB", "NNG", "XSV", "EC", "VX", "EF", "SF"]
+# ::ner_tags ["CV_POSITION", "CV_POSITION", "O", "O", "O", "O", "CV_RELATION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / obligate-01
+      :ARG2 (x1 / 등록-01
+            :ARG0 (x2 / 공직자)
+            :ARG1 (x3 / 재산
+                  :poss (x4 / and
+                        :op1 x2
+                        :op2 (x5 / 가족
+                              :poss x2)))
+            :ARG2 (x6 / 기관
+                  :mod (x7 / 공공))))
+
+# ::id 068602.04.krdict.nikl.ex.snt.003 ::category KBDICT :: split test
+# ::snt 카메라는 우리가 움직이는 동선을 그대로 따라오며 우리를 찍었다.
+# ::tokens ["카메라", "는", "우리", "가", "움직이", "는", "동선", "을", "그대로", "따라오", "며", "우리", "를", "찍", "었", "다", "."]
+# ::pos_tags ["NNG", "JX", "NP", "JKS", "VV", "ETM", "NNG", "JKO", "MAG", "VV", "EC", "NP", "JKO", "VV", "EP", "EF", "SF"]
+# ::ner_tags ["TMI_HW", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 찍-01
+      :ARG0 (x1 / 카메라)
+      :ARG1 (x2 / 우리)
+      :manner (x3 / 따라오-01
+            :ARG0 x1
+            :ARG1 (x4 / 동선
+                  :path-of (x5 / 움직이-02
+                        :ARG0 x2))
+            :mod (x6 / 그대로)))
+
+# ::id 025351.01.krdict.nikl.ex.snt.002 ::category KBDICT :: split test
+# ::snt 우리 팀은 실력 차이에도 불구하고 마지막까지 건투하여 승리를 차지했다.
+# ::tokens ["우리", "팀", "은", "실력", "차이", "에", "도", "불구", "하", "고", "마지막", "까지", "건투", "하", "여", "승리", "를", "차지", "하", "었", "다", "."]
+# ::pos_tags ["NP", "NNG", "JX", "NNG", "NNG", "JKB", "JX", "NNG", "XSV", "EC", "NNG", "JX", "NNG", "XSV", "EC", "NNG", "JKO", "NNG", "XSV", "EP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 승리-01
+      :ARG0 (x1 / 팀
+            :poss (x2 / 우리))
+      :concession (x5 / 차이
+            :mod (x6 / 실력))
+      :manner (x3 / 건투-00
+            :ARG0 x1
+            :destination (x4 / 마지막)))
+
+# ::id 053779.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::snt 남편은 육아와 가사 노동을 나에게만 떠맡기고 모른 척했다.
+# ::tokens ["남편", "은", "육아", "와", "가사", "노동", "을", "나", "에게", "만", "떠맡기", "고", "모르", "ㄴ", "척하", "었", "다", "."]
+# ::pos_tags ["NNG", "JX", "NNG", "JC", "NNG", "NNG", "JKO", "NP", "JKB", "JX", "VV", "EC", "VV", "ETM", "VX", "EP", "EF", "SF"]
+# ::ner_tags ["CV_RELATION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 떠맡-01
+            :ARG0 (x3 / 나)
+            :ARG1 (x4 / and
+                  :op1 (x5 / 육아-00)
+                  :op2 (x6 / 노동-01
+                        :mod (x7 / 가사)))
+            :ARGA (x2 / 남편))
+      :op2 (x8 / 모른척하-00
+            :ARG0 x2))
+
+# ::id 021161.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::snt 어머니는 미역국을 끓이기 위해서는 말린 미역을 물에 불려야 한다고 말씀하셨다.
+# ::tokens ["어머니", "는", "미역", "국", "을", "끓이", "기", "위하", "어서", "는", "말리", "ㄴ", "미역", "을", "물", "에", "불리", "어야", "하", "ㄴ다고", "말씀", "하", "시", "었", "다", "."]
+# ::pos_tags ["NNG", "JX", "NNG", "NNG", "JKO", "VV", "ETN", "VV", "EC", "JX", "VV", "ETM", "NNG", "JKO", "NNG", "JKB", "VV", "EC", "VX", "EC", "NNG", "XSV", "EP", "EP", "EF", "SF"]
+# ::ner_tags ["CV_RELATION", "O", "CV_FOOD", "CV_FOOD", "O", "O", "O", "O", "O", "O", "O", "O", "PT_OTHERS", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 말씀-01
+      :ARG0 (x1 / 어머니)
+      :ARG1 (x2 / obligate-01
+            :ARG2 (x3 / 불-00
+                  :ARG1 (x4 / 미역
+                        :ARG1-of (x5 / 마르-01))
+                  :instrument (x6 / 물))
+            :purpose (x7 / 끓-00
+                  :ARG1 (x8 / 미역국))))
+
+# ::id snt0.E2016.837.04_A_02 ::category EXWKQA :: split test
+# ::snt 2차 세계대전에서 사용된 미국의 전략폭격기이며 히로시마에 원자폭탄을 투하한 폭격기로 유명하다.
+# ::tokens ["2", "차", "세계", "대전", "에서", "사용", "되", "ㄴ", "미국", "의", "전략", "폭격", "기", "이", "며", "히로시마", "에", "원자", "폭탄", "을", "투하", "하", "ㄴ", "폭격", "기", "로", "유명", "하", "다", "."]
+# ::pos_tags ["SN", "NNB", "NNG", "NNG", "JKB", "NNG", "XSV", "ETM", "NNP", "JKG", "NNG", "NNG", "XSN", "VCP", "EC", "NNP", "JKB", "NNG", "NNG", "JKO", "NNG", "XSV", "ETM", "NNG", "XSN", "JKB", "NNG", "XSA", "EF", "SF"]
+# ::ner_tags ["EV_WAR_REVOLUTION", "EV_WAR_REVOLUTION", "EV_WAR_REVOLUTION", "EV_WAR_REVOLUTION", "O", "O", "O", "O", "LCP_COUNTRY", "O", "O", "O", "O", "O", "O", "LCP_CITY", "O", "AF_WEAPON", "AF_WEAPON", "O", "O", "O", "O", "AF_WEAPON", "AF_WEAPON", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / and
+      :op1 (x1 / 전략폭격기
+            :ARG1-of (x2 / 사용-01
+                  :ARG0 (x3 / country
+                        :name (x4 / 이름
+                              :op1 "미국")
+                        :wiki "미국")
+                  :time (x5 / war
+                        :name (x6 / 이름
+                              :op1 "2차"
+                              :op2 "세계대전")
+                        :wiki "제2차_세계_대전"))
+            :mod x3)
+      :op2 (x7 / 유명-01
+            :ARG1 x1
+            :ARG2 (x8 / 폭격기
+                  :ARG0-of (x9 / 투하-00
+                        :ARG1 (x10 / 원자폭탄)
+                        :ARG2 (x11 / city
+                              :name (x12 / 이름
+                                    :op1 "히로시마")
+                              :wiki "히로시마시")))))
+
+# ::id snt0.E2016.837.05_Q_01 ::category EXWKQA :: split test
+# ::snt 사용 언어가 다른 나라는?
+# ::tokens ["사용", "언어", "가", "다른", "나라", "는", "?"]
+# ::pos_tags ["NNG", "NNG", "JKS", "MM", "NNG", "JX", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 사용-01
+      :ARG0 (x1 / amr-unknown
+            :mod (x2 / 나라))
+      :ARG1 (x3 / 언어
+            :ARG1-of (x4 / 다르-01)))
+
+# ::id snt17.E2017.NEWS.012 ::category EXNEWS :: split test
+# ::snt 인사 실패의 책임이 조 수석이 아닌 비서실장인 자신에게 있다는 것이다.
+# ::tokens ["인사", "실패", "의", "책임", "이", "조", "수석", "이", "아니", "ㄴ", "비서", "실", "장", "이", "ㄴ", "자신", "에게", "있", "다는", "것", "이", "다", "."]
+# ::pos_tags ["NNG", "NNG", "JKG", "NNG", "JKS", "NNP", "NNG", "JKC", "VCN", "ETM", "NNG", "XSN", "XSN", "VCP", "ETM", "NNG", "JKB", "VA", "ETM", "NNB", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "PS_NAME", "CV_POSITION", "O", "O", "O", "CV_POSITION", "CV_POSITION", "CV_POSITION", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 의미-01
+      :ARG2 (x1 / 책임지-01
+            :ARG1 (x2 / 자신
+                  :ARG1-of (x5 / have-mod-91
+                        :ARG2 (x6 / person
+                              :ARG0-of (x8 / have-org-role-91
+                                    :ARG2 (x9 / 수석))
+                              :name (x7 / 이름
+                                    :op1 "조")
+                              :wiki "조국_(법학자)")
+                        :polarity -)
+                  :ARG2-of (x3 / have-org-role-91
+                        :ARG2 (x4 / 비서실장)))
+            :ARG2 (x10 / 실패-01
+                  :ARG2 (x11 / 인사))))
+
+# ::id snt0.E2016.888.02_A_02 ::category EXWKQA :: split test
+# ::snt 어떤 물건을 일상적인 환경에서 이질적인 환경으로 옮겨 그 물건으로부터 실용적인 성격을 배제하여 물체끼리의 기이한 만남을 현출시키는 기법이다.
+# ::tokens ["어떤", "물건", "을", "일상", "적", "이", "ㄴ", "환경", "에서", "이질", "적", "이", "ㄴ", "환경", "으로", "옮기", "어", "그", "물건", "으로부터", "실용", "적", "이", "ㄴ", "성격", "을", "배제", "하", "어", "물체", "끼리", "의", "기이", "하", "ㄴ", "만남", "을", "현출", "시키", "는", "기법", "이", "다", "."]
+# ::pos_tags ["MM", "NNG", "JKO", "NNG", "XSN", "VCP", "ETM", "NNG", "JKB", "NNG", "XSN", "VCP", "ETM", "NNG", "JKB", "VV", "EC", "MM", "NNG", "JKB", "NNG", "XSN", "VCP", "ETM", "NNG", "JKO", "NNG", "XSV", "EC", "NNG", "XSN", "JKG", "NNG", "XSA", "ETM", "NNG", "JKO", "NNG", "XSV", "ETM", "NNG", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 기법
+      :mod (x1 / 현출-00
+            :ARG1 (x2 / 만나-01
+                  :ARG0 (x3 / 물체)
+                  :ARG1 (x4 / 물체)
+                  :ARG1-of (x5 / 기이-00))
+            :manner (x6 / 배제-01
+                  :ARG1 (x7 / 성격
+                        :mod (x8 / 실용적))
+                  :ARG2 (x9 / 물건
+                        :mod (x10 / 어떤))
+                  :manner (x11 / 옮-01
+                        :ARG1 x9
+                        :ARG2 (x12 / 환경
+                              :mod (x13 / 일상))
+                        :ARG3 (x14 / 환경
+                              :mod (x15 / 이질적))))))
+
+# ::id snt0.E2016.888.06_Q_01 ::category EXWKQA :: split test
+# ::snt 우리나라의 산맥 중 방향이 다른 것은 무엇일까?
+# ::tokens ["우리나라", "의", "산맥", "중", "방향", "이", "다른", "것", "은", "무엇", "이", "ㄹ까", "?"]
+# ::pos_tags ["NNG", "JKG", "NNG", "NNB", "NNG", "JKS", "MM", "NNB", "JX", "NP", "VCP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 다르-01
+      :ARG1 (x1 / 방향
+            :direction-of (x2 / amr-unknown
+                  :ARG1-of (x3 / include-91
+                        :ARG2 (x4 / 산맥
+                              :location (x5 / 우리나라))))))
+
+# ::id lpp_1943.8 ::category TLPPRL :: split test
+# ::snt 색연필을 가지고 첫 번째 그림을 그려 보았다.
+# ::tokens ["색", "연필", "을", "가지", "고", "첫", "번째", "그림", "을", "그리", "어", "보", "았", "다", "."]
+# ::pos_tags ["NNG", "NNG", "JKO", "VV", "EC", "MM", "NNB", "NNG", "JKO", "VV", "EC", "VX", "EP", "EF", "SF"]
+# ::ner_tags ["O", "O", "O", "O", "O", "QT_ORDER", "QT_ORDER", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 그리-01
+      :ARG1 (x1 / 그림
+            :ord (x2 / ordinal-entity
+                  :value 1))
+      :instrument (x3 / 색연필))
+
+# ::id lpp_1943.14 ::category TLPPRL :: split test
+# ::snt 보아구렁이가 코끼리를 삭이고 있는 것이었다.
+# ::tokens ["보아구렁이", "가", "코끼리", "를", "삭이", "고", "있", "는", "것", "이", "었", "다", "."]
+# ::pos_tags ["NNG", "JKS", "NNG", "JKO", "VV", "EC", "VX", "ETM", "NNB", "VCP", "EP", "EF", "SF"]
+# ::ner_tags ["AM_REPTILIA", "O", "AM_MAMMALIA", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / 삭-00
+      :ARG0 (x1 / 구렁이
+            :mod (x2 / 보아))
+      :ARG1 (x3 / 코끼리))
+
+# ::id lpp_1943.33 ::category TLPPRL :: split test
+# ::snt 그 어른이 알아들을 수 있게
+# ::tokens ["그", "어른", "이", "알아듣", "을", "수", "있", "게"]
+# ::pos_tags ["MM", "NNG", "JKS", "VV", "ETM", "NNB", "VA", "EC"]
+# ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O"]
+# ::note
+(x0 / have-purpose-91
+      :ARG2 (x1 / 가능-01
+            :ARG1 (x2 / 알아듣-01
+                  :ARG0 (x3 / 어른
+                        :mod (x4 / 그)))))
+
