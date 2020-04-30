@@ -1,6 +1,4 @@
 VERBALIZE 가르침 TO 가르치-01
-VERBALIZE 개최해왔 TO 개최-01
-VERBALIZE 갸우뚱갸우 TO 갸우뚱갸우뚱-00
 VERBALIZE 곤두세우 TO 곤두서-01
 VERBALIZE 기억나 TO 기억-01
 VERBALIZE 길어지 TO 길-01
