@@ -2532,8 +2532,8 @@
 # ::snt 우리말로는 "후천성면역결핍증(後天性免疫缺乏症)"이다.
 # ::note
 (d / desease :wiki "후천면역결핍증후군"
-      :name (이 / 이름 :op1 "후천성면역결핍증"
-            :medium (우 / 우리말)))
+      :name (이 / 이름 :op1 "후천성면역결핍증")
+      :medium (우 / 우리말))
 
 # ::id snt2.E2016.790.05_A_02 ::category EXWKQA :: split train
 # ::snt 항체 생산 세포인 B-림프구를 돕는 헬퍼 T-림프구가 특수한 계통의 세균의 침입을 받으면, 헬퍼 T-림프구의 기능이 약해지거나 그 수가 감소하여 B-림프구의 항체 생산 능력이 크게 떨어진다.
@@ -2828,8 +2828,8 @@
             :ARG0-of (영 / 영향-01
                   :ARG1 (등 / 등
                         :op1 (e / event :wiki "프랑스_혁명" :name (이 / 이름 :op1 "프랑스혁명"))
-                        :op2 (w / war :wiki "미국_독립_전쟁" :name (이2 / 이름 :op1 "독립전쟁"
-                              :location (c / country :wiki "미국" :name (이3 / 이름 :op1 "미국")))))
+                        :op2 (w / war :wiki "미국_독립_전쟁" :name (이2 / 이름 :op1 "독립전쟁")
+                              :location (c / country :wiki "미국" :name (이3 / 이름 :op1 "미국"))))
                   :degree (크 / 크-01)))
       :time (한 / 한때)
       :time (d / date-entity :century 19)

@@ -3814,8 +3814,8 @@
 # ::note
 (x0 / desease
       :name (x1 / 이름
-            :medium (x2 / 우리말)
             :op1 "후천성면역결핍증")
+      :medium (x2 / 우리말)
       :wiki "후천면역결핍증후군")
 
 # ::id snt2.E2016.790.05_A_02 ::category EXWKQA :: split train
@@ -4321,12 +4321,12 @@
                               :wiki "프랑스_혁명")
                         :op2 (x6 / war
                               :name (x7 / 이름
-                                    :location (x8 / country
-                                          :name (x9 / 이름
-                                                :op1 "미국")
-                                          :wiki "미국")
                                     :op1 "독립전쟁")
-                              :wiki "미국_독립_전쟁"))
+                              :wiki "미국_독립_전쟁"
+                              :location (x8 / country
+                                    :name (x9 / 이름
+                                          :op1 "미국")
+                                    :wiki "미국")))
                   :degree (x10 / 크-01)))
       :cause (x13 / and
             :op1 (x14 / 정비-01
