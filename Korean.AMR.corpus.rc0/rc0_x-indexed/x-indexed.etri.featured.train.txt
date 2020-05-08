@@ -6502,12 +6502,12 @@
             :ARG1 (x10 / 보-01
                   :frequency (x11 / or
                         :op1 (x12 / rate-entity-91
-                              :ARG1 1
+                              :ARG1 "1"
                               :ARG2 (x13 / temporal-quantity
                                     :quant 1
                                     :unit (x14 / 학기)))
                         :op2 (x15 / rate-entity-91
-                              :ARG1 2
+                              :ARG1 "2"
                               :ARG2 (x16 / temporal-quantity
                                     :quant 1
                                     :unit (x17 / 학기)))))))
@@ -19742,7 +19742,7 @@
 # ::note
 (x0 / and
       :frequency (x5 / rate-entity-91
-            :ARG1 1
+            :ARG1 "1"
             :ARG2 (x6 / 하루))
       :manner (x7 / 엇바뀌-00
             :ARG1 (x2 / 해)

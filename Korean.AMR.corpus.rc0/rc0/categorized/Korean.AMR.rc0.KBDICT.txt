@@ -86,7 +86,7 @@
       :op2 (지 / 지-03
             :ARG1 (달 / 달))
       :frequency (r / rate-entity-91
-            :ARG1 1
+            :ARG1 "1"
             :ARG2 (하 / 하루))
       :manner (엇 / 엇바뀌-00
             :ARG1 해

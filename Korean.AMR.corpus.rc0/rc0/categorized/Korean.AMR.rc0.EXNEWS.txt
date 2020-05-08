@@ -845,10 +845,10 @@
             :ARG1 (보 / 보-01
                   :frequency (o2 / or
                         :op1 (r / rate-entity-91
-                              :ARG1 1
+                              :ARG1 "1"
                               :ARG2 (t / temporal-quantity :quant 1 :unit (학2 / 학기)))
                         :op2 (r2 / rate-entity-91
-                              :ARG1 2
+                              :ARG1 "2"
                               :ARG2 (t2 / temporal-quantity :quant 1 :unit (학3 / 학기)))))))
 
 # ::id snt13.E2017.NEWS.002 ::category EXNEWS :: split train
