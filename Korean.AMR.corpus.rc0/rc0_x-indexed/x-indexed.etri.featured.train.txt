@@ -15773,6 +15773,7 @@
 # ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O"]
 # ::note
 (x0 / 나쁘-01
+      :polarity -
       :ARG1 (x1 / 운
             :topic (x2 / 재물)))
 
