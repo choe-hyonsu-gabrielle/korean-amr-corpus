@@ -2641,7 +2641,7 @@
             :ARG2 (s / street-address-91
                   :ARG1 "228"
                   :ARG2 (c2 / city-district :wiki "봉천동" :name (이3 / 이름 :op1 "봉천동"))
-                  :ARG4 (c3 / city :wiki "관악구" :name (이4 / 이름 :op1 "관악구"))
+                  :ARG4 (c3 / county :wiki "관악구" :name (이4 / 이름 :op1 "관악구"))
                   :ARG5 (c4 / city :wiki "서울특별시" :name (이5 / 이름 :op1 "서울특별시")))))
 
 # ::id snt0.E2016.789.01_A_02 ::category EXWKQA :: split train
@@ -2650,7 +2650,7 @@
 (장 / 장소
       :topic (지 / 지명)
       :location (c / city-district :wiki "봉천동" :name (이 / 이름 :op1 "봉천동")
-            :location (c2 / city :wiki "관악구" :name (이2 / 이름 :op1 "관악구")
+            :location (c2 / county :wiki "관악구" :name (이2 / 이름 :op1 "관악구")
                   :location (c3 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울특별시"))))
       :location-of (출 / 출생-01
             :ARG1 (p / person :wiki "강감찬" :name (이4 / 이름 :op1 "강감찬"))))
@@ -2662,7 +2662,7 @@
       :ARG1 (a / amr-unknown
             :mod (사 / 사람))
       :ARG2 (c / cultural-asset* :wiki "낙성대" :name (이 / 이름 :op1 "낙성대")
-            :location (c2 / city :wiki "관악구" :name (이2 / 이름 :op1 "관악구")
+            :location (c2 / county :wiki "관악구" :name (이2 / 이름 :op1 "관악구")
                   :location (c3 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울")))))
 
 # ::id snt0.E2016.789.02_A_01 ::category EXWKQA :: split train
@@ -4076,7 +4076,7 @@
                   :time (d2 / date-entity :year 2003 :month 10)
                   :ARG2-of (i2 / include-91
                         :ARG1 (a2 / and
-                              :op1 (c6 / city :wiki "강서구_(부산광역시)" :name (이6 / 이름 :op1 "강서구"))
+                              :op1 (c6 / county :wiki "강서구_(부산광역시)" :name (이6 / 이름 :op1 "강서구"))
                               :op2 (c7 / city :wiki "진해구" :name (이7 / 이름 :op1 "진해시")))))
             :op3 (c8 / city-district :wiki - :name (이8 / 이름 :op1 "광양만권")
                   :time (d3 / date-entity :year 2003 :month 10)

@@ -914,7 +914,7 @@
       :ARG1 (h / have-mod-91
             :ARG2 (b / building :wiki - :name (이 / 이름 :op1 "홍실아파트")
                   :location (c / city-district :wiki "삼성동_(강남구)" :name (이2 / 이름 :op1 "삼성동")
-                        :location (c2 / city :wiki "강남구" :name (이3 / 이름 :op1 "강남구")
+                        :location (c2 / county :wiki "강남구" :name (이3 / 이름 :op1 "강남구")
                               :location (c3 / city :wiki "서울특별시" :name (이4 / 이름 :op1 "서울")))))
             :ARG2 (전 / 전용면적
                   :mod (a / area-quantity :quant 108 :unit (s / square-meter)))
@@ -1511,16 +1511,16 @@
 (a / and
       :op1 (h / have-degree-91
             :ARG1 (사 / 사람 :quant 850000 :unit (명 / 명)
-                  :mod (c / city :wiki "강남구" :name (이 / 이름 :op1 "강남구")))
+                  :mod (c / county :wiki "강남구" :name (이 / 이름 :op1 "강남구")))
             :ARG2 (많 / 많-01
                   :ARG1 사)
             :ARG3 (가 / 가장))
       :op2 (뒤 / 뒤따르-00
             :ARG1 (등 / 등
                   :op1 (사2 / 사람 :quant 770000 :unit (명2 / 명)
-                        :mod (c2 / city :wiki "서초구" :name (이2 / 이름 :op1 "서초")))
+                        :mod (c2 / county :wiki "서초구" :name (이2 / 이름 :op1 "서초")))
                   :op2 (사3 / 사람 :quant 620000 :unit (명3 / 명)
-                        :mod (c3 / city :wiki "송파구" :name (이3 / 이름 :op1 "송파"))))
+                        :mod (c3 / county :wiki "송파구" :name (이3 / 이름 :op1 "송파"))))
             :ARG2 h))
 
 # ::id snt79.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test

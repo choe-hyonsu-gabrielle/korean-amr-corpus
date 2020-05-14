@@ -519,7 +519,7 @@
             :mod (판2 / 판사
                   :quant (전 / 전체))
             :location (g / government-organization :wiki "서울중앙지방법원" :name (이 / 이름 :op1 "서울중앙지방법원")
-                  :location (c / city :wiki "서초구" :name (이2 / 이름 :op1 "서초구")
+                  :location (c / county :wiki "서초구" :name (이2 / 이름 :op1 "서초구")
                         :location (c2 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울"))))
             :time (d / date-entity :day 19)))
 
@@ -835,7 +835,7 @@
             :time (d / date-entity :year 2018 :calendar (학2 / 학년도))
             :location (노 / 노천극장
                   :location (u / university :wiki "연세대학교" :name (이 / 이름 :op1 "연세대학교")
-                        :location (c / city :wiki "서대문구" :name (이2 / 이름 :op1 "서대문구")
+                        :location (c / county :wiki "서대문구" :name (이2 / 이름 :op1 "서대문구")
                               :location (c2 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울"))))))
       :time (d2 / date-entity :day 23))
 
@@ -886,16 +886,16 @@
 (a / and
       :op1 (h / have-degree-91
             :ARG1 (사 / 사람 :quant 850000 :unit (명 / 명)
-                  :mod (c / city :wiki "강남구" :name (이 / 이름 :op1 "강남구")))
+                  :mod (c / county :wiki "강남구" :name (이 / 이름 :op1 "강남구")))
             :ARG2 (많 / 많-01
                   :ARG1 사)
             :ARG3 (가 / 가장))
       :op2 (뒤 / 뒤따르-00
             :ARG1 (등 / 등
                   :op1 (사2 / 사람 :quant 770000 :unit (명2 / 명)
-                        :mod (c2 / city :wiki "서초구" :name (이2 / 이름 :op1 "서초")))
+                        :mod (c2 / county :wiki "서초구" :name (이2 / 이름 :op1 "서초")))
                   :op2 (사3 / 사람 :quant 620000 :unit (명3 / 명)
-                        :mod (c3 / city :wiki "송파구" :name (이3 / 이름 :op1 "송파"))))
+                        :mod (c3 / county :wiki "송파구" :name (이3 / 이름 :op1 "송파"))))
             :ARG2 h))
 
 # ::id snt70.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
@@ -2254,7 +2254,7 @@
       :location (f / facility :wiki - :name (이3 / 이름 :op1 "캠프무적")
             :poss (m2 / military :wiki "미국_해병대" :name (이4 / 이름 :op1 "미" :op2 "해병대"))
             :location (c / city-district :wiki "오천읍" :name (이5 / 이름 :op1 "오천읍")
-                  :location (c2 / city :wiki "남구_(포항시)" :name (이6 / 이름 :op1 "남구")
+                  :location (c2 / county :wiki "남구_(포항시)" :name (이6 / 이름 :op1 "남구")
                         :location (c3 / city :wiki "포항시" :name (이7 / 이름 :op1 "포항시"))))))
 
 # ::id snt172.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train

@@ -1277,7 +1277,7 @@
                               :mod (화 / 화재)
                               :location (m / market :wiki "소래포구_종합어시장" :name (이2 / 이름 :op1 "소래포구" :op2 "어시장")
                                     :location (c / city-district :wiki "논현동_(인천)" :name (이3 / 이름 :op1 "논현동")
-                                          :location (c2 / city :wiki "남동구" :name (이4 / 이름 :op1 "남동구")
+                                          :location (c2 / county :wiki "남동구" :name (이4 / 이름 :op1 "남동구")
                                                 :location (c3 / city :wiki "인천광역시" :name (이5 / 이름 :op1 "인천시")))))
                               :ARG1-of (발 / 발생-01
                                     :time (d / date-entity :day 18))))))
@@ -4312,7 +4312,7 @@
                   :mod (a / area-quantity :quant 50 :unit (s / square-meter)))
             :location (f / facility :wiki - :name (이 / 이름 :op1 "주공" :op2 "1단지")
                   :location (c / city-district :wiki "둔촌동" :name (이2 / 이름 :op1 "둔촌동")
-                        :location (c2 / city :wiki "강동구" :name (이3 / 이름 :op1 "강동구"))))
+                        :location (c2 / county :wiki "강동구" :name (이3 / 이름 :op1 "강동구"))))
             :ARG1-of (c3 / cost-01
                   :ARG2 (m / monetary-quantity :quant 850000000 :unit (원 / 원))))
       :time (최 / 최근))
@@ -4343,7 +4343,7 @@
       :ARG1 (h / have-mod-91
             :ARG2 (b / building :wiki - :name (이 / 이름 :op1 "홍실아파트")
                   :location (c / city-district :wiki "삼성동_(강남구)" :name (이2 / 이름 :op1 "삼성동")
-                        :location (c2 / city :wiki "강남구" :name (이3 / 이름 :op1 "강남구")
+                        :location (c2 / county :wiki "강남구" :name (이3 / 이름 :op1 "강남구")
                               :location (c3 / city :wiki "서울특별시" :name (이4 / 이름 :op1 "서울")))))
             :ARG2 (전 / 전용면적
                   :mod (a / area-quantity :quant 108 :unit (s / square-meter)))

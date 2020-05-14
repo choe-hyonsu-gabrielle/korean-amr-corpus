@@ -17,7 +17,7 @@
 			:ARG1 (청2 / 청소-01)))
 	:ARG1 (외 / 외벽
 		:part-of (b / building :wiki "롯데월드타워" :name (이 / 이름 :op1 "롯데월드타워")
-			:location (c / city :wiki "송파구" :name (이2 / 이름 :op1 "송파구")
+			:location (c / county :wiki "송파구" :name (이2 / 이름 :op1 "송파구")
 				:location (c2 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울")))))
 	:location b
 	:time (d / date-entity :day 6))
@@ -31,7 +31,7 @@
 			:consist-of (천 / 천막)
 			:location (입 / 입구
 				:part-of (m / market :wiki - :name (이 / 이름 :op1 "방천시장")
-					:location (c / city :wiki "중구_(대구광역시)" :name (이2 / 이름 :op1 "중구")
+					:location (c / county :wiki "중구_(대구광역시)" :name (이2 / 이름 :op1 "중구")
 						:location (c2 / city :wiki "대구광역시" :name (이3 / 이름 :op1 "대구")))))))
 	:time (d / date-entity :time "9:20"))
 

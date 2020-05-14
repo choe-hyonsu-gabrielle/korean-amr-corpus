@@ -2641,7 +2641,7 @@
             :ARG2 (s / street-address-91
                   :ARG1 "228"
                   :ARG2 (c2 / city-district :wiki "봉천동" :name (이3 / 이름 :op1 "봉천동"))
-                  :ARG4 (c3 / city :wiki "관악구" :name (이4 / 이름 :op1 "관악구"))
+                  :ARG4 (c3 / county :wiki "관악구" :name (이4 / 이름 :op1 "관악구"))
                   :ARG5 (c4 / city :wiki "서울특별시" :name (이5 / 이름 :op1 "서울특별시")))))
 
 # ::id snt0.E2016.789.01_A_02 ::category EXWKQA :: split train
@@ -2650,7 +2650,7 @@
 (장 / 장소
       :topic (지 / 지명)
       :location (c / city-district :wiki "봉천동" :name (이 / 이름 :op1 "봉천동")
-            :location (c2 / city :wiki "관악구" :name (이2 / 이름 :op1 "관악구")
+            :location (c2 / county :wiki "관악구" :name (이2 / 이름 :op1 "관악구")
                   :location (c3 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울특별시"))))
       :location-of (출 / 출생-01
             :ARG1 (p / person :wiki "강감찬" :name (이4 / 이름 :op1 "강감찬"))))
@@ -2662,7 +2662,7 @@
       :ARG1 (a / amr-unknown
             :mod (사 / 사람))
       :ARG2 (c / cultural-asset* :wiki "낙성대" :name (이 / 이름 :op1 "낙성대")
-            :location (c2 / city :wiki "관악구" :name (이2 / 이름 :op1 "관악구")
+            :location (c2 / county :wiki "관악구" :name (이2 / 이름 :op1 "관악구")
                   :location (c3 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울")))))
 
 # ::id snt0.E2016.789.02_A_01 ::category EXWKQA :: split train
@@ -4076,7 +4076,7 @@
                   :time (d2 / date-entity :year 2003 :month 10)
                   :ARG2-of (i2 / include-91
                         :ARG1 (a2 / and
-                              :op1 (c6 / city :wiki "강서구_(부산광역시)" :name (이6 / 이름 :op1 "강서구"))
+                              :op1 (c6 / county :wiki "강서구_(부산광역시)" :name (이6 / 이름 :op1 "강서구"))
                               :op2 (c7 / city :wiki "진해구" :name (이7 / 이름 :op1 "진해시")))))
             :op3 (c8 / city-district :wiki - :name (이8 / 이름 :op1 "광양만권")
                   :time (d3 / date-entity :year 2003 :month 10)
@@ -5654,7 +5654,7 @@
                               :mod (화 / 화재)
                               :location (m / market :wiki "소래포구_종합어시장" :name (이2 / 이름 :op1 "소래포구" :op2 "어시장")
                                     :location (c / city-district :wiki "논현동_(인천)" :name (이3 / 이름 :op1 "논현동")
-                                          :location (c2 / city :wiki "남동구" :name (이4 / 이름 :op1 "남동구")
+                                          :location (c2 / county :wiki "남동구" :name (이4 / 이름 :op1 "남동구")
                                                 :location (c3 / city :wiki "인천광역시" :name (이5 / 이름 :op1 "인천시")))))
                               :ARG1-of (발 / 발생-01
                                     :time (d / date-entity :day 18))))))
@@ -8689,7 +8689,7 @@
                   :mod (a / area-quantity :quant 50 :unit (s / square-meter)))
             :location (f / facility :wiki - :name (이 / 이름 :op1 "주공" :op2 "1단지")
                   :location (c / city-district :wiki "둔촌동" :name (이2 / 이름 :op1 "둔촌동")
-                        :location (c2 / city :wiki "강동구" :name (이3 / 이름 :op1 "강동구"))))
+                        :location (c2 / county :wiki "강동구" :name (이3 / 이름 :op1 "강동구"))))
             :ARG1-of (c3 / cost-01
                   :ARG2 (m / monetary-quantity :quant 850000000 :unit (원 / 원))))
       :time (최 / 최근))
@@ -8720,7 +8720,7 @@
       :ARG1 (h / have-mod-91
             :ARG2 (b / building :wiki - :name (이 / 이름 :op1 "홍실아파트")
                   :location (c / city-district :wiki "삼성동_(강남구)" :name (이2 / 이름 :op1 "삼성동")
-                        :location (c2 / city :wiki "강남구" :name (이3 / 이름 :op1 "강남구")
+                        :location (c2 / county :wiki "강남구" :name (이3 / 이름 :op1 "강남구")
                               :location (c3 / city :wiki "서울특별시" :name (이4 / 이름 :op1 "서울")))))
             :ARG2 (전 / 전용면적
                   :mod (a / area-quantity :quant 108 :unit (s / square-meter)))
@@ -13390,7 +13390,7 @@
             :mod (판2 / 판사
                   :quant (전 / 전체))
             :location (g / government-organization :wiki "서울중앙지방법원" :name (이 / 이름 :op1 "서울중앙지방법원")
-                  :location (c / city :wiki "서초구" :name (이2 / 이름 :op1 "서초구")
+                  :location (c / county :wiki "서초구" :name (이2 / 이름 :op1 "서초구")
                         :location (c2 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울"))))
             :time (d / date-entity :day 19)))
 
@@ -13706,7 +13706,7 @@
             :time (d / date-entity :year 2018 :calendar (학2 / 학년도))
             :location (노 / 노천극장
                   :location (u / university :wiki "연세대학교" :name (이 / 이름 :op1 "연세대학교")
-                        :location (c / city :wiki "서대문구" :name (이2 / 이름 :op1 "서대문구")
+                        :location (c / county :wiki "서대문구" :name (이2 / 이름 :op1 "서대문구")
                               :location (c2 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울"))))))
       :time (d2 / date-entity :day 23))
 
@@ -13757,16 +13757,16 @@
 (a / and
       :op1 (h / have-degree-91
             :ARG1 (사 / 사람 :quant 850000 :unit (명 / 명)
-                  :mod (c / city :wiki "강남구" :name (이 / 이름 :op1 "강남구")))
+                  :mod (c / county :wiki "강남구" :name (이 / 이름 :op1 "강남구")))
             :ARG2 (많 / 많-01
                   :ARG1 사)
             :ARG3 (가 / 가장))
       :op2 (뒤 / 뒤따르-00
             :ARG1 (등 / 등
                   :op1 (사2 / 사람 :quant 770000 :unit (명2 / 명)
-                        :mod (c2 / city :wiki "서초구" :name (이2 / 이름 :op1 "서초")))
+                        :mod (c2 / county :wiki "서초구" :name (이2 / 이름 :op1 "서초")))
                   :op2 (사3 / 사람 :quant 620000 :unit (명3 / 명)
-                        :mod (c3 / city :wiki "송파구" :name (이3 / 이름 :op1 "송파"))))
+                        :mod (c3 / county :wiki "송파구" :name (이3 / 이름 :op1 "송파"))))
             :ARG2 h))
 
 # ::id snt70.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
@@ -15125,7 +15125,7 @@
       :location (f / facility :wiki - :name (이3 / 이름 :op1 "캠프무적")
             :poss (m2 / military :wiki "미국_해병대" :name (이4 / 이름 :op1 "미" :op2 "해병대"))
             :location (c / city-district :wiki "오천읍" :name (이5 / 이름 :op1 "오천읍")
-                  :location (c2 / city :wiki "남구_(포항시)" :name (이6 / 이름 :op1 "남구")
+                  :location (c2 / county :wiki "남구_(포항시)" :name (이6 / 이름 :op1 "남구")
                         :location (c3 / city :wiki "포항시" :name (이7 / 이름 :op1 "포항시"))))))
 
 # ::id snt172.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
