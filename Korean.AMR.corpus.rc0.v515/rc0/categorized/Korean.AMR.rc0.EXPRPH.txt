@@ -1,4 +1,4 @@
-# ::id snt0.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt0.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 법무부 인천공항출입국관리소는 출입국관리법 위반 혐의로 베트남인 ㄱ씨(28·여)를 구속했다고 5일 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -17,7 +17,7 @@
                         :ARG1 (l / law :wiki "출입국관리법" :name (이5 / 이름 :op1 "출입국관리법")))))
       :time (d / date-entity :day 5))
 
-# ::id snt1.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt1.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 김씨는 지난해 대통령선거의 더불어민주당 경선 때 안 지사 캠프에서 일했다.
 # ::note
 (일 / 일하-01
@@ -32,7 +32,7 @@
                   :mod (대 / 대통령))
             :time (지2 / 지난해)))
 
-# ::id snt2.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt2.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이 영화제는 2016년 산악영화를 상영하는 국제산악영화제로 울주군에서 처음 열렸다.
 # ::note
 (a / and
@@ -49,7 +49,7 @@
             :ARG1 영2
             :location (c / county :wiki "울주군" :name (이2 / 이름 :op1 "울주군"))))
 
-# ::id snt3.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt3.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 포스터는 컬러, 패턴, 텍스처 등 3가지 키워드로 디자인 됐다.
 # ::note
 (디 / 디자인-00
@@ -60,7 +60,7 @@
                   :op2 (패 / 패턴)
                   :op3 (텍 / 텍스처))))
 
-# ::id snt4.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt4.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 한 청장은 이날 서울 여의도 중소기업중앙회에서 열린 '국세청장과 중소기업인과의 간담회'에서 이같이 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -74,7 +74,7 @@
                         :location (c / city :wiki "서울특별시" :name (이6 / 이름 :op1 "서울")))))
       :time (이7 / 이날))
 
-# ::id snt5.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt5.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 2016년엔 이같은 내용을 담은 회고록 '최기선, 인천시대를 열다'를 출간하기도 했다.
 # ::note
 (출 / 출간-01
@@ -86,7 +86,7 @@
                               :ARG2 (이2 / 이)))))
       :time (d / date-entity :year 2016))
 
-# ::id snt6.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt6.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 지난해 강원지역 무역항의 물동량 규모는 전국 항만물동량 15억7천만t의 3.8% 수준이다.
 # ::note
 (h / have-quant-91
@@ -100,7 +100,7 @@
                   :mod (항 / 항만)
                   :mod (전 / 전국))))
 
-# ::id snt7.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt7.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 30분 충전하면 6시간 사용할 수 있게 하는 급속 충전기도 함께 제공된다.
 # ::note
 (제 / 제공-01
@@ -113,7 +113,7 @@
                         :duration (t2 / temporal-quantity :quant 6 :unit (시 / 시간)))))
       :mod (함 / 함께))
 
-# ::id snt8.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt8.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 대중이 생각하는 공정함에 대해 들여다보았다.
 # ::note
 (들 / 들여다보-01
@@ -121,7 +121,7 @@
             :ARG1-of (생 / 생각-01
                   :ARG0 (대 / 대중))))
 
-# ::id snt9.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt9.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이리 저리 채이고 흔들리는 날입니다.
 # ::note
 (날 / 날
@@ -129,7 +129,7 @@
       :mod (채 / 채-00
             :manner (이 / 이리-저리)))
 
-# ::id snt10.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt10.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 제16대 한국성우협회 회장직을 수행했으며 2016년 KBS 라디오 연기대상에서 공로상을 받기도 했다.
 # ::note
 (a / and
@@ -143,7 +143,7 @@
             :ARG2 (e / event :wiki - :name (이2 / 이름 :op1 "KBS" :op2 "라디오" :op3 "연기대상"))
             :time (d / date-entity :year 2016)))
 
-# ::id snt11.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt11.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 기상청은 "기온은 평년과 비슷하지만 내륙을 중심으로 낮과 밤의 기온차가 크겠다"며 주의를 당부했다.
 # ::note
 (당 / 당부-01
@@ -160,7 +160,7 @@
                         :ARG1 (기2 / 기온)
                         :ARG2 (평 / 평년)))))
 
-# ::id snt12.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt12.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 하지만 저희도 이겨낼 수 없는 신종 파나마병이 발병했어요.
 # ::note
 (c / contrast-01
@@ -173,7 +173,7 @@
                               :ARG0 (우 / 우리)
                               :ARG1 d)))))
 
-# ::id snt13.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt13.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 단순히 사전예약에 그치지 않고 신청자들에게 재미와 즐거움을 제공한다는 계획이다.
 # ::note
 (계 / 계획-01
@@ -187,7 +187,7 @@
                   :time (사 / 사전))
             :mod (단 / 단순-01)))
 
-# ::id snt14.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt14.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 성실하게 노력하는 자세가 필요한 날입니다.
 # ::note
 (날 / 날
@@ -196,7 +196,7 @@
                   :mod (노 / 노력-01
                         :manner (성 / 성실-01)))))
 
-# ::id snt15.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt15.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 재물운이 나쁘지 않습니다.
 # ::note
 (나 / 나쁘-01
@@ -204,7 +204,7 @@
       :ARG1 (운 / 운
             :topic (재 / 재물)))
 
-# ::id snt16.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt16.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 당산역을 출발해 도착하기까지 1량에서 5분 단위로 측정했다.
 # ::note
 (측 / 측정-01
@@ -219,13 +219,13 @@
                   :ARG3 s))
       :location (량 / 량 :mod 1))
 
-# ::id snt17.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt17.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 자다가도 떡이 생길 것입니다.
 # ::note
 (예 / 예상-01
       :ARG1 (자 / 자다가도-떡이-생기-00))
 
-# ::id snt18.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt18.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 1953년 부산에서 극작가 이보라와 결혼했다.
 # ::note
 (결 / 결혼-01
@@ -235,7 +235,7 @@
       :time (d / date-entity :year 1953)
       :location (c / city :wiki "부산광역시" :name (이2 / 이름 :op1 "부산")))
 
-# ::id snt19.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt19.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 관운이 좋으니 명예가 높아지는 날입니다.
 # ::note
 (날 / 날
@@ -244,7 +244,7 @@
             :cause (좋 / 좋-01
                   :ARG1 (관 / 관운))))
 
-# ::id snt20.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt20.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 보안 문제로 중국 스마트폰 불신 확대 보안과 관련된 불신문제도 크다.
 # ::note
 (m / multi-sentence
@@ -259,7 +259,7 @@
                   :ARG1 (불2 / 불신-01
                         :ARG1 (보2 / 보안)))))
 
-# ::id snt21.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt21.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 작게 얻고 크게 잃을 수 있으니 주의하는 것이 좋습니다.
 # ::note
 (권 / 권하-01
@@ -270,7 +270,7 @@
             :op2 (잃 / 잃-01
                   :ARG1 (크 / 크-01))))
 
-# ::id snt22.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt22.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 제주도 산지에는 눈이 내려 1∼3㎝ 쌓일 것으로 보인다.
 # ::note
 (예 / 예상-01
@@ -282,7 +282,7 @@
                   :op1 (d / distance-quantity :quant 1 :unit (c / centimeter))
                   :op2 (d2 / distance-quantity :quant 3 :unit (c2 / centimeter)))))
 
-# ::id snt23.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt23.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이에 관련, 부산고용노동청은 전면 작업중지 명령을 내리고 현장에 근로감독관을 파견했다.
 # ::note
 (a / and
@@ -299,7 +299,7 @@
                   :mod (근 / 근로))
             :ARG2 (현 / 현장)))
 
-# ::id snt24.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt24.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 사단법인 한국극작가협회는 극작가이기도 한 이윤택 연출을 회원에서 제명했다.
 # ::note
 (제 / 제명-00
@@ -311,7 +311,7 @@
                   :topic (극 / 극)))
       :ARG2 (회 / 회원))
 
-# ::id snt25.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt25.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 빈소는 신촌세브란스병원, 발인은 8일 오전 8시 30분.
 # ::note
 (a / and
@@ -323,7 +323,7 @@
             :day 8
             :time "08:30"))
 
-# ::id snt26.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt26.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 달콤커피가 프랜차이즈 커피업계 최초로 4차 산업혁명 핵심인 로봇기술 기반의 벤처기업 인증을 획득했다.
 # ::note
 (획 / 획득-01
@@ -342,7 +342,7 @@
                   :mod (커 / 커피)
                   :mod (프 / 프랜차이즈))))
 
-# ::id snt27.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt27.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 일이 생각대로 풀리지 않더라도 너무 조급해하지 마세요.
 # ::note
 (조 / 조급하-00
@@ -354,7 +354,7 @@
             :ARG1 (일 / 일)
             :manner (생 / 생각-01)))
 
-# ::id snt28.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt28.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 연천DMZ국제음악제는 2011년 시작해 올해 8회째를 맞이한 국내 3대 국제음악제 중 하나다.
 # ::note
 (f / festival :wiki - :name (이 / 이름 :op1 "DMZ국제음악제")
@@ -369,7 +369,7 @@
       :ARG1-of (시 / 시작-01
             :time (d / date-entity :year 2011)))
 
-# ::id snt29.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt29.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 친구나 동료와 힘을 합쳐야 하는 날입니다.
 # ::note
 (날 / 날
@@ -379,7 +379,7 @@
                         :op1 (친 / 친구)
                         :op2 (동 / 동료)))))
 
-# ::id snt30.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt30.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 초등학생 1·4학년과 중·고생 1학년은 병원에서, 나머지 학생들은 학교에서 시력검사를 한다.
 # ::note
 (a / and
@@ -405,7 +405,7 @@
             :ARG1 (시2 / 시력)
             :location (학6 / 학교)))
 
-# ::id snt31.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt31.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이를 토대로 옹진군이 파악한 전체 피해액은 2억6000여만원이다.
 # ::note
 (약 / 약
@@ -415,7 +415,7 @@
                   :ARG1-of (파 / 파악-01
                         :ARG0 (g / government-organization :wiki "옹진군" :name (이 / 이름 :op1 "옹진군"))))))
 
-# ::id snt32.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt32.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 글로벌 IT기업과 은행들의 합종연횡은 이전부터 진행돼온 사안이다.
 # ::note
 (사 / 사안
@@ -429,7 +429,7 @@
             :time (이 / 이전
                   :op1 (지 / 지금))))
 
-# ::id snt33.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt33.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 경남메세나협회는 올해 기업과 예술단체 170개 팀 이상 결연 목표를 세웠다고 21일 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -442,7 +442,7 @@
                               :op2 (단 / 단체
                                     :topic (예 / 예술)))))))
 
-# ::id snt34.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt34.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 그나마 서부 지역에서는 적설에 의한 보온효과로 고엽률이 낮은 것으로 농업기술원은 추정했다.
 # ::note
 (추 / 추정-01
@@ -456,14 +456,14 @@
                   :direction (서 / 서부)))
       :mod (그 / 그나마))
 
-# ::id snt35.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt35.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 총 다섯 개의 프로그램으로 구성된다.
 # ::note
 (구 / 구성-01
       :ARG2 (프 / 프로그램 :quant 5 :unit (개 / 개)
             :mod (총 / 총)))
 
-# ::id snt36.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt36.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 이 기술은 평창올림픽에서 시범서비스로 직접 적용되기도 했다.
 # ::note
 (적 / 적용-01
@@ -474,7 +474,7 @@
       :manner (직 / 직접)
       :time (g / game :wiki "2018년_동계_올림픽" :name (이2 / 이름 :op1 "평창올림픽")))
 
-# ::id snt37.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt37.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이해득실을 잘 따져야 하는 날입니다.
 # ::note
 (날 / 날
@@ -483,7 +483,7 @@
                   :ARG1 (이 / 이해득실)
                   :manner (잘 / 잘))))
 
-# ::id snt38.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt38.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 모든 일을 의욕만으로 해결할 수 없습니다.
 # ::note
 (가 / 가능-01
@@ -493,7 +493,7 @@
                   :quant (모 / 모든))
             :instrument (의 / 의욕)))
 
-# ::id snt39.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt39.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 남의 눈치를 보다가 손해 볼 수 있어요.
 # ::note
 (가 / 가능-01
@@ -501,7 +501,7 @@
       :condition (눈 / 눈치보-00
             :ARG1 (남 / 남)))
 
-# ::id snt40.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt40.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 경찰은 스스로 목숨을 끊었을 가능성에 무게를 두고 있습니다.
 # ::note
 (무 / 무게를-두-00
@@ -510,7 +510,7 @@
             :mod (목 / 목숨끊-00
                   :manner (스 / 스스로))))
 
-# ::id snt41.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt41.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 19일 서울 서초구 서울중앙지방법원에서 열린 ‘전체 판사회의’에 판사들이 입장하고 있다.
 # ::note
 (입 / 입장-00
@@ -523,7 +523,7 @@
                         :location (c2 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울"))))
             :time (d / date-entity :day 19)))
 
-# ::id snt42.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt42.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt SK텔레콤은 MWC에 단독 전시관을 마련하고, 5G 네트워크로 달라질 가까운 미래의 모습을 선보인다.
 # ::note
 (a / and
@@ -542,7 +542,7 @@
                               :cause (네 / 네트워크
                                     :mod (5 / 5G)))))))
 
-# ::id snt43.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt43.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 다음은 주요 지역 다음 주 예상 최저.
 # ::note
 (지 / 지역
@@ -552,7 +552,7 @@
             :ARG1 (최 / 최저)
             :time (다2 / 다음주)))
 
-# ::id snt44.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt44.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 경찰은 오는 12일 조민기를 피의자 신분으로 불러 조사할 계획이었다.
 # ::note
 (계 / 계획-01
@@ -567,7 +567,7 @@
                         :mod (피 / 피의자))
                   :time (d / date-entity :day 12))))
 
-# ::id snt45.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt45.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 조씨는 그러나 학교 측에 "성추행은 사실무근이며 억울하다"는 입장을 밝힌 것으로 전해졌다.
 # ::note
 (c / contrast-01
@@ -583,7 +583,7 @@
                   :ARG2 (측 / 측
                         :op1 (학 / 학교)))))
 
-# ::id snt46.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt46.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 지난 일이나 과거는 빨리 잊도록 하세요.
 # ::note
 (잊 / 잊-01
@@ -594,7 +594,7 @@
             :ARG1-of (지 / 지나-01))
       :manner (빨 / 빨리))
 
-# ::id snt47.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt47.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 영등포구는 도시재생 주민공모사업을 모집하고 동작구는 도시재생을 위한 아카데미를 연다.
 # ::note
 (a / and
@@ -611,7 +611,7 @@
                   :purpose (재2 / 재생-00
                         :ARG1 (도2 / 도시)))))
 
-# ::id snt48.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt48.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 줘야 할 것과 받을 것을 확실히 하세요.
 # ::note
 (하 / 하-04
@@ -623,7 +623,7 @@
                   :op2 (o2 / obligate-01
                         :ARG2 (받 / 받-01)))))
 
-# ::id snt49.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt49.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이번 압수수색은 공정거래위원회가 효성의 담합 정황을 확인하고 검찰에 고발하면서 이뤄졌다.
 # ::note
 (이 / 이루-01
@@ -641,7 +641,7 @@
                         :ARG2 (g2 / government-organization :wiki "대한민국_검찰청" :name (이5 / 이름 :op1 "검찰"))
                         :ARG3 정))))
 
-# ::id snt50.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt50.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이소라를 모델로 내세워 디자인과 기능성을 갖춘 LBL SPORT 시그니처 트랙수트 3종(11만9천원)을 내놓는다.
 # ::note
 (내 / 내놓-01
@@ -656,7 +656,7 @@
             :ARG1 (p2 / person :wiki "이소라_(모델)" :name (이2 / 이름 :op1 "이소라"))
             :ARG2 (모 / 모델)))
 
-# ::id snt51.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt51.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 오늘은 당신이 이성적으로 좋은 판단을 내리기 힘든 때입니다.
 # ::note
 (힘 / 힘들-01
@@ -666,7 +666,7 @@
             :manner (이 / 이성))
       :time (오 / 오늘))
 
-# ::id snt52.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt52.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 리더십과 추진력으로 금융 인프라 산업 발전에 기여했다는 평가를 받고 있다.
 # ::note
 (평 / 평가-01
@@ -679,7 +679,7 @@
                   :op1 (리 / 리더십)
                   :op2 (추 / 추진력))))
 
-# ::id snt53.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt53.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 정부도 소통과 협업의 모범사례로 평가하고 있다"고 말했다.
 # ::note
 (말 / 말하-01
@@ -691,7 +691,7 @@
                         :op1 (소 / 소통-01)
                         :op2 (협 / 협업-00)))))
 
-# ::id snt54.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt54.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 간담회에는 한 청장과 박성택 중기중앙회장, 한무경 한국여성경제인협회장, 김정태 한국경영혁신중소기업협회장 등 30여명이 참석했다.
 # ::note
 (참 / 참석-01
@@ -715,7 +715,7 @@
                                     :ARG2 (회3 / 회장))))))
       :ARG1 (간 / 간담회))
 
-# ::id snt55.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt55.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 나도 당했다) 폭로가 계속되고 있다.
 # ::note
 (계 / 계속-01
@@ -723,7 +723,7 @@
             :ARG1 (당 / 당하-01
                   :ARG1 (나 / 나))))
 
-# ::id snt56.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt56.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 개인 취향에 따른 옷 바꾸기 기능도 제공된다.
 # ::note
 (제 / 제공-01
@@ -734,7 +734,7 @@
                         :ARG1 (취 / 취향
                               :poss (개 / 개인))))))
 
-# ::id snt57.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt57.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 안희정 전 지사는 자신의 정무비서를 수차례 성폭행한 의혹 등을 받고 있다.
 # ::note
 (받 / 받-01
@@ -750,7 +750,7 @@
                               :poss p)
                         :quant (수 / 수차례)))))
 
-# ::id snt58.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt58.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 그 결과 10만명 이상이 Hdac 홈페이지에 방문한 것으로 집계됐다.
 # ::note
 (집 / 집계-01
@@ -761,7 +761,7 @@
             :cause (결 / 결과
                   :mod (그 / 그))))
 
-# ::id snt59.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt59.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 맺고 끊는 것을 확실히 해야 하는 시기입니다.
 # ::note
 (시 / 시기
@@ -771,7 +771,7 @@
                         :op1 (맺 / 맺-01)
                         :op2 (끊 / 끊-01)))))
 
-# ::id snt60.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt60.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt ‘존중하고 존경받는 대학’을 만들겠다는 총장의 비전은 말뿐이었냐”고 되물었다.
 # ::note
 (되 / 되묻-00
@@ -785,7 +785,7 @@
                               :ARG0-of (존 / 존중-01)
                               :ARG1-of (존2 / 존경-01))))))
 
-# ::id snt61.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt61.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 가장 먼저 둘러본 곳은 LG전자 부스였다.
 # ::note
 (둘 / 둘러보-01
@@ -795,7 +795,7 @@
             :ARG2 (먼 / 먼저)
             :ARG3 (가 / 가장)))
 
-# ::id snt62.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt62.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 그러나 두 공연 모두 대가를 받지 못했다.
 # ::note
 (c / contrast-01
@@ -805,7 +805,7 @@
             :ARG1 (대 / 대가)
             :mod (모 / 모두)))
 
-# ::id snt63.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt63.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 가질 수 없는 것은 깨끗이 포기하는 것이 상책이에요.
 # ::note
 (권 / 권하-01
@@ -815,7 +815,7 @@
                   :ARG1 (가2 / 가지-01))
             :manner (깨 / 깨끗하-01)))
 
-# ::id snt64.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt64.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt A씨는 생명에는 지장이 없는 것으로 전해진다.
 # ::note
 (전 / 전하-01
@@ -824,7 +824,7 @@
             :ARG2 (생 / 생명
                   :poss p)))
 
-# ::id snt65.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt65.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 23일 서울 서대문구 연세대학교 노천극장에서 열린 2018학년도 입학식에서 신입생들이 학생명예선언을 하고 있다.
 # ::note
 (선 / 선언-01
@@ -839,7 +839,7 @@
                               :location (c2 / city :wiki "서울특별시" :name (이3 / 이름 :op1 "서울"))))))
       :time (d2 / date-entity :day 23))
 
-# ::id snt66.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt66.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 비례 원리는 재능과 운의 불균등 분포라는 구조적 조건에 대체로 눈을 감는다.
 # ::note
 (눈 / 눈감-00
@@ -854,7 +854,7 @@
                               :op2 (운 / 운)))))
       :mod (대 / 대체로))
 
-# ::id snt67.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt67.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 도교육청은 이날 새내기 교사 480명에게 임명장도 수여했다.
 # ::note
 (수 / 수여-01
@@ -864,7 +864,7 @@
             :mod (새 / 새내기))
       :time (이2 / 이날))
 
-# ::id snt68.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt68.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 그는 2005년 설교자 자리에서 은퇴하고 자택에서 요양하며 지냈다.
 # ::note
 (지 / 지내-00
@@ -880,7 +880,7 @@
                         :mod (설 / 설교자))
                   :time (d / date-entity :year 2005))))
 
-# ::id snt69.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt69.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 강남구가 85만 명으로 가장 많았고, 송파 77만 명ㆍ서초 62만 명 등이 뒤따랐다.
 # ::note
 (a / and
@@ -898,7 +898,7 @@
                         :mod (c3 / county :wiki "송파구" :name (이3 / 이름 :op1 "송파"))))
             :ARG2 h))
 
-# ::id snt70.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt70.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 낮에는 수은주가 7∼10도까지 오르겠다.
 # ::note
 (오 / 오르-01
@@ -908,7 +908,7 @@
             :op2 (t2 / temperature-quantity :quant 10 :scale (c2 / celsius)))
       :time (d / date-entity :dayperiod (낮 / 낮)))
 
-# ::id snt71.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt71.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 호소문에는 박 전 대표가 회식자리에서 곽씨에게 강제추행을 시도했다는 내용도 포함됐다.
 # ::note
 (포 / 포함-01
@@ -926,7 +926,7 @@
                               :mod (회 / 회식-00)))))
       :ARG2 (호 / 호소문))
 
-# ::id snt72.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt72.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이번 공모전은 세월호 참사 희생자들을 추모하고 참사의 교훈을 공유하기 위해 마련됐다.
 # ::note
 (마 / 마련-01
@@ -940,7 +940,7 @@
                   :ARG1 (교 / 교훈
                         :topic i))))
 
-# ::id snt73.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt73.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 유 회장의 임기는 2021년 2월까지다.
 # ::note
 (d / date-interval
@@ -950,7 +950,7 @@
                         :ARG2 (회 / 회장))))
       :op2 (d2 / date-entity :year 2021 :month 2))
 
-# ::id snt74.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt74.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 2015년 우리나라 인구 10만 명당 활동간호사 수는 OECD 평균의 ⅔ 수준입니다.
 # ::note
 (e / equal-01
@@ -965,7 +965,7 @@
                   :mod (o / organization :wiki "경제협력개발기구" :name (이 / 이름 :op1 "OECD"))))
       :ARG2 "2/3")
 
-# ::id snt75.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt75.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 혼자 궁상을 떨거나 고독을 씹지 마세요.
 # ::note
 (o / or
@@ -975,7 +975,7 @@
       :op2 (고 / 고독을-씹-00)
       :manner (혼 / 혼자))
 
-# ::id snt76.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt76.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 강아지 발톱은 목욕 직후 부드러워진 상태에서 깎는 것이 좋다.
 # ::note
 (좋 / 좋-03
@@ -990,7 +990,7 @@
                               :ARG0 강))))
       :ARG2 발)
 
-# ::id snt77.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt77.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 그동안 쌓은 덕이 부와 명성으로 돌아올 것입니다.
 # ::note
 (예 / 예상-01
@@ -1002,7 +1002,7 @@
                   :op1 (부 / 부)
                   :op2 (명 / 명성))))
 
-# ::id snt78.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt78.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 또 유영민 과학기술정보통신부 장관 통신3사 COE 회동에도 참석한다.
 # ::note
 (참 / 참석-01
@@ -1018,7 +1018,7 @@
                               :topic (통 / 통신))
                         :ARG2 (최 / 최고경영자)))))
 
-# ::id snt79.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt79.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 그동안 당신이 공을 들인 만큼 수익이 발생하게 됩니다.
 # ::note
 (되 / 되-01
@@ -1029,7 +1029,7 @@
                         :ARG0 (당 / 당신)
                         :time (그 / 그동안)))))
 
-# ::id snt80.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt80.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이밖에 경찰은 언론 보도와 제보 등을 토대로 수사대상을 검토하고 있다.
 # ::note
 (a / and
@@ -1042,7 +1042,7 @@
                         :ARG0 (언 / 언론))
                   :op2 (제 / 제보-00))))
 
-# ::id snt81.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt81.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 중요한 일을 맡게 되거나 책임이 무거워지는 시기입니다.
 # ::note
 (시 / 시기
@@ -1055,7 +1055,7 @@
                   :ARG2 (무 / 무겁-01
                         :ARG1 (책 / 책임)))))
 
-# ::id snt82.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt82.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 미국에 유학 중인 딸을 따라 1992년 미국으로 건너가 정착했다.
 # ::note
 (정 / 정착-01
@@ -1068,7 +1068,7 @@
                               :ARG1 c)))
             :time (d / date-entity :year 1992)))
 
-# ::id snt83.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt83.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 광명시는 6월 24일까지 전시를 선보인다.
 # ::note
 (선 / 선보이-01
@@ -1077,14 +1077,14 @@
       :time (d / date-interval
             :op2 (d2 / date-entity :month 6 :day 24)))
 
-# ::id snt84.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt84.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 경남메세나협회는 2007년 창립했다.
 # ::note
 (창 / 창립-00
       :ARG1 (o / organization :wiki - :name (이 / 이름 :op1 "경남메세나협회"))
       :time (d / date-entity :year 2007))
 
-# ::id snt85.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt85.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt KT도 선택약정 위약금을 유예하는 방향의 약정제도 개편안을 검토 중이다.
 # ::note
 (검 / 검토-01
@@ -1097,7 +1097,7 @@
                                     :topic (약2 / 약정-00
                                           :manner (선 / 선택-01))))))))
 
-# ::id snt86.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt86.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 카카오 관계자는 “ICO 등 구체적인 사업 계획은 세부적으로 정해진 바 없다”고 설명했다.
 # ::note
 (설 / 설명-01
@@ -1113,7 +1113,7 @@
                         :example (등 / 등
                               :op1 (I / ICO))))))
 
-# ::id snt87.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt87.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 전승호 본부장은 서울대학교 제약학 석사를 마치고 현재 대웅제약 글로벌사업본부장을 맡고 있다.
 # ::note
 (a / and
@@ -1128,7 +1128,7 @@
             :ARG2 (글 / 글로벌사업본부장)
             :time (현 / 현재)))
 
-# ::id snt88.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt88.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 정말 미안하다며 넘어가 달라고 부탁했고 저는 그렇게 그 일을 그냥 넘어갔다”고 설명했다.
 # ::note
 (설 / 설명-01
@@ -1150,7 +1150,7 @@
                   :manner (그2 / 그렇-01)
                   :mod (그3 / 그냥))))
 
-# ::id snt89.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt89.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 현실에 안주하지 말고 적극적으로 움직이세요.
 # ::note
 (a / and
@@ -1162,7 +1162,7 @@
             :mode imperative
             :manner (적 / 적극적)))
 
-# ::id snt90.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt90.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 결국 피해자는 경찰에 피해 사실을 알렸고, 천 씨는 경찰에 검거됐다.
 # ::note
 (c / cause-01
@@ -1176,7 +1176,7 @@
                   :ARG0 경
                   :ARG1 (p / person :wiki - :name (이 / 이름 :op1 "천")))))
 
-# ::id snt91.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt91.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 머리도 복잡하고 생각할 것이 많은 날입니다.
 # ::note
 (날 / 날
@@ -1187,7 +1187,7 @@
                   :ARG1 (o / obligate-01
                         :ARG2 (생 / 생각-01)))))
 
-# ::id snt92.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt92.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 나서야 할 때와 물러서야 할 때를 잘 구분하세요.
 # ::note
 (구 / 구분-01
@@ -1200,7 +1200,7 @@
                   :time-of (o2 / obligate-01
                         :ARG2 (물 / 물러서-01)))))
 
-# ::id snt93.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt93.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 먼저 인터넷 웹서핑과 애플리케이션 스토어를 차단했다.
 # ::note
 (차 / 차단-01
@@ -1211,7 +1211,7 @@
                   :mod (애 / 애플리케이션)))
       :mod (먼 / 먼저))
 
-# ::id snt94.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt94.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 혼자서 모든 일을 다하려고 하지 마세요.
 # ::note
 (시 / 시도-01
@@ -1222,7 +1222,7 @@
                   :quant (모 / 모든))
             :manner (혼 / 혼자)))
 
-# ::id snt95.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt95.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 지난해 12월 크라우드펀딩으로 제품을 출시했고 지난달 말부터 오픈마켓에서 판매를 시작했다.
 # ::note
 (a / and
@@ -1237,7 +1237,7 @@
                         :op1 (말 / 말
                               :op1 (지2 / 지난달))))))
 
-# ::id snt96.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt96.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 경찰은 이중 5명에 대해 정식 수사에 착수했다.
 # ::note
 (착 / 착수-01
@@ -1246,7 +1246,7 @@
             :ARG0 경
             :ARG1 (사 / 사람 :quant 5 :unit (명 / 명))))
 
-# ::id snt97.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt97.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 행동하면 새로운 기회를 얻을 수 있을 것입니다.
 # ::note
 (가 / 가능-01
@@ -1255,7 +1255,7 @@
                   :ARG1-of (새 / 새롭-01)))
       :condition (행 / 행동-01))
 
-# ::id snt98.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt98.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt TV 화질 경쟁과 함께 음향을 사로잡기 위한 경쟁도 치열해질 전망이다.
 # ::note
 (예 / 예상-01
@@ -1268,7 +1268,7 @@
                         :purpose (사 / 사로잡-01
                               :ARG1 (음 / 음향))))))
 
-# ::id snt99.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt99.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 최근 고려대와 홍익대가 부당해고와 인력 감축 문제 해결에 나섰다는 소식을 들었다.
 # ::note
 (듣 / 듣-01
@@ -1286,7 +1286,7 @@
                                     :op2 (감 / 감축-01
                                           :ARG1 (인 / 인력))))))))
 
-# ::id snt100.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt100.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 미세먼지 농도는 전 권역이 '보통'을 나타내겠다.
 # ::note
 (나 / 나타나-01
@@ -1297,7 +1297,7 @@
       :location (권 / 권역
             :mod (전 / 전)))
 
-# ::id snt101.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt101.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 경품이 걸린 이벤트 등에 응모를 해보도록 하세요.
 # ::note
 (권 / 권하-01
@@ -1307,7 +1307,7 @@
                         :ARG2-of (걸 / 걸리-03
                               :ARG1 (경 / 경품))))))
 
-# ::id snt102.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt102.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 그 결과 유물론적 역사관과 근대 진보 사관, 종말론적 역사관이 뒤엉켜 나타났다고 주장한다.
 # ::note
 (주 / 주장-01
@@ -1323,7 +1323,7 @@
                         :mod (종 / 종말론적)))
                   :cause (그 / 그)))
 
-# ::id snt103.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt103.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 미국부터가 ICC 설립근거가 되는 로마규정을 배척하면서 ICC와 싸움을 벌이는 중이다.
 # ::note
 (싸 / 싸우-01
@@ -1337,7 +1337,7 @@
                               :topic (설 / 설립-01
                                     :ARG1 g))))))
 
-# ::id snt104.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt104.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 24일 강원 삼척시 가람둔치에서 삼척정월대보름제 행사로 달집태우기가 열리고 있다.
 # ::note
 (열 / 열-01
@@ -1348,7 +1348,7 @@
                   :location (p / province :wiki "강원도_(남)" :name (이4 / 이름 :op1 "강원"))))
       :time (d / date-entity :day 24))
 
-# ::id snt105.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt105.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 촬영 도중 여성에게 한 번은 시켜본다며 계속 어루만졌다"고 말했다.
 # ::note
 (말 / 말하-01
@@ -1361,7 +1361,7 @@
                         :ARG2 (여 / 여성)))
             :time (촬 / 촬영-01)))
 
-# ::id snt106.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt106.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 검찰은 조사한 뒤, 구속영장 청구 여부를 최종 결정할 계획입니다.
 # ::note
 (계 / 계획-01
@@ -1378,7 +1378,7 @@
                   :op1 (조 / 조사-01
                         :ARG0 g))))
 
-# ::id snt107.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt107.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 경기도는 24일 오후 2시를 기해 동부권 7개 시·군에 내려진 초미세먼지 주의보를 해제했다.
 # ::note
 (해 / 해제-01
@@ -1396,7 +1396,7 @@
                         :ARG0 g
                         :ARG2 (d / date-entity :day 24 :time "14:00")))))
 
-# ::id snt108.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt108.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 다만 일도 좋지만 집안도 잘 챙기도록 하세요.
 # ::note
 (권 / 권하-01
@@ -1406,7 +1406,7 @@
       :concession (좋 / 좋-01
             :ARG1 (일 / 일하-01)))
 
-# ::id snt109.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt109.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이를 위해 올해 예산에 18억5760만원을 짜둔 상태다.
 # ::note
 (짜 / 짜-01
@@ -1415,7 +1415,7 @@
             :mod (올 / 올해))
       :purpose (이 / 이))
 
-# ::id snt110.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt110.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 국내 최대 공기업인 한국전력 본사는 전남 나주혁신도시에 있다.
 # ::note
 (본 / 본사
@@ -1426,7 +1426,7 @@
       :location (c2 / city-district :wiki "빛가람동" :name (이2 / 이름 :op1 "나주혁신도시")
             :location (p / province :wiki "전라남도" :name (이3 / 이름 :op1 "전남"))))
 
-# ::id snt111.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt111.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 하지만 PS비타의 시장성은 아직 남아있다는 게 업계 시각이다.
 # ::note
 (c / contrast-01
@@ -1437,7 +1437,7 @@
                         :poss (p / product :wiki "플레이스테이션_비타" :name (이 / 이름 :op1 "PS비타")))
                   :mod (아 / 아직))))
 
-# ::id snt112.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt112.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 국립환경과학원은 이날 충북지역 미세먼지 농도를 '보통' 수준으로 예보했다.
 # ::note
 (예 / 예보-00
@@ -1450,7 +1450,7 @@
             :op1 (s / score-on-scale-91
                   :ARG1 "보통")))
 
-# ::id snt113.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt113.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 뉴욕타임스(NYT)는 그레이엄 목사가 전립선암과 파킨슨병 등을 앓아왔다고 전했다.
 # ::note
 (전 / 전하-01
@@ -1463,7 +1463,7 @@
                   :op1 (d / desease :wiki "전립선암" :name (이3 / 이름 :op1 "전립선암"))
                   :op2 (d2 / desease :wiki "파킨슨병" :name (이4 / 이름 :op1 "파킨슨병")))))
 
-# ::id snt114.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt114.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 화웨이 스마트폰과 마찬가지로 지문 인식 기능을 가졌다.
 # ::note
 (가 / 가지-01
@@ -1474,7 +1474,7 @@
             :op1 (스 / 스마트폰
                   :mod (c / company :wiki "화웨이" :name (이 / 이름 :op1 "화웨이")))))
 
-# ::id snt115.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt115.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 상세 내용은 카카오페이 전용 채용 사이트에서 확인할 수 있다.
 # ::note
 (가 / 가능-01
@@ -1486,7 +1486,7 @@
                   :mod (전 / 전용
                         :mod (s / service* :wiki "카카오페이" :name (이 / 이름 :op1 "카카오페이"))))))
 
-# ::id snt116.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt116.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 새로운 일을 시작하기에 좋은 날입니다.
 # ::note
 (날 / 날
@@ -1495,7 +1495,7 @@
                   :ARG1 (일 / 일
                         :ARG1-of (새 / 새롭-01)))))
 
-# ::id snt117.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt117.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 시험 기간이 겹친다면 좋은 성과를 낼 수도 있는 날이라고 보여지네요.
 # ::note
 (보 / 보-02
@@ -1509,7 +1509,7 @@
             :ARG1 (기 / 기간
                   :duration-of 시)))
 
-# ::id snt118.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt118.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 신중하게 생각하여 처신해야 할 때입니다.
 # ::note
 (때 / 때
@@ -1518,7 +1518,7 @@
                   :manner (생 / 생각-01
                         :manner (신 / 신중-01)))))
 
-# ::id snt119.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt119.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 급할수록 돌아가도록 하세요.
 # ::note
 (c / correlate-91
@@ -1527,7 +1527,7 @@
       :ARG2 (권 / 권하-01
             :ARG1 (돌 / 돌아가-01)))
 
-# ::id snt120.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt120.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 사단법인 한국극작가협회도 "이윤택 회원을 제명한다"고 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -1541,7 +1541,7 @@
                         :ARG2 (회 / 회원)))
             :ARG2 o))
 
-# ::id snt121.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt121.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 군산시는 조선소 가동 중단으로 5000명, 가족 포함 2만명의 생계가 막막해졌다.
 # ::note
 (되 / 되-01
@@ -1555,7 +1555,7 @@
             :ARG1 (가2 / 가동-01
                   :ARG1 (조 / 조선소))))
 
-# ::id snt122.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt122.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 취미나 여가 생활을 즐겨보는 것도 좋습니다.
 # ::note
 (좋 / 좋-03
@@ -1565,7 +1565,7 @@
                         :op1 (취 / 취미)
                         :op2 (여 / 여가생활)))))
 
-# ::id snt123.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt123.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 한국팀의 김선영(왼쪽), 김경애가 스위핑을 하고 있다.
 # ::note
 (하 / 하-01
@@ -1577,7 +1577,7 @@
                   :ARG2 (t / team :wiki - :name (이3 / 이름 :op1 "한국팀"))))
       :ARG1 (스 / 스위핑))
 
-# ::id snt124.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt124.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt SK텔레콤은 포럼에서 자사의 사업 방향을 공유하고, 공정거래 의지를 다지는 시간을 가졌다.
 # ::note
 (가 / 가지-01
@@ -1597,7 +1597,7 @@
                                     :ARG1-of (공2 / 공정-01))))))
       :location (포 / 포럼))
 
-# ::id snt125.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt125.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 서예가 김병기 씨가 21일 로마에 있는 주이탈리아 한국문화원에서 서예 시연을 펼치고 있다.
 # ::note
 (시 / 시연-01
@@ -1608,7 +1608,7 @@
       :location (g / government-organization :wiki - :name (이2 / 이름 :op1 "주이탈리아" :op2 "한국문화원")
             :location (c / city :wiki "로마" :name (이3 / 이름 :op1 "로마"))))
 
-# ::id snt126.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt126.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 25일 오전, 여자컬링대표팀의 은메달이 확정되자 의성 실내체육관은 응원의 함성으로 가득찼다.
 # ::note
 (가 / 가득차-01
@@ -1620,7 +1620,7 @@
             :ARG2 (은 / 은메달))
       :time (d / date-entity :day 25 :dayperiod (오 / 오전)))
 
-# ::id snt127.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt127.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 한국여의사회의 동의를 받았고, 다른 여성단체들도 동참할 의사를 비쳤다.
 # ::note
 (a / and
@@ -1634,7 +1634,7 @@
                   :mod (동2 / 동참-01
                         :ARG0 단))))
 
-# ::id snt128.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt128.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 광주광역시는 청년 일자리 사업인 ‘광주청년드림’ 참여자 300명을 내달 31일까지 모집한다.
 # ::note
 (모 / 모집-00
@@ -1647,7 +1647,7 @@
       :time (d / date-interval
             :op2 (d2 / date-entity :month (내 / 내달) :day 31)))
 
-# ::id snt129.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt129.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 일요일인 25일 낮부터 차차 맑아질 것으로 기상지청은 내다봤다.
 # ::note
 (내 / 내다보-01
@@ -1661,7 +1661,7 @@
                         :weekday (일 / 일요일)
                         :dayperiod (낮 / 낮)))))
 
-# ::id snt130.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt130.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 무엇이든 함께 해야 결과가 좋을 거에요.
 # ::note
 (예 / 예상-01
@@ -1672,7 +1672,7 @@
                         :ARG2 (무 / 무엇))
                   :manner (함 / 함께))))
 
-# ::id snt131.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt131.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 애정운은 의외로 좋습니다.
 # ::note
 (좋 / 좋-01
@@ -1680,7 +1680,7 @@
             :topic (애 / 애정))
       :mod (의 / 의외로))
 
-# ::id snt132.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt132.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 기존 원작 게임의 이용자들을 이번에 선보이는 라그나로크M의 이용자로 확보한다는 게 그라비티의 계획이다.
 # ::note
 (계 / 계획-01
@@ -1698,7 +1698,7 @@
                               :mod (원 / 원작)
                               :mod (기 / 기존))))))
 
-# ::id snt133.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt133.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 벽초는 해방 직후인 1948년 북으로 가 조선민주주의인민공화국 수립에 참여해 초대 부수상을 지냈다.
 # ::note
 (a / and
@@ -1718,7 +1718,7 @@
             :ARG2 (부 / 부수상
                   :ord (o / ordinal-entity :value 1))))
 
-# ::id snt134.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt134.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 고생한 만큼 보람을 느낄 수 있는 시기입니다.
 # ::note
 (시 / 시기
@@ -1728,7 +1728,7 @@
                   :mod (만 / 만큼
                         :op1 (고 / 고생-01)))))
 
-# ::id snt135.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt135.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이때 군산시민들은 한·미 우호 차원에서 기꺼이 희생을 감수하면서 직도 사격장을 내줬다.
 # ::note
 (내 / 내주-01
@@ -1747,7 +1747,7 @@
                         :op2 (c3 / country :wiki "미국" :name (이4 / 이름 :op1 "미")))))
       :time (이5 / 이때))
 
-# ::id snt136.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt136.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 지난 27년간 71만 5000여명의 대원들이 숲사랑 활동에 참여했다.
 # ::note
 (참 / 참여-01
@@ -1756,7 +1756,7 @@
       :duration (t / temporal-quantity :quant 27 :unit (년 / 년)
             :ARG1-of (지 / 지나-01)))
 
-# ::id snt137.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt137.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 식품위생법상 미신고 음식점 영업은 3년 이하의 징역형에 3천만원의 벌금형에 처한다.
 # ::note
 (처 / 처하-02
@@ -1772,7 +1772,7 @@
                   :mod (m / monetary-quantity :quant 30000000 :unit (원 / 원))))
       :cause (l / law :wiki "식품위생법_(대한민국)" :name (이2 / 이름 :op1 "식품위생법")))
 
-# ::id snt138.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt138.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 오늘 저로 인해 피해를 당하신 분의 소식을 들었습니다.
 # ::note
 (듣 / 듣-01
@@ -1784,7 +1784,7 @@
                         :ARG3 나)))
       :time (오 / 오늘))
 
-# ::id snt139.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt139.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 공정하고 투명한 일처리가 필요한 날입니다.
 # ::note
 (날 / 날
@@ -1793,14 +1793,14 @@
                   :ARG1-of (공 / 공정-01)
                   :ARG1-of (투 / 투명-01))))
 
-# ::id snt140.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt140.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 연애운은 좋은 편입니다.
 # ::note
 (좋 / 좋-01
       :ARG1 (운 / 운
             :topic (연 / 연애)))
 
-# ::id snt141.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt141.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 미국과 유럽, 중국은 2020년 상용화를 시작하고, 전국망을 구축하는 기간은 2025년으로 잡고 있다.
 # ::note
 (a / and
@@ -1820,7 +1820,7 @@
                         :ARG1 (망 / 망
                               :location (전 / 전국))))))
 
-# ::id snt142.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt142.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 당시 방사에 참여했던 일본 어린이들이 “앞으로 나아가라”는 뜻의 ‘스스무’라는 이름을 붙여줬다고 한다.
 # ::note
 (하 / 하-02
@@ -1835,7 +1835,7 @@
                               :mode imperative
                               :direction (앞 / 앞))))))
 
-# ::id snt143.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt143.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 경남메세나협회는 올해 기업, 지자체 보조금 등 38억6천만원으로 결연사업을 한다.
 # ::note
 (하 / 하-01
@@ -1850,7 +1850,7 @@
                               :op2 (지 / 지방자치단체)))))
       :time (올 / 올해))
 
-# ::id snt144.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt144.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 창원시는 국비·지방비 330억 여원을 들여 도로, 주차장, 상·하수도 시설 등 공공시설을 지원한다.
 # ::note
 (지 / 지원-01
@@ -1868,7 +1868,7 @@
             :ARG2 (약 / 약
                   :op1 (m / monetary-quantity :quant 3300000000 :unit (원 / 원)))))
 
-# ::id snt145.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt145.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 국내 정보통신기술 기업들이 26일 스페인 바르셀로나에서 개막하는 MWC2018에서 5G 이슈 선점에 나선다.
 # ::note
 (나 / 나서-02
@@ -1885,7 +1885,7 @@
                         :location (c2 / country :wiki "스페인" :name (이4 / 이름 :op1 "스페인")))
                   :time (d2 / date-entity :day 26))))
 
-# ::id snt146.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt146.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 하고 싶지 않은 일이라 하더라도 끝까지 최선을 다하세요.
 # ::note
 (다 / 다하-01
@@ -1895,7 +1895,7 @@
             :polarity -
             :ARG1 (하 / 하-01)))
 
-# ::id snt147.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt147.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 방통위는 이 역시 진술의 진위여부를 확인하기 어렵다며 수사를 요청한다는 방침이다.
 # ::note
 (계 / 계획-01
@@ -1908,7 +1908,7 @@
                   :ARG1 (진 / 진위
                         :mod (진2 / 진술-01)))))
 
-# ::id snt148.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt148.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 한 번에 10잔 이상 술을 마신다는 대학생의 비율은 38.4%로, 2009년(26.0%)보다 크게 늘었다.
 # ::note
 (a / and
@@ -1928,7 +1928,7 @@
                   :time (d / date-entity :year 2009))
             :degree (크 / 크-01)))
 
-# ::id snt149.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt149.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 과기정통부-알뜰폰협회 간담회 알뜰폰 사업자들이 가계통신비 절감에 앞장서겠다며 정부에 정책적 지원을 호소했다.
 # ::note
 (호 / 호소-02
@@ -1951,7 +1951,7 @@
                   :op1 (g2 / government-organization :wiki "대한민국_과학기술정보통신부" :name (이2 / 이름 :op1 "과기정통부"))
                   :op2 (o / organization :wiki - :name (이3 / 이름 :op1 "알뜰폰협회")))))
 
-# ::id snt150.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt150.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 국무총리실 사회보장위원회도 지난 9일 회의에서 ‘중·고등학교 신입생 무상교복 지원사업’ 시행에 동의했다.
 # ::note
 (동 / 동의-01
@@ -1963,7 +1963,7 @@
       :time (d / date-entity :day 9
             :ARG1-of (지 / 지나-01)))
 
-# ::id snt151.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt151.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 먼저 AI 카메라는 카메라로 사물을 비추면 자동으로 최적의 촬영 모드를 추천한다.
 # ::note
 (추 / 추천-01
@@ -1978,7 +1978,7 @@
       :manner (자 / 자동)
       :mod (먼 / 먼저))
 
-# ::id snt152.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt152.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 홀로그램은 초고화질의 3차원 영상을 전송하는 만큼 5G 없이는 실현 불가능한 서비스.
 # ::note
 (가 / 가능-01
@@ -1991,7 +1991,7 @@
             :ARG1 (영 / 영상
                   :mod (차 / 차원 :mod "3"))))
 
-# ::id snt153.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt153.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 도시철도는 폭증한 승객들과 폭설로 한때 운행을 멈춰 시민들이 큰 불편을 겪었다.
 # ::note
 (불 / 불편-01
@@ -2005,7 +2005,7 @@
                   :op2 (폭2 / 폭설)))
       :ARG1-of (크 / 크-01))
 
-# ::id snt154.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt154.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 다른 사람과의 경쟁은 피해야 할 때입니다.
 # ::note
 (때 / 때
@@ -2015,7 +2015,7 @@
                         :ARG1 (사 / 사람
                               :ARG1-of (다 / 다르-01))))))
 
-# ::id snt155.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt155.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 당시 여의도 광장 집회에는 약 110만 명의 군중이 모였다.
 # ::note
 (모 / 모으-01
@@ -2024,7 +2024,7 @@
             :location (p / park :wiki "여의도공원" :name (이 / 이름 :op1 "여의도" :op2 "광장")))
       :time (당 / 당시))
 
-# ::id snt156.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt156.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt LG디스플레이는 파주와 구미사업장에 있는 어린이집을 확대한다고 8일 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -2038,7 +2038,7 @@
                               :op2 (c3 / city :wiki "구미시" :name (이3 / 이름 :op1 "구미"))))))
       :time (d / date-entity :day 8))
 
-# ::id snt157.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt157.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 한국여성단체연합이 21일 성명을 내고 성폭력 파문이 커지는 이윤택 연출에 대한 처벌을 촉구했다.
 # ::note
 (a / and
@@ -2056,7 +2056,7 @@
                                           :topic (성2 / 성폭력)))))))
       :time (d / date-entity :day 21))
 
-# ::id snt158.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt158.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 재판부는 이영학의 범죄가 잔혹하며, 교화가능성이 없어 사형이 불가피하다고 밝혔습니다.의 보도입니다.
 # ::note
 (m / multi-sentence
@@ -2077,7 +2077,7 @@
             :ARG0 (a2 / amr-unintelligible :value "의")
             :ARG1 밝))
 
-# ::id snt159.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt159.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 그럴 수 없었어요"라고 적었다.
 # ::note
 (적 / 적-01
@@ -2085,7 +2085,7 @@
             :polarity -
             :ARG1 (그 / 그렇-01)))
 
-# ::id snt160.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt160.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 구는 지난달 1층 카페 운영자와 3층 입주작가를 새로 선정했다.
 # ::note
 (선 / 선정-01
@@ -2103,7 +2103,7 @@
             :ARG1-of (새 / 새롭-01))
       :time (지 / 지난달))
 
-# ::id snt161.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt161.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 아울러 이날 낮부터 제주도 전역에는 호우경보가 발효돼 있다.
 # ::note
 (발 / 발효-01
@@ -2114,7 +2114,7 @@
             :op1 (d2 / date-entity :day (이2 / 이날) :dayperiod (낮 / 낮)))
       :mod (아 / 아울러))
 
-# ::id snt162.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt162.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt →현대중 군산조선소 조업 중단과 GM 군산공장 폐쇄가 지역경제에 미치는 영향은.
 # ::note
 (미 / 미치-01
@@ -2132,7 +2132,7 @@
       :ARG2 (경 / 경제
                   :mod (지 / 지역)))
 
-# ::id snt163.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt163.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 무난하게 하루가 지나가니 절로 하품이 나네요.
 # ::note
 (나 / 나-01
@@ -2141,7 +2141,7 @@
             :ARG1 (하2 / 하루)
             :manner (무 / 무난하-01)))
 
-# ::id snt164.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt164.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 따라서 작은 일들에 연연해할 것이 아니라 큰 일부터 해결해가는 것이 좋습니다.
 # ::note
 (c / cause-01
@@ -2156,7 +2156,7 @@
                               :ARG1-of (크 / 크-01))
                         :manner (먼 / 먼저)))))
 
-# ::id snt165.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt165.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 새학기를 맞아 게시판에는 각종 동아리나 공연 홍보 포스터물들이 붙어 있는데요.
 # ::note
 (c / cause-01
@@ -2172,7 +2172,7 @@
                               :mod (각 / 각종))))
             :ARG2 (게 / 게시판)))
 
-# ::id snt166.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt166.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 항상 만나던 사람들이 아니라 처음 만나게 되는 사람들을 유심히 살펴보도록 하세요.
 # ::note
 (권 / 권하-01
@@ -2188,7 +2188,7 @@
                               :time (항 / 항상))))
             :manner (유 / 유심히)))
 
-# ::id snt167.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt167.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 2위 애플은 5% 줄어든 7320만대를 판매했다.
 # ::note
 (판 / 판매-01
@@ -2198,7 +2198,7 @@
             :mod (줄 / 줄어들-01
                   :extent (p / percentage-entity :value 5))))
 
-# ::id snt168.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt168.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 다만 중국 업체인 3위 화웨이(4390만대)와 4위 샤오미(2820만대)는 판매가 늘었다.
 # ::note
 (c / contrast-01
@@ -2216,7 +2216,7 @@
                               :ord (o2 / ordinal-entity :value 4)))
                   :ARG3 (제2 / 제품 :quant 28200000 :unit (대2 / 대)))))
 
-# ::id snt169.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt169.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 어렸을 때 피를 본 강아지들은 다음부터 발톱 깎는 것을 두려워한다.
 # ::note
 (두 / 두렵-01
@@ -2231,7 +2231,7 @@
       :time (다 / 다음
             :op1 보))
 
-# ::id snt170.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt170.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 애정운도 나쁘지는 않습니다.
 # ::note
 (나 / 나쁘-01
@@ -2239,7 +2239,7 @@
       :ARG1 (운 / 운
             :topic (애 / 애정)))
 
-# ::id snt171.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt171.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 포항남부소방서는 6일 포항시 남구 오천읍 미 해병대 캠프무적에서 미군과 합동 소방훈련을 했다.
 # ::note
 (훈 / 훈련-01
@@ -2257,7 +2257,7 @@
                   :location (c2 / county :wiki "남구_(포항시)" :name (이6 / 이름 :op1 "남구")
                         :location (c3 / city :wiki "포항시" :name (이7 / 이름 :op1 "포항시"))))))
 
-# ::id snt172.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt172.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 특히 KT의 5G 상용화 방안에 대해 높은 관심을 보였다.
 # ::note
 (보 / 보-00
@@ -2269,14 +2269,14 @@
                   :ARG1 (5 / 5G)))
       :mod (특 / 특히))
 
-# ::id snt173.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt173.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 노력하는 자만이 행운을 움켜쥘 수 있을 거예요.
 # ::note
 (움 / 움켜쥐-00
       :ARG1 (행 / 행운)
       :condition (노 / 노력-01))
 
-# ::id snt174.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt174.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 정말 부끄럽고 참담하다.
 # ::note
 (a / and
@@ -2284,7 +2284,7 @@
       :op2 (참 / 참담하-00)
       :degree (정 / 정말))
 
-# ::id snt175.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt175.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 경찰은 피해자가 더 있을 것으로 보고 여죄를 캐고 있다.
 # ::note
 (a / and
@@ -2297,7 +2297,7 @@
             :ARG0 경
             :ARG1 (여 / 여죄)))
 
-# ::id snt176.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt176.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 당시 성추행 소문이 퍼지자 A 전 검사는 사표를 제출하고 대기업에 취업했다.
 # ::note
 (a / and
@@ -2315,7 +2315,7 @@
                   :topic (성 / 성추행))
             :time (당 / 당시)))
 
-# ::id snt177.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt177.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 20일 오전 전국 곳곳에서 미세먼지 농도가 '나쁨' 수준까지 치솟았다.
 # ::note
 (치 / 치솟-01
@@ -2327,7 +2327,7 @@
       :location (전 / 전국)
       :time (d / date-entity :day 20 :dayperiod (오 / 오전)))
 
-# ::id snt178.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt178.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 매사가 순조로우니 몸과 마음이 편안한 한 주에요.
 # ::note
 (t / temporal-quantity :value 1 :unit (주 / 주)
@@ -2338,7 +2338,7 @@
             :cause (순 / 순조롭-01
                   :ARG1 (매 / 매사))))
 
-# ::id snt179.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt179.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 어디에서 누구를 만나든 그 사람이 당신의 인연일 수도 있다는 생각으로 상대를 대하십시오.
 # ::note
 (대 / 대하-01
@@ -2357,7 +2357,7 @@
                   :ARG1 (누 / 누구)
                   :location (어 / 어디))))
 
-# ::id snt180.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt180.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 진실한 태도만이 사람들에게 통할 것입니다.
 # ::note
 (통 / 통하-03
@@ -2365,7 +2365,7 @@
             :ARG1-of (진 / 진실하-00))
       :beneficiary (사 / 사람))
 
-# ::id snt181.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt181.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 롯데관광개발은 평창동계올림픽 강원도 우수 지역 자원봉사자에게 크루즈 승선권을 전달했다고 22일 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -2385,7 +2385,7 @@
                   :location (p / province :wiki "강원도_(남)" :name (이3 / 이름 :op1 "강원도"))))
       :time (d / date-entity :day 22))
 
-# ::id snt182.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt182.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이미 암호화폐 거래소 2곳에 블록체인·핀테크 기술을 공급했다.
 # ::note
 (공 / 공급-01
@@ -2398,7 +2398,7 @@
                   :ARG1 (암 / 암호화폐)))
       :mod (이 / 이미))
 
-# ::id snt183.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt183.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 너무 욕심내지 말고 순리대로 끌고 가세요.
 # ::note
 (a / and
@@ -2409,7 +2409,7 @@
       :op2 (끌 / 끌고가-00
             :manner (순 / 순리)))
 
-# ::id snt184.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt184.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt SK텔레콤은 가상 아바타를 보면서 대화하는 실감 미디어 2종을 소개한다.
 # ::note
 (소 / 소개-01
@@ -2421,7 +2421,7 @@
                   :manner (보 / 보-01
                         :ARG1 아))))
 
-# ::id snt185.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt185.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 참사 3년 만에 목포신항에 거치한 세월호와 미수습자 수색 등 장면은 기획전으로 구성했다.
 # ::note
 (구 / 구성-01
@@ -2439,7 +2439,7 @@
                               :ARG1-of (수2 / 수습-00
                                     :polarity -)))))
 
-# ::id snt186.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt186.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 이번에 추가된 전용서버는 PS4와 X박스원이다.
 # ::note
 (추 / 추가-01
@@ -2450,7 +2450,7 @@
                   :op2 (p2 / product :wiki "엑스박스_원" :name (이2 / 이름 :op1 "X박스원"))))
       :time (이3 / 이번))
 
-# ::id snt187.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt187.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 서두르면 스타일만 구길 수 있어요.
 # ::note
 (가 / 가능-01
@@ -2458,7 +2458,7 @@
             :ARG1 (스 / 스타일))
       :condition (서 / 서두르-01))
 
-# ::id snt188.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt188.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 이후 A씨는 처벌이나 징계절차가 이뤄지지 않은 채 사표가 수리됐고, 대기업에 취업했습니다.
 # ::note
 (a / and
@@ -2478,7 +2478,7 @@
             :ARG1 (대 / 대기업))
       :time (이3 / 이후))
 
-# ::id snt189.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt189.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 가까운 사람을 소홀히 대접하지 마세요.
 # ::note
 (대 / 대접-01
@@ -2488,7 +2488,7 @@
             :ARG1-of (가 / 가깝-00))
       :manner (소 / 소홀하-00))
 
-# ::id snt190.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt190.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 환경생태연구소는 바다거북에게 부착할 수 있는 통신기기도 개발하고 있다.
 # ::note
 (개 / 개발-01
@@ -2500,7 +2500,7 @@
                         :ARG1 기
                         :ARG2 (바 / 바다거북)))))
 
-# ::id snt191.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt191.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 드론사업을 하고 있는 스타트업 대표들에게 개·폐막식 때의 드론쇼를 어떻게 봤는지 물었는데요.
 # ::note
 (묻 / 묻-01
@@ -2519,7 +2519,7 @@
             :attribute (a2 / amr-unknown))
       :ARG2 사)
 
-# ::id snt192.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt192.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 불평등과 지배가 없으면 자유의 문제는 없다.
 # ::note
 (문 / 문제-01
@@ -2529,7 +2529,7 @@
                   :polarity -)
             :op2 (지 / 지배-01)))
 
-# ::id snt193.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt193.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 여기에 이용자 프로파일링, 리마케팅 활성화 등을 통해 효과를 증대시키고 있다.
 # ::note
 (증 / 증대-01
@@ -2541,7 +2541,7 @@
             :op2 (활 / 활성화-01
                   :ARG1 (리 / 리마케팅))))
 
-# ::id snt194.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt194.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 앞서 1월28일 완도군 청산도 남방 3.3마일(6km) 해상에서 근룡호(7.93톤, 연안통발)가 원인미상으로 전복됐다.
 # ::note
 (전 / 전복-00
@@ -2557,7 +2557,7 @@
                   :quant (d2 / distance-quantity :quant 3.3 :unit (m2 / mile))
                   :direction (남 / 남방))))
 
-# ::id snt195.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt195.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 생활뷰티기업 애경의 펫케어 브랜드 휘슬은 프리미엄 고양이모래 '리얼블랙 샌드'를 출시했다고 19일 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -2575,7 +2575,7 @@
                         :mod (프 / 프리미엄))))
       :time (d / date-entity :day 19))
 
-# ::id snt196.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt196.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 음식을 섭취하면 기본적으로 에너지 효율이 상승하게 된다.
 # ::note
 (상 / 상승-01
@@ -2585,7 +2585,7 @@
       :condition (섭 / 섭취-00
             :ARG1 (음 / 음식)))
 
-# ::id snt197.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt197.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 경찰은 남편이 범행에 가담한 정황도 발견된 게 없다고 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -2598,7 +2598,7 @@
                         :ARG0 (남 / 남편)
                         :ARG1 (범 / 범행)))))
 
-# ::id snt198.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt198.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 능력 이상의 일을 받게 되는 날입니다.
 # ::note
 (날 / 날
@@ -2608,7 +2608,7 @@
                         :mod (이 / 이상
                               :op1 (능 / 능력))))))
 
-# ::id snt199.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt199.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt “성폭력 사건은 피해자가 드러내기 전에는 알 수 없다.
 # ::note
 (가 / 가능-01
@@ -2621,7 +2621,7 @@
                         :ARG0 (피 / 피해자)
                         :ARG1 사))))
 
-# ::id snt200.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt200.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 경찰은 사고 경위를 조사하고 있습니다.
 # ::note
 (조 / 조사-01
@@ -2629,7 +2629,7 @@
       :ARG1 (경2 / 경위
             :topic (사 / 사고)))
 
-# ::id snt201.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt201.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 또 갤럭시S 시리즈 매니아 고객 9명을 초청해 ‘S어워즈’를 시상했다.
 # ::note
 (시 / 시상-00
@@ -2641,7 +2641,7 @@
       :manner (초 / 초청-01
             :ARG1 고))
 
-# ::id snt202.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt202.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이번 평가는 국민권익위가 전국 243개 광역 ·기초 지방자치단체를 대상으로 실시했다.
 # ::note
 (실 / 실시-01
@@ -2656,7 +2656,7 @@
                   :unit (개 / 개))
             :time (이2 / 이번)))
 
-# ::id snt203.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt203.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 상품으로 1년 무료통화권, 갤럭시S9을 증정한다.
 # ::note
 (증 / 증정-01
@@ -2667,7 +2667,7 @@
             :op2 (p / product :wiki - :name (이 / 이름 :op1 "갤럭시S9")))
       :attribute (상 / 상품))
 
-# ::id snt204.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt204.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 그래서 법적 절차가 필요하다.
 # ::note
 (c / cause-01
@@ -2675,7 +2675,7 @@
             :ARG1 (절 / 절차
                   :mod (법 / 법적))))
 
-# ::id snt205.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt205.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 또 강릉 올림픽파크에서는 위스키와 소주를 생수통에 넣어 반입하려던 외국인이 잇따라 적발됐다.
 # ::note
 (a / and
@@ -2691,7 +2691,7 @@
                                                       :purpose (생 / 생수)))))))
                   :location (s / sports-facility :wiki "강릉올림픽파크" :name (이 / 이름 :op1 "강릉" :op2 "올림픽파크")))))
 
-# ::id snt206.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt206.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 극단 가마골이 2016년 8월에 기장군과 위탁운영 계약을 맺고 2019년까지 운영할 예정이었다.
 # ::note
 (예 / 예정-01
@@ -2710,7 +2710,7 @@
             :ARG2 (g / government-organization :wiki "기장군" :name (이2 / 이름 :op1 "기장군"))
             :time (d3 / date-entity :year 2016 :month 8)))
 
-# ::id snt207.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt207.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 현재로는 청색기술산업을 지속적으로 추진하는 곳은 전국에서 경산시가 유일하다.
 # ::note
 (유 / 유일-01
@@ -2722,7 +2722,7 @@
       :criterion (전 / 전국)
       :time (현 / 현재))
 
-# ::id snt208.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt208.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 사실과 진실을 밝혀 법적 처벌을 받아야 한다면 기피하지 않겠다"고도 했다.
 # ::note
 (하 / 하-02
@@ -2737,7 +2737,7 @@
             :condition (o / obligate-01
                   :ARG2 처)))
 
-# ::id snt209.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt209.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 소득이 높을수록 자신이 보수적이라고 답한 사람의 비중은 줄어드는 것으로 나타났다.
 # ::note
 (나 / 나타나-01
@@ -2752,7 +2752,7 @@
                                     :ARG1 (보 / 보수적
                                           :domain 자)))))))
 
-# ::id snt210.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt210.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 지난해 일본 내수용 디지털카메라 출하 대수는 7년만에 증가세로 돌아섰다.
 # ::note
 (돌 / 돌아서-01
@@ -2767,7 +2767,7 @@
       :time (이2 / 이후
             :op1 (t / temporal-quantity :quant 7 :unit (년 / 년))))
 
-# ::id snt211.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt211.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 2012년 유네스코 인류무형문화유산으로 등재된 '아리랑'만 해도 그 종류가 60여 종 3천600곡에 달한다.
 # ::note
 (달 / 달하-01
@@ -2781,7 +2781,7 @@
             :op1 (종2 / 종류 :quant (여 / 여 :op1 60) :unit (종3 / 종))
             :op2 (곡 / 곡 :quant 3600 :unit (곡2 / 곡))))
 
-# ::id snt212.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt212.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이는 2015년 30만2800건에서 2016년 28만1700건으로 내려앉은 이후 또다시 큰 폭의 하락세다.
 # ::note
 (크 / 크-01
@@ -2795,7 +2795,7 @@
                   :ARG3 (t2 / thing :quant 281700 :unit (건2 / 건)
                         :time (d2 / date-entity :year 2016)))))
 
-# ::id snt213.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt213.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 서울 도곡동 땅 매각대금 중 10억원가량을 유용했는지도 조사한 것으로 알려졌다.
 # ::note
 (알 / 알-01
@@ -2809,7 +2809,7 @@
                                                 :location (c / city-district :wiki "도곡동" :name (이 / 이름 :op1 "도곡동")
                                                       :location (c2 / city :wiki "서울특별시" :name (이2 / 이름 :op1 "서울")))))))))))
 
-# ::id snt214.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt214.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 올해는 예년과 다른 구성의 다양한 특별전과 부대 행사를 준비 중이다.
 # ::note
 (준 / 준비-01
@@ -2823,7 +2823,7 @@
                         :ARG2 (예 / 예년))))
       :time (올 / 올해))
 
-# ::id snt215.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt215.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 전세계에서 한창 드론산업의 규모가 커지던 2010년대 중반까지 사업 규제가 심했기 때문입니다.
 # ::note
 (c / cause-01
@@ -2841,7 +2841,7 @@
                         :mod (한 / 한창)
                         :location (전 / 전세계)))))
 
-# ::id snt216.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt216.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 조사를 통해 사건의 진상을 명명백백 밝히는 것이 진상조사단의 1차적 의무다.
 # ::note
 (의 / 의무
@@ -2855,7 +2855,7 @@
                   :ARG1 (진2 / 진상)))
       :ord (o / ordinal-entity :value 1))
 
-# ::id snt217.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt217.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 구글 어시스턴트에서 음성으로 동작하는 LG만의 편의 기능을 크게 늘렸다.
 # ::note
 (늘 / 늘-01
@@ -2867,7 +2867,7 @@
                   :medium (p / program :wiki "구글_어시스턴트" :name (이2 / 이름 :op1 "구글" :op2 "어시스턴트"))))
       :degree (크 / 크-01))
 
-# ::id snt218.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt218.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 겉모습만 보고 함부로 상대를 판단하지 마세요.
 # ::note
 (판 / 판단-01
@@ -2879,7 +2879,7 @@
             :ARG1 (겉 / 겉모습
                   :poss 상)))
 
-# ::id snt219.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt219.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 당시 직속상관은 가해자로 지목된 안 전 국장이다.
 # ::note
 (p / person :wiki - :name (이 / 이름 :op1 "안")
@@ -2892,7 +2892,7 @@
       :ARG1-of (지 / 지목-01
             :ARG2 (가 / 가해자)))
 
-# ::id snt220.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt220.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 싱글인 분이라면 우연한 만남이 당신에게 행운을 줄 수 있습니다.
 # ::note
 (가 / 가능-01
@@ -2904,7 +2904,7 @@
       :condition (싱 / 싱글
             :domain 당))
 
-# ::id snt221.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt221.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 절기상 우수(雨水)인 19일 경기 고양시 덕은양묘장에서 양묘장 관계자들이 비올라 꽃을 가꾸고 있다.
 # ::note
 (가 / 가꾸-00
@@ -2919,7 +2919,7 @@
                   :criterion (절 / 절기)))
       :location f)
 
-# ::id snt222.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt222.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 일제 강점기에는 우리나라 사람들이 징용돼 곳이어서 역사적인 의미를 지녔다.
 # ::note
 (지 / 지니-01
@@ -2930,7 +2930,7 @@
                   :poss (우 / 우리나라))
             :time (일 / 일제강점기)))
 
-# ::id snt223.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt223.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 한국 사회에서 수능은 비례 원리의 성지다.
 # ::note
 (성 / 성지
@@ -2940,7 +2940,7 @@
       :topic (사 / 사회
             :mod (c / country :wiki "대한민국" :name (이2 / 이름 :op1 "한국"))))
 
-# ::id snt224.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt224.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 써야 할 때는 확실히 쓰도록 하세요.
 # ::note
 (권 / 권하-01
@@ -2949,7 +2949,7 @@
       :condition (o / obligate-01
             :ARG2 (쓰2 / 쓰-01)))
 
-# ::id snt225.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt225.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 오늘은 묵은 것들은 버리고 과감하게 새로 시작해야 하는 날입니다.
 # ::note
 (날 / 날
@@ -2961,7 +2961,7 @@
                   :manner (버 / 버리-01
                         :ARG1 (묵 / 묵-00)))))
 
-# ::id snt226.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt226.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 지난해 같은 기간보다 41.6%나 상승했다.
 # ::note
 (h / have-quant-91
@@ -2971,7 +2971,7 @@
             :ARG1-of (같 / 같-01)
             :time (지 / 지난해)))
 
-# ::id snt227.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt227.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 2016년의 은유가 1년을 살아가는 동안 1982년의 은유는 20년의 세월을 살아간다.
 # ::note
 (살 / 살아가-01
@@ -2984,7 +2984,7 @@
                   :time (d2 / date-entity :year 2016))
             :ARG1 (t2 / temporal-quantity :quant 1 :unit (년2 / 년))))
 
-# ::id snt228.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt228.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 어느 정도 나이 차이가 있는 사람을 만날 때 더욱 좋겠네요.
 # ::note
 (좋 / 좋-03
@@ -2997,7 +2997,7 @@
                               :mod (어 / 어느)))))
       :degree (더 / 더욱))
 
-# ::id snt229.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt229.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 낙관적인 태도가 필요한 하루입니다.
 # ::note
 (하 / 하루
@@ -3005,7 +3005,7 @@
             :ARG1 (태 / 태도
                   :mod (낙 / 낙관-01))))
 
-# ::id snt230.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt230.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이 붕괴는 보수적인 시민들이 오히려 더 견디기 어려울 사건이었다.
 # ::note
 (c / contrast-01
@@ -3018,7 +3018,7 @@
                               :mod (보 / 보수적)))
                   :degree (더 / 더))))
 
-# ::id snt231.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt231.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 증권가에서는 갤럭시S9 시리즈의 출하량을 최소 4100만대에서 최대 4500만대로 보고 있다.
 # ::note
 (보 / 보-02
@@ -3030,7 +3030,7 @@
             :op1 (제 / 제품 :quant 41000000 :unit (대 / 대))
             :op2 (제2 / 제품 :quant 45000000 :unit (대2 / 대))))
 
-# ::id snt232.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt232.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 일제 강점기에 사할린으로 강제 징용된 한인은 4만3천여 명에 달한다.
 # ::note
 (달 / 달하-01
@@ -3041,7 +3041,7 @@
                   :time (일 / 일제강점기)))
       :ARG2 (사 / 사람 :quant (약 / 약 :op1 43000) :unit (명 / 명)))
 
-# ::id snt233.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt233.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 인권고등판무관사무소는 미국 반대에 부딪혀 허울뿐인 부서로 남았다.
 # ::note
 (남 / 남-00
@@ -3051,7 +3051,7 @@
       :cause (반 / 반대-01
             :ARG0 (c / country :wiki "미국" :name (이2 / 이름 :op1 "미국"))))
 
-# ::id snt234.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt234.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 정원을 지나 지하로 내려가는 행위는 공동묘지의 지하세계 혹은 내세로 향하는 행위를 은유한다.
 # ::note
 (은 / 은유-00
@@ -3067,14 +3067,14 @@
                               :location (공 / 공동묘지))
                         :op2 (내2 / 내세)))))
 
-# ::id snt235.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt235.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 사고 당시 구조물은 총 4개였다.
 # ::note
 (구 / 구조물 :quant 4 :unit (개 / 개)
       :mod (총 / 총)
       :time (사 / 사고))
 
-# ::id snt236.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt236.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 우리나라도 필요합니다.” 윤장혁 대표는 노령인구가 점점 많아지면서 안전 문제가 재조명될 것이라고 내다봤다.
 # ::note
 (m / multi-sentence
@@ -3094,7 +3094,7 @@
                                     :age (노 / 노령)))
                         :degree (점 / 점점)))))
 
-# ::id snt237.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt237.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이 연출의 이같은 태도에 대해 연극계는 물론 일반 국민의 비판이 이어지고 있다.
 # ::note
 (이 / 이어지-00
@@ -3108,7 +3108,7 @@
                         :mod (연2 / 연출))
                   :mod (이3 / 이))))
 
-# ::id snt238.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt238.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 주위의 조언을 잘 새겨들어야 하는 시기입니다.
 # ::note
 (시 / 시기
@@ -3118,7 +3118,7 @@
                         :ARG0 (주 / 주위))
                   :manner (잘 / 잘))))
 
-# ::id snt239.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt239.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 이동통신 3사는 예년과 마찬가지로 개통 행사를 연다.
 # ::note
 (열 / 열-01
@@ -3129,7 +3129,7 @@
       :mod (마 / 마찬가지
             :op1 (예 / 예년)))
 
-# ::id snt240.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt240.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 디지털정보화수준은 디지털 접근수준과 디지털 역량수준, 디지털 활용수준을 합산한 결과다.
 # ::note
 (e / equal-01
@@ -3139,7 +3139,7 @@
             :op2 (디3 / 디지털역량수준)
             :op3 (디4 / 디지털활용수준)))
 
-# ::id snt241.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt241.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 물건을 구매하기에도 적당한 때이므로, 사고 싶었던 물건이 있다면 오늘 구매하도록 하세요.
 # ::note
 (권 / 권하-01
@@ -3154,7 +3154,7 @@
             :ARG2 (구2 / 구매-01
                   :ARG1 (물2 / 물건))))
 
-# ::id snt242.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt242.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 7일 배현진이 MBC에 사직서를 제출한 소식이 알려졌다.
 # ::note
 (알 / 알-01
@@ -3165,7 +3165,7 @@
                   :ARG2 (c / company :wiki "문화방송" :name (이2 / 이름 :op1 "MBC"))
                   :time (d / date-entity :day 7))))
 
-# ::id snt243.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt243.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt (사)밀양연극촌 이윤택 이사장은 2014년부터 밀양연극촌 이사장직을 맡아 왔었다.
 # ::note
 (h / have-org-role-91
@@ -3176,7 +3176,7 @@
       :time (이4 / 이후
             :op1 (d / date-entity :year 2014)))
 
-# ::id snt244.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt244.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 간단해 보이는 질문이지만 답하기는 대단히 복잡하고, 거기서부터 놀랍도록 풍부한 이야기가 풀려 나온다.
 # ::note
 (a / and
@@ -3193,7 +3193,7 @@
                         :ARG1-of (놀 / 놀랍-01)))
             :ARG2 (거 / 거기)))
 
-# ::id snt245.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt245.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 치과의사와 사냥꾼들이 자신들의 흔적을 감추기 위해 위치추적 장치를 파괴하려 했다는 증거도 나왔다.
 # ::note
 (나 / 나오-01
@@ -3214,7 +3214,7 @@
                         :ARG1 (흔 / 흔적
                               :poss a)))))
 
-# ::id snt246.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt246.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 나중에 그가 장문의 문자를 보냈고 미안하다고 넘어가달라고 말했다.
 # ::note
 (a / and
@@ -3232,7 +3232,7 @@
                         :ARG1 (넘 / 넘어가-00))))
       :time (나 / 나중))
 
-# ::id snt247.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt247.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 전남 장흥군 안양면 이장자치회와 지역사회보장협의체는 우리 동네 돌봄천사 '1마을 1나눔 사업'을 시작한다.
 # ::note
 (시 / 시작-01
@@ -3244,7 +3244,7 @@
             :op2 (o2 / organization :wiki - :name (이5 / 이름 :op1 "지역사회보장협의체")))
       :ARG1 (p2 / project* :wiki - :name (이6 / 이름 :op1 "우리" :op2 "동네" :op3 "돌봄천사" :op4 "'1마을" :op5 "1나눔" :op6 "사업'")))
 
-# ::id snt248.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt248.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 1996년 출시된 원작과 달리 LTE를 지원하고, 133.5*49.3*14.9mm의 크기로 휴대가 간편해졌다.
 # ::note
 (a / and
@@ -3262,7 +3262,7 @@
                         :op2 (d3 / distance-quantity :quant 49.3 :unit (m2 / millimeter))
                         :op3 (d4 / distance-quantity :quant 14.9 :unit (m3 / millimeter))))))
 
-# ::id snt249.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt249.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 아이들은 졸업공연 연습에 몰두하고 있었다.
 # ::note
 (몰 / 몰두-00
@@ -3272,7 +3272,7 @@
             :ARG1 (공 / 공연-01
                   :topic (졸 / 졸업-01))))
 
-# ::id snt250.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt250.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 올림픽 시작에 맞춰 지난 9일 개막한 강릉세계겨울커피축제는 25일까지 열린다.
 # ::note
 (열 / 열-01
@@ -3287,7 +3287,7 @@
             :op1 d
             :op2 (d3 / date-entity :day 25)))
 
-# ::id snt251.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split train
+# ::id snt251.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split train
 # ::snt 피해를 주장하는 증언이 잇따라 제기되면서 논란은 더욱 가열되고 있다.
 # ::note
 (가 / 가열-01
@@ -3299,7 +3299,7 @@
       :ARG1 (논 / 논란)
       :degree (더 / 더욱))
 
-# ::id snt252.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split dev
+# ::id snt252.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split dev
 # ::snt 행사에는 개인 판매장터뿐 아니라 재사용을 실천하는 사회적기업, 비영리단체 등도 참여한다.
 # ::note
 (참 / 참여-01

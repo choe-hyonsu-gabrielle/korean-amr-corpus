@@ -1,4 +1,4 @@
-# ::id snt0.931.002_A.03_ver ::category EXWKQA :: split test
+# ::id snt0.931.002_A.03_ver ::category EXWKQA ::split test
 # ::snt 보통 온도에 의한 암석조직의 수축 ·팽창, 바람 ·하천 ·빙하의 침식작용, 생물체의 작용 등에 의해 일어난다.
 # ::note
 (c / cause-01
@@ -19,7 +19,7 @@
             :op3 (작2 / 작용-01
                   :ARG1 (생 / 생물체))))
 
-# ::id snt1.931.005_A.02_ver ::category EXWKQA :: split test
+# ::id snt1.931.005_A.02_ver ::category EXWKQA ::split test
 # ::snt 오륜(五倫)의 요의(要義)를 간결하게 서술하고, 중국과 조선의 역대 세계(世系)와 개략적인 역사를 덧붙였다.
 # ::note
 (a / and
@@ -37,7 +37,7 @@
                         :op1 (c / country :wiki "중국" :name (이 / 이름 :op1 "중국"))
                         :op2 (c2 / country :wiki "조선" :name (이2 / 이름 :op1 "조선"))))))
 
-# ::id snt0.931.005_A.05_ver ::category EXWKQA :: split test
+# ::id snt0.931.005_A.05_ver ::category EXWKQA ::split test
 # ::snt 조선 중종 때 학자 박세무(朴世茂)가 저술하여 1670년(현종 11)에 간행하였다.
 # ::note
 (a / and
@@ -51,7 +51,7 @@
             :ARG0 p
             :time (d2 / date-entity :year 1670)))
 
-# ::id snt2.931.005_A.05_ver ::category EXWKQA :: split test
+# ::id snt2.931.005_A.05_ver ::category EXWKQA ::split test
 # ::snt 우선 부자유친(父子有親)·군신유의(君臣有義)·부부유별(夫婦有別)·장유유서(長幼有序)·붕우유신(朋友有信)의 오륜(五倫)을 설명하였다.
 # ::note
 (설 / 설명-01
@@ -64,7 +64,7 @@
                   :ARG1 (장 / 장유유서)
                   :ARG1 (붕 / 붕우유신))))
 
-# ::id snt0.931.006_A.01_ver ::category EXWKQA :: split test
+# ::id snt0.931.006_A.01_ver ::category EXWKQA ::split test
 # ::snt 한국을 비롯해 주변 4강(미국ㆍ중국ㆍ일본ㆍ러시아), 미주(캐나다ㆍ멕시코ㆍ칠레ㆍ페루), 오세아니아(호주ㆍ뉴질랜드ㆍ파푸아뉴기니), 동아시아 지역 등 21개국을 회원국으로 한다.
 # ::note
 (h / have-org-role-91
@@ -93,7 +93,7 @@
       :ARG2 (국2 / 국가
             :mod (회 / 회원)))
 
-# ::id snt0.931.008_A.04_ver ::category EXWKQA :: split test
+# ::id snt0.931.008_A.04_ver ::category EXWKQA ::split test
 # ::snt 심장에서 폐로 정맥혈을 보내는 혈관.
 # ::note
 (혈 / 혈관
@@ -103,13 +103,13 @@
             :ARG2 (폐 / 폐)
             :source (심 / 심장)))
 
-# ::id snt1.931.011_A.01_ver ::category EXWKQA :: split test
+# ::id snt1.931.011_A.01_ver ::category EXWKQA ::split test
 # ::snt 불소(弗素←일본어: 弗素 훗소)라고도 한다.
 # ::note
 (하 / 하-00
       :ARG2 (불 / 불소))
 
-# ::id snt2.931.011_A.01_ver ::category EXWKQA :: split test
+# ::id snt2.931.011_A.01_ver ::category EXWKQA ::split test
 # ::snt 플루오린은 특히 치아에 얇은 막을 입혀주어 충치를 예방하고 치아의 재석회화(再石灰化)를 촉진하여 충치를 예방하는 효과가 커 치약에 널리 사용된다.
 # ::note
 (사 / 사용-01
@@ -131,7 +131,7 @@
                                     :ARG1 (막 / 막
                                           :ARG1-of (얇 / 얇-01))))))))
 
-# ::id snt3.931.011_A.02_ver ::category EXWKQA :: split test
+# ::id snt3.931.011_A.02_ver ::category EXWKQA ::split test
 # ::snt 원자 기호는 F, 원자 번호는 9, 원자량은 18.9984.
 # ::note
 (a / and
@@ -140,7 +140,7 @@
       :op2 (번 / 번호 :value 9)
       :op3 (원2 / 원자량 :value 18.9984))
 
-# ::id snt0.931.014_Q.01_ver ::category EXWKQA :: split test
+# ::id snt0.931.014_Q.01_ver ::category EXWKQA ::split test
 # ::snt 뮤지컬 <애니>는 2006년 국내에서 초연한 이후 꾸준한 사랑을 받고 있다.
 # ::note
 (사 / 사랑-01
@@ -152,7 +152,7 @@
                   :ARG1 s
                   :location (국 / 국내))))
 
-# ::id snt3.931.016_A.04_ver ::category EXWKQA :: split test
+# ::id snt3.931.016_A.04_ver ::category EXWKQA ::split test
 # ::snt 드디어 우리 팀은 올림픽 경기에 출사표를 던졌다.
 # ::note
 (출 / 출사표를-던지-00
@@ -162,7 +162,7 @@
             :subevent-of (g / game :wiki "올림픽" :name (이 / 이름 :op1 "올림픽")))
       :mod (드 / 드디어))
 
-# ::id snt1.E2016.788.02_A_02 ::category EXWKQA :: split test
+# ::id snt1.E2016.788.02_A_02 ::category EXWKQA ::split test
 # ::snt 바다 위나 공중에서 긴 거리를 나타낼 때 쓴다.
 # ::note
 (쓰 / 쓰-01
@@ -174,7 +174,7 @@
                               :op1 (바 / 바다))
                         :op2 (공 / 공중)))))
 
-# ::id snt0.E2016.788.05_Q_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.788.05_Q_01 ::category EXWKQA ::split test
 # ::snt 활로 연주하는 악기가 아닌 것은?
 # ::note
 (a / amr-unknown
@@ -183,7 +183,7 @@
             :mod (연 / 연주-00
                   :instrument (활 / 활))))
 
-# ::id snt2.E2016.788.12_A_02 ::category EXWKQA :: split test
+# ::id snt2.E2016.788.12_A_02 ::category EXWKQA ::split test
 # ::snt 느린 장단에서 빠른 장단으로 배열된 3~6개 장단 구성의 악장으로 구분되며 반드시 장구 반주가 따른다.
 # ::note
 (a / and
@@ -206,7 +206,7 @@
                   :instrument (장4 / 장구))
             :mod (반2 / 반드시)))
 
-# ::id snt0.E2016.788.13_A_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.788.13_A_01 ::category EXWKQA ::split test
 # ::snt <음악> 민속 음악에서 쓰는 판소리 및 산조장단의 하나.
 # ::note
 (장 / 장단
@@ -218,7 +218,7 @@
             :ARG2 (음2 / 음악
                   :mod (민 / 민속))))
 
-# ::id snt1.E2016.788.15_Q_01 ::category EXWKQA :: split test
+# ::id snt1.E2016.788.15_Q_01 ::category EXWKQA ::split test
 # ::snt 과육이 부드럽고 독특한 향기가 있어 소스를 만들거나 샐러드 등의 요리재료로 쓰이는 4음절의 이 과일은 무엇일까?
 # ::note
 (a / amr-unknown
@@ -240,7 +240,7 @@
                               :poss 과
                               :ARG1-of (독 / 독특-01))))))
 
-# ::id snt0.E2016.789.04_A_02 ::category EXWKQA :: split test
+# ::id snt0.E2016.789.04_A_02 ::category EXWKQA ::split test
 # ::snt 변온동물에서도 체온조절하는 것을 볼 수 있는데 예를 들면, 꿀벌은 저온에서는 집단이 되어 열의 발산을 방지함과 동시에 근육운동에 의하여 발열한다.
 # ::note
 (가 / 가능-01
@@ -264,7 +264,7 @@
                                     :ARG0 (근 / 근육
                                           :poss 꿀)))))))
 
-# ::id snt0.E2016.789.14_A_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.789.14_A_01 ::category EXWKQA ::split test
 # ::snt 소금에 약간 절여서 통으로 말린 조기.
 # ::note
 (조 / 조기
@@ -275,7 +275,7 @@
                   :ARG2 (소 / 소금)
                   :degree (약 / 약간))))
 
-# ::id snt0.E2016.789.14_A_02 ::category EXWKQA :: split test
+# ::id snt0.E2016.789.14_A_02 ::category EXWKQA ::split test
 # ::snt 조기를 소금에 절여 말린 것.
 # ::note
 (것 / 것
@@ -284,7 +284,7 @@
                   :ARG1 (조 / 조기)
                   :ARG2 (소 / 소금))))
 
-# ::id snt0.E2016.790.03_A_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.790.03_A_01 ::category EXWKQA ::split test
 # ::snt 노을 또는 놀은 새벽이나 아침, 저녁에 태양 광선이 대기를 통과하는 거리가 길어져서 태양 광선 중 파장이 짧은 파란색은 대기 중에서 산란되고, 파장이 긴 빨간색은 산란되지 않아 하늘이 빨간색으로 보이는 현상이다.
 # ::note
 (현 / 현상
@@ -322,7 +322,7 @@
                         :ARG2 (길2 / 길-01
                               :ARG1 거)))))
 
-# ::id snt0.E2016.790.03_A_02 ::category EXWKQA :: split test
+# ::id snt0.E2016.790.03_A_02 ::category EXWKQA ::split test
 # ::snt 이는 파장이 짧은 푸른색이 산란되어 버리는 반면에 파장이 긴 붉은색의 빛이 산란되지 않고 관측자에게 도달하기 때문이다.
 # ::note
 (c / cause-01
@@ -342,12 +342,12 @@
                   :ARG2 (사 / 사람
                         :ARG0-of (관 / 관측-01)))))
 
-# ::id snt0.E2016.790.07_A_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.790.07_A_01 ::category EXWKQA ::split test
 # ::snt 삼라만상 森羅萬象
 # ::note
 (삼 / 삼라만상)
 
-# ::id snt0.E2016.790.09_A_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.790.09_A_01 ::category EXWKQA ::split test
 # ::snt 추운 겨울철의 세 벗이라는 뜻으로, 추위에 잘 견디는 소나무ㆍ대나무ㆍ매화나무를 통틀어 이르는 말.
 # ::note
 (말 / 말
@@ -363,7 +363,7 @@
                   :ARG0-of (견 / 견디-01
                         :ARG1 (춥2 / 춥-01)))))
 
-# ::id snt0.E2016.790.10_Q_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.790.10_Q_01 ::category EXWKQA ::split test
 # ::snt 사건 이름이 지역명이 아닌 것은?
 # ::note
 (a / amr-unknown
@@ -373,7 +373,7 @@
             :domain (이2 / 이름
                   :name-of (사 / 사건))))
 
-# ::id snt0.E2016.835.01_Q_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.835.01_Q_01 ::category EXWKQA ::split test
 # ::snt 로마의 평화 시대를 이끈 5현제에 해당하는 사람은?
 # ::note
 (a / amr-unknown
@@ -384,7 +384,7 @@
                               :mod (평 / 평화
                                     :mod (c / country :wiki "로마_제국" :name (이2 / 이름 :op1 "로마"))))))))
 
-# ::id snt0.E2016.835.02_A_02 ::category EXWKQA :: split test
+# ::id snt0.E2016.835.02_A_02 ::category EXWKQA ::split test
 # ::snt 그의 뒤를 이어 원근법을 구체적으로 회화에 처음 도입한 사람은 30년도 채 못 살고 약물 중독으로 추정되는 이유로 요절한 피렌체의 화가 마사초(Masaccio, 1401~1428)다.
 # ::note
 (도 / 도입-01
@@ -407,7 +407,7 @@
       :mod (뒤 / 뒤를-잇-00
             :ARG3 (그 / 그)))
 
-# ::id snt0.E2016.835.05_A_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.835.05_A_01 ::category EXWKQA ::split test
 # ::snt 각국의 수뇌자로는 미국의 대통령 프랭클린 루스벨트, 소비에트 연방의 당 서기장 이오시프 스탈린, 영국의 총리 윈스턴 처칠이다.
 # ::note
 (a / and
@@ -427,7 +427,7 @@
                   :ARG1 (c3 / country :wiki "영국" :name (이7 / 이름 :op1 "영국"))
                   :ARG2 (총 / 총리))))
 
-# ::id snt0.E2016.835.07_A_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.835.07_A_01 ::category EXWKQA ::split test
 # ::snt 장미 전쟁 (薔薇戰爭, 영어: Wars of the Roses)은 붉은 장미를 표시로 삼은 랭커스터 왕가와 흰 장미를 표시로 삼은 요크 왕가 사이의 왕위 쟁탈전이었다.
 # ::note
 (전 / 전쟁
@@ -446,7 +446,7 @@
                               :ARG2 (표2 / 표시))))
             :ARG1 (왕 / 왕위)))
 
-# ::id snt0.E2016.835.08_A_02 ::category EXWKQA :: split test
+# ::id snt0.E2016.835.08_A_02 ::category EXWKQA ::split test
 # ::snt <지명> ‘피렌체’의 영어 이름.
 # ::note
 (이 / 이름
@@ -454,7 +454,7 @@
       :medium (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
       :mod (c / city :wiki "피렌체" :name (이3 / 이름 :op1 "피렌체")))
 
-# ::id snt0.E2016.836.01_A_02 ::category EXWKQA :: split test
+# ::id snt0.E2016.836.01_A_02 ::category EXWKQA ::split test
 # ::snt 양동마을(良洞마을)은 경상북도 경주시 강동면 북쪽 설창산에 둘러싸여 있는 유서 깊은 양반마을로 1984년 12월 20일 대한민국의 중요민속자료 제189호로 지정되었고, 2010년 7월 31일 브라질 브라질리아에서 열린 유네스코 세계유산위원회(WHC) 제34차 회의에서 안동 하회마을과 함께 유네스코세계문화유산으로 등재되었다.
 # ::note
 (a / and
@@ -489,7 +489,7 @@
                         :location (c8 / country :wiki "브라질" :name (이12 / 이름 :op1 "브라질")))
                   :time (d2 / date-entity :year 2010 :month 7 :day 31))))
 
-# ::id snt0.E2016.887.03_A_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.887.03_A_01 ::category EXWKQA ::split test
 # ::snt 토머스 제퍼슨(Thomas Jefferson, 1743년 4월 13일 ~ 1826년 7월 4일)은 미국의 정치인으로 3번째 미국 대통령(재임 1801년 ~1809년)이자 미국 독립 선언서의 기초자이다(1776년).
 # ::note
 (a / and
@@ -512,7 +512,7 @@
                   :time (d7 / date-entity :year 1776))
             :ARG2 p))
 
-# ::id snt0.E2017.NEWS.001 ::category EXNEWS :: split test
+# ::id snt0.E2017.NEWS.001 ::category EXNEWS ::split test
 # ::snt '13월의 보너스냐 세금폭탄이냐' 연말정산서비스 15일 시작.
 # ::note
 (a / and
@@ -525,7 +525,7 @@
             :ARG1 (s / service* :wiki - :name (이 / 이름 :op1 "연말정산서비스"))
             :time (d2 / date-entity :day 15)))
 
-# ::id snt5.E2017.NEWS.001 ::category EXNEWS :: split test
+# ::id snt5.E2017.NEWS.001 ::category EXNEWS ::split test
 # ::snt 반면 120%를 선택하면 월급에서 세금을 미리 많이 떼 연말정산 때 많이 돌려받을 수 있다.
 # ::note
 (c / contrast-01
@@ -542,7 +542,7 @@
             :condition (선 / 선택-01
                   :ARG1 (p / percentage-entity :value 120))))
 
-# ::id snt8.E2017.NEWS.001 ::category EXNEWS :: split test
+# ::id snt8.E2017.NEWS.001 ::category EXNEWS ::split test
 # ::snt 다만 보청기나 휠체어 같은 장애인 보장구 구입비, 시력 보정용 안경·콘택트렌즈 구입비, 교복·체육복 구입비, 취학 전 아동 학원비, 일부 기부금은 조회되지 않을 수 있다.
 # ::note
 (c / contrast-01
@@ -577,7 +577,7 @@
                               :ARG1-of (기 / 기부-01)
                               :quant (일 / 일부))))))
 
-# ::id snt15.E2017.NEWS.001 ::category EXNEWS :: split test
+# ::id snt15.E2017.NEWS.001 ::category EXNEWS ::split test
 # ::snt 의료비 중 배우자 난임 시술비는 사생활 보호를 위해 의료비와 별도로 구분되지 않는다.
 # ::note
 (구 / 구분-01
@@ -593,7 +593,7 @@
       :purpose (보 / 보호-01
             :ARG1 (사 / 사생활)))
 
-# ::id snt25.E2017.NEWS.001 ::category EXNEWS :: split test
+# ::id snt25.E2017.NEWS.001 ::category EXNEWS ::split test
 # ::snt 편리한 연말정산 서비스에서는 예상세액을 간편하게 계산할 수 있는 서비스도 제공한다.
 # ::note
 (a / and
@@ -606,7 +606,7 @@
                                     :ARG1-of (예 / 예상-01))
                               :manner (간 / 간편하-01))))))
 
-# ::id snt1.E2017.NEWS.002 ::category EXNEWS :: split test
+# ::id snt1.E2017.NEWS.002 ::category EXNEWS ::split test
 # ::snt “돈 자랑 많이 하고 불손하고 오만했다.”
 # ::note
 (말 / 말하-01
@@ -617,7 +617,7 @@
             :op2 (불 / 불손-00)
             :op3 (오 / 오만-00)))
 
-# ::id snt18.E2017.NEWS.002 ::category EXNEWS :: split test
+# ::id snt18.E2017.NEWS.002 ::category EXNEWS ::split test
 # ::snt 2학년 경제를 담당했던 송 모 교사도 “같은 반에 아이돌 연습생이 있었는데 정유라만 조퇴를 봐준다고 울면서 하소연을 하곤 했다”고 증언했다.
 # ::note
 (증 / 증언-01
@@ -638,7 +638,7 @@
             :manner (울 / 울-00
                   :ARG0 p2)))
 
-# ::id snt3.E2017.NEWS.003 ::category EXNEWS :: split test
+# ::id snt3.E2017.NEWS.003 ::category EXNEWS ::split test
 # ::snt 이 가운데 한 명은 18일 오전 1시 36분께 불이 번진 것을 보고 처음 119에 신고한 어시장 상인이다.
 # ::note
 (상 / 상인
@@ -656,7 +656,7 @@
             :ARG2 (p / phone-number-entity :value 119)
             :ord (o / ordinal-entity :value 1)))
 
-# ::id snt16.E2017.NEWS.003 ::category EXNEWS :: split test
+# ::id snt16.E2017.NEWS.003 ::category EXNEWS ::split test
 # ::snt 앞서 전날 오전 1시 36분께 소래포구 어시장에서 불이 나 2시간 30분 만에 진화됐다.
 # ::note
 (진 / 진화-00
@@ -673,7 +673,7 @@
                         :time "13:36")
                   :mod (앞 / 앞서))))
 
-# ::id snt3.E2017.NEWS.004 ::category EXNEWS :: split test
+# ::id snt3.E2017.NEWS.004 ::category EXNEWS ::split test
 # ::snt 팀장에게 “대학원에서 공부를 더 하고 싶다”며 회사를 그만두겠다고 했다.
 # ::note
 (하 / 하-02
@@ -689,7 +689,7 @@
                         :mod (더 / 더)
                         :location (대 / 대학원)))))
 
-# ::id snt4.E2017.NEWS.004 ::category EXNEWS :: split test
+# ::id snt4.E2017.NEWS.004 ::category EXNEWS ::split test
 # ::snt 그러나 팀장은 “나중에 다른 곳에 취업해 ‘뒤통수 쳤다’는 얘기가 들리지 않게 하라”고 했다.
 # ::note
 (c / contrast-01
@@ -706,7 +706,7 @@
                               :ARG1 (곳 / 곳
                                     :ARG1-of (다 / 다르-01)))))))
 
-# ::id snt24.E2017.NEWS.004 ::category EXNEWS :: split test
+# ::id snt24.E2017.NEWS.004 ::category EXNEWS ::split test
 # ::snt 실제 경총 조사 결과 기업들의 대졸 신입사원에 대한 업무 수행 만족도는 2010년 조사 이후 계속해서 내려가는 추세다.
 # ::note
 (전 / 전하-01
@@ -731,7 +731,7 @@
                         :op1 (조2 / 조사-01
                               :time (d / date-entity :year 2010))))))
 
-# ::id snt0.E2017.NEWS.005 ::category EXNEWS :: split test
+# ::id snt0.E2017.NEWS.005 ::category EXNEWS ::split test
 # ::snt 文 대통령, 경제부총리 김동연·외교부 장관 여성 강경화 내정.
 # ::note
 (a / and
@@ -749,7 +749,7 @@
                   :ARG2-of (h2 / have-org-role-91
                         :ARG1 (g / government-organization :wiki "대한민국_외교부" :name (이4 / 이름 :op1 "외교부"))))))
 
-# ::id snt3.E2017.NEWS.005 ::category EXNEWS :: split test
+# ::id snt3.E2017.NEWS.005 ::category EXNEWS ::split test
 # ::snt 문 대통령은 이날 청와대 춘추관 브리핑룸에서 "새 정부의 경제-외교안보 분야 인사를 직접 국민에게 말씀드리겠다"며 직접 이 같은 인사를 발표했다.
 # ::note
 (발 / 발표-01
@@ -776,7 +776,7 @@
             :part-of (b / building :wiki - :name (이4 / 이름 :op1 "춘추관")
                   :part-of (g / government-organization :wiki "청와대" :name (이5 / 이름 :op1 "청와대")))))
 
-# ::id snt17.E2017.NEWS.005 ::category EXNEWS :: split test
+# ::id snt17.E2017.NEWS.005 ::category EXNEWS ::split test
 # ::snt 장하성 신임 실장은 광주 출생으로, 경기고를 졸업해 펜실베니아대 경영학 박사학위를 받았다.
 # ::note
 (a / and
@@ -796,7 +796,7 @@
                   :topic (경 / 경영학))
             :ARG2 (u / university :wiki "펜실베이니아_대학교" :name (이4 / 이름 :op1 "펜실베니아대"))))
 
-# ::id snt26.E2017.NEWS.005 ::category EXNEWS :: split test
+# ::id snt26.E2017.NEWS.005 ::category EXNEWS ::split test
 # ::snt 그러면서 "경제가 갈 길이 성장 분배 이분법이 아니라 선순환이 있다. 이론과 실무를 두루 경험한 김 부의장이 중책을 맡은 만큼 헌법 취지대로 활성화해 고단한 국민 삶을 개선하는데 실질적 역할을 해줄 것을 기대한다"고 부연했다.
 # ::note
 (a / and
@@ -833,7 +833,7 @@
                               :ARG0 p
                               :ARG1 (중 / 중책))))))
 
-# ::id snt11.E2017.NEWS.006 ::category EXNEWS :: split test
+# ::id snt11.E2017.NEWS.006 ::category EXNEWS ::split test
 # ::snt 건설사 협의체 운영위원을 맡은 건설사 임원에게는 징역 2년의 실형이 선고됐으며 나머지 전현직 임원 가운데 18명은 징역 8월에서 2년에 집행유예 1∼3년이 선고됐다.
 # ::note
 (a / and
@@ -870,7 +870,7 @@
                                                 :op1 (전 / 전직)
                                                 :op2 (현 / 현직)))))))))
 
-# ::id snt11.E2017.NEWS.007 ::category EXNEWS :: split test
+# ::id snt11.E2017.NEWS.007 ::category EXNEWS ::split test
 # ::snt 글로벌 은행들과 비교했더니 한국 은행들의 상담 시간은 매우 짧았다.
 # ::note
 (a / and
@@ -887,7 +887,7 @@
             :ARG3 (매 / 매우)
             :ARG4 은2))
 
-# ::id snt16.E2017.NEWS.007 ::category EXNEWS :: split test
+# ::id snt16.E2017.NEWS.007 ::category EXNEWS ::split test
 # ::snt 25일 오전 6~7시에 걸쳐 한국과 해외 금융회사의 콜센터에 실제로 전화를 걸어 보았더니 한국의 4대 은행은 모두 연결이 안 됐다.
 # ::note
 (a / and
@@ -907,7 +907,7 @@
             :ARG1 (은 / 은행 :mod 4
                   :location c)))
 
-# ::id snt10.E2017.NEWS.008 ::category EXNEWS :: split test
+# ::id snt10.E2017.NEWS.008 ::category EXNEWS ::split test
 # ::snt 서울 강남구 삼성동 홍실아파트 전용 108㎡는 며칠 전 16억 9000만 원(8층)에 계약됐다.
 # ::note
 (계 / 계약-01
@@ -925,7 +925,7 @@
       :time (전2 / 전
             :op1 (며 / 며칠)))
 
-# ::id snt22.E2017.NEWS.008 ::category EXNEWS :: split test
+# ::id snt22.E2017.NEWS.008 ::category EXNEWS ::split test
 # ::snt 이남수 신한금융투자 부동산팀장은 "하반기엔 금리 인상 가능성이 있는 데다가 주택 시장에 투기 수요가 몰리면 정부가 보유세 인상이나 가계 대출 관리 등 규제를 강화할 수 있다"며 "분위기에 휩쓸려 섣불리 투자했다가 '낭패'를 볼 수 있다는 걸 명심해야 한다"고 말했다.
 # ::note
 (말 / 말하-01
@@ -962,7 +962,7 @@
                                           :cause (분 / 분위기)
                                           :manner (섣 / 섣불리))))))))
 
-# ::id snt12.E2017.NEWS.009 ::category EXNEWS :: split test
+# ::id snt12.E2017.NEWS.009 ::category EXNEWS ::split test
 # ::snt 북극성-2도 최정점 고도 560여㎞로 500㎞를 비행했다.
 # ::note
 (a / and
@@ -974,7 +974,7 @@
                         :op1 (d / distance-quantity :quant 560 :unit (k / kilometer))))
             :extent (d2 / distance-quantity :quant 500 :unit (k2 / kilometer))))
 
-# ::id snt21.E2017.NEWS.009 ::category EXNEWS :: split test
+# ::id snt21.E2017.NEWS.009 ::category EXNEWS ::split test
 # ::snt A2는 오키나와 등 미국의 전진기지나 항모강습단을 공격할 수 있는 능력을 확보해 미군 전력이 서태평양 해역으로 접근하는 것을 지연시키는 전략이다.
 # ::note
 (전 / 전략
@@ -995,7 +995,7 @@
                                           :poss (c2 / country :wiki "미국" :name (이5 / 이름 :op1 "미국")))
                                     :op2 (항 / 항모강습단 :poss c2)))))))
 
-# ::id snt5.E2017.NEWS.010 ::category EXNEWS :: split test
+# ::id snt5.E2017.NEWS.010 ::category EXNEWS ::split test
 # ::snt 10여 분 뒤 현장에 도착한 119구급대에 따르면 "당시 임 씨의 맥박은 거의 멈춘 상태였다"고 한다.
 # ::note
 (하 / 하-02
@@ -1012,13 +1012,13 @@
                   :ARG1 맥)
             :ARG3 (거 / 거의)))
 
-# ::id snt23.E2017.NEWS.010 ::category EXNEWS :: split test
+# ::id snt23.E2017.NEWS.010 ::category EXNEWS ::split test
 # ::snt 오후 4시.
 # ::note
 (d / date-entity
       :time "16:00")
 
-# ::id snt31.E2017.NEWS.010 ::category EXNEWS :: split test
+# ::id snt31.E2017.NEWS.010 ::category EXNEWS ::split test
 # ::snt 위 교수는 "의료진 모두 하나가 돼서 환자 한 사람이 아닌 가족 전부를 감동시킨 '예술 작품'을 만들어낸 기분"이라고 했다.
 # ::note
 (하 / 하-02
@@ -1038,7 +1038,7 @@
                         :ARG1 (의 / 의료진
                               :quant (모 / 모두))))))
 
-# ::id snt3.E2017.Wiki.001 ::category EXWIKI :: split test
+# ::id snt3.E2017.Wiki.001 ::category EXWIKI ::split test
 # ::snt 수도는 나이로비이며 공용어는 영어와 스와힐리어이다.
 # ::note
 (a / and
@@ -1049,7 +1049,7 @@
             :op1 (l / language :wiki "영어" :name (이2 / 이름 :op1 "영어"))
             :op2 (l2 / language :wiki "스와힐리어" :name (이3 / 이름 :op1 "스와힐리어"))))
 
-# ::id snt2.E2017.Wiki.002 ::category EXWIKI :: split test
+# ::id snt2.E2017.Wiki.002 ::category EXWIKI ::split test
 # ::snt 원래 이름은 보르지긴 테무진이다.
 # ::note
 (이 / 이름 :op1 "보르지긴" :op2 "테무진"
@@ -1057,7 +1057,7 @@
       :domain (이2 / 이름
             :mod (원 / 원래)))
 
-# ::id snt2.E2017.Wiki.004 ::category EXWIKI :: split test
+# ::id snt2.E2017.Wiki.004 ::category EXWIKI ::split test
 # ::snt 대사의 오용과 남용을 강하게 성토한 그는 1517년 95개 논제를 게시함으로써 도미니코회 수사이자 대사령 설교 담당자인 요한 테첼에 맞섰다.
 # ::note
 (맞 / 맞서-01
@@ -1083,17 +1083,17 @@
             :ARG1 (논 / 논제 :quant 95 :unit (개 / 개))
             :time (d / date-entity :year 1517)))
 
-# ::id snt0.E2017.Wiki.006 ::category EXWIKI :: split test
+# ::id snt0.E2017.Wiki.006 ::category EXWIKI ::split test
 # ::snt 라인 강
 # ::note
 (r / river :wiki "라인강" :name (이 / 이름 :op1 "라인" :op2 "강"))
 
-# ::id snt0.E2017.Wiki.007 ::category EXWIKI :: split test
+# ::id snt0.E2017.Wiki.007 ::category EXWIKI ::split test
 # ::snt 아폴로 계획
 # ::note
 (p / project* :wiki "아폴로_계획" :name (이 / 이름 :op1 "아폴로" :op2 "계획"))
 
-# ::id snt6.E2017.Wiki.007 ::category EXWIKI :: split test
+# ::id snt6.E2017.Wiki.007 ::category EXWIKI ::split test
 # ::snt 여러 번의 성공도 있었지만, 두 차례의 큰 사고도 있었다.
 # ::note
 (c / contrast-01
@@ -1102,7 +1102,7 @@
       :ARG2 (사 / 사고 :quant 2 :unit (차 / 차례)
             :ARG1-of (크 / 크-01)))
 
-# ::id snt9.E2017.Wiki.008 ::category EXWIKI :: split test
+# ::id snt9.E2017.Wiki.008 ::category EXWIKI ::split test
 # ::snt 찰스 윌리엄 엘리엇은 40년간 하버드 총장으로 일하면서 하버드 대학교를 근대 연구 대학으로 변모시켰다.
 # ::note
 (변 / 변모-01
@@ -1116,7 +1116,7 @@
             :ARG0-of (연 / 연구-01)
             :mod (근 / 근대)))
 
-# ::id snt24.E2017.Wiki.008 ::category EXWIKI :: split test
+# ::id snt24.E2017.Wiki.008 ::category EXWIKI ::split test
 # ::snt 1782년에 메디컬 스쿨(Harvard Medical School), 1816년에 신학대학원(Harvard Divinity School), 1817년에 로스쿨(Harvard Law School), 1867년에 치의학대학원(Harvard School of Dental Medicine), 1908년에 비즈니스 스쿨(Harvard Business School), 1920년에 교육대학원(Harvard Graduate School of Education), 1922년에 공공보건대학원(Harvard School of Public Health), 그리고 1936년에 케네디 스쿨(Harvard Kennedy School)을 설립하면서 차츰 현대적인 종합대학이 됐다.
 # ::note
 (되 / 되-01
@@ -1157,7 +1157,7 @@
                   :ARG1 (u / university :wiki - :name (이 / 이름 :op1 "케네디" :op2 "스쿨"))
                   :time (d8 / date-entity :year 1936))))
 
-# ::id snt27.E2017.Wiki.008 ::category EXWIKI :: split test
+# ::id snt27.E2017.Wiki.008 ::category EXWIKI ::split test
 # ::snt 메인 캠퍼스에서 찰스 강 건너편에 자리잡고 있는 올스턴 지역까지 도보로 갈 수 있다.
 # ::note
 (가 / 가능-01
@@ -1168,7 +1168,7 @@
                         :op1 (r / river :wiki "찰스강" :name (이3 / 이름 :op1 "찰스" :op2 "강"))))
             :manner (도 / 도보)))
 
-# ::id snt5.E2017.Wiki.009 ::category EXWIKI :: split test
+# ::id snt5.E2017.Wiki.009 ::category EXWIKI ::split test
 # ::snt 이후 주원장의 명나라에 의해 북쪽으로 쫓겨나 쇠퇴하게 된다.
 # ::note
 (쇠 / 쇠퇴-00
@@ -1178,7 +1178,7 @@
                   :poss (p / person :wiki "홍무제" :name (이2 / 이름 :op1 "주원장"))))
       :time (이3 / 이후))
 
-# ::id snt16.E2017.Wiki.010 ::category EXWIKI :: split test
+# ::id snt16.E2017.Wiki.010 ::category EXWIKI ::split test
 # ::snt 전문대학원 중에는 의학대학원(Pritzker School of Medicine, University of Chicago), 법학대학원(University of Chicago Law School), 경영대학원(University of Chicago Booth School of Business) 등이 유명하다.
 # ::note
 (h / have-degree-91
@@ -1194,7 +1194,7 @@
       :ARG5 (대4 / 대학원
             :mod (전 / 전문)))
 
-# ::id snt2.E2017.Wiki.011 ::category EXWIKI :: split test
+# ::id snt2.E2017.Wiki.011 ::category EXWIKI ::split test
 # ::snt 엽록체는 엽록소가 있어 세포를 관찰했을 때 뚜렷한 녹색이 나타나는 것을 쉽게 확인할 수 있다.
 # ::note
 (가 / 가능-01
@@ -1208,7 +1208,7 @@
       :cause (엽 / 엽록소
             :location (엽2 / 엽록체)))
 
-# ::id snt16.E2017.Wiki.012 ::category EXWIKI :: split test
+# ::id snt16.E2017.Wiki.012 ::category EXWIKI ::split test
 # ::snt 유럽의 초기 식민지는 희귀한 자원과 노예의 확보를 위한 것이었다.
 # ::note
 (식 / 식민지
@@ -1220,7 +1220,7 @@
                         :ARG1-of (희 / 희귀-00))
                   :op2 (노 / 노예))))
 
-# ::id snt10.E2017.Wiki.013 ::category EXWIKI :: split test
+# ::id snt10.E2017.Wiki.013 ::category EXWIKI ::split test
 # ::snt 테슬라의 부친은 정교회 사제였다.
 # ::note
 (h / have-org-role-91
@@ -1231,7 +1231,7 @@
       :ARG1 (r / religious-group :wiki "동방_정교회" :name (이2 / 이름 :op1 "정교회"))
       :ARG2 (사2 / 사제))
 
-# ::id snt8.E2017.Wiki.015 ::category EXWIKI :: split test
+# ::id snt8.E2017.Wiki.015 ::category EXWIKI ::split test
 # ::snt 사람을 비롯한 동물군의 체내에서 산소를 운반하는 것은 적혈구의 주요 역할이다.
 # ::note
 (역 / 역할
@@ -1245,7 +1245,7 @@
                         :ARG1-of (비 / 비롯하-01
                               :ARG2 (사 / 사람))))))
 
-# ::id snt29.E2017.Wiki.015 ::category EXWIKI :: split test
+# ::id snt29.E2017.Wiki.015 ::category EXWIKI ::split test
 # ::snt O4는 자성을 띠지 않고 옅은 푸른 빛깔을 띤다.
 # ::note
 (a / and
@@ -1257,7 +1257,7 @@
             :ARG1 (빛 / 빛깔
                   :ARG1-of (푸 / 푸르-01))))
 
-# ::id snt12.E2017.Wiki.016 ::category EXWIKI :: split test
+# ::id snt12.E2017.Wiki.016 ::category EXWIKI ::split test
 # ::snt 개신교 신자들에 대한 차별을 금지하는 낭트 칙령을 세워 위그노들에게도 신앙의 자유를 주었다.
 # ::note
 (주 / 주-01
@@ -1271,7 +1271,7 @@
                               :ARG1 (신2 / 신자
                                     :mod (개 / 개신교)))))))
 
-# ::id snt8.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::id snt8.E2017.Wiki.017 ::category EXWIKI ::split test
 # ::snt 그 뒤로도 19세기까지 유럽에서는 페스트가 산발적으로 유행했는데(런던 대역병 등), 흑사병의 병원체를 페스트균으로 확정한다면 흑사병이란 1345년에서 1840년까지 유라시아 대륙에서 계속된 제2차 페스트 범유행의 일부로서 14세기 유럽의 범유행 상황을 가리키는 말이라고 할 수 있다.
 # ::note
 (a / and
@@ -1304,7 +1304,7 @@
                   :ARG1 (p / pathogen* :wiki "페스트균" :name (이7 / 이름 :op1 "페스트균"))
                   :ARG2 (병 / 병원체 :poss d2))))
 
-# ::id snt11.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::id snt11.E2017.Wiki.017 ::category EXWIKI ::split test
 # ::snt 1340년대 흑사병으로 약 2천5백만 명이 희생되었다.
 # ::note
 (희 / 희생-01
@@ -1314,7 +1314,7 @@
             :op1 (d3 / date-entity :year 1340)
             :op2 (d4 / date-entity :year 1350)))
 
-# ::id snt12.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::id snt12.E2017.Wiki.017 ::category EXWIKI ::split test
 # ::snt 이 때의 흑사병은 중앙아시아나 인도에서 발원하여 전파된 것으로 추정되고 있다.
 # ::note
 (추 / 추정-01
@@ -1325,7 +1325,7 @@
                   :op2 (c2 / country :wiki "인도" :name (이3 / 이름 :op1 "인도")))
             :time (이4 / 이때)))
 
-# ::id snt20.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::id snt20.E2017.Wiki.017 ::category EXWIKI ::split test
 # ::snt 흑사병이라는 이름은 1883년에 붙여졌는데, 피부의 혈소 침전에 의해 피부가 검게 변하는 증상 때문에 붙여진 이름이다.
 # ::note
 (붙 / 붙-01
@@ -1340,7 +1340,7 @@
                         :location (피3 / 피부))))
       :time (d / date-entity :year 1883))
 
-# ::id snt34.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::id snt34.E2017.Wiki.017 ::category EXWIKI ::split test
 # ::snt 몽골에 의한 전파가 흑사병 확산의 유일한 원인은 아닐지라도 전쟁과 기아, 그리고 기후의 변화 등이 흑사병 창궐의 주된 원인이 되었다.
 # ::note
 (c / cause-01
@@ -1361,7 +1361,7 @@
                   :ARG1 (확 / 확산-01
                         :ARG1 d))))
 
-# ::id snt35.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::id snt35.E2017.Wiki.017 ::category EXWIKI ::split test
 # ::snt 13세기 몽골의 중국 점령 시기에 농업과 상업은 심하게 붕괴되었고 기아가 만연했다.
 # ::note
 (a / and
@@ -1377,7 +1377,7 @@
                   :ARG1 (c2 / country :wiki "중국" :name (이2 / 이름 :op1 "중국"))
                   :time (d / date-entity :century 13))))
 
-# ::id snt37.E2017.Wiki.017 ::category EXWIKI :: split test
+# ::id snt37.E2017.Wiki.017 ::category EXWIKI ::split test
 # ::snt 14세기에는 중국에서도 흑사병이 번졌던 시기로 이로 인해 중국의 인구 중 약 30%가 사망한 것으로 추정된다.
 # ::note
 (추 / 추정-01
@@ -1393,7 +1393,7 @@
                         :ARG3 (약 / 약
                               :op1 (p / percentage-entity :value 30))))))
 
-# ::id snt1.E2017.Wiki.018 ::category EXWIKI :: split test
+# ::id snt1.E2017.Wiki.018 ::category EXWIKI ::split test
 # ::snt 잭슨빌은 미국 플로리다 주에서 인구가 가장 많은 도시이다.
 # ::note
 (h / have-quant-91
@@ -1404,7 +1404,7 @@
       :ARG5 (p / province :wiki "플로리다주" :name (이2 / 이름 :op1 "플로리다" :op2 "주")
             :location (c2 / country :wiki "미국" :name (이3 / 이름 :op1 "미국"))))
 
-# ::id snt8.E2017.Wiki.018 ::category EXWIKI :: split test
+# ::id snt8.E2017.Wiki.018 ::category EXWIKI ::split test
 # ::snt 최고 기온 기록은 1942년 7월 21일의 43°C이며, 최저 기온 기록은 1985년 1월 21일에 기록된 -14°C이다.
 # ::note
 (a / and
@@ -1419,7 +1419,7 @@
                   :ARG1 (기4 / 기온
                         :degree (최2 / 최저)))))
 
-# ::id snt1.E2017.Wiki.019 ::category EXWIKI :: split test
+# ::id snt1.E2017.Wiki.019 ::category EXWIKI ::split test
 # ::snt 미국방송회사(美國放送協會)는 미국의 텔레비전, 라디오 방송을 운영하는 방송사이다.
 # ::note
 (운 / 운영-01
@@ -1430,7 +1430,7 @@
                   :op2 (라 / 라디오)))
       :location (c2 / country :wiki "미국" :name (이2 / 이름 :op1 "미국")))
 
-# ::id snt4.E2017.Wiki.019 ::category EXWIKI :: split test
+# ::id snt4.E2017.Wiki.019 ::category EXWIKI ::split test
 # ::snt 1939년 미국연방통신위원회는 NBC의 독점적인 시장지배를 인지하고 NBC의 두 네트워크를 NBC 레드 네트워크와 NBC 블루 네트워크 두 회사로 분리시키기로 결정했다.
 # ::note
 (결 / 결정-01
@@ -1452,7 +1452,7 @@
                   :manner (독 / 독점-01)))
       :time (d / date-entity :year 1939))
 
-# ::id snt26.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt26.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 달콤커피가 프랜차이즈 커피업계 최초로 4차 산업혁명 핵심인 로봇기술 기반의 벤처기업 인증을 획득했다.
 # ::note
 (획 / 획득-01
@@ -1471,7 +1471,7 @@
                   :mod (커 / 커피)
                   :mod (프 / 프랜차이즈))))
 
-# ::id snt33.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt33.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 경남메세나협회는 올해 기업과 예술단체 170개 팀 이상 결연 목표를 세웠다고 21일 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -1484,7 +1484,7 @@
                               :op2 (단 / 단체
                                     :topic (예 / 예술)))))))
 
-# ::id snt51.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt51.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 오늘은 당신이 이성적으로 좋은 판단을 내리기 힘든 때입니다.
 # ::note
 (힘 / 힘들-01
@@ -1494,7 +1494,7 @@
             :manner (이 / 이성))
       :time (오 / 오늘))
 
-# ::id snt56.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt56.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 개인 취향에 따른 옷 바꾸기 기능도 제공된다.
 # ::note
 (제 / 제공-01
@@ -1505,7 +1505,7 @@
                         :ARG1 (취 / 취향
                               :poss (개 / 개인))))))
 
-# ::id snt69.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt69.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 강남구가 85만 명으로 가장 많았고, 송파 77만 명ㆍ서초 62만 명 등이 뒤따랐다.
 # ::note
 (a / and
@@ -1523,7 +1523,7 @@
                         :mod (c3 / county :wiki "송파구" :name (이3 / 이름 :op1 "송파"))))
             :ARG2 h))
 
-# ::id snt79.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt79.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 그동안 당신이 공을 들인 만큼 수익이 발생하게 됩니다.
 # ::note
 (되 / 되-01
@@ -1534,7 +1534,7 @@
                         :ARG0 (당 / 당신)
                         :time (그 / 그동안)))))
 
-# ::id snt83.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt83.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 광명시는 6월 24일까지 전시를 선보인다.
 # ::note
 (선 / 선보이-01
@@ -1543,14 +1543,14 @@
       :time (d / date-interval
             :op2 (d2 / date-entity :month 6 :day 24)))
 
-# ::id snt84.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt84.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 경남메세나협회는 2007년 창립했다.
 # ::note
 (창 / 창립-00
       :ARG1 (o / organization :wiki - :name (이 / 이름 :op1 "경남메세나협회"))
       :time (d / date-entity :year 2007))
 
-# ::id snt87.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt87.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 전승호 본부장은 서울대학교 제약학 석사를 마치고 현재 대웅제약 글로벌사업본부장을 맡고 있다.
 # ::note
 (a / and
@@ -1565,7 +1565,7 @@
             :ARG2 (글 / 글로벌사업본부장)
             :time (현 / 현재)))
 
-# ::id snt93.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt93.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 먼저 인터넷 웹서핑과 애플리케이션 스토어를 차단했다.
 # ::note
 (차 / 차단-01
@@ -1576,7 +1576,7 @@
                   :mod (애 / 애플리케이션)))
       :mod (먼 / 먼저))
 
-# ::id snt97.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt97.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 행동하면 새로운 기회를 얻을 수 있을 것입니다.
 # ::note
 (가 / 가능-01
@@ -1585,7 +1585,7 @@
                   :ARG1-of (새 / 새롭-01)))
       :condition (행 / 행동-01))
 
-# ::id snt112.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt112.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 국립환경과학원은 이날 충북지역 미세먼지 농도를 '보통' 수준으로 예보했다.
 # ::note
 (예 / 예보-00
@@ -1598,7 +1598,7 @@
             :op1 (s / score-on-scale-91
                   :ARG1 "보통")))
 
-# ::id snt113.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt113.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 뉴욕타임스(NYT)는 그레이엄 목사가 전립선암과 파킨슨병 등을 앓아왔다고 전했다.
 # ::note
 (전 / 전하-01
@@ -1611,7 +1611,7 @@
                   :op1 (d / desease :wiki "전립선암" :name (이3 / 이름 :op1 "전립선암"))
                   :op2 (d2 / desease :wiki "파킨슨병" :name (이4 / 이름 :op1 "파킨슨병")))))
 
-# ::id snt133.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt133.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 벽초는 해방 직후인 1948년 북으로 가 조선민주주의인민공화국 수립에 참여해 초대 부수상을 지냈다.
 # ::note
 (a / and
@@ -1631,14 +1631,14 @@
             :ARG2 (부 / 부수상
                   :ord (o / ordinal-entity :value 1))))
 
-# ::id snt140.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt140.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 연애운은 좋은 편입니다.
 # ::note
 (좋 / 좋-01
       :ARG1 (운 / 운
             :topic (연 / 연애)))
 
-# ::id snt181.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt181.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 롯데관광개발은 평창동계올림픽 강원도 우수 지역 자원봉사자에게 크루즈 승선권을 전달했다고 22일 밝혔다.
 # ::note
 (밝 / 밝히-01
@@ -1658,7 +1658,7 @@
                   :location (p / province :wiki "강원도_(남)" :name (이3 / 이름 :op1 "강원도"))))
       :time (d / date-entity :day 22))
 
-# ::id snt185.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt185.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 참사 3년 만에 목포신항에 거치한 세월호와 미수습자 수색 등 장면은 기획전으로 구성했다.
 # ::note
 (구 / 구성-01
@@ -1676,7 +1676,7 @@
                               :ARG1-of (수2 / 수습-00
                                     :polarity -)))))
 
-# ::id snt188.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt188.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 이후 A씨는 처벌이나 징계절차가 이뤄지지 않은 채 사표가 수리됐고, 대기업에 취업했습니다.
 # ::note
 (a / and
@@ -1696,7 +1696,7 @@
             :ARG1 (대 / 대기업))
       :time (이3 / 이후))
 
-# ::id snt226.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt226.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 지난해 같은 기간보다 41.6%나 상승했다.
 # ::note
 (h / have-quant-91
@@ -1706,7 +1706,7 @@
             :ARG1-of (같 / 같-01)
             :time (지 / 지난해)))
 
-# ::id snt233.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt233.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 인권고등판무관사무소는 미국 반대에 부딪혀 허울뿐인 부서로 남았다.
 # ::note
 (남 / 남-00
@@ -1716,7 +1716,7 @@
       :cause (반 / 반대-01
             :ARG0 (c / country :wiki "미국" :name (이2 / 이름 :op1 "미국"))))
 
-# ::id snt238.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt238.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 주위의 조언을 잘 새겨들어야 하는 시기입니다.
 # ::note
 (시 / 시기
@@ -1726,7 +1726,7 @@
                         :ARG0 (주 / 주위))
                   :manner (잘 / 잘))))
 
-# ::id snt247.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH :: split test
+# ::id snt247.shff.EXOBRAIN.PARAPHRASE.181118 ::category EXPRPH ::split test
 # ::snt 전남 장흥군 안양면 이장자치회와 지역사회보장협의체는 우리 동네 돌봄천사 '1마을 1나눔 사업'을 시작한다.
 # ::note
 (시 / 시작-01
@@ -1738,7 +1738,7 @@
             :op2 (o2 / organization :wiki - :name (이5 / 이름 :op1 "지역사회보장협의체")))
       :ARG1 (p2 / project* :wiki - :name (이6 / 이름 :op1 "우리" :op2 "동네" :op3 "돌봄천사" :op4 "'1마을" :op5 "1나눔" :op6 "사업'")))
 
-# ::id 081639.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::id 081639.01.krdict.nikl.ex.snt.001 ::category KBDICT ::split test
 # ::snt 민준은 자신이 투표한 후보자가 대통령이 되기를 바랐다.
 # ::note
 (바 / 바라-01
@@ -1750,7 +1750,7 @@
                         :ARG0 p))
             :ARG2 (대 / 대통령)))
 
-# ::id 017179.01.krdict.nikl.ex.snt.003 ::category KBDICT :: split test
+# ::id 017179.01.krdict.nikl.ex.snt.003 ::category KBDICT ::split test
 # ::snt 사실 나는 그가 나에게 무엇을 이야기했는지 잘 기억이 나지 않는다.
 # ::note
 (기 / 기억-01
@@ -1762,7 +1762,7 @@
             :ARG2 나)
       :degree (잘 / 잘))
 
-# ::id 088143.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::id 088143.01.krdict.nikl.ex.snt.001 ::category KBDICT ::split test
 # ::snt 선생님은 지난 시간에 나눠 준 설문지를 회수해 가셨다.
 # ::note
 (회 / 회수-01
@@ -1774,7 +1774,7 @@
                   :time (시 / 시간
                         :ARG0-of (지 / 지나-01)))))
 
-# ::id 031440.01.krdict.nikl.ex.snt.002 ::category KBDICT :: split test
+# ::id 031440.01.krdict.nikl.ex.snt.002 ::category KBDICT ::split test
 # ::snt 지수는 항상 꿈을 현실과 결부시키는 버릇이 있었다.
 # ::note
 (버 / 버릇
@@ -1785,7 +1785,7 @@
             :ARG2 (현 / 현실)
             :frequency (항 / 항상)))
 
-# ::id 074286.01.krdict.nikl.ex.snt.002 ::category KBDICT :: split test
+# ::id 074286.01.krdict.nikl.ex.snt.002 ::category KBDICT ::split test
 # ::snt 김 사장은 그간의 업적으로 보아 재임용하는 것이 회사를 위해 좋다.
 # ::note
 (좋 / 좋-03
@@ -1799,7 +1799,7 @@
             :ARG1 (업 / 업적
                   :duration (그 / 그간))))
 
-# ::id 085402.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::id 085402.01.krdict.nikl.ex.snt.001 ::category KBDICT ::split test
 # ::snt 독재자에게 지배당하는 국민들은 그의 뜻에 따라 생각하고 움직여야 했다.
 # ::note
 (o / obligate-01
@@ -1813,7 +1813,7 @@
             :op1 (생 / 생각-01)
             :op2 (움 / 움직이-01)))
 
-# ::id 015063.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::id 015063.01.krdict.nikl.ex.snt.001 ::category KBDICT ::split test
 # ::snt 공직자들은 본인과 가족들의 재산을 공공 기관에 등록해야 한다.
 # ::note
 (o / obligate-01
@@ -1826,7 +1826,7 @@
             :ARG2 (기 / 기관
                   :mod (공2 / 공공))))
 
-# ::id 068602.04.krdict.nikl.ex.snt.003 ::category KBDICT :: split test
+# ::id 068602.04.krdict.nikl.ex.snt.003 ::category KBDICT ::split test
 # ::snt 카메라는 우리가 움직이는 동선을 그대로 따라오며 우리를 찍었다.
 # ::note
 (찍 / 찍-01
@@ -1839,7 +1839,7 @@
                         :ARG0 우))
             :mod (그 / 그대로)))
 
-# ::id 025351.01.krdict.nikl.ex.snt.002 ::category KBDICT :: split test
+# ::id 025351.01.krdict.nikl.ex.snt.002 ::category KBDICT ::split test
 # ::snt 우리 팀은 실력 차이에도 불구하고 마지막까지 건투하여 승리를 차지했다.
 # ::note
 (승 / 승리-01
@@ -1850,7 +1850,7 @@
       :concession (차 / 차이
             :mod (실 / 실력)))
 
-# ::id 053779.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::id 053779.01.krdict.nikl.ex.snt.001 ::category KBDICT ::split test
 # ::snt 남편은 육아와 가사 노동을 나에게만 떠맡기고 모른 척했다.
 # ::note
 (a / and
@@ -1864,7 +1864,7 @@
       :op2 (모 / 모른척하-00
             :ARG0 남))
 
-# ::id 021161.01.krdict.nikl.ex.snt.001 ::category KBDICT :: split test
+# ::id 021161.01.krdict.nikl.ex.snt.001 ::category KBDICT ::split test
 # ::snt 어머니는 미역국을 끓이기 위해서는 말린 미역을 물에 불려야 한다고 말씀하셨다.
 # ::note
 (말 / 말씀-01
@@ -1877,7 +1877,7 @@
             :purpose (끓 / 끓-00
                   :ARG1 (미2 / 미역국))))
 
-# ::id snt0.E2016.837.04_A_02 ::category EXWKQA :: split test
+# ::id snt0.E2016.837.04_A_02 ::category EXWKQA ::split test
 # ::snt 2차 세계대전에서 사용된 미국의 전략폭격기이며 히로시마에 원자폭탄을 투하한 폭격기로 유명하다.
 # ::note
 (a / and
@@ -1893,7 +1893,7 @@
                         :ARG1 (원 / 원자폭탄)
                         :ARG2 (c2 / city :wiki "히로시마시" :name (이3 / 이름 :op1 "히로시마"))))))
 
-# ::id snt0.E2016.837.05_Q_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.837.05_Q_01 ::category EXWKQA ::split test
 # ::snt 사용 언어가 다른 나라는?
 # ::note
 (사 / 사용-01
@@ -1902,7 +1902,7 @@
       :ARG1 (언 / 언어
             :ARG1-of (다 / 다르-01)))
 
-# ::id snt17.E2017.NEWS.012 ::category EXNEWS :: split test
+# ::id snt17.E2017.NEWS.012 ::category EXNEWS ::split test
 # ::snt 인사 실패의 책임이 조 수석이 아닌 비서실장인 자신에게 있다는 것이다.
 # ::note
 (의 / 의미-01
@@ -1918,7 +1918,7 @@
             :ARG2 (실 / 실패-01
                   :ARG2 (인 / 인사))))
 
-# ::id snt0.E2016.888.02_A_02 ::category EXWKQA :: split test
+# ::id snt0.E2016.888.02_A_02 ::category EXWKQA ::split test
 # ::snt 어떤 물건을 일상적인 환경에서 이질적인 환경으로 옮겨 그 물건으로부터 실용적인 성격을 배제하여 물체끼리의 기이한 만남을 현출시키는 기법이다.
 # ::note
 (기 / 기법
@@ -1939,7 +1939,7 @@
                         :ARG3 (환2 / 환경
                               :mod (이 / 이질적))))))
 
-# ::id snt0.E2016.888.06_Q_01 ::category EXWKQA :: split test
+# ::id snt0.E2016.888.06_Q_01 ::category EXWKQA ::split test
 # ::snt 우리나라의 산맥 중 방향이 다른 것은 무엇일까?
 # ::note
 (다 / 다르-01
@@ -1949,14 +1949,14 @@
                         :ARG2 (산 / 산맥
                               :location (우 / 우리나라))))))
 
-# ::id lpp_1943.8 ::category TLPPRL :: split test
+# ::id lpp_1943.8 ::category TLPPRL ::split test
 # ::snt 색연필을 가지고 첫 번째 그림을 그려 보았다.
 # ::note
 (그 / 그리-01
       :ARG1 (그2 / 그림 :ord (o / ordinal-entity :value 1))
       :instrument (색 / 색연필))
 
-# ::id lpp_1943.14 ::category TLPPRL :: split test
+# ::id lpp_1943.14 ::category TLPPRL ::split test
 # ::snt 보아구렁이가 코끼리를 삭이고 있는 것이었다.
 # ::note
 (삭 / 삭-00
@@ -1964,7 +1964,7 @@
             :mod (보 / 보아))
       :ARG1 (코 / 코끼리))
 
-# ::id lpp_1943.33 ::category TLPPRL :: split test
+# ::id lpp_1943.33 ::category TLPPRL ::split test
 # ::snt 그 어른이 알아들을 수 있게
 # ::note
 (h / have-purpose-91
