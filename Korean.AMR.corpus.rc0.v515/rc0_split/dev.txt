@@ -1424,8 +1424,7 @@
                   :ARG2 (a / and :quant 7 :unit (개 / 개)
                         :op1 (시 / 시)
                         :op2 (군 / 군)
-                        :mod (동 / 동부권
-                              :part-of (p / province :wiki "경기도" :name (이2 / 이름 :op1 "경기도"))))
+                        :mod (동 / 동부권))
                   :ARG1-of (기 / 기하-01
                         :ARG0 g
                         :ARG2 (d / date-entity :day 24 :time "14:00")))))

@@ -2277,11 +2277,7 @@
                               :day 24
                               :time "14:00"))
                   :ARG2 (x6 / and
-                        :mod (x10 / 동부권
-                              :part-of (x11 / province
-                                    :name (x12 / 이름
-                                          :op1 "경기도")
-                                    :wiki "경기도"))
+                        :mod (x10 / 동부권)
                         :op1 (x8 / 시)
                         :op2 (x9 / 군)
                         :quant 7
