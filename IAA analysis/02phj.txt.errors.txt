@@ -1,0 +1,395 @@
+# ::id snt278.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 고은 시인은 지난 2008년 석좌교수로 임용된 바 있다.
+(x0 / 임용-01
+      :ARG1 (x1 / 고은                                ### "오류: 개체명 주석 오류"
+            :ARG0-of (x2 / have-org-role-91
+                  :ARG2 (x3 / 시인)))
+      :ARG2 (x6 / 석좌교수)
+      :time (x4 / date-entity
+            :ARG1-of (x5 / 지나-01)
+            :year 2008))
+
+# ::id snt279.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 올해는 7건의 사업에 총사업비 38억원(국비 31억원, 지방비 7억원)이 투입된다.
+(x0 / 투입-01
+      :ARG1 (x5 / monetary-quantity                         ### "양화: 사업비 vs 38억원"
+            :domain (x7 / 사업비)                             ### "전이: 38억원이 루트가 되는 경우 domain vs purpose"
+            :mod (x8 / sum-of                               ### "명사구: include-91 vs sum-of"
+                  :op1 (x9 / monetary-quantity
+                        :domain (x10 / 국비)
+                        :quant 310000000
+                        :unit (x6 / 원))
+                  :op2 (x11 / monetary-quantity
+                        :domain (x12 / 지방비)
+                        :quant 70000000
+                        :unit x6))                          ### "오류: 원을 계속 참조"
+            :quant 3800000000
+            :unit x6)
+      :ARG2 (x1 / 사업                                       ### "용언화: 사업-01 vs 사업"
+            :quant 7
+            :unit (x2 / 건))
+      :time (x3 / date-entity
+            :year (x4 / 올해)))
+
+# ::id snt280.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 최 교수는 이렇게 말했다.
+(x0 / 말하-01
+      :ARG0 (x1 / person
+            :ARG0-of (x3 / have-org-role-91
+                  :ARG2 (x4 / 교수))
+            :name (x2 / 이름
+                  :op1 "최")
+            :wiki -)
+      :manner (x5 / 이렇-01))
+
+# ::id snt281.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 자세한 내용은 해운대구 홈페이지에서 확인할 수 있다.
+(x0 / 가능-01
+      :ARG1 (x1 / 확인-01
+            :ARG1 (x5 / 내용
+                  :ARG1-of (x6 / 자세하-01))
+            :medium (x2 / 홈페이지                          ### "조사: medium vs location"
+                  :mod (x3 / county                       ### "명사구: poss vs mod vs location"
+                        :name (x4 / 이름
+                              :op1 "해운대구")
+                        :wiki "해운대구"))))
+
+# ::id snt282.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 게임 내에서 이용자가 직접 대회를 개최하는 기능도 도입된다.
+(x0 / 도입-01
+      :ARG1 (x1 / 기능                                     ### "용언화: 기능 vs 기능-00"
+            :mod (x2 / 개최-01
+                  :ARG0 (x3 / 이용자)
+                  :ARG1 (x6 / 대회)
+                  :location (x5 / 게임)                     ### "의존명사: 게임 내 vs 게임" ### "루트가 다르게 주석"
+                  :manner (x4 / 직접))))
+
+# ::id snt283.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 광양시가 전남에서 가장 젊은 도시라는 이미지를 부각시키고 광양매실의 우수성을 널리 알리겠다는 계획이다.
+(x0 / 계획-01
+      :ARG1 (x1 / and
+            :op1 (x2 / 알-01                                ### "오류: 알리고 부각" 
+                  :ARG1 (x4 / 우수성
+                        :mod (x5 / 매실
+                              :location (x6 / city
+                                    :name (x7 / 이름
+                                          :op1 "광양")
+                                    :wiki "광양시")))
+                  :manner (x3 / 널리))
+            :op2 (x8 / 부각-01
+                  :ARG1 x6                                  ### "프레임 해석: arg1이 광양시 - 광양시가 어떤 이미지라고 부각"
+                  :ARG2 (x9 / 이미지
+                        :mod (x10 / 도시
+                              :ARG1-of (x11 / 젊-01
+                                    :degree (x12 / 가장)
+                                    :location (x13 / province
+                                          :name (x14 / 이름
+                                                :op1 "전남")
+                                          :wiki "전라남도")))))))
+
+# ::id snt284.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 두 제품 역시 화웨이 기린 960 코어 프로세서를 탑재했다.
+(x0 / 탑재-01
+      :ARG1 (x1 / product
+            :name (x2 / 이름
+                  :op1 "화웨이"
+                  :op2 "기린"
+                  :op3 "960"
+                  :op4 "코어"
+                  :op5 "프로세서")
+            :wiki -)
+      :ARG2 (x3 / 제품
+            :quant 2)
+      :manner (x4 / 역시))
+
+# ::id snt285.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 이후 페이스북 등에는 조 전 교수에게 성추행을 당했다는 졸업생들의 폭로가 이어졌다.
+(x0 / 잇-01
+      :ARG1 (x1 / 폭로-01
+            :ARG0 (x2 / 졸업생)
+            :ARG1 (x3 / 당하-01
+                  :ARG1 x2
+                  :ARG2 (x4 / 성추행)
+                  :ARG3 (x5 / person
+                        :ARG0-of (x7 / have-org-role-91
+                              :ARG2 (x8 / 교수)
+                              :time (x9 / 전))
+                        :name (x6 / 이름
+                              :op1 "조")
+                        :wiki -)))
+      :medium (x10 / 등
+            :op1 (x11 / publication
+                  :name "페이스븍"                    ### "누락: (이 / 이름) 누락"
+                  :wiki "페이스북"))
+      :time (x12 / 이후))
+
+# ::id snt286.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 일정 시간이 지나면 부작용 없이 용해된다.
+(x0 / 용해-00
+      :condition (x1 / 지나-01
+            :ARG1 (x2 / 시간
+                  :ARG1-of (x3 / 일정-01)))
+      :manner (x4 / 부작용
+            :polarity -))
+
+# ::id snt287.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 성검전설 2는 지난 1993년 출시된 슈퍼패미컴 버전을 최신 기술로 리메이크한 작품.
+(x0 / 작품
+      :domain (x1 / program
+            :name (x2 / 이름
+                  :op1 "성검전설"
+                  :op2 "2")
+            :wiki "성검전설_2")
+      :mod (x3 / 리메이크-00
+            :ARG1 (x4 / 버전
+                  :ARG1-of (x7 / 출시-01
+                        :time (x8 / date-entity
+                              :ARG1-of (x9 / 지나-01)
+                              :year 1993))
+                  :mod (x5 / product
+                        :name (x6 / 이름
+                              :op1 "슈퍼패미컴")
+                        :wiki "슈퍼_패미컴"))
+            :manner (x10 / 기술
+                  :mod (x11 / 최신))))
+
+# ::id snt288.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt "우리 기술이 세계 5G 규격을 선도하고 있다"고 강조했다.
+(x0 / 강조-01
+      :ARG1 (x1 / 선도-01
+            :ARG0 (x2 / 기술
+                  :poss (x3 / 우리))
+            :ARG1 (x4 / 규격                    ### "명사구: topic vs mod & 의존 분석 차이"
+                  :mod (x5 / 5G)
+                  :mod (x6 / 세계))))
+
+# ::id snt289.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 요행이나 재수를 바라다가 손해를 볼 수 있어요.
+(x0 / 가능-01
+      :ARG1 (x1 / 보-04
+            :ARG1 (x2 / 손해))
+      :condition (x3 / 바라-01                        ### "부사절: 조건이 양태에 의존 vs 명제에 의존"
+            :ARG1 (x4 / or
+                  :op1 (x5 / 요행)
+                  :op2 (x6 / 재수))))
+
+# ::id snt290.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 문화예술위원회 위원들은 23일 회의를 열고 이같이 결정했다.
+(x0 / 결정-01                                         ### "부사절: 내포 처리 - 결정-01 vs and"
+      :ARG0 (x1 / 위원                                ### "hallucination: 헤드 타입이 사람 vs 위원"
+            :ARG2-of (x2 / have-org-role-91
+                  :ARG1 (x3 / organization
+                        :name (x4 / 이름
+                              :op1 "문화예술위원회")
+                        :wiki "한국문화예술위원회")))     ### "위키: 위키 연결"
+      :ARG2 (x8 / 이)
+      :manner (x5 / 열-01
+            :ARG0 x1
+            :ARG1 (x6 / 회의)
+            :time (x7 / date-entity
+                  :day 23)))
+
+# ::id snt291.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 대웅제약이 차기 대표이사로 윤재춘 대웅 대표이사 사장과 전승호 대웅제약 글로벌 사업본부장을 내정했다.
+(x0 / 내정-01
+      :ARG0 (x1 / company
+            :name (x2 / 이름
+                  :op1 "대웅제약")
+            :wiki "대웅제약")
+      :ARG1 (x3 / and
+            :op1 (x4 / person
+                  :name (x5 / 이름
+                        :ARG0-of (x6 / have-org-role-91
+                              :ARG1 x1
+                              :ARG2 (x7 / and               ### "직위: 대표이사와 사장을 and로 처리 vs 각각 새로운 프레임으로 처리"
+                                    :op1 (x8 / 대표이사)
+                                    :op2 (x9 / 사장)))
+                        :op1 "윤재춘")
+                  :wiki -)
+            :op2 (x10 / person
+                  :name (x11 / 이름
+                        :ARG0-of (x12 / have-org-role-91
+                              :ARG1 x1
+                              :ARG2 (x13 / 본부장
+                                    :mod (x14 / 글로벌사업본부)))
+                        :op1 "전승호")
+                  :wiki -))
+      :ARG2 (x15 / have-org-role-91
+            :ARG1 x1
+            :ARG2 x8)
+      :time (x16 / 차기))
+
+# ::id snt292.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 그러나 국가 지원 일반 건강검진은 주로 내부 장기 질환과 혈관질환에 집중하다.
+(x0 / contrast-01
+      :op2 (x1 / 집중-01
+            :ARG1 (x2 / 건강검진
+                  :ARG1-of (x4 / 지원-02
+                        :ARG0 (x5 / 국가))
+                  :mod (x3 / 일반))
+            :ARG2 (x7 / and                     ### "개체명: 병명 일부 vs 전부 개체명으로 처리 또는 개체명 처리 안함"
+                  :op1 (x8 / 질환
+                        :mod (x9 / 장기
+                              :location (x10 / 내부)))
+                  :op2 (x11 / desease
+                        :name (x12 / 이름
+                              :op1 "혈관질환")
+                        :wiki -))
+            :manner (x6 / 주로)))
+
+# ::id snt293.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 지난 22일 폐장 계획이었던 대관령눈꽃축제는 2018평창동계올림픽 폐막일인 오는 25일까지 연장 운영한다.
+(x0 / 운영-01
+      :ARG1 (x7 / festival
+            :mod (x9 / 계획-01
+                  :ARG1 (x10 / 폐장-00            ### "용언화: 폐장 vs 폐장-00"
+                        :ARG1 x7
+                        :time (x11 / date-entity
+                              :ARG1-of (x12 / 지나-01)
+                              :day 22)))
+            :name (x8 / 이름
+                  :op1 "대관령눈꽃축제")
+            :wiki -)
+      :manner (x1 / 연장-01                     ### "부사절: date-entity가 manner에 종속 vs 종속되지 않음"
+            :ARG3 (x2 / date-entity
+                  :ARG0-of (x3 / 오-02)
+                  :day 25)
+            :domain (x4 / 폐막일
+                  :mod (x5 / game
+                        :name (x6 / 이름
+                              :op1 "2018평창동계올림픽")
+                        :wiki "2018년_동계_올림픽"))))
+
+# ::id snt294.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 신제품 기능을 기존 제품에 출시와 동시에 업데이트하는 것은 매우 이례적이다.
+(x0 / 이례적                        ### "구문: 업데이트하는 것이 매우 이례적 vs 매우 이례적으로 업데이트하다 vs 이례적-00 프레임 처리"
+      :domain (x1 / 업데이트-00
+            :ARG1 (x5 / 기능                    ### "용언화: 기능 vs 기능-00"
+                  :mod (x4 / 신제품))
+            :location (x6 / 제품                ### "조사: 기존 제품에 :location"
+                  :mod (x7 / 기존))
+            :time (x2 / 동시                    ### "부사구: 동시 - manner vs time"
+                  :mod (x3 / 출시-01
+                        :ARG1 x4)))
+      :manner (x8 / 매우))
+
+# ::id snt295.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 강원도교육청이 유전자를 변형하지 않는 가공품을 학교 급식재료로 지원하는 사업을 올해 시범 추진한다.
+(x0 / 추진-01
+      :ARG0 (x1 / government-organization
+            :name (x2 / 이름
+                  :op1 "강원도교육청")
+            :wiki "강원도교육청")
+      :ARG1 (x3 / 사업                                 ### "용언화: 사업-01 vs 사업"
+            :mod (x4 / 지원-02                         ### "용언화: 지원-01 vs 지원-02" ### "관형절: mod vs purpose"
+                  :ARG1 (x5 / 가공품
+                        :mod (x6 / 변형-01
+                              :ARG1 (x7 / 유전자)
+                              :polarity -))
+                  :purpose (x8 / 재료
+                        :mod (x9 / 급식                ### "용언화: 급식-00 vs 급식"
+                              :location (x10 / 학교)))))
+      :manner (x13 / 시범-00)                          ### "용언화: 시범-00 vs 시범"
+      :time (x11 / date-entity
+            :year (x12 / 올해)))
+
+# ::id snt296.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 또한, 스테이크 제품은 마켓컬리, 푸드장 등 온라인에서도 쉽게 구매가 가능하다.
+(x0 / and
+      :op2 (x1 / 가능-01
+            :ARG1 (x2 / 구매-01
+                  :manner (x11 / 쉽-01)
+                  :medium (x3 / 온라인                   ### "명사구: 마켓컬리, 푸드장 등에서 온라인을 통해 vs 마켓컬리, 푸드장 등 온라인 (and)"
+                        :ARG1 (x9 / 제품                 ### "오류: 스테이크 제품 위치 오류"
+                              :mod (x10 / 스테이크))
+                        :example (x4 / and
+                              :op1 (x5 / company
+                                    :name (x6 / 이름
+                                          :op1 "마켓컬리")
+                                    :wiki -)
+                              :op2 (x7 / company
+                                    :name (x8 / 이름
+                                          :op1 "푸드장")
+                                    :wiki -))))))
+
+# ::id snt297.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt ‘PD수첩’은 “미투 운동이 전개되면서, 피해자들에게 2차 가해를 가하는 것도 많아지고 있다.
+(x0 / 말-01
+      :ARG0 (x1 / broadcast-program
+            :name (x2 / 이름
+                  :op1 "PD수첩")
+            :wiki "PD수첩")
+      :ARG1 (x3 / 되-01                                           ### "피동: 많아지다 vs -게 되다"
+            :ARG2 (x4 / 많-01
+                  :ARG1 (x5 / 가하-01
+                        :ARG1 (x7 / 가해                          ### "용언화: 가해-00 vs 가해"
+                              :ord (x8 / ordinal-entity
+                                    :value 2))
+                        :ARG2 (x6 / 피해자)))
+            :time (x9 / 전개-01                                   ### "부사절: 전개되면서 time vs condition"
+                  :ARG1 (x10 / political-movement
+                        :name (x11 / 이름
+                              :op1 "미투"
+                              :op2 "운동")
+                        :wiki "미투_운동"))))
+
+# ::id snt298.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 뉴스퍼레이드 다음주 월요일 아침 7시 30분에 돌아오겠습니다.
+(x0 / 돌아오-01
+      :ARG0 (x1 / broadcast-program
+            :name (x2 / 이름
+                  :op1 "뉴스퍼레이드")
+            :wiki "뉴스퍼레이드")
+      :time (x3 / date-entity                   ### "시간: date-entity member relation에 :week 없음 --> mod vs week vs 모두 분리"
+            :dayperiod (x6 / 아침)
+            :time "7:30"
+            :week (x4 / 다음주)
+            :weekday (x5 / 월요일)))
+
+# ::id snt299.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 모든 사람이 불안증에 시달리는 사회다.
+(x0 / 사회
+      :mod (x1 / 시달리-01
+            :ARG0 (x2 / 불안증)                       ### "개체명: 불안증 개체명 처리 vs 일반 개념 처리"
+            :ARG1 (x3 / 사람                          ### "오류: 불안증이 사람에 시달리다"
+                  :mod (x4 / 모든))))                ### "관형사: 모든 quant vs mod"
+
+# ::id snt300.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt "관광산업의 지속적인 발전을 위해 많은 노력을 기울이고 있다"고 강조했다.
+(x0 / 강조-01
+      :ARG1 (x1 / 기울-01
+            :ARG1 (x2 / 노력
+                  :ARG1-of (x3 / 많-01))
+            :ARG2 (x4 / 발전-01
+                  :ARG1 (x5 / 관광산업)         ### "합성: 등재어 기준 관광산업 통합 처리 vs 분리"
+                  :mod (x6 / 지속적))))        ### "파생: 지속적 manner vs mod vs 지속-01"
+
+# ::id snt301.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 초미세먼지 주의보는 권역별 평균농도가 2시간 이상 90㎍㎥ 이상일 때 내려진다.
+(x0 / 내리-03                               ### "피동: 내려지-00 vs 내리-03"
+      :ARG1 (x1 / 주의보                     ### "합성: 초미세먼지 주의보"
+            :topic (x2 / 초미세먼지))
+      :condition (x3 / have-quant-91
+            :ARG1 (x4 / 농도
+                  :mod (x5 / 평균))
+            :ARG2 (x6 / rate-entity         ### "오류: rate-entity-91"
+                  :ARG1 (x7 / mass-entity
+                        :quant 90
+                        :unit (x8 / microgram))
+                  :ARG2 (x9 / volume-quantity
+                        :quant 1
+                        :unit (x10 / cubic-meter)))
+            :ARG3 (x11 / 이상)
+            :time (x12 / 이상
+                  :duration (x13 / date-inverval
+                        :op1 (x14 / temporal-quantity
+                              :quant 2
+                              :unit (x15 / 시간))))))
+
+# ::id snt302.EXOBRAIN.PARAPHRASE.181118 ::date 2020-03-00 ::annotator phj ::preferred IAA
+# ::snt 부지런히 움직여야 하는 날입니다.
+(x0 / 날
+      :mod (x1 / obligate-01
+            :ARG1 (x2 / 움직이-01                      ### "프레임: 움직이-01 vs 움직이-02" ### "오류: Arg1으로 처리" 
+                  :manner (x3 / 부지런-00))))         ### "미등재어: 부지런하-00 vs 부지런-00"
+
