@@ -18659,78 +18659,78 @@
 (보 / 보-01
       :ARG0 (나 / 나)
       :ARG1 (그 / 그림
-                  :ARG1-of (훌 / 훌륭하-01)
-                  :location (b / book :wiki - :name (이 / 이름 :op1 "체험한" :op2 "이야기")
-                        :topic (원 / 원시림)))
+            :ARG1-of (훌 / 훌륭하-01)
+            :location (b / book :wiki - :name (이 / 이름 :op1 "체험한" :op2 "이야기")
+                  :topic (원 / 원시림)))
       :mod (한 / 한번)
       :time (a / age-01
-                  :ARG1 나
-                  :ARG2 (t / temporal-quantity :quant 6 :unit (살 / 살))))
+            :ARG1 나
+            :ARG2 (t / temporal-quantity :quant 6 :unit (살 / 살))))
 
 # ::id lpp_1943.3 ::category TLPPRL ::split train
 # ::snt 그것은 보아라는 구렁이가 맹수를 집어 삼키는 그림이었는데,
 # ::note
 (a / and
       :op1 (그 / 그림
-                  :domain (그2 / 그것)
-                  :topic (구 / 구렁이
-                        :mod (보 / 보아)
-                        :ARG0-of (집 / 집어삼키-00
-                                    :ARG1 (맹 / 맹수)))))
+            :domain (그2 / 그것)
+            :topic (구 / 구렁이
+                  :mod (보 / 보아)
+                  :ARG0-of (집 / 집어삼키-00
+                        :ARG1 (맹 / 맹수)))))
 
 # ::id lpp_1943.4 ::category TLPPRL ::split train
 # ::snt 그것을 옮겨 그리면 아래의 그림과 같다.
 # ::note
 (그 / 그리-01
       :domain (그2 / 그림
-                  :location (아 / 아래))
+            :location (아 / 아래))
       :ARG1 (그3 / 그것)
       :manner (옮 / 옮-01
-                  :ARG1 그3
-                  :ARG3 아))
+            :ARG1 그3
+            :ARG3 아))
 
 # ::id lpp_1943.5 ::category TLPPRL ::split train
 # ::snt 그책에 그런 말이 있었다. '보아구렁이는 먹이를 씹지 않고 통째로 집어삼킨다.
 # ::note
 (말 / 말하-01
       :ARG0 (책 / 책
-                  :mod (그 / 그))
+            :mod (그 / 그))
       :ARG1 (집 / 집어삼키-00
-                  :ARG0 (구 / 구렁이
-                        :mod (보 / 보아))
-                  :ARG1 (먹 / 먹이)
-                  :manner (씹 / 씹-00
-                        :polarity -
-                        :ARG0 구
-                        :ARG1 먹)
-                  :manner (통 / 통째로)))
+            :ARG0 (구 / 구렁이
+                  :mod (보 / 보아))
+            :ARG1 (먹 / 먹이)
+            :manner (씹 / 씹-00
+                  :polarity -
+                  :ARG0 구
+                  :ARG1 먹)
+            :manner (통 / 통째로)))
 
 # ::id lpp_1943.6 ::category TLPPRL ::split train
 # ::snt 그리고 나서는 꼼짝도 못하고 먹이가 소화되는 여섯 달 동안은 잠을 잔다'고 하는.
 # ::note
 (a / and
       :op1 (가 / 가능-01
-                  :polarity -
-                  :ARG1 (움 / 움직이-01)
-                  :time (이 / 이후
-                        :op1 (그 / 그렇-01)))
+            :polarity -
+            :ARG1 (움 / 움직이-01)
+            :time (이 / 이후
+                  :op1 (그 / 그렇-01)))
       :op2 (자 / 자-00
-                  :ARG2 (잠 / 잠)
-                  :duration (t / temporal-quantity :quant 6
-                        :unit (달 / 달))
-                  :purpose (소 / 소화-01
-                        :ARG1 (먹 / 먹이))))
+            :ARG2 (잠 / 잠)
+            :duration (t / temporal-quantity :quant 6
+                  :unit (달 / 달))
+            :purpose (소 / 소화-01
+                  :ARG1 (먹 / 먹이))))
 
 # ::id lpp_1943.7 ::category TLPPRL ::split train
 # ::snt 그래서 나는 밀림에서 일어나는 일을 여러 가지로 곰곰이 생각해 보고서,
 # ::note
 (a / and
       :op2 (생 / 생각-01
-                  :ARG0 (나 / 나)
-                  :ARG1 (일 / 일 :quant (여 / 여러)
-                        :ARG1-of (일2 / 일어나-01
-                                    :ARG2 (밀 / 밀림)))
-                  :manner (곰 / 곰곰이)))
+            :ARG0 (나 / 나)
+            :ARG1 (일 / 일 :quant (여 / 여러)
+                  :ARG1-of (일2 / 일어나-01
+                        :ARG2 (밀 / 밀림)))
+            :manner (곰 / 곰곰이)))
 
 # ::id lpp_1943.8 ::category TLPPRL ::split test
 # ::snt 색연필을 가지고 첫 번째 그림을 그려 보았다.
@@ -18750,18 +18750,18 @@
 # ::note
 (m / multi-sentence
       :snt1 (이 / 이렇-01
-                  :ARG1 (그 / 그것))
+            :ARG1 (그 / 그것))
       :snt2 (묻 / 묻-01
-                  :ARG0 (나 / 나)
-                  :ARG1 (무 / 무섭-01
-                        :polarity (a2 / amr-unknown))
-                        :ARG0 (그2 / 그림
-                              :poss (나2 / 나)))
-                  :ARG2 (어 / 어른)
-                  :manner (보 / 보-01
-                        :ARGA 나
-                        :ARG1 어
-                        :ARG1 그2))
+            :ARG0 (나 / 나)
+            :ARG1 (무 / 무섭-01
+                  :polarity (a2 / amr-unknown)
+                  :ARG0 (그2 / 그림
+                        :poss (나2 / 나)))
+            :ARG2 (어 / 어른)
+            :manner (보 / 보-01
+                  :ARGA 나
+                  :ARG1 어
+                  :ARG1 그2)))
 
 # ::id lpp_1943.11 ::category TLPPRL ::split train
 # ::snt 어른들은,
@@ -18801,7 +18801,7 @@
       :ARG1 (그 / 그리-01
             :ARG1 (속 / 속
                   :op1 (구 / 구렁이
-                              :mod (보 / 보아)))
+                        :mod (보 / 보아)))
             :purpose (가 / 가능-01
                   :ARG1 (알 / 알아보-01
                         :ARG0 (어 / 어른)
