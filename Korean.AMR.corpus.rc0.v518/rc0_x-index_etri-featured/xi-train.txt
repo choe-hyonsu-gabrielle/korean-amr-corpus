@@ -23587,19 +23587,19 @@
 # ::ner_tags ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"]
 # ::note
 (x0 / multi-sentence
-      :ARG2 (x9 / 어른)
-      :manner (x10 / 보-01
-            :ARG1 x9
-            :ARG1 (x7 / 그림
-                  :poss (x8 / 나))
-            :ARGA (x4 / 나))
       :snt1 (x1 / 이렇-01
             :ARG1 (x2 / 그것))
       :snt2 (x3 / 묻-01
-            :ARG0 x4
-            :ARG0 x7
+            :ARG0 (x4 / 나)
             :ARG1 (x5 / 무섭-01
-                  :polarity (x6 / amr-unknown))))
+                  :ARG0 (x7 / 그림
+                        :poss (x8 / 나))
+                  :polarity (x6 / amr-unknown))
+            :ARG2 (x9 / 어른)
+            :manner (x10 / 보-01
+                  :ARG1 x9
+                  :ARG1 x7
+                  :ARGA x4)))
 
 # ::id lpp_1943.11 ::category TLPPRL ::split train
 # ::snt 어른들은,

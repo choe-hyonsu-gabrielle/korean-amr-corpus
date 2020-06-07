@@ -2271,9 +2271,9 @@
       :ARG1 (x3 / 주의보
             :ARG1-of (x5 / 내리-03
                   :ARG0 x1
-                  :ARG1-of (x13 / 기하-01
+                  :ARG1-of (x11 / 기하-01
                         :ARG0 x1
-                        :ARG2 (x14 / date-entity
+                        :ARG2 (x12 / date-entity
                               :day 24
                               :time "14:00"))
                   :ARG2 (x6 / and
