@@ -4,7 +4,7 @@
 *Hyonsu Choe, Jiyoon Han, Hyejin Park, Tae Hwan Oh, Hansaem Kim.*
 *In Proceedings of the Second International Workshop on Designing Meaning Representations*
 
-[***[Slides](https://github.com/choe-hyonsu-gabrielle/korean-amr-corpus/blob/master/DMR'2020.v2.pdf)***]
+[***[Slides](https://github.com/choe-hyonsu-gabrielle/korean-amr-corpus/blob/master/DMR'2020.v2.pdf)***] at The Second International Workshop on Designing Meaning Representations (DMR'2020@COLING)
 
 ### Citation
 
