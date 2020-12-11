@@ -7,6 +7,7 @@
 *Slides: 
 
 ### Citation
+
 '''
 @inproceedings{choe-etal-2020-building,
     title = "Building {K}orean {A}bstract {M}eaning {R}epresentation Corpus",
