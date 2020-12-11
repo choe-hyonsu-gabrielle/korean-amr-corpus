@@ -6,9 +6,8 @@
 
 ***In Proceedings of the Second International Workshop on Designing Meaning Representations***
 
-*URL: https://www.aclweb.org/anthology/2020.dmr-1.3/*
-
-*Slides: 
+[***[Paper](https://www.aclweb.org/anthology/2020.dmr-1.3/)***]
+[***[Slides](https://github.com/choe-hyonsu-gabrielle/korean-amr-corpus/blob/master/DMR'2020.v2.pdf)***]
 
 ### Citation
 
