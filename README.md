@@ -8,7 +8,7 @@
 
 ### Citation
 
-'''
+```
 @inproceedings{choe-etal-2020-building,
     title = "Building {K}orean {A}bstract {M}eaning {R}epresentation Corpus",
     author = "Choe, Hyonsu  and
@@ -25,4 +25,4 @@
     pages = "21--29",
     abstract = "To explore the potential sembanking in Korean and ways to represent the meaning of Korean sentences, this paper reports on the process of applying Abstract Meaning Representation to Korean, a semantic representation framework that has been studied in wide range of languages, and its output: the Korean AMR corpus. The corpus which is constructed so far is a size of 1,253 sentences and its raw texts are from ExoBrain Corpus, a state-led R{\&}D project on language AI. This paper also analyzes the result in both qualitative and quantitative manners, proposing discussions for further development.",
 }
-'''
+```
