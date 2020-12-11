@@ -1,9 +1,13 @@
 # korean-amr-corpus
 
 ## Building Korean Abstract Meaning Representation Corpus
+
 ***Hyonsu Choe, Jiyoon Han, Hyejin Park, Tae Hwan Oh, Hansaem Kim***
+
 ***In Proceedings of the Second International Workshop on Designing Meaning Representations***
+
 *URL: https://www.aclweb.org/anthology/2020.dmr-1.3/*
+
 *Slides: 
 
 ### Citation
