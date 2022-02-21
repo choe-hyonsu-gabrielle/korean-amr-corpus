@@ -1,10 +1,6 @@
 @misc{choe-etal-2020-building,
     title = {Building {K}orean {A}bstract {M}eaning {R}epresentation Corpus},
-    author = {Choe, Hyonsu  and
-      Han, Jiyoon  and
-      Park, Hyejin  and
-      Oh, Tae Hwan  and
-      Kim, Hansaem},
+    author = {Choe, Hyonsu  and  Han, Jiyoon  and  Park, Hyejin  and  Oh, Tae Hwan  and  Kim, Hansaem},
     booktitle = {Proceedings of the Second International Workshop on Designing Meaning Representations},
     month = {dec},
     year = {2020},
