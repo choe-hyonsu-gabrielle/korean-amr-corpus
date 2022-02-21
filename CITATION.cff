@@ -1,10 +1,41 @@
-@misc{choe-etal-2020-building,
-    title = {Building {K}orean {A}bstract {M}eaning {R}epresentation Corpus},
-    author = {Choe, Hyonsu  and  Han, Jiyoon  and  Park, Hyejin  and  Oh, Tae Hwan  and  Kim, Hansaem},
-    booktitle = {Proceedings of the Second International Workshop on Designing Meaning Representations},
-    month = {dec},
-    year = {2020},
-    address = {Barcelona Spain (online)},
-    publisher = {Association for Computational Linguistics},
-    url = {https://aclanthology.org/2020.dmr-1.3},
-    pages = {21--29}}
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Building Korean Abstract Meaning Representation
+  Corpus
+message: >-
+  If you use this dataset, please cite it using the
+  metadata from this file.
+type: dataset
+authors:
+  - family-names: Choe
+    given-names: Hyonsu
+    email: choehyonsu@gmail.com
+    name-particle: Hyonsu Choe
+    affiliation: 'Language AI Lab, NCSOFT Corp.'
+  - given-names: Jiyoon
+    family-names: Han
+    email: clinamen35@yonsei.ac.kr
+    affiliation: >-
+      Institute of Language and Information Studies,
+      Yonsei University
+  - given-names: Hyejin
+    family-names: Park
+    email: hjp1010@yonsei.ac.kr
+    affiliation: >-
+      Department of Korean Language and Literature,
+      Yonsei University
+  - given-names: Taehwan
+    family-names: Oh
+    email: ghksl0604@yonsei.ac.kr
+    affiliation: >-
+      Department of Korean Language and Literature,
+      Yonsei University
+  - given-names: Hansaem
+    family-names: Kim
+    email: khss@yonsei.ac.kr
+    affiliation: >-
+      Institute of Language and Information Studies,
+      Yonsei University
